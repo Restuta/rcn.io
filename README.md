@@ -1,6 +1,6 @@
 #Stuff to use
 
-Formatting dates 
+Formatting dates
     http://momentjs.com/
     
 Bootstrap theme
