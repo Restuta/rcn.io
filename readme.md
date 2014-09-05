@@ -1,6 +1,7 @@
 #Stuff to use
 
-formatting dates 
+Formatting dates 
     http://momentjs.com/
-bootstrap theme
+    
+Bootstrap theme
     http://bootstrap-calendar.azurewebsites.net/index-bs3.html 
