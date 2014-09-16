@@ -1,0 +1,22 @@
+"races" : [
+{
+	"name":"San Bruno Mountain Hill Climb",
+	"date":"January 01, 2014",
+	"locationUrl":"https://www.google.com/maps/preview?q=Guadalupe+Canyon+Parkway+",
+	"city":"Brisbane",
+	"type":"ROAD",
+	"duration":3.5, //in flyer depends on cat
+	"durationType":"miles", //or mins for CRIT
+	"elevation":1300, //in flyer depends on cat
+},
+{
+	"name":,
+	"date":,
+	"locationUrl":,
+	"city":,
+	"type":,
+	"duration":, //in flyer depends on cat
+	"durationType":, //or mins for CRIT
+	"elevation":, //in flyer depends on cat
+},
+]
