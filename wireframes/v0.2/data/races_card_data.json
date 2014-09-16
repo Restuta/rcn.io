@@ -8,6 +8,8 @@
 	"duration":3.5, //in flyer depends on cat
 	"durationType":"miles", //or mins for CRIT
 	"elevation":1300, //in flyer depends on cat
+	"startTime":8.30, //in flyer depends on cat
+	"lastTimeResult":"10/36", //???
 },
 {
 	"name":,
@@ -18,5 +20,7 @@
 	"duration":, //in flyer depends on cat
 	"durationType":, //or mins for CRIT
 	"elevation":, //in flyer depends on cat
+	"startTime":, //in flyer depends on cat
+	"lastTimeResult":, //???
 },
 ]
