@@ -18,9 +18,7 @@
         "state": "CA",
         "zip": 94005
       },
-      "flyers": [
-      	"http://www.ncnca.org/sites/default/files/01/01/2014%20-%202%3A29am/183%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED%203.pdf"
-      	],
+      "flyerUrl": "http://www.ncnca.org/sites/default/files/01/01/2014%20-%202%3A29am/183%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED%203.pdf",
       "registrationUrl": "https://www.usacycling.org/register/2014-183",
       "usaCycling": {
         "name": "2014 San Bruno Mountain Hill Climb",
