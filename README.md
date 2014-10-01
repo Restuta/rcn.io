@@ -8,3 +8,6 @@ Bootstrap theme
 
 For JSON manipulation from command line
     http://stedolan.github.io/jq/tutorial/
+
+Example of different calendar layouts:
+    https://www.calendarsquick.com
