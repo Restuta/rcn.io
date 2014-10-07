@@ -9,9 +9,10 @@ Bootstrap theme
 For JSON manipulation from command line
     http://stedolan.github.io/jq/tutorial/
 
-Design examples
-    http://fltr.io/?left=true
-    inspiration http://designspiration.net/
-
-Example of different calendar layouts
+<<<<<<< HEAD
+Example of different calendar layouts:
     https://www.calendarsquick.com
+=======
+Design exmaples
+    http://fltr.io/?left=true
+>>>>>>> added design examples section to readme
