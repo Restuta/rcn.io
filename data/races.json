@@ -11,7 +11,6 @@
         "url": ""
       },
       "location": {
-        "_raw": "Guadalupe Canyon Parkway & Bayshore Blvd Brisbane, California 94005",
         "url": "https://www.google.com/maps/preview?q=Guadalupe+Canyon+Parkway+",
         "address": "Guadalupe Canyon Parkway & Bayshore Blvd",
         "city": "Brisbane",
@@ -29,9 +28,20 @@
         "flyerUrl": "http://www.usacycling.org/events/getflyer.php?permit=2014-183",
         "resultsUrl": "http://www.usacycling.org/results/?permit=2014-183"
       },
+      "bikereg": {
+      	"url": "",
+      	"name": "",
+      	
+      }
       "duration": 3.5,
       "durationType": "miles",
       "elevation": 1300,
+      "startTime" : {
+      	"Men P/1/2": "10:00",
+      	"Men E3": "10:00",
+      	"Men 35+ 1/2/3": "10:04",
+      	"Women P/1/2": "10:08"
+      }
       "startTime": 8.30,
       "lastTimeResult": "10/36"
     }
