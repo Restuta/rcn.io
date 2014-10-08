@@ -16,3 +16,6 @@ Design examples
 
 Example of different calendar layouts
     https://www.calendarsquick.com
+
+Logo
+    https://www.graphicsprings.com/your-logo-files
