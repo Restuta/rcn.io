@@ -1,26 +1,52 @@
 * {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 24px;
     color: #222;
 }
 
-h1 {
+h1,h4 {
     margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #0074D9;
+}
+
 .content {
-
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 32%;
 }
 
-#title {
-    font-size: 108px;
-    padding-bottom: 20px;
+.title, .title  * {
+    font-size: 188px;
+    font-weight: 300;
 }
-    #title .domain {
-        color: #E0E0E0;
-    }
+.title .domain {
+    opacity: 0.1;
+    font-weight: 100;
+}
+
+.footer .sub-title,
+.footer .sub-title * {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    opacity: 0.6;
+
+}
+
+.footer {
+    text-align: right;
+}
+.footer .sub-title #restuta {
+    opacity: 1;
+}
+
+.footer .sub-title #me4ta {
+    opacity: 1;
+}
