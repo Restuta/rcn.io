@@ -1,0 +1,26 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: #222;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 108px;
+    padding-bottom: 20px;
+}
+    #title .domain {
+        color: #E0E0E0;
+    }
