@@ -28,6 +28,12 @@ a {
 .title .domain {
     opacity: 0.1;
     font-weight: 100;
+
+    -webkit-animation-name: hide;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .footer .sub-title,
@@ -37,6 +43,17 @@ a {
     font-style: italic;
     text-align: right;
     opacity: 0.6;
+
+}
+.secondary {
+    opacity: 0.5;
+    font-size: 0px;
+    font-weight: 100;
+    -webkit-animation-name: grow-font, to-white-color;
+    -webkit-animation-delay: 3s, 9s;
+    -webkit-animation-duration: 1.5s, 1.5s;
+    -webkit-animation-timing-function: ease-in, ease-in;
+    -webkit-animation-fill-mode: forwards, forwards;
 
 }
 
@@ -49,4 +66,41 @@ a {
 
 .footer .sub-title #me4ta {
     opacity: 1;
+}
+
+body {
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0,1);
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes to-white-color {
+    to {color: ghostwhite;}
+}
+
+@-webkit-keyframes hide {
+    from {opacity: 0.1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes grow-font {
+    from {font-size: 0px;}
+    to {font-size: 188px; }
+}
+
+@-webkit-keyframes  background {
+    0%   {background-color: white;}
+    10%  {background-color: cornflowerblue;}
+    20%  {background-color: lightcoral;}
+    30%  {background-color: burlywood;}
+    40%  {background-color: seagreen;}
+    50%  {background-color: lightsalmon;}
+    60%  {background-color: mediumorchid;}
+    65%  {background-color: goldenrod;}
+    70%  {background-color: mediumseagreen;}
+    80%  {background-color: darkslateblue;}
+    90%  {background-color: hotpink;}
+    100% {background-color: cadetblue}
 }
