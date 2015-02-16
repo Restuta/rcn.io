@@ -26,11 +26,11 @@ a {
     font-weight: 300;
 }
 .title .domain {
-    opacity: 0.1;
+    opacity: 0.2;
     font-weight: 100;
 
-    -webkit-animation-name: hide;
-    -webkit-animation-delay: 3s;
+    -webkit-animation-name: to-white-color;
+    -webkit-animation-delay: 9s;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-fill-mode: forwards;
@@ -47,11 +47,16 @@ a {
 }
 .secondary {
     opacity: 0.5;
-    font-size: 0px;
+    font-size: 20px;
     font-weight: 100;
-    -webkit-animation-name: grow-font, to-white-color;
-    -webkit-animation-delay: 3s, 9s;
-    -webkit-animation-duration: 1.5s, 1.5s;
+    margin-bottom: 20px;
+
+    /*-webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);*/
+
+    -webkit-animation-name: to-white-color;
+    -webkit-animation-delay: 9s;
+    -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in, ease-in;
     -webkit-animation-fill-mode: forwards, forwards;
 
@@ -77,6 +82,7 @@ body {
 }
 
 @-webkit-keyframes to-white-color {
+    from {color: default;}
     to {color: ghostwhite;}
 }
 
@@ -85,9 +91,18 @@ body {
     to {opacity: 0;}
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+        @-webkit-keyframes grow-font {
+            from {font-size: 25px;}
+            to {font-size: 188px; }
+        }        
+    }
+
 @-webkit-keyframes grow-font {
-    from {font-size: 0px;}
-    to {font-size: 188px; }
+    /*from {transform: scale(1);}
+    to {transform: scale(20) }*/
 }
 
 @-webkit-keyframes  background {
