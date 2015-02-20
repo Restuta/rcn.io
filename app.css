@@ -29,11 +29,11 @@ a {
     opacity: 0.2;
     font-weight: 100;
 
-    -webkit-animation-name: to-white-color;
+    /*-webkit-animation-name: to-white-color;
     -webkit-animation-delay: 9s;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;*/
 }
 
 .footer .sub-title,
@@ -54,11 +54,11 @@ a {
     /*-webkit-transform: translateZ(0);
     -webkit-transform: translate3d(0,0,0);*/
 
-    -webkit-animation-name: to-white-color;
+   /* -webkit-animation-name: to-white-color;
     -webkit-animation-delay: 9s;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in, ease-in;
-    -webkit-animation-fill-mode: forwards, forwards;
+    -webkit-animation-fill-mode: forwards, forwards;*/
 
 }
 
@@ -74,11 +74,15 @@ a {
 }
 
 body {
-    -webkit-animation-name: background;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*-webkit-animation-name: background;
     -webkit-animation-duration: 33s;
     -webkit-animation-delay: 10s;
     -webkit-animation-timing-function: cubic-bezier(0,0,0,1);
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;*/
 }
 
 @-webkit-keyframes to-white-color {
@@ -91,7 +95,7 @@ body {
     to {opacity: 0;}
 }
 
-@media only screen 
+/*@media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
         @-webkit-keyframes grow-font {
@@ -99,7 +103,7 @@ and (max-device-width : 568px) {
             to {font-size: 188px; }
         }        
     }
-
+*/
 @-webkit-keyframes grow-font {
     /*from {transform: scale(1);}
     to {transform: scale(20) }*/
@@ -118,4 +122,11 @@ and (max-device-width : 568px) {
     80%  {background-color: darkslateblue;}
     90%  {background-color: hotpink;}
     100% {background-color: cadetblue}
+}
+
+
+#particles-js{
+  height:100%;
+  width: 100%;
+  background:#b61924
 }
