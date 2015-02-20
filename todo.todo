@@ -5,7 +5,9 @@ Open questions
 	-- contacted BikeReg and they promised to extend their search API with ability to search by permit:
 		hopefully including permit number in their serch results
 - other data
-	- points: http://www.ncnca.org/sites/default/files/internal/points/Mpoint15.html#S4S
+	- points
+		- 2015: http://www.ncnca.org/sites/default/files/internal/points/Mpoint15.html#S4S
+		--- archives: http://www.ncnca.org/sites/default/files/internal/points/points-archive.html
 - where to grub event's from
 	- USA Cycling
 		- upcoming events can be grabbed in XML: it has link to bikereg
