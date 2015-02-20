@@ -3,22 +3,22 @@
 function pJS_desktop(){
   particlesJS('particles-js', {
     particles: {
-      color: '#fff',
+      color: '#EEE',
       shape: 'circle',
       opacity: {
-        opacity: 1
+        opacity: 0.6
       },
       size: 2.5,
       size_random: true,
-      nb: 150,
+      nb: 250,
       line_linked: {
         enable_auto: true,
-        distance: 250,
+        distance: 150,
         color: '#fff',
         opacity: 0.5,
-        width: 1,
+        width: 0.5,
         condensed_mode: {
-            enable: false,
+            enable: true,
             rotateX: 600,
             rotateY: 600
         }
@@ -31,7 +31,7 @@ function pJS_desktop(){
     interactivity: {
       enable: true,
       mouse: {
-        distance: 200
+        distance: 400
       },
       detect_on: 'canvas',
       mode: 'grab',
