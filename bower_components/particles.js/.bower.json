@@ -1,0 +1,32 @@
+{
+  "name": "particles.js",
+  "main": "particles.js",
+  "version": "1.1.0",
+  "homepage": "https://github.com/VincentGarreau/particles.js",
+  "authors": [
+    "Vincent Garreau <vin.garreau@gmail.com>"
+  ],
+  "description": "A lightweight JavaScript library for creating particles.",
+  "keywords": [
+    "particle",
+    "particles"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "da61f1abccc75b318b426809a2ea8c5f082d2bfa"
+  },
+  "_source": "git://github.com/VincentGarreau/particles.js.git",
+  "_target": "~1.1.0",
+  "_originalSource": "particles.js",
+  "_direct": true
+}
