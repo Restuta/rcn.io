@@ -1,3 +1,8 @@
+Features
+	- distance between events on weekends
+		- same day events distance and time
+		- distance between Sat and Sunday events (estimated drive time, etc)
+		
 Open questions
 - how to match data from USA Cycling to Bike Reg? 
 	- "Race Ready" does this searching bikereg and it searches each word, which is fuzzy logic and leads to errors
@@ -26,3 +31,12 @@ Open questions
 	- BikeReg and other registration services
 		- https://www.bikereg.com/events/CALIFORNIA/?ns=
 	- combination of the above
+
+USA Cycling hacking
+ - errors
+ 	- Error in query: SELECT compid,first, last, YEAR(birthdate) as birthyear, city, hometown, state, country, webhideinfo FROM comp WHERE compid = '438033'. Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+Crashes
+	- reponsible for crashing
+		- https://www.usacycling.org/results/?compid=440755
+			- proof https://www.usacycling.org/results/?compid=440755
