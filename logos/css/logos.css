@@ -1,0 +1,8 @@
+body {
+  background-color: #151515;
+  color: rgb(234, 234, 234);
+}
+
+.page-header h1 {
+  font-size: 4em;
+}
