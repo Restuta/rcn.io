@@ -1,8 +1,45 @@
 body {
-  background-color: #151515;
   color: rgb(234, 234, 234);
+
+  background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;
+  background-color: #151515;
+}
+
+.todo {
+  position: absolute;
+  right:20px;
+  top: 20px;
+  z-index: 9000;
 }
 
 .page-header h1 {
   font-size: 4em;
+}
+
+.thumbnail {
+  background-color: inherit;
+  border: none;
+  margin-bottom: 0;
+}
+
+.row {
+  margin-bottom: 200px;
+}
+
+.logo.logo-256,
+.logo.logo-256 > .img-responsive {
+  min-width: 256px;
+  min-height: 256px;
+}
+
+.logo.logo-128,
+.logo.logo-128 > .img-responsive {
+  min-width: 128px;
+  min-height: 128px;
+}
+
+.logo.logo-64,
+.logo.logo-64 > .img-responsive {
+  min-width: 64px;
+  min-height: 64px;
 }
