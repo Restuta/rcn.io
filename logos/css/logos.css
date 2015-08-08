@@ -1,7 +1,26 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;
+  }
+}
+
+
 body {
   color: rgb(234, 234, 234);
 
-  background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;
+  /* medium */
+  /*background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;*/
+
+  /* large */
+  /*background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;*/
   background-color: #151515;
 }
 
@@ -23,7 +42,11 @@ body {
 }
 
 .row {
-  margin-bottom: 200px;
+  /*margin-bottom: 200px;*/
+}
+
+.row.row-margin-bottom {
+  margin-bottom: 30px;
 }
 
 .logo.logo-256,
@@ -38,8 +61,23 @@ body {
   min-height: 128px;
 }
 
-.logo.logo-64,
+.logo.logo-64 {
+  min-width: 64px;
+  min-height: 64px;
+}
+
 .logo.logo-64 > .img-responsive {
   min-width: 64px;
   min-height: 64px;
+}
+
+.horizontal,
+.squared-1,
+.squared-2 {
+  margin-bottom: 60px;
+}
+
+.squared-1 .logo-64,
+.squared-2 .logo-64 {
+  margin-top: 60px;
 }
