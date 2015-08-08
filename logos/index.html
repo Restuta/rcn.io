@@ -8,12 +8,68 @@
   <link rel="stylesheet" href="css/bootstrap-darkly.min.css">
   <link rel="stylesheet" href="css/logos.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="bower_components/handlebars/handlebars.min.js"></script>
 </head>
+
+<script id="vertical-logos-1" type="text/x-handlebars-template">
+  {{#each logos}}
+  <div class="col-sm-4">
+    <div class="row row-margin-bottom">
+      <div class="col-sm-12">
+        <a class="thumbnail logo logo-256 pull-left" href="#">
+          <img class="img-responsive" src="{{logo.x256}}" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a class="thumbnail logo logo-128 pull-left" href="#">
+          <img class="img-responsive" src="{{logo.x128}}" alt="">
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a class="thumbnail logo logo-64 pull-left" href="#">
+          <img class="img-responsive" src="{{logo.x64}}" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</script>
+
+<script>
+  var source = $("#vertical-logos-1").html();
+  var template = Handlebars.compile(source);
+  var logos = [{
+    logo: {
+      'x256': 'http://placehold.it/256/222',
+      'x128': 'http://placehold.it/128/222',
+      'x64': 'http://placehold.it/64/222'
+    }
+  }, {
+    logo: {
+      'x256': 'http://placehold.it/256/222',
+      'x128': 'http://placehold.it/128/222',
+      'x64': 'http://placehold.it/64/222'
+    }
+  },{
+    logo: {
+      'x256': 'http://placehold.it/256/222',
+      'x128': 'http://placehold.it/128/222',
+      'x64': 'http://placehold.it/64/222'
+    }
+  }];
+
+  $(document).ready(function() {
+    $('.horizontal .horizontal-content').append(template({logos: logos}));
+  });
+</script>
 
 <body>
   <ul class="todo">
     Todo
     <li><a href="http://screencast.com/t/sUSnydaiAIE">Try this layout</a></li>
+    <li>try white background</li>
   </ul>
 
   <div id="main-continer" class="container">
@@ -27,8 +83,8 @@
 
     <div class="horizontal">
       <p>HORIZONTAL</p>
-      <div class="row row-margin-bottom">
-        <div class="col-sm-4">
+      <div class="row row-margin-bottom horizontal-content">
+        <!-- <div class="col-sm-4">
           <div class="row row-margin-bottom">
             <div class="col-sm-12">
               <a class="thumbnail logo logo-256 pull-left" href="#">
@@ -92,7 +148,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

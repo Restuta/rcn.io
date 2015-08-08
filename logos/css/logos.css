@@ -1,14 +1,14 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
-    background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;
+    /*background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;*/
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;
+    /*background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;*/
   }
 }
 
