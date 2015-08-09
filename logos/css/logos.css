@@ -51,6 +51,7 @@ body {
 
 .logo img {
   background-color: white;
+  border-radius: 2px;
 }
 
 .logo.logo-256 > .img-responsive {

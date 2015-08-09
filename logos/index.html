@@ -40,21 +40,13 @@
 <script>
   var source = $("#vertical-logos-1").html();
   var template = Handlebars.compile(source);
-  var logos = [{
-    logo: {
-      'path': 'svgs/4-wheels-narrow.svg'
-    }
-  }, {
-    logo: {
-      'path': 'svgs/4-wheels.svg'
-    }
-  },{
-    logo: {
-      'path': 'http://placehold.it/256/222'
-    }
-  }];
+  var logos = [
+  { logo: { 'path': 'svgs/4-wheels-narrow.svg' }},
+  { logo: { 'path': 'svgs/4-wheels.svg' } },
+  { logo: { 'path': 'svgs/1-wheel-red-decole.svg' }}
+];
 
-  $(document).ready(function() {
+  $(function() {
     $('.horizontal .horizontal-content').append(template({logos: logos}));
   });
 </script>
