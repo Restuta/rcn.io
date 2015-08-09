@@ -49,26 +49,32 @@ body {
   margin-bottom: 30px;
 }
 
-.logo.logo-256,
+.logo img {
+  background-color: white;
+}
+
 .logo.logo-256 > .img-responsive {
   min-width: 256px;
   min-height: 256px;
+  min-height: 256px;
+  max-height: 256px
 }
 
-.logo.logo-128,
 .logo.logo-128 > .img-responsive {
   min-width: 128px;
   min-height: 128px;
+  min-height: 128px;
+  max-height: 128px
 }
 
-.logo.logo-64 {
-  min-width: 64px;
-  min-height: 64px;
-}
 
 .logo.logo-64 > .img-responsive {
   min-width: 64px;
+  max-width: 64px;
   min-height: 64px;
+  max-height: 64px;
+
+  border-radius: 11.2px;
 }
 
 .horizontal,

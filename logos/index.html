@@ -17,19 +17,19 @@
     <div class="row row-margin-bottom">
       <div class="col-sm-12">
         <a class="thumbnail logo logo-256 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.x256}}" alt="">
+          <img class="img-responsive" src="{{logo.path}}" alt="">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
         <a class="thumbnail logo logo-128 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.x128}}" alt="">
+          <img class="img-responsive" src="{{logo.path}}" alt="">
         </a>
       </div>
       <div class="col-sm-6">
         <a class="thumbnail logo logo-64 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.x64}}" alt="">
+          <img class="img-responsive" src="{{logo.path}}" alt="">
         </a>
       </div>
     </div>
@@ -42,21 +42,15 @@
   var template = Handlebars.compile(source);
   var logos = [{
     logo: {
-      'x256': 'http://placehold.it/256/222',
-      'x128': 'http://placehold.it/128/222',
-      'x64': 'http://placehold.it/64/222'
+      'path': 'svgs/4-wheels-narrow.svg'
     }
   }, {
     logo: {
-      'x256': 'http://placehold.it/256/222',
-      'x128': 'http://placehold.it/128/222',
-      'x64': 'http://placehold.it/64/222'
+      'path': 'svgs/4-wheels.svg'
     }
   },{
     logo: {
-      'x256': 'http://placehold.it/256/222',
-      'x128': 'http://placehold.it/128/222',
-      'x64': 'http://placehold.it/64/222'
+      'path': 'http://placehold.it/256/222'
     }
   }];
 
