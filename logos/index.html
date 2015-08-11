@@ -12,42 +12,58 @@
 </head>
 
 <script id="vertical-logos-1" type="text/x-handlebars-template">
-  {{#each logos}}
-  <div class="col-sm-4">
     <div class="row row-margin-bottom">
-      <div class="col-sm-12">
-        <a class="thumbnail logo logo-256 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.path}}" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <a class="thumbnail logo logo-128 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.path}}" alt="">
-        </a>
-      </div>
-      <div class="col-sm-6">
-        <a class="thumbnail logo logo-64 pull-left" href="#">
-          <img class="img-responsive" src="{{logo.path}}" alt="">
-        </a>
-      </div>
-    </div>
+      {{#each logos as |logo|}}
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-6">
+              <a class="thumbnail logo logo-128 pull-left" href="#">
+                <img class="img-responsive" src="{{logo}}" alt="">
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a class="thumbnail logo logo-64 pull-left" href="#">
+                <img class="img-responsive" src="{{logo}}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
   </div>
-  {{/each}}
 </script>
 
 <script>
   var source = $("#vertical-logos-1").html();
   var template = Handlebars.compile(source);
-  var logos = [
-  { logo: { 'path': 'svgs/4-wheels-narrow.svg' }},
-  { logo: { 'path': 'svgs/4-wheels.svg' } },
-  { logo: { 'path': 'svgs/1-wheel-red-decole.svg' }}
-];
+  var logos1 = [
+    'svgs/4-wheels-narrow.svg',
+    'svgs/4-wheels.svg',
+    'svgs/1-wheel-red-decole.svg'
+  ];
+
+  var logos2 = [
+    'svgs/chainrings.svg',
+    'svgs/3x4 wheels.svg',
+    'svgs/3-wheels.svg'
+  ];
+
+  var logos3 = [
+    'svgs/3-wheels-straight.svg',
+    'svgs/4-wheels-narrow-inverted.svg',
+    'svgs/3-wheels-narrow-inverted.svg'
+  ];
+
+  var logos4 = [
+    'svgs/4x2-wheels-straight.svg',
+    'svgs/3x2-wheels-straight.svg'
+  ];
 
   $(function() {
-    $('.horizontal .horizontal-content').append(template({logos: logos}));
+    $('.horizontal')
+      .append(template({logos: logos1}))
+      .append(template({logos: logos2}))
+      .append(template({logos: logos3}))
+      .append(template({logos: logos4}));;
   });
 </script>
 
@@ -62,160 +78,15 @@
     <div class="page-header" id="banner">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="text-center">RCN logo candidates</h2>
+          <h2 class="text-center title"><span class="red">R</span>CN logo candidates</h2>
         </div>
       </div>
     </div>
 
     <div class="horizontal">
-      <p>HORIZONTAL</p>
-      <div class="row row-margin-bottom horizontal-content">
-        <!-- <div class="col-sm-4">
-          <div class="row row-margin-bottom">
-            <div class="col-sm-12">
-              <a class="thumbnail logo logo-256 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <a class="thumbnail logo logo-128 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a class="thumbnail logo logo-64 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="row row-margin-bottom">
-            <div class="col-sm-12">
-              <a class="thumbnail logo logo-256 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <a class="thumbnail logo logo-128 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a class="thumbnail logo logo-64 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="row row-margin-bottom">
-            <div class="col-sm-12">
-              <a class="thumbnail logo logo-256 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <a class="thumbnail logo logo-128 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a class="thumbnail logo logo-64 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-              </a>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-
-
-    <div class="squared-1">
-      <p>SQUARED-1</p>
-      <div class="row">
-        <div class="col-sm-4 col-lg-offset-1 col-lg-3">
-          <a class="thumbnail logo logo-256 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-          </a>
-        </div>
-        <div class="col-sm-2 col-lg-2">
-          <a class="thumbnail logo logo-128 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-          </a>
-          <a class="thumbnail logo logo-64 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-          </a>
-        </div>
-
-        <div class="col-sm-4 col-lg-offset-1 col-lg-3">
-          <a class="thumbnail logo logo-256 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-          </a>
-        </div>
-        <div class="col-sm-2 col-lg-2">
-          <div class="row">
-            <div class="col-sm-12">
-              <a class="thumbnail logo logo-128 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <a class="thumbnail logo logo-64 pull-left" href="#">
-                <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="squared-2">
-      <p>SQUARED-2</p>
-      <div class="row">
-        <div class="col-sm-4 col-lg-offset-1 col-lg-3">
-          <a class="thumbnail logo logo-256 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-          </a>
-        </div>
-        <div class="col-sm-2">
-          <a class="thumbnail logo logo-128" href="#">
-            <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-          </a>
-          <a class="thumbnail logo logo-64" href="#">
-            <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-          </a>
-        </div>
-
-        <div class="col-sm-4 col-lg-offset-1 col-lg-3">
-          <a class="thumbnail logo logo-256 pull-left" href="#">
-            <img class="img-responsive" src="http://placehold.it/256/222" alt="">
-          </a>
-        </div>
-        <div class="col-sm-2">
-          <a class="thumbnail logo logo-128" href="#">
-            <img class="img-responsive" src="http://placehold.it/128/222" alt="">
-          </a>
-          <a class="thumbnail logo logo-64" href="#">
-            <img class="img-responsive" src="http://placehold.it/64/222" alt="">
-          </a>
-        </div>
-      </div>
-
+        <!-- content is rendred here -->
     </div>
 
   </div>
-
 </body>
-
 </html>

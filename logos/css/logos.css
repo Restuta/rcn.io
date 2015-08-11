@@ -8,20 +8,18 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    /*background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;*/
+/*/    background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;*/
   }
 }
 
 
 body {
-  color: rgb(234, 234, 234);
+  color: #222;
 
   /* medium */
   /*background: url(http://griddle.it/940-12-30?color=1C1A1D&num=0) repeat-y center top;*/
 
-  /* large */
-  /*background: url(http://griddle.it/1140-12-30?color=1C1A1D&num=0) repeat-y center top;*/
-  background-color: #151515;
+  background-color: #fff;
 }
 
 .todo {
@@ -29,6 +27,15 @@ body {
   right:20px;
   top: 20px;
   z-index: 9000;
+}
+
+.title {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.red {
+  color: #FF4136;
 }
 
 .page-header h1 {
@@ -46,12 +53,13 @@ body {
 }
 
 .row.row-margin-bottom {
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 
 .logo img {
   background-color: white;
   border-radius: 2px;
+  border: 1px solid gainsboro;
 }
 
 .logo.logo-256 > .img-responsive {
@@ -75,6 +83,7 @@ body {
   min-height: 64px;
   max-height: 64px;
 
+  margin-top: 30px;
   border-radius: 11.2px;
 }
 
