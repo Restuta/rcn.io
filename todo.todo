@@ -1,10 +1,14 @@
+Ideas
+	- motto
+		- "Go as deep as you can" (regarding both deep profile wheels and deepa pain)
+
 Features
 	- distance between events on weekends
 		- same day events distance and time
 		- distance between Sat and Sunday events (estimated drive time, etc)
-		
+
 Open questions
-- how to match data from USA Cycling to Bike Reg? 
+- how to match data from USA Cycling to Bike Reg?
 	- "Race Ready" does this searching bikereg and it searches each word, which is fuzzy logic and leads to errors
 	- bike reg search url: https://www.bikereg.com/events/CALIFORNIA/?ns=
 	-- contacted BikeReg and they promised to extend their search API with ability to search by permit:
@@ -25,7 +29,7 @@ Open questions
 				- ajax: https://www.usacycling.org/events/state_search.php?ajax=2&state=CN&race=&fyear=2014&rrfilter=all
 						https://www.usacycling.org/events/state_search.php?ajax=2&state=CN&race=&fyear=2014&rrfilter=all
 				- paged ajax:	https://www.usacycling.org/events/state_search.php?state=CN&cnt=0&race=&rrfilter=rr&fyear=2014&ajax=2
-					notice `cnt` parameter, it used to skip N races and above URL always return 
+					notice `cnt` parameter, it used to skip N races and above URL always return
 		- events results by year: http://www.usacycling.org/results/browse.php?state=CN&race=&fyear=2014
 	- NCNCA: Northen California and Nevada only :?
 	- BikeReg and other registration services
