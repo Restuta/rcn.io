@@ -97,3 +97,7 @@ body {
 .squared-2 .logo-64 {
   margin-top: 60px;
 }
+
+.done {
+  text-decoration: line-through;
+}
