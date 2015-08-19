@@ -62,12 +62,10 @@ body {
   border: 1px solid gainsboro;
 }
 
-.logo.logo-256 > .img-responsive {
-  min-width: 256px;
-  min-height: 256px;
-  min-height: 256px;
-  max-height: 256px
+.logo-128 img {
+  border: none;
 }
+
 
 .logo.logo-128 > .img-responsive {
   min-width: 128px;
