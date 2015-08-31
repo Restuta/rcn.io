@@ -99,3 +99,10 @@ body {
 .done {
   text-decoration: line-through;
 }
+
+.caption {
+  color: #B7B7B7;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E6E6E6;
+  font-weight: 300;
+}

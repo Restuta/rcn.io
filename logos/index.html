@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>RCN logos</title>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'> -->
+
   <link rel="stylesheet" href="css/bootstrap-darkly.min.css">
   <link rel="stylesheet" href="css/logos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="bower_components/handlebars/handlebars.min.js"></script>
 </head>
@@ -16,14 +17,14 @@
       {{#each logos as |logo|}}
         <div class="col-sm-4">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-7 col-md-6">
               <a class="thumbnail logo logo-128 pull-left" href="#">
-                <img class="img-responsive" src="{{logo}}" alt="">
+                <img class="img-responsive" src="{{logo.name}}" alt="">
               </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5 col-md-6">
               <a class="thumbnail logo logo-64 pull-left" href="#">
-                <img class="img-responsive" src="{{logo}}" alt="">
+                <img class="img-responsive" src="{{logo.name}}" alt="">
               </a>
             </div>
           </div>
@@ -35,60 +36,57 @@
 <script>
   var source = $("#vertical-logos-1").html();
   var template = Handlebars.compile(source);
-  var logos1 = [
-    'svgs/4-wheels-narrow.svg',
-    'svgs/4-wheels.svg',
-    'svgs/1-wheel-red-decole.svg'
-  ];
+  var allLogos = [
+    { name: 'svgs/4-wheels-narrow.svg'},
+    { name: 'svgs/4-wheels.svg'},
+    { name: 'svgs/1-wheel-red-decole.svg'},
 
-  var logos2 = [
-    'svgs/chainrings.svg',
-    'svgs/3x4 wheels.svg',
-    'svgs/3-wheels.svg'
-  ];
+    { name: 'svgs/chainrings.svg'},
+    { name: 'svgs/3x4 wheels.svg'},
+    { name: 'svgs/3-wheels.svg'},
 
-  var logos3 = [
-    'svgs/3-wheels-straight.svg',
-    'svgs/4-wheels-narrow-inverted.svg',
-    'svgs/3-wheels-narrow-inverted.svg'
-  ];
+    { name: 'svgs/3-wheels-straight.svg'},
+    { name: 'svgs/4-wheels-narrow-inverted.svg', winner: true},
+    { name: 'svgs/3-wheels-narrow-inverted.svg'},
 
-  var logos4 = [
-    'svgs/4x2-wheels-straight.svg',
-    'svgs/3x2-wheels-straight.svg',
-    'svgs/1-wheel-combined.svg'
-  ];
+    { name: 'svgs/4x2-wheels-straight.svg'},
+    { name: 'svgs/3x2-wheels-straight.svg'},
+    { name: 'svgs/1-wheel-combined.svg'},
 
-  var logos5 = [
-    'svgs/riders.svg',
-    'svgs/wheel-and-fork.svg',
-    'svgs/two-bikes-like-googles.svg'
-  ];
+    { name: 'svgs/riders.svg'},
+    { name: 'svgs/wheel-and-fork.svg'},
+    { name: 'svgs/two-bikes-like-googles.svg'},
 
-  var logos6 = [
-    'svgs/face.svg',
-    'svgs/2-wheels.svg',
-    'svgs/2-wheels-bottom.svg'
-  ];
+    { name: 'svgs/face.svg'},
+    { name: 'svgs/2-wheels.svg'},
+    { name: 'svgs/2-wheels-bottom.svg'} ,
 
-  var logos7 = [
-    'svgs/R-wheels.svg',
-    'svgs/monogram_symmetric.svg',
+    { name: 'svgs/R-wheels.svg' } ,
+    { name: 'svgs/monogram_symmetric.svg', winner: true},
   ];
 
 
   $(function() {
+    //draw winner logos
+    _.chain(allLogos)
+      .filter(function(item) {
+        return item.winner === true;
+      })
+      .chunk(3)
+      .each(function(chunk) {
+        $('.winners').append(template({logos: chunk}));
+      })
+      .value();
 
-    
 
-    $('.horizontal')
-      .append(template({logos: logos1}))
-      .append(template({logos: logos2}))
-      .append(template({logos: logos3}))
-      .append(template({logos: logos4}))
-      .append(template({logos: logos5}))
-      .append(template({logos: logos6}))
-      .append(template({logos: logos7}));
+    _.chain(allLogos)
+      .chunk(3)
+      .each(function(chunk) {
+        $('.horizontal').append(template({logos: chunk}));
+      })
+      .value();
+
+
   });
 </script>
 
@@ -108,9 +106,23 @@
       </div>
     </div>
 
-    <div class="winners">
-
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="caption">Pre-selected</h4>
+      </div>
     </div>
+
+    <div class="winners">
+        <!-- content is rendred here -->
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="caption">All logos</h4>
+      </div>
+    </div>
+
+
 
     <div class="horizontal">
         <!-- content is rendred here -->
