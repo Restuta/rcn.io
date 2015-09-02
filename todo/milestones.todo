@@ -1,9 +1,15 @@
 Internal MVP 1.0
--- Main events page with fake data
+-- refine Pocket
+-- main events page with fake data
 	- generate fake data
 	- sketch + draft
+	- pick colors and fonts
+		- setup a styleguide
+		- allow to easely compare variations
 	- pick UI stack
 		- Ember
 		- React and Redux
 		- Elm
 -- static only: no need to figure out how to deploy yet
+-- basic card UI
+	- sketch
