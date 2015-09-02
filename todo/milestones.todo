@@ -1,0 +1,9 @@
+Internal MVP 1.0
+-- Main events page with fake data
+	- generate fake data
+	- sketch + draft
+	- pick UI stack
+		- Ember
+		- React and Redux
+		- Elm
+-- static only: no need to figure out how to deploy yet
