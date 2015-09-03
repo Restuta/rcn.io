@@ -1,6 +1,7 @@
 Internal MVP 1.0
 -- refine Pocket
 -- main events page with fake data
+	- define event structure in JSON (I already have it)
 	- generate fake data
 	- sketch + draft
 	- pick colors and fonts
@@ -13,3 +14,34 @@ Internal MVP 1.0
 -- static only: no need to figure out how to deploy yet
 -- basic card UI
 	- sketch
+
+Public MVP 1.0 (when we show it to others)
+ - calendar of events: that is better than NCNCA
+ - cards with easely available info
+ 	- address (distance + travel time)
+ 	- name
+ 	- type
+ - can pick/select events (requires storage)
+ - login with email + license no
+ - great UX (we think it's great and one random person does)
+ - others who picked that event are shown 
+
+Public MVP 2.0
+ - start time by category
+ - support for all the categories
+ - sync with Google Cal
+
+RC 1.0
+ - public blog
+ - notifications about upcoming registration opening/closing
+ - notifications about upcoming events
+ - full event info
+
+RC 1.1
+ - support for teams
+ 	- team roaster
+ 	- join/leave team
+ 	- brows teams
+
+RC 1.2
+- individual day planning: what we do manually calculating when to wake up etc
