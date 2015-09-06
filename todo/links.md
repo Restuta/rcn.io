@@ -11,9 +11,16 @@
 ### Colors
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
 
+### CSS
+* CodePens
+  * [Flipping icons](http://codepen.io/llull/pen/znkFs)
+  * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
+  * [Full Screen Flat calendar](http://codepen.io/rickyeckhardt/pen/EFgKj)
+
 ### Inspiration
 * [FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture
 * [Nice Article Layout](http://heartbleed.com/) (Heartblead Bug)
+* [Nice iconss on the sides](http://dataparis.io/#)
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/)
@@ -24,6 +31,7 @@
 
 ### JS
 * [Make things draggable](https://github.com/desandro/draggabilly)
+
 
 # Data
 * [Mongoose](http://mongoosejs.com/) elegant mongodb object modeling for node.js
