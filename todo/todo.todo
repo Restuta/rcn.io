@@ -21,7 +21,7 @@ Open questions
 	- USA Cycling
 		- upcoming events can be grabbed in XML: it has link to bikereg
 			- https://www.usacycling.org/xml/events.php?u=Restuta&p=<pwd>
-		- events
+		-- events
 			- results http://www.usacycling.org/results/browse.php?state=CN&race=Road&fyear=2014
 			- http://www.usacycling.org/events/?state=CN&race=&fyear=&rrfilter=all
 			- :`/events/state_search.php`
@@ -30,7 +30,11 @@ Open questions
 						https://www.usacycling.org/events/state_search.php?ajax=2&state=CN&race=&fyear=2014&rrfilter=all
 				- paged ajax:	https://www.usacycling.org/events/state_search.php?state=CN&cnt=0&race=&rrfilter=rr&fyear=2014&ajax=2
 					notice `cnt` parameter, it used to skip N races and above URL always return
-		- events results by year: http://www.usacycling.org/results/browse.php?state=CN&race=&fyear=2014
+		-- events results by year: http://www.usacycling.org/results/browse.php?state=CN&race=&fyear=2014
+		-- rankings
+			- by licence id https://www.usacycling.org/myusac/index.php?pagename=myrank&compid=421199
+		--- stats
+			
 	- NCNCA: Northen California and Nevada only :?
 	- BikeReg and other registration services
 		- https://www.bikereg.com/events/CALIFORNIA/?ns=
