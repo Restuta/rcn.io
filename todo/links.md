@@ -1,15 +1,31 @@
+
 # Design
+### UX
+* Checklists
+  * [UX Checklist](http://uxchecklist.github.io/)
+  * [Visual Designers Checklist](http://webdesignerschecklist.com/)
+  * [Usability Checklist](https://userium.com/)
+  *  [IDX Checklist](http://ixdchecklist.com/)
+* [Create Personas](http://personapp.io/help/)
+
 ### Templates, design assets etc
 * [UI8](https://ui8.net/category/all)
 * [Pixelapse](https://www.pixelapse.com/explore)
 
 ### Fonts
 * [What **Font** size to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
+* [Fonts In Use](http://fontsinuse.com/)
+* [LL Circular font](https://twitter.com/tomdale/status/554378946532225025)
+* [Aleo](http://www.fontfabric.com/aleo-free-font/), designed as slab serif companion for Lato
+* Pairings
+  * Playfair Display + Fira Sans (as per Typewolf)
+* [The Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts) by Typewolf
 
 ### Icons
 * [Noun Project](https://thenounproject.com/search/?q=cycling)
 * [Flaticon](http://www.flaticon.com/categories/sports/13)
 * svg: [Evil Icons](http://evil-icons.io/)
+* [Fonticons](https://fonticons.com/) 💰
 
 
 ### Colors
@@ -32,6 +48,7 @@
   * previously with different colors while you scroll
 * [Nice background and overall feel](https://hacksummit.org/)
 * [Bespoke-fx](http://ebow.github.io/bespoke-fx/) - great colors of background and text
+* [GyroSco.pe](https://gyrosco.pe/aprilzero/) - great design + []
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/)
@@ -65,3 +82,5 @@
 * [12 factor app by Heroku](http://12factor.net/)
 * [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [Real-time apps with Node, Codeschool](https://www.codeschool.com/screencasts/soup-to-bits-real-time-web-with-node-js/)
+* [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
+  * [part 2](http://aprilzero.com/journal/making-of-aprilzero-part-2/)
