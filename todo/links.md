@@ -20,13 +20,13 @@
 * Pairings
   * Playfair Display + Fira Sans (as per Typewolf)
 * [The Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts) by Typewolf
+* [How to choose a typeface](http://www.forrestgoods.com/shop/how-to-choose-a-typeface) (poster)
 
 ### Icons
 * [Noun Project](https://thenounproject.com/search/?q=cycling)
 * [Flaticon](http://www.flaticon.com/categories/sports/13)
 * svg: [Evil Icons](http://evil-icons.io/)
 * [Fonticons](https://fonticons.com/) 💰
-
 
 ### Colors
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
@@ -35,6 +35,7 @@
 ### CSS
 * [Skeleton](http://getskeleton.com/) - responsive boilerplate
 * [Hover.css](http://ianlunn.github.io/Hover/)
+* [Animated Headlines](http://codyhouse.co/demo/animated-headlines/)
 * CodePens
   * [Flipping icons](http://codepen.io/llull/pen/znkFs)
   * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
@@ -52,6 +53,7 @@
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/)
+* [Design on Paper](https://www.non-app.com/mockup/) (printable PDF)
 
 # Tools
 ### Deployment and build
@@ -59,6 +61,11 @@
 
 ### JS
 * [Make things draggable](https://github.com/desandro/draggabilly)
+*
+
+### Other
+* [Cronofy, Connecting to Calendars](https://www.cronofy.com/)
+  * Google and iOS
 
 
 # Data
@@ -76,6 +83,7 @@
 
 ### App Platforms
 * [ionic](http://ionicframework.com/getting-started/)
+* [reapp](http://reapp.io/) - easier way to build apps with React and JS
 
 ### To Read
 * [React General Resources](https://github.com/enaqx/awesome-react)
@@ -84,3 +92,5 @@
 * [Real-time apps with Node, Codeschool](https://www.codeschool.com/screencasts/soup-to-bits-real-time-web-with-node-js/)
 * [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
   * [part 2](http://aprilzero.com/journal/making-of-aprilzero-part-2/)
+* [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
+* [Pushpin, new way to build realtime Apps](http://pushpin.org/about/#how-it-works)
