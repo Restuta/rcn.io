@@ -1,2 +1,7 @@
 Design
  - use grid
+ 	- which grid?
+ - create CSS guideline (practices)
+ 	- can be taken from here: http://www.basscss.com/docs/guides/basics/
+ 	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
+ 	- compare it to BS4
