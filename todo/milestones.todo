@@ -1,6 +1,6 @@
 Internal MVP 1.0
--- refine Pocket
--- main events page with fake data
+--	refine Pocket
+-- 	main events page with fake data
 	- define event structure in JSON (I already have it)
 	- generate fake data
 	- sketch + draft

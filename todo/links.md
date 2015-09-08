@@ -21,6 +21,8 @@
   * Playfair Display + Fira Sans (as per Typewolf)
 * [The Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts) by Typewolf
 * [How to choose a typeface](http://www.forrestgoods.com/shop/how-to-choose-a-typeface) (poster)
+* [Wordmark.it](http://wordmark.it/) - Helps you choose fonts
+  * uses local fonts
 
 ### Icons
 * [Noun Project](https://thenounproject.com/search/?q=cycling)
@@ -33,6 +35,7 @@
 * [Chroma.js - Color Scale Helper](http://gka.github.io/palettes/#diverging|c0=lightyellow,orange,deeppink,darkred|c1=lightyellow,orange,deeppink,darkred|steps=7|bez0=1|bez1=1|coL0=1|coL1=1)
 
 ### CSS
+* [Tachyons](http://tachyons.io) - CSS for designing faster than the speed of light
 * [Skeleton](http://getskeleton.com/) - responsive boilerplate
 * [Hover.css](http://ianlunn.github.io/Hover/)
 * [Animated Headlines](http://codyhouse.co/demo/animated-headlines/)
@@ -61,7 +64,11 @@
 
 ### JS
 * [Make things draggable](https://github.com/desandro/draggabilly)
-*
+* Flux
+  * [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
+  * [Redux GitBook](https://rackt.github.io/redux/index.html)
+* React
+  * [List of Resources](https://github.com/enaqx/awesome-react)
 
 ### Other
 * [Cronofy, Connecting to Calendars](https://www.cronofy.com/)
@@ -77,16 +84,22 @@
 * Visualization
   * [Driven By Data, work by NY times graphics editor](http://driven-by-data.net/)
   * [Variance](https://variancecharts.com/examples/) 💰(free for OSS)
+  * [Tiny Chart](http://tinychart.co/)
 
 # Other
 * [Superb-like words](https://github.com/sindresorhus/superb)
 
 ### App Platforms
 * [ionic](http://ionicframework.com/getting-started/)
+  * Angular
 * [reapp](http://reapp.io/) - easier way to build apps with React and JS
+  * not very active
+  * small community
 
-### To Read
-* [React General Resources](https://github.com/enaqx/awesome-react)
+### To Read/Watch
+* React
+  * [React General Resources](https://github.com/enaqx/awesome-react)
+  * [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
 * [12 factor app by Heroku](http://12factor.net/)
 * [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [Real-time apps with Node, Codeschool](https://www.codeschool.com/screencasts/soup-to-bits-real-time-web-with-node-js/)
