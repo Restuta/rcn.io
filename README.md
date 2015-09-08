@@ -16,3 +16,7 @@
     https://www.calendarsquick.com
 * Logo
     https://www.graphicsprings.com/your-logo-files
+
+### Racers data files
+
+* USA stats https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
