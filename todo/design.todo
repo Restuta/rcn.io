@@ -1,4 +1,11 @@
 Design
+ - fonts
+ 	- Body
+ 		- Lato
+ 		- Source Sans Pro
+ 		- Montserrat alternative to Proxima Nova
+ 			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
+ 	- Headings: 
  - use grid
  	- which grid?
  - create CSS guideline (practices)
