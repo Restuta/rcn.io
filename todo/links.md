@@ -15,7 +15,7 @@
 ### Templates, design assets, themes
 * [UI8](https://ui8.net/category/all)
 * [Pixelapse](https://www.pixelapse.com/explore)
-* [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, bootstrap3 theme
+* [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Fonts
 * [ ][Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
