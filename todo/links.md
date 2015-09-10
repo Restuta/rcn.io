@@ -85,7 +85,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
-* [Ver Nice Landing Page](https://www.duolingo.com/)
+* [Very Nice Landing Page](https://www.duolingo.com/)
 * [Treehouse](http://teamtreehouse.com/library) nice page design, colors, layout, icons
 * [FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture
 * [Nice Article Layout](http://heartbleed.com/) (Heartblead Bug)
