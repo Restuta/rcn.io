@@ -18,7 +18,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Fonts
-* [ ][Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
+* [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
 * [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
 * [See fonts in use](http://fontsinuse.com/)
