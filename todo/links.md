@@ -10,7 +10,7 @@
 
 * [Create Personas](http://personapp.io/help/)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
-* [Typeform](http://www.typeform.com/) - very nice US for sign-up flow
+* [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
 
 ### Templates, design assets, themes
 * [UI8](https://ui8.net/category/all)
@@ -48,8 +48,10 @@
 * [Ego Icons](http://ego-icons.com/?ref=producthunt) - icons with personality
 * [Create Perfect Social Icons](http://perfecticons.com/)
 * [Iconjar](http://geticonjar.com/) - organize, search and use icons
+* [Dream Icons](http://dreamicons.net/#charitable) - 💰$10 for charity
 
 ### Colors
+* [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
 * [Coolors.cc](https://coolors.co/) - color schemes generator
 * [Color Dot](http://color.hailpixel.com/) - click and pick colors + unique URL for any amount
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
@@ -63,6 +65,7 @@
 * [UI Gradients](http://uigradients.com/#ManofSteel)
 * [ ] [clrs.cc](http://clrs.cc/a11y/) - accessibility
 * [Gradient Explorer](http://jxnblk.com/shade/)
+* [Material Design colors](https://www.google.com/design/spec/style/color.html#color-color-palette)
 
 ### CSS
 * [Codyhouse](http://codyhouse.co/) - A free library of HTML, CSS, JS nuggets
@@ -159,11 +162,12 @@
 
 
 ### To Read/Watch
-* [ ] React
+* [ ] React / Flux
   * [ ] [React General Resources](https://github.com/enaqx/awesome-react)
   * [ ] [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
   * [ ] [Rethinking Best Practices](http://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html)
   * [ ] [Architecting React Apps with Flux](http://tylermcginnis.com/reactjs-tutorial-pt-3-architecting-react-js-apps-with-flux/) - this is part 3
+  * [ ] [Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
 * [ ] [12 factor app by Heroku](http://12factor.net/)
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
