@@ -12,6 +12,10 @@
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
 
+### Grid
+* [1200px Grid System](http://1200px.com/)
+* [ZURB, Grid Builder](http://zurb.com/playground/css-grid-builder)
+
 ### Templates, design assets, themes
 * [UI8](https://ui8.net/category/all)
 * [Pixelapse](https://www.pixelapse.com/explore)
@@ -115,6 +119,8 @@
 
 ### Deployment and build
 * [CodeShip](https://codeship.com/pricing)
+* Webpack
+  * [How To](https://github.com/petehunt/webpack-howto)
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
@@ -149,6 +155,9 @@
   * [Driven By Data, work by NY times graphics editor](http://driven-by-data.net/)
   * [Variance](https://variancecharts.com/examples/) 💰(free for OSS)
   * [Tiny Chart](http://tinychart.co/) - super-simple x-y chart
+
+### Sources
+  * [Centuries in CA](http://www.dssf.org/dssf_html/century.php)
 
 # Other
 * [Superb-like words](https://github.com/sindresorhus/superb)
