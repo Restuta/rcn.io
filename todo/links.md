@@ -89,6 +89,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Design Awwwards](http://www.awwwards.com/)
 * [Very Nice Landing Page](https://www.duolingo.com/)
 * [Treehouse](http://teamtreehouse.com/library) nice page design, colors, layout, icons
 * [FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture
@@ -119,6 +120,9 @@
 
 ### Deployment and build
 * [CodeShip](https://codeship.com/pricing)
+* [Circle CI](https://circleci.com)
+  * [Shopify Story](https://circleci.com/stories/shopify)
+* [Codecov](https://codecov.io/#pricing)
 * Webpack
   * [How To](https://github.com/petehunt/webpack-howto)
 
@@ -171,7 +175,14 @@
 
 
 ### To Read/Watch
+* [ ] Webpack
+  * [ ] [Introduction To Webpack](https://www.youtube.com/watch?v=RKqRj3VgR_c)
+  * [ ] [Getting Started Video](https://www.youtube.com/watch?v=TaWKUpahFZM0)
+  * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] React / Flux
+  * [ ] [ES6 modules, Mozilla](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+  * [ ] [ES6 modules, 2ality.com](http://www.2ality.com/2014/09/es6-modules-final.html)
+  * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
   * [ ] [React General Resources](https://github.com/enaqx/awesome-react)
   * [ ] [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
   * [ ] [Rethinking Best Practices](http://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html)
@@ -180,11 +191,10 @@
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
 * [ ] [12 factor app by Heroku](http://12factor.net/)
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
-* [ ] [Real-time apps with Node, Codeschool](https://www.codeschool.com/screencasts/soup-to-bits-real-time-web-with-node-js/)
 * [ ] [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
   * [ ] [part 2](http://aprilzero.com/journal/making-of-aprilzero-part-2/)
 * [ ] [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
 * [ ] [Pushpin, new way to build realtime Apps](http://pushpin.org/about/#how-it-works)
-* [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] [Web Afer Tomorrow](http://tonsky.me/blog/the-web-after-tomorrow/)
 * [ ] [Flexbox in 5 mins](http://flexboxin5.com/)
+* [ ] [Real-time apps with Node, Codeschool](https://www.codeschool.com/screencasts/soup-to-bits-real-time-web-with-node-js/)

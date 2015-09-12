@@ -13,3 +13,12 @@ Design
  	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
  	- compare it to BS4
  --- Good UI Datastories:http://www.goodui.org/
+
+Architecture Design
+	- React
+	- Redux
+	- Webpack 
+		- with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
+			- webpack 1 can be used with Babel to use ES6 modules
+				-- does this mean that webpack understands transpiled code like it would understand commonJS one?
+		
