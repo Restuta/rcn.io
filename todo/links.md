@@ -9,6 +9,7 @@
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
 
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
+  * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
 * [Create Personas](http://personapp.io/help/)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
@@ -127,6 +128,13 @@
 * [Codecov](https://codecov.io/#pricing)
 * Webpack
   * [How To](https://github.com/petehunt/webpack-howto)
+  * [Boilerplates]
+    * [react-seed](https://github.com/badsyntax/react-seed)
+      * ES6, hot-reloader, Local CSS, Karma, Mocha, Chai, Basic Flux, React Router, Material UI
+      * 153 commits, 210 stars, last commit month ago (at the time of writing)
+    * [react-webpack-boilerplate, ](https://github.com/srn/react-webpack-boilerplate)
+      * SASS, hot-reloader
+      * 103 commits, 57 stars, 1.5 month ago
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
@@ -138,6 +146,7 @@
 * Flux
   * [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
   * [Redux GitBook](https://rackt.github.io/redux/index.html)
+  * [Flux Comparison](https://github.com/voronianski/flux-comparison)
 * React
   * [List of Resources](https://github.com/enaqx/awesome-react)
 
@@ -184,9 +193,11 @@
   * [ ] [Introduction To Webpack](https://www.youtube.com/watch?v=RKqRj3VgR_c)
   * [ ] [Getting Started Video](https://www.youtube.com/watch?v=TaWKUpahFZM0)
   * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
+* [ ] [Mixins are dead](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
 * [ ] React / Flux
   * [ ] [ES6 modules, Mozilla](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
   * [ ] [ES6 modules, 2ality.com](http://www.2ality.com/2014/09/es6-modules-final.html)
+  * [ ] [Flux Comparison](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example)
   * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
   * [ ] [React General Resources](https://github.com/enaqx/awesome-react)
   * [ ] [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
