@@ -57,6 +57,7 @@
 * [Dream Icons](http://dreamicons.net/#charitable) - 💰$10 for charity
 
 ### Colors
+* [colourco.de](http://colourco.de/)
 * [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
 * [Coolors.cc](https://coolors.co/) - color schemes generator
 * [Color Dot](http://color.hailpixel.com/) - click and pick colors + unique URL for any amount
@@ -135,6 +136,8 @@
     * [react-webpack-boilerplate, ](https://github.com/srn/react-webpack-boilerplate)
       * SASS, hot-reloader
       * 103 commits, 57 stars, 1.5 month ago
+    * [List of React Boilerplates](https://github.com/gaearon/react-hot-loader/blob/master/docs/README.md#starter-kits)
+    * [React Universal](https://github.com/erikras/react-redux-universal-hot-example)
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
@@ -187,6 +190,7 @@
 
 ### To Read/Watch
 * CSS/SASS
+  * [ ] [PostCSS](http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/) 
   * [ ] [MVCSS](http://mvcss.io/)
   * [ ] [A Semantic Kind of Blue](http://eoinkelly.info/blog/2012/07/25/a-semantic-kind-of-blue/)
 * [ ] Webpack
