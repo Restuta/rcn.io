@@ -6,8 +6,9 @@
   * [ ] [UX Checklist](http://uxchecklist.github.io/)
   * [ ] [Visual Designers Checklist](http://webdesignerschecklist.com/)
   * [ ] [Usability Checklist](https://userium.com/)
-  *  [ ] [IDX Checklist](http://ixdchecklist.com/)
+  * [ ] [IDX Checklist](http://ixdchecklist.com/)
 
+* [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
 * [Create Personas](http://personapp.io/help/)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
@@ -72,6 +73,7 @@
 * [Material Design colors](https://www.google.com/design/spec/style/color.html#color-color-palette)
 
 ### CSS
+* [MVCSS](http://mvcss.io/)
 * [Codyhouse](http://codyhouse.co/) - A free library of HTML, CSS, JS nuggets
 * [Tachyons](http://tachyons.io) - CSS for designing faster than the speed of light
 * [Skeleton](http://getskeleton.com/) - responsive boilerplate
@@ -175,6 +177,9 @@
 
 
 ### To Read/Watch
+* CSS/SASS
+  * [ ] [MVCSS](http://mvcss.io/)
+  * [ ] [A Semantic Kind of Blue](http://eoinkelly.info/blog/2012/07/25/a-semantic-kind-of-blue/)
 * [ ] Webpack
   * [ ] [Introduction To Webpack](https://www.youtube.com/watch?v=RKqRj3VgR_c)
   * [ ] [Getting Started Video](https://www.youtube.com/watch?v=TaWKUpahFZM0)

@@ -1,13 +1,25 @@
 Design
- --- Fonts
- 	- Body
- 		- Lato
+--- Statements
+	- From Design For Hackers
+		- For the beginning designer, success is all about reducing variables. 
+		- About fonts
+			- Georgia for a sophisticated serif
+			- Helvetica for a clean and neutral design
+			- Lato for a friendly and "natural" look
+			- Raleway for a more modern geometric look
+--- Fonts
+	- Size: 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
+	- Body
+ 		- Lato: friendly and natural
  		- Source Sans Pro
+ 		- Raleway: modern, geometric
  		- Montserrat alternative to Proxima Nova
  			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
  	- Headings: 
  --- Use Grid
  	- which grid?
+ --- Color
+ 	- pick one color and 2 shades of grey
  --- Create CSS guideline (practices)
  	- can be taken from here: http://www.basscss.com/docs/guides/basics/
  	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
