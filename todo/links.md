@@ -112,6 +112,8 @@
   * Nice use of Maps
   * syncronized view of a road trip
 * [Codyhouse](http://codyhouse.co/) - A free library of HTML, CSS, JS nuggets
+* For Blog/articles
+  * [Text + Photo layout](https://readymag.com/designs/new-york/2/)
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/) - mobile-oriented prototyping
