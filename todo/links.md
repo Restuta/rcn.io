@@ -7,7 +7,7 @@
   * [ ] [Visual Designers Checklist](http://webdesignerschecklist.com/)
   * [ ] [Usability Checklist](https://userium.com/)
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
-
+* [ ] [UX 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
   * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
 * [Create Personas](http://personapp.io/help/)
@@ -24,6 +24,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Fonts
+* [ ] [Font Pairing](http://school.readymag.com/intro/)
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
 * [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
@@ -93,6 +94,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Top Nav animation + loading in menu icon](http://polygraw.com/)
 * [Design Awwwards](http://www.awwwards.com/)
 * [Very Nice Landing Page](https://www.duolingo.com/)
 * [Treehouse](http://teamtreehouse.com/library) nice page design, colors, layout, icons
@@ -146,10 +148,6 @@
 * [Make things draggable](https://github.com/desandro/draggabilly)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Selectize.js](http://brianreavis.github.io/selectize.js/) - jQuery based hybrid of select box and text box
-* Flux
-  * [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
-  * [Redux GitBook](https://rackt.github.io/redux/index.html)
-  * [Flux Comparison](https://github.com/voronianski/flux-comparison)
 * React
   * [List of Resources](https://github.com/enaqx/awesome-react)
 
@@ -190,7 +188,10 @@
 
 ### To Read/Watch
 * CSS/SASS
-  * [ ] [PostCSS](http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/) 
+  * [ ] [PostCSS](http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/)
+    * [x] [PostCSS Misconceptions](https://medium.com/@ddprrt/postcss-misconceptions-faf5dc5038df)
+    * [ ] [De-confusing Pre- and Post-processing](https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3)
+    * [ ] [How to future-proff Twbs with PostCSS](https://github.com/twbs/bootstrap/issues/16366)
   * [ ] [MVCSS](http://mvcss.io/)
   * [ ] [A Semantic Kind of Blue](http://eoinkelly.info/blog/2012/07/25/a-semantic-kind-of-blue/)
 * [ ] Webpack
@@ -199,6 +200,11 @@
   * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] [Mixins are dead](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
 * [ ] React / Flux
+  * [ ] [An Application Architecture for React](http://facebook.github.io/react/blog/2014/05/06/flux.html)
+  * [ ] [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
+  * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
+  * [ ] [Flux Comparison](https://github.com/voronianski/flux-comparison)
+
   * [ ] [ES6 modules, Mozilla](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
   * [ ] [ES6 modules, 2ality.com](http://www.2ality.com/2014/09/es6-modules-final.html)
   * [ ] [Flux Comparison](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example)

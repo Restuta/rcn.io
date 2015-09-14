@@ -20,17 +20,30 @@ Design
  	- which grid?
  --- Color
  	- pick one color and 2 shades of grey
- --- Create CSS guideline (practices)
+ --- CSS
+ 	- use SASS for pre-processing and main styles
+ 		- use Twbs SASS
+ 	- use Postcss for post-processing:condider Postcss to be running only in prod configuration if it takes dev-time
+ 		- use Autoprefixer
+ --- Create CSS guideline (practices) 
  	- can be taken from here: http://www.basscss.com/docs/guides/basics/
  	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
  	- compare it to BS4
  --- Good UI Datastories:http://www.goodui.org/
 
+Tools
+	- Dev
+		- Live Reload: Browser Sync
+
+
 Architecture Design
-	- React
-	- Redux
-	- Webpack 
-		- with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
-			- webpack 1 can be used with Babel to use ES6 modules
-				-- does this mean that webpack understands transpiled code like it would understand commonJS one?
-		
+	- UI
+		- React
+	- Client App Architecture
+		- Redux
+	- Build Tools
+		- Webpack 
+			- with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
+				- webpack 1 can be used with Babel to use ES6 modules
+					-- does this mean that webpack understands transpiled code like it would understand commonJS one?
+			
