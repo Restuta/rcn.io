@@ -216,9 +216,10 @@
   * [ ] [Rethinking Best Practices](http://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html)
   * [ ] [Architecting React Apps with Flux](http://tylermcginnis.com/reactjs-tutorial-pt-3-architecting-react-js-apps-with-flux/) - this is part 3
   * [ ] [Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
+  * [ ] [Good bye Flux Welcome Bacon](https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7)
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
 * [ ] Design
-  * [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
+  * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
 * [ ] [12 factor app by Heroku](http://12factor.net/)
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [ ] [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
