@@ -1,22 +1,51 @@
-#### [Useful Resources](todo/links.md)
+### What is [rcn.io](http://rcn.io)?
+It's is a project for re-shaping bike racing landscape in CA and USA. Our aim is to bring more people to the sport and we have a plan on how to do it _right_.
 
-# Stuff to use
+Currently we think that community of races has no good tools to:
+* **plan their season**
+  * decide which are A or B events and let you teammates and coach know
+  * inspire teammates to come and race together
+* **discover upcoming events** and details about them _(yeah NCNCA calendar is there and BikeReg, but do you really like them? We don't as well as our racing buddies.)_
+* **see who is coming** to a race early _(not when BikeReg registration is open, currenly there is not way to say "I am coming thing", but without commitment, just like you would for facebook events)_
+* **see in one place all event details**
+  * event name, type, length, elevation gain,  etc.
+  * distance to the events
+  * start times for categories I can race in
+  * link to a strava route
+  * history of that event and participation from past years
+  * what time to wake up to be there on-time
+  * is there anybody to carpool/share hotel with
+  * clean and reliable way to find start location _(SMS with google app link to your phone in the morning would be neat, so you don't have to go to NCNCA, open pdf flyer, read where location is and translate it to your google app instructions)_
+* **understand who are other racers** they are racing with
 
-* Formatting dates
-    http://momentjs.com/
-* [Bootstrap theme](http://bootstrap-calendar.azurewebsites.net/index-bs3.html)
-* [For JSON manipulation from command line](http://stedolan.github.io/jq/tutorial/)
+Currently we are building a product to help with the above.
 
-### Design examples
+We also think that _promoters_ are magical unicorns who were sent to our planet by divine intervention and we are extremely lucky to have them. It's just super hard to organize bike races currently and they are definitely not and ordinal humans. It takes skill and enourmous effort.
 
-* http://fltr.io/?left=true
-* inspiration http://designspiration.net/
-* pinterest calendars http://www.pinterest.com/search/pins/?q=web%20calendar&term_meta%5B%5D=web%7Ctyped&term_meta%5B%5D=calendar%7Ctyped
-* Example of different calendar layouts
-    https://www.calendarsquick.com
-* Logo
-    https://www.graphicsprings.com/your-logo-files
+![](https://media0.giphy.com/media/DkwtmuLxFafVm/200.gif)
 
-### Racers data files
 
-* USA stats https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
+So our next steps would be to work with them closely and simplify it so we would have more local events.
+
+### Our philosophy
+
+Everything is open source and free forever.
+
+Data is owned by community.
+
+Stay small.
+
+Race safe.
+
+---
+
+#### [Neat Resources](todo/links.md)
+
+## Design
+[Calendar page](https://wireframe.cc/2GVQd5) (wireframes.cc)
+
+### Data and Stats
+
+* [USA stats](https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
+)
+* [Events in CA for 2014 per weekday](https://docs.google.com/spreadsheets/d/1KEXEXle1BXP6ZM9O9xoUePfI4GlJCW97E5uzcWjnvjY/edit#gid=1598404566)
