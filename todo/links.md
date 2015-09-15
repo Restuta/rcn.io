@@ -1,4 +1,4 @@
-
+``
 # Design
 ### UX
 * Checklists
@@ -112,6 +112,7 @@
   * Nice use of Maps
   * syncronized view of a road trip
 * [Codyhouse](http://codyhouse.co/) - A free library of HTML, CSS, JS nuggets
+* [Example of different calendar layouts](https://www.calendarsquick.com])
 * For Blog/articles
   * [Text + Photo layout](https://readymag.com/designs/new-york/2/)
 

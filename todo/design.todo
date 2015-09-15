@@ -32,8 +32,11 @@ Design
  --- Good UI Datastories:http://www.goodui.org/
 
 Tools
-	- Dev
+	--- Dev
 		- Live Reload: Browser Sync
+	--- Build
+		- Keep Dependencies Up To date: https://david-dm.org/ember-cli/ember-cli
+		- CodeClimate: automated code review https://codeclimate.com/
 
 
 Architecture Design
