@@ -16,16 +16,16 @@ Currently, you, as a racer have no good tools to:
   * is there anybody to carpool/share hotel with
   * history of that event and participation from past years
   * clean and reliable way to find start location _(SMS with Google Maps link to your phone in the morning would be neat, so you don't have to go to NCNCA, open pdf flyer, read where location is and explain to Google Maps how to navigate you there)_
-* **understand who are other racers** they are racing with
+* **understand who other racers are**
 
 Currently we are building a product to help with the above.
 
-We also think that _promoters_ are magical unicorns who were sent to our planet by divine intervention and we are extremely lucky to have them. It's just super hard to organize bike races currently and they are definitely not and ordinal humans. It takes skill and enourmous effort.
+We also think that _promoters_ are magical unicorns who were sent to our planet by divine intervention and we are extremely lucky to have them. It's just super hard to organize bike races currently and they are definitely not an ordinal humans. It takes skill and enormous effort.
 
 ![](https://media0.giphy.com/media/DkwtmuLxFafVm/200.gif)
 
 
-So our next steps would be to work with them closely and simplify it so we would have more local events.
+So our next steps will be to work with them closely and simplify the way things are so we could have more local events.
 
 ### Our philosophy
 
