@@ -1,21 +1,21 @@
 ### What is [rcn.io](http://rcn.io)?
 It's is a project for re-shaping bike racing landscape in CA and USA. Our aim is to bring more people to the sport and we know how to do it _right_.
 
-Currently community of racers has no good tools to:
-* **plan their season**
+Currently, you, as a racer have no good tools to:
+* **plan your season**
   * decide which events are "A" or "B" and let your teammates and coach know
   * inspire teammates to come and race together
 * **discover upcoming events** and details about them _(Yeah, NCNCA calendar is there and BikeReg, but we think it's not good enough, read below why. Btw, if you are from BikeReg or NCNCA we are more than happy to work with you and join forces.)_
-* **see who is coming** to a race early _(not when BikeReg registration is open, currently there is not way to say "I am coming", but without commitment, just like you would for facebook events. Yes we also hate "Maybe".)_
-* **see in one place all event details**
+* **see who is coming** to a race early, when you plan your season _(not when BikeReg registration is open, currently there is no way to say "I am coming", but without commitment, just like you would for Facebook's events.)_
+* **one place to see all event details**
   * event name, type, length, elevation gain,  etc.
   * distance to the events
-  * start times for categories I can race in
-  * link to a strava route
-  * history of that event and participation from past years
-  * what time to wake up to be there on-time
+  * start times for your fields
+  * when to wake up to be there on-time
+  * link to a Strava route
   * is there anybody to carpool/share hotel with
-  * clean and reliable way to find start location _(SMS with google app link to your phone in the morning would be neat, so you don't have to go to NCNCA, open pdf flyer, read where location is and translate it to your google app instructions)_
+  * history of that event and participation from past years
+  * clean and reliable way to find start location _(SMS with Google Maps link to your phone in the morning would be neat, so you don't have to go to NCNCA, open pdf flyer, read where location is and explain to Google Maps how to navigate you there)_
 * **understand who are other racers** they are racing with
 
 Currently we are building a product to help with the above.
