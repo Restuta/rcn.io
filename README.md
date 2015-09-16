@@ -3,10 +3,10 @@ It's is a project for re-shaping bike racing landscape in CA and USA. Our aim is
 
 Currently community of racers has no good tools to:
 * **plan their season**
-  * decide which are "A" or "B" events and let your teammates and coach know
+  * decide which events are "A" or "B" and let your teammates and coach know
   * inspire teammates to come and race together
 * **discover upcoming events** and details about them _(yeah NCNCA calendar is there and BikeReg, but do you really like them? We don't. As well as our racing buddies.)_
-* **see who is coming** to a race early _(not when BikeReg registration is open, currenly there is not way to say "I am coming", but without commitment, just like you would for facebook events. Yes we also hate "Maybe".)_
+* **see who is coming** to a race early _(not when BikeReg registration is open, currently there is not way to say "I am coming", but without commitment, just like you would for facebook events. Yes we also hate "Maybe".)_
 * **see in one place all event details**
   * event name, type, length, elevation gain,  etc.
   * distance to the events
