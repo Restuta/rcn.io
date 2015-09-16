@@ -5,7 +5,7 @@ Currently community of racers has no good tools to:
 * **plan their season**
   * decide which events are "A" or "B" and let your teammates and coach know
   * inspire teammates to come and race together
-* **discover upcoming events** and details about them _(Yeah, NCNCA calendar is there and BikeReg, but we think it's not good enough, read below why. Btw, if you are from BikeReg or NCNCA we are more than happy to work with your and join forces.)_
+* **discover upcoming events** and details about them _(Yeah, NCNCA calendar is there and BikeReg, but we think it's not good enough, read below why. Btw, if you are from BikeReg or NCNCA we are more than happy to work with you and join forces.)_
 * **see who is coming** to a race early _(not when BikeReg registration is open, currently there is not way to say "I am coming", but without commitment, just like you would for facebook events. Yes we also hate "Maybe".)_
 * **see in one place all event details**
   * event name, type, length, elevation gain,  etc.
