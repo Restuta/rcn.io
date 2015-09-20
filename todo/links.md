@@ -41,6 +41,7 @@
 * [ ] [type.css](http://mrmrs.io/type.css/) - A MOBILE-FIRST RESPONSIVE TYPE SCALE
 * [ ] [typebase.css](https://devinhunt.github.io/typebase.css/) - a minimal, customizable typography stylesheet + SASS
 * [Contrast a difference between two fonts](http://tiff.herokuapp.com/?ref=producthunt) - google fonts only
+* [ ] [Thinking with Type](http://www.thinkingwithtype.com/)
 
 ### Icons
 * [Nucleo](https://www.nucleoapp.com/?ref=producthunt) - smartest set of icons
@@ -83,10 +84,12 @@
 * [Hover.css](http://ianlunn.github.io/Hover/)
 * [Transformicons](http://www.transformicons.com/)
 * [Animated Headlines](http://codyhouse.co/demo/animated-headlines/)
+* [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
 * CodePens
   * [Flipping icons](http://codepen.io/llull/pen/znkFs)
   * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
   * [Full Screen Flat calendar](http://codepen.io/rickyeckhardt/pen/EFgKj)
+  * [Animated Form](http://codepen.io/robcampo/pen/ZGgGow) (like Typeform)
 
 ### Photos / Stocks
 * [nanamee.com](https://www.nanamee.com/product/search/bike) 💰
@@ -143,6 +146,7 @@
       * 103 commits, 57 stars, 1.5 month ago
     * [List of React Boilerplates](https://github.com/gaearon/react-hot-loader/blob/master/docs/README.md#starter-kits)
     * [React Universal](https://github.com/erikras/react-redux-universal-hot-example)
+    * [Etse.js](https://github.com/este/este)
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
@@ -202,16 +206,14 @@
   * [ ] [Getting Started Video](https://www.youtube.com/watch?v=TaWKUpahFZM0)
   * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] [Mixins are dead](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
-* [ ] React / Flux
+* [ ] React / Flux / Redux
   * [ ] [An Application Architecture for React](http://facebook.github.io/react/blog/2014/05/06/flux.html)
+  * [ ] [Elm Architecture](https://github.com/evancz/elm-architecture-tutorial/)
   * [ ] [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
-  * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
   * [ ] [Flux Comparison](https://github.com/voronianski/flux-comparison)
-
   * [ ] [ES6 modules, Mozilla](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
   * [ ] [ES6 modules, 2ality.com](http://www.2ality.com/2014/09/es6-modules-final.html)
   * [ ] [Flux Comparison](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example)
-  * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
   * [ ] [React General Resources](https://github.com/enaqx/awesome-react)
   * [ ] [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
   * [ ] [Rethinking Best Practices](http://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html)
@@ -219,6 +221,10 @@
   * [ ] [Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
   * [ ] [Good bye Flux Welcome Bacon](https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7)
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
+  * [ ] Redux
+    * [ ] [Simples Redux Example](https://github.com/jackielii/simplest-redux-example/blob/master/index.js)
+    * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
+    * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
 * [ ] Design
   * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
 * [ ] [12 factor app by Heroku](http://12factor.net/)

@@ -21,10 +21,15 @@ Design
  --- Color
  	- pick one color and 2 shades of grey
  --- CSS
- 	- use SASS for pre-processing and main styles
- 		- use Twbs SASS
+ 	.-(or PostCSS?) use SASS for pre-processing and main styles
+ 		- use Twbs 4 SASS
  	- use Postcss for post-processing:condider Postcss to be running only in prod configuration if it takes dev-time
  		- use Autoprefixer
+ 		- consider CSS modules
+ 			- https://github.com/css-modules/css-modules
+ 		- hot wo set POST CSS project up
+ 			- http://ai.github.io/about-postcss/en/?full#54
+ 			- http://benfrain.com/breaking-up-with-sass-postcss/
  --- Create CSS guideline (practices) 
  	- can be taken from here: http://www.basscss.com/docs/guides/basics/
  	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
@@ -41,12 +46,16 @@ Tools
 
 Architecture Design
 	- UI
-		- React
+		--- React
+			- use Pure components: line in etse.js
+			- use react's 0.14 stateless function components 
 	- Client App Architecture
-		- Redux
+		--- Redux
 	- Build Tools
-		- Webpack 
+		--- Webpack 
+			-- for production
+				- disable react-transform: see https://github.com/gaearon/react-transform-hmr (It is up to you to ensure that the transform is not enabled when you compile the app in production mode.)
 			- with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
 				- webpack 1 can be used with Babel to use ES6 modules
 					-- does this mean that webpack understands transpiled code like it would understand commonJS one?
-			
+		- inline styles for dev, normal for production: like https://github.com/este/este, inline in dev makes styles hot-reloadable
