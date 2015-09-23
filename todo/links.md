@@ -26,6 +26,7 @@
 ### Fonts
 * [ ] [Font Pairing](http://school.readymag.com/intro/)
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
+* [ ] [Typegraphic scale](http://type-scale.com) 
 * [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
 * [See fonts in use](http://fontsinuse.com/)
@@ -227,6 +228,9 @@
     * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
 * [ ] Design
   * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
+  * [ ] [Design for the web](http://www.designingfortheweb.co.uk/part4/part4_chapter20.php)
+  * [ ] [Design For Non Designers (book)](http://www.amazon.com/The-Non-Designers-Design-Book-Edition/dp/0133966151)
+    * [on Scribd](http://www.scribd.com/doc/111127105/The-non-Designers-design-book-3rd-edition#scribd)
 * [ ] [12 factor app by Heroku](http://12factor.net/)
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [ ] [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)

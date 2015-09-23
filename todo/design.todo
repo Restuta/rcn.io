@@ -59,3 +59,8 @@ Architecture Design
 				- webpack 1 can be used with Babel to use ES6 modules
 					-- does this mean that webpack understands transpiled code like it would understand commonJS one?
 		- inline styles for dev, normal for production: like https://github.com/este/este, inline in dev makes styles hot-reloadable
+
+
+Project Setup
+	- copy stuff from este.js
+		- use immutable.js
