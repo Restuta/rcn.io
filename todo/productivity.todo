@@ -1,0 +1,3 @@
+Productivity
+	- enable "react" package support in atom: currently syntax higlightning is broken, it overrides ES6 package setup
+	- try higligtning closed tags differently

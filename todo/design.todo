@@ -14,13 +14,15 @@ Design
  		- Source Sans Pro
  		- Raleway: modern, geometric
  		- Montserrat alternative to Proxima Nova
+ 			- excellent for headlines 
+ 			- no italics
  			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
  	- Headings: 
- --- Use Grid
- 	- which grid?
- --- Color
- 	- pick one color and 2 shades of grey
- --- CSS
+--- Use Grid
+	- which grid?
+--- Color
+ 	- pick one primary color and 2 shades of grey
+--- CSS
  	.-(or PostCSS?) use SASS for pre-processing and main styles
  		- use Twbs 4 SASS
  	- use Postcss for post-processing:condider Postcss to be running only in prod configuration if it takes dev-time
@@ -30,11 +32,11 @@ Design
  		- hot wo set POST CSS project up
  			- http://ai.github.io/about-postcss/en/?full#54
  			- http://benfrain.com/breaking-up-with-sass-postcss/
- --- Create CSS guideline (practices) 
- 	- can be taken from here: http://www.basscss.com/docs/guides/basics/
- 	- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
+ 	-- Create CSS guideline (practices) 
+ 		- can be taken from here: http://www.basscss.com/docs/guides/basics/
+ 		- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
  	- compare it to BS4
- --- Good UI Datastories:http://www.goodui.org/
+--- Good UI Datastories:http://www.goodui.org/
 
 Tools
 	--- Dev
@@ -49,18 +51,25 @@ Architecture Design
 		--- React
 			- use Pure components: line in etse.js
 			- use react's 0.14 stateless function components 
+			- consider React Resolver: https://github.com/ericclemmons/react-resolver
 	- Client App Architecture
 		--- Redux
+		- 	Relay/GraphQL?
 	- Build Tools
 		--- Webpack 
-			-- for production
+			-- For production
 				- disable react-transform: see https://github.com/gaearon/react-transform-hmr (It is up to you to ensure that the transform is not enabled when you compile the app in production mode.)
-			- with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
-				- webpack 1 can be used with Babel to use ES6 modules
-					-- does this mean that webpack understands transpiled code like it would understand commonJS one?
+			+.- (yes ES6 with babel-loader) - with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
+				+- webpack 1 can be used with Babel to use ES6 modules
+					+-- does this mean that webpack understands transpiled code like it would understand commonJS one?
+				.- (webpack + ES6 = love with babel-loader) 
+
 		- inline styles for dev, normal for production: like https://github.com/este/este, inline in dev makes styles hot-reloadable
+			- style-loader for hot reloading
 
 
 Project Setup
 	- copy stuff from este.js
 		- use immutable.js
+			- Redux-Immutablejs: https://github.com/indexiatech/redux-immutablejs
+			- how-to use with React: https://github.com/facebook/immutable-js/wiki/Immutable-as-React-state

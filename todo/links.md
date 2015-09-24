@@ -148,6 +148,7 @@
     * [List of React Boilerplates](https://github.com/gaearon/react-hot-loader/blob/master/docs/README.md#starter-kits)
     * [React Universal](https://github.com/erikras/react-redux-universal-hot-example)
     * [Etse.js](https://github.com/este/este)
+    * [reack-kickstart](https://github.com/vesparny/react-kickstart)
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
@@ -208,6 +209,8 @@
   * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] [Mixins are dead](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
 * [ ] React / Flux / Redux
+  * [ ] [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) 
+  * [ ] [React Resolver](https://github.com/ericclemmons/react-resolver) 
   * [ ] [An Application Architecture for React](http://facebook.github.io/react/blog/2014/05/06/flux.html)
   * [ ] [Elm Architecture](https://github.com/evancz/elm-architecture-tutorial/)
   * [ ] [Speakerdeck: For those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
@@ -222,6 +225,7 @@
   * [ ] [Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
   * [ ] [Good bye Flux Welcome Bacon](https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7)
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
+  * [ ] [How GrapQL tought me to code client](https://medium.com/@gregoryziegan/how-graphql-taught-me-to-code-client-apps-1c631a9953bd)
   * [ ] Redux
     * [ ] [Simples Redux Example](https://github.com/jackielii/simplest-redux-example/blob/master/index.js)
     * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
