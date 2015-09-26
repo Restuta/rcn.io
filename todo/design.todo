@@ -1,3 +1,11 @@
+Story
+--- Major Topic
+-- Todo
+.-(as last item for conclusions)
+- Note or final decision
+
+
+
 Design
 --- Statements
 	- From Design For Hackers
@@ -8,7 +16,9 @@ Design
 			- Lato for a friendly and "natural" look
 			- Raleway for a more modern geometric look
 --- Fonts
-	- Size: 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
+	- Size 
+		- 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
+		- by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
 	- Body
  		- Lato: friendly and natural
  		- Source Sans Pro
@@ -19,7 +29,7 @@ Design
  			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
  	- Headings: 
 --- Use Grid
-	- which grid?
+	-- which grid?
 --- Color
  	- pick one primary color and 2 shades of grey
 --- CSS
@@ -32,10 +42,12 @@ Design
  		- hot wo set POST CSS project up
  			- http://ai.github.io/about-postcss/en/?full#54
  			- http://benfrain.com/breaking-up-with-sass-postcss/
+ 		- precss https://github.com/jonathantneal/precss: to use SASS like syntax
  	-- Create CSS guideline (practices) 
  		- can be taken from here: http://www.basscss.com/docs/guides/basics/
  		- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
- 	- compare it to BS4
+ 		- compare it to BS4
+ 	- user REMS for fonts: this allows to easely change sizes for different devices and still follow same typegraphic scale
 --- Good UI Datastories:http://www.goodui.org/
 
 Tools
@@ -44,6 +56,8 @@ Tools
 	--- Build
 		- Keep Dependencies Up To date: https://david-dm.org/ember-cli/ember-cli
 		- CodeClimate: automated code review https://codeclimate.com/
+	--- Hosting
+		-- Digital Ocean or Heroku or Amazon
 
 
 Architecture Design
@@ -52,6 +66,7 @@ Architecture Design
 			- use Pure components: line in etse.js
 			- use react's 0.14 stateless function components 
 			- consider React Resolver: https://github.com/ericclemmons/react-resolver
+			- use React Motion for animations: https://github.com/chenglou/react-motion
 	- Client App Architecture
 		--- Redux
 		- 	Relay/GraphQL?

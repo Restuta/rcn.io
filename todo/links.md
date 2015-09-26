@@ -1,4 +1,4 @@
-``
+
 # Design
 ### UX
 * Checklists
@@ -10,6 +10,7 @@
 * [ ] [UX 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
   * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
+* [How to compose a vertical rythm](https://24ways.org/2006/compose-to-a-vertical-rhythm/)
 * [Create Personas](http://personapp.io/help/)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
@@ -26,7 +27,8 @@
 ### Fonts
 * [ ] [Font Pairing](http://school.readymag.com/intro/)
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
-* [ ] [Typegraphic scale](http://type-scale.com) 
+* [ ] [Typographic scale](http://type-scale.com) 
+* [ ] [About Mordern Scale from typecast](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
 * [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
 * [See fonts in use](http://fontsinuse.com/)
@@ -43,6 +45,7 @@
 * [ ] [typebase.css](https://devinhunt.github.io/typebase.css/) - a minimal, customizable typography stylesheet + SASS
 * [Contrast a difference between two fonts](http://tiff.herokuapp.com/?ref=producthunt) - google fonts only
 * [ ] [Thinking with Type](http://www.thinkingwithtype.com/)
+* [Flowtype.js](http://simplefocus.com/flowtype/) - to enforce 45-75 chars per line for all screen sizes, requires jQuery
 
 ### Icons
 * [Nucleo](https://www.nucleoapp.com/?ref=producthunt) - smartest set of icons
@@ -119,6 +122,7 @@
 * [Example of different calendar layouts](https://www.calendarsquick.com])
 * For Blog/articles
   * [Text + Photo layout](https://readymag.com/designs/new-york/2/)
+* [claralabs.com](https://claralabs.com), nice landing
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/) - mobile-oriented prototyping
@@ -148,7 +152,7 @@
     * [List of React Boilerplates](https://github.com/gaearon/react-hot-loader/blob/master/docs/README.md#starter-kits)
     * [React Universal](https://github.com/erikras/react-redux-universal-hot-example)
     * [Etse.js](https://github.com/este/este)
-    * [reack-kickstart](https://github.com/vesparny/react-kickstart)
+    * [reack-kickstart](https://github.com/vesparny/react-kickstart) 
 
 ### Monitoring
 * [Grafana](http://play.grafana.org/)
