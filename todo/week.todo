@@ -1,0 +1,16 @@
+Today
+	- finish basic setup of hot reload boilerplate
+		+- eslint
+		- add css/sass processing: monitor rebuild times
+		- setup react 0.14
+		- setup other react stuff from este.js
+	- move boilerplate under rcn.io
+		- rename stuff in package.json
+
+Not Today
+	- go through simple Redx eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
+
+Webpack
+	- avg rebuild times
+		- node 4.1.1 and npm 2.14.4: 245ms
+		- node 4.1.1 and npm 3: 227ms
