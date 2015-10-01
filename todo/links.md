@@ -212,7 +212,8 @@
   * [ ] [Getting Started Video](https://www.youtube.com/watch?v=TaWKUpahFZM0)
   * [ ] [Backend Apps with Webpack](http://jlongster.com/Backend-Apps-with-Webpack--Part-I)
 * [ ] [Mixins are dead](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
-* [ ] React / Flux / Redux
+* [ ] React / Flux
+  * [x] [Cartoon Guide for Flux](https://medium.com/@linclark/a-cartoon-guide-to-flux-6157355ab207)
   * [ ] [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) 
   * [ ] [React Resolver](https://github.com/ericclemmons/react-resolver) 
   * [ ] [An Application Architecture for React](http://facebook.github.io/react/blog/2014/05/06/flux.html)
@@ -224,6 +225,7 @@
   * [ ] [Flux Comparison](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example)
   * [ ] [React General Resources](https://github.com/enaqx/awesome-react)
   * [ ] [React Router](https://www.youtube.com/watch?v=Q6Kczrgw6ic&list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R&index=5) (video)
+  * [ ] [React and pushState: You're doing it wrong](http://jamesknelson.com/push-state-vs-hash-based-routing-with-react-js/) 
   * [ ] [Rethinking Best Practices](http://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html)
   * [ ] [Architecting React Apps with Flux](http://tylermcginnis.com/reactjs-tutorial-pt-3-architecting-react-js-apps-with-flux/) - this is part 3
   * [ ] [Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
