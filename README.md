@@ -29,7 +29,9 @@ So our next steps will be to work with them closely and simplify the way things 
 
 ### Our philosophy
 
-Everything is open source and free forever.
+Everything is open source, free and ads free forever.
+
+Expenses are crowdfunded.
 
 Data is owned by community.
 
