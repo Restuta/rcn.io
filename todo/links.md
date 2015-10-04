@@ -7,6 +7,7 @@
   * [ ] [Visual Designers Checklist](http://webdesignerschecklist.com/)
   * [ ] [Usability Checklist](https://userium.com/)
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
+  * [ ] [Startup Lunch List](http://startuplaunchlist.com/-JsfUTzJqEOfv5fCYImO)
 * [ ] [UX 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
   * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
@@ -240,6 +241,8 @@
     * [ ] [Nice Visual Guide] (http://sgwilym.github.io/relay-visual-learners/)
     * [ ] [Community Roundup 27] (https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
 * [ ] Design
+  * [ ] Usability
+    * [ ] [Usability 101] (http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
   * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
   * [ ] [Design for the web](http://www.designingfortheweb.co.uk/part4/part4_chapter20.php)
   * [ ] [Design For Non Designers (book)](http://www.amazon.com/The-Non-Designers-Design-Book-Edition/dp/0133966151)
