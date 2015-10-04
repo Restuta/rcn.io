@@ -238,6 +238,7 @@
     * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
   * [ ] Relay and GraphQL
     * [ ] [Nice Visual Guide] (http://sgwilym.github.io/relay-visual-learners/)
+    * [ ] [Community Roundup 27] (https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
 * [ ] Design
   * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
   * [ ] [Design for the web](http://www.designingfortheweb.co.uk/part4/part4_chapter20.php)
