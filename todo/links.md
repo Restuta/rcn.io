@@ -58,7 +58,7 @@
 * svg: [Evil Icons](http://evil-icons.io/)
 * [Fonticons](https://fonticons.com/) 💰
 * [Icomoon](https://icomoon.io/app/#/select/library)
-* [Redux Icons](http://pictos.cc/) 💰
+* [Pictos.cc Icons](http://pictos.cc/) 💰
 * [Ego Icons](http://ego-icons.com/?ref=producthunt) - icons with personality
 * [Create Perfect Social Icons](http://perfecticons.com/)
 * [Iconjar](http://geticonjar.com/) - organize, search and use icons
@@ -234,11 +234,12 @@
   * [ ] [Good bye Flux Welcome Bacon](https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7)
   * [ ] [ФП в браузере](http://tonsky.me/talks/2015-frontendconf/)
   * [ ] [How GrapQL tought me to code client](https://medium.com/@gregoryziegan/how-graphql-taught-me-to-code-client-apps-1c631a9953bd)
-  * [ ] Redux
-    * [ ] [Simples Redux Example](https://github.com/jackielii/simplest-redux-example/blob/master/index.js)
+  * [ ] *Redux*
+    * [ ] [Simplest Redux Example](https://github.com/jackielii/simplest-redux-example/blob/master/index.js)
     * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
-    * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+    * [ ] [Full Stack Redux Tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
     * [ ] [Redux Real World Example](https://github.com/rackt/redux/tree/master/examples/real-world) uses Dev Tools and Redux Router 
+    * [ ] [Reflux to Redux](http://engineering.wework.com/process/2015/10/01/react-reflux-to-redux/)
   * [ ] Relay and GraphQL
     * [ ] [Nice Visual Guide] (http://sgwilym.github.io/relay-visual-learners/)
     * [ ] [Community Roundup 27] (https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
