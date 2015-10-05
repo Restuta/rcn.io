@@ -15,6 +15,7 @@
 * [Create Personas](http://personapp.io/help/)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Typeform](http://www.typeform.com/) - very nice UX for sign-up flow
+* [Frontify Styleguide](https://frontify.com/styleguide)
 
 ### Grid
 * [1200px Grid System](http://1200px.com/)
@@ -237,6 +238,7 @@
     * [ ] [Simples Redux Example](https://github.com/jackielii/simplest-redux-example/blob/master/index.js)
     * [ ] [Redux GitBook](https://rackt.github.io/redux/index.html)
     * [ ] [Build Redux app tutrial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+    * [ ] [Redux Real World Example](https://github.com/rackt/redux/tree/master/examples/real-world) uses Dev Tools and Redux Router 
   * [ ] Relay and GraphQL
     * [ ] [Nice Visual Guide] (http://sgwilym.github.io/relay-visual-learners/)
     * [ ] [Community Roundup 27] (https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
