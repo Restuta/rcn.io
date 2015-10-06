@@ -163,8 +163,10 @@
 * [Make things draggable](https://github.com/desandro/draggabilly)
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Selectize.js](http://brianreavis.github.io/selectize.js/) - jQuery based hybrid of select box and text box
+* [Velocity.js](https://github.com/julianshapiro/velocity) animation
 * React
   * [List of Resources](https://github.com/enaqx/awesome-react)
+  * [Veloticy React Components](https://github.com/twitter-fabric/velocity-react)
 
 ### Other
 * [Cronofy, Connecting to Calendars](https://www.cronofy.com/)

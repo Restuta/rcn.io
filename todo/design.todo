@@ -67,6 +67,8 @@ Architecture Design
 			- use react's 0.14 stateless function components 
 			- consider React Resolver: https://github.com/ericclemmons/react-resolver
 			- use React Motion for animations: https://github.com/chenglou/react-motion
+				- or use Velocity React: https://github.com/twitter-fabric/velocity-react
+
 	- Client App Architecture
 		--- Redux
 		- 	Relay/GraphQL?

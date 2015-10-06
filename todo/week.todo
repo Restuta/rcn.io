@@ -16,6 +16,7 @@ Today
 After Boilerplate setup
 	- setup server side rendering like in este
 		- este uses react component to render HTML document called 'html.react.js'
+	- consider "react-document-title" package
 
 Not Today
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
