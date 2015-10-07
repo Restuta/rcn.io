@@ -10,11 +10,20 @@ Today
 		+- static index.html for now (server side render later)
 	- move boilerplate under rcn.io
 		- rename stuff in package.json
+	- move webpack config to be ES6
 
 After Boilerplate setup
 	- setup server side rendering like in este
 		- este uses react component to render HTML document called 'html.react.js'
 	- consider "react-document-title" package
+	-- server
+		- setup server for API and hot reload combined (like estejs)
+		- setup compression middleware (like estejs)
+		- make sure hot reloading server is not runing on prod
+		- setup Relay and GraphQL from examples
+		- setup logging and colorful logger
+		- setup middlewares
+		- setup error handler and API request logger middleware
 	- setup other react stuff from este.js
 			- make all components pure
 			- figure out how to make function component pure
