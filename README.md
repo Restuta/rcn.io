@@ -37,7 +37,8 @@ Data is owned by community.
 
 Stay small.
 
-Race safe.
+Race safe. 
+:bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: 
 
 ---
 
