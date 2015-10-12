@@ -1,15 +1,13 @@
 Today
 	- finish basic setup of hot reload boilerplate
 		+- eslint
-		- add css/sass processing: monitor rebuild times
-			- configur esass to be expanded for dev
+		+- add css/sass processing: monitor rebuild times
+			+- configur sass to be expanded for dev
 		- add Bootstrap 
 			- try BS4 and non-compiled version, see if it adds a lot of overhead: in terms of compilation time
 		+- setup react 0.14
-		- setup other react stuff from este.js
-			- make all components pure
-			- figure out how to make function component pure
-		- static index.html for now (server side render later)
+		
+		+- static index.html for now (server side render later)
 	- move boilerplate under rcn.io
 		- rename stuff in package.json
 
@@ -17,6 +15,9 @@ After Boilerplate setup
 	- setup server side rendering like in este
 		- este uses react component to render HTML document called 'html.react.js'
 	- consider "react-document-title" package
+	- setup other react stuff from este.js
+			- make all components pure
+			- figure out how to make function component pure
 
 Not Today
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
