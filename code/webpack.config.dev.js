@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const WebpackNotifierPlugin = require('webpack-notifier');
 
 const ABSOLUTE_BASE = path.normalize(__dirname);
 
@@ -28,7 +29,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new WebpackNotifierPlugin({title: 'webpack:rcn'}),
   ],
   module: {
     loaders: [{
@@ -36,7 +38,7 @@ module.exports = {
       loaders: ['babel'],
       include: path.join(__dirname, 'src/client')
     }, {
-      test: /\.sass$/,
+      test: /\.scss$/,
       loaders: ['style', 'css', 'sass'],
       include: path.join(__dirname, 'src/client')
     }]

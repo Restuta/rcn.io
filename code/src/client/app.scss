@@ -1,0 +1,22 @@
+$primary-color: pink;
+$secondary-color: lightblue;
+
+
+.rcn {
+  color: $primary-color;
+
+  .nested {
+    color: $secondary-color;
+  }
+}
+
+div {
+
+}
+
+#test {
+}
+
+.class .another {
+
+}

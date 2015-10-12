@@ -1,6 +1,6 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
-import './app.sass';
+import './app.scss';
 
 class Counter extends Component {
   constructor(props) {
@@ -40,8 +40,10 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
   render() {
     return (
       <div>
-        <h1 className="test">YAY RCN </h1>
-        Phoebe, 123
+        <h1 className="rcn">RCN
+          <span className="nested"> is in the sky</span>
+        </h1>
+        Phoebe, 124
         <Stateless name="Chandler" />
         <Counter increment={1} color="blueviolet" />
         <Counter increment={5} color="lightblue" />
