@@ -1,13 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackNotifierPlugin = require('webpack-notifier');
-
-const ABSOLUTE_BASE = path.normalize(__dirname);
-
-const constants = Object.freeze({
-  ABSOLUTE_BASE: ABSOLUTE_BASE,
-  SRC_DIR: path.join(ABSOLUTE_BASE, 'src')
-});
+const constants = require('./constants');
 
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
@@ -36,10 +30,12 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
+      exclude: /node_modules/,
       include: path.join(__dirname, 'src/client')
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'sass'],
+      exclude: /node_modules/,
       include: path.join(__dirname, 'src/client')
     }]
   }

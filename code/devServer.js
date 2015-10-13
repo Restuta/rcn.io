@@ -4,11 +4,10 @@ const webpack = require('webpack');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const config = require('./webpack.config.dev');
+const constants = require('./constants');
 
 const app = express();
 const compiler = webpack(config);
-
-const PORT = 3000;
 
 app.use(webpackDevMiddleware(compiler, {
   noInfo: true,
@@ -24,11 +23,11 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '/src/client/index.html'));
 });
 
-app.listen(PORT, 'localhost', function(err) {
+app.listen(constants.DEV_SERVER_PORT, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at http://localhost:' + PORT);
+  console.log('Listening at http://localhost:' + constants.DEV_SERVER_PORT);
 });
