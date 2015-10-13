@@ -1,9 +1,11 @@
-$primary-color: pink;
+ @import 'bower_components/bootstrap/scss/bootstrap.scss';
+
+$hot-pink: darken(pink, 10%);
 $secondary-color: lightblue;
 
 
 .rcn {
-  color: $primary-color;
+  color: $hot-pink;
 
   .nested {
     color: $secondary-color;
