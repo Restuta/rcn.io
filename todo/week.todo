@@ -14,10 +14,19 @@ Today
 	+!- upgrade to react 0.14 
 
 After Boilerplate setup
-	- setup server side rendering like in este
-		- este uses react component to render HTML document called 'html.react.js'
+	-- boostrap
+		- do a minimal custom build of bootstrap by compiling SASS with only stuff we need
+	-- atoms (UI)
+		- consider wftform feilds http://wtfforms.com/
+	-- webpack
+		- setup url loader (see etse)
+		- extract text plugin for CSS for prod
+		- autoprefixer
+
 	- consider "react-document-title" package
 	-- server
+	    - setup server side rendering like in este
+			- este uses react component to render HTML document called 'html.react.js'
 		- setup server for API and hot reload combined (like estejs)
 		- setup compression middleware (like estejs)
 		- make sure hot reloading server is not runing on prod
@@ -36,7 +45,7 @@ Not Today
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
-		- and nyan  loader like in este
+		- and nyan  oader like in este
 	- setup webpack for production
 		- currently index.html for prod: doesn't include js and css files bundled
 			-- setup Server Side rendering like etse js
