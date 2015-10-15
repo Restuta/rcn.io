@@ -10,7 +10,6 @@ Today
 		+- static index.html for now (server side render later)
 	+- move boilerplate under rcn.io
 		- rename stuff in package.json
-	- move webpack config to be ES6
 	+!- upgrade to react 0.14 
 
 After Boilerplate setup
@@ -34,12 +33,15 @@ After Boilerplate setup
 		- setup logging and colorful logger
 		- setup middlewares
 		- setup error handler and API request logger middleware
+		-- Setup Relay
+			- example: https://github.com/fortruce/relay-skeleton
 	- setup other react stuff from este.js
 			- make all components pure
 			- figure out how to make function component pure
 
 After After Boilerplate =)
 	- figure out how to make Funtional Components Pure (pure Render mixin?)
+	- move webpack config to be ES6
 
 Not Today
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
@@ -56,7 +58,9 @@ Not Today
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
 
-Webpack
+Webpack Times
+	-- CodePen to calculate avg times: http://codepen.io/Restuta/pen/ZbLqyX?editors=101
 	- avg rebuild times
 		- node 4.1.1 and npm 2.14.4: 245ms
 		- node 4.1.1 and npm 3.3.4: 209ms - 227ms
+	- boostrap SASS adds ~600ms to rebuild times
