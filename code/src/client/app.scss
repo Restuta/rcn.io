@@ -1,14 +1,15 @@
- @import 'bower_components/bootstrap/scss/bootstrap.scss';
+$enable-flex: true;
+//@import 'bower_components/bootstrap/scss/bootstrap-grid.scss';
 
 $hot-pink: darken(pink, 10%);
-$secondary-color: lightblue;
+$cool-blue: darken(lightblue, 5%);
 
 
 .rcn {
   color: $hot-pink;
 
   .nested {
-    color: $secondary-color;
+    color: $cool-blue;
   }
 }
 

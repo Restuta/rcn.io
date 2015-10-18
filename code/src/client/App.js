@@ -1,6 +1,7 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
 import './app.scss';
+import Row, {RowPure} from './atoms/Row.jsx'
 
 class Counter extends Component {
   constructor(props) {
@@ -44,6 +45,9 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
           <span className="nested"> is in the sky</span>
         </h1>
         Phoebe, 124
+        <Row/>
+        <RowPure name="Pure Cat"/>
+
         <Stateless name="Chandler" />
         <Counter increment={1} color="blueviolet" />
         <Counter increment={5} color="lightblue" />

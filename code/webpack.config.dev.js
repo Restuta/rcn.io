@@ -13,7 +13,7 @@ module.exports = {
   debug: true,
 
   entry: [
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?path=http://localhost:' + constants.DEV_SERVER_PORT + '/__webpack_hmr',
     path.join(constants.SRC_DIR, 'client/index.js')
   ],
   output: {
@@ -28,7 +28,7 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.js|.jsx$/,
       loaders: ['babel'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'src/client')
