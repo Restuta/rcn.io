@@ -22,9 +22,9 @@ class Counter extends Component {
 
   render() {
     return (
-      <h1 style={{ color: this.props.color }}>
+      <h2 style={{ color: this.props.color }}>
         Counter ({this.props.increment}): {this.state.counter}
-      </h1>
+      </h2>
     );
   }
 }
@@ -46,6 +46,23 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
         </h1>
         Phoebe, 124
         <Row/>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-2">
+              Content
+            </div>
+            <div className="col-sm-2">
+              Content long one <br/>
+              Content long one
+              Content long one
+              Content long one
+              Content long one
+              Content long one
+              Content long one
+              Content long one
+            </div>
+          </div>
+        </div>
         <RowPure name="Pure Cat"/>
 
         <Stateless name="Chandler" />

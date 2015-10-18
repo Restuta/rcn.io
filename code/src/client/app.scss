@@ -1,9 +1,34 @@
 $enable-flex: true;
+//@import 'bower_components/bootstrap/scss/bootstrap';
 //@import 'bower_components/bootstrap/scss/bootstrap-grid.scss';
+//@import './atoms/sf-font.scss';
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3 {
+  // font-family: 'Montserrat', serif;
+  font-family: 'Oswald', serif;
+  font-weight: 400;
+}
 
 $hot-pink: darken(pink, 10%);
 $cool-blue: darken(lightblue, 5%);
 
+
+$bg-color: lighten(grey, 30%);
+$col-color: lighten(lightpink, 10%);;
+
+[class^="col-"] {
+  border: 1px solid $bg-color;
+  min-height: 100px;
+  background-color: $col-color;
+//  min-width: 167px;
+}
 
 .rcn {
   color: $hot-pink;
