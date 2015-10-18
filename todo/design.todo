@@ -68,6 +68,8 @@ Architecture Design
 			- consider React Resolver: https://github.com/ericclemmons/react-resolver
 			- use React Motion for animations: https://github.com/chenglou/react-motion
 				- or use Velocity React: https://github.com/twitter-fabric/velocity-react
+			- modals
+				- https://github.com/davidtheclark/react-aria-modal
 
 	- Client App Architecture
 		--- Redux
