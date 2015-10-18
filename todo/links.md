@@ -48,6 +48,7 @@
 * [Contrast a difference between two fonts](http://tiff.herokuapp.com/?ref=producthunt) - google fonts only
 * [ ] [Thinking with Type](http://www.thinkingwithtype.com/)
 * [Flowtype.js](http://simplefocus.com/flowtype/) - to enforce 45-75 chars per line for all screen sizes, requires jQuery
+* [Fonts Popularity](http://www.fontreach.com)
 
 ### Icons
 * [Nucleo](https://www.nucleoapp.com/?ref=producthunt) - smartest set of icons
