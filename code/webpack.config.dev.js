@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new WebpackNotifierPlugin({title: 'webpack:rcn'}),
+    //new WebpackNotifierPlugin({title: 'webpack:rcn'}),
   ],
   module: {
     loaders: [{
