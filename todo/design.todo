@@ -13,8 +13,10 @@ Design
 		- About fonts
 			- Georgia for a sophisticated serif
 			- Helvetica for a clean and neutral design
-			- Lato for a friendly and "natural" look
-			- Raleway for a more modern geometric look
+			-- Lato for a friendly and "natural" look
+				- Oswald for headings
+				- Aleo was designed as Slab Serif pair to lato: http://www.fontsquirrel.com/fonts/aleo
+			-- Raleway for a more modern geometric look
 --- Fonts
 	- Size 
 		- 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
