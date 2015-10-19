@@ -3,45 +3,19 @@ $enable-flex: true;
 //@import 'bower_components/bootstrap/scss/bootstrap-grid.scss';
 //@import './atoms/sf-font.scss';
 
-//headings
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300italic,300);
+
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 .oswald { font-family: 'Oswald';}
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-.montserrat { font-family: 'Montserrat';}
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
-.merriweather {font-family: 'Merriweather';}
-@import url(https://fonts.googleapis.com/css?family=Francois+One);
-.francois-one {font-family: 'Francois One';}
-
 //body
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,100);
-.work-sans {font-family: 'Work Sans'}
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700);
-.alegreya-sans {font-family: 'Alegreya Sans';}
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.open-sans {font-family: 'Open Sans'; }
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-.source-sans-pro {font-family: 'Source Sans Pro';}
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-.roboto-condensed {font-family: 'Roboto Condensed';}
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-.roboto {font-family: 'Roboto';}
-
-@font-face{
-	font-family: 'Aleo';
-	src: url('Aleo-Regular-webfont.woff') format('woff'),
-}
-
-.aleo {font-family: 'Aleo';}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300italic,300);
 
 
 $body-color: #333;
 $body-bg-color: #FAFAFA;
+
 html, body {
   margin: 15px;
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
   color: $body-color;
   background-color: $body-bg-color;
 }
@@ -49,11 +23,7 @@ html, body {
 h1,h2,h3 {
   font-family: 'Oswald', serif;
   font-weight: 400;
-  font-size: 40px;
-}
-
-h1 {
-  //text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 $col-brdr-color: lighten(grey, 30%);
@@ -70,16 +40,4 @@ $col-color: lighten(lightpink, 11%);;
 [class^="col-"].transparent {
   background-color: transparent;
   border: none;
-}
-
-
-div {
-
-}
-
-#test {
-}
-
-.class .another {
-
 }
