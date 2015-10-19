@@ -52,8 +52,7 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
       <div>
         <h1 className="oswald">Events in California</h1>
         <h1 className="montserrat">Events in California</h1>
-        <h1 className="playfair">Events in California</h1>
-        <h1 className="alegreya">Events in California</h1>
+        <h1 className="merriweather">Events in California</h1>
 
         <div className="container">
           <div className="row">
@@ -81,8 +80,8 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               Content long one
               Content long one
             </div>
-            <div className="col-sm-2 work-sans">
-              <div style={fontHeadingStyle}>Work Sans (H5 A5)</div>
+            <div className="col-sm-2 merriweather-sans">
+              <div style={fontHeadingStyle}>Merriweather Sans</div>
               Dunnigan Hills Road Race
               64mi, 2h, 6200ft
               1234567890

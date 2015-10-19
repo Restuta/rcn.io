@@ -9,30 +9,37 @@ $enable-flex: true;
 .oswald { font-family: 'Oswald';}
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 .montserrat { font-family: 'Montserrat';}
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic);
-.playfair { font-family: 'Playfair Display';}
-@import url(https://fonts.googleapis.com/css?family=Alegreya:400,400italic,700);
-.alegreya { font-family: 'Alegreya'; }
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+.merriweather {font-family: 'Merriweather';}
 
 //body
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,100);
-.work-sans {font-family: 'Work Sans'};
+.work-sans {font-family: 'Work Sans'}
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700);
 .alegreya-sans {font-family: 'Alegreya Sans';}
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.open-sans {font-family: 'Open Sans'; font-size: 15px;};
+.open-sans {font-family: 'Open Sans'; font-size: 15px;}
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .source-sans-pro {font-family: 'Source Sans Pro';}
 
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+.merriweather-sans {font-family: 'Merriweather Sans'; font-size: 14px;}
+
+
 
 html, body {
+  margin: 15px;
   font-family: 'Lato', sans-serif;
 }
 
 h1,h2,h3 {
   font-family: 'Oswald', serif;
   font-weight: 400;
+}
+
+h1 {
+  //text-transform: uppercase;
 }
 
 $col-brdr-color: lighten(grey, 30%);
