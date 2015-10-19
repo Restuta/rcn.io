@@ -5,6 +5,7 @@
   * [ ] [Good UI](http://www.goodui.org/)
   * [ ] [UX Checklist](http://uxchecklist.github.io/)
   * [ ] [Visual Designers Checklist](http://webdesignerschecklist.com/)
+  * [ ] [Nice Designers Checklist] http://adrien-heury.net/designers-checklists/
   * [ ] [Usability Checklist](https://userium.com/)
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
   * [ ] [Startup Lunch List](http://startuplaunchlist.com/-JsfUTzJqEOfv5fCYImO)
@@ -68,7 +69,7 @@
 ### Colors
 * [colourco.de](http://colourco.de/)
 * [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
-* [Coolors.cc](https://coolors.co/) - color schemes generator
+* [Coolors.co](https://coolors.co/) - color schemes generator
 * [Color Dot](http://color.hailpixel.com/) - click and pick colors + unique URL for any amount
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
 * [Chroma.js - Color Scale Helper](http://gka.github.io/palettes/#diverging|c0=lightyellow,orange,deeppink,darkred|c1=lightyellow,orange,deeppink,darkred|steps=7|bez0=1|bez1=1|coL0=1|coL1=1)
