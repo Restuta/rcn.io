@@ -38,29 +38,86 @@ const Stateless = (props) => {
 
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
+
+
   render() {
+    const fontHeadingStyle = {
+        backgroundColor: 'pink',
+        paddingLeft: '15px',
+        marginLeft: '-15px',
+        marginRight: '-15px'
+    };
+
     return (
       <div>
-        <h1 className="rcn">RCN
-          <span className="nested"> is in the sky</span>
-        </h1>
-        Phoebe, 124
-        <Row/>
+        <h1 className="oswald">Events in California</h1>
+        <h1 className="montserrat">Events in California</h1>
+        <h1 className="playfair">Events in California</h1>
+        <h1 className="alegreya">Events in California</h1>
+
         <div className="container">
           <div className="row">
-            <div className="col-sm-2">
-              Content
+          <div className="col-sm-2 source-sans-pro">
+            <div style={fontHeadingStyle}>Source Sans Pro (H3 A2)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty
+              lb dl 6b illb
+              Good job RCN rcn!
+              Content long one
+              Content long one
+              Content long one
             </div>
             <div className="col-sm-2">
-              Content long one <br/>
-              Content long one
-              Content long one
-              Content long one
-              Content long one
+              <div style={fontHeadingStyle}>Lato (H2 A1)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty
+              lb dl 6b illb
+              Good job RCN rcn!
               Content long one
               Content long one
               Content long one
             </div>
+            <div className="col-sm-2 work-sans">
+              <div style={fontHeadingStyle}>Work Sans (H5 A5)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty
+              lb dl 6b illb
+              Good job RCN rcn!
+              Content long one
+              Content long one
+              Content long one
+            </div>
+            <div className="col-sm-2 alegreya-sans">
+              <div style={fontHeadingStyle}>Alegreya Sans (H1 A3)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty
+              lb dl 6b illb
+              Good job RCN rcn!
+              Content long one
+              Content long one
+              Content long one
+            </div>
+            <div className="col-sm-2 open-sans">
+              <div style={fontHeadingStyle}>Open Sans (H3 A4)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty Zz
+              lb dl 6b illb
+              Good job RCN rcn!
+              Content long one
+              Content long one
+              Content long one
+            </div>
+
           </div>
         </div>
         <RowPure name="Pure Cat"/>
