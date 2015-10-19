@@ -1,20 +1,12 @@
 Today
-	- finish basic setup of hot reload boilerplate
-		+- eslint
-		+- add css/sass processing: monitor rebuild times
-			+- configur sass to be expanded for dev
-		- add Bootstrap 
-			- try BS4 and non-compiled version, see if it adds a lot of overhead: in terms of compilation time
-		+- setup react 0.14
-		
-		+- static index.html for now (server side render later)
-	+- move boilerplate under rcn.io
-		- rename stuff in package.json
-	+!- upgrade to react 0.14 
+ - do After boilerplate
+ - setup typographic scale
+ - build a grid
+ - comile bootstrap and use compiled version
+ - extract boostrap to separate branch/folder so we can tweak, compile and reuse
+
 
 After Boilerplate setup
-	-- boostrap
-		- do a minimal custom build of bootstrap by compiling SASS with only stuff we need
 	-- atoms (UI)
 		- consider wftform feilds http://wtfforms.com/
 	-- webpack
@@ -64,3 +56,18 @@ Webpack Times
 		- node 4.1.1 and npm 2.14.4: 245ms
 		- node 4.1.1 and npm 3.3.4: 209ms - 227ms
 	- boostrap SASS adds ~600ms to rebuild times
+
+
+Done
+	+- finish basic setup of hot reload boilerplate
+		+- eslint
+		+- add css/sass processing: monitor rebuild times
+			+- configur sass to be expanded for dev
+		+- add Bootstrap 
+			+- try BS4 and non-compiled version, see if it adds a lot of overhead: in terms of compilation time
+		+- setup react 0.14
+		
+		+- static index.html for now (server side render later)
+	+- move boilerplate under rcn.io
+		- rename stuff in package.json
+	+!- upgrade to react 0.14 

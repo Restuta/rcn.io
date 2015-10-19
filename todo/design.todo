@@ -23,13 +23,17 @@ Design
 		- by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
 	- Body
  		- Lato: friendly and natural
- 		- Source Sans Pro
+ 		- Source Sans Pro: more condensed
+ 		- Roboto Condensed: even more condensed
+ 		- Alegreya Sans: helen liked it
  		+- Raleway: modern, geometric
  		- Montserrat alternative to Proxima Nova
  			- excellent for headlines 
  			- no italics
  			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
  	- Headings: 
+ 		-- Oswald: pairs with Lato well, condensed
+ 		- Montserrat: for maybe other headings
 --- Use Grid
 	-- which grid?
 --- Color
