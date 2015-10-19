@@ -37,6 +37,9 @@ module.exports = {
       loaders: ['style', 'css', 'sass'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'src/client')
+    }, {
+      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+      loaders: ['url?limit=10000&mimetype=application/font-woff']
     }]
   }
 };

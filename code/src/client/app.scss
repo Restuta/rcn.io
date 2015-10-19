@@ -29,9 +29,11 @@ $enable-flex: true;
 .roboto {font-family: 'Roboto';}
 
 @font-face{
-	font-family: 'MyWebFont';
+	font-family: 'Aleo';
 	src: url('Aleo-Regular-webfont.woff') format('woff'),
 }
+
+.aleo {font-family: 'Aleo';}
 
 
 $body-color: #333;
@@ -47,6 +49,7 @@ html, body {
 h1,h2,h3 {
   font-family: 'Oswald', serif;
   font-weight: 400;
+  font-size: 40px;
 }
 
 h1 {

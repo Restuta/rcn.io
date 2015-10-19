@@ -60,6 +60,7 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               <h1 className="montserrat">{headerText}</h1>
               <h1 className="merriweather">{headerText}</h1>
               <h1 className="francois-one">{headerText}</h1>
+              <h1 className="aleo">{headerText}</h1>
             </div>
           </div>
           <div className="row">
