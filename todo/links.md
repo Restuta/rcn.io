@@ -31,7 +31,7 @@
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
 * [ ] [Typographic scale](http://type-scale.com) 
 * [ ] [About Mordern Scale from typecast](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
-* [x][Find perfect font **Combo**](http://www.typegenius.com/)
+* [x] [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
 * [See fonts in use](http://fontsinuse.com/)
 * [Adobe Typekit font selector](https://typekit.com/fonts?collection=trial&licenses=web)
