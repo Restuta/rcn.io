@@ -11,6 +11,8 @@ $enable-flex: true;
 .montserrat { font-family: 'Montserrat';}
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 .merriweather {font-family: 'Merriweather';}
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+.francois-one {font-family: 'Francois One';}
 
 //body
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,100);
@@ -18,19 +20,28 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700);
 .alegreya-sans {font-family: 'Alegreya Sans';}
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.open-sans {font-family: 'Open Sans'; font-size: 15px;}
-
+.open-sans {font-family: 'Open Sans'; }
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .source-sans-pro {font-family: 'Source Sans Pro';}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+.roboto-condensed {font-family: 'Roboto Condensed';}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.roboto {font-family: 'Roboto';}
 
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
-.merriweather-sans {font-family: 'Merriweather Sans'; font-size: 14px;}
+@font-face{
+	font-family: 'MyWebFont';
+	src: url('Aleo-Regular-webfont.woff') format('woff'),
+}
 
 
-
+$body-color: #333;
+$body-bg-color: #FAFAFA;
 html, body {
   margin: 15px;
   font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: $body-color;
+  background-color: $body-bg-color;
 }
 
 h1,h2,h3 {
@@ -53,6 +64,10 @@ $col-color: lighten(lightpink, 11%);;
 //  min-width: 167px;
 }
 
+[class^="col-"].transparent {
+  background-color: transparent;
+  border: none;
+}
 
 
 div {

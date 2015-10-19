@@ -44,17 +44,24 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
     const fontHeadingStyle = {
         backgroundColor: 'pink',
         paddingLeft: '15px',
-        marginLeft: '-15px',
-        marginRight: '-15px'
+        marginLeft: '-13px',
+        marginRight: '-13px'
     };
+
+    const headerText = 'Road Races in CA, 100mi range'
+      .toUpperCase();
 
     return (
       <div>
-        <h1 className="oswald">Events in California</h1>
-        <h1 className="montserrat">Events in California</h1>
-        <h1 className="merriweather">Events in California</h1>
-
         <div className="container">
+          <div className="row">
+            <div className="col-sm-12 transparent">
+              <h1 className="oswald">{headerText}</h1>
+              <h1 className="montserrat">{headerText}</h1>
+              <h1 className="merriweather">{headerText}</h1>
+              <h1 className="francois-one">{headerText}</h1>
+            </div>
+          </div>
           <div className="row">
           <div className="col-sm-2 source-sans-pro">
             <div style={fontHeadingStyle}>Source Sans Pro (H3 A2)</div>
@@ -80,8 +87,8 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               Content long one
               Content long one
             </div>
-            <div className="col-sm-2 merriweather-sans">
-              <div style={fontHeadingStyle}>Merriweather Sans</div>
+            <div className="col-sm-2 roboto-condensed">
+              <div style={fontHeadingStyle}>Roboto Condensed</div>
               Dunnigan Hills Road Race
               64mi, 2h, 6200ft
               1234567890
@@ -106,6 +113,18 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             </div>
             <div className="col-sm-2 open-sans">
               <div style={fontHeadingStyle}>Open Sans (H3 A4)</div>
+              Dunnigan Hills Road Race
+              64mi, 2h, 6200ft
+              1234567890
+              QWERTYqwerty Zz
+              lb dl 6b illb
+              Good job RCN rcn!
+              Content long one
+              Content long one
+              Content long one
+            </div>
+            <div className="col-sm-2 roboto">
+              <div style={fontHeadingStyle}>Roboto</div>
               Dunnigan Hills Road Race
               64mi, 2h, 6200ft
               1234567890
