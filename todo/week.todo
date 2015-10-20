@@ -2,7 +2,10 @@ Today
  - do After boilerplate
  - setup typographic scale
  - build a grid
+ 	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
+ 	- add Autoprefixer
  - comile bootstrap and use compiled version
+  - add Autoprefixer
  - extract boostrap to separate branch/folder so we can tweak, compile and reuse
 
 
@@ -13,7 +16,6 @@ After Boilerplate setup
 		- setup url loader (see etse)
 		- extract text plugin for CSS for prod
 		- autoprefixer
-
 	- consider "react-document-title" package
 	-- server
 	    - setup server side rendering like in este
@@ -34,12 +36,16 @@ After Boilerplate setup
 After After Boilerplate =)
 	- figure out how to make Funtional Components Pure (pure Render mixin?)
 	- move webpack config to be ES6
+	-- play with Broserify, this claims it super-fast for rebuilding: http://christianalfoni.github.io/javascript/2014/08/29/choosing-the-correct-packaging-tool-for-react-js.html
+		- hot-reload: https://github.com/milankinen/livereactload
 
-Not Today
+Not Today 
+	-- Tweak Bootstrap
+		- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
-		- and nyan  oader like in este
+		- and nyan loader like in este
 	- setup webpack for production
 		- currently index.html for prod: doesn't include js and css files bundled
 			-- setup Server Side rendering like etse js
