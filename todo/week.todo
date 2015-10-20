@@ -36,8 +36,9 @@ After Boilerplate setup
 After After Boilerplate =)
 	- figure out how to make Funtional Components Pure (pure Render mixin?)
 	- move webpack config to be ES6
-	-- play with Broserify, this claims it super-fast for rebuilding: http://christianalfoni.github.io/javascript/2014/08/29/choosing-the-correct-packaging-tool-for-react-js.html
+	-- play with Browserify, this claims it super-fast for rebuilding: http://christianalfoni.github.io/javascript/2014/08/29/choosing-the-correct-packaging-tool-for-react-js.html
 		- hot-reload: https://github.com/milankinen/livereactload
+		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
 
 Not Today 
 	-- Tweak Bootstrap
