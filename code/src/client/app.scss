@@ -1,6 +1,16 @@
-$enable-flex: true;
+//$enable-flex: true;
+//$grid-columns: 12;
+//$grid-gutter-width: 1.5rem !default;
 //@import 'bower_components/bootstrap/scss/bootstrap';
-//@import 'bower_components/bootstrap/scss/bootstrap-grid.scss';
+
+//@import "bower_components/bootstrap/scss/mixins";
+//@import 'bower_components/bootstrap/scss/normalize';
+@import 'bower_components/bootstrap/scss/mixins/hover';
+@import 'bower_components/bootstrap/scss/mixins/tab-focus';
+@import 'bower_components/bootstrap/scss/variables';
+@import 'bower_components/bootstrap/scss/reboot';
+@import 'bower_components/bootstrap/scss/bootstrap-grid';
+
 //@import './atoms/sf-font.scss';
 
 

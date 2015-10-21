@@ -1,13 +1,22 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
 
-
-export default ({name = 'Nameless Cat'}) =>
+export const RowFunc = ({name = 'Nameless Cat'}) =>
   <div>Row: {name}</div>;
 
-export class RowPure extends Component {
+
+export default class Row extends Component {
   render() {
-    const {name} = this.props;
-    return <div>Row Pure:{name}</div>
+    const className = 'row ' + this.props.className;
+    return (
+      <div className={className}>
+        {this.props.children}
+      </div>
+    );
   }
+
+  //<Col xs={12} md={8} />
+  //<Col c="col-xs-12 col-md-8" />
+  //<Col {xs: 12, md: 8} />
+  //
 }
