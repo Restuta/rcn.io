@@ -48,12 +48,11 @@ html, body {
 
 h1,h2,h3 {
   font-family: 'Oswald', serif;
-  font-weight: 400;
-  font-size: 40px;
+  //font-weight: 700;
 }
 
 h1 {
-  //text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 $col-brdr-color: lighten(grey, 30%);
