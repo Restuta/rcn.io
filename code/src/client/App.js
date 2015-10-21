@@ -41,16 +41,14 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
 
   render() {
     const fontHeadingStyle = {
-      //backgroundColor: 'pink',
-      //fontWeight: '900',
-      //fontSize: '1rem',
+      fontWeight: '400',
+      fontSize: '1rem',
       color: 'grey',
       borderBottom: '1px dashed lightgrey',
+      paddingTop: '1rem',
+      paddingBottom: '1rem',
       marginBottom: '1rem',
-      minHeight: '3rem',
-      // paddingLeft: '15px',
-      // marginLeft: '-13px',
-      // marginRight: '-13px'
+      minHeight: '2rem',
     };
 
     const headerText = 'Road Races in CA, 100mi range'
@@ -82,31 +80,36 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             </div>
           </div>
           <div className="row">
-          <div className="col-sm-2 source-sans-pro">
-            <div style={fontHeadingStyle}>Source Sans Pro (H3 A2)</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2">
-              <div style={fontHeadingStyle}>Lato (H2 A1)</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2 roboto-condensed">
-              <div style={fontHeadingStyle}>Roboto Condensed</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2 alegreya-sans">
-              <div style={fontHeadingStyle}>Alegreya Sans (H1 A3)</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2 open-sans">
-              <div style={fontHeadingStyle}>Open Sans (H3 A4)</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2 roboto">
-              <div style={fontHeadingStyle}>Roboto</div>
-              {sampleText}
-            </div>
-
+            <div className="col-sm-2 source-sans-pro">
+              <div style={fontHeadingStyle}>Source Sans Pro (H3 A2)</div>
+                {sampleText}
+              </div>
+              <div className="col-sm-2">
+                <div style={fontHeadingStyle}>Lato (H2 A1)</div>
+                {sampleText}
+              </div>
+              <div className="col-sm-2 roboto-condensed">
+                <div style={fontHeadingStyle}>Roboto Condensed</div>
+                {sampleText}
+              </div>
+              <div className="col-sm-2 alegreya-sans">
+                <div style={fontHeadingStyle}>Alegreya Sans (H1 A3)</div>
+                {sampleText}
+              </div>
+              <div className="col-sm-2 open-sans">
+                <div style={fontHeadingStyle}>Open Sans (H3 A4)</div>
+                {sampleText}
+              </div>
+              <div className="col-sm-2 roboto">
+                <div style={fontHeadingStyle}>Roboto</div>
+                {sampleText}
+              </div>
+          </div>
+          <div className="row">
+          <div className="col-sm-2 merriweather-sans">
+            <div style={fontHeadingStyle}>Merriweather Sans</div>
+            {sampleText}
+          </div>
           </div>
         </div>
         <br/>

@@ -18,15 +18,28 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,100);
 .work-sans {font-family: 'Work Sans'}
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,700);
-.alegreya-sans {font-family: 'Alegreya Sans';}
+.alegreya-sans {font-family: 'Alegreya Sans'; font-size: 1.05rem;}
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.open-sans {font-family: 'Open Sans'; }
+.open-sans {font-family: 'Open Sans'; font-size: 0.95rem;}
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-.source-sans-pro {font-family: 'Source Sans Pro';}
+.source-sans-pro {font-family: 'Source Sans Pro'; }
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 .roboto-condensed {font-family: 'Roboto Condensed';}
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 .roboto {font-family: 'Roboto';}
+/* Merriweather Sans is a low-contrast semi-condensed sans-serif text typeface family
+	 designed to be pleasant to read at very small sizes. Merriweather Sans is traditional
+	 in feeling despite the modern shapes it has adopted for screens.*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300);
+.merriweather-sans {font-family: 'Merriweather Sans'; font-size: 0.9rem;}
+
+
+/* TODO:
+		PT Sans
+		PT Sans Narrow
+		Open Sans Condensed
+		Fira Sans
+*/
 
 @font-face{
 	font-family: 'Aleo';
@@ -41,7 +54,7 @@ $body-bg-color: #FAFAFA;
 html, body {
   margin: 15px;
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   color: $body-color;
   background-color: $body-bg-color;
 }
