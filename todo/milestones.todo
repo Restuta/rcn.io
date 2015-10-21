@@ -1,19 +1,20 @@
 Internal MVP 1.0
---	refine Pocket
--- 	main events page with fake data
-	- define event structure in JSON (I already have it)
-	- generate fake data
-	- sketch + draft
-	- pick colors and fonts
-		- setup a styleguide
-		- allow to easely compare variations
-	- pick UI stack
-		- Ember
-		- React and Redux
-		- Elm
--- static only: no need to figure out how to deploy yet
--- basic card UI
-	- sketch
+.- (moved to Github)
+	--	refine Pocket
+	-- 	main events page with fake data
+		- define event structure in JSON (I already have it)
+		- generate fake data
+		- sketch + draft
+		- pick colors and fonts
+			- setup a styleguide
+			- allow to easely compare variations
+		- pick UI stack
+			- Ember
+			- React and Redux
+			- Elm
+	-- static only: no need to figure out how to deploy yet
+	-- basic card UI
+		- sketch
 
 Public MVP 1.0 (when we show it to others)
  - calendar of events: that is better than NCNCA

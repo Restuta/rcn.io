@@ -105,6 +105,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Font Reach](http://www.fontreach.com/#top) nice gradients and font
 * [Top Nav animation + loading in menu icon](http://polygraw.com/)
 * [Design Awwwards](http://www.awwwards.com/)
 * [Very Nice Landing Page](https://www.duolingo.com/)
