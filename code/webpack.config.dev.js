@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const WebpackNotifierPlugin = require('webpack-notifier');
 const constants = require('./constants');
 
 module.exports = {
