@@ -32,15 +32,16 @@ $enable-flex: true;
 	 in feeling despite the modern shapes it has adopted for screens.*/
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300);
 .merriweather-sans {font-family: 'Merriweather Sans'; font-size: 0.9rem;}
-
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 .pt-sans {font-family: 'PT Sans';}
-
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+.pt-sans-narrow {font-family: 'PT Sans Narrow';}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+.open-sans-condensed {font-family: 'Open Sans Condensed';}
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+.fira-sans {font-family: 'Fira Sans';}
 
 /* TODO:
-		PT Sans
-		PT Sans Narrow
-		Open Sans Condensed
 		Fira Sans
 */
 

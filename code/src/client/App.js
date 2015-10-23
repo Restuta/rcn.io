@@ -28,35 +28,45 @@ class Counter extends Component {
   }
 }
 
+const FontColumn = (props) => {
+  const fontHeadingStyle = {
+    fontWeight: '400',
+    fontSize: '1rem',
+    color: 'grey',
+    borderBottom: '1px dashed lightgrey',
+    paddingTop: '1rem',
+    paddingBottom: '1rem',
+    marginBottom: '1rem',
+    minHeight: '2rem',
+  };
+
+  const sampleText = `
+    Dunnigan Hills Road Race
+    64mi, 2h, 6814ft
+    1234567890
+    QWERTYqwerty Zz
+    lb dl 6b illb
+    Good job RCN rcn!
+    Content long one
+    Content long one
+    Content long one`;
+
+  const {className, fontName} = {...props};
+  const colClasses = 'col-sm-2 ' + className;
+
+  return (
+    <div className={colClasses}>
+      <div style={fontHeadingStyle}>{fontName}</div>
+      {sampleText}
+    </div>
+  );
+};
+
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
-
-
   render() {
-    const fontHeadingStyle = {
-      fontWeight: '400',
-      fontSize: '1rem',
-      color: 'grey',
-      borderBottom: '1px dashed lightgrey',
-      paddingTop: '1rem',
-      paddingBottom: '1rem',
-      marginBottom: '1rem',
-      minHeight: '2rem',
-    };
-
     const headerText = 'Road Races in CA, 100mi range'
       .toUpperCase();
-
-    const sampleText = `
-      Dunnigan Hills Road Race
-      64mi, 2h, 6814ft
-      1234567890
-      QWERTYqwerty Zz
-      lb dl 6b illb
-      Good job RCN rcn!
-      Content long one
-      Content long one
-      Content long one`;
 
     return (
       <div>
@@ -73,40 +83,19 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-2 source-sans-pro">
-              <div style={fontHeadingStyle}>Source Sans Pro (H3 A2)</div>
-                {sampleText}
-              </div>
-              <div className="col-sm-2">
-                <div style={fontHeadingStyle}>Lato (H2 A1)</div>
-                {sampleText}
-              </div>
-              <div className="col-sm-2 roboto-condensed">
-                <div style={fontHeadingStyle}>Roboto Condensed</div>
-                {sampleText}
-              </div>
-              <div className="col-sm-2 alegreya-sans">
-                <div style={fontHeadingStyle}>Alegreya Sans (H1 A3)</div>
-                {sampleText}
-              </div>
-              <div className="col-sm-2 open-sans">
-                <div style={fontHeadingStyle}>Open Sans (H3 A4)</div>
-                {sampleText}
-              </div>
-              <div className="col-sm-2 roboto">
-                <div style={fontHeadingStyle}>Roboto</div>
-                {sampleText}
-              </div>
+            <FontColumn className="source-sans-pro" fontName="Source Sans Pro (H3 A2)"/>
+            <FontColumn className="" fontName="Lato (H2 A1)"/>
+            <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
+            <FontColumn className="alegreya-sans" fontName="Alegreya Sans (H1 A3)"/>
+            <FontColumn className="open-sans" fontName="Open Sans (H3 A4)"/>
+            <FontColumn className="roboto" fontName="Roboto"/>
           </div>
           <div className="row">
-            <div className="col-sm-2 merriweather-sans">
-              <div style={fontHeadingStyle}>Merriweather Sans</div>
-              {sampleText}
-            </div>
-            <div className="col-sm-2 pt-sans">
-              <div style={fontHeadingStyle}>PT Sans</div>
-              {sampleText}
-            </div>
+            <FontColumn className="merriweather-sans" fontName="Merriweather Sans"/>
+            <FontColumn className="pt-sans" fontName="PT Sans"/>
+            <FontColumn className="pt-sans-narrow" fontName="PT Sans Narrow"/>
+            <FontColumn className="sans-condensed" fontName="Open Sans Condensed"/>
+            <FontColumn className="fira-sans" fontName="Fira Sans"/>
           </div>
         </div>
         <br/>
