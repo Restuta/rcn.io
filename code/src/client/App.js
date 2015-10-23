@@ -28,13 +28,6 @@ class Counter extends Component {
   }
 }
 
-const Stateless = (props) => {
-//  shouldComponentUpdate = shouldPureComponentUpdate;
-  const {name} = props;
-
-  return <div>{name}</div>;
-};
-
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
 
@@ -106,10 +99,14 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               </div>
           </div>
           <div className="row">
-          <div className="col-sm-2 merriweather-sans">
-            <div style={fontHeadingStyle}>Merriweather Sans</div>
-            {sampleText}
-          </div>
+            <div className="col-sm-2 merriweather-sans">
+              <div style={fontHeadingStyle}>Merriweather Sans</div>
+              {sampleText}
+            </div>
+            <div className="col-sm-2 pt-sans">
+              <div style={fontHeadingStyle}>PT Sans</div>
+              {sampleText}
+            </div>
           </div>
         </div>
         <br/>
