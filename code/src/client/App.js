@@ -46,10 +46,7 @@ const FontColumn = (props) => {
     1234567890
     QWERTYqwerty Zz
     lb dl 6b illb
-    Good job RCN rcn!
-    Content long one
-    Content long one
-    Content long one`;
+    Good job RCN rcn!`;
 
   const {className, fontName} = {...props};
   const colClasses = 'col-sm-2 ' + className;
@@ -85,10 +82,10 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
           <div className="row">
             <FontColumn className="source-sans-pro" fontName="Source Sans Pro (H3 A2)"/>
             <FontColumn className="" fontName="Lato (H2 A1)"/>
+            <FontColumn className="roboto" fontName="Roboto"/>
             <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
             <FontColumn className="alegreya-sans" fontName="Alegreya Sans (H1 A3)"/>
             <FontColumn className="open-sans" fontName="Open Sans (H3 A4)"/>
-            <FontColumn className="roboto" fontName="Roboto"/>
           </div>
           <div className="row">
             <FontColumn className="merriweather-sans" fontName="Merriweather Sans"/>

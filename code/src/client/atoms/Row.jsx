@@ -8,6 +8,6 @@ export default ({name = 'Nameless Cat'}) =>
 export class RowPure extends Component {
   render() {
     const {name} = this.props;
-    return <div>Row Pure:{name}</div>
+    return <div>Row Pure:{name}</div>;
   }
 }
