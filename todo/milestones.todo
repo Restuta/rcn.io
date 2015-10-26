@@ -16,6 +16,10 @@ Internal MVP 1.0
 	-- basic card UI
 		- sketch
 
+Pre-public MVP
+- landing page with email collection and one line description
+- blog post about rcn
+
 Public MVP 1.0 (when we show it to others)
  - calendar of events: that is better than NCNCA
  - cards with easely available info
@@ -26,6 +30,7 @@ Public MVP 1.0 (when we show it to others)
  - login with email + license no
  - great UX (we think it's great and one random person does)
  - others who picked that event are shown 
+ - suport for Polo Field schedule
 
 Public MVP 2.0
  - start time by category
@@ -46,3 +51,6 @@ RC 1.1
 
 RC 1.2
 - individual day planning: what we do manually calculating when to wake up etc
+
+Future
+- Embedded Calendar (https://github.com/Restuta/rcn.io/issues/19)
