@@ -1,5 +1,5 @@
 ### What is [rcn.io](http://rcn.io)?
-It's is a project for re-shaping bike racing landscape in CA and USA. Our aim is to bring more people to the sport and we know how to do it _right_.
+It's is a project for re-shaping bike racing landscape in CA first and USA next. Our aim is to bring more people to the sport and we know how to do it _right_.
 
 Currently, you, as a racer have no good tools to:
 * **plan your season**
@@ -37,11 +37,18 @@ Public data is owned by community.
 
 Private data is owned by you.
 
-###Motto
+### Motto
 
 Stay small.
 
 Race safe. :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: 
+
+---
+
+### How you can help
+
+Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](https://www.facebook.com/anton.vynogradenko) or [create a new issue](https://github.com/Restuta/rcn.io/issues/new) in this repo and describe how do you want to help.
+
 
 ---
 
