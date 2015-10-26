@@ -4,7 +4,9 @@ Story
 .-(as last item for conclusions)
 - Note or final decision
 
-
+Ideas
+	- fill event cards with solid color: and show data with white color and it's shades
+	- show additional infor when event card is hovered: like on dribble and many other sites
 
 Design
 --- Statements
@@ -38,6 +40,9 @@ Design
 	-- which grid?
 --- Color
  	- pick one primary color and 2 shades of grey
+ 	- https://dribbble.com/shots/972836-Favorite-Color-Playoff/rebounds
+--- Icons
+	- consider create my own pack https://glyphter.com
 --- CSS
  	.-(or PostCSS?) use SASS for pre-processing and main styles
  		- use Twbs 4 SASS

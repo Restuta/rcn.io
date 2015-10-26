@@ -52,6 +52,7 @@
 * [Fonts Popularity](http://www.fontreach.com)
 
 ### Icons
+* [Glyphter - Create Your Own Icon sets](https://glyphter.com) from OSS fonts.
 * [Nucleo](https://www.nucleoapp.com/?ref=producthunt) - smartest set of icons
 * [Smart Icons](https://smarticons.co) - Customizable SVG icon system for the modern web.
 * [Iconmonstr](http://iconmonstr.com/)
