@@ -20,12 +20,12 @@ Currently, you, as a racer have no good tools to:
 
 Currently we are building a product to help with the above.
 
-We also think that _promoters_ are magical unicorns who were sent to our planet by divine intervention and we are extremely lucky to have them. It's just super hard to organize bike races currently and they are definitely not an ordinal humans. It takes skill and enormous effort.
+We also think that _promoters_ are magical unicorns given to us by divine intervention. It's super hard to organize bike races and promoters are definitely uber-humans. It takes skill, enormous effort and years of dedication.
 
 ![](https://media0.giphy.com/media/DkwtmuLxFafVm/200.gif)
 
 
-So our next steps will be to work with them closely and simplify the way things are so we could have more local events.
+Thus, our next step will be to work with them and simplify the way things are, so we could have more local events.
 
 ### Our philosophy
 
@@ -33,12 +33,15 @@ Everything is open source, free and ads free forever.
 
 Expenses are crowdfunded.
 
-Data is owned by community.
+Public data is owned by community.
+
+Private data is owned by you.
+
+###Motto
 
 Stay small.
 
-Race safe. 
-:bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: 
+Race safe. :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: 
 
 ---
 
