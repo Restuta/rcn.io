@@ -23,6 +23,22 @@
 $body-color: #333;
 $body-bg-color: #FAFAFA;
 
+.marked {
+	opacity: 1 !important;
+	//font-size: 6px;
+}
+
+$dimentions: 4px;
+.updates {
+	background-color: black;
+	height: $dimentions;
+	width: $dimentions;
+	float: left;
+	border-radius: 3px;
+	margin-right: 1px;
+
+}
+
 html, body {
   margin: 15px;
   font-family: 'Lato', sans-serif;
@@ -44,6 +60,7 @@ $col-color: lighten(lightpink, 11%);;
   border: 1px solid $col-brdr-color;
   min-height: 100px;
   background-color: $col-color;
+	opacity: 0.3;
 //  min-width: 167px;
 }
 
