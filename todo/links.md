@@ -106,6 +106,10 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* Landing Pages
+  - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
+  - [Background Animations] (http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
+* [ ] [A lot of Tools, animations, etc](http://tympanus.net/)
 * [Font Reach](http://www.fontreach.com/#top) nice gradients and font
 * [Top Nav animation + loading in menu icon](http://polygraw.com/)
 * [Design Awwwards](http://www.awwwards.com/)

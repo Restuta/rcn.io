@@ -1,12 +1,22 @@
 Today
- - do After boilerplate
+ - do "After boilerplate"
  - setup typographic scale
  - build a grid
  	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	- add Autoprefixer
+ 	- pick number of columns and gutter size
+ 	- see if we should use fluid ui
  - comile bootstrap and use compiled version
   - add Autoprefixer
  - extract boostrap to separate branch/folder so we can tweak, compile and reuse
+ 	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ - build basic BS components
+ 	+- row
+ 	- column
+ - setup icons
+ 	- pick icons
+ 	- set them up
+
 
 
 After Boilerplate setup
