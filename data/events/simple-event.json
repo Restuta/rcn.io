@@ -1,0 +1,22 @@
+{
+  "id": "evt-1",
+  "discipline": "Road",
+  "type": "Time Trial",
+  "name": "San Bruno Mountain Hill Climb",
+  "date": "January 01, 2014",
+  "dustanceMi": 20,
+  "durationMin": "",
+  "elevationGainFt": 2200,
+  "startTime": "8:30 AM",
+  "promoter": "Peninsula Velo Cycling Club",
+  "location": {
+    "streetAddress": "Guadalupe Canyon Parkway & Bayshore Blvd",
+    "city": "Brisbane",
+    "state": "CA",
+    "zip": 94005
+  },
+  "distanceToEventMi": "60",
+  "estimatedTravelTime": "1h",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/01/01/2014%20-%202%3A29am/183%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED%203.pdf",
+  "registrationUrl": "https://www.usacycling.org/register/2014-183"
+}
