@@ -1,11 +1,22 @@
 {
   "races": [{
-    "id": 0,
+    "id": "evt-1",
     "discipline": "Road",
     "type": "Time Trial",
     "name": "San Bruno Mountain Hill Climb",
-    "date": "January 01, 2014",
+    "dates": ["January 01, 2014"],
+    "dustanceMi": 63,
+    "durationMin": "",
+    "elevationGain": 1300,
+    "startTime": {
+      "Men P/1/2": "10:00",
+      "Men E3": "10:00",
+      "Men 35+ 1/2/3": "10:04",
+      "Women P/1/2": "10:08"
+    },
+    "startTime": 8.30,
     "promoter": {
+      "id": "prm-1",
       "name": "Peninsula Velo Cycling Club",
       "url": ""
     },
@@ -30,18 +41,11 @@
     "bikereg": {
       "url": "",
       "name": "",
-
     },
-    "duration": 3.5,
-    "durationType": "miles",
-    "elevation": 1300,
-    "startTime": {
-      "Men P/1/2": "10:00",
-      "Men E3": "10:00",
-      "Men 35+ 1/2/3": "10:04",
-      "Women P/1/2": "10:08"
+    "ncnca <TBD>": {
+      "url": "",
+      "name": ""
     },
-    "startTime": 8.30,
     "lastTimeResult": "10/36"
   }]
 }
