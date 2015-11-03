@@ -26,7 +26,7 @@ var cityData = ["Ross", "Sacramento", "St. Helena", "Salinas", "San Anselmo", "S
 
 var fullEventData = eventData.map(function(element){
     var newObject = {
-        id: "evt-" + getRandomNumber(1000, 9999),
+        id: "evt-" + getRandomNumber(10000000, 99999999),
         discipline: getRandomDiscipline(),
         type: getRandomType(),
         name: element.name,
