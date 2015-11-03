@@ -1,1 +1,46 @@
-console.log('Hello Helen ;)🐱');
+console.log('Hello Anton ;) 🐱');
+
+var eventData = [
+  {
+    "date": "January 31st 2015",
+    "name": "Cal Aggie Criterium"
+  }
+  // },{
+  //   "date": "February 7th 2015",
+  //   "name": "John C. Schlesinger Memorial Circuit Race and Team Time Trial"
+  // },{
+  //   "date": "February 8th 2015",
+  //   "name": "RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"
+  // }
+ ]
+ var fullEventData = eventData.map(function(element){
+     var newObject = {
+         id: "evt-" + getRandomDigits(1000, 9999),
+         discipline: getRandomDiscipline(),
+         type: getRandomType(),
+         name: element.name,
+         date: element.date,
+         distanceMi: getRandomNumber(1, 200) + " Mi",
+         durationMin: getRandomNumber(5, 180) + " Min",
+         elevationGainFt: getRandomNumber(0, 2000) + " ft",
+         startTime: getRandomTime(),
+         promoter: getRandomPromoter(),
+         location: {
+            streetAddress: getRandomStreet(),
+            city: getRandomCity(),
+            state: "CA",
+            zip: "9" + getRandomNumber(1000, 9999)
+         },
+         distanceToEventMi: getRandomNumber(1, 200) + " Mi",
+         estimatedTravelTime: getRandomNumber(1, 5) + " h",
+         flyerUrl: "http://www.ncnca.org/sites/default/files/01/01/2014%20-%202%3A29am/183%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED%203.pdf",
+         registrationUrl: "https://www.usacycling.org/register/2014-183"
+     };
+     return newObject;
+ });
+ console.log(fullEventData);
+
+ function getRandomNumber(startNumber, endNumber){
+     return Math.floor((Math.random() * endNumber) + startNumber);
+ };
+ 
