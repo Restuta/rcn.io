@@ -1,6 +1,4 @@
 Today
- - do "After boilerplate"
- - setup typographic scale
  - build a grid
  	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	- add Autoprefixer
@@ -10,18 +8,19 @@ Today
   - add Autoprefixer
  - extract boostrap to separate branch/folder so we can tweak, compile and reuse
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
- - build basic BS components
+ -- build basic Bootstrap components
  	+- row
  	- column
+ 	- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+ - setup typographic scale
  - setup icons
  	- pick icons
  	- set them up
 
 
-
 After Boilerplate setup
 	-- atoms (UI)
-		- consider wftform feilds http://wtfforms.com/
+		
 	-- webpack
 		- setup url loader (see etse)
 		- extract text plugin for CSS for prod
@@ -52,7 +51,7 @@ After After Boilerplate =)
 
 Not Today 
 	-- Tweak Bootstrap
-		- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+		- consider wftform feilds http://wtfforms.com/
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
