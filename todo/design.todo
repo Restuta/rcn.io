@@ -96,6 +96,8 @@ Architecture Design
 			- inline styles for dev, normal for production: like https://github.com/este/este, inline in dev makes styles hot-reloadable
 			- style-loader for hot reloading
 			- SVG optimization: https://github.com/imagemin/imagemin-svgo
+	- AI
+		- http://wit.ai
 
 Project Setup
 	- copy stuff from este.js
