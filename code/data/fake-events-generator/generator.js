@@ -37,7 +37,7 @@ var fullEventData = eventData.map(function(element){
         startTime: getRandomTime(),
         promoter: getRandomPromoter(),
         location: {
-            streetAddress: getRandomStreet(),
+            streetAddress: getRandomNumber(1, 1999) + " " + getRandomStreet(),
             city: getRandomCity(),
             state: "CA",
             zip: "9" + getRandomNumber(1000, 9999)
