@@ -15,7 +15,7 @@ var eventData = [
 ];
 var disciplineData = ["Road", "MTB", "Track", "Cyclocross", "Clinic"];
 var typeData = ["Road Race", "Criterium", "Cyclocross", "Time Trial", "Cross Country", "Cross Country Marathon", "Downhill", "Dual Slalom", "Short Track Cross Country", "Super D", "Points Race", "Scratch Race", "Individual Pursuit", "Sprint", "Keirin"];
- 
+var timeData = ["8:00 AM", "8:30 AM", "9:00 AM", "9:20 AM", "10:00 AM", "10:15 AM", "11:40 AM", "12:00 PM", "12:03 PM", "1:00 PM", "1:55 PM", "2:00 PM", "2:18 PM"];
 
 var fullEventData = eventData.map(function(element){
     var newObject = {
@@ -27,7 +27,7 @@ var fullEventData = eventData.map(function(element){
         distanceMi: getRandomNumber(1, 200) + " Mi",
         durationMin: getRandomNumber(5, 180) + " Min",
         elevationGainFt: getRandomNumber(0, 2000) + " ft",
-        //startTime: getRandomTime(),
+        startTime: getRandomTime(),
         //promoter: getRandomPromoter(),
         // location: {
         //    streetAddress: getRandomStreet(),
@@ -53,6 +53,8 @@ function getRandomDiscipline(){
 };
 function getRandomType(){
     return typeData[getRandomNumber(0,typeData.length)];
+};
+function getRandomTime(){
+    return timeData[getRandomNumber(0,timeData.length)];
 }
-
 
