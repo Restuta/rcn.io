@@ -2,6 +2,7 @@ import React from 'react';
 import Component from 'react-pure-render/component';
 import './app.scss';
 import Row from './atoms/Row.jsx';
+import Col from './atoms/Col.jsx';
 import Counter from './tmp/Counter.jsx';
 
 
@@ -21,6 +22,9 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               <h1 className="oswald">Road Races in CA, 100mi range </h1>
             </div>
           </div>
+          <Row>
+            <Col xs={1} md={2}>test</Col>
+          </Row>
           <Row className="bla">
             {columns}
           </Row>
