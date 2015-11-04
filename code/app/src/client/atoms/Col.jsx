@@ -1,5 +1,6 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
+import classNames from 'classnames';
 
 function getColClassName(propName, propValue) {
   const validProps = {
@@ -22,10 +23,11 @@ export default class Col extends Component {
   render() {
     const combinedClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
-      .reduce((curr, prev) => prev + (curr ? (' ' + curr) : ''))
+      .reduce((curr, prev) => classNames(prev, curr))
       .trim();
 
-    const finalClassName = combinedClassNames + (this.props.className || '');
+    //const finalClassName = combinedClassNames + (this.props.className || '');
+    const finalClassName = classNames(combinedClassNames, this.props.className);
     return (
       <div className={finalClassName}>
         {this.props.children}
