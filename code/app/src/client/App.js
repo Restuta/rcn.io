@@ -9,7 +9,7 @@ import Counter from './tmp/Counter.jsx';
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
   render() {
-    let columns = [1, 2, 2, 2, 2, 2, 2, 1];
+    let columns = [1, 2, 2, 2, 2, 2, 2, 2, 1];
 
     return (
       <div>
