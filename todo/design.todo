@@ -46,6 +46,7 @@ Design
 --- CSS
  	.-(or PostCSS?) use SASS for pre-processing and main styles
  		- use Twbs 4 SASS
+ 	- Follow http://rscss.io/
  	- use Postcss for post-processing:condider Postcss to be running only in prod configuration if it takes dev-time
  		- use Autoprefixer
  		- consider CSS modules

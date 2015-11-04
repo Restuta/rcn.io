@@ -23,7 +23,10 @@ Today
 
 
 After Boilerplate setup
+	- setup render vizualizer: https://github.com/spredfast/react-transform-render-visualizer
 	-- CI
+		- setup mocha
+			- write simple test for css class transforms
 		- setup travis CI
 	-- atoms (UI)
 		
