@@ -4,10 +4,7 @@ Today
  	- add Autoprefixer
  	- pick number of columns and gutter size
  	- see if we should use fluid ui
- - comile bootstrap and use compiled version
-  - add Autoprefixer
- - extract boostrap to separate branch/folder so we can tweak, compile and reuse
- 	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ 
  -- build basic Bootstrap components
  	+- row
  	- column
@@ -16,9 +13,18 @@ Today
  - setup icons
  	- pick icons
  	- set them up
+ -- CSS
+ 	- comile bootstrap and use compiled version
+ 	- add Autoprefixer
+ 	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
+ 	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ 	- setup PostCSS with SASS-like plugins
+ 		- compare compilation time to SASS
 
 
 After Boilerplate setup
+	-- CI
+		- setup travis CI
 	-- atoms (UI)
 		
 	-- webpack
