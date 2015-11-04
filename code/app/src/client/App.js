@@ -11,7 +11,7 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
   render() {
     let columns = [];
     for (let i = 1; i <= 31; i++) {
-      columns.push(<div key={i} className="col-sm-2">{i}</div>);
+      columns.push(<Col key={i} sm={2}>{i}</Col>);
     }
 
     return (
@@ -22,9 +22,6 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               <h1 className="oswald">Road Races in CA, 100mi range </h1>
             </div>
           </div>
-          <Row>
-            <Col xs={1} md={2}>test</Col>
-          </Row>
           <Row className="bla">
             {columns}
           </Row>
