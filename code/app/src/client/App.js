@@ -9,10 +9,7 @@ import Counter from './tmp/Counter.jsx';
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
   render() {
-    let columns = [];
-    for (let i = 1; i <= 31; i++) {
-      columns.push(<Col key={i} sm={2} className="blue">{i}</Col>);
-    }
+    let columns = [1, 2, 2, 2, 2, 2, 2, 1];
 
     return (
       <div>
@@ -22,8 +19,10 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
               <h1 className="oswald">Road Races in CA, 100mi range </h1>
             </div>
           </div>
-          <Row className="bla">
-            {columns}
+          <Row>
+            {columns.map((x, i) =>
+              <Col key={i} sm={x}>{x}</Col>)
+            }
           </Row>
         </div>
         <Counter increment={1} color="silver" marginTop="20px" />
