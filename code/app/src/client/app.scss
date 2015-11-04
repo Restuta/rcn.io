@@ -42,7 +42,7 @@ $col-color: lighten(lightpink, 11%);;
 
 [class^="col-"] {
   border: 1px solid $col-brdr-color;
-  min-height: 100px;
+  min-height: 200px;
   background-color: $col-color;
 //  min-width: 167px;
 }

@@ -4,12 +4,12 @@ import './app.scss';
 import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
 import Counter from './tmp/Counter.jsx';
+import Event from './tmp/EventStub.jsx';
 
-
-
-export class App extends Component { // eslint-disable-line react/no-multi-comp
+export class App extends Component {
   render() {
-    let columns = [1, 2, 2, 2, 2, 2, 2, 2, 1];
+    let genericWeek = [2, 2, 2, 2, 2, 2, 2];
+    let roadWeek = [1, 1, 1, 1, 2, 4, 4];
 
     return (
       <div>
@@ -20,8 +20,15 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             </div>
           </div>
           <Row>
-            {columns.map((x, i) =>
-              <Col key={i} sm={x}>{x}</Col>)
+            <Col className="col-sm-offset-1" />
+            {genericWeek.map((x, i) =>
+              <Col key={i} sm={x}>{++i}<Event/></Col>)
+            }
+          </Row>
+          <Row style={{marginTop: "20"}}>
+            <Col className="col-sm-offset-1" />
+            {roadWeek.map((x, i) =>
+              <Col key={i} sm={x}>{++i}<Event/></Col>)
             }
           </Row>
         </div>

@@ -30,7 +30,7 @@ export default class Col extends Component {
     //const finalClassName = combinedClassNames + (this.props.className || '');
     const finalClassName = classNames(combinedClassNames, this.props.className);
     return (
-      <div className={finalClassName}>
+      <div className={finalClassName} {...this.props}>
         {this.props.children}
       </div>
     );
