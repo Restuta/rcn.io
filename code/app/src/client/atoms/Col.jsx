@@ -21,6 +21,7 @@ function getColClassName(propName, propValue) {
 //usage <Col xs={12} md={8} />
 export default class Col extends Component {
   render() {
+    //TODO: move this to it's own module
     const combinedClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
       .reduce((curr, prev) => classNames(prev, curr))
