@@ -1,7 +1,7 @@
 import util from 'util';
 import Data from './data';
 
-console.log('Love you, Helen ;)');
+//console.log('Love you, Helen ;)');
 
 
 var fullEventData = Data.eventData.map(function(event) {
@@ -30,9 +30,11 @@ var fullEventData = Data.eventData.map(function(event) {
   return newObject;
 });
 
-console.log(util.inspect(fullEventData, {
-  colors: true
-}));
+// console.log(util.inspect(fullEventData, {
+//   colors: true
+// }));
+
+console.log(JSON.stringify(fullEventData, null, '  '));
 
 function getRandomNumber(startNumber, endNumber) {
   return Math.floor((Math.random() * endNumber) + startNumber);
