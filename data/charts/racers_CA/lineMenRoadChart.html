@@ -21,123 +21,125 @@
             height: 100%;
             width: 100%;
         }
-
-        .dashed {
-            stroke-dasharray: 5,5;
+        #chartZoom {
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
-<body class='with-3d-shadow with-transitions'>
-<div style="position:absolute; top: 0; left: 0;">
-    <button onclick="randomizeFillOpacity();">Randomize fill opacity</button>
-    <button onclick="expandLegend();">Expand/Contract Legend</button>
-    <script>
-        var expandLegend = function() {
-            var exp = chart.legend.expanded();
-            chart.legend.expanded(!exp);
-            chart.update();
-        }
-    </script>
+<body>
+<div id="chartZoom">
+    <a href="#" id="zoomIn">Zoom In</a> <a href="#" id="zoomOut">Zoom Out</a>
 </div>
-<div id="chart1"></div>
+
+<div id="chart1" class='with-transitions'>
+    <svg></svg>
+</div>
 
 <script>
-    // Wrapping in nv.addGraph allows for '0 timeout render', stores rendered charts in nv.graphs, and may do more in the future... it's NOT required
-    var chart;
-    var data;
-
-    var randomizeFillOpacity = function() {
-        var rand = Math.random(0,1);
-        for (var i = 0; i < 100; i++) { // modify sine amplitude
-            data[4].values[i].y = Math.sin(i/(5 + rand)) * .4 * rand - .25;
-        }
-        data[4].fillOpacity = rand;
-        chart.update();
-    };
 
     nv.addGraph(function() {
-        chart = nv.models.lineChart()
-            .options({
-                transitionDuration: 300,
-                useInteractiveGuideline: true
-            })
-        ;
+        var chart = nv.models.lineChart();
+        var fitScreen = false;
+        var width = 600;
+        var height = 300;
+        var zoom = 1;
 
-        // chart sub-models (ie. xAxis, yAxis, etc) when accessed directly, return themselves, not the parent chart, so need to chain separately
+        chart.useInteractiveGuideline(true);
         chart.xAxis
-            .axisLabel("Time (s)")
-            .tickFormat(d3.format(',.1f'))
-            .staggerLabels(true)
-        ;
+            .tickFormat(d3.format(',r'));
+
+        chart.lines.dispatch.on("elementClick", function(evt) {
+            console.log(evt);
+        });
 
         chart.yAxis
             .axisLabel('Voltage (v)')
-            .tickFormat(function(d) {
-                if (d == null) {
-                    return 'N/A';
-                }
-                return d3.format(',.2f')(d);
-            })
-        ;
+            .tickFormat(d3.format(',.2f'));
 
-        data = sinAndCos();
+        d3.select('#chart1 svg')
+            .attr('perserveAspectRatio', 'xMinYMid')
+            .attr('width', width)
+            .attr('height', height)
+            .datum(sinAndCos());
 
-        d3.select('#chart1').append('svg')
-            .datum(data)
-            .call(chart);
+        setChartViewBox();
+        resizeChart();
 
-        nv.utils.windowResize(chart.update);
+        nv.utils.windowResize(resizeChart);
 
+        d3.select('#zoomIn').on('click', zoomIn);
+        d3.select('#zoomOut').on('click', zoomOut);
+
+
+        function setChartViewBox() {
+            var w = width * zoom,
+                h = height * zoom;
+
+            chart
+                .width(w)
+                .height(h);
+
+            d3.select('#chart1 svg')
+                .attr('viewBox', '0 0 ' + w + ' ' + h)
+                .transition().duration(500)
+                .call(chart);
+        }
+
+        function zoomOut() {
+            zoom += .25;
+            setChartViewBox();
+        }
+
+        function zoomIn() {
+            if (zoom <= .5) return;
+            zoom -= .25;
+            setChartViewBox();
+        }
+
+        // This resize simply sets the SVG's dimensions, without a need to recall the chart code
+        // Resizing because of the viewbox and perserveAspectRatio settings
+        // This scales the interior of the chart unlike the above
+        function resizeChart() {
+            var container = d3.select('#chart1');
+            var svg = container.select('svg');
+
+            if (fitScreen) {
+                // resize based on container's width AND HEIGHT
+                var windowSize = nv.utils.windowSize();
+                svg.attr("width", windowSize.width);
+                svg.attr("height", windowSize.height);
+            } else {
+                // resize based on container's width
+                var aspect = chart.width() / chart.height();
+                var targetWidth = parseInt(container.style('width'));
+                svg.attr("width", targetWidth);
+                svg.attr("height", Math.round(targetWidth / aspect));
+            }
+        }
         return chart;
     });
 
     function sinAndCos() {
         var sin = [],
-            sin2 = [],
-            cos = [],
-            rand = [],
-            rand2 = []
-            ;
+            cos = [];
 
         for (var i = 0; i < 100; i++) {
-            sin.push({x: i, y: i % 10 == 5 ? null : Math.sin(i/10) }); //the nulls are to show how defined works
-            sin2.push({x: i, y: Math.sin(i/5) * 0.4 - 0.25});
+            sin.push({x: i, y: Math.sin(i/10) });
             cos.push({x: i, y: .5 * Math.cos(i/10)});
-            rand.push({x:i, y: Math.random() / 10});
-            rand2.push({x: i, y: Math.cos(i/10) + Math.random() / 10 })
         }
 
         return [
             {
-                area: true,
                 values: sin,
                 key: "Sine Wave",
-                color: "#ff7f0e",
-                strokeWidth: 4,
-                classed: 'dashed'
+                color: "#ff7f0e"
             },
             {
                 values: cos,
                 key: "Cosine Wave",
                 color: "#2ca02c"
-            },
-            {
-                values: rand,
-                key: "Random Points",
-                color: "#2222ff"
-            },
-            {
-                values: rand2,
-                key: "Random Cosine",
-                color: "#667711",
-                strokeWidth: 3.5
-            },
-            {
-                area: true,
-                values: sin2,
-                key: "Fill opacity",
-                color: "#EF9CFB",
-                fillOpacity: .1
             }
         ];
     }
