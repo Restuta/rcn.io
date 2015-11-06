@@ -41,6 +41,9 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 .fira-sans {font-family: 'Fira Sans';}
 
+
+.helvetica-neue {font-family: 'Helvetica Neue';}
+
 /* TODO:
 		Fira Sans
 */
@@ -78,9 +81,13 @@ $col-color: lighten(lightpink, 11%);;
 
 [class^="col-"] {
   border: 1px solid $col-brdr-color;
-  min-height: 100px;
+  min-height: 200px;
   background-color: $col-color;
 //  min-width: 167px;
+}
+
+.reset-height {
+	min-height: initial;
 }
 
 [class^="col-"].transparent {

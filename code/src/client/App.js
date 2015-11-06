@@ -69,7 +69,7 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 transparent">
+            <div className="col-sm-12 transparent reset-height">
               <h1 className="oswald">{headerText}</h1>
               <h1 className="montserrat">{headerText}</h1>
               <h1 className="merriweather">{headerText}</h1>
@@ -83,7 +83,7 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             <FontColumn className="source-sans-pro" fontName="Source Sans Pro (H3 A2)"/>
             <FontColumn className="" fontName="Lato (H2 A1)"/>
             <FontColumn className="roboto" fontName="Roboto"/>
-            <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
+            <FontColumn className="helvetica-neue" fontName="Helvetica Neue"/>
             <FontColumn className="alegreya-sans" fontName="Alegreya Sans (H1 A3)"/>
             <FontColumn className="open-sans" fontName="Open Sans (H3 A4)"/>
           </div>
@@ -92,7 +92,9 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             <FontColumn className="pt-sans" fontName="PT Sans"/>
             <FontColumn className="pt-sans-narrow" fontName="PT Sans Narrow"/>
             <FontColumn className="sans-condensed" fontName="Open Sans Condensed"/>
+            <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
             <FontColumn className="fira-sans" fontName="Fira Sans"/>
+
           </div>
         </div>
         <br/>
