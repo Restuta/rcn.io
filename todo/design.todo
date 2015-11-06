@@ -70,6 +70,7 @@ Tools
 		- CodeClimate: automated code review https://codeclimate.com/
 	--- Hosting
 		-- Digital Ocean or Heroku or Amazon
+		-- Parse?
 
 
 Architecture Design
