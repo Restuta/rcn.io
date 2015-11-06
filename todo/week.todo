@@ -36,6 +36,8 @@ After Boilerplate setup
 		- autoprefixer
 		- Scoping hot loader only to components directory: see if it's even an option and if it would speed up incremental rebuild times as mentioined here https://github.com/webpack/webpack/issues/1574
 		- investigate if css-loader makes a difference: https://github.com/webpack/css-loader/issues/124
+		- investigate how CSS affect build times:there is some evidence that "how you structure CSS" affects build times (https://github.com/jtangelder/sass-loader/issues/164#issuecomment-150947538) https://github.com/jtangelder/sass-loader/issues/176
+		- decide which of 3 ways of loading css we should use: https://github.com/jtangelder/sass-loader/issues/164#issuecomment-150947538
 	- consider "react-document-title" package
 	-- server
 	    - setup server side rendering like in este
