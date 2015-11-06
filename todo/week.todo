@@ -34,6 +34,8 @@ After Boilerplate setup
 		- setup url loader (see etse)
 		- extract text plugin for CSS for prod
 		- autoprefixer
+		- Scoping hot loader only to components directory: see if it's even an option and if it would speed up incremental rebuild times as mentioined here https://github.com/webpack/webpack/issues/1574
+		- investigate if css-loader makes a difference: https://github.com/webpack/css-loader/issues/124
 	- consider "react-document-title" package
 	-- server
 	    - setup server side rendering like in este
