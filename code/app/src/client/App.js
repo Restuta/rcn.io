@@ -14,19 +14,19 @@ export class App extends Component {
     return (
       <div>
         <div className="container">
-          <div className="row">
-            <div className="col-sm-12 transparent">
-              <h1 className="oswald">Road Races in CA, 100mi range </h1>
-            </div>
-          </div>
           <Row>
-            <Col className="col-sm-offset-1" />
+            <Col sm={12} className="transparent">
+              <h1 className="oswald">Road Races in CA, 100mi range </h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="col-sm-offset-1"/>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/></Col>)
             }
           </Row>
           <Row style={{marginTop: '20'}}>
-            <Col className="col-sm-offset-1" />
+            <Col className="col-sm-offset-1"/>
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/></Col>)
             }

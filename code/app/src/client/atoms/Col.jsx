@@ -22,15 +22,15 @@ function getColClassName(propName, propValue) {
 export default class Col extends Component {
   render() {
     //TODO: move this to it's own module
-    const combinedClassNames = Object.keys(this.props)
+    const columnClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
       .reduce((curr, prev) => classNames(prev, curr))
       .trim();
 
-    //const finalClassName = combinedClassNames + (this.props.className || '');
-    const finalClassName = classNames(combinedClassNames, this.props.className);
+    const combinedClassNames = classNames(columnClassNames, this.props.className);
+
     return (
-      <div className={finalClassName} {...this.props}>
+      <div {...this.props} className={combinedClassNames}>
         {this.props.children}
       </div>
     );
