@@ -25,7 +25,7 @@ export class App extends Component {
               <Col key={i} sm={x}>{++i}<Event/></Col>)
             }
           </Row>
-          <Row style={{marginTop: "20"}}>
+          <Row style={{marginTop: '20'}}>
             <Col className="col-sm-offset-1" />
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/></Col>)
