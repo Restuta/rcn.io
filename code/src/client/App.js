@@ -91,7 +91,6 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             <FontColumn className="merriweather-sans" fontName="Merriweather Sans"/>
             <FontColumn className="pt-sans" fontName="PT Sans"/>
             <FontColumn className="pt-sans-narrow" fontName="PT Sans Narrow"/>
-            <FontColumn className="sans-condensed" fontName="Open Sans Condensed"/>
             <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
             <FontColumn className="fira-sans" fontName="Fira Sans"/>
 
