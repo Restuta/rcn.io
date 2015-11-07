@@ -1,13 +1,12 @@
 Today
  - build a grid
  	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
- 	- add Autoprefixer
  	- pick number of columns and gutter size
  	- see if we should use fluid ui
  
  -- build basic Bootstrap components
  	+- row
- 	- column
+ 	+- column
  	- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
  - setup typographic scale
  - setup icons
@@ -20,6 +19,7 @@ Today
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
+ 	- add Autoprefixer
 
 
 After Boilerplate setup
