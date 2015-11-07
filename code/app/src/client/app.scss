@@ -4,16 +4,13 @@ $grid-gutter-width: 20px;
 //$grid-gutter-width: 1.5rem !default;
 //@import 'bower_components/bootstrap/scss/bootstrap';
 
-//@import "bower_components/bootstrap/scss/mixins";
-//@import 'bower_components/bootstrap/scss/normalize';
+@import "bower_components/bootstrap/scss/mixins";
+@import 'bower_components/bootstrap/scss/normalize';
 @import 'bower_components/bootstrap/scss/mixins/hover';
 @import 'bower_components/bootstrap/scss/mixins/tab-focus';
 @import 'bower_components/bootstrap/scss/variables';
 @import 'bower_components/bootstrap/scss/reboot';
 @import 'bower_components/bootstrap/scss/bootstrap-grid';
-
-
-//@import './atoms/sf-font.scss';
 
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
