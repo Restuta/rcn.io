@@ -38,7 +38,7 @@ var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var parseYear = d3.time.format("%Y%m%d").parse;
+// var parseYear = d3.time.format("%Y%m%d").parse;
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -72,9 +72,9 @@ d3.tsv("data.tsv", function(error, data) {
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
 
-  data.forEach(function(d) {
-    d.year = parseYear(d.year);
-  });
+  // data.forEach(function(d) {
+  //   d.year = parseYear(d.year);
+  // });
 
   var cities = color.domain().map(function(name) {
     return {
