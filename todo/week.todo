@@ -23,7 +23,17 @@ Today
 
 
 After Boilerplate setup
-	- setup render vizualizer: https://github.com/spredfast/react-transform-render-visualizer
+	- setup Git worflow effective for our team
+		- proposed setup 1 (Github Flow)
+			- leave master as production branch
+				- do not commit on master directly
+				- master is always deploayble
+			- use dev branch for ongoing development: merge it to prod when deploy is needed
+			- use feature branches for bigger features
+		- proposed setup 2: https://about.gitlab.com/2014/09/29/gitlab-flow/
+			- use production branch
+			- work on master + feature branches
+	- setup render vizualizer: https://github.com/spredfast/react-transform-render-visualize
 	-- CI
 		- setup mocha
 			- write simple test for css class transforms

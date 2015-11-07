@@ -26,7 +26,8 @@ Design
 	- Body
  		- Lato: friendly and natural
  		- Source Sans Pro: more condensed
- 		- Roboto Condensed: even more condensed
+ 		+-Roboto Condensed: even more condensed
+ 			.-(condensed font is not a good options for cards, readability is important) 
  		- Alegreya Sans: helen liked it
  		+- Raleway: modern, geometric
  		- Montserrat alternative to Proxima Nova
