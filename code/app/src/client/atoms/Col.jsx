@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import Component from 'react-pure-render/component';
 import classNames from 'classnames';
 
@@ -15,6 +15,13 @@ function getColClassName(propName, propValue) {
 
 //usage <Col xs={12} md={8} />
 export default class Col extends Component {
+  static propTypes = {
+    xs: PropTypes.number,
+    sm: PropTypes.number,
+    md: PropTypes.number,
+    lg: PropTypes.number
+  }
+
   render() {
     //TODO: move this to it's own module
     const columnClassNames = Object.keys(this.props)
