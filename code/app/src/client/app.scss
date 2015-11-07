@@ -1,5 +1,6 @@
 $enable-flex: true;
 $grid-columns: 16;
+$grid-gutter-width: 20px;
 //$grid-gutter-width: 1.5rem !default;
 //@import 'bower_components/bootstrap/scss/bootstrap';
 
@@ -11,13 +12,14 @@ $grid-columns: 16;
 @import 'bower_components/bootstrap/scss/reboot';
 @import 'bower_components/bootstrap/scss/bootstrap-grid';
 
+
 //@import './atoms/sf-font.scss';
 
 
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
 .oswald { font-family: 'Oswald';}
 //body
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:700,400,400italic,300,300italic);
 
 
 $body-color: #333;
@@ -44,7 +46,7 @@ $col-color: lighten(lightpink, 11%);;
   border: 1px solid $col-brdr-color;
   min-height: 200px;
   background-color: $col-color;
-//  min-width: 167px;
+
 }
 
 [class^="col-"].transparent {
