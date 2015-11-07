@@ -10,12 +10,7 @@ function getColClassName(propName, propValue) {
     'lg': 'col-lg-'
   };
 
-  if (validProps[propName]) {
-    let colClassName = validProps[propName] + propValue;
-    return colClassName;
-  } else {
-    return '';
-  }
+  return validProps[propName] ? validProps[propName] + propValue : '';
 }
 
 //usage <Col xs={12} md={8} />
