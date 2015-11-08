@@ -21,22 +21,22 @@ export class App extends Component {
   render() {
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
-    let bsColumnsTest = times(1, 16);
 
     return (
       <div>
         <div className="container">
-          <Row style={{marginTop: '20'}}>
-            {bsColumnsTest.map((x, i) =>
-              <Col key={i} md={x}>{++i}<Event/></Col>)
-            }
-          </Row>
           <Row>
-            <Col sm={12} className="transparent">
+            <Col sm={12} className="transparent norm-height">
               <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
-          <Row>
+          <Row style={{marginTop: '40'}}>
+            <Col sm={2} className="outlined"/>
+            {genericWeek.map((x, i) =>
+              <Col key={i} sm={x} className="outlined">{++i}<Event/> </Col>)
+            }
+          </Row>
+          <Row style={{marginTop: '20'}}>
             <Col sm={2} className="outlined"/>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/> </Col>)
