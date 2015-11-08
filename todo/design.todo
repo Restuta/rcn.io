@@ -76,7 +76,9 @@ Tools
 		- Keep Dependencies Up To date: https://david-dm.org/ember-cli/ember-cli
 		- CodeClimate: automated code review https://codeclimate.com/
 	--- Hosting
-		-- Digital Ocean or Heroku or Amazon
+		-- Digital Ocean?
+		-- Heroku?
+		-- Amazon (AWS)?
 		-- Parse?
 
 
@@ -106,6 +108,10 @@ Architecture Design
 				- add hashes to assets: http://survivejs.com/webpack_react/building_kanban/#adding-hashes-to-filenames
 				- setup CommonChunksPlugin: http://survivejs.com/webpack_react/building_kanban/#setting-up-commonschunkplugin-
 				- setup ExtractTextPlugin so css is loaded as separate file
+				- mb split app and vendor: https://christianalfoni.github.io/react-webpack-cookbook/Split-app-and-vendors.html
+					- splitting improve time for returning users in case of update
+					- non-splitting improves initial load time
+				- setup PostCSS Nano pack: http://cssnano.co/
 			+.- (yes ES6 with babel-loader) - with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
 				+- webpack 1 can be used with Babel to use ES6 modules
 					+-- does this mean that webpack understands transpiled code like it would understand commonJS one?

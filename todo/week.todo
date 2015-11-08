@@ -3,6 +3,7 @@ Today
  	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	- pick number of columns and gutter size
  	- see if we should use fluid ui
+ 	- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
  
  -- build basic Bootstrap components
  	+- row
