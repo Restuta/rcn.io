@@ -19,7 +19,7 @@ function times(x, times) {
 
 export class App extends Component {
   render() {
-    let genericWeek = [2, 2, 2, 2, 2, 2, 2];
+    let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let bsColumnsTest = times(1, 16);
 
@@ -28,29 +28,28 @@ export class App extends Component {
         <div className="container">
           <Row style={{marginTop: '20'}}>
             {bsColumnsTest.map((x, i) =>
-              <Col key={i} sm={x}>{++i}<Event/></Col>)
+              <Col key={i} md={x}>{++i}<Event/></Col>)
             }
           </Row>
           <Row>
             <Col sm={12} className="transparent">
-              <h1 className="oswald">Road Races in CA, 100mi range </h1>
+              <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
           <Row>
-            <Col className="col-sm-offset-1"/>
+            <Col sm={2} className="outlined"/>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/> </Col>)
             }
           </Row>
           <Row style={{marginTop: '20'}}>
-            <Col className="col-sm-offset-1"/>
+            <Col sm={2} className="outlined"/>
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x}>{++i}<Event/></Col>)
             }
           </Row>
-
+          <Counter increment={1} color="silver" marginTop="20px" />
         </div>
-        <Counter increment={1} color="silver" marginTop="20px" />
       </div>
     );
   }
