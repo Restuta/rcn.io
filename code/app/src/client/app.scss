@@ -1,10 +1,9 @@
-$enable-flex: true;
-$grid-columns: 16;
-$grid-gutter-width: 20px;
-//$grid-gutter-width: 1.5rem !default;
+@import 'styles/bs4-overrides';
+@import 'styles/bs4-fixes';
+
 //@import 'bower_components/bootstrap/scss/bootstrap';
 
-@import "bower_components/bootstrap/scss/mixins";
+@import 'bower_components/bootstrap/scss/mixins';
 @import 'bower_components/bootstrap/scss/normalize';
 @import 'bower_components/bootstrap/scss/mixins/hover';
 @import 'bower_components/bootstrap/scss/mixins/tab-focus';
@@ -23,7 +22,6 @@ $body-color: #333;
 $body-bg-color: #FAFAFA;
 
 html, body {
-  margin: 15px;
   font-family: 'Lato', sans-serif;
   color: $body-color;
   background-color: $body-bg-color;
@@ -43,10 +41,14 @@ $col-color: lighten(lightpink, 11%);;
   border: 1px solid $col-brdr-color;
   min-height: 200px;
   background-color: $col-color;
-
 }
 
 [class^="col-"].transparent {
   background-color: transparent;
   border: none;
+}
+
+[class^="col-"].outlined {
+  background-color: transparent;
+  border: 1px solid $col-brdr-color;
 }
