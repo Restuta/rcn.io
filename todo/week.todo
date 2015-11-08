@@ -1,14 +1,12 @@
 Today
  - build a grid
- 	- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
- 	- pick number of columns and gutter size
- 	- see if we should use fluid ui
- 	- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
- 
- -- build basic Bootstrap components
+ 	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
+ 	+- pick number of columns and gutter size
+ 	+- see if we should use fluid ui
+ +-- build basic Bootstrap components
  	+- row
  	+- column
- 	- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+ 	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
  - setup typographic scale
  - setup icons
  	- pick icons
@@ -78,6 +76,7 @@ After After Boilerplate =)
 Not Today 
 	-- Tweak Bootstrap
 		- consider wftform feilds http://wtfforms.com/
+		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
