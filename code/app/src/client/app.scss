@@ -33,12 +33,14 @@ h1,h2,h3 {
   text-transform: uppercase;
 }
 
-$col-brdr-color: lighten(grey, 30%);
+$col-brdr-color: lighten(grey, 35%);
 $col-color: lighten(lightpink, 11%);;
 
 
 [class^="col-"] {
-  border: 1px solid $col-brdr-color;
+  border-right: 1px solid $col-brdr-color;
+  border-top: 1px solid $col-brdr-color;
+  border-bottom: 1px solid $col-brdr-color;
   min-height: 200px;
   background-color: $col-color;
 }
@@ -48,7 +50,13 @@ $col-color: lighten(lightpink, 11%);;
   border: none;
 }
 
+[class^="col-"].norm-height {
+  min-height: inherit;
+}
+
 [class^="col-"].outlined {
   background-color: transparent;
-  border: 1px solid $col-brdr-color;
+  border-right: 1px solid $col-brdr-color;
+  border-top: 1px solid $col-brdr-color;
+  border-bottom: 1px solid $col-brdr-color;
 }
