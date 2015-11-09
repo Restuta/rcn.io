@@ -5,6 +5,7 @@ import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
 import Counter from './temp/Counter.jsx';
 import Event from './temp/EventStub.jsx';
+import TypographicScale from './temp/TypographicScale.jsx';
 
 
 function times(x, times) {
@@ -49,6 +50,7 @@ export class App extends Component {
             }
           </Row>
           <Counter increment={1} color="silver" marginTop="20px" />
+          <TypographicScale/>
         </div>
       </div>
     );
