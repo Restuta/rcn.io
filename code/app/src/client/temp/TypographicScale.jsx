@@ -55,10 +55,11 @@ class FontExample extends Component {
 
 export default class TypographicScale extends Component {
   render() {
+
     const baseSizeInPx = 16; //as set in gloabal CSS
-    const perfectFourthScale = 4 / 3;
+    const scale = this.props.scale;
     const sizes = generateTypeSizesRem({
-      scale: perfectFourthScale,
+      scale: scale,
       below: 4,
       above: 5
     });
@@ -69,7 +70,7 @@ export default class TypographicScale extends Component {
           <Col xs={16} className="col">
             <FontExample sizeInRem={sizeInRem}
                 baseSizeInPx={baseSizeInPx}
-                scale={perfectFourthScale}>
+                scale={scale}>
               Paragraph
             </FontExample>
           </Col>
@@ -79,7 +80,7 @@ export default class TypographicScale extends Component {
 
     return (
       <div className="TypographicScale">
-        <h4>3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</h4>
+        <h4>{this.props.children}</h4>
         {kadavyParagraphs}
       </div>
     );
