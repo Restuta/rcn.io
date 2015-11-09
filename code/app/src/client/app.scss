@@ -28,7 +28,7 @@ html, body {
   background-color: $body-bg-color;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
   font-family: 'Oswald', serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -46,9 +46,11 @@ $col-brdr-color: #d6d6d6;
   background-color: lighten(lightpink, 11%) !important;
 }
 
+$col-border: 1px solid $col-brdr-color;
+
 .col.outlined {
   background-color: white;
-  border-right: 1px solid $col-brdr-color;
-  border-top: 1px solid $col-brdr-color;
-  border-bottom: 1px solid $col-brdr-color;
+  border-right: $col-border;
+  border-top: $col-border;
+  border-bottom: $col-border;
 }

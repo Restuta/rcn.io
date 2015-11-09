@@ -34,7 +34,7 @@ class FontExample extends Component {
     const sizeStyle = {
       margin: 0,
       fontSize: (sizeInRem >= 1 ? sizeInRem / (scale) : sizeInRem) + 'rem',
-      color: 'silver'
+      color: ((sizeInRem === '1.00') ? 'goldenrod' : 'silver'),
     };
 
     const paragraphStyle = {
@@ -61,17 +61,17 @@ export default class TypographicScale extends Component {
     const sizes = generateTypeSizesRem({
       scale: scale,
       below: 4,
-      above: 5
+      above: 4
     });
 
-    const kadavyParagraphs = sizes.map((sizeInRem, i) => {
+    const fontExamples = sizes.map((sizeInRem, i) => {
       return (
         <Row key={i}>
           <Col xs={16} className="col">
             <FontExample sizeInRem={sizeInRem}
                 baseSizeInPx={baseSizeInPx}
                 scale={scale}>
-              Paragraph
+              Red Kite Omnium Event #1
             </FontExample>
           </Col>
         </Row>
@@ -80,8 +80,9 @@ export default class TypographicScale extends Component {
 
     return (
       <div className="TypographicScale">
+        <hr/>
         <h4>{this.props.children}</h4>
-        {kadavyParagraphs}
+        {fontExamples}
       </div>
     );
   }

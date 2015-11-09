@@ -22,6 +22,7 @@ export class App extends Component {
   render() {
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
+    let fullSpaceWeek = times(2, 5).concat([3, 3]);
 
     return (
       <div>
@@ -32,25 +33,31 @@ export class App extends Component {
             </Col>
           </Row>
           <Row style={{marginTop: '40'}}>
-            <Col sm={2} className="col outlined debug pink"/>
+            <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug pink">{++i}<Event/></Col>)
             }
           </Row>
           <Row style={{marginTop: '20'}}>
-            <Col sm={2} className="col debug outlined"/>
+            <Col sm={2} className="col debug outlined">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
           <Row style={{marginTop: '20'}}>
-            <Col sm={2} className="col debug outlined"/>
+            <Col sm={2} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
+            }
+          </Row>
+          <Row style={{marginTop: '20'}}>
+            {fullSpaceWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
           <Counter increment={1} color="silver" marginTop="20px" />
           <TypographicScale scale={1.333}>3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
+          <TypographicScale scale={1.412}>Augmented Fourth</TypographicScale>
         </div>
       </div>
     );
