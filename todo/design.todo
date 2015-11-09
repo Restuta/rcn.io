@@ -38,7 +38,7 @@ Design
  		-- Oswald: pairs with Lato well, condensed
  		- Montserrat: for maybe other headings
 --- Use Grid
-	-- which grid?
+	-- 16 columns
 	- resolutions 2015
 		- Desktop
 			- 1440+: 25%
@@ -112,6 +112,7 @@ Architecture Design
 					- splitting improve time for returning users in case of update
 					- non-splitting improves initial load time
 				- setup PostCSS Nano pack: http://cssnano.co/
+				- do not use babel-loader's react-transform plugin and cacheDirectory 
 			+.- (yes ES6 with babel-loader) - with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
 				+- webpack 1 can be used with Babel to use ES6 modules
 					+-- does this mean that webpack understands transpiled code like it would understand commonJS one?
