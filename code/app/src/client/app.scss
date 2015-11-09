@@ -19,7 +19,7 @@
 
 
 $body-color: #333;
-$body-bg-color: #FAFAFA;
+$body-bg-color: #F6F6F6;
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -33,8 +33,9 @@ h1,h2,h3 {
   text-transform: uppercase;
 }
 
-$col-brdr-color: lighten(grey, 35%);
-$col-color: lighten(lightpink, 11%);;
+
+$col-brdr-color: #d6d6d6;
+$col-color: lighten(lightpink, 11%);
 
 
 [class^="col-"] {
@@ -55,7 +56,7 @@ $col-color: lighten(lightpink, 11%);;
 }
 
 [class^="col-"].outlined {
-  background-color: transparent;
+  background-color: white;
   border-right: 1px solid $col-brdr-color;
   border-top: 1px solid $col-brdr-color;
   border-bottom: 1px solid $col-brdr-color;
