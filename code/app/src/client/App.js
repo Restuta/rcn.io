@@ -56,7 +56,11 @@ export class App extends Component {
             }
           </Row>
           <Counter increment={1} color="silver" marginTop="20px" />
-          <TypographicScale scale={1.333}>3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
+          <TypographicScale scale={1.142}>Minor Second</TypographicScale>
+          <TypographicScale scale={1.125}>Major Second</TypographicScale>
+          <TypographicScale scale={1.20}>Minor Third</TypographicScale>
+          <TypographicScale scale={1.25}>Major Third</TypographicScale>
+          <TypographicScale scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
           <TypographicScale scale={1.412}>Augmented Fourth</TypographicScale>
         </div>
       </div>

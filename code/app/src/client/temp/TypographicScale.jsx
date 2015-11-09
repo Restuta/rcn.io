@@ -23,18 +23,22 @@ function generateTypeSizesRem({scale = 1, below = 0, above = 0}) {
     sizes.push(currentScale);
   }
 
-  return sizes.map(x => x.toFixed(2));
+  return sizes.map(x => x.toFixed(3));
+}
+
+function remsToPx({sizeInRem, baseSizeInPx}) {
+  return (sizeInRem * baseSizeInPx);
 }
 
 class FontExample extends Component {
   render() {
     const {sizeInRem, baseSizeInPx, scale} = {...this.props};
-    const sizeInPx = (sizeInRem * baseSizeInPx).toFixed(0);
+    const sizeInPx = remsToPx({sizeInRem, baseSizeInPx}).toFixed(0);
 
     const sizeStyle = {
       margin: 0,
       fontSize: (sizeInRem >= 1 ? sizeInRem / (scale) : sizeInRem) + 'rem',
-      color: ((sizeInRem === '1.00') ? 'goldenrod' : 'silver'),
+      color: ((parseFloat(sizeInRem) === 1) ? 'goldenrod' : 'silver'),
     };
 
     const paragraphStyle = {
@@ -61,7 +65,7 @@ export default class TypographicScale extends Component {
     const sizes = generateTypeSizesRem({
       scale: scale,
       below: 4,
-      above: 4
+      above: 6
     });
 
     const fontExamples = sizes.map((sizeInRem, i) => {
@@ -81,7 +85,12 @@ export default class TypographicScale extends Component {
     return (
       <div className="TypographicScale">
         <hr/>
-        <h4>{this.props.children}</h4>
+        <h4>
+          {this.props.children} - {scale}<br/>
+          {sizes.map(sizeInRem =>
+            remsToPx({sizeInRem, baseSizeInPx}).toFixed(2)
+          ).join(', ')}
+        </h4>
         {fontExamples}
       </div>
     );
