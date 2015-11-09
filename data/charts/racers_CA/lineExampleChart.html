@@ -40,7 +40,7 @@ var margin = {top: 20, right: 80, bottom: 30, left: 50},
 
 // var parseYear = d3.time.format("%Y%m%d").parse;
 
-var x = d3.time.scale()
+var x = d3.scale.linear()
     .range([0, width]);
 
 var y = d3.scale.linear()
@@ -67,7 +67,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data.tsv", function(error, data) {
+d3.csv("data.csv", function(error, data) {
   if (error) throw error;
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
