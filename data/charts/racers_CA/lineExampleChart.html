@@ -19,8 +19,8 @@ body {
 
 .line {
   fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  /*stroke: steelblue;*/
+  stroke-width: 3.5px;
 }
 
 </style>
@@ -37,8 +37,6 @@ body {
 var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
-
-// var parseYear = d3.time.format("%Y%m%d").parse;
 
 var x = d3.scale.linear()
     .range([0, width]);
@@ -71,10 +69,6 @@ d3.csv("data.csv", function(error, data) {
   if (error) throw error;
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "age"; }));
-
-  // data.forEach(function(d) {
-  //   d.age = parseYear(d.year);
-  // });
 
   var cities = color.domain().map(function(name) {
     return {
@@ -118,10 +112,11 @@ d3.csv("data.csv", function(error, data) {
       .style("stroke", function(d) { return color(d.name); });
 
   city.append("text")
-      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.age) + "," + y(d.value.amount) + ")"; })
-      .attr("x", 3)
+      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 40]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.age) + "," + y(d.value.amount + 40) + ")"; })
+      .attr("x", 250)
       .attr("dy", ".35em")
+      .style("stroke", function(d) { return color(d.name); })
       .text(function(d) { return d.name; });
 });
 
