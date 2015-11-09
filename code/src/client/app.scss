@@ -35,7 +35,7 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 .pt-sans {font-family: 'PT Sans';}
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
-.pt-sans-narrow {font-family: 'PT Sans Narrow';}
+.pt-sans-narrow {font-family: 'PT Sans Narrow'; font-size: 1.05rem;}
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 .fira-sans {font-family: 'Fira Sans';}
 
@@ -62,6 +62,7 @@ html, body {
   font-size: 12px;
   color: $body-color;
   background-color: $body-bg-color;
+	text-rendering: optimizeLegibility;
 }
 
 h1,h2,h3 {
