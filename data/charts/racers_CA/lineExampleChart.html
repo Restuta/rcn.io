@@ -58,7 +58,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .interpolate("basis")
-    .x(function(d) { return x(d.year); })
+    .x(function(d) { return x(d.age); })
     .y(function(d) { return y(d.amount); });
 
 var svg = d3.select("body").append("svg")
@@ -70,22 +70,22 @@ var svg = d3.select("body").append("svg")
 d3.csv("data.csv", function(error, data) {
   if (error) throw error;
 
-  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "age"; }));
 
   // data.forEach(function(d) {
-  //   d.year = parseYear(d.year);
+  //   d.age = parseYear(d.year);
   // });
 
   var cities = color.domain().map(function(name) {
     return {
       name: name,
       values: data.map(function(d) {
-        return {year: d.year, amount: +d[name]};
+        return {age: d.age, amount: +d[name]};
       })
     };
   });
 
-  x.domain(d3.extent(data, function(d) { return d.year; }));
+  x.domain(d3.extent(data, function(d) { return d.age; }));
 
   y.domain([
     d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.amount; }); }),
@@ -119,7 +119,7 @@ d3.csv("data.csv", function(error, data) {
 
   city.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.amount) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.age) + "," + y(d.value.amount) + ")"; })
       .attr("x", 3)
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
