@@ -5,7 +5,7 @@ import './EventStub.scss';
 export default class EventStub extends Component {
   render() {
     return (
-      <div className="event-stub"></div>
+      <div className="EventStub"></div>
     );
   }
 };
