@@ -65,7 +65,7 @@ export default class TypographicScale extends Component {
     const sizes = generateTypeSizesRem({
       scale: scale,
       below: 4,
-      above: 6
+      above: 4
     });
 
     const fontExamples = sizes.map((sizeInRem, i) => {
