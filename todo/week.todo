@@ -10,9 +10,12 @@ Today
  	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
 
  - setup typographic scale
- - try with font's selected: text-rendering: optimizeLegibility;
- 	- on fonts branch
- 	- lato specifically
+ 	- setup body scale
+ 	- setup header scale
+ 	- combine two above scales into one
+ +- try with font's selected: text-rendering: optimizeLegibility;
+ 	+- on fonts branch
+ 	+- lato specifically
  - setup icons
  	- pick icons
  	- set them up
