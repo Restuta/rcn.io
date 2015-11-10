@@ -27,6 +27,8 @@ Today
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
  	- add Autoprefixer
+ 	--- design a card UI
+ 		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
 
 
 After Boilerplate setup
