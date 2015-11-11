@@ -19,7 +19,7 @@ body {
 
 .line {
   fill: none;
-  /*stroke: steelblue;*/
+  stroke: steelblue;
   stroke-width: 3.5px;
 }
 
@@ -108,7 +108,7 @@ body {
         .attr("class", "line")
         .attr("d", function(d) { return line(d.values); })
         .style("stroke", function(d) { return color(d.name); });
-    // var i = 10;
+    
     city.append("text")
         .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
         .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.amount) + ")"; })
