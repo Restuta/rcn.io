@@ -56,7 +56,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .interpolate("basis")
-    .x(function(d) { return x(d.age); })
+    .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.amount); });
 
 var svg = d3.select("body").append("svg")
@@ -68,20 +68,20 @@ var svg = d3.select("body").append("svg")
 d3.csv("teamsData.csv", function(error, data) {
   if (error) throw error;
 
-  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "age"; }));
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
   var i = 0;
   var cities = color.domain().map(function(name) {
     i += 10;
     return {
       name: name,
       values: data.map(function(d) {
-        return {age: d.age, amount: +d[name]};
+        return {year: d.year, amount: +d[name]};
       }),
       index: i
     };
   });
 
-  x.domain(d3.extent(data, function(d) { return d.age; }));
+  x.domain(d3.extent(data, function(d) { return d.year; }));
 
   y.domain([
     d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.amount; }); }),
@@ -115,7 +115,7 @@ d3.csv("teamsData.csv", function(error, data) {
   // var i = 10;
   city.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.age) + "," + y(d.value.amount) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.amount) + ")"; })
       .attr("x", 850)
       .attr("dy", ".35em")
       .style("stroke", function(d) { return color(d.name); })
