@@ -10,9 +10,13 @@ Today
  	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
 
  - setup typographic scale
+ 	- read http://typecast.com/blog/a-more-modern-scale-for-web-typography and try responsive scale mb
  	- setup body scale
  	- setup header scale
  	- combine two above scales into one
+ 	- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
+ 	- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
+ 	using_the_golden_ratio_with_typography
  +- try with font's selected: text-rendering: optimizeLegibility;
  	+- on fonts branch
  	+- lato specifically
