@@ -28,7 +28,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js|.jsx$/,
-      loaders: ['babel'],
+      loaders: ['babel?cacheDirectory'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'src/client')
     }, {
