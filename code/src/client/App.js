@@ -59,11 +59,30 @@ const FontColumn = (props) => {
   );
 };
 
+const Buttons = ({className}) => {
+  const classSuccess = 'btn btn-success ' + className;
+  const classPrimary = 'btn btn-primary ' + className;
+  const classWarning = 'btn btn-warning ' + className;
+  const classDanger = 'btn btn-danger ' + className;
+
+  return (
+    <div style={{marginBottom: 10}}>
+      <button className={classSuccess}>SAVE</button>
+      <button className={classPrimary}>OK</button>
+      <button className={classWarning}>UPDATE</button>
+      <button className={classDanger}>DELETE</button>
+      <span style={{color: 'silver'}}>{className}</span>
+    </div>
+);
+}
+
 
 export class App extends Component { // eslint-disable-line react/no-multi-comp
   render() {
-    const headerText = 'Road Races in CA, 100mi range'
+    const headerText = 'Showing Road Races in CA, 100mi range'
       .toUpperCase();
+
+      //TODO: do other UI elements setup
 
     return (
       <div>
@@ -72,11 +91,9 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             <div className="col-sm-12 transparent reset-height">
               <h1 className="oswald">{headerText}</h1>
               <h1 className="montserrat">{headerText}</h1>
-              <h1 className="merriweather">{headerText}</h1>
-              {/*
-              <h1 className="francois-one">{headerText}</h1>
+              {/*<h1 className="merriweather">{headerText}</h1>*/}
+              <h1 className="europa bold letter-spacing-1">{headerText}</h1>
               <h1 className="aleo">{headerText}</h1>
-              */}
             </div>
           </div>
           <div className="row">
@@ -93,11 +110,15 @@ export class App extends Component { // eslint-disable-line react/no-multi-comp
             <FontColumn className="pt-sans-narrow" fontName="PT Sans Narrow"/>
             <FontColumn className="roboto-condensed" fontName="Roboto Condensed"/>
             <FontColumn className="fira-sans" fontName="Fira Sans"/>
-
+            <FontColumn className="europa" fontName="Europa"/>
           </div>
         </div>
         <br/>
         <Counter increment={1} color="lightblue" />
+        <Buttons className="europa letter-spacing-1"/>
+        <Buttons className="lato letter-spacing-1"/>
+        <Buttons className="montserrat letter-spacing-1"/>
+        <Buttons className="open-sans letter-spacing-1"/>
       </div>
     );
   }
