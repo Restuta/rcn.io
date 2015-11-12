@@ -14,6 +14,10 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=Francois+One);
 .francois-one {font-family: 'Francois One';}
 
+//Typekit fonts
+.europa {font-family: 'europa';}
+
+
 //body
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,100);
 .work-sans {font-family: 'Work Sans'}
@@ -39,8 +43,15 @@ $enable-flex: true;
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 .fira-sans {font-family: 'Fira Sans';}
 
-
 .helvetica-neue {font-family: 'Helvetica Neue';}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.letter-spacing-1 {
+	letter-spacing: 1px;
+}
 
 /* TODO:
 		Fira Sans
@@ -52,6 +63,7 @@ $enable-flex: true;
 }
 
 .aleo {font-family: 'Aleo';}
+.lato {font-family: 'Lato';}
 
 
 $body-color: #333;
@@ -72,6 +84,10 @@ h1,h2,h3 {
 
 h1 {
   text-transform: uppercase;
+}
+
+.btn {
+	margin-right: 10px;
 }
 
 $col-brdr-color: lighten(grey, 30%);
