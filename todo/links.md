@@ -133,6 +133,7 @@
 * For Blog/articles
   * [Text + Photo layout](https://readymag.com/designs/new-york/2/)
 * [claralabs.com](https://claralabs.com), nice landing
+* [Tonicdev](https://tonicdev.com/restuta) ice icons on the left and overall feel of simplicity
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/) - mobile-oriented prototyping
