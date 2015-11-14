@@ -65,6 +65,9 @@ $enable-flex: true;
 .aleo {font-family: 'Aleo';}
 .lato {font-family: 'Lato';}
 
+.fade {
+	opacity: 0.1;
+}
 
 $body-color: #333;
 $body-bg-color: #FAFAFA;
@@ -108,16 +111,4 @@ $col-color: lighten(lightpink, 11%);;
 [class^="col-"].transparent {
   background-color: transparent;
   border: none;
-}
-
-
-div {
-
-}
-
-#test {
-}
-
-.class .another {
-
 }
