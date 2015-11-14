@@ -24,11 +24,13 @@ export class App extends Component {
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
 
+    const fontBaseSizePx = 14;
+
     return (
       <div>
         <div className="container">
           <Row>
-            <Col sm={12}>
+            <Col sm={16}>
               <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
@@ -56,13 +58,16 @@ export class App extends Component {
             }
           </Row>
           <Counter increment={1} color="silver" marginTop="20px" />
-          <TypographicScale scale={1.142}>Custom Scale</TypographicScale>
-          <TypographicScale scale={1.125}>Major Second</TypographicScale>
-          <TypographicScale scale={1.20}>Minor Third</TypographicScale>
-          <TypographicScale scale={1.25}>Major Third</TypographicScale>
-          <TypographicScale scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
-          <TypographicScale scale={1.412}>Augmented Fourth</TypographicScale>
-          <TypographicScale scale={1.618}>Golden Ratio</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.142}>Custom Scale</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.125}>Major Second</TypographicScale>
+          <TypographicScale baseSizeInPx={16} scale={1.125}>Major Second</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.20}>Minor Third</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.25}>Major Third</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
+          <TypographicScale baseSizeInPx={16} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.412}>Augmented Fourth</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.618}>Golden Ratio</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} sizes={[1, 2, 3]}>Custom</TypographicScale>
         </div>
       </div>
     );

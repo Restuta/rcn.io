@@ -27,7 +27,7 @@ function generateTypeSizesRem({scale = 1, below = 0, above = 0}) {
 }
 
 function remsToPx({sizeInRem, baseSizeInPx}) {
-  return (sizeInRem * baseSizeInPx);
+  return Math.round((sizeInRem * baseSizeInPx));
 }
 
 class FontExample extends Component {
@@ -42,7 +42,7 @@ class FontExample extends Component {
     };
 
     const paragraphStyle = {
-      fontSize: sizeInRem + 'rem',
+      fontSize: sizeInPx + 'px',
       marginBottom: 0
     };
 
@@ -59,19 +59,21 @@ class FontExample extends Component {
 
 export default class TypographicScale extends Component {
   render() {
+    let {sizes} = this.props;
+    const {scale, baseSizeInPx = 16} = this.props;
 
-    const baseSizeInPx = 16; //as set in gloabal CSS
-    const scale = this.props.scale;
-    const sizes = generateTypeSizesRem({
-      scale: scale,
-      below: 4,
-      above: 4
-    });
+    if (!sizes || sizes.length === 0) {
+      sizes = generateTypeSizesRem({
+        scale: scale,
+        below: 2,
+        above: 4
+      });
+    }
 
     const fontExamples = sizes.map((sizeInRem, i) => {
       return (
         <Row key={i}>
-          <Col xs={16} className="col">
+          <Col sm={16} className="col">
             <FontExample sizeInRem={sizeInRem}
                 baseSizeInPx={baseSizeInPx}
                 scale={scale}>
@@ -85,12 +87,18 @@ export default class TypographicScale extends Component {
     return (
       <div className="TypographicScale">
         <hr/>
-        <h4>
-          {this.props.children} - {scale}<br/>
-          {sizes.map(sizeInRem =>
-            remsToPx({sizeInRem, baseSizeInPx}).toFixed(2)
-          ).join(', ')}
-        </h4>
+        <h3>
+          {this.props.children} - {scale || '<no scale>'}<br/>
+          <span style={{color: 'silver'}}>
+            {sizes.map((sizeInRem, i) => {
+              const sizeInPx = remsToPx({sizeInRem, baseSizeInPx});
+
+              return sizeInPx === baseSizeInPx
+               ? <span key={i} style={{color: 'goldenrod'}}>{sizeInPx}<small>px&nbsp;&nbsp;</small></span>
+               : <span key={i}>{sizeInPx}<small>px&nbsp;&nbsp;</small></span>;
+            })}
+          </span>
+        </h3>
         {fontExamples}
       </div>
     );
