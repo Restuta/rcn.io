@@ -10,7 +10,6 @@ Today
  	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
 
  - setup typographic scale
- 	- read http://typecast.com/blog/a-more-modern-scale-for-web-typography and try responsive scale mb
  	- setup body scale
  	- setup header scale
  	- combine two above scales into one
@@ -34,6 +33,8 @@ Today
  	--- design a card UI
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
 
+Mobile support
+ - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 After Boilerplate setup
 	- setup Git worflow effective for our team

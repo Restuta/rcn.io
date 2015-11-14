@@ -29,8 +29,9 @@
 
 ### Fonts
 * [x] [Font Pairing](http://school.readymag.com/intro/)
+* [x] [Basehold.it](http://basehold.it/) - for horizontal base-lines 
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
-* [x] [Typographic scale](http://type-scale.com) 
+* [x] [Modular Scale](http://www.modularscale.com/) 
 * [ ] [About Mordern Scale from typecast](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
 * [x] [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
