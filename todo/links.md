@@ -29,7 +29,8 @@
 
 ### Fonts
 * [x] [Font Pairing](http://school.readymag.com/intro/)
-* [x] [Basehold.it](http://basehold.it/) - for horizontal base-lines 
+* [x] [Basehold.it](http://basehold.it/) - for horizontal base-lines
+* [ ] [Gridlover](http://www.gridlover.net/app/) - quickly set font sizest to fit baseline, CSS/SASS/LESS export
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
 * [x] [Modular Scale](http://www.modularscale.com/) 
 * [ ] [About Mordern Scale from typecast](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
@@ -266,7 +267,7 @@
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [ ] [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
   * [ ] [part 2](http://aprilzero.com/journal/making-of-aprilzero-part-2/)
-* [ ] [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
+* [x] [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
 * [ ] [Pushpin, new way to build realtime Apps](http://pushpin.org/about/#how-it-works)
 * [ ] [Web Afer Tomorrow](http://tonsky.me/blog/the-web-after-tomorrow/)
 * [ ] [Flexbox in 5 mins](http://flexboxin5.com/)
