@@ -24,7 +24,13 @@ export class App extends Component {
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
 
-    const fontBaseSizePx = 16;
+    const fontBaseSizePx = 14;
+
+    const pStyle = ({fontSize}) => {
+      return {
+        fontSize: fontSize
+      }
+    };
 
     return (
       <div>
@@ -57,15 +63,29 @@ export class App extends Component {
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
+
+          <Row>
+            <Col sm={4}>
+              <h1 >NEW EVENT</h1>
+              <p style={pStyle({fontSize: 14})}>
+                Dunnigan hills road race. Usually held in Mountain view. This is 60mi away from you
+                and looks like a 2h drive without a traffic.
+              </p>
+            </Col>
+          </Row>
+
+
           <Counter increment={1} color="silver" marginTop="20px" />
+          <TypographicScale baseSizeInPx={14} scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
+          <TypographicScale baseSizeInPx={15} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
+          <TypographicScale baseSizeInPx={16} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.25}>Major Third</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.142}>Custom Scale</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.125}>Major Second</TypographicScale>
-          <TypographicScale baseSizeInPx={14} scale={1.125}>Major Second</TypographicScale>
+          <TypographicScale baseSizeInPx={16 } scale={1.125}>Major Second</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.20}>Minor Third</TypographicScale>
-          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.25}>Major Third</TypographicScale>
-          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
-          <TypographicScale baseSizeInPx={14} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
-          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.412}>Augmented Fourth</TypographicScale>
+
+          <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.414}>Augmented Fourth</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.618}>Golden Ratio</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} sizes={[1, 2, 3]}>Custom</TypographicScale>
         </div>
