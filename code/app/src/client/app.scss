@@ -11,12 +11,7 @@
 @import 'bower_components/bootstrap/scss/reboot';
 @import 'bower_components/bootstrap/scss/bootstrap-grid';
 
-
-@import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
-.oswald { font-family: 'Oswald';}
-
-//body
-@import url(https://fonts.googleapis.com/css?family=Lato:700,400,400italic,300,300italic);
+@import "styles/typography";
 
 
 $body-color: #333;
@@ -24,19 +19,9 @@ $body-color: #333;
 $body-bg-color: #FCFCFC;
 
 html, body {
-  font-family: 'Lato', sans-serif;
   color: $body-color;
   background-color: $body-bg-color;
-  font-size: 16px;
-  background-image: url(http://basehold.it/i/32/ff0000);
 }
-
-h1,h2,h3,h4 {
-  font-family: 'Oswald', serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 
 //column debug styles
 $col-brdr-color: #d6d6d6;
