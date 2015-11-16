@@ -24,20 +24,30 @@
 }
 
 //Typography
-$base-font-size: 16px;
-//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
+$base-font-size: 14; //to use in calculation and not to mess with px to rem convertion
+$base-font-size-px: $base-font-size + px;
 $line-height: 1.375; //try 1.36 since it's ideal for Lato
-$line-height-rem: 1.375rem;
+
+$base-font-size-rem: 1rem;
+//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
+$line-height-rem: (($base-font-size * $line-height) / 16) + 0rem; //TODO: has to be calculated
+//$line-height-rem: 1.1875rem;
+
+// $line-height: 1.36; //try 1.36 since it's ideal for Lato
+// $line-height-rem: 1.36rem;
 
 
 //headings
 $headings-font-weight: 400;
+
 $headings-margin-top: $line-height-rem;
 $headings-margin-bottom: $line-height-rem;
 $headings-font-family: 'Oswald', serif;
 $headings-color: black;
 $headings-color-secondary: grey;
 
+
+//uneven pixels
 $h1-font-size: scale(4);
 $h1-line-height: $line-height-rem * 2;
 
@@ -54,20 +64,42 @@ $h5-font-size: scale(1);
 $h5-line-height: $line-height-rem;
 
 
+// //14px
+// $line-height: 1.1875; //try 1.36 since it's ideal for Lato
+// $line-height-rem: 1.1875rem;
+//
+// //event pixels
+// $h1-font-size: 2.375rem;
+// $h1-line-height: $line-height-rem * 2;
+//
+// $h2-font-size: 1.75rem;
+// $h2-line-height: $line-height-rem * 2;
+//
+// $h3-font-size: 1.3125rem;
+// $h3-line-height: $line-height-rem;
+//
+// $h4-font-size: 1rem;
+// $h4-line-height: $line-height-rem;
+//
+// $h5-font-size: 1rem;
+// $h5-line-height: $line-height-rem;
+
+
+
 html {
-  font-size: $base-font-size;
+  //font-size: $base-font-size;
 }
 
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: $base-font-size-px;
   line-height: $line-height;
   margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5 {
   font-family: 'Oswald', serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: 400;
   color: $headings-color;
   margin-top: $headings-margin-top;
@@ -75,7 +107,6 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-
   font-size: $h1-font-size;
   line-height: $h1-line-height;
 }

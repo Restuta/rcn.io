@@ -1,5 +1,7 @@
+@import '../styles/typography';
+
 .EventStub {
   width: 100%;
-  height: 1.375rem * 4;
+  height: $line-height-rem * 4;
   background-color: lightgray;
 }

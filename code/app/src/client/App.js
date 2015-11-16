@@ -70,10 +70,7 @@ export class App extends Component {
           <Row>
             <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug pink">
-                <div style={{height: '1.375rem'}}>{++i}</div>
-                <Event/>
-                </Col>)
+              <Col key={i} sm={x} className="col outlined debug pink">{++i}<Event/></Col>)
             }
           </Row>
           <Row className="margin-top">

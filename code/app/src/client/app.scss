@@ -23,6 +23,13 @@ html, body {
   background-color: $body-bg-color;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 //column debug styles
 $col-brdr-color: #d6d6d6;
 
@@ -80,5 +87,5 @@ $grid-col-background: transparent;
 
 //allows to see guidelines
 .row {
-    opacity: 0.6;
+    //opacity: 0.6;
 }
