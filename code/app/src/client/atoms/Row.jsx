@@ -10,8 +10,8 @@ export default class Row extends Component {
   render() {
     const className = classNames('row', this.props.className);
     return (
-      <div className={className} {...this.props}>
-      {this.props.children }
+      <div {...this.props} className={className}>
+        {this.props.children }
       </div>
     );
   }
