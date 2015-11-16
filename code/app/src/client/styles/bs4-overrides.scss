@@ -1,3 +1,9 @@
 $enable-flex: true;
 $grid-columns: 16;
 $grid-gutter-width: 1rem; //16px
+
+//Typography
+$font-family-sans-serif: 'Lato', Helvetica, Arial, sans-serif;
+$font-size-root: 16px;
+//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
+$line-height: 1.36;
