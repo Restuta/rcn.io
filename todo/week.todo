@@ -19,7 +19,7 @@ Today
  	+- try with font's selected: text-rendering: optimizeLegibility;
  		+- on fonts branch
  		+- lato specifically
- 	- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
+ 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
  - setup icons
  	- pick icons
  	- set them up
@@ -91,7 +91,7 @@ After After Boilerplate =)
 
 Not Today 
 	-- Tweak Bootstrap
-		- consider wftform feilds http://wtfforms.com/
+		- consider WFT-Form feilds http://wtfforms.com/
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
@@ -107,12 +107,19 @@ Not Today
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
 
+Before 1.0 Release 
+	- use web-loader to for fonts: https://github.com/typekit/webfontloader
+	woould allow to prevent FOUT (Before 1.0 Release 
+	https://github.com/typekit/webfontloader), test it with artificial trottling
+
+
 Webpack Times
 	-- CodePen to calculate avg times: http://codepen.io/Restuta/pen/ZbLqyX?editors=101
 	- avg rebuild times
 		- node 4.1.1 and npm 2.14.4: 245ms
 		- node 4.1.1 and npm 3.3.4: 209ms - 227ms
 	- boostrap SASS adds ~600ms to rebuild times
+
 
 
 Done
