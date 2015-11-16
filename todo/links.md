@@ -27,7 +27,9 @@
 * [Pixelapse](https://www.pixelapse.com/explore)
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
-### Fonts
+### Typography
+* [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
+* [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
 * [x] [Font Pairing](http://school.readymag.com/intro/)
 * [x] [Basehold.it](http://basehold.it/) - for horizontal base-lines
 * [ ] [Gridlover](http://www.gridlover.net/app/) - quickly set font sizest to fit baseline, CSS/SASS/LESS export

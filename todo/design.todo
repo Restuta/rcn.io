@@ -37,6 +37,7 @@ Design
  	- Headings: 
  		-- Oswald: pairs with Lato well, condensed
  		- Montserrat: for maybe other headings
+ 		- Use a smaller line-height than body text (e.g. 1.1)
 --- Use Grid
 	-- 16 columns
 	- resolutions 2015
