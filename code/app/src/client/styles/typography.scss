@@ -26,11 +26,12 @@
 //Typography
 $base-font-size: 14; //to use in calculation and not to mess with px to rem convertion
 $base-font-size-px: $base-font-size + px;
-$line-height: 1.375; //try 1.36 since it's ideal for Lato
+$line-height: 1.36; //try 1.36 since it's ideal for Lato
+$baseLine: round($base-font-size * $line-height);
 
 $base-font-size-rem: 1rem;
 //specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
-$line-height-rem: (($base-font-size * $line-height) / 16) + 0rem; //TODO: has to be calculated
+$line-height-rem: ($baseLine / 16) + 0rem; //TODO: has to be calculated
 //$line-height-rem: 1.1875rem;
 
 // $line-height: 1.36; //try 1.36 since it's ideal for Lato
@@ -93,7 +94,7 @@ html {
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: $base-font-size-px;
-  line-height: $line-height;
+  line-height: $line-height-rem;
   margin: 0 auto;
 }
 
