@@ -52,43 +52,43 @@ export class App extends Component {
               <h1>Heading 1</h1>
               <p>And a paragraph after</p>
 
-              <h2>Heading 1</h2>
+              <h2>Heading 2</h2>
               <p>And a paragraph after</p>
 
-              <h3>Heading 1</h3>
+              <h3>Heading 3</h3>
+              <p>And a paragraph after</p>
+
+              <h4>Heading 4</h4>
               <p>And a paragraph after</p>
             </Col>
           </Row>
-          <Row style={{marginTop: '20'}}>
-            {justGrid.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
-            }
-          </Row>
-
           <Row>
             <Col sm={16}>
               <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
-          <Row style={{marginTop: '40'}}>
+          <Row>
             <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug pink">{++i}<Event/></Col>)
+              <Col key={i} sm={x} className="col outlined debug pink">
+                <div style={{height: '1.375rem'}}>{++i}</div>
+                <Event/>
+                </Col>)
             }
           </Row>
-          <Row style={{marginTop: '20'}}>
+          <Row className="margin-top">
             <Col sm={2} className="col debug outlined">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
-          <Row style={{marginTop: '20'}}>
+          <Row className="margin-top">
             <Col sm={2} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
-          <Row style={{marginTop: '20'}}>
+          <Row className="margin-top">
             {fullSpaceWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }

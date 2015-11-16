@@ -66,7 +66,7 @@ export default class TypographicScale extends Component {
       sizes = generateTypeSizesRem({
         scale: scale,
         below: 2,
-        above: 4
+        above: 5
       });
     }
 
