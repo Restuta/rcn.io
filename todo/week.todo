@@ -10,15 +10,16 @@ Today
  	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
 
  - setup typographic scale
- 	- setup body scale
- 	- setup header scale
- 	- combine two above scales into one
- 	- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
- 	- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
+ 	+- setup body scale
+ 	+- setup header scale
+ 	+- combine two above scales into one
+ 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
+ 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
  	using_the_golden_ratio_with_typography
- +- try with font's selected: text-rendering: optimizeLegibility;
- 	+- on fonts branch
- 	+- lato specifically
+ 	+- try with font's selected: text-rendering: optimizeLegibility;
+ 		+- on fonts branch
+ 		+- lato specifically
+ 	- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
  - setup icons
  	- pick icons
  	- set them up
