@@ -54,7 +54,6 @@ After Boilerplate setup
 			- write simple test for css class transforms
 		- setup travis CI
 	-- atoms (UI)
-		
 	-- webpack
 		- setup url loader (see etse)
 		- extract text plugin for CSS for prod
@@ -66,6 +65,8 @@ After Boilerplate setup
 		- decide which of 3 ways of loading css we should use: https://github.com/jtangelder/sass-loader/issues/164#issuecomment-150947538
 
 	- consider "react-document-title" package
+	-- Redux
+		- condiser simpler actions as next step: https://github.com/pauldijou/redux-act
 	-- server
 	    - setup server side rendering like in este
 			- este uses react component to render HTML document called 'html.react.js'

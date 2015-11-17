@@ -96,6 +96,7 @@ Architecture Design
 
 	- Client App Architecture
 		--- Redux
+			- consider this https://github.com/pauldijou/redux-act
 		- 	Relay/GraphQL?
 	- Build Tools
 		--- Webpack 
