@@ -62,3 +62,13 @@ Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](http
 * [USA stats](https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
 )
 * [Events in CA for 2014 per weekday](https://docs.google.com/spreadsheets/d/1KEXEXle1BXP6ZM9O9xoUePfI4GlJCW97E5uzcWjnvjY/edit#gid=1598404566)
+ 
+--
+
+### Dev Status
+
+              | Status
+------------- | -------------
+npm           | [![NPM Depsendencies Status](https://www.versioneye.com/user/projects/564a86544e32b60018000005/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a86544e32b60018000005)
+bower         | 
+
