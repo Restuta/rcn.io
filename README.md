@@ -66,6 +66,5 @@ Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](http
 
               | Status
 ------------- | -------------
-npm           | [![NPM Depsendencies Status](https://www.versioneye.com/user/projects/564a86544e32b60018000005/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a86544e32b60018000005)
-bower         | 
+npm & bower   | [![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)
 
