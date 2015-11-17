@@ -1,0 +1,17 @@
+languages:
+   JavaScript: true
+engines:
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  scss-lint:
+    enabled: true
+  csslint:
+    enabled: false
+exclude_paths:
+- "prototypes/**/*"
+- "todo/**/*"
+- "data/**/*"
+- "wireframes/**/*"
+- "code/data/**/*"
