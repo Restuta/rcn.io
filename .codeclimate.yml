@@ -1,5 +1,3 @@
-languages:
-   JavaScript: true
 engines:
   eslint:
     enabled: true
@@ -9,10 +7,23 @@ engines:
     enabled: true
   csslint:
     enabled: false
+ratings:
+   paths:
+   - "code/app/**/*"
+   - "**.scss"
+   - "**.js"
+   - "**.jsx"
 exclude_paths:
+- node_modules/**/*
+- bower_components/**/*
 - "prototypes/**/*"
+- "code/app/node_modules/**/*"
+- "code/app/bower_components/**/*"
+- "code/data/node_modules/**/*"
+- "code/data/**/*"
+- "code/app/.eslintrc"
 - "todo/**/*"
 - "data/**/*"
 - "wireframes/**/*"
-- "code/data/**/*"
 - ".codeclimate.yml"
+- "README.md"
