@@ -68,4 +68,5 @@ Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](http
 ------------- | -------------
 npm & bower   | [![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)
 Code Climate  | [![Code Climate](https://codeclimate.com/github/Restuta/rcn.io/badges/gpa.svg)](https://codeclimate.com/github/Restuta/rcn.io)
+Codacy        | [![Codacy Badge](https://api.codacy.com/project/badge/grade/e71f308dcb52404abdf4d3b3e6b36c2a)](https://www.codacy.com/app/restuta8/rcn-io)
 
