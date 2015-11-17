@@ -5,6 +5,9 @@ engines:
     enabled: true
   scss-lint:
     enabled: true
+    checks:
+      SelectorFormat:
+        enabled: false
   csslint:
     enabled: false
 ratings:
