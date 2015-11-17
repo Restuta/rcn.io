@@ -20,14 +20,17 @@ People plan your racing season:
 41.3% plan it for full season.
 
 Criteria you use to decide on your events:
-1 341 Type (RR, Crit, TT, etc) and amount of climbing
-2 245 How far it away
-3 229 If I liked it in the past
-4 197 Number of teammates doing it
-5 186 If I did it well in the past
-6 172 Popularity/ Prestige/ Reputation of the event
-7 162 What time does it start
-8 124 Number of people registered
+
+number | points | criteria
+-----------|------|---------
+1| 341 |Type (RR, Crit, TT, etc) and amount of climbing
+2| 245 |How far it away
+3| 229 |If I liked it in the past
+4| 197 |Number of teammates doing it
+5| 186 |If I did it well in the past
+6| 172 |Popularity/ Prestige/ Reputation of the event
+7| 162 |What time does it start
+8| 124 |Number of people registered
 
 56.5%  plan for their peak performance events.
 
