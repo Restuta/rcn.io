@@ -15,3 +15,4 @@ exclude_paths:
 - "data/**/*"
 - "wireframes/**/*"
 - "code/data/**/*"
+- ".codeclimate.yml"
