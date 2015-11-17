@@ -54,9 +54,6 @@ Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](http
 
 #### [Neat Resources](todo/links.md)
 
-## Design
-[Calendar page](https://wireframe.cc/2GVQd5) (wireframes.cc)
-
 ### Data and Stats
 
 * [USA stats](https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
