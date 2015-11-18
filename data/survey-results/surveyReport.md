@@ -9,11 +9,11 @@ So we asked how people usually do that.
 
 People plan your racing season:
 
-87.0% 40 For myself, just to see how my calendar is going to look like 
-56.5% 26 To let my team know what events I am going to do 
-37.0% 17 To let my coach know, so they can create a training plan for a season
-8.7% 4   Because I have to, team requires me to pick at least 10 races
-10.9%    other: 
+87.0%| 40| For myself, just to see how my calendar is going to look like 
+56.5%| 26| To let my team know what events I am going to do 
+37.0%| 17| To let my coach know, so they can create a training plan for a season
+8.7%| 4|   Because I have to, team requires me to pick at least 10 races
+10.9%|  |    other: 
 
 65.5% 30 people plan their season at the beginning, 32.6% - once a month.
 
