@@ -1,3 +1,9 @@
+[![Dependency Status](https://david-dm.org/Restuta/rcn.io.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app)
+[![devDependency Status](https://david-dm.org/Restuta/rcn.io/dev-status.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/Restuta/rcn.io/badges/gpa.svg)](https://codeclimate.com/github/Restuta/rcn.io)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/e71f308dcb52404abdf4d3b3e6b36c2a)](https://www.codacy.com/app/restuta8/rcn-io)
+[![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)(bower)
+
 ### What is [rcn.io](http://rcn.io)?
 It's is a project for re-shaping bike racing landscape in CA first and USA next. Our aim is to bring more people to the sport and we know how to do it _right_.
 
@@ -59,15 +65,3 @@ Contact us directly at [Twitter](https://twitter.com/restuta) or [Facebook](http
 * [USA stats](https://docs.google.com/spreadsheets/d/1gWdb5VPyeVuQVCyz5bUIjCR7B_t7FKfSrZ2709Lu168/edit#gid=1220030557
 )
 * [Events in CA for 2014 per weekday](https://docs.google.com/spreadsheets/d/1KEXEXle1BXP6ZM9O9xoUePfI4GlJCW97E5uzcWjnvjY/edit#gid=1598404566)
-
---
-
-### Dev Status
-
-              | Status
-------------- | -------------
-npm & bower   | [![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)
-Dependencies      | [![Dependency Status](https://david-dm.org/Restuta/rcn.io.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app)
-Dev Dependencies  | [![devDependency Status](https://david-dm.org/Restuta/rcn.io/dev-status.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app#info=devDependencies)
-Code Climate  | [![Code Climate](https://codeclimate.com/github/Restuta/rcn.io/badges/gpa.svg)](https://codeclimate.com/github/Restuta/rcn.io)
-Codacy        | [![Codacy Badge](https://api.codacy.com/project/badge/grade/e71f308dcb52404abdf4d3b3e6b36c2a)](https://www.codacy.com/app/restuta8/rcn-io)
