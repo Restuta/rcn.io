@@ -20,7 +20,6 @@ function times(x, times) {
 
 export class App extends Component {
   render() {
-    let justGrid = times(1, 16);
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
