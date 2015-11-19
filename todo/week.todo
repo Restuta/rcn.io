@@ -53,6 +53,7 @@ After Boilerplate setup
 		- setup mocha
 			- write simple test for css class transforms
 		- setup travis CI
+			- use https://buildtimetrend.herokuapp.com/ for build time trends
 	-- atoms (UI)
 	-- webpack
 		- setup url loader (see etse)

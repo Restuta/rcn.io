@@ -3,34 +3,38 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
-.oswald { font-family: 'Oswald';}
-//body
 @import url(https://fonts.googleapis.com/css?family=Lato:700,400,400italic,300,300italic);
 
 
 @function scale($number) {
   $scale: 1.333; //perfect fourth
-  $size: 1rem;
+  $size: 14; //base size in px, so we can calculate the  closest rem
+  $base-size-px: 14; //base size in px, so we can calculate the  closest rem
+  $base-size: 16; //1rem = 16px
+  $size-rems: ($base-size-px / 16) + 0rem;
+
 
   @if $number == 1 {
-    @return $size;
+    @return 1rem;
   }
 
   @for $i from 1 through $number - 1 {
     $size: $size * $scale;
   }
 
-  @return $size;
+  $size-rems: (round($size) / 16) + 0rem;
+  @return $size-rems;
 }
 
 //Typography
 $base-font-size: 14; //to use in calculation and not to mess with px to rem convertion
 $base-font-size-px: $base-font-size + px;
+//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
 $line-height: 1.36; //try 1.36 since it's ideal for Lato
 $baseLine: round($base-font-size * $line-height);
 
-$base-font-size-rem: 1rem;
-//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
+//$base-font-size-rem: 1rem;
+//calculating ideal height in rems, but that rounds nicely to pixels
 $line-height-rem: ($baseLine / 16) + 0rem; //TODO: has to be calculated
 //$line-height-rem: 1.1875rem;
 
@@ -48,7 +52,6 @@ $headings-color: black;
 $headings-color-secondary: grey;
 
 
-//uneven pixels
 $h1-font-size: scale(4);
 $h1-line-height: $line-height-rem * 2;
 
@@ -65,10 +68,9 @@ $h5-font-size: scale(1);
 $h5-line-height: $line-height-rem;
 
 
-
-
 html {
-  //font-size: $base-font-size;
+   //TODO: change it possible to use dynamic measurments with scale() so it can be anything
+  font-size: 16px;
 }
 
 body {
