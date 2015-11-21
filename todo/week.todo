@@ -20,6 +20,7 @@ Today
  		+- on fonts branch
  		+- lato specifically
  	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
+ 	- make sure we load only required Lato and Oswald variations
  - setup icons
  	- pick icons
  	- set them up
@@ -92,6 +93,8 @@ After After Boilerplate =)
 		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
 
 Not Today 
+	-- Github
+		- setup Changelog Generator https://github.com/skywinder/Github-Changelog-Generator
 	-- Tweak Bootstrap
 		- consider WFT-Form feilds http://wtfforms.com/
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564

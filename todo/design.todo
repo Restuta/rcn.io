@@ -19,7 +19,8 @@ Design
 			- Europa from Typekit for headings (or Oswald for condensed)
 				+- Aleo was designed as Slab Serif pair to lato: http://www.fontsquirrel.com/fonts/aleo
 			+-- Raleway for a more modern geometric look
---- Fonts
+	- Writing Language: https://www.google.com/design/spec/style/writing.html#writing-language
+--- Typography
 	- Size 
 		- 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
 		- by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
@@ -38,6 +39,8 @@ Design
  		-- Oswald: pairs with Lato well, condensed
  		- Montserrat: for maybe other headings
  		- Use a smaller line-height than body text (e.g. 1.1)
+ 	- Contrast (from Google Paper): Text should maintain a minimum contrast ratio of at least 4.5:1 (calculated based on luminance values) for legibility. A ratio of 7:1 is preferred.
+ 	- Line length: 30 is ideal for short text, 60 for long.
 --- Use Grid
 	-- 16 columns
 	- resolutions 2015
@@ -67,7 +70,7 @@ Design
  		- can be taken from here: http://www.basscss.com/docs/guides/basics/
  		- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
  		- compare it to BS4
- 	- user REMS for fonts: this allows to easely change sizes for different devices and still follow same typegraphic scale
+ 	- use REMS for fonts: this allows to easely change sizes for different devices and still follow same typegraphic scale
 --- Good UI Datastories:http://www.goodui.org/
 
 Tools
@@ -124,6 +127,8 @@ Architecture Design
 			- SVG optimization: https://github.com/imagemin/imagemin-svgo
 	- AI
 		- http://wit.ai
+	- Search
+		- Algolia: https://www.producthunt.com/tech/instantsearch-js-by-algolia, used by product hunt, really instant search
 
 Project Setup
 	- copy stuff from este.js
