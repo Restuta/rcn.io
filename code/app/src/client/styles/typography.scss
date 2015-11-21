@@ -6,10 +6,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:800,700,400,400italic,300,300italic,100);
 
 
-@function scale($number) {
+@function scale($number, $base-font-size) {
   $scale: 1.333; //perfect fourth
 
-  $base-size-px: 14; //base size in px, so we can calculate the  closest rem
+  $base-size-px: $base-font-size; //base size in px, so we can calculate the  closest rem
   $base-size: 16; //1rem = 16px we set in on the body
 
   $size: $base-size-px;
@@ -45,19 +45,19 @@ $headings-color: black;
 $headings-color-secondary: grey;
 
 
-$h1-font-size: scale(4);
+$h1-font-size: scale(4, $base-font-size);
 $h1-line-height: $line-height-rem * 2;
 
-$h2-font-size: scale(3);
+$h2-font-size: scale(3, $base-font-size);
 $h2-line-height: $line-height-rem * 2;
 
-$h3-font-size: scale(2);
+$h3-font-size: scale(2, $base-font-size);
 $h3-line-height: $line-height-rem;
 
-$h4-font-size: scale(1);
+$h4-font-size: scale(1, $base-font-size);
 $h4-line-height: $line-height-rem;
 
-$h5-font-size: scale(1);
+$h5-font-size: scale(1, $base-font-size);
 $h5-line-height: $line-height-rem;
 
 
@@ -85,7 +85,8 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   font-size: $h1-font-size;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 400;
   line-height: $h1-line-height;
 }
 
