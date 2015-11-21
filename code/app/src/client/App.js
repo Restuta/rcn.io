@@ -59,7 +59,6 @@ export class App extends Component {
 
               <h4>Heading 4</h4>
               <p>And a paragraph after</p>
-              <TypographicScale baseSizeInPx={14} scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
             </Col>
           </Row>
           <Row>
@@ -92,7 +91,7 @@ export class App extends Component {
           </Row>
 
           <Counter increment={1} color="silver" marginTop="20px" />
-
+          <TypographicScale baseSizeInPx={14} scale={1.333}>Perfect Fourth (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148</TypographicScale>
           <TypographicScale baseSizeInPx={15} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
           <TypographicScale baseSizeInPx={16} scale={1.333}>Perfect Fourth (by David Kadavy)</TypographicScale>
           <TypographicScale baseSizeInPx={fontBaseSizePx} scale={1.25}>Major Third</TypographicScale>
