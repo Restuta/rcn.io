@@ -1,75 +1,72 @@
 //baseline set with the help of http://www.gridlover.net/app/ and http://beta.gridlover.net/projects/74
 //typographic scale of 1.333 (4/3, perfect fourth) is used
-
-
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:800,700,400,400italic,300,300italic,100);
 
 
-@function scale($number, $base-font-size) {
+@function getBaseFontSize() {
+  @return 15;
+}
+
+@function scale($number) {
   $scale: 1.333; //perfect fourth
+  $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
 
-  $base-size-px: $base-font-size; //base size in px, so we can calculate the  closest rem
-  $base-size: 16; //1rem = 16px we set in on the body
-
-  $size: $base-size-px;
+  $size: $base-font-size;
 
   @if $number == 1 {
-    @return (round($size) / $base-size) + 0rem;
+    @return (round($size) / $base-font-size) + 0rem;
   }
 
   @for $i from 1 through $number - 1 {
     $size: $size * $scale;
   }
 
-  $size-rems: (round($size) / $base-size) + 0rem;
+  $size-rems: (round($size) / $base-font-size) + 0rem;
   @return $size-rems;
 }
 
 //Typography
-$base-font-size: 14; //to use in calculation and not to mess with px to rem convertion
-$base-font-size-px: $base-font-size + 0px;
 //specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
-$line-height: 1.36; //try 1.36 since it's ideal for Lato
-$base-line: round($base-font-size * $line-height);
+$line-height: 1.36;
+$base-line: round(getBaseFontSize() * $line-height);
 //calculating ideal height in rems, but that rounds nicely to pixels
-$line-height-rem: ($base-line / 16) + 0rem; //TODO: has to be calculated
+$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
 
 //headings
-$headings-font-weight: 400;
 
 $headings-margin-top: $line-height-rem;
 $headings-margin-bottom: $line-height-rem;
 $headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 400;
 $headings-color: black;
 $headings-color-secondary: grey;
 
 
-$h1-font-size: scale(4, $base-font-size);
+$h1-font-size: scale(4);
 $h1-line-height: $line-height-rem * 2;
 
-$h2-font-size: scale(3, $base-font-size);
+$h2-font-size: scale(3);
 $h2-line-height: $line-height-rem * 2;
 
-$h3-font-size: scale(2, $base-font-size);
+$h3-font-size: scale(2);
 $h3-line-height: $line-height-rem;
 
-$h4-font-size: scale(1, $base-font-size);
+$h4-font-size: scale(1);
 $h4-line-height: $line-height-rem;
 
-$h5-font-size: scale(1, $base-font-size);
+$h5-font-size: scale(1);
 $h5-line-height: $line-height-rem;
 
 
 html {
-   //TODO: change it possible to use dynamic measurments with scale() so it can be anything
-  //font-size: $base-font-size-px;
-
+  //todo: consider not setting base font at all
+  font-size: getBaseFontSize() + 0px;
 }
 
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: $base-font-size-px;
+  font-size: 1rem;
   line-height: $line-height-rem;
   margin: 0 auto;
 }
@@ -77,7 +74,7 @@ body {
 h1,h2,h3,h4,h5 {
   font-family: $headings-font-family;
   //text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $headings-font-weight;
   color: $headings-color;
   margin-top: $headings-margin-top;
   margin-bottom: $headings-margin-bottom
@@ -86,7 +83,6 @@ h1,h2,h3,h4,h5 {
 h1 {
   font-size: $h1-font-size;
   text-transform: uppercase;
-  font-weight: 400;
   line-height: $h1-line-height;
 }
 

@@ -80,5 +80,10 @@ module.exports = {
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
     }]
+  },
+  //required to have proper rem to px calcualtion, default floating point precision is not enough
+  //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
+  sassLoader: {
+    precision: 15
   }
 };
