@@ -22,15 +22,15 @@ Design
 	- Writing Language: https://www.google.com/design/spec/style/writing.html#writing-language
 --- Typography
 	- Size 
-		- 3:4 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
-		- by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
+		- 4:3 typescale (by David Kadavy), 5 7 9 12 16 21 28 37 50 67 89 111 148
+		.-(used above) by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
 	- Body
  		- Lato: friendly and natural
  		- Source Sans Pro: more condensed
- 		+-Roboto Condensed: even more condensed
+ 		.-Roboto Condensed: even more condensed
  			.-(condensed font is not a good options for cards, readability is important) 
- 		- Alegreya Sans: helen liked it
- 		+- Raleway: modern, geometric
+ 		.- Alegreya Sans: helen liked it
+ 		.- Raleway: modern, geometric
  		- Montserrat alternative to Proxima Nova
  			- excellent for headlines 
  			- no italics
@@ -38,7 +38,9 @@ Design
  	- Headings: 
  		-- Oswald: pairs with Lato well, condensed
  		- Montserrat: for maybe other headings
+ 		- Europa as a better option from Typekit
  		- Use a smaller line-height than body text (e.g. 1.1)
+ 			- see how it fits to a baseline
  	- Contrast (from Google Paper): Text should maintain a minimum contrast ratio of at least 4.5:1 (calculated based on luminance values) for legibility. A ratio of 7:1 is preferred.
  	- Line length: 30 is ideal for short text, 60 for long.
 --- Use Grid
