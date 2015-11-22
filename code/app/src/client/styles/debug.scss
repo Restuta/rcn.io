@@ -5,7 +5,6 @@
 $show-baseline: true;
 $show-secondary-baseline: true;
 $show-container-edges: true;
-$secondary-baseline-transapency: .2;
 
 $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 
@@ -13,7 +12,7 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
   body {
     @if $show-secondary-baseline {
       background-image:
-        linear-gradient(to bottom, hsla(200, 100%, 50%, $secondary-baseline-transapency) 1px, transparent 1px),
+        linear-gradient(to bottom, hsla(200, 100%, 50%, .2) 1px, transparent 1px),
         linear-gradient(to bottom, hsla(200, 100%, 50%, .4) 1px, transparent 1px);
     } @else {
       background-image:
