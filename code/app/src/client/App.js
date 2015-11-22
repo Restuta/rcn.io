@@ -21,33 +21,40 @@ export class App extends Component {
   render() {
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
+    let fullSpaceWeek = times(2, 5).concat([3, 3]);
 
     return (
       <div>
         <div className="container">
           <Row>
-            <Col sm={12}>
+            <Col sm={16}>
               <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
-          <Row style={{marginTop: '40'}}>
-            <Col sm={2} className="col outlined debug pink"/>
+          <Row>
+            <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug pink">{++i}<Event/></Col>)
             }
           </Row>
-          <Row style={{marginTop: '20'}}>
-            <Col sm={2} className="col debug outlined"/>
+          <Row className="margin-top">
+            <Col sm={2} className="col debug outlined">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
-          <Row style={{marginTop: '20'}}>
-            <Col sm={2} className="col debug outlined"/>
+          <Row className="margin-top">
+            <Col sm={2} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
             }
           </Row>
+          <Row className="margin-top">
+            {fullSpaceWeek.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
+            }
+          </Row>
+
           <Counter increment={1} color="silver" marginTop="20px" />
         </div>
       </div>

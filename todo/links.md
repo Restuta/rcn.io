@@ -27,10 +27,14 @@
 * [Pixelapse](https://www.pixelapse.com/explore)
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
-### Fonts
+### Typography
+* [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
+* [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
 * [x] [Font Pairing](http://school.readymag.com/intro/)
+* [x] [Basehold.it](http://basehold.it/) - for horizontal base-lines
+* [ ] [Gridlover](http://www.gridlover.net/app/) - quickly set font sizest to fit baseline, CSS/SASS/LESS export
 * [ ] [Top 10 Commandments of typeography](http://visual.ly/10-commandments-typography?utm_source=social&utm_medium=twitter&utm_campaign=meet)
-* [ ] [Typographic scale](http://type-scale.com) 
+* [x] [Modular Scale](http://www.modularscale.com/) 
 * [ ] [About Mordern Scale from typecast](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
 * [x] [Find perfect font **Combo**](http://www.typegenius.com/)
 * [What font **Size** to use](http://designforhackers.com/blog/font-sizes/?mc_cid=01af7ac1b8&mc_eid=ef4f1b24f0)
@@ -133,6 +137,7 @@
 * For Blog/articles
   * [Text + Photo layout](https://readymag.com/designs/new-york/2/)
 * [claralabs.com](https://claralabs.com), nice landing
+* [Tonicdev](https://tonicdev.com/restuta) ice icons on the left and overall feel of simplicity
 
 ### Prototyping
 * [Facebook Origami](http://facebook.github.io/origami/) - mobile-oriented prototyping
@@ -264,7 +269,7 @@
 * [ ] [RxJS > Promises](http://xgrommx.github.io/rx-book/WhyRx.html)
 * [ ] [Making AppZero](http://aprilzero.com/journal/making-of-aprilzero/) (process from idea to implementation)
   * [ ] [part 2](http://aprilzero.com/journal/making-of-aprilzero-part-2/)
-* [ ] [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
+* [x] [Golden Grid System](http://www.jonikorpi.com/golden-grid-system/)
 * [ ] [Pushpin, new way to build realtime Apps](http://pushpin.org/about/#how-it-works)
 * [ ] [Web Afer Tomorrow](http://tonsky.me/blog/the-web-after-tomorrow/)
 * [ ] [Flexbox in 5 mins](http://flexboxin5.com/)

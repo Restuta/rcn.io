@@ -11,44 +11,46 @@
 @import 'bower_components/bootstrap/scss/reboot';
 @import 'bower_components/bootstrap/scss/bootstrap-grid';
 
-
-@import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
-.oswald { font-family: 'Oswald';}
-
-//body
-@import url(https://fonts.googleapis.com/css?family=Lato:700,400,400italic,300,300italic);
+@import "styles/typography";
+@import "styles/debug";
 
 
 $body-color: #333;
-$body-bg-color: #F6F6F6;
+//$body-bg-color: #F6F6F6;
+$body-bg-color: #FCFCFC;
 
 html, body {
-  font-family: 'Lato', sans-serif;
   color: $body-color;
   background-color: $body-bg-color;
 }
 
-h1,h2,h3 {
-  font-family: 'Oswald', serif;
-  font-weight: 400;
-  text-transform: uppercase;
+html {
+  box-sizing: border-box;
 }
-
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 //column debug styles
 $col-brdr-color: #d6d6d6;
 
 .col.debug {
-  min-height: 200px;
-
+  min-height: $line-height-rem * 10;
 }
+
+.row.margin-top {
+  margin-top: $line-height-rem * 2;
+}
+
 .col.pink {
   background-color: lighten(lightpink, 11%) !important;
 }
 
+$col-border: 1px solid $col-brdr-color;
+
 .col.outlined {
   background-color: white;
-  border-right: 1px solid $col-brdr-color;
-  border-top: 1px solid $col-brdr-color;
-  border-bottom: 1px solid $col-brdr-color;
+  border-right: $col-border;
+  border-top: $col-border;
+  border-bottom: $col-border;
 }

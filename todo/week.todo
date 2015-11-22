@@ -3,14 +3,24 @@ Today
  	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	+- pick number of columns and gutter size
  	+- see if we should use fluid ui
+ 	- consider use of all 16 columns for calendar (more space for cards)
  +-- build basic Bootstrap components
  	+- row
  	+- column
  	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+
  - setup typographic scale
- - try with font's selected: text-rendering: optimizeLegibility;
- 	- on fonts branch
- 	- lato specifically
+ 	+- setup body scale
+ 	+- setup header scale
+ 	+- combine two above scales into one
+ 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
+ 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
+ 	using_the_golden_ratio_with_typography
+ 	+- try with font's selected: text-rendering: optimizeLegibility;
+ 		+- on fonts branch
+ 		+- lato specifically
+ 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
+ 	- make sure we load only required Lato and Oswald variations
  - setup icons
  	- pick icons
  	- set them up
@@ -22,7 +32,11 @@ Today
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
  	- add Autoprefixer
+ 	--- design a card UI
+ 		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
 
+Mobile support
+ - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 After Boilerplate setup
 	- setup Git worflow effective for our team
@@ -40,8 +54,8 @@ After Boilerplate setup
 		- setup mocha
 			- write simple test for css class transforms
 		- setup travis CI
+			- use https://buildtimetrend.herokuapp.com/ for build time trends
 	-- atoms (UI)
-		
 	-- webpack
 		- setup url loader (see etse)
 		- extract text plugin for CSS for prod
@@ -53,6 +67,8 @@ After Boilerplate setup
 		- decide which of 3 ways of loading css we should use: https://github.com/jtangelder/sass-loader/issues/164#issuecomment-150947538
 
 	- consider "react-document-title" package
+	-- Redux
+		- condiser simpler actions as next step: https://github.com/pauldijou/redux-act
 	-- server
 	    - setup server side rendering like in este
 			- este uses react component to render HTML document called 'html.react.js'
@@ -77,9 +93,15 @@ After After Boilerplate =)
 		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
 
 Not Today 
+	-- Github
+		- setup Changelog Generator https://github.com/skywinder/Github-Changelog-Generator
 	-- Tweak Bootstrap
-		- consider wftform feilds http://wtfforms.com/
+		- consider WFT-Form feilds http://wtfforms.com/
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
+		- setup larger breakpoint to support really wide displays
+	-- Fonts and Typography
+		- Try Bebas Neue instead of Oswald
+		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
@@ -94,12 +116,23 @@ Not Today
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
 
+
+Public Mail Page
+ - consider this for engaging animation: http://animaticons.co/downloads/essential-plus/, there is nice calendar and map icons
+
+Before 1.0 Release 
+	- use web-loader to for fonts: https://github.com/typekit/webfontloader
+	woould allow to prevent FOUT (Before 1.0 Release 
+	https://github.com/typekit/webfontloader), test it with artificial trottling
+
+
 Webpack Times
 	-- CodePen to calculate avg times: http://codepen.io/Restuta/pen/ZbLqyX?editors=101
 	- avg rebuild times
 		- node 4.1.1 and npm 2.14.4: 245ms
 		- node 4.1.1 and npm 3.3.4: 209ms - 227ms
 	- boostrap SASS adds ~600ms to rebuild times
+
 
 
 Done
