@@ -98,6 +98,8 @@ Not Today
 	-- Tweak Bootstrap
 		- consider WFT-Form feilds http://wtfforms.com/
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
+	-- Fonts
+		- Try Bebas Neue instead of Oswald
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
