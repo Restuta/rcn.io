@@ -98,6 +98,8 @@
 * [Transformicons](http://www.transformicons.com/)
 * [Animated Headlines](http://codyhouse.co/demo/animated-headlines/)
 * [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
+* [Another Flexbox Cheatsheet](http://apps.workflower.fi/css-cheats/?name=flexbox)
+* [Use Flexbox Today](https://chriswrightdesign.com/experiments/using-flexbox-today/) - extensive article
 * CodePens
   * [Flipping icons](http://codepen.io/llull/pen/znkFs)
   * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
