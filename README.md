@@ -1,6 +1,7 @@
 [![Dependency Status](https://david-dm.org/Restuta/rcn.io.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app)
 [![devDependency Status](https://david-dm.org/Restuta/rcn.io/dev-status.svg?path=code/app)](https://david-dm.org/Restuta/rcn.io?path=code/app#info=devDependencies)
 [![Code Climate](https://codeclimate.com/github/Restuta/rcn.io/badges/gpa.svg)](https://codeclimate.com/github/Restuta/rcn.io)
+[![Issue Count](https://codeclimate.com/github/Restuta/rcn.io/badges/issue_count.svg)](https://codeclimate.com/github/Restuta/rcn.io)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/e71f308dcb52404abdf4d3b3e6b36c2a)](https://www.codacy.com/app/restuta8/rcn-io)
 [![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)(bower)
 
