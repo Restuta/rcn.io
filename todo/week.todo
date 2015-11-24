@@ -34,6 +34,9 @@ Today
  	- add Autoprefixer
  	--- design a card UI
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
+ 		-- make it responsive in React
+ 			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
+ 			- 
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
@@ -101,6 +104,7 @@ Not Today
 		- setup larger breakpoint to support really wide displays
 	-- Fonts and Typography
 		- Try Bebas Neue instead of Oswald
+		- try LEAGUE GOTHIC instead of Oswald (OSS font   )
 		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js

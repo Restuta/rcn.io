@@ -179,9 +179,15 @@
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Selectize.js](http://brianreavis.github.io/selectize.js/) - jQuery based hybrid of select box and text box
 * [Velocity.js](https://github.com/julianshapiro/velocity) animation
+* [Timesheet.js](https://github.com/sbstjn/timesheet.js) 5.6K :star:
+  - [React version](https://github.com/yuanyan/react-timesheet)
 * React
   * [List of Resources](https://github.com/enaqx/awesome-react)
   * [Veloticy React Components](https://github.com/twitter-fabric/velocity-react)
+  * Components
+    - [Halogen](https://github.com/yuanyan/halogen) - animations
+    - [Elemental-ui](http://elemental-ui.com) - simple components, BS-like
+    - [Ladda buttons](https://github.com/hakimel/Ladda) - 6k stars, Buttons with loading indicators
 
 ### Other
 * [Cronofy, Connecting to Calendars](https://www.cronofy.com/)
