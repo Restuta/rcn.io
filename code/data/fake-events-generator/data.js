@@ -1,3 +1,52 @@
+const disciplineData = ["Road", "MTB", "Track", "Cyclocross", "Clinic"];
+//it's actually discipline specific, but we don't care for now
+const typeData = [
+  "Road Race",
+  "Criterium",
+  "Cyclocross",
+  "Time Trial",
+  "Cross Country",
+  "Cross Country Marathon",
+  "Downhill",
+  "Dual Slalom",
+  "Short Track Cross Country",
+  "Super D",
+  "Points Race",
+  "Scratch Race",
+  "Individual Pursuit",
+  "Sprint",
+  "Keirin"
+];
+const timeData = ["8:00 AM", "8:30 AM", "9:00 AM", "9:20 AM", "10:00 AM", "10:15 AM", "11:40 AM", "12:00 PM", "12:03 PM", "1:00 PM", "1:55 PM", "2:00 PM", "2:18 PM"];
+const promoterData = [
+  "2 Wheel Racing",
+  "Alta Alpina Cycling Club",
+  "Alto Velo",
+  "AntiGravity Cycling",
+  "Back of Nowhere Enterprises",
+  "Berkeley Bicycle Club",
+  "Bicycle Planet",
+  "Bicycles Plus",
+  "Bike Monkey",
+  "Bike Station Aptos",
+  "Brian Joder",
+  "Bubba Melcher",
+  "Cal Aggie Cycling",
+  "Cal Cycling",
+  "California Giant Cycling Team",
+  "CCCX (Central Coast Cyclocross)",
+  "Central Sierra Cyclists",
+  "Chico Corsa Cycling Club",
+  "China Peak Mountain Resort"
+];
+const streetData = ["Kearny Street", "Mission Street", "Polk Street", "Stockton Street", "Union Street", "Third Street", "22nd Street", "49-Mile Scenic Drive", "Alemany Boulevard", "Broadway",
+  "Castro Street", "The Embarcadero", "Filbert Street", "Great Highway", "Haight Street", "Montgomery Street", "New Montgomery Street", "Octavia Boulevard", "Skyline Boulevard", "Vermont Street", "Howard Street"
+];
+const cityData = ["Ross", "Sacramento", "St. Helena", "Salinas", "San Anselmo", "San Bernardino", "San Bruno", "San Carlos", "San Clemente", "San Diego", "San Dimas", "San Fernando", "San Francisco", "San Gabriel",
+  "San Jacinto", "San Joaquin", "San Jose", "San Juan Bautista", "San Juan Capistrano", "San Leandro"
+];
+
+//real events extracted from USA Cycling for 2015
 const eventData = [{
   "date": "January 31st 2015",
   "name": "Cal Aggie Criterium"
@@ -196,22 +245,7 @@ const eventData = [{
 }, {
   "date": "October 11th 2015",
   "name": "Dylan's 2015 Ride "
-} 
-];
-
-const disciplineData = ["Road", "MTB", "Track", "Cyclocross", "Clinic"];
-const typeData = ["Road Race", "Criterium", "Cyclocross", "Time Trial", "Cross Country", "Cross Country Marathon", "Downhill", "Dual Slalom", "Short Track Cross Country", "Super D", "Points Race", "Scratch Race", "Individual Pursuit", "Sprint", "Keirin"];
-const timeData = ["8:00 AM", "8:30 AM", "9:00 AM", "9:20 AM", "10:00 AM", "10:15 AM", "11:40 AM", "12:00 PM", "12:03 PM", "1:00 PM", "1:55 PM", "2:00 PM", "2:18 PM"];
-const promoterData = ["2 Wheel Racing", "Alta Alpina Cycling Club", "Alto Velo", "AntiGravity Cycling", "Back of Nowhere Enterprises", "Berkeley Bicycle Club", "Bicycle Planet", "Bicycles Plus",
-  "Bike Monkey", "Bike Station Aptos", "Brian Joder", "Bubba Melcher", "Cal Aggie Cycling", "Cal Cycling", "California Giant Cycling Team", "CCCX (Central Coast Cyclocross)", "Central Sierra Cyclists",
-  "Chico Corsa Cycling Club", "China Peak Mountain Resort"
-];
-const streetData = ["Kearny Street", "Mission Street", "Polk Street", "Stockton Street", "Union Street", "Third Street", "22nd Street", "49-Mile Scenic Drive", "Alemany Boulevard", "Broadway",
-  "Castro Street", "The Embarcadero", "Filbert Street", "Great Highway", "Haight Street", "Montgomery Street", "New Montgomery Street", "Octavia Boulevard", "Skyline Boulevard", "Vermont Street", "Howard Street"
-];
-const cityData = ["Ross", "Sacramento", "St. Helena", "Salinas", "San Anselmo", "San Bernardino", "San Bruno", "San Carlos", "San Clemente", "San Diego", "San Dimas", "San Fernando", "San Francisco", "San Gabriel",
-  "San Jacinto", "San Joaquin", "San Jose", "San Juan Bautista", "San Juan Capistrano", "San Leandro"
-];
+}];
 
 export default {
   eventData,
