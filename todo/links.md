@@ -115,6 +115,7 @@
 * Landing Pages
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
   - [Background Animations] (http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
+  - [Booking.js](http://booking.timekit.io/) - I really like the logo outline and overal feel (screen shot just in case http://screencast.com/t/KXRVnupV)
 * [ ] [A lot of Tools, animations, etc](http://tympanus.net/)
 * [Font Reach](http://www.fontreach.com/#top) nice gradients and font
 * [Top Nav animation + loading in menu icon](http://polygraw.com/)
@@ -197,6 +198,7 @@
 * [Startup Page Generator](http://designmodo.com/generator/?startupstash)
 * [HEAP](https://heapanalytics.com/?utm_source=badge) - Analytics for apps, free with Badge
 * [Mapbox](https://www.mapbox.com/) - maps
+* [Timekit](http://timekit.io/) - availability and scheduling API, google sync for free
 
 # Data
 * [How to choose a NoSQL DB](http://www.itworld.com/article/2833291/essential-reading-for-choosing-a-nosql-database.html)
