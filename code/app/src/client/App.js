@@ -27,9 +27,19 @@ export class App extends Component {
     return (
       <div>
         <div className="container">
+          <div style={{marginTop: '2.666rem'}}></div>
           <Row>
-            <Col sm={16}>
-              <Event width={197.5}/>
+            <Col sm={3} smOffset={3}>
+              <Event width={197.5}
+                name="Dunnigan Hills Road Race"/>
+            </Col>
+            <Col sm={3}>
+              <Event width={197.5}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+            </Col>
+            <Col sm={3}>
+              <Event width={197.5}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
           </Row>
           <Row>
