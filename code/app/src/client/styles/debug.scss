@@ -6,7 +6,7 @@ $base-line-opacity: .08;
 //$base-line-opacity: .25;
 //$base-line-opacity: .00;
 $show-baseline: true;
-$show-secondary-baseline: false;
+$show-secondary-baseline: false; //doesn't work for 14px base size
 $show-container-edges: true;
 
 $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);

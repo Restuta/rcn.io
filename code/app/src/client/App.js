@@ -31,16 +31,16 @@ export class App extends Component {
     return (
       <div>
         <div className="container">
-          <div style={{marginTop: '2.666rem'}}></div>
+          <div className="margin-top"></div>
           <div>
             <h3>Event Components:</h3>
             <Row>
-              <Col sm={2}>Event name: </Col>
-              <Col sm={6}><EventName>Dunnigan Hills Road Race</EventName></Col>
+              <Col sm={2}><h5>Event name: </h5></Col>
+              <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
             </Row>
           </div>
 
-          <Row>
+          <Row className="margin-top">
             <Col sm={2} smOffset={3}>
               <Event width={125}
                 name="Dunnigan Hills Road Race"/>
@@ -58,7 +58,7 @@ export class App extends Component {
                 name="Salinas Criterium"/>
             </Col>
           </Row>
-          <Row style={{marginTop: '1.3333rem'}}>
+          <Row className="margin-top">
             <Col sm={3} smOffset={3}>
               <Event width={197.5}
                 name="Dunnigan Hills Road Race"/>
@@ -76,7 +76,7 @@ export class App extends Component {
                 name="Salinas Criterium"/>
             </Col>
           </Row>
-          <Row style={{marginTop: '1.3333rem'}}>
+          <Row className="margin-top">
             <Col sm={4} smOffset={3}>
               <Event width={270}
                 name="Dunnigan Hills Road Race"/>
