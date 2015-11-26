@@ -106,6 +106,12 @@ Not Today
 		- Try Bebas Neue instead of Oswald
 		- try LEAGUE GOTHIC instead of Oswald (OSS font   )
 		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
+	-- SVG and Icons
+		- use IcoMoon to convert font's to SVG
+		- combine SVG to a sprite and user refs
+			- https://github.com/kisenka/svg-sprite-loader
+			- https://github.com/mrsum/webpack-svgstore-plugin
+		- user <sybmbol> instead of <g>: https://css-tricks.com/svg-symbol-good-choice-icons/
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
