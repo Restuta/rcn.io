@@ -33,6 +33,8 @@ Today
  		- compare compilation time to SASS
  	- add Autoprefixer
  	--- design a card UI
+ 		---- immidiate todo
+ 			+- round height to nearest multiple of line height
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
