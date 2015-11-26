@@ -7,7 +7,7 @@
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js --progress",
     "build": "npm run clean && npm run build:webpack",
-    "start": "node devServer.js",
+    "start": "NODE_ENV=development node devServer.js",
     "lint": "eslint src",
     "reinstall": "npm run clean:all && bower i && npm i"
   },
@@ -52,8 +52,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.0",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "react-pure-render": "^1.0.1"
   }
 }
