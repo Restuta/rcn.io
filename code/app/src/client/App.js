@@ -23,12 +23,34 @@ export class App extends Component {
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
+    let fullSpaceWeek3x3 = [1,2,2,2,3,3,3];
+    let fullSpaceWeek4x3 = [1,1,2,3,3,3,3];
+    let fullSpaceWeek2x4 = [1,1,1,2,3,4,4];
+    let fullSpaceWeek3x4 = [1,1,1,1,4,4,4];
 
     return (
       <div>
         <div className="container">
           <div style={{marginTop: '2.666rem'}}></div>
           <Row>
+            <Col sm={2} smOffset={3}>
+              <Event width={125}
+                name="Dunnigan Hills Road Race"/>
+            </Col>
+            <Col sm={2}>
+              <Event width={125}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+            </Col>
+            <Col sm={2}>
+              <Event width={125}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            </Col>
+            <Col sm={2}>
+              <Event width={125}
+                name="Salinas Criterium"/>
+            </Col>
+          </Row>
+          <Row style={{marginTop: '1.3333rem'}}>
             <Col sm={3} smOffset={3}>
               <Event width={197.5}
                 name="Dunnigan Hills Road Race"/>
@@ -61,12 +83,33 @@ export class App extends Component {
             </Col>
           </Row>
 
-          <Row>
-            <Col sm={16}>
-              <h1 className="oswald">Road Races in CA, 100mi range</h1>
-            </Col>
+          <h1 className="oswald">Road Races in CA, 100mi range</h1>
+          <Row className="margin-top">
+            {fullSpaceWeek2x4.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
+            }
           </Row>
-          <Row>
+          <Row className="margin-top">
+            {fullSpaceWeek3x4.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
+            }
+          </Row>
+          <Row className="margin-top">
+            {fullSpaceWeek4x3.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
+            }
+          </Row>
+          <Row className="margin-top">
+            {fullSpaceWeek3x3.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
+            }
+          </Row>
+          <Row className="margin-top">
+            {fullSpaceWeek.map((x, i) =>
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
+            }
+          </Row>
+          <Row className="margin-top">
             <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug pink">{++i}<EventStub/></Col>)
@@ -84,12 +127,6 @@ export class App extends Component {
               <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }
           </Row>
-          <Row className="margin-top">
-            {fullSpaceWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
-            }
-          </Row>
-
           <Counter increment={1} color="silver" marginTop="20px" />
         </div>
       </div>
