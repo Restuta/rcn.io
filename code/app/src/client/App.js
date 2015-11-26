@@ -4,7 +4,8 @@ import './app.scss';
 import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
 import Counter from './temp/Counter.jsx';
-import Event from './temp/EventStub.jsx';
+import EventStub from './temp/EventStub.jsx';
+import Event from './calendar/Event.jsx';
 
 
 function times(x, times) {
@@ -28,30 +29,35 @@ export class App extends Component {
         <div className="container">
           <Row>
             <Col sm={16}>
+              <Event width={197.5}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={16}>
               <h1 className="oswald">Road Races in CA, 100mi range</h1>
             </Col>
           </Row>
           <Row>
             <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug pink">{++i}<Event/></Col>)
+              <Col key={i} sm={x} className="col outlined debug pink">{++i}<EventStub/></Col>)
             }
           </Row>
           <Row className="margin-top">
             <Col sm={2} className="col debug outlined">August</Col>
             {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }
           </Row>
           <Row className="margin-top">
             <Col sm={2} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }
           </Row>
           <Row className="margin-top">
             {fullSpaceWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<Event/></Col>)
+              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }
           </Row>
 

@@ -1,14 +1,11 @@
-import React from 'react';
+import React from 'react';;
 import Component from 'react-pure-render/component';
 import './EventStub.scss';
 
 export default class EventStub extends Component {
-
   constructor(props) {
     super(props);
-    this.state = {
-      height: 50
-    };
+    this.state = {height: 50};
   }
 
   componentDidMount() {
