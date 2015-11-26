@@ -5,7 +5,7 @@ import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
 import Counter from './temp/Counter.jsx';
 import EventStub from './temp/EventStub.jsx';
-import Event from './calendar/Event.jsx';
+import Event, {EventName} from './calendar/Event.jsx';
 
 
 function times(x, times) {
@@ -23,15 +23,23 @@ export class App extends Component {
     let genericWeek = times(2, 7);
     let roadWeek = [1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
-    let fullSpaceWeek3x3 = [1,2,2,2,3,3,3];
-    let fullSpaceWeek4x3 = [1,1,2,3,3,3,3];
-    let fullSpaceWeek2x4 = [1,1,1,2,3,4,4];
-    let fullSpaceWeek3x4 = [1,1,1,1,4,4,4];
+    let fullSpaceWeek3x3 = [1, 2, 2, 2, 3, 3, 3];
+    let fullSpaceWeek4x3 = [1, 1, 2, 3, 3, 3, 3];
+    let fullSpaceWeek2x4 = [1, 1, 1, 2, 3, 4, 4];
+    let fullSpaceWeek3x4 = [1, 1, 1, 1, 4, 4, 4];
 
     return (
       <div>
         <div className="container">
           <div style={{marginTop: '2.666rem'}}></div>
+          <div>
+            <h3>Event Components:</h3>
+            <Row>
+              <Col sm={2}>Event name: </Col>
+              <Col sm={6}><EventName>Dunnigan Hills Road Race</EventName></Col>
+            </Row>
+          </div>
+
           <Row>
             <Col sm={2} smOffset={3}>
               <Event width={125}

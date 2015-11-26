@@ -11,7 +11,7 @@ var calculateIdealHeightInRems = (widthPx) => {
   return Math.round(heightPx / lineHeightPx) * LINE_HEIGHT_REM;
 }
 
-class EventName extends Component {
+export class EventName extends Component {
   render() {
     return(
         <div {...this.props}>{this.props.children}</div>
