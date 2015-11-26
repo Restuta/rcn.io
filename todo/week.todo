@@ -35,6 +35,10 @@ Today
  	--- design a card UI
  		---- immidiate todo
  			+- round height to nearest multiple of line height
+ 			- adaptive Event card or different components?: what is easier to maintain?
+ 				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
+ 					- text should be moved down proprotionally to card size
+
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
