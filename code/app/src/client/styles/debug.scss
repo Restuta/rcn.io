@@ -2,8 +2,9 @@
 // **************************************************
 //baseline and grid overlay
 
+$base-line-opacity: .08;
 $show-baseline: true;
-$show-secondary-baseline: true;
+$show-secondary-baseline: false;
 $show-container-edges: true;
 
 $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
@@ -12,11 +13,11 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
   body {
     @if $show-secondary-baseline {
       background-image:
-        linear-gradient(to bottom, hsla(200, 100%, 50%, .2) 1px, transparent 1px),
-        linear-gradient(to bottom, hsla(200, 100%, 50%, .4) 1px, transparent 1px);
+        linear-gradient(to bottom, hsla(200, 100%, 50%, $base-line-opacity / 2) 1px, transparent 1px),
+        linear-gradient(to bottom, hsla(200, 100%, 50%, $base-line-opacity) 1px, transparent 1px);
     } @else {
       background-image:
-        linear-gradient(to bottom, hsla(200, 100%, 50%, .4) 1px, transparent 1px);
+        linear-gradient(to bottom, hsla(200, 100%, 50%, $base-line-opacity) 1px, transparent 1px);
     }
 
     background-position: left -1px;
@@ -49,5 +50,5 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 
 //allows to see guidelines
 .row {
-    //opacity: 0.6;
+    //opacity: 0.8;
 }
