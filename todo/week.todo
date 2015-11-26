@@ -36,7 +36,7 @@ Today
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
- 			- 
+ 		- use this from material UI for multiday events: http://screencast.com/t/NrvJMSHEJX (http://material-ui.com/#/components/lists)
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
