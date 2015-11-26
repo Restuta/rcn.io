@@ -19,8 +19,6 @@ function getColClassName(propName, propValue) {
 
 //usage <Col xs={12} md={8} />
 export default class Col extends Component {
-  static propTypes = propTypes
-
   render() {
     //TODO: move this to it's own module
     const columnClassNames = Object.keys(this.props)
@@ -38,7 +36,7 @@ export default class Col extends Component {
   }
 };
 
-const propTypes = {
+Col.propTypes = {
   xs: PropTypes.number,
   sm: PropTypes.number,
   md: PropTypes.number,
