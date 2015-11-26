@@ -1,0 +1,32 @@
+//Typography
+
+@function getBaseFontSize() {
+  @return 15;
+}
+
+@function scale($number) {
+  $scale: 1.333; //perfect fourth
+  $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
+
+  $size: $base-font-size;
+
+  @if $number == 1 {
+    @return (round($size) / $base-font-size) + 0rem;
+  }
+
+  @for $i from 1 through $number - 1 {
+    $size: $size * $scale;
+  }
+
+  $size-rems: (round($size) / $base-font-size) + 0rem;
+  @return $size-rems;
+}
+
+
+
+
+//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
+$line-height: 1.36;
+$base-line: round(getBaseFontSize() * $line-height);
+//calculating ideal height in rems, but that rounds nicely to pixels
+$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
