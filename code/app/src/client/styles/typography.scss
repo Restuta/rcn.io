@@ -12,19 +12,19 @@ $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
 $headings-color-secondary: grey;
-$h1-font-size: scale(4);
+$h1-font-size: scaleUp(4);
 $h1-line-height: $line-height-rem * 2;
 
-$h2-font-size: scale(3);
+$h2-font-size: scaleUp(3);
 $h2-line-height: $line-height-rem * 2;
 
-$h3-font-size: scale(2);
+$h3-font-size: scaleUp(2);
 $h3-line-height: $line-height-rem;
 
-$h4-font-size: scale(1);
+$h4-font-size: scaleUp(1);
 $h4-line-height: $line-height-rem;
 
-$h5-font-size: scale(1);
+$h5-font-size: scaleUp(1);
 $h5-line-height: $line-height-rem;
 
 html {

@@ -4,7 +4,7 @@
   @return 14;
 }
 
-@function scale($number) {
+@function scaleUp($number) {
   $scale: 1.333; //perfect fourth
   $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
 
@@ -21,8 +21,6 @@
   $size-rems: (round($size) / $base-font-size) + 0rem;
   @return $size-rems;
 }
-
-
 
 
 //specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-

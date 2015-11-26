@@ -13,19 +13,20 @@
   //background-color: #fff;
   padding: $line-height-rem;
   overflow: hidden;
+  //transition: box-shadow .1s ease-in-out;
+
   &.lvl-1 {
     box-shadow: $box-shadow-lvl-1;
   }
 
   &:hover {
     box-shadow: $box-shadow-lvl-2;
-    font-weight: 600;
   }
 }
 
 .Event.debug {
-  // outline: $line-height-rem solid rgba(117, 205, 10, 0.1); //show paddings
-  // outline-offset: -$line-height-rem;
+  outline: $line-height-rem solid rgba(117, 205, 10, 0.1); //show paddings
+  outline-offset: -$line-height-rem;
 }
 
 .EventName.debug {
