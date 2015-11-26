@@ -41,7 +41,26 @@ export class App extends Component {
               <Event width={197.5}
                 name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
+            <Col sm={3}>
+              <Event width={197.5}
+                name="Salinas Criterium"/>
+            </Col>
           </Row>
+          <Row style={{marginTop: '1.3333rem'}}>
+            <Col sm={4} smOffset={3}>
+              <Event width={270}
+                name="Dunnigan Hills Road Race"/>
+            </Col>
+            <Col sm={4}>
+              <Event width={270}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+            </Col>
+            <Col sm={4}>
+              <Event width={270}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            </Col>
+          </Row>
+
           <Row>
             <Col sm={16}>
               <h1 className="oswald">Road Races in CA, 100mi range</h1>

@@ -8,11 +8,17 @@ const baseLine = 1.3333333;
 class EventName extends Component {
   render() {
     const style = {
-
+      //minHeight: baseLine * 3 + 'rem',
+      //maxHeight: baseLine * 3 + 'rem',
+      // width: '80%',
+      // height: '30%',
+      // overflow: 'hidden',
+      // textOverflow: 'ellipsis',
+      // whiteSpace: 'nowrap'
     }
 
     return(
-        <span>{this.props.children}</span>
+        <div {...this.props} style={style}>{this.props.children}</div>
     );
   }
 };
@@ -31,8 +37,8 @@ export default class Event extends Component {
     };
 
     return (
-      <div style={style} ref={(x) => this.div = x} className="Event lvl-1">
-        <EventName>{this.props.name}</EventName>
+      <div  {...this.props} style={style} ref={(x) => this.div = x} className="Event lvl-1">
+        <EventName className="EventName">{this.props.name}</EventName>
       </div>
     );
   }

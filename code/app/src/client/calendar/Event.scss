@@ -1,23 +1,41 @@
+@import '../styles/variables';
 .Event {
 
   //from material design
-  $box-shadow-lvl-1:  0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  $box-shadow-lvl-1: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   $box-shadow-lvl-2: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23);
-
   $base-line: 1.333333rem;
-
-
   position: relative;
   border-radius: 2px;
+
   //background-color: #fff;
   padding: $base-line;
   overflow: hidden;
-
   &.lvl-1 {
     box-shadow: $box-shadow-lvl-1;
   }
-
   &:hover {
     box-shadow: $box-shadow-lvl-2;
+  }
+}
+
+//TODO: move to separate file
+.EventName {
+  position: relative;
+  max-height: $line-height-rem * 2;
+  min-height: $line-height-rem * 2;
+  overflow: hidden;
+  // border: 1px solid lightgrey;
+
+  //adds white overlay over text to show that is' longer then it appe
+  &:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: $line-height-rem;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
   }
 }
