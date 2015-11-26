@@ -37,6 +37,12 @@ Today
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
  		- use this from material UI for multiday events: http://screencast.com/t/NrvJMSHEJX (http://material-ui.com/#/components/lists)
+ 		- make better implementation of faded text, when text is too long: current one is not ideal and has few bugs
+ 			-- idea: mb use string.length to approximate if text fits
+ 			----- bug: overlay is shown when text doesn't actually have more lines left
+ 			----- bug: overlay is shown all the time, event when text is super-short
+ 			- it would be nicer to have overlay + "..."
+ 		- for one-column cards try really small text size: better then nothing
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
