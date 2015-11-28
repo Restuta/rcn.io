@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';;
+import React, {PropTypes} from 'react';
 import Component from 'react-pure-render/component';
 import classNames from 'classnames';
 import './Event.scss';
