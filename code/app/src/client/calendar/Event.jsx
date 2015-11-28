@@ -1,16 +1,8 @@
 import React, {PropTypes} from 'react';
 import Component from 'react-pure-render/component';
+import Typography, { calculateIdealHeightInRems } from '../styles/typography';
 import classNames from 'classnames';
 import './Event.scss';
-
-const calculateIdealHeightInRems = (widthPx) => {
-  //TODO: move this to global variables and pass them through
-  const LINE_HEIGHT_REM = 1.35714285714;
-  const BASE_FONT_SIZE_PX = 14;
-  const heightPx = widthPx / 1.618;
-  const lineHeightPx = BASE_FONT_SIZE_PX * LINE_HEIGHT_REM;
-  return Math.round(heightPx / lineHeightPx) * LINE_HEIGHT_REM;
-};
 
 export class EventName extends Component {
   render() {
@@ -29,7 +21,8 @@ export default class Event extends Component {
 
     let style = {
       width: widthPx + 'px',
-      height: idealHeightRem + 'rem'
+      height: idealHeightRem + 'rem',
+      //paddingTop: ''
     };
 
     return (
