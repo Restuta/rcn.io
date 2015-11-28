@@ -38,6 +38,7 @@ Today
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
+ 			- set assymetric padding (less on the sides, more from top to preserve the rythm)
 
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React

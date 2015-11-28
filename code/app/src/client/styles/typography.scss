@@ -8,20 +8,21 @@
 //headings
 $headings-margin-top: $line-height-rem;
 $headings-margin-bottom: $line-height-rem;
+$headings-font-family: 'Europa', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
 $headings-color-secondary: grey;
-$h1-font-size: scaleUp(4);
-$h1-line-height: $line-height-rem * 2;
+$h1-font-size: scaleUp(5);
+$h1-line-height: $line-height-rem * 3;
 
-$h2-font-size: scaleUp(3);
+$h2-font-size: scaleUp(4);
 $h2-line-height: $line-height-rem * 2;
 
-$h3-font-size: scaleUp(2);
-$h3-line-height: $line-height-rem;
+$h3-font-size: scaleUp(3);
+$h3-line-height: $line-height-rem * 2;
 
-$h4-font-size: scaleUp(1);
+$h4-font-size: scaleUp(2);
 $h4-line-height: $line-height-rem;
 
 $h5-font-size: scaleUp(1);
@@ -66,10 +67,11 @@ h3 {
 h4 {
   font-size: $h4-font-size;
   line-height: $h4-line-height;
-  margin-bottom: 0;
+  //margin-bottom: 0;
 }
 h5 {
   font-size: $h5-font-size;
+  font-weight: 400;
   line-height: $h5-line-height;
   margin-bottom: 0;
   color: $headings-color-secondary;

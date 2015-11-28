@@ -33,9 +33,9 @@ export class App extends Component {
         <div className="container">
           <div className="margin-top"></div>
           <div>
-            <h3>Event Components:</h3>
+            <h2>EVENT COMPONENTS:</h2>
             <Row>
-              <Col sm={2}><h5>Event name: </h5></Col>
+              <Col sm={2}><h5>Event Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
             </Row>
           </div>
