@@ -1,0 +1,13 @@
+{
+  "ignore": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "prototypes/**",
+      "code/data/**",
+      "todo/**",
+      "data/**",
+      "wireframes/**"
+    ],
+  "packageJsonLocation": "code/app/package.json"
+
+}
