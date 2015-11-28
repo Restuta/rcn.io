@@ -8,7 +8,7 @@
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js --progress",
     "build": "npm run clean && npm run build:webpack",
     "start": "NODE_ENV=development node devServer.js",
-    "lint": "eslint src",
+    "eslint": "eslint src/** --ext .js,.jsx || true",
     "reinstall": "npm run clean:all && bower i && npm i"
   },
   "repository": {
