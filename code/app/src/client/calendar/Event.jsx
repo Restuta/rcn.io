@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import Component from 'react-pure-render/component';
-import Typography, { calculateIdealHeightInRems } from '../styles/typography';
+import Typography from '../styles/typography';
 import classNames from 'classnames';
 import './Event.scss';
 
@@ -17,7 +17,7 @@ export class EventName extends Component {
 export default class Event extends Component {
   render() {
     const widthPx = this.props.width || 50;
-    const idealHeightRem = calculateIdealHeightInRems(widthPx);
+    const idealHeightRem = Typography.calculateIdealHeightInRems(widthPx);
 
     let style = {
       width: widthPx + 'px',
