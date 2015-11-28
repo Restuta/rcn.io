@@ -3,7 +3,7 @@
 [![Code Climate](https://codeclimate.com/github/Restuta/rcn.io/badges/gpa.svg)](https://codeclimate.com/github/Restuta/rcn.io)
 [![Issue Count](https://codeclimate.com/github/Restuta/rcn.io/badges/issue_count.svg)](https://codeclimate.com/github/Restuta/rcn.io)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/e71f308dcb52404abdf4d3b3e6b36c2a)](https://www.codacy.com/app/restuta8/rcn-io)
-[![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)(bower)
+[![Dependency Status](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/564a9dfa4e32b60016000012)
 --
 [![bitHound Overalll Score](https://www.bithound.io/github/Restuta/rcn.io/badges/score.svg)](https://www.bithound.io/github/Restuta/rcn.io)
 [![bitHound Code](https://www.bithound.io/github/Restuta/rcn.io/badges/code.svg)](https://www.bithound.io/github/Restuta/rcn.io)
