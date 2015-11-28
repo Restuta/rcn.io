@@ -17,8 +17,9 @@ module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
   // http://webpack.github.io/docs/configuration.html#devtool
-  //devtool: 'cheap-module-eval-source-map',
+
   devtool: 'eval',
+  //  devtool: 'cheap-module-eval-source-map',
 
   cache: true,
   debug: true,
