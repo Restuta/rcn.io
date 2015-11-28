@@ -6,7 +6,11 @@ Story
 
 Ideas
 	- fill event cards with solid color: and show data with white color and it's shades
-	- show additional infor when event card is hovered: like on dribble and many other sites
+	- show additional info when event card is hovered: like on dribble and many other sites
+	-- Calendar
+		- higlight row and column on mouse hover in calendar
+		- show "today"
+		- show "time now" as a red line relative to a todays day
 
 Design
 --- Statements
