@@ -3,9 +3,10 @@ import Component from 'react-pure-render/component';
 import './app.scss';
 import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
+import Icon from './atoms/Icon.jsx';
 import Counter from './temp/Counter.jsx';
 import EventStub from './temp/EventStub.jsx';
-import Event, {EventName} from './calendar/Event.jsx';
+import Event, {EventName, EventBadge} from './calendar/Event.jsx';
 
 
 function times(x, times) {
@@ -33,10 +34,14 @@ export class App extends Component {
         <div className="container">
           <div className="margin-top"></div>
           <div>
-            <h2>EVENT COMPONENTS:</h2>
+            <h2><Icon name="heart-o"/>EVENT COMPONENTS:</h2>
             <Row>
               <Col sm={2}><h5>Event Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
+            </Row>
+            <Row className="margin-top">
+              <Col sm={2}><h5>Event Badge: </h5></Col>
+              <Col sm={3}><EventBadge className="debug">X</EventBadge></Col>
             </Row>
           </div>
 

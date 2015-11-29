@@ -14,14 +14,25 @@ export class EventName extends Component {
   }
 };
 
+export class EventBadge extends Component {
+  render() {
+    const className = classNames('EventBadge', this.props.className);
+
+    return (
+      <div className={className}>{this.props.children}</div>
+    );
+  }
+};
+
+
 class Event extends Component {
   render() {
     const widthPx = this.props.width || 50;
-    //todo: typegraphy should be passed as props
+    //todo: typography should be passed as props
     const idealHeightRem = Typography.calculateIdealHeightInRems(widthPx);
 
     const verticalPadding = `${Typography.LINE_HEIGHT_REM}rem`;
-    const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`
+    const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`;
 
     let style = {
       width: widthPx + 'px',
@@ -62,7 +73,7 @@ let DebugComponent = ComponentToDebug => props => { //eslint-disable-line
   const rightBoxShadow = `inset ${-lineHeightRem / 2}rem 0px 0px 0px ${debugColor}`;
 
   const styles = {
-    boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow};`
+    boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`
   }
 
   return (

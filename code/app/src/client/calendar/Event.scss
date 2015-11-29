@@ -24,14 +24,14 @@
 }
 
 //$debug-color: rgba(117, 205, 10, 0.1);
-$debug-color: rgb(238, 247, 228);
-.Event.debug {
-  box-shadow:
-    inset 0px $line-height-rem 0px 0px $debug-color, //top
-    inset 0px (-$line-height-rem) 0px 0px $debug-color, //bottom
-    inset ($line-height-rem / 2) 0px 0px 0px $debug-color, //left
-    inset (-$line-height-rem / 2) 0px 0px 0px $debug-color; //right
-}
+//$debug-color: rgb(238, 247, 228);
+// .Event.debug {
+//   box-shadow:
+//     inset 0px $line-height-rem 0px 0px $debug-color, //top
+//     inset 0px (-$line-height-rem) 0px 0px $debug-color, //bottom
+//     inset ($line-height-rem / 2) 0px 0px 0px $debug-color, //left
+//     inset (-$line-height-rem / 2) 0px 0px 0px $debug-color; //right
+// }
 
 .EventName.debug {
   border: 1px solid lightgrey;
@@ -56,4 +56,16 @@ $debug-color: rgb(238, 247, 228);
     height: $line-height-rem;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
   }
+}
+
+
+.EventBadge {
+  width: $line-height-rem;
+  height: $line-height-rem;
+  background-color: #4fc3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 11px;
 }
