@@ -9,31 +9,67 @@ export class EventName extends Component {
     const className = classNames('EventName', this.props.className);
 
     return (
-      <div {...this.props} className={className}>{this.props.children}</div>
+      <div className={className}>{this.props.children}</div>
     );
   }
 };
 
-export default class Event extends Component {
+class Event extends Component {
   render() {
     const widthPx = this.props.width || 50;
+    //todo: typegraphy should be passed as props
     const idealHeightRem = Typography.calculateIdealHeightInRems(widthPx);
+
+    const verticalPadding = `${Typography.LINE_HEIGHT_REM}rem`;
+    const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`
 
     let style = {
       width: widthPx + 'px',
       height: idealHeightRem + 'rem',
-      //paddingTop: ''
+      paddingTop: verticalPadding,
+      paddingBottom: verticalPadding,
+      paddingLeft: horizontalPadding,
+      paddingRight: horizontalPadding
     };
 
     return (
-      <div  {...this.props} style={style} ref={(x) => this.div = x} className="Event lvl-1 debug">
-        <EventName>{this.props.name}</EventName>
-      </div>
+        <div style={style} ref={(x) => this.div = x} className="Event lvl-1">
+          <EventName>{this.props.name}</EventName>
+        </div>
     );
   }
 };
+
 
 Event.propTypes = {
   name: PropTypes.string,
   width: PropTypes.number
 };
+
+//export default Event;
+
+//----
+//below is debugging code
+
+//HOC to wrap a componennt in a debugging one
+let DebugComponent = ComponentToDebug => props => { //eslint-disable-line
+  const lineHeightRem = Typography.LINE_HEIGHT_REM;
+  const debugColor = 'rgb(238, 247, 228)';
+
+  const topBoxShadow = `inset 0px ${lineHeightRem}rem 0px 0px ${debugColor}`;
+  const bottomBoxShadow = `inset 0px ${-lineHeightRem}rem 0px 0px ${debugColor}`;
+  const leftBoxShadow = `inset ${lineHeightRem / 2}rem 0px 0px 0px ${debugColor}`;
+  const rightBoxShadow = `inset ${-lineHeightRem / 2}rem 0px 0px 0px ${debugColor}`;
+
+  const styles = {
+    boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow};`
+  }
+
+  return (
+    <div style={styles}>
+    <ComponentToDebug {...props}/>
+  </div>
+  );
+}
+
+export default DebugComponent(Event);

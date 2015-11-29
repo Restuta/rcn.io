@@ -11,8 +11,7 @@
   border-radius: 2px;
 
   //background-color: #fff;
-  padding: $line-height-rem;
-  overflow: hidden;
+  //padding: $line-height-rem;
   //transition: box-shadow .1s ease-in-out;
 
   &.lvl-1 {
@@ -24,9 +23,14 @@
   }
 }
 
+//$debug-color: rgba(117, 205, 10, 0.1);
+$debug-color: rgb(238, 247, 228);
 .Event.debug {
-  outline: $line-height-rem solid rgba(117, 205, 10, 0.1); //show paddings
-  outline-offset: -$line-height-rem;
+  box-shadow:
+    inset 0px $line-height-rem 0px 0px $debug-color, //top
+    inset 0px (-$line-height-rem) 0px 0px $debug-color, //bottom
+    inset ($line-height-rem / 2) 0px 0px 0px $debug-color, //left
+    inset (-$line-height-rem / 2) 0px 0px 0px $debug-color; //right
 }
 
 .EventName.debug {
