@@ -4,8 +4,12 @@
   @return 14;
 }
 
+@function getScale() {
+  @return 1.3333;//perfect fourth
+}
+
 @function scaleUp($number) {
-  $scale: 1.333; //perfect fourth
+  $scale: getScale();
   $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
 
   $size: $base-font-size;
@@ -28,3 +32,6 @@ $line-height: 1.36;
 $base-line: round(getBaseFontSize() * $line-height);
 //calculating ideal height in rems, but that rounds nicely to pixels
 $line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
+
+//calculating small (one step from base) font size
+$font-size-sm: (round(getBaseFontSize() / getScale()) / getBaseFontSize()) + rem;

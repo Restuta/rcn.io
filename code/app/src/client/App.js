@@ -41,7 +41,19 @@ export class App extends Component {
             </Row>
             <Row className="margin-top">
               <Col sm={2}><h5>Event Badge: </h5></Col>
-              <Col sm={3}><EventBadge className="debug">X</EventBadge></Col>
+              <Col sm={6}>
+                <EventBadge size={2}>8</EventBadge>
+                <EventBadge size={1}>8</EventBadge>
+                <EventBadge size={2}><Icon name="map-marker"/></EventBadge>
+                <EventBadge size={1}><Icon name="map-marker"/></EventBadge>
+                <EventBadge size={2}><Icon name="car"></Icon></EventBadge>
+                <EventBadge size={1}><Icon name="car"></Icon></EventBadge>
+                <EventBadge size={2}>RR</EventBadge>
+                <EventBadge size={1}>RR</EventBadge>
+                <EventBadge size={2}>TT</EventBadge>
+                <EventBadge size={1}>TT</EventBadge>
+
+              </Col>
             </Row>
           </div>
 

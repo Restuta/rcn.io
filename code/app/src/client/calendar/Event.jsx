@@ -14,12 +14,21 @@ export class EventName extends Component {
   }
 };
 
+
+import Icon from '../atoms/Icon.jsx';
 export class EventBadge extends Component {
   render() {
-    const className = classNames('EventBadge', this.props.className);
+    const {size = 1} = this.props;
+    const className = size === 2
+      ? classNames('EventBadge x2', this.props.className)
+      : classNames('EventBadge', this.props.className);
 
     return (
-      <div className={className}>{this.props.children}</div>
+      <span className={className}>
+        <div className="content">
+          {this.props.children}
+        </div>
+      </span>
     );
   }
 };

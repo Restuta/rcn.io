@@ -60,12 +60,26 @@
 
 
 .EventBadge {
-  width: $line-height-rem;
-  height: $line-height-rem;
-  background-color: #4fc3f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 11px;
+  $background-color: silver;
+
+  float: left;
+
+
+  >.content {
+    width: $line-height-rem;
+    height: $line-height-rem;
+    background-color: $background-color;
+    color: lighten($background-color, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: $font-size-sm;
+  }
+
+  &.x2 > .content {
+    width: $line-height-rem * 2;
+    height: $line-height-rem * 2;
+    font-size: scaleUp(2);
+  }
 }
