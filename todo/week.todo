@@ -141,6 +141,7 @@ Not Today
 		- setup hashes for output: like assets/bundle.[hash].js
 		- setup minifications of js, css and html
 			- one of the prod config examples with html minification: https://github.com/mxstbr/react-boilerplate/blob/master/makewebpackconfig.js
+		- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
 
