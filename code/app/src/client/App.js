@@ -6,7 +6,7 @@ import Col from './atoms/Col.jsx';
 import Icon from './atoms/Icon.jsx';
 import Counter from './temp/Counter.jsx';
 import EventStub from './temp/EventStub.jsx';
-import Event, {EventName, EventBadge} from './calendar/Event.jsx';
+import Event, {EventName, RoundBadge, Badge} from './calendar/Event.jsx';
 
 
 function times(x, times) {
@@ -34,27 +34,38 @@ export class App extends Component {
         <div className="container">
           <div className="margin-top"></div>
           <div>
-            <h2><Icon name="heart-o"/>EVENT COMPONENTS:</h2>
+            <h2>EVENT COMPONENTS:</h2>
             <Row>
               <Col sm={2}><h5>Event Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
             </Row>
             <Row className="margin-top">
-              <Col sm={2}><h5>Event Badge: </h5></Col>
-              <Col sm={6}>
-                <EventBadge size={2}>8</EventBadge>
-                <EventBadge size={1}>8</EventBadge>
-                <EventBadge size={2}><Icon name="map-marker"/></EventBadge>
-                <EventBadge size={1}><Icon name="map-marker"/></EventBadge>
-                <EventBadge size={2}><Icon name="car"></Icon></EventBadge>
-                <EventBadge size={1}><Icon name="car"></Icon></EventBadge>
-                <EventBadge size={2}>RR</EventBadge>
-                <EventBadge size={1}>RR</EventBadge>
-                <EventBadge size={2}>TT</EventBadge>
-                <EventBadge size={1}>TT</EventBadge>
+              <Col sm={2}><h5>Round Badges: </h5></Col>
+              <Col sm={14} className="display-flex">
+                <RoundBadge size={2}>8</RoundBadge>
+                <RoundBadge size={1}>8</RoundBadge>
+                <RoundBadge size={2}><Icon name="map-marker"/></RoundBadge>
+                <RoundBadge size={1}><Icon name="map-marker"/></RoundBadge>
+                <RoundBadge size={2}><Icon name="car"/></RoundBadge>
+                <RoundBadge size={1}><Icon name="car"/></RoundBadge>
+                <RoundBadge size={2}>RR</RoundBadge>
+                <RoundBadge size={1}>RR</RoundBadge>
+                <RoundBadge size={2}>TT</RoundBadge>
+                <RoundBadge size={1}>TT</RoundBadge>
+              </Col>
+            </Row>
+            <Row className="margin-top">
+              <Col sm={2}><h5>Not so Round Badges: </h5></Col>
+              <Col sm={14} className="display-flex">
+                <Badge>120mi</Badge>&nbsp;
+                <Badge>8</Badge>&nbsp;
+                <Badge><Icon name="trophy"/></Badge>&nbsp;
+                <Badge><Icon name="sun-o"/></Badge>&nbsp;
+                <Badge><Icon name="map-marker"/>&nbsp;&nbsp;Monterey, CA</Badge>&nbsp;
 
               </Col>
             </Row>
+
           </div>
 
           <Row className="margin-top">

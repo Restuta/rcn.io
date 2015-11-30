@@ -14,25 +14,32 @@ export class EventName extends Component {
   }
 };
 
-
-import Icon from '../atoms/Icon.jsx';
-export class EventBadge extends Component {
+export class RoundBadge extends Component {
   render() {
     const {size = 1} = this.props;
     const className = size === 2
-      ? classNames('EventBadge x2', this.props.className)
-      : classNames('EventBadge', this.props.className);
+      ? classNames('RoundBadge x2', this.props.className)
+      : classNames('RoundBadge', this.props.className);
 
     return (
-      <span className={className}>
-        <div className="content">
-          {this.props.children}
-        </div>
-      </span>
+      <div className={className}>
+        {this.props.children}
+      </div>
     );
   }
 };
 
+export class Badge extends Component {
+  render() {
+    const className = classNames('Badge', this.props.className);
+
+    return (
+      <span className={className}>
+        {this.props.children}
+      </span>
+    );
+  }
+};
 
 class Event extends Component {
   render() {
@@ -57,9 +64,8 @@ class Event extends Component {
           <EventName>{this.props.name}</EventName>
         </div>
     );
-  }
+  };
 };
-
 
 Event.propTypes = {
   name: PropTypes.string,
@@ -83,13 +89,13 @@ let DebugComponent = ComponentToDebug => props => { //eslint-disable-line
 
   const styles = {
     boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`
-  }
+  };
 
   return (
     <div style={styles}>
     <ComponentToDebug {...props}/>
   </div>
   );
-}
+};
 
 export default DebugComponent(Event);

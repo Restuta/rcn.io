@@ -1,5 +1,9 @@
-//Typography
+//colors
+//number at the end means level of darkness =)
+$grey-lvl-30: #A0A0A0;
+$grey-lvl-20: lightgrey;
 
+//Typography
 @function getBaseFontSize() {
   @return 14;
 }

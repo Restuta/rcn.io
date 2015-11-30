@@ -1,4 +1,5 @@
 @import '../styles/variables';
+
 .Event {
 
   //googoe original from Polymer project (https://elements.polymer-project.org/browse?package=paper-elements&view=cards)
@@ -34,7 +35,7 @@
 // }
 
 .EventName.debug {
-  border: 1px solid lightgrey;
+  border: 1px solid $grey-lvl-20;
 }
 
 //TODO: move to separate file
@@ -58,28 +59,52 @@
   }
 }
 
+.RoundBadge {
+  $background-color: $grey-lvl-30;
 
-.EventBadge {
-  $background-color: silver;
+  font-size: $font-size-sm;
+  min-width: $line-height-rem;
+  height: $line-height-rem;
+  background-color: $background-color;
+  color: lighten($background-color, 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  white-space: nowrap;
+  //text-shadow: 0 1px 0 rgba(0,0,0,.2);
 
-  float: left;
 
-
-  >.content {
-    width: $line-height-rem;
-    height: $line-height-rem;
-    background-color: $background-color;
-    color: lighten($background-color, 20%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: $font-size-sm;
-  }
-
-  &.x2 > .content {
-    width: $line-height-rem * 2;
-    height: $line-height-rem * 2;
+  &.x2 {
     font-size: scaleUp(2);
+    min-width: $line-height-rem * 2;
+    height: $line-height-rem * 2;
+  }
+}
+
+
+.Badge {
+  $background-color: $grey-lvl-30;
+
+  font-size: $font-size-sm;
+  min-width: $line-height-rem;
+  padding: 3px 7px;
+  border-radius: 10px;
+  height: $line-height-rem;
+
+  background-color: $background-color;
+  color: lighten($background-color, 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //border-radius: 50%;
+  white-space: nowrap;
+  //text-shadow: 0 1px 0 rgba(0,0,0,.2);
+
+
+  &.x2 {
+    font-size: scaleUp(2);
+    min-width: $line-height-rem * 2;
+    height: $line-height-rem * 2;
   }
 }
