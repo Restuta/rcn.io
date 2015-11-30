@@ -31,26 +31,8 @@ html {
   box-sizing: inherit;
 }
 
-//column debug styles
-$col-brdr-color: #d6d6d6;
 
-.col.debug {
-  min-height: $line-height-rem * 10;
-}
-
-.row.margin-top {
-  margin-top: $line-height-rem * 1;
-}
-
-.col.pink {
-  background-color: lighten(lightpink, 11%) !important;
-}
-
-$col-border: 1px solid $col-brdr-color;
-
-.col.outlined {
-  background-color: white;
-  border-right: $col-border;
-  border-top: $col-border;
-  border-bottom: $col-border;
+.display-flex {
+  display: flex;
+  align-items: flex-end;
 }
