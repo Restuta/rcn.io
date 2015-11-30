@@ -39,7 +39,9 @@ Today
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
  			- set assymetric padding (less on the sides, more from top to preserve the rythm)
-
+ 			- adopt flexbox
+ 			- play with vh vw (veiwport related sizes) for card size
+ 			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
@@ -50,8 +52,10 @@ Today
  			----- bug: overlay is shown all the time, event when text is super-short
  			-- idea 2: make cards to take more vertical space
  			-- idea 3: make text smaller
+ 			-- idea 4: fade text vertically, top to bottom, this makes it more obvious that there is more to read
  			- it would be nicer to have overlay + "..."
  		- for one-column cards try really small text size: better then nothing
+ 		-- what if we go Apple Watch Style for card UI: e.g. we can use space more efficiently if we show circles around circles http://screencast.com/t/JajByOsfhtm
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
