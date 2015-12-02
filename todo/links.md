@@ -28,6 +28,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Typography
+* [FontCDN](http://fontcdn.org/) - a better way to search google fonts
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
 * [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
 * [x] [Font Pairing](http://school.readymag.com/intro/)

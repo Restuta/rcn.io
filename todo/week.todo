@@ -55,6 +55,7 @@ Today
  			-- idea 2: make cards to take more vertical space
  			-- idea 3: make text smaller
  			-- idea 4: fade text vertically, top to bottom, this makes it more obvious that there is more to read
+ 			--- idea 5: try monspace font like Inconsolata, Source Code Pro or Roboto Mono, so it's easy to calculate exact text length
  			- it would be nicer to have overlay + "..."
  		- for one-column cards try really small text size: better then nothing
  		-- what if we go Apple Watch Style for card UI: e.g. we can use space more efficiently if we show circles around circles http://screencast.com/t/JajByOsfhtm
