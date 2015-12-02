@@ -45,6 +45,7 @@ RC 1.0
  - full event info
 
 RC 1.1
+ - show pdf flyer in a modal window: (e.g. this is how Metromile does that  http://screencast.com/t/1dwjCJoo, uses https://mozilla.github.io/pdf.js/)
  - support for teams
  	- team roaster
  	- join/leave team
