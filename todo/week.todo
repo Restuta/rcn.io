@@ -41,6 +41,9 @@ Today
  			- adopt flexbox
  			- play with vh vw (veiwport related sizes) for card size
  			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
+ 			- design a 1-2 line card design, so we can show non-important events for imporant days this way: 
+ 				say we have a Sat which takes 4 culumns and we only interested in 1/3 events, there is no reason to show them full-size
+ 		- if calendar is going to take the whole page space, rehing 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
