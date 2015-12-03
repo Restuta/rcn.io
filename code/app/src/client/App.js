@@ -62,14 +62,21 @@ export class App extends Component {
                 <Badge><Icon name="trophy"/></Badge>&nbsp;
                 <Badge><Icon name="sun-o"/></Badge>&nbsp;
                 <Badge><Icon name="map-marker"/>&nbsp;&nbsp;Monterey, CA</Badge>&nbsp;
-
+              </Col>
+            </Row>
+            <Row className="margin-top">
+              <Col sm={2}><h5>Elevation:</h5></Col>
+              <Col sm={14} className="display-flex">
+                <Icon name="sun-o"/>1200ft&nbsp;&nbsp;
+                <Icon name="arrow-up"/>1200ft&nbsp;&nbsp;
+                <Icon name="long-arrow-up" />1200ft&nbsp;&nbsp;
               </Col>
             </Row>
 
           </div>
 
           <Row className="margin-top">
-            <Col sm={2} smOffset={3}>
+            <Col sm={2} smOffset={1}>
               <Event width={125}
                 name="Dunnigan Hills Road Race"/>
             </Col>
@@ -87,7 +94,7 @@ export class App extends Component {
             </Col>
           </Row>
           <Row className="margin-top">
-            <Col sm={3} smOffset={3}>
+            <Col sm={3} smOffset={1}>
               <Event width={197.5}
                 name="Dunnigan Hills Road Race"/>
             </Col>
@@ -105,7 +112,7 @@ export class App extends Component {
             </Col>
           </Row>
           <Row className="margin-top">
-            <Col sm={4} smOffset={3}>
+            <Col sm={4} smOffset={1}>
               <Event width={270}
                 name="Dunnigan Hills Road Race"/>
             </Col>
