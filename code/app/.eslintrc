@@ -83,7 +83,7 @@
     "no-var": 2,
     "no-warning-comments": [0, {"terms": ["todo", "fixme"]}],
     "object-curly-spacing": 0,
-    "quote-props": [0, "as-needed"],
+    "quote-props": [2, "as-needed"],
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
     "semi": [2, "always"],

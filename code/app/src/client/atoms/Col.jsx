@@ -4,14 +4,14 @@ import classNames from 'classnames';
 
 function getColClassName(propName, propValue) {
   const validProps = {
-    'xs': 'col-xs-',
-    'sm': 'col-sm-',
-    'md': 'col-md-',
-    'lg': 'col-lg-',
-    'xsOffset': 'col-xs-offset-',
-    'smOffset': 'col-sm-offset-',
-    'mdOffset': 'col-md-offset-',
-    'lgOffset': 'col-lg-offset-',
+    xs: 'col-xs-',
+    sm: 'col-sm-',
+    md: 'col-md-',
+    lg: 'col-lg-',
+    xsOffset: 'col-xs-offset-',
+    smOffset: 'col-sm-offset-',
+    mdOffset: 'col-md-offset-',
+    lgOffset: 'col-lg-offset-',
   };
 
   return validProps[propName] ? validProps[propName] + propValue : '';
