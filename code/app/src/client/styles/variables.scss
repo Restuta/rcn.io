@@ -5,6 +5,7 @@ $grey-lvl-20: lightgrey;
 
 //Typography
 @function getBaseFontSize() {
+  //change in typography.js also
   @return 14;
 }
 

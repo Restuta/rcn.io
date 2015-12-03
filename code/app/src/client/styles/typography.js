@@ -1,5 +1,6 @@
-const GOLDEN_RATIO = 1.61803398875;
+//change in variables.scss also
 const BASE_FONT_SIZE_PX = 14; //TODO: get it in runtime from the browser
+const GOLDEN_RATIO = 1.61803398875;
 const LINE_HEIGHT = 1.36;
 
 const calcBaseLine = (baseFontSizePx, lineHeight) => {
