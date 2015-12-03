@@ -30,6 +30,7 @@ $h5-line-height: $line-height-rem;
 
 html {
   //todo: consider not setting base font at all
+  //font-size: 62.5%;
   font-size: getBaseFontSize() + px;
 }
 body {
