@@ -81,8 +81,12 @@
     "no-unused-vars": [2, {"vars": "all", "args": "none"}],
     "no-use-before-define": [2, "nofunc"],
     "no-var": 2,
-    "no-warning-comments": [0, {"terms": ["todo", "fixme"]}],
+    "no-warning-comments": [1, {
+        "terms": ["todo bc", "todo restuta bc"]
+      }],
     "object-curly-spacing": 0,
+    "operator-linebreak": [2, "before"],
+    "max-len":[2, 140, 4, {"ignoreComments": true, "ignoreUrls": true}],
     "quote-props": [2, "as-needed"],
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
