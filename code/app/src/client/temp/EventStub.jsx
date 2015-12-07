@@ -24,4 +24,4 @@ export default class EventStub extends Component {
       <div style={style} ref={(x) => this.div = x} className="EventStub"></div>
     );
   }
-};
+}

@@ -34,7 +34,7 @@ export default class Col extends Component {
       </div>
     );
   }
-};
+}
 
 Col.propTypes = {
   xs: PropTypes.number,

@@ -39,7 +39,7 @@ export class Badge extends Component {
       </span>
     );
   }
-};
+}
 
 class Event extends Component {
   render() {
@@ -64,8 +64,8 @@ class Event extends Component {
           <EventName>{this.props.name}</EventName>
         </div>
     );
-  };
-};
+  }
+}
 
 Event.propTypes = {
   name: PropTypes.string,

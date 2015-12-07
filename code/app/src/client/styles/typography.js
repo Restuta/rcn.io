@@ -29,4 +29,4 @@ export default Object.freeze({
 
     return heightMultiplierRounded * this.LINE_HEIGHT_REM;
   }
-});;
+});
