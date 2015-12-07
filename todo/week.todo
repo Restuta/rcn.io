@@ -34,6 +34,8 @@ Today
  	--- design a card UI
  		---- immidiate todo
  			+- round height to nearest multiple of line height
+ 			- for distance make badge to have different size depending how long is the race
+ 			- create square (2px rounding) badge variation
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
