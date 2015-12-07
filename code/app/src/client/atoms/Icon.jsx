@@ -1,16 +1,17 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
 import classNames from 'classnames';
-import './Icon.scss';
+import Styles from './Icon.scss';
 
 export default class Icon extends Component {
   render() {
-    const {name} = this.props;
+    const {name, color} = this.props;
     const iconNameClass = `fa fa-${name}`;
+    const style = {color: color};
 
-    const className = classNames('Icon', iconNameClass, this.props.className);
+    const className = classNames(Styles.Icon, iconNameClass, this.props.className);
     return (
-      <i {...this.props} className={className}>
+      <i className={className} style={style}>
         {this.props.children }
       </i>
     );
