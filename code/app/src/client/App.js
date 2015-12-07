@@ -10,10 +10,10 @@ import Event, {EventName, RoundBadge, Badge} from './calendar/Event.jsx';
 import Colors from './styles/colors';
 
 
-function times(x, times) {
+function times(x, numberOfTimes) {
   let arr = [];
 
-  for (let i = 0; i < times; i++) {
+  for (let i = 0; i < numberOfTimes; i++) {
     arr.push(x);
   }
 

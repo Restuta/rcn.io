@@ -12,7 +12,7 @@ export class EventName extends Component {
       <div className={className}>{this.props.children}</div>
     );
   }
-};
+}
 
 export class RoundBadge extends Component {
   render() {
@@ -27,7 +27,7 @@ export class RoundBadge extends Component {
       </div>
     );
   }
-};
+}
 
 export class Badge extends Component {
   render() {
