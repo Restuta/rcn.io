@@ -7,6 +7,7 @@ import Icon from './atoms/Icon.jsx';
 import Counter from './temp/Counter.jsx';
 import EventStub from './temp/EventStub.jsx';
 import Event, {EventName, RoundBadge, Badge} from './calendar/Event.jsx';
+import Colors from './styles/colors';
 
 
 function times(x, times) {
@@ -18,6 +19,11 @@ function times(x, times) {
 
   return arr;
 }
+
+//TODO bc: remove this components
+const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
+const S5 = () => (<S width={5}/>);
+const S10 = () => (<S width={10}/>);
 
 export class App extends Component {
   render() {
@@ -36,7 +42,7 @@ export class App extends Component {
           <div>
             <h2>EVENT COMPONENTS:</h2>
             <Row>
-              <Col sm={2}><h5>Event Name: </h5></Col>
+              <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
             </Row>
             <Row className="margin-top">
@@ -54,22 +60,42 @@ export class App extends Component {
                 <RoundBadge size={1}>TT</RoundBadge>
               </Col>
             </Row>
-            <Row className="margin-top">
+            <Row>
               <Col sm={2}><h5>Not so Round Badges: </h5></Col>
               <Col sm={14} className="display-flex">
-                <Badge>120mi</Badge>&nbsp;
-                <Badge>8</Badge>&nbsp;
-                <Badge><Icon name="trophy"/></Badge>&nbsp;
-                <Badge><Icon name="sun-o"/></Badge>&nbsp;
-                <Badge><Icon name="map-marker"/>&nbsp;&nbsp;Monterey, CA</Badge>&nbsp;
+                <Badge>120mi</Badge><S5/>
+                <Badge>8</Badge><S5/>
+                <Badge><Icon name="trophy"/></Badge><S5/>
+                <Badge><Icon name="sun-o"/></Badge><S5/>
+                <Badge><Icon name="map-marker"/>Monterey, CA</Badge>
               </Col>
             </Row>
-            <Row className="margin-top">
+            <Row>
               <Col sm={2}><h5>Elevation:</h5></Col>
               <Col sm={14} className="display-flex">
-                <Icon name="sun-o"/>1200ft&nbsp;&nbsp;
-                <Icon name="arrow-up"/>1200ft&nbsp;&nbsp;
-                <Icon name="long-arrow-up" />1200ft&nbsp;&nbsp;
+                <Icon name="arrow-up" color={Colors.greyLvl30}/>1200ft<S10/>
+                <Icon name="long-arrow-up" color={Colors.greyLvl30}/>1200ft<S10/>
+                <Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>
+                <Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={2}><h5>Distance:</h5></Col>
+              <Col sm={14} className="display-flex">
+                <Icon name="bicycle" color={Colors.greyLvl30}/>20mi<S10/>
+                <Badge><Icon name="bicycle"/>20mi</Badge><S10/>
+                44mi 60mi 120mi
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={2}><h5>Duration:</h5></Col>
+              <Col sm={14} className="display-flex">
+                <Icon name="hourglass-start" color={Colors.greyLvl30}/>60min
+                <S10/>
+                <Badge><Icon name="hourglass-start"/>60min</Badge><S5/>
+                <Icon name="hourglass-o" color={Colors.greyLvl30}/>60min<S10/>
+                <Icon name="hourglass" color={Colors.greyLvl30} />60min<S10/>
+                <Icon name="hourglass-half" color={Colors.greyLvl30}/>60min<S10/>
               </Col>
             </Row>
 
