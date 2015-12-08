@@ -6,7 +6,9 @@ import Col from './atoms/Col.jsx';
 import Icon from './atoms/Icon.jsx';
 import Counter from './temp/Counter.jsx';
 import EventStub from './temp/EventStub.jsx';
-import Event, {EventName, RoundBadge, Badge} from './calendar/Event.jsx';
+import Event, {
+  EventName, RoundBadge, Badge, SquareBadge
+} from './calendar/Event.jsx';
 import Colors from './styles/colors';
 
 
@@ -67,7 +69,17 @@ export class App extends Component {
                 <Badge>8</Badge><S5/>
                 <Badge><Icon name="trophy"/></Badge><S5/>
                 <Badge><Icon name="sun-o"/></Badge><S5/>
-                <Badge><Icon name="map-marker"/>Monterey, CA</Badge>
+                <Badge><Icon name="map-marker"/><S5/>Monterey, CA</Badge>
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={2}><h5>Square Badges: </h5></Col>
+              <Col sm={14} className="display-flex">
+                <SquareBadge>120mi</SquareBadge><S5/>
+                <SquareBadge>8</SquareBadge><S5/>
+                <SquareBadge><Icon name="trophy"/></SquareBadge><S5/>
+                <SquareBadge><Icon name="sun-o"/></SquareBadge><S5/>
+                <SquareBadge><Icon name="map-marker"/><S5/>Monterey, CA</SquareBadge>
               </Col>
             </Row>
             <Row>
@@ -101,6 +113,17 @@ export class App extends Component {
 
           </div>
 
+          <Row className="margin-top">
+            <Col sm={1} smOffset={1}>
+              <Event width={56} name="Dh"/>
+            </Col>
+            <Col sm={1}>
+              <Event width={56} name="Rk"/>
+            </Col>
+            <Col sm={1}>
+              <Event width={56} name="Co"/>
+            </Col>
+          </Row>
           <Row className="margin-top">
             <Col sm={2} smOffset={1}>
               <Event width={125}
@@ -179,13 +202,11 @@ export class App extends Component {
             }
           </Row>
           <Row className="margin-top">
-            <Col sm={2} className="col outlined debug pink">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug pink">{++i}<EventStub/></Col>)
             }
           </Row>
           <Row className="margin-top">
-            <Col sm={2} className="col debug outlined">August</Col>
             {genericWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }

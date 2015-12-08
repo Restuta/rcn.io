@@ -41,6 +41,18 @@ export class Badge extends Component {
   }
 }
 
+export class SquareBadge extends Component {
+  render() {
+    const className = classNames('Badge SquareBadge', this.props.className);
+
+    return (
+      <span className={className}>
+        {this.props.children}
+      </span>
+    );
+  }
+}
+
 class Event extends Component {
   render() {
     const widthPx = this.props.width || 50;

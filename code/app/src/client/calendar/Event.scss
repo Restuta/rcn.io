@@ -24,16 +24,6 @@
   }
 }
 
-//$debug-color: rgba(117, 205, 10, 0.1);
-//$debug-color: rgb(238, 247, 228);
-// .Event.debug {
-//   box-shadow:
-//     inset 0px $line-height-rem 0px 0px $debug-color, //top
-//     inset 0px (-$line-height-rem) 0px 0px $debug-color, //bottom
-//     inset ($line-height-rem / 2) 0px 0px 0px $debug-color, //left
-//     inset (-$line-height-rem / 2) 0px 0px 0px $debug-color; //right
-// }
-
 .EventName.debug {
   border: 1px solid $grey-lvl-20;
 }
@@ -97,14 +87,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //border-radius: 50%;
   white-space: nowrap;
   //text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
 
-
-  &.x2 {
-    font-size: scaleUp(2);
-    min-width: $line-height-rem * 2;
-    height: $line-height-rem * 2;
-  }
+.Badge.SquareBadge {
+  border-radius: 3px;
 }
