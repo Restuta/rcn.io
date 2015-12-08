@@ -91,6 +91,13 @@
   //text-shadow: 0 1px 0 rgba(0,0,0,.2);
 }
 
+.RoundBadge.Inverted,
+.Badge.Inverted {
+  $background-color: $grey-lvl-20;
+  background-color: $background-color;
+  color: darken($background-color, 60%);
+}
+
 .Badge.SquareBadge {
-  border-radius: 3px;
+  border-radius: 2px;
 }

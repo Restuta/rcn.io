@@ -60,6 +60,11 @@ export class App extends Component {
                 <RoundBadge size={1}>RR</RoundBadge>
                 <RoundBadge size={2}>TT</RoundBadge>
                 <RoundBadge size={1}>TT</RoundBadge>
+                <RoundBadge size={2} className="Inverted">RR</RoundBadge>
+                <RoundBadge size={2} className="Inverted">8</RoundBadge>
+                <RoundBadge size={1} className="Inverted">8</RoundBadge>
+                <RoundBadge size={2} className="Inverted"><Icon name="car"/></RoundBadge>
+                <RoundBadge size={1} className="Inverted"><Icon name="car"/></RoundBadge>
               </Col>
             </Row>
             <Row>
@@ -69,7 +74,8 @@ export class App extends Component {
                 <Badge>8</Badge><S5/>
                 <Badge><Icon name="trophy"/></Badge><S5/>
                 <Badge><Icon name="sun-o"/></Badge><S5/>
-                <Badge><Icon name="map-marker"/><S5/>Monterey, CA</Badge>
+                <Badge><Icon name="map-marker"/><S5/>Monterey, CA</Badge><S5/>
+                <Badge className="Inverted"><Icon name="map-marker"/><S5/>Monterey, CA</Badge>
               </Col>
             </Row>
             <Row>
@@ -80,6 +86,16 @@ export class App extends Component {
                 <SquareBadge><Icon name="trophy"/></SquareBadge><S5/>
                 <SquareBadge><Icon name="sun-o"/></SquareBadge><S5/>
                 <SquareBadge><Icon name="map-marker"/><S5/>Monterey, CA</SquareBadge>
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={2}><h5>Square Badges (Inverted): </h5></Col>
+              <Col sm={14} className="display-flex">
+                <SquareBadge className="Inverted">120mi</SquareBadge><S5/>
+                <SquareBadge className="Inverted">8</SquareBadge><S5/>
+                <SquareBadge className="Inverted"><Icon name="trophy"/></SquareBadge><S5/>
+                <SquareBadge className="Inverted"><Icon name="sun-o"/></SquareBadge><S5/>
+                <SquareBadge className="Inverted"><Icon name="map-marker"/><S5/>Monterey, CA</SquareBadge>
               </Col>
             </Row>
             <Row>
@@ -96,6 +112,7 @@ export class App extends Component {
               <Col sm={14} className="display-flex">
                 <Icon name="bicycle" color={Colors.greyLvl30}/>20mi<S10/>
                 <Badge><Icon name="bicycle"/>20mi</Badge><S10/>
+                <Badge className="Inverted"><Icon name="bicycle"/>20mi</Badge><S10/>
                 44mi 60mi 120mi
               </Col>
             </Row>
