@@ -35,7 +35,7 @@ Today
  		---- immidiate todo
  			+- round height to nearest multiple of line height
  			- for distance make badge to have different size depending how long is the race
- 			- create square (2px rounding) badge variation
+ 			-- create square (2px rounding) badge variation
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
@@ -43,8 +43,9 @@ Today
  			- adopt flexbox
  			- play with vh vw (veiwport related sizes) for card size
  			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
- 			- design a 1-2 line card design, so we can show non-important events for imporant days this way: 
+ 			-- create a 1-2 line card design, so we can show non-important events for imporant days this way: 
  				say we have a Sat which takes 4 culumns and we only interested in 1/3 events, there is no reason to show them full-size
+ 				- inspiration can be taked from TargetProcess: http://screencast.com/t/HpOkrTbi4ot
  		- if calendar is going to take the whole page space, rehing 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
