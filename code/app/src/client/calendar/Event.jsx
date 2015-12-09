@@ -68,7 +68,8 @@ class Event extends Component {
       paddingTop: verticalPadding,
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
-      paddingRight: horizontalPadding
+      paddingRight: horizontalPadding,
+      borderLeft: `${idealHeightRem}px solid gray`
     };
 
     return (
