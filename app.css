@@ -18,6 +18,10 @@ li{list-style:none}
 html,body{ 
     width:100%;
     height:100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #222;
 }
 
 /* remove canvas default margin */
@@ -26,13 +30,6 @@ canvas{
     vertical-align:bottom;
 }
 
-
-html, body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    color: #222;
-}
 
 h1,h4 {
     margin: 0;
@@ -46,12 +43,12 @@ a {
 
 .content {
     position: absolute;
-    top: 30%;
-    left: 32%;
+    top: 30vh;
+    left: 30vw;
 }
 
 .title, .title  * {
-    font-size: 188px;
+    font-size: 20vw;
     font-weight: 300;
 }
 .title .domain {
