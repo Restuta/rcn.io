@@ -43,8 +43,8 @@ a {
 
 .content {
     position: absolute;
-    top: 30vh;
-    left: 30vw;
+    top: 20vh;
+    left: 20vw;
 }
 
 .title, .title  * {
