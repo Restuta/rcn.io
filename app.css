@@ -27,7 +27,7 @@ canvas{
 }
 
 
-* {
+html, body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 24px;
@@ -41,7 +41,7 @@ h1,h4 {
 
 a {
     text-decoration: none;
-    color: #0074D9;
+    color: lightblue;
 }
 
 .content {
@@ -93,6 +93,10 @@ a {
 
 .footer {
     text-align: right;
+    position: absolute;
+    top: 98%;
+    left: 10px;
+    color: #fcfcfc;
 }
 .footer .sub-title #restuta {
     opacity: 1;

@@ -23,10 +23,9 @@
   "_resolution": {
     "type": "version",
     "tag": "1.1.0",
-    "commit": "da61f1abccc75b318b426809a2ea8c5f082d2bfa"
+    "commit": "2196b1ab97f93ad9eab327c669a981700de0395e"
   },
   "_source": "git://github.com/VincentGarreau/particles.js.git",
   "_target": "~1.1.0",
-  "_originalSource": "particles.js",
-  "_direct": true
+  "_originalSource": "particles.js"
 }
