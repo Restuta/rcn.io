@@ -2,6 +2,7 @@
 const BASE_FONT_SIZE_PX = 14; //TODO: get it in runtime from the browser
 const GOLDEN_RATIO = 1.61803398875;
 const LINE_HEIGHT = 1.36;
+const FONT_SCALE = 1.3333; //perfect fourth
 
 const calcBaseLine = (baseFontSizePx, lineHeight) => {
   return Math.round(baseFontSizePx *  lineHeight);
@@ -28,5 +29,23 @@ export default Object.freeze({
     const heightMultiplierRounded = Math.round(heightPx / baseLineHeightPx);
 
     return heightMultiplierRounded * this.LINE_HEIGHT_REM;
+  },
+
+  scaleUp(number) {
+    let size = BASE_FONT_SIZE_PX;
+    const toRems  = (sizePx) => (Math.round(sizePx) / BASE_FONT_SIZE_PX);
+
+    // if (number === 1) {
+    //   return toRems(size);
+    // }
+
+    for (let i = 1; i < number; i++) {
+      size *= FONT_SCALE;
+    }
+
+    return toRems(size);
+  },
+  scaleDown(number) {
+
   }
 });
