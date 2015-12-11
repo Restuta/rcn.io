@@ -91,7 +91,7 @@ Event.propTypes = {
 //below is debugging code
 
 //HOC to wrap a componennt in a debugging one
-let DebugComponent = ComponentToDebug => props => { //eslint-disable-line
+let DebugComponent = ComponentToDebug => props => {
   const lineHeightRem = Typography.LINE_HEIGHT_REM;
   const debugColor = 'rgb(238, 247, 228)';
 
@@ -106,9 +106,10 @@ let DebugComponent = ComponentToDebug => props => { //eslint-disable-line
 
   return (
     <div style={styles}>
-    <ComponentToDebug {...props}/>
-  </div>
+      <ComponentToDebug {...props}/>
+    </div>
   );
 };
 
 export default DebugComponent(Event);
+//export default Event;

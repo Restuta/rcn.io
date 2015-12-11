@@ -30,7 +30,7 @@ const S10 = () => (<S width={10}/>);
 export class App extends Component {
   render() {
     let genericWeek = times(2, 7);
-    let roadWeek = [1, 1, 1, 1, 2, 4, 4];
+    let roadWeek = [1, 1, 1, 1, 1, 2, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
     let fullSpaceWeek3x3 = [1, 2, 2, 2, 3, 3, 3];
     let fullSpaceWeek4x3 = [1, 1, 2, 3, 3, 3, 3];
@@ -229,7 +229,7 @@ export class App extends Component {
             }
           </Row>
           <Row className="margin-top">
-            <Col sm={2} className="col debug outlined">August</Col>
+            <Col sm={1} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
               <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/></Col>)
             }
