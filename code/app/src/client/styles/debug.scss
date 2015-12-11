@@ -4,7 +4,7 @@
 
 $base-line-opacity: .13;
 //$base-line-opacity: .25;
-$show-baseline: false;
+$show-baseline: true;
 $show-secondary-baseline: false; //doesn't work for 14px base size
 $show-container-edges: false;
 
@@ -51,17 +51,18 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 
 //allows to see guidelines
 .row {
-    //opacity: 0.8;
+    //opacity: 0.6;
 }
 
 //column debug styles
 $col-brdr-color: #d6d6d6;
 
 .col.debug {
-  min-height: $line-height-rem * 10;
+
+  min-height: $line-height-rem * 21;
 }
 
-.row.margin-top {
+.margin-top {
   margin-top: $line-height-rem * 1;
 }
 
@@ -72,7 +73,7 @@ $col-brdr-color: #d6d6d6;
 $col-border: 1px solid $col-brdr-color;
 
 .col.outlined {
-  background-color: white;
+  //background-color: white;
   border-right: $col-border;
   border-top: $col-border;
   border-bottom: $col-border;

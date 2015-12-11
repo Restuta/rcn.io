@@ -72,7 +72,7 @@ module.exports = {
       include: path.join(consts.SRC_DIR, 'client')
     }, {
       test: /\.scss$/,
-      loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:5]', 'sass'],
+      loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
     }, {
