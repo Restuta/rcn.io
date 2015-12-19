@@ -42,7 +42,7 @@ export class App extends Component {
       <div>
         <DebugGrid/>
         <div className="container">
-          <div className="margin-top"></div>
+          &nbsp;
           <div>
             <h2>EVENT COMPONENTS:</h2>
             <Row>
