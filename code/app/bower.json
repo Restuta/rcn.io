@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "4.0.0-alpha"
+    "bootstrap": "4.0.0-alpha.2"
   }
 }
