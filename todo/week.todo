@@ -39,6 +39,9 @@ Today
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
+ 					- try Roboto Condensed
+ 					- try Open Sans Condensed
+ 					- try Oswald
  			- set assymetric padding (less on the sides, more from top to preserve the rythm)
  			- adopt flexbox
  			- play with vh vw (veiwport related sizes) for card size
