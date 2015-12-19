@@ -10,6 +10,7 @@ import Event, {
   EventName, RoundBadge, Badge, SquareBadge
 } from './calendar/Event.jsx';
 import Colors from './styles/colors';
+import DebugGrid from './temp/DebugGrid.jsx';
 
 
 function times(x, numberOfTimes) {
@@ -22,7 +23,7 @@ function times(x, numberOfTimes) {
   return arr;
 }
 
-//TODO bc: remove this components
+//TODO bc: remove these components
 const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
 const S5 = () => (<S width={5}/>);
 const S10 = () => (<S width={10}/>);
@@ -39,6 +40,7 @@ export class App extends Component {
 
     return (
       <div>
+        <DebugGrid/>
         <div className="container">
           <div className="margin-top"></div>
           <div>
