@@ -4,7 +4,7 @@ const GOLDEN_RATIO = 1.61803398875;
 const LINE_HEIGHT = 1.36;
 const FONT_SCALE = 1.3333; //perfect fourth
 //calculating ideal line height in rems, but that rounds nicely to pixels, that's why we need rounding
-const BASE_LINE = Math.round(BASE_FONT_SIZE_PX *  LINE_HEIGHT);
+const BASE_LINE = Math.round(BASE_FONT_SIZE_PX * LINE_HEIGHT);
 const LINE_HEIGHT_REM = BASE_LINE / BASE_FONT_SIZE_PX;
 
 //font operations

@@ -28,10 +28,26 @@ const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
 const S5 = () => (<S width={5}/>);
 const S10 = () => (<S width={10}/>);
 
+const WeekExample = ({days, allSameSize}) => {
+  const colClasses = allSameSize ? 'col outlined debug pink' : 'col outlined debug';
+
+  return (
+    <Row className="margin-top">
+      {days.map((x, i) =>
+        <Col key={i} sm={x} className={colClasses}>
+          {++i}
+          <EventStub/>
+          <EventStub className="margin-top"/>
+        </Col>)
+      }
+    </Row>
+  );
+};
+
 export class App extends Component {
   render() {
     let genericWeek = times(2, 7);
-    let roadWeek = [1, 1, 1, 1, 1, 2, 4, 4];
+    let roadWeek = [1, 1, 1, 1, 3, 4, 4];
     let fullSpaceWeek = times(2, 5).concat([3, 3]);
     let fullSpaceWeek3x3 = [1, 2, 2, 2, 3, 3, 3];
     let fullSpaceWeek4x3 = [1, 1, 2, 3, 3, 3, 3];
@@ -54,8 +70,6 @@ export class App extends Component {
               <Col sm={14} className="display-flex">
                 <RoundBadge size={2}>8</RoundBadge>
                 <RoundBadge size={1}>8</RoundBadge>
-                <RoundBadge size={2}><Icon name="map-marker"/></RoundBadge>
-                <RoundBadge size={1}><Icon name="map-marker"/></RoundBadge>
                 <RoundBadge size={2}><Icon name="car"/></RoundBadge>
                 <RoundBadge size={1}><Icon name="car"/></RoundBadge>
                 <RoundBadge size={2}>RR</RoundBadge>
@@ -129,107 +143,60 @@ export class App extends Component {
                 <Icon name="hourglass-half" color={Colors.greyLvl30}/>60min<S10/>
               </Col>
             </Row>
-
           </div>
-
           <Row className="margin-top">
-            <Col sm={1} smOffset={1}>
-              <Event width={56} name="Dh"/>
-            </Col>
-            <Col sm={1}>
-              <Event width={56} name="Rk"/>
-            </Col>
-            <Col sm={1}>
-              <Event width={56} name="Co"/>
-            </Col>
+            <Col sm={1} smOffset={1}><Event width={56} name="Dh"/></Col>
+            <Col sm={1}><Event width={56} name="Rk"/></Col>
+            <Col sm={1}><Event width={56} name="Co"/></Col>
           </Row>
           <Row className="margin-top">
             <Col sm={2} smOffset={1}>
-              <Event width={125}
-                name="Dunnigan Hills Road Race"/>
+              <Event width={125} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={125}
-                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={125} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={2}>
-              <Event width={125}
-                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={125} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={2}>
-              <Event width={125}
-                name="Salinas Criterium"/>
+              <Event width={125} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
             <Col sm={3} smOffset={1}>
-              <Event width={197.5}
-                name="Dunnigan Hills Road Race"/>
+              <Event width={197.5} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5}
-                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={197.5} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5}
-                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={197.5} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5}
-                name="Salinas Criterium"/>
+              <Event width={197.5} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
             <Col sm={4} smOffset={1}>
-              <Event width={270}
-                name="Dunnigan Hills Road Race"/>
+              <Event width={270} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={4}>
-              <Event width={270}
-                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={270} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={4}>
-              <Event width={270}
-                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={270} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
           </Row>
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
-          <Row className="margin-top">
-            {fullSpaceWeek2x4.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {fullSpaceWeek3x4.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {fullSpaceWeek4x3.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {fullSpaceWeek3x3.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {fullSpaceWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug pink">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
-          <Row className="margin-top">
-            {genericWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
+          <WeekExample days={fullSpaceWeek2x4}/>
+          <WeekExample days={fullSpaceWeek3x4}/>
+          <WeekExample days={fullSpaceWeek4x3}/>
+          <WeekExample days={fullSpaceWeek3x3}/>
+          <WeekExample days={fullSpaceWeek}/>
+          <WeekExample days={genericWeek} allSameSize/>
+
           <Row className="margin-top">
             <Col sm={1} className="col debug outlined">August</Col>
             {roadWeek.map((x, i) =>
