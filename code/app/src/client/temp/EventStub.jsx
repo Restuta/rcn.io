@@ -28,8 +28,7 @@ export default class EventStub extends Component {
   }
 
   render() {
-    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / 1.618)
-      //- Typography.LINE_HEIGHT_REM;
+    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / (1.618));
 
     const style = {
       height: heightInIdealRems + 'rem',
@@ -59,7 +58,7 @@ export default class EventStub extends Component {
       alignSelf: 'flex-end',
       paddingRight: 3,
       color: 'lightslategrey'
-    }
+    };
 
     const roundedHeight = heightInIdealRems * Typography.BASE_FONT_SIZE_PX;
     const roundedWidth = this.state.width;

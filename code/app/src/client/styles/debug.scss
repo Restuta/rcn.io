@@ -6,7 +6,7 @@ $base-line-opacity: .13;
 //$base-line-opacity: .25;
 $show-baseline: true;
 $show-secondary-baseline: false; //doesn't work for 14px base size
-$show-container-edges: false;
+$show-container-edges: true;
 
 $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 
@@ -58,7 +58,6 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 $col-brdr-color: #d6d6d6;
 
 .col.debug {
-
   min-height: $line-height-rem * 21;
 }
 
