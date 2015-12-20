@@ -58,6 +58,7 @@ class Event extends Component {
     const widthPx = this.props.width || 50;
     //todo: typography should be passed as props
     const idealHeightRem = Typography.calculateIdealHeightInRems(widthPx);
+    const heightInBaseLines = Math.round(idealHeightRem / Typography.LINE_HEIGHT_REM);
 
     const verticalPadding = `${Typography.LINE_HEIGHT_REM}rem`;
     const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`;
@@ -69,7 +70,7 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${idealHeightRem}px solid gray`
+      borderLeft: `${heightInBaseLines * heightInBaseLines}px solid gray`
     };
 
     return (
