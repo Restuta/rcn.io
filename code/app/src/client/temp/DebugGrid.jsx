@@ -13,7 +13,7 @@ const Checkbox = (props) => {
 };
 
 const GridLines = (props) => {
-  const thiknessPx = 2;
+  const thiknessPx = 4;
 
   const baseStyle = {
     position: 'fixed',
