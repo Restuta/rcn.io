@@ -5,10 +5,22 @@ import Colors from '../styles/colors';
 import classNames from 'classnames';
 import './EventStub.scss';
 
+/* close to lodash _.bindAll, binds provided methods to provided context
+this way a reference to bound objectx don't have to be kept.
+*/
+const bindTo = (context, ...methods) => {
+  methods.forEach(method => context[method] = context[method].bind(context));
+};
+
+
 export default class EventStub extends Component {
   constructor(props) {
     super(props);
     this.state = {height: 50};
+    //craeting one bound instance of the function, so removeEventListener can be used with the same function instance
+    //this._onResize = this.onResize.bind(this);
+    //bindTo(this, 'onResize');
+    this.onResize = this.onResize.bind(this);
   }
 
   componentDidMount() {
@@ -18,7 +30,11 @@ export default class EventStub extends Component {
 
     this.onResize(); //calculate for the very first time
     //handling windw resize to recalculate components windth and re-render
-    window.addEventListener('resize', this.onResize.bind(this));
+    window.addEventListener('resize', this.onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
   }
 
   onResize() {
@@ -28,7 +44,7 @@ export default class EventStub extends Component {
   }
 
   render() {
-    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / (1.618));
+    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / (1.9));
 
     const style = {
       height: heightInIdealRems + 'rem',
