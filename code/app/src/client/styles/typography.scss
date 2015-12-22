@@ -8,7 +8,7 @@
 //headings
 $headings-margin-top: $line-height-rem;
 $headings-margin-bottom: $line-height-rem;
-$headings-font-family: 'Europa', sans-serif;
+//$headings-font-family: 'Europa', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
@@ -72,7 +72,6 @@ h4 {
 }
 h5 {
   font-size: $h5-font-size;
-  font-weight: 400;
   line-height: $h5-line-height;
   margin-bottom: 0;
   color: $headings-color-secondary;
