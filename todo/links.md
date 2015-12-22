@@ -78,6 +78,7 @@
 * [Coolors.co](https://coolors.co/) - color schemes generator
 * [Colorhunt.co](http://colorhunt.co/hot) - Product Hunt for colors
 * [Color Dot](http://color.hailpixel.com/) - click and pick colors + unique URL for any amount
+* [Material Design Colors](http://www.materialui.co/colors) - all colors on one page
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
 * [Chroma.js - Color Scale Helper](http://gka.github.io/palettes/#diverging|c0=lightyellow,orange,deeppink,darkred|c1=lightyellow,orange,deeppink,darkred|steps=7|bez0=1|bez1=1|coL0=1|coL1=1)
 * [Flat UI Colors](http://www.flatuicolorpicker.com/)
