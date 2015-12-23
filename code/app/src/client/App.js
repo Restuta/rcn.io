@@ -13,45 +13,46 @@ import Colors from './styles/colors';
 import DebugGrid from './temp/DebugGrid.jsx';
 
 
-function times(x, numberOfTimes) {
-  let arr = [];
-
-  for (let i = 0; i < numberOfTimes; i++) {
-    arr.push(x);
-  }
-
-  return arr;
-}
-
 //TODO bc: remove these components
 const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
 const S5 = () => (<S width={5}/>);
 const S10 = () => (<S width={10}/>);
 
 const WeekExample = ({days, allSameSize}) => {
+  const numberOfColumns = 16;
+  const daysSum = days.reduce((x, y) => x + y);
+  let firstColumnOffset = 0;
+
+  if (daysSum < numberOfColumns) {
+    firstColumnOffset = numberOfColumns - daysSum;
+  }
+
   const colClasses = allSameSize ? 'col outlined debug pink' : 'col outlined debug';
 
+  const daysStyle = {
+    textAlign: 'center'
+  };
+
   return (
-    <Row className="margin-top">
-      {days.map((x, i) =>
-        <Col key={i} sm={x} className={colClasses}>
-          {++i}
-          <EventStub/>
-          <EventStub className="margin-top"/>
-        </Col>)
-      }
-    </Row>
+    <div>
+      <h4 style={daysStyle}>{days.join(', ')}</h4>
+      <Row>
+        {days.map((x, i) =>
+          <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x} className={colClasses}>
+            {++i}
+            <EventStub/>
+            <EventStub className="margin-top"/>
+            <EventStub className="margin-top"/>
+            <EventStub className="margin-top margin-bot"/>
+          </Col>)
+        }
+      </Row>
+    </div>
   );
 };
 
 export class App extends Component {
   render() {
-    let genericWeek = times(2, 7);
-    let roadWeek = [1, 1, 1, 1, 3, 4, 4];
-    let fullSpaceWeek = times(2, 5).concat([3, 3]);
-    let fullSpaceWeek3x3 = [1, 2, 2, 2, 3, 3, 3];
-    let fullSpaceWeek4x3 = [1, 1, 2, 3, 3, 3, 3];
-    let fullSpaceWeek2x4 = [1, 1, 1, 2, 3, 4, 4];
     let fullSpaceWeek3x4 = [1, 1, 1, 1, 4, 4, 4];
 
     return (
@@ -190,19 +191,17 @@ export class App extends Component {
           </Row>
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
-          <WeekExample days={fullSpaceWeek2x4}/>
-          <WeekExample days={fullSpaceWeek3x4}/>
-          <WeekExample days={fullSpaceWeek4x3}/>
-          <WeekExample days={fullSpaceWeek3x3}/>
-          <WeekExample days={fullSpaceWeek}/>
-          <WeekExample days={genericWeek} allSameSize/>
+          <WeekExample days={[1, 1, 1, 2, 3, 4, 4]}/>
+          <WeekExample days={[1, 1, 1, 1, 4, 4, 4]}/>
+          <WeekExample days={[1, 1, 2, 3, 3, 3, 3]}/>
+          <WeekExample days={[1, 2, 2, 2, 3, 3, 3]}/>
+          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
+          <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
+          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
+          <WeekExample days={[1, 1, 1, 1, 3, 4, 4]}/>
+          <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
 
-          <Row className="margin-top">
-            <Col sm={1} className="col debug outlined">August</Col>
-            {roadWeek.map((x, i) =>
-              <Col key={i} sm={x} className="col outlined debug">{++i}<EventStub/><EventStub className="margin-top"/></Col>)
-            }
-          </Row>
+
           <Counter increment={1} color="silver" marginTop="20px" />
         </div>
       </div>
