@@ -5,14 +5,6 @@ import Colors from '../styles/colors';
 import classNames from 'classnames';
 import './EventStub.scss';
 
-/* close to lodash _.bindAll, binds provided methods to provided context
-this way a reference to bound objectx don't have to be kept.
-*/
-const bindTo = (context, ...methods) => {
-  methods.forEach(method => context[method] = context[method].bind(context));
-};
-
-
 export default class EventStub extends Component {
   constructor(props) {
     super(props);
