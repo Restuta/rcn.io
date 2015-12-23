@@ -53,8 +53,6 @@ const WeekExample = ({days, allSameSize}) => {
 
 export class App extends Component {
   render() {
-    let fullSpaceWeek3x4 = [1, 1, 1, 1, 4, 4, 4];
-
     return (
       <div>
         <DebugGrid/>
