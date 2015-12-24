@@ -10,6 +10,7 @@ import Event, {
   EventName, RoundBadge, Badge, SquareBadge
 } from './calendar/Event.jsx';
 import Colors from './styles/colors';
+import Typography from './styles/typography';
 import DebugGrid from './temp/DebugGrid.jsx';
 
 
@@ -29,23 +30,26 @@ const WeekExample = ({days, allSameSize}) => {
 
   const colClasses = allSameSize ? 'col outlined debug pink' : 'col outlined debug';
 
-  const daysStyle = {
-    textAlign: 'center'
+  const daysStyleLeft = {
+    textAlign: 'center',
+    position: 'absolute',
+    marginLeft: '-140px',
   };
 
+  const daysStyleRight = Object.assign({}, daysStyleLeft, {
+    marginLeft: '30px',
+  });
+
   const rowStyle = {
-    marginTop: -5,
-    marginBottom: -5
+    marginTop: -1,
   };
 
   return (
-    <div>
-      <h4 style={daysStyle}>{days.join(', ')}</h4>
-      <Row>
+      <Row style={rowStyle}>
+        <h4 style={daysStyleLeft}>{days.join(', ')}</h4>
         {days.map((x, i) =>
           <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
-            className={colClasses}
-          >
+              className={colClasses}>
             {++i}
             <EventStub/>
             <EventStub className="margin-top"/>
@@ -53,8 +57,8 @@ const WeekExample = ({days, allSameSize}) => {
             <EventStub className="margin-top margin-bot"/>
           </Col>)
         }
+        <h4 style={daysStyleRight}>{days.join(', ')}</h4>
       </Row>
-    </div>
   );
 };
 
@@ -66,7 +70,7 @@ export class App extends Component {
         <div className="container">
           &nbsp;
           <div>
-            <h2>EVENT COMPONENTS:</h2>
+            <h2>EVENT COMPONENTS</h2>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>

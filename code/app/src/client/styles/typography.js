@@ -46,5 +46,8 @@ export default Object.freeze({
   },
   scaleDown(number) {
     return scale(number, scaleDownOperation);
+  },
+  pxToRem(pixels) {
+    return (pixels / BASE_FONT_SIZE_PX);
   }
 });

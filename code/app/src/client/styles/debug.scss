@@ -68,26 +68,21 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
   @return ($numberOfPx / getBaseFontSize()) + 0rem;
 }
 
-
-.margin-bot {
-  margin-bottom: $line-height-rem - pxToRem(4);
-  //margin-bottom: $line-height-rem;
-}
-
-
 .col.pink {
   background-color: lighten(lightpink, 11%) !important;
 }
 
 $col-brdr-color: $grey-350;
-$col-border: pxToRem(4) solid $col-brdr-color;
+$col-border-wdith: 1;
+$col-border: pxToRem($col-border-wdith) solid $col-brdr-color;
+
+.margin-bot {
+  margin-bottom: $line-height-rem - pxToRem($col-border-wdith);
+}
 
 .col.outlined {
   //background-color: white;
   //outline: $col-border;
-  //position: relative;
-  margin-top: -4px;
-  //margin-bottom: -4px;
 
   border-right: $col-border;
   border-top: $col-border;
