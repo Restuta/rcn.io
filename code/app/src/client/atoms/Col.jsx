@@ -3,6 +3,9 @@ import Component from 'react-pure-render/component';
 import classNames from 'classnames';
 
 function getColClassName(propName, propValue) {
+
+  if (!propValue) return '';
+
   const validProps = {
     xs: 'col-xs-',
     sm: 'col-sm-',
