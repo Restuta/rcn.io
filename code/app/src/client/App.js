@@ -33,12 +33,19 @@ const WeekExample = ({days, allSameSize}) => {
     textAlign: 'center'
   };
 
+  const rowStyle = {
+    marginTop: -5,
+    marginBottom: -5
+  };
+
   return (
     <div>
       <h4 style={daysStyle}>{days.join(', ')}</h4>
       <Row>
         {days.map((x, i) =>
-          <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x} className={colClasses}>
+          <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
+            className={colClasses}
+          >
             {++i}
             <EventStub/>
             <EventStub className="margin-top"/>
@@ -116,8 +123,8 @@ export class App extends Component {
             <Row>
               <Col sm={2}><h5>Elevation:</h5></Col>
               <Col sm={14} className="display-flex">
-                <Icon name="arrow-up" color={Colors.greyLvl30}/>1200ft<S10/>
-                <Icon name="long-arrow-up" color={Colors.greyLvl30}/>1200ft<S10/>
+                <Icon name="arrow-up" color={Colors.grey500}/>1200ft<S10/>
+                <Icon name="long-arrow-up" color={Colors.grey500}/>1200ft<S10/>
                 <Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>
                 <Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>
               </Col>
@@ -125,7 +132,7 @@ export class App extends Component {
             <Row>
               <Col sm={2}><h5>Distance:</h5></Col>
               <Col sm={14} className="display-flex">
-                <Icon name="bicycle" color={Colors.greyLvl30}/>20mi<S10/>
+                <Icon name="bicycle" color={Colors.grey500}/>20mi<S10/>
                 <Badge><Icon name="bicycle"/>20mi</Badge><S10/>
                 <Badge className="Inverted"><Icon name="bicycle"/>20mi</Badge><S10/>
                 44mi 60mi 120mi
@@ -134,12 +141,12 @@ export class App extends Component {
             <Row>
               <Col sm={2}><h5>Duration:</h5></Col>
               <Col sm={14} className="display-flex">
-                <Icon name="hourglass-start" color={Colors.greyLvl30}/>60min
+                <Icon name="hourglass-start" color={Colors.grey500}/>60min
                 <S10/>
                 <Badge><Icon name="hourglass-start"/>60min</Badge><S5/>
-                <Icon name="hourglass-o" color={Colors.greyLvl30}/>60min<S10/>
-                <Icon name="hourglass" color={Colors.greyLvl30} />60min<S10/>
-                <Icon name="hourglass-half" color={Colors.greyLvl30}/>60min<S10/>
+                <Icon name="hourglass-o" color={Colors.grey500}/>60min<S10/>
+                <Icon name="hourglass" color={Colors.grey500} />60min<S10/>
+                <Icon name="hourglass-half" color={Colors.grey500}/>60min<S10/>
               </Col>
             </Row>
           </div>

@@ -26,7 +26,7 @@
 }
 
 .EventName.debug {
-  border: 1px solid $grey-lvl-20;
+  border: 1px solid $grey-300;
 }
 
 //TODO: move to separate file
@@ -50,7 +50,7 @@
 }
 
 .RoundBadge {
-  $background-color: $grey-lvl-30;
+  $background-color: $grey-500;
 
   font-size: $font-size-sm;
   min-width: $line-height-rem;
@@ -74,7 +74,7 @@
 
 
 .Badge {
-  $background-color: $grey-lvl-30;
+  $background-color: $grey-500;
 
   font-size: $font-size-sm;
   min-width: $line-height-rem;
@@ -93,7 +93,7 @@
 
 .RoundBadge.Inverted,
 .Badge.Inverted {
-  $background-color: $grey-lvl-20;
+  $background-color: $grey-300;
   background-color: $background-color;
   color: darken($background-color, 60%);
 }

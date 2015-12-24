@@ -45,6 +45,7 @@ export default class EventStub extends Component {
       alignItems: 'center',
       flexWrap: 'wrap',
       fontSize: Typography.scaleDown(2) + 'rem',
+      borderRadius: 0
     };
 
     const widthStyle = {
@@ -60,7 +61,7 @@ export default class EventStub extends Component {
     };
 
     const ratioStyle = {
-      color: Colors.greyLvl30
+      color: Colors.grey500
     };
     const baseLinesStyle = {
       alignSelf: 'flex-end',

@@ -1,4 +1,6 @@
+@import '../styles/variables';
+
 .EventStub {
   width: 100%;
-  background-color: lightgray;
+  background-color: $grey-350;
 }

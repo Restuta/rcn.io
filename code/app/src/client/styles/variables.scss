@@ -1,7 +1,30 @@
 //colors (update matching ones in colors.js)
 //number at the end means level of darkness =)
-$grey-lvl-30: #A0A0A0;
-$grey-lvl-20: lightgrey;
+$grey-50: #FAFAFA;
+$grey-100: #F5F5F5;
+$grey-200: #EEEEEE;
+$grey-300: #E0E0E0;
+$grey-350: #D3D3D3; //lightgrey
+$grey-400: #BDBDBD;
+$grey-500: #9E9E9E;
+$grey-600: #757575;
+$bla: grey;
+$grey-700: #616161;
+$grey-800: #424242;
+
+
+$blue-grey-50: #ECEFF1;
+$blue-grey-100: #CFD8DC;
+$blue-grey-200: #B0BEC5;
+
+$blue-grey-300: #90A4AE;
+$blue-grey-400: #78909C;
+$blue-grey-500: #607D8B;
+$blue-grey-600: #546E7A;
+$blue-grey-700: #455A64;
+$blue-grey-800: #37474F;
+$blue-grey-900: #263238;
+
 
 //Typography
 @function getBaseFontSize() {
