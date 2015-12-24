@@ -5,13 +5,13 @@ import Row from './atoms/Row.jsx';
 import Col from './atoms/Col.jsx';
 import Icon from './atoms/Icon.jsx';
 import Counter from './temp/Counter.jsx';
-import EventStub from './temp/EventStub.jsx';
 import Event, {
   EventName, RoundBadge, Badge, SquareBadge
 } from './calendar/Event.jsx';
 import Colors from './styles/colors';
-import Typography from './styles/typography';
 import DebugGrid from './temp/DebugGrid.jsx';
+import WeekExample from './temp/WeekExample.jsx';
+import classNames from 'classnames';
 
 
 //TODO bc: remove these components
@@ -19,54 +19,21 @@ const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
 const S5 = () => (<S width={5}/>);
 const S10 = () => (<S width={10}/>);
 
-const WeekExample = ({days, allSameSize}) => {
-  const numberOfColumns = 16;
-  const daysSum = days.reduce((x, y) => x + y);
-  let firstColumnOffset = 0;
-
-  if (daysSum < numberOfColumns) {
-    firstColumnOffset = numberOfColumns - daysSum;
-  }
-
-  const colClasses = allSameSize ? 'col outlined debug pink' : 'col outlined debug';
-
-  const daysStyleLeft = {
-    textAlign: 'center',
-    position: 'absolute',
-    marginLeft: '-140px',
-  };
-
-  const daysStyleRight = Object.assign({}, daysStyleLeft, {
-    marginLeft: '30px',
-  });
-
-  const rowStyle = {
-    marginTop: -1,
-  };
-
-  return (
-      <Row style={rowStyle}>
-        <h4 style={daysStyleLeft}>{days.join(', ')}</h4>
-        {days.map((x, i) =>
-          <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
-              className={colClasses}>
-            {++i}
-            <EventStub/>
-            <EventStub className="margin-top"/>
-            <EventStub className="margin-top"/>
-            <EventStub className="margin-top margin-bot"/>
-          </Col>)
-        }
-        <h4 style={daysStyleRight}>{days.join(', ')}</h4>
-      </Row>
-  );
-};
-
 export class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {appLevelClasses: 'debug-baseline'};
+  }
   render() {
+    const setAppStateClasses = classesToSet => {
+      this.setState({
+        appLevelClasses: classNames('', classesToSet)
+      });
+    };
+
     return (
-      <div>
-        <DebugGrid/>
+      <div className={this.state.appLevelClasses}>
+        <DebugGrid setDebugClasses={setAppStateClasses}/>
         <div className="container">
           &nbsp;
           <div>

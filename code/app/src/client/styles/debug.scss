@@ -12,7 +12,7 @@ $show-container-edges: true;
 $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
 
 @if $show-baseline {
-  body {
+  .debug-baseline  {
     @if $show-secondary-baseline {
       background-image:
         linear-gradient(to bottom, hsla(200, 100%, 50%, $base-line-opacity / 2) 1px, transparent 1px),

@@ -59,7 +59,10 @@ const GridLines = (props) => {
 export default class DebugGrid extends Component {
   constructor(props) {
     super(props);
-    this.state = {shouldShow3x3Grid: false};
+    this.state = {
+      shouldShow3x3Grid: false,
+      shouldShowBaseline: true
+    };
   }
 
   render() {
@@ -75,15 +78,30 @@ export default class DebugGrid extends Component {
       zIndex: 99999
     };
 
-    const onGridCheckboxChange = () => this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid });
+    const on3x3GridCheckboxChange = () => this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid });
+    const onBaselineCheckboxChange = () => {
+      const shouldShowBaseline = !this.state.shouldShowBaseline;
+      this.setState({ shouldShowBaseline: shouldShowBaseline });
+
+      if (shouldShowBaseline) {
+        this.props.setDebugClasses('debug-baseline');
+      } else {
+        this.props.setDebugClasses('');
+      }
+    };
 
     return (
       <div>
         <div style={style}>
           <Checkbox
-            onChange={onGridCheckboxChange}
+            onChange={on3x3GridCheckboxChange}
             checked={this.state.shouldShow3x3Grid}>
             3x3 Grid
+          </Checkbox>
+          <Checkbox
+            onChange={onBaselineCheckboxChange}
+            checked={this.state.shouldShowBaseline}>
+            Baseline
           </Checkbox>
         </div>
 
