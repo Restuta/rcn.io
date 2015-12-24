@@ -180,6 +180,18 @@ export class App extends Component {
           <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
           */}
 
+          {/* 14 col examples
+          <WeekExample days={[1, 1, 1, 1, 2, 4, 4]}/>
+          <WeekExample days={[1, 1, 1, 1, 4, 4, 4]}/>
+          <WeekExample days={[1, 1, 2, 3, 3, 3, 3]}/>
+          <WeekExample days={[1, 2, 2, 2, 3, 3, 3]}/>
+          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
+          <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
+          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
+          <WeekExample days={[1, 1, 1, 1, 3, 4, 4]}/>
+          <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
+          */}
+
 
           <Counter increment={1} color="silver" marginTop="20px" />
         </div>
