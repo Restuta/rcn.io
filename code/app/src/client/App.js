@@ -167,6 +167,8 @@ export class App extends Component {
           </Row>
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
+
+          {/* 16 col examples
           <WeekExample days={[1, 1, 1, 2, 3, 4, 4]}/>
           <WeekExample days={[1, 1, 1, 1, 4, 4, 4]}/>
           <WeekExample days={[1, 1, 2, 3, 3, 3, 3]}/>
@@ -176,6 +178,7 @@ export class App extends Component {
           <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
           <WeekExample days={[1, 1, 1, 1, 3, 4, 4]}/>
           <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
+          */}
 
 
           <Counter increment={1} color="silver" marginTop="20px" />

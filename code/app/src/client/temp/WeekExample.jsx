@@ -6,7 +6,7 @@ import EventStub from '../temp/EventStub.jsx';
 
 
 export default ({days, allSameSize}) => {
-  const numberOfColumns = 16;
+  const numberOfColumns = 14;
   const daysSum = days.reduce((x, y) => x + y);
   let firstColumnOffset = 0;
 
