@@ -71,7 +71,7 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${heightInBaseLines * heightInBaseLines}px solid ${Colors.grey600}`
+      borderLeft: `${heightInBaseLines * heightInBaseLines}px solid ${Colors.grey600}`,
     };
 
     return (

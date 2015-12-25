@@ -69,7 +69,7 @@ export default class EventStub extends Component {
       color: 'lightslategrey'
     };
 
-    const roundedHeight = heightInIdealRems * Typography.BASE_FONT_SIZE_PX;
+    const roundedHeight = Math.round(heightInIdealRems * Typography.BASE_FONT_SIZE_PX).toFixed(2);
     const roundedWidth = this.state.width;
     const heightInBaseLines = Math.round(heightInIdealRems / Typography.LINE_HEIGHT_REM);
 
