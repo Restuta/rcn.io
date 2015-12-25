@@ -1,6 +1,83 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
+import classNames from 'classnames';
 
+export default class DebugGrid extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      shouldShow3x3Grid: false,
+      shouldShowBaseline: true,
+      shouldShowContainerEdges: true,
+    };
+  }
+
+  render() {
+    const style = {
+      position: 'fixed',
+      right: 0,
+      background: 'white',
+      padding: '0.5rem',
+      margin: '0.5rem',
+      paddingRight: '1.5rem',
+      border: '1px solid lightgrey',
+      boxShadow: '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)',
+      zIndex: 99999
+    };
+
+    const on3x3GridCheckboxChange = () => this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid });
+
+    const stateToClasses = (state) => {
+      let classes = '';
+
+      if (state.shouldShowBaseline) {
+        classes = classNames(classes, 'debug-baseline');
+      }
+
+      if (state.shouldShowContainerEdges) {
+        classes = classNames(classes, 'debug-container');
+      }
+
+      return classes;
+    };
+
+    const onBaselineCheckboxChange = () => {
+      this.setState({ shouldShowBaseline: !this.state.shouldShowBaseline }, () => {
+        this.props.setDebugClasses(stateToClasses(this.state));
+      });
+    };
+
+    const onContainerCheckboxChange = () => {
+      this.setState({ shouldShowContainerEdges: !this.state.shouldShowContainerEdges }, () => {
+        this.props.setDebugClasses(stateToClasses(this.state));
+      });
+    };
+
+    return (
+      <div>
+        <div style={style}>
+          <Checkbox
+            onChange={on3x3GridCheckboxChange}
+            checked={this.state.shouldShow3x3Grid}>
+            3x3 Grid
+          </Checkbox>
+          <Checkbox
+            onChange={onBaselineCheckboxChange}
+            checked={this.state.shouldShowBaseline}>
+            Baseline
+          </Checkbox>
+          <Checkbox
+            onChange={onContainerCheckboxChange}
+            checked={this.state.shouldShowContainerEdges}>
+            Container Edges
+          </Checkbox>
+        </div>
+
+        {this.state.shouldShow3x3Grid ? <GridLines /> : null}
+      </div>
+    );
+  }
+}
 
 const Checkbox = (props) => {
   return (
@@ -55,58 +132,3 @@ const GridLines = (props) => {
     </div>
   );
 };
-
-export default class DebugGrid extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      shouldShow3x3Grid: false,
-      shouldShowBaseline: true
-    };
-  }
-
-  render() {
-    const style = {
-      position: 'fixed',
-      right: 0,
-      background: 'white',
-      padding: '0.5rem',
-      margin: '0.5rem',
-      paddingRight: '1.5rem',
-      border: '1px solid lightgrey',
-      boxShadow: '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)',
-      zIndex: 99999
-    };
-
-    const on3x3GridCheckboxChange = () => this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid });
-    const onBaselineCheckboxChange = () => {
-      const shouldShowBaseline = !this.state.shouldShowBaseline;
-      this.setState({ shouldShowBaseline: shouldShowBaseline });
-
-      if (shouldShowBaseline) {
-        this.props.setDebugClasses('debug-baseline');
-      } else {
-        this.props.setDebugClasses('');
-      }
-    };
-
-    return (
-      <div>
-        <div style={style}>
-          <Checkbox
-            onChange={on3x3GridCheckboxChange}
-            checked={this.state.shouldShow3x3Grid}>
-            3x3 Grid
-          </Checkbox>
-          <Checkbox
-            onChange={onBaselineCheckboxChange}
-            checked={this.state.shouldShowBaseline}>
-            Baseline
-          </Checkbox>
-        </div>
-
-        {this.state.shouldShow3x3Grid ? <GridLines /> : null}
-      </div>
-    );
-  }
-}

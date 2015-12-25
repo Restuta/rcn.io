@@ -62,4 +62,4 @@ $base-line: round(getBaseFontSize() * $line-height);
 $line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
 
 //calculating small (one step down from base) font size
-$font-size-sm: (round(getBaseFontSize() / getScale()) / getBaseFontSize()) + rem;
+$font-size-sm: (round(getBaseFontSize() / getScale()) / getBaseFontSize()) + 0rem;

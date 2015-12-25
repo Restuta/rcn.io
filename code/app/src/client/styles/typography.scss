@@ -12,7 +12,8 @@ $headings-margin-bottom: $line-height-rem;
 $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
-$headings-color-secondary: grey;
+$headings-color-secondary: $grey-600;
+
 $h1-font-size: scaleUp(5);
 $h1-line-height: $line-height-rem * 3;
 

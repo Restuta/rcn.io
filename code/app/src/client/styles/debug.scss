@@ -3,7 +3,7 @@
 //baseline and grid overlay
 @import 'variables';
 
-$base-line-opacity: .13;
+$base-line-opacity: .15;
 //$base-line-opacity: .25;
 $show-baseline: true;
 $show-secondary-baseline: false; //doesn't work for 14px base size
@@ -39,7 +39,7 @@ $baseline-secondary-outline-violet: hsla(300, 100%, 50%, .3);
   $grid-outline-blue: hsla(200, 100%, 50%, .1);
   $grid-outline-green: hsla(87, 91%, 42%, .2);
 
-  .container {
+  .debug-container .container {
     //outline of containter
     box-shadow:
       //outline external space (not a margin really)
