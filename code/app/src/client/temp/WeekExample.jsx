@@ -21,11 +21,14 @@ export default class WeekExample extends Component {
     const daysStyleLeft = {
       textAlign: 'center',
       position: 'absolute',
-      marginLeft: '-140px',
+      marginLeft: '-70px',
+      fontSize: '11px',
+      fontWeight: '900',
+      borderBottom: '3px solid lightgrey'
     };
 
     const daysStyleRight = Object.assign({}, daysStyleLeft, {
-      marginLeft: '30px',
+      marginLeft: '10px',
     });
 
     const rowStyle = {
@@ -83,7 +86,7 @@ export default class WeekExample extends Component {
 
     return (
         <Row style={rowStyle}>
-          <h4 style={daysStyleLeft}>{days.join(', ')}</h4>
+          <span style={daysStyleLeft}>{days.join(' ')}</span>
           {days.map((x, i) =>
             <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
                 className={colClasses}>
@@ -91,7 +94,7 @@ export default class WeekExample extends Component {
               {generateRandomEvents()}
             </Col>)
           }
-          <h4 style={daysStyleRight}>{days.join(', ')}</h4>
+          <span style={daysStyleRight}>{days.join(' ')}</span>
         </Row>
     );
   }
