@@ -52,11 +52,11 @@ export class App extends Component {
                 <RoundBadge size={2}>RR</RoundBadge>
                 <RoundBadge size={1}>RR</RoundBadge>
                 <RoundBadge size={2}>TT</RoundBadge>
-                <RoundBadge size={1}>TT</RoundBadge>
-                <RoundBadge size={2} className="Inverted">RR</RoundBadge>
-                <RoundBadge size={2} className="Inverted">8</RoundBadge>
-                <RoundBadge size={1} className="Inverted">8</RoundBadge>
-                <RoundBadge size={2} className="Inverted"><Icon name="car"/></RoundBadge>
+                <RoundBadge size={1}>TT</RoundBadge><S5/>
+                <RoundBadge size={2} className="Inverted">RR</RoundBadge><S5/>
+                <RoundBadge size={2} className="Inverted">8</RoundBadge><S5/>
+                <RoundBadge size={1} className="Inverted">8</RoundBadge><S5/>
+                <RoundBadge size={2} className="Inverted"><Icon name="car"/></RoundBadge><S5/>
                 <RoundBadge size={1} className="Inverted"><Icon name="car"/></RoundBadge>
               </Col>
             </Row>
@@ -179,6 +179,8 @@ export class App extends Component {
           <WeekExample days={[1, 1, 1, 1, 3, 4, 4]}/>
           <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
           */}
+
+          <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
 
           <WeekExample days={[1, 1, 1, 1, 2, 4, 4]}/>
           <WeekExample days={[1, 1, 1, 1, 3, 3, 4]}/>
