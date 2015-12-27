@@ -1,7 +1,7 @@
 //change in variables.scss also
 const BASE_FONT_SIZE_PX = 14; //TODO: get it in runtime from the browser
 const GOLDEN_RATIO = 1.61803398875;
-const LINE_HEIGHT = 1.36;
+const LINE_HEIGHT = 1.285714286;
 const FONT_SCALE = 1.3333; //perfect fourth
 //calculating ideal line height in rems, but that rounds nicely to pixels, that's why we need rounding
 const BASE_LINE = Math.round(BASE_FONT_SIZE_PX * LINE_HEIGHT);

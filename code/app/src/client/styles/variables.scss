@@ -8,7 +8,6 @@ $grey-350: #D3D3D3; //lightgrey
 $grey-400: #BDBDBD;
 $grey-500: #9E9E9E;
 $grey-600: #757575;
-$bla: grey;
 $grey-700: #616161;
 $grey-800: #424242;
 
@@ -16,7 +15,6 @@ $grey-800: #424242;
 $blue-grey-50: #ECEFF1;
 $blue-grey-100: #CFD8DC;
 $blue-grey-200: #B0BEC5;
-
 $blue-grey-300: #90A4AE;
 $blue-grey-400: #78909C;
 $blue-grey-500: #607D8B;
@@ -56,7 +54,7 @@ $blue-grey-900: #263238;
 
 
 //specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
-$line-height: 1.36;
+$line-height: 1.28571428;
 $base-line: round(getBaseFontSize() * $line-height);
 //calculating ideal height in rems, but that rounds nicely to pixels
 $line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
