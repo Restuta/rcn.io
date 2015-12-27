@@ -13,6 +13,8 @@ Ideas
 		- show "today"
 		- show "time now" as a red line relative to a todays day
 		- sort events by distance or start time?
+		- higlight part of the vent descpription with the same color as on the side of the card: e.g. "Dunnigan Hills Road Race", "Road Race" will be higligted with red, same color as side of the card building mental picture that "red" means "Road Race"
+		- try alignin cards of different sizes to a baseline http://screencast.com/t/BOjOXsj2bg: might be visually easier to scan
 
 Design
 --- Statements
