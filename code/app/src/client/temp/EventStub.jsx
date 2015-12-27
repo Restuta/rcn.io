@@ -36,7 +36,7 @@ export default class EventStub extends Component {
   }
 
   render() {
-    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / (1.618));
+    const heightInIdealRems = Typography.roundToIdealRems(this.state.width / (1.5));
 
     const style = {
       height: heightInIdealRems + 'rem',
