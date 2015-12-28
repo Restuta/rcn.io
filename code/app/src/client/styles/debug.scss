@@ -3,14 +3,14 @@
 //baseline and grid overlay
 @import 'variables';
 
-$base-line-opacity: .25;
+$base-line-opacity: .15;
 //$base-line-opacity: .25;
 $show-baseline: true;
-$show-secondary-baseline: false; //doesn't work for 14px base size
+$show-secondary-baseline: true; //doesn't work for 14px base size
 $show-container-edges: true;
 
 $primary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity);
-$secondary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity / 2);
+$secondary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity);
 
 @if $show-baseline {
   .debug-baseline  {
@@ -62,7 +62,7 @@ $secondary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity / 2);
   min-height: $line-height-rem;
 }
 .margin-top {
-  margin-top: $line-height-rem * 1;
+  margin-top: $line-height-rem;
 }
 
 @function pxToRem($numberOfPx) {
@@ -77,8 +77,12 @@ $col-brdr-color: $grey-350;
 $col-border-wdith: 1;
 $col-border: pxToRem($col-border-wdith) solid $col-brdr-color;
 
-.margin-bot {
-  margin-bottom: $line-height-rem - pxToRem($col-border-wdith);
+.WeekExample .margin-top {
+  margin-top: $half-line-height-rem;
+}
+
+.WeekExample .margin-bot {
+  margin-bottom: ($line-height-rem) - pxToRem($col-border-wdith);
 }
 
 .col.outlined {

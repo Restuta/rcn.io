@@ -58,11 +58,11 @@ class Event extends Component {
   render() {
     const widthPx = this.props.width || 50;
     //todo: typography should be passed as props
-    const idealHeightRem = Typography.calculateIdealHeightInRems(widthPx);
-    const heightInBaseLines = Math.round(idealHeightRem / Typography.LINE_HEIGHT_REM);
-
+    const idealHeightRem = Typography.roundToIdealRems(widthPx / 1.5);
     const verticalPadding = `${Typography.LINE_HEIGHT_REM}rem`;
     const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`;
+
+    const borderWidth = Math.round((widthPx / 30) * (widthPx / 30));
 
     let style = {
       width: widthPx + 'px',
@@ -71,13 +71,13 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${heightInBaseLines * heightInBaseLines}px solid ${Colors.grey600}`,
+      borderLeft: `${borderWidth}px solid ${Colors.grey600}`,
     };
 
     return (
-        <div style={style} ref={(x) => this.div = x} className="Event lvl-1">
-          <EventName>{this.props.name}</EventName>
-        </div>
+      <div style={style} ref={(x) => this.div = x} className="Event lvl-1">
+        <EventName>{this.props.name}</EventName>
+      </div>
     );
   }
 }
@@ -94,13 +94,13 @@ Event.propTypes = {
 
 //HOC to wrap a componennt in a debugging one
 let DebugComponent = ComponentToDebug => props => {
-  const lineHeightRem = Typography.LINE_HEIGHT_REM;
+  const lineHeightRem = Typography.HALF_LINE_HEIGHT_REM;
   const debugColor = 'rgb(238, 247, 228)';
 
   const topBoxShadow = `inset 0px ${lineHeightRem}rem 0px 0px ${debugColor}`;
   const bottomBoxShadow = `inset 0px ${-lineHeightRem}rem 0px 0px ${debugColor}`;
-  const leftBoxShadow = `inset ${lineHeightRem / 2}rem 0px 0px 0px ${debugColor}`;
-  const rightBoxShadow = `inset ${-lineHeightRem / 2}rem 0px 0px 0px ${debugColor}`;
+  const leftBoxShadow = `inset ${lineHeightRem}rem 0px 0px 0px ${debugColor}`;
+  const rightBoxShadow = `inset ${-lineHeightRem}rem 0px 0px 0px ${debugColor}`;
 
   const styles = {
     boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`

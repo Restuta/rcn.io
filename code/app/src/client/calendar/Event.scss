@@ -32,8 +32,8 @@
 //TODO: move to separate file
 .EventName {
   position: relative;
-  max-height: $line-height-rem * 2;
-  min-height: $line-height-rem * 2;
+  max-height: $line-height-rem * 3;
+  min-height: $line-height-rem * 3;
   overflow: hidden;
 
   //adds white overlay over text to show that is' longer then it appe
@@ -52,7 +52,7 @@
 .RoundBadge {
   $background-color: $grey-500;
 
-  font-size: $font-size-sm;
+  font-size: $font-size-s;
   min-width: $line-height-rem;
   height: $line-height-rem;
   background-color: $background-color;
@@ -66,7 +66,7 @@
 
 
   &.x2 {
-    font-size: scaleUp(2);
+    font-size: $font-size-m;
     min-width: $line-height-rem * 2;
     height: $line-height-rem * 2;
   }
@@ -76,7 +76,7 @@
 .Badge {
   $background-color: $grey-500;
 
-  font-size: $font-size-sm;
+  font-size: $font-size-s;
   min-width: $line-height-rem;
   padding: 3px 7px;
   border-radius: 10px;

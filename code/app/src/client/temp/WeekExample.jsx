@@ -3,6 +3,7 @@ import Component from 'react-pure-render/component';
 import Row from '../atoms/Row.jsx';
 import Col from '../atoms/Col.jsx';
 import EventStub from '../temp/EventStub.jsx';
+import Typography from '../styles/typography';
 
 
 export default class WeekExample extends Component {
@@ -31,9 +32,7 @@ export default class WeekExample extends Component {
       marginLeft: '10px',
     });
 
-    const rowStyle = {
-      marginTop: -1,
-    };
+    const rowStyle = { marginTop: -1 };
 
     let random = (min, max) => {
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -85,7 +84,7 @@ export default class WeekExample extends Component {
 
 
     return (
-        <Row style={rowStyle}>
+        <Row className="WeekExample" style={rowStyle}>
           <span style={daysStyleLeft}>{days.join(' ')}</span>
           {days.map((x, i) =>
             <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}

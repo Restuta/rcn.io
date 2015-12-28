@@ -27,11 +27,12 @@ $blue-grey-900: #263238;
 //Typography
 @function getBaseFontSize() {
   //change in typography.js also
-  @return 14;
+  @return 9;
 }
 
+
 @function getScale() {
-  @return 1.3333;//perfect fourth
+  @return 1.25; //9, 11, 14, 18, 23, 29, 36, 45
 }
 
 @function scaleUp($number) {
@@ -52,12 +53,43 @@ $blue-grey-900: #263238;
   @return $size-rems;
 }
 
+//this is a hack, since SASS doesn't have standard locally scoped variables, defining a pseudo
+//class "local-scope", all variables inside it are local, except onse marked with "!gloabal" flag
+.local-scope {
+  //$line-height: 1.28571428;
+  //$base-line: round(getBaseFontSize() * $line-height);
+  //calculating ideal height in rems, but that rounds nicely to pixels
+  //$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
+  $line-height-rem: 2rem !global; //hardcoing
+}
 
-//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
-$line-height: 1.28571428;
-$base-line: round(getBaseFontSize() * $line-height);
-//calculating ideal height in rems, but that rounds nicely to pixels
-$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
+$half-line-height-rem: $line-height-rem / 2;
 
 //calculating small (one step down from base) font size
-$font-size-sm: (round(getBaseFontSize() / getScale()) / getBaseFontSize()) + 0rem;
+$font-size-xs: scaleUp(1);
+$font-size-s: scaleUp(2);
+$font-size-m: scaleUp(3);
+
+//headings
+$headings-margin-top: $line-height-rem;
+$headings-margin-bottom: $line-height-rem;
+//$headings-font-family: 'Europa', sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 400;
+$headings-color: black;
+$headings-color-secondary: $grey-600;
+
+$h1-font-size: scaleUp(8); //8 or 7
+$h1-line-height: $line-height-rem * 3;
+
+$h2-font-size: scaleUp(6);
+$h2-line-height: $line-height-rem * 2;
+
+$h3-font-size: scaleUp(5);
+$h3-line-height: $line-height-rem * 2;
+
+$h4-font-size: scaleUp(4);
+$h4-line-height: $line-height-rem * 2;
+
+$h5-font-size: scaleUp(3);
+$h5-line-height: $line-height-rem;

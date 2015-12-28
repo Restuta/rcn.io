@@ -44,7 +44,7 @@ export default class EventStub extends Component {
       flexDirection: 'column',
       alignItems: 'center',
       flexWrap: 'wrap',
-      fontSize: Typography.scaleDown(2) + 'rem',
+      fontSize: Typography.scaleUp(2) + 'rem',
       borderRadius: 0
     };
 
@@ -71,7 +71,7 @@ export default class EventStub extends Component {
 
     const roundedHeight = Math.round(heightInIdealRems * Typography.BASE_FONT_SIZE_PX).toFixed(2);
     const roundedWidth = this.state.width;
-    const heightInBaseLines = Math.round(heightInIdealRems / Typography.LINE_HEIGHT_REM);
+    const heightInBaseLines = heightInIdealRems;
 
     const className = classNames('EventStub', this.props.className);
 
