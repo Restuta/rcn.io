@@ -38,6 +38,13 @@ export class App extends Component {
           &nbsp;
           <div>
             <h2>EVENT COMPONENTS</h2>
+            <p style={{fontSize:9}}>9px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:10, color: 'darkgray'}}>10px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:12, color: 'darkgray'}}>12px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:14}}>14px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:16, color: 'darkgray'}}>16px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:18}}>18px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
