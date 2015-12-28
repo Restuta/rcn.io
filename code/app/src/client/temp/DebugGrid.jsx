@@ -1,6 +1,7 @@
 import React from 'react';
 import Component from 'react-pure-render/component';
 import classNames from 'classnames';
+import Checkbox from '../atoms/Checkbox.jsx';
 
 export default class DebugGrid extends Component {
   constructor(props) {
@@ -78,16 +79,6 @@ export default class DebugGrid extends Component {
     );
   }
 }
-
-const Checkbox = (props) => {
-  return (
-    <label className="c-input c-checkbox">
-      <input type="checkbox" onChange={props.onChange} checked={props.checked}/>
-      <span className="c-indicator"></span>
-      {props.children}
-    </label>
-  );
-};
 
 const GridLines = (props) => {
   const thiknessPx = 4;
