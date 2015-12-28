@@ -22,9 +22,54 @@ const S10 = () => (<S width={10}/>);
 export class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {appLevelClasses: 'debug-baseline debug-container'};
+    this.state = {
+      containerWidth: 1140, //setting dafault contaner to desktop
+      appLevelClasses: 'debug-baseline debug-container'
+    };
+
+    this.onResize = this.onResize.bind(this);
+    window.time = +new Date();
   }
+
+  onResize() {
+    this.setState({ //eslint-disable-line
+      containerWidth: this.div.offsetWidth
+    });
+  }
+
+  componentDidMount() {
+    //TODO: this is used to get actual size from the browser after component is rendred and results in second react-pure-render
+    //we can avoid this by moving that into top-level HOC that first gets size of the browser window and then renders children
+    //into it passing actual size, so only topmost component would be rendred twice, which is few ms
+
+    this.onResize(); //calculate for the very first time
+    //handling windw resize to recalculate components windth and re-render
+    window.addEventListener('resize', this.onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+  }
+
   render() {
+    console.warn('app level render!  ' + ((+new Date()) - window.time) + 'ms');
+    window.time = (+ new Date());
+
+    //todo: move to grid.js
+    const getCardWidth = (cardNo, containerW) => {
+      const COLUMNS = 14;
+      const COL_BORDER_W = 1;
+      const GUTTER = 14;
+
+      const columnWidth = (containerW) / COLUMNS
+      return (columnWidth * cardNo) - GUTTER - COL_BORDER_W
+    };
+
+    const cardWidth1 = getCardWidth(1, this.state.containerWidth);
+    const cardWidth2 = getCardWidth(2, this.state.containerWidth);
+    const cardWidth3 = getCardWidth(3, this.state.containerWidth);
+    const cardWidth4 = getCardWidth(4, this.state.containerWidth);
+
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
@@ -34,16 +79,13 @@ export class App extends Component {
     return (
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={setAppStateClasses}/>
-        <div className="container">
+        <div className="container" ref={(x) => this.div = x}>
           &nbsp;
           <div>
             <h2>EVENT COMPONENTS</h2>
             <p style={{fontSize:9}}>9px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:10, color: 'darkgray'}}>10px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:12, color: 'darkgray'}}>12px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:14}}>14px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:16, color: 'darkgray'}}>16px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:18}}>18px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
@@ -129,47 +171,47 @@ export class App extends Component {
             </Row>
           </div>
           <Row className="margin-top">
-            <Col sm={1} smOffset={1}><Event width={56} name="Dh"/></Col>
-            <Col sm={1}><Event width={56} name="Rk"/></Col>
-            <Col sm={1}><Event width={56} name="Co"/></Col>
+            <Col sm={1} smOffset={1}><Event width={cardWidth1} name="Dh"/></Col>
+            <Col sm={1}><Event width={cardWidth1} name="Rk"/></Col>
+            <Col sm={1}><Event width={cardWidth1} name="Co"/></Col>
           </Row>
           <Row className="margin-top">
             <Col sm={2} smOffset={1}>
-              <Event width={148} name="Dunnigan Hills Road Race"/>
+              <Event width={cardWidth2} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={148} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={cardWidth2} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={2}>
-              <Event width={148} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={cardWidth2} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={2}>
-              <Event width={148} name="Salinas Criterium"/>
+              <Event width={cardWidth2} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
             <Col sm={3} smOffset={1}>
-              <Event width={229} name="Dunnigan Hills Road Race"/>
+              <Event width={cardWidth3} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={3}>
-              <Event width={229} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={cardWidth3} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={3}>
-              <Event width={229} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={cardWidth3} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={3}>
-              <Event width={229} name="Salinas Criterium"/>
+              <Event width={cardWidth3} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
             <Col sm={4} smOffset={1}>
-              <Event width={270} name="Dunnigan Hills Road Race"/>
+              <Event width={cardWidth4} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={4}>
-              <Event width={270} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={cardWidth4} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={4}>
-              <Event width={270} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={cardWidth4} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
           </Row>
 

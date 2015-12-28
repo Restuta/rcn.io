@@ -59,8 +59,8 @@ class Event extends Component {
     const widthPx = this.props.width || 50;
     //todo: typography should be passed as props
     const idealHeightRem = Typography.roundToIdealRems(widthPx / 1.5);
-    const verticalPadding = `${Typography.LINE_HEIGHT_REM}rem`;
-    const horizontalPadding = `${Typography.LINE_HEIGHT_REM / 2}rem`;
+    const verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`;
+    const horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`;
 
     const borderWidth = Math.round((widthPx / 30) * (widthPx / 30));
 
