@@ -135,30 +135,30 @@ export class App extends Component {
           </Row>
           <Row className="margin-top">
             <Col sm={2} smOffset={1}>
-              <Event width={125} name="Dunnigan Hills Road Race"/>
+              <Event width={148} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={125} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={148} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={2}>
-              <Event width={125} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={148} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={2}>
-              <Event width={125} name="Salinas Criterium"/>
+              <Event width={148} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
             <Col sm={3} smOffset={1}>
-              <Event width={197.5} name="Dunnigan Hills Road Race"/>
+              <Event width={229} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={229} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={229} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
             <Col sm={3}>
-              <Event width={197.5} name="Salinas Criterium"/>
+              <Event width={229} name="Salinas Criterium"/>
             </Col>
           </Row>
           <Row className="margin-top">
