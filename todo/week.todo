@@ -33,9 +33,10 @@ Today
  	- add Autoprefixer
  	--- design a card UI
  		!----- immediate todo
- 			--- figure out ideal heith based on baselines
+ 			+--- figure out ideal heith based on baselines
+ 			-- rewrite calculation of card heights using formula
  			+- round height to nearest multiple of line height
- 			- for distance make badge to have different size depending how long is the race
+ 			.- (not sure this has value, since RR are not that different in lenght)for distance make badge to have different size depending how long is the race
  			+-- create square (2px rounding) badge variation
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
