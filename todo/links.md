@@ -1,5 +1,7 @@
 
 # Design
+### Logos
+  * [Logodust.com](http://logodust.com/) - free to download logo files
 ### UX
 * Checklists
   * [ ] [Good UI](http://www.goodui.org/)
