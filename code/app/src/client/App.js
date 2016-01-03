@@ -57,7 +57,7 @@ export class App extends Component {
     console.warn('app level render!  ' + ((+new Date()) - window.time) + 'ms')
     window.time = (+new Date())
 
-    //todo: move to grid.js
+    //TODO: move to grid.js
     const getCardWidth = (cardNo, containerW) => {
       const COLUMNS = 14
       const COL_BORDER_W = 1
