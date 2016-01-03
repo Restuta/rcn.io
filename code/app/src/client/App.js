@@ -1,40 +1,41 @@
-import React from 'react';
-import Component from 'react-pure-render/component';
-import './app.scss';
-import Row from './atoms/Row.jsx';
-import Col from './atoms/Col.jsx';
-import Icon from './atoms/Icon.jsx';
-import Counter from './temp/Counter.jsx';
+import React from 'react'
+import Component from 'react-pure-render/component'
+import './app.scss'
+import Row from './atoms/Row.jsx'
+import Col from './atoms/Col.jsx'
+import Icon from './atoms/Icon.jsx'
+import Counter from './temp/Counter.jsx'
 import Event, {
   EventName, RoundBadge, Badge, SquareBadge
-} from './calendar/Event.jsx';
-import Colors from './styles/colors';
-import DebugGrid from './temp/DebugGrid.jsx';
-import WeekExample from './temp/WeekExample.jsx';
-import classNames from 'classnames';
+} from './calendar/Event.jsx'
+import Colors from './styles/colors'
+import DebugGrid from './temp/DebugGrid.jsx'
+import WeekExample from './temp/WeekExample.jsx'
+import classNames from 'classnames'
 
 
 //TODO bc: remove these components
-const S = ({width}) => (<span style={{width: `${width}px`}}></span>);
-const S5 = () => (<S width={5}/>);
-const S10 = () => (<S width={10}/>);
+const S = ({width}) => (<span style={{width: `${width}px`}}></span>)
+const S5 = () => (<S width={5}/>)
+const S10 = () => (<S width={10}/>)
 
 export class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       containerWidth: 1140, //setting dafault contaner to desktop
       appLevelClasses: 'debug-baseline debug-container'
-    };
+    }
 
-    this.onResize = this.onResize.bind(this);
-    window.time = +new Date();
+    this.onResize = this.onResize.bind(this)
+    //TODO bc: remove me
+    window.time = +new Date()
   }
 
   onResize() {
     this.setState({ //eslint-disable-line
       containerWidth: this.div.offsetWidth
-    });
+    })
   }
 
   componentDidMount() {
@@ -42,39 +43,40 @@ export class App extends Component {
     //we can avoid this by moving that into top-level HOC that first gets size of the browser window and then renders children
     //into it passing actual size, so only topmost component would be rendred twice, which is few ms
 
-    this.onResize(); //calculate for the very first time
+    this.onResize() //calculate for the very first time
     //handling windw resize to recalculate components windth and re-render
-    window.addEventListener('resize', this.onResize);
+    window.addEventListener('resize', this.onResize)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('resize', this.onResize)
   }
 
   render() {
-    console.warn('app level render!  ' + ((+new Date()) - window.time) + 'ms');
-    window.time = (+ new Date());
+    //TODO bc: remove me
+    console.warn('app level render!  ' + ((+new Date()) - window.time) + 'ms')
+    window.time = (+new Date())
 
     //todo: move to grid.js
     const getCardWidth = (cardNo, containerW) => {
-      const COLUMNS = 14;
-      const COL_BORDER_W = 1;
-      const GUTTER = 14;
+      const COLUMNS = 14
+      const COL_BORDER_W = 1
+      const GUTTER = 14
 
       const columnWidth = (containerW) / COLUMNS
       return (columnWidth * cardNo) - GUTTER - COL_BORDER_W
-    };
+    }
 
-    const cardWidth1 = getCardWidth(1, this.state.containerWidth);
-    const cardWidth2 = getCardWidth(2, this.state.containerWidth);
-    const cardWidth3 = getCardWidth(3, this.state.containerWidth);
-    const cardWidth4 = getCardWidth(4, this.state.containerWidth);
+    const cardWidth1 = getCardWidth(1, this.state.containerWidth)
+    const cardWidth2 = getCardWidth(2, this.state.containerWidth)
+    const cardWidth3 = getCardWidth(3, this.state.containerWidth)
+    const cardWidth4 = getCardWidth(4, this.state.containerWidth)
 
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
-      });
-    };
+      })
+    }
 
     return (
       <div className={this.state.appLevelClasses}>
@@ -246,6 +248,6 @@ export class App extends Component {
           <Counter increment={1} color="silver" marginTop="20px" />
         </div>
       </div>
-    );
+    )
   }
 }

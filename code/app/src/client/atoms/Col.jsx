@@ -1,10 +1,10 @@
-import React, {PropTypes} from 'react';
-import Component from 'react-pure-render/component';
-import classNames from 'classnames';
+import React, {PropTypes} from 'react'
+import Component from 'react-pure-render/component'
+import classNames from 'classnames'
 
 function getColClassName(propName, propValue) {
 
-  if (!propValue) return '';
+  if (!propValue) return ''
 
   const validProps = {
     xs: 'col-xs-',
@@ -15,9 +15,9 @@ function getColClassName(propName, propValue) {
     smOffset: 'col-sm-offset-',
     mdOffset: 'col-md-offset-',
     lgOffset: 'col-lg-offset-',
-  };
+  }
 
-  return validProps[propName] ? validProps[propName] + propValue : '';
+  return validProps[propName] ? validProps[propName] + propValue : ''
 }
 
 //usage <Col xs={12} md={8} />
@@ -27,15 +27,15 @@ export default class Col extends Component {
     const columnClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
       .reduce((curr, prev) => classNames(prev, curr))
-      .trim();
+      .trim()
 
-    const combinedClassNames = classNames(columnClassNames, this.props.className);
+    const combinedClassNames = classNames(columnClassNames, this.props.className)
 
     return (
       <div {...this.props} className={combinedClassNames}>
         {this.props.children}
       </div>
-    );
+    )
   }
 }
 
@@ -48,7 +48,7 @@ Col.propTypes = {
   smOffset: PropTypes.number,
   mdOffset: PropTypes.number,
   lgOffset: PropTypes.number
-};
+}
 
 //TODO: use functional component when https://github.com/gaearon/babel-plugin-react-transform/pull/34 is mereged
 // export default function Col(props) {

@@ -10,4 +10,4 @@ export default Object.freeze({
   grey600: '#757575',
   grey700: '#616161',
   grey800: '#424242',
-});
+})

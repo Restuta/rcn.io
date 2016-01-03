@@ -1,9 +1,9 @@
-import React, {PropTypes} from 'react';
-import classNames from 'classnames';
-import Styles from './Checkbox.scss';
+import React, {PropTypes} from 'react'
+import classNames from 'classnames'
+import Styles from './Checkbox.scss'
 
 const Checkbox = (props) => {
-  const classes = classNames('c-input c-checkbox', Styles.default);
+  const classes = classNames('c-input c-checkbox', Styles.default)
 
   return (
     <label className={classes}>
@@ -11,13 +11,13 @@ const Checkbox = (props) => {
       <span className="c-indicator"></span>
       {props.children}
     </label>
-  );
-};
+  )
+}
 
 Checkbox.propTypes = {
   checked: PropTypes.bool,
   onChange: PropTypes.func,
-};
+}
 
 
-export default Checkbox;
+export default Checkbox

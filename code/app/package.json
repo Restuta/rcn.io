@@ -9,6 +9,7 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "NODE_ENV=production node devServer.js",
     "eslint": "eslint src/** --ext .js,.jsx || true",
+    "eslint:fix": "eslint src/** --ext .js,.jsx --fix || true",
     "reinstall": "npm run clean:all && bower i && npm i"
   },
   "repository": {
