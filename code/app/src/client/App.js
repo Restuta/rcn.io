@@ -12,6 +12,7 @@ import Colors from './styles/colors'
 import DebugGrid from './temp/DebugGrid.jsx'
 import WeekExample from './temp/WeekExample.jsx'
 import classNames from 'classnames'
+import Grid from './styles/grid'
 
 
 //TODO bc: remove these components
@@ -22,55 +23,29 @@ const S10 = () => (<S width={10}/>)
 export class App extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      containerWidth: 1140, //setting dafault contaner to desktop
-      appLevelClasses: 'debug-baseline debug-container'
-    }
 
-    this.onResize = this.onResize.bind(this)
-    //TODO bc: remove me
-    window.time = +new Date()
-  }
+    let grid = Grid.init(this.props.containerWidth)
+    console.info(grid.getColumnContentWidth(1) + 'px')
+    console.info(grid.getColumnContentWidth(2) + 'px')
+    console.info(grid.getColumnContentWidth(3) + 'px')
+    console.info(grid.getColumnContentWidth(4) + 'px')
 
-  onResize() {
-    this.setState({ //eslint-disable-line
-      containerWidth: this.div.offsetWidth
-    })
-  }
+    this.state = { appLevelClasses: 'debug-baseline debug-container' }
 
-  componentDidMount() {
-    //TODO: this is used to get actual size from the browser after component is rendred and results in second react-pure-render
-    //we can avoid this by moving that into top-level HOC that first gets size of the browser window and then renders children
-    //into it passing actual size, so only topmost component would be rendred twice, which is few ms
-
-    this.onResize() //calculate for the very first time
-    //handling windw resize to recalculate components windth and re-render
-    window.addEventListener('resize', this.onResize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.onResize)
   }
 
   render() {
-    //TODO bc: remove me
-    console.warn('app level render!  ' + ((+new Date()) - window.time) + 'ms')
-    window.time = (+new Date())
 
     //TODO: move to grid.js
     const getCardWidth = (cardNo, containerW) => {
-      const COLUMNS = 14
-      const COL_BORDER_W = 1
-      const GUTTER = 14
-
-      const columnWidth = (containerW) / COLUMNS
-      return (columnWidth * cardNo) - GUTTER - COL_BORDER_W
+      const grid = Grid.init(containerW)
+      return grid.getColumnContentWidth(cardNo)
     }
 
-    const cardWidth1 = getCardWidth(1, this.state.containerWidth)
-    const cardWidth2 = getCardWidth(2, this.state.containerWidth)
-    const cardWidth3 = getCardWidth(3, this.state.containerWidth)
-    const cardWidth4 = getCardWidth(4, this.state.containerWidth)
+    const cardWidth1 = getCardWidth(1, this.props.containerWidth)
+    const cardWidth2 = getCardWidth(2, this.props.containerWidth)
+    const cardWidth3 = getCardWidth(3, this.props.containerWidth)
+    const cardWidth4 = getCardWidth(4, this.props.containerWidth)
 
     const setAppStateClasses = classesToSet => {
       this.setState({
@@ -82,9 +57,8 @@ export class App extends Component {
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={setAppStateClasses}/>
         <div className="container" ref={(x) => this.div = x}>
-          &nbsp;
           <div>
-            <h2>EVENT COMPONENTS</h2>
+            <h2>EVENT COMPONENTS {this.props.containerWidth}<small>PX</small></h2>
             <p style={{fontSize:9}}>9px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:14}}>14px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>

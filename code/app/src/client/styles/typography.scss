@@ -11,7 +11,7 @@ html {
   font-size: getBaseFontSize() + px;
 }
 body {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: $body-font-family;
   font-size: $font-size-m;
   line-height: $line-height-rem;
   margin: 0 auto;
@@ -50,7 +50,6 @@ h5 {
   font-size: $h5-font-size;
   line-height: $h5-line-height;
   margin-bottom: 0;
-  color: $headings-color-secondary;
 }
 p,
 ul,
@@ -71,6 +70,9 @@ em,
 small,
 code {
   line-height: 1;
+}
+small {
+  font-size: (1 / getScale()) + em
 }
 sup {
   line-height: 0;

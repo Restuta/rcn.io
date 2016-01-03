@@ -1,14 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { App } from './App'
+import Grid from './styles/grid'
 
-let browserWidth = window.document.body.offsetWidth
+let renderApp = function() {
+  let browserWidth = window.document.body.offsetWidth
+  let containerWidth = Grid.getContainerWidth(browserWidth)
 
-const onResize = () => {
-  browserWidth = window.document.body.offsetWidth
+  render(<App containerWidth={containerWidth} />, document.getElementById('root'))
 }
 
-window.addEventListener('resize', onResize)
-console.info('index.js loaded')
+//re-render app on windows resize
+window.addEventListener('resize', () => renderApp())
 
-render(<App browserWidth={browserWidth} />, document.getElementById('root'))
+//first time render
+renderApp()
