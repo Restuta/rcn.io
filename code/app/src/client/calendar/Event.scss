@@ -53,8 +53,8 @@
   $background-color: $grey-500;
 
   font-size: $font-size-s;
-  min-width: $line-height-rem;
-  height: $line-height-rem;
+  min-width: $line-height-rem + 1rem;
+  height: $line-height-rem + 1rem;
   background-color: $background-color;
   color: lighten($background-color, 30%);
   display: flex;
