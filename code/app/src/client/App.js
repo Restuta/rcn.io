@@ -23,15 +23,7 @@ const S10 = () => (<S width={10}/>)
 export class App extends Component {
   constructor(props) {
     super(props)
-
-    let grid = Grid.init(this.props.containerWidth)
-    console.info(grid.getColumnContentWidth(1) + 'px')
-    console.info(grid.getColumnContentWidth(2) + 'px')
-    console.info(grid.getColumnContentWidth(3) + 'px')
-    console.info(grid.getColumnContentWidth(4) + 'px')
-
     this.state = { appLevelClasses: 'debug-baseline debug-container' }
-
   }
 
   render() {
@@ -39,7 +31,8 @@ export class App extends Component {
     //TODO: move to grid.js
     const getCardWidth = (cardNo, containerW) => {
       const grid = Grid.init(containerW)
-      return grid.getColumnContentWidth(cardNo)
+      const borderWidth = 1
+      return grid.getColumnContentWidth(cardNo) - borderWidth
     }
 
     const cardWidth1 = getCardWidth(1, this.props.containerWidth)
@@ -192,18 +185,6 @@ export class App extends Component {
           </Row>
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
-
-          {/* 16 col examples
-          <WeekExample days={[1, 1, 1, 2, 3, 4, 4]}/>
-          <WeekExample days={[1, 1, 1, 1, 4, 4, 4]}/>
-          <WeekExample days={[1, 1, 2, 3, 3, 3, 3]}/>
-          <WeekExample days={[1, 2, 2, 2, 3, 3, 3]}/>
-          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
-          <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
-          <WeekExample days={[2, 2, 2, 2, 2, 3, 3]}/>
-          <WeekExample days={[1, 1, 1, 1, 3, 4, 4]}/>
-          <WeekExample days={[1, 1, 1, 1, 2, 5, 5]}/>
-          */}
 
           <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
 

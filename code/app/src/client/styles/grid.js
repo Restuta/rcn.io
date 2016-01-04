@@ -1,5 +1,3 @@
-
-
 export default {
   getContainerWidth(browserWidth) {
     //should match variables from bootstrap
@@ -31,8 +29,6 @@ export default {
     }
   },
   init(containerWidth) {
-    const containerW = containerWidth
-
     return {
       //returns widh in px of Container's content area (width without paddings)
       getColumnContentWidth(numberOfCols) {
@@ -41,9 +37,7 @@ export default {
         const GUTTER_PX = 14
 
         const oneColPercent = (100 / COLUMNS) / 100
-        // const columnWidth = containerW / oneColPercent
-        // return (columnWidth * numOfCols) - gutter - colBorderW
-        return containerW * (oneColPercent * numberOfCols) - GUTTER_PX
+        return containerWidth * (oneColPercent * numberOfCols) - GUTTER_PX
       }
     }
   },
