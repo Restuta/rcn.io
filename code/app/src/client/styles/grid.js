@@ -1,31 +1,35 @@
+//TODO: encapsulate back to private function when card design is done
+const ContainerWidth = {
+  SM: 576,
+  MD: 720,
+  LG: 940,
+  XL: 1140
+}
+
 export default {
+  ContainerWidth : ContainerWidth,
+
   getContainerWidth(browserWidth) {
     //should match variables from bootstrap
-    const ContainerMaxWidth = {
-      sm: 576,
-      md: 720,
-      lg: 940,
-      xl: 1140
-    }
 
     const Breakpoints = {
-      xs: 0,    // Extra small screen / phone
-      sm: 544,  // Small screen / phone
-      md: 768,  // Medium screen / tablet
-      lg: 992,  // Large screen / desktop
-      xl: 1200  // Extra large screen / wide desktop
+      XS: 0,    // Extra small screen / phone
+      SM: 544,  // Small screen / phone
+      MD: 768,  // Medium screen / tablet
+      LG: 992,  // Large screen / desktop
+      XL: 1200  // Extra large screen / wide desktop
     }
 
-    if (browserWidth <= ContainerMaxWidth.sm) {
+    if (browserWidth <= ContainerWidth.SM) {
       return browserWidth //container becomes fluid for small size
-    } else if (browserWidth > ContainerMaxWidth.sm && browserWidth < Breakpoints.md) {
-      return ContainerMaxWidth.sm
-    } else if (browserWidth >= Breakpoints.md && browserWidth < Breakpoints.lg) {
-      return ContainerMaxWidth.md
-    } else if (browserWidth >= Breakpoints.lg && browserWidth < Breakpoints.xl) {
-      return ContainerMaxWidth.lg
-    } else if (browserWidth > Breakpoints.xl) {
-      return ContainerMaxWidth.xl
+    } else if (browserWidth > ContainerWidth.SM && browserWidth < Breakpoints.MD) {
+      return ContainerWidth.SM
+    } else if (browserWidth >= Breakpoints.MD && browserWidth < Breakpoints.LG) {
+      return ContainerWidth.MD
+    } else if (browserWidth >= Breakpoints.LG && browserWidth < Breakpoints.XL) {
+      return ContainerWidth.LG
+    } else if (browserWidth > Breakpoints.XL) {
+      return ContainerWidth.XL
     }
   },
   init(containerWidth) {

@@ -14,7 +14,6 @@ import WeekExample from './temp/WeekExample.jsx'
 import classNames from 'classnames'
 import Grid from './styles/grid'
 
-
 //TODO bc: remove these components
 const S = ({width}) => (<span style={{width: `${width}px`}}></span>)
 const S5 = () => (<S width={5}/>)
@@ -27,24 +26,16 @@ export class App extends Component {
   }
 
   render() {
-
-    //TODO: move to grid.js
-    const getCardWidth = (cardNo, containerW) => {
-      const grid = Grid.init(containerW)
-      const borderWidth = 1
-      return grid.getColumnContentWidth(cardNo) - borderWidth
-    }
-
-    const cardWidth1 = getCardWidth(1, this.props.containerWidth)
-    const cardWidth2 = getCardWidth(2, this.props.containerWidth)
-    const cardWidth3 = getCardWidth(3, this.props.containerWidth)
-    const cardWidth4 = getCardWidth(4, this.props.containerWidth)
+    //const containerWidth = this.props.containerWidth
+    console.info(this.props.containerWidth)
 
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
       })
     }
+
+    //<Event baseHeight={2} width={1} name="Dunnigan Hills Road Race"/>
 
     return (
       <div className={this.state.appLevelClasses}>
@@ -139,25 +130,32 @@ export class App extends Component {
               </Col>
             </Row>
           </div>
+
+          {/* CARDS CARDS CARDS*/}
+          {/* CARDS CARDS CARDS*/}
+          {/* CARDS CARDS CARDS*/}
+
           <Row className="margin-top">
-            <Col sm={1} smOffset={1}><Event width={cardWidth1} name="Dh"/></Col>
-            <Col sm={1}><Event width={cardWidth1} name="Rk"/></Col>
-            <Col sm={1}><Event width={cardWidth1} name="Co"/></Col>
+            <Col sm={1} smOffset={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
+            <Col sm={1}><Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
+            <Col sm={1}><Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Co"/></Col>
+            <Col sm={1}><Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Rk"/></Col>
           </Row>
           <Row className="margin-top">
             <Col sm={2} smOffset={1}>
-              <Event width={cardWidth2} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={cardWidth2} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={cardWidth2} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
-              <Event width={cardWidth2} name="Salinas Criterium"/>
+              <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             </Col>
           </Row>
+          {/*
           <Row className="margin-top">
             <Col sm={3} smOffset={1}>
               <Event width={cardWidth3} name="Dunnigan Hills Road Race"/>
@@ -183,6 +181,8 @@ export class App extends Component {
               <Event width={cardWidth4} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
           </Row>
+
+          */}
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
 

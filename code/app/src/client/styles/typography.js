@@ -1,6 +1,5 @@
 //change in variables.scss also
 const BASE_FONT_SIZE_PX = 9 //TODO: get it in runtime from the browser
-const GOLDEN_RATIO = 1.61803398875
 const FONT_SCALE = 1.25  //9, 11, 14, 18, 23, 29, 36, 45
 
 //calculating ideal line height in rems, but that rounds nicely to pixels, that's why we need rounding
@@ -34,7 +33,6 @@ export default Object.freeze({
   //line height in rems
   LINE_HEIGHT_REM: LINE_HEIGHT_REM,
   HALF_LINE_HEIGHT_REM: LINE_HEIGHT_REM / 2,
-  GOLDEN_RATIO: GOLDEN_RATIO,
 
   //ideal means one that fints baseline and converts to round pixels
   roundToIdealRems(heightPx) {

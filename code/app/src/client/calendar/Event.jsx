@@ -4,6 +4,7 @@ import Typography from '../styles/typography'
 import Colors from '../styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
+import Grid from '../styles/grid'
 
 export class EventName extends Component {
   render() {
@@ -56,26 +57,32 @@ export class SquareBadge extends Component {
 
 class Event extends Component {
   render() {
-    const widthPx = this.props.width || 50
+    //const widthPx = this.props.width || 50
     //todo: typography should be passed as props
-    const idealHeightRem = Typography.roundToIdealRems(widthPx / 1.5)
     const verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
     const horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
 
-    const borderWidth = Math.round((widthPx / 30) * (widthPx / 30))
+    //const borderWidth = Math.round((widthPx / 30) * (widthPx / 30))
+
+    const {width, baseHeight, containerWidth} = this.props
+    const grid  = Grid.init(containerWidth)
+    const cardWidthPx = grid.getColumnContentWidth(width)
+    //TODO bc: explain this formula
+    const cardHeight = (width * baseHeight + width - 1)
+    const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
     let style = {
-      width: widthPx + 'px',
-      height: idealHeightRem + 'rem',
+      width: cardWidthPx + 'px',
+      height: cardHeightRem + 'rem',
       paddingTop: verticalPadding,
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${borderWidth}px solid ${Colors.grey600}`,
+      //borderLeft: `${borderWidth}px solid ${Colors.grey600}`,
     }
 
     return (
-      <div style={style} ref={(x) => this.div = x} className="Event lvl-1">
+      <div style={style} className="Event lvl-1">
         <EventName>{this.props.name}</EventName>
       </div>
     )
@@ -84,7 +91,12 @@ class Event extends Component {
 
 Event.propTypes = {
   name: PropTypes.string,
-  width: PropTypes.number
+  //width in coluns card is going to take
+  width:  React.PropTypes.oneOf([1, 2, 3, 4]),
+  //height of the smalles card in half-baselines
+  baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
+  //width of the container element to calculate card size in px
+  containerWidth: PropTypes.number,
 }
 
 //export default Event;
@@ -113,5 +125,5 @@ let DebugComponent = ComponentToDebug => props => {
   )
 }
 
-export default DebugComponent(Event)
-//export default Event;
+//export default DebugComponent(Event)
+export default Event;

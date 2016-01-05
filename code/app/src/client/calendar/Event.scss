@@ -37,16 +37,16 @@
   overflow: hidden;
 
   //adds white overlay over text to show that is' longer then it appe
-  &:after {
-    content: "";
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40%;
-    height: $line-height-rem;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
-  }
+  // &:after {
+  //   content: "";
+  //   text-align: right;
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   width: 40%;
+  //   height: $line-height-rem;
+  //   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+  // }
 }
 
 .RoundBadge {
