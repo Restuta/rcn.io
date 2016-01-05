@@ -35,6 +35,8 @@ Today
  		!----- immediate todo
  			+--- figure out ideal heith based on baselines
  			-- rewrite calculation of card heights using formula
+ 			-- try 1.7777 vs 1.5 card ratios
+ 			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
  			+- round height to nearest multiple of line height
  			.- (not sure this has value, since RR are not that different in lenght)for distance make badge to have different size depending how long is the race
  			+-- create square (2px rounding) badge variation
@@ -47,14 +49,15 @@ Today
  			- set assymetric padding (less on the sides, more from top to preserve the rythm)
  			- try Google Material Card design layout: https://www.google.com/design/spec/components/cards.html#cards-content-blocks
  			- adopt flexbox
- 			- play with vh vw (veiwport related sizes) for card size
+ 			+- play with vh vw (veiwport related sizes) for card size
  			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
  			-- create a 1-2 line card design, so we can show non-important events for imporant days this way: 
  				say we have a Sat which takes 4 culumns and we only interested in 1/3 events, there is no reason to show them full-size
  				- inspiration can be taked from TargetProcess: http://screencast.com/t/HpOkrTbi4ot
  			- create variation with different width of left colorful section (used to show event type)
  				- try really wide option that would also group event-type specific information: e.g. distance for RR, duration for crit, etc (http://screencast.com/t/ABpTSbxzP)
- 		- if calendar is going to take the whole page space, rethink 16 columns (this is easy)
+ 			- see dribble for Card UI inspiration
+ 		+- if calendar is going to take the whole page space, rethink 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
