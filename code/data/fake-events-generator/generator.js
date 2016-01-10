@@ -16,6 +16,7 @@ var fullEventData = Data.eventData.map(function(event) {
     elevationGainFt: getRandomNumber(0, 2000),
     startTime: getRandomTime(),
     promoter: getRandomPromoter(),
+    permit: getRandomPermit(),
     location: {
       streetAddress: getRandomNumber(1, 1999) + ' ' + getRandomStreet(),
       city: getRandomCity(),
@@ -62,4 +63,8 @@ function getRandomStreet() {
 
 function getRandomCity() {
   return Data.cityData[getRandomNumber(0, Data.cityData.length)];
+}
+
+function getRandomPermit() {
+  return (new Date()).getFullYear() + '-' + getRandomNumber(1, 10000);
 }
