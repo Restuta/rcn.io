@@ -47,6 +47,8 @@ export class App extends Component {
             <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:14}}>14px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:18}}>18px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:23}}>23px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:29}}>29px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
@@ -134,6 +136,42 @@ export class App extends Component {
           {/* CARDS CARDS CARDS*/}
           {/* CARDS CARDS CARDS*/}
           {/* CARDS CARDS CARDS*/}
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/>
+              <Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/>
+              <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Co"/>
+              <Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Rk"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            </Col>
+          </Row>
 
           <Row className="margin-top">
             <Col sm={1} smOffset={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
