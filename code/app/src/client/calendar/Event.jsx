@@ -78,7 +78,7 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      //borderLeft: `${borderWidth}px solid ${Colors.grey600}`,
+      borderLeft: `${cardWidthPx / 8 * width / 1.618}px solid ${Colors.grey600}`,
     }
 
     return (

@@ -93,3 +93,15 @@ $col-border: pxToRem($col-border-wdith) solid $col-brdr-color;
   border-top: $col-border;
   border-bottom: $col-border;
 }
+
+.debug-flex-cards {
+  display: flex;
+  align-items: flex-start;
+
+
+  justify-content: space-between;
+
+  .Event {
+    margin-left: 5rem;
+  }
+}
