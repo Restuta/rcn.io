@@ -36,6 +36,8 @@ Today
  			+--- figure out ideal heith based on baselines
  			-- rewrite calculation of card heights using formula
  			-- try 1.7777 vs 1.5 card ratios
+ 			---- transpan cards on example, so row represents sreen version: actually think if this make sense
+ 			since maybe "size" matters and row should represent "small" in terms of size
  			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
  			+- round height to nearest multiple of line height
  			.- (not sure this has value, since RR are not that different in lenght)for distance make badge to have different size depending how long is the race

@@ -12,6 +12,7 @@
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
   * [ ] [Startup Lunch List](http://startuplaunchlist.com/-JsfUTzJqEOfv5fCYImO)
 * [ ] [UX 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
+* [ ] [UX MYTHS](http://uxmyths.com/) 
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
   * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
 * [How to compose a vertical rythm](https://24ways.org/2006/compose-to-a-vertical-rhythm/)
@@ -30,6 +31,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Typography
+* [Typography in 10 minutes] - http://practicaltypography.com/typography-in-ten-minutes.html (serious resource)
 * [FontCDN](http://fontcdn.org/) - a better way to search google fonts
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
 * [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
