@@ -9,9 +9,7 @@ export default class EventStub extends Component {
   constructor(props) {
     super(props)
     this.state = {height: 50}
-    //craeting one bound instance of the function, so removeEventListener can be used with the same function instance
-    //this._onResize = this.onResize.bind(this);
-    //bindTo(this, 'onResize');
+    //creating one bound instance of the function, so removeEventListener can be used with the same function instance
     this.onResize = this.onResize.bind(this)
   }
 

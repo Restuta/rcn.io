@@ -1,14 +1,14 @@
-const path = require('path');
-const webpack = require('webpack');
-const consts = require('./constants');
+const path = require('path')
+const webpack = require('webpack')
+const consts = require('./constants')
 
 function resolveNodeModulesPath(pathName) {
-  return path.resolve(path.join(consts.NODE_MODULES, pathName));
+  return path.resolve(path.join(consts.NODE_MODULES, pathName))
 }
 
 //NOTE: use min versions for prod and to speed-up build times a little
-const pathToReact = resolveNodeModulesPath('react/dist/react.js');
-const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js');
+const pathToReact = resolveNodeModulesPath('react/dist/react.js')
+const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js')
 //const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
 //const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
 
@@ -91,4 +91,4 @@ module.exports = {
   sassLoader: {
     precision: 15
   }
-};
+}
