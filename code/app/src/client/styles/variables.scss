@@ -69,29 +69,3 @@ $half-line-height-rem: $line-height-rem / 2;
 $font-size-xs: scaleUp(1);
 $font-size-s: scaleUp(2);
 $font-size-m: scaleUp(3);
-
-$body-font-family: 'Lato', Helvetica, Arial, sans-serif;
-
-//headings
-$headings-margin-top: $line-height-rem;
-$headings-margin-bottom: $line-height-rem;
-//$headings-font-family: 'Europa', sans-serif;
-$headings-font-family: 'Oswald', sans-serif;
-$headings-font-weight: 400;
-$headings-color: black;
-$headings-color-secondary: $grey-600;
-
-$h1-font-size: scaleUp(8); //8 or 7
-$h1-line-height: $line-height-rem * 3;
-
-$h2-font-size: scaleUp(6);
-$h2-line-height: $line-height-rem * 2;
-
-$h3-font-size: scaleUp(5);
-$h3-line-height: $line-height-rem * 2;
-
-$h4-font-size: scaleUp(4);
-$h4-line-height: $line-height-rem * 2;
-
-$h5-font-size: scaleUp(3);
-$h5-line-height: $line-height-rem;

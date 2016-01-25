@@ -5,6 +5,34 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700,400,400italic,300,300italic,100);
 
+$body-font-family: 'Lato', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 400;
+$headings-color: black;
+$headings-color-secondary: $grey-600;
+
+//headings
+$headings-margin-top: $line-height-rem;
+$headings-margin-bottom: $line-height-rem;
+//$headings-font-family: 'Europa', sans-serif;
+
+
+$h1-font-size: scaleUp(8); //8 or 7
+$h1-line-height: $line-height-rem * 3;
+
+$h2-font-size: scaleUp(6);
+$h2-line-height: $line-height-rem * 2;
+
+$h3-font-size: scaleUp(5);
+$h3-line-height: $line-height-rem * 2;
+
+$h4-font-size: scaleUp(4);
+$h4-line-height: $line-height-rem * 2;
+
+$h5-font-size: scaleUp(3);
+$h5-line-height: $line-height-rem;
+
+
 html {
   //todo: consider not setting base font at all
   //font-size: 62.5%;
@@ -15,6 +43,7 @@ body {
   font-size: $font-size-m;
   line-height: $line-height-rem;
   margin: 0 auto;
+  //-webkit-font-smoothing: antialiased;
 }
 h1,
 h2,
