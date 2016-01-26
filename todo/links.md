@@ -123,6 +123,7 @@
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
   - [Background Animations] (http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
   - [Booking.js](http://booking.timekit.io/) - I really like the logo outline and overal feel (screen shot just in case http://screencast.com/t/KXRVnupV)
+  - [Bedouin, From Dibble] (https://dribbble.com/shots/2359639-Bedouin-by-Circular/attachments/452216) - overal feel of navigatoin and simplicity
   - [Tribe](http://tribe.pm/) - minimal and clean
 * [ ] [A lot of Tools, animations, etc](http://tympanus.net/)
 * [Font Reach](http://www.fontreach.com/#top) nice gradients and font

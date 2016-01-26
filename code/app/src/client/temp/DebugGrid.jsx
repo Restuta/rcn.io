@@ -22,6 +22,7 @@ export default class DebugGrid extends Component {
       margin: '0.5rem',
       paddingRight: '1.5rem',
       border: '1px solid lightgrey',
+      borderRadius: '2px',
       boxShadow: '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)',
       zIndex: 99999
     }

@@ -42,6 +42,7 @@ export class App extends Component {
         <DebugGrid setDebugClasses={setAppStateClasses}/>
         <div className="container" ref={(x) => this.div = x}>
           <div>
+            &nbsp;
             <h2>EVENT COMPONENTS {this.props.containerWidth}<small>PX</small></h2>
             <p style={{fontSize:9}}>9px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
             <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
