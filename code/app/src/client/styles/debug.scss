@@ -6,7 +6,7 @@
 $base-line-opacity: .15;
 //$base-line-opacity: .25;
 $show-baseline: true;
-$show-secondary-baseline: true; //doesn't work for 14px base size
+$show-secondary-baseline: false; //doesn't work for 14px base size
 $show-container-edges: true;
 
 $primary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity);
@@ -31,7 +31,7 @@ $secondary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity);
         $line-height-rem/2 $line-height-rem/2,
         $line-height-rem $line-height-rem;
     } @else {
-      background-size: $line-height-rem $line-height-rem;
+      background-size: $line-height-rem/2 $line-height-rem/2;
     }
   }
 }

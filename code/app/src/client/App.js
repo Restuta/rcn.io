@@ -13,6 +13,7 @@ import DebugGrid from './temp/DebugGrid.jsx'
 import WeekExample from './temp/WeekExample.jsx'
 import classNames from 'classnames'
 import Grid from './styles/grid'
+import Typography from './styles/typography'
 
 //TODO bc: remove these components
 const S = ({width}) => (<span style={{width: `${width}px`}}></span>)
@@ -28,6 +29,7 @@ export class App extends Component {
   render() {
     //const containerWidth = this.props.containerWidth
     console.info(this.props.containerWidth)
+    console.info(Typography.scaleUp(3));
 
     const setAppStateClasses = classesToSet => {
       this.setState({
@@ -37,6 +39,10 @@ export class App extends Component {
 
     //<Event baseHeight={2} width={1} name="Dunnigan Hills Road Race"/>
 
+    const sizeToPx = size => (Typography.BASE_FONT_SIZE_PX * Typography.scaleUp(size)) + 'px'
+    const getFontSize = size => Typography.scaleUp(size) + 'rem'
+    const eventName = 'John C. Schlesinger Memorial Circuit Race and Team Time Trial AND SOME UPPER CASE'
+
     return (
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={setAppStateClasses}/>
@@ -44,12 +50,13 @@ export class App extends Component {
           <div>
             &nbsp;
             <h2>EVENT COMPONENTS {this.props.containerWidth}<small>PX</small></h2>
-            <p style={{fontSize:9}}>9px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:11}}>11px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:14}}>14px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:18}}>18px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:23}}>23px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
-            <p style={{fontSize:29}}>29px John C. Schlesinger Memorial Circuit Race and Team Time Trial</p>
+            <p style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
+            <p style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
+            <p style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>
+            <p style={{fontSize:getFontSize(4)}}>{sizeToPx(4)} {eventName}</p>
+            <p style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
+            <p style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
+            <p style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>

@@ -1,13 +1,22 @@
+
 //change in variables.scss also
-const BASE_FONT_SIZE_PX = 9 //TODO: get it in runtime from the browser
-const FONT_SCALE = 1.25  //9, 11, 14, 18, 23, 29, 36, 45
+const BASE_FONT_SIZE_PX = 8 //TODO: get it in runtime from the browser
+//for 10px: 10, 13, 16, 20, 24, 31, 38
+//for 9px:   9, 11, 14, 18, 23, 29, 36
+//for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
+//for 8px:   8, 11, 14, 19, 25, 34, 45 (1.333)
+
+
+const FONT_SCALE = 1.25
 
 //calculating ideal line height in rems, but that rounds nicely to pixels, that's why we need rounding
 const getLineHeightInRem = () => {
-  // const LINE_HEIGHT = 1.285714286;
-  // const BASE_LINE = Math.round(BASE_FONT_SIZE_PX * LINE_HEIGHT);
-  // return BASE_LINE / BASE_FONT_SIZE_PX
-  //hardcoding for 9px font size to get round rems like 0.5,1,2,3
+  /* rcn baseline works by setting the root font-size as half the line-height of the standard paragraph text.
+   The height of the baseline grid is then effectively set at 2rem, with increments at each 1rem. This makes it nice
+   and easy to work proportionally from the baseline with integer rem values to create harmony in your layout and
+   typography. This is based off a technique for setting text in print documents. */
+
+  //hardcoding for 8px font size to get round rems like 0.5,1,2,3
   return 2
 }
 
@@ -41,6 +50,8 @@ export default Object.freeze({
 
     return Math.round(heightMultiplier * this.LINE_HEIGHT_REM)
   },
+  /* gets next value of the font size on modular scale in rems
+    "number" means order on modular scale, starts from 1 */
   scaleUp(number) {
     return scale(number, scaleUpOperation)
   },

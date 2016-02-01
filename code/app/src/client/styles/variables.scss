@@ -24,15 +24,19 @@ $blue-grey-800: #37474F;
 $blue-grey-900: #263238;
 
 
-//Typography
 @function getBaseFontSize() {
+  /* rcn baseline works by setting the root font-size as half the line-height of the standard paragraph text. The height of the baseline grid
+   is then effectively set at 2rem, with increments at each 1rem. This makes it nice and easy to work proportionally from the baseline with
+   integer rem values to create harmony in your layout and typography. This is based off a technique for setting text in print documents. */
+
+
   //change in typography.js also
-  @return 9;
+  @return 8;
 }
 
 
 @function getScale() {
-  @return 1.25; //9, 11, 14, 18, 23, 29, 36, 45
+  @return 1.25; //for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
 }
 
 @function scaleUp($number) {
@@ -66,6 +70,10 @@ $blue-grey-900: #263238;
 $half-line-height-rem: $line-height-rem / 2;
 
 //calculating small (one step down from base) font size
-$font-size-xs: scaleUp(1);
-$font-size-s: scaleUp(2);
-$font-size-m: scaleUp(3);
+$font-size-1: scaleUp(1);
+$font-size-2: scaleUp(2);
+$font-size-3: scaleUp(3);
+$font-size-4: scaleUp(4);
+$font-size-5: scaleUp(5);
+$font-size-6: scaleUp(6);
+$font-size-7: scaleUp(7);

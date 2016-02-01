@@ -4,18 +4,18 @@
 
 
 :local(.default).c-input {
-  padding-left: $font-size-m * 1.5;
+  padding-left: $font-size-3 * 1.5;
 }
 
 :local(.default).c-input + .c-input {
-  margin-left: $font-size-m;
+  margin-left: $font-size-3;
 }
 
 :local(.default).c-input.c-checkbox {
   .c-indicator {
     line-height: inherit;
-    width: $font-size-m;
-    height: $font-size-m;
+    width: $font-size-3;
+    height: $font-size-3;
     font-size: inherit;
     top: .24rem;
   }
