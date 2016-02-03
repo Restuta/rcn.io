@@ -30,14 +30,13 @@ Criteria you use to decide on your events:
 
 number | points | criteria
 -----------|------|---------
-1| 7*56+6*33+5*30+3*6+2*4+4*4+1*2 |Type (RR, Crit, TT, etc) and amount of climbing
-2|  |How far it away
-3|  |If I liked it in the past
-4|  |Number of teammates doing it
-5|  |If I did it well in the past
-6|  |Popularity/ Prestige/ Reputation of the event
-7|  |What time does it start
-8|  |Number of people registered
+1| 784 |Type (RR, Crit, TT, etc) and amount of climbing
+2| 726 |If I liked it in the past
+3| 655 |How far it away
+4| 496 |Popularity/ Prestige/ Reputation of the event
+5| 494 |Number of teammates doing it
+6| 446 |What time does it start
+7| 409 |Number of people registered
 
 78% (105)  plan for their peak performance events.
 
