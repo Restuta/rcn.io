@@ -10,7 +10,7 @@ We've got 209 unique visits and 145 responses in this survey. 10 of them don't p
 88% (127) are road racers.
 The biggest group is cat 4 (37%), then cat 3 (28%), cat 2 - 19%, cat 5 - 12%, 1/Pro - 4%.
 
-31% older then 45 yo. 24-34, 35-44, 55 yo - by 21%, under 23 - 6%.
+31% are 45-55 yo. 24-34, 35-44, 55+ yo - by 21%, under 23 - 6%.
 
 Females are 19% only.
 
