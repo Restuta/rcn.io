@@ -23,20 +23,6 @@ class Event extends Component {
     const {width, baseHeight, containerWidth} = this.props
     //todo: typography should be passed as props
 
-    let verticalPadding
-    let horizontalPadding
-
-    //differnt settings based on card size
-    if (width === 1) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-    } else {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-    }
-
-    const grid  = Grid.init(containerWidth)
-    const cardWidthPx = grid.getColumnContentWidth(width)
     /*
     following formula can be expressed as:
 
@@ -47,18 +33,76 @@ class Event extends Component {
     }
 
     it calculates card height so it's twice taller than two previous sizes + margins
+    XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
     const cardHeight = (width * baseHeight + width - 1)
+
+    const Size = {
+      XS: 'XS',
+      S: 'S',
+      M: 'M',
+      L: 'L',
+      XL: 'XL'
+    }
+
+    const getSize = cardHeight => {
+      if (cardHeight >= 1 && cardHeight <= 5) {
+        return Size.XS
+      } else if (cardHeight >= 6 && cardHeight <= 9) {
+        return Size.S
+      } else if (cardHeight >= 10 && cardHeight <= 11) {
+        return Size.M
+      } else if (cardHeight >= 12 && cardHeight <= 17) {
+        return Size.L
+      } else if (cardHeight >= 18) {
+        return Size.XL
+      }
+    }
+
+    const cardSize = getSize(cardHeight)
     const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
+    let verticalPadding
+    let horizontalPadding
+    let eventColor = 'white'
+
+    //differnt settings based on card size
+    if (cardSize === Size.XS) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
+      eventColor = 'gold'
+    } else if (cardSize === Size.S) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      eventColor = 'tomato'
+    } else if (cardSize === Size.M) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      eventColor = 'limegreen'
+    } else if (cardSize === Size.L) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      eventColor = 'blueviolet'
+    } else if (cardSize === Size.XL) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      eventColor = 'deepskyblue'
+    }
+
+    const grid  = Grid.init(containerWidth)
+    const cardWidthPx = grid.getColumnContentWidth(width)
+
+
     let style = {
+      //backgroundColor: 'white',
       width: cardWidthPx + 'px',
       height: cardHeightRem + 'rem',
       paddingTop: verticalPadding,
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthPx * 0.06}px solid ${Colors.grey600}`,
+      borderLeft: `${cardWidthPx * 0.06}px solid ${Colors.grey500}`,
+      //borderLeft: `${cardWidthPx * 0.06}px solid ${eventColor}`,
     }
 
     return (
@@ -69,7 +113,7 @@ class Event extends Component {
           left: '85%',
           color: Colors.grey400,
         }}>{cardHeightRem}</span>
-        <EventName size={width}>{this.props.name}</EventName>
+        <EventName size={cardSize}>{this.props.name}</EventName>
       </div>
     )
   }

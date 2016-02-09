@@ -34,6 +34,10 @@ $blue-grey-900: #263238;
   @return 8;
 }
 
+@function pxToRem($px) {
+  @return $px / getBaseFontSize() + 0rem;
+}
+
 
 @function getScale() {
   @return 1.25; //for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
