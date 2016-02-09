@@ -3,6 +3,7 @@ import Component from 'react-pure-render/component'
 import Row from '../atoms/Row.jsx'
 import Col from '../atoms/Col.jsx'
 import EventStub from '../temp/EventStub.jsx'
+import Typography from '../styles/typography'
 
 
 export default class WeekExample extends Component {
@@ -22,7 +23,7 @@ export default class WeekExample extends Component {
       textAlign: 'center',
       position: 'absolute',
       marginLeft: '-70px',
-      fontSize: '11px',
+      fontSize: Typography.scaleUp(1) + 'rem',
       fontWeight: '900',
       borderBottom: '3px solid lightgrey'
     }

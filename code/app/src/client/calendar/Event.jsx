@@ -107,25 +107,25 @@ Event.propTypes = {
 //below is debugging code
 
 //HOC to wrap a componennt in a debugging one
-let DebugComponent = ComponentToDebug => props => {
-  const lineHeightRem = Typography.HALF_LINE_HEIGHT_REM
-  const debugColor = 'rgb(238, 247, 228)'
-
-  const topBoxShadow = `inset 0px ${lineHeightRem}rem 0px 0px ${debugColor}`
-  const bottomBoxShadow = `inset 0px ${-lineHeightRem}rem 0px 0px ${debugColor}`
-  const leftBoxShadow = `inset ${lineHeightRem}rem 0px 0px 0px ${debugColor}`
-  const rightBoxShadow = `inset ${-lineHeightRem}rem 0px 0px 0px ${debugColor}`
-
-  const styles = {
-    boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`
-  }
-
-  return (
-    <div style={styles}>
-      <ComponentToDebug {...props}/>
-    </div>
-  )
-}
+// let DebugComponent = ComponentToDebug => props => {
+//   const lineHeightRem = Typography.HALF_LINE_HEIGHT_REM
+//   const debugColor = 'rgb(238, 247, 228)'
+//
+//   const topBoxShadow = `inset 0px ${lineHeightRem}rem 0px 0px ${debugColor}`
+//   const bottomBoxShadow = `inset 0px ${-lineHeightRem}rem 0px 0px ${debugColor}`
+//   const leftBoxShadow = `inset ${lineHeightRem}rem 0px 0px 0px ${debugColor}`
+//   const rightBoxShadow = `inset ${-lineHeightRem}rem 0px 0px 0px ${debugColor}`
+//
+//   const styles = {
+//     boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`
+//   }
+//
+//   return (
+//     <div style={styles}>
+//       <ComponentToDebug {...props}/>
+//     </div>
+//   )
+// }
 
 //export default DebugComponent(Event)
 export default Event

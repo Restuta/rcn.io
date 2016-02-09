@@ -1,5 +1,5 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   devtool: 'source-map',
@@ -21,7 +21,7 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    //todo: try it out when app will grow
+    //TODO: try it out when app will grow
     //new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
@@ -38,4 +38,4 @@ module.exports = {
       include: path.join(__dirname, 'src')
     }]
   }
-};
+}

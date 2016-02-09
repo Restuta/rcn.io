@@ -15,7 +15,7 @@ import classNames from 'classnames'
 import Grid from './styles/grid'
 import Typography from './styles/typography'
 
-//TODO bc: remove these components
+//TODO: remove these components
 const S = ({width}) => (<span style={{width: `${width}px`}}></span>)
 const S5 = () => (<S width={5}/>)
 const S10 = () => (<S width={10}/>)
@@ -27,10 +27,6 @@ export class App extends Component {
   }
 
   render() {
-    //const containerWidth = this.props.containerWidth
-    console.info(this.props.containerWidth)
-    console.info(Typography.scaleUp(3))
-
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
