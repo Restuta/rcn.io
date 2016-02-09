@@ -19,7 +19,7 @@ module.exports = {
   // http://webpack.github.io/docs/configuration.html#devtool
 
   devtool: 'eval',
-  //  devtool: 'cheap-module-eval-source-map',
+  //devtool: 'cheap-module-eval-source-map',
 
   cache: true,
   debug: true,

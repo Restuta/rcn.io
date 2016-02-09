@@ -19,7 +19,6 @@ export default {
       LG: 992,  // Large screen / desktop
       XL: 1200  // Extra large screen / wide desktop
     }
-    
 
     if (browserWidth <= ContainerWidth.SM) {
       return browserWidth //container becomes fluid for small size
@@ -29,7 +28,7 @@ export default {
       return ContainerWidth.MD
     } else if (browserWidth >= Breakpoints.LG && browserWidth < Breakpoints.XL) {
       return ContainerWidth.LG
-    } else if (browserWidth > Breakpoints.XL) {
+    } else if (browserWidth >= Breakpoints.XL) {
       return ContainerWidth.XL
     }
   },
