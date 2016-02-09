@@ -1,15 +1,25 @@
 @import '../styles/variables';
 @import '../styles/mixins';
 
+//using google original shadows from Polymer project (https://elements.polymer-project.org/browse?package=paper-elements&view=cards)
+@mixin box-shadow-lvl-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+@mixin box-shadow-lvl-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+@mixin box-shadow-lvl-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+@mixin box-shadow-lvl-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+
 .Event {
-
-  //TODO bc: move to common file
-  //google original from Polymer project (https://elements.polymer-project.org/browse?package=paper-elements&view=cards)
-  $box-shadow-lvl-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  $box-shadow-lvl-2: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-  $box-shadow-lvl-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
-  $box-shadow-lvl-4: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-
   position: relative;
   border-radius: 2px;
 
@@ -18,11 +28,12 @@
   // transition: box-shadow .1s ease-in-out;
 
   &.lvl-1 {
-    box-shadow: $box-shadow-lvl-1;
+    @include box-shadow-lvl-1();
+    transition: all ease .2s;
   }
 
   &:hover {
-    box-shadow: $box-shadow-lvl-2;
+    @include box-shadow-lvl-2();
   }
 }
 
