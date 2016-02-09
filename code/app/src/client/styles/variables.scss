@@ -45,6 +45,8 @@ $blue-grey-900: #263238;
 
   $size: $base-font-size;
 
+  $number: $number + 1;
+
   @if $number == 1 {
     @return (round($size) / $base-font-size) + 0rem;
   }
@@ -68,6 +70,7 @@ $blue-grey-900: #263238;
 }
 
 $half-line-height-rem: $line-height-rem / 2;
+$text-margin-bottom: 2rem;
 
 //calculating small (one step down from base) font size
 $font-size-1: scaleUp(1);

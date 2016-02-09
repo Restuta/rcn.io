@@ -3,7 +3,7 @@
 //baseline and grid overlay
 @import 'variables';
 
-$base-line-opacity: .15;
+$base-line-opacity: .25;
 //$base-line-opacity: .25;
 $show-baseline: true;
 $show-secondary-baseline: false; //doesn't work for 14px base size
@@ -28,10 +28,10 @@ $secondary-baseline-color: hsla(200, 100%, 50%, $base-line-opacity);
 
     @if $show-secondary-baseline {
       background-size:
-        $line-height-rem/2 $line-height-rem/2,
-        $line-height-rem $line-height-rem;
+        $line-height-rem/4 $line-height-rem/4,
+        $line-height-rem/2 $line-height-rem/2;
     } @else {
-      background-size: $line-height-rem/2 $line-height-rem/2;
+      background-size: $line-height-rem / 2 $line-height-rem / 2;
     }
   }
 }

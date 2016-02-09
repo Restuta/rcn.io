@@ -7,6 +7,7 @@ const BASE_FONT_SIZE_PX = 8 //TODO: get it in runtime from the browser
 //for 8px:   8, 11, 14, 19, 25, 34, 45 (1.333)
 
 
+//const FONT_SCALE = 1.28
 const FONT_SCALE = 1.25
 
 //calculating ideal line height in rems, but that rounds nicely to pixels, that's why we need rounding
@@ -27,6 +28,8 @@ const scaleUpOperation = (size, scale) => size * scale
 //const scaleDownOperation = (size, scale) => size / scale;
 
 const scale = (number, scaleOperation) => {
+  number += 1
+
   let size = BASE_FONT_SIZE_PX
   const toRems  = (sizePx) => (Math.round(sizePx) / BASE_FONT_SIZE_PX)
 

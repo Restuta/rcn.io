@@ -11,7 +11,9 @@ export class EventName extends Component {
     const className = classNames('EventName', this.props.className)
 
     return (
-      <div className={className}>{this.props.children}</div>
+      <div className={className}>
+        {this.props.children}
+      </div>
     )
   }
 }

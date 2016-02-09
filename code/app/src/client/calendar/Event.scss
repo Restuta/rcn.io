@@ -1,9 +1,10 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .Event {
 
   //TODO bc: move to common file
-  //googoe original from Polymer project (https://elements.polymer-project.org/browse?package=paper-elements&view=cards)
+  //google original from Polymer project (https://elements.polymer-project.org/browse?package=paper-elements&view=cards)
   $box-shadow-lvl-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   $box-shadow-lvl-2: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   $box-shadow-lvl-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
@@ -27,14 +28,19 @@
 
 .EventName.debug {
   border: 1px solid $grey-300;
+  position: relative;
+  top: -1px;
 }
 
 //TODO: move to separate file
 .EventName {
-  position: relative;
+  @include text-2();
+  margin-bottom: 0;
   max-height: $line-height-rem * 3;
   min-height: $line-height-rem * 3;
   overflow: hidden;
+
+
 
   //adds white overlay over text to show that is' longer then it appe
   // &:after {

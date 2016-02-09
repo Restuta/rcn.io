@@ -29,7 +29,7 @@ export class App extends Component {
   render() {
     //const containerWidth = this.props.containerWidth
     console.info(this.props.containerWidth)
-    console.info(Typography.scaleUp(3));
+    console.info(Typography.scaleUp(3))
 
     const setAppStateClasses = classesToSet => {
       this.setState({
@@ -41,7 +41,15 @@ export class App extends Component {
 
     const sizeToPx = size => (Typography.BASE_FONT_SIZE_PX * Typography.scaleUp(size)) + 'px'
     const getFontSize = size => Typography.scaleUp(size) + 'rem'
-    const eventName = 'John C. Schlesinger Memorial Circuit Race and Team Time Trial AND SOME UPPER CASE'
+    const eventName = `John C. Schlesinger Memorial Circuit Race and Team Time Trial AND SOME UPPER CASE
+    John C. Schlesinger Memorial Circuit Race and Team Time Trial
+    John C. Schlesinger Memorial Circuit Race and Team Time Trial
+    John C. Schlesinger Memorial Circuit Race and Team Time Trial
+    John C. Schlesinger Memorial Circuit Race and Team Time Trial
+    JOHN C. SCHLESINGER MEMORIAL CIRCUIT RACE AND TEAM TIME TRIAL
+    JOHN C. SCHLESINGER MEMORIAL CIRCUIT RACE AND TEAM TIME TRIAL
+    JOHN C. SCHLESINGER MEMORIAL CIRCUIT RACE AND TEAM TIME TRIAL
+    `
 
     return (
       <div className={this.state.appLevelClasses}>
@@ -49,14 +57,21 @@ export class App extends Component {
         <div className="container" ref={(x) => this.div = x}>
           <div>
             &nbsp;
+
+            <h1>H1 {sizeToPx(8)} {eventName}</h1>
+            <h2>H2 {sizeToPx(6)} {eventName}</h2>
+            <h3>H3 {sizeToPx(5)} {eventName}</h3>
+            <h4>H4 {sizeToPx(4)} {eventName}</h4>
+            <h5>H5 {sizeToPx(3)} {eventName}</h5>
+
             <h2>EVENT COMPONENTS {this.props.containerWidth}<small>PX</small></h2>
-            <p style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
-            <p style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
-            <p style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>
-            <p style={{fontSize:getFontSize(4)}}>{sizeToPx(4)} {eventName}</p>
-            <p style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
-            <p style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
-            <p style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
+            <p className={'text-' + 1} style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
+            <p className={'text-' + 2} style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
+            <p className={'text-' + 3} style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>
+            <p className={'text-' + 4} style={{fontSize:getFontSize(4)}}>{sizeToPx(4)} {eventName}</p>
+            <p className={'text-' + 5} style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
+            <p className={'text-' + 6} style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
+            <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
             <Row>
               <Col sm={2}><h5>Name: </h5></Col>
               <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>

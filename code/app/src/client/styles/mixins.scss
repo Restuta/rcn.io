@@ -1,0 +1,57 @@
+@import 'variables';
+
+@mixin offset-to-baseline($offset, $margin-bottom) {
+  $px-as-rem: 1/getBaseFontSize() + 0rem;
+  $offset: $px-as-rem * $offset;
+  padding-top: $offset;
+  margin-bottom: $margin-bottom - $offset;
+}
+
+
+@mixin text-1 {
+  @include offset-to-baseline(4, $text-margin-bottom);
+  font-size: $font-size-1;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+@mixin text-2 {
+  @include offset-to-baseline(3, $text-margin-bottom);
+  font-size: $font-size-2;
+  line-height: 2rem;
+}
+
+
+@mixin text-3 {
+  @include offset-to-baseline(6, $text-margin-bottom);
+  font-size: $font-size-3;
+  line-height: 3rem;
+}
+
+@mixin text-4 {
+  @include offset-to-baseline(0, $text-margin-bottom);
+  font-size: $font-size-4;
+  line-height: 4rem;
+}
+
+@mixin text-5 {
+  @include offset-to-baseline(0, $text-margin-bottom);
+  font-size: $font-size-5;
+  line-height: 4rem;
+}
+
+@mixin text-6 {
+  @include offset-to-baseline(0, $text-margin-bottom);
+  font-size: $font-size-5;
+  line-height: 5rem;
+  font-weight: 700;
+}
+
+@mixin text-7 {
+  @include offset-to-baseline(5, $text-margin-bottom);
+  //top: -4px;
+  //position: relative;
+  font-size: $font-size-5;
+  line-height: 5rem;
+  font-weight: 900;
+}
