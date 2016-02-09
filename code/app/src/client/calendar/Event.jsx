@@ -8,65 +8,33 @@ import Grid from '../styles/grid'
 
 export class EventName extends Component {
   render() {
-    const className = classNames('EventName', this.props.className)
+    let className = classNames(`EventName size-${this.props.size}`, this.props.className)
 
     return (
       <div className={className}>
         {this.props.children}
       </div>
-    )
-  }
-}
-
-export class RoundBadge extends Component {
-  render() {
-    const {size = 1} = this.props
-    const className = size === 2
-      ? classNames('RoundBadge x2', this.props.className)
-      : classNames('RoundBadge', this.props.className)
-
-    return (
-      <div className={className}>
-        {this.props.children}
-      </div>
-    )
-  }
-}
-
-export class Badge extends Component {
-  render() {
-    const className = classNames('Badge', this.props.className)
-
-    return (
-      <span className={className}>
-        {this.props.children}
-      </span>
-    )
-  }
-}
-
-export class SquareBadge extends Component {
-  render() {
-    const className = classNames('Badge SquareBadge', this.props.className)
-
-    return (
-      <span className={className}>
-        {this.props.children}
-      </span>
     )
   }
 }
 
 class Event extends Component {
   render() {
-    //const widthPx = this.props.width || 50
-    //todo: typography should be passed as props
-    const verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-    const horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-
-    //const borderWidth = Math.round((widthPx / 30) * (widthPx / 30))
-
     const {width, baseHeight, containerWidth} = this.props
+    //todo: typography should be passed as props
+
+    let verticalPadding
+    let horizontalPadding
+
+    //differnt settings based on card size
+    if (width === 1) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+    } else {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+    }
+
     const grid  = Grid.init(containerWidth)
     const cardWidthPx = grid.getColumnContentWidth(width)
     /*
@@ -101,7 +69,7 @@ class Event extends Component {
           left: '85%',
           color: Colors.grey400,
         }}>{cardHeightRem}</span>
-        <EventName>{this.props.name}</EventName>
+        <EventName size={width}>{this.props.name}</EventName>
       </div>
     )
   }

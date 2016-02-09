@@ -33,8 +33,9 @@
   }
 
   &:hover {
-    @include box-shadow-lvl-2();
+    @include box-shadow-lvl-3();
   }
+
 }
 
 .EventName.debug {
@@ -51,70 +52,35 @@
   min-height: $line-height-rem * 3;
   overflow: hidden;
 
-
-
-  //adds white overlay over text to show that is' longer then it appe
-  // &:after {
-  //   content: "";
-  //   text-align: right;
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  //   width: 40%;
-  //   height: $line-height-rem;
-  //   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
-  // }
-}
-
-.RoundBadge {
-  $background-color: $grey-500;
-
-  font-size: $font-size-1;
-  min-width: $line-height-rem + 1rem;
-  height: $line-height-rem + 1rem;
-  background-color: $background-color;
-  color: lighten($background-color, 30%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  white-space: nowrap;
-  //text-shadow: 0 1px 0 rgba(0,0,0,.2);
-
-
-  &.x2 {
-    font-size: $font-size-3;
-    min-width: $line-height-rem * 2;
-    height: $line-height-rem * 2;
+  &.size-1 {
+    @include text-1();
+    margin-bottom: 0;
+    line-height: 1.5rem;
+    padding-top: 0;
+    max-height: $line-height-rem + 1rem;
+    min-height: $line-height-rem + 1rem;
   }
-}
 
+  &.size-2 {
+    @include text-1();
+    line-height: 1.5rem;
+    max-height: $line-height-rem * 3;
+    min-height: $line-height-rem * 3;
+  }
 
-.Badge {
-  $background-color: $grey-500;
+  &.size-3 {
+    @include text-2();
+    font-weight: 700;
+    max-height: $line-height-rem * 3;
+    min-height: $line-height-rem * 3;
+  }
 
-  font-size: $font-size-2;
-  min-width: $line-height-rem;
-  padding: 3px 7px;
-  border-radius: 10px;
-  height: $line-height-rem;
-
-  background-color: $background-color;
-  color: lighten($background-color, 30%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  //text-shadow: 0 1px 0 rgba(0,0,0,.2);
-}
-
-.RoundBadge.Inverted,
-.Badge.Inverted {
-  $background-color: $grey-300;
-  background-color: $background-color;
-  color: darken($background-color, 60%);
-}
-
-.Badge.SquareBadge {
-  border-radius: 2px;
+  &.size-4 {
+    @include text-3();
+    font-weight: 700;
+    top: 0px;
+    line-height: 2.5rem;
+    max-height: $line-height-rem * 6;
+    min-height: $line-height-rem * 6;
+  }
 }

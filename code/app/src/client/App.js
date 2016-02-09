@@ -5,9 +5,10 @@ import Row from './atoms/Row.jsx'
 import Col from './atoms/Col.jsx'
 import Icon from './atoms/Icon.jsx'
 import Counter from './temp/Counter.jsx'
-import Event, {
-  EventName, RoundBadge, Badge, SquareBadge
-} from './calendar/Event.jsx'
+import Event, { EventName } from './calendar/Event.jsx'
+import Badge from './calendar/badges/Badge.jsx'
+import RoundBadge from './calendar/badges/RoundBadge.jsx'
+import SquareBadge from './calendar/badges/SquareBadge.jsx'
 import Colors from './styles/colors'
 import DebugGrid from './temp/DebugGrid.jsx'
 import WeekExample from './temp/WeekExample.jsx'
@@ -27,6 +28,7 @@ export class App extends Component {
   }
 
   render() {
+
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
@@ -167,48 +169,55 @@ export class App extends Component {
 
           <Row className="margin-top">
             <Col sm={14} className="debug-flex-cards">
-              <Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/>
-              <Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/>
-              <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Co"/>
-              <Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Rk"/>
-            </Col>
-          </Row>
-
-          <Row className="margin-top">
-            <Col sm={14} className="debug-flex-cards">
-              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-              <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
-              <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
-            </Col>
-          </Row>
-
-          <Row className="margin-top">
-            <Col sm={14} className="debug-flex-cards">
-              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-              <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-              <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
-              <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
-            </Col>
-          </Row>
-
-          <Row className="margin-top">
-            <Col sm={14} className="debug-flex-cards">
-              <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-              <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
               <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             </Col>
           </Row>
 
           <Row className="margin-top">
-            <Col sm={1} smOffset={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+              <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={14} className="debug-flex-cards">
+              <Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            </Col>
+          </Row>
+
+          <Row className="margin-top">
+            <Col sm={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
             <Col sm={1}><Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
             <Col sm={1}><Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Co"/></Col>
             <Col sm={1}><Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Rk"/></Col>
           </Row>
           <Row className="margin-top">
-            <Col sm={2} smOffset={1}>
+            <Col sm={2}>
               <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
             </Col>
             <Col sm={2}>
@@ -221,34 +230,39 @@ export class App extends Component {
               <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             </Col>
           </Row>
-          {/*
+
           <Row className="margin-top">
-            <Col sm={3} smOffset={1}>
-              <Event width={cardWidth3} name="Dunnigan Hills Road Race"/>
+            <Col sm={2}>
+              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
             </Col>
-            <Col sm={3}>
-              <Event width={cardWidth3} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+            <Col sm={2}>
+              <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
             </Col>
-            <Col sm={3}>
-              <Event width={cardWidth3} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            <Col sm={2}>
+              <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
             </Col>
-            <Col sm={3}>
-              <Event width={cardWidth3} name="Salinas Criterium"/>
-            </Col>
-          </Row>
-          <Row className="margin-top">
-            <Col sm={4} smOffset={1}>
-              <Event width={cardWidth4} name="Dunnigan Hills Road Race"/>
-            </Col>
-            <Col sm={4}>
-              <Event width={cardWidth4} name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            </Col>
-            <Col sm={4}>
-              <Event width={cardWidth4} name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            <Col sm={2}>
+              <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             </Col>
           </Row>
 
-          */}
+          <Row className="margin-top">
+          <Col sm={2}>
+            <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+          </Col>
+            <Col sm={2}>
+              <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+            </Col>
+            <Col sm={2}>
+              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+            </Col>
+            <Col sm={2}>
+              <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            </Col>
+          </Row>
+
+
+
 
           <h1 className="oswald">Road Races in CA, 100mi range</h1>
 

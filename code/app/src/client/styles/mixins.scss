@@ -23,15 +23,18 @@
 
 
 @mixin text-3 {
-  @include offset-to-baseline(6, $text-margin-bottom);
+  @include offset-to-baseline(0, $text-margin-bottom);
+  position: relative;
+  top: -2px;
   font-size: $font-size-3;
   line-height: 3rem;
+
 }
 
 @mixin text-4 {
-  @include offset-to-baseline(0, $text-margin-bottom);
+  @include offset-to-baseline(4, $text-margin-bottom);
   font-size: $font-size-4;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 @mixin text-5 {

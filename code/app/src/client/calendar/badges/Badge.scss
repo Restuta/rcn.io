@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Badge {
+  $background-color: $grey-500;
+
+  font-size: $font-size-2;
+  min-width: $line-height-rem;
+  padding: 3px 7px;
+  border-radius: 10px;
+  height: $line-height-rem;
+
+  background-color: $background-color;
+  color: lighten($background-color, 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  //text-shadow: 0 1px 0 rgba(0,0,0,.2);
+
+  &.Inverted {
+    $background-color: $grey-300;
+    background-color: $background-color;
+    color: darken($background-color, 60%);
+  }
+}
