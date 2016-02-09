@@ -38,7 +38,7 @@ export default {
       getColumnContentWidth(numberOfCols) {
         //more precise calcualtion could be with using percentages
         const COLUMNS = 14
-        const GUTTER_PX = 14
+        const GUTTER_PX = 16
 
         const oneColPercent = (100 / COLUMNS) / 100
         return containerWidth * (oneColPercent * numberOfCols) - GUTTER_PX
