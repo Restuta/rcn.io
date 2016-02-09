@@ -69,7 +69,17 @@ class Event extends Component {
     const {width, baseHeight, containerWidth} = this.props
     const grid  = Grid.init(containerWidth)
     const cardWidthPx = grid.getColumnContentWidth(width)
-    //TODO bc: explain this formula
+    /*
+    following formula can be expressed as:
+
+    function sizeFor(cols, minHeight) {
+      const a = minHeight
+      const c = cols
+      return  c*a + c - 1
+    }
+
+    it calculates card height so it's twice taller than two previous sizes + margins
+    */
     const cardHeight = (width * baseHeight + width - 1)
     const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
@@ -80,11 +90,17 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthPx * 0.15}px solid ${Colors.grey600}`,
+      borderLeft: `${cardWidthPx * 0.06}px solid ${Colors.grey600}`,
     }
 
     return (
       <div style={style} className="Event lvl-1">
+        <span style={{
+          position: 'absolute',
+          top: '-8px',
+          left: '85%',
+          color: Colors.grey400,
+        }}>{cardHeightRem}</span>
         <EventName>{this.props.name}</EventName>
       </div>
     )
