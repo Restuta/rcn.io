@@ -19,6 +19,7 @@ export default {
       LG: 992,  // Large screen / desktop
       XL: 1200  // Extra large screen / wide desktop
     }
+    
 
     if (browserWidth <= ContainerWidth.SM) {
       return browserWidth //container becomes fluid for small size

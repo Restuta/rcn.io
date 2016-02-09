@@ -128,4 +128,4 @@ let DebugComponent = ComponentToDebug => props => {
 }
 
 //export default DebugComponent(Event)
-export default Event;
+export default Event

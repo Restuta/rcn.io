@@ -51,6 +51,15 @@ export class App extends Component {
     JOHN C. SCHLESINGER MEMORIAL CIRCUIT RACE AND TEAM TIME TRIAL
     `
 
+
+    let containerWidth = null
+
+    if (this.props.containerWidth) {
+      containerWidth = <span style={{color: 'grey'}}>{this.props.containerWidth}<small>PX</small></span>
+    } else {
+      containerWidth = <span style={{color: 'salmon'}}>UNDEFINED</span>
+    }
+
     return (
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={setAppStateClasses}/>
@@ -58,13 +67,13 @@ export class App extends Component {
           <div>
             &nbsp;
 
-            <h1>H1 {sizeToPx(8)} {eventName}</h1>
-            <h2>H2 {sizeToPx(6)} {eventName}</h2>
-            <h3>H3 {sizeToPx(5)} {eventName}</h3>
-            <h4>H4 {sizeToPx(4)} {eventName}</h4>
-            <h5>H5 {sizeToPx(3)} {eventName}</h5>
+            <h1>H1 {sizeToPx(7)} {eventName}</h1>
+            <h2>H2 {sizeToPx(5)} {eventName}</h2>
+            <h3>H3 {sizeToPx(4)} {eventName}</h3>
+            <h4>H4 {sizeToPx(3)} {eventName}</h4>
+            <h5>H5 {sizeToPx(2)} {eventName}</h5>
 
-            <h2>EVENT COMPONENTS {this.props.containerWidth}<small>PX</small></h2>
+            <h2>EVENT COMPONENTS, container {containerWidth}</h2>
             <p className={'text-' + 1} style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
             <p className={'text-' + 2} style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
             <p className={'text-' + 3} style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>

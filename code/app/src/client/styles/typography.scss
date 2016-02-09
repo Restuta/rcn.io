@@ -8,6 +8,7 @@
 
 $body-font-family: 'Lato', Helvetica, Arial, sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
+//$headings-font-family: 'Europa', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
 $headings-color-secondary: $grey-600;
@@ -15,7 +16,6 @@ $headings-color-secondary: $grey-600;
 //headings
 $headings-margin-top: $line-height-rem;
 $headings-margin-bottom: 4rem;
-//$headings-font-family: 'Europa', sans-serif;
 
 $h1-font-size: scaleUp(7); //8 or 7
 $h1-line-height: $line-height-rem * 3;
@@ -90,6 +90,7 @@ h5 {
   top: -1px;
   font-size: $h5-font-size;
   line-height: $h5-line-height;
+  font-weight: 700;
 }
 
 p,
