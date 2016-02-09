@@ -3,7 +3,7 @@ Today
  	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	+- pick number of columns and gutter size
  	+- see if we should use fluid ui
- 	- consider use of all 16 columns for g (more space for cards)
+ 	+- consider use of all 16 columns for g (more space for cards)
  +-- build basic Bootstrap components
  	+- row
  	+- column
@@ -25,7 +25,7 @@ Today
  	- set them up
  -- CSS
  	- comile bootstrap and use compiled version
- 	- add Autoprefixer
+ 	- add Autoprefixer: for prod?
  	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	- setup PostCSS with SASS-like plugins
@@ -34,21 +34,20 @@ Today
  	--- design a card UI
  		!----- immediate todo
  			+--- figure out ideal heith based on baselines
- 			-- rewrite calculation of card heights using formula
- 			-- try 1.7777 vs 1.5 card ratios
- 			---- transpan cards on example, so row represents sreen version: actually think if this make sense
- 			since maybe "size" matters and row should represent "small" in terms of size
- 			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
+ 			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
  			+- round height to nearest multiple of line height
  			.- (not sure this has value, since RR are not that different in lenght)for distance make badge to have different size depending how long is the race
  			+-- create square (2px rounding) badge variation
+ 			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
+ 			-- rewrite calculation of card heights using formula
+ 			-- try 1.7777 vs 1.5 card ratios
  			- adaptive Event card or different components?: what is easier to maintain?
  				- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					- text should be moved down proprotionally to card size
- 					- try Roboto Condensed
- 					- try Open Sans Condensed
- 					- try Oswald
- 			- set assymetric padding (less on the sides, more from top to preserve the rythm)
+ 					+- try Roboto Condensed
+ 					+- try Open Sans Condensed
+ 					+- try Oswald
+ 			+- set assymetric padding (less on the sides, more from top to preserve the rythm)
  			- try Google Material Card design layout: https://www.google.com/design/spec/components/cards.html#cards-content-blocks
  			- adopt flexbox
  			+- play with vh vw (veiwport related sizes) for card size
