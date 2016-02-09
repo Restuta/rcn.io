@@ -174,25 +174,29 @@ export class App extends Component {
                 name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
               <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
                 name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-              <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+                name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             </Col>
           </Row>
 
           <Row className="margin-top">
             <Col sm={14} className="debug-flex-cards">
-              <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
               <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
                 name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
               <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
                 name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+              <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
           </Row>
 
           <Row className="margin-top">
             <Col sm={14} className="debug-flex-cards">
               <Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
               <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
                 name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
               <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
@@ -203,8 +207,10 @@ export class App extends Component {
           <Row className="margin-top">
             <Col sm={14} className="debug-flex-cards">
               <Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+              <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+              <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+                name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
               <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
                 name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
             </Col>
