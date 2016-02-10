@@ -1,126 +1,121 @@
+@import 'variables';
+@import 'mixins';
+
 //baseline set with the help of http://www.gridlover.net/app/ and http://beta.gridlover.net/projects/74
 //typographic scale of 1.333 (4/3, perfect fourth) is used
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
-@import url(https://fonts.googleapis.com/css?family=Lato:800,700,400,400italic,300,300italic,100);
+@import url(https://fonts.googleapis.com/css?family=Lato:900,700,400,400italic,300,300italic,100);
 
-
-@function getBaseFontSize() {
-  @return 15;
-}
-
-@function scale($number) {
-  $scale: 1.333; //perfect fourth
-  $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
-
-  $size: $base-font-size;
-
-  @if $number == 1 {
-    @return (round($size) / $base-font-size) + 0rem;
-  }
-
-  @for $i from 1 through $number - 1 {
-    $size: $size * $scale;
-  }
-
-  $size-rems: (round($size) / $base-font-size) + 0rem;
-  @return $size-rems;
-}
-
-//Typography
-//specific to lato and follows golden ratio based on http://www.imarc.com/blog/750-
-$line-height: 1.36;
-$base-line: round(getBaseFontSize() * $line-height);
-//calculating ideal height in rems, but that rounds nicely to pixels
-$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
-
-//headings
-
-$headings-margin-top: $line-height-rem;
-$headings-margin-bottom: $line-height-rem;
+$body-font-family: 'Lato', Helvetica, Arial, sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
+//$headings-font-family: 'Europa', sans-serif;
 $headings-font-weight: 400;
 $headings-color: black;
-$headings-color-secondary: grey;
+$headings-color-secondary: $grey-600;
 
+//headings
+$headings-margin-top: $line-height-rem;
+$headings-margin-bottom: 4rem;
 
-$h1-font-size: scale(4);
-$h1-line-height: $line-height-rem * 2;
+$h1-font-size: scaleUp(7); //8 or 7
+$h1-line-height: $line-height-rem * 3;
+$h1-margin-bottom: $headings-margin-bottom;
 
-$h2-font-size: scale(3);
+$h2-font-size: scaleUp(5);
 $h2-line-height: $line-height-rem * 2;
+$h2-margin-bottom: $headings-margin-bottom;
 
-$h3-font-size: scale(2);
-$h3-line-height: $line-height-rem;
+$h3-font-size: scaleUp(4);
+$h3-line-height: $line-height-rem * 2;
+$h3-margin-bottom: $headings-margin-bottom;
 
-$h4-font-size: scale(1);
-$h4-line-height: $line-height-rem;
+$h4-font-size: scaleUp(3);
+$h4-line-height: $line-height-rem * 1.5;
+$h4-margin-bottom: $headings-margin-bottom;
 
-$h5-font-size: scale(1);
-$h5-line-height: $line-height-rem;
+$h5-font-size: scaleUp(2);
+$h5-line-height: $line-height-rem * 1.5;
+$h5-margin-bottom: 0rem;
 
 
 html {
   //todo: consider not setting base font at all
-  font-size: getBaseFontSize() + 0px;
+  //font-size: 62.5%;
+  font-size: getBaseFontSize() + px;
+  //font-size: 4px;
 }
-
 body {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: $body-font-family;
+  font-size: $font-size-2;
   line-height: $line-height-rem;
   margin: 0 auto;
+  //-webkit-font-smoothing: antialiased;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $headings-font-family;
   //text-transform: uppercase;
   font-weight: $headings-font-weight;
   color: $headings-color;
   margin-top: $headings-margin-top;
-  margin-bottom: $headings-margin-bottom
 }
-
 h1 {
+  @include offset-to-baseline(1, $h1-margin-bottom);
   font-size: $h1-font-size;
-  text-transform: uppercase;
   line-height: $h1-line-height;
+  text-transform: uppercase;
 }
-
 h2 {
+  @include offset-to-baseline(6, $h2-margin-bottom);
   font-size: $h2-font-size;
   line-height: $h2-line-height;
 }
-
 h3 {
+  @include offset-to-baseline(0, $h3-margin-bottom);
   font-size: $h3-font-size;
   line-height: $h3-line-height;
 }
-
 h4 {
+  @include offset-to-baseline(6, $h4-margin-bottom);
   font-size: $h4-font-size;
   line-height: $h4-line-height;
-  margin-bottom: 0;
 }
-
 h5 {
+  @include offset-to-baseline(0, $h5-margin-bottom);
+  position: relative;
+  top: -1px;
   font-size: $h5-font-size;
   line-height: $h5-line-height;
-  margin-bottom: 0;
-  color: $headings-color-secondary;
+  font-weight: 400;
+  text-transform: uppercase;;
 }
 
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0rem;
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0;
   margin-bottom: $line-height-rem;
 }
-
 hr {
   border: 1px solid;
-  margin: -1px 0;
+  margin: -1px 0; //negative margin, so it doesn't offset baseline
 }
-
-b, strong, em, small, code {
+b,
+strong,
+em,
+small,
+code {
   line-height: 1;
+}
+small {
+  font-size: (1 / getScale()) + em
 }
 sup {
   line-height: 0;
@@ -131,3 +126,12 @@ sup {
 sub {
   bottom: -0.25em;
 }
+
+
+.text-1 { @include text-1(); } //10
+.text-2 { @include text-2(); } //13
+.text-3 { @include text-3(); } //16
+.text-4 { @include text-4(); } //20
+.text-5 { @include text-5(); } //24
+.text-6 { @include text-6(); } //31
+.text-7 { @include text-7(); } //38

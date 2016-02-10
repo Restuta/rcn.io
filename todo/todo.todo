@@ -23,8 +23,12 @@ Open questions
 		--- archives: http://www.ncnca.org/sites/default/files/internal/points/points-archive.html
 - where to grub event's from
 	- USA Cycling
-		- upcoming events can be grabbed in XML: it has link to bikereg
+		- upcoming events can be grabbed in JSON: it has link to bikereg
 			- https://www.usacycling.org/xml/events.php?u=Restuta&p=<pwd>
+				- used mitmproxy
+					- set iPhone to laptop's IP
+					- run mtmproxy
+					- go to mitm.it on iPhone and install certificate
 		-- events
 			- results http://www.usacycling.org/results/browse.php?state=CN&race=Road&fyear=2014
 			- http://www.usacycling.org/events/?state=CN&race=&fyear=&rrfilter=all
@@ -49,6 +53,6 @@ USA Cycling hacking
  	- Error in query: SELECT compid,first, last, YEAR(birthdate) as birthyear, city, hometown, state, country, webhideinfo FROM comp WHERE compid = '438033'. Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
 
 Crashes
-	- reponsible for crashing
+	- peope reponsible for crashing
 		- https://www.usacycling.org/results/?compid=440755
 			- proof https://www.usacycling.org/results/?compid=440755

@@ -1,0 +1,21 @@
+@import '../styles/variables';
+
+//overriding defaults
+
+
+:local(.default).c-input {
+  padding-left: $font-size-3 * 1.5;
+}
+
+:local(.default).c-input + .c-input {
+  margin-left: $font-size-3;
+}
+
+:local(.default).c-input.c-checkbox {
+  .c-indicator {
+    line-height: inherit;
+    width: $font-size-3;
+    height: $font-size-3;
+    font-size: inherit;
+  }
+}

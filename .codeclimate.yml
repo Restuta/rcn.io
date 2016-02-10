@@ -8,6 +8,12 @@ engines:
     checks:
       SelectorFormat:
         enabled: false
+      ColorKeyword:
+        enabled: false
+      HexNotation:
+        enabled: false
+      Comment:
+        enabled: false
   csslint:
     enabled: false
 ratings:

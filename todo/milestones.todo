@@ -33,6 +33,7 @@ Public MVP 1.0 (when we show it to others)
  - others who picked that event are shown 
  - suport for Polo Field schedule
 
+
 Public MVP 2.0
  - start time by category
  - support for all the categories
@@ -40,11 +41,12 @@ Public MVP 2.0
 
 RC 1.0
  - public blog
- - notifications about upcoming registration opening/closing
+ - notifications about upcoming registration opening/closing: for important events, important can be defined as "planned" event or team priority
  - notifications about upcoming events
  - full event info
 
 RC 1.1
+ - show pdf flyer in a modal window: (e.g. this is how Metromile does that  http://screencast.com/t/1dwjCJoo, uses https://mozilla.github.io/pdf.js/)
  - support for teams
  	- team roaster
  	- join/leave team

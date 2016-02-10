@@ -3,7 +3,7 @@ Today
  	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
  	+- pick number of columns and gutter size
  	+- see if we should use fluid ui
- 	- consider use of all 16 columns for calendar (more space for cards)
+ 	+- consider use of all 16 columns for g (more space for cards)
  +-- build basic Bootstrap components
  	+- row
  	+- column
@@ -20,35 +20,81 @@ Today
  		+- on fonts branch
  		+- lato specifically
  	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
- 	- make sure we load only required Lato and Oswald variations
  - setup icons
  	- pick icons
  	- set them up
  -- CSS
  	- comile bootstrap and use compiled version
- 	- add Autoprefixer
+ 	- add Autoprefixer: for prod?
  	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
  	- add Autoprefixer
  	--- design a card UI
+ 		!----- immediate todo
+ 			+--- figure out ideal heith based on baselines
+ 			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
+ 			+- round height to nearest multiple of line height
+ 			.- (not sure this has value, since RR are not that different in lenght)for distance make badge to have different size depending how long is the race
+ 			+-- create square (2px rounding) badge variation
+ 			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
+ 			+-- rewrite calculation of card heights using formula
+ 			+-- try 1.7777 vs 1.5 card ratios
+ 			- adaptive Event card or different components?: what is easier to maintain?
+ 				+- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
+ 					+- text should be moved down proprotionally to card size
+ 					+- try Roboto Condensed
+ 					+- try Open Sans Condensed
+ 					+- try Oswald
+ 			+- set assymetric padding (less on the sides, more from top to preserve the rythm)
+ 			- try Google Material Card design layout: https://www.google.com/design/spec/components/cards.html#cards-content-blocks
+ 			- adopt flexbox
+ 			+- play with vh vw (veiwport related sizes) for card size
+ 			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
+ 			-- create a 1-2 line card design, so we can show non-important events for imporant days this way: 
+ 				say we have a Sat which takes 4 culumns and we only interested in 1/3 events, there is no reason to show them full-size
+ 				- inspiration can be taked from TargetProcess: http://screencast.com/t/HpOkrTbi4ot
+ 			- create variation with different width of left colorful section (used to show event type)
+ 				- try really wide option that would also group event-type specific information: e.g. distance for RR, duration for crit, etc (http://screencast.com/t/ABpTSbxzP)
+ 			- see dribble for Card UI inspiration
+ 		+- if calendar is going to take the whole page space, rethink 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
+ 		-- make it responsive in React
+ 			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
+ 		- use this from material UI for multiday events: http://screencast.com/t/NrvJMSHEJX (http://material-ui.com/#/components/lists)
+ 		- make better implementation of faded text, when text is too long: current one is not ideal and has few bugs
+ 			-- idea 1: mb use string.length to approximate if text fits
+ 			----- bug: overlay is shown when text doesn't actually have more lines left
+ 			----- bug: overlay is shown all the time, event when text is super-short
+ 			-- idea 2: make cards to take more vertical space
+ 			-- idea 3: make text smaller
+ 			-- idea 4: fade text vertically, top to bottom, this makes it more obvious that there is more to read
+ 			--- idea 5: try monspace font like so it's easy to calculate exact text length
+ 				- options on Google Fonts:
+ 					- Roboto Mono (10 variations nice!, 13px point size for 10px font)
+ 					- Inconsolata (2 variations, but more condensed, 16px point size for 10px font)
+ 					- Source Code Pro (7 variations, 13px point size for 10px font)
+ 					- Fira Mono (2 variations, 16px point size for 10px font)
+ 			- it would be nicer to have overlay + "..."
+ 		- for one-column cards try really small text size: better then nothing
+ 		-- what if we go Apple Watch Style for card UI: e.g. we can use space more efficiently if we show circles around circles http://screencast.com/t/JajByOsfhtm
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 After Boilerplate setup
+	- setup Plop to generate filest faster: https://github.com/amwmedia/plop
 	- setup Git worflow effective for our team
-		- proposed setup 1 (Github Flow)
-			- leave master as production branch
-				- do not commit on master directly
-				- master is always deploayble
-			- use dev branch for ongoing development: merge it to prod when deploy is needed
-			- use feature branches for bigger features
+		- proposed setup 1 (Github Flow):
+			= leave master as production branch
+				do not commit on master directly
+				master is always deploayble
+			= use dev branch for ongoing development: merge it to prod when deploy is needed
+			= use feature branches for bigger features
 		- proposed setup 2: https://about.gitlab.com/2014/09/29/gitlab-flow/
-			- use production branch
-			- work on master + feature branches
+			= use production branch
+			= work on master + feature branches
 	- setup render vizualizer: https://github.com/spredfast/react-transform-render-visualize
 	-- CI
 		- setup mocha
@@ -92,6 +138,25 @@ After After Boilerplate =)
 		- hot-reload: https://github.com/milankinen/livereactload
 		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
 
+
+Pre-production
+-- Webpack related
+	- currently index.html for prod: doesn't include js and css files bundled
+		--- setup Server Side rendering like etse js
+		- consider setup auto-index html: https://github.com/ampedandwired/html-webpack-plugin
+			- also has nice example of usage of HTML Webpack Plugin: https://github.com/mxstbr/react-boilerplate/blob/master/makewebpackconfig.js
+		- or take approach with node server that just uses: index.js as enry point and all html is generated by react
+			- read this related https://github.com/webpack/webpack/issues/536
+	- setup hashes for output: like assets/bundle.[hash].js
+	- setup minifications of js, css and html
+		- one of the prod config examples with html minification: https://github.com/mxstbr/react-boilerplate/blob/master/makewebpackconfig.js
+	- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
+- make sure we load only required Lato and Oswald variations
+-- Move debug CSS code to React components
+	- move baselinge grid to Component
+	- move display container edges to Component
+	- create BootstrapGridDisplayer react component
+
 Not Today 
 	-- Github
 		- setup Changelog Generator https://github.com/skywinder/Github-Changelog-Generator
@@ -101,18 +166,18 @@ Not Today
 		- setup larger breakpoint to support really wide displays
 	-- Fonts and Typography
 		- Try Bebas Neue instead of Oswald
+		- try LEAGUE GOTHIC instead of Oswald (OSS font   )
 		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
+	-- SVG and Icons
+		- use IcoMoon to convert font's to SVG
+		- combine SVG to a sprite and user refs
+			- https://github.com/kisenka/svg-sprite-loader
+			- https://github.com/mrsum/webpack-svgstore-plugin
+		- user <sybmbol> instead of <g>: https://css-tricks.com/svg-symbol-good-choice-icons/
 	- print about Flux https://pbs.twimg.com/media/CDyAQ-BW0AESYP1.png
 	- go through simple Redux eample: https://github.com/jackielii/simplest-redux-example/blob/master/index.js
 	- setup webpack for dev
 		- and nyan loader like in este
-	- setup webpack for production
-		- currently index.html for prod: doesn't include js and css files bundled
-			-- setup Server Side rendering like etse js
-			- consider setup auto-index html: https://github.com/ampedandwired/html-webpack-plugi
-			- or take approach with node server that just uses: index.js as enry point and all html is generated by react
-				- read this related https://github.com/webpack/webpack/issues/536
-		- setup hashes for output: like assets/bundle.[hash].js
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
 
@@ -124,6 +189,7 @@ Before 1.0 Release
 	- use web-loader to for fonts: https://github.com/typekit/webfontloader
 	woould allow to prevent FOUT (Before 1.0 Release 
 	https://github.com/typekit/webfontloader), test it with artificial trottling
+	- review TimeKit: [Timekit](http://timekit.io/) - availability and scheduling API
 
 
 Webpack Times

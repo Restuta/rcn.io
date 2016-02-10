@@ -1,24 +1,25 @@
-const path = require('path');
-const webpack = require('webpack');
-const consts = require('./constants');
+const path = require('path')
+const webpack = require('webpack')
+const consts = require('./constants')
 
 function resolveNodeModulesPath(pathName) {
-  return path.resolve(path.join(consts.NODE_MODULES, pathName));
+  return path.resolve(path.join(consts.NODE_MODULES, pathName))
 }
 
 //NOTE: use min versions for prod and to speed-up build times a little
-const pathToReact = resolveNodeModulesPath('react/dist/react.js');
-const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js');
-// const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
-// const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
+const pathToReact = resolveNodeModulesPath('react/dist/react.js')
+const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js')
+  //const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
+  //const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
 
 
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
   // http://webpack.github.io/docs/configuration.html#devtool
-  //devtool: 'cheap-module-eval-source-map',
+
   devtool: 'eval',
+  //devtool: 'cheap-module-eval-source-map',
 
   cache: true,
   debug: true,
@@ -36,6 +37,11 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('development')
+      }
+    }),
   ],
   resolve: {
     //tells webpack to use static file when import React from 'react' is used
@@ -48,14 +54,15 @@ module.exports = {
     //tells webpack to skip parsing following libraries
     noParse: [pathToReact],
     loaders: [{
-      test: /\.jsx?$/,
+      test: /\.(js|jsx)$/,
       loader: 'babel',
+      exclude: /(node_modules|bower_components)/,
+      include: path.join(consts.SRC_DIR, 'client'),
       query: {
-        'stage': 0,
-        'plugins': ['react-transform'],
-        'cacheDirectory': true, //not needed in for build
-        'extra': {
-          'react-transform': {
+        presets: ['react', 'es2015', 'stage-2'],
+        cacheDirectory: true, //not needed for prod build
+        plugins: [
+          ['react-transform', {
             'transforms': [{
               'transform': 'react-transform-hmr',
               'imports': ['react'],
@@ -64,14 +71,12 @@ module.exports = {
               'transform': 'react-transform-catch-errors',
               'imports': ['react', 'redbox-react']
             }]
-          }
-        }
-      },
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client')
+          }]
+        ]
+      }
     }, {
       test: /\.scss$/,
-      loaders: ['style', 'css', 'sass'],
+      loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
     }, {
@@ -86,4 +91,4 @@ module.exports = {
   sassLoader: {
     precision: 15
   }
-};
+}

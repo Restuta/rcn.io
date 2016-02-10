@@ -5,8 +5,12 @@
   },
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
+  "plugins": [
+    "react"
+  ],
   "parser": "babel-eslint",
   "rules": {
     "array-bracket-spacing": 2,
@@ -29,7 +33,7 @@
     "new-parens": 0,
     "no-bitwise": 0,
     "no-cond-assign": 2,
-    "no-console": 0,
+    "no-console": 1,
     "no-constant-condition": 2,
     "no-debugger": 2,
     "no-delete-var": 2,
@@ -77,13 +81,18 @@
     "no-unused-vars": [2, {"vars": "all", "args": "none"}],
     "no-use-before-define": [2, "nofunc"],
     "no-var": 2,
-    "no-warning-comments": [0, {"terms": ["todo", "fixme"]}],
+    "no-warning-comments": [1, {
+        "terms": ["todo bc", "todo restuta bc"]
+      }],
     "object-curly-spacing": 0,
-    "quote-props": [0, "as-needed"],
+    "operator-linebreak": [2, "before"],
+    "max-len":[2, 140, 4, {"ignoreComments": true, "ignoreUrls": true}],
+    "quote-props": [2, "as-needed", {"keywords": true, "unnecessary": false}],
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
-    "semi": [2, "always"],
+    "semi": [2, "never"],
     "semi-spacing": [2, {"before": false, "after": true}],
+    "no-extra-semi": 2,
     "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, "never"],
@@ -111,15 +120,12 @@
     "react/jsx-uses-vars": 2,
     "react/no-did-mount-set-state": 2,
     "react/no-did-update-set-state": 2,
-    "react/no-multi-comp": 1,
+    "react/no-multi-comp": [1, {"ignoreStateless": true}],
     "react/no-unknown-property": 2,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
     // Not ready yet. "react/sort-comp": 2,
     "react/wrap-multilines": 2
-  },
-  "plugins": [
-    "react"
-  ]
+  }
 }

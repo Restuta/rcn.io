@@ -1,18 +1,5 @@
-@import 'styles/bs4-overrides';
-@import 'styles/bs4-fixes';
-
-//@import 'bower_components/bootstrap/scss/bootstrap';
-
-@import 'bower_components/bootstrap/scss/mixins';
-@import 'bower_components/bootstrap/scss/normalize';
-@import 'bower_components/bootstrap/scss/mixins/hover';
-@import 'bower_components/bootstrap/scss/mixins/tab-focus';
-@import 'bower_components/bootstrap/scss/variables';
-@import 'bower_components/bootstrap/scss/reboot';
-@import 'bower_components/bootstrap/scss/bootstrap-grid';
-
-@import "styles/typography";
-@import "styles/debug";
+@import 'styles/typography';
+@import 'styles/debug';
 
 
 $body-color: #333;
@@ -31,26 +18,8 @@ html {
   box-sizing: inherit;
 }
 
-//column debug styles
-$col-brdr-color: #d6d6d6;
 
-.col.debug {
-  min-height: $line-height-rem * 10;
-}
-
-.row.margin-top {
-  margin-top: $line-height-rem * 2;
-}
-
-.col.pink {
-  background-color: lighten(lightpink, 11%) !important;
-}
-
-$col-border: 1px solid $col-brdr-color;
-
-.col.outlined {
-  background-color: white;
-  border-right: $col-border;
-  border-top: $col-border;
-  border-bottom: $col-border;
+.display-flex {
+  display: flex;
+  align-items: flex-end;
 }

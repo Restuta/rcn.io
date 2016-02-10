@@ -1,7 +1,6 @@
-@import '../styles/typography';
+@import '../styles/variables';
 
 .EventStub {
   width: 100%;
-  height: $line-height-rem * 4;
-  background-color: lightgray;
+  background-color: $grey-350;
 }

@@ -1,5 +1,7 @@
 
 # Design
+### Logos
+  * [Logodust.com](http://logodust.com/) - free to download logo files
 ### UX
 * Checklists
   * [ ] [Good UI](http://www.goodui.org/)
@@ -10,6 +12,7 @@
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
   * [ ] [Startup Lunch List](http://startuplaunchlist.com/-JsfUTzJqEOfv5fCYImO)
 * [ ] [UX 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
+* [ ] [UX MYTHS](http://uxmyths.com/) 
 * [Basic Design Principles](http://www.cs.sfu.ca/CourseCentral/363/inkpen/lecture_notes/363_lecture6.pdf)
   * [And The Book](http://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf)
 * [How to compose a vertical rythm](https://24ways.org/2006/compose-to-a-vertical-rhythm/)
@@ -28,6 +31,8 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Typography
+* [Typography in 10 minutes] - http://practicaltypography.com/typography-in-ten-minutes.html (serious resource)
+* [FontCDN](http://fontcdn.org/) - a better way to search google fonts
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
 * [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
 * [x] [Font Pairing](http://school.readymag.com/intro/)
@@ -75,7 +80,9 @@
 * [colourco.de](http://colourco.de/)
 * [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
 * [Coolors.co](https://coolors.co/) - color schemes generator
+* [Colorhunt.co](http://colorhunt.co/hot) - Product Hunt for colors
 * [Color Dot](http://color.hailpixel.com/) - click and pick colors + unique URL for any amount
+* [Material Design Colors](http://www.materialui.co/colors) - all colors on one page
 * [Infografics about colors](http://visual.ly/art-color-coordination?utm_source=twitter&utm_medium=social&utm_campaign=promo)
 * [Chroma.js - Color Scale Helper](http://gka.github.io/palettes/#diverging|c0=lightyellow,orange,deeppink,darkred|c1=lightyellow,orange,deeppink,darkred|steps=7|bez0=1|bez1=1|coL0=1|coL1=1)
 * [Flat UI Colors](http://www.flatuicolorpicker.com/)
@@ -98,6 +105,8 @@
 * [Transformicons](http://www.transformicons.com/)
 * [Animated Headlines](http://codyhouse.co/demo/animated-headlines/)
 * [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
+* [Another Flexbox Cheatsheet](http://apps.workflower.fi/css-cheats/?name=flexbox)
+* [Use Flexbox Today](https://chriswrightdesign.com/experiments/using-flexbox-today/) - extensive article
 * CodePens
   * [Flipping icons](http://codepen.io/llull/pen/znkFs)
   * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
@@ -110,9 +119,13 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Great UI components](http://semantic-ui.com/elements/label.html#basic)
 * Landing Pages
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
   - [Background Animations] (http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
+  - [Booking.js](http://booking.timekit.io/) - I really like the logo outline and overal feel (screen shot just in case http://screencast.com/t/KXRVnupV)
+  - [Bedouin, From Dibble] (https://dribbble.com/shots/2359639-Bedouin-by-Circular/attachments/452216) - overal feel of navigatoin and simplicity
+  - [Tribe](http://tribe.pm/) - minimal and clean
 * [ ] [A lot of Tools, animations, etc](http://tympanus.net/)
 * [Font Reach](http://www.fontreach.com/#top) nice gradients and font
 * [Top Nav animation + loading in menu icon](http://polygraw.com/)
@@ -177,9 +190,15 @@
 * [Intro.js](http://usablica.github.io/intro.js/?ref=producthunt) - better introductions
 * [Selectize.js](http://brianreavis.github.io/selectize.js/) - jQuery based hybrid of select box and text box
 * [Velocity.js](https://github.com/julianshapiro/velocity) animation
+* [Timesheet.js](https://github.com/sbstjn/timesheet.js) 5.6K :star:
+  - [React version](https://github.com/yuanyan/react-timesheet)
 * React
   * [List of Resources](https://github.com/enaqx/awesome-react)
   * [Veloticy React Components](https://github.com/twitter-fabric/velocity-react)
+  * Components
+    - [Halogen](https://github.com/yuanyan/halogen) - animations
+    - [Elemental-ui](http://elemental-ui.com) - simple components, BS-like
+    - [Ladda buttons](https://github.com/hakimel/Ladda) - 6k stars, Buttons with loading indicators
 
 ### Other
 * [Cronofy, Connecting to Calendars](https://www.cronofy.com/)
@@ -189,6 +208,7 @@
 * [Startup Page Generator](http://designmodo.com/generator/?startupstash)
 * [HEAP](https://heapanalytics.com/?utm_source=badge) - Analytics for apps, free with Badge
 * [Mapbox](https://www.mapbox.com/) - maps
+* [Timekit](http://timekit.io/) - availability and scheduling API, google sync for free
 
 # Data
 * [How to choose a NoSQL DB](http://www.itworld.com/article/2833291/essential-reading-for-choosing-a-nosql-database.html)

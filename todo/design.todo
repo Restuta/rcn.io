@@ -1,24 +1,34 @@
 Story
 --- Major Topic
 -- Todo
+.- as rejected item
 .-(as last item for conclusions)
 - Note or final decision
 
 Ideas
 	- fill event cards with solid color: and show data with white color and it's shades
-	- show additional infor when event card is hovered: like on dribble and many other sites
+	- show additional info when event card is hovered: like on dribble and many other sites
+	-- Card Ideas
+		- flip-flop different card views like here http://semantic-ui.com/modules/shape.html
+	-- Calendar + Ideas
+		- higlight row and column on mouse hover in calendar
+		- show "today"
+		- show "time now" as a red line relative to a todays day
+		- sort events by distance or start time?
+		- higlight part of the vent descpription with the same color as on the side of the card: e.g. "Dunnigan Hills Road Race", "Road Race" will be higligted with red, same color as side of the card building mental picture that "red" means "Road Race"
+		- try alignin cards of different sizes to a baseline http://screencast.com/t/BOjOXsj2bg: might be visually easier to scan
 
 Design
 --- Statements
 	- From Design For Hackers
 		- For the beginning designer, success is all about reducing variables. 
 		- About fonts
-			+- Georgia for a sophisticated serif
-			+- Helvetica for a clean and neutral design
-			- Lato for a friendly and "natural" look
+			.- Georgia for a sophisticated serif
+			.- Helvetica for a clean and neutral design
+			+ Lato for a friendly and "natural" look
 			- Europa from Typekit for headings (or Oswald for condensed)
-				+- Aleo was designed as Slab Serif pair to lato: http://www.fontsquirrel.com/fonts/aleo
-			+-- Raleway for a more modern geometric look
+				.- Aleo was designed as Slab Serif pair to lato: http://www.fontsquirrel.com/fonts/aleo
+			.-- Raleway for a more modern geometric look
 	- Writing Language: https://www.google.com/design/spec/style/writing.html#writing-language
 --- Typography
 	- Size 
@@ -26,7 +36,7 @@ Design
 		.-(used above) by typecast: 16, 18, 20, 22, 26, 32  http://typecast.com/images/uploads/modernscale.css
 	- Body
  		- Lato: friendly and natural
- 		- Source Sans Pro: more condensed
+ 		.- Source Sans Pro: more condensed
  		.-Roboto Condensed: even more condensed
  			.-(condensed font is not a good options for cards, readability is important) 
  		.- Alegreya Sans: helen liked it
@@ -37,8 +47,8 @@ Design
  			- more alternatives https://www.typewolf.com/top-10-proxima-nova-and-gotham-alternatives
  	- Headings: 
  		-- Oswald: pairs with Lato well, condensed
- 		- Montserrat: for maybe other headings
- 		- Europa as a better option from Typekit
+ 		.- Montserrat: for maybe other headings
+ 		- Europa as a nice looking aletnative to Montserrat (Typekit): used by exposure.co
  		- Use a smaller line-height than body text (e.g. 1.1)
  			- see how it fits to a baseline
  	- Contrast (from Google Paper): Text should maintain a minimum contrast ratio of at least 4.5:1 (calculated based on luminance values) for legibility. A ratio of 7:1 is preferred.
