@@ -9,8 +9,8 @@ function resolveNodeModulesPath(pathName) {
 //NOTE: use min versions for prod and to speed-up build times a little
 const pathToReact = resolveNodeModulesPath('react/dist/react.js')
 const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js')
-//const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
-//const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
+  //const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
+  //const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
 
 
 module.exports = {
@@ -71,8 +71,8 @@ module.exports = {
               'transform': 'react-transform-catch-errors',
               'imports': ['react', 'redbox-react']
             }]
-          }
-        ]]
+          }]
+        ]
       }
     }, {
       test: /\.scss$/,
