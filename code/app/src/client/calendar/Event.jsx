@@ -91,7 +91,7 @@ class Event extends Component {
 
     const grid  = Grid.init(containerWidth)
     const cardWidthPx = grid.getColumnContentWidth(width)
-
+    eventColor = Colors.grey600
 
     let style = {
       //backgroundColor: 'white',
@@ -101,8 +101,7 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthPx * 0.06}px solid ${Colors.grey500}`,
-      //borderLeft: `${cardWidthPx * 0.06}px solid ${eventColor}`,
+      borderLeft: `${cardWidthPx * 0.06}px solid ${eventColor}`,
     }
 
     return (
