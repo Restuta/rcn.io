@@ -7,10 +7,29 @@ export default class DebugGrid extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      shouldShow3x3Grid: false,
-      shouldShowBaseline: true,
-      shouldShowContainerEdges: true,
+      shouldShow3x3Grid: (localStorage.getItem('shouldShow3x3Grid') === 'true'),
+      shouldShowBaseline: (localStorage.getItem('shouldShowBaseline') === 'true'),
+      shouldShowContainerEdges: (localStorage.getItem('shouldShowContainerEdges') === 'true'),
     }
+  }
+
+  stateToClasses(state) {
+    let classes = ''
+
+    if (state.shouldShowBaseline) {
+      classes = classNames(classes, 'debug-baseline')
+    }
+
+    if (state.shouldShowContainerEdges) {
+      classes = classNames(classes, 'debug-container')
+    }
+
+    return classes
+  }
+
+  //setting initial state
+  componentWillMount() {
+    this.props.setDebugClasses(this.stateToClasses(this.state))
   }
 
   render() {
@@ -27,32 +46,23 @@ export default class DebugGrid extends Component {
       zIndex: 99999
     }
 
-    const on3x3GridCheckboxChange = () => this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid })
-
-    const stateToClasses = (state) => {
-      let classes = ''
-
-      if (state.shouldShowBaseline) {
-        classes = classNames(classes, 'debug-baseline')
-      }
-
-      if (state.shouldShowContainerEdges) {
-        classes = classNames(classes, 'debug-container')
-      }
-
-      return classes
+    const on3x3GridCheckboxChange = () => {
+      this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid })
+      localStorage.setItem('shouldShow3x3Grid', !this.state.shouldShow3x3Grid)
     }
 
     const onBaselineCheckboxChange = () => {
       this.setState({ shouldShowBaseline: !this.state.shouldShowBaseline }, () => {
-        this.props.setDebugClasses(stateToClasses(this.state))
+        this.props.setDebugClasses(this.stateToClasses(this.state))
       })
+      localStorage.setItem('shouldShowBaseline', !this.state.shouldShowBaseline)
     }
 
     const onContainerCheckboxChange = () => {
       this.setState({ shouldShowContainerEdges: !this.state.shouldShowContainerEdges }, () => {
-        this.props.setDebugClasses(stateToClasses(this.state))
+        this.props.setDebugClasses(this.stateToClasses(this.state))
       })
+      localStorage.setItem('shouldShowContainerEdges', !this.state.shouldShowContainerEdges)
     }
 
     return (
