@@ -1,5 +1,6 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
+import './styles/bootstrap.scss'
 import './app.scss'
 import Row from './atoms/Row.jsx'
 import Col from './atoms/Col.jsx'
@@ -24,11 +25,10 @@ const S10 = () => (<S width={10}/>)
 export class App extends Component {
   constructor(props) {
     super(props)
-    this.state = { appLevelClasses: 'debug-baseline debug-container' }
+    this.state = { appLevelClasses: '' }
   }
 
   render() {
-
     const setAppStateClasses = classesToSet => {
       this.setState({
         appLevelClasses: classNames('', classesToSet)
