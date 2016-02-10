@@ -49,7 +49,6 @@ export class App extends Component {
     JOHN C. SCHLESINGER MEMORIAL CIRCUIT RACE AND TEAM TIME TRIAL
     `
 
-
     let containerWidth = null
 
     if (this.props.containerWidth) {

@@ -3,6 +3,8 @@ import { render } from 'react-dom'
 import { App } from './App'
 import Grid from './styles/grid'
 
+import { Router, Route, Link } from 'react-router'
+
 let renderApp = function() {
   let browserWidth = window.document.body.offsetWidth
   let containerWidth = Grid.getContainerWidth(browserWidth)
