@@ -85,7 +85,7 @@ Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 After Boilerplate setup
-	- setup Plop to generate filest faster: https://github.com/amwmedia/plop
+	- setup Plop to generate files faster: https://github.com/amwmedia/plop
 	- setup Git worflow effective for our team
 		- proposed setup 1 (Github Flow):
 			= leave master as production branch
@@ -116,11 +116,7 @@ After Boilerplate setup
 	- consider "react-document-title" package
 	-- Redux
 		- condiser simpler actions as next step: https://github.com/pauldijou/redux-act
-	-- server
-	    - setup server side rendering like in este
-			- este uses react component to render HTML document called 'html.react.js'
-		- setup server for API and hot reload combined (like estejs)
-		- setup compression middleware (like estejs)
+	-- server	
 		- make sure hot reloading server is not runing on prod
 		- setup Relay and GraphQL from examples
 		- setup logging and colorful logger
@@ -129,8 +125,8 @@ After Boilerplate setup
 		-- Setup Relay
 			- example: https://github.com/fortruce/relay-skeleton
 	- setup other react stuff from este.js
-			- make all components pure
-			- figure out how to make function component pure
+		+- make all components pure
+		- figure out how to make function component pure
 
 
 Pre-production
@@ -147,11 +143,15 @@ Pre-production
 	- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
 - make sure we load only required Lato and Oswald variations
 --- Server Sider Rendering
+	- read https://medium.com/@ryanflorence/welcome-to-future-of-web-application-delivery-9750b7564d9f#.dq649b347
 	-- setup Server Side rendering like etse js
+		- este uses react component to render HTML document called 'html.react.js'
 	- how to from React Rouer wiki https://github.com/rackt/react-router-tutorial/blob/start/lessons/11-productionish-server.md
 		- split dev-server and prod-server somehow (with config file that we import and do "if dev?")
+			- setup server for API and hot reload combined (like estejs)
 		- if-env of particular interest
 		- minification and gzipping
+			- - setup compression middleware (like estejs)
 		- create webpack config for SS rendering (https://github.com/rackt/react-router-tutorial/blob/start/lessons/13-server-rendering.md)
 -- Move debug CSS code to React components
 	- move baseline grid to Component
