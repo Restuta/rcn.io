@@ -29,5 +29,5 @@ app.listen(constants.DEV_SERVER_PORT, 'localhost', function(err) {
     return
   }
 
-  console.log('Listening at http://localhost:' + constants.DEV_SERVER_PORT)
+  console.info('Listening at http://localhost:' + constants.DEV_SERVER_PORT)
 })
