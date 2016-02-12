@@ -5,6 +5,7 @@ import App from './App'
 import Home from './Home'
 import Dev from './Dev'
 import Grid from './styles/grid'
+import Cal from './calendar/index'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 let prevContainerWidth
@@ -30,6 +31,7 @@ let renderApp = function() {
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
         <Route path="/dev" component={Dev} />
+        <Route path="/cal" component={Cal} />
       </Route>
     </Router>
   ), document.getElementById('root'))

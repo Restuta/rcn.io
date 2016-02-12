@@ -3,6 +3,7 @@ import Component from 'react-pure-render/component'
 import './styles/bootstrap.scss'
 import './app.scss'
 import classNames from 'classnames'
+import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/DebugGrid.jsx'
 
 let whenRenderStarted
@@ -37,10 +38,11 @@ export default class Dev extends Component {
 
     return (
       <div className={this.state.appLevelClasses}>
-        <DebugGrid setDebugClasses={this.setAppStateClasses.bind(this)}/>
+        <TopNavbar />
         <div className="container">
           {children}
         </div>
+        <DebugGrid setDebugClasses={this.setAppStateClasses.bind(this)}/>
       </div>
     )
   }

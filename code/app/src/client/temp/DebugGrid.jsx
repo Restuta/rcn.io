@@ -36,6 +36,7 @@ export default class DebugGrid extends Component {
     const style = {
       position: 'fixed',
       right: 0,
+      top: '96%',
       background: 'white',
       padding: '1rem',
       margin: '1rem',
