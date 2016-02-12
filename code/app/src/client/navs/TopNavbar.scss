@@ -2,11 +2,14 @@
 
 .TopNavbar {
     //@include box-shadow-lvl-0();
-    //@include box-shadow-like-slack();
-    @include text-4();
+    @include box-shadow-like-slack();
     background-color: white;
     margin-bottom: 0;
     padding: 2rem;
+
+    >.content {
+      @include text-4();
+    }
 
     //Debug
     //opacity: 0.5;

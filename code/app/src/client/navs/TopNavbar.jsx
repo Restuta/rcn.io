@@ -9,7 +9,7 @@ export default class TopNavbar extends Component {
 
     return (
       <nav className={classNames}>
-        <div>
+        <div className='content'>
           <b>RCN</b>
         </div>
       </nav>
