@@ -4,35 +4,16 @@ import './styles/bootstrap.scss'
 import './app.scss'
 import classNames from 'classnames'
 import DebugGrid from './temp/DebugGrid.jsx'
-import Grid from './styles/grid'
+
+let whenRenderStarted
 
 export default class Dev extends Component {
   constructor(props) {
     super(props)
     this.state = {
       appLevelClasses: '',
-      containerWidth: props.route.containerWidth
+      containerWidth: props.containerWidth || 1140
     }
-
-    this.setContainerWidth = this.setContainerWidth.bind(this)
-  }
-
-  setContainerWidth() {
-    //in case of server-side rendering we need to assume defaults
-    let containerWidth = this.container.offsetWidth || 1140
-    //to trigger re-render app on windows resize
-    this.setState({
-      containerWidth: containerWidth
-    })
-  }
-
-  componentDidMount() {
-    this.setContainerWidth()
-    window.addEventListener('resize', this.setContainerWidth)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.setContainerWidth)
   }
 
   setAppStateClasses(classesToSet) {
@@ -41,23 +22,23 @@ export default class Dev extends Component {
     })
   }
 
+  componentDidMount() {
+    let now = +new Date()
+    /* eslint-disable  no-console */
+    console.info('  App rendred in: ' + (now - whenRenderStarted) + 'ms')
+  }
+
   render() {
-    console.info('App-level render!')
-
-    let children
-
-    //we delay rendering while we get firt render in dom so we can get real widh of the container
-    if (this.state.containerWidth) {
-      //adding props to children, passing browser window size to be exact */
-      children = React.Children.map(this.props.children, child => {
-        return React.cloneElement(child, { containerWidth: this.state.containerWidth })
-      })
-    }
+    whenRenderStarted = +new Date()
+    /* eslint-disable  no-console */
+    console.info('App-level render! ')
+    //adding props to children, passing browser-calculated container size to be exact */
+    const children = React.cloneElement(this.props.children, { containerWidth: this.props.containerWidth })
 
     return (
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={this.setAppStateClasses.bind(this)}/>
-        <div className="container" ref={(x) => this.container = x}>
+        <div className="container">
           {children}
         </div>
       </div>

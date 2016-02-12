@@ -1,18 +1,34 @@
 import React from 'react'
+import Component from 'react-pure-render/component'
 import { render } from 'react-dom'
 import App from './App'
+import Home from './Home'
 import Dev from './Dev'
 import Grid from './styles/grid'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+
+let prevContainerWidth
 
 let renderApp = function() {
   let browserWidth = window.document.body.offsetWidth
   let containerWidth = Grid.getContainerWidth(browserWidth)
 
+  if (containerWidth === prevContainerWidth) {
+    return
+  }
+
+  prevContainerWidth = containerWidth
+
+  //overriding Router function to pass custom props to a child components
+  function createElement(Component, props) {
+    return <Component {...props} containerWidth={containerWidth}/>
+  }
+
   render((
-    <Router history={browserHistory}>
+    <Router history={browserHistory} createElement={createElement}>
       {/* passing conteiner width in a hacky way, for fast first-time browser render */}
-      <Route path="/" containerWidth={containerWidth} foo="foo1" component={App}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home} />
         <Route path="/dev" component={Dev} />
       </Route>
     </Router>
@@ -20,14 +36,7 @@ let renderApp = function() {
 
 }
 
+window.addEventListener('resize', () => renderApp())
+
 //first time render
 renderApp()
-
-
-// render((
-//   <Router history={browserHistory}>
-//     <Route path="/" foo="foo1" component={App}>
-//       <Route path="/dev" component={Dev} />
-//     </Route>
-//   </Router>
-// ), document.getElementById('root'))

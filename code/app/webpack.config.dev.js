@@ -11,8 +11,8 @@ const pathToReact = resolveNodeModulesPath('react/dist/react.js')
 const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js')
 const pathToReactRouter = resolveNodeModulesPath('react-router/umd/ReactRouter.min.js')
 
-  //const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
-  //const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
+//const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
+//const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
 
 
 
@@ -64,46 +64,45 @@ module.exports = {
     noParse: [pathToReact, pathToReactDOM, pathToReactRouter],
 
     loaders: [{
-        test: pathToReactDOM,
-        loader: 'imports'
-      }, {
-        test: pathToReactRouter,
-        loader: 'imports'
-      }, {
-        test: /\.(js|jsx?)$/,
-        loader: 'babel',
-        exclude: /(node_modules|bower_components)/,
-        include: [
-          path.join(consts.SRC_DIR, 'client'),
-        ],
-        query: {
-          presets: ['react', 'es2015', 'stage-2'],
-          cacheDirectory: true, //not needed for prod build
-          plugins: [
-            ['react-transform', {
-              'transforms': [{
-                'transform': 'react-transform-hmr',
-                'imports': ['react'],
-                'locals': ['module']
-              }, {
-                'transform': 'react-transform-catch-errors',
-                'imports': ['react', 'redbox-react']
-              }]
+      test: pathToReactDOM,
+      loader: 'imports'
+    }, {
+      test: pathToReactRouter,
+      loader: 'imports'
+    }, {
+      test: /\.(js|jsx?)$/,
+      loader: 'babel',
+      exclude: /(node_modules|bower_components)/,
+      include: [
+        path.join(consts.SRC_DIR, 'client'),
+      ],
+      query: {
+        presets: ['react', 'es2015', 'stage-2'],
+        cacheDirectory: true, //not needed for prod build
+        plugins: [
+          ['react-transform', {
+            'transforms': [{
+              'transform': 'react-transform-hmr',
+              'imports': ['react'],
+              'locals': ['module']
+            }, {
+              'transform': 'react-transform-catch-errors',
+              'imports': ['react', 'redbox-react']
             }]
-          ]
-        }
-      }, {
-        test: /\.scss$/,
-        loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
-        exclude: /(node_modules|bower_components)/,
-        include: path.join(consts.SRC_DIR, 'client')
-      }, {
-        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-        exclude: /(node_modules|bower_components)/,
-        loaders: ['url?limit=10000&mimetype=application/font-woff'],
-        include: path.join(consts.SRC_DIR, 'client')
+          }]
+        ]
       }
-    ]
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
+      exclude: /(node_modules|bower_components)/,
+      include: path.join(consts.SRC_DIR, 'client')
+    }, {
+      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+      exclude: /(node_modules|bower_components)/,
+      loaders: ['url?limit=10000&mimetype=application/font-woff'],
+      include: path.join(consts.SRC_DIR, 'client')
+    }]
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px

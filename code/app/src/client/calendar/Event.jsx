@@ -6,16 +6,13 @@ import classNames from 'classnames'
 import './Event.scss'
 import Grid from '../styles/grid'
 
-export class EventName extends Component {
-  render() {
-    let className = classNames(`EventName size-${this.props.size}`, this.props.className)
-
-    return (
+export const EventName = (props) => {
+  let className = classNames(`EventName size-${props.size}`, props.className)
+  return (
       <div className={className}>
-        {this.props.children}
+        {props.children}
       </div>
     )
-  }
 }
 
 class Event extends Component {
@@ -128,31 +125,4 @@ Event.propTypes = {
   containerWidth: PropTypes.number,
 }
 
-//export default Event;
-
-//----
-//below is debugging code
-
-//HOC to wrap a componennt in a debugging one
-// let DebugComponent = ComponentToDebug => props => {
-//   const lineHeightRem = Typography.HALF_LINE_HEIGHT_REM
-//   const debugColor = 'rgb(238, 247, 228)'
-//
-//   const topBoxShadow = `inset 0px ${lineHeightRem}rem 0px 0px ${debugColor}`
-//   const bottomBoxShadow = `inset 0px ${-lineHeightRem}rem 0px 0px ${debugColor}`
-//   const leftBoxShadow = `inset ${lineHeightRem}rem 0px 0px 0px ${debugColor}`
-//   const rightBoxShadow = `inset ${-lineHeightRem}rem 0px 0px 0px ${debugColor}`
-//
-//   const styles = {
-//     boxShadow: `${topBoxShadow},${bottomBoxShadow},${leftBoxShadow},${rightBoxShadow}`
-//   }
-//
-//   return (
-//     <div style={styles}>
-//       <ComponentToDebug {...props}/>
-//     </div>
-//   )
-// }
-
-//export default DebugComponent(Event)
 export default Event
