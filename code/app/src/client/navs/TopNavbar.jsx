@@ -5,14 +5,16 @@ import './TopNavbar.scss'
 
 export default class TopNavbar extends Component {
   render() {
-    const classNames = classnames('TopNavbar', 'navbar navbar-dark bg-faded')
+    const classNames = classnames('TopNavbar', 'navbar navbar-light bg-faded')
 
     return (
+
       <nav className={classNames}>
-        <div className='content'>
-          <b>RCN</b>
+        <div className="content">
+           <a className="navbar-brand" href="#">RCN</a>
         </div>
       </nav>
+
     )
   }
 }
