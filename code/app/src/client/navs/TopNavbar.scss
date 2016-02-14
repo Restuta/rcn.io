@@ -1,11 +1,13 @@
 @import '../styles/mixins';
 @import '../styles/variables';
 
+
 .TopNavbar {
     //@include box-shadow-lvl-0();
     //@include box-shadow-like-slack();
 
-    background-color: white;
+    background-color: $body-bg-color;
+    //background-color: white;
     margin-bottom: 0;
     padding: 2rem;
 
@@ -15,16 +17,46 @@
     margin-bottom: -1px;
 
 
+    .content {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .content.container {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     .content .navbar-brand {
       @include text-4();
       color: black;
       font-weight: 900;
       padding-bottom: 0;
-      padding-left: 4rem;
     }
 
-    .content.container .navbar-brand {
-      padding-left: 0;
+    .navbar-nav {
+      float: right;
     }
+
+    .navbar-nav .nav-link {
+      @include text-3();
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      color: $grey-600;
+
+      &:hover {
+        color: $grey-900;
+      }
+
+      &.faded {
+        color: $grey-300;
+
+        &:hover {
+          color: $grey-700;
+        }
+      }
+    }
+
+
 }

@@ -36,7 +36,7 @@ export default class DebugGrid extends Component {
     const style = {
       position: 'fixed',
       right: 0,
-      top: '96%',
+      bottom: '0',
       background: 'white',
       padding: '1rem',
       margin: '1rem',
@@ -99,7 +99,7 @@ const GridLines = (props) => {
     position: 'fixed',
     backgroundColor: 'red',
     opacity: '0.2',
-    zIndex: 9999999,
+    zIndex: 99999,
   }
 
   const firstVertical = Object.assign({}, baseStyle, {

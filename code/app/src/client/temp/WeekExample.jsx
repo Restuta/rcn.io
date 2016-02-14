@@ -8,7 +8,7 @@ import Typography from '../styles/typography'
 
 export default class WeekExample extends Component {
   render() {
-    const {days, allSameSize} = this.props
+    const {days, allSameSize, showDebugInfo = true} = this.props
     const numberOfColumns = 14
     const daysSum = days.reduce((x, y) => x + y)
     let firstColumnOffset = 0
@@ -38,7 +38,7 @@ export default class WeekExample extends Component {
       return Math.floor(Math.random() * (max - min + 1)) + min
     }
 
-    const generateRandomEvents = () => {
+    const generateRandomEvents = (showDebugInfo) => {
       let numberOfEvents = 0
 
       //unevently distribute probabilities, making 3 and 4 more rare guests
@@ -52,27 +52,27 @@ export default class WeekExample extends Component {
 
       switch (numberOfEvents) {
         case 1:
-          events = [<EventStub key={1} className="margin-bot"/>]
+          events = [<EventStub key={1} className="margin-bot" showDebugInfo={showDebugInfo}/>]
           break
         case 2:
           events = [
-            <EventStub key={1}/>,
-            <EventStub key={2} className="margin-top margin-bot"/>
+            <EventStub key={1} showDebugInfo={showDebugInfo}/>,
+            <EventStub key={2} className="margin-top margin-bot" showDebugInfo={showDebugInfo}/>
           ]
           break
         case 3:
           events = [
-            <EventStub key={1} />,
-            <EventStub key={2} className="margin-top"/>,
-            <EventStub key={3} className="margin-top margin-bot"/>
+            <EventStub key={1} showDebugInfo={showDebugInfo}/>,
+            <EventStub key={2} className="margin-top" showDebugInfo={showDebugInfo}/>,
+            <EventStub key={3} className="margin-top margin-bot" showDebugInfo={showDebugInfo}/>
           ]
           break
         case 4:
           events = [
-            <EventStub key={1} />,
-            <EventStub key={2} className="margin-top"/>,
-            <EventStub key={3} className="margin-top"/>,
-            <EventStub key={4} className="margin-top margin-bot"/>
+            <EventStub key={1} showDebugInfo={showDebugInfo}/>,
+            <EventStub key={2} className="margin-top" showDebugInfo={showDebugInfo}/>,
+            <EventStub key={3} className="margin-top" showDebugInfo={showDebugInfo}/>,
+            <EventStub key={4} className="margin-top margin-bot" showDebugInfo={showDebugInfo}/>
           ]
           break
         default:
@@ -82,19 +82,43 @@ export default class WeekExample extends Component {
       return events
     }
 
+    let createDayOfWeekComp = (number) => (
+      <div style={{
+        marginBottom: '0.5rem',
+        marginTop: '0.5rem'
+      }}><b>{number}</b></div>
+    )
+    let component
 
-    return (
+    if (showDebugInfo) {
+      component = (
         <Row className="WeekExample" style={rowStyle}>
           <span style={daysStyleLeft}>{days.join(' ')}</span>
           {days.map((x, i) =>
             <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
                 className={colClasses}>
-              <b>{++i}</b>
-              {generateRandomEvents()}
+              {createDayOfWeekComp(++i)}
+              {generateRandomEvents(showDebugInfo)}
             </Col>)
           }
           <span style={daysStyleRight}>{days.join(' ')}</span>
         </Row>
-    )
+      )
+    } else {
+      component = (
+        <Row className="WeekExample" style={rowStyle}>
+          {days.map((x, i) =>
+            <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
+                className={colClasses}>
+              {createDayOfWeekComp(++i)}
+              {generateRandomEvents(showDebugInfo)}
+            </Col>)
+          }
+        </Row>
+      )
+    }
+
+
+    return component
   }
 }

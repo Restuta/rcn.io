@@ -72,14 +72,27 @@ export default class EventStub extends Component {
     const heightInBaseLines = heightInIdealRems
 
     const className = classNames('EventStub', this.props.className)
+    const {showDebugInfo = true} = this.props
 
-    return (
-      <div style={style} ref={(x) => this.div = x} className={className}>
-        <span style={widthStyle}>{roundedWidth}</span>
-        <span style={heightStyle}>{roundedHeight}</span>
-        <span style={ratioStyle}>{(roundedWidth / roundedHeight).toFixed(4)}</span>
-        <span style={baseLinesStyle}>{heightInBaseLines}</span>
-      </div>
-    )
+    let component
+
+    if (showDebugInfo) {
+      component = (
+        <div style={style} ref={(x) => this.div = x} className={className}>
+          <span style={widthStyle}>{roundedWidth}</span>
+          <span style={heightStyle}>{roundedHeight}</span>
+          <span style={ratioStyle}>{(roundedWidth / roundedHeight).toFixed(4)}</span>
+          <span style={baseLinesStyle}>{heightInBaseLines}</span>
+        </div>
+      )
+    } else {
+      component = (
+        <div style={style} ref={(x) => this.div = x} className={className}>
+          <span style={baseLinesStyle}>{heightInBaseLines}</span>
+        </div>
+      )
+    }
+
+    return component
   }
 }

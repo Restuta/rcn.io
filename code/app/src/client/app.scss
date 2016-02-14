@@ -1,10 +1,6 @@
 @import 'styles/typography';
 @import 'styles/debug';
-
-
-$body-color: #333;
-//$body-bg-color: #F6F6F6;
-$body-bg-color: #FCFCFC;
+@import 'styles/variables';
 
 html, body {
   color: $body-color;

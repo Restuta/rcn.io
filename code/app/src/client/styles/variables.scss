@@ -10,6 +10,7 @@ $grey-500: #9E9E9E;
 $grey-600: #757575;
 $grey-700: #616161;
 $grey-800: #424242;
+$grey-900: #2F2F2F;
 
 
 $blue-grey-50: #ECEFF1;
@@ -22,6 +23,11 @@ $blue-grey-600: #546E7A;
 $blue-grey-700: #455A64;
 $blue-grey-800: #37474F;
 $blue-grey-900: #263238;
+
+$body-color: #333;
+//$body-bg-color: #F6F6F6;
+$body-bg-color: #FCFCFC;
+
 
 
 @function getBaseFontSize() {
