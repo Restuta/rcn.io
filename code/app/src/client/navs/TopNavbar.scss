@@ -5,58 +5,64 @@
 .TopNavbar {
     //@include box-shadow-lvl-0();
     //@include box-shadow-like-slack();
-
     background-color: $body-bg-color;
     //background-color: white;
     margin-bottom: 0;
     padding: 2rem;
-
     //debug
-    opacity: 0.7;
-    border-bottom: 1px solid $grey-200;
-    margin-bottom: -1px;
-
+    //opacity: 0.7;
+    //border-bottom: 1px solid $grey-200;
+    //margin-bottom: -1px;
 
     .content {
       padding-left: 4rem;
       padding-right: 4rem;
     }
-
     .content.container {
       padding-left: 0;
       padding-right: 0;
     }
-
     .content .navbar-brand {
       @include text-4();
       color: black;
       font-weight: 900;
+      font-style: italic;
       padding-bottom: 0;
-    }
 
+      width: 8rem;
+      height: 8rem;
+      padding-left: 1.55rem;
+      padding-top: 2.35rem;
+      border-radius: 4rem;
+      //position: absolute;
+      background-color: rgba(0, 0, 0, 0.08);
+      transition: background-color 0.2s ease 0s, transform 300ms, width 300ms;
+      transform: translateX(0px) translateY(0px);
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.16);
+      }
+    }
     .navbar-nav {
       float: right;
     }
-
     .navbar-nav .nav-link {
       @include text-3();
+      transition: all ease .2s;
       margin-top: 1rem;
       margin-bottom: 0;
       padding-bottom: 0;
       color: $grey-600;
-
       &:hover {
-        color: $grey-900;
+        color: black;
       }
-
       &.faded {
         color: $grey-300;
-
         &:hover {
           color: $grey-700;
         }
       }
     }
-
-
+    a:focus, a:hover, a:active {
+        outline: none;
+    }
 }
