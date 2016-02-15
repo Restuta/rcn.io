@@ -20,9 +20,7 @@
   //@include box-shadow-like-slack();
   background-color: $body-bg-color;
   margin-bottom: 0;
-  padding: 2rem;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding: 2rem 3vw;
   display: flex;
   justify-content: center;
 
@@ -38,28 +36,29 @@
     .content-left {
       display: flex;
     }
+    .navbar-brand {
+      @include text-4();
+      color: black;
+      font-weight: 900;
+      padding-bottom: 0;
+      //@include round-logo();
+    }
+    .navbar-brand-description {
+      @include text-3();
+      margin-top: 1rem;
+      margin-bottom: 0;
+      color: $grey-500;
+      font-weight: 300;
+      padding-left: 1rem;
+      border-left: 1px solid $grey-300;
+    }
   }
 
   .content.container {
     padding-left: 0;
     padding-right: 0;
   }
-  .content .navbar-brand {
-    @include text-4();
-    color: black;
-    font-weight: 900;
-    padding-bottom: 0;
-    //@include round-logo();
-  }
-  .content .navbar-brand-description {
-    @include text-3();
-    margin-top: 1rem;
-    margin-bottom: 0;
-    color: $grey-500;
-    font-weight: 300;
-    padding-left: 1rem;
-    border-left: 1px solid $grey-300;
-  }
+
   .navbar-nav .nav-link {
     @include text-3();
     transition: all ease 0.2s;
