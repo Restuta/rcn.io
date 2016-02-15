@@ -14,6 +14,11 @@ html {
   box-sizing: inherit;
 }
 
+a:focus,
+a:hover,
+a:active {
+  outline: none;
+}
 
 .display-flex {
   display: flex;

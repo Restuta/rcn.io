@@ -132,7 +132,7 @@
 * [Design Awwwards](http://www.awwwards.com/)
 * [Very Nice Landing Page](https://www.duolingo.com/)
 * [Treehouse](http://teamtreehouse.com/library) nice page design, colors, layout, icons
-* [FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture
+* ~[FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture~ it's gone :(
 * [Nice Article Layout](http://heartbleed.com/) (Heartblead Bug)
 * [Nice icons on the sides](http://dataparis.io/#)
 * [F8 conference](https://fbf8.com/schedule.html) has nice design for schedule

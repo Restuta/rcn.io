@@ -13,6 +13,7 @@ export default class TopNavbar extends Component {
       <nav className={classNames}>
         <div className="content">
            <a className="navbar-brand" href="#">RCN</a>
+           <div className="navbar-brand-description">Plan your season</div>
            <ul className="nav navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to={'/cal'}>Cal</Link>
