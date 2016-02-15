@@ -24,6 +24,8 @@ engines:
         enabled: false
       EmptyLineBetweenBlocks:
         enabled: false
+      LeadingZero:
+        enabled: false
   csslint:
     enabled: false
 ratings:
