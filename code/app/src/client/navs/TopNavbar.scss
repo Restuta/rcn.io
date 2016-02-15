@@ -24,7 +24,6 @@
   padding-left: 3vw;
   padding-right: 3vw;
   display: flex;
-  flex-direction: row;
   justify-content: center;
 
   //debug
@@ -32,10 +31,15 @@
   //outline: 1px solid $grey-600;
 
   .content {
-
     width: 100%;
     max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    .content-left {
+      display: flex;
+    }
   }
+
   .content.container {
     padding-left: 0;
     padding-right: 0;
@@ -53,12 +57,8 @@
     margin-bottom: 0;
     color: $grey-500;
     font-weight: 300;
-    float: left;
     padding-left: 1rem;
     border-left: 1px solid $grey-300;
-  }
-  .navbar-nav {
-    float: right;
   }
   .navbar-nav .nav-link {
     @include text-3();
