@@ -25,14 +25,14 @@ export default class Dev extends Component {
 
   componentDidMount() {
     let now = +new Date()
-    /* eslint-disable  no-console */
-    console.info('  App rendred in: ' + (now - whenRenderStarted) + 'ms')
+
+    console.info('  App rendred in: ' + (now - whenRenderStarted) + 'ms') // eslint-disable-line  no-console
   }
 
   render() {
     whenRenderStarted = +new Date()
-    /* eslint-disable  no-console */
-    console.info('App-level render! ')
+
+    console.info('App-level render! ') // eslint-disable-line  no-console
     //adding props to children, passing browser-calculated container size to be exact */
     const children = React.cloneElement(this.props.children, { containerWidth: this.props.containerWidth })
 

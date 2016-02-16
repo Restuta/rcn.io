@@ -25,11 +25,9 @@ app.get('*', function(req, res) {
 
 app.listen(constants.DEV_SERVER_PORT, 'localhost', function(err) {
   if (err) {
-    /* eslint-disable  no-console */
-    console.log(err)
+    console.log(err) // eslint-disable-line  no-console
     return
   }
 
-  /* eslint-disable  no-console */
-  console.info('Listening at http://localhost:' + constants.DEV_SERVER_PORT)
+  console.info('Listening at http://localhost:' + constants.DEV_SERVER_PORT) // eslint-disable-line  no-console
 })

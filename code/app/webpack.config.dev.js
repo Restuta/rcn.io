@@ -2,14 +2,16 @@ const path = require('path')
 const webpack = require('webpack')
 const consts = require('./constants')
 
-function resolveNodeModulesPath(pathName) {
+
+function node_modules(pathName) { // eslint-disable-line camelcase
   return path.resolve(path.join(consts.NODE_MODULES, pathName))
 }
 
 //NOTE: use min versions for prod and to speed-up build times a little
-const pathToReact = resolveNodeModulesPath('react/dist/react.js')
-const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.js')
-const pathToReactRouter = resolveNodeModulesPath('react-router/umd/ReactRouter.min.js')
+const pathToReact = node_modules('react/dist/react.js')
+const pathToReactDOM = node_modules('react-dom/dist/react-dom.js')
+const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
+const pathToMomentJs = node_modules('moment/min/moment.min.js')
 
 //const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
 //const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
@@ -54,14 +56,15 @@ module.exports = {
     alias: {
       'react': pathToReact,
       'react-dom': pathToReactDOM,
-      'react-router': pathToReactRouter
+      'react-router': pathToReactRouter,
+      'moment': pathToMomentJs
     }
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: [pathToReact, pathToReactDOM, pathToReactRouter],
+    noParse: [pathToReact, pathToReactDOM, pathToReactRouter, pathToMomentJs],
 
     loaders: [{
       test: pathToReactDOM,
