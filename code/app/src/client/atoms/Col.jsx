@@ -29,7 +29,7 @@ export default class Col extends Component {
       .reduce((curr, prev) => classNames(prev, curr))
       .trim()
 
-    const combinedClassNames = classNames(columnClassNames, this.props.className)
+    const combinedClassNames = classNames('col', columnClassNames, this.props.className)
 
     return (
       <div {...this.props} className={combinedClassNames}>
