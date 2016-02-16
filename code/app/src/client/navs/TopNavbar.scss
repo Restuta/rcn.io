@@ -25,8 +25,8 @@
   justify-content: center;
 
   //debug
-  //opacity: 0.7;
-  //outline: 1px solid $grey-600;
+  //  opacity: 0.7;
+  //  outline: 1px solid $grey-600;
 
   .content {
     width: 100%;
@@ -36,11 +36,9 @@
     .content-left {
       display: flex;
     }
-    .navbar-brand {
-      @include text-4();
-      color: black;
-      font-weight: 900;
-      padding-bottom: 0;
+    .navbar-logo {
+      display: flex; //required for svg to display correctly
+      margin-right: 1rem;
       //@include round-logo();
     }
     .navbar-brand-description {

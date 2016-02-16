@@ -3,6 +3,8 @@ import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './TopNavbar.scss'
 import {Link} from 'react-router'
+import Logo from './Logo.jsx'
+
 
 export default class TopNavbar extends Component {
   render() {
@@ -11,8 +13,8 @@ export default class TopNavbar extends Component {
       <nav className={classNames}>
         <div className="content">
           <div className="content-left">
-            <a className="navbar-brand" href="#">RCN</a>
-            <div className="navbar-brand-description">Plan your season</div>
+            <a className="navbar-logo" href="#"><Logo /></a>
+            <div className="navbar-brand-description">RCN</div>
           </div>
           <div className="content-right">
             <ul className="nav navbar-nav">

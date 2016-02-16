@@ -102,6 +102,9 @@ module.exports = {
       exclude: /(node_modules|bower_components)/,
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
+    }, {
+      test: /\.svg$/,
+      loader: 'svg-inline'
     }]
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
