@@ -39,12 +39,14 @@
 @mixin text-5 {
   @include offset-to-baseline(0, $text-margin-bottom);
   font-size: $font-size-5;
+  position: relative;
+  top: -1px;
   line-height: 4rem;
 }
 
 @mixin text-6 {
   @include offset-to-baseline(0, $text-margin-bottom);
-  font-size: $font-size-5;
+  font-size: $font-size-6;
   line-height: 5rem;
   font-weight: 700;
 }
@@ -53,7 +55,7 @@
   @include offset-to-baseline(5, $text-margin-bottom);
   //top: -4px;
   //position: relative;
-  font-size: $font-size-5;
+  font-size: $font-size-7;
   line-height: 5rem;
   font-weight: 900;
 }

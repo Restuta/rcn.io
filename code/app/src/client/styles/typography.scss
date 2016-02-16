@@ -68,11 +68,13 @@ h1 {
   font-size: $h1-font-size;
   line-height: $h1-line-height;
   text-transform: uppercase;
+  font-weight: 700;
 }
 h2 {
   @include offset-to-baseline(6, $h2-margin-bottom);
   font-size: $h2-font-size;
   line-height: $h2-line-height;
+  font-weight: 700;
 }
 h3 {
   @include offset-to-baseline(0, $h3-margin-bottom);
