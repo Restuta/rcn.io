@@ -5,18 +5,30 @@ import Month from './Month.jsx'
 
 export default class Calendar extends Component {
   render() {
+    const {name, year} = this.props
+
     return (
       <div className="Calendar">
-        <div className="content">
-          <h1>Calendar for 2016</h1>
-          <Month number={1} year={2016} />
-          <Month number={2} year={2016} />
-        </div>
+        <h1>{name}</h1>
+
+        <Month month={1} year={year} />
+        <Month month={2} year={year} />
+        <Month month={3} year={year} />
+        <Month month={4} year={year} />
+        <Month month={5} year={year} />
+        <Month month={6} year={year} />
+        <Month month={7} year={year} />
+        <Month month={8} year={year} />
+        <Month month={9} year={year} />
+        <Month month={10} year={year} />
+        <Month month={11} year={year} />
+        <Month month={12} year={year} />
       </div>
     )
   }
 }
 
 Calendar.propTypes = {
-  year: PropTypes.number
+  year: PropTypes.number,
+  name: PropTypes.string
 }
