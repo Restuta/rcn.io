@@ -1,0 +1,14 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Month {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  //debug
+  outline: 1rem solid rgba(255, 158, 198, 0.4);
+
+  >.content {
+    @include text-2();
+  }
+}

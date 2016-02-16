@@ -1,6 +1,7 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
 import WeekExample from '../temp/WeekExample.jsx'
+import Calendar from './Calendar.jsx'
 
 export default class Home extends Component {
 
@@ -9,7 +10,7 @@ export default class Home extends Component {
 
     return (
       <div>
-        <h1>Welcome to Cal ;) </h1>
+        <Calendar/>
 
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>

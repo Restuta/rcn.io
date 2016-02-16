@@ -1,0 +1,15 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Calendar {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+
+  //debug
+  outline: 1rem solid rgba(135, 206, 235, 0.4);
+  margin-bottom: 10rem;
+
+  >.content {
+    @include text-2();
+  }
+}
