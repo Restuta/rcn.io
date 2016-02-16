@@ -1,0 +1,23 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
+.HeadwayChangelog {
+  //see customization docs https://headway.gitbooks.io/docs/content/widget.html
+  #HW_badge_cont {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #HW_badge {
+    top: 1.2rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: $font-size-3;
+    border-radius: 50%;
+  }
+  #HW_badge.HW_softHidden {
+
+  }
+}

@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import './TopNavbar.scss'
 import {Link} from 'react-router'
 import Logo from './Logo.jsx'
+import HeadwayChangelog from './HeadwayChangelog.jsx'
 
 
 export default class TopNavbar extends Component {
@@ -15,6 +16,7 @@ export default class TopNavbar extends Component {
           <div className="content-left">
             <a className="navbar-logo" href="#"><Logo /></a>
             <div className="navbar-brand-description">RCN</div>
+            <HeadwayChangelog />
           </div>
           <div className="content-right">
             <ul className="nav navbar-nav">

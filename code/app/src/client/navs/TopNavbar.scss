@@ -1,5 +1,6 @@
 @import '../styles/mixins';
 @import '../styles/variables';
+
 @mixin round-logo() {
   font-style: italic;
   width: 8rem;
@@ -23,6 +24,8 @@
   padding: 2rem 3vw;
   display: flex;
   justify-content: center;
+  min-height: 8rem;
+  max-height: 8rem;
 
   //debug
   //  opacity: 0.7;
