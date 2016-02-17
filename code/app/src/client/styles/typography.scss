@@ -87,7 +87,7 @@ h4 {
   line-height: $h4-line-height;
 }
 h5 {
-  @include offset-to-baseline(0, $h5-margin-bottom);
+  @include offset-to-baseline(-1, $h5-margin-bottom);
   position: relative;
   top: -1px;
   font-size: $h5-font-size;
@@ -129,6 +129,8 @@ sub {
   bottom: -0.25em;
 }
 
+.text-sm-9 {@include text-sm-9(); } //9
+.text-sm-12 {@include text-sm-12(); } //12
 
 .text-1 { @include text-1(); } //10
 .text-2 { @include text-2(); } //13

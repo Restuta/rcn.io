@@ -1,12 +1,44 @@
 @import 'variables';
 
+$px-as-rem: 1/getBaseFontSize() + 0rem;
+
+
 @mixin offset-to-baseline($offset, $margin-bottom) {
-  $px-as-rem: 1/getBaseFontSize() + 0rem;
-  $offset: $px-as-rem * $offset;
-  padding-top: $offset;
-  margin-bottom: $margin-bottom - $offset;
+
+  // @if ($offset < 0) {
+  //   @include offset-to-baseline-relative($offset, $margin-bottom)
+  // } @else {
+    //usging negative margins
+  //   $offset: $px-as-rem * $offset;
+  //   padding-top: $offset;
+  //   margin-bottom: $margin-bottom - $offset;
+  // }
+
+  @include offset-to-baseline-relative($offset, $margin-bottom)
 }
 
+//using relative positioning
+@mixin offset-to-baseline-relative($offset, $margin-bottom) {
+  $offset: $px-as-rem * $offset;
+  top: $offset;
+  position: relative;
+  margin-bottom: $margin-bottom;
+}
+
+//custom sizes (not in scale)
+@mixin text-sm-9() {
+  @include offset-to-baseline(1, $text-margin-bottom);
+  font-size: pxToRem(9);
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+@mixin text-sm-12() {
+  @include offset-to-baseline(4, $text-margin-bottom);
+  font-size: pxToRem(12);
+  line-height: 2rem;
+  font-weight: 700;
+}
 
 @mixin text-1 {
   @include offset-to-baseline(4, $text-margin-bottom);
@@ -23,9 +55,7 @@
 
 
 @mixin text-3 {
-  @include offset-to-baseline(0, $text-margin-bottom);
-  position: relative;
-  top: -2px;
+  @include offset-to-baseline(-2, $text-margin-bottom);
   font-size: $font-size-3;
   line-height: 3rem;
 }
@@ -37,10 +67,9 @@
 }
 
 @mixin text-5 {
-  @include offset-to-baseline(0, $text-margin-bottom);
+  //@include offset-to-baseline(0, $text-margin-bottom);
+  @include offset-to-baseline(-1, $text-margin-bottom);
   font-size: $font-size-5;
-  position: relative;
-  top: -1px;
   line-height: 4rem;
 }
 

@@ -37,11 +37,9 @@ $base-line-rem: $line-height-rem / 2;
   overflow: hidden;
 
   &.size-XS {
-    @include text-1();
-    font-size: pxToRem(9);
+    @include text-sm-9();
+    top: 7px;
     margin-bottom: 0;
-    line-height: 1.5rem;
-    padding-top: 0;
     max-height: $base-line-rem * 3;
     min-height: $base-line-rem * 3;
   }
@@ -49,15 +47,13 @@ $base-line-rem: $line-height-rem / 2;
   &.size-S {
     @include text-1();
     line-height: 1.5rem;
-    padding-top: 2px;
+    top: $px-as-rem * 2;
     max-height: $base-line-rem * 6;
     min-height: $base-line-rem * 6;
   }
 
   &.size-M {
-    @include text-2();
-    font-weight: 700;
-    font-size: pxToRem(12);
+    @include text-sm-12();
     max-height: $base-line-rem * 8;
     min-height: $base-line-rem * 8;
   }
@@ -65,8 +61,6 @@ $base-line-rem: $line-height-rem / 2;
   &.size-L {
     @include text-2();
     font-weight: 700;
-    top: 0px;
-    line-height: 2rem;
     max-height: $line-height-rem * 6;
     min-height: $line-height-rem * 6;
   }
@@ -74,8 +68,8 @@ $base-line-rem: $line-height-rem / 2;
   &.size-XL {
     @include text-3();
     font-weight: 700;
-    top: 0px;
     line-height: 2.5rem;
+    top: 0; //fine-tuning for custom line height
     max-height: $line-height-rem * 6;
     min-height: $line-height-rem * 6;
   }

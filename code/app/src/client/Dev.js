@@ -57,6 +57,10 @@ export default class App extends Component {
         <h5>H5 {sizeToPx(2)} {eventName}</h5>
 
         <h2>EVENT COMPONENTS, container {containerWidth}</h2>
+        <p className={'text-sm-9'} style={{fontSize:9}}>{'9px'} {eventName}</p>
+        <p className={'text-sm-12'} style={{fontSize:12}}>{'12px'} {eventName}</p>
+
+
         <p className={'text-' + 1} style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
         <p className={'text-' + 2} style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
         <p className={'text-' + 3} style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>
@@ -203,8 +207,8 @@ export default class App extends Component {
         <Row className="margin-top">
           <Col sm={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
           <Col sm={1}><Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
-          <Col sm={1}><Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Co"/></Col>
-          <Col sm={1}><Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Rk"/></Col>
+          <Col sm={1}><Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Colavita Criterium"/></Col>
+          <Col sm={1}><Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Red Kite Omnium"/></Col>
         </Row>
         <Row className="margin-top">
           <Col sm={2}>
