@@ -15,6 +15,8 @@ export default class Dev extends Component {
       appLevelClasses: '',
       containerWidth: props.containerWidth || 1140
     }
+
+    this.setAppStateClasses = this.setAppStateClasses.bind(this)
   }
 
   setAppStateClasses(classesToSet) {
@@ -42,7 +44,7 @@ export default class Dev extends Component {
         <div className="container">
           {children}
         </div>
-        <DebugGrid setDebugClasses={this.setAppStateClasses.bind(this)}/>
+        <DebugGrid setDebugClasses={this.setAppStateClasses}/>
       </div>
     )
   }

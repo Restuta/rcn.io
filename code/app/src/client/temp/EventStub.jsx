@@ -11,6 +11,7 @@ export default class EventStub extends Component {
     this.state = {height: 50}
     //creating one bound instance of the function, so removeEventListener can be used with the same function instance
     this.onResize = this.onResize.bind(this)
+    this._onRef = this._onRef.bind(this)
   }
 
   componentDidMount() {
@@ -31,6 +32,10 @@ export default class EventStub extends Component {
     this.setState({ //eslint-disable-line
       width: this.div.offsetWidth
     })
+  }
+
+  _onRef(domNode) {
+    this.div = domNode
   }
 
   render() {
@@ -78,7 +83,7 @@ export default class EventStub extends Component {
 
     if (showDebugInfo) {
       component = (
-        <div style={style} ref={(x) => this.div = x} className={className}>
+        <div style={style} ref={this._onRef} className={className}>
           <span style={widthStyle}>{roundedWidth}</span>
           <span style={heightStyle}>{roundedHeight}</span>
           <span style={ratioStyle}>{(roundedWidth / roundedHeight).toFixed(4)}</span>
@@ -87,7 +92,7 @@ export default class EventStub extends Component {
       )
     } else {
       component = (
-        <div style={style} ref={(x) => this.div = x} className={className}>
+        <div style={style} ref={this._onRef} className={className}>
           <span style={baseLinesStyle}>{heightInBaseLines}</span>
         </div>
       )
