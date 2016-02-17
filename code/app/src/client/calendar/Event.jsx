@@ -9,10 +9,10 @@ import Grid from '../styles/grid'
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size}`, props.className)
   return (
-      <div className={className}>
-        {props.children}
-      </div>
-    )
+    <div className={className}>
+      {props.children}
+    </div>
+  )
 }
 
 class Event extends Component {
