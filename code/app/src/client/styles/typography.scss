@@ -8,7 +8,22 @@
 
 $body-font-family: 'Lato', Helvetica, Arial, sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
-//$headings-font-family: 'Europa', sans-serif;
+
+  //Typekit fonts
+
+  //$headings-font-family: 'museo-sans-condensed', sans-serif;
+  // .wf-loading {
+  //   h1,h2,h3,h4,h5 {
+  //     opacity: 0;
+  //   }
+  // }
+  //
+  // .wf-active {
+  //   h1,h2,h3,h4,h5 {
+  //     opacity: 1;
+  //   }
+  // }
+
 $headings-font-weight: 400;
 $headings-color: black;
 $headings-color-secondary: $grey-600;
@@ -62,6 +77,7 @@ h5 {
   font-weight: $headings-font-weight;
   color: $headings-color;
   margin-top: $headings-margin-top;
+  transition: opacity ease 0.2s;
 }
 h1 {
   @include offset-to-baseline(1, $h1-margin-bottom);
