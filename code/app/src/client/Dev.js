@@ -14,6 +14,7 @@ import Colors from './styles/colors'
 import WeekExample from './temp/WeekExample.jsx'
 import Grid from './styles/grid'
 import Typography from './styles/typography'
+import FaCar from 'react-icons/lib/fa/car'
 
 //TODO: remove these components
 const Spacer = ({width}) => (<span style={{width: `${width}px`}}></span>)
@@ -46,9 +47,25 @@ export default class App extends Component {
       containerWidth = <span style={{color: 'salmon'}}>UNDEFINED</span>
     }
 
+    const iconStyle = {
+      // color: 'pink',
+       fontSize: '3rem',
+       width: '4rem',
+       height: '4rem',
+       lineHeight: '4rem',
+      // outline: '1px solid grey',
+    }
+
     return (
       <div>
         &nbsp;
+        <p className="text-5"><FaCar style={iconStyle} />Hello things</p>
+        <p className="text-5"><Icon name="car" style={iconStyle}/>Hello things</p>
+        <p className="text-5">Hello </p>
+
+        <div style={{marginTop: '4rem'}}/>
+        <Icon name="car" style={iconStyle}/><span style={iconStyle}> Hello</span>
+
         <h1>{this.props.foo}</h1>
         <h1>H1 {sizeToPx(7)} {eventName}</h1>
         <h2>H2 {sizeToPx(5)} {eventName}</h2>

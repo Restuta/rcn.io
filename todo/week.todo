@@ -167,6 +167,7 @@ Pre-production
 	- React perf. optimization: http://benchling.engineering/performance-engineering-with-react/
 	- use https://github.com/typekit/webfontloader to load Types
 	- optimize CSS Delivery https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+	- consider using https://github.com/bvaughn/react-virtualized for infinite calendar list
 
 Not Today, but not never!
 	-- Github

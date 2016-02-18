@@ -11,7 +11,7 @@ export default class Icon extends Component {
 
     const className = classNames(Styles.default, iconNameClass, this.props.className)
     return (
-      <i className={className} style={style}>
+      <i className={className} style={style} {...this.props}>
         {this.props.children }
       </i>
     )
