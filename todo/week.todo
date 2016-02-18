@@ -131,7 +131,9 @@ After Boilerplate setup
 
 Pre-production
 -- Webpack related
+	- read "Building for production section": http://www.pro-react.com/materials/appendixA/#buildingfor
 	- add Autoprefixer
+	- use HtmlWebpackPlugin with index.html template: see http://www.pro-react.com/materials/appendixA/
 	- consider React-Icons: https://github.com/gorangajic/react-icons, allows to do ES6 imports to import only needed things
 	- currently index.html for prod: doesn't include js and css files bundled	
 		- consider setup auto-index html: https://github.com/ampedandwired/html-webpack-plugin
@@ -163,6 +165,8 @@ Pre-production
 	- figure out what JS is loaded based on source-maps (https://github.com/danvk/source-map-explorer)
 	- tweak fast-click: https://gist.github.com/gajus/bbf06ea2e37047b01e70
 	- React perf. optimization: http://benchling.engineering/performance-engineering-with-react/
+	- use https://github.com/typekit/webfontloader to load Types
+	- optimize CSS Delivery https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
 
 Not Today, but not never!
 	-- Github
