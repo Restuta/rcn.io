@@ -55,11 +55,6 @@
     }
   }
 
-  .content.container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .navbar-nav .nav-link {
     @include text-3();
     transition: all ease 0.2s;
@@ -70,11 +65,11 @@
     &:hover {
       color: black;
     }
-    &.faded {
-      color: $grey-300;
-      &:hover {
-        color: $grey-700;
-      }
+  }
+  .navbar-nav .nav-link.faded {
+    color: $grey-300;
+    &:hover {
+      color: $grey-700;
     }
   }
 }

@@ -1,6 +1,11 @@
 engines:
   eslint:
     enabled: true
+    config:
+      config: code/app/.eslintrc
+      extensions:
+        - .js
+        - .jsx
   fixme:
     enabled: true
   scss-lint:
