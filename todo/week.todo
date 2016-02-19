@@ -168,6 +168,9 @@ Pre-production
 	- use https://github.com/typekit/webfontloader to load Types
 	- optimize CSS Delivery https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
 	- consider using https://github.com/bvaughn/react-virtualized for infinite calendar list
+	- only use iconst that are neeeded
+		- eigher react-icons
+		- or iconmoon (of similar) to create custom font from the ones we use
 
 Not Today, but not never!
 	-- Github
