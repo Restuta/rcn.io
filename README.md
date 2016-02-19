@@ -49,7 +49,8 @@ Stay small.
 Race safe. :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist:
 
 ---
-# [Roadmap](http://rcn.productmap.co)
+## [Roadmap](http://rcn.productmap.co)
+# [Changelog](http://changelog.rcn.io/)
 
 
 ### How you can help
