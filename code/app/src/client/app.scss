@@ -20,6 +20,15 @@ a:active {
   outline: none;
 }
 
+//so .fa iconst do not break vertical rythm
+.fa {
+  vertical-align: bottom;
+}
+
+// svg {
+//   vertical-align: bottom !important;
+// }
+
 .display-flex {
   display: flex;
   align-items: flex-end;

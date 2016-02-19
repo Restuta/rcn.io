@@ -1,6 +1,6 @@
 @import 'variables';
 
-$px-as-rem: 1/getBaseFontSize() + 0rem;
+$px-as-rem: 1rem/getBaseFontSize();
 
 
 @mixin offset-to-baseline($offset, $margin-bottom) {
