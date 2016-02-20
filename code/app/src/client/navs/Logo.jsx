@@ -1,6 +1,7 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
 import InlineSVG from 'svg-inline-react'
+import LogoSVG from './logo.svg'
 
 
 export default class Logo extends Component {
@@ -12,7 +13,7 @@ export default class Logo extends Component {
     }
 
     return (
-      <InlineSVG  style={style} src={require('./logo.svg')} />
+      <InlineSVG  style={style} src={LogoSVG} />
     )
   }
 }
