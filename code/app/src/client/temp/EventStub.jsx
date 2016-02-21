@@ -1,7 +1,7 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
-import Typography from '../styles/typography'
-import Colors from '../styles/colors'
+import Typography from 'styles/typography'
+import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './EventStub.scss'
 

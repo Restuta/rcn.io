@@ -1,10 +1,10 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
-import Typography from '../styles/typography'
-import Colors from '../styles/colors'
+import Typography from 'styles/typography'
+import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
-import Grid from '../styles/grid'
+import Grid from 'styles/grid'
 
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size}`, props.className)
@@ -101,14 +101,21 @@ class Event extends Component {
       borderLeft: `${cardWidthPx * 0.06}px solid ${eventColor}`,
     }
 
+    const {debug = false} = this.props
+    let debugComponent = null
+
+    if (debug) {
+      debugComponent = (<span style={{
+        position: 'absolute',
+        top: '-8px',
+        left: '85%',
+        color: Colors.grey400,
+      }}>{cardHeightRem}</span>)
+    }
+
     return (
       <div style={style} className="Event lvl-1">
-        <span style={{
-          position: 'absolute',
-          top: '-8px',
-          left: '85%',
-          color: Colors.grey400,
-        }}>{cardHeightRem}</span>
+        {debugComponent}
         <EventName size={cardSize}>{this.props.name}</EventName>
       </div>
     )

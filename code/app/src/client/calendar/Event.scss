@@ -4,18 +4,22 @@
 .Event {
   position: relative;
   border-radius: 2px;
+  margin-bottom: 1rem;
 
-  // background-color: #fff;
+
+   background-color: white;
   // padding: $line-height-rem;
   // transition: box-shadow .1s ease-in-out;
 
   &.lvl-1 {
-    @include box-shadow-lvl-0();
+    // @include box-shadow-minimalistic();
+     @include box-shadow-lvl-1();
+    //@include shadow-semantic-ui-card();
     transition: all ease .2s;
   }
 
   &:hover {
-    @include box-shadow-lvl-3();
+    @include box-shadow-lvl-2();
   }
 
 }

@@ -5,7 +5,6 @@ import './app.scss'
 import Row from './atoms/Row.jsx'
 import Col from './atoms/Col.jsx'
 import Icon from './atoms/Icon.jsx'
-import Counter from './temp/Counter.jsx'
 import Event, { EventName } from './calendar/Event.jsx'
 import Badge from './calendar/badges/Badge.jsx'
 import RoundBadge from './calendar/badges/RoundBadge.jsx'
@@ -157,106 +156,103 @@ export default class App extends Component {
 
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
-            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-            <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-            <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
 
         <Row className="margin-top">
-          <Col sm={1}><Event width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
-          <Col sm={1}><Event width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
-          <Col sm={1}><Event width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Colavita Criterium"/></Col>
-          <Col sm={1}><Event width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Red Kite Omnium"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Colavita Criterium"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Red Kite Omnium"/></Col>
         </Row>
         <Row className="margin-top">
           <Col sm={2}>
-            <Event width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
-          </Col>
-        </Row>
-
-        <Row className="margin-top">
-          <Col sm={2}>
-            <Event width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-          </Col>
-          <Col sm={2}>
-            <Event width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-          </Col>
-          <Col sm={2}>
-            <Event width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
-          </Col>
-          <Col sm={2}>
-            <Event width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={2}>
-            <Event width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+            <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+            <Event debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+            <Event debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
-            <Event width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Col>
         </Row>
 
-
-
+        <Row className="margin-top">
+          <Col sm={2}>
+            <Event debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+          </Col>
+          <Col sm={2}>
+            <Event debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+          </Col>
+          <Col sm={2}>
+            <Event debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
+          </Col>
+          <Col sm={2}>
+            <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Col>
+        </Row>
 
         <h1 className="oswald">Road Races in CA, 100mi range</h1>
 
@@ -273,8 +269,6 @@ export default class App extends Component {
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]}/>
 
-
-        <Counter increment={1} color="silver" marginTop="20px" />
       </div>
     )
   }

@@ -4,7 +4,7 @@ import './styles/bootstrap.scss'
 import './app.scss'
 import classNames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
-import DebugGrid from './temp/DebugGrid.jsx'
+import DebugGrid from './temp/debug/DebugGrid.jsx'
 
 let whenRenderStarted
 
@@ -27,24 +27,27 @@ export default class Dev extends Component {
 
   componentDidMount() {
     let now = +new Date()
-
     console.info('  App rendred in: ' + (now - whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+  }
+
+  componentDidUpdate() {
+    let now = +new Date()
+    console.info('  App re-rendred in: ' + (now - whenRenderStarted) + 'ms') // eslint-disable-line  no-console
   }
 
   render() {
     whenRenderStarted = +new Date()
 
-    console.info('App-level render! ') // eslint-disable-line  no-console
     //adding props to children, passing browser-calculated container size to be exact */
     const children = React.cloneElement(this.props.children, { containerWidth: this.props.containerWidth })
 
     return (
       <div className={this.state.appLevelClasses}>
+        <DebugGrid setDebugClasses={this.setAppStateClasses} />
         <TopNavbar />
         <div className="container">
           {children}
         </div>
-        <DebugGrid setDebugClasses={this.setAppStateClasses}/>
       </div>
     )
   }

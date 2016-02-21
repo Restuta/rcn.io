@@ -1,9 +1,10 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classNames from 'classnames'
-import Checkbox from '../atoms/Checkbox.jsx'
+import Checkbox from 'atoms/Checkbox.jsx'
+import BaselineGrid from './BaselineGrid.jsx'
 
-export default class DebugGrid extends Component {
+
+export default class DebugGrid extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -16,20 +17,11 @@ export default class DebugGrid extends Component {
   stateToClasses(state) {
     let classes = ''
 
-    if (state.shouldShowBaseline) {
-      classes = classNames(classes, 'debug-baseline')
-    }
-
     if (state.shouldShowContainerEdges) {
       classes = classNames(classes, 'debug-container')
     }
 
     return classes
-  }
-
-  //setting initial state
-  componentWillMount() {
-    this.props.setDebugClasses(this.stateToClasses(this.state))
   }
 
   render() {
@@ -53,9 +45,7 @@ export default class DebugGrid extends Component {
     }
 
     const onBaselineCheckboxChange = () => {
-      this.setState({ shouldShowBaseline: !this.state.shouldShowBaseline }, () => {
-        this.props.setDebugClasses(this.stateToClasses(this.state))
-      })
+      this.setState({ shouldShowBaseline: !this.state.shouldShowBaseline })
       localStorage.setItem('shouldShowBaseline', !this.state.shouldShowBaseline)
     }
 
@@ -67,7 +57,7 @@ export default class DebugGrid extends Component {
     }
 
     return (
-      <div>
+      <div className="DebugGrid">
         <div style={style}>
           <Checkbox
             onChange={on3x3GridCheckboxChange}
@@ -86,6 +76,8 @@ export default class DebugGrid extends Component {
           </Checkbox>
         </div>
 
+
+        {this.state.shouldShowBaseline ? <BaselineGrid /> : null}
         {this.state.shouldShow3x3Grid ? <GridLines /> : null}
       </div>
     )

@@ -1,0 +1,23 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Day {
+
+  min-height: 12rem;
+  //debug
+  //outline: 1rem solid rgba(180, 255, 158, 0.7);
+  outline: $px-as-rem solid $grey-300;
+  //@include box-shadow-lvl-0();
+
+  &-date {
+    @include text-3();
+    font-weight: 400;
+    text-align: right;
+    color: $grey-500;
+    top: -$px-as-rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}

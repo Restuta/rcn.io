@@ -1,8 +1,8 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './Month.scss'
-import Row from '../atoms/Row.jsx'
-import Col from '../atoms/Col.jsx'
+import Row from 'atoms/Row.jsx'
+import Col from 'atoms/Col.jsx'
 import moment from 'moment'
 
 export default class Month extends Component {
