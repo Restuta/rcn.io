@@ -13,9 +13,11 @@ const pathToReactDOM = node_modules('react-dom/dist/react-dom.js')
 const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
 const pathToMomentJs = node_modules('moment/min/moment.min.js')
 
-//const pathToReact = resolveNodeModulesPath('react/dist/react.min.js');
-//const pathToReactDOM = resolveNodeModulesPath('react-dom/dist/react-dom.min.js');
-
+//production config
+// const pathToReact = node_modules('react/dist/react.min.js');
+// const pathToReactDOM = node_modules('react-dom/dist/react-dom.min.js');
+// const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
+// const pathToMomentJs = node_modules('moment/min/moment.min.js')
 
 
 module.exports = {
@@ -50,7 +52,8 @@ module.exports = {
   ],
   resolve: {
     root: [
-      path.resolve(__dirname, 'src/')
+      //path.resolve(__dirname, 'src/'),
+      path.resolve(__dirname, 'src/client')
     ],
     //tells webpack to use static file when import React from 'react' is used
     alias: {
