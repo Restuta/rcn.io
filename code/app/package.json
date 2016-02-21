@@ -7,7 +7,7 @@
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js --progress",
     "build": "npm run clean && npm run build:webpack",
-    "start": "NODE_ENV=production node devServer.js",
+    "start": "node devServer.js",
     "eslint": "eslint src/** --ext .js,.jsx || true",
     "eslint:fix": "eslint src/** --ext .js,.jsx --fix || true",
     "reinstall": "npm run clean:all && bower i && npm i"
