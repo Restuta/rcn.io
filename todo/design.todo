@@ -22,11 +22,11 @@ Design
 --- Statements
 	- From Design For Hackers
 		- For the beginning designer, success is all about reducing variables. 
-		- About fonts
+		+- About fonts
 			.- Georgia for a sophisticated serif
 			.- Helvetica for a clean and neutral design
 			+ Lato for a friendly and "natural" look
-			- Europa from Typekit for headings (or Oswald for condensed)
+			+- Europa from Typekit for headings (or Oswald for condensed)
 				.- Aleo was designed as Slab Serif pair to lato: http://www.fontsquirrel.com/fonts/aleo
 			.-- Raleway for a more modern geometric look
 	- Writing Language: https://www.google.com/design/spec/style/writing.html#writing-language
@@ -48,13 +48,14 @@ Design
  	- Headings: 
  		-- Oswald: pairs with Lato well, condensed
  		.- Montserrat: for maybe other headings
- 		- Europa as a nice looking aletnative to Montserrat (Typekit): used by exposure.co
- 		- Use a smaller line-height than body text (e.g. 1.1)
+ 		+- Europa as a nice looking aletnative to Montserrat (Typekit): used by exposure.co
+ 			.- it's alsmost same as Lato in upper case
+ 		+- Use a smaller line-height than body text (e.g. 1.1)
  			- see how it fits to a baseline
  	- Contrast (from Google Paper): Text should maintain a minimum contrast ratio of at least 4.5:1 (calculated based on luminance values) for legibility. A ratio of 7:1 is preferred.
  	- Line length: 30 is ideal for short text, 60 for long.
 --- Use Grid
-	-- 16 columns
+	-- 14 columns
 	- resolutions 2015
 		- Desktop
 			- 1440+: 25%
@@ -82,7 +83,7 @@ Design
  		- can be taken from here: http://www.basscss.com/docs/guides/basics/
  		- consider Tachyons : (http://tachyons.io) - CSS for designing faster than the speed of light
  		- compare it to BS4
- 	- use REMS for fonts: this allows to easely change sizes for different devices and still follow same typegraphic scale
+ 	+- use REMS for fonts: this allows to easely change sizes for different devices and still follow same typegraphic scale
 --- Good UI Datastories:http://www.goodui.org/
 
 Tools

@@ -180,8 +180,8 @@ Not Today, but not never!
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
 		- setup larger breakpoint to support really wide displays
 	-- Fonts and Typography
-		- Try Bebas Neue instead of Oswald
-		- try LEAGUE GOTHIC instead of Oswald (OSS font   )
+		+- Try Bebas Neue instead of Oswald
+		+- try LEAGUE GOTHIC instead of Oswald (OSS font)
 		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
 	-- SVG and Icons
 		- use IcoMoon to convert font's to SVG
