@@ -1,0 +1,17 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Week {
+  //background-color: $grey-100;
+
+  //debug
+  //outline: 2px solid pink;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+
+
+  &:last-of-type {
+    border-bottom: pxToRem(1) solid $grey-300;
+  }
+}

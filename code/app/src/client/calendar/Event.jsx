@@ -87,18 +87,22 @@ class Event extends Component {
     }
 
     const grid  = Grid.init(containerWidth)
-    const cardWidthPx = grid.getColumnContentWidth(width)
+    const cardWithRem = Typography.pxToRem(
+      //2 compensates for calculation and round error, so card has no chance to push columns beyound it's width
+      Math.floor(grid.getColumnContentWidth(width)) - 2
+    )
     eventColor = Colors.grey600
 
     let style = {
       //backgroundColor: 'white',
-      width: cardWidthPx + 'px',
+      width: cardWithRem + 'rem',
+      //width: '100%',
       height: cardHeightRem + 'rem',
       paddingTop: verticalPadding,
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthPx * 0.06}px solid ${eventColor}`,
+      borderLeft: `${cardWithRem * 0.06}rem solid ${eventColor}`,
     }
 
     const {debug = false} = this.props

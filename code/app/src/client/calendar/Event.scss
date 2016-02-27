@@ -13,8 +13,9 @@
 
   &.lvl-1 {
     // @include box-shadow-minimalistic();
-     @include box-shadow-lvl-1();
+    //@include box-shadow-lvl-0();
     //@include shadow-semantic-ui-card();
+    @include box-shadow-custom-minimal();
     transition: all ease .2s;
   }
 

@@ -36,7 +36,6 @@ export default {
     return {
       //returns widh in px of Container's content area (width without paddings)
       getColumnContentWidth(numberOfCols) {
-        //more precise calcualtion could be with using percentages
         const COLUMNS = 14
         const GUTTER_PX = 16
 

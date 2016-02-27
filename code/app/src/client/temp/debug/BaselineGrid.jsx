@@ -44,20 +44,20 @@ export default class BaselineGrid extends React.Component {
       backgroundColor: 'transparent',
       width: '100%',
       height: `${this.state.viewportHeight + extraHeight}px`,
-      backgroundRepeat: `repeat`,
-      backgroundPosition: `left -1px`,
+      backgroundRepeat: 'repeat',
+      backgroundPosition: 'left -1px',
       zIndex: 9999
     }
 
     const primaryBaselineStyle = Object.assign({}, baseStyle, {
-      backgroundImage: `linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)`,
+      backgroundImage: 'linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)',
       backgroundSize: `${baselineHeight}rem ${baselineHeight}rem`,
     })
 
-    const secondaryBaselineStyle = Object.assign({}, baseStyle, {
-      backgroundImage: `linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)`,
-      backgroundSize: `${baselineHeight * 2}rem ${baselineHeight * 2}rem`,
-    })
+    // const secondaryBaselineStyle = Object.assign({}, baseStyle, {
+    //   backgroundImage: 'linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)',
+    //   backgroundSize: `${baselineHeight * 2}rem ${baselineHeight * 2}rem`,
+    // })
 
     return (
       <div className="BaselineGrid">

@@ -1,12 +1,11 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './Calendar.scss'
-// import Row from ' atoms/Row.jsx'
-// import Col from 'atoms/Col.jsx'
-import Month from './Month.jsx'
-import {Day, Week} from './Day.jsx'
+import Day from './Day.jsx'
+import Week from './Week.jsx'
 import Grid from 'styles/grid'
 import Event from './Event.jsx'
+import WeekdaysHeader from './WeekdaysHeader.jsx'
 
 export default class Calendar extends Component {
   render() {
@@ -16,6 +15,16 @@ export default class Calendar extends Component {
       <div className="Calendar">
         <h1>{name}</h1>
 
+        <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]}/>
+        <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]} style={{
+          position: 'fixed',
+          width: 1132,
+          textAlign: 'center',
+          top: 0,
+          backgroundColor: 'white',
+          zIndex: 9999,
+          boxShadow: '0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4)'
+        }}/>
         <Week>
           <Day year={2016} month={1} day={1} size={2}>
             <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
@@ -83,25 +92,36 @@ export default class Calendar extends Component {
           <Day year={2016} month={1} day={20} size={2}>
             <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Day>
-          <Day year={2016} month={1} day={21} size={2}>
+          <Day year={2016} month={1} day={31} size={2}>
             <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Day>
         </Week>
 
-        <Month month={1} year={year} />
-        <Month month={2} year={year} />
-        <Month month={3} year={year} />
-        <Month month={4} year={year} />
-        <Month month={5} year={year} />
-        <Month month={6} year={year} />
-        <Month month={7} year={year} />
-        <Month month={8} year={year} />
-        <Month month={9} year={year} />
-        <Month month={10} year={year} />
-        <Month month={11} year={year} />
-        <Month month={12} year={year} />
+        <Week>
+          <Day year={2016} month={1} day={15} size={2}/>
+          <Day year={2016} month={1} day={16} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+          <Day year={2016} month={1} day={17} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+          <Day year={2016} month={1} day={18} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+          <Day year={2016} month={1} day={19} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+          <Day year={2016} month={1} day={20} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+          <Day year={2016} month={1} day={31} size={2}>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Day>
+        </Week>
       </div>
     )
   }
