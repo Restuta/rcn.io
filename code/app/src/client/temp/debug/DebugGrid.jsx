@@ -3,7 +3,6 @@ import classNames from 'classnames'
 import Checkbox from 'atoms/Checkbox.jsx'
 import BaselineGrid from './BaselineGrid.jsx'
 
-
 export default class DebugGrid extends React.Component {
   constructor(props) {
     super(props)
@@ -22,6 +21,10 @@ export default class DebugGrid extends React.Component {
     }
 
     return classes
+  }
+
+  componentWillMount() {
+    this.props.setDebugClasses(this.stateToClasses(this.state))
   }
 
   render() {
