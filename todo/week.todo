@@ -30,8 +30,19 @@ Today
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
- 	--- design a card UI
+ 	--- Caledar
  		!----- immediate todo
+ 			- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+ 			+- container edges are broken (after reaload checkbox is not honored)
+ 			- re-consider card width calculations
+ 				- center cards within day of week using flexbox
+ 				+- currently they are exact, which causes painful rounding erros and misalignments
+ 					+-- possible solusions
+ 						+- use 100% for width
+ 						+- substract 1-2px so visually cards occupy same space
+
+ 	--- design a card UI
+ 		----- immediate todo
  			+--- figure out ideal heith based on baselines
  			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
  			+- round height to nearest multiple of line height
@@ -40,7 +51,7 @@ Today
  			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
  			+-- rewrite calculation of card heights using formula
  			+-- try 1.7777 vs 1.5 card ratios
- 			- adaptive Event card or different components?: what is easier to maintain?
+ 			+- adaptive Event card or different components?: what is easier to maintain?
  				+- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					+- text should be moved down proprotionally to card size
  					+- try Roboto Condensed
