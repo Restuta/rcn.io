@@ -11,8 +11,8 @@ function node_modules(pathName) { // eslint-disable-line camelcase
 const pathToReact = node_modules('react/dist/react.js')
 const pathToReactDOM = node_modules('react-dom/dist/react-dom.js')
 const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
-const pathToMomentJs = node_modules('moment/min/moment.min.js')
-//const pathToMomentJs = node_modules('moment/moment.js')
+//const pathToMomentJs = node_modules('moment/min/moment.min.js')
+const pathToMomentJs = node_modules('moment/moment.js')
 
 //production config
 // const pathToReact = node_modules('react/dist/react.min.js');
