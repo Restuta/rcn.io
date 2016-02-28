@@ -10,7 +10,7 @@ export default class Home extends Component {
 
     return (
       <div>
-        <Calendar name="NCNCA Calendar" year={2016}/>
+        <Calendar name="NCNCA Calendar" year={2016} containerWidth={this.props.containerWidth}/>
 
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
         <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>

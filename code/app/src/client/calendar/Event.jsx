@@ -15,9 +15,31 @@ export const EventName = (props) => {
   )
 }
 
+//gets height of the smallest card (in rems) for the given containerWidth
+const getBaseHeight = function(containerWidth) {
+  //for small containers there is no constant size we can compare to
+  if (containerWidth < Grid.ContainerWidth.SM) {
+    return 2
+  }
+
+  const baseHeightMap = {
+    [Grid.ContainerWidth.SM]: 2,
+    [Grid.ContainerWidth.MD]: 3,
+    [Grid.ContainerWidth.LG]: 4,
+    [Grid.ContainerWidth.XL]: 5
+  }
+
+  return baseHeightMap[containerWidth]
+}
+
 class Event extends Component {
   render() {
-    const {width, baseHeight, containerWidth} = this.props
+    const {width, containerWidth, baseHeight = getBaseHeight(containerWidth)} = this.props
+
+    // if (!baseHeight) {
+    //   baseHeight = getBaseHeight(containerWidth)
+    // }
+
     //todo: typography should be passed as props
 
     /*

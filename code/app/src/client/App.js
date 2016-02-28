@@ -8,7 +8,7 @@ import DebugGrid from './temp/debug/DebugGrid.jsx'
 
 let whenRenderStarted
 
-export default class Dev extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {

@@ -19,7 +19,7 @@ const Spacer = ({width}) => (<span style={{width: `${width}px`}}></span>)
 const S5 = () => (<Spacer width={5}/>)
 const S10 = () => (<Spacer width={10}/>)
 
-export default class App extends Component {
+export default class Dev extends Component {
   constructor(props) {
     super(props)
   }
@@ -57,10 +57,10 @@ export default class App extends Component {
 
         <h2>EVENT COMPONENTS, container {containerWidth}</h2>
         <p className={'text-sm-9'} style={{fontSize:9}}>{'9px'} {eventName}</p>
+        <p className={'text-' + 1} style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
+        <p className={'text-sm-11'} style={{fontSize:11}}>{'11px'} {eventName}</p>
         <p className={'text-sm-12'} style={{fontSize:12}}>{'12px'} {eventName}</p>
 
-
-        <p className={'text-' + 1} style={{fontSize:getFontSize(1)}}>{sizeToPx(1)} {eventName}</p>
         <p className={'text-' + 2} style={{fontSize:getFontSize(2)}}>{sizeToPx(2)} {eventName}</p>
         <p className={'text-' + 3} style={{fontSize:getFontSize(3)}}>{sizeToPx(3)} {eventName}</p>
         <p className={'text-' + 4} style={{fontSize:getFontSize(4)}}>{sizeToPx(4)} {eventName}</p>

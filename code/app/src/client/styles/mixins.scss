@@ -33,6 +33,14 @@ $px-as-rem: 1rem/getBaseFontSize();
   font-weight: 700;
 }
 
+@mixin text-sm-11() {
+  @include offset-to-baseline(4, $text-margin-bottom);
+  font-size: pxToRem(11);
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+
 @mixin text-sm-12() {
   @include offset-to-baseline(4, $text-margin-bottom);
   font-size: pxToRem(12);

@@ -50,11 +50,10 @@ $base-line-rem: $line-height-rem / 2;
   }
 
   &.size-S {
-    @include text-1();
+    @include text-sm-11();
     line-height: 1.5rem;
     top: $px-as-rem * 2;
-    max-height: $base-line-rem * 6;
-    min-height: $base-line-rem * 6;
+    max-height: 100%;
   }
 
   &.size-M {

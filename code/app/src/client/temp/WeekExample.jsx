@@ -95,7 +95,7 @@ export default class WeekExample extends Component {
         <Row className="WeekExample" style={rowStyle}>
           <span style={daysStyleLeft}>{days.join(' ')}</span>
           {days.map((x, i) =>
-            <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
+            <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} xs={x}
                 className={colClasses}>
               {createDayOfWeekComp(++i)}
               {generateRandomEvents(showDebugInfo)}
@@ -108,7 +108,7 @@ export default class WeekExample extends Component {
       component = (
         <Row className="WeekExample" style={rowStyle}>
           {days.map((x, i) =>
-            <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} sm={x}
+            <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} xs={x}
                 className={colClasses}>
               {createDayOfWeekComp(++i)}
               {generateRandomEvents(showDebugInfo)}
