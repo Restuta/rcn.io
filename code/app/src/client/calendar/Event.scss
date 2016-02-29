@@ -7,6 +7,7 @@
   margin-bottom: 1rem;
 
 
+
    background-color: white;
   // padding: $line-height-rem;
   // transition: box-shadow .1s ease-in-out;
@@ -51,19 +52,23 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-S {
     @include text-sm-11();
+    margin-bottom: 0;
     line-height: 1.5rem;
     top: $px-as-rem * 2;
     max-height: 100%;
   }
 
   &.size-M {
-    @include text-sm-12();
+    @include text-2();
+    font-weight: 700;
+    margin-bottom: 0;
     max-height: $base-line-rem * 8;
     min-height: $base-line-rem * 8;
   }
 
   &.size-L {
     @include text-2();
+    margin-bottom: 0;
     font-weight: 700;
     max-height: $line-height-rem * 6;
     min-height: $line-height-rem * 6;
@@ -71,6 +76,7 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-XL {
     @include text-3();
+    margin-bottom: 0;
     font-weight: 700;
     line-height: 2.5rem;
     top: 0; //fine-tuning for custom line height

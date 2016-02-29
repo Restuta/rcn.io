@@ -16,7 +16,14 @@
   }
 }
 
+@keyframes fade-down {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .TopNavbar {
+  animation:         fade-down 2s 1;
+
   //@include box-shadow-lvl-0();
   //@include box-shadow-like-slack();
   background-color: $body-bg-color;

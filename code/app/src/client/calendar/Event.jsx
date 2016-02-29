@@ -113,6 +113,7 @@ class Event extends Component {
       //2 compensates for calculation and round error, so card has no chance to push columns beyound it's width
       Math.floor(grid.getColumnContentWidth(width)) - 2
     )
+
     eventColor = Colors.grey600
 
     let style = {

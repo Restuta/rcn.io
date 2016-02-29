@@ -3,6 +3,7 @@ import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import moment from 'moment'
+import Colors from 'styles/colors'
 
 
 export default class WeekdaysHeader extends Component {
@@ -15,20 +16,24 @@ export default class WeekdaysHeader extends Component {
       paddingTop: '1rem',
       fontSize: '2rem',
       textAlign: 'right',
+      backgroundColor: Colors.bodyBg,
       //fontWeight: '300',
-      textTransform: 'uppercase'
-
+      textTransform: 'uppercase',
+      // fontFamily: 'Oswald',
+      // fontWeight: 300
     }
 
     const columns = sizes.map((size, i) => {
       return (
-        <Col key={i} xs={size} style={colStyle}>
+        <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
           {moment.weekdaysShort()[i]}
         </Col>
       )
     })
 
-    const style = null
+    const style = {
+
+    }
 
     return (
       <div className="WeekDaysHeader" style={style} {...this.props}>
@@ -42,22 +47,22 @@ export default class WeekdaysHeader extends Component {
   }
 }
 
-export class WeekdaysHeaderStiky extends Component {//eslint-disable-line
+export class WeekdaysHeaderSticky extends Component {//eslint-disable-line
   render() {
     const {sizes, containerWidth} = this.props
 
 
     return (
-      <div style={{
+      <div className="WeekDaysHeaderSticky" style={{
         position: 'fixed',
         top: '0rem',
         zIndex: 999,
         width: '100%',
         left: 0,
-        backgroundColor: 'white',
+        //backgroundColor: Colors.bodyBg,
         boxShadow: '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)'
       }}>
-        <WeekdaysHeader sizes={sizes} className="" style={{
+        <WeekdaysHeader sizes={sizes} style={{
           width: containerWidth,
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -65,8 +70,6 @@ export class WeekdaysHeaderStiky extends Component {//eslint-disable-line
           paddingRight: '1rem',
           //left: '0',
           textAlign: 'center',
-          backgroundColor: 'white',
-
         }}/>
       </div>
     )
