@@ -47,7 +47,6 @@ export default class Dev extends Component {
 
     return (
       <div>
-
         <h1>{this.props.foo}</h1>
         <h1>H1 {sizeToPx(7)} {eventName} <Icon name="bicycle"/> </h1>
         <h2>H2 {sizeToPx(5)} {eventName}</h2>

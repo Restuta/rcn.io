@@ -111,7 +111,7 @@ class Event extends Component {
     const grid  = Grid.init(containerWidth)
     const cardWithRem = Typography.pxToRem(
       //2 compensates for calculation and round error, so card has no chance to push columns beyound it's width
-      Math.floor(grid.getColumnContentWidth(width)) - 2
+      Math.floor(grid.getColumnContentWidth(width)) - 1
     )
 
     eventColor = Colors.grey600
