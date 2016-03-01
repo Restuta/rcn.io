@@ -63,7 +63,6 @@
     "react-dom": "^0.14.7",
     "react-pure-render": "^1.0.1",
     "react-router": "^2.0.0",
-    "react-sticky": "^3.0.0",
     "svg-inline-react": "^0.3.1"
   }
 }
