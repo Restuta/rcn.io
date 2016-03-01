@@ -1,9 +1,9 @@
 //TODO: encapsulate back to private function when card design is done
 const ContainerWidth = {
-  SM: 576,
-  MD: 720,
-  LG: 940,
-  XL: 1140
+  SM: 574,
+  MD: 728,
+  LG: 938,
+  XL: 1148
 }
 
 export default {
