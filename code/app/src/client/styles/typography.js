@@ -40,6 +40,10 @@ const scale = (number, scaleOperation) => {
   return toRems(size)
 }
 
+export const pxToRem = function(pixels) {
+  return (pixels / BASE_FONT_SIZE_PX)
+}
+
 export default Object.freeze({
   BASE_FONT_SIZE_PX: BASE_FONT_SIZE_PX,
   //line height in rems
@@ -58,7 +62,5 @@ export default Object.freeze({
   scaleUp(number) {
     return scale(number, scaleUpOperation)
   },
-  pxToRem(pixels) {
-    return (pixels / BASE_FONT_SIZE_PX)
-  }
+  pxToRem: pxToRem
 })

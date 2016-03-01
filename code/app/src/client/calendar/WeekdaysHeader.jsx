@@ -2,8 +2,9 @@ import React from 'react'
 import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-import moment from 'moment'
 import Colors from 'styles/colors'
+import {pxToRem} from 'styles/typography'
+import {WEEKDAYS_SHORT} from './utils/dateUtils'
 
 
 export default class WeekdaysHeader extends Component {
@@ -11,13 +12,13 @@ export default class WeekdaysHeader extends Component {
     const {sizes} = this.props
 
     const colStyle = {
-      //outline: `1px solid silver`, borderTop: '1px solid silver', borderLeft: '1px solid silver', borderRight: '1px solid silver',
       minHeight: '4rem',
       paddingTop: '1rem',
       fontSize: '2rem',
       textAlign: 'right',
       backgroundColor: Colors.bodyBg,
-      //fontWeight: '300',
+      position: 'relative',
+      top: pxToRem(2) + 'rem',
       textTransform: 'uppercase',
       // fontFamily: 'Oswald',
       // fontWeight: 300
@@ -26,14 +27,12 @@ export default class WeekdaysHeader extends Component {
     const columns = sizes.map((size, i) => {
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
-          {moment.weekdaysShort()[i]}
+          {WEEKDAYS_SHORT[i]}
         </Col>
       )
     })
 
-    const style = {
-
-    }
+    const style = {}
 
     return (
       <div className="WeekDaysHeader" style={style} {...this.props}>
@@ -50,7 +49,6 @@ export default class WeekdaysHeader extends Component {
 export class WeekdaysHeaderSticky extends Component {//eslint-disable-line
   render() {
     const {sizes, containerWidth} = this.props
-
 
     return (
       <div className="WeekDaysHeaderSticky" style={{
