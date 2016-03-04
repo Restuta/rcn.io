@@ -68,8 +68,12 @@ module.exports = {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: [pathToReact, pathToReactDOM, pathToReactRouter, pathToMomentJs],
-
+    noParse: [
+      pathToReact,
+      pathToReactDOM,
+      pathToReactRouter,
+      pathToMomentJs
+    ],
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'
