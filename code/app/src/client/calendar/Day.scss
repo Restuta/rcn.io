@@ -2,14 +2,14 @@
 @import '../styles/mixins';
 
 .Day {
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding-bottom: 1rem;
-
   min-height: 12rem;
+  transition: all ease 0.3s;
+
   //debug
   //outline: 1rem solid rgba(180, 255, 158, 0.7);
   //outline: $px-as-rem solid $grey-300;
@@ -28,6 +28,7 @@
   //   ;
 
   background-color: $grey-100;
+
 
   &-date {
     @include text-3();
@@ -49,6 +50,14 @@
 
   &:last-of-type  {
     border-right: pxToRem(1) solid $grey-300;
+  }
+
+  &-today {
+    background-color: whtie;
+  }
+
+  &-today-label {
+    margin: 0;
   }
 
 }

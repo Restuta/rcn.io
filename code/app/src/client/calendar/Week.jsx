@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import './Week.scss'
+import classnames from 'classnames'
 
 export default class Week extends Component {
   render() {
+    const {lastOne} = this.props
+    const classNames = classnames('Week', (lastOne && 'last-one'))
 
     return (
-      <Row className="Week">
+      <Row className={classNames}>
         {this.props.children}
       </Row>
     )
@@ -15,6 +18,7 @@ export default class Week extends Component {
 }
 
 Week.propTypes = {
+  lastOne: PropTypes.bool,
   children: function(props, propName, componentName) {
 
     const children = props[propName]

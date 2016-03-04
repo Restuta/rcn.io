@@ -11,7 +11,7 @@
   justify-content: flex-end;
 
 
-  &:last-of-type {
+  &.last-one {
     border-bottom: pxToRem(1) solid $grey-300;
   }
 }

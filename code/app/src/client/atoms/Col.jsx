@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
-import classNames from 'classnames'
+import classnames from 'classnames'
 
 function getColClassName(propName, propValue) {
 
@@ -26,13 +26,13 @@ export default class Col extends Component {
     //TODO: move this to it's own module
     const columnClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
-      .reduce((curr, prev) => classNames(prev, curr))
+      .reduce((curr, prev) => classnames(prev, curr))
       .trim()
 
-    const combinedClassNames = classNames('col', columnClassNames, this.props.className)
+    const classNames = classnames('col', columnClassNames, this.props.className)
 
     return (
-      <div {...this.props} className={combinedClassNames}>
+      <div {...this.props} className={classNames}>
         {this.props.children}
       </div>
     )
