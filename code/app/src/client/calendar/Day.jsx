@@ -8,6 +8,8 @@ export default class Day extends Component {
   render() {
     const {size, day, month, year} = this.props
 
+    //console.info(`${day}/${month}/${year}`)
+
     let formattedDate = moment({
       day: day,
       month: month - 1, //momentjs counts monthes from 0
