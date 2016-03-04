@@ -4,17 +4,17 @@ import './Calendar.scss'
 import Day from './Day.jsx'
 import Week from './Week.jsx'
 import Event from './Event.jsx'
-import WeekdaysHeader, {WeekdaysHeaderSticky} from './WeekdaysHeader.jsx'
+import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 
 export default class Calendar extends Component {
   render() {
     const {name, year, containerWidth} = this.props
 
-    const months = moment.months()
+    //const months = moment.months()
     //resetting date to first day of week
-    let startDate = moment({year: 2016, month: 0, day: 1}).startOf('isoWeek')
-    const totalWeeks = startDate.isoWeeks()
+    let startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
+    const totalWeeks = startDate.isoWeeksInYear()
 
     let weeks = []
     let currentDate = startDate.clone()
@@ -32,10 +32,7 @@ export default class Calendar extends Component {
       let days = []
 
       for (let k = 1; k <= 7; k++) {
-        const firstDayOfMonthMarker = currentDate.date() === 1
-          ? currentDate.format('MMMM')
-          : null
-
+        const firstDayOfMonthMarker = currentDate.date() === 1 ? currentDate.format('MMMM') : null
         const size = dayOfWeekToSizeMap[currentDate.isoWeekday()]
 
         days.push(
@@ -46,14 +43,12 @@ export default class Calendar extends Component {
         currentDate.add(1, 'day')
       }
 
-      weeks.push(
-        <Week key={i}>{days}</Week>
-      )
+      weeks.push(<Week key={i}>{days}</Week>)
     }
 
     return (
       <div className="Calendar">
-        <h1>{name}</h1>
+        <h1>{name} {year}</h1>
         <h3 style={{
           color: 'grey'
         }}>Auto-generated</h3>
