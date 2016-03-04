@@ -5,7 +5,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 
   padding-bottom: 1rem;
 
@@ -32,6 +32,8 @@
   &-date {
     @include text-3();
     font-weight: 400;
+    width: 100%;
+    text-align: right;
     // font-family: Oswald;
     // font-weight: 300;
     //text-align: right;
