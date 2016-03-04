@@ -12,7 +12,7 @@ export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      appLevelClasses: '',
+      appLevelClasses: 'App',
       containerWidth: props.containerWidth || 1140
     }
 
@@ -21,7 +21,7 @@ export default class App extends Component {
 
   setAppStateClasses(classesToSet) {
     this.setState({
-      appLevelClasses: classNames('', classesToSet)
+      appLevelClasses: classNames('App', classesToSet)
     })
   }
 
@@ -45,7 +45,7 @@ export default class App extends Component {
       <div className={this.state.appLevelClasses}>
         <DebugGrid setDebugClasses={this.setAppStateClasses} />
         <TopNavbar />
-        <div className="container">
+        <div className="App container">
           {children}
         </div>
       </div>

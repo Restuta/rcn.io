@@ -11,47 +11,6 @@ export default class Home extends Component {
     return (
       <div>
         <Calendar name="NCNCA Calendar" year={2016} containerWidth={this.props.containerWidth}/>
-
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} showDebugInfo={debug}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]} showDebugInfo={debug}/>
-
       </div>
     )
   }
