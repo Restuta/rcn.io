@@ -20,7 +20,7 @@ export default class Day extends Component {
     const formattedDate = zeroPad(day, 1)
 
     const style = {
-      backgroundColor: color,
+      //backgroundColor: color,
     }
 
     return (
