@@ -26,8 +26,8 @@ export default class Day extends Component {
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
-          {isToday && <h4 className="Day-today-label">TODAY</h4>}
           {formattedDate}
+          {isToday && <h4 className="Day-today-label">TODAY</h4>}
         </div>
         {this.props.children}
       </Col>

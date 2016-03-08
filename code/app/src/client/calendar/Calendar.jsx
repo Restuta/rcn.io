@@ -35,7 +35,7 @@ export default class Calendar extends Component {
       let days = []
 
       for (let k = 1; k <= 7; k++) {
-        const firstDayOfMonthMarker = currentDate.date() === 1 ? currentDate.format('MMMM') : null
+        const firstDayOfMonthMarker = currentDate.date() === 1 ? currentDate.format('MMMM').toUpperCase() : null
         const daySize = dayOfWeekToSizeMap[currentDate.isoWeekday()]
 
         const fade = percentage => {
@@ -65,7 +65,13 @@ export default class Calendar extends Component {
         days.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
             size={daySize} color={color} isToday={currentDayIsToday}>
-            <h3>{firstDayOfMonthMarker}</h3>
+            <h3 style={{margin: '1rem'}}>{firstDayOfMonthMarker}</h3>
+            {(() => {
+              if (Math.random() < 0.3) {
+                return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
+              }
+            })()}
+
           </Day>
         )
         currentDate.add(1, 'day')
@@ -81,11 +87,12 @@ export default class Calendar extends Component {
         <h3 style={{
           color: 'grey'
         }}>Auto-generated</h3>
-
-        {weeks}
+        <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]}/>
+        <div className="Calendar-body">
+          {weeks}
+        </div>
 
         <h1>{name}</h1>
-
         <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]}/>
         <div className="Calendar-body">
           <Week>
@@ -186,6 +193,7 @@ export default class Calendar extends Component {
             </Day>
           </Week>
         </div>
+
       </div>
     )
   }
