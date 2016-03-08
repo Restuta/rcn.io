@@ -1,17 +1,25 @@
 @import '../styles/variables';
 @import '../styles/mixins';
 
+
+
 .Week {
+  $border-width-rem: pxToRem(1);
+
   //background-color: $grey-100;
 
-  //debug
-  //outline: 2px solid pink;
+  min-height: 12rem + $border-width-rem; //adding pixels to min height to compensate for border width
+
+  border-top: $border-width-rem solid $grey-300;
+  margin-top: -$border-width-rem;
+  position: relative; //this makes borders visible despite negative top margin, idk why =)
 
   flex-wrap: nowrap;;
   justify-content: flex-end;
 
 
   &.last-one {
-    border-bottom: pxToRem(1) solid $grey-300;
+    border-bottom: $border-width-rem solid $grey-300;
+    margin-bottom: -$border-width-rem;
   }
 }

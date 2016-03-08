@@ -22,6 +22,7 @@
     xl: 1200px
   );
 
+  //divides by 14 without reminder to avoid non-round pixel errors
   $container-max-widths: (
     sm: 574px,
     md: 728px,

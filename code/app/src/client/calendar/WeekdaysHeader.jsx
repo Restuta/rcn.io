@@ -6,28 +6,37 @@ import Colors from 'styles/colors'
 import {pxToRem} from 'styles/typography'
 import {WEEKDAYS_SHORT} from './utils/dateUtils'
 
+const pxToRems = (px) => pxToRem(px) + 'rem'
+
 
 export default class WeekdaysHeader extends Component {
   render() {
     const {sizes} = this.props
 
+    const rowStyle = {
+      flexWrap: 'nowrap'
+    }
+
     const colStyle = {
       minHeight: '4rem',
-      paddingTop: '1rem',
-      fontSize: '2rem',
       textAlign: 'right',
       backgroundColor: Colors.bodyBg,
+    }
+
+    const weekdaysNameStyle = {
+      fontSize: '2rem',
+      paddingTop: '1rem',
       position: 'relative',
-      top: pxToRem(2) + 'rem',
+      top: pxToRems(2),
       textTransform: 'uppercase',
       // fontFamily: 'Oswald',
-      // fontWeight: 300
+      // fontWeight: 300,
     }
 
     const columns = sizes.map((size, i) => {
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
-          {WEEKDAYS_SHORT[i]}
+          <div style={weekdaysNameStyle}>{WEEKDAYS_SHORT[i]}</div>
         </Col>
       )
     })
@@ -36,9 +45,7 @@ export default class WeekdaysHeader extends Component {
 
     return (
       <div className="WeekDaysHeader" style={style} {...this.props}>
-        <Row style={{
-          flexWrap: 'nowrap'
-        }}>
+        <Row style={rowStyle}>
           {columns}
         </Row>
       </div>

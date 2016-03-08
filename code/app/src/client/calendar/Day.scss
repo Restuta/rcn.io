@@ -5,30 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: 1rem;
-  min-height: 12rem;
-  transition: all ease 0.3s;
-
-  //debug
-  //outline: 1rem solid rgba(180, 255, 158, 0.7);
-  //outline: $px-as-rem solid $grey-300;
-  //@include box-shadow-lvl-0();
-
-  border-top: pxToRem(1) solid $grey-300;
-  margin-top: - pxToRem(1);
-
   border-left: pxToRem(1) solid $grey-300;
-
-  // box-shadow:
-  //   inset 0 1px 0 0 $grey-300, //top
-  //   //inset 0 -1px 0 0 blueviolet, //bottom
-  //   //inset 1px 0 0 $grey-300,   //left
-  //   inset -1px 0 0 $grey-300   // right
-  //   ;
-
   background-color: $grey-100;
 
+  transition: all ease 0.3s;
 
   &-date {
     @include text-3();
