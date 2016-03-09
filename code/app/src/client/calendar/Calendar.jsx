@@ -30,53 +30,28 @@ export default class Calendar extends Component {
 
     const today = moment()
 
-    //TODO: try to paint each month in alternating color to see how easy is to work with months
     for (let i = 1; i <= totalWeeks; i++) {
       let days = []
 
       for (let k = 1; k <= 7; k++) {
         const firstDayOfMonthMarker = currentDate.date() === 1 ? currentDate.format('MMMM').toUpperCase() : null
         const daySize = dayOfWeekToSizeMap[currentDate.isoWeekday()]
-
-        const fade = percentage => {
-          return `rgba(255, 82, 125, ${percentage})`
-        }
-
-        const monthColorMap = {
-          1: fade(0.05),
-          2: fade(0.1),
-          3: fade(0.15),
-          4: fade(0.2),
-          5: fade(0.25),
-          6: fade(0.30),
-          7: fade(0.25),
-          8: fade(0.20),
-          9: fade(0.15),
-          10: fade(0.10),
-          11: fade(0.05),
-          12: fade(0),
-        }
-
         const month = currentDate.month() + 1
-        const color = monthColorMap[month]
-
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
 
         days.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
-            size={daySize} color={color} isToday={currentDayIsToday}>
+            size={daySize} isToday={currentDayIsToday}>
             {firstDayOfMonthMarker && <h3 style={{margin: '1rem 0 1rem 0'}}>{firstDayOfMonthMarker}</h3>}
             {(() => {
               if (Math.random() < 0.3) {
                 return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
               }
             })()}
-
           </Day>
         )
         currentDate.add(1, 'day')
       }
-
 
       weeks.push(<Week key={i} lastOne={i === totalWeeks}>{days}</Week>)
     }

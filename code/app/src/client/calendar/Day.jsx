@@ -16,9 +16,7 @@ export default class Day extends Component {
       isToday
     } = this.props
     const classNames = classnames('Day', (isToday && 'Day-today'))
-
     const formattedDate = zeroPad(day, 1)
-
     const style = {
       //backgroundColor: color,
     }
