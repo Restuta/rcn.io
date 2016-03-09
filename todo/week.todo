@@ -32,10 +32,12 @@ Today
  		- compare compilation time to SASS
  	--- Caledar
  		!----- immediate todo
+ 			-- experiment with Sticky header 
+ 				- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
  			- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
  			+- container edges are broken (after reaload checkbox is not honored)
- 			- re-consider card width calculations
- 				- center cards within day of week using flexbox
+ 			+- re-consider card width calculations
+ 				+- center cards within day of week using flexbox
  				+- currently they are exact, which causes painful rounding erros and misalignments
  					+-- possible solusions
  						+- use 100% for width
