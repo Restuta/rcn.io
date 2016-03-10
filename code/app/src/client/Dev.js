@@ -2,9 +2,9 @@ import React from 'react'
 import Component from 'react-pure-render/component'
 import './styles/bootstrap.scss'
 import './app.scss'
-import Row from './atoms/Row.jsx'
-import Col from './atoms/Col.jsx'
-import Icon from './atoms/Icon.jsx'
+import Row from 'atoms/Row.jsx'
+import Col from 'atoms/Col.jsx'
+import Icon from 'atoms/Icon.jsx'
 import Event, { EventName } from './calendar/Event.jsx'
 import Badge from './calendar/badges/Badge.jsx'
 import RoundBadge from './calendar/badges/RoundBadge.jsx'
@@ -15,9 +15,9 @@ import Grid from './styles/grid'
 import Typography from './styles/typography'
 
 //TODO: remove these components
-const Spacer = ({width}) => (<span style={{width: `${width}px`}}></span>)
-const S5 = () => (<Spacer width={5}/>)
-const S10 = () => (<Spacer width={10}/>)
+const Spacer = width => <span style={{width: `${width}px`}}></span>
+const S5 = () => <Spacer width={5}/>
+const S10 = () => <Spacer width={10}/>
 
 export default class Dev extends Component {
   constructor(props) {
