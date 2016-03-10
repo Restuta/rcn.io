@@ -4,7 +4,7 @@ import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
 import {pxToRem} from 'styles/typography'
-import {WEEKDAYS_SHORT} from './utils/dateUtils'
+import {Weekdays} from './utils/dateUtils'
 
 const pxToRems = (px) => pxToRem(px) + 'rem'
 
@@ -36,7 +36,7 @@ export default class WeekdaysHeader extends Component {
     const columns = sizes.map((size, i) => {
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
-          <div style={weekdaysNameStyle}>{WEEKDAYS_SHORT[i]}</div>
+          <div style={weekdaysNameStyle}>{Weekdays[i].short}</div>
         </Col>
       )
     })

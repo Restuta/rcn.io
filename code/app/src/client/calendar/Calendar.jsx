@@ -7,13 +7,27 @@ import Event from './Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 
+//checks if moment date is also a first day of it's month
+const firstDayOfMonth = moment => {
+  return moment.date() === 1
+}
+
+//checks if moment date is also last day of it's month
+const lastDayOfMonth = moment => {
+  const lastDayOfMonthMoment = moment.clone().endOf('month')
+
+  return moment.date() === lastDayOfMonthMoment.date()
+}
+
+
+
 export default class Calendar extends Component {
   render() {
     const {name, year, containerWidth} = this.props
 
     //const months = moment.months()
     //resetting date to first day of week
-    let startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
+    const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
     const totalWeeks = startDate.isoWeeksInYear()
 
     let weeks = []
@@ -34,15 +48,17 @@ export default class Calendar extends Component {
       let days = []
 
       for (let k = 1; k <= 7; k++) {
-        const firstDayOfMonthMarker = currentDate.date() === 1 ? currentDate.format('MMMM').toUpperCase() : null
         const daySize = dayOfWeekToSizeMap[currentDate.isoWeekday()]
         const month = currentDate.month() + 1
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
 
         days.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
-            size={daySize} isToday={currentDayIsToday}>
-            {firstDayOfMonthMarker && <h3 style={{margin: '1rem 0 1rem 0'}}>{firstDayOfMonthMarker}</h3>}
+            size={daySize}
+            itIsToday={currentDayIsToday}
+            itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
+            itIsLastDayOfMonth={lastDayOfMonth(currentDate)}>
+
             {(() => {
               if (Math.random() < 0.3) {
                 return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
