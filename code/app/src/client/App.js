@@ -43,7 +43,7 @@ export default class App extends Component {
 
     return (
       <div className={this.state.appLevelClasses}>
-        <DebugGrid setDebugClasses={this.setAppStateClasses} />
+        <DebugGrid setDebugClasses={this.setAppStateClasses} containerWidth={this.props.containerWidth}/>
         <TopNavbar />
         <div className="App container">
           {children}

@@ -6,6 +6,7 @@ import BaselineGrid from './BaselineGrid.jsx'
 export default class DebugGrid extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       shouldShow3x3Grid: (localStorage.getItem('shouldShow3x3Grid') === 'true'),
       shouldShowBaseline: (localStorage.getItem('shouldShowBaseline') === 'true'),
@@ -28,6 +29,8 @@ export default class DebugGrid extends React.Component {
   }
 
   render() {
+    const {containerWidth} = this.props
+
     const style = {
       position: 'fixed',
       right: 0,
@@ -40,6 +43,10 @@ export default class DebugGrid extends React.Component {
       borderRadius: '2px',
       boxShadow: '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4)',
       zIndex: 99999
+    }
+
+    const containerSizeStyle = {
+      fontSize: '1.25rem'
     }
 
     const on3x3GridCheckboxChange = () => {
@@ -75,7 +82,7 @@ export default class DebugGrid extends React.Component {
           <Checkbox
             onChange={onContainerCheckboxChange}
             checked={this.state.shouldShowContainerEdges}>
-            Container Edges
+            Container Edges <span style={containerSizeStyle}>({containerWidth}px)</span>
           </Checkbox>
         </div>
 
