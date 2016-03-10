@@ -28,12 +28,12 @@ const scaleUpOperation = (size, scale) => size * scale
 //const scaleDownOperation = (size, scale) => size / scale;
 
 const scale = (number, scaleOperation) => {
-  number += 1
+  const scaleTo = number + 1
 
   let size = BASE_FONT_SIZE_PX
   const toRems  = (sizePx) => (Math.round(sizePx) / BASE_FONT_SIZE_PX)
 
-  for (let i = 1; i < number; i++) {
+  for (let i = 1; i < scaleTo; i++) {
     size = scaleOperation(size, FONT_SCALE)
   }
 

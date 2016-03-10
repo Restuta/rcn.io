@@ -97,7 +97,7 @@ export default class WeekExample extends Component {
           {days.map((x, i) =>
             <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} xs={x}
                 className={colClasses}>
-              {createDayOfWeekComp(++i)}
+              {createDayOfWeekComp(i + 1)}
               {generateRandomEvents(showDebugInfo)}
             </Col>)
           }
@@ -110,7 +110,7 @@ export default class WeekExample extends Component {
           {days.map((x, i) =>
             <Col xsOffset={i === 0 ? firstColumnOffset : null} key={i} xs={x}
                 className={colClasses}>
-              {createDayOfWeekComp(++i)}
+              {createDayOfWeekComp(i + 1)}
               {generateRandomEvents(showDebugInfo)}
             </Col>)
           }
