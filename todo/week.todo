@@ -31,6 +31,8 @@ Today
  	- setup PostCSS with SASS-like plugins
  		- compare compilation time to SASS
  	--- Caledar
+ 		-- Scroll
+ 			- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
  		!----- immediate todo
  			-- experiment with Sticky header 
  				- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
