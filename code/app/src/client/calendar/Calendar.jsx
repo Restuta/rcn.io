@@ -6,18 +6,7 @@ import Week from './Week.jsx'
 import Event from './Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
-
-//checks if moment date is also a first day of it's month
-const firstDayOfMonth = moment => {
-  return moment.date() === 1
-}
-
-//checks if moment date is also last day of it's month
-const lastDayOfMonth = moment => {
-  const lastDayOfMonthMoment = moment.clone().endOf('month')
-
-  return moment.date() === lastDayOfMonthMoment.date()
-}
+import {firstDayOfMonth, lastDayOfMonth} from './utils/dateUtils.js'
 
 
 

@@ -5,7 +5,7 @@ const newWeekDay = ({short, full}) => {
   }
 }
 
-export const Weekdays = [
+const Weekdays = [
   newWeekDay({'short': 'Mon', full: 'Monday'}),
   newWeekDay({'short': 'Tue', full: 'Tuesday'}),
   newWeekDay({'short': 'Wed', full: 'Wednesday'}),
@@ -18,7 +18,7 @@ export const Weekdays = [
 
 const newMonth = newWeekDay
 
-export const Months = [
+const Months = [
   newMonth({'short': 'Jan', full: 'January'}),
   newMonth({'short': 'Feb', full: 'February'}),
   newMonth({'short': 'Mar', full: 'March'}),
@@ -32,3 +32,22 @@ export const Months = [
   newMonth({'short': 'Nov', full: 'November'}),
   newMonth({'short': 'Dec', full: 'December'}),
 ]
+
+
+//checks if moment date is also a first day of it's month
+const firstDayOfMonth = function(moment) {
+  return moment.date() === 1
+}
+
+//checks if moment date is also last day of it's month
+const lastDayOfMonth = function(moment) {
+  const lastDayOfMonthMoment = moment.clone().endOf('month')
+  return moment.date() === lastDayOfMonthMoment.date()
+}
+
+export {
+  Weekdays,
+  Months,
+  firstDayOfMonth,
+  lastDayOfMonth
+}
