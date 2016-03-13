@@ -4,7 +4,7 @@ import './Day.scss'
 import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
 import {zeroPad} from 'utils/formatting'
-import {Months} from './utils/dateUtils'
+import {Months} from './utils/date-utils.js'
 
 export default class Day extends Component {
   render() {
@@ -16,9 +16,15 @@ export default class Day extends Component {
       color,
       itIsToday,
       itIsFirstDayOfMonth,
-      itIsLastDayOfMonth
+      itIsLastDayOfMonth,
+      itIsCurrentMonthsDay
     } = this.props
-    const classNames = classnames('Day', (itIsToday && 'Day-today'))
+
+    const classNames = classnames('Day',
+      (itIsToday && 'Day-today'),
+      (itIsCurrentMonthsDay && 'Day-current-month')
+    )
+
     const formattedDate = zeroPad(day, 1)
     const style = {
       //backgroundColor: color,
@@ -42,12 +48,13 @@ export default class Day extends Component {
 }
 
 Day.propTypes = {
-  size: React.PropTypes.oneOf([1, 2, 3, 4]),
+  size: PropTypes.oneOf([1, 2, 3, 4]),
   day: PropTypes.number.isRequired,
   month: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   color: PropTypes.string,
   itIsToday: PropTypes.bool,
   itIsFirstDayOfMonth: PropTypes.bool,
-  itIsLastDayOfMonth: PropTypes.bool
+  itIsLastDayOfMonth: PropTypes.bool,
+  itIsCurrentMonthsDay: PropTypes.bool
 }

@@ -8,9 +8,9 @@ const nodeModules = require('./webpack/utils').nodeModules
 const pathToReact = nodeModules('react/dist/react.js')
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-//const pathToMomentJs = nodeModules('moment/moment.js')
+const pathToMomentJs = nodeModules('moment/moment.js')
 
-const pathToMomentJs = nodeModules('moment/min/moment.min.js')
+//const pathToMomentJs = nodeModules('moment/min/moment.min.js')
 
 
 module.exports = {

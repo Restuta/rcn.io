@@ -4,7 +4,7 @@ import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
 import {pxToRem} from 'styles/typography'
-import {Weekdays} from './utils/dateUtils'
+import {Weekdays} from './utils/date-utils'
 
 const pxToRems = (px) => pxToRem(px) + 'rem'
 

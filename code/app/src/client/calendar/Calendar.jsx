@@ -6,13 +6,12 @@ import Week from './Week.jsx'
 import Event from './Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
-import {firstDayOfMonth, lastDayOfMonth} from './utils/dateUtils.js'
-
+import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 
 
 export default class Calendar extends Component {
   render() {
-    const {name, year, containerWidth} = this.props
+    const {name, year, containerWidth, weekdaysSizes} = this.props
 
     //const months = moment.months()
     //resetting date to first day of week
@@ -21,33 +20,24 @@ export default class Calendar extends Component {
 
     let weeks = []
     let currentDate = startDate.clone()
-    let dayOfWeekToSizeMap = {
-      1: 2,
-      2: 2,
-      3: 2,
-      4: 2,
-      5: 2,
-      6: 2,
-      7: 2,
-    }
-
     const today = moment()
 
     for (let i = 1; i <= totalWeeks; i++) {
       let days = []
 
       for (let k = 1; k <= 7; k++) {
-        const daySize = dayOfWeekToSizeMap[currentDate.isoWeekday()]
+        const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
         const month = currentDate.month() + 1
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
+        const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
         days.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
             size={daySize}
             itIsToday={currentDayIsToday}
             itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
-            itIsLastDayOfMonth={lastDayOfMonth(currentDate)}>
-
+            itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
+            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth} >
             {(() => {
               if (Math.random() < 0.3) {
                 return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
@@ -67,13 +57,13 @@ export default class Calendar extends Component {
         <h3 style={{
           color: 'grey'
         }}>Auto-generated</h3>
-        <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]}/>
+        <WeekdaysHeader sizes={weekdaysSizes}/>
         <div className="Calendar-body">
           {weeks}
         </div>
 
         <h1>{name}</h1>
-        <WeekdaysHeader sizes={[2, 2, 2, 2, 2, 2, 2]}/>
+        <WeekdaysHeader sizes={weekdaysSizes}/>
         <div className="Calendar-body">
           <Week>
             <Day year={2016} month={1} day={1} size={2}>
@@ -181,5 +171,6 @@ export default class Calendar extends Component {
 
 Calendar.propTypes = {
   year: PropTypes.number,
-  name: PropTypes.string
+  name: PropTypes.string,
+  weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number)
 }
