@@ -1,27 +1,16 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const consts = require('./constants')
+const consts = require('./webpack/constants')
+const nodeModules = require('./webpack/utils').nodeModules
 
-
-function node_modules(pathName) { // eslint-disable-line camelcase
-  return path.resolve(path.join(consts.NODE_MODULES, pathName))
-}
 
 //NOTE: use min versions for prod and to speed-up build times a little
-// const pathToReact = node_modules('react/dist/react.js')
-// const pathToReactDOM = node_modules('react-dom/dist/react-dom.js')
-// const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
-// const pathToMomentJs = node_modules('moment/moment.js')
+const pathToReact = nodeModules('react/dist/react.js')
+const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
+const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
+//const pathToMomentJs = nodeModules('moment/moment.js')
 
-//const pathToMomentJs = node_modules('moment/min/moment.min.js')
-
-
-//production config
-const pathToReact = node_modules('react/dist/react.min.js')
-const pathToReactDOM = node_modules('react-dom/dist/react-dom.min.js')
-const pathToReactRouter = node_modules('react-router/umd/ReactRouter.min.js')
-const pathToMomentJs = node_modules('moment/min/moment.min.js')
+const pathToMomentJs = nodeModules('moment/min/moment.min.js')
 
 
 module.exports = {
@@ -29,17 +18,17 @@ module.exports = {
   // care about columns, which makes this devtool faster than eval-source-map.
   // http://webpack.github.io/docs/configuration.html#devtool
 
-  //devtool: 'eval',
+  devtool: 'eval',
   //devtool: 'source-map',
-  devtool: 'cheap-module-source-map',
+  //devtool: 'cheap-module-source-map',
   //devtool: 'cheap-module-eval-source-map',
 
   cache: true,
-  debug: false,
+  debug: true,
 
   entry: {
     app: [
-      //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
     vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames', 'react-pure-render',
@@ -58,22 +47,11 @@ module.exports = {
       filename: 'vendor.bundle.js',
       minChunks: Infinity
     }),
-    //new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-
-    //prodution plugins
-    new webpack.optimize.DedupePlugin(),
-    new ExtractTextPlugin('app.css'),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        screw_ie8: true,  // eslint-disable-line camelcase
-        warnings: false,
-        //dead_code: true
+        'NODE_ENV': JSON.stringify('development')
       }
     })
   ],
@@ -131,8 +109,8 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
-      //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
+      //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
+      loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
     }, {

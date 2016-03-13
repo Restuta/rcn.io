@@ -1,6 +1,6 @@
 const path = require('path')
 
-const ABSOLUTE_BASE = path.normalize(__dirname)
+const ABSOLUTE_BASE = path.normalize(path.resolve(__dirname, '..'))
 
 const constants = Object.freeze({
   ABSOLUTE_BASE: ABSOLUTE_BASE,
