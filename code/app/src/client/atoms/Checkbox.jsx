@@ -1,9 +1,9 @@
 import React, {PropTypes} from 'react'
 import classNames from 'classnames'
-import Styles from './Checkbox.scss'
+import './Checkbox.scss'
 
 const Checkbox = (props) => {
-  const classes = classNames('c-input c-checkbox', Styles.default)
+  const classes = classNames('Checkbox c-input c-checkbox')
 
   return (
     <label className={classes}>

@@ -3,15 +3,15 @@
 //overriding defaults
 
 
-:local(.default).c-input {
+.Checkbox.c-input {
   padding-left: $font-size-3 * 1.5;
 }
 
-:local(.default).c-input + .c-input {
+.Checkbox.c-input + .c-input {
   margin-left: $font-size-3;
 }
 
-:local(.default).c-input.c-checkbox {
+.Checkbox.c-input.c-checkbox {
   display: inline-block;
   margin-bottom: 0;
 
