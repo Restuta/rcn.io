@@ -20,7 +20,7 @@
     // font-weight: 300;
     //text-align: right;
     color: $grey-500;
-    top: pxToRem(-1);
+    top: -$px-as-rem;
     line-height: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -34,11 +34,11 @@
   }
 
   &-current-month {
-    background-color: lighten($grey-200, 2%);
-  }
+    background-color: darken($grey-100, 1%);
 
-  &-current-month &-date {
-    color: $body-color;
+    .Day-date {
+      color: $grey-700;
+    }
   }
 
   &-today {
@@ -55,5 +55,6 @@
     //font-family: Lato;
     //font-weight: 700;
   }
+
 
 }

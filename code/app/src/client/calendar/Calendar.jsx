@@ -13,17 +13,16 @@ export default class Calendar extends Component {
   render() {
     const {name, year, containerWidth, weekdaysSizes} = this.props
 
-    //const months = moment.months()
     //resetting date to first day of week
     const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
     const totalWeeks = startDate.isoWeeksInYear()
 
-    let weeks = []
+    let weekdsComponents = []
     let currentDate = startDate.clone()
     const today = moment()
 
     for (let i = 1; i <= totalWeeks; i++) {
-      let days = []
+      let daysComponents = []
 
       for (let k = 1; k <= 7; k++) {
         const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
@@ -31,7 +30,7 @@ export default class Calendar extends Component {
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
         const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
-        days.push(
+        daysComponents.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
             size={daySize}
             itIsToday={currentDayIsToday}
@@ -43,12 +42,22 @@ export default class Calendar extends Component {
                 return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
               }
             })()}
+            {(() => {
+              if (Math.random() < 0.3) {
+                return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
+              }
+            })()}
+            {(() => {
+              if (Math.random() < 0.3) {
+                return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
+              }
+            })()}
           </Day>
         )
         currentDate.add(1, 'day')
       }
 
-      weeks.push(<Week key={i} lastOne={i === totalWeeks}>{days}</Week>)
+      weekdsComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
     }
 
     return (
@@ -59,7 +68,7 @@ export default class Calendar extends Component {
         }}>Auto-generated</h3>
         <WeekdaysHeader sizes={weekdaysSizes}/>
         <div className="Calendar-body">
-          {weeks}
+          {weekdsComponents}
         </div>
 
         <h1>{name}</h1>
