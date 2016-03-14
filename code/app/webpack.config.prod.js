@@ -101,7 +101,7 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
+      loaders: ['style', ExtractTextPlugin.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
@@ -119,5 +119,13 @@ module.exports = {
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
   sassLoader: {
     precision: 15
+  },
+  postcss: function() {
+    return [
+      require('autoprefixer')({
+        remove: false,
+        browsers: ['last 2 versions']
+      })
+    ]
   }
 }
