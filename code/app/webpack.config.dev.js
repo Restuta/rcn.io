@@ -132,7 +132,7 @@ module.exports = {
   postcss: function() {
     return [
       // require('autoprefixer')({
-      //   remove: false,
+      //   remove: false, //disabling of removal of outdated prefixes to make autoprefixer 10% faster
       //   browsers: ['last 2 versions']
       // })
     ]
