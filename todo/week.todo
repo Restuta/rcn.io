@@ -25,7 +25,7 @@ Today
  	- set them up
  -- CSS
  	- comile bootstrap and use compiled version
- 	- add Autoprefixer: for prod?
+ 	- add Autoprefixer: for prod? (maybe covered as part of webpck)
  	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
  	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	- setup PostCSS with SASS-like plugins
