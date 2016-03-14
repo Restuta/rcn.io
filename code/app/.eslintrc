@@ -1,7 +1,10 @@
 {
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
+  "parserOptions": {
+    sourceType: "module",
+    ecmaVersion: 6,
+    "ecmaFeatures": {
+      "jsx": true
+    },
   },
   "env": {
     "browser": true,
@@ -12,6 +15,7 @@
     "react"
   ],
   "parser": "babel-eslint",
+  "extends": "eslint:recommended",
   "rules": {
     "array-bracket-spacing": 2,
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
