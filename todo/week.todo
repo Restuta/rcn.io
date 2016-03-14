@@ -24,12 +24,12 @@ Today
  	- pick icons
  	- set them up
  -- CSS
- 	- comile bootstrap and use compiled version
- 	- add Autoprefixer: for prod? (maybe covered as part of webpck)
- 	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
- 	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
- 	- setup PostCSS with SASS-like plugins
- 		- compare compilation time to SASS
+ 	+- comile bootstrap and use compiled version
+ 	+- add Autoprefixer: for prod? (maybe covered as part of webpck)
+ 	+- extract boostrap to separate branch/folder so we can tweak, compile and reuse
+ 		+- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ 	+- setup PostCSS with SASS-like plugins
+ 		+- compare compilation time to SASS
  	--- Caledar
  		-- Scroll
  			- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
