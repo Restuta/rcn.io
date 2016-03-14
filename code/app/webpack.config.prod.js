@@ -123,7 +123,7 @@ module.exports = {
   postcss: function() {
     return [
       require('autoprefixer')({
-        remove: false,
+        remove: true, //enabling of removal of outdated prefixes, just in case
         browsers: ['last 2 versions']
       })
     ]
