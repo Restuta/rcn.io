@@ -1,7 +1,7 @@
 [
   {
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Hill Climb",
     "name": "San Bruno Hill Climb",
     "date": "January 1st 2016",
     "permit": "2016-115",
@@ -106,339 +106,339 @@
   {
     "discipline": "Road",
     "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
+    "name": "Clovis Criterium Training Series #3",
+    "date": "January 17th 2016",
     "permit": "2016-138",
     "location": {
       "streetAddress": "3200 Villa Ave",
       "city": "Clovis",
       "state": "CA",
       "zip": "93612"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Cyclocross",
+    "name": "Rockville Bike CX Series #3",
+    "date": "January 17th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "4000 Suisun Valley Rd",
+      "city": "Fairfield",
+      "state": "CA",
+      "zip": "94534"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Early Bird Criterium Training Series #4",
+    "date": "January 24th 2016",
+    "permit": "2016-296",
+    "location": {
+      "streetAddress": "Dumbarton Cir & Campus Ct",
+      "city": "Fremont",
+      "state": "CA",
+      "zip": "94555"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Clovis Criterium Training Series #4",
+    "date": "January 24th 2016",
+    "permit": "2016-138",
+    "location": {
+      "streetAddress": "3200 Villa Ave",
+      "city": "Clovis",
+      "state": "CA",
+      "zip": "93612"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Cyclocross",
+    "name": "Rockville Bike CX Series #4",
+    "date": "January 24th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "4000 Suisun Valley Rd",
+      "city": "Fairfield",
+      "state": "CA",
+      "zip": "94534"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Cal Aggie Criterium",
+    "date": "January 30th 2016",
+    "permit": "2016-210",
+    "location": {
+      "streetAddress": "East Park Road & Sutterville Road",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95822"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #1 - Seaside Bay View Circuit Race",
+    "date": "January 30th 2016",
+    "permit": "2016-570",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Early Bird Criterium Training Series #5",
+    "date": "January 31st 2016",
+    "permit": "2016-296",
+    "location": {
+      "streetAddress": "Dumbarton Cir & Campus Ct",
+      "city": "Fremont",
+      "state": "CA",
+      "zip": "94555"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Clovis Criterium Training Series #5",
+    "date": "January 31st 2016",
+    "permit": "2016-138",
+    "location": {
+      "streetAddress": "3200 Villa Ave",
+      "city": "Clovis",
+      "state": "CA",
+      "zip": "93612"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tuttle Creek Road Race",
+    "date": "February 6th 2016",
+    "permit": "2016-578",
+    "location": {
+      "streetAddress": "E Begole St & N Main St",
+      "city": "Lone Pine",
+      "state": "CA",
+      "zip": "93545"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Cherry Pie Criterium",
+    "date": "February 7th 2016",
+    "permit": "2016-230",
+    "location": {
+      "streetAddress": "2277 Napa-Vallejo Hwy",
+      "city": "Napa",
+      "state": "CA",
+      "zip": "94558"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Red Kite Omnium Event #1 - The Bump Circuit Race (Winter)",
+    "date": "February 7th 2016",
+    "permit": "2016-460",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Cantua Creek Road Race - VP#1",
+    "date": "February 13th 2016",
+    "permit": "2016-416",
+    "location": {
+      "streetAddress": " ",
+      "city": "Coalinga",
+      "state": "CA",
+      "zip": "93210"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Folsom Winter Criterium",
+    "date": "February 13th 2016",
+    "permit": "2016-362",
+    "location": {
+      "streetAddress": "180 Blue Ravine Rd",
+      "city": "Folsom",
+      "state": "CA",
+      "zip": "95630"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Pine Flat Road Race - VP#2",
+    "date": "February 14th 2016",
+    "permit": "2016-417",
+    "location": {
+      "streetAddress": "Pine Flat Reservoir",
+      "city": "Sanger",
+      "state": "CA",
+      "zip": "93657"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Copper Town Circuit Race",
+    "date": "February 14th 2016",
+    "permit": "2016-300",
+    "location": {
+      "streetAddress": "Copper Town Square",
+      "city": "Copperopolis",
+      "state": "CA",
+      "zip": "95228"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Dinuba Criterium - VP#3",
+    "date": "February 15th 2016",
+    "permit": "2016-418",
+    "location": {
+      "streetAddress": "L St & Kern St",
+      "city": "Dinuba",
+      "state": "CA",
+      "zip": "93618"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Snelling Road Race - VP#4",
+    "date": "February 20th 2016",
+    "permit": "2016-419",
+    "location": {
+      "streetAddress": "Henderson Park",
+      "city": "Merced",
+      "state": "CA",
+      "zip": "95369"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "UC Santa Cruz Slugapalooza (WCCC) - Road Race",
+    "date": "February 20th 2016",
+    "permit": "2016-992",
+    "location": {
+      "streetAddress": "1156 High St",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95064"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Original Merced Criterium - VP#5",
+    "date": "February 21st 2016",
+    "permit": "2016-420",
+    "location": {
+      "streetAddress": "M St & 19th St",
+      "city": "Merced",
+      "state": "CA",
+      "zip": "95340"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "UC Santa Cruz Slugapalooza (WCCC) - Criterium",
+    "date": "February 21st 2016",
+    "permit": "2016-992",
+    "location": {
+      "streetAddress": "1630 Moffett St",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93905"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Chico Stage Race pb Sierra Nevada Brewing Co - Stage 1: Thunderhill Circuit Race",
+    "date": "February 26th 2016",
+    "permit": "2016-482",
+    "location": {
+      "streetAddress": "5250 California 162",
+      "city": "Willows",
+      "state": "CA",
+      "zip": "95988"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Chico Stage Race pb Sierra Nevada Brewing Co - Stage 2: Paskenta Hills RR",
+    "date": "February 27th 2016",
+    "permit": "2016-482",
+    "location": {
+      "streetAddress": "Buckhorn Recreation Area",
+      "city": "Corning",
+      "state": "CA",
+      "zip": "96021"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Chico Stage Race pb Sierra Nevada Brewing Co - Stage 3: River Road TT",
+    "date": "February 28th 2016",
+    "permit": "2016-482",
+    "location": {
+      "streetAddress": "Chico River Rd & Miller Ave",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95928"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Chico Stage Race pb Sierra Nevada Brewing Co - Stage 4: Steve Harrison Memorial Criterium",
+    "date": "February 28th 2016",
+    "permit": "2016-482",
+    "location": {
+      "streetAddress": "Broadway & 4th",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95928"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #2 - Seaside Bay View Circuit Race",
+    "date": "February 28th 2016",
+    "permit": "2016-570",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
     }
   },
   
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
-  {
-    "discipline": "Road",
-    "type": "Criterium",
-    "name": "Clovis Criterium Training Series #2",
-    "date": "January 10th 2016",
-    "permit": "2016-138",
-    "location": {
-      "streetAddress": "3200 Villa Ave",
-      "city": "Clovis",
-      "state": "CA",
-      "zip": "93612"
-    }
-  },
