@@ -441,4 +441,111 @@
       "zip": "93955"
     }
   },
+  {
+    "discipline": "Road",
+    "type": "Stage",
+    "name": "Madera Stage Race: HC - VP#6",
+    "date": "March 4th 2016",
+    "permit": "2016-922",
+    "location": {
+      "streetAddress": "35020 Road 613",
+      "city": "Raymond",
+      "state": "CA",
+      "zip": "93653"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "Madera Stage Race: HC - VP#6",
+    "date": "March 4th 2016",
+    "permit": "2016-922",
+    "location": {
+      "streetAddress": "613",
+      "city": "Raymond",
+      "state": "CA",
+      "zip": "93653"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT, Criterium",
+    "name": "Madera Stage Race: Crit & TT - VP#6",
+    "date": "March 5th 2016",
+    "permit": "2016-922",
+    "location": {
+      "streetAddress": "35020 Road 613",
+      "city": "Raymond",
+      "state": "CA",
+      "zip": "93653"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Madera Stage Race: RR - VP#6",
+    "date": "March 6th 2016",
+    "permit": "2016-922",
+    "location": {
+      "streetAddress": "35020 Road 613",
+      "city": "Raymond",
+      "state": "CA",
+      "zip": "93653"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #2 - Red Kite Criterium (March)",
+    "date": "March 6th 2016",
+    "permit": "2016-791",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT, Circuit",
+    "name": "WCCC - Stanford: TTT & Circuit",
+    "date": "March 12th 2016",
+    "permit": "2016-514",
+    "location": {
+      "streetAddress": "Eucalyptus Rd",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Land Park Criterium",
+    "date": "March 12th 2016",
+    "permit": "2016-487",
+    "location": {
+      "streetAddress": "Sutterville Rd & 19th St",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95822"
+    }
+  },
+
+
+
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Madera Stage Race: HC - VP#6",
+    "date": "March 04th 2016",
+    "permit": "2016-922",
+    "location": {
+      "streetAddress": "613",
+      "city": "Raymond",
+      "state": "CA",
+      "zip": "93653"
+    }
+  },
   
