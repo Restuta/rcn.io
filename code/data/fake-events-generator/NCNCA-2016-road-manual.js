@@ -1143,5 +1143,356 @@
       "zip": "94595"
     }
   },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Cancelled- Mariposa County Women's Stage Race: ITT - VP#11",
+    "date": "May 20th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "27700 Lake Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 21st 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb, Road Race",
+    "name": "Cancelled- Mariposa County Women's Stage Race: HC & RR - VP#11",
+    "date": "May 21st 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "27700 Lake Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Modesto Downtown Criterium",
+    "date": "May 21st 2016",
+    "permit": "2016-1202",
+    "location": {
+      "streetAddress": "13th St & H St",
+      "city": "Modesto",
+      "state": "CA",
+      "zip": "95354"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 22nd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Cancelled- Mariposa County Women's Stage Race: RR - VP#11",
+    "date": "May 22nd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "27700 Lake Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Modesto Road Race",
+    "date": "May 22nd 2016",
+    "permit": "2016-1203",
+    "location": {
+      "streetAddress": "Hall Rd",
+      "city": "Modesto",
+      "state": "CA",
+      "zip": "95358"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Masters & Para-cycling Road National Championships",
+    "date": "May 24th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Masters & Para-cycling Road National Championships",
+    "date": "May 25th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Masters & Para-cycling Road National Championships",
+    "date": "May 26th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Masters & Para-cycling Road National Championships",
+    "date": "May 27th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race, TT",
+    "name": "USA Cycling Professional Road Race & Time Trial National Championships",
+    "date": "May 27th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Masters & Para-cycling Road National Championships",
+    "date": "May 28th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race, TT",
+    "name": "USA Cycling Professional Road Race & Time Trial National Championships",
+    "date": "May 28th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race, TT",
+    "name": "OTF Omnium Featuring Budweiser Sequoia Cycling Classic: Circuit & TT",
+    "date": "May 28th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Fresno",
+      "state": "CA",
+      "zip": "93650"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Folsom Spring Criterium",
+    "date": "May 28th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Blue Ravine Rd & Lake Forest Way",
+      "city": "Folsom",
+      "state": "CA",
+      "zip": "95630"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race, TT",
+    "name": "USA Cycling Professional Road Race & Time Trial National Championships",
+    "date": "May 29th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "zip": "27101"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "OTF Omnium Featuring Budweiser Sequoia Cycling Classic: Criterium",
+    "date": "May 29th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Fresno",
+      "state": "CA",
+      "zip": "93650"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Mount Hamilton Road Race",
+    "date": "May 29th 2016",
+    "permit": "2016-252",
+    "location": {
+      "streetAddress": "277 Mahoney Ave ",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95127"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Clovis Hills Criterium",
+    "date": "May 30th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "10590 N Willow Ave",
+      "city": "Clovis",
+      "state": "CA",
+      "zip": "93619"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Memorial Day Criterium",
+    "date": "May 30th 2016",
+    "permit": "2016-251",
+    "location": {
+      "streetAddress": "Serene Dr & Technology Dr",
+      "city": "Morgan Hill",
+      "state": "CA",
+      "zip": "95037"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "ICCC Dash for Cash",
+    "date": "June 4th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94588"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Pescadero Coastal Classic Road Race",
+    "date": "June 4th 2016",
+    "permit": "2016-755",
+    "location": {
+      "streetAddress": "350 Butano Cut-Off",
+      "city": "Pescadero",
+      "state": "CA",
+      "zip": "94060"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Lodi Cyclefest",
+    "date": "June 5th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "21 N School St",
+      "city": "Lodi",
+      "state": "CA",
+      "zip": "95240"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Mighty Tour de Nez",
+    "date": "June 11th 2016",
+    "permit": "2016-1066",
+    "location": {
+      "streetAddress": "California Ave",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89509"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #6",
+    "date": "June 12th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "NCNCA TT Championships - Loyalton Time Trial",
+    "date": "June 12th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Loyalton",
+      "state": "CA",
+      "zip": "96118"
+    }
+  }
 
-  
+]
