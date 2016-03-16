@@ -1,25 +1,4 @@
 Today
- - build a grid
- 	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
- 	+- pick number of columns and gutter size
- 	+- see if we should use fluid ui
- 	+- consider use of all 16 columns for g (more space for cards)
- +-- build basic Bootstrap components
- 	+- row
- 	+- column
- 	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
-
- - setup typographic scale
- 	+- setup body scale
- 	+- setup header scale
- 	+- combine two above scales into one
- 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
- 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
- 	using_the_golden_ratio_with_typography
- 	+- try with font's selected: text-rendering: optimizeLegibility;
- 		+- on fonts branch
- 		+- lato specifically
- 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
  - setup icons
  	- pick icons
  	- set them up
@@ -30,23 +9,40 @@ Today
  		+- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
  	+- setup PostCSS with SASS-like plugins
  		+- compare compilation time to SASS
- 	--- Caledar
- 		-- Scroll
- 			- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
- 		!----- immediate todo
- 			-- experiment with Sticky header 
- 				- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
- 			- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
- 			+- container edges are broken (after reaload checkbox is not honored)
- 			+- re-consider card width calculations
- 				+- center cards within day of week using flexbox
- 				+- currently they are exact, which causes painful rounding erros and misalignments
- 					+-- possible solusions
- 						+- use 100% for width
- 						+- substract 1-2px so visually cards occupy same space
+--- Calendar
+	----- bug : on small sizes weekday names do not fit, e.g. "MON" becomes to wide
+	-- Scroll
+		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
+	
+	!----- immediate todo
+		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
+			- consider Recompose: https://github.com/acdlite/recompose
+		+- container edges are broken (after reaload checkbox is not honored)
+		+- re-consider card width calculations
+			+- center cards within day of week using flexbox
+			+- currently they are exact, which causes painful rounding erros and misalignments
+				+-- possible solusions
+					+- use 100% for width
+					+- substract 1-2px so visually cards occupy same space
+		-- decapitalize ALL CAPS events, make them sentence case					
+		- test layout for multiple events at the same day, but different sizes of cards
+		- test layout with variable height of events, so we don't waste vertical space
+		- size 4 may not make sense on XL screen: stick to 3?
+		- try and see if longest event fits all sizes and manually adjust text size
+		- change base font size to 6 or 7 for x-small screens
+			- test in on mobile
+		- experiment with ReactSticky header 4.0
+			- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
+
 
  	--- design a card UI
- 		----- immediate todo
+ 		-- ideas
+ 			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
+ 			but horizontal, it's also super nice that it moves on hower
+ 		!----- immediate todo
+ 			- move Event.jsx paddings calculations to SCSS and assign classes by size of the card: currently only
+ 			text is supported
  			+--- figure out ideal heith based on baselines
  			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
  			+- round height to nearest multiple of line height
@@ -63,7 +59,7 @@ Today
  					+- try Oswald
  			+- set assymetric padding (less on the sides, more from top to preserve the rythm)
  			- try Google Material Card design layout: https://www.google.com/design/spec/components/cards.html#cards-content-blocks
- 			- adopt flexbox
+ 			+- adopt flexbox
  			+- play with vh vw (veiwport related sizes) for card size
  			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
  			-- create a 1-2 line card design, so we can show non-important events for imporant days this way: 
@@ -71,7 +67,7 @@ Today
  				- inspiration can be taked from TargetProcess: http://screencast.com/t/HpOkrTbi4ot
  			- create variation with different width of left colorful section (used to show event type)
  				- try really wide option that would also group event-type specific information: e.g. distance for RR, duration for crit, etc (http://screencast.com/t/ABpTSbxzP)
- 			- see dribble for Card UI inspiration
+ 			+- see dribble for Card UI inspiration
  		+- if calendar is going to take the whole page space, rethink 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
@@ -95,6 +91,7 @@ Today
  			- it would be nicer to have overlay + "..."
  		- for one-column cards try really small text size: better then nothing
  		-- what if we go Apple Watch Style for card UI: e.g. we can use space more efficiently if we show circles around circles http://screencast.com/t/JajByOsfhtm
+
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
@@ -161,6 +158,9 @@ Pre-production
 	- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
 - make sure we load only required Lato and Oswald variations
 --- Server Sider Rendering
+	- watch: https://www.youtube.com/watch?feature=player_embedded&v=PnpfGy7q96U
+	- read: https://hashnode.com/post/serve-content-faster-with-react-cilrwgc7w00cd0q53uta3399i?utm_content=buffer5f0d4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+	- read: https://jakearchibald.com/2016/streams-ftw/#streaming-results
 	- read https://medium.com/@ryanflorence/welcome-to-future-of-web-application-delivery-9750b7564d9f#.dq649b347
 	-- setup Server Side rendering like etse js
 		- este uses react component to render HTML document called 'html.react.js'
@@ -251,3 +251,23 @@ Done
 	+- move boilerplate under rcn.io
 		- rename stuff in package.json
 	+!- upgrade to react 0.14 
+	+- build a grid
+	 	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
+	 	+- pick number of columns and gutter size
+	 	+- see if we should use fluid ui
+	 	+- consider use of all 16 columns for g (more space for cards)
+	 +-- build basic Bootstrap components
+	 	+- row
+	 	+- column
+	 	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+	+- setup typographic scale
+		+- setup body scale
+	 	+- setup header scale
+	 	+- combine two above scales into one
+	 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
+	 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
+	 	using_the_golden_ratio_with_typography
+	 	+- try with font's selected: text-rendering: optimizeLegibility;
+	 		+- on fonts branch
+	 		+- lato specifically
+	 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
