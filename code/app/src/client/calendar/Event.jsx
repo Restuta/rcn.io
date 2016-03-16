@@ -57,6 +57,7 @@ class Event extends Component {
     const cardHeight = (width * baseHeight + width - 1)
 
     const Size = {
+      XXS: 'XXS',
       XS: 'XS',
       S: 'S',
       M: 'M',
@@ -65,7 +66,9 @@ class Event extends Component {
     }
 
     const getSize = cardHeight => {
-      if (cardHeight >= 1 && cardHeight <= 5) {
+      if (cardHeight >= 1 && cardHeight <= 3) {
+        return Size.XXS
+      } else if (cardHeight >= 3 && cardHeight <= 5) {
         return Size.XS
       } else if (cardHeight >= 6 && cardHeight <= 9) {
         return Size.S
@@ -86,9 +89,13 @@ class Event extends Component {
     let eventColor = 'white'
 
     //differnt settings based on card size
-    if (cardSize === Size.XS) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
+    if (cardSize === Size.XXS) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      eventColor = 'black'
+    } else if (cardSize === Size.XS) {
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'gold'
     } else if (cardSize === Size.S) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
@@ -114,7 +121,7 @@ class Event extends Component {
       Math.floor(grid.getColumnContentWidth(width)) - 2
     )
 
-    eventColor = Colors.grey600
+    //eventColor = Colors.grey600
 
     let style = {
       //backgroundColor: 'white',

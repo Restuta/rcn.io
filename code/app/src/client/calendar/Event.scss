@@ -42,9 +42,19 @@ $base-line-rem: $line-height-rem / 2;
   min-height: $line-height-rem * 3;
   overflow: hidden;
 
+  &.size-XXS {
+    @include text-sm-9();
+    top: -1px;
+    padding-left: pxToRem(2);
+    padding-top: pxToRem(2);
+    margin-bottom: 0;
+    max-height: $base-line-rem * 3;
+    min-height: $base-line-rem * 3;
+  }
+
   &.size-XS {
     @include text-sm-9();
-    top: 7px;
+    top: 1px;
     margin-bottom: 0;
     max-height: $base-line-rem * 3;
     min-height: $base-line-rem * 3;
