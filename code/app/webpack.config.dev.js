@@ -102,7 +102,9 @@ module.exports = {
               'transform': 'react-transform-catch-errors',
               'imports': ['react', 'redbox-react']
             }]
-          }]
+          }],
+          'transform-react-constant-elements',
+          'transform-react-inline-elements'
         ]
       }
     }, {

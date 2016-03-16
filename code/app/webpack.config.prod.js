@@ -98,6 +98,10 @@ module.exports = {
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,
+        plugins: [
+          'transform-react-constant-elements', //compile-time optimizations
+          'transform-react-inline-elements' //compile-time optimizations
+        ]
       }
     }, {
       test: /\.scss$/,
