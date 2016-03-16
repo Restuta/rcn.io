@@ -1493,6 +1493,564 @@
       "state": "CA",
       "zip": "96118"
     }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #7 - Tri-Valley Criterium Classic",
+    "date": "June 18th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94566"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Nevada City Cycling Classic",
+    "date": "June 19th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Broad St & W Broad St",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Calaveras Time Trial",
+    "date": "June 19th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Main Street & Kilkare Road",
+      "city": "Sunol",
+      "state": "CA",
+      "zip": "94586"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #8 - Old Town Criterium",
+    "date": "June 25th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Tracy",
+      "state": "CA",
+      "zip": "95304"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb, TT",
+    "name": "NCNCA Hillclimb Championships - Mt. Diablo Hillclimb TT",
+    "date": "June 25th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "1145-1301 N Gate Rd",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94598"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Burlingame Criterium",
+    "date": "June 26th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Burlingame Ave & Lorton Ave",
+      "city": "Burlingame",
+      "state": "CA",
+      "zip": "94010"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Amateur Road National Championships",
+    "date": "June 30th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40201"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Amateur Road National Championships",
+    "date": "July 1st 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40201"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Amateur Road National Championships",
+    "date": "July 2nd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40201"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Roseville Criterium",
+    "date": "July 2nd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Roseville",
+      "state": "CA",
+      "zip": "95661"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Amateur Road National Championships",
+    "date": "July 3rd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40201"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #7",
+    "date": "July 3rd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Leesville/Lodoga Road Race - VP#12",
+    "date": "July 3rd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "222 Williams Wy",
+      "city": "Williams",
+      "state": "CA",
+      "zip": "95987"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Davis Bike Club Fourth of July Criterium",
+    "date": "July 2nd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "3rd St & F St ",
+      "city": "Davis",
+      "state": "CA",
+      "zip": "95616"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "RWatsonville Criterium - VP#13",
+    "date": "July 9th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "California & Brewington",
+      "city": "Watsonville",
+      "state": "CA",
+      "zip": "95076"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #9 - Red Kite Criterium (July)",
+    "date": "July 10th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #8",
+    "date": "July 16th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Colavita Grand Prix",
+    "date": "July 17th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "1100 Valley House Dr",
+      "city": "Rohnert Park",
+      "state": "CA",
+      "zip": "94928"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "Red Kite Omnium Event #10 - Crossfire Hurricane Hill Climb Challenge",
+    "date": "July 23th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Highway 580 & Grant Line Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Red Kite Omnium Event #11 - The Bump Circuit Race (Summer)",
+    "date": "July 24th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "San Rafael Twilight",
+    "date": "July 30th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": "94901"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Warnerville Time Trial - VP#14, CC#1",
+    "date": "August 6th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Willms Rd",
+      "city": "Knight's Ferry",
+      "state": "CA",
+      "zip": "95361"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #13 - Red Kite Criterium (August)",
+    "date": "August 7th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Warnerville Time Trial - VP#14, CC#1",
+    "date": "August 7th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Patterson Pass Rd @ Midway Rd",
+      "city": "Tracy",
+      "state": "CA",
+      "zip": "95391"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "USA Cycling Hill Climb National Championships",
+    "date": "August 13th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "zip": "80840"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Dunnigan Hills Road Race - VP#16, CC#3",
+    "date": "August 13th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Dunnigan",
+      "state": "CA",
+      "zip": "95937"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Suisun Harbor Criterium - VP#17, CC#4",
+    "date": "August 14th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Solano St & Main St",
+      "city": "Suisun City",
+      "state": "CA",
+      "zip": "94585"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "NCNCA Masters Road Championships - San Ardo Road Race - VP#18, CC#5",
+    "date": "August 20th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "San Ardo Elementary School",
+      "city": "San Ardo",
+      "state": "CA",
+      "zip": "93450"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Red Kite Omnium Event #14 - Tempus Fugit Time Trial (Summer)",
+    "date": "August 21st 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Cull Canyon Regional Recreation Area",
+      "city": "Castro Valley",
+      "state": "CA",
+      "zip": "94552"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "University Road Race - VP#19, CC#6",
+    "date": "August 21st 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Glen Coolidge Dr & Hagar Dr",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95064"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "NCNCA Elite Road Championships - Winters Road Race - VP#20, CC#7",
+    "date": "August 27th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Railroad Ave & Main St",
+      "city": "Winters",
+      "state": "CA",
+      "zip": "95694"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Vacaville Gran Prix - VP#21, CC#8",
+    "date": "August 28th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Parker St & Main St",
+      "city": "Vacaville",
+      "state": "CA",
+      "zip": "95688"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #15 - Red Kite Omnium Championship Weekend: Day 1",
+    "date": "September 3rd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "5000 Hopyard Rd",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94588"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "NCNCA Masters Criterium Championships - Red Kite Omnium Event #15 - Red Kite Omnium Championship Weekend: Day 2",
+    "date": "September 4th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "5000 Hopyard Rd",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94588"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Metromint Giro di San Francisco - VP#22, CC#9",
+    "date": "September 5th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Battery St & Union St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94111"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Cancelled- Challenge Challenge Road Race - VP#23, CC#10",
+    "date": "September 10th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Oregon Hill Rd",
+      "city": "Challenge",
+      "state": "CA",
+      "zip": "95925"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "54th Mt. Tamalpais Hill Climb",
+    "date": "September 10th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Stinson Beach Park",
+      "city": "Stinson Beach",
+      "state": "CA",
+      "zip": "94970"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit",
+    "name": "Central Coast Road Series #9",
+    "date": "September 11th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },  
+  {
+    "discipline": "Road",
+    "type": "TT",
+    "name": "Esparto Time Trial - VP#24, CC#11",
+    "date": "September 11th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "County Road 87 & Road 20X",
+      "city": "Esparto",
+      "state": "CA",
+      "zip": "95627"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "Fremont Peak Hill Climb",
+    "date": "September 18th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "San Juan Grade Rd & San Juan Canyon Road",
+      "city": "San Juan Bautista",
+      "state": "CA",
+      "zip": "95045"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "NCNCA Elite Criterium Championships - 12th Annual Oakland Grand Prix - VP#25, CC#12",
+    "date": "September 18th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "20th & Harrison",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94612"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Henleyville Road Race - VP#26",
+    "date": "September 24th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Corning",
+      "state": "CA",
+      "zip": "96021"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "name": "Mt Diablo Challenge Hill Climb",
+    "date": "September 25th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Danville",
+      "state": "CA",
+      "zip": "94506"
+    }
   }
-
 ]
