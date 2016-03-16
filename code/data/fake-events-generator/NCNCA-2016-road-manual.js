@@ -885,29 +885,263 @@
   },
   {
     "discipline": "Road",
-    "type": "Circuit Race",
-    "name": "Central Coast Road Series #4 - Seaside Bay View Circuit Race",
-    "date": "April 9th 2016",
+    "type": "Criterium",
+    "name": "Clovis Criterium",
+    "date": "April 23rd 2016",
     "permit": "2016-",
     "location": {
-      "streetAddress": " ",
-      "city": "Seaside",
+      "streetAddress": "10590 N Willow Ave",
+      "city": "Clovis",
       "state": "CA",
-      "zip": "93955"
+      "zip": "93619"
     }
   },
-  
   {
     "discipline": "Road",
     "type": "Circuit Race",
-    "name": "Central Coast Road Series #4 - Seaside Bay View Circuit Race",
-    "date": "April 9th 2016",
+    "name": "Red Kite Omnium Event #5 - Winchester Circuit Race",
+    "date": "April 23rd 2016",
+    "permit": "2016-1194",
+    "location": {
+      "streetAddress": "1100 Sugar Pine Road",
+      "city": "Meadow Vista",
+      "state": "CA",
+      "zip": "95722"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Wente Vineyards Road Race",
+    "date": "April 24th 2016",
+    "permit": "2016-448",
+    "location": {
+      "streetAddress": "Greenville Rd & Tesla Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "NCNCA Juniors Road Championships - Clean Air Road Race",
+    "date": "April 30th 2016",
     "permit": "2016-",
     "location": {
       "streetAddress": " ",
-      "city": "Seaside",
+      "city": "Salinas",
       "state": "CA",
-      "zip": "93955"
+      "zip": "93908"
     }
   },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Golden State Race Series p/b Rio Strada Racing: Criterium",
+    "date": "April 30th 2016",
+    "permit": "2016-870",
+    "location": {
+      "streetAddress": "11000 Cobblerock Drive",
+      "city": "Rancho Cordova",
+      "state": "CA",
+      "zip": "95670"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit, TT",
+    "name": "Golden State Race Series p/b Rio Strada Racing: Circuit & TTT",
+    "date": "May 1st 2016",
+    "permit": "2016-870",
+    "location": {
+      "streetAddress": "11000 Cobblerock Drive",
+      "city": "Rancho Cordova",
+      "state": "CA",
+      "zip": "95670"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "NCNCA Juniors Criterium Championships - Salinas Criterium",
+    "date": "May 1st 2016",
+    "permit": "2016-1237",
+    "location": {
+      "streetAddress": "Moffett St & Vandenberg St",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Berkeley Hills Road Race",
+    "date": "May 7th 2016",
+    "permit": "2016-1228",
+    "location": {
+      "streetAddress": "Bear Creek Rd & San Pablo Dam Rd",
+      "city": "Orinda",
+      "state": "CA",
+      "zip": "94563"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Regalado Road Race - VP#10",
+    "date": "May 8th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "12000 CA-120",
+      "city": "Oakdale",
+      "state": "CA",
+      "zip": "95361"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Collegiate Road National Championships",
+    "date": "May 13th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Marshall",
+      "state": "NC",
+      "zip": "28753"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Collegiate Road National Championships",
+    "date": "May 14th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Marshall",
+      "state": "NC",
+      "zip": "28753"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Mike's Bikes Cat's Hill Classic",
+    "date": "May 14th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": "Bachman Ave & Tait Ave",
+      "city": "Los Gatos",
+      "state": "CA",
+      "zip": "95030"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "USA Cycling Collegiate Road National Championships",
+    "date": "May 15th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Marshall",
+      "state": "NC",
+      "zip": "28753"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 15th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #6 - Red Kite Criterium (May)",
+    "date": "May 15th 2016",
+    "permit": "2016-793",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 16th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 17th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 18th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 19th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Tour of California (May 15-22)",
+    "date": "May 20th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Walnut Creek",
+      "state": "CA",
+      "zip": "94595"
+    }
+  },
+
   
