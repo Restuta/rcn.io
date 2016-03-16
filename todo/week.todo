@@ -16,6 +16,7 @@ Today
 	
 	!----- immediate todo
 		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
 		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
 			- consider Recompose: https://github.com/acdlite/recompose
 		+- container edges are broken (after reaload checkbox is not honored)
