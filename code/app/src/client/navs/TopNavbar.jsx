@@ -9,7 +9,7 @@ import HeadwayChangelog from './HeadwayChangelog.jsx'
 
 export default class TopNavbar extends Component {
   render() {
-    const classNames = classnames('TopNavbar', 'navbar bg-faded')
+    const classNames = classnames('TopNavbar', 'navbar bg-faded') //'navbar-fixed-top'
     return (
       <nav className={classNames}>
         <div className="content">

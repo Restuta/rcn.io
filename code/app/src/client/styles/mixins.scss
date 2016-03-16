@@ -141,3 +141,13 @@ $px-as-rem: 1rem/getBaseFontSize();
 @mixin shadow-semantic-ui-card {
   box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
 }
+
+@mixin padding-vertical($padding) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin padding-horizontal($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
