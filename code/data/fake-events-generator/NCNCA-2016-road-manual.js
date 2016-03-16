@@ -532,20 +532,382 @@
       "zip": "95822"
     }
   },
-
-
-
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Ward's Ferry Road Race - VP#7",
+    "date": "March 12th 2016",
+    "permit": "2016-923",
+    "location": {
+      "streetAddress": "Tuolumne Rd & Nugget Blvd",
+      "city": "Sonora",
+      "state": "CA",
+      "zip": "95370"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "WCCC - Stanford: Road Race",
+    "date": "March 13th 2016",
+    "permit": "2016-514",
+    "location": {
+      "streetAddress": "Gigling & 8th Ave",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Bariani Road Race",
+    "date": "March 13th 2016",
+    "permit": "2016-489",
+    "location": {
+      "streetAddress": "County Rd 16 & County Rd 90A",
+      "city": "Zamora",
+      "state": "CA",
+      "zip": "95698"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #3 - Seaside Bay View Circuit Race",
+    "date": "March 19th 2016",
+    "permit": "2016-570",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "UC Merced Race Weekend - Road Race (WCCC)",
+    "date": "March 19th 2016",
+    "permit": "2016-292",
+    "location": {
+      "streetAddress": " ",
+      "city": "Merced",
+      "state": "CA",
+      "zip": "95348"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Santa Cruz Classic Criterium XLVII - VP#8",
+    "date": "March 20th 2016",
+    "permit": "2016-927",
+    "location": {
+      "streetAddress": "3rd & Main",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95060"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "UC Merced Race Weekend - Criterium (WCCC)",
+    "date": "March 20th 2016",
+    "permit": "2016-292",
+    "location": {
+      "streetAddress": " ",
+      "city": "Merced",
+      "state": "CA",
+      "zip": "95348"
+    }
+  },
   {
     "discipline": "Road",
     "type": "TT",
-    "name": "Madera Stage Race: HC - VP#6",
-    "date": "March 04th 2016",
-    "permit": "2016-922",
+    "name": "Red Kite Omnium Event #3 - Tempus Fugit Time Trial (Spring)",
+    "date": "March 20th 2016",
+    "permit": "2016-984",
     "location": {
-      "streetAddress": "613",
-      "city": "Raymond",
+      "streetAddress": "Cull Canyon Regional Recreation Area",
+      "city": "Castro Valley",
       "state": "CA",
-      "zip": "93653"
+      "zip": "94522"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Copperopolis Road Race - VP#9",
+    "date": "March 26th 2016",
+    "permit": "2016-929",
+    "location": {
+      "streetAddress": "Hunt Rd & Milton Rd",
+      "city": "Milton",
+      "state": "CA",
+      "zip": "95230"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "TT, Road Race",
+    "name": "WCCC - Cal: TTT & Road Race (Collegiate & Junior Only)",
+    "date": "March 26th 2016",
+    "permit": "2016-654",
+    "location": {
+      "streetAddress": "6200 Birds Landing Rd",
+      "city": "Birds Landing",
+      "state": "CA",
+      "zip": "94512"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "WCCC - Cal: Berkeley Streets Criterium (Collegiate & USAC)",
+    "date": "March 27th 2016",
+    "permit": "2016-654",
+    "location": {
+      "streetAddress": "Bancroft & Bowditch",
+      "city": "Berkeley",
+      "state": "CA",
+      "zip": "94720"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Copper Town Circuit Race",
+    "date": "April 2nd 2016",
+    "permit": "2016-937",
+    "location": {
+      "streetAddress": "Copper Town Square",
+      "city": "Copperopolis",
+      "state": "CA",
+      "zip": "95228"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #4 - Seaside Bay View Circuit Race",
+    "date": "April 3rd 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium, TT",
+    "name": "WCCC - UNR: Crit & TTT",
+    "date": "April 9th 2016",
+    "permit": "2016-1019",
+    "location": {
+      "streetAddress": " ",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89500"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Turlock Lake Road Race",
+    "date": "April 9th 2016",
+    "permit": "2016-846",
+    "location": {
+      "streetAddress": "22600 Lake Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Central Coast Road Series #5",
+    "date": "April 10th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "WCCC - UNR: Road Race",
+    "date": "April 10th 2016",
+    "permit": "2016-1019",
+    "location": {
+      "streetAddress": " ",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89500"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "TEA Solar Cycling Classic",
+    "date": "April 10th 2016",
+    "permit": "2016-957",
+    "location": {
+      "streetAddress": "W Main St & 1st St",
+      "city": "Turlock",
+      "state": "CA",
+      "zip": "95380"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Sea Otter Classic (April 14-17)",
+    "date": "April 14th 2016",
+    "permit": "2016-154",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit, Road Race",
+    "name": "Sea Otter Classic (April 14-17)",
+    "date": "April 15th 2016",
+    "permit": "2016-154",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit, Road Race",
+    "name": "Sea Otter Classic (April 14-17)",
+    "date": "April 16th 2016",
+    "permit": "2016-154",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium, TT",
+    "name": "USA Cycling Professional Criterium & Team Time Trial National Championships",
+    "date": "April 16th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Greenville",
+      "state": "SC",
+      "zip": "29601"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Cal Poly San Luis Obispo Road Race Weekend: Circuit Race",
+    "date": "April 16th 2016",
+    "permit": "2016-1063",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit, Road Race",
+    "name": "Sea Otter Classic (April 14-17)",
+    "date": "April 17th 2016",
+    "permit": "2016-154",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium, TT",
+    "name": "USA Cycling Professional Criterium & Team Time Trial National Championships",
+    "date": "April 17th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Greenville",
+      "state": "CA",
+      "zip": "29601"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "Clone of Cal Poly San Luis Obispo Road Race Weekend: Road Race",
+    "date": "April 17th 2016",
+    "permit": "2016-1063",
+    "location": {
+      "streetAddress": "1025 Monterey Salinas Hwy",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93908"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Criterium",
+    "name": "Red Kite Omnium Event #4 - Red Kite Criterium (April)",
+    "date": "April 17th 2016",
+    "permit": "2016-792",
+    "location": {
+      "streetAddress": "1575 Greenville Rd",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    }
+  },
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #4 - Seaside Bay View Circuit Race",
+    "date": "April 9th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    }
+  },
+  
+  {
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "name": "Central Coast Road Series #4 - Seaside Bay View Circuit Race",
+    "date": "April 9th 2016",
+    "permit": "2016-",
+    "location": {
+      "streetAddress": " ",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
     }
   },
   
