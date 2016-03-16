@@ -21,19 +21,32 @@ export default class WeekdaysHeader extends Component {
       minHeight: '4rem',
       textAlign: 'right',
       backgroundColor: Colors.bodyBg,
+      //borderRight: '1px solid #e0e0e0',
+      //marginRight: '-1px'
+      //position: 'relative',
+      //left: '1px',
     }
 
-    const weekdaysNameStyle = {
+    const weekdaysNameStyleBase = {
       fontSize: '2rem',
       paddingTop: '1rem',
       position: 'relative',
-      top: pxToRems(2),
+      //top: pxToRems(2),
       textTransform: 'uppercase',
       // fontFamily: 'Oswald',
-      // fontWeight: 300,
+       //fontWeight: 700,
     }
 
+
     const columns = sizes.map((size, i) => {
+      const weekdaysNameStyle = Object.assign({}, weekdaysNameStyleBase)
+
+      if (Weekdays[i].short.toLowerCase() === 'sat' || Weekdays[i].short.toLowerCase() === 'sun') {
+        weekdaysNameStyle.color = 'crimson'
+        weekdaysNameStyle.fontWeight = 900
+
+      }
+
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
           <div style={weekdaysNameStyle}>{Weekdays[i].short}</div>
