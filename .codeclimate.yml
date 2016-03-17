@@ -31,6 +31,12 @@ engines:
         enabled: false
       LeadingZero:
         enabled: false
+      NameFormat:
+        enabled: false
+      SpaceAfterComma:
+        enabled: false
+      IdSelector:
+        enabled: false
   csslint:
     enabled: false
 ratings:
