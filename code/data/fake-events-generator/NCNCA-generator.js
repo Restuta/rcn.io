@@ -41,30 +41,10 @@ function getRandomNumber(startNumber, endNumber) {
   return Math.floor((Math.random() * endNumber) + startNumber);
 };
 
-/*function getRandomDiscipline() {
-  return Data.disciplineData[getRandomNumber(0, Data.disciplineData.length)];
-};*/
-
-/*function getRandomType() {
-  return Data.typeData[getRandomNumber(0, Data.typeData.length)];
-};*/
-
 function getRandomTime() {
   return Data.timeData[getRandomNumber(0, Data.timeData.length)];
 };
 
 function getRandomPromoter() {
   return Data.promoterData[getRandomNumber(0, Data.promoterData.length)];
-};
-
-/*function getRandomStreet() {
-  return Data.streetData[getRandomNumber(0, Data.streetData.length)];
-};
-
-function getRandomCity() {
-  return Data.cityData[getRandomNumber(0, Data.cityData.length)];
 }
-
-function getRandomPermit() {
-  return (new Date()).getFullYear() + '-' + getRandomNumber(1, 10000);
-}*/
