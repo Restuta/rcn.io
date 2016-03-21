@@ -4,9 +4,9 @@ import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
 import {Weekdays} from './utils/date-utils'
-//import {pxToRem} from 'styles/typography'
+import {pxToRem} from 'styles/typography'
 
-//const pxToRems = (px) => pxToRem(px) + 'rem'
+const pxToRems = (px) => pxToRem(px) + 'rem'
 
 
 export default class WeekdaysHeader extends Component {
@@ -31,7 +31,7 @@ export default class WeekdaysHeader extends Component {
       fontSize: '2rem',
       paddingTop: '1rem',
       position: 'relative',
-      //top: pxToRems(2),
+      top: pxToRems(2),
       textTransform: 'uppercase',
       // fontFamily: 'Oswald',
        //fontWeight: 700,

@@ -12,13 +12,13 @@ export default class Home extends Component {
           weekdaysSizes={[1, 1, 2, 2, 2, 3, 3]}/>
         <Calendar name="NCNCA Calendar" year={2015}
           containerWidth={this.props.containerWidth}
-          weekdaysSizes={[2, 2, 2, 2, 2, 2, 2]}/>
+          weekdaysSizes={[1, 1, 1, 2, 2, 3, 4]}/>
         <Calendar name="NCNCA Calendar" year={2015}
           containerWidth={this.props.containerWidth}
-          weekdaysSizes={[1, 1, 2, 2, 2, 2, 4]}/>
+          weekdaysSizes={[2, 2, 2, 2, 2, 2, 2]}/>
         <Calendar name="NCNCA Calendar" year={2015}
             containerWidth={this.props.containerWidth}
-            weekdaysSizes={[1, 1, 1, 1, 2, 4, 4]}/>
+            weekdaysSizes={[1, 1, 1, 2, 3, 3, 3]}/>
       </div>
     )
   }
