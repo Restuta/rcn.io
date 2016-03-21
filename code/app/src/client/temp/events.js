@@ -14,7 +14,7 @@ class Event {
 
 const events = rawEvents.map(rawEvent => {
   return new Event({
-    name: rawEvent.name,
+    name: rawEvent.name.replace('--', '—'),
     date: moment(rawEvent.date, 'MMMM DD YYYY'),
     type: rawEvent.type
   })
