@@ -16,15 +16,18 @@
     font-weight: 400;
     font-size: pxToRem(14);
     width: 100%;
-    text-align: right;
+    //text-align: right;
+    display: flex;
+    justify-content: flex-end;
     // font-family: Oswald;
     // font-weight: 300;
     //text-align: right;
     color: $grey-500;
-    top: -$px-as-rem;
+    top: pxToRem(2);
     line-height: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
   }
   &:hover {
     background-color: $grey-100;
@@ -49,10 +52,11 @@
   &-today-label {
     margin: 0;
     line-height: 2rem;
-    position: static;
+    position: relative;
     text-align: right;
     display: inline;
     margin-right: 1rem;
+    top: pxToRem(-1);
     //font-family: Lato;
     //font-weight: 700;
   }

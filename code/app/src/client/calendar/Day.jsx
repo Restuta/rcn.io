@@ -30,8 +30,8 @@ export default class Day extends Component {
       //backgroundColor: color,
     }
 
-    const lastDayOfMonthComponent = itIsLastDayOfMonth ? <span>{Months[month - 1].short} </span> : null
-    const firstDayOfMonthComponent = itIsFirstDayOfMonth ? <span>{Months[month - 1].short} </span> : null
+    const lastDayOfMonthComponent = itIsLastDayOfMonth ? <span>{Months[month - 1].short}&nbsp;</span> : null
+    const firstDayOfMonthComponent = itIsFirstDayOfMonth ? <span>{Months[month - 1].short}&nbsp;</span> : null
 
     return (
       <Col xs={size} className={classNames} style={style}>

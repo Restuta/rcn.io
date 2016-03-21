@@ -8,7 +8,7 @@ import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 
-import events from 'temp/events.js'
+
 
 //TODO: what it returns if several events match the criteria?
 //TODO: optimize the flow so we don't call this function every time, build a hash-map
@@ -18,7 +18,7 @@ const findEventByDate = (events, date) =>
 
 export default class Calendar extends Component {
   render() {
-    const {name, year, containerWidth, weekdaysSizes} = this.props
+    const {name, year, containerWidth, weekdaysSizes, events} = this.props
 
     //resetting date to first day of week
     const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
@@ -37,8 +37,8 @@ export default class Calendar extends Component {
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
         const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
-        //const foundEvents = findEventByDate(events, currentDate)
-        const foundEvents = [{name: 'Test Event Name Criterium'}]
+        const foundEvents = findEventByDate(events, currentDate)
+        //const foundEvents = [{name: 'Test Event Name Criterium'}]
         let eventComponents
 
         if (foundEvents.length > 0) {
