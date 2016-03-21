@@ -5,12 +5,31 @@ import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
+import {rnd} from 'utils/math'
 
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size}`, props.className)
+  let {name} = props
+  const {typeColor} = props
+
+  const createWrappedNameComponent = (name, stringToWrap, color) => {
+    if (name && name.indexOf(stringToWrap) !== -1) {
+      const parts = name.split(stringToWrap)
+      return [parts[0], <span style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
+    }
+    return name //TODO restuta: funtcion returns different types based on the flow, fix this
+  }
+
+  let wrappedNameComp = name
+  wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
+  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
+  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
+  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
+  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
+
   return (
     <div className={className}>
-      {props.children}
+      {wrappedNameComp}
     </div>
   )
 }
@@ -34,7 +53,12 @@ const getBaseHeight = function(containerWidth) {
 
 class Event extends Component {
   render() {
-    const {width, containerWidth, baseHeight = getBaseHeight(containerWidth)} = this.props
+    const {
+      width,
+      containerWidth,
+      baseHeight = getBaseHeight(containerWidth),
+      name
+    } = this.props
 
     // if (!baseHeight) {
     //   baseHeight = getBaseHeight(containerWidth)
@@ -122,6 +146,7 @@ class Event extends Component {
     )
 
     //eventColor = Colors.grey600
+    eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
 
     let style = {
       //backgroundColor: 'white',
@@ -150,7 +175,7 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1">
         {debugComponent}
-        <EventName size={cardSize}>{this.props.name}</EventName>
+        <EventName size={cardSize} name={name} typeColor={eventColor}/>
       </div>
     )
   }
