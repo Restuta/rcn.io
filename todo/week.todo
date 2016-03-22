@@ -11,6 +11,7 @@ Today
  		+- compare compilation time to SASS
 --- Calendar
 	----- bug : on small sizes weekday names do not fit, e.g. "MON" becomes to wide
+	----- bug: on small sizes weekdays need to adapt as well as crads, when "TODAY" is during weekday it pushes content out of edges
 	-- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 	
