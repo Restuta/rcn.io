@@ -8,18 +8,10 @@ import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 
-
-
-//TODO: what it returns if several events match the criteria?
-//TODO: optimize the flow so we don't call this function every time, build a hash-map
 const findEventByDate = (events, date) => {
   const key = date.format('MMDDYYYY')
   return events.get(key) || []
 }
-
-
-  //events.filter(event => event.date.isSame(date, 'day'))
-
 
 export default class Calendar extends Component {
   render() {
@@ -58,13 +50,8 @@ export default class Calendar extends Component {
             itIsToday={currentDayIsToday}
             itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
-            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth} >
+            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth}>
             {eventComponents}
-            {/*{(() => {
-              if (Math.random() < 0.3) {
-                return <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-              }
-            })()}*/}
           </Day>
         )
         currentDate.add(1, 'day')
@@ -83,35 +70,6 @@ export default class Calendar extends Component {
         <div className="Calendar-body">
           {weekdsComponents}
         </div>
-
-        {/*<h1>{name}</h1>
-        <WeekdaysHeader sizes={weekdaysSizes}/>
-        <div className="Calendar-body">
-          <Week>
-            <Day year={2016} month={1} day={1} size={2}>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-            </Day>
-            <Day year={2016} month={1} day={2} size={2}/>
-            <Day year={2016} month={1} day={3} size={2}/>
-            <Day year={2016} month={1} day={4} size={2}>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-            </Day>
-            <Day year={2016} month={1} day={5} size={2}>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-            </Day>
-            <Day year={2016} month={1} day={6} size={2}>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-            </Day>
-            <Day year={2016} month={1} day={7} size={2}>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-              <Event width={2} containerWidth={containerWidth} name="Dunnigan Hills Road Race"/>
-            </Day>
-          </Week>
-        </div>*/}
-
       </div>
     )
   }
