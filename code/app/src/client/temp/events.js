@@ -12,11 +12,9 @@ class Event {
   }
 }
 
-
 const preProcessEvents = function(rawEvents) {
-  const events = {}
+  const events = new Map()
 
-  //TODO: date is not enough
   rawEvents.forEach(rawEvent => {
     const event = new Event({
       name: rawEvent.name.replace('--', '—'),
@@ -26,10 +24,10 @@ const preProcessEvents = function(rawEvents) {
 
     const key = event.date.format('MMDDYYYY')
 
-    if (events[key]) {
-      events[key].push(event)
+    if (events.get(key)) {
+      events.get(key).push(event)
     } else {
-      events[key] = [event]
+      events.set(key, [event])
     }
   })
 

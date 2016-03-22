@@ -14,7 +14,7 @@ import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 //TODO: optimize the flow so we don't call this function every time, build a hash-map
 const findEventByDate = (events, date) => {
   const key = date.format('MMDDYYYY')
-  return events[key] || []
+  return events.get(key) || []
 }
 
 
