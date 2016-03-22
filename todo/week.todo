@@ -12,6 +12,7 @@ Today
 --- Calendar
 	----- bug : on small sizes weekday names do not fit, e.g. "MON" becomes to wide
 	----- bug: on small sizes weekdays need to adapt as well as crads, when "TODAY" is during weekday it pushes content out of edges
+		- how to fix: leave TODAY for large sizes and use circled day for the rest like Apple Calendar does
 	-- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 	
