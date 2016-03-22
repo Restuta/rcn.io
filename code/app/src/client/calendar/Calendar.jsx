@@ -12,8 +12,13 @@ import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 
 //TODO: what it returns if several events match the criteria?
 //TODO: optimize the flow so we don't call this function every time, build a hash-map
-const findEventByDate = (events, date) =>
-  events.filter(event => event.date.isSame(date, 'day'))
+const findEventByDate = (events, date) => {
+  const key = date.format('MMDDYYYY')
+  return events[key] || []
+}
+
+
+  //events.filter(event => event.date.isSame(date, 'day'))
 
 
 export default class Calendar extends Component {
@@ -43,7 +48,8 @@ export default class Calendar extends Component {
 
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
-            <Event key={i} width={daySize} containerWidth={containerWidth} name={event.name}/>)
+            <Event key={i} width={daySize} containerWidth={containerWidth} name={event.name}/>
+          )
         }
 
         daysComponents.push(

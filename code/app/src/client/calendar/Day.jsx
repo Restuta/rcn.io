@@ -36,10 +36,12 @@ export default class Day extends Component {
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
-          {itIsToday && <h4 className="Day-today-label">TODAY</h4>}
-          {lastDayOfMonthComponent}
-          {firstDayOfMonthComponent}
-          {formattedDate}
+          {(itIsToday && size > 1) && <h4 className="Day-today-label">TODAY</h4>}
+          <span className="Day-date-wrapper">
+            {lastDayOfMonthComponent}
+            {firstDayOfMonthComponent}
+            {formattedDate}
+          </span>
         </div>
         {this.props.children}
       </Col>

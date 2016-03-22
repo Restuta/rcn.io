@@ -21,11 +21,11 @@
     // font-weight: 300;
     text-align: right;
     color: $grey-500;
-    top: pxToRem(2);
+    top: pxToRem(3);
     line-height: 2rem;
     max-height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 
   }
   &:hover {
@@ -46,6 +46,17 @@
 
   &-today {
     background-color: rgba(255,182,193,0.5);
+
+    .Day-date-wrapper {
+      color: $body-bg-color;
+      background: lightcoral;
+      background: #F7768F;
+      padding: pxToRem(3);
+      position: relative;
+      right: pxToRem(-3); //to compensate shift from padding
+      top: 0;
+      border-radius: 50%;
+    }
   }
 
   &-today-label {
@@ -54,8 +65,8 @@
     position: relative;
     text-align: right;
     display: inline-block;
-    margin-right: 1rem;
-    top: pxToRem(-1);
+    //margin-right: 1rem;
+    top: pxToRem(0);
     //font-family: Lato;
     //font-weight: 700;
   }
