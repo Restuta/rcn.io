@@ -5,6 +5,7 @@ import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
 import {zeroPad} from 'utils/formatting'
 import {Months} from './utils/date-utils.js'
+// import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 
 export default class Day extends Component {
   render() {
@@ -37,6 +38,7 @@ export default class Day extends Component {
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
           {(itIsToday && size > 1) && <h4 className="Day-today-label">TODAY</h4>}
+          {/*{(itIsToday && size > 1) && <RoundBadge size={2}>{formattedDate}</RoundBadge>}*/}
           <span className="Day-date-wrapper">
             {lastDayOfMonthComponent}
             {firstDayOfMonthComponent}

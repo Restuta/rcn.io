@@ -19,9 +19,10 @@
     //text-align: right;
     //font-family: Oswald;
     // font-weight: 300;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     color: $grey-500;
-    top: pxToRem(3);
+    top: pxToRem(6);
     line-height: 2rem;
     max-height: 2rem;
     margin-top: 0.5rem;
@@ -47,15 +48,23 @@
   &-today {
     background-color: rgba(255,182,193,0.5);
 
+    //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
+
     .Day-date-wrapper {
-      color: $body-bg-color;
-      background: lightcoral;
-      background: #F7768F;
-      padding: pxToRem(3);
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      white-space: nowrap;
+
       position: relative;
       right: pxToRem(-3); //to compensate shift from padding
-      top: 0;
-      border-radius: 50%;
+      top: pxToRem(-3);
+
+      color: $body-bg-color;
+      background: #F7768F;
     }
   }
 
