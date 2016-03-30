@@ -45,7 +45,8 @@ const getBaseHeight = function(containerWidth) {
     [Grid.ContainerWidth.SM]: 2,
     [Grid.ContainerWidth.MD]: 3,
     [Grid.ContainerWidth.LG]: 4,
-    [Grid.ContainerWidth.XL]: 5
+    [Grid.ContainerWidth.XL]: 5,
+    [Grid.ContainerWidth.XXL]: 6
   }
 
   return baseHeightMap[containerWidth]
@@ -144,8 +145,9 @@ class Event extends Component {
     const cardWidthPx = Math.floor(grid.getColumnContentWidth(width)) - 2
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
-    //eventColor = Colors.grey600
+
     eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
+    //eventColor = Colors.grey600
 
     let style = {
       //backgroundColor: 'white',
@@ -157,7 +159,7 @@ class Event extends Component {
       paddingBottom: verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthRem * 0.06}rem solid ${eventColor}`,
+      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
     }
 
     const {debug = false} = this.props

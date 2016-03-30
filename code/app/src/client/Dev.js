@@ -155,6 +155,18 @@ export default class Dev extends Component {
 
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
+            <Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+            <Event debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+              name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+            <Event debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+              name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
+            <Event debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+              name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
+          </Col>
+        </Row>
+
+        <Row className="margin-top">
+          <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
             <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
@@ -207,24 +219,28 @@ export default class Dev extends Component {
           <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Colavita Criterium"/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Red Kite Omnium"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Red Kite Omnium"/></Col>
         </Row>
         <Row className="margin-top">
-          <Col sm={2}>
+          <Col sm={1}>
             <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
           </Col>
-          <Col sm={2}>
+          <Col sm={1}>
             <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
           </Col>
-          <Col sm={2}>
+          <Col sm={1}>
             <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
             <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Col>
+          <Col sm={4}>
+            <Event debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+          </Col>
         </Row>
 
         <Row className="margin-top">
-          <Col sm={2}>
+          <Col sm={1}>
             <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
           </Col>
           <Col sm={2}>
@@ -235,6 +251,9 @@ export default class Dev extends Component {
           </Col>
           <Col sm={2}>
             <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+          </Col>
+          <Col sm={5}>
+            <Event debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
           </Col>
         </Row>
 
@@ -251,6 +270,9 @@ export default class Dev extends Component {
           <Col sm={2}>
             <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
           </Col>
+          {/*<Col sm={2}>
+            <Event debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+          </Col>*/}
         </Row>
 
         <h1 className="oswald">Road Races in CA, 100mi range</h1>

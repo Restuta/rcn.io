@@ -8,6 +8,8 @@
 */
 
 /* BEGIN BS4-alpha2 */
+
+  //don't forget to change this in grid.js as well
   //overriding grid as per following PR https://github.com/twbs/bootstrap/commit/eabed0edf84c61bb4095ce8f92f41e58552785b9
   $grid-breakpoints: (
     // Extra small screen / phone
@@ -19,15 +21,19 @@
     // Large screen / desktop
     lg: 992px,
     // Extra large screen / wide desktop
-    xl: 1200px
+    xl: 1200px,
+    // Extra large screen / wider desktops
+    xxl: 1440px
   );
 
+  //don't forget to change this in grid.js as well
   //divides by 14 without reminder to avoid non-round pixel errors
   $container-max-widths: (
     sm: 574px,
     md: 728px,
     lg: 938px,
-    xl: 1148px
+    xl: 1148px,
+    xxl: 1384px
    );
 
 /* END BS4-alpha2 */

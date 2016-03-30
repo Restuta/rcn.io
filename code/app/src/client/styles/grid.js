@@ -3,7 +3,8 @@ const ContainerWidth = {
   SM: 574,
   MD: 728,
   LG: 938,
-  XL: 1148
+  XL: 1148,
+  XXL: 1384
 }
 
 export default {
@@ -17,7 +18,8 @@ export default {
       SM: 544,  // Small screen / phone
       MD: 768,  // Medium screen / tablet
       LG: 992,  // Large screen / desktop
-      XL: 1200  // Extra large screen / wide desktop
+      XL: 1200,  // Extra large screen / wide desktop
+      XXL: 1440,  // Extra large screen / wide desktop
     }
 
     if (browserWidth <= ContainerWidth.SM) {
@@ -28,8 +30,10 @@ export default {
       return ContainerWidth.MD
     } else if (browserWidth >= Breakpoints.LG && browserWidth < Breakpoints.XL) {
       return ContainerWidth.LG
-    } else if (browserWidth >= Breakpoints.XL) {
+    } else if (browserWidth >= Breakpoints.XL && browserWidth < Breakpoints.XXL) {
       return ContainerWidth.XL
+    } else if (browserWidth >= Breakpoints.XXL) {
+      return ContainerWidth.XXL
     }
   },
   init(containerWidth) {
