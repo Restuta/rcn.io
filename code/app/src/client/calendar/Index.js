@@ -15,11 +15,11 @@ export default class Home extends Component {
         <Calendar name="NCNCA Calendar" year={2016}
           events={events}
           containerWidth={this.props.containerWidth}
-          weekdaysSizes={[1, 1, 1, 2, 2, 3, 4]}/>
-        <Calendar name="NCNCA Calendar" year={2016}
-          events={events}
-          containerWidth={this.props.containerWidth}
           weekdaysSizes={[2, 2, 2, 2, 2, 2, 2]}/>
+        <Calendar name="NCNCA Calendar" year={2016}
+            events={events}
+            containerWidth={this.props.containerWidth}
+            weekdaysSizes={[1, 1, 1, 2, 2, 3, 4]}/>
         <Calendar name="NCNCA Calendar" year={2016}
           events={events}
           containerWidth={this.props.containerWidth}

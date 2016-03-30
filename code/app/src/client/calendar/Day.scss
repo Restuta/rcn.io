@@ -19,14 +19,18 @@
     //text-align: right;
     //font-family: Oswald;
     // font-weight: 300;
+    position: static;
     display: flex;
     justify-content: flex-end;
     color: $grey-500;
     top: pxToRem(6);
     line-height: 2rem;
     max-height: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    // margin-top: 1.25rem;
+    // margin-bottom: 1.75rem;
 
   }
   &:hover {
@@ -51,8 +55,8 @@
     //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
 
     .Day-date-wrapper {
-      width: 3rem;
-      height: 3rem;
+      width: 2.75rem;
+      height: 2.75rem;
       display: flex;
       justify-content: center;
       align-items: center;

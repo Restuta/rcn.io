@@ -36,6 +36,7 @@ export default class Calendar extends Component {
 
         const foundEvents = findEventByDate(events, currentDate)
         //const foundEvents = [{name: 'Test Event Name Criterium'}]
+        
         let eventComponents
 
         if (foundEvents.length > 0) {

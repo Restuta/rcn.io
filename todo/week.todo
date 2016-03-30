@@ -17,10 +17,11 @@ Today
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 	
 	!----- immediate todo
-		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
 		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
 			- consider Recompose: https://github.com/acdlite/recompose
+		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
 		+- container edges are broken (after reaload checkbox is not honored)
 		+- re-consider card width calculations
 			+- center cards within day of week using flexbox

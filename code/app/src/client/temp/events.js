@@ -17,7 +17,8 @@ const preProcessEvents = function(rawEvents) {
 
   rawEvents.forEach(rawEvent => {
     const event = new Event({
-      name: rawEvent.name.replace('--', '—'),
+      name: rawEvent.name
+        .replace(/--/g, '—'),
       date: moment(rawEvent.date, 'MMMM DD YYYY'),
       type: rawEvent.type
     })
