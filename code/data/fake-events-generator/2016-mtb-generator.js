@@ -1,28 +1,35 @@
-import util from 'util';
-import Data from './original/2016-mtb';
+import util from 'util'
+import md5 from 'md5'
+import moment from 'moment'
+import Data from './original/2016-mtb'
 
 
-var fullEventData = Data.eventData.map(function(event) {
-  var newObject = {
-    id: 'evt-' + getRandomNumber(10000000, 99999999),
+const fullEventData = Data.eventData.map(event => {
+  //setting evnet id as hash of name and date so we can identify event as the same if id's are the same
+
+  const eventId = md5(event.name + event.date)
+
+  const newObject = {
+    id: 'evt-' + eventId,
     discipline: 'MTB',
     name: event.name,
-    date: event.date,
+    date: moment(event.date, 'MM/DD/YYYY').format('MMMM DD YYYY'), //normalizing date
     promoterUrl: event.promoterUrl,
     location: {
       city: event.locationCity,
       state: 'CA'
     }
-  };
-  return newObject;
+  }
+
+  return newObject
 });
 
 // console.log(util.inspect(fullEventData, {
 //   colors: true
 // }));
 
-console.log(JSON.stringify(fullEventData, null, '  '));
+console.log(JSON.stringify(fullEventData, null, '  '))
 
 function getRandomNumber(startNumber, endNumber) {
-  return Math.floor((Math.random() * endNumber) + startNumber);
+  return Math.floor((Math.random() * endNumber) + startNumber)
 }
