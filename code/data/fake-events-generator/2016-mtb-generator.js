@@ -1,5 +1,5 @@
 import util from 'util';
-import Data from './2016-mtb';
+import Data from './original/2016-mtb';
 
 
 var fullEventData = Data.eventData.map(function(event) {

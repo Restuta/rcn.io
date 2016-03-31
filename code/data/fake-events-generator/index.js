@@ -1,2 +1,2 @@
 require('babel/register');
-require('./NCNCA-generator');
+require('./2016-mtb-generator');
