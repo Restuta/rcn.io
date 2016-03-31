@@ -1,7 +1,8 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
 //import rawEvents from 'temp/data/2015-road.js'
-import rawEvents from 'temp/data/2016-NCNCA-road.js'
+import rawRoadEvents from 'temp/data/2016-NCNCA-road.js'
+import rawMtbEvents from 'temp/data/2016-mtb.js'
 import moment from 'moment'
 
 class Event {
@@ -12,10 +13,10 @@ class Event {
   }
 }
 
-const preProcessEvents = function(rawEvents) {
+const preProcessEvents = function(rawRoadEvents) {
   const events = new Map()
 
-  rawEvents.forEach(rawEvent => {
+  rawRoadEvents.forEach(rawEvent => {
     const event = new Event({
       name: rawEvent.name
         .replace(/--/g, '—'),
@@ -35,6 +36,10 @@ const preProcessEvents = function(rawEvents) {
   return events
 }
 
-const events = preProcessEvents(rawEvents)
+const roadEvents = preProcessEvents(rawRoadEvents)
+const mtbEvents = preProcessEvents(rawMtbEvents)
 
-export default events
+export {
+  roadEvents,
+  mtbEvents
+}

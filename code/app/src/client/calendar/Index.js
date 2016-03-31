@@ -1,7 +1,7 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
-import events from 'temp/events.js'
+import {roadEvents as events} from 'temp/events.js'
 
 export default class Home extends Component {
 
