@@ -24,6 +24,9 @@ export default class TopNavbar extends Component {
                 <Link className="nav-link" to={'/cal'}>Cal</Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to={'/mtb'}>MTB</Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link faded" to={'/dev'}>Dev</Link>
               </li>
             </ul>
