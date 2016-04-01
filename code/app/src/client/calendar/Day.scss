@@ -16,9 +16,6 @@
     font-weight: 400;
     font-size: pxToRem(14);
     width: 100%;
-    //text-align: right;
-    //font-family: Oswald;
-    // font-weight: 300;
     position: static;
     display: flex;
     justify-content: flex-end;
@@ -31,7 +28,11 @@
     margin-bottom: 1rem;
     // margin-top: 1.25rem;
     // margin-bottom: 1.75rem;
+  }
+  &-special {
+    .Day-date {
 
+    }
   }
   &:hover {
     background-color: $grey-100;
@@ -72,16 +73,24 @@
     }
   }
 
-  &-today-label {
+  .day-of-month-label {
     margin: 0;
     line-height: 2rem;
     position: relative;
     text-align: right;
     display: inline-block;
     //margin-right: 1rem;
-    top: pxToRem(0);
+    top: pxToRem(-1);
     //font-family: Lato;
     //font-weight: 700;
+  }
+
+  .day-of-month-label.first {
+
+  }
+
+  .day-of-month-label.last {
+    color: $grey-500;
   }
 
 

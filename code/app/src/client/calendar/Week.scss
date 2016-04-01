@@ -1,12 +1,17 @@
 @import '../styles/variables';
 @import '../styles/mixins';
+@import '../styles/bs4-fixes';
 
 .Week {
   $border-width-rem: pxToRem(1);
 
   //background-color: $grey-100;
 
-  min-height: 16rem + $border-width-rem; //adding pixels to min height to compensate for border width
+  min-height: 8rem + $border-width-rem; //adding pixels to min height to compensate for border width
+
+  @media (max-width: map-get($container-max-widths, "lg")) {
+    min-height: 6rem + $border-width-rem;
+  }
 
   border-top: $border-width-rem solid $grey-300;
   margin-top: -$border-width-rem;

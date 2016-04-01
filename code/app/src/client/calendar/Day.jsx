@@ -21,9 +21,14 @@ export default class Day extends Component {
       itIsCurrentMonthsDay
     } = this.props
 
+    const itIsEmpty = (!this.props.children || this.props.children.length === 0)
+    const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
+
     const classNames = classnames('Day',
       (itIsToday && 'Day-today'),
-      (itIsCurrentMonthsDay && 'Day-current-month')
+      (itIsCurrentMonthsDay && 'Day-current-month'),
+      (itIsEmpty && 'Day-empty'),
+      (itIsSpecialDayOfMonth && 'Day-special')
     )
 
     const formattedDate = zeroPad(day, 1)
@@ -31,17 +36,27 @@ export default class Day extends Component {
       //backgroundColor: color,
     }
 
-    const lastDayOfMonthComponent = itIsLastDayOfMonth ? <span>{Months[month - 1].short}&nbsp;</span> : null
-    const firstDayOfMonthComponent = itIsFirstDayOfMonth ? <span>{Months[month - 1].short}&nbsp;</span> : null
+    let specialDayOfMonthComponent = null
+
+    if (itIsSpecialDayOfMonth) {
+      const specialDayClassNames = classnames('day-of-month-label',
+        (itIsLastDayOfMonth && 'last'),
+        (itIsFirstDayOfMonth && 'first')
+      )
+
+      specialDayOfMonthComponent = (
+        <h4 className={specialDayClassNames}>
+          <span>{Months[month - 1].short}&nbsp;</span>
+        </h4>
+      )
+    }
 
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
-          {(itIsToday && size > 1) && <h4 className="Day-today-label">TODAY</h4>}
           {/*{(itIsToday && size > 1) && <RoundBadge size={2}>{formattedDate}</RoundBadge>}*/}
+          {specialDayOfMonthComponent}
           <span className="Day-date-wrapper">
-            {lastDayOfMonthComponent}
-            {firstDayOfMonthComponent}
             {formattedDate}
           </span>
         </div>

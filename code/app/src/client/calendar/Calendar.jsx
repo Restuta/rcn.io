@@ -7,6 +7,7 @@ import Event from './Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
+import Colors from 'styles/colors'
 
 const findEventByDate = (events, date) => {
   const key = date.format('MMDDYYYY')
@@ -36,7 +37,7 @@ export default class Calendar extends Component {
 
         const foundEvents = findEventByDate(events, currentDate)
         //const foundEvents = [{name: 'Test Event Name Criterium'}]
-        
+
         let eventComponents
 
         if (foundEvents.length > 0) {
@@ -66,6 +67,9 @@ export default class Calendar extends Component {
         <h1 style={{
           marginBottom: '4rem'
         }}>{name} {year}</h1>
+        <h3 style={{
+          color: Colors.grey500
+        }}>{events.size} events</h3>
 
         <WeekdaysHeader sizes={weekdaysSizes}/>
         <div className="Calendar-body">
