@@ -8,19 +8,19 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Calendar name="NCNCA Calendar" year={2016}
+        <Calendar location="NCNCA" name="Calendar" year={2016}
           events={events}
           containerWidth={this.props.containerWidth}
           weekdaysSizes={[1, 1, 2, 2, 2, 3, 3]}/>
-        <Calendar name="NCNCA Calendar" year={2016}
+        <Calendar location="NCNCA" name="Calendar" year={2016}
           events={events}
           containerWidth={this.props.containerWidth}
           weekdaysSizes={[2, 2, 2, 2, 2, 2, 2]}/>
-        <Calendar name="NCNCA Calendar" year={2016}
+        <Calendar location="NCNCA" name="Calendar" year={2016}
             events={events}
             containerWidth={this.props.containerWidth}
             weekdaysSizes={[1, 1, 1, 2, 2, 3, 4]}/>
-        <Calendar name="NCNCA Calendar" year={2016}
+        <Calendar location="NCNCA" name="Calendar" year={2016}
           events={events}
           containerWidth={this.props.containerWidth}
           weekdaysSizes={[1, 1, 1, 2, 3, 3, 3]}/>

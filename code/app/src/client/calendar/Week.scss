@@ -9,7 +9,7 @@
 
   min-height: 8rem + $border-width-rem; //adding pixels to min height to compensate for border width
 
-  @media (max-width: map-get($container-max-widths, "lg")) {
+  @media (max-width: map-get($grid-breakpoints, "lg")) {
     min-height: 6rem + $border-width-rem;
   }
 

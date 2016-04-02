@@ -8,7 +8,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Calendar name="NorCal MTB Calendar" year={2016}
+        <Calendar location="NorCal"
+          eventsTypeName="MTB"
+          name="Calendar"
+          year={2016}
           events={mtbEvents}
           containerWidth={this.props.containerWidth}
           weekdaysSizes={[2, 2, 2, 2, 2, 2, 2]}/>

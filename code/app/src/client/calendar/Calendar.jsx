@@ -16,7 +16,15 @@ const findEventByDate = (events, date) => {
 
 export default class Calendar extends Component {
   render() {
-    const {name, year, containerWidth, weekdaysSizes, events} = this.props
+    const {
+      name,
+      year,
+      containerWidth,
+      weekdaysSizes,
+      events,
+      eventsTypeName,
+      location
+    } = this.props
 
     //resetting date to first day of week
     const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
@@ -65,9 +73,14 @@ export default class Calendar extends Component {
     return (
       <div className="Calendar">
         <h1 style={{
-          marginBottom: '4rem'
-        }}>{name} {year}</h1>
+          marginBottom: '0rem'
+        }}>
+        {location}&nbsp;
+        {eventsTypeName && <span style={{color: '#966959'}}>{eventsTypeName}&nbsp;</span>}
+        {name} {year}</h1>
         <h3 style={{
+          marginTop: 0,
+          marginBottom: '4rem',
           color: Colors.grey500
         }}>{events.size} events</h3>
 
@@ -84,5 +97,7 @@ Calendar.propTypes = {
   year: PropTypes.number,
   name: PropTypes.string,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
-  events: PropTypes.array
+  events: PropTypes.array,
+  location: PropTypes.string,
+  eventsTypeName: PropTypes.string,
 }
