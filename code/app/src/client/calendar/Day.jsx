@@ -14,7 +14,7 @@ export default class Day extends Component {
       day,
       month,
       //year,
-      color,
+      //color,
       itIsToday,
       itIsFirstDayOfMonth,
       itIsLastDayOfMonth,
