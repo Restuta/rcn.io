@@ -22,7 +22,7 @@ export default class Calendar extends Component {
       containerWidth,
       weekdaysSizes,
       events,
-      eventsTypeName,
+      discipline,
       location
     } = this.props
 
@@ -50,7 +50,7 @@ export default class Calendar extends Component {
 
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
-            <Event key={i} width={daySize} containerWidth={containerWidth} name={event.name}/>
+            <Event key={i} width={daySize} containerWidth={containerWidth} name={event.name} discipline={discipline}/>
           )
         }
 
@@ -76,7 +76,7 @@ export default class Calendar extends Component {
           marginBottom: '0rem'
         }}>
         {location}&nbsp;
-        {eventsTypeName && <span style={{color: '#966959'}}>{eventsTypeName}&nbsp;</span>}
+        {discipline && <span style={{color: '#966959'}}>{discipline}&nbsp;</span>}
         {name} {year}</h1>
         <h3 style={{
           marginTop: 0,
@@ -99,5 +99,5 @@ Calendar.propTypes = {
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   events: PropTypes.array,
   location: PropTypes.string,
-  eventsTypeName: PropTypes.string,
+  discipline: PropTypes.string,
 }

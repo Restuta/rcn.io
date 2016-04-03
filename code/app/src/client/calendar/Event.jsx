@@ -6,6 +6,8 @@ import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
 import {rnd} from 'utils/math'
+import {Disciplines} from 'temp/events'
+
 
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size}`, props.className)
@@ -58,7 +60,8 @@ class Event extends Component {
       width,
       containerWidth,
       baseHeight = getBaseHeight(containerWidth),
-      name
+      name,
+      discipline
     } = this.props
 
     // if (!baseHeight) {
@@ -147,7 +150,10 @@ class Event extends Component {
 
 
     eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
-    //eventColor = Colors.grey600
+
+    if (discipline === Disciplines.MTB) {
+      eventColor = 'rgb(150, 105, 89)'
+    }
 
     let style = {
       //backgroundColor: 'white',
@@ -185,8 +191,9 @@ class Event extends Component {
 
 Event.propTypes = {
   name: PropTypes.string,
+  discipline: PropTypes.oneOf(Disciplines.MTB, Disciplines.Road),
   //width in coluns card is going to take
-  width:  React.PropTypes.oneOf([1, 2, 3, 4]),
+  width:  PropTypes.oneOf([1, 2, 3, 4]),
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px

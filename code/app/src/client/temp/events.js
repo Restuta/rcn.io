@@ -5,6 +5,11 @@ import rawRoadEvents from 'temp/data/2016-NCNCA-road.js'
 import rawMtbEvents from 'temp/data/2016-mtb.js'
 import moment from 'moment'
 
+const Disciplines = {
+  MTB: 'MTB',
+  Road: 'Road'
+}
+
 class Event {
   constructor({name, date, type}) {
     this.name = name
@@ -41,5 +46,6 @@ const mtbEvents = preProcessEvents(rawMtbEvents)
 
 export {
   roadEvents,
-  mtbEvents
+  mtbEvents,
+  Disciplines
 }

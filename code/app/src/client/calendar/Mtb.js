@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
       <div>
         <Calendar location="NorCal"
-          eventsTypeName="MTB"
+          discipline="MTB"
           name="Calendar"
           year={2016}
           events={mtbEvents}
