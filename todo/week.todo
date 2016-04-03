@@ -20,6 +20,7 @@ Today
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 	
 	!----- immediate todo
+		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
 		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html

@@ -3,6 +3,7 @@
 //import rawEvents from 'temp/data/2015-road.js'
 import rawRoadEvents from 'temp/data/2016-NCNCA-road.js'
 import rawMtbEvents from 'temp/data/2016-mtb.js'
+import rawMtbEventsManual from 'temp/data/2016-mtb-manual.js'
 import moment from 'moment'
 
 const Disciplines = {
@@ -42,7 +43,13 @@ const preProcessEvents = function(rawRoadEvents) {
 }
 
 const roadEvents = preProcessEvents(rawRoadEvents)
-const mtbEvents = preProcessEvents(rawMtbEvents)
+const mtbEvents = preProcessEvents(rawMtbEvents
+  .concat(rawMtbEventsManual.map(x => { // map() funciton is for debugging only
+    return {
+      ...x,
+      name: '[M] ' + x.name
+    }
+  })))
 
 export {
   roadEvents,
