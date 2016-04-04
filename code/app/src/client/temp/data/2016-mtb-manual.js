@@ -490,6 +490,51 @@ export default [
       "zip": "95945"
     }
   },
+  {
+    "discipline": "MTB",
+    "permit": "2016-1050",
+    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "date": "April 29 2016",
+    "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
+    "registrationUrl": "http://doodle.com/poll/y5dv45xca676382f",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2016/03/MinersDirtFlyerAndRules2016.pdf",
+    "location": {
+      "streetAddress": "Lyman Gilmore School",
+      "city": "Grass Valley",
+      "state": "CA",
+      "zip": "95945"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "2016-1050",
+    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "date": "May 6 2016",
+    "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
+    "registrationUrl": "http://doodle.com/poll/ecnz6kbfci84i298",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2016/03/MinersDirtFlyerAndRules2016.pdf",
+    "location": {
+      "streetAddress": "Dascombe & Pioneer Trail Systems",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "2016-1050",
+    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "date": "May 13 2016",
+    "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
+    "registrationUrl": "http://doodle.com/poll/7urpqr34mgry3iqh",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2016/03/MinersDirtFlyerAndRules2016.pdf",
+    "location": {
+      "streetAddress": "Nevada Union High School",
+      "city": "Grass Valley",
+      "state": "CA",
+      "zip": "95945"
+    }
+  },
 ]
  
 /*
