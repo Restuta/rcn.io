@@ -41,6 +41,7 @@ $base-line-rem: $line-height-rem / 2;
   max-height: $line-height-rem * 3;
   min-height: $line-height-rem * 3;
 
+  outline: 1px solid lightgrey;
 
   // max-height: auto !important;
   // min-height: auto !important;
@@ -53,8 +54,8 @@ $base-line-rem: $line-height-rem / 2;
     padding-left: pxToRem(2);
     padding-top: pxToRem(2);
     margin-bottom: 0;
-    max-height: $base-line-rem * 3;
-    min-height: $base-line-rem * 3;
+    max-height: 100%;
+    min-height: 100%;
   }
 
   &.size-XS {
@@ -85,8 +86,8 @@ $base-line-rem: $line-height-rem / 2;
     @include text-2();
     margin-bottom: 0;
     font-weight: 700;
-    max-height: $line-height-rem * 6;
-    min-height: $line-height-rem * 6;
+    max-height: $line-height-rem * 8;
+    min-height: $line-height-rem * 8;
   }
 
   &.size-XL {

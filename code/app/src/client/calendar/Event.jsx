@@ -8,7 +8,6 @@ import Grid from 'styles/grid'
 import {rnd} from 'utils/math'
 import {Disciplines} from 'temp/events'
 
-
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size}`, props.className)
   let {name} = props
@@ -22,6 +21,7 @@ export const EventName = (props) => {
     return name //TODO restuta: funtcion returns different types based on the flow, fix this
   }
 
+  //TODO: make this production ready
   let wrappedNameComp = name
   wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
   wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
@@ -64,9 +64,6 @@ class Event extends Component {
       discipline
     } = this.props
 
-    // if (!baseHeight) {
-    //   baseHeight = getBaseHeight(containerWidth)
-    // }
 
     //todo: typography should be passed as props
 
@@ -117,6 +114,7 @@ class Event extends Component {
     let eventColor = 'white'
 
     //differnt settings based on card size
+    //TODO: move to CSS
     if (cardSize === Size.XXS) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
@@ -149,7 +147,7 @@ class Event extends Component {
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
 
-    eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
+    //eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
 
     if (discipline === Disciplines.MTB) {
       eventColor = 'rgb(150, 105, 89)'

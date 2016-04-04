@@ -38,7 +38,7 @@ export default class Day extends Component {
 
     let specialDayOfMonthComponent = null
 
-    if (itIsSpecialDayOfMonth) {
+    if (itIsSpecialDayOfMonth && size > 2) {
       const specialDayClassNames = classnames('day-of-month-label',
         (itIsLastDayOfMonth && 'last'),
         (itIsFirstDayOfMonth && 'first')
@@ -54,7 +54,6 @@ export default class Day extends Component {
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
-          {/*{(itIsToday && size > 1) && <RoundBadge size={2}>{formattedDate}</RoundBadge>}*/}
           {specialDayOfMonthComponent}
           <span className="Day-date-wrapper">
             {formattedDate}

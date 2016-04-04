@@ -12,6 +12,7 @@ Today
 --- Calendar
 	---- idea: consider doubling number of columns for more granular control on calendar column width
 	---- idea: relative orientation in days/month on the side (see branch calendar.relative-dates-on-the-side)
+	---- idea: display "upcoming events" count along with "total events" under calendar name
 	----- bug : on small sizes weekday names do not fit, e.g. "MON" becomes to wide
 	----- bug: on small sizes weekdays need to adapt as well as crads, when "TODAY" is during weekday it pushes content out of edges
 	----- bug: http://screencast.com/t/2KaJTM9RujmR when Last/First day of month happens to be "TODAY"

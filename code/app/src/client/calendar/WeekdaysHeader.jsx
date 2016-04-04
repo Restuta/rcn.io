@@ -44,7 +44,6 @@ export default class WeekdaysHeader extends Component {
       if (Weekdays[i].short.toLowerCase() === 'sat' || Weekdays[i].short.toLowerCase() === 'sun') {
         weekdaysNameStyle.color = 'crimson'
         weekdaysNameStyle.fontWeight = 900
-
       }
 
       return (
