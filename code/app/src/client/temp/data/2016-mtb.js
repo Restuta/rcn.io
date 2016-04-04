@@ -412,12 +412,17 @@ export default [
   {
     "id": "evt-c4c0f52b45292d8e34872772043ad024",
     "discipline": "MTB",
+    "permit": "2016-1232",
     "name": "Ridin' High at the Ranch",
     "date": "May 28 2016",
     "promoterUrl": "http://www.sabadirtriders.com/ridin--high.html",
+    "registrationUrl": "https://www.bikereg.com/ridn-high-at-the-ranch",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1232",
     "location": {
+      "streetAddress": "Meadow view dr",
       "city": "Susanville",
       "state": "CA"
+      "zip": "96130"
     }
   },
   {
