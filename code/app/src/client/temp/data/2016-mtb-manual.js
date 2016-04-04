@@ -460,7 +460,36 @@ export default [
       "zip": "95404"
     }
   },
-
+  {
+    "discipline": "MTB",
+    "permit": "2016-701",
+    "name": "TDS Enduro Buddy Newman Invitational",
+    "date": "April 9 2016",
+    "promoterUrl": "http://www.eventzilla.net/web/event?eventID=2139069566",
+    "registrationUrl": "",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-701",
+    "location": {
+      "streetAddress": "13861 Osborne Hill Rd",
+      "city": "Grass Valley",
+      "state": "CA",
+      "zip": "95945"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "2016-701",
+    "name": "TDS Enduro Buddy Newman Invitational",
+    "date": "April 10 2016",
+    "promoterUrl": "http://www.eventzilla.net/web/event?eventID=2139069566",
+    "registrationUrl": "",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-701",
+    "location": {
+      "streetAddress": "13861 Osborne Hill Rd",
+      "city": "Grass Valley",
+      "state": "CA",
+      "zip": "95945"
+    }
+  },
 ]
  
 /*
