@@ -1,0 +1,6 @@
+general:
+  build_dir: code/app
+
+machine:
+  node:
+    version: 5.9.1
