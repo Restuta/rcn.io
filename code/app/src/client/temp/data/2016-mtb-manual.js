@@ -265,9 +265,204 @@ export default [
       "zip": ""
     }
   },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Santa Rosa Cup",
+    "date": "November 11 2016",
+    "promoterUrl": "http://www.bikemonkey.net/srcup",
+    "registrationUrl": "",
+    "flyerUrl": "http://www.bikemonkey.net/srcup",
+    "location": {
+      "streetAddress": "",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Santa Rosa Cup",
+    "date": "November 12 2016",
+    "promoterUrl": "http://www.bikemonkey.net/srcup",
+    "registrationUrl": "",
+    "flyerUrl": "http://www.bikemonkey.net/srcup",
+    "location": {
+      "streetAddress": "",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Santa Rosa Cup",
+    "date": "November 13 2016",
+    "promoterUrl": "http://www.bikemonkey.net/srcup",
+    "registrationUrl": "",
+    "flyerUrl": "http://www.bikemonkey.net/srcup",
+    "location": {
+      "streetAddress": "",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "April 12 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "April 26 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "May 3 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "May 10 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "May 17 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "May 24 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "June 7 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "June 14 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "June 21 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Tuesday Night Twilights",
+    "date": "April 5 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tnt",
+    "registrationUrl": "http://www.bikemonkey.net/tnt",
+    "flyerUrl": "http://www.bikemonkey.net/tnt",
+    "location": {
+      "streetAddress": "2004 Linwood Ave",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95404"
+    }
+  },
 
 ]
-
+ 
 /*
 {
   "discipline": "MTB",
