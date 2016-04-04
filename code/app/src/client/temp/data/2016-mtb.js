@@ -179,9 +179,12 @@ export default [
   {
     "id": "evt-09ed795f835cf2fa7a2cca669de6a89f",
     "discipline": "MTB",
+    "permit": "2016-599",
     "name": "Napa Valley Dirt Classic",
     "date": "April 10 2016",
     "promoterUrl": "http://web2.puc.edu/Pioneers/NVDC/",
+    "registrationUrl": "http://web2.puc.edu/Pioneers/NVDC",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-599",
     "location": {
       "city": "Angwin",
       "state": "CA"
@@ -190,9 +193,12 @@ export default [
   {
     "id": "evt-1bb5bfda0ce40ec5afcc9925d8729691",
     "discipline": "MTB",
+    "permit": "2016-1049",
     "name": "Nevada City Dirt Classic #1",
-    "date": "April 10 2016",
+    "date": "April 23 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
+    "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
     "location": {
       "city": "Nevada City",
       "state": "CA"
@@ -201,9 +207,12 @@ export default [
   {
     "id": "evt-06b33a121645a169ec3ab29e6ca38b04",
     "discipline": "MTB",
+    "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 14 2016",
     "promoterUrl": "http://www.seaotterclassic.com/",
+    "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
       "city": "Laguna Seca",
       "state": "CA"
@@ -212,9 +221,12 @@ export default [
   {
     "id": "evt-b0225cc4e6d11a636cafaa1ee9f689c2",
     "discipline": "MTB",
+    "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 15 2016",
     "promoterUrl": "http://www.seaotterclassic.com/",
+    "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
       "city": "Laguna Seca",
       "state": "CA"
@@ -223,9 +235,12 @@ export default [
   {
     "id": "evt-734c804f22ecb9d9bb88b96435ed3ef0",
     "discipline": "MTB",
+    "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 16 2016",
     "promoterUrl": "http://www.seaotterclassic.com/",
+    "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
       "city": "Laguna Seca",
       "state": "CA"
@@ -234,9 +249,12 @@ export default [
   {
     "id": "evt-a487f62a61ceab432f0263cdebd4727b",
     "discipline": "MTB",
+    "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 17 2016",
     "promoterUrl": "http://www.seaotterclassic.com/",
+    "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
       "city": "Laguna Seca",
       "state": "CA"
@@ -256,9 +274,12 @@ export default [
   {
     "id": "evt-6cbba2dda7e63e34fc0e78185442c6d0",
     "discipline": "MTB",
+    "permit": "2016-1049",
     "name": "Nevada City Dirt Classic #2",
-    "date": "April 30 2016",
+    "date": "May 7 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
+    "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
     "location": {
       "city": "Nevada City",
       "state": "CA"
@@ -377,9 +398,12 @@ export default [
   {
     "id": "evt-5017c0cdb5f5d13c528730ed4bb42025",
     "discipline": "MTB",
+    "permit": "2016-1049",
     "name": "Nevada City Dirt Classic #3",
-    "date": "May 22 2016",
+    "date": "May 15 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
+    "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
     "location": {
       "city": "Nevada City",
       "state": "CA"
