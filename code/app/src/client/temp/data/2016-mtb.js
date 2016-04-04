@@ -14,7 +14,7 @@ export default [
   {
     "id": "evt-da94d121dc79115fd8e4faf821b17f26",
     "discipline": "MTB",
-    "name": "CCCX#1",
+    "name": "CCCX #1",
     "date": "January 31 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -36,7 +36,7 @@ export default [
   {
     "id": "evt-d30efc78da15d8eb5addd1399b68b645",
     "discipline": "MTB",
-    "name": "CCCX#2",
+    "name": "CCCX #2",
     "date": "February 06 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -58,7 +58,7 @@ export default [
   {
     "id": "evt-2968372a240c52828aabdd2c70f95380",
     "discipline": "MTB",
-    "name": "CCCX#3",
+    "name": "CCCX #3",
     "date": "February 20 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -69,7 +69,7 @@ export default [
   {
     "id": "evt-d78e25dc2f7bd1ad9967087bc3618410",
     "discipline": "MTB",
-    "name": "CCCX#4",
+    "name": "CCCX #4",
     "date": "February 27 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -91,7 +91,7 @@ export default [
   {
     "id": "evt-a71aefbd7d37463bc15fa133df6729a9",
     "discipline": "MTB",
-    "name": "CCCX#5",
+    "name": "CCCX #5",
     "date": "March 12 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -124,7 +124,7 @@ export default [
   {
     "id": "evt-080d6dc4c154cc031e5bc20ae636383a",
     "discipline": "MTB",
-    "name": "CCCX#6",
+    "name": "CCCX #6",
     "date": "March 26 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -278,7 +278,7 @@ export default [
   {
     "id": "evt-7737d24acf083cc5ead06d4a4cf20309",
     "discipline": "MTB",
-    "name": "CCCX#7",
+    "name": "CCCX #7",
     "date": "May 07 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -355,7 +355,7 @@ export default [
   {
     "id": "evt-ce5ad0c4a930488902609008c6ee8191",
     "discipline": "MTB",
-    "name": "CCCX#8",
+    "name": "CCCX #8",
     "date": "May 22 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -410,7 +410,7 @@ export default [
   {
     "id": "evt-0063fc922643a9df4d4b3ef51e7ae3d7",
     "discipline": "MTB",
-    "name": "Boggs Funduro (Willits, CA)",
+    "name": "Boggs Funduro",
     "date": "June 03 2016",
     "promoterUrl": "www.bikemonkey.net",
     "location": {
@@ -421,7 +421,7 @@ export default [
   {
     "id": "evt-e37efc9757c60f53afcd5a9a955d13a4",
     "discipline": "MTB",
-    "name": "Boggs Funduro (Willits, CA)",
+    "name": "Boggs Funduro",
     "date": "June 04 2016",
     "promoterUrl": "www.bikemonkey.net",
     "location": {
@@ -432,7 +432,7 @@ export default [
   {
     "id": "evt-501a1b7c5168711b9cb5535826751ea7",
     "discipline": "MTB",
-    "name": "Boggs Funduro (Willits, CA)",
+    "name": "Boggs Funduro",
     "date": "June 05 2016",
     "promoterUrl": "www.bikemonkey.net",
     "location": {
@@ -509,7 +509,7 @@ export default [
   {
     "id": "evt-44ca82805223a86d8c6804264336a253",
     "discipline": "MTB",
-    "name": "CCCX#9",
+    "name": "CCCX #9",
     "date": "June 19 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
@@ -630,7 +630,7 @@ export default [
   {
     "id": "evt-ae9edce08a276174b7e1b8d3c1045fd9",
     "discipline": "MTB",
-    "name": "CCCX#10",
+    "name": "CCCX #10",
     "date": "July 23 2016",
     "promoterUrl": "www.cccxcycling.com",
     "location": {
