@@ -77,6 +77,7 @@
 * [Dream Icons](http://dreamicons.net/#charitable) - 💰$10 for charity
 
 ### Colors
+* [http://www.lolcolors.com/]
 * [colourco.de](http://colourco.de/)
 * [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
 * [Coolors.co](https://coolors.co/) - color schemes generator
