@@ -69,5 +69,6 @@
     "react-pure-render": "^1.0.1",
     "react-router": "^2.0.1",
     "svg-inline-react": "^1.0.0"
-  }
+  },
+  engine": "node 5.9.x"
 }
