@@ -587,8 +587,10 @@ export default [
     "date": "July 12 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
@@ -599,8 +601,10 @@ export default [
     "date": "July 13 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
@@ -611,8 +615,10 @@ export default [
     "date": "July 14 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
@@ -623,8 +629,10 @@ export default [
     "date": "July 15 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
@@ -635,8 +643,10 @@ export default [
     "date": "July 16 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
@@ -646,8 +656,10 @@ export default [
     "date": "July 17 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
     "location": {
-      "city": "Mammoth",
-      "state": "CA"
+      "streetAddress": "10001 Minaret Road",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
     }
   },
   {
