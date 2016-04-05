@@ -76,7 +76,7 @@ export default class Calendar extends Component {
           marginBottom: '0rem'
         }}>
         {location}&nbsp;
-        {discipline && <span style={{color: '#966959'}}>{discipline}&nbsp;</span>}
+        {discipline && <span style={{color: Colors.brownMud}}>{discipline}&nbsp;</span>}
         {name} {year}</h1>
         <h3 style={{
           marginTop: 0,
