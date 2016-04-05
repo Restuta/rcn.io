@@ -548,6 +548,21 @@ export default [
       "zip": "94963"
     }
   },
+  {
+    "discipline": "MTB",
+    "permit": "2016-1593",
+    "name": "The Rockhopper Classic",
+    "date": "June 05 2016",
+    "promoterUrl": "http://www.monticellocycling.com",
+    "registrationUrl": "https://timeyourrace.com/Rockhopper/RegMain.asp",
+    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1593",
+    "location": {
+      "streetAddress": "Lagoon Valley Park",
+      "city": "Vacaville",
+      "state": "CA",
+      "zip": "95688"
+    }
+  },
 ]
  
 /*
