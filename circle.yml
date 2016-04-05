@@ -7,4 +7,4 @@ machine:
 
 test:
   override:
-    npm run eslint
+    "npm run eslint"
