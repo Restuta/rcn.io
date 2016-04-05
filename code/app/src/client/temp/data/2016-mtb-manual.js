@@ -535,6 +535,19 @@ export default [
       "zip": "95945"
     }
   },
+  {
+    "discipline": "MTB",
+    "permit": "2016-1662",
+    "name": "San Geronimo Valley Mountain Bike Short Track and Skills Competition",
+    "date": "May 29 2016",
+    "flyerUrl": "https://www.usacycling.org/events/flyer.php?permit=2016-1662",
+    "location": {
+      "streetAddress": "6350 Sir Francis Drake Blvd",
+      "city": "San Geronimo",
+      "state": "CA",
+      "zip": "94963"
+    }
+  },
 ]
  
 /*
