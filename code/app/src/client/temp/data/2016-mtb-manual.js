@@ -567,6 +567,174 @@ export default [
       "zip": "95688"
     }
   },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "May 18 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "May 25 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "June 01 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "June 15 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "June 22 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "June 29 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "July 06 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "July 20 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "July 27 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "August 03 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "August 10 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Howarth Park Dirt Crits",
+  "date": "August 17 2016",
+  "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "registrationUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "flyerUrl": "http://www.bikemonkey.net/dirtcrits/",
+  "location": {
+    "streetAddress": "630 Summerfield Rd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95405"
+    }
+  },
 ]
  
 /*
