@@ -764,9 +764,12 @@ export default [
   {
     "id": "evt-951bd4fc369e28c64f55a6bef3562915",
     "discipline": "MTB",
+    "permit": "2016-1654",
     "name": "Bodie Bowl",
     "date": "August 21 2016",
     "promoterUrl": "http://www.bodiebowl.com/",
+    "registrationUrl": "https://www.bikereg.com/httpwwwbodiebowlcomabouthtml",
+    "flyerUrl": "http://www.bodiebowl.com/about.html",
     "location": {
       "city": "Bodie",
       "state": "CA"
