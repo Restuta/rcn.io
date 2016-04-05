@@ -81,6 +81,7 @@ export default class Calendar extends Component {
         <h3 style={{
           marginTop: 0,
           marginBottom: '4rem',
+          fontWeight: '300',
           color: Colors.grey500
         }}>{events.size} events</h3>
 

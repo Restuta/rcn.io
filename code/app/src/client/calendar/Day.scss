@@ -1,5 +1,6 @@
 @import '../styles/variables';
 @import '../styles/mixins';
+@import '../styles/bs4-fixes';
 
 .Day {
   display: flex;
@@ -33,9 +34,9 @@
     // margin-top: 1.25rem;
     // margin-bottom: 1.75rem;
   }
+
   &-special {
     .Day-date {
-
     }
   }
   &:hover {
@@ -87,6 +88,26 @@
     top: pxToRem(-1);
     //font-family: Lato;
     //font-weight: 700;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, "sm")) {
+    .Day-date {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      font-size: pxToRem(12);
+    }
+
+    &-today .Day-date-wrapper {
+      width: 2.25rem;
+      height: 2.25rem;
+      right: pxToRem(-1); //to compensate shift from padding
+      top: pxToRem(-1);
+    }
+
+    .day-of-month-label {
+      font-size: pxToRem(11);
+      top: pxToRem(0);
+    }
   }
 
   .day-of-month-label.first {

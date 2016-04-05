@@ -9,16 +9,16 @@
 
   min-height: 8rem + $border-width-rem; //adding pixels to min height to compensate for border width
 
-  @media (max-width: map-get($grid-breakpoints, "lg")) {
-    min-height: 6rem + $border-width-rem;
-  }
-
   border-top: $border-width-rem solid $grey-300;
   margin-top: -$border-width-rem;
   position: relative; //this makes borders visible despite negative top margin, idk why =)
 
   flex-wrap: nowrap;;
   justify-content: flex-end;
+
+  @media (max-width: map-get($grid-breakpoints, "lg")) {
+    min-height: 4rem + $border-width-rem;
+  }
 
 
   &.last-one {
