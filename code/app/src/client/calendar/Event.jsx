@@ -64,7 +64,6 @@ class Event extends Component {
       discipline
     } = this.props
 
-
     //todo: typography should be passed as props
 
     /*
@@ -122,7 +121,7 @@ class Event extends Component {
     } else if (cardSize === Size.XS) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      eventColor = 'gold'
+      eventColor = 'orange'
     } else if (cardSize === Size.S) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
@@ -130,11 +129,11 @@ class Event extends Component {
     } else if (cardSize === Size.M) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      eventColor = 'limegreen'
+      eventColor = 'mediumseagreen'
     } else if (cardSize === Size.L) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      eventColor = 'blueviolet'
+      eventColor = 'darkorchid'
     } else if (cardSize === Size.XL) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
@@ -147,10 +146,10 @@ class Event extends Component {
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
 
-    //eventColor = ['gold', 'tomato', 'limegreen', ' blueviolet', 'deepskyblue'][rnd(0, 4)]
+    eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
 
     if (discipline === Disciplines.MTB) {
-      eventColor = 'rgb(150, 105, 89)'
+      eventColor = Colors.brownMud
     }
 
     let style = {
