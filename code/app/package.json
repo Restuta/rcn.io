@@ -60,5 +60,5 @@
     "react-dom": "^0.14.7",
     "react-pure-render": "^1.0.1"
   },
-  engine": "node 5.9.x"
+  "engine": "node 5.9.x"
 }
