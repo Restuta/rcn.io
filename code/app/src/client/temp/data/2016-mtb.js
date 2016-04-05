@@ -506,8 +506,9 @@ export default [
     "id": "evt-2c82e7bffa869e003989fd0c11225bef",
     "discipline": "MTB",
     "name": "Tamarancho Classic",
-    "date": "June 11 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "date": "July 30 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tamarancho",
+    "flyerUrl": "http://www.bikemonkey.net/tamarancho",
     "location": {
       "city": "Tamarancho",
       "state": "CA"
@@ -517,8 +518,9 @@ export default [
     "id": "evt-91b456e11305c37c17930f899cc92d2e",
     "discipline": "MTB",
     "name": "Tamarancho Classic",
-    "date": "June 12 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "date": "July 31 2016",
+    "promoterUrl": "http://www.bikemonkey.net/tamarancho",
+    "flyerUrl": "http://www.bikemonkey.net/tamarancho",
     "location": {
       "city": "Tamarancho",
       "state": "CA"
