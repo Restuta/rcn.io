@@ -64,8 +64,9 @@ export default [
     "permit": "2016-78",
     "name": "Kamikaze Bike Games",
     "date": "September 15 2016",
-    "promoterUrl": "",
+    "promoterUrl": "http://www.kamikazebikegames.com/races",
     "registrationUrl": "https://www.bikereg.com/kamikaze-bike-games",
+    "flyerUrl": "http://www.kamikazebikegames.com/docs/librariesprovider15/default-document-library/2016-master-event-schedule-kbg-by-time.pdf?sfvrsn=0",
     "location": {
       "streetAddress": "462 Rainbow Lane",
       "city": "Mammoth Lakes",
@@ -78,8 +79,9 @@ export default [
     "permit": "2016-78",
     "name": "Kamikaze Bike Games",
     "date": "September 16 2016",
-    "promoterUrl": "http://www.kamikazebikegames.com/",
+    "promoterUrl": "http://www.kamikazebikegames.com/races",
     "registrationUrl": "https://www.bikereg.com/kamikaze-bike-games",
+    "flyerUrl": "http://www.kamikazebikegames.com/docs/librariesprovider15/default-document-library/2016-master-event-schedule-kbg-by-time.pdf?sfvrsn=0",
     "location": {
       "streetAddress": "462 Rainbow Lane",
       "city": "Mammoth Lakes",
@@ -92,8 +94,9 @@ export default [
     "permit": "2016-78",
     "name": "Kamikaze Bike Games",
     "date": "September 17 2016",
-    "promoterUrl": "http://www.kamikazebikegames.com/",
+    "promoterUrl": "http://www.kamikazebikegames.com/races",
     "registrationUrl": "https://www.bikereg.com/kamikaze-bike-games",
+    "flyerUrl": "http://www.kamikazebikegames.com/docs/librariesprovider15/default-document-library/2016-master-event-schedule-kbg-by-time.pdf?sfvrsn=0",
     "location": {
       "streetAddress": "462 Rainbow Lane",
       "city": "Mammoth Lakes",
@@ -106,8 +109,9 @@ export default [
     "permit": "2016-78",
     "name": "Kamikaze Bike Games",
     "date": "September 18 2016",
-    "promoterUrl": "http://www.kamikazebikegames.com/",
+    "promoterUrl": "http://www.kamikazebikegames.com/races",
     "registrationUrl": "https://www.bikereg.com/kamikaze-bike-games",
+    "flyerUrl": "http://www.kamikazebikegames.com/docs/librariesprovider15/default-document-library/2016-master-event-schedule-kbg-by-time.pdf?sfvrsn=0",
     "location": {
       "streetAddress": "462 Rainbow Lane",
       "city": "Mammoth Lakes",
