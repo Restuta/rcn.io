@@ -38,7 +38,7 @@ export default class Day extends Component {
 
     let specialDayOfMonthComponent = null
 
-    if (itIsSpecialDayOfMonth && size > 2) {
+    if (itIsSpecialDayOfMonth) {
       const specialDayClassNames = classnames('day-of-month-label',
         (itIsLastDayOfMonth && 'last'),
         (itIsFirstDayOfMonth && 'first')
