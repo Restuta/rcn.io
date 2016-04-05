@@ -421,7 +421,7 @@ export default [
     "location": {
       "streetAddress": "Meadow view dr",
       "city": "Susanville",
-      "state": "CA"
+      "state": "CA",
       "zip": "96130"
     }
   },
@@ -582,6 +582,7 @@ export default [
   {
     "id": "evt-7c506a6aa3e4f76c22ebe40784157ccf",
     "discipline": "MTB",
+    "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 12 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
@@ -593,6 +594,7 @@ export default [
   {
     "id": "evt-eb4b51806978962a252bfee0d10afdf0",
     "discipline": "MTB",
+    "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 13 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
@@ -604,6 +606,7 @@ export default [
   {
     "id": "evt-f64fdd0df0b85eee4ebc4f36328f06b0",
     "discipline": "MTB",
+    "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 14 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
@@ -615,6 +618,7 @@ export default [
   {
     "id": "evt-097072905bbe8d3ccf5915999a103395",
     "discipline": "MTB",
+    "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 15 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
@@ -626,6 +630,7 @@ export default [
   {
     "id": "evt-4f17281a5243a5f7baa473b977284559",
     "discipline": "MTB",
+    "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 16 2016",
     "promoterUrl": "https://www.usacycling.org/events/national.php",
