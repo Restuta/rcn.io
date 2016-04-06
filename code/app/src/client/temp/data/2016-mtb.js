@@ -266,6 +266,7 @@ export default [
     "name": "Lemurian Shasta Classic",
     "date": "April 30 2016",
     "promoterUrl": "http://shastalemurian.com/",
+    "flyerUrl": "http://shastalemurian.com/race-info/courses",
     "location": {
       "city": "Redding",
       "state": "CA"
@@ -291,6 +292,7 @@ export default [
     "name": "Race Behind Bars #1",
     "date": "May 01 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
+    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -301,7 +303,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #7",
     "date": "May 07 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -312,7 +314,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 13 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -323,7 +325,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 14 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -334,7 +336,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 15 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -346,6 +348,7 @@ export default [
     "name": "Race Behind Bars #2",
     "date": "May 15 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
+    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -356,7 +359,8 @@ export default [
     "discipline": "MTB",
     "name": "Santa Cruz Old Cabin Classic",
     "date": "May 21 2016",
-    "promoterUrl": "https://www.facebook.com/oldcabinclassic/",
+    "promoterUrl": "http://oldcabinclassic.com",
+    "flyerUrl": "http://oldcabinclassic.com/race-details/",
     "location": {
       "city": "Santa Cruz",
       "state": "CA"
@@ -367,7 +371,7 @@ export default [
     "discipline": "MTB",
     "name": "Pine Nut Cracker",
     "date": "May 21 2016",
-    "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "promoterUrl": "http://sierra-sports.com/sierra-cup-mtb-series/",
     "location": {
       "city": "Gardnerville",
       "state": "CA"
@@ -378,7 +382,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #8",
     "date": "May 22 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -389,7 +393,7 @@ export default [
     "discipline": "MTB",
     "name": "6 & 12 Hours of Weaverville",
     "date": "May 22 2016",
-    "promoterUrl": "http://teambigfoot.net/",
+    "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -429,8 +433,9 @@ export default [
     "id": "evt-626fcad6380ee3c1f84e427130069d6b",
     "discipline": "MTB",
     "name": "Race Behind Bars #3",
-    "date": "May 29 2016",
+    "date": "May 30 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
+    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -441,7 +446,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 03 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
