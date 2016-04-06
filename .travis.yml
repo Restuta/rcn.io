@@ -5,3 +5,7 @@ before_install:
   - cd code/app
 script:
   - npm run build
+notifications:
+  slack: 'team8:S0sZq9mFA8c6kdIHlGsgqbXY'
+    on_success: change
+    on_failure: always

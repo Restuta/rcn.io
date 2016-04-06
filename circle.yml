@@ -9,8 +9,3 @@ test:
   override:
     - npm run eslint
     - npm run build
-
-notifications:
-  slack: 'team8:S0sZq9mFA8c6kdIHlGsgqbXY'
-    on_success: change
-    on_failure: always
