@@ -10,6 +10,7 @@ export default [
     "date": "April 23 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
     "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2010/01/ncdc_2016_flyer-232x300.png",
     "location": {
       "streetAddress": "13861 Osborne Hill Road",
       "city": "Grass Valley",
@@ -24,6 +25,7 @@ export default [
     "date": "May 7 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
     "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2010/01/ncdc_2016_flyer-232x300.png",
     "location": {
       "streetAddress": "11498 Conservation Road",
       "city": "Nevada City",
@@ -38,6 +40,7 @@ export default [
     "date": "May 15 2016",
     "promoterUrl": "http://ybonc.org/events/dirt-classic/",
     "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
+    "flyerUrl": "http://ybonc.org/wp-content/uploads/2010/01/ncdc_2016_flyer-232x300.png",
     "location": {
       "streetAddress": "11498 Conservation Road",
       "city": "Nevada City",
@@ -125,7 +128,8 @@ export default [
     "name": "The Bidwell Bump",
     "date": "September 24 2016",
     "promoterUrl": "http://www.bidwellpromotions.com/",
-    "registrationUrl": "",
+    "registrationUrl": "http://www.bidwellpromotions.com/registration.html",
+    "flyerUrl": "http://www.bidwellpromotions.com/race-courses.html",
     "location": {
       "name": "Five Mile Recreation Area, Bidwell Park",
       "streetAddress": "375 Centennial Ave",
