@@ -235,7 +235,7 @@ export default [
     "date": "May 7 2016",
     "promoterUrl": "http://www.norcalmtb.org/races-2",
     "registrationUrl": "",
-    "flyerUrl": "",
+    "flyerUrl": "http://www.norcalmtb.org/wp-content/uploads/2016/04/NorCal-Conference-Championships-5.pdf",
     "location": {
       "streetAddress": "",
       "city": "",
@@ -250,7 +250,7 @@ export default [
     "date": "May 8 2016",
     "promoterUrl": "http://www.norcalmtb.org/races-2",
     "registrationUrl": "",
-    "flyerUrl": "",
+    "flyerUrl": "http://www.norcalmtb.org/wp-content/uploads/2016/04/NorCal-Conference-Championships-5.pdf",
     "location": {
       "streetAddress": "",
       "city": "",
@@ -280,7 +280,7 @@ export default [
     "date": "November 11 2016",
     "promoterUrl": "http://www.bikemonkey.net/srcup",
     "registrationUrl": "",
-    "flyerUrl": "http://www.bikemonkey.net/srcup",
+    "flyerUrl": "",
     "location": {
       "streetAddress": "",
       "city": "Santa Rosa",
