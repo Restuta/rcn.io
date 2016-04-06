@@ -9,3 +9,8 @@ test:
   override:
     - npm run eslint
     - npm run build
+
+notifications:
+  slack:
+    on_success: change
+    on_failure: always
