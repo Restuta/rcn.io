@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
-    "build:prod": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress",
+    "build:prod": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --bail",
     "build": "npm run clean && npm run build:prod",
     "start": "node devServer.js",
     "eslint": "eslint src/ --ext .js,.jsx || true",
