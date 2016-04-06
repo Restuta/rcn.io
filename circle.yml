@@ -11,6 +11,6 @@ test:
     - npm run build
 
 notifications:
-  slack:
+  slack: 'team8:S0sZq9mFA8c6kdIHlGsgqbXY'
     on_success: change
     on_failure: always
