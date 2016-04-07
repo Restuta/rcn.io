@@ -596,6 +596,7 @@ export default [
     "name": "Mendocino 100",
     "date": "June 26 2016",
     "promoterUrl": "http://superproracing.com",
+    "registrationUrl": "https://www.eventbrite.com/e/2016-mendocino-100-registration-21397493479",
     "location": {
       "city": "Mendocino",
       "state": "CA"
@@ -607,7 +608,8 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 12 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -621,7 +623,8 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 13 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -635,7 +638,8 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 14 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -649,7 +653,8 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 15 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -663,7 +668,8 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 16 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -676,7 +682,8 @@ export default [
     "discipline": "MTB",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 17 2016",
-    "promoterUrl": "https://www.usacycling.org/events/national.php",
+    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -690,6 +697,7 @@ export default [
     "name": "Tahoe Trail MTB 50k & 100k",
     "date": "July 16 2016",
     "promoterUrl": "http://www.tahoetrailmtb.com/",
+    "registrationUrl": "https://register.chronotrack.com/r/12656",
     "location": {
       "city": "Northstar at Tahoe",
       "state": "CA"
