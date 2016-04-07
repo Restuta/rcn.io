@@ -13,5 +13,6 @@ export default Object.freeze({
 
   bodyBg: '#FCFCFC',
 
-  brownMud: '#A0522D', //'SIENNA'
+  brownMud: '#A0522D', //'SIENNA',
+  brownMudDimmed: 'rgba(160,82,45,0.60)',
 })

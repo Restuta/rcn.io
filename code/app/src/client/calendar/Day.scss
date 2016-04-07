@@ -84,10 +84,8 @@
     position: relative;
     text-align: right;
     display: inline-block;
-    //margin-right: 1rem;
     top: pxToRem(-1);
-    //font-family: Lato;
-    //font-weight: 700;
+    font-size: pxToRem(15);
   }
 
   @media (max-width: map-get($grid-breakpoints, "sm")) {
