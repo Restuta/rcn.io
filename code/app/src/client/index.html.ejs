@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+  </head>
+  <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
+    data-grid-gutterwidth="16px" data-grid-nbcols="14">
+    <div id='root'>
+    </div>
+    <!-- <script src="vendor.bundle.js"></script>
+    <script src="app.bundle.js"></script> -->
+
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+      <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+
+    <script>
+      var HW_config = {
+        selector: '.HeadwayChangelog', // CSS selector where to inject the badge
+        account: 'a7zwXJ' // your account ID
+      };
+    </script>
+    <script async src="//cdn.headwayapp.co/widget.js"></script>
+  </body>
+</html>

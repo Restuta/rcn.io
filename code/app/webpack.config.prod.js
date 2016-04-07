@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
@@ -25,14 +26,14 @@ module.exports = {
     app: [
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames', 'react-pure-render',
-      'svg-inline-react'
+    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames',
+      'react-pure-render', 'svg-inline-react'
     ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    publicPath: '/static/'
+    // publicPath: '/static/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -57,6 +58,25 @@ module.exports = {
         warnings: false,
         //dead_code: true
       }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'RCN.io',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      css: ['app.css'],
+      inject: false, // we use custom template to inject scripts,
+      hash: true,
+      minify: { // Minifying it while it is parsed
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
     })
   ],
   resolve: {
