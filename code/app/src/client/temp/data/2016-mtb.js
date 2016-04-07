@@ -457,7 +457,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 04 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
@@ -468,7 +468,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 05 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
@@ -479,7 +479,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "June 03 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -490,7 +490,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "June 04 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -501,7 +501,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "June 05 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -513,7 +513,7 @@ export default [
     "name": "Tamarancho Classic",
     "date": "July 30 2016",
     "promoterUrl": "http://www.bikemonkey.net/tamarancho",
-    "flyerUrl": "http://www.bikemonkey.net/tamarancho",
+    "flyerUrl": "",
     "location": {
       "city": "Tamarancho",
       "state": "CA"
@@ -525,7 +525,7 @@ export default [
     "name": "Tamarancho Classic",
     "date": "July 31 2016",
     "promoterUrl": "http://www.bikemonkey.net/tamarancho",
-    "flyerUrl": "http://www.bikemonkey.net/tamarancho",
+    "flyerUrl": "",
     "location": {
       "city": "Tamarancho",
       "state": "CA"
@@ -536,7 +536,7 @@ export default [
     "discipline": "MTB",
     "name": "Lake Tahoe MTB Race (XC, 4hr, 8hr)",
     "date": "June 18 2016",
-    "promoterUrl": "http://www.adventuresportsweektahoe.com",
+    "promoterUrl": "http://adventuresportsweektahoe.com/compete/lake-tahoe-mountain-bike-race/",
     "location": {
       "city": "Tahoe City",
       "state": "CA"
@@ -547,7 +547,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #9",
     "date": "June 19 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -568,11 +568,26 @@ export default [
     "id": "evt-8c71d88afabf4e5541659c89fef27ead",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
-    "date": "June 26 2016",
+    "date": "June 27 2016",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
+      "streetAddress": "2201 Imola Avenue",
       "city": "Napa",
-      "state": "CA"
+      "state": "CA",
+      "zip": "94558"
+    }
+  },
+  {
+    "id": "evt-8c71d88afabf4e5541659c89fef27ead",
+    "discipline": "MTB",
+    "name": "Skyline Park MTB Race",
+    "date": "June 28 2016",
+    "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
+    "location": {
+      "streetAddress": "2201 Imola Avenue",
+      "city": "Napa",
+      "state": "CA",
+      "zip": "94558"
     }
   },
   {
