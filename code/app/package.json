@@ -6,9 +6,10 @@
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
     "install": "bower install",
-    "build:prod": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --bail",
-    "build": "npm run clean && npm run install && npm run build:prod",
+    "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --bail",
+    "build": "npm run clean && npm run install && npm run build:webpack",
     "start": "node devServer.js",
+    "start:prod": "node server.js",
     "eslint": "eslint src/ --ext .js,.jsx || true",
     "eslint:fix": "eslint src/ --ext .js,.jsx --fix || true",
     "reinstall": "npm run clean:all && bower i && npm i"
