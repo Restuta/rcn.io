@@ -8,6 +8,7 @@ import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 import Colors from 'styles/colors'
+import {Disciplines} from 'temp/events'
 
 const findEventByDate = (events, date) => {
   const key = date.format('MMDDYYYY')
@@ -98,7 +99,7 @@ Calendar.propTypes = {
   year: PropTypes.number,
   name: PropTypes.string,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
-  events: PropTypes.array,
+  events: PropTypes.instanceOf(Map),
   location: PropTypes.string,
-  discipline: PropTypes.string,
+  discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
 }

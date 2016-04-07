@@ -16,7 +16,7 @@ export const EventName = (props) => {
   const createWrappedNameComponent = (name, stringToWrap, color) => {
     if (name && name.indexOf(stringToWrap) !== -1) {
       const parts = name.split(stringToWrap)
-      return [parts[0], <span style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
+      return [parts[0], <span key={0} style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
     }
     return name //TODO restuta: funtcion returns different types based on the flow, fix this
   }
@@ -189,7 +189,7 @@ class Event extends Component {
 
 Event.propTypes = {
   name: PropTypes.string,
-  discipline: PropTypes.oneOf(Disciplines.MTB, Disciplines.Road),
+  discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   //width in coluns card is going to take
   width:  PropTypes.oneOf([1, 2, 3, 4]),
   //height of the smalles card in half-baselines
