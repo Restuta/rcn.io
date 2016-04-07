@@ -708,7 +708,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #10",
     "date": "July 23 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -730,7 +730,8 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 04 2016",
-    "promoterUrl": "www.downievilleclassic.com",
+    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
       "state": "CA"
@@ -741,7 +742,8 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 05 2016",
-    "promoterUrl": "www.downievilleclassic.com",
+    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
       "state": "CA"
@@ -752,7 +754,8 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 06 2016",
-    "promoterUrl": "www.downievilleclassic.com",
+    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
       "state": "CA"
@@ -763,7 +766,8 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 07 2016",
-    "promoterUrl": "www.downievilleclassic.com",
+    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
       "state": "CA"
@@ -774,7 +778,7 @@ export default [
     "discipline": "MTB",
     "name": "Annadel XC",
     "date": "August 13 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net/annadel/",
     "location": {
       "city": "Santa Rosa",
       "state": "CA"
@@ -785,7 +789,8 @@ export default [
     "discipline": "MTB",
     "name": "Beckwourth 100 MTB Endurance (TS100)",
     "date": "August 20 2016",
-    "promoterUrl": "northlanderevents.com",
+    "promoterUrl": "http://northlanderevents.com/beckwourth-100-mtb-enduro/4589520691",
+    "registrationUrl": "https://www.bikereg.com/beckwourth100",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -832,7 +837,8 @@ export default [
     "discipline": "MTB",
     "name": "Gold Rush MTB",
     "date": "September 25 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com/site/race/gold-rush-mtb-2016/",
+    "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-gold-rush-mtb-2016",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -843,7 +849,7 @@ export default [
     "discipline": "MTB",
     "name": "4 & 8 Hours of Weaverville",
     "date": "September 25 2016",
-    "promoterUrl": "http://teambigfoot.net/",
+    "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -865,7 +871,7 @@ export default [
     "discipline": "MTB",
     "name": "Lagrange Fall Classic",
     "date": "September 25 2016",
-    "promoterUrl": "http://teambigfoot.net/",
+    "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -876,7 +882,8 @@ export default [
     "discipline": "MTB",
     "name": "TBF 50 Miler",
     "date": "October 16 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
+    "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
     "location": {
       "city": "Folsom",
       "state": "CA"
