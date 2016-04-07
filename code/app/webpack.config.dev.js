@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 //NOTE: use min versions for prod and to speed-up build times a little
@@ -51,6 +52,12 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
       }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'RCN.io - debug',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
     })
   ],
   resolve: {
@@ -102,9 +109,7 @@ module.exports = {
               'transform': 'react-transform-catch-errors',
               'imports': ['react', 'redbox-react']
             }]
-          }],
-          'transform-react-constant-elements',
-          'transform-react-inline-elements'
+          }]
         ]
       }
     }, {
