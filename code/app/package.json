@@ -5,10 +5,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
-    "install": "bower install",
+    "install:bower": "bower install",
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --bail",
-    "build": "npm run clean && npm run install && npm run build:webpack",
-    "start": "node devServer.js",
+    "build": "npm run clean && npm run install && && npm run install:bower && npm run build:webpack",
+    "start": "npm run build && NODE_ENV=production node server.js",
+    "dev": "node devServer.js",
     "start:prod": "node server.js",
     "eslint": "eslint src/ --ext .js,.jsx || true",
     "eslint:fix": "eslint src/ --ext .js,.jsx --fix || true",
@@ -68,8 +69,8 @@
   "dependencies": {
     "classnames": "^2.2.1",
     "moment": "^2.11.2",
-    "react": "^15.0.0-rc.1",
-    "react-dom": "^15.0.0-rc.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "react-pure-render": "^1.0.1",
     "react-router": "^2.0.1",
     "svg-inline-react": "^1.0.0"
