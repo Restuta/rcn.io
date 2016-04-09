@@ -74,7 +74,8 @@
     "react-dom": "^15.0.0",
     "react-pure-render": "^1.0.1",
     "react-router": "^2.0.1",
-    "svg-inline-react": "^1.0.0"
+    "svg-inline-react": "^1.0.0",
+    "bower": "^1.7.9"
   },
   "engines": {
     "node": "5.10.x"

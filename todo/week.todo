@@ -204,8 +204,9 @@ Pre-production
 	- only use iconst that are neeeded
 		- eigher react-icons
 		- or iconmoon (of similar) to create custom font from the ones we use
--- Mobile
+--- Mobile
 	- handle orientation change (we are not re-redering on it)
+	- get rid of 300ms delay: https://github.com/zilverline/react-tap-event-plugin
 
 Not Today, but not never!
 	-- Github
