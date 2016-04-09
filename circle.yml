@@ -1,5 +1,4 @@
 general:
-  build_dir: code/app
 
 machine:
   node:

@@ -2,7 +2,7 @@ engines:
   eslint:
     enabled: true
     config:
-      config: code/app/.eslintrc
+      config: .eslintrc
       extensions:
         - .js
         - .jsx
@@ -41,19 +41,17 @@ engines:
     enabled: false
 ratings:
    paths:
-   - "code/app/**/*"
+   - "src/**/*"
    - "**.scss"
    - "**.js"
    - "**.jsx"
 exclude_paths:
-- node_modules/**/*
-- bower_components/**/*
+- "node_modules/**/*"
+- "bower_components/**/*"
 - "prototypes/**/*"
-- "code/app/node_modules/**/*"
-- "code/app/bower_components/**/*"
 - "code/data/node_modules/**/*"
 - "code/data/**/*"
-- "code/app/.eslintrc"
+- ".eslintrc"
 - "todo/**/*"
 - "data/**/*"
 - "wireframes/**/*"

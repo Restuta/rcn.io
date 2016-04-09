@@ -2,7 +2,6 @@ language: node_js
 node_js:
   - "5.9"
 before_install:
-  - cd code/app
 script:
   - npm run build
 notifications:
