@@ -5,16 +5,15 @@
   "scripts": {
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf bower_components && rimraf node_modules",
-    "install:bower": "bower install",
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --bail",
     "build": "npm run clean && npm run build:webpack",
-    "start": "npm run build && NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production node server.js",
     "dev": "node src/server/devServer.js",
     "start:prod": "node src/server/server.js",
     "eslint": "eslint src/ --ext .js,.jsx || true",
     "eslint:fix": "eslint src/ --ext .js,.jsx --fix || true",
     "reinstall": "npm run clean:all && bower i && npm i",
-    "postinstall": "bower install"
+    "postinstall": "bower install && npm run build"
   },
   "repository": {
     "type": "git",
