@@ -183,11 +183,11 @@ Pre-production
 	-- setup Server Side rendering like etse js
 		- este uses react component to render HTML document called 'html.react.js'
 	- how to from React Rouer wiki https://github.com/rackt/react-router-tutorial/blob/start/lessons/11-productionish-server.md
-		- split dev-server and prod-server somehow (with config file that we import and do "if dev?")
+		+- split dev-server and prod-server somehow (with config file that we import and do "if dev?")
 			- setup server for API and hot reload combined (like estejs)
 		- if-env of particular interest
-		- minification and gzipping
-			- - setup compression middleware (like estejs)
+		+- minification and gzipping
+			+- - setup compression middleware (like estejs)
 		- create webpack config for SS rendering (https://github.com/rackt/react-router-tutorial/blob/start/lessons/13-server-rendering.md)
 -- Move debug CSS code to React components
 	- move baseline grid to Component

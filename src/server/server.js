@@ -1,10 +1,22 @@
-const path = require('path')
-const express = require('express')
-const compression = require('compression')
-const morgan = require('morgan')
+import path from 'path'
+import express from 'express'
+import compression from 'compression'
+import morgan from 'morgan'
 const app = express()
 // const React = require('react')
 // const Router = require('react-router')
+
+//import { renderToString } from 'react-dom/server'
+//import { match, RouterContext } from 'react-router'
+
+// import {renderToString} from 'react-dom/server'
+// import {match} from 'react-router'
+// import {RouterContext} from 'react-router'
+
+// import getRoutes from '../client/Routes.js'
+
+import getRoutes from '../client/getRoutes.js'
+console.info(getRoutes(900))
 
 const RootDir = path.join(__dirname, '../..')
 const EnvIsProd = process.env.NODE_ENV === 'production'
