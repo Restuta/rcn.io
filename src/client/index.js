@@ -35,6 +35,7 @@ let renderApp = function() {
         <Route path="/dev" component={Dev} />
         <Route path="/cal" component={Cal} />
         <Route path="/mtb" component={Mtb} />
+        <Route path="*" component={Home}/>
       </Route>
     </Router>
   ), document.getElementById('root'))

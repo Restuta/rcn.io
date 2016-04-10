@@ -8,7 +8,7 @@
       "data/**",
       "wireframes/**"
     ],
-  "packageJsonLocation": "code/app/package.json",
+  "packageJsonLocation": "package.json",
   "critics": {
     "wc": {"limit": 200},
     "lint": {"engine": "eslint"}

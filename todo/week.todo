@@ -247,6 +247,7 @@ Before 1.0 Release
 	woould allow to prevent FOUT (Before 1.0 Release 
 	https://github.com/typekit/webfontloader), test it with artificial trottling
 	- review TimeKit: [Timekit](http://timekit.io/) - availability and scheduling API
+	- use for homepage: https://www.typewolf.com/site-of-the-day/fonts/playfair-display
 
 
 Webpack Times

@@ -6,6 +6,8 @@ const app = express()
 // const React = require('react')
 // const Router = require('react-router')
 
+const RootDir = path.join(__dirname, '../..')
+
 const EnvIsProd = process.env.NODE_ENV === 'production'
 const Config = {
   morganLogType: EnvIsProd ? 'combined' : 'dev',
@@ -13,14 +15,14 @@ const Config = {
 }
 
 app.use(morgan(Config.morganLogType))
-app.use(express.static(path.join(__dirname, '/dist')))
+app.use(express.static(path.join(RootDir, '/dist')))
 
 if (EnvIsProd) {
   app.use(compression())
 }
 
 app.get('/*', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '/dist/index.html'))
+  res.sendFile(path.join(RootDir, '/dist/index.html'))
 
  //  Router.run(routes, req.url, Handler => {
  //   let content = React.renderToString(<Handler />);
