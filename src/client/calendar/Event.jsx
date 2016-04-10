@@ -25,7 +25,7 @@ export const EventName = (props) => {
   let wrappedNameComp = name
   wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
   wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
-  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
+  //wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
   wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
   wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
 

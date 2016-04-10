@@ -54,7 +54,7 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'RCN.io - debug',
+      title: 'rcn.io',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
       hash: false,
