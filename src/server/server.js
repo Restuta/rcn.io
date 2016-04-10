@@ -9,7 +9,7 @@ const app = express()
 const EnvIsProd = process.env.NODE_ENV === 'production'
 const Config = {
   morganLogType: EnvIsProd ? 'combined' : 'dev',
-  port: 3888,
+  port: EnvIsProd ? process.env.PORT : 3888,
 }
 
 app.use(morgan(Config.morganLogType))
