@@ -120,6 +120,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Great free typography and information architecture](http://www.designfacts.org)
 * [Great UI components](http://semantic-ui.com/elements/label.html#basic)
 * Landing Pages
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH

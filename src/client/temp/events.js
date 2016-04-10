@@ -43,13 +43,7 @@ const preProcessEvents = function(rawRoadEvents) {
 }
 
 const roadEvents = preProcessEvents(rawRoadEvents)
-const mtbEvents = preProcessEvents(rawMtbEvents
-  .concat(rawMtbEventsManual.map(x => { // map() funciton is for debugging only
-    return {
-      ...x,
-      name: '[M] ' + x.name
-    }
-  })))
+const mtbEvents = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
 
 export {
   roadEvents,
