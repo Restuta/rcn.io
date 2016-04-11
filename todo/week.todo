@@ -176,6 +176,7 @@ Pre-production
 		- examples with all above: https://github.com/mxstbr/react-boilerplate
 +- make sure we load only required Lato and Oswald variations
 --- Server Sider Rendering
+	-- I may need assets.json, but not sure how to match them with HtmlPlugin
 	---- Approaches
 		- Require Webpack setup
 			- fake loaders: https://medium.com/@dferber90/enabling-assets-for-server-side-rendering-in-webpack-a843a5ebeb0c#.eexh6kmte

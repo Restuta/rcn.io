@@ -1,38 +1,34 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+//const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
+//TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
+//between dev and prod configs without duplicaiton
 
 const pathToReact = nodeModules('react/dist/react.min.js')
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentJs = nodeModules('moment/min/moment.min.js')
 
-//TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
-//between dev and prod configs without duplicaiton
-
 
 module.exports = {
   //devtool: 'source-map',
+  // devtool: 'cheap-module-source-map',
   devtool: 'cheap-module-source-map',
+  target: 'node',
 
   cache: false,
   debug: false,
 
-  entry: {
-    app: [
-      path.join(consts.SRC_DIR, 'client/index.js')
-    ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames',
-      'react-pure-render', 'svg-inline-react'
-    ]
-  },
+  entry: { app: path.join(consts.SRC_DIR, 'client/getRoutes.js')},
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist-server'),
+    chunkFilename: '[name]_[chunkhash].js',
     filename: '[name].bundle.js',
+    libraryTarget: 'commonjs2'
     // publicPath: '/static/'
   },
   plugins: [
@@ -43,49 +39,21 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.bundle.js',
-      minChunks: Infinity
-    }),
-    //TODO: try it out when app will grow
-    //new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
     new webpack.optimize.DedupePlugin(),
     new ExtractTextPlugin('app.css'),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        screw_ie8: true,  // eslint-disable-line camelcase
-        warnings: false,
-        //dead_code: true
-      }
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index1.html',
-      title: 'RCN.io',
-      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
-      css: ['app.css'],
-      inject: false, // we use custom template to inject scripts,
-      hash: true,
-      minify: { // Minifying it while it is parsed
-        removeComments: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true
-      },
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compressor: {
+    //     screw_ie8: true,  // eslint-disable-line camelcase
+    //     warnings: false,
+    //   }
+    // }),
   ],
   resolve: {
     root: [
       //path.resolve(__dirname, 'src/'),
       path.resolve(__dirname, 'src/client')
     ],
-    //tells webpack to use static file when import React from 'react' is used
     alias: {
       'react': pathToReact,
       'react-dom': pathToReactDOM,
@@ -104,12 +72,6 @@ module.exports = {
       pathToMomentJs
     ],
     loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
@@ -126,8 +88,7 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ['style', ExtractTextPlugin.extract('css!postcss!sass')],
-      //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
+      loaders: ['style', ExtractTextPlugin.extract('fake-style', 'css!postcss!sass')],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
     }, {
