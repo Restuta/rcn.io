@@ -176,6 +176,15 @@ Pre-production
 		- examples with all above: https://github.com/mxstbr/react-boilerplate
 +- make sure we load only required Lato and Oswald variations
 --- Server Sider Rendering
+	---- Approaches
+		- Require Webpack setup
+			- fake loaders: https://medium.com/@dferber90/enabling-assets-for-server-side-rendering-in-webpack-a843a5ebeb0c#.eexh6kmte
+		- webpack-isomorphic-tools: overall feel is complex and codebase is not clean, but used by Este and some others
+		- conditional require: `if Env.IsBrowser` kind of thing
+		- custom babel plugin that get rids of imports and requires:
+			- experiment with AST here: http://astexplorer.net/
+			- not sure if it will emit same HTML
+			- doesn't cover file and url loaders
 	- watch: https://www.youtube.com/watch?feature=player_embedded&v=PnpfGy7q96U
 	- read: https://hashnode.com/post/serve-content-faster-with-react-cilrwgc7w00cd0q53uta3399i?utm_content=buffer5f0d4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 	- read: https://jakearchibald.com/2016/streams-ftw/#streaming-results

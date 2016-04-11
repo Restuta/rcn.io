@@ -3,6 +3,8 @@ import express from 'express'
 import compression from 'compression'
 import morgan from 'morgan'
 const app = express()
+app.disable('x-powered-by') //hides that we use express
+
 // const React = require('react')
 // const Router = require('react-router')
 
@@ -16,6 +18,7 @@ const app = express()
 // import getRoutes from '../client/Routes.js'
 
 import getRoutes from '../client/getRoutes.js'
+
 console.info(getRoutes(900))
 
 const RootDir = path.join(__dirname, '../..')
@@ -25,9 +28,7 @@ const Config = {
   port: EnvIsProd ? process.env.PORT : 3888,
 }
 
-if (EnvIsProd) {
-  app.use(compression())
-}
+app.use(compression()) // should be first middleware
 
 app.use(morgan(Config.morganLogType))
 app.use(express.static(path.join(RootDir, '/dist')))

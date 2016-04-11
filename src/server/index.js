@@ -10,7 +10,9 @@ require('babel-register')({
     "production": {
       "plugins": [
         "transform-react-constant-elements",
-        "transform-react-inline-elements"
+        "transform-react-inline-elements",
+        // "remove-webpack",
+        // "remove-webpack-loaders"
       ]
     }
   }
