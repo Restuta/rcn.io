@@ -15,7 +15,7 @@ input,select{vertical-align:middle}
 li{list-style:none}
 
 
-html,body{ 
+html,body{
     width:100%;
     height:100%;
     font-family: 'Lato', sans-serif;
@@ -28,6 +28,8 @@ html,body{
 canvas{
     display:block;
     vertical-align:bottom;
+    width:100%;
+    height:100%;
 }
 
 
@@ -67,7 +69,7 @@ a {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    text-align: right;
+    ign: right;
     opacity: 0.6;
 
 }
@@ -89,9 +91,9 @@ a {
 }
 
 .footer {
-    text-align: right;
+    text-align: left;
     position: absolute;
-    top: 98%;
+    bottom: 8px;
     left: 10px;
     color: #fcfcfc;
 }
@@ -123,13 +125,13 @@ body {
     to {opacity: 0;}
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 568px) {
         @-webkit-keyframes grow-font {
             from {font-size: 25px;}
             to {font-size: 188px; }
-        }        
+        }
     }
 
 @-webkit-keyframes  background {

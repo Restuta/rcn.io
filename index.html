@@ -7,34 +7,38 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link rel="stylesheet" href="app.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="bower_components/particles.js/particles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.smooch.io/smooch.min.js"></script>
   </head>
   <body>
     <div id="particles-js"></div>
 
     <div class="content">
-        <h1 class="title">rcn<span class="domain">.io</span></h1>
+        <h1 class="title">RCN<span class="domain">.io</span></h1>
     </div>
     <div class="footer">
-        <h4 class="sub-title">by <a id="restuta" href="http://restuta.me">Restuta</a> and <a id="me4ta" href="http://me4ta.me/blog">Me4ta</a></h4>
+      <a width="150" height="50" href="https://auth0.com/" rel="nofollow" target="_blank" alt="Single Sign On & Token Based Authentication - Auth0">
+        <img width="150" height="50" alt="JWT Auth for open source projects" src="//cdn.auth0.com/oss/badges/a0-badge-dark.png"/>
+      </a>
+      <h4 class="sub-title"><a id="restuta" href="http://restuta.me">Restuta</a> and <a id="me4ta" href="http://me4ta.me/blog">Me4ta</a></h4>
     <div>
     <script src="app.js"></script>
-  </body>
-  <script>
-    Smooch.init({
-      appToken: 'ddnzait7cska87vnh9lw3ndv4',
-      emailCaptureEnabled: true,
-      customText: {
-        headerText: 'Chat with us',
-        settingsText: 'Leave us your email, so we can send you our reply (just in case we are not online)',
-        settingsInputPlaceholder: 'Your email',
-        settingsHeaderText: 'Email Settings',
-        settingsNotificationText: 'In case we\'re slow to respond you can <a href="#" data-ui-settings-link>leave us your email</a>.',
-        inputPlaceholder: 'Type a message...'
 
-      }
-    });
-  </script>
+    <script>
+      Smooch.init({
+        appToken: 'ddnzait7cska87vnh9lw3ndv4',
+        emailCaptureEnabled: true,
+        customText: {
+          headerText: 'Chat with us',
+          settingsText: 'Leave us your email, so we can send you our reply (just in case we are not online)',
+          settingsInputPlaceholder: 'Your email',
+          settingsHeaderText: 'Email Settings',
+          settingsNotificationText: 'In case we\'re slow to respond you can <a href="#" data-ui-settings-link>leave us your email</a>.',
+          inputPlaceholder: 'Type a message...'
+
+        }
+      });
+    </script>
+  </body>
 </html>
