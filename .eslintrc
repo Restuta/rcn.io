@@ -11,6 +11,9 @@
     "node": true,
     "es6": true
   },
+  "globals" : {
+    "__ENV": true
+  },
   "plugins": [
     "react"
   ],
