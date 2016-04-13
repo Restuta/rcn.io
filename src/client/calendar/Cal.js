@@ -3,7 +3,7 @@ import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import {roadEvents as events} from 'temp/events.js'
 
-export default class Home extends Component {
+export default class Cal extends Component {
 
   render() {
     return (

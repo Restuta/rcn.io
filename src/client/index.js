@@ -1,11 +1,14 @@
-import { render } from 'react-dom'
+import {
+  render,
+  //unmountComponentAtNode
+} from 'react-dom'
 import Grid from './styles/grid'
 import getRoutes from './getRoutes'
 
 let prevContainerWidth
 
 let renderApp = function() {
-  const browserWidth = window ? window.document.body.offsetWidth : 960
+  const browserWidth = window.document.body.offsetWidth
   const containerWidth = Grid.getContainerWidth(browserWidth)
 
   if (containerWidth === prevContainerWidth) {
@@ -13,6 +16,8 @@ let renderApp = function() {
   }
 
   prevContainerWidth = containerWidth
+
+  //unmountComponentAtNode(document.getElementById('root'))
   render(getRoutes(containerWidth), document.getElementById('root'))
 }
 

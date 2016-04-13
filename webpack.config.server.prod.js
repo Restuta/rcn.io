@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 //const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
+const nodeExternals = require('webpack-node-externals')
 
 //TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
 //between dev and prod configs without duplicaiton
@@ -19,9 +20,10 @@ module.exports = {
   // devtool: 'cheap-module-source-map',
   devtool: 'cheap-module-source-map',
   target: 'node',
-
   cache: false,
   debug: false,
+
+  externals: [nodeExternals()],
 
   entry: { app: path.join(consts.SRC_DIR, 'client/getRoutes.js')},
   output: {
@@ -37,17 +39,23 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
+      },
+      '__ENV' : {
+        'Prod': true,
+        'Dev': false
       }
     }),
     new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
     new webpack.optimize.DedupePlugin(),
     new ExtractTextPlugin('app.css'),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     screw_ie8: true,  // eslint-disable-line camelcase
-    //     warnings: false,
-    //   }
-    // }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        screw_ie8: true,  // eslint-disable-line camelcase
+        warnings: false,
+      }
+    }),
+    //used to ignore certain modules that we don't need on the server, so we don't waste time building them
+    new webpack.NormalModuleReplacementPlugin(/\.(css|scss)$/, 'node-noop')
   ],
   resolve: {
     root: [
@@ -87,11 +95,6 @@ module.exports = {
         ]
       }
     }, {
-      test: /\.scss$/,
-      loaders: ['style', ExtractTextPlugin.extract('fake-style', 'css!postcss!sass')],
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
       test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
       exclude: /(node_modules|bower_components)/,
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
@@ -101,17 +104,4 @@ module.exports = {
       loader: 'svg-inline'
     }]
   },
-  //required to have proper rem to px calcualtion, default floating point precision is not enough
-  //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
-  sassLoader: {
-    precision: 15
-  },
-  postcss: function() {
-    return [
-      require('autoprefixer')({
-        remove: true, //enabling of removal of outdated prefixes, just in case
-        browsers: ['last 2 versions']
-      })
-    ]
-  }
 }

@@ -30,14 +30,14 @@ module.exports = {
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames', 'react-pure-render',
-      'svg-inline-react'
+    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames',
+      'react-pure-render', 'svg-inline-react'
     ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    publicPath: '/static/'
+    //publicPath: '/static/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -51,6 +51,10 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
+      },
+      '__ENV' : {
+        'Prod': false,
+        'Dev': true
       }
     }),
     new HtmlWebpackPlugin({

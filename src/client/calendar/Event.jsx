@@ -5,7 +5,7 @@ import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
-import {rnd} from 'utils/math'
+//import {rnd} from 'utils/math'
 import {Disciplines} from 'temp/events'
 
 export const EventName = (props) => {
@@ -37,7 +37,7 @@ export const EventName = (props) => {
 }
 
 //gets height of the smallest card (in rems) for the given containerWidth
-const getBaseHeight = function(containerWidth) {
+const getBaseHeight = containerWidth => {
   //for small containers there is no constant size we can compare to
   if (containerWidth < Grid.ContainerWidth.SM) {
     return 2
@@ -146,7 +146,8 @@ class Event extends Component {
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
 
-    eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
+    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
+    eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
 
     if (discipline === Disciplines.MTB) {
       eventColor = Colors.brownMudDimmed

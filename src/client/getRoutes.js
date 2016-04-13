@@ -3,19 +3,17 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './App'
 import Home from './Home'
 import Dev from './Dev'
-import Cal from './calendar/Index'
+import Cal from './calendar/Cal'
 import Mtb from './calendar/Mtb'
 
 export default (containerWidth) => {
   //overriding Router function to pass custom props to a child components, building a higer order function to
   //provide containerWidth to inner-clojure
-  console.info(containerWidth)
-  const createElement = containerWidth =>
-    (Component, props) => <Component {...props} containerWidth={containerWidth}/>
+  const buildCreateElement = containerW =>
+    (Component, props) => <Component {...props} containerWidth={containerW}/>
 
   return (
-    <Router history={browserHistory} createElement={createElement(containerWidth)}>
-      {/* passing conteiner width in a hacky way, for fast first-time browser render */}
+    <Router history={browserHistory} createElement={buildCreateElement(containerWidth)}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
         <Route path="/dev" component={Dev} />
@@ -26,5 +24,3 @@ export default (containerWidth) => {
     </Router>
   )
 }
-
-//export default getRoutes
