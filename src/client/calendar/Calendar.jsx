@@ -27,6 +27,7 @@ export default class Calendar extends Component {
       location
     } = this.props
 
+
     //resetting date to first day of week
     const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
     const totalWeeks = startDate.isoWeeksInYear()
