@@ -2,11 +2,18 @@
 @import '../styles/mixins';
 
 .Calendar {
-  padding-top: 4rem;
+  //padding-top: 4rem;
   padding-bottom: 1rem;
 
   //debug
   //outline: 1rem solid rgba(135, 206, 235, 0.4);
   margin-bottom: 10rem;
   //opacity: 0.5;
+
+  &-name {
+    font-family: $body-font-family;
+    font-weight: 900;
+    margin-bottom: 0;
+    font-style: italic;
+  }
 }

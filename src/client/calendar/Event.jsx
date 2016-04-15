@@ -147,7 +147,7 @@ class Event extends Component {
 
 
     // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
-    eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
+    //eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
 
     if (discipline === Disciplines.MTB) {
       eventColor = Colors.brownMudDimmed

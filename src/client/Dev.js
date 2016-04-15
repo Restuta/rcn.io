@@ -19,6 +19,16 @@ const Spacer = width => <span style={{width: `${width}px`}}></span>
 const S5 = () => <Spacer width={5}/>
 const S10 = () => <Spacer width={10}/>
 
+const ContainerHeader = ({label, width}) => {
+  return (
+    <div>
+      <h3>{label} — {width}px</h3>
+      <hr />
+    </div>
+  )
+}
+
+
 export default class Dev extends Component {
   constructor(props) {
     super(props)
@@ -157,7 +167,9 @@ export default class Dev extends Component {
         {/* CARDS CARDS CARDS*/}
 
         {/* all cards per-breakdown in columns*/}
+        <h2>CARDS PER CONTAINER:</h2>
 
+        <ContainerHeader label="XXL" width={Grid.ContainerWidth.XXL}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
@@ -170,6 +182,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
+        <ContainerHeader label="XL" width={Grid.ContainerWidth.XL}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
@@ -182,6 +195,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
+        <ContainerHeader label="LG" width={Grid.ContainerWidth.LG}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
@@ -195,6 +209,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
+        <ContainerHeader label="MD" width={Grid.ContainerWidth.MD}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
@@ -207,6 +222,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
+        <ContainerHeader label="SM" width={Grid.ContainerWidth.SM}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>

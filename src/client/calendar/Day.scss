@@ -9,6 +9,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   align-content: flex-start;
+  overflow: hidden;
 
   padding-bottom: 1rem;
   border-left: pxToRem(1) solid $grey-300;

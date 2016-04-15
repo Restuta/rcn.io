@@ -74,12 +74,11 @@ export default class Calendar extends Component {
 
     return (
       <div className="Calendar">
-        <h1 style={{
-          marginBottom: '0rem'
-        }}>
-        {location + ' '}
-        {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
-        {name} {year}</h1>
+        <h1 className="Calendar-name">
+          {location + ' '}
+          {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
+          {name} {year}
+        </h1>
         <h3 style={{
           marginTop: 0,
           marginBottom: '4rem',
@@ -87,7 +86,7 @@ export default class Calendar extends Component {
           color: Colors.grey500
         }}>{events.size} events</h3>
 
-        <WeekdaysHeader sizes={weekdaysSizes}/>
+        <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
         <div className="Calendar-body">
           {weekdsComponents}
         </div>
