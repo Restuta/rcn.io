@@ -12,7 +12,6 @@ import { match, RouterContext } from 'react-router'
 import getRoutes from '../../dist-server/app.server.bundle'
 import {ContainerWidth} from '../client/styles/grid'
 
-
 const RootDir = path.join(__dirname, '../..')
 const EnvIsProd = process.env.NODE_ENV === 'production'
 const morganProdFormatString = ':remote-addr :remote-user :user-agent (content-length: :res[content-length])'
@@ -30,7 +29,6 @@ app.use(morgan(Config.morganLogType))
 app.use(express.static(path.join(RootDir, '/dist')))
 app.use(device.capture({parseUserAgent: true}))
 
-//const createElement = (Component, props) => <Component {...props} containerWidth={ContainerWidth.SM}/>
 const Wrapper = (props) => {
   const buildCreateElement = (containerW) =>
     (Component, props) => <Component {...props} containerWidth={containerW}/>
@@ -75,13 +73,9 @@ app.get('/*', function(req, res, next) {
       GLOBAL.navigator = {userAgent: req.headers['user-agent']}
 
       const containerWidth = getContainerWidth(req.device.type)
-
       const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
-      const fullHtml = indexHtmlContent.replace('<div id="root"></div>',
-        `<div id="root">${content}</div>`)
-      // console.info(indexHtmlContent.replace('<div id="root"></div>',
-      //   `<div id="root">${content}</div>`))
-      //console.info(fullHtml)
+      const fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
+
       res.send(fullHtml)
     } else {
       res.status(404).send('Not found')

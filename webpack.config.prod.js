@@ -5,6 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
+//use when you need to debug react
+// const pathToReact = nodeModules('react/dist/react.js')
+// const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
 
 const pathToReact = nodeModules('react/dist/react.min.js')
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
@@ -13,7 +16,6 @@ const pathToMomentJs = nodeModules('moment/min/moment.min.js')
 
 //TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
 //between dev and prod configs without duplicaiton
-
 
 module.exports = {
   //devtool: 'source-map',
@@ -41,6 +43,10 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
+      },
+      '__ENV' : {
+        'Prod': true,
+        'Dev': false
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
@@ -48,8 +54,6 @@ module.exports = {
       filename: 'vendor.bundle.js',
       minChunks: Infinity
     }),
-    //TODO: try it out when app will grow
-    //new webpack.optimize.DedupePlugin(),
     new webpack.optimize.DedupePlugin(),
     new ExtractTextPlugin('app.css'),
     new webpack.optimize.UglifyJsPlugin({
@@ -60,7 +64,7 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      filename: 'index1.html',
+      filename: consts.INDEX_HTML,
       title: 'RCN.io',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       css: ['app.css'],
