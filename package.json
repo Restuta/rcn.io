@@ -60,6 +60,7 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.15.0",
     "imports-loader": "^0.6.5",
+    "node-noop": "^1.0.0",
     "node-sass": "^3.3.3",
     "noop-loader": "^1.0.0",
     "postcss-loader": "^0.8.2",
