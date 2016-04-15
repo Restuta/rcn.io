@@ -10,7 +10,7 @@
     "build:webpack-server": "NODE_ENV=production webpack -p --config webpack.config.server.prod.js --progress --bail",
     "build:client": "npm run clean:client && npm run build:webpack-client",
     "build:server": "npm run clean:server && npm run build:webpack-server",
-    "build": "npm run clean:client && npm run clean:server && concurrent \"npm run build:client\" \"npm run build:server\"",
+    "build": "npm run clean:client && npm run clean:server && concurrently \"npm run build:client\" \"npm run build:server\"",
     "start": "NODE_ENV=production node src/server/index.js",
     "dev": "node src/server/devServer.js",
     "eslint": "eslint src/ --ext .js,.jsx || true",
