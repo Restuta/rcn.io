@@ -10,10 +10,22 @@
   margin-bottom: 10rem;
   //opacity: 0.5;
 
-  &-name {
+  &-title {
     font-family: $body-font-family;
     font-weight: 900;
     margin-bottom: 0;
     font-style: italic;
+  }
+
+  &-sub-title {
+    font-family: $body-font-family;
+    //font-weight: 900;
+    //margin-bottom: 0;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    color: $grey-500;
   }
 }

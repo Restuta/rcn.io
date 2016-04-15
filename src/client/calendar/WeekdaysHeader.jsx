@@ -5,13 +5,14 @@ import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
 import {Weekdays} from './utils/date-utils'
 import {pxToRem} from 'styles/typography'
+import Grid from 'styles/grid'
 
 const pxToRems = (px) => pxToRem(px) + 'rem'
 
 
 export default class WeekdaysHeader extends Component {
   render() {
-    const {sizes} = this.props
+    const {sizes, containerWidth} = this.props
 
     const rowStyle = {
       flexWrap: 'nowrap'
@@ -28,12 +29,13 @@ export default class WeekdaysHeader extends Component {
     }
 
     const weekdaysNameStyleBase = {
-      fontSize: '2rem',
+      fontSize: '1.75rem',
       paddingTop: '1rem',
       position: 'relative',
       top: pxToRems(2),
       textTransform: 'uppercase',
-      // fontFamily: 'Oswald',
+      textAlign: ''
+      //fontFamily: 'Oswald',
        //fontWeight: 700,
     }
 
@@ -46,9 +48,17 @@ export default class WeekdaysHeader extends Component {
         weekdaysNameStyle.fontWeight = 900
       }
 
+      let weekdayLabel
+
+      if (containerWidth < Grid.ContainerWidth.SM) {
+        weekdayLabel = Weekdays[i].short[0]
+      } else {
+        weekdayLabel = Weekdays[i].short
+      }
+
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
-          <div style={weekdaysNameStyle}>{Weekdays[i].short}</div>
+          <div style={weekdaysNameStyle}>{weekdayLabel}</div>
         </Col>
       )
     })

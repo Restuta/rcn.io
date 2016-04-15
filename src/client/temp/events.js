@@ -19,6 +19,22 @@ class Event {
   }
 }
 
+class Events {
+  constructor({eventsMap, total}) {
+    this.eventsMap = eventsMap
+    this.total = total
+  }
+}
+
+const countTotalEvents = (eventsMap) => {
+  let count = 0
+  eventsMap.forEach((value, key, map) => {
+    count += value.length
+  })
+
+  return count
+}
+
 const preProcessEvents = function(rawRoadEvents) {
   const events = new Map()
 
@@ -42,10 +58,21 @@ const preProcessEvents = function(rawRoadEvents) {
   return events
 }
 
-const roadEvents = preProcessEvents(rawRoadEvents)
-const mtbEvents = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
+const roadEventsMap = preProcessEvents(rawRoadEvents)
+const roadEvents = new Events({
+  eventsMap: roadEventsMap,
+  total: countTotalEvents(roadEventsMap)
+})
+
+const mtbEventsMap = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
+const mtbEvents = new Events({
+  eventsMap: mtbEventsMap,
+  total: countTotalEvents(mtbEventsMap)
+})
+
 
 export {
+  Events,
   roadEvents,
   mtbEvents,
   Disciplines

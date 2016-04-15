@@ -14,21 +14,25 @@ export default class TopNavbar extends Component {
       <nav className={classNames}>
         <div className="content">
           <div className="content-left">
-            <a className="navbar-logo" href="#"><Logo /></a>
+            <Link className="navbar-logo" to={'/'}><Logo /></Link>
             <div className="navbar-brand-description">RCN</div>
             <HeadwayChangelog />
           </div>
           <div className="content-right">
             <ul className="nav navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link" to={'/cal'}>Cal</Link>
-              </li>
+              {__ENV.Dev && //eslint-disable-line
+                <li className="nav-item">
+                  <Link className="nav-link" to={'/cal'}>Cal</Link>
+                </li>
+              }
               <li className="nav-item">
                 <Link className="nav-link" to={'/mtb'}>MTB</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link faded" to={'/dev'}>Dev</Link>
-              </li>
+              {__ENV.Dev && //eslint-disable-line
+                <li className="nav-item">
+                  <Link className="nav-link faded" to={'/dev'}>Dev</Link>
+                </li>
+              }
             </ul>
           </div>
         </div>

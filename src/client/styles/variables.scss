@@ -32,7 +32,6 @@ $brown-mud: '#A0522D';
 $brown-mud-dimmed: 'rgba(160,82,45,0.50)';
 
 
-
 @function getBaseFontSize() {
   /* rcn baseline works by setting the root font-size as half the line-height of the standard paragraph text. The height of the baseline grid
    is then effectively set at 2rem, with increments at each 1rem. This makes it nice and easy to work proportionally from the baseline with
@@ -84,6 +83,11 @@ $brown-mud-dimmed: 'rgba(160,82,45,0.50)';
 
 $half-line-height-rem: $line-height-rem / 2;
 $text-margin-bottom: 1rem;
+
+
+$body-font-family: 'Lato', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+
 
 //calculating small (one step down from base) font size
 $font-size-1: scaleUp(1);

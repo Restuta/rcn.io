@@ -29,7 +29,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist-server'),
     chunkFilename: '[name]_[chunkhash].js',
-    filename: '[name].bundle.js',
+    filename: '[name].server.bundle.js',
     libraryTarget: 'commonjs2'
     // publicPath: '/static/'
   },

@@ -1,5 +1,22 @@
 //TODO: encapsulate back to private function when card design is done
+
+//typical sizes:
+/*
+  portrait:
+    iPhone 4,5    375px
+    iPhone 6      320px
+    iPhone 6+     414px
+    Galaxy S3     360px
+  landscape:
+    iPhone 4      480px
+    iPhone 5      568px
+    iPhone 6      667px (574px container)
+    iPhone 6+     736px (574px container)
+    Galaxy S3     640px (574px container)
+*/
+
 const ContainerWidth = {
+  XS: 375,
   SM: 574,
   MD: 728,
   LG: 938,
