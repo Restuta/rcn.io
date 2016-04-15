@@ -8,11 +8,11 @@ import WeekdaysHeader from './WeekdaysHeader.jsx'
 import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 import Colors from 'styles/colors'
-import {Disciplines} from 'temp/events'
+import {Disciplines, Events} from 'temp/events'
 
-const findEventByDate = (events, date) => {
+const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
-  return events.get(key) || []
+  return eventsMap.get(key) || []
 }
 
 export default class Calendar extends Component {
@@ -45,7 +45,7 @@ export default class Calendar extends Component {
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
         const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
-        const foundEvents = findEventByDate(events, currentDate)
+        const foundEvents = findEventByDate(events.eventsMap, currentDate)
         //const foundEvents = [{name: 'Test Event Name Criterium'}]
 
         let eventComponents
@@ -74,17 +74,12 @@ export default class Calendar extends Component {
 
     return (
       <div className="Calendar">
-        <h1 className="Calendar-name">
+        <h1 className="Calendar-title">
           {location + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
           {name} {year}
         </h1>
-        <h3 style={{
-          marginTop: 0,
-          marginBottom: '4rem',
-          fontWeight: '300',
-          color: Colors.grey500
-        }}>{events.size} events</h3>
+        <h3 className="Calendar-sub-title">{events.total} events</h3>
 
         <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
         <div className="Calendar-body">
@@ -99,7 +94,7 @@ Calendar.propTypes = {
   year: PropTypes.number,
   name: PropTypes.string,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
-  events: PropTypes.instanceOf(Map),
+  events: PropTypes.instanceOf(Events),
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
 }
