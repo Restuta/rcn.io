@@ -23,13 +23,19 @@ Today
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 	
 	!----- immediate todo
-		- rename index1.html to something meaningful
-		- revert webpack.prod config to real prod settings
-			-- invstigate why it builds fast with current ones
-		- figure out on the server screen size (mobile/non-mobile)
-		- make sure rendering works automatically when we can't figure out screen size
-		: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
-		- refactor server
+		+- rename index1.html to something meaningful
+		--- MTB release
+			- revert webpack.prod config to real prod settings
+				-- invstigate why it builds fast with current ones
+			- figure out on the server screen size (mobile/non-mobile)
+			- make sure rendering works automatically when we can't figure out screen size
+			: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
+			- refactor server
+			- setup home page
+			- setup analytics
+			- setup Smooch
+			- favicon
+			- responsive card size based on landscape portrait
 		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
