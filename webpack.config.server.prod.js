@@ -28,7 +28,6 @@ module.exports = {
   entry: { app: path.join(consts.SRC_DIR, 'client/getRoutes.js')},
   output: {
     path: path.join(__dirname, 'dist-server'),
-    chunkFilename: '[name]_[chunkhash].js',
     filename: '[name].server.bundle.js',
     libraryTarget: 'commonjs2'
     // publicPath: '/static/'
