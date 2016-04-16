@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import '../styles/bs4-fixes';
 
 //baseline set with the help of http://www.gridlover.net/app/ and http://beta.gridlover.net/projects/74
 //typographic scale of 1.333 (4/3, perfect fourth) is used
@@ -63,6 +64,13 @@ html {
   font-size: getBaseFontSize() + px;
   //font-size: 4px;
 }
+
+@media (max-width: map-get($grid-breakpoints, "sm")) {
+  html {
+    font-size: (getBaseFontSize() - 1) + px;
+  }
+}
+
 body {
   font-family: $body-font-family;
   font-size: $font-size-2;
@@ -127,7 +135,8 @@ blockquote {
 }
 hr {
   background-color: $grey-50;
-  margin: -1px 0; //negative margin, so it doesn't offset baseline
+  margin-top: -1px;
+  //margin: -1px 0; //negative margin, so it doesn't offset baseline
 }
 b,
 strong,

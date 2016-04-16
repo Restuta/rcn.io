@@ -1,6 +1,10 @@
 @import '../styles/variables';
 @import '../styles/mixins';
 
+@mixin DEBUG() {
+  background-color: skyblue;
+}
+
 .Event {
   position: relative;
   border-radius: 2px;
@@ -26,10 +30,9 @@
 
 }
 
-.EventName.debug {
-  border: 1px solid $grey-300;
-  position: relative;
-  top: -1px;
+// debug
+.EventName {
+  //outline: 1px solid lightgrey;
 }
 
 $base-line-rem: $line-height-rem / 2;
@@ -39,7 +42,7 @@ $base-line-rem: $line-height-rem / 2;
   @include text-2();
   margin-bottom: 0;
   max-height: $line-height-rem * 3;
-  min-height: $line-height-rem * 3;
+  //min-height: $line-height-rem * 3;
 
   //outline: 1px solid lightgrey;
 
@@ -55,7 +58,6 @@ $base-line-rem: $line-height-rem / 2;
     padding-top: pxToRem(2);
     margin-bottom: 0;
     max-height: 100%;
-    min-height: 100%;
   }
 
   &.size-XS {
@@ -63,31 +65,34 @@ $base-line-rem: $line-height-rem / 2;
     top: 1px;
     margin-bottom: 0;
     max-height: $base-line-rem * 3;
-    min-height: $base-line-rem * 3;
   }
 
   &.size-S {
     @include text-sm-11();
-    margin-bottom: 0;
     line-height: 1.5rem;
     top: $px-as-rem * 2;
-    max-height: 100%;
+    margin-bottom: 0;
+    max-height: 95%;
+    //max-height: calc(100% - 0.5rem);
+
+    //@include DEBUG();
   }
 
   &.size-M {
-    @include text-2();
+    @include text-sm-11();
+    line-height: 1.5rem;
+    top: $px-as-rem * 2;
     font-weight: 700;
     margin-bottom: 0;
     max-height: $base-line-rem * 8;
-    min-height: $base-line-rem * 8;
+
   }
 
   &.size-L {
     @include text-2();
     margin-bottom: 0;
     font-weight: 700;
-    max-height: $line-height-rem * 8;
-    min-height: $line-height-rem * 8;
+    max-height: $base-line-rem * 16;
   }
 
   &.size-XL {
@@ -97,6 +102,5 @@ $base-line-rem: $line-height-rem / 2;
     line-height: 2.5rem;
     top: 0; //fine-tuning for custom line height
     max-height: $line-height-rem * 6;
-    min-height: $line-height-rem * 6;
   }
 }

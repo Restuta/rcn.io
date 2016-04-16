@@ -62,7 +62,8 @@ export default class Calendar extends Component {
             itIsToday={currentDayIsToday}
             itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
-            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth}>
+            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth}
+            containerWidth={containerWidth}>
             {eventComponents}
           </Day>
         )
@@ -77,7 +78,7 @@ export default class Calendar extends Component {
         <h1 className="Calendar-title">
           {location + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
-          {name} {year}
+          {name} <span>{year}</span>
         </h1>
         <h3 className="Calendar-sub-title">{events.total} events</h3>
 
@@ -97,4 +98,5 @@ Calendar.propTypes = {
   events: PropTypes.instanceOf(Events),
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
+  containerWidth: PropTypes.number
 }

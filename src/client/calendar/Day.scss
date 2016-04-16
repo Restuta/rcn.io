@@ -89,7 +89,7 @@
     font-size: pxToRem(15);
   }
 
-  @media (max-width: map-get($grid-breakpoints, "sm")) {
+  @media (max-width: map-get($grid-breakpoints, "md")) {
     .Day-date {
       margin-top: .5rem;
       margin-bottom: .5rem;

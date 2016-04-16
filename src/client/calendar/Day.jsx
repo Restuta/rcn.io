@@ -5,6 +5,7 @@ import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
 import {zeroPad} from 'utils/formatting'
 import {Months} from './utils/date-utils.js'
+import Grid from 'styles/grid'
 // import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 
 export default class Day extends Component {
@@ -18,11 +19,13 @@ export default class Day extends Component {
       itIsToday,
       itIsFirstDayOfMonth,
       itIsLastDayOfMonth,
-      itIsCurrentMonthsDay
+      itIsCurrentMonthsDay,
+      containerWidth
     } = this.props
 
     const itIsEmpty = (!this.props.children || this.props.children.length === 0)
     const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
+    const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.XS && size === 1)
 
     const classNames = classnames('Day',
       (itIsToday && 'Day-today'),
@@ -51,13 +54,31 @@ export default class Day extends Component {
       )
     }
 
+    let dateComponent = (
+      <span className="Day-date-wrapper">
+        {formattedDate}
+      </span>
+    )
+
+    let dayHeaderComponent = null
+
+    if (itIsLastDayOfMonth && itsSuperNarrowView) {
+      dayHeaderComponent = [dateComponent]
+    } else if (itIsFirstDayOfMonth && itsSuperNarrowView) {
+      dayHeaderComponent = [specialDayOfMonthComponent]
+    } else {
+      dayHeaderComponent = [
+        specialDayOfMonthComponent,
+        dateComponent
+      ]
+    }
+
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date">
-          {specialDayOfMonthComponent}
-          <span className="Day-date-wrapper">
-            {formattedDate}
-          </span>
+          {/*{specialDayOfMonthComponent}
+          {dateComponent}*/}
+          {dayHeaderComponent}
         </div>
         {this.props.children}
       </Col>
@@ -74,5 +95,7 @@ Day.propTypes = {
   itIsToday: PropTypes.bool,
   itIsFirstDayOfMonth: PropTypes.bool,
   itIsLastDayOfMonth: PropTypes.bool,
-  itIsCurrentMonthsDay: PropTypes.bool
+  itIsCurrentMonthsDay: PropTypes.bool,
+
+  containerWidth: PropTypes.number
 }

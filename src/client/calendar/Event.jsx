@@ -127,7 +127,7 @@ class Event extends Component {
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'tomato'
     } else if (cardSize === Size.M) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2 }rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'mediumseagreen'
     } else if (cardSize === Size.L) {

@@ -5,7 +5,7 @@ import 'app.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Icon from 'atoms/Icon.jsx'
-import Event, { EventName } from 'calendar/Event.jsx'
+import Event from 'calendar/Event.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
 import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 import SquareBadge from 'calendar/badges/SquareBadge.jsx'
@@ -79,10 +79,6 @@ export default class Dev extends Component {
         <p className={'text-' + 5} style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
         <p className={'text-' + 6} style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
         <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
-        <Row>
-          <Col sm={2}><h5>Name: </h5></Col>
-          <Col sm={3}><EventName className="debug">John C. Schlesinger Memorial Circuit Race and Team Time Trial</EventName></Col>
-        </Row>
         <Row className="margin-top">
           <Col sm={2}><h5>Round Badges: </h5></Col>
           <Col sm={12} className="display-flex">
