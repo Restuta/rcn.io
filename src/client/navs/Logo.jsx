@@ -9,6 +9,7 @@ export default class Logo extends Component {
 
     const style = {
       width: '2.5rem',
+      height: '4rem',
       marginBottom: -2 //should go away when we use logo with no paddings
     }
 
