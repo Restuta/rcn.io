@@ -2,15 +2,13 @@
 @import '../styles/mixins';
 
 @mixin DEBUG() {
-  background-color: skyblue;
+  background-color: lightgoldenrodyellow;
 }
 
 .Event {
   position: relative;
   border-radius: 2px;
   margin-bottom: 1rem;
-
-
 
    background-color: white;
   // padding: $line-height-rem;
@@ -38,10 +36,15 @@
 $base-line-rem: $line-height-rem / 2;
 
 //TODO: move to separate file
+
+
+
+
 .EventName {
   @include text-2();
   margin-bottom: 0;
   max-height: $line-height-rem * 3;
+  letter-spacing: -0.3px;
   //min-height: $line-height-rem * 3;
 
   //outline: 1px solid lightgrey;
@@ -62,7 +65,7 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-XS {
     @include text-sm-9();
-    top: 1px;
+    top: pxToRem(2);
     margin-bottom: 0;
     max-height: $base-line-rem * 3;
   }
@@ -70,22 +73,21 @@ $base-line-rem: $line-height-rem / 2;
   &.size-S {
     @include text-sm-11();
     line-height: 1.5rem;
-    top: $px-as-rem * 2;
+    top: pxToRem(3);
+    //top: pxToRem(-1);
     margin-bottom: 0;
     max-height: 95%;
     //max-height: calc(100% - 0.5rem);
-
-    //@include DEBUG();
   }
 
   &.size-M {
     @include text-sm-11();
     line-height: 1.5rem;
-    top: $px-as-rem * 2;
+    top: pxToRem(3);
     font-weight: 700;
+    letter-spacing: -0.1px;
     margin-bottom: 0;
     max-height: $base-line-rem * 8;
-
   }
 
   &.size-L {
@@ -93,14 +95,16 @@ $base-line-rem: $line-height-rem / 2;
     margin-bottom: 0;
     font-weight: 700;
     max-height: $base-line-rem * 16;
+    //@include DEBUG();
   }
 
   &.size-XL {
     @include text-3();
+    line-height: 2.5rem;
+    top: pxToRem(1);
+    letter-spacing: 0px;
     margin-bottom: 0;
     font-weight: 700;
-    line-height: 2.5rem;
-    top: 0; //fine-tuning for custom line height
     max-height: $line-height-rem * 6;
   }
 }

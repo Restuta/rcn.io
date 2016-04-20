@@ -9,7 +9,7 @@ import Grid from 'styles/grid'
 import {Disciplines} from 'temp/events'
 
 export const EventName = (props) => {
-  let className = classNames(`EventName size-${props.size}`, props.className)
+  let className = classNames(`EventName size-${props.size} fix-fout`, props.className)
   let {name} = props
   const {typeColor} = props
 

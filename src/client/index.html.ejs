@@ -9,6 +9,26 @@
     <% for (var css in htmlWebpackPlugin.files.css) { %>
       <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
+
+    <script>
+      function typekitOnload() {
+        try{Typekit.load({ async: true });}catch(e){}
+      }
+    </script>
+    <script src="https://use.typekit.net/hhr5oip.js" onload="typekitOnload()"></script>
+
+    <!-- <script>
+      (function(d) {
+        var config = {
+          kitId: 'hhr5oip',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+  </script> -->
+
+
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
     data-grid-gutterwidth="16px" data-grid-nbcols="14">

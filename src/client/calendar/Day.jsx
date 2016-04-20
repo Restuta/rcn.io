@@ -48,14 +48,14 @@ export default class Day extends Component {
       )
 
       specialDayOfMonthComponent = (
-        <h4 className={specialDayClassNames}>
+        <h4 key={1} className={specialDayClassNames}>
           <span>{Months[month - 1].short}&nbsp;</span>
         </h4>
       )
     }
 
     let dateComponent = (
-      <span className="Day-date-wrapper">
+      <span key={2} className="Day-date-wrapper">
         {formattedDate}
       </span>
     )

@@ -4,30 +4,34 @@
 
 //baseline set with the help of http://www.gridlover.net/app/ and http://beta.gridlover.net/projects/74
 //typographic scale of 1.333 (4/3, perfect fourth) is used
-@import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
-//@import url(https://fonts.googleapis.com/css?family=Lato:900,900italic,700,700italic,400,400italic,300,300italic,100,100italic);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,900italic,700,700italic,400,400italic,300,300italic);
-
-
-//@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-//$headings-font-family: 'Fjalla One', sans-serif;
-
+ // @import url(https://fonts.googleapis.com/css?family=Oswald:700,400,300);
+ // @import url(https://fonts.googleapis.com/css?family=Lato:900,900italic,700,700italic,400,400italic,300,300italic);
 
 
   //Typekit fonts
 
   //$headings-font-family: 'museo-sans-condensed', sans-serif;
-  // .wf-loading {
-  //   h1,h2,h3,h4,h5 {
-  //     opacity: 0;
-  //   }
-  // }
-  //
-  // .wf-active {
-  //   h1,h2,h3,h4,h5 {
-  //     opacity: 1;
-  //   }
-  // }
+  .wf-loading .EventName {
+    h1,h2,h3,h4,h5 {
+      opacity: 0;
+    }
+  }
+
+  .wf-active {
+    h1,h2,h3,h4,h5 {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+
+  .wf-loading .fix-fout {
+    opacity: 0.1;
+  }
+
+  .wf-active .fix-fout {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
 
 $headings-font-weight: 400;
 $headings-color: black;
@@ -92,22 +96,23 @@ h5 {
   transition: opacity ease 0.2s;
 }
 h1 {
-  @include offset-to-baseline(1, $h1-margin-bottom);
+  @include offset-to-baseline(3, $h1-margin-bottom);
   font-size: $h1-font-size;
   line-height: $h1-line-height;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
 }
 h2 {
-  @include offset-to-baseline(6, $h2-margin-bottom);
+  @include offset-to-baseline(0, $h2-margin-bottom);
   font-size: $h2-font-size;
   line-height: $h2-line-height;
   font-weight: 700;
 }
 h3 {
-  @include offset-to-baseline(0, $h3-margin-bottom);
+  @include offset-to-baseline(1, $h3-margin-bottom);
   font-size: $h3-font-size;
   line-height: $h3-line-height;
+  font-weight: 700;
 }
 h4 {
   @include offset-to-baseline(6, $h4-margin-bottom);
@@ -115,9 +120,7 @@ h4 {
   line-height: $h4-line-height;
 }
 h5 {
-  @include offset-to-baseline(-1, $h5-margin-bottom);
-  position: relative;
-  top: -1px;
+  @include offset-to-baseline(0, $h5-margin-bottom);
   font-size: $h5-font-size;
   line-height: $h5-line-height;
   font-weight: 400;
