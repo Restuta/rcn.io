@@ -65,6 +65,7 @@ Today
  			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
  			but horizontal, it's also super nice that it moves on hower
  		!----- immediate todo
+ 			-- make sure public path is correct so we can see source maps in prod
  			- move Event.jsx paddings calculations to SCSS and assign classes by size of the card: currently only
  			text is supported
  			+--- figure out ideal heith based on baselines

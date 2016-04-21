@@ -6,18 +6,8 @@
     <meta name="description" content="Plan your racing season. Discover rides and races in your area.">
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <% for (var css in htmlWebpackPlugin.files.css) { %>
-      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
-    <% } %>
-
+    <!-- Loading Typekit fonts -->
     <script>
-      function typekitOnload() {
-        try{Typekit.load({ async: true });}catch(e){}
-      }
-    </script>
-    <script src="https://use.typekit.net/hhr5oip.js" onload="typekitOnload()"></script>
-
-    <!-- <script>
       (function(d) {
         var config = {
           kitId: 'hhr5oip',
@@ -26,7 +16,12 @@
         },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
-  </script> -->
+    </script>
+
+
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
 
 
   </head>
@@ -41,7 +36,6 @@
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>
-
     <script>
       var HW_config = {
         selector: '.HeadwayChangelog', // CSS selector where to inject the badge

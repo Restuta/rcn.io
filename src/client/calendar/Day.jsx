@@ -75,7 +75,7 @@ export default class Day extends Component {
 
     return (
       <Col xs={size} className={classNames} style={style}>
-        <div className="Day-date">
+        <div className="Day-date fix-fout">
           {/*{specialDayOfMonthComponent}
           {dateComponent}*/}
           {dayHeaderComponent}

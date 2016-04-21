@@ -58,7 +58,7 @@ export default class WeekdaysHeader extends Component {
 
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
-          <div style={weekdaysNameStyle}>{weekdayLabel}</div>
+          <div style={weekdaysNameStyle} className="fix-fout">{weekdayLabel}</div>
         </Col>
       )
     })

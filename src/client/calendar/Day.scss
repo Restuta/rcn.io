@@ -19,7 +19,7 @@
 
   &-date {
     @include text-3();
-    font-weight: 400;
+    font-weight: 300;
     font-size: pxToRem(14);
     width: 100%;
     position: static;
@@ -62,8 +62,8 @@
     //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
 
     .Day-date-wrapper {
-      width: 2.75rem;
-      height: 2.75rem;
+      width: 3rem;
+      height: 3rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -97,10 +97,10 @@
     }
 
     &-today .Day-date-wrapper {
-      width: 2.25rem;
-      height: 2.25rem;
-      right: pxToRem(-1); //to compensate shift from padding
-      top: pxToRem(-1);
+      width: pxToRem(20);
+      height: pxToRem(20);
+      right: pxToRem(-2); //to compensate shift from padding
+      top: pxToRem(-2);
     }
 
     .day-of-month-label {
