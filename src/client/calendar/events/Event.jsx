@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
+import Location from './Location.jsx'
 import Typography from 'styles/typography'
 import Colors from 'styles/colors'
 import classNames from 'classnames'
@@ -179,10 +180,13 @@ class Event extends Component {
       }}>{cardHeightRem}</span>)
     }
 
+    const {event} = this.props
+
     return (
       <div style={style} className="Event lvl-1">
         {debugComponent}
         <EventName size={cardSize} name={name} typeColor={eventColor}/>
+        <Location city={event.location.city} state={event.location.state} />
       </div>
     )
   }
@@ -191,6 +195,7 @@ class Event extends Component {
 Event.propTypes = {
   name: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
+  //location: PropTypes.any,
   //width in coluns card is going to take
   width:  PropTypes.oneOf([1, 2, 3, 4]),
   //height of the smalles card in half-baselines

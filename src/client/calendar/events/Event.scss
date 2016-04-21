@@ -9,6 +9,9 @@
   position: relative;
   border-radius: 2px;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
    background-color: white;
   // padding: $line-height-rem;
@@ -29,9 +32,9 @@
 }
 
 // debug
-.EventName {
-  outline: 1px solid lightgrey;
-}
+// .EventName {
+//   outline: 1px solid lightgrey;
+// }
 
 $base-line-rem: $line-height-rem / 2;
 

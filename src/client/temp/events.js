@@ -12,10 +12,11 @@ const Disciplines = {
 }
 
 class Event {
-  constructor({name, date, type}) {
+  constructor({name, date, type, location}) {
     this.name = name
     this.date = date
     this.type = type
+    this.location = location
   }
 }
 
@@ -35,15 +36,16 @@ const countTotalEvents = (eventsMap) => {
   return count
 }
 
-const preProcessEvents = function(rawRoadEvents) {
+const preProcessEvents = function(rawEvents) {
   const events = new Map()
 
-  rawRoadEvents.forEach(rawEvent => {
+  rawEvents.forEach(rawEvent => {
     const event = new Event({
       name: rawEvent.name
         .replace(/--/g, '—'),
       date: moment(rawEvent.date, 'MMMM DD YYYY'),
-      type: rawEvent.type
+      type: rawEvent.type,
+      location: rawEvent.location || {}
     })
 
     const key = event.date.format('MMDDYYYY')

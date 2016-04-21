@@ -52,7 +52,8 @@ export default class Calendar extends Component {
 
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
-            <Event key={i} width={daySize} containerWidth={containerWidth} name={event.name} discipline={discipline}/>
+            <Event key={i} width={daySize} containerWidth={containerWidth}
+              name={event.name} discipline={discipline} event={event}/>
           )
         }
 

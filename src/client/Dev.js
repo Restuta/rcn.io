@@ -157,6 +157,12 @@ export default class Dev extends Component {
             <Icon name="hourglass-half" color={Colors.grey500}/>60min<S10/>
           </Col>
         </Row>
+        <Row>
+          <Col sm={2}><h5>Location:</h5></Col>
+          <Col sm={12} className="display-flex">
+            <Icon name="map-marker" color={Colors.grey500}/>Monterey, CA
+          </Col>
+        </Row>
 
         {/* CARDS CARDS CARDS*/}
         {/* CARDS CARDS CARDS*/}
