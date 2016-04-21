@@ -1,3 +1,4 @@
+import Col from 'utils/polyfills'
 import {
   render,
   //unmountComponentAtNode
