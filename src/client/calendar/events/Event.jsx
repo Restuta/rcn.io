@@ -180,7 +180,12 @@ class Event extends Component {
       }}>{cardHeightRem}</span>)
     }
 
-    const {event} = this.props
+    const {event = {location: {
+      city: 'Example',
+      state: 'CA'
+    }}} = this.props
+
+
 
     return (
       <div style={style} className="Event lvl-1">

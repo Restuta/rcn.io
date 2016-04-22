@@ -12,13 +12,13 @@
 
 //$headings-font-family: 'museo-sans-condensed', sans-serif;
 .wf-loading {
-  h1,h2,h3,h4,h5 {
-    opacity: 0.1;
+  h1,h2,h3,h4,h5,p {
+    opacity: 0;
   }
 }
 
 .wf-active {
-  h1,h2,h3,h4,h5 {
+  h1,h2,h3,h4,h5,p {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
   }
