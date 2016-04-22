@@ -12,17 +12,23 @@
         var config = {
           kitId: 'hhr5oip',
           scriptTimeout: 3000,
-          async: true
+          async: true,
+          loading: function() {
+            window.typekitLoadingStarted = +new Date()
+            console.log('    Fonts are loading...')
+          },
+          active: function() {
+            var timeToLoadFonts = (+new Date()) - window.typekitLoadingStarted
+            console.log('    Fonts are loaded in  ' + timeToLoadFonts + 'ms')
+          },
         },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
 
-
     <% for (var css in htmlWebpackPlugin.files.css) { %>
       <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
-
 
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
