@@ -14,7 +14,7 @@ export default class Location extends Component {
   }
 }
 
-Event.propTypes = {
+Location.propTypes = {
   city: PropTypes.string,
   state: PropTypes.string,
 }
