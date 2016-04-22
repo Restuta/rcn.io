@@ -1,6 +1,5 @@
 @import 'variables';
 
-$px-as-rem: 1rem/getBaseFontSize();
 
 
 @mixin offset-to-baseline($offset, $margin-bottom) {
@@ -19,8 +18,7 @@ $px-as-rem: 1rem/getBaseFontSize();
 
 //using relative positioning
 @mixin offset-to-baseline-relative($offset, $margin-bottom) {
-  $offset: $px-as-rem * $offset;
-  top: $offset;
+  top: pxToRem($offset);
   position: relative;
   margin-bottom: $margin-bottom;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import classNames from 'classnames'
 import './Icon.scss'
@@ -16,4 +16,9 @@ export default class Icon extends Component {
       </i>
     )
   }
+}
+
+Icon.propTypes = {
+  name: PropTypes.string,
+  color: PropTypes.string
 }

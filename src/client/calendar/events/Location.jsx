@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './Location.scss'
+import Icon from 'atoms/Icon.jsx'
 
 export default class Location extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Location extends Component {
 
     return (
       <div className="Location">
-        <a>{city}, {state}</a>
+        <Icon name="map-marker"></Icon><a>{city}, {state}</a>
       </div>
     )
   }
