@@ -5,14 +5,18 @@ import './Icon.scss'
 
 export default class Icon extends Component {
   render() {
-    const {name, color} = this.props
-    const iconNameClass = `fa fa-${name}`
-    const style = {color: color}
+    const {name, color, size} = this.props
+    const iconNameClass = 'material-icons'
+    const style = {
+      color: color,
+      fontSize: `${size}rem`
+    }
 
     const className = classNames('Icon', iconNameClass, this.props.className)
     return (
-      <i className={className} style={style} {...this.props}>
-        {this.props.children }
+      <i {...this.props} className={className} style={style}>
+        {name}
+        {/*{this.props.children }*/}
       </i>
     )
   }
@@ -20,5 +24,6 @@ export default class Icon extends Component {
 
 Icon.propTypes = {
   name: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  size: PropTypes.number //in rems
 }

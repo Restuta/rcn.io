@@ -6,8 +6,9 @@ import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
-//import {rnd} from 'utils/math'
+import {rnd} from 'utils/math'
 import {Disciplines} from 'temp/events'
+import Size from './card-sizes'
 
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size} fix-fout`, props.className)
@@ -24,11 +25,11 @@ export const EventName = (props) => {
 
   //TODO: make this production ready
   let wrappedNameComp = name
-  wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
-  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
-  //wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
-  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
-  wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
+  // wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
+  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
+  // //wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
+  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
+  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
 
   return (
     <div className={className}>
@@ -62,7 +63,11 @@ class Event extends Component {
       containerWidth,
       baseHeight = getBaseHeight(containerWidth),
       name,
-      discipline
+      discipline,
+      event = {location: {
+        city: 'Mammoth Lakes',
+        state: 'CA'
+      }}
     } = this.props
 
     //todo: typography should be passed as props
@@ -81,23 +86,14 @@ class Event extends Component {
     */
     const cardHeight = (width * baseHeight + width - 1)
 
-    const Size = {
-      XXS: 'XXS',
-      XS: 'XS',
-      S: 'S',
-      M: 'M',
-      L: 'L',
-      XL: 'XL'
-    }
-
     const getSize = cardHeight => {
       if (cardHeight >= 1 && cardHeight <= 3) {
         return Size.XXS
       } else if (cardHeight >= 3 && cardHeight <= 5) {
         return Size.XS
-      } else if (cardHeight >= 6 && cardHeight <= 9) {
+      } else if (cardHeight >= 6 && cardHeight <= 8) {
         return Size.S
-      } else if (cardHeight >= 10 && cardHeight <= 11) {
+      } else if (cardHeight >= 9 && cardHeight <= 11) {
         return Size.M
       } else if (cardHeight >= 12 && cardHeight <= 17) {
         return Size.L
@@ -111,7 +107,10 @@ class Event extends Component {
 
     let verticalPadding
     let horizontalPadding
+    let paddingBottom
+    let paddingTop
     let eventColor = 'white'
+    let locationComponent = null
 
     //differnt settings based on card size
     //TODO: move to CSS
@@ -127,18 +126,24 @@ class Event extends Component {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'tomato'
+      locationComponent = <Location location={event.location} size={Size.S} />
     } else if (cardSize === Size.M) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2 }rem`
+      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'mediumseagreen'
+      locationComponent = <Location location={event.location} size={Size.M} />
     } else if (cardSize === Size.L) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'darkorchid'
+      locationComponent = <Location location={event.location} size={Size.L}/>
     } else if (cardSize === Size.XL) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       eventColor = 'deepskyblue'
+      locationComponent = <Location location={event.location} size={Size.XL} showState/>
     }
 
     const grid  = Grid.init(containerWidth)
@@ -148,25 +153,13 @@ class Event extends Component {
 
 
     // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
-    //eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
+    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
 
     if (discipline === Disciplines.MTB) {
       eventColor = Colors.brownMudDimmed
     }
 
-    let style = {
-      //backgroundColor: 'white',
-      //width: cardWidthRem + 'rem',
-      width: cardWidthPx + 'px',
-      //width: '100%',
-      height: cardHeightRem + 'rem',
-      //height: '100%',
-      paddingTop: verticalPadding,
-      paddingBottom: verticalPadding,
-      paddingLeft: horizontalPadding,
-      paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
-    }
+
 
     const {debug = false} = this.props
     let debugComponent = null
@@ -174,16 +167,31 @@ class Event extends Component {
     if (debug) {
       debugComponent = (<span style={{
         position: 'absolute',
+        fontSize: '1.25rem',
         top: '-8px',
-        left: '85%',
+        left: '80%',
+        whiteSpace: 'nowrap',
         color: Colors.grey400,
-      }}>{cardHeightRem}</span>)
+      }}>{cardSize} {cardHeightRem} </span>)
     }
 
-    const {event = {location: {
-      city: 'Example',
-      state: 'CA'
-    }}} = this.props
+    const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
+
+    let style = {
+      //backgroundColor: 'white',
+      //width: cardWidthRem + 'rem',
+      //width: cardWidthPx + 'px',
+      width: cardWidth,
+      height: cardHeightRem + 'rem',
+      //minHeight: cardHeightRem + 'rem',
+      //maxHeight: cardHeightRem * 2 + 'rem',
+      //height: '100%',
+      paddingTop: paddingTop || verticalPadding,
+      paddingBottom: paddingBottom || verticalPadding,
+      paddingLeft: horizontalPadding,
+      paddingRight: horizontalPadding,
+      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
+    }
 
 
 
@@ -191,7 +199,7 @@ class Event extends Component {
       <div style={style} className="Event lvl-1">
         {debugComponent}
         <EventName size={cardSize} name={name} typeColor={eventColor}/>
-        <Location city={event.location.city} state={event.location.state} />
+        {locationComponent}
       </div>
     )
   }

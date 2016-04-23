@@ -45,9 +45,10 @@ $base-line-rem: $line-height-rem / 2;
 
 .EventName {
   @include text-2();
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   max-height: $line-height-rem * 3;
   letter-spacing: -0.3px;
+
   //min-height: $line-height-rem * 3;
 
   //outline: 1px solid lightgrey;
@@ -77,6 +78,7 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-S {
     @include text-sm-11();
+    @include text-1();
     line-height: 1.5rem;
     top: pxToRem(3);
     //top: pxToRem(-1);
@@ -90,8 +92,9 @@ $base-line-rem: $line-height-rem / 2;
     line-height: 1.5rem;
     top: pxToRem(3);
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     max-height: $base-line-rem * 8;
+    letter-spacing: -0.1px;
   }
 
   &.size-L {

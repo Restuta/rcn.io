@@ -12,13 +12,13 @@
 
 //$headings-font-family: 'museo-sans-condensed', sans-serif;
 .wf-loading {
-  h1,h2,h3,h4,h5,p {
+  h1,h2,h3,h4,h5,p,a {
     opacity: 0;
   }
 }
 
 .wf-active {
-  h1,h2,h3,h4,h5,p {
+  h1,h2,h3,h4,h5,p,a {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
   }
@@ -91,6 +91,7 @@ body {
   line-height: $line-height-rem;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -106,35 +107,40 @@ h5 {
   transition: opacity ease 0.2s;
 }
 h1 {
-  @include offset-to-baseline(3, $h1-margin-bottom);
+  @include offset-to-baseline(3);
   font-size: $h1-font-size;
   line-height: $h1-line-height;
   text-transform: uppercase;
   font-weight: 900;
+  margin-bottom: $h1-margin-bottom;
 }
 h2 {
-  @include offset-to-baseline(0, $h2-margin-bottom);
+  @include offset-to-baseline(0);
   font-size: $h2-font-size;
   line-height: $h2-line-height;
   font-weight: 700;
+  margin-bottom: $h2-margin-bottom;
 }
 h3 {
-  @include offset-to-baseline(1, $h3-margin-bottom);
+  @include offset-to-baseline(1);
   font-size: $h3-font-size;
   line-height: $h3-line-height;
   font-weight: 700;
+  margin-bottom: $h3-margin-bottom;
 }
 h4 {
-  @include offset-to-baseline(6, $h4-margin-bottom);
+  @include offset-to-baseline(6);
   font-size: $h4-font-size;
   line-height: $h4-line-height;
+  margin-bottom: $h4-margin-bottom;
 }
 h5 {
-  @include offset-to-baseline(0, $h5-margin-bottom);
+  @include offset-to-baseline(0);
   font-size: $h5-font-size;
   line-height: $h5-line-height;
   font-weight: 400;
   text-transform: uppercase;;
+  margin-bottom: $h5-margin-bottom;
 }
 
 p,

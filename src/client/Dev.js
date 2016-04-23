@@ -61,7 +61,7 @@ export default class Dev extends Component {
     return (
       <div>
         <h1>{this.props.foo}</h1>
-        <h1>H1 {sizeToPx(7)} {eventName} <Icon name="bicycle"/> </h1>
+        <h1>H1 {sizeToPx(7)} {eventName} <Icon name="directions_bike"/> </h1>
         <h2>H2 {sizeToPx(5)} {eventName}</h2>
         <h3>H3 {sizeToPx(4)} {eventName}</h3>
         <h4>H4 {sizeToPx(3)} {eventName}</h4>
@@ -84,8 +84,8 @@ export default class Dev extends Component {
           <Col sm={12} className="display-flex">
             <RoundBadge size={2}>8</RoundBadge>
             <RoundBadge size={1}>8</RoundBadge>
-            <RoundBadge size={2}><Icon name="car"/></RoundBadge>
-            <RoundBadge size={1}><Icon name="car"/></RoundBadge>
+            <RoundBadge size={2}><Icon name="directions_car"/></RoundBadge>
+            <RoundBadge size={1}><Icon name="directions_car"/></RoundBadge>
             <RoundBadge size={2}>RR</RoundBadge>
             <RoundBadge size={1}>RR</RoundBadge>
             <RoundBadge size={2}>TT</RoundBadge>
@@ -93,8 +93,8 @@ export default class Dev extends Component {
             <RoundBadge size={2} className="Inverted">RR</RoundBadge><S5/>
             <RoundBadge size={2} className="Inverted">8</RoundBadge><S5/>
             <RoundBadge size={1} className="Inverted">8</RoundBadge><S5/>
-            <RoundBadge size={2} className="Inverted"><Icon name="car"/></RoundBadge><S5/>
-            <RoundBadge size={1} className="Inverted"><Icon name="car"/></RoundBadge>
+            <RoundBadge size={2} className="Inverted"><Icon name="directions_car"/></RoundBadge><S5/>
+            <RoundBadge size={1} className="Inverted"><Icon name="directions_car"/></RoundBadge>
           </Col>
         </Row>
         <Row>
@@ -102,10 +102,10 @@ export default class Dev extends Component {
           <Col sm={12} className="display-flex">
             <Badge>120mi</Badge><S5/>
             <Badge>8</Badge><S5/>
-            <Badge><Icon name="trophy"/></Badge><S5/>
-            <Badge><Icon name="sun-o"/></Badge><S5/>
-            <Badge><Icon name="map-marker"/><S5/>Monterey, CA</Badge><S5/>
-            <Badge className="Inverted"><Icon name="map-marker"/><S5/>Monterey, CA</Badge>
+            {/*<Badge><Icon name="trophy"/></Badge><S5/>*/}
+            <Badge><Icon name="wb_sunny"/></Badge><S5/>
+            <Badge><Icon name="place"/><S5/>Monterey, CA</Badge><S5/>
+            <Badge className="Inverted"><Icon name="place"/><S5/>Monterey, CA</Badge>
           </Col>
         </Row>
         <Row>
@@ -113,9 +113,9 @@ export default class Dev extends Component {
           <Col sm={12} className="display-flex">
             <SquareBadge>120mi</SquareBadge><S5/>
             <SquareBadge>8</SquareBadge><S5/>
-            <SquareBadge><Icon name="trophy"/></SquareBadge><S5/>
-            <SquareBadge><Icon name="sun-o"/></SquareBadge><S5/>
-            <SquareBadge><Icon name="map-marker"/><S5/>Monterey, CA</SquareBadge>
+            {/*<SquareBadge><Icon name="trophy"/></SquareBadge><S5/>*/}
+            <SquareBadge><Icon name="wb_sunny"/></SquareBadge><S5/>
+            <SquareBadge><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
           </Col>
         </Row>
         <Row>
@@ -123,44 +123,44 @@ export default class Dev extends Component {
           <Col sm={12} className="display-flex">
             <SquareBadge className="Inverted">120mi</SquareBadge><S5/>
             <SquareBadge className="Inverted">8</SquareBadge><S5/>
-            <SquareBadge className="Inverted"><Icon name="trophy"/></SquareBadge><S5/>
-            <SquareBadge className="Inverted"><Icon name="sun-o"/></SquareBadge><S5/>
-            <SquareBadge className="Inverted"><Icon name="map-marker"/><S5/>Monterey, CA</SquareBadge>
+            {/*<SquareBadge className="Inverted"><Icon name="trophy"/></SquareBadge><S5/>*/}
+            <SquareBadge className="Inverted"><Icon name="wb_sunny"/></SquareBadge><S5/>
+            <SquareBadge className="Inverted"><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Elevation:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="arrow-up" color={Colors.grey500}/>1200ft<S10/>
-            <Icon name="long-arrow-up" color={Colors.grey500}/>1200ft<S10/>
-            <Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>
-            <Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>
+            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
+            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
+            {/*<Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>*/}
+            {/*<Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>*/}
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Distance:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="bicycle" color={Colors.grey500}/>20mi<S10/>
-            <Badge><Icon name="bicycle"/>20mi</Badge><S10/>
-            <Badge className="Inverted"><Icon name="bicycle"/>20mi</Badge><S10/>
+            <Icon name="directions_bike" color={Colors.grey500}/>20mi<S10/>
+            <Badge><Icon name="directions_bike"/>20mi</Badge><S10/>
+            <Badge className="Inverted"><Icon name="directions_bike"/>20mi</Badge><S10/>
             44mi 60mi 120mi
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Duration:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="hourglass-start" color={Colors.grey500}/>60min
+            <Icon name="hourglass_empty" color={Colors.grey500}/>60min
             <S10/>
-            <Badge><Icon name="hourglass-start"/>60min</Badge><S5/>
-            <Icon name="hourglass-o" color={Colors.grey500}/>60min<S10/>
-            <Icon name="hourglass" color={Colors.grey500} />60min<S10/>
-            <Icon name="hourglass-half" color={Colors.grey500}/>60min<S10/>
+            <Badge><Icon name="hourglass_empty"/>60min</Badge><S5/>
+            <Icon name="hourglass_empty" color={Colors.grey500}/>60min<S10/>
+            <Icon name="hourglass_full" color={Colors.grey500} />60min<S10/>
+            <Icon name="hourglass_full" color={Colors.grey500}/>60min<S10/>
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Location:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="map-marker" color={Colors.grey500}/>Monterey, CA
+            <Icon name="place" color={Colors.grey500}/>Monterey, CA
           </Col>
         </Row>
 
@@ -197,7 +197,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
-        <ContainerHeader label="LG" width={Grid.ContainerWidth.LG}/>
+        <ContainerHeader label="LG (iPad landscape, small laptops)" width={Grid.ContainerWidth.LG}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
@@ -211,7 +211,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
-        <ContainerHeader label="MD" width={Grid.ContainerWidth.MD}/>
+        <ContainerHeader label="MD (iPad portrait)" width={Grid.ContainerWidth.MD}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
@@ -224,7 +224,7 @@ export default class Dev extends Component {
           </Col>
         </Row>
 
-        <ContainerHeader label="SM" width={Grid.ContainerWidth.SM}/>
+        <ContainerHeader label="SM (iPhone 6+ landscape)" width={Grid.ContainerWidth.SM}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
             <Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>

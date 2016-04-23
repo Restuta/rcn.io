@@ -15,10 +15,18 @@ html {
   box-sizing: inherit;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 a:focus,
 a:hover,
 a:active {
   outline: none;
+}
+
+a {
+  color: $blue-300;
 }
 
 //so .fa iconst do not break vertical rythm

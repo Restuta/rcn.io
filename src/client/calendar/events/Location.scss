@@ -2,11 +2,71 @@
 @import "variables";
 
 .Location {
-  border-top: 1px solid $grey-200;
-  padding-top: pxToRem(2);
-  display: inline-block;
-  margin-top: 1rem;
+  $color: $blue-300;
+  $color: $grey-500;
+  color: $color;
+  white-space: nowrap;
   height: 2rem;
+  width: 100%;
 
-  //margin-top: -1px;
+  border-top: 1px solid $grey-200;
+
+  //outline: 1px solid grey;
+
+  .icon {
+    @include text-sm-12();
+    color: inherit;
+    top: 0;
+  }
+  .address {
+    @include text-sm-11();
+    color: inherit;
+    top: 0;
+  }
+
+  &.size-S {
+    display: none;
+    overflow: hidden;
+    .icon {
+      display: none;
+    }
+    .address {
+      font-family: 'museo-sans-condensed';
+      top: 0;
+    }
+  }
+
+  &.size-M {
+    height: 2rem;
+
+    .icon {
+      top: pxToRem(3);
+    }
+    .address {
+      top: pxToRem(1);
+    }
+  }
+
+  &.size-L {
+    height: 2rem;
+    .icon {
+      top: pxToRem(3);
+    }
+    .address {
+      top: pxToRem(1);
+    }
+  }
+
+  &.size-XL {
+    height: 3rem;
+
+    .icon {
+      @include text-3();
+      top: pxToRem(6);
+    }
+    .address {
+      @include text-2();
+      top: pxToRem(3);
+    }
+  }
 }

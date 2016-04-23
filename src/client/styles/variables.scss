@@ -24,12 +24,36 @@ $blue-grey-700: #455A64;
 $blue-grey-800: #37474F;
 $blue-grey-900: #263238;
 
+$blue-50: #E3F2FD;
+$blue-100: #BBDEFB;
+$blue-200: #90CAF9;
+$blue-300: #64B5F6;
+$blue-400: #42A5F5;
+$blue-500: #2196F3;
+$blue-600: #1E88E5;
+$blue-700: #1976D2;
+$blue-800: #1565C0;
+$blue-900: #0D47A1;
+
 $body-color: #333;
 //$body-bg-color: #F6F6F6;
 $body-bg-color: #FCFCFC;
 
+
 $brown-mud: '#A0522D';
 $brown-mud-dimmed: 'rgba(160,82,45,0.50)';
+
+$brown-50: #EFEBE9;
+$brown-100: #D7CCC8;
+$brown-200: #BCAAA4;
+$brown-300: #A1887F;
+$brown-400: #8D6E63;
+$brown-500: #795548;
+$brown-600: #6D4C41;
+$brown-700: #5D4037;
+$brown-800: #4E342E;
+$brown-900: #3E2723;
+
 
 
 @function getBaseFontSize() {
@@ -82,7 +106,6 @@ $brown-mud-dimmed: 'rgba(160,82,45,0.50)';
 }
 
 $half-line-height-rem: $line-height-rem / 2;
-$text-margin-bottom: 1rem;
 
 
 // $body-font-family: 'Lato', Helvetica, Arial, sans-serif;

@@ -1,3 +1,9 @@
-.Icon {
-  line-height: inherit;
+@import "mixins";
+@import "variables";
+
+.Icon.material-icons {
+  line-height: 2rem;
+
+  font-size: 2rem;
+  color: $grey-500;
 }
