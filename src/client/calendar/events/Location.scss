@@ -15,7 +15,7 @@
 
   .icon {
     @include text-sm-12();
-    color: inherit;
+    color: $grey-400;
     top: 0;
   }
   .address {

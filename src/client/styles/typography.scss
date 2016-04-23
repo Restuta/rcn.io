@@ -20,7 +20,7 @@
 .wf-active {
   h1,h2,h3,h4,h5,p,a {
     opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+    //transition: opacity 0.2s ease-in-out;
   }
 }
 
@@ -35,7 +35,7 @@
 
 .wf-active .fix-fout {
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
+  //transition: opacity 0.2s ease-in-out;
 }
 
 .wf-inactive .fix-fout {
@@ -104,7 +104,6 @@ h5 {
   font-weight: $headings-font-weight;
   color: $headings-color;
   margin-top: $headings-margin-top;
-  transition: opacity ease 0.2s;
 }
 h1 {
   @include offset-to-baseline(3);

@@ -72,7 +72,7 @@
 
       position: relative;
       right: pxToRem(-3); //to compensate shift from padding
-      top: pxToRem(-3);
+      top: pxToRem(-4);
 
       color: $body-bg-color;
       background: rgba(247, 118, 143, 1);
@@ -97,8 +97,8 @@
     }
 
     &-today .Day-date-wrapper {
-      width: pxToRem(20);
-      height: pxToRem(20);
+      width: pxToRem(18);
+      height: pxToRem(18);
       right: pxToRem(-2); //to compensate shift from padding
       top: pxToRem(-2);
     }
