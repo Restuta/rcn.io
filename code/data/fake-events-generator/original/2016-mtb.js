@@ -1,3 +1,4 @@
+/* eslint-disable */
 //real MTB events extracted from googlespreadsheet for 2016
 const eventData = [
   {
