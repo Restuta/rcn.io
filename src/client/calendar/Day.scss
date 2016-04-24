@@ -15,7 +15,7 @@
   border-left: pxToRem(1) solid $grey-300;
   background-color: $grey-50;
 
-  transition: all ease 0.3s;
+  //transition: all ease 0.3s;
 
   &-date {
     @include text-3();

@@ -1,21 +1,6 @@
 @import '../styles/mixins';
 @import '../styles/variables';
 
-@mixin round-logo() {
-  font-style: italic;
-  width: 8rem;
-  height: 8rem;
-  padding-left: 1.55rem;
-  padding-top: 2.35rem;
-  border-radius: 4rem;
-  background-color: rgba(0, 0, 0, 0.08);
-  transition: background-color 0.2s ease 0s, transform 300ms, width 300ms;
-  transform: translateX(0px) translateY(0px);
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.16);
-  }
-}
-
 @keyframes fade-down {
   0%   { opacity: 0; }
   100% { opacity: 1; }
@@ -49,7 +34,6 @@
     .navbar-logo {
       display: flex; //required for svg to display correctly
       margin-right: 1rem;
-      //@include round-logo();
     }
     .navbar-brand-description {
       @include text-3();
@@ -64,7 +48,7 @@
 
   .navbar-nav .nav-link {
     @include text-3();
-    transition: all ease 0.2s;
+    transition: color ease 0.2s;
     margin-top: 1rem;
     margin-bottom: 0;
     padding-bottom: 0;

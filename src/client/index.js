@@ -1,7 +1,7 @@
-import Col from 'utils/polyfills'
+import 'utils/polyfills'
 import {
   render,
-  //unmountComponentAtNode
+  // unmountComponentAtNode
 } from 'react-dom'
 import Grid from './styles/grid'
 import getRoutes from './getRoutes'
@@ -22,7 +22,8 @@ let renderApp = function() {
   render(getRoutes(containerWidth), document.getElementById('root'))
 }
 
-window.addEventListener('resize', () => renderApp())
+window.addEventListener('resize', renderApp)
+
 
 //first time render
 renderApp()
