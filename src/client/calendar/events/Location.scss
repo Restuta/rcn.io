@@ -3,7 +3,7 @@
 
 .Location {
   $color: $blue-300;
-  $color: $grey-500;
+  $color: $grey-600;
   color: $color;
   white-space: nowrap;
   height: 2rem;
@@ -15,7 +15,7 @@
 
   .icon {
     @include text-sm-12();
-    color: $grey-400;
+    color: $grey-500;
     top: 0;
   }
   .address {
@@ -24,17 +24,16 @@
     top: 0;
   }
 
-  &.size-S {
-    display: none;
-    overflow: hidden;
-    .icon {
-      display: none;
-    }
-    .address {
-      font-family: 'museo-sans-condensed';
-      top: 0;
-    }
-  }
+  // &.size-S {
+  //   overflow: hidden;
+  //   .icon {
+  //     display: none;
+  //   }
+  //   .address {
+  //     font-family: 'museo-sans-condensed';
+  //     top: 0;
+  //   }
+  // }
 
   &.size-M {
     height: 2rem;
