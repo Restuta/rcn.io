@@ -4,7 +4,6 @@ import Calendar from './Calendar.jsx'
 import {roadEvents as events} from 'temp/events.js'
 
 export default class Cal extends Component {
-
   render() {
     return (
       <div>

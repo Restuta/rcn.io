@@ -15,14 +15,10 @@
 
    background-color: white;
   // padding: $line-height-rem;
-  // transition: box-shadow .1s ease-in-out;
+  transition: box-shadow ease-in-out .2s;
 
   &.lvl-1 {
-    // @include box-shadow-minimalistic();
-    //@include box-shadow-lvl-0();
-    //@include shadow-semantic-ui-card();
     @include box-shadow-custom-minimal();
-    //transition: all ease .2s;
   }
 
   &:hover {
@@ -39,9 +35,6 @@
 $base-line-rem: $line-height-rem / 2;
 
 //TODO: move to separate file
-
-
-
 
 .EventName {
   @include text-2();
