@@ -126,7 +126,7 @@ class Event extends Component {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'tomato'
-      locationComponent = <Location location={event.location} size={Size.S} />
+      // locationComponent = <Location location={event.location} size={Size.S} />
     } else if (cardSize === Size.M) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
