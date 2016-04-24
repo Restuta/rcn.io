@@ -6,22 +6,22 @@ import Colors from 'styles/colors'
 import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
-import {rnd} from 'utils/math'
+//import {rnd} from 'utils/math'
 import {Disciplines} from 'temp/events'
 import Size from './card-sizes'
 
 export const EventName = (props) => {
   let className = classNames(`EventName size-${props.size} fix-fout`, props.className)
   let {name} = props
-  const {typeColor} = props
-
-  const createWrappedNameComponent = (name, stringToWrap, color) => {
-    if (name && name.indexOf(stringToWrap) !== -1) {
-      const parts = name.split(stringToWrap)
-      return [parts[0], <span key={0} style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
-    }
-    return name //TODO restuta: funtcion returns different types based on the flow, fix this
-  }
+  // const {typeColor} = props
+  //
+  // const createWrappedNameComponent = (name, stringToWrap, color) => {
+  //   if (name && name.indexOf(stringToWrap) !== -1) {
+  //     const parts = name.split(stringToWrap)
+  //     return [parts[0], <span key={0} style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
+  //   }
+  //   return name //TODO restuta: funtcion returns different types based on the flow, fix this
+  // }
 
   //TODO: make this production ready
   let wrappedNameComp = name
