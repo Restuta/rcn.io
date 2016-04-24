@@ -12,7 +12,6 @@ export default class Location extends Component {
 
     if (!city || !city.trim()) {
       city = '?'
-      //return null;
     }
 
     const className = classnames(`Location size-${size} fix-fout`)
@@ -21,7 +20,7 @@ export default class Location extends Component {
     return (
       <div className={className}>
         <Icon name="place" className="icon"/>
-        <a href="" className="address">{addressToShow}</a>
+        <span className="address">{addressToShow}</span>
       </div>
     )
   }
