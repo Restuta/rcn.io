@@ -24,69 +24,73 @@
 }
 
 //custom sizes (not in scale)
-@mixin text-sm-9() {
-  @include offset-to-baseline(1);
+@mixin text-sm-9($offset: 1) {
+  @include offset-to-baseline($offset);
   font-size: pxToRem(9);
   line-height: 1rem;
   font-weight: 500;
 }
 
-@mixin text-sm-11() {
-  @include offset-to-baseline(4);
+@mixin text-sm-10($offset:5) {
+  @include text-1($offset);
+}
+
+@mixin text-sm-11($offset: 4) {
+  @include offset-to-baseline($offset);
   font-size: pxToRem(11);
   line-height: 2rem;
   font-weight: 500;
 }
 
 
-@mixin text-sm-12() {
-  @include offset-to-baseline(4);
+@mixin text-sm-12($offset: 4) {
+  @include offset-to-baseline($offset);
   font-size: pxToRem(12);
   line-height: 2rem;
   font-weight: 500;
 }
 
-@mixin text-1 {
-  @include offset-to-baseline(5);
+@mixin text-1($offset: 5) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-1;
   line-height: 2rem;
   font-weight: 700;
 }
 
-@mixin text-2 {
-  @include offset-to-baseline(4);
+@mixin text-2($offset: 4) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-2;
   line-height: 2rem;
 }
 
 
-@mixin text-3 {
-  @include offset-to-baseline(-1);
+@mixin text-3($offset: -1) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-3;
   line-height: 3rem;
 }
 
-@mixin text-4 {
-  @include offset-to-baseline(5);
+@mixin text-4($offset: 5) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-4;
   line-height: 3rem;
 }
 
-@mixin text-5 {
-  @include offset-to-baseline(0);
+@mixin text-5($offset: 0) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-5;
   line-height: 4rem;
 }
 
-@mixin text-6 {
-  @include offset-to-baseline(2);
+@mixin text-6($offset: 2) {
+  @include offset-to-baseline($offset);
   font-size: $font-size-6;
   line-height: 5rem;
   font-weight: 700;
 }
 
-@mixin text-7 {
-  @include offset-to-baseline(-1);
+@mixin text-7($offset: -1) {
+  @include offset-to-baseline($offset);
   //top: -4px;
   //position: relative;
   font-size: $font-size-7;

@@ -6,22 +6,24 @@
   $color: $grey-600;
   color: $color;
   white-space: nowrap;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
+  background-color: white;
 
   border-top: 1px solid $grey-200;
 
   //outline: 1px solid grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 
   .icon {
-    @include text-sm-12();
+    @include text-sm-12($offset: 0);
     color: $grey-500;
-    top: 0;
   }
   .address {
-    @include text-sm-11();
+    @include text-sm-11($offset: 0);
     color: inherit;
-    top: 0;
   }
 
   // &.size-S {
@@ -36,18 +38,18 @@
   // }
 
   &.size-M {
-    height: 2rem;
+    height: 3rem;
 
     .icon {
-      top: pxToRem(3);
+      @include text-sm-11($offset: 3);
     }
     .address {
-      top: pxToRem(1);
+      @include text-sm-10($offset: 1);
     }
   }
 
   &.size-L {
-    height: 2rem;
+    height: 3rem;
     .icon {
       top: pxToRem(3);
     }
@@ -57,15 +59,13 @@
   }
 
   &.size-XL {
-    height: 3rem;
+    height: 5rem;
 
     .icon {
-      @include text-3();
-      top: pxToRem(6);
+      @include text-3($offset: 6);
     }
     .address {
-      @include text-2();
-      top: pxToRem(3);
+      @include text-2($offset: 3);
     }
   }
 }

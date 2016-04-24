@@ -11,8 +11,9 @@ import {Disciplines} from 'temp/events'
 import Size from './card-sizes'
 
 export const EventName = (props) => {
-  let className = classNames(`EventName size-${props.size} fix-fout`, props.className)
-  let {name} = props
+  let {name, size, height} = props
+  let className = classNames(`EventName size-${size} size-${size}-${height} fix-fout`, props.className)
+
   // const {typeColor} = props
   //
   // const createWrappedNameComponent = (name, stringToWrap, color) => {
@@ -65,7 +66,7 @@ class Event extends Component {
       name,
       discipline,
       event = {location: {
-        city: 'Mammoth Lakes',
+        city: 'Mammoth Lakeserspwooolpf',
         state: 'CA'
       }}
     } = this.props
@@ -129,18 +130,19 @@ class Event extends Component {
       // locationComponent = <Location location={event.location} size={Size.S} />
     } else if (cardSize === Size.M) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'mediumseagreen'
       locationComponent = <Location location={event.location} size={Size.M} />
     } else if (cardSize === Size.L) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'darkorchid'
       locationComponent = <Location location={event.location} size={Size.L}/>
     } else if (cardSize === Size.XL) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       eventColor = 'deepskyblue'
       locationComponent = <Location location={event.location} size={Size.XL} showState/>
@@ -198,7 +200,7 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1">
         {debugComponent}
-        <EventName size={cardSize} name={name} typeColor={eventColor}/>
+        <EventName size={cardSize} height={cardHeightRem} name={name} typeColor={eventColor}/>
         {locationComponent}
       </div>
     )
