@@ -58,6 +58,17 @@ const getBaseHeight = containerWidth => {
 }
 
 class Event extends Component {
+  constructor(props) {
+    super(props)
+    this.onEventClick = this.onEventClick.bind(this)
+  }
+
+  onEventClick() {
+    if (this.props.event.promoterUrl) {
+      window.location.assign(this.props.event.promoterUrl)
+    }
+  }
+
   render() {
     const {
       width,
@@ -66,7 +77,7 @@ class Event extends Component {
       name,
       discipline,
       event = {location: {
-        city: 'Mammoth Lakeserspwooolpf',
+        city: 'Mammoth Lakes',
         state: 'CA'
       }}
     } = this.props
@@ -198,7 +209,7 @@ class Event extends Component {
 
 
     return (
-      <div style={style} className="Event lvl-1">
+      <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
         <EventName size={cardSize} height={cardHeightRem} name={name} typeColor={eventColor}/>
         {locationComponent}

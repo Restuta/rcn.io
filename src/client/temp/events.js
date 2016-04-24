@@ -12,11 +12,12 @@ const Disciplines = {
 }
 
 class Event {
-  constructor({name, date, type, location}) {
+  constructor({name, date, type, location, promoterUrl}) {
     this.name = name
     this.date = date
     this.type = type
     this.location = location
+    this.promoterUrl = promoterUrl
   }
 }
 
@@ -36,16 +37,30 @@ const countTotalEvents = (eventsMap) => {
   return count
 }
 
+const preProcessUrl = (rawUrl) => {
+  if (rawUrl) {
+    if (rawUrl.startsWith('http') || rawUrl.startsWith('https')) {
+      return rawUrl
+    } else {
+      return 'http://' + rawUrl
+    }
+  } else {
+    return '/'
+  }
+}
+
 const preProcessEvents = function(rawEvents) {
   const events = new Map()
 
   rawEvents.forEach(rawEvent => {
+
     const event = new Event({
       name: rawEvent.name
         .replace(/--/g, '—'),
       date: moment(rawEvent.date, 'MMMM DD YYYY'),
       type: rawEvent.type,
-      location: rawEvent.location || {}
+      location: rawEvent.location || {},
+      promoterUrl: preProcessUrl(rawEvent.promoterUrl)
     })
 
     const key = event.date.format('MMDDYYYY')
