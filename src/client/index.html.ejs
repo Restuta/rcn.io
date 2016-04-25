@@ -43,12 +43,12 @@
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>
-    <!-- <script>
+    <script>
       var HW_config = {
         selector: '.HeadwayChangelog', // CSS selector where to inject the badge
         account: 'a7zwXJ' // your account ID
       };
     </script>
-    <script async src="//cdn.headwayapp.co/widget.js"></script> -->
+    <script async src="//cdn.headwayapp.co/widget.js"></script>
   </body>
 </html>
