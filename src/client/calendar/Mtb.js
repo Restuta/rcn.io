@@ -27,7 +27,9 @@ export default class Mtb extends Component {
           year={2016}
           events={mtbEvents}
           containerWidth={containerWidth}
-          weekdaysSizes={weekdaysSizes}/>
+          weekdaysSizes={weekdaysSizes}
+          showOnlyFuture
+          />
       </div>
     )
   }

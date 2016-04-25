@@ -24,12 +24,14 @@ export default class Calendar extends Component {
       weekdaysSizes,
       events,
       discipline,
-      location
+      location,
+      showOnlyFuture = false
     } = this.props
 
 
-    //resetting date to first day of week
-    const startDate = moment({year: year, month: 0, day: 1}).startOf('isoWeek')
+    const startDate = showOnlyFuture
+      ? moment().day(-13) //this set's a date to two weeks back monday
+      : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
     const totalWeeks = startDate.isoWeeksInYear()
     let currentDate = startDate.clone()
 
@@ -99,5 +101,6 @@ Calendar.propTypes = {
   events: PropTypes.instanceOf(Events),
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
-  containerWidth: PropTypes.number
+  containerWidth: PropTypes.number,
+  showOnlyFuture: PropTypes.bool
 }
