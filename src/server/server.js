@@ -56,6 +56,15 @@ const getContainerWidth = (deviceType) => {
   return (typeToWidthMap[deviceType] || ContainerWidth.MD)
 }
 
+
+let cache = {}
+const oneHourInMs = 1000 * 60 * 3600
+
+setInterval(() => {
+  cache = {}
+  console.log('cleared cache...') //eslint-disable-line
+}, oneHourInMs)
+
 app.get('/*', function(req, res, next) {
   const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
   //res.sendFile(indexHtml)
@@ -73,8 +82,21 @@ app.get('/*', function(req, res, next) {
       GLOBAL.navigator = {userAgent: req.headers['user-agent']}
 
       const containerWidth = getContainerWidth(req.device.type)
-      const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
-      const fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
+      let fullHtml
+      const key = req.url + containerWidth
+
+      //since rendering is very simple so far we can cache it entirely in-memory
+      if (cache[key]) {
+        fullHtml = cache[key]
+      } else {
+        const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
+        fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
+        cache[key] = fullHtml
+      }
+
+      // const containerWidth = getContainerWidth(req.device.type)
+      // const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
+      // const fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
 
       res.send(fullHtml)
     } else {
