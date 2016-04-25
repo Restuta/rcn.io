@@ -50,7 +50,7 @@ export default class WeekdaysHeader extends Component {
 
       let weekdayLabel
 
-      if (containerWidth < Grid.ContainerWidth.SM) {
+      if (containerWidth <= Grid.ContainerWidth.SM) {
         weekdayLabel = Weekdays[i].short[0]
       } else {
         weekdayLabel = Weekdays[i].short

@@ -93,7 +93,7 @@
     .Day-date {
       margin-top: .5rem;
       margin-bottom: .5rem;
-      font-size: pxToRem(12);
+      font-size: pxToRem(11);
     }
 
     &-today .Day-date-wrapper {
@@ -105,7 +105,7 @@
 
     .day-of-month-label {
       font-size: pxToRem(11);
-      top: pxToRem(0);
+      top: pxToRem(-1);
     }
   }
 

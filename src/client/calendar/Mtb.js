@@ -11,9 +11,11 @@ export default class Mtb extends Component {
     const {containerWidth} = this.props
     let weekdaysSizes
 
-    if (containerWidth < Grid.ContainerWidth.SM) {
+    if (containerWidth <= Grid.ContainerWidth.SM) {
+      weekdaysSizes = [1, 1, 1, 1, 2, 4, 4]
+    } else if (containerWidth <= Grid.ContainerWidth.MD) {
       weekdaysSizes = [1, 1, 2, 2, 2, 3, 3]
-    } else {
+    }  else {
       weekdaysSizes = [2, 2, 2, 2, 2, 2, 2]
     }
 

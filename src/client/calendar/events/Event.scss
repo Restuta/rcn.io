@@ -23,6 +23,7 @@
 
   &:hover {
     @include box-shadow-lvl-2();
+    cursor: pointer;
   }
 
 }
@@ -78,6 +79,9 @@ $base-line-rem: $line-height-rem / 2;
       max-height: $base-line-rem * 4.5;
     }
     &.size-S-7 {
+      max-height: $base-line-rem * 6;
+    }
+    &.size-S-8 {
       max-height: $base-line-rem * 6;
     }
     //max-height: $base-line-rem * 6;

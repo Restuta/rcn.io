@@ -25,7 +25,7 @@ export default class Day extends Component {
 
     const itIsEmpty = (!this.props.children || this.props.children.length === 0)
     const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
-    const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.XS && size === 1)
+    const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.SM && size === 1)
 
     const classNames = classnames('Day',
       (itIsToday && 'Day-today'),
