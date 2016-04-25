@@ -3,41 +3,12 @@ import Component from 'react-pure-render/component'
 import Location from './Location.jsx'
 import Typography from 'styles/typography'
 import Colors from 'styles/colors'
-import classNames from 'classnames'
 import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
 import {Disciplines} from 'temp/events'
 import Size from './card-sizes'
-
-export const EventName = (props) => {
-  let {name, size, height} = props
-  let className = classNames(`EventName size-${size} size-${size}-${height} fix-fout`, props.className)
-
-  // const {typeColor} = props
-  //
-  // const createWrappedNameComponent = (name, stringToWrap, color) => {
-  //   if (name && name.indexOf(stringToWrap) !== -1) {
-  //     const parts = name.split(stringToWrap)
-  //     return [parts[0], <span key={0} style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
-  //   }
-  //   return name //TODO restuta: funtcion returns different types based on the flow, fix this
-  // }
-
-  //TODO: make this production ready
-  let wrappedNameComp = name
-  // wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
-  // //wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
-
-  return (
-    <div className={className}>
-      {wrappedNameComp}
-    </div>
-  )
-}
+import EventName from './EventName.jsx'
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -206,8 +177,6 @@ class Event extends Component {
       paddingRight: horizontalPadding,
       borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
     }
-
-
 
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
