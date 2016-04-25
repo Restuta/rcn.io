@@ -22,10 +22,11 @@ $base-line-rem: $line-height-rem / 2;
   overflow: hidden;
 
   &.size-XXS {
-    @include text-sm-9();
+    font-size: pxToRem(4);
+    line-height: 1;
     top: pxToRem(-1);
     font-weight: 700;
-    padding-left: pxToRem(2);
+    padding-left: 0;
     padding-top: pxToRem(2);
     margin-bottom: 0;
     max-height: 100%;

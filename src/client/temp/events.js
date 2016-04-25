@@ -45,7 +45,7 @@ const preProcessUrl = (rawUrl) => {
       return 'http://' + rawUrl
     }
   } else {
-    return '/'
+    return ''
   }
 }
 

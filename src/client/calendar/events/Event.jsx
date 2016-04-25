@@ -98,8 +98,8 @@ class Event extends Component {
     //differnt settings based on card size
     //TODO: move to CSS
     if (cardSize === Size.XXS) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPadding = `${Typography.pxToRem(1)}rem`
+      horizontalPadding = `${Typography.pxToRem(1)}rem`
       eventColor = 'black'
     } else if (cardSize === Size.XS) {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`

@@ -239,8 +239,8 @@ export default class Dev extends Component {
 
         {/* all cards per-breakdown in rows*/}
         <Row className="margin-top">
-          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills"/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/></Col>
@@ -302,8 +302,8 @@ export default class Dev extends Component {
 
         {/* all cards per-breakdown in rows, long name*/}
         <Row className="margin-top">
-          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Sc"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dh"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/></Col>
           <Col sm={1}><Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/></Col>
