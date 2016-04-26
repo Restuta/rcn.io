@@ -29,6 +29,7 @@ export default class Day extends Component {
 
     const classNames = classnames('Day',
       (itIsToday && 'Day-today'),
+      ((itIsToday && itsSuperNarrowView) && 'today-narrow'),
       (itIsCurrentMonthsDay && 'Day-current-month'),
       (itIsEmpty && 'Day-empty'),
       (itIsSpecialDayOfMonth && 'Day-special')
