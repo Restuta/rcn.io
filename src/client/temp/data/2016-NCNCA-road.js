@@ -1638,8 +1638,31 @@ export default [
     "id": "evt-41248737",
     "discipline": "Road",
     "type": "Road Race",
-    "name": "NCNCA Juniors Road Championships - Clean Air Road Race",
+    "name": "King City Road Race is MOVED to June 26th",
     "date": "April 30th 2016",
+    "distanceMi": '',
+    "durationMin": '',
+    "elevationGainFt": '',
+    "startTime": " ",
+    "promoter": " ",
+    "permit": " ",
+    "location": {
+      "streetAddress": " ",
+      "city": " ",
+      "state": "CA",
+      "zip": "93908"
+    },
+    "distanceToEventMi": 28,
+    "estimatedTravelTime": "2h",
+    "flyerUrl": "http://www.ncnca.org/sites/default/files/01/01/2014%20-%202%3A29am/183%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED%203.pdf",
+    "registrationUrl": "https://www.usacycling.org/register/2014-183"
+  },
+  {
+    "id": "evt-41248737",
+    "discipline": "Road",
+    "type": "Road Race",
+    "name": "King City Road Race",
+    "date": "June 26th 2016",
     "distanceMi": 166,
     "durationMin": 157,
     "elevationGainFt": 1316,
@@ -1648,9 +1671,9 @@ export default [
     "permit": "2016-",
     "location": {
       "streetAddress": " ",
-      "city": "Salinas",
+      "city": "King City",
       "state": "CA",
-      "zip": "93908"
+      "zip": "93930"
     },
     "distanceToEventMi": 28,
     "estimatedTravelTime": "2h",
