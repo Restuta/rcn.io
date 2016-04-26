@@ -33,7 +33,11 @@ export default class Calendar extends Component {
     const startDate = showOnlyFuture
       ? moment().isoWeekday(-6) //this set's a date to two weeks back monday
       : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
-    const totalWeeks = startDate.isoWeeksInYear()
+
+    const totalWeeks = showOnlyFuture
+      ? startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
+      : startDate.isoWeeksInYear()
+
     let currentDate = startDate.clone()
 
     let weekdsComponents = []
