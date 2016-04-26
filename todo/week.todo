@@ -37,6 +37,7 @@ Today
 			- favicon
 			- responsive card size based on landscape portrait
 			- setup 404
+			- setup proper URLs
 		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
