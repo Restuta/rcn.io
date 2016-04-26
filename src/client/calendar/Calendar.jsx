@@ -29,14 +29,15 @@ export default class Calendar extends Component {
     } = this.props
 
 
+    const today = moment()
     const startDate = showOnlyFuture
-      ? moment().day(-13) //this set's a date to two weeks back monday
+      ? moment().isoWeekday(-6) //this set's a date to two weeks back monday
       : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
     const totalWeeks = startDate.isoWeeksInYear()
     let currentDate = startDate.clone()
 
     let weekdsComponents = []
-    const today = moment()
+
 
     for (let i = 1; i <= totalWeeks; i++) {
       let daysComponents = []
@@ -76,17 +77,36 @@ export default class Calendar extends Component {
       weekdsComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
     }
 
+
+    let subTitleComp
+
+    if (showOnlyFuture) {
+      subTitleComp = (
+        <h3 className="sub-title">
+          {events.total} events from {startDate.format('MMMM Do')}
+          <a className="show-more-or-less">show full year</a>
+        </h3>
+      )
+    } else {
+      subTitleComp = (
+        <h3 className="sub-title">
+          {events.total} events
+          <a className="show-more-or-less">hide past</a>
+        </h3>
+      )
+    }
+
     return (
       <div className="Calendar">
-        <h1 className="Calendar-title">
+        <h1 className="title">
           {location + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
           {name} <span>{year}</span>
         </h1>
-        <h3 className="Calendar-sub-title">{events.total} events</h3>
+        {subTitleComp}
 
         <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
-        <div className="Calendar-body">
+        <div className="body">
           {weekdsComponents}
         </div>
       </div>
