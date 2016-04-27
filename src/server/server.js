@@ -58,12 +58,12 @@ const getContainerWidth = (deviceType) => {
 
 
 let cache = {}
-const oneHourInMs = 1000 * 60 * 3600
+const cacheDuration = 1000 * 20 * 3600
 
 setInterval(() => {
   cache = {}
   console.log('cleared cache...') //eslint-disable-line
-}, oneHourInMs)
+}, cacheDuration)
 
 app.get('/*', function(req, res, next) {
   const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
@@ -91,7 +91,7 @@ app.get('/*', function(req, res, next) {
       } else {
         const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
         fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
-        cache[key] = fullHtml
+        //cache[key] = fullHtml
       }
 
       // const containerWidth = getContainerWidth(req.device.type)

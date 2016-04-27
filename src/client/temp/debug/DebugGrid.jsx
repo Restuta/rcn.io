@@ -33,7 +33,7 @@ export default class DebugGrid extends React.Component {
 
     const style = {
       position: 'fixed',
-      right: 0,
+      letf: 0,
       bottom: 0,
       background: 'white',
       padding: '1rem',

@@ -43,6 +43,7 @@
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>
+    <!-- Headway changelog -->
     <script>
       var HW_config = {
         selector: '.HeadwayChangelog', // CSS selector where to inject the badge
@@ -50,5 +51,8 @@
       };
     </script>
     <script async src="//cdn.headwayapp.co/widget.js"></script>
+
+    <!-- chrisp chat widget-->
+    <script type="text/javascript">CRISP_WEBSITE_ID = "-K8znh8E8eF51EiPBT6v";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </body>
 </html>
