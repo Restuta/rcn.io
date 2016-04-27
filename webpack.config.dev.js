@@ -63,6 +63,10 @@ module.exports = {
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
       hash: false,
+      env: {
+        Prod: false,
+        Dev: true
+      }
     })
   ],
   resolve: {

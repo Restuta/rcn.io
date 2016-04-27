@@ -30,6 +30,21 @@
       <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
 
+
+    <!-- HEAP Analytics -->
+    <% if (htmlWebpackPlugin.options.env.Prod) { %>
+      <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("1022174198");
+      </script>
+    <% } else { %>
+      <script type="text/javascript">
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3390968114");
+      </script>
+    <% } %>
+
+
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
     data-grid-gutterwidth="16px" data-grid-nbcols="14">
@@ -53,6 +68,28 @@
     <script async src="//cdn.headwayapp.co/widget.js"></script>
 
     <!-- chrisp chat widget-->
-    <script type="text/javascript">CRISP_WEBSITE_ID = "-K8znh8E8eF51EiPBT6v";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- <script type="text/javascript">CRISP_WEBSITE_ID = "-K8znh8E8eF51EiPBT6v";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+
+    <!--Start of HappyFox Live Chat Script-->
+    <script>
+     window.HFCHAT_CONFIG = {
+         EMBED_TOKEN: "4e64bfb0-0c3e-11e6-b27f-e3dc314ad00a",
+         ACCESS_TOKEN: "afe00f7ef3f84a278d2787556a1ef6be",
+         HOST_URL: "https://happyfoxchat.com",
+         ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+     };
+
+    (function() {
+      var scriptTag = document.createElement('script');
+      scriptTag.type = 'text/javascript';
+      scriptTag.async = true;
+      scriptTag.src = window.HFCHAT_CONFIG.ASSETS_URL + '/js/widget-loader.js';
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(scriptTag, s);
+    })();
+    </script>
+    <!--End of HappyFox Live Chat Script-->
+
   </body>
 </html>

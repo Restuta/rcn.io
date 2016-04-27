@@ -70,6 +70,10 @@ module.exports = {
       css: ['app.css'],
       inject: false, // we use custom template to inject scripts,
       hash: true,
+      env: {
+        Prod: false,
+        Dev: true
+      },
       minify: { // Minifying it while it is parsed
         removeComments: true,
         collapseWhitespace: true,
