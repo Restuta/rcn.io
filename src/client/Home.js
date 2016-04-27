@@ -1,10 +1,15 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
+import Auth0Badge from 'home/Auth0Badge.jsx'
+import 'home/Home.scss'
 
 export default class Home extends Component {
   render() {
     return (
-      <h1>Welcome Home ;) </h1>
+      <div className="Home">
+        <h1>Welcome Home ;) </h1>
+        <Auth0Badge className="auth0-badge" />
+      </div>
     )
   }
 }

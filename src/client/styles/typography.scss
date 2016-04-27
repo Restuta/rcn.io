@@ -13,14 +13,14 @@
 //$headings-font-family: 'museo-sans-condensed', sans-serif;
 .wf-loading {
   h1,h2,h3,h4,h5,p,a {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
 .wf-active {
   h1,h2,h3,h4,h5,p,a {
-    opacity: 1;
-    //transition: opacity 0.2s ease-in-out;
+    visibility: visible;
+    //transition: visibility 2s ease-in-out;
   }
 }
 
@@ -35,7 +35,7 @@
 
 .wf-active .fix-fout {
   opacity: 1;
-  //transition: opacity 0.2s ease-in-out;
+  //transition: opacity 2s ease-in-out;
 }
 
 .wf-inactive .fix-fout {

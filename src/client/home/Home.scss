@@ -1,0 +1,10 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Home {
+  .auth0-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
