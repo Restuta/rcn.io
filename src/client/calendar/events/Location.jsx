@@ -12,6 +12,7 @@ export default class Location extends Component {
 
     if (!city || !city.trim()) {
       city = '?'
+      state = ''
     }
 
     const className = classnames(`Location size-${size} fix-fout`)
