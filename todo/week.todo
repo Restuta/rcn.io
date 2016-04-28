@@ -33,14 +33,18 @@ Today
 			- refactor server
 			- setup home page
 			- setup analytics
-			- setup Smooch
+			+- setup Smooch
 			- favicon
 			- responsive card size based on landscape portrait
 			- setup 404
 			- setup proper URLs
 			!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
+			!- future events count is incorrect
 		--- after MTB release
 			- consider adding month label to every other week's sunday before day: Sunday is never minimized
+			- mark visited cards (store this in localStorage for now)
+			- show which card has Promoter URL and which one doesn't
+			- show USAC non USAC events
 		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px

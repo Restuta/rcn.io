@@ -12,12 +12,13 @@ const Disciplines = {
 }
 
 class Event {
-  constructor({name, date, type, location, promoterUrl}) {
+  constructor({name, date, type, location, promoterUrl, flyerUrl}) {
     this.name = name
     this.date = date
     this.type = type
     this.location = location
     this.promoterUrl = promoterUrl
+    this.flyerUrl = flyerUrl
   }
 }
 
@@ -60,7 +61,8 @@ const preProcessEvents = function(rawEvents) {
       date: moment(rawEvent.date, 'MMMM DD YYYY'),
       type: rawEvent.type,
       location: rawEvent.location || {},
-      promoterUrl: preProcessUrl(rawEvent.promoterUrl)
+      promoterUrl: preProcessUrl(rawEvent.promoterUrl),
+      flyerUrl: preProcessUrl(rawEvent.flyerUrl)
     })
 
     const key = event.date.format('MMDDYYYY')

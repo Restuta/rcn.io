@@ -740,7 +740,7 @@ export default [
     }
   },
 ]
- 
+
 /*
 {
   "discipline": "MTB",

@@ -30,7 +30,6 @@
       <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
 
-
     <!-- HEAP Analytics -->
     <% if (htmlWebpackPlugin.options.env.Prod) { %>
       <script type="text/javascript">
@@ -43,8 +42,6 @@
         heap.load("3390968114");
       </script>
     <% } %>
-
-
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
     data-grid-gutterwidth="16px" data-grid-nbcols="14">
@@ -68,11 +65,10 @@
     <script async src="//cdn.headwayapp.co/widget.js"></script>
 
     <!-- driftt.com -->
-    <!-- Start of Async Drift Code for restuta8@gmail.com-->
-    <!-- <script>
+    <!-- Start of Async Drift Code for RCN.io-->
+    <script>
       !function(t){function e(r){if(o[r])return o[r].exports;var n=o[r]={exports:{},id:r,loaded:!1};return t[r].call(n.exports,n,n.exports,e),n.loaded=!0,n.exports}var o={};return e.m=t,e.c=o,e.p="",e(0)}([function(t,e){!function(){var t;return t=window.driftt=window.drift=window.driftt||[],t.init?void 0:t.invoked?void(window.console&&console.error&&console.error("Driftt snippet included twice.")):(t.invoked=!0,t.methods=["identify","track","reset","debug","show","ping","page","hide","off","on"],t.factory=function(e){return function(){var o;return o=Array.prototype.slice.call(arguments),o.unshift(e),t.push(o),t}},t.methods.forEach(function(e){t[e]=t.factory(e)}),t.load=function(){var t,e,o,r;t=3e5,r=Math.ceil(new Date/t)*t,o=document.createElement("script"),o.type="text/javascript",o.async=!0,o.crossorigin="anonymous",o.src="https://js.driftt.com/include/"+r+"/sd8uwea7cwcd.js",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(o,e)},t.SNIPPET_VERSION="0.1.0",t.load())}()}]);
-    </script> -->
-    <!-- End of Async Drift Code for restuta8@gmail.com -->
-
+    </script>
+    <!-- End of Async Drift Code for RCN.io -->
   </body>
 </html>

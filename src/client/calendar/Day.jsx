@@ -6,6 +6,7 @@ import classnames from 'classnames'
 import {zeroPad} from 'utils/formatting'
 import {Months} from './utils/date-utils.js'
 import Grid from 'styles/grid'
+import Colors from 'styles/colors'
 // import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 
 export default class Day extends Component {
@@ -20,12 +21,16 @@ export default class Day extends Component {
       itIsFirstDayOfMonth,
       itIsLastDayOfMonth,
       itIsCurrentMonthsDay,
-      containerWidth
+      dayOfWeek,
+      weekNumber,
+      containerWidth,
     } = this.props
 
     const itIsEmpty = (!this.props.children || this.props.children.length === 0)
     const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
     const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.SM && size === 1)
+    const itIsSunday = dayOfWeek === 7
+    const itIsEvenWeek = (weekNumber % 2 === 0)
 
     const classNames = classnames('Day',
       (itIsToday && 'Day-today'),
@@ -36,21 +41,29 @@ export default class Day extends Component {
     )
 
     const formattedDate = zeroPad(day, 1)
-    const style = {
-      //backgroundColor: color,
-    }
+    const style = {}
 
     let specialDayOfMonthComponent = null
 
-    if (itIsSpecialDayOfMonth) {
+    //Sunday is not likely to get minimized ever and we showing every even week what is
+    //currentm month.
+    if (itIsSpecialDayOfMonth || (itIsSunday && itIsEvenWeek)) {
       const specialDayClassNames = classnames('day-of-month-label',
         (itIsLastDayOfMonth && 'last'),
         (itIsFirstDayOfMonth && 'first')
       )
 
+      let monthLblStyle = {
+        color: 'black'
+      }
+
+      if (itIsSunday) {
+        monthLblStyle.color = Colors.grey400
+      }
+
       specialDayOfMonthComponent = (
         <h4 key={1} className={specialDayClassNames}>
-          <span>{Months[month - 1].short}&nbsp;</span>
+          <span style={monthLblStyle}>{Months[month - 1].short}&nbsp;</span>
         </h4>
       )
     }
@@ -77,8 +90,6 @@ export default class Day extends Component {
     return (
       <Col xs={size} className={classNames} style={style}>
         <div className="Day-date fix-fout">
-          {/*{specialDayOfMonthComponent}
-          {dateComponent}*/}
           {dayHeaderComponent}
         </div>
         {this.props.children}
@@ -97,6 +108,7 @@ Day.propTypes = {
   itIsFirstDayOfMonth: PropTypes.bool,
   itIsLastDayOfMonth: PropTypes.bool,
   itIsCurrentMonthsDay: PropTypes.bool,
-
-  containerWidth: PropTypes.number
+  dayOfWeek: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7]),
+  weekNumber: PropTypes.number.isRequired,
+  containerWidth: PropTypes.number,
 }

@@ -71,7 +71,9 @@ export default class Calendar extends Component {
             itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
             itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth}
-            containerWidth={containerWidth}>
+            containerWidth={containerWidth}
+            dayOfWeek={currentDate.isoWeekday()}
+            weekNumber={currentDate.isoWeek()}>
             {eventComponents}
           </Day>
         )
