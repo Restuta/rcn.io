@@ -42,10 +42,3 @@ a {
   display: flex;
   align-items: flex-end;
 }
-
-//hacking crisp.im styles to make it opaque
-.crisp-client-container
-.crisp-client-excerpt
-.crisp-client-excerpt-minimized[data-visible=true] {
-  opacity: 0.6 !important;
-}
