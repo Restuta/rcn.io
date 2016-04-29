@@ -231,45 +231,45 @@ export default [
   {
     "discipline": "MTB",
     "permit": "",
-    "name": "#5 NorCal Conference",
+    "name": "#5 NorCal Conference Championships",
     "date": "May 7 2016",
     "promoterUrl": "http://www.norcalmtb.org/races-2",
     "registrationUrl": "",
     "flyerUrl": "http://www.norcalmtb.org/wp-content/uploads/2016/04/NorCal-Conference-Championships-5.pdf",
     "location": {
-      "streetAddress": "",
-      "city": "",
-      "state": "",
+      "streetAddress": "Laguna Seca",
+      "city": "Monterey",
+      "state": "CA",
       "zip": ""
     }
   },
   {
     "discipline": "MTB",
     "permit": "",
-    "name": "#5 NorCal Conference",
+    "name": "#5 NorCal Conference Championships",
     "date": "May 8 2016",
     "promoterUrl": "http://www.norcalmtb.org/races-2",
     "registrationUrl": "",
     "flyerUrl": "http://www.norcalmtb.org/wp-content/uploads/2016/04/NorCal-Conference-Championships-5.pdf",
     "location": {
-      "streetAddress": "",
-      "city": "",
-      "state": "",
+      "streetAddress": "Laguna Seca",
+      "city": "Monterey",
+      "state": "CA",
       "zip": ""
     }
   },
   {
     "discipline": "MTB",
     "permit": "",
-    "name": "#6 State Championships",
+    "name": "#6 California Hight School Mountain Bike State Championships",
     "date": "May 22 2016",
     "promoterUrl": "http://www.norcalmtb.org/races-2",
     "registrationUrl": "",
     "flyerUrl": "",
     "location": {
       "streetAddress": "",
-      "city": "",
-      "state": "",
+      "city": "Los Olivos ",
+      "state": "CA",
       "zip": ""
     }
   },
@@ -501,7 +501,7 @@ export default [
   {
     "discipline": "MTB",
     "permit": "2016-1050",
-    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "name": "2016 Miners Dirt Series (ages 10-14)",
     "date": "April 29 2016",
     "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
     "registrationUrl": "http://doodle.com/poll/y5dv45xca676382f",
@@ -516,7 +516,7 @@ export default [
   {
     "discipline": "MTB",
     "permit": "2016-1050",
-    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "name": "2016 Miners Dirt Series (ages 10-14)",
     "date": "May 6 2016",
     "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
     "registrationUrl": "http://doodle.com/poll/ecnz6kbfci84i298",
@@ -531,7 +531,7 @@ export default [
   {
     "discipline": "MTB",
     "permit": "2016-1050",
-    "name": "2016 Miners Dirt Series(ages 10-14)",
+    "name": "2016 Miners Dirt Series (ages 10-14)",
     "date": "May 13 2016",
     "promoterUrl": "http://ybonc.org/events/miners-dirt-series",
     "registrationUrl": "http://doodle.com/poll/7urpqr34mgry3iqh",

@@ -45,6 +45,7 @@ Today
 			- mark visited cards (store this in localStorage for now)
 			- show which card has Promoter URL and which one doesn't
 			- show USAC non USAC events
+			- test and set up Sentry as discribed here https://github.com/getsentry/demo-express/blob/master/index.js
 		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
