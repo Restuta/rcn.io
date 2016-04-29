@@ -58,7 +58,8 @@ const getContainerWidth = (deviceType) => {
 
 
 let cache = {}
-const cacheDuration = 1000 * 20 * 3600
+const ONE_MINUTE = 1000 * 60
+const cacheDuration = ONE_MINUTE * 5
 
 setInterval(() => {
   cache = {}
@@ -91,7 +92,7 @@ app.get('/*', function(req, res, next) {
       } else {
         const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
         fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
-        //cache[key] = fullHtml
+        cache[key] = fullHtml
       }
 
       // const containerWidth = getContainerWidth(req.device.type)

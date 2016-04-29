@@ -53,9 +53,7 @@ export default class Day extends Component {
         (itIsFirstDayOfMonth && 'first')
       )
 
-      let monthLblStyle = {
-        color: 'black'
-      }
+      let monthLblStyle = { color: 'black' }
 
       if (itIsSunday) {
         monthLblStyle.color = Colors.grey400

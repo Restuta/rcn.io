@@ -71,8 +71,8 @@ module.exports = {
       inject: false, // we use custom template to inject scripts,
       hash: true,
       env: {
-        Prod: false,
-        Dev: true
+        Prod: true,
+        Dev: false
       },
       minify: { // Minifying it while it is parsed
         removeComments: true,
