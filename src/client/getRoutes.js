@@ -12,6 +12,10 @@ export default (containerWidth) => {
   const buildCreateElement = containerW =>
     (Component, props) => <Component {...props} containerWidth={containerW}/>
 
+  const onChange = () => {
+    console.info('on change')
+  }
+
   return (
     <Router history={browserHistory} createElement={buildCreateElement(containerWidth)}>
       <Route path="/" component={App}>

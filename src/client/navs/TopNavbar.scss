@@ -50,6 +50,7 @@
     @include text-3();
     transition: color ease 0.2s;
     margin-top: 1rem;
+    //padding: 0.5rem;
     margin-bottom: 0;
     padding-bottom: 0;
     color: $grey-600;
@@ -63,5 +64,12 @@
     &:hover {
       color: $grey-700;
     }
+  }
+
+  .navbar-nav .nav-link.active {
+    // border-bottom: pxToRem(2) solid $primary-color;
+    //background: transparentize($primary-color, 0.8);
+    //border-radius: pxToRem(2);
+
   }
 }

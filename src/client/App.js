@@ -15,7 +15,6 @@ export default class App extends Component {
       appLevelClasses: 'App',
       containerWidth: props.containerWidth
     }
-
     this.setAppStateClasses = this.setAppStateClasses.bind(this)
   }
 
@@ -37,6 +36,7 @@ export default class App extends Component {
 
   render() {
     whenRenderStarted = +new Date()
+    const {location} = this.props
 
     //adding props to children, passing browser-calculated container size to be exact */
     const children = React.cloneElement(this.props.children, { containerWidth: this.props.containerWidth })
@@ -46,7 +46,7 @@ export default class App extends Component {
         {__ENV.Dev
           && <DebugGrid setDebugClasses={this.setAppStateClasses} containerWidth={this.props.containerWidth}/>}
 
-        <TopNavbar />
+        <TopNavbar location={location} />
         <div className="App container">
           {children}
         </div>

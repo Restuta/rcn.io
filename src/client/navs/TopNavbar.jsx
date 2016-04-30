@@ -1,11 +1,10 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './TopNavbar.scss'
-import {Link} from 'react-router'
+import {IndexLink, Link} from 'react-router'
 import Logo from './Logo.jsx'
 import HeadwayChangelog from './HeadwayChangelog.jsx'
-
 
 export default class TopNavbar extends Component {
   render() {
@@ -14,7 +13,7 @@ export default class TopNavbar extends Component {
       <nav className={classNames}>
         <div className="content">
           <div className="content-left">
-            <Link className="navbar-logo" to={'/'}><Logo /></Link>
+            <IndexLink className="navbar-logo" to={'/'}><Logo /></IndexLink>
             <div className="navbar-brand-description">RCN</div>
             <HeadwayChangelog />
           </div>
@@ -22,15 +21,15 @@ export default class TopNavbar extends Component {
             <ul className="nav navbar-nav">
               {__ENV.Dev && //eslint-disable-line
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/cal'}>Cal</Link>
+                  <Link className="nav-link" activeClassName="nav-link-active" to={'/cal'}>Cal</Link>
                 </li>
               }
               <li className="nav-item">
-                <Link className="nav-link" to={'/mtb'}>MTB</Link>
+                <Link className="nav-link" activeClassName="nav-link-active" to={'/mtb'}>MTB</Link>
               </li>
               {__ENV.Dev && //eslint-disable-line
                 <li className="nav-item">
-                  <Link className="nav-link faded" to={'/dev'}>Dev</Link>
+                  <Link className="nav-link faded" activeClassName="nav-link-active" to={'/dev'}>Dev</Link>
                 </li>
               }
             </ul>
@@ -39,4 +38,10 @@ export default class TopNavbar extends Component {
       </nav>
     )
   }
+}
+
+TopNavbar.propTypes = {
+  //it may not be directly used but is required so pureRenderMixing re-renders component when
+  //location changes (passed from react-router)
+  location: PropTypes.object.isRequired
 }
