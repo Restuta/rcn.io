@@ -163,6 +163,7 @@
 ### Scraping
 * [Kimonolabs](https://www.kimonolabs.com/) - turns websites into API in seconds
 * [import.io](https://import.io/advanced-data-platform) - Extract Live Data or Crawl Entire Websites in Seconds
+* [Nightmare and Daydream from Segment](https://github.com/segmentio/daydream)
 
 ### Deployment and build
 * [CodeShip](https://codeship.com/pricing)
