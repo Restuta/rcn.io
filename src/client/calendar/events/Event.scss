@@ -20,6 +20,7 @@
   &:hover {
     @include box-shadow-lvl-2();
     cursor: pointer;
+    opacity: 1 !important;
   }
 
 }
