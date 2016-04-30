@@ -49,12 +49,13 @@
   .navbar-nav .nav-link {
     @include text-3();
     transition: color ease 0.2s;
-    margin-top: 1rem;
-    //padding: 0.5rem;
+    //margin-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
+    padding-top: 0.5rem;
     padding-bottom: 0;
     color: $grey-600;
-    padding-top: 0;
     &:hover {
       color: black;
     }
@@ -66,10 +67,8 @@
     }
   }
 
-  .navbar-nav .nav-link.active {
-    // border-bottom: pxToRem(2) solid $primary-color;
-    //background: transparentize($primary-color, 0.8);
-    //border-radius: pxToRem(2);
-
+  .navbar-nav .nav-link.nav-link-active {
+    border-bottom: pxToRem(3) solid $primary-color;
+    color: $grey-600;
   }
 }
