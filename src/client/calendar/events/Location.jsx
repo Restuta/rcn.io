@@ -10,13 +10,15 @@ export default class Location extends Component {
     const {location, size, showState = false} = this.props
     let {city, state} = location
 
+    let addressToShow = showState ? `${city}, ${state}` : city
+
     if (!city || !city.trim()) {
-      city = '?'
-      state = ''
+      addressToShow =  '?'
+    } else {
+      addressToShow =  showState ? `${city}, ${(state || '?')}` : city
     }
 
     const className = classnames(`Location size-${size} fix-fout`)
-    const addressToShow = showState ? `${city}, ${state}` : city
 
     return (
       <div className={className}>
