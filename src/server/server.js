@@ -59,7 +59,7 @@ const getContainerWidth = (deviceType) => {
 
 let cache = {}
 const ONE_MINUTE = 1000 * 60
-const cacheDuration = ONE_MINUTE * 5
+const cacheDuration = ONE_MINUTE * 10
 
 setInterval(() => {
   cache = {}
