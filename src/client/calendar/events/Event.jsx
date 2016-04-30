@@ -32,12 +32,25 @@ class Event extends Component {
   constructor(props) {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
+    this.state = {
+      visited: false
+    }
   }
 
   onEventClick() {
     if (this.props.event.promoterUrl) {
-      window.location.assign(this.props.event.promoterUrl)
+      window.open(this.props.event.promoterUrl)
+      this.setState({
+        visited: true
+      })
+    } else if (this.props.event.flyerUrl) {
+      window.open(this.props.event.flyerUrl)
+      this.setState({
+        visited: true
+      })
     }
+
+
   }
 
   render() {
@@ -102,7 +115,7 @@ class Event extends Component {
       horizontalPadding = `${Typography.pxToRem(1)}rem`
       eventColor = 'black'
     } else if (cardSize === Size.XS) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'orange'
     } else if (cardSize === Size.S) {
@@ -143,8 +156,6 @@ class Event extends Component {
       eventColor = Colors.brownMudDimmed
     }
 
-
-
     const {debug = false} = this.props
     let debugComponent = null
 
@@ -161,8 +172,14 @@ class Event extends Component {
 
     const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
 
+    let opacity = 1
+
+    // if (this.state.visited === true) {
+    //   opacity = 0.8
+    // }
+
     let style = {
-      //backgroundColor: 'white',
+      opacity: opacity,
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
       width: cardWidth,
