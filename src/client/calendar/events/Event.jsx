@@ -38,12 +38,18 @@ class Event extends Component {
   }
 
   onEventClick() {
+    const trackClick = () => analytics.track('Clicked on Event', {
+      event: this.props.event,
+    });
+
     if (this.props.event.promoterUrl) {
+      trackClick();
       window.open(this.props.event.promoterUrl)
       this.setState({
         visited: true
       })
     } else if (this.props.event.flyerUrl) {
+      trackClick();
       window.open(this.props.event.flyerUrl)
       this.setState({
         visited: true

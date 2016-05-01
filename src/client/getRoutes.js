@@ -12,13 +12,13 @@ export default (containerWidth) => {
   const buildCreateElement = containerW =>
     (Component, props) => <Component {...props} containerWidth={containerW}/>
 
-  const onChange = () => {
-    console.info('on change')
+  const onChange = (event) => {
+    analytics.page()
   }
 
   return (
     <Router history={browserHistory} createElement={buildCreateElement(containerWidth)}>
-      <Route path="/" component={App}>
+      <Route path="/" component={App} onChange={onChange}>
         <IndexRoute component={Home} />
         <Route path="/dev" component={Dev} />
         <Route path="/cal" component={Cal} />
