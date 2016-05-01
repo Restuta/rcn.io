@@ -12,7 +12,8 @@
     "es6": true
   },
   "globals" : {
-    "__ENV": true
+    "__ENV": true,
+    "analytics": true
   },
   "plugins": [
     "react"
