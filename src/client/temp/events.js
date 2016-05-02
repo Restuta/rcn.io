@@ -23,19 +23,41 @@ class Event {
 }
 
 class Events {
-  constructor({eventsMap, total}) {
+  constructor({eventsMap}) {
     this.eventsMap = eventsMap
-    this.total = total
+    this.total = this._getTotalEvents()
   }
-}
 
-const countTotalEvents = (eventsMap) => {
-  let count = 0
-  eventsMap.forEach((value, key, map) => {
-    count += value.length
-  })
+  _getTotalEvents() {
+    let total = 0
 
-  return count
+    this.eventsMap.forEach((value, key, map) => {
+      total += value.length
+    })
+
+    return total
+  }
+
+  //TODO: memoize calculated totals since collection is immutable
+  //TODO: get total before date
+
+  getTotalFrom(date) {
+    let total = 0
+
+    this.eventsMap.forEach((value, key, map) => {
+      const events = value
+      //taking date of first event since the rest is after it
+      const eventsDate = events[0].date
+      const eventsCount = events.length
+
+      if (date.diff(eventsDate, 'days') <= 0) {
+        total += eventsCount
+      }
+    })
+
+    return total
+  }
+
 }
 
 const preProcessUrl = (rawUrl) => {
@@ -78,21 +100,14 @@ const preProcessEvents = function(rawEvents) {
 }
 
 const roadEventsMap = preProcessEvents(rawRoadEvents)
-const roadEvents = new Events({
-  eventsMap: roadEventsMap,
-  total: countTotalEvents(roadEventsMap)
-})
+const roadEvents = new Events({ eventsMap: roadEventsMap })
 
 const mtbEventsMap = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
-const mtbEvents = new Events({
-  eventsMap: mtbEventsMap,
-  total: countTotalEvents(mtbEventsMap)
-})
-
+const mtbEvents = new Events({ eventsMap: mtbEventsMap })
 
 export {
-  Events,
+  Events, //just a type
+  Disciplines,
   roadEvents,
   mtbEvents,
-  Disciplines
 }

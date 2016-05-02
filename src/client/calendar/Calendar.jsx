@@ -15,6 +15,7 @@ const findEventByDate = (eventsMap, date) => {
   return eventsMap.get(key) || []
 }
 
+
 export default class Calendar extends Component {
   render() {
     const {
@@ -28,8 +29,13 @@ export default class Calendar extends Component {
       showOnlyFuture = false
     } = this.props
 
-
     const today = moment()
+
+    //TODO: refactor all the ternar expressions on simple conditional
+
+    const eventsTotalFromToday = events.getTotalFrom(today)
+    const eventsTotal = events.total
+
     const startDate = showOnlyFuture
       ? moment().isoWeekday(-6) //this set's a date to two weeks back monday
       : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
@@ -89,14 +95,14 @@ export default class Calendar extends Component {
     if (showOnlyFuture) {
       subTitleComp = (
         <h3 className="sub-title">
-          {events.total} events from {startDate.format('MMMM Do')}
+          {eventsTotalFromToday} events from {startDate.format('MMMM Do')} ({eventsTotal} total)
           <a className="show-more-or-less">show full year</a>
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
-          {events.total} events
+          {eventsTotal} events
           <a className="show-more-or-less">hide past</a>
         </h3>
       )
