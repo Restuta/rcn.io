@@ -1,4 +1,10 @@
+//favicons
 import 'public/img/favicon.ico'
+import 'public/img/apple-touch-icon-152x152.png'
+import 'public/img/apple-touch-icon-180x180.png'
+import 'public/img/safari-pinned-tab.svg'
+
+
 import 'utils/polyfills'
 import {
   render,

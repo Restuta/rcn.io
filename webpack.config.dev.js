@@ -59,7 +59,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
-      title: 'rcn.io',
+      title: 'rcn',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
       hash: false,
