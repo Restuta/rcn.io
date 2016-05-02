@@ -32,7 +32,7 @@ Today
 			+- make sure rendering works automatically when we can't figure out screen size: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
 			- refactor server
 			- setup home page
-			- setup analytics
+			+- setup analytics
 			+- setup Smooch
 			- favicon
 			- responsive card size based on landscape portrait

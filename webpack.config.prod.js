@@ -146,6 +146,10 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: 'svg-inline'
+    }, {
+      test: /\.(jpg|jpeg|gif|png|ico)$/,
+      exclude: /(node_modules|bower_components)/,
+      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
     }]
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough

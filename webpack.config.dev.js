@@ -135,8 +135,14 @@ module.exports = {
       include: path.join(consts.SRC_DIR, 'client')
     }, {
       test: /\.svg$/,
+      exclude: /(node_modules|bower_components)/,
       loader: 'svg-inline'
-    }]
+    }, {
+      test: /\.(jpg|jpeg|gif|png|ico)$/,
+      exclude: /(node_modules|bower_components)/,
+      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
+    }
+]
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px

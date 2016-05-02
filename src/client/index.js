@@ -1,3 +1,4 @@
+import 'public/img/favicon.ico'
 import 'utils/polyfills'
 import {
   render,
