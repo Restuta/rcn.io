@@ -23,10 +23,11 @@ a:focus,
 a:hover,
 a:active {
   outline: none;
+  color: $deep-purple-700;
 }
 
 a {
-  color: $blue-300;
+  color: $primary-color;
 }
 
 //so .fa iconst do not break vertical rythm

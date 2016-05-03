@@ -187,3 +187,22 @@ sub {
 .text-5 { @include text-5(); } //24
 .text-6 { @include text-6(); } //31
 .text-7 { @include text-7(); } //38
+
+.header-regular {
+  font-family: $body-font-family;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.w-300 {
+  font-weight: 300
+}
+.w-500 {
+  font-weight: 500
+}
+.w-700 {
+  font-weight: 700
+}
+.w-900 {
+  font-weight: 900
+}
