@@ -16,7 +16,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #1",
     "date": "January 31 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -38,7 +38,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #2",
     "date": "February 06 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -60,7 +60,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #3",
     "date": "February 20 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -71,7 +71,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #4",
     "date": "February 27 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -93,7 +93,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #5",
     "date": "March 12 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -126,7 +126,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #6",
     "date": "March 26 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -813,9 +813,9 @@ export default [
   {
     "id": "evt-c4dc6032859c19472f83ef3224305525",
     "discipline": "MTB",
-    "name": "CCCX Final",
+    "name": "CCCX #11 Final",
     "date": "August 21 2016",
-    "promoterUrl": "www.cccxcycling.com",
+    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
