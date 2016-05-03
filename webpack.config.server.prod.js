@@ -30,7 +30,7 @@ module.exports = {
     path: path.join(__dirname, 'dist-server'),
     filename: '[name].server.bundle.js',
     libraryTarget: 'commonjs2',
-    //publicPath: '/dist/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),

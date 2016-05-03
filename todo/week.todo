@@ -41,6 +41,7 @@ Today
 			!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
 			!- future events count is incorrect
 		--- after MTB release
+			- hosted graphite logo
 			- consider adding month label to every other week's sunday before day: Sunday is never minimized
 			- mark visited cards (store this in localStorage for now)
 			- show which card has Promoter URL and which one doesn't

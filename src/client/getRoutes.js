@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, Redirect, browserHistory, IndexRoute } from 'react-router'
 import App from './App'
 import Home from './Home'
 import Dev from './Dev'
@@ -22,7 +22,8 @@ export default (containerWidth) => {
         <IndexRoute component={Home} />
         <Route path="/dev" component={Dev} />
         <Route path="/cal" component={Cal} />
-        <Route path="/mtb" component={Mtb} />
+        <Route path="/calendars/norcal-mtb" component={Mtb} />
+        <Redirect from="/mtb" to="/calendars/norcal-mtb" />
         <Route path="*" component={Home}/>
       </Route>
     </Router>

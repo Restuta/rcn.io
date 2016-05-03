@@ -25,7 +25,7 @@ export default class TopNavbar extends Component {
                 </li>
               }
               <li className="nav-item">
-                <Link className="nav-link" activeClassName="nav-link-active" to={'/mtb'}>MTB</Link>
+                <Link className="nav-link" activeClassName="nav-link-active" to={'/calendars/norcal-mtb'}>MTB</Link>
               </li>
               {__ENV.Dev && //eslint-disable-line
                 <li className="nav-item">
