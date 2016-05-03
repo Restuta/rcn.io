@@ -2,15 +2,21 @@
 @import '../styles/mixins';
 
 .Home {
-  .auth0-badge {
+
+  .badge {
     position: absolute;
     bottom: 1rem;
+  }
+
+  .badge.auth0-badge {
     left: 1rem;
   }
 
-  .heap-analytics-badge {
-    position: absolute;
-    bottom: 1rem;
+  .badge.heap-analytics-badge {
     left: 22rem;
+  }
+
+  .badge.jaco-analytics-badge {
+    left: 38rem;
   }
 }
