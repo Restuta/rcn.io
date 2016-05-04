@@ -13,7 +13,7 @@ export default class Home extends Component {
         <section className="section-main">
           <h1 className="header-regular">RCN.io</h1>
           <h2 className="header-regular w-500">
-            Home for all <Link to={'/calendars/norcal-mtb'}>MTB evetns</Link>, both USAC and non-USAC ones.
+            Home for all <Link to={'/calendars/norcal-mtb'}>MTB events</Link>, both USAC and non-USAC ones.
           </h2>
         </section>
 
