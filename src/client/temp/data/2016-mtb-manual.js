@@ -739,6 +739,156 @@ export default [
     "zip": "95405"
     }
   },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "April 6 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "April 13 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "April 20 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "April 27 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "May 4 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "May 11 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "May 25 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "June 1 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "June 8 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Prairie City Race",
+  "date": "June 15 2016",
+  "promoterUrl": "http://www.racemtb.com/Registration.htm",
+  "registrationUrl": "https://timeyourrace.com/PCRS/RegMain.asp",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "13300 White Rock Road",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "zip": "95742"
+    }
+  }
 ]
 
 /*
