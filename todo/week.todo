@@ -30,17 +30,21 @@ Today
 				-- invstigate why it builds fast with current ones
 			+- figure out on the server screen size (mobile/non-mobile)
 			+- make sure rendering works automatically when we can't figure out screen size: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
-			- refactor server
-			- setup home page
+			+- refactor server
+			+- setup home page
 			+- setup analytics
 			+- setup Smooch
 			+- favicon
 			.-(not sure what is it) responsive card size based on landscape portrait
 			- setup 404
-			- setup proper URLs
+			+- setup proper URLs
 			!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
 			!- future events count is incorrect
 		--- after MTB release
+			-- deployments
+				- move production branch to master
+				- setup stage environment
+				- configure Segment to use different app ids for HEAP for dev/prod
 			- hosted graphite logo
 			- consider adding month label to every other week's sunday before day: Sunday is never minimized
 			- mark visited cards (store this in localStorage for now)
@@ -51,6 +55,7 @@ Today
 			- Events todo:
 				//TODO: memoize calculated totals since collection is immutable
 				//TODO: get total before date
+			- extract wendor to DLL: http://engineering.invisionapp.com/post/optimizing-webpack/ this can speed up incremental builds even more
 		- change Promoter in event data from string to object: name, url, etc
 		- re-use RoundBadge in calendar
 		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px

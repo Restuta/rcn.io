@@ -109,7 +109,7 @@ module.exports = {
       pathToReact,
       pathToReactDOM,
       pathToReactRouter,
-      pathToMomentJs
+      pathToMomentJs,
     ],
     loaders: [{
       test: pathToReactDOM,
@@ -121,9 +121,7 @@ module.exports = {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
-      include: [
-        path.join(consts.SRC_DIR, 'client'),
-      ],
+      include: path.join(consts.SRC_DIR, 'client'),
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,
@@ -149,6 +147,7 @@ module.exports = {
     }, {
       test: /\.(jpg|jpeg|gif|png|ico)$/,
       exclude: /(node_modules|bower_components)/,
+      include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
     }]
   },

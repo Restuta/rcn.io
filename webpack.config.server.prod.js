@@ -100,10 +100,12 @@ module.exports = {
       include: path.join(consts.SRC_DIR, 'client')
     }, {
       test: /\.svg$/,
-      loader: 'svg-inline'
+      loader: 'svg-inline',
+      include: path.join(consts.SRC_DIR, 'client')
     }, {
       test: /\.(jpg|jpeg|gif|png|ico)$/,
       exclude: /(node_modules|bower_components)/,
+      include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
     }]
   },

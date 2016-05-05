@@ -561,7 +561,7 @@ export default [
     "permit": "2016-1593",
     "name": "The Rockhopper Classic",
     "date": "June 05 2016",
-    "promoterUrl": "http://www.monticellocycling.com",
+    "promoterUrl": "http://www.monticellocycling.com/rockhopper-classic/",
     "registrationUrl": "https://timeyourrace.com/Rockhopper/RegMain.asp",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1593",
     "location": {
