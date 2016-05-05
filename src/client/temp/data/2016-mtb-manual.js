@@ -888,6 +888,21 @@ export default [
     "state": "CA",
     "zip": "95742"
     }
+  },
+  {
+  "discipline": "MTB",
+  "permit": "",
+  "name": "Cool Mountain Bike Race",
+  "date": "March 19 2016",
+  "promoterUrl": "http://www.coolmountainbikerace.com/location/",
+  "registrationUrl": "https://www.bikereg.com/cool-mountain-bike-race",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "Old Foresthill Road",
+    "city": "Auburn",
+    "state": "CA",
+    "zip": "95603"
+    }
   }
 ]
 
