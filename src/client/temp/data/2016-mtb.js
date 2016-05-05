@@ -273,20 +273,6 @@ export default [
     }
   },
   {
-    "id": "evt-6cbba2dda7e63e34fc0e78185442c6d0",
-    "discipline": "MTB",
-    "permit": "2016-1049",
-    "name": "Nevada City Dirt Classic #2",
-    "date": "May 7 2016",
-    "promoterUrl": "http://ybonc.org/events/dirt-classic/",
-    "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
-    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
-    "location": {
-      "city": "Nevada City",
-      "state": "CA"
-    }
-  },
-  {
     "id": "evt-03a41d5245da1537f4c93cff73d11bd3",
     "discipline": "MTB",
     "name": "Race Behind Bars #1",
@@ -396,20 +382,6 @@ export default [
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
-      "state": "CA"
-    }
-  },
-  {
-    "id": "evt-5017c0cdb5f5d13c528730ed4bb42025",
-    "discipline": "MTB",
-    "permit": "2016-1049",
-    "name": "Nevada City Dirt Classic #3",
-    "date": "May 15 2016",
-    "promoterUrl": "http://ybonc.org/events/dirt-classic/",
-    "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
-    "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
-    "location": {
-      "city": "Nevada City",
       "state": "CA"
     }
   },
