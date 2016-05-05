@@ -31,6 +31,9 @@
     .content-left {
       display: flex;
     }
+    a.navbar-logo {
+      text-decoration: none;
+    }
     .navbar-logo {
       display: flex; //required for svg to display correctly
       margin-right: 1rem;
@@ -39,13 +42,20 @@
       @include text-3();
       margin-top: 1rem;
       margin-bottom: 0;
+      margin-left: 1rem;
       color: $grey-500;
       font-weight: 300;
       padding-left: 1rem;
       border-left: 1px solid $grey-300;
+
+      &:hover {
+        text-decoration: none;
+        color: $body-color;
+      }
     }
   }
 
+  .nav-link,
   .navbar-nav .nav-link {
     @include text-3();
     transition: color ease 0.2s;
@@ -60,6 +70,7 @@
       color: black;
     }
   }
+
   .navbar-nav .nav-link.faded {
     color: $grey-300;
     &:hover {

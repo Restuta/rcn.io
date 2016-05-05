@@ -13,8 +13,9 @@ export default class TopNavbar extends Component {
       <nav className={classNames}>
         <div className="content">
           <div className="content-left">
-            <IndexLink className="navbar-logo" to={'/'}><Logo /></IndexLink>
-            <div className="navbar-brand-description">RCN</div>
+            <IndexLink className="navbar-logo" to={'/'}>
+              <Logo /><div className="navbar-brand-description">RCN</div>
+            </IndexLink>
             <HeadwayChangelog />
           </div>
           <div className="content-right">
