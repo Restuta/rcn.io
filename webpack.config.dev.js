@@ -10,6 +10,7 @@ const pathToReact = nodeModules('react/dist/react.js')
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentJs = nodeModules('moment/moment.js')
+const pathToMomentTimeZone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.js')
 
 //const pathToMomentJs = nodeModules('moment/min/moment.min.js')
 
@@ -30,8 +31,8 @@ module.exports = {
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'classnames',
-      'react-pure-render', 'svg-inline-react'
+    vendor: ['react', 'react-dom', 'react-router', 'moment', 'moment-timezone',
+      'classnames', 'react-pure-render', 'svg-inline-react'
     ]
   },
   output: {
@@ -79,7 +80,8 @@ module.exports = {
       'react': pathToReact,
       'react-dom': pathToReactDOM,
       'react-router': pathToReactRouter,
-      'moment': pathToMomentJs
+      'moment': pathToMomentJs,
+      'moment-timezone': pathToMomentTimeZone
     }
   },
   module: {
@@ -90,7 +92,8 @@ module.exports = {
       pathToReact,
       pathToReactDOM,
       pathToReactRouter,
-      pathToMomentJs
+      pathToMomentJs,
+      //pathToMomentTimeZone //uses "require()", so can't be ignored
     ],
     loaders: [{
       test: pathToReactDOM,

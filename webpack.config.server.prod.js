@@ -13,6 +13,7 @@ const pathToReact = nodeModules('react/dist/react.min.js')
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentJs = nodeModules('moment/min/moment.min.js')
+const pathToMomentTimeZone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
 
 module.exports = {
@@ -65,7 +66,8 @@ module.exports = {
       'react': pathToReact,
       'react-dom': pathToReactDOM,
       'react-router': pathToReactRouter,
-      'moment': pathToMomentJs
+      'moment': pathToMomentJs,
+      'moment-timezone': pathToMomentTimeZone
     }
   },
   module: {
@@ -76,7 +78,8 @@ module.exports = {
       pathToReact,
       pathToReactDOM,
       pathToReactRouter,
-      pathToMomentJs
+      pathToMomentJs,
+      //pathToMomentTimeZone //uses "require()", so can't be ignored
     ],
     loaders: [{
       test: /\.(js|jsx?)$/,
