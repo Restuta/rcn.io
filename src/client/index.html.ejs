@@ -70,7 +70,7 @@
       }).call(window, window, document), window.JacoRecorder.push([ "init", "e1752530-e6fd-42a0-a902-206b11a7f79e", {} ]);
 
       <% if (htmlWebpackPlugin.options.env.Dev) { %>
-          //Associate this session to some@example.com
+          //Associate this session to local@development.com so we dont pollute other sessions
           window.JacoRecorder.identify('local@development.com');
       <% } %>
     </script>
