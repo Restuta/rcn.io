@@ -39,7 +39,7 @@ Today
 			- setup 404
 			+- setup proper URLs
 			!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
-			!- future events count is incorrect
+			+!- future events count is incorrect
 		--- after MTB release
 			-- deployments
 				- move production branch to master
