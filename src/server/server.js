@@ -5,6 +5,8 @@ import morgan from 'morgan'
 import fs from 'fs'
 import device from 'express-device'
 import consts from '../../webpack/constants'
+import ms from 'ms'
+import mime from 'mime-types'
 
 import React from 'react'
 import { renderToString } from 'react-dom/server'
@@ -26,7 +28,28 @@ const app = express()
 app.disable('x-powered-by') //hides that we use express
 app.use(compression()) // should be first middleware
 app.use(morgan(Config.morganLogType))
-app.use(express.static(path.join(RootDir, '/dist')))
+app.use(express.static(path.join(RootDir, '/dist'), {
+  maxAge: '14 days',
+  //overriding cache control per-resourse
+  setHeaders: (res, path, stat) => {
+    const mimeType = mime.lookup(path)
+    const cssAndJsMaxAge = ms('14 days') / 1000 //max age shuuld be in seconds
+
+    if (mimeType === 'text/css') {
+      res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
+    } else if (mimeType === 'application/javascript') {
+      if (path.endsWith('vendor.bundle.js')) {
+        //vendor scripts can be "public" and cached by intermediate caches
+        res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
+      } else {
+        //non-vendor scripts can contain sensitive information and should not be cached by intermediate caches
+        res.setHeader('Cache-Control', `private, max-age=${cssAndJsMaxAge}`)
+      }
+    }
+  }
+}))
+
+
 app.use(device.capture({parseUserAgent: true}))
 
 const Wrapper = (props) => {
@@ -58,8 +81,7 @@ const getContainerWidth = (deviceType) => {
 
 
 let cache = {}
-const ONE_MINUTE = 1000 * 60
-const CACHE_DURATION = ONE_MINUTE * 10
+const CACHE_DURATION = ms('10m')
 
 setInterval(() => {
   cache = {}
