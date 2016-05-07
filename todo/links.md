@@ -77,6 +77,10 @@
 * [Dream Icons](http://dreamicons.net/#charitable) - 💰$10 for charity
 
 ### Colors
+* [Marevel Colors](https://marvelapp.com/styleguide/design/color-scheme)
+
+--
+
 * [lolcolors.com](http://www.lolcolors.com/) - curated palettes
 * [colourco.de](http://colourco.de/)
 * [htmlcolorcodes.com](http://htmlcolorcodes.com/) - a lot about color, beautiful site
@@ -164,6 +168,7 @@
 ### Scraping
 * [Kimonolabs](https://www.kimonolabs.com/) - turns websites into API in seconds
 * [import.io](https://import.io/advanced-data-platform) - Extract Live Data or Crawl Entire Websites in Seconds
+* [Nightmare and Daydream from Segment](https://github.com/segmentio/daydream)
 
 ### Deployment and build
 * [CodeShip](https://codeship.com/pricing)
