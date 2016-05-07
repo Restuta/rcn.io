@@ -1,0 +1,133 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/bs4-fixes';
+
+.Day {
+
+  $today-circle-color: rgba(247, 118, 143, 1);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+
+  padding-bottom: 1rem;
+  border-left: pxToRem(1) solid $grey-300;
+  background-color: $grey-50;
+
+  transition: background-color ease 0.2s;
+
+  &-date {
+    @include text-3();
+    font-weight: 500;
+    font-size: pxToRem(14);
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    color: $grey-500;
+    top: pxToRem(6);
+    line-height: 2rem;
+    max-height: 2rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    // margin-top: 1.25rem;
+    // margin-bottom: 1.75rem;
+  }
+
+  &-special {
+    .Day-date {
+    }
+  }
+  &:hover {
+    background-color: $grey-100;
+  }
+
+  &:last-of-type  {
+    border-right: pxToRem(1) solid $grey-300;
+  }
+
+  &-current-month {
+    background-color: darken($grey-100, 1%);
+
+    .Day-date {
+      color: $grey-700;
+    }
+  }
+
+  &-today {
+    background-color: rgba(247, 118, 143, 0.1);
+
+    //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
+
+    .Day-date-wrapper {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      white-space: nowrap;
+
+      position: relative;
+      right: pxToRem(-3); //to compensate shift from padding
+      top: pxToRem(-4);
+
+      color: $body-bg-color;
+      background: $today-circle-color;
+    }
+  }
+
+  &-today.today-narrow {
+    .Day-date-wrapper {
+      background: none;
+      color: $today-circle-color;
+      font-weight: 900;
+      top: pxToRem(-1);
+    }
+  }
+
+  .day-of-month-label {
+    margin: 0;
+    line-height: 2rem;
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    top: pxToRem(-1);
+    font-size: pxToRem(15);
+  }
+
+  @media (max-width: map-get($grid-breakpoints, "md")) {
+    .Day-date {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      font-size: pxToRem(11);
+    }
+
+    &-today .Day-date-wrapper {
+      width: pxToRem(18);
+      height: pxToRem(18);
+      right: pxToRem(-2); //to compensate shift from padding
+      top: pxToRem(-2);
+    }
+
+    .day-of-month-label {
+      font-size: pxToRem(11);
+      top: pxToRem(-1);
+    }
+  }
+
+  .day-of-month-label.first {
+
+  }
+
+  .day-of-month-label.last {
+    color: $grey-500;
+  }
+
+
+}

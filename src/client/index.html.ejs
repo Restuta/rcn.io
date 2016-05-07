@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plan your racing season. Discover rides and races in your area.">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- favicons for different platforms -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=1">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons for different platforms -->
+
+    <!-- Loading Typekit fonts -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'hhr5oip',
+          scriptTimeout: 3000,
+          async: true,
+          loading: function() {
+            window.typekitLoadingStarted = +new Date()
+            console.log('    Fonts are loading...')
+          },
+          active: function() {
+            var timeToLoadFonts = (+new Date()) - window.typekitLoadingStarted
+            console.log('    Fonts are loaded in  ' + timeToLoadFonts + 'ms')
+          },
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+
+    <!-- segment.com loads HEAP, GA and Driffft -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+        analytics.load('FwzeWVaBbHtgwd5EMoih57IDk4nN7834');
+        analytics.page()
+      }}();
+    </script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <% if (htmlWebpackPlugin.options.env.Prod) { %>
+      <!-- getjaco.com recordings -->
+      <script type="text/javascript">
+        (function(e, t) {
+            function r(e, t) {
+                e[t] = function() {
+                    e.push([ t ].concat(Array.prototype.slice.call(arguments, 0)));
+                };
+            }
+            var n = "JacoRecorder";
+            (function(e, t, i, s) {
+                if (!i.__VERSION) {
+                    e[n] = i;
+                    var o = [ "init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo" ];
+                    for (var u = 0; u < o.length; u++) r(i, o[u]);
+                    i.__VERSION = .9, i.__INIT_TIME = 1 * new Date;
+                    var a = t.createElement("script");
+                    a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = s;
+                    var f = t.getElementsByTagName("head")[0];
+                    f.appendChild(a);
+                }
+            })(e, t, e[n] || [], "//recorder-assets.getjaco.com/recorder.js");
+        }).call(window, window, document), window.JacoRecorder.push([ "init", "e1752530-e6fd-42a0-a902-206b11a7f79e", {} ]);
+      </script>
+    <% } %>
+
+  </head>
+  <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
+    data-grid-gutterwidth="16px" data-grid-nbcols="14">
+    <div id='root'>
+    </div>
+    <!-- <script src="vendor.bundle.js"></script>
+    <script src="app.bundle.js"></script> -->
+
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+      <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+    <!-- Headway changelog -->
+    <script>
+      var HW_config = {
+        selector: '.HeadwayChangelog', // CSS selector where to inject the badge
+        account: 'a7zwXJ' // your account ID
+      };
+    </script>
+    <script async src="//cdn.headwayapp.co/widget.js"></script>
+  </body>
+</html>

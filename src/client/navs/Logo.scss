@@ -1,0 +1,18 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
+
+.Logo {
+  width: 2.5rem;
+  height: 4rem;
+
+
+  path {
+    fill: $grey-400 !important;
+    transition: fill 0.2s;
+  }
+
+  &:hover path {
+    fill: $body-color !important;
+  }
+}

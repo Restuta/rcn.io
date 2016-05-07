@@ -1,0 +1,10 @@
+@import "mixins";
+@import "variables";
+
+.Icon.material-icons {
+  line-height: 2rem;
+  max-width: 2rem;
+
+  font-size: 2rem;
+  color: $grey-500;
+}

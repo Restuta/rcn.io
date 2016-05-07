@@ -1,0 +1,85 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
+@keyframes fade-down {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.TopNavbar {
+  animation: fade-down 2s 1;
+
+  //@include box-shadow-lvl-0();
+  //@include box-shadow-like-slack();
+  background-color: $body-bg-color;
+  margin-bottom: 0;
+  padding: 2rem 3vw;
+  display: flex;
+  justify-content: center;
+  min-height: 8rem;
+  max-height: 8rem;
+
+  //debug
+  //  opacity: 0.7;
+  //  outline: 1px solid $grey-600;
+
+  .content {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    .content-left {
+      display: flex;
+    }
+    a.navbar-logo {
+      text-decoration: none;
+    }
+    .navbar-logo {
+      display: flex; //required for svg to display correctly
+      margin-right: 1rem;
+    }
+    .navbar-brand-description {
+      @include text-3();
+      margin-top: 1rem;
+      margin-bottom: 0;
+      margin-left: 1rem;
+      color: $grey-500;
+      font-weight: 300;
+      padding-left: 1rem;
+      border-left: 1px solid $grey-300;
+
+      &:hover {
+        text-decoration: none;
+        color: $body-color;
+      }
+    }
+  }
+
+  .nav-link,
+  .navbar-nav .nav-link {
+    @include text-3();
+    transition: color ease 0.2s;
+    //margin-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    color: $grey-600;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .navbar-nav .nav-link.faded {
+    color: $grey-300;
+    &:hover {
+      color: $grey-700;
+    }
+  }
+
+  .navbar-nav .nav-link.nav-link-active {
+    border-bottom: pxToRem(3) solid $primary-color;
+    color: $grey-600;
+  }
+}

@@ -1,0 +1,76 @@
+// **************************************************
+// **************************************************
+//baseline and grid overlay
+@import 'variables';
+@import 'bs4-overrides';
+
+$base-line-opacity: .4;
+//$base-line-opacity: .25;
+$show-baseline: true;
+$show-secondary-baseline: false; //doesn't work for 14px base size
+$show-container-edges: true;
+
+@if $show-container-edges {
+  $grid-outline-blue: hsla(200, 100%, 50%, .1);
+  $grid-outline-green: hsla(87, 91%, 42%, .2);
+
+  .debug-container .container {
+    //outline of containter
+    box-shadow:
+      //outline external space (not a margin really)
+      20px 0px 0px $grid-outline-blue, -20px 0px 0px $grid-outline-blue,
+      //outline paddings
+      inset ($grid-gutter-width/2) 0px 0px $grid-outline-green,
+      inset (0-$grid-gutter-width/2) 0px 0px $grid-outline-green;
+  }
+}
+
+//allows to see guidelines
+.row {
+    //opacity: 0.6;
+}
+
+//column debug styles
+.col.debug {
+  min-height: $line-height-rem;
+}
+.margin-top {
+  margin-top: $line-height-rem;
+}
+
+@function pxToRem($numberOfPx) {
+  @return ($numberOfPx / getBaseFontSize()) + 0rem;
+}
+
+.col.pink {
+  background-color: lighten(lightpink, 11%) !important;
+}
+
+$col-brdr-color: $grey-350;
+$col-border-wdith: 1;
+$col-border: pxToRem($col-border-wdith) solid $col-brdr-color;
+
+.WeekExample .margin-top {
+  margin-top: $half-line-height-rem;
+}
+
+.WeekExample .margin-bot {
+  margin-bottom: ($line-height-rem) - pxToRem($col-border-wdith);
+}
+
+.col.outlined {
+  //background-color: white;
+  //outline: $col-border;
+
+  border-right: $col-border;
+  border-top: $col-border;
+  border-bottom: $col-border;
+}
+
+.debug-flex-cards {
+  display: flex;
+  align-items: flex-start;
+
+
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+@import '../styles/variables';
+
+//overriding defaults
+
+
+.Checkbox.c-input {
+  padding-left: $font-size-3 * 1.5;
+}
+
+.Checkbox.c-input + .c-input {
+  margin-left: $font-size-3;
+}
+
+.Checkbox.c-input.c-checkbox {
+  display: inline-block;
+  margin-bottom: 0;
+
+  .c-indicator {
+    line-height: inherit;
+    width: $font-size-3;
+    height: $font-size-3;
+    font-size: inherit;
+  }
+}

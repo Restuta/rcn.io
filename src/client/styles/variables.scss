@@ -1,0 +1,140 @@
+//colors (update matching ones in colors.js)
+//number at the end means level of darkness =)
+$grey-50: #FAFAFA;
+$grey-100: #F5F5F5;
+$grey-200: #EEEEEE;
+$grey-300: #E0E0E0;
+$grey-350: #D3D3D3; //lightgrey
+$grey-400: #BDBDBD;
+$grey-500: #9E9E9E;
+$grey-600: #757575;
+$grey-700: #616161;
+$grey-800: #424242;
+$grey-900: #2F2F2F;
+
+
+$blue-grey-50: #ECEFF1;
+$blue-grey-100: #CFD8DC;
+$blue-grey-200: #B0BEC5;
+$blue-grey-300: #90A4AE;
+$blue-grey-400: #78909C;
+$blue-grey-500: #607D8B;
+$blue-grey-600: #546E7A;
+$blue-grey-700: #455A64;
+$blue-grey-800: #37474F;
+$blue-grey-900: #263238;
+
+$blue-50: #E3F2FD;
+$blue-100: #BBDEFB;
+$blue-200: #90CAF9;
+$blue-300: #64B5F6;
+$blue-400: #42A5F5;
+$blue-500: #2196F3;
+$blue-600: #1E88E5;
+$blue-700: #1976D2;
+$blue-800: #1565C0;
+$blue-900: #0D47A1;
+
+
+$deep-purple-50: #EDE7F6;
+$deep-purple-100: #D1C4E9;
+$deep-purple-200: #B39DDB;
+$deep-purple-300: #9575CD;
+$deep-purple-400: #7E57C2;
+$deep-purple-500: #673AB7;
+$deep-purple-600: #5E35B1;
+$deep-purple-700: #512DA8;
+$deep-purple-800: #4527A0;
+$deep-purple-900: #311B92;
+
+
+$body-color: #333;
+//$body-bg-color: #F6F6F6;
+$body-bg-color: #FCFCFC;
+$primary-color: $deep-purple-400;
+
+
+$brown-mud: '#A0522D';
+$brown-mud-dimmed: 'rgba(160,82,45,0.50)';
+
+$brown-50: #EFEBE9;
+$brown-100: #D7CCC8;
+$brown-200: #BCAAA4;
+$brown-300: #A1887F;
+$brown-400: #8D6E63;
+$brown-500: #795548;
+$brown-600: #6D4C41;
+$brown-700: #5D4037;
+$brown-800: #4E342E;
+$brown-900: #3E2723;
+
+
+
+@function getBaseFontSize() {
+  /* rcn baseline works by setting the root font-size as half the line-height of the standard paragraph text. The height of the baseline grid
+   is then effectively set at 2rem, with increments at each 1rem. This makes it nice and easy to work proportionally from the baseline with
+   integer rem values to create harmony in your layout and typography. This is based off a technique for setting text in print documents. */
+
+
+  //change in typography.js also
+  @return 8;
+}
+
+@function pxToRem($px) {
+  @return $px / getBaseFontSize() + 0rem;
+}
+
+
+@function getScale() {
+  @return 1.25; //for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
+}
+
+@function scaleUp($number) {
+  $scale: getScale();
+  $base-font-size: getBaseFontSize(); //plain number to use in calculation and not to mess with px to rem convertion
+
+  $size: $base-font-size;
+
+  $number: $number + 1;
+
+  @if $number == 1 {
+    @return (round($size) / $base-font-size) + 0rem;
+  }
+
+  @for $i from 1 through $number - 1 {
+    $size: $size * $scale;
+  }
+
+  $size-rems: (round($size) / $base-font-size) + 0rem;
+  @return $size-rems;
+}
+
+//this is a hack, since SASS doesn't have standard locally scoped variables, defining a pseudo
+//class "local-scope", all variables inside it are local, except onse marked with "!gloabal" flag
+.local-scope {
+  //$line-height: 1.28571428;
+  //$base-line: round(getBaseFontSize() * $line-height);
+  //calculating ideal height in rems, but that rounds nicely to pixels
+  //$line-height-rem: ($base-line / getBaseFontSize()) + 0rem;
+  $line-height-rem: 2rem !global; //hardcoing
+}
+
+$half-line-height-rem: $line-height-rem / 2;
+
+
+// $body-font-family: 'Lato', Helvetica, Arial, sans-serif;
+// $headings-font-family: 'Oswald', sans-serif;
+
+$body-font-family: 'museo-sans', Helvetica, Arial, sans-serif;
+$headings-font-family: 'museo-sans-condensed', sans-serif;
+
+
+
+//calculating small (one step down from base) font size
+$font-size-1: scaleUp(1);
+$font-size-2: scaleUp(2);
+$font-size-3: scaleUp(3);
+$font-size-4: scaleUp(4);
+$font-size-5: scaleUp(5);
+$font-size-6: scaleUp(6);
+$font-size-7: scaleUp(7);

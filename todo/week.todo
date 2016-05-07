@@ -1,38 +1,95 @@
 Today
- - build a grid
- 	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
- 	+- pick number of columns and gutter size
- 	+- see if we should use fluid ui
- 	+- consider use of all 16 columns for g (more space for cards)
- +-- build basic Bootstrap components
- 	+- row
- 	+- column
- 	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
-
- - setup typographic scale
- 	+- setup body scale
- 	+- setup header scale
- 	+- combine two above scales into one
- 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
- 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
- 	using_the_golden_ratio_with_typography
- 	+- try with font's selected: text-rendering: optimizeLegibility;
- 		+- on fonts branch
- 		+- lato specifically
- 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
  - setup icons
  	- pick icons
  	- set them up
  -- CSS
- 	- comile bootstrap and use compiled version
- 	- add Autoprefixer: for prod?
- 	- extract boostrap to separate branch/folder so we can tweak, compile and reuse
- 	- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
- 	- setup PostCSS with SASS-like plugins
- 		- compare compilation time to SASS
- 	- add Autoprefixer
+ 	+- comile bootstrap and use compiled version
+ 	+- add Autoprefixer: for prod? (maybe covered as part of webpck)
+ 	+- extract boostrap to separate branch/folder so we can tweak, compile and reuse
+ 		+- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ 	+- setup PostCSS with SASS-like plugins
+ 		+- compare compilation time to SASS
+--- Calendar
+	---- idea - Doubling Columns: consider doubling number of columns for more granular control on calendar column width
+	---- idea - Relative orientation on the side: relative orientation in days/month on the side (see branch calendar.relative-dates-on-the-side)
+	+---- idea - Total Upcoming Events: display "upcoming events" count along with "total events" under calendar name
+	---- idea - Collapsed mode for Past Events: use automatic height for events in the past (http://screencast.com/t/Fxq74ZzNxdGl) this would save space for non-important events that passed, we may want to make the "collapsible", click to expand-collapse
+	---- idea - Collapsed mode for past empty Weeks: set past empty weeks to minimal height possible
+	+----- bug : on small sizes weekday names do not fit, e.g. "MON" becomes to wide
+	----- bug: on small sizes weekdays need to adapt as well as crads, when "TODAY" is during weekday it pushes content out of edges
+	----- bug: http://screencast.com/t/2KaJTM9RujmR when Last/First day of month happens to be "TODAY"
+		- how to fix: leave TODAY for large sizes and use circled day for the rest like Apple Calendar does
+	-- Scroll
+		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
+	
+	!----- immediate todo
+		+- rename index1.html to something meaningful
+		--- MTB release
+			-- make sure public path is correct so we can see source maps in prod
+			+- revert webpack.prod config to real prod settings
+				-- invstigate why it builds fast with current ones
+			+- figure out on the server screen size (mobile/non-mobile)
+			+- make sure rendering works automatically when we can't figure out screen size: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
+			+- refactor server
+			+- setup home page
+			+- setup analytics
+			+- setup Smooch
+			+- favicon
+			.-(not sure what is it) responsive card size based on landscape portrait
+			- setup 404
+			+- setup proper URLs
+			!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
+			+!- future events count is incorrect
+		--- after MTB release
+			-- deployments
+				- move production branch to master
+				- setup stage environment
+				- configure Segment to use different app ids for HEAP for dev/prod
+			- hosted graphite logo
+			- consider adding month label to every other week's sunday before day: Sunday is never minimized
+			- mark visited cards (store this in localStorage for now)
+			- show which card has Promoter URL and which one doesn't
+			- show USAC non USAC events
+			- test and set up Sentry as discribed here https://github.com/getsentry/demo-express/blob/master/index.js
+			- create Footer component
+			- Events todo:
+				//TODO: memoize calculated totals since collection is immutable
+				//TODO: get total before date
+			- extract wendor to DLL: http://engineering.invisionapp.com/post/optimizing-webpack/ this can speed up incremental builds even more
+		- change Promoter in event data from string to object: name, url, etc
+		- re-use RoundBadge in calendar
+		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
+		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
+			- consider Recompose: https://github.com/acdlite/recompose
+		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+		+- container edges are broken (after reaload checkbox is not honored)
+		+- re-consider card width calculations
+			+- center cards within day of week using flexbox
+			+- currently they are exact, which causes painful rounding erros and misalignments
+				+-- possible solusions
+					+- use 100% for width
+					+- substract 1-2px so visually cards occupy same space
+		-- decapitalize ALL CAPS events, make them sentence case					
+		- test layout for multiple events at the same day, but different sizes of cards
+		- test layout with variable height of events, so we don't waste vertical space
+		- size 4 may not make sense on XL screen: stick to 3?
+		- try and see if longest event fits all sizes and manually adjust text size
+		- change base font size to 6 or 7 for x-small screens
+			- test in on mobile
+		- experiment with ReactSticky header 4.0
+			- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
+
+
  	--- design a card UI
+ 		-- ideas
+ 			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
+ 			but horizontal, it's also super nice that it moves on hower
  		!----- immediate todo
+ 			- update to https://github.com/gaearon/react-hot-boilerplate/pull/61
+ 			- use material design colors and play with not as prominent colors as they are currently 
+ 			- move Event.jsx paddings calculations to SCSS and assign classes by size of the card: currently only
+ 			- for small columns of size 1 consider setting height to double of actual to fit more, since we always have space there
+ 			text is supported
  			+--- figure out ideal heith based on baselines
  			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
  			+- round height to nearest multiple of line height
@@ -41,7 +98,7 @@ Today
  			- //TODO bc: explain this formula (const cardHeightRem = width * baseHeight - width - 1 )
  			+-- rewrite calculation of card heights using formula
  			+-- try 1.7777 vs 1.5 card ratios
- 			- adaptive Event card or different components?: what is easier to maintain?
+ 			+- adaptive Event card or different components?: what is easier to maintain?
  				+- e.g. we need to show UI of the card differently based on size: the sizes can be pre-defined though
  					+- text should be moved down proprotionally to card size
  					+- try Roboto Condensed
@@ -49,7 +106,7 @@ Today
  					+- try Oswald
  			+- set assymetric padding (less on the sides, more from top to preserve the rythm)
  			- try Google Material Card design layout: https://www.google.com/design/spec/components/cards.html#cards-content-blocks
- 			- adopt flexbox
+ 			+- adopt flexbox
  			+- play with vh vw (veiwport related sizes) for card size
  			- create variations with text shadow on badges: text-shadow: 0 1px 0 rgba(0,0,0,.2);
  			-- create a 1-2 line card design, so we can show non-important events for imporant days this way: 
@@ -57,7 +114,7 @@ Today
  				- inspiration can be taked from TargetProcess: http://screencast.com/t/HpOkrTbi4ot
  			- create variation with different width of left colorful section (used to show event type)
  				- try really wide option that would also group event-type specific information: e.g. distance for RR, duration for crit, etc (http://screencast.com/t/ABpTSbxzP)
- 			- see dribble for Card UI inspiration
+ 			+- see dribble for Card UI inspiration
  		+- if calendar is going to take the whole page space, rethink 16 columns (this is easy)
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
@@ -68,23 +125,26 @@ Today
  			----- bug: overlay is shown when text doesn't actually have more lines left
  			----- bug: overlay is shown all the time, event when text is super-short
  			-- idea 2: make cards to take more vertical space
- 			-- idea 3: make text smaller
+ 				- :( breaks alignment
+ 			+-- idea 3: make text smaller
  			-- idea 4: fade text vertically, top to bottom, this makes it more obvious that there is more to read
- 			--- idea 5: try monspace font like so it's easy to calculate exact text length
+ 			+--- idea 5: try monspace font like so it's easy to calculate exact text length
  				- options on Google Fonts:
  					- Roboto Mono (10 variations nice!, 13px point size for 10px font)
  					- Inconsolata (2 variations, but more condensed, 16px point size for 10px font)
  					- Source Code Pro (7 variations, 13px point size for 10px font)
  					- Fira Mono (2 variations, 16px point size for 10px font)
+ 					.- (tried it looks not as good as Lato)
  			- it would be nicer to have overlay + "..."
  		- for one-column cards try really small text size: better then nothing
  		-- what if we go Apple Watch Style for card UI: e.g. we can use space more efficiently if we show circles around circles http://screencast.com/t/JajByOsfhtm
+
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 After Boilerplate setup
-	- setup Plop to generate filest faster: https://github.com/amwmedia/plop
+	- setup Plop to generate files faster: https://github.com/amwmedia/plop
 	- setup Git worflow effective for our team
 		- proposed setup 1 (Github Flow):
 			= leave master as production branch
@@ -104,8 +164,8 @@ After Boilerplate setup
 	-- atoms (UI)
 	-- webpack
 		- setup url loader (see etse)
-		- extract text plugin for CSS for prod
-		- autoprefixer
+		+- extract text plugin for CSS for prod
+		+- autoprefixer
 		- Scoping hot loader only to components directory: see if it's even an option and if it would speed up incremental rebuild times as mentioined here https://github.com/webpack/webpack/issues/1574
 		- investigate if css-loader makes a difference: https://github.com/webpack/css-loader/issues/124
 			- css-loader url=false (for dev?): https://github.com/jtangelder/sass-loader/issues/176#issuecomment-151565911
@@ -115,11 +175,7 @@ After Boilerplate setup
 	- consider "react-document-title" package
 	-- Redux
 		- condiser simpler actions as next step: https://github.com/pauldijou/redux-act
-	-- server
-	    - setup server side rendering like in este
-			- este uses react component to render HTML document called 'html.react.js'
-		- setup server for API and hot reload combined (like estejs)
-		- setup compression middleware (like estejs)
+	-- server	
 		- make sure hot reloading server is not runing on prod
 		- setup Relay and GraphQL from examples
 		- setup logging and colorful logger
@@ -128,36 +184,84 @@ After Boilerplate setup
 		-- Setup Relay
 			- example: https://github.com/fortruce/relay-skeleton
 	- setup other react stuff from este.js
-			- make all components pure
-			- figure out how to make function component pure
-
-After After Boilerplate =)
-	- figure out how to make Funtional Components Pure (pure Render mixin?)
-	- move webpack config to be ES6
-	-- play with Browserify, this claims it super-fast for rebuilding: http://christianalfoni.github.io/javascript/2014/08/29/choosing-the-correct-packaging-tool-for-react-js.html
-		- hot-reload: https://github.com/milankinen/livereactload
-		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
+		+- make all components pure
+		- figure out how to make function component pure
 
 
 Pre-production
+-- SEO
+	- meta-tags
+		- look around in general e.g. hotelstonight and do alike
+		- for Twitter: https://dev.twitter.com/cards/types/summary
+
 -- Webpack related
-	- currently index.html for prod: doesn't include js and css files bundled
-		--- setup Server Side rendering like etse js
+	+----- setup parralel build of webpack client and webpack server
+	+- read "Building for production section": http://www.pro-react.com/materials/appendixA/#buildingfor
+	+- add Autoprefixer
+	+- use HtmlWebpackPlugin with index.html template: see http://www.pro-react.com/materials/appendixA/
+	+- consider React-Icons: https://github.com/gorangajic/react-icons, allows to do ES6 imports to import only needed things
+	- currently index.html for prod: doesn't include js and css files bundled	
 		- consider setup auto-index html: https://github.com/ampedandwired/html-webpack-plugin
 			- also has nice example of usage of HTML Webpack Plugin: https://github.com/mxstbr/react-boilerplate/blob/master/makewebpackconfig.js
 		- or take approach with node server that just uses: index.js as enry point and all html is generated by react
 			- read this related https://github.com/webpack/webpack/issues/536
-	- setup hashes for output: like assets/bundle.[hash].js
+	+- setup hashes for output: like assets/bundle.[hash].js
 	- setup minifications of js, css and html
 		- one of the prod config examples with html minification: https://github.com/mxstbr/react-boilerplate/blob/master/makewebpackconfig.js
-	- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
-- make sure we load only required Lato and Oswald variations
+	+- enable React compiler optimizations (Babel 5.8.24): https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#compiler-optimizations
+	
+	- use app cache and service workers: https://github.com/NekR/offline-plugin
+		- watch: https://www.youtube.com/watch?v=TGwjgmAqNRo&feature=youtu.be
+		- read: http://www.html5rocks.com/en/tutorials/appcache/beginner/
+		- read: http://www.html5rocks.com/en/tutorials/service-worker/introduction/
+		- manifest.json: https://developer.chrome.com/multidevice/android/installtohomescreen
+		- examples with all above: https://github.com/mxstbr/react-boilerplate
++- make sure we load only required Lato and Oswald variations
+--- Server Sider Rendering
+	+-- I may need assets.json, but not sure how to match them with HtmlPlugin
+	+---- Approaches
+		+- Require Webpack setup
+			+- fake loaders: https://medium.com/@dferber90/enabling-assets-for-server-side-rendering-in-webpack-a843a5ebeb0c#.eexh6kmte
+		+- webpack-isomorphic-tools: overall feel is complex and codebase is not clean, but used by Este and some others
+		+- conditional require: `if Env.IsBrowser` kind of thing
+		+- custom babel plugin that get rids of imports and requires:
+			- experiment with AST here: http://astexplorer.net/
+			- not sure if it will emit same HTML
+			- doesn't cover file and url loaders
+	- watch: https://www.youtube.com/watch?feature=player_embedded&v=PnpfGy7q96U
+	- read: https://hashnode.com/post/serve-content-faster-with-react-cilrwgc7w00cd0q53uta3399i?utm_content=buffer5f0d4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+	- read: https://jakearchibald.com/2016/streams-ftw/#streaming-results
+	- read https://medium.com/@ryanflorence/welcome-to-future-of-web-application-delivery-9750b7564d9f#.dq649b347
+	-- setup Server Side rendering like etse js
+		- este uses react component to render HTML document called 'html.react.js'
+	- how to from React Rouer wiki https://github.com/rackt/react-router-tutorial/blob/start/lessons/11-productionish-server.md
+		+- split dev-server and prod-server somehow (with config file that we import and do "if dev?")
+			- setup server for API and hot reload combined (like estejs)
+		- if-env of particular interest
+		+- minification and gzipping
+			+- - setup compression middleware (like estejs)
+		- create webpack config for SS rendering (https://github.com/rackt/react-router-tutorial/blob/start/lessons/13-server-rendering.md)
 -- Move debug CSS code to React components
-	- move baselinge grid to Component
+	- move baseline grid to Component
 	- move display container edges to Component
 	- create BootstrapGridDisplayer react component
+	- disable bundling of debug tools for prod
+-- Optimizations
+	- figure out what JS is loaded based on source-maps (https://github.com/danvk/source-map-explorer)
+	- tweak fast-click: https://gist.github.com/gajus/bbf06ea2e37047b01e70
+	- React perf. optimization: http://benchling.engineering/performance-engineering-with-react/
+	- use https://github.com/typekit/webfontloader to load Types
+	- optimize CSS Delivery https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+	- consider using https://github.com/bvaughn/react-virtualized for infinite calendar list
+	- only use iconst that are neeeded
+		- eigher react-icons
+		- or iconmoon (of similar) to create custom font from the ones we use
+	- optimize critical rendering path, put certain CSS with webpack into HTML
+--- Mobile
+	- handle orientation change (we are not re-redering on it)
+	- get rid of 300ms delay: https://github.com/zilverline/react-tap-event-plugin
 
-Not Today 
+Not Today, but not never!
 	-- Github
 		- setup Changelog Generator https://github.com/skywinder/Github-Changelog-Generator
 	-- Tweak Bootstrap
@@ -165,8 +269,8 @@ Not Today
 		- setup different gutter per breakpoint: https://github.com/twbs/bootstrap/issues/11564
 		- setup larger breakpoint to support really wide displays
 	-- Fonts and Typography
-		- Try Bebas Neue instead of Oswald
-		- try LEAGUE GOTHIC instead of Oswald (OSS font   )
+		+- Try Bebas Neue instead of Oswald
+		+- try LEAGUE GOTHIC instead of Oswald (OSS font)
 		- use larger base font size for hi-dpi displays with low device-pixel ratio: e.g. my 25" 2500x1440 display qualifies, my retina macbook doesn't. 14px font looks larger on mac and smaller on mentioned monitor
 	-- SVG and Icons
 		- use IcoMoon to convert font's to SVG
@@ -180,6 +284,12 @@ Not Today
 		- and nyan loader like in este
 	- play with date for humans: https://github.com/matthewmueller/date
 	- play with X-Ray (for scraping): https://github.com/lapwinglabs/x-ray
+	- figure out how to make Funtional Components Pure (pure Render mixin?)
+	- move webpack config to be ES6
+	-- play with Browserify, this claims it super-fast for rebuilding: http://christianalfoni.github.io/javascript/2014/08/29/choosing-the-correct-packaging-tool-for-react-js.html
+		- hot-reload: https://github.com/milankinen/livereactload
+		- browserify for webpack users: https://gist.github.com/substack/68f8d502be42d5cd4942
+
 
 
 Public Mail Page
@@ -190,6 +300,7 @@ Before 1.0 Release
 	woould allow to prevent FOUT (Before 1.0 Release 
 	https://github.com/typekit/webfontloader), test it with artificial trottling
 	- review TimeKit: [Timekit](http://timekit.io/) - availability and scheduling API
+	- use for homepage: https://www.typewolf.com/site-of-the-day/fonts/playfair-display
 
 
 Webpack Times
@@ -198,7 +309,6 @@ Webpack Times
 		- node 4.1.1 and npm 2.14.4: 245ms
 		- node 4.1.1 and npm 3.3.4: 209ms - 227ms
 	- boostrap SASS adds ~600ms to rebuild times
-
 
 
 Done
@@ -214,3 +324,23 @@ Done
 	+- move boilerplate under rcn.io
 		- rename stuff in package.json
 	+!- upgrade to react 0.14 
+	+- build a grid
+	 	+- tweak columns so they are better multplies of...: https://github.com/twbs/bootstrap/issues/13120
+	 	+- pick number of columns and gutter size
+	 	+- see if we should use fluid ui
+	 	+- consider use of all 16 columns for g (more space for cards)
+	 +-- build basic Bootstrap components
+	 	+- row
+	 	+- column
+	 	+- mb use cusom gutters per breakpiont: https://github.com/twbs/bootstrap/issues/11873
+	+- setup typographic scale
+		+- setup body scale
+	 	+- setup header scale
+	 	+- combine two above scales into one
+	 	+- try lato line height of 1.36 on fonts selection branch: as per http://www.imarc.com/blog/750-
+	 	+- try horizontal guidelines like here: http://goldilocksapproach.com/demo/
+	 	using_the_golden_ratio_with_typography
+	 	+- try with font's selected: text-rendering: optimizeLegibility;
+	 		+- on fonts branch
+	 		+- lato specifically
+	 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS

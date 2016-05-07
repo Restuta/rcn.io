@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+.Event {
+  position: relative;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+   background-color: white;
+  // padding: $line-height-rem;
+  transition: box-shadow ease-in-out .2s;
+
+  &.lvl-1 {
+    @include box-shadow-custom-minimal();
+  }
+
+  &:hover {
+    @include box-shadow-lvl-2();
+    cursor: pointer;
+    opacity: 1 !important;
+  }
+
+}

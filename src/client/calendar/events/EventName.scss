@@ -1,0 +1,93 @@
+@import 'variables';
+@import 'mixins';
+
+@mixin DEBUG() {
+  background-color: lightgoldenrodyellow;
+}
+
+
+$base-line-rem: $line-height-rem / 2;
+
+.EventName {
+  @include text-2();
+  //margin-bottom: 1rem;
+  max-height: $line-height-rem * 3;
+  letter-spacing: -0.3px;
+
+  //min-height: $line-height-rem * 3;
+
+  //outline: 1px solid lightgrey;
+  // max-height: auto !important;
+  // min-height: auto !important;
+  overflow: hidden;
+
+  &.size-XXS {
+    font-size: pxToRem(4);
+    line-height: 1;
+    top: pxToRem(-1);
+    font-weight: 700;
+    padding-left: 0;
+    padding-top: pxToRem(2);
+    margin-bottom: 0;
+    max-height: 100%;
+    letter-spacing: 0;
+  }
+
+  &.size-XS {
+    @include text-sm-9();
+    top: pxToRem(2);
+    font-weight: 700;
+    margin-bottom: 0;
+    max-height: $base-line-rem * 3;
+    letter-spacing: -0.2px;
+  }
+
+  &.size-S {
+    @include text-sm-10($offset: 3);
+    line-height: 1.5rem;
+    //top: pxToRem(-1);
+    margin-bottom: 0;
+    &.size-S-6 {
+      max-height: $base-line-rem * 4.5;
+    }
+    &.size-S-7 {
+      max-height: $base-line-rem * 6;
+    }
+    &.size-S-8 {
+      max-height: $base-line-rem * 6;
+    }
+    //max-height: $base-line-rem * 6;
+    //max-height: calc(100% - 0.5rem);
+  }
+
+  &.size-M {
+    @include text-sm-11($offset: 3);
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    max-height: $base-line-rem * 6;
+    letter-spacing: -0.1px;
+    &.size-M-9 {
+      max-height: $base-line-rem * 4.5;;
+    }
+  }
+
+  &.size-L {
+    @include text-2();
+    margin-bottom: 0;
+    font-weight: 700;
+    max-height: $base-line-rem * 16;
+    letter-spacing: -0.1px;
+    //@include DEBUG();
+  }
+
+  &.size-XL {
+    @include text-3($offset: 1);
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    font-weight: 700;
+    max-height: $line-height-rem * 6;
+    letter-spacing: -0.1px;
+  }
+}

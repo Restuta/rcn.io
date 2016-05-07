@@ -1,6 +1,11 @@
 engines:
   eslint:
     enabled: true
+    config:
+      config: .eslintrc
+      extensions:
+        - .js
+        - .jsx
   fixme:
     enabled: true
   scss-lint:
@@ -14,23 +19,39 @@ engines:
         enabled: false
       Comment:
         enabled: false
+      PropertySortOrder:
+        enabled: false
+      ZeroUnit:
+        enabled: false
+      EmptyLineBetweenBlocks:
+        enabled: false
+      ColorVariable:
+        enabled: false
+      EmptyLineBetweenBlocks:
+        enabled: false
+      LeadingZero:
+        enabled: false
+      NameFormat:
+        enabled: false
+      SpaceAfterComma:
+        enabled: false
+      IdSelector:
+        enabled: false
   csslint:
     enabled: false
 ratings:
    paths:
-   - "code/app/**/*"
+   - "src/**/*"
    - "**.scss"
    - "**.js"
    - "**.jsx"
 exclude_paths:
-- node_modules/**/*
-- bower_components/**/*
+- "node_modules/**/*"
+- "bower_components/**/*"
 - "prototypes/**/*"
-- "code/app/node_modules/**/*"
-- "code/app/bower_components/**/*"
 - "code/data/node_modules/**/*"
 - "code/data/**/*"
-- "code/app/.eslintrc"
+- ".eslintrc"
 - "todo/**/*"
 - "data/**/*"
 - "wireframes/**/*"

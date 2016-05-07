@@ -1,0 +1,34 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/bs4-fixes';
+
+.Week {
+  $border-width-rem: pxToRem(1);
+
+  //background-color: $grey-100;
+
+  min-height: 8rem + $border-width-rem; //adding pixels to min height to compensate for border width
+
+  border-top: $border-width-rem solid $grey-300;
+  margin-top: -$border-width-rem;
+  position: relative; //this makes borders visible despite negative top margin, idk why =)
+
+  flex-wrap: nowrap;;
+  justify-content: flex-end;
+
+  @media (max-width: map-get($grid-breakpoints, "lg")) {
+    min-height: 4rem + $border-width-rem;
+  }
+
+
+  &.last-one {
+    /* using "box-shadow" insteadd of "border-bottom  for last element since with border bottom it's
+      hard to make sure that content below is not pushed 1px down, since when max-height is set and there is
+      no content, border occupies element's content area and when content is above max height border
+      pushes everything down. To reproduce see empty week and week with L-XL events*/
+    box-shadow: 0 $border-width-rem 0 $grey-300;
+
+    //border-bottom: $border-width-rem solid $grey-300;
+    //margin-bottom: -$border-width-rem;
+  }
+}

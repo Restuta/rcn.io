@@ -1,0 +1,30 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
+.HeadwayChangelog {
+  //scss-lint:disable IdSelectdor
+
+  //see customization docs https://headway.gitbooks.io/docs/content/widget.html
+  #HW_badge_cont {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #HW_badge {
+    top: 0.7rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: $font-size-2;
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+    background: $primary-color ;
+  }
+  #HW_badge.HW_softHidden {
+    top: 1.2rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}

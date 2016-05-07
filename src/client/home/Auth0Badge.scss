@@ -1,0 +1,16 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/bs4-fixes';
+
+
+.Auth0Badge {
+  @media (max-width: map-get($grid-breakpoints, "md")) {
+    & {
+      img {
+        width: 100px;
+        height: 33px;
+      }
+    }
+  }
+
+}

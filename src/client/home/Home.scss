@@ -1,0 +1,36 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.Home {
+  //background-image: linear-gradient(-90deg, rgb(100, 65, 165), rgb(42, 8, 69));
+
+  .section-main {
+    margin-top: 8rem;  
+  }
+
+
+  .section-next > * {
+    color: $grey-500;
+  }
+
+  .header-whats-next {
+    margin-top: 8rem;
+  }
+
+  .badge {
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  .badge.auth0-badge {
+    left: 1rem;
+  }
+
+  .badge.heap-analytics-badge {
+    left: 22rem;
+  }
+
+  .badge.jaco-analytics-badge {
+    left: 38rem;
+  }
+}

@@ -124,6 +124,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Great free typography and information architecture](http://www.designfacts.org)
 * [Great UI components](http://semantic-ui.com/elements/label.html#basic)
 * Landing Pages
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
@@ -137,7 +138,7 @@
 * [Design Awwwards](http://www.awwwards.com/)
 * [Very Nice Landing Page](https://www.duolingo.com/)
 * [Treehouse](http://teamtreehouse.com/library) nice page design, colors, layout, icons
-* [FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture
+* ~[FLTR Tech Trends](http://fltr.io/?left=true) nice information architecture~ it's gone :(
 * [Nice Article Layout](http://heartbleed.com/) (Heartblead Bug)
 * [Nice icons on the sides](http://dataparis.io/#)
 * [F8 conference](https://fbf8.com/schedule.html) has nice design for schedule

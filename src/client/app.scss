@@ -1,0 +1,45 @@
+@import 'styles/typography';
+@import 'styles/debug';
+@import 'styles/variables';
+
+html, body {
+  color: $body-color;
+  background-color: $body-bg-color;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: none;
+  color: $deep-purple-700;
+}
+
+a {
+  color: $primary-color;
+}
+
+//so .fa iconst do not break vertical rythm
+.fa {
+  vertical-align: bottom;
+}
+
+// svg {
+//   vertical-align: bottom !important;
+// }
+
+.display-flex {
+  display: flex;
+  align-items: flex-end;
+}
