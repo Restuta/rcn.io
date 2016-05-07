@@ -59,12 +59,12 @@ const getContainerWidth = (deviceType) => {
 
 let cache = {}
 const ONE_MINUTE = 1000 * 60
-const cacheDuration = ONE_MINUTE * 10
+const CACHE_DURATION = ONE_MINUTE * 10
 
 setInterval(() => {
   cache = {}
   console.log('cleared cache...') //eslint-disable-line
-}, cacheDuration)
+}, CACHE_DURATION)
 
 app.get('/*', function(req, res, next) {
   const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
