@@ -903,7 +903,99 @@ export default [
     "state": "CA",
     "zip": "95603"
     }
-  }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #1",
+    "date": "April 20 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #2",
+    "date": "April 27 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #3",
+    "date": "May 4 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #4",
+    "date": "May 11 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #5",
+    "date": "May 18 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Summit Shorty Race Series #6 (final)",
+    "date": "May 25 2016",
+    "promoterUrl": "http://www.acmemarin.com/events/",
+    "registrationUrl": "",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "McInnis Park",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": ""
+    }
+  },
+
+
 ]
 
 /*
