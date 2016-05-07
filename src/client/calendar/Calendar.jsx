@@ -5,10 +5,11 @@ import Day from './Day.jsx'
 import Week from './Week.jsx'
 import Event from './events/Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
-import moment from 'moment'
 import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 import Colors from 'styles/colors'
 import {Disciplines, Events} from 'temp/events'
+import moment from  'moment-timezone'
+
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -26,10 +27,13 @@ export default class Calendar extends Component {
       events,
       discipline,
       location,
+      timeZone,
       showOnlyFuture = false
     } = this.props
 
-    const today = moment()
+    //time-zone specific moment factory
+    const momentTZ = () => moment.tz(...arguments, timeZone)
+    const today = momentTZ()
 
     //TODO: refactor all the ternar expressions on simple conditional
 
@@ -37,7 +41,7 @@ export default class Calendar extends Component {
     const eventsTotal = events.total
 
     const startDate = showOnlyFuture
-      ? moment().isoWeekday(-6) //this set's a date to two weeks back monday
+      ? momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
       : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
 
     const totalWeeks = showOnlyFuture
@@ -45,9 +49,7 @@ export default class Calendar extends Component {
       : startDate.isoWeeksInYear()
 
     let currentDate = startDate.clone()
-
     let weekdsComponents = []
-
 
     for (let i = 1; i <= totalWeeks; i++) {
       let daysComponents = []
@@ -127,12 +129,13 @@ export default class Calendar extends Component {
 }
 
 Calendar.propTypes = {
-  year: PropTypes.number,
-  name: PropTypes.string,
+  year: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
+  timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.instanceOf(Events),
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
-  containerWidth: PropTypes.number,
+  containerWidth: PropTypes.number.isRequired,
   showOnlyFuture: PropTypes.bool
 }

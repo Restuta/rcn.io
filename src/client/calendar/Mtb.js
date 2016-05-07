@@ -25,6 +25,7 @@ export default class Mtb extends Component {
           discipline="MTB"
           name="Calendar"
           year={2016}
+          timeZone="America/Los_Angeles"
           events={mtbEvents}
           containerWidth={containerWidth}
           weekdaysSizes={weekdaysSizes}
