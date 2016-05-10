@@ -31,6 +31,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Typography
+* [Nice Web Type](http://nicewebtype.com/) — solid tools for setting text, antialising etc
 * [Typography in 10 minutes] - http://practicaltypography.com/typography-in-ten-minutes.html (serious resource)
 * [FontCDN](http://fontcdn.org/) - a better way to search google fonts
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
