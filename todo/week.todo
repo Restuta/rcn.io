@@ -79,6 +79,8 @@ Today
 		- experiment with ReactSticky header 4.0
 			- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
 
+	--- Event Details
+		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
 
  	--- design a card UI
  		-- ideas

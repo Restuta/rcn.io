@@ -3,7 +3,7 @@
 const BASE_FONT_SIZE_PX = 8 //TODO: get it in runtime from the browser
 //for 10px: 10, 13, 16, 20, 24, 31, 38
 //for 9px:   9, 11, 14, 18, 23, 29, 36
-//for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
+//for 8px:   8, 10, 13, 16, 20, 24, 31, 38, 48, 57 (1.25)
 //for 8px:   8, 11, 14, 19, 25, 34, 45 (1.333)
 
 
