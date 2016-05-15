@@ -12,5 +12,8 @@
   "critics": {
     "wc": {"limit": 200},
     "lint": {"engine": "eslint"}
+  },
+  "dependencies": {
+    "mute": ["css-loader"]
   }
 }
