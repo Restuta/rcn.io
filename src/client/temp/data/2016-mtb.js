@@ -814,8 +814,10 @@ export default [
     "promoterUrl": "http://totalbodyfitness.com/site/race/gold-rush-mtb-2016/",
     "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-gold-rush-mtb-2016",
     "location": {
-      "city": "Folsom",
-      "state": "CA"
+      "streetAddress": "8000 Douglas Blvd",
+      "city": "Granite Bay",
+      "state": "CA",
+      "zip": "95746"
     }
   },
   {
@@ -854,13 +856,15 @@ export default [
   {
     "id": "evt-fbbbc1e7ebf58f3ff20b8d6584a69f7c",
     "discipline": "MTB",
-    "name": "TBF 50 Miler",
+    "name": "The TBF MTB 50 Miler",
     "date": "October 16 2016",
     "promoterUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
     "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
     "location": {
-      "city": "Folsom",
-      "state": "CA"
+      "streetAddress": "8000 Douglas Blvd",
+      "city": "Granite Bay",
+      "state": "CA",
+      "zip": "95746"
     }
   }
 ]
