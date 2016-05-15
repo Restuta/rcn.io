@@ -2,10 +2,12 @@ import React, {PropTypes} from 'react'
 import Sizes from './card-sizes'
 import classnames from 'classnames'
 import './EventName.scss'
+import {Statuses} from 'temp/events'
 
 const EventName = (props) => {
-  const {name, size, height, classNames} = props
-  const className = classnames(`EventName size-${size} size-${size}-${height} fix-fout`, classNames)
+  const {name, size, height, eventStatus, classNames} = props
+  const className = classnames(`EventName size-${size} size-${size}-${height} fix-fout`,
+    classNames)
 
   // const {typeColor} = props
   //
@@ -25,6 +27,10 @@ const EventName = (props) => {
   // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
   // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
 
+  if (eventStatus === Statuses.Cancelled) {
+    wrappedNameComp = <span>CANCELED: <span className="cancelled">{name}</span></span>
+  }
+
   return (
     <div className={className}>
       {wrappedNameComp}
@@ -35,7 +41,9 @@ const EventName = (props) => {
 
 EventName.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.oneOf(Object.keys(Sizes)).isRequired
+  size: PropTypes.oneOf(Object.keys(Sizes)).isRequired,
+  height: PropTypes.number,
+  eventStatus: PropTypes.oneOf(Object.keys(Statuses))
 }
 
 export default EventName
