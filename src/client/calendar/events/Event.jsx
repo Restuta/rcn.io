@@ -6,7 +6,7 @@ import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
-import {Disciplines} from 'temp/events'
+import {Disciplines, Event as EventType, Statuses} from 'temp/events'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 
@@ -65,8 +65,8 @@ class Event extends Component {
       name,
       discipline,
       event = {location: {
-        city: 'Mammoth Lakes',
-        state: 'CA'
+        city: '',
+        state: ''
       }}
     } = this.props
 
@@ -178,9 +178,9 @@ class Event extends Component {
 
     let opacity = 1
 
-    // if (this.state.visited === true) {
-    //   opacity = 0.8
-    // }
+    if (event.status === Statuses.Cancelled) {
+      eventColor = Colors.grey400
+    }
 
     let style = {
       opacity: opacity,
@@ -202,7 +202,8 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
-        <EventName size={cardSize} height={cardHeightRem} name={name} typeColor={eventColor}/>
+        <EventName size={cardSize} height={cardHeightRem} name={name}
+          typeColor={eventColor} eventStatus={event.status}/>
         {locationComponent}
       </div>
     )
@@ -219,6 +220,7 @@ Event.propTypes = {
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
+  event: PropTypes.instanceOf(EventType)
 }
 
 export default Event

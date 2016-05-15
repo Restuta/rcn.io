@@ -541,6 +541,7 @@ export default [
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
     "date": "June 27 2016",
+    "status": "Cancelled",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
       "streetAddress": "2201 Imola Avenue",
@@ -553,6 +554,7 @@ export default [
     "id": "evt-8c71d88afabf4e5541659c89fef27ead",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
+    "status": "Cancelled",
     "date": "June 28 2016",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {

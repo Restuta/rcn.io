@@ -21,6 +21,11 @@ $base-line-rem: $line-height-rem / 2;
   // min-height: auto !important;
   overflow: hidden;
 
+  .cancelled {
+    text-decoration: line-through;
+    color: $grey-500;
+  }
+
   &.size-XXS {
     font-size: pxToRem(4);
     line-height: 1;

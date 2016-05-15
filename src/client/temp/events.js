@@ -11,14 +11,19 @@ const Disciplines = {
   Road: 'Road'
 }
 
+const Statuses = {
+  Cancelled: 'Cancelled'
+}
+
 class Event {
-  constructor({name, date, type, location, promoterUrl, flyerUrl}) {
+  constructor({name, date, type, location, promoterUrl, flyerUrl, status}) {
     this.name = name
     this.date = date
     this.type = type
     this.location = location
     this.promoterUrl = promoterUrl
     this.flyerUrl = flyerUrl
+    this.status = status
   }
 }
 
@@ -84,7 +89,8 @@ const preProcessEvents = function(rawEvents) {
       type: rawEvent.type,
       location: rawEvent.location || {},
       promoterUrl: preProcessUrl(rawEvent.promoterUrl),
-      flyerUrl: preProcessUrl(rawEvent.flyerUrl)
+      flyerUrl: preProcessUrl(rawEvent.flyerUrl),
+      status: rawEvent.status
     })
 
     const key = event.date.format('MMDDYYYY')
@@ -107,7 +113,9 @@ const mtbEvents = new Events({ eventsMap: mtbEventsMap })
 
 export {
   Events, //just a type
+  Event, //type
   Disciplines,
+  Statuses,
   roadEvents,
   mtbEvents,
 }
