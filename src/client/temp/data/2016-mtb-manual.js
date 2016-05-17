@@ -671,6 +671,48 @@ export default [
   },
   {
   "discipline": "MTB",
+  "name": "Dee Larsen Memorial MTB Race Series #1",
+  "date": "July 06 2016",
+  "promoterUrl": "http://totalbodyfitness.com/site/race/dee-larsen-memorial-mtb-race-series-2016/",
+  "registrationUrl": "",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "8000 Douglas Blvd",
+    "city": "Granite Bay",
+    "state": "CA",
+    "zip": "95746"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Dee Larsen Memorial MTB Race Series #2",
+  "date": "July 13 2016",
+  "promoterUrl": "http://totalbodyfitness.com/site/race/dee-larsen-memorial-mtb-race-series-2016/",
+  "registrationUrl": "",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "8000 Douglas Blvd",
+    "city": "Granite Bay",
+    "state": "CA",
+    "zip": "95746"
+    }
+  },
+  {
+  "discipline": "MTB",
+  "name": "Dee Larsen Memorial MTB Race Series #3",
+  "date": "July 20 2016",
+  "promoterUrl": "http://totalbodyfitness.com/site/race/dee-larsen-memorial-mtb-race-series-2016/",
+  "registrationUrl": "",
+  "flyerUrl": "",
+  "location": {
+    "streetAddress": "8000 Douglas Blvd",
+    "city": "Granite Bay",
+    "state": "CA",
+    "zip": "95746"
+    }
+  },
+  {
+  "discipline": "MTB",
   "name": "Howarth Park Dirt Crits",
   "date": "July 20 2016",
   "promoterUrl": "http://www.bikemonkey.net/dirtcrits/",
