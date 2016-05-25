@@ -73,7 +73,7 @@
     "postcss-loader": "^0.9.1",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.2",
-    "redbox-react": "^1.2.4",
+    "redbox-react": "^1.2.6",
     "rimraf": "^2.4.4",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
