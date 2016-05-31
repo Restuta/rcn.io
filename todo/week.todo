@@ -42,10 +42,14 @@ Today
 			+!- future events count is incorrect
 		--- after MTB release
 			-- deployments
-				- move production branch to master
-				- setup stage environment
-				- configure Segment to use different app ids for HEAP for dev/prod
+				+- move production branch to master
+				+- setup stage environment
+				+- configure Segment to use different app ids for HEAP for dev/prod
 			- hosted graphite logo
+			- use React SideEffect for Document Title
+				- client side
+				- server side
+				- set document title to calendar name for Calendars
 			- consider adding month label to every other week's sunday before day: Sunday is never minimized
 			- mark visited cards (store this in localStorage for now)
 			- show which card has Promoter URL and which one doesn't
