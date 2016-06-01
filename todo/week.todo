@@ -41,19 +41,19 @@ Today
 			+!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
 			+!- future events count is incorrect
 		--- after MTB release
-			-- deployments
+			+-- deployments
 				+- move production branch to master
 				+- setup stage environment
 				+- configure Segment to use different app ids for HEAP for dev/prod
 			- hosted graphite logo
-			- use React SideEffect for Document Title
+			-- use React SideEffect for Document Title
 				- client side
 				- server side
 				- set document title to calendar name for Calendars
-			- consider adding month label to every other week's sunday before day: Sunday is never minimized
+			+- consider adding month label to every other week's sunday before day: Sunday is never minimized
 			- mark visited cards (store this in localStorage for now)
 			- show which card has Promoter URL and which one doesn't
-			- show USAC non USAC events
+			.-(low) show USAC non USAC events
 			- test and set up Sentry as discribed here https://github.com/getsentry/demo-express/blob/master/index.js
 			- create Footer component
 			- Events todo:
@@ -61,8 +61,8 @@ Today
 				//TODO: get total before date
 			- extract wendor to DLL: http://engineering.invisionapp.com/post/optimizing-webpack/ this can speed up incremental builds even more
 		- change Promoter in event data from string to object: name, url, etc
-		- re-use RoundBadge in calendar
-		- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
+		+- re-use RoundBadge in calendar
+		+- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
 		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
 			- consider Recompose: https://github.com/acdlite/recompose
 		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
@@ -76,13 +76,18 @@ Today
 		-- decapitalize ALL CAPS events, make them sentence case					
 		- test layout for multiple events at the same day, but different sizes of cards
 		- test layout with variable height of events, so we don't waste vertical space
-		- size 4 may not make sense on XL screen: stick to 3?
+		+- size 4 may not make sense on XL screen: stick to 3?
 		- try and see if longest event fits all sizes and manually adjust text size
-		- change base font size to 6 or 7 for x-small screens
+		+- change base font size to 6 or 7 for x-small screens
 			- test in on mobile
 		- experiment with ReactSticky header 4.0
 			- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
 
+	--- Redux Setup
+		- maybe set webpack's root to one level up so we can reference shared from both client and server
+		- server side setup
+		- redux router
+			- move showAll/hidePast to be URL param of calendar and suppored by redux
 	--- Event Details
 		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
 
