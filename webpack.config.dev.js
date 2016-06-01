@@ -73,7 +73,8 @@ module.exports = {
   resolve: {
     root: [
       //path.resolve(__dirname, 'src/'),
-      path.resolve(__dirname, 'src/client')
+      path.resolve(__dirname, 'src/client'),
+      path.resolve(__dirname, 'src/')
     ],
     //tells webpack to use static file when import React from 'react' is used
     alias: {
@@ -105,7 +106,10 @@ module.exports = {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
+      include: [
+        path.join(consts.SRC_DIR, 'client'),
+        path.join(consts.SRC_DIR, 'shared')
+      ],
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: true, //not needed for prod build
