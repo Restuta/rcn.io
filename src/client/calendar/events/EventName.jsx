@@ -31,6 +31,10 @@ const EventName = (props) => {
     wrappedNameComp = <span>CANCELED: <span className="cancelled">{name}</span></span>
   }
 
+  if (eventStatus === Statuses.Moved) {
+    wrappedNameComp = <span>MOVED: <span className="cancelled">{name}</span></span>
+  }
+
   return (
     <div className={className}>
       {wrappedNameComp}

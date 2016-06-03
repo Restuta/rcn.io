@@ -178,7 +178,7 @@ class Event extends Component {
 
     let opacity = 1
 
-    if (event.status === Statuses.Cancelled) {
+    if (event.status === Statuses.Cancelled || event.status === Statuses.Moved) {
       eventColor = Colors.grey400
     }
 
