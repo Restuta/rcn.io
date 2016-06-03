@@ -88,6 +88,11 @@ Today
 		- server side setup
 		- redux router
 			- move showAll/hidePast to be URL param of calendar and suppored by redux
+		-- ecosystem
+			- redux-undo: useful for ading/updating events
+			- redux-logger
+			- redux-observable
+			- apollo-client
 	--- Event Details
 		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
 

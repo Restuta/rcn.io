@@ -36,11 +36,11 @@ test1(`On '${toggleBaseline().type}' action 'showBaseline' should be changed to 
 })
 
 test1(`On '${toggle3x3Grid().type}' action 'toggle3x3Grid' should be changed to the opposite`, t => {
-  const store = createStore(debugReducer, {toggle3x3Grid: true})
+  const store = createStore(debugReducer, {show3x3Grid: true})
   let orignalState = store.getState()
 
   store.dispatch(toggle3x3Grid())
 
   let state = store.getState()
-  t.equal(state.toggle3x3Grid, !orignalState.toggle3x3Grid)
+  t.equal(state.show3x3Grid, !orignalState.show3x3Grid)
 })

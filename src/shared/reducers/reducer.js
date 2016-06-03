@@ -19,11 +19,12 @@ const initialState = {
 }
 
 export function debug(state = initialState.debug, action) {
+  console.info(action)
   switch (action.type) {
     case TOGGLE_BASELINE:
       return Object.assign({}, state, {showBaseline: !state.showBaseline})
     case TOGGLE_3X3_GRID:
-      return Object.assign({}, state, {toggle3x3Grid: !state.toggle3x3Grid})
+      return Object.assign({}, state, {show3x3Grid: !state.show3x3Grid})
     default:
       return state
   }
@@ -42,9 +43,9 @@ export function calendar(state = initialState.calendar, action) {
 
 
 
-const mainReducer = combineReducers({
+const rootReducer = combineReducers({
   debug,
   calendar
 })
 
-export default mainReducer
+export default rootReducer

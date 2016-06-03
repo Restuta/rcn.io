@@ -8,6 +8,12 @@ import DebugGrid from './temp/debug/DebugGrid.jsx'
 
 let whenRenderStarted
 
+import { createStore } from 'redux'
+import rootReducer from 'shared/reducers/reducer.js'
+
+const store = createStore(rootReducer)
+
+
 export default class App extends Component {
   constructor(props) {
     super(props)
@@ -44,7 +50,7 @@ export default class App extends Component {
     return (
       <div className={this.state.appLevelClasses}>
         {__ENV.Dev
-          && <DebugGrid setDebugClasses={this.setAppStateClasses} containerWidth={this.props.containerWidth}/>}
+          && <DebugGrid store={store} setDebugClasses={this.setAppStateClasses} containerWidth={this.props.containerWidth}/>}
 
         <TopNavbar location={location} />
         <div className="App container">

@@ -29,18 +29,10 @@ const fluxStandardAction = {
 */
 
 //action creators
-export function showAllEvents() {
-  return { type: SHOW_ALL_EVENTS }
-}
+export const showAllEvents = () => ({ type: SHOW_ALL_EVENTS })
 
-export function hideAllEvents() {
-  return { type: HIDE_ALL_EVENTS }
-}
+export const hideAllEvents = () => ({ type: HIDE_ALL_EVENTS })
 
-export function toggleBaseline() {
-  return { type: TOGGLE_BASELINE }
-}
+export const toggleBaseline = () => ({ type: TOGGLE_BASELINE })
 
-export function toggle3x3Grid() {
-  return { type: TOGGLE_3X3_GRID }
-}
+export const toggle3x3Grid = () => ({ type: TOGGLE_3X3_GRID })
