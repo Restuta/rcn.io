@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { toggleBaseline, toggle3x3Grid, toggleContainerEdges } from 'shared/actions/actions.js'
 
 
-class SimpleDebugGrid extends React.Component {
+class DebugGrid extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -104,13 +104,11 @@ const GridLines = (props) => {
 }
 
 
-const DebugGrid = connect(
+export default connect(
   state => state.debug,
   dispatch => ({
     toggleBaseline() { dispatch(toggleBaseline()) },
     toggle3x3Grid() { dispatch(toggle3x3Grid()) },
     toggleContainerEdges() { dispatch(toggleContainerEdges()) },
   })
-)(SimpleDebugGrid)
-
-export default DebugGrid
+)(DebugGrid)

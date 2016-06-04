@@ -54,6 +54,5 @@ class App extends Component {
   }
 }
 
-const AppConnected = connect(state => ({debug: state.debug}))(App)
 
-export default AppConnected
+export default connect(state => ({debug: state.debug}))(App)
