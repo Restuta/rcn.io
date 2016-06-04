@@ -2,7 +2,12 @@ import test from 'tape'
 import { createStore } from 'redux'
 import { calendar as calendarReducer } from 'shared/reducers/reducer.js'
 import { debug as debugReducer } from 'shared/reducers/reducer.js'
-import { showAllEvents, toggleBaseline, toggle3x3Grid } from 'shared/actions/actions.js'
+import {
+  showAllEvents,
+  toggleBaseline,
+  toggle3x3Grid,
+  toggleContainerEdges,
+} from 'shared/actions/actions.js'
 
 //simplifies test when you need only one assertion
 function test1(name, testBody) {
@@ -25,7 +30,7 @@ test1(`On '${showAllEvents().type}' action 'showAllEvents' should be changed to 
 })
 
 
-test1(`On '${toggleBaseline().type}' action 'showBaseline' should be changed to the opposite`, t => {
+test1(`On '${toggleBaseline().type}' action, 'showBaseline' property should be changed to the opposite`, t => {
   const store = createStore(debugReducer, {showBaseline: true})
   let orignalState = store.getState()
 
@@ -35,7 +40,7 @@ test1(`On '${toggleBaseline().type}' action 'showBaseline' should be changed to 
   t.equal(state.showBaseline, !orignalState.showBaseline)
 })
 
-test1(`On '${toggle3x3Grid().type}' action 'toggle3x3Grid' should be changed to the opposite`, t => {
+test1(`On '${toggle3x3Grid().type}' action, 'show3x3Grid' property should be changed to the opposite`, t => {
   const store = createStore(debugReducer, {show3x3Grid: true})
   let orignalState = store.getState()
 
@@ -43,4 +48,14 @@ test1(`On '${toggle3x3Grid().type}' action 'toggle3x3Grid' should be changed to 
 
   let state = store.getState()
   t.equal(state.show3x3Grid, !orignalState.show3x3Grid)
+})
+
+test1(`On '${toggleContainerEdges().type}' action, 'showContainerEdges' property should be changed to the opposite`, t => {
+  const store = createStore(debugReducer, {showContainerEdges: true})
+  let orignalState = store.getState()
+
+  store.dispatch(toggleContainerEdges())
+
+  let state = store.getState()
+  t.equal(state.showContainerEdges, !orignalState.showContainerEdges)
 })

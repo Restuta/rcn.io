@@ -1,29 +1,13 @@
 import React from 'react'
-import classNames from 'classnames'
 import Checkbox from 'atoms/Checkbox.jsx'
 import BaselineGrid from './BaselineGrid.jsx'
+import { connect } from 'react-redux'
+import { toggleBaseline, toggle3x3Grid, toggleContainerEdges } from 'shared/actions/actions.js'
+
 
 class SimpleDebugGrid extends React.Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-      shouldShowContainerEdges: (localStorage.getItem('shouldShowContainerEdges') === 'true'),
-    }
-  }
-
-  stateToClasses(state) {
-    let classes = ''
-
-    if (state.shouldShowContainerEdges) {
-      classes = classNames(classes, 'debug-container')
-    }
-
-    return classes
-  }
-
-  componentWillMount() {
-    this.props.setDebugClasses(this.stateToClasses(this.state))
   }
 
   render() {
@@ -47,15 +31,6 @@ class SimpleDebugGrid extends React.Component {
       fontSize: '1.25rem'
     }
 
-    const onContainerCheckboxChange = () => {
-      this.setState({ shouldShowContainerEdges: !this.state.shouldShowContainerEdges }, () => {
-        this.props.setDebugClasses(this.stateToClasses(this.state))
-      })
-      localStorage.setItem('shouldShowContainerEdges', !this.state.shouldShowContainerEdges)
-    }
-
-    console.info(this.props)
-
     return (
       <div className="DebugGrid">
         <div style={style}>
@@ -70,8 +45,8 @@ class SimpleDebugGrid extends React.Component {
             Baseline
           </Checkbox>
           <Checkbox
-            onChange={onContainerCheckboxChange}
-            checked={this.state.shouldShowContainerEdges}>
+            onChange={this.props.toggleContainerEdges}
+            checked={this.props.showContainerEdges}>
             Container Edges <span style={containerSizeStyle}>({containerWidth}px)</span>
           </Checkbox>
         </div>
@@ -128,15 +103,13 @@ const GridLines = (props) => {
   )
 }
 
-import { connect } from 'react-redux'
-import { toggleBaseline, toggle3x3Grid } from 'shared/actions/actions.js'
 
-// const DebugGrid = connect(mapStateToProps, mapDispatchToProps)(SimpleDebugGrid)
 const DebugGrid = connect(
   state => state.debug,
   dispatch => ({
     toggleBaseline() { dispatch(toggleBaseline()) },
-    toggle3x3Grid() { dispatch(toggle3x3Grid()) }
+    toggle3x3Grid() { dispatch(toggle3x3Grid()) },
+    toggleContainerEdges() { dispatch(toggleContainerEdges()) },
   })
 )(SimpleDebugGrid)
 

@@ -3,6 +3,7 @@ export const SHOW_ALL_EVENTS = 'SHOW_ALL_EVENTS'
 export const HIDE_ALL_EVENTS = 'HIDE_ALL_EVENTS'
 export const TOGGLE_BASELINE = 'TOGGLE_BASELINE'
 export const TOGGLE_3X3_GRID = 'TOGGLE_3X3_GRID'
+export const TOGGLE_CONTAINER_EDGES = 'TOGGLE_CONTAINER_EDGES'
 
 /* actions should follow Flux Standard Action https://github.com/acdlite/flux-standard-action
 
@@ -30,9 +31,7 @@ const fluxStandardAction = {
 
 //action creators
 export const showAllEvents = () => ({ type: SHOW_ALL_EVENTS })
-
 export const hideAllEvents = () => ({ type: HIDE_ALL_EVENTS })
-
 export const toggleBaseline = () => ({ type: TOGGLE_BASELINE })
-
 export const toggle3x3Grid = () => ({ type: TOGGLE_3X3_GRID })
+export const toggleContainerEdges = () => ({ type: TOGGLE_CONTAINER_EDGES })

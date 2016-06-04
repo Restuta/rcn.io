@@ -2,31 +2,20 @@ import React from 'react'
 import Component from 'react-pure-render/component'
 import './styles/bootstrap.scss'
 import './app.scss'
-import classNames from 'classnames'
+import classnames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'
+import { connect } from 'react-redux'
 
 let whenRenderStarted
 
-import configureStore from 'shared/configure-store.js'
-
-const store = configureStore()
-
-
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       appLevelClasses: 'App',
       containerWidth: props.containerWidth
     }
-    this.setAppStateClasses = this.setAppStateClasses.bind(this)
-  }
-
-  setAppStateClasses(classesToSet) {
-    this.setState({
-      appLevelClasses: classNames('App', classesToSet)
-    })
   }
 
   componentDidMount() {
@@ -40,16 +29,21 @@ export default class App extends Component {
   }
 
   render() {
+    console.info(this.props.debug)
     whenRenderStarted = +new Date()
     const {location} = this.props
+
+    const appLevelClasses = classnames('App',
+      (this.props.debug.showContainerEdges && 'debug-container')
+    )
 
     //adding props to children, passing browser-calculated container size to be exact */
     const children = React.cloneElement(this.props.children, { containerWidth: this.props.containerWidth })
 
     return (
-      <div className={this.state.appLevelClasses}>
+      <div className={appLevelClasses}>
         {__ENV.Dev
-          && <DebugGrid store={store} setDebugClasses={this.setAppStateClasses} containerWidth={this.props.containerWidth}/>}
+          && <DebugGrid containerWidth={this.props.containerWidth}/>}
 
         <TopNavbar location={location} />
         <div className="App container">
@@ -59,3 +53,7 @@ export default class App extends Component {
     )
   }
 }
+
+const AppConnected = connect(state => ({debug: state.debug}))(App)
+
+export default AppConnected
