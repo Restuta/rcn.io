@@ -131,13 +131,13 @@ const GridLines = (props) => {
 import { connect } from 'react-redux'
 import { toggleBaseline, toggle3x3Grid } from 'shared/actions/actions.js'
 
-const mapStateToProps = (state) => state.debug
-
-const mapDispatchToProps = (dispatch) => ({
-  toggleBaseline() { dispatch(toggleBaseline()) },
-  toggle3x3Grid() { dispatch(toggle3x3Grid()) }
-})
-
-const DebugGrid = connect(mapStateToProps, mapDispatchToProps)(SimpleDebugGrid)
+// const DebugGrid = connect(mapStateToProps, mapDispatchToProps)(SimpleDebugGrid)
+const DebugGrid = connect(
+  state => state.debug,
+  dispatch => ({
+    toggleBaseline() { dispatch(toggleBaseline()) },
+    toggle3x3Grid() { dispatch(toggle3x3Grid()) }
+  })
+)(SimpleDebugGrid)
 
 export default DebugGrid

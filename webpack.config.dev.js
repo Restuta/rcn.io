@@ -107,8 +107,7 @@ module.exports = {
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
       include: [
-        path.join(consts.SRC_DIR, 'client'),
-        path.join(consts.SRC_DIR, 'shared')
+        path.join(consts.SRC_DIR)
       ],
       query: {
         presets: ['react', 'es2015', 'stage-2'],

@@ -26,7 +26,7 @@ module.exports = {
 
   externals: [nodeExternals()],
 
-  entry: { app: path.join(consts.SRC_DIR, 'client/getRoutes.js')},
+  entry: { app: path.join(consts.SRC_DIR, 'client/get-routes.js')},
   output: {
     path: path.join(__dirname, 'dist-server'),
     filename: '[name].server.bundle.js',
@@ -60,7 +60,8 @@ module.exports = {
   resolve: {
     root: [
       //path.resolve(__dirname, 'src/'),
-      path.resolve(__dirname, 'src/client')
+      path.resolve(__dirname, 'src/client'),
+      path.resolve(__dirname, 'src/')
     ],
     alias: {
       'react': pathToReact,
@@ -85,9 +86,7 @@ module.exports = {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
-      include: [
-        path.join(consts.SRC_DIR, 'client'),
-      ],
+      include: [path.join(consts.SRC_DIR)],
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,

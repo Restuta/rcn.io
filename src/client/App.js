@@ -8,10 +8,9 @@ import DebugGrid from './temp/debug/DebugGrid.jsx'
 
 let whenRenderStarted
 
-import { createStore } from 'redux'
-import rootReducer from 'shared/reducers/reducer.js'
+import configureStore from 'shared/configure-store.js'
 
-const store = createStore(rootReducer)
+const store = configureStore()
 
 
 export default class App extends Component {

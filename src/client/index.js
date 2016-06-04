@@ -10,8 +10,8 @@ import {
   render,
   // unmountComponentAtNode
 } from 'react-dom'
-import Grid from './styles/grid'
-import getRoutes from './getRoutes'
+import Grid from 'client/styles/grid.js'
+import getRoutes from 'client/get-routes.js'
 
 let prevContainerWidth
 
