@@ -1,8 +1,36 @@
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import rootReducer from 'shared/reducers/reducer.js'
 
+
+
+const middlewares = []
+
+//use logging middleware only in dev mode
+if (__ENV.Dev) {
+  const createLogger =  require('redux-logger')
+  const logger = createLogger({
+    diff: true,
+    timestamp: false,
+    duration: true,
+    collapsed: false,
+    colors: {
+      title: (action) => '#EEE',
+      prevState: (state) => '#9e9e9e',
+      action: (action) => 'yellowgreen',
+      nextState: (state) => '#98AFC7'
+    }
+  })
+
+  middlewares.push(logger)
+}
+
+
 const configureStore = (initialState) => {
-  const store = createStore(rootReducer, initialState)
+  const store = createStore(
+    rootReducer,
+    initialState,
+    applyMiddleware(...middlewares) //logger must be lasst middleware
+  )
 
   //according to https://github.com/reactjs/react-redux/releases/tag/v2.0.0
   if (module.hot) {

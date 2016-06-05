@@ -92,6 +92,7 @@ Today
 			- redux-undo: useful for ading/updating events
 			- redux-logger
 			- redux-observable
+			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
 	--- Event Details
 		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)

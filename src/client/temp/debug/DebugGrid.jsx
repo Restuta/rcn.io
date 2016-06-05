@@ -104,11 +104,8 @@ const GridLines = (props) => {
 }
 
 
-export default connect(
-  state => state.debug,
-  dispatch => ({
-    toggleBaseline() { dispatch(toggleBaseline()) },
-    toggle3x3Grid() { dispatch(toggle3x3Grid()) },
-    toggleContainerEdges() { dispatch(toggleContainerEdges()) },
-  })
-)(DebugGrid)
+export default connect(state => state.debug, {
+  toggleBaseline,
+  toggle3x3Grid,
+  toggleContainerEdges
+})(DebugGrid)

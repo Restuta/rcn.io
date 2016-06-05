@@ -24,7 +24,6 @@ const initialState = {
 }
 
 export function debug(state = initialState.debug, action) {
-  console.info(action)
   switch (action.type) {
     case TOGGLE_BASELINE:
       return Object.assign({}, state, {showBaseline: !state.showBaseline})
