@@ -1,7 +1,5 @@
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from 'shared/reducers/reducer.js'
-
-
 
 const middlewares = []
 
@@ -29,7 +27,12 @@ const configureStore = (initialState) => {
   const store = createStore(
     rootReducer,
     initialState,
-    applyMiddleware(...middlewares) //logger must be lasst middleware
+    compose(
+      applyMiddleware(...middlewares), //logger must be lasst middleware,
+      //server-side safe enabling of Redux Dev tools
+      typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
+    )
+
   )
 
   //according to https://github.com/reactjs/react-redux/releases/tag/v2.0.0

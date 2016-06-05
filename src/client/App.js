@@ -29,7 +29,6 @@ class App extends Component {
   }
 
   render() {
-    console.info(this.props.debug)
     whenRenderStarted = +new Date()
     const {location} = this.props
 

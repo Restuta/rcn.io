@@ -23,7 +23,7 @@ const initialState = {
   //events: null //array of objects
 }
 
-export function debug(state = initialState.debug, action) {
+export const debug = (state = initialState.debug, action) => {
   switch (action.type) {
     case TOGGLE_BASELINE:
       return Object.assign({}, state, {showBaseline: !state.showBaseline})
@@ -36,7 +36,7 @@ export function debug(state = initialState.debug, action) {
   }
 }
 
-export function calendar(state = initialState.calendar, action) {
+export const calendar = (state = initialState.calendar, action) => {
   switch (action.type) {
     case SHOW_ALL_EVENTS:
       return Object.assign({}, state, {
@@ -46,8 +46,6 @@ export function calendar(state = initialState.calendar, action) {
       return state
   }
 }
-
-
 
 const rootReducer = combineReducers({
   debug,
