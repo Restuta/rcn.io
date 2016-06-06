@@ -10,7 +10,7 @@ if (__ENV.Dev) {
     diff: true,
     timestamp: false,
     duration: true,
-    collapsed: false,
+    collapsed: true,
     colors: {
       title: (action) => '#EEE',
       prevState: (state) => '#9e9e9e',

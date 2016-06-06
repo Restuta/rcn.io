@@ -98,6 +98,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
     "redux": "^3.5.2",
+    "redux-actions": "^0.9.1",
     "svg-inline-react": "^1.0.0"
   },
   "engines": {

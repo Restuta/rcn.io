@@ -1,10 +1,5 @@
-import {
-  SHOW_ALL_EVENTS,
-  TOGGLE_BASELINE,
-  TOGGLE_3X3_GRID,
-  TOGGLE_CONTAINER_EDGES
-} from 'shared/actions/actions.js'
 import { combineReducers } from 'redux'
+import { handleActions as makeReducer } from 'redux-actions'
 
 const initialState = {
   debug: {
@@ -23,33 +18,21 @@ const initialState = {
   //events: null //array of objects
 }
 
-export const debug = (state = initialState.debug, action) => {
-  switch (action.type) {
-    case TOGGLE_BASELINE:
-      return Object.assign({}, state, {showBaseline: !state.showBaseline})
-    case TOGGLE_3X3_GRID:
-      return Object.assign({}, state, {show3x3Grid: !state.show3x3Grid})
-    case TOGGLE_CONTAINER_EDGES:
-      return Object.assign({}, state, {showContainerEdges: !state.showContainerEdges})
-    default:
-      return state
-  }
-}
 
 export const calendar = (state = initialState.calendar, action) => {
-  switch (action.type) {
-    case SHOW_ALL_EVENTS:
-      return Object.assign({}, state, {
-        showAllEvents: true
-      })
-    default:
-      return state
-  }
+  return state
 }
+
+
+export const debug = makeReducer({
+  ['Dbg.TOGGLE_BASELINE']: (state, action) => ({...state, showBaseline: !state.showBaseline}),
+  ['Dbg.TOGGLE_3X3_GRID']: (state, action) => ({...state, show3x3Grid: !state.show3x3Grid}),
+  ['Dbg.TOGGLE_CONTAINER_EDGES']: (state, action) => ({...state, showContainerEdges: !state.showContainerEdges}),
+}, initialState.debug)
 
 const rootReducer = combineReducers({
   debug,
-  calendar
+  calendar,
 })
 
 export default rootReducer

@@ -17,19 +17,6 @@ function test1(name, testBody) {
   })
 }
 
-
-test1(`On '${showAllEvents().type}' action 'showAllEvents' should be changed to true`, t => {
-  let store = createStore(calendarReducer)
-  store.subscribe(() => {
-    let state = store.getState()
-
-    t.true(state.showAllEvents)
-  })
-
-  store.dispatch(showAllEvents())
-})
-
-
 test1(`On '${toggleBaseline().type}' action, 'showBaseline' property should be changed to the opposite`, t => {
   const store = createStore(debugReducer, {showBaseline: true})
   let orignalState = store.getState()
