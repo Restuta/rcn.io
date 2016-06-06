@@ -1,9 +1,7 @@
 import test from 'tape'
 import { createStore } from 'redux'
-import { calendar as calendarReducer } from 'shared/reducers/reducer.js'
 import { debug as debugReducer } from 'shared/reducers/reducer.js'
 import {
-  showAllEvents,
   toggleBaseline,
   toggle3x3Grid,
   toggleContainerEdges,
