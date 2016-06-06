@@ -49,7 +49,7 @@ export default class Calendar extends Component {
       : startDate.isoWeeksInYear()
 
     let currentDate = startDate.clone()
-    let weekdsComponents = []
+    let weeksComponents = []
 
     for (let i = 1; i <= totalWeeks; i++) {
       let daysComponents = []
@@ -88,7 +88,7 @@ export default class Calendar extends Component {
         currentDate.add(1, 'day')
       }
 
-      weekdsComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
+      weeksComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
     }
 
 
@@ -121,7 +121,7 @@ export default class Calendar extends Component {
 
         <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
         <div className="body">
-          {weekdsComponents}
+          {weeksComponents}
         </div>
       </div>
     )

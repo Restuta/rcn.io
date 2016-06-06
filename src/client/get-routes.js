@@ -1,11 +1,12 @@
 import React from 'react'
 import { Router, Route, Redirect, browserHistory, IndexRoute } from 'react-router'
 import { Provider } from 'react-redux'
-import App from './App'
-import Home from './Home'
-import Dev from './Dev'
-import Cal from './calendar/Cal'
-import Mtb from './calendar/Mtb'
+import App from 'App'
+import Home from 'Home'
+import Dev from 'Dev'
+import Cal from 'calendar/Cal'
+import Mtb from 'calendar/Mtb'
+import EventDetails from 'calendar/events/EventDetails.jsx'
 
 import configureStore from 'shared/configure-store.js'
 const store = configureStore()
@@ -26,7 +27,7 @@ export default (containerWidth) => {
           <Route path="/dev" component={Dev} />
           <Route path="/cal" component={Cal} />
           <Route path="/calendars/norcal-mtb" component={Mtb}>
-            <Route path="/calendars/:id/events/:id" />
+            <Route path="/calendars/norcal-mtb/events/:eventId" component={EventDetails}/>
           </Route>
           <Redirect from="/mtb" to="/calendars/norcal-mtb" />
           <Route path="*" component={Home}/>

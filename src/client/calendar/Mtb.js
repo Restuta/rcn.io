@@ -21,6 +21,7 @@ export default class Mtb extends Component {
 
     return (
       <div>
+        {this.props.children}
         <Calendar location="NorCal"
           discipline="MTB"
           name="Calendar"
