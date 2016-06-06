@@ -1036,8 +1036,66 @@ export default [
       "zip": ""
     }
   },
-
-
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Mendocino Mountain Bike Madness (M5)",
+    "date": "Aug 18 2016",
+    "promoterUrl": "http://superproracing.com/dirt/mendocino-mtb-madness/",
+    "registrationUrl": "https://www.eventbrite.com/e/murphy-macks-mendocino-mtb-madness-aka-m5-2016-registration-24261277133",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "Mendocino Woodlands State Park",
+      "city": "Fort Bragg",
+      "state": "CA",
+      "zip": "95437"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Mendocino Mountain Bike Madness (M5)",
+    "date": "Aug 19 2016",
+    "promoterUrl": "http://superproracing.com/dirt/mendocino-mtb-madness/",
+    "registrationUrl": "https://www.eventbrite.com/e/murphy-macks-mendocino-mtb-madness-aka-m5-2016-registration-24261277133",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "Mendocino Woodlands State Park",
+      "city": "Fort Bragg",
+      "state": "CA",
+      "zip": "95437"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Mendocino Mountain Bike Madness (M5)",
+    "date": "Aug 20 2016",
+    "promoterUrl": "http://superproracing.com/dirt/mendocino-mtb-madness/",
+    "registrationUrl": "https://www.eventbrite.com/e/murphy-macks-mendocino-mtb-madness-aka-m5-2016-registration-24261277133",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "Mendocino Woodlands State Park",
+      "city": "Fort Bragg",
+      "state": "CA",
+      "zip": "95437"
+    }
+  },
+  {
+    "discipline": "MTB",
+    "permit": "",
+    "name": "Mendocino Mountain Bike Madness (M5)",
+    "date": "Aug 21 2016",
+    "promoterUrl": "http://superproracing.com/dirt/mendocino-mtb-madness/",
+    "registrationUrl": "https://www.eventbrite.com/e/murphy-macks-mendocino-mtb-madness-aka-m5-2016-registration-24261277133",
+    "flyerUrl": "",
+    "location": {
+      "streetAddress": "Mendocino Woodlands State Park",
+      "city": "Fort Bragg",
+      "state": "CA",
+      "zip": "95437"
+    }
+  },
 ]
 
 /*

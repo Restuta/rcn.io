@@ -450,33 +450,81 @@ export default [
     "id": "evt-5c2ca773142675029358fab4e891d57d",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
-    "date": "June 03 2016",
+    "status": "Moved",
+    "date": "June 3 2016",
     "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
+      "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
-      "state": "CA"
+      "state": "CA",
+      "zip": "96129"
+    }
+  },
+  {
+    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "discipline": "MTB",
+    "name": "Coolest 8 and 24hr",
+    "status": "Moved",
+    "date": "June 4 2016",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "location": {
+      "streetAddress": "2634 County Road A23",
+      "city": "Beckwourth",
+      "state": "CA",
+      "zip": "96129"
+    }
+  },
+  {
+    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "discipline": "MTB",
+    "name": "Coolest 8 and 24hr",
+    "status": "Moved",
+    "date": "June 5 2016",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "location": {
+      "streetAddress": "2634 County Road A23",
+      "city": "Beckwourth",
+      "state": "CA",
+      "zip": "96129"
+    }
+  },
+  {
+    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "discipline": "MTB",
+    "name": "Coolest 8 and 24hr",
+    "date": "July 22 2016",
+    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "location": {
+      "streetAddress": "2634 County Road A23",
+      "city": "Beckwourth",
+      "state": "CA",
+      "zip": "96129"
     }
   },
   {
     "id": "evt-7c1137042a80e7849f24924cb1c0b052",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
-    "date": "June 04 2016",
+    "date": "July 23 2016",
     "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
+      "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
-      "state": "CA"
+      "state": "CA",
+      "zip": "96129"
     }
   },
   {
     "id": "evt-dfc5b7c2f203774af62283ce08ecd706",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
-    "date": "June 05 2016",
+    "date": "July 24 2016",
     "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
+      "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
-      "state": "CA"
+      "state": "CA",
+      "zip": "96129"
     }
   },
   {
@@ -566,6 +614,7 @@ export default [
   },
   {
     "id": "evt-9389ef253c140cc9df32999732ed6827",
+    "status": "Cancelled",
     "discipline": "MTB",
     "name": "Mendocino 100",
     "date": "June 26 2016",

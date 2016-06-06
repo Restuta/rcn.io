@@ -12,7 +12,8 @@ const Disciplines = {
 }
 
 const Statuses = {
-  Cancelled: 'Cancelled'
+  Cancelled: 'Cancelled',
+  Moved: 'Moved'
 }
 
 class Event {
