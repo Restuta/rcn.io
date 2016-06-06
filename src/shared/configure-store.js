@@ -4,7 +4,7 @@ import rootReducer from 'shared/reducers/reducer.js'
 const middlewares = []
 
 //use logging middleware only in dev mode
-if (__ENV.Dev) {
+if (process.env.NODE_ENV === 'development') {
   const createLogger =  require('redux-logger')
   const logger = createLogger({
     diff: true,

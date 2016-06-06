@@ -8,7 +8,6 @@ import Cal from './calendar/Cal'
 import Mtb from './calendar/Mtb'
 
 import configureStore from 'shared/configure-store.js'
-
 const store = configureStore()
 
 export default (containerWidth) => {
@@ -26,7 +25,9 @@ export default (containerWidth) => {
           <IndexRoute component={Home} />
           <Route path="/dev" component={Dev} />
           <Route path="/cal" component={Cal} />
-          <Route path="/calendars/norcal-mtb" component={Mtb} />
+          <Route path="/calendars/norcal-mtb" component={Mtb}>
+            <Route path="/calendars/:id/events/:id" />
+          </Route>
           <Redirect from="/mtb" to="/calendars/norcal-mtb" />
           <Route path="*" component={Home}/>
         </Route>

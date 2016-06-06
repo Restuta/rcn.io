@@ -11,8 +11,13 @@ import mime from 'mime-types'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { match, RouterContext } from 'react-router'
+
+//getting compiled by webpack function, so we don't have to deal with JSX on the server and it's transpilation
 import getRoutes from '../../dist-server/app.server.bundle'
 import {ContainerWidth} from '../client/styles/grid'
+
+import { Provider } from 'react-redux'
+import configureStore from 'shared/configure-store.js'
 
 const RootDir = path.join(__dirname, '../..')
 const EnvIsProd = process.env.NODE_ENV === 'production'
@@ -52,12 +57,20 @@ app.use(express.static(path.join(RootDir, '/dist'), {
 
 app.use(device.capture({parseUserAgent: true}))
 
+
+//TODO: reconsile this with get-routes.js
 const Wrapper = (props) => {
   const buildCreateElement = (containerW) =>
     (Component, props) => <Component {...props} containerWidth={containerW}/>
   const {containerWidth} = props
 
-  return <RouterContext {...props}  createElement={buildCreateElement(containerWidth)}/>
+  const store = configureStore()
+
+  return (
+    <Provider store={store}>
+      <RouterContext {...props}  createElement={buildCreateElement(containerWidth)}/>
+    </Provider>
+  )
 }
 
 //gets container width by device type, we don't know for sure, so we use best guess and return
