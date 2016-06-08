@@ -2,9 +2,10 @@
 @import '../styles/mixins';
 @import '../styles/bs4-fixes';
 
+
 .Day {
 
-  $today-circle-color: rgba(247, 118, 143, 1);
+  $today-circle-color: $primary-color;
 
   display: flex;
   flex-direction: row;
@@ -60,7 +61,7 @@
   }
 
   &-today {
-    background-color: rgba(247, 118, 143, 0.1);
+    background-color: transparentize($today-circle-color, 0.88);
 
     //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
 

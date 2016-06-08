@@ -101,15 +101,17 @@ class Calendar extends React.Component {
     if (!showPastEvents) {
       subTitleComp = (
         <h3 className="sub-title">
-          {eventsTotalFromToday} events from {startDate.format('MMMM Do')} ({eventsTotal} total)
-          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>show full year</a>
+          {eventsTotalFromToday} upcoming events from Today ({today.format('MMMM Do')})
+          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>show all {eventsTotal} events</a>
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotal} events
-          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>hide past events</a>
+          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>
+            hide past {eventsTotal - eventsTotalFromToday} events
+          </a>
         </h3>
       )
     }
