@@ -10,6 +10,9 @@ import Colors from 'styles/colors'
 import {Disciplines, Events} from 'temp/events'
 import moment from  'moment-timezone'
 
+import { connect } from 'react-redux'
+import { toggleShowPastEvents } from 'shared/actions/actions.js'
+
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -17,7 +20,7 @@ const findEventByDate = (eventsMap, date) => {
 }
 
 
-export default class Calendar extends Component {
+class Calendar extends React.Component {
   render() {
     const {
       name,
@@ -28,25 +31,27 @@ export default class Calendar extends Component {
       discipline,
       location,
       timeZone,
-      showOnlyFuture = false
+      showPastEvents
     } = this.props
+
+    //console.info(showPastEvents)
 
     //time-zone specific moment factory
     const momentTZ = () => moment.tz(...arguments, timeZone)
     const today = momentTZ()
 
-    //TODO: refactor all the ternar expressions on simple conditional
+    //TODO: refactor all the ternary expressions on simple conditional
 
     const eventsTotalFromToday = events.getTotalFrom(today)
     const eventsTotal = events.total
 
-    const startDate = showOnlyFuture
-      ? momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
-      : moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
+    const startDate = showPastEvents
+      ? moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
+      : momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
 
-    const totalWeeks = showOnlyFuture
-      ? startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
-      : startDate.isoWeeksInYear()
+    const totalWeeks = showPastEvents
+      ? startDate.isoWeeksInYear()
+      : startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
 
     let currentDate = startDate.clone()
     let weeksComponents = []
@@ -91,21 +96,20 @@ export default class Calendar extends Component {
       weeksComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
     }
 
-
     let subTitleComp
 
-    if (showOnlyFuture) {
+    if (!showPastEvents) {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotalFromToday} events from {startDate.format('MMMM Do')} ({eventsTotal} total)
-          <a className="show-more-or-less">show full year</a>
+          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>show full year</a>
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotal} events
-          <a className="show-more-or-less">hide past</a>
+          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>hide past events</a>
         </h3>
       )
     }
@@ -131,11 +135,19 @@ export default class Calendar extends Component {
 Calendar.propTypes = {
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
+  calendarId: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.instanceOf(Events),
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   containerWidth: PropTypes.number.isRequired,
-  showOnlyFuture: PropTypes.bool
+  showPastEvents: PropTypes.bool
 }
+
+export default connect(
+  (state, ownProps) => state.calendars[ownProps.calendarId],
+  (dispatch, ownProps) => ({
+    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+  })
+)(Calendar)

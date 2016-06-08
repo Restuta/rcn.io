@@ -14,7 +14,7 @@ export default class Mtb extends Component {
     if (containerWidth <= Grid.ContainerWidth.SM) {
       weekdaysSizes = [1, 1, 1, 1, 2, 4, 4]
     } else if (containerWidth <= Grid.ContainerWidth.MD) {
-      weekdaysSizes = [1, 1, 2, 2, 2, 3, 3]
+      weekdaysSizes = [2, 2, 2, 2, 2, 2, 2]
     }  else {
       weekdaysSizes = [2, 2, 2, 2, 2, 2, 2]
     }
@@ -22,7 +22,9 @@ export default class Mtb extends Component {
     return (
       <div>
         {this.props.children}
-        <Calendar location="NorCal"
+        <Calendar
+          calendarId="cal-0"
+          location="NorCal"
           discipline="MTB"
           name="Calendar"
           year={2016}
@@ -30,7 +32,7 @@ export default class Mtb extends Component {
           events={mtbEvents}
           containerWidth={containerWidth}
           weekdaysSizes={weekdaysSizes}
-          showOnlyFuture
+          showOnlyFuture={true}
           />
       </div>
     )

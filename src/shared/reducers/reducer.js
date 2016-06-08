@@ -8,20 +8,39 @@ const initialState = {
     showContainerEdges: false,
   },
 
-  showAllEvents: false,
-
-  calendar: {
-    id: null,
-    // showAllEvents: false,
-    events: null, //array of ids
-  },
+  //calenars map by id
+  calendars: {
+    ['cal-0']: {
+      // name: 'NorCal MTB Calendar 2016 =)',
+      showPastEvents: false
+    },
+    ['cal-test-1']: {},
+    ['cal-test-2']: {},
+    ['cal-test-3']: {},
+    ['cal-test-4']: {}
+  }
   //events: null //array of objects
 }
 
 
-export const calendar = (state = initialState.calendar, action) => {
-  return state
-}
+export const calendars = makeReducer({
+  ['Cal.TOGGLE_PAST_EVENTS']: (state, action) => {
+    const calendarId = action.payload.calendarId
+    const calendar = state[calendarId]
+
+    if (calendar) {
+      return {
+        ...state,
+        [calendarId] : {
+          ...calendar,
+          showPastEvents: !calendar.showPastEvents
+        }
+      }
+    } else {
+      throw new Error(`No calendar corresponding to id: ${calendarId}`)
+    }
+  }
+}, initialState.calendars)
 
 
 export const debug = makeReducer({
@@ -32,7 +51,7 @@ export const debug = makeReducer({
 
 const rootReducer = combineReducers({
   debug,
-  calendar,
+  calendars,
 })
 
 export default rootReducer
