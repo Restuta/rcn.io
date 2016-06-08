@@ -19,8 +19,7 @@ const findEventByDate = (eventsMap, date) => {
   return eventsMap.get(key) || []
 }
 
-
-class Calendar extends React.Component {
+class Calendar extends Component {
   render() {
     const {
       name,

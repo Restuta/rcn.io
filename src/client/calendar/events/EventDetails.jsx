@@ -10,4 +10,6 @@ export default class EventDetails extends Component {
   }
 }
 
-EventDetails.propTypes = {}
+EventDetails.propTypes = {
+  details: PropTypes.string
+}
