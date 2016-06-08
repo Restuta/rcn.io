@@ -86,16 +86,24 @@ Today
 	--- Redux Setup
 		- maybe set webpack's root to one level up so we can reference shared from both client and server
 		- server side setup
+			+- basic store and routing support
+			- window.__INITIAL_STATE
 		- redux router
 			- move showAll/hidePast to be URL param of calendar and suppored by redux
 		-- ecosystem
 			- redux-undo: useful for ading/updating events
-			- redux-logger
+			+- redux-logger
 			- redux-observable
 			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
 	--- Event Details
 		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
+		-- setup proper routing hierarhy
+			- move Calendars to redux store
+				- move Events to the store and normalize Calendar and Events
+				- make Calendar to take params from a router (url)
+				- make MTB calendar part of Store and introduce concept of "Named calendar" vs plain id
+				- redux-actions when action creator function is not defined captures syntatic events, so identity function by default is confusing
 
  	--- design a card UI
  		-- ideas
