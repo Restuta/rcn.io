@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "5.9"
   - "6.2.1"
+env:
+  - CXX=g++-4.8
 before_install:
 script:
   - npm run build
