@@ -138,3 +138,7 @@ $font-size-4: scaleUp(4);
 $font-size-5: scaleUp(5);
 $font-size-6: scaleUp(6);
 $font-size-7: scaleUp(7);
+
+
+$drift-z-index: 1000;
+$modal-z-index: $drift-z-index + 50;

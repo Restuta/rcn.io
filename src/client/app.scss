@@ -44,3 +44,9 @@ a {
   display: flex;
   align-items: flex-end;
 }
+
+
+//making drift z-index lowe than modal z-index
+#drift-widget-container {
+  z-index: $drift-z-index !important;
+}
