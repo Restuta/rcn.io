@@ -17,5 +17,9 @@ require('babel-register')({
     }
   }
 })
+
+//to eliminate the risk of buggy native Object.assign implementation, see https://github.com/facebook/react/issues/6451#issuecomment-212154690
+Object.assign = require('object-assign')
+
 require('babel-polyfill')
 require('./server')
