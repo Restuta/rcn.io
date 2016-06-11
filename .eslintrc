@@ -94,7 +94,7 @@
         "terms": ["todo bc", "todo restuta bc"]
       }],
     "object-curly-spacing": 0,
-    "operator-linebreak": [2, "before"],
+    "operator-linebreak": [0, "before"],
     "max-len":[2, 140, 4, {"ignoreComments": true, "ignoreUrls": true}],
     "quote-props": [2, "as-needed", {"keywords": true, "unnecessary": false}],
     "quotes": [2, "single", "avoid-escape"],
