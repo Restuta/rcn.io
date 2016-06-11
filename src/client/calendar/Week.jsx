@@ -8,7 +8,7 @@ import classnames from 'classnames'
 export default class Week extends Component {
   render() {
     const {lastOne} = this.props
-    const classNames = classnames('Week', (lastOne && 'last-one'))
+    const classNames = classnames('Week', {['last-one']: lastOne})
 
     return (
       <Row className={classNames}>
