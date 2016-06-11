@@ -97,8 +97,10 @@ let cache = {}
 const CACHE_DURATION = ms('10m')
 
 setInterval(() => {
-  cache = {}
-  console.log('cleared cache...') //eslint-disable-line
+  if (Object.keys(cache).length > 0) {
+    cache = {}
+    console.log('cleared cache...') //eslint-disable-line
+  }
 }, CACHE_DURATION)
 
 app.get('/*', function(req, res, next) {
