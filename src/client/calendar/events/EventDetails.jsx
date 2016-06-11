@@ -1,42 +1,15 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './EventDetails.scss'
-import ExecutionEnvironment from 'exenv'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-import { default as ReactModal } from 'react-modal2'
+import Modal from 'atoms/Modal.jsx'
 
-class MyModal extends Component {
-  componentWillMount() {
-    if (ExecutionEnvironment.canUseDOM) {
-      document.body.style.overflow = 'hidden'
-    }
-  }
-
-  componentWillUnmount() {
-    if (ExecutionEnvironment.canUseDOM) {
-      document.body.style.overflow = null
-    }
-  }
-
-  render() {
-    return (
-      <ReactModal
-        onClose={this.props.onClose}
-        closeOnEsc={this.props.closeOnEsc}
-        closeOnBackdropClick={this.props.closeOnBackdropClick}
-        backdropClassName='MyModal overlay'
-        modalClassName='content'>
-        {this.props.children}
-      </ReactModal>
-    )
-  }
-}
 
 export default class EventDetails extends Component {
   constructor(props) {
     super(props)
-    this.state = {modalIsOpen: false}
+    this.state = {modalIsOpen: true}
 
     this.openModal = this.openModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
@@ -58,9 +31,10 @@ export default class EventDetails extends Component {
         <hr />
         <a onClick={this.openModal}>Open Modal</a>
         {this.state.modalIsOpen &&
-          <MyModal closeOnEsc={true} closeOnBackdropClick={true} onClose={this.closeModal}>
+          <Modal closeOnEsc={true} closeOnBackdropClick={true} onClose={this.closeModal}
+            contentClassName='EventDetails-modal-content'>
             <Row>
-              <Col sm={9}>
+              <Col xs={14} sm={9}>
                 <h4 style={{marginTop: 0, color: 'grey'}} className="header-regular w-500">
                   Saturday, May 13th <i>(in 43 days)</i>
                 </h4>
@@ -68,8 +42,26 @@ export default class EventDetails extends Component {
                   Co — Stage 4: Steve Harrison Memorial Criterium
                 </h3>
               </Col>
+              <Col xs={14} sm={5}>Criterium</Col>
             </Row>
-          </MyModal>
+            <Row>
+              <Col xs={14} sm={9}>
+                <div style={{minHeight: '50rem'}}>map</div>
+              </Col>
+              <Col xs={14} sm={5}><button className="btn btn-secondary">Register</button></Col>
+            </Row>
+            <Row>
+              <Col xs={14} sm={9}>
+              Part of:
+              </Col>
+              <Col xs={14} sm={5}>Links</Col>
+            </Row>
+            <Row>
+              <Col>
+                Flier
+              </Col>
+            </Row>
+          </Modal>
         }
 
       </div>
