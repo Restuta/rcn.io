@@ -12,7 +12,11 @@ const initialState = {
   calendars: {
     ['cal-0']: {
       // name: 'NorCal MTB Calendar 2016 =)',
-      showPastEvents: false
+      showPastEvents: false,
+      eventDetailsModal: {
+        isOpen: false,
+        eventId: undefined,
+      },
     },
     ['cal-test-1']: {},
     ['cal-test-2']: {},
@@ -39,7 +43,38 @@ export const calendars = makeReducer({
     } else {
       throw new Error(`No calendar corresponding to id: ${calendarId}`)
     }
-  }
+  },
+
+  //TODO bc: add error handling like above and refactor + tests
+  ['Cal.SHOW_EVENT_DETAILS']: (state, action) => {
+    const {calendarId, eventId} = action.payload
+
+    return {
+      ...state,
+      [calendarId]: {
+        ...state[calendarId],
+        eventDetailsModal: {
+          isOpen: true,
+          eventId: eventId
+        }
+      }
+    }
+  },
+
+  //TODO bc: add error handling like above and refactor + tests
+  ['Cal.CLOSE_EVENT_DETAILS']: (state, action) => {
+    const {calendarId} = action.payload
+
+    return {
+      ...state,
+      [calendarId]: {
+        ...state[calendarId],
+        eventDetailsModal: {
+          isOpen: false,
+        }
+      }
+    }
+  },
 }, initialState.calendars)
 
 

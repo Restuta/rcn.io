@@ -2,13 +2,6 @@ Today
  - setup icons
  	- pick icons
  	- set them up
- -- CSS
- 	+- comile bootstrap and use compiled version
- 	+- add Autoprefixer: for prod? (maybe covered as part of webpck)
- 	+- extract boostrap to separate branch/folder so we can tweak, compile and reuse
- 		+- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
- 	+- setup PostCSS with SASS-like plugins
- 		+- compare compilation time to SASS
 --- Calendar
 	---- idea - Doubling Columns: consider doubling number of columns for more granular control on calendar column width
 	---- idea - Relative orientation on the side: relative orientation in days/month on the side (see branch calendar.relative-dates-on-the-side)
@@ -21,30 +14,14 @@ Today
 		- how to fix: leave TODAY for large sizes and use circled day for the rest like Apple Calendar does
 	-- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
+		- use https://github.com/taion/react-router-scroll: https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#using-scroll-behavior
 	
 	!----- immediate todo
 		+- rename index1.html to something meaningful
 		--- MTB release
 			-- make sure public path is correct so we can see source maps in prod
-			+- revert webpack.prod config to real prod settings
-				-- invstigate why it builds fast with current ones
-			+- figure out on the server screen size (mobile/non-mobile)
-			+- make sure rendering works automatically when we can't figure out screen size: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
-			+- refactor server
-			+- setup home page
-			+- setup analytics
-			+- setup Smooch
-			+- favicon
-			.-(not sure what is it) responsive card size based on landscape portrait
 			- setup 404
-			+- setup proper URLs
-			+!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
-			+!- future events count is incorrect
 		--- after MTB release
-			+-- deployments
-				+- move production branch to master
-				+- setup stage environment
-				+- configure Segment to use different app ids for HEAP for dev/prod
 			- hosted graphite logo
 			-- use React SideEffect for Document Title
 				- client side
@@ -65,14 +42,6 @@ Today
 		+- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
 		- replace pure-render mixing on: https://facebook.github.io/react/docs/shallow-compare.html
 			- consider Recompose: https://github.com/acdlite/recompose
-		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
-		+- container edges are broken (after reaload checkbox is not honored)
-		+- re-consider card width calculations
-			+- center cards within day of week using flexbox
-			+- currently they are exact, which causes painful rounding erros and misalignments
-				+-- possible solusions
-					+- use 100% for width
-					+- substract 1-2px so visually cards occupy same space
 		-- decapitalize ALL CAPS events, make them sentence case					
 		- test layout for multiple events at the same day, but different sizes of cards
 		- test layout with variable height of events, so we don't waste vertical space
@@ -80,10 +49,15 @@ Today
 		- try and see if longest event fits all sizes and manually adjust text size
 		+- change base font size to 6 or 7 for x-small screens
 			- test in on mobile
-		- experiment with ReactSticky header 4.0
+		--- experiment with ReactSticky header 4.0
 			- try https://app.trainingpeaks.com/ approach: they implement scroll inside, locking down header
+			- try https://github.com/react-bootstrap/react-overlays/blob/master/src/Affix.js
 
 	--- Redux Setup
+		!-- learn 
+			- https://github.com/raisemarketplace/redux-loop
+			- https://github.com/jarvisaoieong/redux-architecture
+			- https://github.com/ahdinosaur/inu
 		- maybe set webpack's root to one level up so we can reference shared from both client and server
 		- server side setup
 			+- basic store and routing support
@@ -104,6 +78,14 @@ Today
 				- make Calendar to take params from a router (url)
 				- make MTB calendar part of Store and introduce concept of "Named calendar" vs plain id
 				- redux-actions when action creator function is not defined captures syntatic events, so identity function by default is confusing
+		-- optimizations
+			- do what Product Hunt does: clicking on any link in a list https://www.producthunt.com/ renders a kind of modal you can close, but if you then go directly to that url it's getting rendered without background (which drastically improves performance)
+		-- BEFORE RELEASE
+			- primary calendar concept for an event: each event can belong to any number of calendars, but only one can be it's primary where it was created
+			- decide on event urls should it be:
+				- under primary calendar: /calendars/cal-12312/events/evt-1233
+				- under root: /events/evt-234324
+				- under multiple links with canonical being from primary calendar
 
  	--- design a card UI
  		-- ideas
@@ -369,3 +351,36 @@ Done
 	 		+- on fonts branch
 	 		+- lato specifically
 	 	+- see if we need to set rems to match whole pixels like here (http://beta.gridlover.net/projects/74): currently we calculate it with SASS
++-- CSS
+ 	+- comile bootstrap and use compiled version
+ 	+- add Autoprefixer: for prod? (maybe covered as part of webpck)
+ 	+- extract boostrap to separate branch/folder so we can tweak, compile and reuse
+ 		+- should be able to run compile in one simple command and get updated version of CSS in a project ready to be commited
+ 	+- setup PostCSS with SASS-like plugins
+ 		+- compare compilation time to SASS
+
+ 		+- revert webpack.prod config to real prod settings
+				-- invstigate why it builds fast with current ones
+			+- figure out on the server screen size (mobile/non-mobile)
+			+- make sure rendering works automatically when we can't figure out screen size: eg set sizes to 100% by passing prop "autoSizeContainer" and teaching components to adjust
+			+- refactor server
+			+- setup home page
+			+- setup analytics
+			+- setup Smooch
+			+- favicon
+			.-(not sure what is it) responsive card size based on landscape portrait
+			+- setup proper URLs
+			+!- heroku timezone is different from UTC, this leads to differnet HTML being rendered, set it per calendar?
+			+!- future events count is incorrect
+						+-- deployments
+				+- move production branch to master
+				+- setup stage environment
+				+- configure Segment to use different app ids for HEAP for dev/prod
+		+- use "Feb 1" instead of first "1" for February and also "Jan 31" instead of "31" as last one
+		+- container edges are broken (after reaload checkbox is not honored)
+		+- re-consider card width calculations
+			+- center cards within day of week using flexbox
+			+- currently they are exact, which causes painful rounding erros and misalignments
+				+-- possible solusions
+					+- use 100% for width
+					+- substract 1-2px so visually cards occupy same space

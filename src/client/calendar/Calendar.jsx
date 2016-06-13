@@ -14,6 +14,12 @@ import { connect } from 'react-redux'
 import { toggleShowPastEvents, showEventDetails, closeEventDetails } from 'shared/actions/actions.js'
 import { EventDetailsModal } from 'calendar/events/event-details/EventDetails.jsx'
 
+import { appendUrl } from 'utils/history'
+import { browserHistory } from 'react-router'
+console.info(browserHistory)
+
+import ExecutionEnvironment from 'exenv'
+
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -21,6 +27,48 @@ const findEventByDate = (eventsMap, date) => {
 }
 
 class Calendar extends Component {
+  constructor(props) {
+    super(props)
+    this.onEventClick = this.onEventClick.bind(this)
+    this.onEventDetailsModalClose = this.onEventDetailsModalClose.bind(this)
+    this.onUrlChange = this.onUrlChange.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('popstate', this.onUrlChange)
+    // window.onpopstate = (event) => {
+    //   if (document.location.pathname.endsWith('calendars/norcal-mtb')) {
+    //     this.props.closeEventDetailsModal()
+    //   }
+    // }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('popstate', this.onUrlChange)
+  }
+
+  onUrlChange() {
+    console.info(document.location.pathname)
+    if (document.location.pathname.endsWith('calendars/norcal-mtb')) {
+      this.props.closeEventDetailsModal()
+    }
+  }
+
+  onEventClick(eventId) {
+    // browserHistory.replaceState(`events/${eventId}`)
+    appendUrl(`events/${eventId}`)
+    this.props.showEventDetailsModal(eventId)
+  }
+
+  onEventDetailsModalClose() {
+    if (ExecutionEnvironment.canUseDOM) {
+      //  window.history.back()
+      browserHistory.goBack()
+
+    }
+    this.props.closeEventDetailsModal()
+  }
+
   render() {
     const {
       name,
@@ -33,8 +81,6 @@ class Calendar extends Component {
       timeZone,
       showPastEvents,
       onShowFullHidePastClick,
-      onEventClick,
-      onDetailsModalClose,
       eventDetailsModal = {
         isOpen: false,
         eventId: undefined,
@@ -81,7 +127,7 @@ class Calendar extends Component {
           eventComponents = foundEvents.map((event, i) =>
             <Event id={event.id} key={i} width={daySize} containerWidth={containerWidth}
               name={event.name} discipline={discipline} event={event}
-              onEventClick={onEventClick}/>
+              onEventClick={this.onEventClick}/>
           )
         }
 
@@ -127,7 +173,7 @@ class Calendar extends Component {
 
     return (
       <div className="Calendar">
-        {eventDetailsModal.isOpen && <EventDetailsModal onClose={onDetailsModalClose}/>}
+        {eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}
         <h1 className="title">
           {location + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
@@ -156,8 +202,8 @@ Calendar.propTypes = {
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,
-  onEventClick: PropTypes.func,
-  onDetailsModalClose: PropTypes.func,
+  showEventDetailsModal: PropTypes.func,
+  closeEventDetailsModal: PropTypes.func,
   eventDetailsModal: PropTypes.shape({
     isOpen: PropTypes.bool,
     eventId: PropTypes.string
@@ -168,7 +214,7 @@ export default connect(
   (state, ownProps) => state.calendars[ownProps.calendarId],
   (dispatch, ownProps) => ({
     onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId)),
-    onEventClick: (eventId) => dispatch(showEventDetails(ownProps.calendarId, eventId)),
-    onDetailsModalClose: () => dispatch(closeEventDetails(ownProps.calendarId)),
+    showEventDetailsModal: (eventId) => dispatch(showEventDetails(ownProps.calendarId, eventId)),
+    closeEventDetailsModal: () => dispatch(closeEventDetails(ownProps.calendarId)),
   })
 )(Calendar)

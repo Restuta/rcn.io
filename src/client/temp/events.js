@@ -17,7 +17,8 @@ const Statuses = {
 }
 
 class Event {
-  constructor({name, date, type, location, promoterUrl, flyerUrl, status}) {
+  constructor({id, name, date, type, location, promoterUrl, flyerUrl, status}) {
+    this.id = id || name //TODO bc: revisit this, add ids?
     this.name = name
     this.date = date
     this.type = type
@@ -84,6 +85,7 @@ const preProcessEvents = function(rawEvents) {
   rawEvents.forEach(rawEvent => {
 
     const event = new Event({
+      id: rawEvent.id,
       name: rawEvent.name
         .replace(/--/g, '—'),
       date: moment(rawEvent.date, 'MMMM DD YYYY'),

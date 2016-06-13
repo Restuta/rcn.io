@@ -38,3 +38,11 @@ export const toggleContainerEdges = makeActionCreator('Dbg.TOGGLE_CONTAINER_EDGE
 export const toggleShowPastEvents = makeActionCreator(
   'Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId})
 )
+
+export const showEventDetails = makeActionCreator(
+  'Cal.SHOW_EVENT_DETAILS', (calendarId, eventId) => ({calendarId, eventId})
+)
+
+export const closeEventDetails = makeActionCreator(
+  'Cal.CLOSE_EVENT_DETAILS', (calendarId) => ({calendarId})
+)
