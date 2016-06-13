@@ -11,7 +11,8 @@ import {Disciplines, Events} from 'temp/events'
 import moment from  'moment-timezone'
 
 import { connect } from 'react-redux'
-import { toggleShowPastEvents } from 'shared/actions/actions.js'
+import { toggleShowPastEvents, showEventDetails, closeEventDetails } from 'shared/actions/actions.js'
+import { EventDetailsModal } from 'calendar/events/event-details/EventDetails.jsx'
 
 
 const findEventByDate = (eventsMap, date) => {
@@ -30,7 +31,14 @@ class Calendar extends Component {
       discipline,
       location,
       timeZone,
-      showPastEvents
+      showPastEvents,
+      onShowFullHidePastClick,
+      onEventClick,
+      onDetailsModalClose,
+      eventDetailsModal = {
+        isOpen: false,
+        eventId: undefined,
+      }
     } = this.props
 
     //console.info(showPastEvents)
@@ -71,8 +79,9 @@ class Calendar extends Component {
 
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
-            <Event key={i} width={daySize} containerWidth={containerWidth}
-              name={event.name} discipline={discipline} event={event}/>
+            <Event id={event.id} key={i} width={daySize} containerWidth={containerWidth}
+              name={event.name} discipline={discipline} event={event}
+              onEventClick={onEventClick}/>
           )
         }
 
@@ -101,22 +110,24 @@ class Calendar extends Component {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotalFromToday} upcoming events from Today ({today.format('MMMM Do')})
-          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>show all {eventsTotal} events</a>
+          <a className="show-more-or-less" onClick={onShowFullHidePastClick}>show all {eventsTotal} events</a>
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotal} events
-          <a className="show-more-or-less" onClick={this.props.onShowFullHidePastClick}>
+          <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
             hide past {eventsTotal - eventsTotalFromToday} events
           </a>
         </h3>
       )
     }
 
+
     return (
       <div className="Calendar">
+        {eventDetailsModal.isOpen && <EventDetailsModal onClose={onDetailsModalClose}/>}
         <h1 className="title">
           {location + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
@@ -143,12 +154,21 @@ Calendar.propTypes = {
   location: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   containerWidth: PropTypes.number.isRequired,
-  showPastEvents: PropTypes.bool
+  showPastEvents: PropTypes.bool,
+  onShowFullHidePastClick: PropTypes.func,
+  onEventClick: PropTypes.func,
+  onDetailsModalClose: PropTypes.func,
+  eventDetailsModal: PropTypes.shape({
+    isOpen: PropTypes.bool,
+    eventId: PropTypes.string
+  }),
 }
 
 export default connect(
   (state, ownProps) => state.calendars[ownProps.calendarId],
   (dispatch, ownProps) => ({
-    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId)),
+    onEventClick: (eventId) => dispatch(showEventDetails(ownProps.calendarId, eventId)),
+    onDetailsModalClose: () => dispatch(closeEventDetails(ownProps.calendarId)),
   })
 )(Calendar)

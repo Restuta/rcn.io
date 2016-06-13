@@ -33,27 +33,31 @@ class Event extends Component {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
     this.state = {
-      visited: false
+      visited: false,
+      eventDetailsOpen: false
     }
   }
 
   onEventClick() {
+    this.setState({
+      visited: true,
+      eventDetailsOpen: true
+    })
+
     const trackClick = () => analytics.track('Clicked on Event', {
       event: this.props.event,
     })
 
     if (this.props.event.promoterUrl) {
       trackClick()
-      window.open(this.props.event.promoterUrl)
-      this.setState({
-        visited: true
-      })
+      // window.open(this.props.event.promoterUrl)
     } else if (this.props.event.flyerUrl) {
       trackClick()
-      window.open(this.props.event.flyerUrl)
-      this.setState({
-        visited: true
-      })
+      // window.open(this.props.event.flyerUrl)
+    }
+
+    if (this.props.onEventClick) {
+      this.props.onEventClick(this.props.id)
     }
   }
 
@@ -211,16 +215,18 @@ class Event extends Component {
 }
 
 Event.propTypes = {
-  name: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   //location: PropTypes.any,
   //width in coluns card is going to take
-  width:  PropTypes.oneOf([1, 2, 3, 4]),
+  width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
-  event: PropTypes.instanceOf(EventType)
+  event: PropTypes.instanceOf(EventType),
+  onEventClick: PropTypes.func,
 }
 
 export default Event

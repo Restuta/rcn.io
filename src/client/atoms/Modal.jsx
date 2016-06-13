@@ -5,6 +5,8 @@ import { default as ReactModal } from 'react-modal2'
 import './Modal.scss'
 import classnames from 'classnames'
 
+ReactModal.getApplicationElement = () => document.getElementById('root')
+
 export default class Modal extends Component {
   componentWillMount() {
     if (ExecutionEnvironment.canUseDOM) {

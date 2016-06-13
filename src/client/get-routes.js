@@ -6,7 +6,7 @@ import Home from 'Home'
 import Dev from 'Dev'
 import Cal from 'calendar/Cal'
 import Mtb from 'calendar/Mtb'
-import EventDetails from 'calendar/events/EventDetails.jsx'
+import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
 
 import configureStore from 'shared/configure-store.js'
 const store = configureStore()
@@ -26,9 +26,8 @@ export default (containerWidth) => {
           <IndexRoute component={Home} />
           <Route path="/dev" component={Dev} />
           <Route path="/cal" component={Cal} />
-          <Route path="/calendars/norcal-mtb" component={Mtb}>
-            <Route path="/calendars/norcal-mtb/events/:eventId" component={EventDetails}/>
-          </Route>
+          <Route path="/calendars/norcal-mtb" component={Mtb} />
+          <Route path="/calendars/norcal-mtb/events/:eventId" component={EventDetails}/>
           <Redirect from="/mtb" to="/calendars/norcal-mtb" />
           <Route path="*" component={Home}/>
         </Route>
