@@ -4,19 +4,20 @@ import Calendar from './Calendar.jsx'
 import {mtbEvents} from 'temp/events.js'
 import Grid from 'styles/grid'
 
+const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
+const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
 export default class Mtb extends Component {
-
   render() {
-    const {containerWidth} = this.props
+    const {containerWidth, location} = this.props
     let weekdaysSizes
 
     if (containerWidth <= Grid.ContainerWidth.SM) {
-      weekdaysSizes = [1, 1, 1, 1, 2, 4, 4]
+      weekdaysSizes = sizesMaxWeekends
     } else if (containerWidth <= Grid.ContainerWidth.MD) {
-      weekdaysSizes = [2, 2, 2, 2, 2, 2, 2]
+      weekdaysSizes = sizesEqual
     }  else {
-      weekdaysSizes = [2, 2, 2, 2, 2, 2, 2]
+      weekdaysSizes = sizesEqual
     }
 
     return (
@@ -24,7 +25,7 @@ export default class Mtb extends Component {
         {this.props.children}
         <Calendar
           calendarId="cal-0"
-          location="NorCal"
+          region="NorCal"
           discipline="MTB"
           name="Calendar"
           year={2016}
@@ -32,7 +33,6 @@ export default class Mtb extends Component {
           events={mtbEvents}
           containerWidth={containerWidth}
           weekdaysSizes={weekdaysSizes}
-          showOnlyFuture={true}
           />
       </div>
     )

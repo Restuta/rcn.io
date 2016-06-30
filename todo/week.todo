@@ -63,6 +63,7 @@ Today
 			+- basic store and routing support
 			- window.__INITIAL_STATE
 		- redux router
+			- set it up: https://github.com/reactjs/react-router-redux
 			- move showAll/hidePast to be URL param of calendar and suppored by redux
 		-- ecosystem
 			- redux-undo: useful for ading/updating events
@@ -92,6 +93,14 @@ Today
  			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
  			but horizontal, it's also super nice that it moves on hower
  		!----- immediate todo
+ 			----- bug: back button doesn't open popover on Calndar page, it's due to history.goBack()
+ 			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
+ 				- positive: this simplifies logic
+ 				- positive: allows go close it and go back to default calendar
+ 				- negative: we can't show extra stuff on event details page
+ 			-- custom shallow render for calendar component
+ 				- do not re-render on location change
+ 			- install https://github.com/Va1/browser-sync-webpack-plugin: for page reloads
  			- update to https://github.com/gaearon/react-hot-boilerplate/pull/61
  			- use material design colors and play with not as prominent colors as they are currently 
  			- move Event.jsx paddings calculations to SCSS and assign classes by size of the card: currently only
