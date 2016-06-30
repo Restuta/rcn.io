@@ -3,6 +3,7 @@
 
 .EventDetails-container {
   position: relative;
+  min-width: 90rem;
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
@@ -11,23 +12,7 @@
 
 .EventDetails {
   >.content {
-    outline: 1px solid silver;
-    max-width: 80rem;
-
-    //debug styles
-    &:before {
-      content: '';
-      background-image: url(event-details-mock.png);
-      background-size: 100% 100%;
-      opacity: 0.2;
-      width: 100%;
-      max-width: 90rem;
-      min-height: 96rem;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+    // max-width: 90rem;
 
     .date {
       margin-top: 0;
@@ -35,6 +20,9 @@
       top: pxToRem(-5);
       line-height: 2rem;
       color: grey;
+      > .relative {
+        @include text-2(0);
+      }
     }
 
     .name {
@@ -56,12 +44,34 @@
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      padding-right: 8rem;
+      padding-right: 9.5rem;
     }
 
-    .type-badge:first-child {
-      margin-right: 1rem;
+    .type-badge {
+      margin-left: 1rem;
     }
+
+    //DEBUG STYLES
+
+
+    >.content {
+      outline: 1px solid silver;
+    }
+
+    &:before {
+      content: '';
+      background-image: url(event-details-mock.png);
+      background-size: 100% 100%;
+      opacity: 0.2;
+      width: 100%;
+      max-width: 90rem;
+      min-height: 96rem;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
 
     .col {
       outline: 1px solid pink;

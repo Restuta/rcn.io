@@ -5,6 +5,7 @@ import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
 import Typography from 'styles/typography'
+import Colors from 'styles/colors'
 
 
 const RaceTypeBadge = ({name, color, className}) => (
@@ -18,8 +19,8 @@ const RaceTypeBadge = ({name, color, className}) => (
     transform: 'skew(-20deg)',
     fontWeight: '900',
     fontStyle: 'italic',
-    paddingLeft: '4rem',
-    paddingRight: '4rem',
+    paddingLeft: '2rem',
+    paddingRight: '2rem',
     backgroundColor: color,
     display: 'flex',
     justifyContent: 'center',
@@ -42,14 +43,15 @@ export default class EventDetails extends Component {
       <div className="EventDetails">
         <div className="content">
           <div className="badges">
-            <RaceTypeBadge name="STAGE RACE" color="blueviolet" className="type-badge" />
+            <RaceTypeBadge name="PAST" color={Colors.grey500} className="type-badge" />
+            <RaceTypeBadge name="STAGE RACE" color={Colors.deepPurple700} className="type-badge" />
             <RaceTypeBadge name="CRITERIUM" color="#4CAF50" className="type-badge" />
           </div>
 
           <Row>
             <Col xs={14} sm={9}>
               <h4 className="header-regular w-500 date">
-                Saturday, May 13th <i>(in 43 days)</i>
+                Saturday, May 13th <i className="relative">(in 43 days)</i>
               </h4>
               <h3 className="header-regular w-900 name">Chico Stage Race pb Sierra Nevada Brewing
                 Co — Stage 4: Steve Harrison Memorial Criterium
