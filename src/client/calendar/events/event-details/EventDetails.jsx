@@ -30,6 +30,16 @@ const RaceTypeBadge = ({name, color, className}) => (
   </span>
 )
 
+const PresentedBy = ({by}) => (
+  <div style={{
+    fontStyle: 'italic',
+    position: 'relative',
+    top: Typography.pxToRem(2) + 'rem'
+  }}>
+    <span style={{color: Colors.grey500}}>by</span> <a href="#">{by}</a>
+  </div>
+)
+
 export default class EventDetails extends Component {
   render() {
     const {eventId} = this.props.params || 0
@@ -51,17 +61,23 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14} sm={9}>
               <h4 className="header-regular w-500 date">
-                Saturday, May 13th <i className="relative">(in 43 days)</i>
+                Saturday, May 13th <span className="relative">(in 43 days)</span>
               </h4>
               <h3 className="header-regular w-900 name">Chico Stage Race pb Sierra Nevada Brewing
                 Co — Stage 4: Steve Harrison Memorial Criterium
               </h3>
             </Col>
-            <Col xs={14} sm={5}>Criterium #{eventId}</Col>
+            <Col xs={14} sm={5} />
+          </Row>
+          <Row>
+            <Col xs={14}>
+              <PresentedBy by="Chica Corsa Cycling Club"/>
+              <hr className="spacer" />
+            </Col>
           </Row>
           <Row>
             <Col xs={14} sm={9}>
-              <div style={{minHeight: '50rem'}}>map</div>
+              <div style={{minHeight: '50rem', background: 'rgba(165, 214, 167, 0.28)'}}>Map</div>
             </Col>
             <Col xs={14} sm={5}><button className="btn btn-secondary">Register</button></Col>
           </Row>

@@ -15,18 +15,21 @@
     // max-width: 90rem;
 
     .date {
-      margin-top: 0;
+      margin-top: 1rem;
       margin-bottom: 0;
       top: pxToRem(-5);
       line-height: 2rem;
-      color: grey;
+      color: $grey-600;
       > .relative {
         @include text-2(0);
+        line-height: 1;
+        font-style: italic;
       }
     }
 
     .name {
       margin-top: 0;
+      margin-bottom: 0;
       top: pxToRem(-3);
       line-height: 3rem;
       letter-spacing: -0.2px;
@@ -48,11 +51,15 @@
     }
 
     .type-badge {
-      margin-left: 1rem;
+      // margin-left: 1rem;
     }
 
     //DEBUG STYLES
 
+    .spacer {
+      margin-top: 2rem - pxToRem(1);
+      margin-bottom: 2rem;
+    }
 
     >.content {
       outline: 1px solid silver;
@@ -60,7 +67,7 @@
 
     &:before {
       content: '';
-      background-image: url(event-details-mock.png);
+      // background-image: url(event-details-mock.png);
       background-size: 100% 100%;
       opacity: 0.2;
       width: 100%;
@@ -74,7 +81,7 @@
 
 
     .col {
-      outline: 1px solid pink;
+      // outline:1px solid pink;
     }
   }
 }

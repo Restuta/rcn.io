@@ -93,7 +93,8 @@ Today
  			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
  			but horizontal, it's also super nice that it moves on hower
  		!----- immediate todo
- 			----- bug: back button doesn't open popover on Calndar page, it's due to history.goBack()
+ 			+----- bug: back button doesn't open popover on Calndar page, it's due to history.goBack()
+ 			----- bug: 3 event badges does't work on mobile iPhone 6 and below
  			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
  				- positive: this simplifies logic
  				- positive: allows go close it and go back to default calendar
