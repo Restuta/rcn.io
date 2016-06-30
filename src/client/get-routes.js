@@ -27,7 +27,7 @@ export default (containerWidth) => {
           <Route path="/dev" component={Dev} />
           <Route path="/cal" component={Cal} />
           <Route path="/calendars/norcal-mtb" component={Mtb} />
-          <Route path="/calendars/norcal-mtb/events/:eventId" component={EventDetails}/>
+          <Route path="/events/:eventId" component={EventDetails}/>
           <Redirect from="/mtb" to="/calendars/norcal-mtb" />
           <Route path="*" component={Home}/>
         </Route>

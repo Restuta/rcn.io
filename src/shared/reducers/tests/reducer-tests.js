@@ -61,37 +61,3 @@ test(`On '${actions.toggleShowPastEvents().type}' action`, t => {
   t.notDeepEqual(state, initialState, 'should not mutate existing state')
   t.end()
 })
-
-
-test1(`On '${actions.showEventDetails().type}' action creator`, t => {
-  const action = actions.showEventDetails('calendar-id', 'event-id')
-  t.equal(action.payload.calendarId, 'calendar-id', 'it should create Action with property "calendarId"')
-  t.equal(action.payload.eventId, 'event-id', 'it should create Action with property "eventId"')
-})
-
-
-
-test1(`On '${actions.showEventDetails().type}' action`, t => {
-  const store = createStore(calendarsReducer, {
-    ['cal-test-0']: {
-      eventDetailsModal: {
-        isOpen: false,
-        eventId: undefined,
-      },
-    }
-  })
-  const initialState = store.getState()
-  const action = actions.showEventDetails('cal-test-0', 'evt-test-9')
-
-  store.dispatch(action)
-
-  const state = store.getState()
-  const calendar = state['cal-test-0']
-
-  t.equal(calendar.eventDetailsModal.isOpen, true,
-    'should change "eventDetails.isOpen" property on the Calendar with the corresponding id to true')
-  t.equal(calendar.eventDetailsModal.eventId, action.payload.eventId,
-    'should change "eventDetails.eventId" property to the value from action')
-  t.notDeepEqual(state, initialState, 'should not mutate existing state')
-  // t.notEqual(calendar, initialState['cal-test-0'], 'should not mutate nested state')
-})

@@ -1,24 +1,44 @@
 @import 'variables';
 @import 'mixins';
 
-.EventDetailsModal {
-    &-modal-content {
-      //debug styles
-      &:before{
-        content: '';
-        background-image: url(event-details-mock.png);
-        background-size: 100% 100%;
-        opacity: 0.4;
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
+.EventDetails-container {
+  position: relative;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+}
 
-      .col {
-        outline: 1px solid pink;
-      }
+.EventDetails {
+  display: flex;
+  justify-content: center;
+
+  >.content {
+    outline: 1px solid silver;
+    max-width: 80rem;
+
+    //debug styles
+    &:before {
+      content: '';
+      background-image: url(event-details-mock.png);
+      background-size: 100% 100%;
+      opacity: 0.2;
+      width: 100%;
+      max-width: 90rem;
+      min-height: 96rem;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
+
+    .flyer {
+      height: 100rem;
+      background: rgba($blue-100, 0.5);
+    }
+
+    .col {
+      // outline: 1px solid pink;
+    }
+  }
 }

@@ -9,6 +9,7 @@ import Grid from 'styles/grid'
 import {Disciplines, Event as EventType, Statuses} from 'temp/events'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
+import { withRouter } from 'react-router'
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -32,26 +33,20 @@ class Event extends Component {
   constructor(props) {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
-    this.state = {
-      visited: false,
-      eventDetailsOpen: false
-    }
+    this.state = { visited: false }
   }
 
   onEventClick() {
-    this.setState({
-      visited: true,
-      eventDetailsOpen: true
-    })
+    this.setState({ visited: true })
 
     const trackClick = () => analytics.track('Clicked on Event', {
       event: this.props.event,
     })
 
-    if (this.props.event.promoterUrl) {
+    if (this.props.event && this.props.event.promoterUrl) {
       trackClick()
       // window.open(this.props.event.promoterUrl)
-    } else if (this.props.event.flyerUrl) {
+    } else if (this.props.event && this.props.event.flyerUrl) {
       trackClick()
       // window.open(this.props.event.flyerUrl)
     }
@@ -59,9 +54,18 @@ class Event extends Component {
     if (this.props.onEventClick) {
       this.props.onEventClick(this.props.id)
     }
+
+    console.info(this.props)
+
+    this.props.router.push({
+      pathname: `/events/${this.props.id}`,
+      state: { modal: true, returnUrl: ''}
+    })
   }
 
   render() {
+    console.info('Event render is called')
+
     const {
       width,
       containerWidth,
@@ -226,7 +230,6 @@ Event.propTypes = {
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
   event: PropTypes.instanceOf(EventType),
-  onEventClick: PropTypes.func,
 }
 
-export default Event
+export default withRouter(Event)

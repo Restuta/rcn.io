@@ -9,17 +9,8 @@ import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
 import Colors from 'styles/colors'
 import {Disciplines, Events} from 'temp/events'
 import moment from  'moment-timezone'
-
 import { connect } from 'react-redux'
-import { toggleShowPastEvents, showEventDetails, closeEventDetails } from 'shared/actions/actions.js'
-import { EventDetailsModal } from 'calendar/events/event-details/EventDetails.jsx'
-
-import { appendUrl } from 'utils/history'
-import { browserHistory } from 'react-router'
-console.info(browserHistory)
-
-import ExecutionEnvironment from 'exenv'
-
+import { toggleShowPastEvents } from 'shared/actions/actions.js'
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -27,49 +18,8 @@ const findEventByDate = (eventsMap, date) => {
 }
 
 class Calendar extends Component {
-  constructor(props) {
-    super(props)
-    this.onEventClick = this.onEventClick.bind(this)
-    this.onEventDetailsModalClose = this.onEventDetailsModalClose.bind(this)
-    this.onUrlChange = this.onUrlChange.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener('popstate', this.onUrlChange)
-    // window.onpopstate = (event) => {
-    //   if (document.location.pathname.endsWith('calendars/norcal-mtb')) {
-    //     this.props.closeEventDetailsModal()
-    //   }
-    // }
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('popstate', this.onUrlChange)
-  }
-
-  onUrlChange() {
-    console.info(document.location.pathname)
-    if (document.location.pathname.endsWith('calendars/norcal-mtb')) {
-      this.props.closeEventDetailsModal()
-    }
-  }
-
-  onEventClick(eventId) {
-    // browserHistory.replaceState(`events/${eventId}`)
-    appendUrl(`events/${eventId}`)
-    this.props.showEventDetailsModal(eventId)
-  }
-
-  onEventDetailsModalClose() {
-    if (ExecutionEnvironment.canUseDOM) {
-      //  window.history.back()
-      browserHistory.goBack()
-
-    }
-    this.props.closeEventDetailsModal()
-  }
-
   render() {
+    console.info('Calendar render is called')
     const {
       name,
       year,
@@ -77,14 +27,10 @@ class Calendar extends Component {
       weekdaysSizes,
       events,
       discipline,
-      location,
+      region,
       timeZone,
       showPastEvents,
-      onShowFullHidePastClick,
-      eventDetailsModal = {
-        isOpen: false,
-        eventId: undefined,
-      }
+      onShowFullHidePastClick
     } = this.props
 
     //console.info(showPastEvents)
@@ -126,8 +72,7 @@ class Calendar extends Component {
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
             <Event id={event.id} key={i} width={daySize} containerWidth={containerWidth}
-              name={event.name} discipline={discipline} event={event}
-              onEventClick={this.onEventClick}/>
+              name={event.name} discipline={discipline} event={event}/>
           )
         }
 
@@ -170,12 +115,11 @@ class Calendar extends Component {
       )
     }
 
-
     return (
       <div className="Calendar">
-        {eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}
+        {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
         <h1 className="title">
-          {location + ' '}
+          {region + ' '}
           {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
           {name} <span>{year}</span>
         </h1>
@@ -197,24 +141,25 @@ Calendar.propTypes = {
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.instanceOf(Events),
-  location: PropTypes.string,
+  region: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,
-  showEventDetailsModal: PropTypes.func,
-  closeEventDetailsModal: PropTypes.func,
-  eventDetailsModal: PropTypes.shape({
-    isOpen: PropTypes.bool,
-    eventId: PropTypes.string
-  }),
+
+  // showEventDetailsModal: PropTypes.func,
+  // closeEventDetailsModal: PropTypes.func,
+  // eventDetailsModal: PropTypes.shape({
+  //   isOpen: PropTypes.bool,
+  //   eventId: PropTypes.string
+  // }),
+  //current location object passed from react-router
+  // location: PropTypes.object.isRequired,
 }
 
 export default connect(
   (state, ownProps) => state.calendars[ownProps.calendarId],
   (dispatch, ownProps) => ({
-    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId)),
-    showEventDetailsModal: (eventId) => dispatch(showEventDetails(ownProps.calendarId, eventId)),
-    closeEventDetailsModal: () => dispatch(closeEventDetails(ownProps.calendarId)),
+    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
   })
 )(Calendar)

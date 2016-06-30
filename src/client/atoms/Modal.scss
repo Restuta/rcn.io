@@ -1,29 +1,34 @@
 @import 'variables';
 @import 'mixins';
 
-.MyModal.backdrop {
+.Modal.backdrop {
   position: fixed;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: flex-start; //required for proper scrolling of the modal
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,.6);
-  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
   z-index: $modal-z-index;
+  overflow: auto;
+}
 
-  > .content {
-    display: block;
-    position: relative;
-    background-color: $body-bg-color;
-    border-radius: pxToRem(3);
-    padding: 4rem;
-    // margin: 5rem auto auto 4rem;
-    width: 90rem;
-    height: 85vh;
-    top: 8rem;
-    z-index: $modal-z-index + 50;
-    outline: 0;
-  }
+.Modal.content {
+  display: block;
+  position: relative;
+  background-color: $body-bg-color;
+  border-radius: pxToRem(3);
+  padding: 4rem;
+  // margin: 5rem auto auto 4rem;
+  max-width: 90rem;
+  // min-height: 85vh;
+  min-height: 96rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  z-index: $modal-z-index + 50;
+  outline: 0;
+  @include box-shadow-lvl-4();
 }

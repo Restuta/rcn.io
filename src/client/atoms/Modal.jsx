@@ -5,6 +5,7 @@ import { default as ReactModal } from 'react-modal2'
 import './Modal.scss'
 import classnames from 'classnames'
 
+//for accesibility, to hide app from screen readers while modal is open
 ReactModal.getApplicationElement = () => document.getElementById('root')
 
 export default class Modal extends Component {
@@ -21,14 +22,14 @@ export default class Modal extends Component {
   }
 
   render() {
-    const modalClassNames = classnames('content', this.props.contentClassName)
+    const modalClassNames = classnames('Modal content', this.props.contentClassName)
 
     return (
       <ReactModal
         onClose={this.props.onClose}
         closeOnEsc={this.props.closeOnEsc}
         closeOnBackdropClick={this.props.closeOnBackdropClick}
-        backdropClassName='MyModal backdrop'
+        backdropClassName='Modal backdrop'
         modalClassName={modalClassNames}>
         {this.props.children}
       </ReactModal>

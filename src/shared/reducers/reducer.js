@@ -2,6 +2,9 @@ import { combineReducers } from 'redux'
 import { handleActions as makeReducer } from 'redux-actions'
 
 const initialState = {
+  app: {
+    containerWidth: null,
+  },
   debug: {
     showBaseline: false,
     show3x3Grid: false,
@@ -43,38 +46,7 @@ export const calendars = makeReducer({
     } else {
       throw new Error(`No calendar corresponding to id: ${calendarId}`)
     }
-  },
-
-  //TODO bc: add error handling like above and refactor + tests
-  ['Cal.SHOW_EVENT_DETAILS']: (state, action) => {
-    const {calendarId, eventId} = action.payload
-
-    return {
-      ...state,
-      [calendarId]: {
-        ...state[calendarId],
-        eventDetailsModal: {
-          isOpen: true,
-          eventId: eventId
-        }
-      }
-    }
-  },
-
-  //TODO bc: add error handling like above and refactor + tests
-  ['Cal.CLOSE_EVENT_DETAILS']: (state, action) => {
-    const {calendarId} = action.payload
-
-    return {
-      ...state,
-      [calendarId]: {
-        ...state[calendarId],
-        eventDetailsModal: {
-          isOpen: false,
-        }
-      }
-    }
-  },
+  }
 }, initialState.calendars)
 
 
