@@ -98,6 +98,9 @@ Today
  				- positive: this simplifies logic
  				- positive: allows go close it and go back to default calendar
  				- negative: we can't show extra stuff on event details page
+ 			- SSR for Redux and Router: 
+ 				- https://github.com/davezuko/react-redux-starter-kit/blob/master/src/main.js
+ 				- https://github.com/StevenIseki/react-router-redux-example/blob/master/serverProd.js
  			-- custom shallow render for calendar component
  				- do not re-render on location change
  			- install https://github.com/Va1/browser-sync-webpack-plugin: for page reloads

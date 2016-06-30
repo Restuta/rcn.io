@@ -7,22 +7,23 @@ import Dev from 'Dev'
 import Cal from 'calendar/Cal'
 import Mtb from 'calendar/Mtb'
 import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
-
 import configureStore from 'shared/configure-store.js'
+import { syncHistoryWithStore } from 'react-router-redux'
+
 const store = configureStore()
+const history = syncHistoryWithStore(browserHistory, store)
+history.listen(location => analytics.page())
+
+//overriding Router function to pass custom props to a child components, building a higer order function to
+//provide containerWidth to inner-clojure
+const buildCreateElement = containerW =>
+  (Component, props) => <Component {...props} containerWidth={containerW}/>
 
 export default (containerWidth) => {
-  //overriding Router function to pass custom props to a child components, building a higer order function to
-  //provide containerWidth to inner-clojure
-  const buildCreateElement = containerW =>
-    (Component, props) => <Component {...props} containerWidth={containerW}/>
-
-  const onChange = (event) => analytics.page()
-
   return (
     <Provider store={store}>
-      <Router history={browserHistory} createElement={buildCreateElement(containerWidth)}>
-        <Route path="/" component={App} onChange={onChange}>
+      <Router history={history} createElement={buildCreateElement(containerWidth)}>
+        <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/dev" component={Dev} />
           <Route path="/cal" component={Cal} />

@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { handleActions as makeReducer } from 'redux-actions'
+import { routerReducer } from 'react-router-redux'
 
 const initialState = {
   app: {
@@ -59,6 +60,7 @@ export const debug = makeReducer({
 const rootReducer = combineReducers({
   debug,
   calendars,
+  routing: routerReducer
 })
 
 export default rootReducer

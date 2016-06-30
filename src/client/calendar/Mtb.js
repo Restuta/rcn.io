@@ -9,7 +9,7 @@ const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
 export default class Mtb extends Component {
   render() {
-    const {containerWidth, location} = this.props
+    const { containerWidth } = this.props
     let weekdaysSizes
 
     if (containerWidth <= Grid.ContainerWidth.SM) {
@@ -22,7 +22,6 @@ export default class Mtb extends Component {
 
     return (
       <div>
-        {this.props.children}
         <Calendar
           calendarId="cal-0"
           region="NorCal"

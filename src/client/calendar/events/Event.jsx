@@ -33,33 +33,18 @@ class Event extends Component {
   constructor(props) {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
-    this.state = { visited: false }
   }
 
   onEventClick() {
-    this.setState({ visited: true })
-
     const trackClick = () => analytics.track('Clicked on Event', {
       event: this.props.event,
     })
 
-    if (this.props.event && this.props.event.promoterUrl) {
-      trackClick()
-      // window.open(this.props.event.promoterUrl)
-    } else if (this.props.event && this.props.event.flyerUrl) {
-      trackClick()
-      // window.open(this.props.event.flyerUrl)
-    }
-
-    if (this.props.onEventClick) {
-      this.props.onEventClick(this.props.id)
-    }
-
-    console.info(this.props)
+    trackClick()
 
     this.props.router.push({
       pathname: `/events/${this.props.id}`,
-      state: { modal: true, returnUrl: ''}
+      state: { modal: true, returnUrl: this.context.locationPathname}
     })
   }
 
@@ -229,7 +214,11 @@ Event.propTypes = {
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
-  event: PropTypes.instanceOf(EventType),
+  event: PropTypes.instanceOf(EventType)
+}
+
+Event.contextTypes = {
+  locationPathname: React.PropTypes.string
 }
 
 export default withRouter(Event)

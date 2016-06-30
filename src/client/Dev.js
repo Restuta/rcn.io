@@ -63,15 +63,15 @@ export default class Dev extends Component {
             key={8}
             to={{
               pathname: '/events/evt-8',
-              state: { modal: true, returnTo: this.props.location.pathname }
+              state: { modal: true, returnUrl: this.context.locationPathname }
             }}>Open Modal</Link>
-          </div>
+        </div>
         <div>
           <Link
             key={9}
             to={{
               pathname: '/mtb',
-              state: { modal: true, returnTo: this.props.location.pathname }
+              state: { modal: true, returnUrl: this.context.locationPathname }
             }}>Open Dev</Link>
         </div>
         <h1>{this.props.foo}</h1>
@@ -188,7 +188,8 @@ export default class Dev extends Component {
         <ContainerHeader label="XXL" width={Grid.ContainerWidth.XXL}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event id="test" id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+            <Event id="test" id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+              name="Dunnigan Hills Road Race"/>
             <Event id="test" debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
             <Event id="test" debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
@@ -253,8 +254,10 @@ export default class Dev extends Component {
 
         {/* all cards per-breakdown in rows*/}
         <Row className="margin-top">
-          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
-          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            name="Dunnigan Hills"/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/></Col>
@@ -316,8 +319,10 @@ export default class Dev extends Component {
 
         {/* all cards per-breakdown in rows, long name*/}
         <Row className="margin-top">
-          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
-          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            name="Dunnigan Hills Road Race"/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/></Col>
           <Col sm={1}><Event id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/></Col>
@@ -394,4 +399,8 @@ export default class Dev extends Component {
       </div>
     )
   }
+}
+
+Dev.contextTypes = {
+  locationPathname: React.PropTypes.string
 }

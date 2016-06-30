@@ -7,12 +7,16 @@ import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'
 import { connect } from 'react-redux'
 
-import { Link, withRouter } from 'react-router'
+import { withRouter } from 'react-router'
 import Modal from 'atoms/Modal.jsx'
 
 let whenRenderStarted
 
 class App extends Component {
+  getChildContext() {
+    return { locationPathname: this.props.location.pathname }
+  }
+
   constructor(props) {
     super(props)
 
@@ -24,8 +28,11 @@ class App extends Component {
   }
 
   onModalClose() {
-    // this.props.router.goBack()
-    this.props.router.push('/calendars/norcal-mtb')
+    const returnUrl = this.props.location.state.returnUrl
+
+    if (returnUrl) {
+      this.props.router.push(returnUrl)
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -91,6 +98,10 @@ class App extends Component {
       </div>
     )
   }
+}
+
+App.childContextTypes = {
+  locationPathname: React.PropTypes.string
 }
 
 
