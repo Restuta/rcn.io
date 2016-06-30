@@ -3,6 +3,31 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
+import classnames from 'classnames'
+import Typography from 'styles/typography'
+
+
+const RaceTypeBadge = ({name, color, className}) => (
+  <span style={{
+    textAlign: 'center',
+    color: 'white',
+    fontSize: Typography.scaleUp(2) + 'rem',
+    width: 'auto',
+    minWidth: '16rem',
+    height: '3rem',
+    transform: 'skew(-20deg)',
+    fontWeight: '900',
+    fontStyle: 'italic',
+    paddingLeft: '4rem',
+    paddingRight: '4rem',
+    backgroundColor: color,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }} className={classnames('RaceTypeBadge', className)}>
+    <span style={{transform: 'skew(20deg)'}}>{name}</span>
+  </span>
+)
 
 export default class EventDetails extends Component {
   render() {
@@ -16,27 +41,17 @@ export default class EventDetails extends Component {
     const eventDetailsComponent = (
       <div className="EventDetails">
         <div className="content">
-          <div style={{
-            position: 'absolute',
-            top: 0,
-            textAlign: 'center',
-            right: '16rem',
-            color: 'white',
-            fontSize: '1.75rem',
-            width: '16rem',
-            height: '4rem',
-            transform: 'skew(-20deg)',
-            fontWeight: '900',
-            fontStyle: 'italic',
-            padding: '1rem',
-            backgroundColor: 'blueviolet'
-          }}><div style={{transform: 'skew(20deg)'}}>STAGE RACE</div></div>
+          <div className="badges">
+            <RaceTypeBadge name="STAGE RACE" color="blueviolet" className="type-badge" />
+            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" className="type-badge" />
+          </div>
+
           <Row>
             <Col xs={14} sm={9}>
-              <h4 style={{marginTop: 0, color: 'grey'}} className="header-regular w-500">
+              <h4 className="header-regular w-500 date">
                 Saturday, May 13th <i>(in 43 days)</i>
               </h4>
-              <h3 style={{marginTop: 0}} className="header-regular w-900">Chico Stage Race pb Sierra Nevada Brewing
+              <h3 className="header-regular w-900 name">Chico Stage Race pb Sierra Nevada Brewing
                 Co — Stage 4: Steve Harrison Memorial Criterium
               </h3>
             </Col>

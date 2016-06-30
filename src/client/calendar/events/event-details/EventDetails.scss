@@ -29,13 +29,42 @@
       top: 0;
     }
 
+    .date {
+      margin-top: 0;
+      margin-bottom: 0;
+      top: pxToRem(-5);
+      line-height: 2rem;
+      color: grey;
+    }
+
+    .name {
+      margin-top: 0;
+      top: pxToRem(-3);
+      line-height: 3rem;
+      letter-spacing: -0.2px;
+    }
+
     .flyer {
       height: 100rem;
       background: rgba($blue-100, 0.5);
     }
 
+    .badges {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 8rem;
+    }
+
+    .type-badge:first-child {
+      margin-right: 1rem;
+    }
+
     .col {
-      // outline: 1px solid pink;
+      outline: 1px solid pink;
     }
   }
 }
