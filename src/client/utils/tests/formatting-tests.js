@@ -1,13 +1,7 @@
-import tapeTest from 'tape'
+import { createTest } from 'tests/test-utils'
 import { zeroPad } from '../formatting'
 
-const testFactory = (groupName) => {
-  return (name, testBody) => {
-    tapeTest(groupName + ': ' + name, testBody)
-  }
-}
-
-const test = testFactory('Utils')
+const test = createTest('Utils: Formatting ')
 
 test('zeroPad when (1, 2) is passed', t => {
   const result = zeroPad(1, 2)
@@ -22,7 +16,6 @@ test('zeroPad when (22, 2) is passed', t => {
   t.equal(result, '22', 'should output "22"')
   t.end()
 })
-
 
 test('zeroPad when (2, 3) is passed', t => {
   const result = zeroPad(2, 3)
