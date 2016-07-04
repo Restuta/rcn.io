@@ -37,7 +37,7 @@ if (!String.prototype.startsWith) {
 if (!String.prototype.endsWith) {
   String.prototype.endsWith = function(searchString, position) {
       var subjectString = this.toString();
-      if (typeof position !== 'number' 
+      if (typeof position !== 'number'
         || !isFinite(position)
         || Math.floor(position) !== position
         || position > subjectString.length) {
@@ -46,5 +46,20 @@ if (!String.prototype.endsWith) {
       position -= searchString.length;
       var lastIndex = subjectString.indexOf(searchString, position);
       return lastIndex !== -1 && lastIndex === position;
+  };
+}
+
+if (!String.prototype.includes) {
+  String.prototype.includes = function(search, start) {
+    'use strict';
+    if (typeof start !== 'number') {
+      start = 0;
+    }
+
+    if (start + search.length > this.length) {
+      return false;
+    } else {
+      return this.indexOf(search, start) !== -1;
+    }
   };
 }

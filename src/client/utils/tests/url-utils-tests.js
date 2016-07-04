@@ -19,7 +19,7 @@ test('addUrlParams url with no params and no trailing slash and object with one 
   const params = { p: 8 }
   const newUrl = addUrlParams(urlWithoutTrailingSlash, params)
 
-  t.equal(newUrl, 'http://rcn.io/?p=8', 'should add param after ? and also trailing slash')
+  t.equal(newUrl, 'http://rcn.io?p=8', 'should add param after ?')
   t.end()
 })
 
@@ -28,15 +28,26 @@ test('addUrlParams url with no params and no trailing slash and object with two 
   const params = { p1: 1, p2: 2 }
   const newUrl = addUrlParams(url, params)
 
-  t.equal(newUrl, 'http://rcn.io/?p1=1&p2=2', 'should add two params after ?')
+  t.equal(newUrl, 'http://rcn.io?p1=1&p2=2', 'should add two params after ?')
   t.end()
 })
 
-test('addUrlParams with params in the url', t => {
+test('addUrlParams with params that should be encoded', t => {
   const url = 'http://rcn.io'
   const params = { ['encode&me']:'and me'}
   const newUrl = addUrlParams(url, params)
 
-  t.equal(newUrl, 'http://rcn.io/?encode%26me=and%20me', 'should add two params after ?')
+  t.equal(newUrl, 'http://rcn.io?encode%26me=and%20me',
+    'should add two params after ? and properly encode them')
+  t.end()
+})
+
+test('addUrlParams when url already has other params', t => {
+  const url = 'http://rcn.io?p1=1'
+  const params = { p2: 2}
+  const newUrl = addUrlParams(url, params)
+
+  t.equal(newUrl, 'http://rcn.io?p1=1&p2=2',
+    'should append params at the end')
   t.end()
 })

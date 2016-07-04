@@ -1,5 +1,3 @@
-//TODO: use urlParams
-
 const createParams = (obj) => {
   const createParam = (name) => `${encodeURIComponent(name)}=${encodeURIComponent(obj[name])}`
 
@@ -16,11 +14,13 @@ const addUrlParams = (url, objParams) => {
   let newUrl = url
   let params = createParams(objParams)
 
-  if (!newUrl.endsWith('/')) {
-    newUrl += '/'
+  if (!newUrl.includes('?')) {
+    newUrl += '?' + params
+  } else {
+    newUrl += '&' + params
   }
 
-  return (newUrl += '?' + params)
+  return newUrl
 }
 
 export { addUrlParams }
