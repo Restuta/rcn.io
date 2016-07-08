@@ -51,3 +51,13 @@ test('addUrlParams when url already has other params', t => {
     'should append params at the end')
   t.end()
 })
+
+test('addUrlParams when params value is an array', t => {
+  const url = 'http://rcn.io'
+  const params = { p: [1, 2, 3]}
+  const newUrl = addUrlParams(url, params)
+
+  t.equal(newUrl, 'http://rcn.io?p=1&p=2&p=3',
+    'should create multiple parameters with the same key, for each array value')
+  t.end()
+})

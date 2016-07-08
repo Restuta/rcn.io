@@ -1,5 +1,13 @@
 const createParams = (obj) => {
-  const createParam = (name) => `${encodeURIComponent(name)}=${encodeURIComponent(obj[name])}`
+  const createParam = (name) => {
+    const toNameValueString = (name, value) => `${encodeURIComponent(name)}=${encodeURIComponent(value)}`
+    const value = obj[name]
+
+    return Array.isArray(value)
+      ? value.map(v => toNameValueString(name, v)).join('&')
+      : toNameValueString(name, value)
+  }
+
 
   return Object.keys(obj)
     .map(key => {
