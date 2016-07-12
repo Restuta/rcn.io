@@ -17,10 +17,6 @@ const initialState = {
     ['cal-0']: {
       // name: 'NorCal MTB Calendar 2016 =)',
       showPastEvents: false,
-      eventDetailsModal: {
-        isOpen: false,
-        eventId: undefined,
-      },
     },
     ['cal-test-1']: {},
     ['cal-test-2']: {},
