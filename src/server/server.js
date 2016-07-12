@@ -10,14 +10,17 @@ import mime from 'mime-types'
 
 import React from 'react'
 import { renderToString } from 'react-dom/server'
-import { match, RouterContext } from 'react-router'
+import { createMemoryHistory, match, RouterContext } from 'react-router'
 
 //getting compiled by webpack function, so we don't have to deal with JSX on the server and it's transpilation
-import getRoutes from '../../dist-server/app.server.bundle'
-import {ContainerWidth} from '../client/styles/grid'
+//otherwise we would have to transpile entire client app and have webpack setup to do that
+import routes from '../../dist-server/app.server.bundle'
+
+import { ContainerWidth } from '../client/styles/grid'
 
 import { Provider } from 'react-redux'
 import configureStore from 'shared/configure-store.js'
+import { syncHistoryWithStore } from 'react-router-redux'
 
 const RootDir = path.join(__dirname, '../..')
 const EnvIsProd = process.env.NODE_ENV === 'production'
@@ -38,7 +41,7 @@ app.use(express.static(path.join(RootDir, '/dist'), {
   //overriding cache control per-resourse
   setHeaders: (res, path, stat) => {
     const mimeType = mime.lookup(path)
-    const cssAndJsMaxAge = ms('14 days') / 1000 //max age shuuld be in seconds
+    const cssAndJsMaxAge = ms('14 days') / 1000 //max age should be in seconds
 
     if (mimeType === 'text/css') {
       res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
@@ -54,24 +57,7 @@ app.use(express.static(path.join(RootDir, '/dist'), {
   }
 }))
 
-
 app.use(device.capture({parseUserAgent: true}))
-
-
-//TODO: reconsile this with get-routes.js
-const Wrapper = (props) => {
-  const buildCreateElement = (containerW) =>
-    (Component, props) => <Component {...props} containerWidth={containerW}/>
-  const {containerWidth} = props
-
-  const store = configureStore()
-
-  return (
-    <Provider store={store}>
-      <RouterContext {...props}  createElement={buildCreateElement(containerWidth)}/>
-    </Provider>
-  )
-}
 
 //gets container width by device type, we don't know for sure, so we use best guess and return
 //pessimistically smaller containers
@@ -93,6 +79,19 @@ const getContainerWidth = (deviceType) => {
 }
 
 
+//TODO: reconsile this with get-routes.js
+const Wrapper = (props) => {
+  const buildCreateElement = (containerW) =>
+    (Component, props) => <Component {...props} containerWidth={containerW}/>
+  const { containerWidth, store } = props
+
+  return (
+    <Provider store={store}>
+      <RouterContext {...props}  createElement={buildCreateElement(containerWidth)}/>
+    </Provider>
+  )
+}
+
 let cache = {}
 const CACHE_DURATION = ms('10m')
 
@@ -105,17 +104,21 @@ setInterval(() => {
 
 app.get('/*', function(req, res, next) {
   const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
-  //res.sendFile(indexHtml)
-
   const indexHtmlContent = fs.readFileSync(indexHtml, 'utf8')
-  const routes = getRoutes(ContainerWidth.XL)
 
-  match({routes, location: req.url}, (error, redirectLocation, renderProps) => {
+  const memoryHistory = createMemoryHistory(req.path)
+  //TODO: setup data fetching https://github.com/StevenIseki/react-router-redux-example/blob/master/serverProd.js
+    // it uses "fetchData" async actions in all wrapper components, not sure this is ideal approach for us
+  const store = configureStore()
+  const history = syncHistoryWithStore(memoryHistory, store)
+
+  match({history, routes, location: req.url}, (error, redirectLocation, renderProps) => {
     if (error) {
       res.status(500).send(error.message)
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search)
     } else if (renderProps) {
+      //TODO: clean this up, may not be neccessary
       // just look away, this is ugly & wrong https://github.com/callemall/material-ui/pull/2172
       global.navigator = {userAgent: req.headers['user-agent']}
 
@@ -127,7 +130,7 @@ app.get('/*', function(req, res, next) {
       if (cache[key]) {
         fullHtml = cache[key]
       } else {
-        const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
+        const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth} store={store}/>)
         fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
         cache[key] = fullHtml
       }

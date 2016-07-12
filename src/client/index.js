@@ -6,12 +6,9 @@ import 'public/img/safari-pinned-tab.svg'
 
 
 import 'utils/polyfills'
-import {
-  render,
-  // unmountComponentAtNode
-} from 'react-dom'
+import { render } from 'react-dom'
 import Grid from 'client/styles/grid.js'
-import getRoutes from 'client/get-routes.js'
+import { getConfiguredWithStoreRouter } from 'client/get-routes.js'
 
 let prevContainerWidth
 
@@ -25,12 +22,10 @@ let renderApp = function() {
 
   prevContainerWidth = containerWidth
 
-  //unmountComponentAtNode(document.getElementById('root'))
-  render(getRoutes(containerWidth), document.getElementById('root'))
+  render(getConfiguredWithStoreRouter(containerWidth), document.getElementById('root'))
 }
 
 window.addEventListener('resize', renderApp)
-
 
 //first time render
 renderApp()
