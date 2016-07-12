@@ -15,7 +15,8 @@
     // max-width: 90rem;
 
     .date {
-      margin-top: 1rem;
+      // margin-top: 1rem;
+      margin-top: 0rem;
       margin-bottom: 0;
       top: pxToRem(-5);
       line-height: 2rem;
@@ -57,7 +58,7 @@
     //DEBUG STYLES
 
     .spacer {
-      margin-top: 2rem - pxToRem(1);
+      margin-top: 3rem - pxToRem(1);
       margin-bottom: 2rem;
     }
 

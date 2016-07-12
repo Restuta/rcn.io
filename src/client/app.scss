@@ -19,6 +19,13 @@ p {
   margin-bottom: 1rem;
 }
 
+a:focus {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 a:focus,
 a:hover,
 a:active {

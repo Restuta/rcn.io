@@ -6,6 +6,7 @@ import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
 import Typography from 'styles/typography'
 import Colors from 'styles/colors'
+import { addUrlParams } from 'utils/url-utils'
 
 
 const RaceTypeBadge = ({name, color, className}) => (
@@ -34,15 +35,62 @@ const PresentedBy = ({by}) => (
   <div style={{
     fontStyle: 'italic',
     position: 'relative',
-    top: Typography.pxToRem(2) + 'rem'
+    top: Typography.pxToRem(4) + 'rem'
   }}>
     <span style={{color: Colors.grey500}}>by</span> <a href="#">{by}</a>
   </div>
 )
 
+const Map = ({width, height, homeAddress, startAddress}) => {
+  const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap'
+  // const homeMarkerColor = '0x4caf50'
+  const homeMarkerColor = `0x${Colors.primary.slice(1)}`
+  const eventMarkerColor = '0xF44336'
+
+  const params = {
+    size: `${width}x${height}`,
+    scale: 2,
+    format: 'png8',
+    maptype: 'roadmap',
+    markers: [
+      `size:normal|color:${eventMarkerColor}|label:S|${startAddress}`,
+      `size:small|color:${homeMarkerColor}|label:H|${homeAddress}`,
+    ],
+    style: 'saturation:-50|lightness:0|gamma:1.5',
+    visibility: 'simplified',
+    key: 'AIzaSyAzpETb1x1vce3mw_n2jnDBDlKDjZ4iH2c',
+  }
+
+  const googleApiUrl = addUrlParams(baseUrl, params)
+
+  return (<img style={{width: `${width}px`, height: `${height}px`}} src={googleApiUrl}/>)
+}
+
+const MapWithAddress = props => {
+  const { startAddress } = props
+  const style = {
+    marginBottom: '1rem',
+    display: 'inline-block',
+    position: 'relative',
+    top: Typography.pxToRem(3) + 'rem',
+    fontSize: Typography.scaleUp(2.5) + 'rem',
+  }
+
+  const from = encodeURIComponent('Current Location') //users current location
+  const to = encodeURIComponent(startAddress)
+  const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
+
+  return (
+    <div>
+      <a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>
+      <Map {...props}/>
+    </div>
+  )
+}
+
 export default class EventDetails extends Component {
   render() {
-    const {eventId} = this.props.params || 0
+    // const { eventId } = this.props.params || 0
     const insideModal = (
       (this.props.location
       && this.props.location.state
@@ -77,7 +125,14 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14} sm={9}>
-              <div style={{minHeight: '50rem', background: 'rgba(165, 214, 167, 0.28)'}}>Map</div>
+              <div style={{
+                // background: 'rgba(165, 214, 167, 0.1)',
+                marginBottom: '6rem',
+              }}>
+                <MapWithAddress width={400} height={352}
+                  startAddress='5250 Hwy 162, Willows, CA'
+                  homeAddress='San Jose, CA' />
+              </div>
             </Col>
             <Col xs={14} sm={5}><button className="btn btn-secondary">Register</button></Col>
           </Row>
