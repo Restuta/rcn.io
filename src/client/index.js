@@ -8,7 +8,7 @@ import 'public/img/safari-pinned-tab.svg'
 import 'utils/polyfills'
 import { render } from 'react-dom'
 import Grid from 'client/styles/grid.js'
-import { getConfiguredWithStoreRouter } from 'client/get-routes.js'
+import { getConfiguredWithStoreRouter } from 'client/get-router.js'
 
 let prevContainerWidth
 
