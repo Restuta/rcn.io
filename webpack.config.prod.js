@@ -5,18 +5,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
-//use when you need to debug react
-// const pathToReact = nodeModules('react/dist/react.js')
-// const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
+const getConfig = require('./webpack/common-config').getConfig
+const commonConfig = getConfig('prod')
 
-const pathToReact = nodeModules('react/dist/react.min.js')
+
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentJs = nodeModules('moment/min/moment.min.js')
-const pathToMomentTimeZone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
-
-//TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
-//between dev and prod configs without duplicaiton
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
 module.exports = {
   //devtool: 'source-map',
@@ -29,9 +24,7 @@ module.exports = {
     app: [
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'moment-timezone',
-      'classnames', 'react-pure-render', 'svg-inline-react'
-    ]
+    vendor: commonConfig.entry.vendor
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -96,30 +89,21 @@ module.exports = {
       path.resolve(__dirname, 'src/')
     ],
     //tells webpack to use static file when import React from 'react' is used
-    alias: {
-      'react': pathToReact,
-      'react-dom': pathToReactDOM,
-      'react-router': pathToReactRouter,
-      'moment': pathToMomentJs,
-      'moment-timezone': pathToMomentTimeZone
-    }
+    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: [
-      pathToReact,
-      pathToReactDOM,
-      pathToReactRouter,
-      pathToMomentJs,
-      //pathToMomentTimeZone //uses "require()", so can't be ignored
-    ],
+    noParse: commonConfig.module.noParse,
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'
     }, {
       test: pathToReactRouter,
+      loader: 'imports'
+    }, {
+      test: pathToMomentTimezone,
       loader: 'imports'
     }, {
       test: /\.(js|jsx?)$/,
