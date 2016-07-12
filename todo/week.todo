@@ -12,7 +12,7 @@ Today
 	----- bug: on small sizes weekdays need to adapt as well as crads, when "TODAY" is during weekday it pushes content out of edges
 	----- bug: http://screencast.com/t/2KaJTM9RujmR when Last/First day of month happens to be "TODAY"
 		- how to fix: leave TODAY for large sizes and use circled day for the rest like Apple Calendar does
-	-- Scroll
+	--- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 		- use https://github.com/taion/react-router-scroll: https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#using-scroll-behavior
 	
@@ -63,7 +63,7 @@ Today
 			+- basic store and routing support
 			- window.__INITIAL_STATE
 		- redux router
-			- set it up: https://github.com/reactjs/react-router-redux
+			+- set it up: https://github.com/reactjs/react-router-redux
 			- move showAll/hidePast to be URL param of calendar and suppored by redux
 		-- ecosystem
 			- redux-undo: useful for ading/updating events
@@ -72,6 +72,16 @@ Today
 			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
 	--- Event Details
+		!----- immediate todo
+			----- bug: 3 event badges does't work on mobile iPhone 6 and below
+			--- MAP
+ 				- event marker color should be of the event color type
+ 				- make events composite and state/city bold as per mock
+ 				- on mobile show mobile-google maps URL
+ 			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
+ 				- positive: this simplifies logic
+ 				- positive: allows go close it and go back to default calendar
+ 				- negative: we can't show extra stuff on event details page
 		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
 		-- setup proper routing hierarhy
 			- move Calendars to redux store
@@ -80,7 +90,7 @@ Today
 				- make MTB calendar part of Store and introduce concept of "Named calendar" vs plain id
 				- redux-actions when action creator function is not defined captures syntatic events, so identity function by default is confusing
 		-- optimizations
-			- do what Product Hunt does: clicking on any link in a list https://www.producthunt.com/ renders a kind of modal you can close, but if you then go directly to that url it's getting rendered without background (which drastically improves performance)
+			+- do what Product Hunt does: clicking on any link in a list https://www.producthunt.com/ renders a kind of modal you can close, but if you then go directly to that url it's getting rendered without background (which drastically improves performance)
 		-- BEFORE RELEASE
 			- primary calendar concept for an event: each event can belong to any number of calendars, but only one can be it's primary where it was created
 			- decide on event urls should it be:
@@ -88,17 +98,18 @@ Today
 				- under root: /events/evt-234324
 				- under multiple links with canonical being from primary calendar
 
+	--- NCNCA 2017 Draft: https://github.com/Restuta/rcn.io/issues/135
+		- add sheetsu logo (logo in email)
+		- call sheetsu https://sheetsu.com/apis/v1.0/1c20d0db4562 to get events
+		- show different status for events that are in draft mode
+			- group id
+			- notes
  	--- design a card UI
  		-- ideas
  			- try different pattern for event type color stipe: like here http://codepen.io/xhepigerta/pen/oxxQaw
  			but horizontal, it's also super nice that it moves on hower
  		!----- immediate todo
  			+----- bug: back button doesn't open popover on Calndar page, it's due to history.goBack()
- 			----- bug: 3 event badges does't work on mobile iPhone 6 and below
- 			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
- 				- positive: this simplifies logic
- 				- positive: allows go close it and go back to default calendar
- 				- negative: we can't show extra stuff on event details page
  			- SSR for Redux and Router: 
  				- https://github.com/davezuko/react-redux-starter-kit/blob/master/src/main.js
  				- https://github.com/StevenIseki/react-router-redux-example/blob/master/serverProd.js
@@ -108,7 +119,7 @@ Today
  			- update to https://github.com/gaearon/react-hot-boilerplate/pull/61
  			- use material design colors and play with not as prominent colors as they are currently 
  			- move Event.jsx paddings calculations to SCSS and assign classes by size of the card: currently only
- 			- for small columns of size 1 consider setting height to double of actual to fit more, since we always have space there
+ 			- for small columns of size 1 consider setting height to double of actual to fit more: since we always have space there
  			text is supported
  			+--- figure out ideal heith based on baselines
  			+---- transpan cards on example, so row represents sreen version: actually think if this make sense since maybe "size" matters and row should represent "small" in terms of size
@@ -179,9 +190,9 @@ After Boilerplate setup
 	-- CI
 		- setup mocha
 			- write simple test for css class transforms
-		- setup travis CI
-			- use https://buildtimetrend.herokuapp.com/ for build time trends
-	-- atoms (UI)
+		+- setup travis CI
+			+- use https://buildtimetrend.herokuapp.com/ for build time trends
+	+-- atoms (UI)
 	-- webpack
 		- setup url loader (see etse)
 		+- extract text plugin for CSS for prod
