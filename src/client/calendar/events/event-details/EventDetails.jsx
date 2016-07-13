@@ -3,39 +3,16 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-import classnames from 'classnames'
-import Typography from 'styles/typography'
+import { pxToRem, scaleUp } from 'styles/typography'
 import Colors from 'styles/colors'
 import { addUrlParams } from 'utils/url-utils'
-
-
-const RaceTypeBadge = ({name, color, className}) => (
-  <span style={{
-    textAlign: 'center',
-    color: 'white',
-    fontSize: Typography.scaleUp(2) + 'rem',
-    width: 'auto',
-    minWidth: '16rem',
-    height: '3rem',
-    transform: 'skew(-20deg)',
-    fontWeight: '900',
-    fontStyle: 'italic',
-    paddingLeft: '2rem',
-    paddingRight: '2rem',
-    backgroundColor: color,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }} className={classnames('RaceTypeBadge', className)}>
-    <span style={{transform: 'skew(20deg)'}}>{name}</span>
-  </span>
-)
+import RaceTypeBadge from './RaceTypeBadge.jsx'
 
 const PresentedBy = ({by}) => (
   <div style={{
     fontStyle: 'italic',
     position: 'relative',
-    top: Typography.pxToRem(4) + 'rem'
+    top: pxToRem(4) + 'rem'
   }}>
     <span style={{color: Colors.grey500}}>by</span> <a href="#">{by}</a>
   </div>
@@ -61,19 +38,28 @@ const Map = ({width, height, homeAddress, startAddress}) => {
     key: 'AIzaSyAzpETb1x1vce3mw_n2jnDBDlKDjZ4iH2c',
   }
 
+  const style = {
+    borderRadius: pxToRem(3) + 'rem'
+  }
+
   const googleApiUrl = addUrlParams(baseUrl, params)
 
-  return (<img style={{width: `${width}px`, height: `${height}px`}} src={googleApiUrl}/>)
+  // return (<img className="Map img-fluid" style={{width: `${width}px`, height: `${height}px`}} src={googleApiUrl}/>)
+  return (<img style={style} className="Map img-fluid" src={googleApiUrl}/>)
 }
 
 const MapWithAddress = props => {
-  const { startAddress } = props
+  const { startAddress, width, height } = props
+  const mapWithAddressStyle = {
+    maxWidth: width,
+    maxHeight: height
+  }
   const style = {
     marginBottom: '1rem',
     display: 'inline-block',
     position: 'relative',
-    top: Typography.pxToRem(3) + 'rem',
-    fontSize: Typography.scaleUp(2.5) + 'rem',
+    top: pxToRem(3) + 'rem',
+    fontSize: scaleUp(2.5) + 'rem',
   }
 
   const from = encodeURIComponent('Current Location') //users current location
@@ -81,7 +67,7 @@ const MapWithAddress = props => {
   const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
 
   return (
-    <div>
+    <div className='MapWithAddress' style={mapWithAddressStyle}>
       <a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>
       <Map {...props}/>
     </div>
@@ -101,9 +87,9 @@ export default class EventDetails extends Component {
       <div className="EventDetails">
         <div className="content">
           <div className="badges">
-            <RaceTypeBadge name="PAST" color={Colors.grey500} className="type-badge" />
-            <RaceTypeBadge name="STAGE RACE" color={Colors.deepPurple700} className="type-badge" />
-            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" className="type-badge" />
+            <RaceTypeBadge name="PAST" color={Colors.grey500}/>
+            <RaceTypeBadge name="STAGE RACE" color={Colors.deepPurple700}/>
+            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" />
           </div>
 
           <Row>

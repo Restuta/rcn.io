@@ -49,11 +49,17 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 9.5rem;
+
+      @include phone {
+        padding-right: 0;
+        margin-left: 4rem;
+        justify-content: flex-start;
+      }
+
+
     }
 
-    .type-badge {
-      // margin-left: 1rem;
-    }
+
 
     //DEBUG STYLES
 

@@ -11,8 +11,6 @@ const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
-
-
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.

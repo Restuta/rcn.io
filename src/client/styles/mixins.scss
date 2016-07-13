@@ -1,6 +1,12 @@
 @import 'variables';
+@import 'bs4-fixes';
 
 
+@mixin phone {
+  @media (max-width: #{map-get($grid-breakpoints, "sm")}) {
+    @content;
+  }
+}
 
 @mixin offset-to-baseline($offset) {
 

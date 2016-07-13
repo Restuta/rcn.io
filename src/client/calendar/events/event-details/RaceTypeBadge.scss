@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixins';
+
+.RaceTypeBadge {
+  display: flex;
+  justify-content:: center;
+  align-items: center;
+  text-align: center;
+  font-size: scaleUp(2);
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+  width: auto;
+  min-width: 16rem;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @include phone {
+    min-width: auto;
+  }
+}
