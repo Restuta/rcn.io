@@ -89,6 +89,8 @@ Today
 				- make Calendar to take params from a router (url)
 				- make MTB calendar part of Store and introduce concept of "Named calendar" vs plain id
 				- redux-actions when action creator function is not defined captures syntatic events, so identity function by default is confusing
+		-- Modal Effects
+			- http://tympanus.net/Development/ModalWindowEffects/
 		-- optimizations
 			+- do what Product Hunt does: clicking on any link in a list https://www.producthunt.com/ renders a kind of modal you can close, but if you then go directly to that url it's getting rendered without background (which drastically improves performance)
 		-- BEFORE RELEASE
