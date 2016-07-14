@@ -4,6 +4,7 @@ import 'styles/bootstrap.scss'
 import 'app.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
+import Button from 'atoms/Button.jsx'
 import Icon from 'atoms/Icon.jsx'
 import Event from 'calendar/events/Event.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
@@ -17,7 +18,7 @@ import Typography from 'styles/typography'
 import { Link } from 'react-router'
 
 //TODO: remove these components
-const Spacer = width => <span style={{width: `${width}px`}}></span>
+const Spacer = ({ width }) => <span style={{width: `${width}px`}}>&nbsp;</span>
 const S5 = () => <Spacer width={5}/>
 const S10 = () => <Spacer width={10}/>
 
@@ -93,6 +94,28 @@ export default class Dev extends Component {
         <p className={'text-' + 5} style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
         <p className={'text-' + 6} style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
         <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
+        <Row className="margin-top">
+          <Col>
+            <h2>BUTTONS:</h2>
+            <Button size="sm" type="primary">SM PRIMARY</Button><S5 />
+            <Button size="sm" type="secondary">SM SECONDARY</Button>
+            <br /><br />
+            <Button size="md" type="primary">MD PRIMARY</Button><S5 />
+            <Button size="md" type="secondary">MD SECONDARY</Button>
+            <br /><br />
+            <Button size="lg" type="primary">LG PRIMARY</Button><S5 />
+            <Button size="lg" type="secondary">LG SECONDARY</Button>
+            <br /><br />
+
+            <br /><br />
+            <Button size="sm">REGISTER</Button>
+            <br /><br />
+            <Button size="md">REGISTER</Button>
+            <br /><br />
+            <Button size="lg">REGISTER</Button>
+            <br /><br />
+          </Col>
+        </Row>
         <Row className="margin-top">
           <Col sm={2}><h5>Round Badges: </h5></Col>
           <Col sm={12} className="display-flex">

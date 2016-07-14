@@ -3,10 +3,13 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
+import Button from 'atoms/Button.jsx'
 import { pxToRem, scaleUp } from 'styles/typography'
 import Colors from 'styles/colors'
 import { addUrlParams } from 'utils/url-utils'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
+
+import { rnd } from 'utils/math.js'
 
 const PresentedBy = ({by}) => (
   <div style={{
@@ -52,7 +55,8 @@ const MapWithAddress = props => {
   const { startAddress, width, height } = props
   const mapWithAddressStyle = {
     maxWidth: width,
-    maxHeight: height
+    //TODO BC: what does  maxHeight jaffect?
+    // maxHeight: height
   }
   const style = {
     marginBottom: '1rem',
@@ -112,7 +116,6 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14} sm={9}>
               <div style={{
-                // background: 'rgba(165, 214, 167, 0.1)',
                 marginBottom: '6rem',
               }}>
                 <MapWithAddress width={400} height={352}
@@ -120,7 +123,9 @@ export default class EventDetails extends Component {
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
-            <Col xs={14} sm={5}><button className="btn btn-secondary">Register</button></Col>
+            <Col xs={14} sm={5} className="section-register">
+              <Button size="sm">REGISTER</Button>
+            </Col>
           </Row>
           <Row>
             <Col xs={14} sm={9}>

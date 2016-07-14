@@ -15,6 +15,7 @@
   height: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: -1px; //to cover weird bug in FireFox, there is a tiny gap between badges there
 
   @include phone {
     min-width: auto;

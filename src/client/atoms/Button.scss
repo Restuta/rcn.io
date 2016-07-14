@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+
+.Button {
+  height: 4rem;
+
+  &-sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: pxToRem(12);
+    height: 4rem;
+  }
+
+  &-md {
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: pxToRem(14);
+    height: 5rem;
+  }
+
+  &-lg {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: pxToRem(16);
+    height: 7rem;
+  }
+}
