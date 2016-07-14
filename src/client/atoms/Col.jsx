@@ -32,7 +32,7 @@ export default class Col extends Component {
     const classNames = classnames('col', columnClassNames, this.props.className)
 
     return (
-      <div {...this.props} className={classNames}>
+      <div style={this.props.style} className={classNames}>
         {this.props.children}
       </div>
     )

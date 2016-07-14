@@ -20,7 +20,7 @@ export default class RaceTypeBadge extends Component {
 }
 
 RaceTypeBadge.propTypes = {
-  name: PropTypes.string.required,
-  color: PropTypes.string.required,
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   skew: PropTypes.number,
 }

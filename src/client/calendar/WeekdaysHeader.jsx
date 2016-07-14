@@ -66,7 +66,7 @@ export default class WeekdaysHeader extends Component {
     const style = {}
 
     return (
-      <div className="WeekDaysHeader" style={style} {...this.props}>
+      <div className="WeekDaysHeader" style={style}>
         <Row style={rowStyle}>
           {columns}
         </Row>
@@ -77,7 +77,7 @@ export default class WeekdaysHeader extends Component {
 
 export class WeekdaysHeaderSticky extends Component {//eslint-disable-line
   render() {
-    const {sizes, containerWidth} = this.props
+    const { sizes, containerWidth } = this.props
 
     return (
       <div className="WeekDaysHeaderSticky" style={{
