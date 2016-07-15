@@ -27,9 +27,7 @@ const Map = ({width, height, homeAddress, startAddress}) => {
   const homeMarkerColor = `0x${Colors.primary.slice(1)}`
   const eventMarkerColor = '0xF44336'
 
-  const params = {
-    size: `${width}x${height}`,
-    scale: 2,
+  const genericParams = {
     format: 'png8',
     maptype: 'roadmap',
     markers: [
@@ -41,14 +39,33 @@ const Map = ({width, height, homeAddress, startAddress}) => {
     key: 'AIzaSyAzpETb1x1vce3mw_n2jnDBDlKDjZ4iH2c',
   }
 
+  const bigImageParams = {
+    ...genericParams,
+    size: `${width}x${height}`,
+    scale: 2,
+  }
+
+  const midImageParams = {
+    ...genericParams,
+    size: `${width}x${height}`,
+    scale: 1,
+  }
+
   const style = {
     borderRadius: pxToRem(3) + 'rem'
   }
 
-  const googleApiUrl = addUrlParams(baseUrl, params)
+  const googleMapBigImgUrl = addUrlParams(baseUrl, bigImageParams)
+  const googleMapMidImgUrl = addUrlParams(baseUrl, midImageParams)
 
-  // return (<img className="Map img-fluid" style={{width: `${width}px`, height: `${height}px`}} src={googleApiUrl}/>)
-  return (<img style={style} className="Map img-fluid" src={googleApiUrl}/>)
+  return (
+    <img style={style} className="Map img-fluid" alt="Google Map"
+      src={googleMapBigImgUrl}
+      srcSet={`
+        ${googleMapBigImgUrl} 2x,
+        ${googleMapMidImgUrl} 1x`}
+      />
+  )
 }
 
 const MapWithAddress = props => {
@@ -119,7 +136,7 @@ export default class EventDetails extends Component {
                 marginBottom: '6rem',
               }}>
                 <MapWithAddress width={400} height={352}
-                  startAddress='5250 Hwy 162, Willows, CA'
+                  startAddress={`${rnd(1000, 5000)} Hwy 162, Willows, CA`}
                   homeAddress='San Jose, CA' />
               </div>
             </Col>

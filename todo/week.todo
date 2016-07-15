@@ -74,6 +74,8 @@ Today
 	--- Event Details
 		!----- immediate todo
 			----- bug: 3 event badges does't work on mobile iPhone 6 and below
+			--- Flyier
+				- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
 			--- MAP
  				- event marker color should be of the event color type
  				- make events composite and state/city bold as per mock
