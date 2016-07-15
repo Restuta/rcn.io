@@ -69,10 +69,10 @@ const Map = ({width, height, homeAddress, startAddress}) => {
 }
 
 const MapWithAddress = props => {
-  const { startAddress, width, height } = props
+  const { startAddress, width } = props
   const mapWithAddressStyle = {
     maxWidth: width,
-    //TODO BC: what does  maxHeight jaffect?
+    //TODO BC: what does maxHeight affect?
     // maxHeight: height
   }
   const style = {
