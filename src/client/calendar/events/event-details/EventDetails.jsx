@@ -95,6 +95,29 @@ const MapWithAddress = props => {
   )
 }
 
+const Flyer = ({url}) => {
+  const googleViewerUrl = addUrlParams('https://docs.google.com/viewer', {
+    embedded: true,
+    url: url
+  })
+
+  const style = {
+    width: '100%',
+    height: '110rem'
+  }
+
+  const onLoad = (e) => {
+    // console.info(e)
+    // console.info(e.target)
+    e.target.className += ' loaded'
+    console.info('Flyer loaded')
+  }
+
+  return (
+    <iframe style={style} height='100%' className="Flyer" frameBorder="0" src={googleViewerUrl} onLoad={onLoad}>bla</iframe>
+  )
+}
+
 export default class EventDetails extends Component {
   render() {
     // const { eventId } = this.props.params || 0
@@ -135,7 +158,7 @@ export default class EventDetails extends Component {
               <div style={{
                 marginBottom: '6rem',
               }}>
-                <MapWithAddress width={400} height={352}
+                <MapWithAddress width={432} height={352}
                   startAddress={`${rnd(1000, 5000)} Hwy 162, Willows, CA`}
                   homeAddress='San Jose, CA' />
               </div>
@@ -152,7 +175,8 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              <div className="flyer">Flyer</div>
+              {/*<div className="flyer">Flyer</div>*/}
+              <Flyer url='www.usacycling.org/events/getflyer.php?permit=2016-1578' />
             </Col>
           </Row>
         </div>
