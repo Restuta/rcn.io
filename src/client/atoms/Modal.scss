@@ -3,20 +3,23 @@
 
 .Modal.backdrop {
   position: fixed;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start; //required for proper scrolling of the modal
+
+  width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(0,0,0,0.6);
   z-index: $modal-z-index;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .Modal.content {
+  // overflow: initial;
   display: block;
   position: relative;
   background-color: $body-bg-color;
@@ -31,4 +34,9 @@
   z-index: $modal-z-index + 50;
   outline: 0;
   @include box-shadow-lvl-4();
+
+  // position: absolute;
+  // left: 50%;
+  // margin-left: -40rem;
+  transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
 }
