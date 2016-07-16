@@ -95,28 +95,28 @@ const MapWithAddress = props => {
   )
 }
 
-const Flyer = ({url}) => {
-  const googleViewerUrl = addUrlParams('https://docs.google.com/viewer', {
-    embedded: true,
-    url: url
-  })
-
-  const style = {
-    width: '100%',
-    height: '110rem'
-  }
-
-  const onLoad = (e) => {
-    // console.info(e)
-    // console.info(e.target)
-    e.target.className += ' loaded'
-    console.info('Flyer loaded')
-  }
-
-  return (
-    <iframe style={style} height='100%' className="Flyer" frameBorder="0" src={googleViewerUrl} onLoad={onLoad}>bla</iframe>
-  )
-}
+// const Flyer = ({url}) => {
+//   const googleViewerUrl = addUrlParams('https://docs.google.com/viewer', {
+//     embedded: true,
+//     url: url
+//   })
+//
+//   const style = {
+//     width: '100%',
+//     height: '110rem'
+//   }
+//
+//   const onLoad = (e) => {
+//     // console.info(e)
+//     // console.info(e.target)
+//     e.target.className += ' loaded'
+//     console.info('Flyer loaded')
+//   }
+//
+//   return (
+//     <iframe style={style} height='100%' className="Flyer" frameBorder="0" src={googleViewerUrl} onLoad={onLoad}>bla</iframe>
+//   )
+// }
 
 export default class EventDetails extends Component {
   render() {
@@ -175,7 +175,7 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              {/*<div className="flyer">Flyer</div>*/}
+              <div className="flyer">Flyer</div>
               {/*<Flyer url='www.usacycling.org/events/getflyer.php?permit=2016-1578' />*/}
             </Col>
           </Row>
