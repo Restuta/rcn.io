@@ -176,7 +176,7 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14}>
               {/*<div className="flyer">Flyer</div>*/}
-              <Flyer url='www.usacycling.org/events/getflyer.php?permit=2016-1578' />
+              {/*<Flyer url='www.usacycling.org/events/getflyer.php?permit=2016-1578' />*/}
             </Col>
           </Row>
         </div>
