@@ -5,6 +5,11 @@
   height: 4rem;
   border-radius: 3px;
 
+  &:focus,
+  &:active:focus {
+    outline: none;
+  }
+
   &-sm {
     padding-left: 2rem;
     padding-right: 2rem;
