@@ -21,7 +21,7 @@ const PresentedBy = ({by}) => (
   </div>
 )
 
-const Map = ({width, height, homeAddress, startAddress}) => {
+const GoogleStaticMap = ({width, height, homeAddress, startAddress}) => {
   const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap'
   // const homeMarkerColor = '0x4caf50'
   const homeMarkerColor = `0x${Colors.primary.slice(1)}`
@@ -59,7 +59,7 @@ const Map = ({width, height, homeAddress, startAddress}) => {
   const googleMapMidImgUrl = addUrlParams(baseUrl, midImageParams)
 
   return (
-    <img style={style} className="Map img-fluid" alt="Google Map"
+    <img style={style} className="GoogleStaticMap img-fluid" alt="Google Map"
       src={googleMapBigImgUrl}
       srcSet={`
         ${googleMapBigImgUrl} 2x,
@@ -68,7 +68,7 @@ const Map = ({width, height, homeAddress, startAddress}) => {
   )
 }
 
-const MapWithAddress = props => {
+const Map = props => {
   const { startAddress, width } = props
   const mapWithAddressStyle = {
     maxWidth: width,
@@ -88,9 +88,9 @@ const MapWithAddress = props => {
   const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
 
   return (
-    <div className='MapWithAddress' style={mapWithAddressStyle}>
+    <div className='Map' style={mapWithAddressStyle}>
       <a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>
-      <Map {...props}/>
+      <GoogleStaticMap {...props}/>
     </div>
   )
 }
@@ -158,8 +158,8 @@ export default class EventDetails extends Component {
               <div style={{
                 marginBottom: '6rem',
               }}>
-                <MapWithAddress width={432} height={352}
-                  startAddress={`${rnd(1000, 5000)} Hwy 162, Willows, CA`}
+                <Map width={416} height={352}
+                  startAddress={`8129 Hwy 162, Willows, CA`}
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
