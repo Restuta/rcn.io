@@ -21,7 +21,7 @@ const PresentedBy = ({by}) => (
   </div>
 )
 
-const GoogleStaticMap = ({width, height, homeAddress, startAddress}) => {
+const GoogleStaticMap = ({width, height, homeAddress, startAddress, zoom}) => {
   const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap'
   // const homeMarkerColor = '0x4caf50'
   const homeMarkerColor = `0x${Colors.primary.slice(1)}`
@@ -30,13 +30,34 @@ const GoogleStaticMap = ({width, height, homeAddress, startAddress}) => {
   const genericParams = {
     format: 'png8',
     maptype: 'roadmap',
+    zoom: zoom,
     markers: [
-      `size:normal|color:${eventMarkerColor}|label:S|${startAddress}`,
-      `size:small|color:${homeMarkerColor}|label:H|${homeAddress}`,
+      `size:normal|color:${eventMarkerColor}|label:S|${startAddress}`
     ],
-    style: 'saturation:-50|lightness:0|gamma:1.5',
+    // style: [
+    //   'saturation:-50|lightness:0|gamma:1.5',
+    //   'feature:road.highway|element:all|visibility:simplified',
+    //   'feature:water|element:all|color:0x90CAF9|visibility:on',
+    //   // 'feature:water|element:all|color:0xb6dbfa|visibility:on',
+    // ],
+    style: [
+      'feature:administrative|element:labels.text.fill|color:0x444444',
+      'feature:poi|element:all|visibility:on|saturation:-100',
+      'feature:road|element:all|saturation:-100|lightness:45',
+      'feature:road.highway|element:all|visibility:simplified',
+      'feature:road.arterial|element:labels.icon|visibility:off',
+      'feature:transit|element:all|visibility:off',
+      'feature:water|element:all|color:0x90CAF9|visibility:on',
+      'feature:water|element:all|color:0xb6dbfa|visibility:on',
+      // 'feature:water|element:all|color:0xBBDEFB|visibility:on',
+
+    ],
     visibility: 'simplified',
     key: 'AIzaSyAzpETb1x1vce3mw_n2jnDBDlKDjZ4iH2c',
+  }
+
+  if (homeAddress) {
+    genericParams.markers.push(`size:small|color:${homeMarkerColor}|label:H|${homeAddress}`)
   }
 
   const bigImageParams = {
