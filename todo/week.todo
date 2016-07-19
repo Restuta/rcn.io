@@ -73,7 +73,13 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
-			----- bug: 3 event badges does't work on mobile iPhone 6 and below
+			+----- BUG: 3 event badges does't work on mobile iPhone 6 and below
+			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
+			content
+			----- BUG: drift interferes with modal allowing to drag it on the left
+			----- BUG: background still scrolls on iOS
+				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container
+
 			--- Flyier
 				- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
 			--- MAP
