@@ -52,6 +52,31 @@ a {
   align-items: flex-end;
 }
 
+//for intristic image background so layout stays the same while image is loading
+//requires wrapper container that set's min-width
+.intrinsic {
+  display: block;
+  // Intrinsic Ratio Box
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 100%; // Default to square
+
+  background: #f0f0f0;
+
+  &.intrinsic--13x11 {
+    padding-top: 84.615385%;
+  }
+
+  .intrinsic-item {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+}
+
 
 //making drift z-index lowe than modal z-index
 #drift-widget-container {

@@ -80,21 +80,21 @@ const GoogleStaticMap = ({width, height, homeAddress, startAddress, zoom}) => {
   const googleMapMidImgUrl = addUrlParams(baseUrl, midImageParams)
 
   return (
-    <img style={style} className="GoogleStaticMap img-fluid" alt="Google Map"
-      src={googleMapBigImgUrl}
-      srcSet={`
-        ${googleMapBigImgUrl} 2x,
-        ${googleMapMidImgUrl} 1x`}
-      />
+    <div className="GoogleStaticMap intrinsic intrinsic--13x11">
+      <img style={style} className="img-fluid intrinsic-item" alt="Google Map"
+        src={googleMapBigImgUrl}
+        srcSet={`
+          ${googleMapBigImgUrl} 2x,
+          ${googleMapMidImgUrl} 1x`}
+        />
+    </div>
   )
 }
 
 const Map = props => {
   const { startAddress, width } = props
   const mapWithAddressStyle = {
-    maxWidth: width,
-    //TODO BC: what does maxHeight affect?
-    // maxHeight: height
+    maxWidth: width
   }
   const style = {
     marginBottom: '1rem',
@@ -180,7 +180,7 @@ export default class EventDetails extends Component {
                 marginBottom: '6rem',
               }}>
                 <Map width={416} height={352}
-                  startAddress={`8129 Hwy 162, Willows, CA`}
+                  startAddress={`${rnd(1000, 9000)} Hwy 162, Willows, CA`}
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
