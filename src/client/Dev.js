@@ -114,6 +114,9 @@ export default class Dev extends Component {
             <br /><br />
             <Button size="lg">REGISTER</Button>
             <br /><br />
+            <Button size="md" type="secondary">CANCEL</Button><S5 />
+            <Button size="md" type="primary">OK</Button>
+            <br /><br />
           </Col>
         </Row>
         <Row className="margin-top">
