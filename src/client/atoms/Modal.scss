@@ -40,4 +40,6 @@
   // left: 50%;
   // margin-left: -40rem;
   transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
+
+  flex: 1 0 auto;
 }
