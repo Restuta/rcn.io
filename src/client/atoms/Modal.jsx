@@ -17,7 +17,7 @@ export default class Modal extends Component {
 
   componentWillUnmount() {
     if (ExecutionEnvironment.canUseDOM) {
-      document.body.style.overflow = null
+      document.body.style.overflow = ''
     }
   }
 
