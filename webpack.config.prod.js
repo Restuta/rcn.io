@@ -52,9 +52,15 @@ module.exports = {
     new ExtractTextPlugin('app.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
-        screw_ie8: true,  // eslint-disable-line camelcase
-        warnings: false,
-        //dead_code: true
+        screw_ie8: true, // eslint-disable-line camelcase
+        warnings: false
+      },
+      mangle: {
+        screw_ie8: true // eslint-disable-line camelcase
+      },
+      output: {
+        comments: false,
+        screw_ie8: true // eslint-disable-line camelcase
       }
     }),
     new HtmlWebpackPlugin({
@@ -113,6 +119,7 @@ module.exports = {
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,
+        compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
         plugins: [
           'transform-react-constant-elements', //compile-time optimizations
           'transform-react-inline-elements' //compile-time optimizations
