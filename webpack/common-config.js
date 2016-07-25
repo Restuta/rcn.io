@@ -62,6 +62,7 @@ const getConfig = env => {
     'react-modal2',
     'redux-actions',
     'react-redux',
+    'reselect'
   ]
 
   const toArray = (obj) => {

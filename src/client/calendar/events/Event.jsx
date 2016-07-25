@@ -6,7 +6,7 @@ import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
-import {Disciplines, Event as EventType, Statuses} from 'temp/events'
+import {Disciplines, Statuses} from 'temp/events'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import { withRouter } from 'react-router'
@@ -204,8 +204,10 @@ class Event extends Component {
 }
 
 Event.propTypes = {
+  //TODO bc: id, name and discipline are covered under "event type"
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  //TODO bc: move discipline to be part of event
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   //location: PropTypes.any,
   //width in coluns card is going to take
@@ -214,7 +216,22 @@ Event.propTypes = {
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
-  event: PropTypes.instanceOf(EventType)
+  // event: PropTypes.instanceOf(EventType),
+  event: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    date: PropTypes.object.isRequired,
+    datePlain: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      state: PropTypes.string,
+      zip: PropTypes.string,
+    }),
+    promoterUrl: PropTypes.string,
+    flyerUrl: PropTypes.string,
+    status: PropTypes.string
+  }),
 }
 
 Event.contextTypes = {

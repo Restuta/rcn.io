@@ -73,35 +73,43 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
+			-- Put Events to Redux Store
+				+----- BUG: re-render after popup is now 100ms (slow)
+				- use simple object vs js Map()
+					- for now duplicate creation in events.js
+				- connect EventDetails
+				- connect Calendar
+					- user reslect for querying getTotalFrom
+				- make sure they are loaded on the server
 			+----- BUG: 3 event badges does't work on mobile iPhone 6 and below
 			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
 			content
 			----- BUG: drift interferes with modal allowing to drag it on the left
 			----- BUG: background still scrolls on iOS
-				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container
-
+				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 			--- Flyier
-				- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
+				+- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
 			--- MAP
- 				- event marker color should be of the event color type
- 				- make events composite and state/city bold as per mock
- 				- on mobile show mobile-google maps URL
- 			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
- 				- positive: this simplifies logic
- 				- positive: allows go close it and go back to default calendar
- 				- negative: we can't show extra stuff on event details page
-		- show "circle" on map when no prcice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
-		-- setup proper routing hierarhy
+			    -- json event marker color should be of the event color type
+			    - make events composite and state/city bold as per mock
+			    - on mobile show mobile-google maps URL
+			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
+			    - positive: this simplifies logic
+			    - positive: allows go close it and go back to default calendar
+			    - negative: we can't show extra stuff on event details page
+				-- show "circle" on map when no precice location is avalable: https://developers.google.com/maps/documentation/javascript/examples/circle-simple (this way it's immediately obvious)
+		 -- setup proper routing hierarhy
 			- move Calendars to redux store
 				- move Events to the store and normalize Calendar and Events
 				- make Calendar to take params from a router (url)
 				- make MTB calendar part of Store and introduce concept of "Named calendar" vs plain id
 				- redux-actions when action creator function is not defined captures syntatic events, so identity function by default is confusing
-		-- Modal Effects
+		 -- Modal Effects
 			- http://tympanus.net/Development/ModalWindowEffects/
-		-- optimizations
+		 -- optimizations
 			+- do what Product Hunt does: clicking on any link in a list https://www.producthunt.com/ renders a kind of modal you can close, but if you then go directly to that url it's getting rendered without background (which drastically improves performance)
-		-- BEFORE RELEASE
+		 -- BEFORE RELEASE
+		 	- install webpack-validator: https://github.com/js-dxtools/webpack-validator
 			- primary calendar concept for an event: each event can belong to any number of calendars, but only one can be it's primary where it was created
 			- decide on event urls should it be:
 				- under primary calendar: /calendars/cal-12312/events/evt-1233

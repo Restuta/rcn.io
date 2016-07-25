@@ -5,12 +5,13 @@ import Day from './Day.jsx'
 import Week from './Week.jsx'
 import Event from './events/Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
-import {firstDayOfMonth, lastDayOfMonth} from './utils/date-utils.js'
+import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import Colors from 'styles/colors'
-import {Disciplines, Events} from 'temp/events'
+import { Disciplines } from 'temp/events'
 import moment from  'moment-timezone'
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
+import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -32,8 +33,6 @@ class Calendar extends Component {
       showPastEvents,
       onShowFullHidePastClick
     } = this.props
-
-    //console.info(showPastEvents)
 
     //time-zone specific moment factory
     const momentTZ = () => moment.tz(...arguments, timeZone)
@@ -64,7 +63,7 @@ class Calendar extends Component {
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
         const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
-        const foundEvents = findEventByDate(events.eventsMap, currentDate)
+        const foundEvents = findEventByDate(events.map, currentDate)
         //const foundEvents = [{name: 'Test Event Name Criterium'}]
 
         let eventComponents
@@ -140,25 +139,23 @@ Calendar.propTypes = {
   calendarId: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
-  events: PropTypes.instanceOf(Events),
+  events: PropTypes.shape({
+    map: PropTypes.object.isRequired,
+    total: PropTypes.number.isRequired,
+  }),
   region: PropTypes.string,
   discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,
-
-  // showEventDetailsModal: PropTypes.func,
-  // closeEventDetailsModal: PropTypes.func,
-  // eventDetailsModal: PropTypes.shape({
-  //   isOpen: PropTypes.bool,
-  //   eventId: PropTypes.string
-  // }),
-  //current location object passed from react-router
-  // location: PropTypes.object.isRequired,
 }
 
+
 export default connect(
-  (state, ownProps) => state.calendars[ownProps.calendarId],
+  (state, ownProps) => ({
+    ...getCalendar(state, ownProps),
+    events: getEventsByDateForCalendar(state, ownProps)
+  }),
   (dispatch, ownProps) => ({
     onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
   })

@@ -1,10 +1,11 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
 //import rawEvents from 'temp/data/2015-road.js'
-import rawRoadEvents from 'temp/data/2016-NCNCA-road.js'
-import rawMtbEvents from 'temp/data/2016-mtb.js'
-import rawMtbEventsManual from 'temp/data/2016-mtb-manual.js'
+import rawRoadEvents from 'client/temp/data/2016-NCNCA-road.js'
+import rawMtbEvents from 'client/temp/data/2016-mtb.js'
+import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual.js'
 import moment from 'moment'
+//import { rnd } from 'client/shared/utils'
 
 const Disciplines = {
   MTB: 'MTB',
@@ -14,57 +15,6 @@ const Disciplines = {
 const Statuses = {
   Cancelled: 'Cancelled',
   Moved: 'Moved'
-}
-
-class Event {
-  constructor({id, name, date, type, location, promoterUrl, flyerUrl, status}) {
-    this.id = id || name //TODO bc: revisit this, add ids?
-    this.name = name
-    this.date = date
-    this.type = type
-    this.location = location
-    this.promoterUrl = promoterUrl
-    this.flyerUrl = flyerUrl
-    this.status = status
-  }
-}
-
-class Events {
-  constructor({eventsMap}) {
-    this.eventsMap = eventsMap
-    this.total = this._getTotalEvents()
-  }
-
-  _getTotalEvents() {
-    let total = 0
-
-    this.eventsMap.forEach((value, key, map) => {
-      total += value.length
-    })
-
-    return total
-  }
-
-  //TODO: memoize calculated totals since collection is immutable
-  //TODO: get total before date
-
-  getTotalFrom(date) {
-    let total = 0
-
-    this.eventsMap.forEach((value, key, map) => {
-      const events = value
-      //taking date of first event since the rest is after it
-      const eventsDate = events[0].date
-      const eventsCount = events.length
-
-      if (date.diff(eventsDate, 'days') <= 0) {
-        total += eventsCount
-      }
-    })
-
-    return total
-  }
-
 }
 
 const preProcessUrl = (rawUrl) => {
@@ -79,46 +29,42 @@ const preProcessUrl = (rawUrl) => {
   }
 }
 
-const preProcessEvents = function(rawEvents) {
-  const events = new Map()
-
-  rawEvents.forEach(rawEvent => {
-
-    const event = new Event({
-      id: rawEvent.id,
-      name: rawEvent.name
-        .replace(/--/g, '—'),
-      date: moment(rawEvent.date, 'MMMM DD YYYY'),
-      type: rawEvent.type,
-      location: rawEvent.location || {},
-      promoterUrl: preProcessUrl(rawEvent.promoterUrl),
-      flyerUrl: preProcessUrl(rawEvent.flyerUrl),
-      status: rawEvent.status
-    })
-
-    const key = event.date.format('MMDDYYYY')
-
-    if (events.get(key)) {
-      events.get(key).push(event)
-    } else {
-      events.set(key, [event])
-    }
-  })
-
-  return events
+const createEvent = rawEvent => {
+  const name = rawEvent.name.replace(/--/g, '—')
+  const date = moment(rawEvent.date, 'MMMM DD YYYY')
+  const datePlain = date.format('MMDDYYYY')
+  //TODO bc: handle multi-day events, currently some events have same id this screws our selectors since calendar has list of ids
+  /*
+    PROPOSED solution:
+      defenitely there must be one evnet for one id, but then it may have array of dates
+      if the event got moved it should have a link to event id that got created in place of it
+  */
+  return {
+    // id: rawEvent.id || 'evt-' + name + '-' + datePlain, //TODO bc: revisit this, add ids?,
+    id: 'evt-' + name + '-' + datePlain, //TODO bc: revisit this, add ids?,
+    name: name,
+    date: date,
+    datePlain: datePlain,
+    type: rawEvent.type,
+    location: rawEvent.location || {},
+    promoterUrl: preProcessUrl(rawEvent.promoterUrl),
+    flyerUrl: preProcessUrl(rawEvent.flyerUrl),
+    status: rawEvent.status
+  }
 }
 
-const roadEventsMap = preProcessEvents(rawRoadEvents)
-const roadEvents = new Events({ eventsMap: roadEventsMap })
+const preProcessEvents = rawEvents =>
+  rawEvents.map(rawEvent => createEvent(rawEvent))
 
-const mtbEventsMap = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
-const mtbEvents = new Events({ eventsMap: mtbEventsMap })
+
+const allMtbEvents = rawMtbEvents.concat(rawMtbEventsManual)
+const norcalMtb2016Events = preProcessEvents(allMtbEvents)
+
+const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
 
 export {
-  Events, //just a type
-  Event, //type
   Disciplines,
   Statuses,
-  roadEvents,
-  mtbEvents,
+  testRoadEvents2016,
+  norcalMtb2016Events,
 }

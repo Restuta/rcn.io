@@ -1,7 +1,6 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
-import {mtbEvents} from 'temp/events.js'
 import Grid from 'styles/grid'
 
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
@@ -20,16 +19,16 @@ export default class Mtb extends Component {
       weekdaysSizes = sizesEqual
     }
 
+    //TODO bc: move props to Redux store
     return (
       <div>
         <Calendar
-          calendarId="cal-0"
+          calendarId="cal-norcal-mtb-2016"
           region="NorCal"
           discipline="MTB"
           name="Calendar"
           year={2016}
           timeZone="America/Los_Angeles"
-          events={mtbEvents}
           containerWidth={containerWidth}
           weekdaysSizes={weekdaysSizes}
           />
