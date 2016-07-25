@@ -75,6 +75,7 @@ Today
 		!----- immediate todo
 			-- Put Events to Redux Store
 				+----- BUG: re-render after popup is now 100ms (slow)
+				- use "why did you update" for quick perf look
 				- use simple object vs js Map()
 					- for now duplicate creation in events.js
 				- connect EventDetails
