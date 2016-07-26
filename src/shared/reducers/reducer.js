@@ -4,14 +4,15 @@ import { routerReducer } from 'react-router-redux'
 import { norcalMtb2016Events, testRoadEvents2016 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 
-//TODO bc: set calendar ID to every event
+//TODO bc: set calendar ID to every event, but don't do it in this function
+// it should be done at the time of creation of imported events
 const toByIdMap = objects => objects.reduce((map, x) => {
   map[x.id] = x
   return map
 }, {})
 
-const toArrayOfIds = objects => objects.map(x => x.id)
 
+const toArrayOfIds = objects => objects.map(x => x.id)
 const testRoadEventIds = toArrayOfIds(testRoadEvents2016)
 
 const initialState = {
@@ -29,6 +30,12 @@ const initialState = {
   //calenars map by id
   calendars: {
     ['cal-norcal-mtb-2016']: {
+      id: 'cal-norcal-mtb-2016',
+      region: 'NorCal',
+      discipline: 'MTB',
+      year: 2016,
+      name: 'Calendar',
+      timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       eventsIds: toArrayOfIds(norcalMtb2016Events)
     },
@@ -81,7 +88,6 @@ const rootReducer = combineReducers({
 })
 
 
-//TODO bc: this is a a copy from events.js, refactor!
 const eventsToMapByDate = events => {
   const eventsMap = new Map()
 
@@ -123,7 +129,7 @@ let eventsByDate = function(events) {
     map: eventsMap,
     total: events.length,
 
-    //TODO bc: write test for getTotalFrom
+    //TODO: write test for getTotalFrom
     getTotalFrom: getTotalFrom
   }
 }

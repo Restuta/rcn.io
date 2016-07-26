@@ -60,7 +60,7 @@ class Event extends Component {
       event = {location: {
         city: '',
         state: ''
-      }}
+      }},
     } = this.props
 
     //todo: typography should be passed as props
@@ -217,6 +217,7 @@ Event.propTypes = {
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
   // event: PropTypes.instanceOf(EventType),
+  //TODO bc: probably move props to upper level or move event-related props to down level
   event: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

@@ -19,16 +19,10 @@ export default class Mtb extends Component {
       weekdaysSizes = sizesEqual
     }
 
-    //TODO bc: move props to Redux store
     return (
       <div>
         <Calendar
           calendarId="cal-norcal-mtb-2016"
-          region="NorCal"
-          discipline="MTB"
-          name="Calendar"
-          year={2016}
-          timeZone="America/Los_Angeles"
           containerWidth={containerWidth}
           weekdaysSizes={weekdaysSizes}
           />
