@@ -4,17 +4,20 @@
 
 .EventDetails-container {
   position: relative;
-  min-width: 90rem;
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
   padding: 4rem;
+
+  @include phone {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .EventDetails {
   >.content {
-    // max-width: 90rem;
-
+    // min-width: 90rem;
     .date {
       // margin-top: 1rem;
       margin-top: 0rem;

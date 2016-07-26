@@ -26,6 +26,8 @@
   border-radius: pxToRem(3);
   padding: 4rem;
   // margin: 5rem auto auto 4rem;
+  width: 90rem;
+  // margin: 5rem auto auto 4rem;
   // width: 100%; //required for IE 11 (at least)
   max-width: 90rem;
   // min-height: 85vh;
@@ -35,6 +37,11 @@
   z-index: $modal-z-index + 50;
   outline: 0;
   @include box-shadow-lvl-4();
+
+  @include phone {
+    width: 100%;
+    max-width: 100%;
+  }
 
   // position: absolute;
   // left: 50%;
