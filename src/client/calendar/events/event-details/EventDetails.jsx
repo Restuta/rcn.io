@@ -120,6 +120,8 @@ const Map = props => {
 export default class EventDetails extends Component {
   render() {
     // const { eventId } = this.props.params || 0
+    const { name = '——' } = this.props.event
+
     const insideModal = (
       (this.props.location
       && this.props.location.state
@@ -140,9 +142,7 @@ export default class EventDetails extends Component {
               <h4 className="header-regular w-500 date">
                 Saturday, May 13th <span className="relative">(in 43 days)</span>
               </h4>
-              <h3 className="header-regular w-900 name">Chico Stage Race pb Sierra Nevada Brewing
-                Co — Stage 4: Steve Harrison Memorial Criterium
-              </h3>
+              <h3 className="header-regular w-900 name">{name}</h3>
             </Col>
             <Col xs={14} sm={5} />
           </Row>
@@ -197,3 +197,12 @@ export default class EventDetails extends Component {
 EventDetails.propTypes = {
   details: PropTypes.string
 }
+
+import { connect } from 'react-redux'
+import { getEvent } from 'shared/reducers/reducer.js'
+
+export default connect(
+  (state, ownProps) => ({
+    event: getEvent(state, ownProps.params.eventId) || {},
+  })
+)(EventDetails)

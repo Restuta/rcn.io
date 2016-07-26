@@ -134,7 +134,7 @@ let eventsByDate = function(events) {
   }
 }
 
-
+const getEvent = (state, id) => state.events[id]
 const getCalendar = (state, props) => state.calendars[props.calendarId]
 const getAllEvents = state => state.events
 const getEventIdsForCalendar = (state, props) => getCalendar(state, props).eventsIds
@@ -146,6 +146,7 @@ const getEventsByDateForCalendar = createSelector(
 )
 
 export {
+  getEvent,
   getCalendar,
   getEventsByDateForCalendar
 }
