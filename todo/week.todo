@@ -73,6 +73,9 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
+			- add primary calendar id to every event
+			- get calendar into "even details" component so we can use timezone
+			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable
 			-- Put Events to Redux Store
 				+----- BUG: re-render after popup is now 100ms (slow)
 				- use "why did you update" for quick perf look
@@ -83,6 +86,7 @@ Today
 					- user reslect for querying getTotalFrom
 				- make sure they are loaded on the server
 			+----- BUG: 3 event badges does't work on mobile iPhone 6 and below
+			----- BUG: relative date for next day assumes that events starts at midnight, which usually is not true, it needs to be set to 8AM (since no evetns start earlier)
 			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
 			content
 			----- BUG: drift interferes with modal allowing to drag it on the left

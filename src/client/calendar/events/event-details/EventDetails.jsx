@@ -9,6 +9,7 @@ import Colors from 'styles/colors'
 import { addUrlParams } from 'utils/url-utils'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
+import momentTZ from  'moment-timezone'
 
 import { rnd } from 'utils/math.js'
 
@@ -92,8 +93,49 @@ const GoogleStaticMap = ({width, height, homeAddress, startAddress, zoom}) => {
   )
 }
 
+const AddressLink = ({
+    location,
+    boldCity = true,
+    url = '',
+    style
+  }) => {
+
+  const {
+    streetAddress = '',
+    city = '',
+    state = '',
+    zip = '',
+  } = location
+
+  const streetComp = streetAddress ? <span>{streetAddress}, </span> : null
+  const cityComp = city ? <span style={{fontWeight: boldCity ? 700 : 500}}>{city}</span> : null
+  const stateComp = state ? <span>, {state}</span> : null
+  const zipComp = zip ? <span>, {zip}</span> : null
+
+
+  return (
+    <a href={url} target="_blank" style={style}>
+      {streetComp}{cityComp}{stateComp}{zipComp}
+    </a>
+  )
+}
+
+const locationToAddressStr = ({streetAddress = '', city = '', state = '', zip = ''}) => {
+  let addressArr = []
+  const pushIfNotEmpty = prop => (prop && addressArr.push(prop))
+
+  pushIfNotEmpty(streetAddress)
+  pushIfNotEmpty(city)
+  pushIfNotEmpty(state)
+  pushIfNotEmpty(zip)
+
+  return addressArr.join(', ')
+}
+
+
 const Map = props => {
-  const { startAddress, width } = props
+  const { startLocation, width, height, homeAddress, zoom } = props
+  const startAddress = locationToAddressStr(startLocation)
   const mapWithAddressStyle = {
     maxWidth: width
   }
@@ -104,29 +146,53 @@ const Map = props => {
     top: pxToRem(3) + 'rem',
     fontSize: scaleUp(2.5) + 'rem',
   }
-
   const from = encodeURIComponent('Current Location') //users current location
-  const to = encodeURIComponent(startAddress)
+  const to = encodeURIComponent(locationToAddressStr(startLocation))
   const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
 
   return (
     <div className='Map' style={mapWithAddressStyle}>
-      <a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>
-      <GoogleStaticMap {...props}/>
+      {/*<a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>*/}
+      <AddressLink url={googleMapsDirectionsUrl} style={style} location={startLocation}/>
+      <GoogleStaticMap width={width} height={height} homeAddress={homeAddress}
+        startAddress={startAddress} zoom={zoom}/>
     </div>
   )
 }
 
+
 export default class EventDetails extends Component {
   render() {
-    // const { eventId } = this.props.params || 0
-    const { name = '——' } = this.props.event
-
     const insideModal = (
       (this.props.location
       && this.props.location.state
       && this.props.location.state.modal)
     )
+
+    const {
+      name = '——',
+      date,
+      flyerUrl,
+      location,
+    } = this.props.event
+
+    console.info(location)
+
+    //hardcoding timezone for now
+    const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
+    const today = moment()
+    const currentYearFormat = 'dddd, MMMM Do'
+    const otherYearFormat = 'dddd, MMMM Do, YYYY'
+
+    let formattedDate
+
+    if (date.year() === today.year()) {
+      formattedDate = date.format(currentYearFormat)
+    } else {
+      formattedDate = date.format(otherYearFormat)
+    }
+
+    const relativeDate = date.fromNow()
 
     const eventDetailsComponent = (
       <div className="EventDetails">
@@ -140,7 +206,7 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14} sm={9}>
               <h4 className="header-regular w-500 date">
-                Saturday, May 13th <span className="relative">(in 43 days)</span>
+                {formattedDate} <span className="relative">({relativeDate})</span>
               </h4>
               <h3 className="header-regular w-900 name">{name}</h3>
             </Col>
@@ -158,7 +224,8 @@ export default class EventDetails extends Component {
                 marginBottom: '6rem',
               }}>
                 <Map width={416} height={352}
-                  startAddress={`${rnd(1000, 9000)} Hwy 162, Willows, CA`}
+                  //startAddress={`${rnd(1000, 9000)} Hwy 162, Willows, CA`}
+                  startLocation={location}
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
@@ -175,7 +242,7 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14}>
               {/*<div className="flyer">Flyer</div>*/}
-              <Flyer url='www.usacycling.org/events/getflyer.php?permit=2016-1578' />
+              <Flyer url={flyerUrl} />
             </Col>
           </Row>
         </div>
@@ -203,6 +270,7 @@ import { getEvent } from 'shared/reducers/reducer.js'
 
 export default connect(
   (state, ownProps) => ({
+    // calendar: getCalendar()
     event: getEvent(state, ownProps.params.eventId) || {},
   })
 )(EventDetails)

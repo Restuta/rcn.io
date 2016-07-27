@@ -64,7 +64,6 @@ class Calendar extends Component {
         const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
 
         const foundEvents = findEventByDate(events.map, currentDate)
-        //const foundEvents = [{name: 'Test Event Name Criterium'}]
 
         let eventComponents
 
