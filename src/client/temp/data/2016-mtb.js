@@ -115,7 +115,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Championship",
     "date": "March 13 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -137,7 +137,7 @@ export default [
     "discipline": "MTB",
     "name": "Lake Sonoma XC",
     "date": "March 26 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -148,7 +148,7 @@ export default [
     "discipline": "MTB",
     "name": "SoNoMas",
     "date": "April 02 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -170,7 +170,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Celebration",
     "date": "April 03 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -851,8 +851,9 @@ export default [
     "date": "September 11 2016",
     "promoterUrl": "https://www.facebook.com/SierraCupMTB",
     "location": {
-      "city": "Spooner Lake",
-      "state": "CA"
+      "streetAddress": "Spooner Lake",
+      "city": "Carson City",
+      "state": "NV"
     }
   },
   {

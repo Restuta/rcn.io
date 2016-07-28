@@ -144,6 +144,7 @@ export default [
     "discipline": "Road",
     "type": "Road Race",
     "name": "CANCELED -- Early Bird Road Race",
+    "status": "Cancelled",
     "date": "January 16th 2016",
     "distanceMi": 61,
     "durationMin": 140,
@@ -210,7 +211,7 @@ export default [
   },
   {
     "id": "evt-109990207",
-    "discipline": "Road",
+    "discipline": "Cyclocross",
     "type": "Cyclocross",
     "name": "Rockville Bike CX Series #3",
     "date": "January 17th 2016",
@@ -717,7 +718,7 @@ export default [
   {
     "id": "evt-16437035",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Chico Stage Race pb Sierra Nevada Brewing Co - Stage 3: River Road TT",
     "date": "February 28th 2016",
     "distanceMi": 76,
@@ -1108,7 +1109,7 @@ export default [
   {
     "id": "evt-46017216",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Red Kite Omnium Event #3 - Tempus Fugit Time Trial (Spring)",
     "date": "March 20th 2016",
     "distanceMi": 81,
@@ -2051,8 +2052,8 @@ export default [
   {
     "id": "evt-105488512",
     "discipline": "Road",
-    "type": "TT",
-    "name": "Cancelled- Mariposa County Women's Stage Race: ITT - VP#11",
+    "type": "Time Trial",
+    "name": "Cancelled - Mariposa County Women's Stage Race: ITT - VP#11",
     "date": "May 20th 2016",
     "distanceMi": 17,
     "durationMin": 103,
@@ -2060,6 +2061,7 @@ export default [
     "startTime": "11:40 AM",
     "promoter": "Bicycle Planet",
     "permit": "2016-",
+    "status": "Cancelled",
     "location": {
       "streetAddress": "27700 Lake Rd",
       "city": "La Grange",
@@ -2099,6 +2101,7 @@ export default [
     "discipline": "Road",
     "type": "Hill Climb, Road Race",
     "name": "Cancelled- Mariposa County Women's Stage Race: HC & RR - VP#11",
+    "status": "Cancelled",
     "date": "May 21st 2016",
     "distanceMi": 141,
     "durationMin": 162,
@@ -2168,6 +2171,7 @@ export default [
     "discipline": "Road",
     "type": "Road Race",
     "name": "Cancelled- Mariposa County Women's Stage Race: RR - VP#11",
+    "status": "Cancelled",
     "date": "May 22nd 2016",
     "distanceMi": 25,
     "durationMin": 154,
@@ -2649,7 +2653,7 @@ export default [
   {
     "id": "evt-11893741",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "NCNCA TT Championships - Loyalton Time Trial",
     "date": "June 12th 2016",
     "distanceMi": 29,
@@ -2718,7 +2722,7 @@ export default [
   {
     "id": "evt-92300412",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Calaveras Time Trial",
     "date": "June 19th 2016",
     "distanceMi": 144,
@@ -3155,7 +3159,7 @@ export default [
   {
     "id": "evt-20410186",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Warnerville Time Trial - VP#14, CC#1",
     "date": "August 6th 2016",
     "distanceMi": 125,
@@ -3201,7 +3205,7 @@ export default [
   {
     "id": "evt-29409525",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Warnerville Time Trial - VP#14, CC#1",
     "date": "August 7th 2016",
     "distanceMi": 33,
@@ -3316,7 +3320,7 @@ export default [
   {
     "id": "evt-83782016",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Red Kite Omnium Event #14 - Tempus Fugit Time Trial (Summer)",
     "date": "August 21st 2016",
     "distanceMi": 80,
@@ -3478,7 +3482,8 @@ export default [
     "id": "evt-105507446",
     "discipline": "Road",
     "type": "Road Race",
-    "name": "Cancelled- Challenge Challenge Road Race - VP#23, CC#10",
+    "name": "Cancelled - Challenge Challenge Road Race - VP#23, CC#10",
+    "status": "Cancelled",
     "date": "September 10th 2016",
     "distanceMi": 189,
     "durationMin": 10,
@@ -3523,7 +3528,7 @@ export default [
   {
     "id": "evt-90373056",
     "discipline": "Road",
-    "type": "Circuit",
+    "type": "Circuit Race",
     "name": "Central Coast Road Series #9",
     "date": "September 11th 2016",
     "distanceMi": 37,
@@ -3546,7 +3551,7 @@ export default [
   {
     "id": "evt-36560367",
     "discipline": "Road",
-    "type": "TT",
+    "type": "Time Trial",
     "name": "Esparto Time Trial - VP#24, CC#11",
     "date": "September 11th 2016",
     "distanceMi": 57,
