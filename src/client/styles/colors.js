@@ -24,8 +24,20 @@ const purple = {
   deepPurple900: '#311B92',
 }
 
-//update matching variables in variables.scss
-export default Object.freeze({
+const red = {
+  red50: '#ffebee',
+  red100: '#ffcdd2',
+  red200: '#ef9a9a',
+  red300: '#e57373',
+  red400: '#ef5350',
+  red500: '#f44336',
+  red600: '#e53935',
+  red700: '#d32f2f',
+  red800: '#c62828',
+  red900: '#b71c1c',
+}
+
+const colors = {
   ...grey,
 
   bodyBg: '#FCFCFC',
@@ -35,4 +47,30 @@ export default Object.freeze({
 
   ...purple,
   primary: purple.deepPurple400,
+  ...red,
+}
+
+
+const eventColors = {
+  status: {
+    cancelled: colors.grey400,
+    moved: colors.grey400
+  },
+  road: {
+    criterium: '#00BF10',
+    roadRace: '#2196F3',
+    circuitRace: '#F57C00',
+    timeTrial: colors.red500,
+    hillClimb: colors.red700,
+  },
+  mtb: {
+    default: colors.brownMud
+  }
+}
+
+//update matching variables in variables.scss
+export default Object.freeze({
+  ...colors,
+
+  eventColors
 })
