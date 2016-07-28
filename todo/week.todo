@@ -91,6 +91,7 @@ Today
 			content
 			----- BUG: drift interferes with modal allowing to drag it on the left
 			----- BUG: background still scrolls on iOS
+			----- BUG: certain MTB events have non-pdf in pdf link
 				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 			--- Flyier
 				+- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
