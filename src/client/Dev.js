@@ -47,7 +47,8 @@ export default class Dev extends Component {
     `
 
     const shortEventName = 'Land Park Criterium'
-    const longEventName = 'Chico Stage Race pb Sierra Nevada Brewing Co - Stage 4: Steve Harrison Memorial Criterium'
+    // const longEventName = 'Chico Stage Race pb Sierra Nevada Brewing Co - Stage 4: Steve Harrison Memorial Criterium'
+    const longEventName = 'NCNCA Masters Criterium Championships - Red Kite Omnium Event #15 - Red Kite Omnium Championship Weekend: Day 2'
 
     let containerWidth = null
 

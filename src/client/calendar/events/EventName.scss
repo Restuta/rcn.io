@@ -81,7 +81,7 @@ $base-line-rem: $line-height-rem / 2;
     @include text-2();
     margin-bottom: 0;
     font-weight: 700;
-    max-height: $base-line-rem * 16;
+    max-height: $base-line-rem * 8;
     letter-spacing: -0.1px;
     //@include DEBUG();
   }
@@ -92,7 +92,7 @@ $base-line-rem: $line-height-rem / 2;
     letter-spacing: 0px;
     margin-bottom: 0;
     font-weight: 700;
-    max-height: $line-height-rem * 6;
+    max-height: $base-line-rem * 10;
     letter-spacing: -0.1px;
   }
 }
