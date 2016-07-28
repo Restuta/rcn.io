@@ -29,6 +29,9 @@ const preProcessUrl = (rawUrl) => {
   }
 }
 
+const hash = (str) =>  str.split('').reduce((prevHash, currVal) =>
+    ((prevHash << 5) - prevHash) + currVal.charCodeAt(0), 0)
+
 const createEvent = rawEvent => {
   const name = rawEvent.name.replace(/--/g, '—')
   const date = moment(rawEvent.date, 'MMMM DD YYYY')
@@ -39,13 +42,18 @@ const createEvent = rawEvent => {
       defenitely there must be one evnet for one id, but then it may have array of dates
       if the event got moved it should have a link to event id that got created in place of it
   */
+
+
+  //TODO bc: revisit this, add ids?,
+  const eventId = 'evt-' + hash(name) + '-' + datePlain
+
   return {
-    // id: rawEvent.id || 'evt-' + name + '-' + datePlain, //TODO bc: revisit this, add ids?,
-    id: 'evt-' + name + '-' + datePlain, //TODO bc: revisit this, add ids?,
+    id: eventId,
     name: name,
     date: date,
     datePlain: datePlain,
     type: rawEvent.type,
+    discipline: rawEvent.discipline,
     location: rawEvent.location || {},
     promoterUrl: preProcessUrl(rawEvent.promoterUrl),
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
