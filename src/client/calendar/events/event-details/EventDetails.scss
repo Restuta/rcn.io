@@ -19,8 +19,7 @@
   >.content {
     // min-width: 90rem;
     .date {
-      // margin-top: 1rem;
-      margin-top: 0rem;
+      margin-top: 1rem;
       margin-bottom: 0;
       top: pxToRem(-5);
       line-height: 2rem;
@@ -38,6 +37,14 @@
       top: pxToRem(-3);
       line-height: 3rem;
       letter-spacing: 0;
+    }
+
+    .address-link {
+      margin-bottom: 1rem;
+      display: inline-block;
+      position: relative;
+      top: pxToRem(3);
+      font-size: scaleUp(2.5);
     }
 
     .flyer {
@@ -60,16 +67,15 @@
         justify-content: flex-start;
       }
     }
-
-    .section-register {
-      padding-top: 3rem;
-    }
-
     //DEBUG STYLES
 
     .spacer {
       margin-top: 3rem - pxToRem(1);
       margin-bottom: 2rem;
+    }
+
+    .spacer.no-margin-top {
+      margin-top: - pxToRem(1);
     }
 
     >.content {

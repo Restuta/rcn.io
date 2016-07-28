@@ -4,14 +4,14 @@ import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Button from 'atoms/Button.jsx'
-import { pxToRem, scaleUp } from 'styles/typography'
+import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
-import { addUrlParams } from 'utils/url-utils'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
 import momentTZ from  'moment-timezone'
-
-import { rnd } from 'utils/math.js'
+import GoogleStaticMap from './GoogleStaticMap.jsx'
+import AddressLink from './AddressLink.jsx'
+import { Disciplines } from 'client/temp/events.js'
 
 const PresentedBy = ({by}) => (
   <div style={{
@@ -23,103 +23,6 @@ const PresentedBy = ({by}) => (
   </div>
 )
 
-const GoogleStaticMap = ({width, height, homeAddress, startAddress, zoom}) => {
-  const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap'
-  // const homeMarkerColor = '0x4caf50'
-  const homeMarkerColor = `0x${Colors.primary.slice(1)}`
-  const eventMarkerColor = '0xF44336'
-
-  const genericParams = {
-    format: 'png8',
-    maptype: 'roadmap',
-    zoom: zoom,
-    markers: [
-      `size:normal|color:${eventMarkerColor}|label:S|${startAddress}`
-    ],
-    // style: [
-    //   'saturation:-50|lightness:0|gamma:1.5',
-    //   'feature:road.highway|element:all|visibility:simplified',
-    //   'feature:water|element:all|color:0x90CAF9|visibility:on',
-    //   // 'feature:water|element:all|color:0xb6dbfa|visibility:on',
-    // ],
-    style: [
-      'feature:administrative|element:labels.text.fill|color:0x444444',
-      'feature:poi|element:all|visibility:on|saturation:-100',
-      'feature:road|element:all|saturation:-100|lightness:45',
-      'feature:road.highway|element:all|visibility:simplified',
-      'feature:road.arterial|element:labels.icon|visibility:off',
-      'feature:transit|element:all|visibility:off',
-      'feature:water|element:all|color:0x90CAF9|visibility:on',
-      'feature:water|element:all|color:0xb6dbfa|visibility:on',
-      // 'feature:water|element:all|color:0xBBDEFB|visibility:on',
-
-    ],
-    visibility: 'simplified',
-    key: 'AIzaSyAzpETb1x1vce3mw_n2jnDBDlKDjZ4iH2c',
-  }
-
-  if (homeAddress) {
-    genericParams.markers.push(`size:small|color:${homeMarkerColor}|label:H|${homeAddress}`)
-  }
-
-  const bigImageParams = {
-    ...genericParams,
-    size: `${width}x${height}`,
-    scale: 2,
-  }
-
-  const midImageParams = {
-    ...genericParams,
-    size: `${width}x${height}`,
-    scale: 1,
-  }
-
-  const style = {
-    borderRadius: pxToRem(3) + 'rem'
-  }
-
-  const googleMapBigImgUrl = addUrlParams(baseUrl, bigImageParams)
-  const googleMapMidImgUrl = addUrlParams(baseUrl, midImageParams)
-
-  return (
-    <div className="GoogleStaticMap intrinsic intrinsic--13x11">
-      <img style={style} className="img-fluid intrinsic-item" alt="Google Map"
-        src={googleMapBigImgUrl}
-        srcSet={`
-          ${googleMapBigImgUrl} 2x,
-          ${googleMapMidImgUrl} 1x`}
-        />
-    </div>
-  )
-}
-
-const AddressLink = ({
-    location,
-    boldCity = true,
-    url = '',
-    style
-  }) => {
-
-  const {
-    streetAddress = '',
-    city = '',
-    state = '',
-    zip = '',
-  } = location
-
-  const streetComp = streetAddress ? <span>{streetAddress}, </span> : null
-  const cityComp = city ? <span style={{fontWeight: boldCity ? 700 : 500}}>{city}</span> : null
-  const stateComp = state ? <span>, {state}</span> : null
-  const zipComp = zip ? <span>, {zip}</span> : null
-
-
-  return (
-    <a href={url} target="_blank" style={style}>
-      {streetComp}{cityComp}{stateComp}{zipComp}
-    </a>
-  )
-}
-
 const locationToAddressStr = ({streetAddress = '', city = '', state = '', zip = ''}) => {
   let addressArr = []
   const pushIfNotEmpty = prop => (prop && addressArr.push(prop))
@@ -127,39 +30,9 @@ const locationToAddressStr = ({streetAddress = '', city = '', state = '', zip = 
   pushIfNotEmpty(streetAddress)
   pushIfNotEmpty(city)
   pushIfNotEmpty(state)
-  pushIfNotEmpty(zip)
 
-  return addressArr.join(', ')
+  return (addressArr.join(', ') + ' ' + zip).trim()
 }
-
-
-const Map = props => {
-  const { startLocation, width, height, homeAddress, zoom } = props
-  const startAddress = locationToAddressStr(startLocation)
-  const mapWithAddressStyle = {
-    maxWidth: width
-  }
-  const style = {
-    marginBottom: '1rem',
-    display: 'inline-block',
-    position: 'relative',
-    top: pxToRem(3) + 'rem',
-    fontSize: scaleUp(2.5) + 'rem',
-  }
-  const from = encodeURIComponent('Current Location') //users current location
-  const to = encodeURIComponent(locationToAddressStr(startLocation))
-  const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
-
-  return (
-    <div className='Map' style={mapWithAddressStyle}>
-      {/*<a href={googleMapsDirectionsUrl} target="_blank" style={style}>{startAddress}</a>*/}
-      <AddressLink url={googleMapsDirectionsUrl} style={style} location={startLocation}/>
-      <GoogleStaticMap width={width} height={height} homeAddress={homeAddress}
-        startAddress={startAddress} zoom={zoom}/>
-    </div>
-  )
-}
-
 
 export default class EventDetails extends Component {
   render() {
@@ -168,18 +41,21 @@ export default class EventDetails extends Component {
       && this.props.location.state
       && this.props.location.state.modal)
     )
+    //TODO: hardcoding timezone for now
+    const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
 
     const {
       name = '——',
-      date,
+      date = moment(),
       flyerUrl,
-      location,
+      location = {},
+      discipline,
+      type,
     } = this.props.event
 
     console.info(location)
 
-    //hardcoding timezone for now
-    const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
+
     const today = moment()
     const currentYearFormat = 'dddd, MMMM Do'
     const otherYearFormat = 'dddd, MMMM Do, YYYY'
@@ -194,15 +70,60 @@ export default class EventDetails extends Component {
 
     const relativeDate = date.fromNow()
 
+    const flyerComp = (flyerUrl
+      ? <Flyer url={flyerUrl} />
+      : <div>No flyer (yet?)</div>
+    )
+
+    const from = encodeURIComponent('Current Location') //users current location
+    const to = encodeURIComponent(locationToAddressStr(location))
+    const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
+    const startAddress = locationToAddressStr(location)
+
+    let raceTypeBadgesComp = []
+
+    if (date.isBefore(today)) {
+      raceTypeBadgesComp.push(<RaceTypeBadge key={10} name="PAST" color={Colors.grey500}/>)
+    }
+
+    console.info(discipline)
+    console.info(type)
+
+    if (discipline === Disciplines.MTB) {
+      raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.brownMud} />)
+    }
+
+    if (discipline === Disciplines.Road) {
+      switch (type) {
+        case 'Road Race':
+          raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color='#2196F3' />)
+          break
+        case 'Criterium':
+          raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color='#00BF10' />)
+          break
+        case 'Hill Climb':
+          raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.red700} />)
+          break
+        case 'Circuit Race':
+          raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color='#F57C00' />)
+          break
+        case 'Time Trial':
+          raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.red500} />)
+          break
+        default:
+          break
+      }
+    }
+
     const eventDetailsComponent = (
       <div className="EventDetails">
         <div className="content">
           <div className="badges">
-            <RaceTypeBadge name="PAST" color={Colors.grey500}/>
+            {/*<RaceTypeBadge name="PAST" color={Colors.grey500}/>
             <RaceTypeBadge name="STAGE RACE" color={Colors.deepPurple700}/>
-            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" />
+            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" />*/}
+            {raceTypeBadgesComp}
           </div>
-
           <Row>
             <Col xs={14} sm={9}>
               <h4 className="header-regular w-500 date">
@@ -214,35 +135,39 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              <PresentedBy by="Chica Corsa Cycling Club"/>
+              <PresentedBy by="——"/>
               <hr className="spacer" />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={14}>
+              <AddressLink url={googleMapsDirectionsUrl} className="address-link" location={location}/>
             </Col>
           </Row>
           <Row>
             <Col xs={14} sm={9}>
               <div style={{
-                marginBottom: '6rem',
+                marginBottom: '3rem',
               }}>
-                <Map width={416} height={352}
-                  //startAddress={`${rnd(1000, 9000)} Hwy 162, Willows, CA`}
-                  startLocation={location}
+                <GoogleStaticMap width={416} height={352}
+                  startAddress={startAddress}
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
-            <Col xs={14} sm={5} className="section-register">
+            <Col xs={14} sm={5}>
               <Button size="sm">REGISTER</Button>
             </Col>
           </Row>
-          <Row>
+          <hr className="spacer no-margin-top" />
+          {/*<Row>
             <Col xs={14} sm={9}>
             Part of:
             </Col>
             <Col xs={14} sm={5}>Links</Col>
-          </Row>
+          </Row>*/}
           <Row>
             <Col xs={14}>
-              {/*<div className="flyer">Flyer</div>*/}
-              <Flyer url={flyerUrl} />
+              {flyerComp}
             </Col>
           </Row>
         </div>
@@ -269,8 +194,9 @@ import { connect } from 'react-redux'
 import { getEvent } from 'shared/reducers/reducer.js'
 
 export default connect(
-  (state, ownProps) => ({
+  (state, ownProps) => {
     // calendar: getCalendar()
-    event: getEvent(state, ownProps.params.eventId) || {},
-  })
+    console.info(ownProps)
+    return { event: getEvent(state, ownProps.params.eventId) || {} }
+  }
 )(EventDetails)
