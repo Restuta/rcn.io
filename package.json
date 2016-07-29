@@ -89,7 +89,7 @@
     "moment": "^2.11.2",
     "moment-timezone": "^0.5.4",
     "react": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "react-dom": "^15.3.0",
     "react-pure-render": "^1.0.1",
     "react-router": "^2.4.0",
     "svg-inline-react": "^1.0.0"
