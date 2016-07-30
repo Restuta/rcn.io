@@ -51,20 +51,21 @@ const colors = {
 }
 
 
-const eventColors = {
+const event = {
   status: {
+    past: colors.grey500,
     cancelled: colors.grey400,
     moved: colors.grey400
   },
   road: {
     criterium: '#00BF10',
     roadRace: '#2196F3',
-    circuitRace: '#F57C00',
+    circuitRace: '#FFA726',
     timeTrial: colors.red500,
     hillClimb: colors.red700,
   },
   mtb: {
-    default: colors.brownMud
+    'default': colors.brownMud,
   }
 }
 
@@ -72,5 +73,5 @@ const eventColors = {
 export default Object.freeze({
   ...colors,
 
-  eventColors
+  event
 })

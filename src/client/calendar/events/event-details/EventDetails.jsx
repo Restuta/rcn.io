@@ -11,7 +11,7 @@ import Flyer from './Flyer.jsx'
 import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
-import { Disciplines } from 'client/temp/events.js'
+import { Disciplines } from 'client/calendar/events/types.js'
 
 const PresentedBy = ({by}) => (
   <div style={{
@@ -83,32 +83,32 @@ export default class EventDetails extends Component {
     let raceTypeBadgesComp = []
 
     if (date.isBefore(today)) {
-      raceTypeBadgesComp.push(<RaceTypeBadge key={10} name="PAST" color={Colors.grey500}/>)
+      raceTypeBadgesComp.push(<RaceTypeBadge key={10} name="PAST" color={Colors.event.status.past}/>)
     }
 
     console.info(discipline)
     console.info(type)
 
-    if (discipline === Disciplines.MTB) {
-      raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.brownMud} />)
+    if (discipline === Disciplines.mtb) {
+      raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.event.mtb.default} />)
     }
 
-    if (discipline === Disciplines.Road) {
+    if (discipline === Disciplines.road) {
       switch (type) {
         case 'Road Race':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color='#2196F3' />)
+          raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color={Colors.event.road.roadRace} />)
           break
         case 'Criterium':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color='#00BF10' />)
+          raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color={Colors.event.road.criterium} />)
           break
         case 'Hill Climb':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.red700} />)
+          raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.event.road.hillClimb} />)
           break
         case 'Circuit Race':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color='#F57C00' />)
+          raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color={Colors.event.road.circuitRace} />)
           break
         case 'Time Trial':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.red500} />)
+          raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.event.road.timeTrial} />)
           break
         default:
           break
@@ -119,9 +119,6 @@ export default class EventDetails extends Component {
       <div className="EventDetails">
         <div className="content">
           <div className="badges">
-            {/*<RaceTypeBadge name="PAST" color={Colors.grey500}/>
-            <RaceTypeBadge name="STAGE RACE" color={Colors.deepPurple700}/>
-            <RaceTypeBadge name="CRITERIUM" color="#4CAF50" />*/}
             {raceTypeBadgesComp}
           </div>
           <Row>
@@ -195,8 +192,8 @@ import { getEvent } from 'shared/reducers/reducer.js'
 
 export default connect(
   (state, ownProps) => {
+    //to have "back to calendar" button
     // calendar: getCalendar()
-    console.info(ownProps)
     return { event: getEvent(state, ownProps.params.eventId) || {} }
   }
 )(EventDetails)

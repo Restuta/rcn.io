@@ -7,7 +7,7 @@ import Event from './events/Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import Colors from 'styles/colors'
-import { Disciplines } from 'temp/events'
+import { Disciplines } from './events/types'
 import moment from  'moment-timezone'
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
@@ -33,6 +33,7 @@ class Calendar extends Component {
       showPastEvents,
       onShowFullHidePastClick
     } = this.props
+
 
     //time-zone specific moment factory
     const momentTZ = () => moment.tz(...arguments, timeZone)
@@ -61,7 +62,9 @@ class Calendar extends Component {
         const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
         const month = currentDate.month() + 1
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
-        const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
+        // const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
+        //using to alternate between months so we they become easier to spot in a caledar
+        const currentDayBelongsToTodaysMonth = (currentDate.month() % 2 === 0)
 
         const foundEvents = findEventByDate(events.map, currentDate)
 
@@ -143,7 +146,7 @@ Calendar.propTypes = {
     total: PropTypes.number.isRequired,
   }),
   region: PropTypes.string,
-  discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
+  discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,

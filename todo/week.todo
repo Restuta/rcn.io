@@ -73,6 +73,10 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
+		 	- during event creation build index of occurence of "road" incide event
+			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
+				- alternative implementation: partOfStageRace: true, false and don't allow multiple types
+				- mutiday event?: 
 			- add primary calendar id to every event
 			- get calendar into "even details" component so we can use timezone
 			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable

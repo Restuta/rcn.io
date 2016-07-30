@@ -41,10 +41,13 @@ const initialState = {
     },
     ['cal-0']: {
       // name: 'NorCal MTB Calendar 2016 =)',
-      showPastEvents: false,
+      // showPastEvents: false,
       //eventIds: ['evnt-1', 'evnt-2']
     },
-    ['cal-test-1']: { eventsIds: testRoadEventIds },
+    ['cal-test-1']: {
+      showPastEvents: true,
+      eventsIds: testRoadEventIds
+    },
     ['cal-test-2']: { eventsIds: testRoadEventIds },
     ['cal-test-3']: { eventsIds: testRoadEventIds },
     ['cal-test-4']: { eventsIds: testRoadEventIds },

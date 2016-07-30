@@ -5,17 +5,6 @@ import rawRoadEvents from 'client/temp/data/2016-NCNCA-road.js'
 import rawMtbEvents from 'client/temp/data/2016-mtb.js'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual.js'
 import moment from 'moment'
-//import { rnd } from 'client/shared/utils'
-
-const Disciplines = {
-  MTB: 'MTB',
-  Road: 'Road'
-}
-
-const Statuses = {
-  Cancelled: 'Cancelled',
-  Moved: 'Moved'
-}
 
 const preProcessUrl = (rawUrl) => {
   if (rawUrl) {
@@ -71,8 +60,6 @@ const norcalMtb2016Events = preProcessEvents(allMtbEvents)
 const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
 
 export {
-  Disciplines,
-  Statuses,
   testRoadEvents2016,
   norcalMtb2016Events,
 }

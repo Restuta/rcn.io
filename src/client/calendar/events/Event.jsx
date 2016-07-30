@@ -6,7 +6,7 @@ import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
-import {Disciplines, Statuses} from 'temp/events'
+import { Disciplines, Statuses } from 'calendar/events/types'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import { withRouter } from 'react-router'
@@ -149,8 +149,31 @@ class Event extends Component {
     // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
     // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
 
-    if (discipline === Disciplines.MTB) {
+    if (event.discipline === Disciplines.mtb) {
       eventColor = Colors.brownMudDimmed
+    }
+
+    if (event.discipline === Disciplines.road) {
+      switch (event.type) {
+        case 'Road Race':
+          eventColor = Colors.event.road.roadRace
+          break
+        case 'Criterium':
+          eventColor = Colors.event.road.criterium
+          break
+        case 'Hill Climb':
+          eventColor = Colors.event.road.hillClimb
+          break
+        case 'Circuit Race':
+          eventColor = Colors.event.road.circuitRace
+          break
+        case 'Time Trial':
+          eventColor = Colors.event.road.timeTrial
+          break
+        default:
+          eventColor = Colors.grey800
+          break
+      }
     }
 
     const {debug = false} = this.props
@@ -171,7 +194,7 @@ class Event extends Component {
 
     let opacity = 1
 
-    if (event.status === Statuses.Cancelled || event.status === Statuses.Moved) {
+    if (event.status === Statuses.cancelled || event.status === Statuses.moved) {
       eventColor = Colors.grey400
     }
 
@@ -208,7 +231,7 @@ Event.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   //TODO bc: move discipline to be part of event
-  discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
+  discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
   //location: PropTypes.any,
   //width in coluns card is going to take
   width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
@@ -224,6 +247,7 @@ Event.propTypes = {
     date: PropTypes.object.isRequired,
     datePlain: PropTypes.string.isRequired,
     type: PropTypes.string,
+    discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
     location: PropTypes.shape({
       city: PropTypes.string,
       state: PropTypes.string,
