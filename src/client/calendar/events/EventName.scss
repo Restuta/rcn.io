@@ -27,7 +27,7 @@ $base-line-rem: $line-height-rem / 2;
   }
 
   &.size-XXS {
-    font-size: pxToRem(4);
+    font-size: pxToRem(5);
     line-height: 1;
     top: pxToRem(-1);
     font-weight: 700;
@@ -43,7 +43,8 @@ $base-line-rem: $line-height-rem / 2;
     top: pxToRem(2);
     font-weight: 700;
     margin-bottom: 0;
-    max-height: $base-line-rem * 3;
+    line-height: 1.25rem;
+    max-height: 85%;
     letter-spacing: -0.2px;
   }
 
