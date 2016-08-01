@@ -220,6 +220,7 @@
 * [Timekit](http://timekit.io/) - availability and scheduling API, google sync for free
 
 # Data
+* [NoSql Data Modelling Techniques](https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/)
 * [How to choose a NoSQL DB](http://www.itworld.com/article/2833291/essential-reading-for-choosing-a-nosql-database.html)
 * [Firebase](https://www.firebase.com/)
 * [Mongoose](http://mongoosejs.com/) elegant mongodb object modeling for node.js
