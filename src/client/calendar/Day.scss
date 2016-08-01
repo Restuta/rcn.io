@@ -48,7 +48,7 @@
     border-right: pxToRem(1) solid $grey-300;
   }
 
-  &-current-month {
+  &-alternate-month {
     background-color: darken($grey-100, 1%);
 
     .Day-date {

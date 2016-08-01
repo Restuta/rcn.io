@@ -65,9 +65,8 @@ class Calendar extends Component {
         const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
         const month = currentDate.month() + 1
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
-        // const currentDayBelongsToTodaysMonth = (today.isSame(currentDate, 'month'))
         //using to alternate between months so we they become easier to spot in a caledar
-        const currentDayBelongsToTodaysMonth = (currentDate.month() % 2 === 0)
+        const currentDayBelongsToAlternateMonth = (currentDate.month() % 2 === 0)
 
         const foundEvents = findEventByDate(events.map, currentDate)
 
@@ -86,7 +85,7 @@ class Calendar extends Component {
             itIsToday={currentDayIsToday}
             itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
-            itIsCurrentMonthsDay={currentDayBelongsToTodaysMonth}
+            isItAlternateMonthsDay={currentDayBelongsToAlternateMonth}
             containerWidth={containerWidth}
             dayOfWeek={currentDate.isoWeekday()}
             weekNumber={currentDate.isoWeek()}>
