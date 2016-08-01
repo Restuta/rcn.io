@@ -8,6 +8,13 @@
   }
 }
 
+@mixin tablet {
+  @media (max-width: #{map-get($grid-breakpoints, "md")}) {
+    @content;
+  }
+}
+
+
 @mixin offset-to-baseline($offset) {
 
   // @if ($offset < 0) {

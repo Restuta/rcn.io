@@ -49,14 +49,13 @@ class Event extends Component {
   }
 
   render() {
-    console.info('Event render is called')
+    // console.info('Event render is called')
 
     const {
       width,
       containerWidth,
       baseHeight = getBaseHeight(containerWidth),
       name,
-      discipline,
       event = {location: {
         city: '',
         state: ''
@@ -146,9 +145,6 @@ class Event extends Component {
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
 
-    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
-    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
-
     if (event.discipline === Disciplines.mtb) {
       eventColor = Colors.brownMudDimmed
     }
@@ -207,7 +203,7 @@ class Event extends Component {
       height: cardHeightRem + 'rem',
       //minHeight: cardHeightRem + 'rem',
       //maxHeight: cardHeightRem * 2 + 'rem',
-      //height: '100%',
+      // height: '100%',
       paddingTop: paddingTop || verticalPadding,
       paddingBottom: paddingBottom || verticalPadding,
       paddingLeft: horizontalPadding,
@@ -218,7 +214,7 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
-        <EventName size={cardSize} height={cardHeightRem} name={name}
+        <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
         {locationComponent}
       </div>
@@ -230,8 +226,6 @@ Event.propTypes = {
   //TODO bc: id, name and discipline are covered under "event type"
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  //TODO bc: move discipline to be part of event
-  discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
   //location: PropTypes.any,
   //width in coluns card is going to take
   width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,

@@ -11,6 +11,20 @@ const grey = {
   grey800: '#424242',
 }
 
+const blueGrey = {
+  blueGrey50: '#ECEFF1',
+  blueGrey100: '#CFD8DC',
+  blueGrey200: '#B0BEC5',
+  blueGrey300: '#90A4AE',
+  blueGrey400: '#78909C',
+  blueGrey500: '#607D8B',
+  blueGrey600: '#546E7A',
+  blueGrey700: '#455A64',
+  blueGrey800: '#37474F',
+  blueGrey900: '#263238',
+
+}
+
 const purple = {
   deepPurple50: '#EDE7F6',
   deepPurple100: '#D1C4E9',
@@ -39,15 +53,16 @@ const red = {
 
 const colors = {
   ...grey,
+  ...blueGrey,
+  ...purple,
+  ...red,
 
   bodyBg: '#FCFCFC',
 
   brownMud: 'rgba(160,82,45,1)', //'SIENNA',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
 
-  ...purple,
   primary: purple.deepPurple400,
-  ...red,
 }
 
 

@@ -17,6 +17,12 @@ const withPerf = (func, description) => {
   }
 }
 
+/* usage example:
+  let foo = () => {}
+
+  foo = withPerf(foo)
+*/
+
 export {
   withPerf
 }

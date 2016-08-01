@@ -3,6 +3,7 @@ import { handleActions as makeReducer } from 'redux-actions'
 import { routerReducer } from 'react-router-redux'
 import { norcalMtb2016Events, testRoadEvents2016 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
+import Colors from 'styles/colors'
 
 //TODO bc: set calendar ID to every event, but don't do it in this function
 // it should be done at the time of creation of imported events
@@ -31,13 +32,31 @@ const initialState = {
   calendars: {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
-      region: 'NorCal',
+      //TODO bc: remove discipline from calendar, it was a woraround to higlight word MTB in mtb calendar
       discipline: 'MTB',
       year: 2016,
-      name: 'Calendar',
+      name: 'NorCal MTB Calendar 2016',
+      highlight: {
+        word: 'MTB',
+        color: Colors.brownMud
+      },
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       eventsIds: toArrayOfIds(norcalMtb2016Events)
+    },
+    ['cal-ncnca-2017-draft']: {
+      id: 'cal-norcal-mtb-2016',
+      year: 2017,
+      name: 'NCNCA Calendar 2017',
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
+      description: 'Revision 2',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: true,
+      draft: true,
+      eventsIds: []
     },
     ['cal-0']: {
       // name: 'NorCal MTB Calendar 2016 =)',

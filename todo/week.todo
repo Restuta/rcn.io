@@ -73,7 +73,8 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
-		 	- during event creation build index of occurence of "road" incide event
+			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
+		 	---- (optimization) during event creation build index of occurence of "road race" incide event: and other words to speed up rendring
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
 				- alternative implementation: partOfStageRace: true, false and don't allow multiple types
 				- mutiday event?: 

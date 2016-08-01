@@ -3,7 +3,6 @@ import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 
 function getColClassName(propName, propValue) {
-
   if (!propValue) return ''
 
   const validProps = {
@@ -23,11 +22,10 @@ function getColClassName(propName, propValue) {
 //usage <Col xs={12} md={8} />
 export default class Col extends Component {
   render() {
-    //TODO: move this to it's own module
+    //TODO: move this to it's own module and make it render faster
     const columnClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
       .reduce((curr, prev) => classnames(prev, curr))
-      .trim()
 
     const classNames = classnames('col', columnClassNames, this.props.className)
 

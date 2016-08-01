@@ -3,8 +3,8 @@ import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
-import {Weekdays} from './utils/date-utils'
-import {pxToRem} from 'styles/typography'
+import { Weekdays } from './utils/date-utils'
+import { pxToRem } from 'styles/typography'
 import Grid from 'styles/grid'
 
 const pxToRems = (px) => pxToRem(px) + 'rem'
@@ -44,7 +44,7 @@ export default class WeekdaysHeader extends Component {
       const weekdaysNameStyle = Object.assign({}, weekdaysNameStyleBase)
 
       if (Weekdays[i].short.toLowerCase() === 'sat' || Weekdays[i].short.toLowerCase() === 'sun') {
-        weekdaysNameStyle.color = 'crimson'
+        weekdaysNameStyle.color = Colors.red400
         weekdaysNameStyle.fontWeight = 900
       }
 

@@ -12,6 +12,8 @@ import moment from  'moment-timezone'
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
 import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
+import { createHighlightedStringComponent } from 'client/utils/component.js'
+import { pxToRem } from 'styles/typography'
 
 const findEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -23,14 +25,15 @@ class Calendar extends Component {
     console.info('Calendar render is called')
     const {
       name,
+      highlight,
+      description,
       year,
       containerWidth,
       weekdaysSizes,
       events,
-      discipline,
-      region,
       timeZone,
       showPastEvents,
+      draft = false,
       onShowFullHidePastClick
     } = this.props
 
@@ -73,7 +76,7 @@ class Calendar extends Component {
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
             <Event id={event.id} key={i} width={daySize} containerWidth={containerWidth}
-              name={event.name} discipline={discipline} event={event}/>
+              name={event.name} event={event}/>
           )
         }
 
@@ -116,14 +119,39 @@ class Calendar extends Component {
       )
     }
 
+    const draftComp = draft
+      ? (
+      <span style={{
+        color: 'rgb(255, 255, 255)',
+        padding: '0.5rem 1rem',
+        marginLeft: '2rem',
+        fontStyle: 'normal',
+        background: Colors.blueGrey300,
+        borderRadius: pxToRem(2) + 'rem',
+      }}>DRAFT</span>
+      )
+      : null
+
+    const descComp = description
+      ? <h4 className="sub-title" style={{marginBottom: '1rem'}}>{description}</h4>
+      : null
+
+    const nameCompChildren = highlight
+      ? createHighlightedStringComponent(name, highlight.word, highlight.color)
+      : name
+    const nameComp = (
+      <h1 className="title">
+        {nameCompChildren}{draftComp}
+      </h1>
+    )
+
+
+
     return (
       <div className="Calendar">
         {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
-        <h1 className="title">
-          {region + ' '}
-          {discipline && <span style={{color: Colors.brownMud}}>{discipline + ' '}</span>}
-          {name} <span>{year}</span>
-        </h1>
+        {nameComp}
+        {descComp}
         {subTitleComp}
 
         <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
@@ -138,6 +166,11 @@ class Calendar extends Component {
 Calendar.propTypes = {
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
+  highlight: PropTypes.shape({
+    word: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+  }),
+  description: PropTypes.string,
   calendarId: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
@@ -145,10 +178,9 @@ Calendar.propTypes = {
     map: PropTypes.object.isRequired,
     total: PropTypes.number.isRequired,
   }),
-  region: PropTypes.string,
-  discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
+  draft: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,
 }
 

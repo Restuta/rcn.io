@@ -22,7 +22,7 @@ export default class Day extends Component {
       itIsLastDayOfMonth,
       itIsCurrentMonthsDay,
       dayOfWeek,
-      weekNumber,
+      // weekNumber,
       containerWidth,
     } = this.props
 
@@ -30,14 +30,15 @@ export default class Day extends Component {
     const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
     const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.SM && size === 1)
     const itIsSunday = dayOfWeek === 7
-    const itIsEvenWeek = (weekNumber % 2 === 0)
 
     const classNames = classnames('Day', {
       ['Day-today']: itIsToday,
       ['today-narrow']: (itIsToday && itsSuperNarrowView),
       ['Day-current-month']: itIsCurrentMonthsDay,
       ['Day-empty']: itIsEmpty,
-      ['Day-special']: itIsSpecialDayOfMonth
+      ['Day-special']: itIsSpecialDayOfMonth,
+      ['Day-first-of-month']: itIsFirstDayOfMonth,
+      ['Day-last-of-month']: itIsLastDayOfMonth
     })
 
     const formattedDate = zeroPad(day, 1)
@@ -47,16 +48,17 @@ export default class Day extends Component {
 
     //Sunday is not likely to get minimized ever and we showing every even week what is
     //currentm month.
-    if (itIsSpecialDayOfMonth || (itIsSunday && itIsEvenWeek)) {
-      const specialDayClassNames = classnames('day-of-month-label',
-        (itIsLastDayOfMonth && 'last'),
-        (itIsFirstDayOfMonth && 'first')
-      )
+    if (itIsSpecialDayOfMonth || itIsSunday) {
+      const specialDayClassNames = classnames('day-of-month-label')
 
       let monthLblStyle = { color: 'black' }
 
-      if (itIsSunday) {
-        monthLblStyle.color = Colors.grey400
+      if (itIsSunday || itIsLastDayOfMonth) {
+        if (itIsCurrentMonthsDay) {
+          monthLblStyle.color = Colors.grey600
+        } else {
+          monthLblStyle.color = Colors.grey500
+        }
       }
 
       specialDayOfMonthComponent = (
