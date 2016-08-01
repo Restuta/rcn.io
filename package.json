@@ -103,6 +103,7 @@
     "react-router-redux": "^4.0.5",
     "redux": "^3.5.2",
     "redux-actions": "^0.10.1",
+    "regenerator-runtime": "^0.9.5",
     "reselect": "^2.5.3",
     "svg-inline-react": "^1.0.2"
   },

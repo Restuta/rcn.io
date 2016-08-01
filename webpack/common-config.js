@@ -49,8 +49,15 @@ const getConfig = env => {
         prod: 'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
         dev:  'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
       }),
-      noParse: true //moment-timezone uses "require()", so can't be ignored
+      // noParse: true //moment-timezone uses "require()", so can't be ignored
     },
+    'regenerator-runtime/runtime' : {
+      path: getPaths({
+        prod: 'regenerator-runtime/runtime.js',
+        dev: 'regenerator-runtime/runtime.js'
+      }),
+      // noParse: true
+    }
   }
 
   //other non-prebuilt dependencies

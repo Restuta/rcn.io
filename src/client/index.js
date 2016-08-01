@@ -1,3 +1,7 @@
+//to use generators
+import 'regenerator-runtime/runtime'
+import 'core-js/library/es6/promise' //required for IE11
+
 //favicons
 import 'public/img/favicon.ico'
 import 'public/img/apple-touch-icon-152x152.png'
