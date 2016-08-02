@@ -37,24 +37,36 @@ class Calendar extends Component {
       onShowFullHidePastClick
     } = this.props
 
+    let shouldShowHidePastLink = false
 
     //time-zone specific moment factory
-    const momentTZ = () => moment.tz(...arguments, timeZone)
+    const momentTZ = function() {
+      return moment.tz(...arguments, timeZone)
+    }
+
     const today = momentTZ()
 
     //TODO: refactor all the ternary expressions on simple conditional
 
     const eventsTotalFromToday = events.getTotalFrom(today)
     const eventsTotal = events.total
+    const firstDayOfYear = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
 
-    const startDate = showPastEvents
-      ? moment({year: year, month: 0, day: 1}).startOf('isoWeek') //resetting date to first day of week
-      : momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
+    let startDate = firstDayOfYear
+    let totalWeeks = startDate.isoWeeksInYear()
 
-    const totalWeeks = showPastEvents
-      ? startDate.isoWeeksInYear()
-      : startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
+    // if first day of year is before today only then we wan to show hide/show past link
+    if (firstDayOfYear.isBefore(today)) {
+      startDate = showPastEvents
+        ? firstDayOfYear
+        : momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
 
+      totalWeeks = showPastEvents
+        ? startDate.isoWeeksInYear()
+        : startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
+      shouldShowHidePastLink = true
+    }
+    
     let currentDate = startDate.clone()
     let weeksComponents = []
 
@@ -104,16 +116,19 @@ class Calendar extends Component {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotalFromToday} upcoming events from Today ({today.format('MMMM Do')})
-          <a className="show-more-or-less" onClick={onShowFullHidePastClick}>show all {eventsTotal} events</a>
+          {shouldShowHidePastLink
+            && <a className="show-more-or-less" onClick={onShowFullHidePastClick}>show all {eventsTotal} events</a>}
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotal} events
-          <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-            hide past {eventsTotal - eventsTotalFromToday} events
-          </a>
+          {shouldShowHidePastLink &&
+            <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
+              hide past {eventsTotal - eventsTotalFromToday} events
+            </a>
+          }
         </h3>
       )
     }
