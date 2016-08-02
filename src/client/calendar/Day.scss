@@ -56,7 +56,8 @@
     }
   }
 
-  &-today {
+  &-today,
+  &-today.Day-first-of-month {
     background-color: transparentize($today-circle-color, 0.88);
     //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
     .Day-date-wrapper {
