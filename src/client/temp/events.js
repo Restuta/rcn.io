@@ -1,9 +1,10 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
 //import rawEvents from 'temp/data/2015-road.js'
-import rawRoadEvents from 'client/temp/data/2016-NCNCA-road.js'
-import rawMtbEvents from 'client/temp/data/2016-mtb.js'
-import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual.js'
+import rawRoadEvents from 'client/temp/data/2016-NCNCA-road'
+import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
+import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
+import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
 
 const preProcessUrl = (rawUrl) => {
@@ -50,16 +51,30 @@ const createEvent = rawEvent => {
   }
 }
 
+//fetch NCNCA Draft
+// fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
+// .then(response => response.json())
+// .then(result => {
+//   console.info(result)
+// })
+
 const preProcessEvents = rawEvents =>
   rawEvents.map(rawEvent => createEvent(rawEvent))
 
 
-const allMtbEvents = rawMtbEvents.concat(rawMtbEventsManual)
-const norcalMtb2016Events = preProcessEvents(allMtbEvents)
+const rawMtbEvents = rawMtbEventsFromSpreadsheet.concat(rawMtbEventsManual)
+const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
 
 const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
+
+const fetchNcncaDraftEvents2017 = fetchRawNcncaDraftEvents2017()
+  .then(eventsRaw => preProcessEvents(eventsRaw))
+  .then(events => events.map(x => console.log(x.name)))
+// const ncncaDraftEvents2017 = preProcessEvents(ncncaDraftEvents2017Raw)
+
 
 export {
   testRoadEvents2016,
   norcalMtb2016Events,
+  fetchNcncaDraftEvents2017,
 }

@@ -1,9 +1,20 @@
 import { combineReducers } from 'redux'
 import { handleActions as makeReducer } from 'redux-actions'
 import { routerReducer } from 'react-router-redux'
-import { norcalMtb2016Events, testRoadEvents2016 } from 'client/temp/events.js'
+import {
+  norcalMtb2016Events,
+  testRoadEvents2016,
+} from 'client/temp/events.js'
 import { createSelector } from 'reselect'
-import Colors from 'styles/colors'
+import Colors from 'client/styles/colors'
+
+/*  current event flow:
+    => read from file
+    => preProcessEvents() //creates events array in our format
+    => add to all events (.contact on initialState)
+    => link ids to calendar
+    => selector: create event's map by date
+*/
 
 //TODO bc: set calendar ID to every event, but don't do it in this function
 // it should be done at the time of creation of imported events
@@ -11,7 +22,6 @@ const toByIdMap = objects => objects.reduce((map, x) => {
   map[x.id] = x
   return map
 }, {})
-
 
 const toArrayOfIds = objects => objects.map(x => x.id)
 const testRoadEventIds = toArrayOfIds(testRoadEvents2016)
@@ -32,8 +42,6 @@ const initialState = {
   calendars: {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
-      //TODO bc: remove discipline from calendar, it was a woraround to higlight word MTB in mtb calendar
-      discipline: 'MTB',
       year: 2016,
       name: 'NorCal MTB Calendar 2016',
       highlight: {
@@ -57,11 +65,6 @@ const initialState = {
       showPastEvents: true,
       draft: true,
       eventsIds: []
-    },
-    ['cal-0']: {
-      // name: 'NorCal MTB Calendar 2016 =)',
-      // showPastEvents: false,
-      //eventIds: ['evnt-1', 'evnt-2']
     },
     ['cal-test-1']: {
       showPastEvents: true,
@@ -110,6 +113,11 @@ const rootReducer = combineReducers({
 })
 
 
+
+// ----------
+// SELECTORS
+
+// transforms array of events to Map where "key" is short version of date and "value" is Event
 const eventsToMapByDate = events => {
   const eventsMap = new Map()
 
@@ -127,9 +135,11 @@ const eventsToMapByDate = events => {
 }
 
 
-let eventsByDate = function(events) {
+// creates an object that represents events mapped by Date + helper methods
+const eventsByDate = (events) => {
   const eventsMap = eventsToMapByDate(events)
 
+  // gets total number of events from the given date
   const getTotalFrom = date => {
     let total = 0
 
