@@ -10,6 +10,7 @@ import { Disciplines, Statuses } from 'calendar/events/types'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import { withRouter } from 'react-router'
+import Icon from 'atoms/Icon.jsx'
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -172,7 +173,7 @@ class Event extends Component {
       }
     }
 
-    const {debug = false} = this.props
+    const { debug = false } = this.props
     let debugComponent = null
 
     if (debug) {
@@ -187,6 +188,22 @@ class Event extends Component {
     }
 
     const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
+
+    let eventGroupComponent = null
+
+    if (event.group) {
+      eventGroupComponent = (<span style={{
+        position: 'absolute',
+        fontFamily: 'museo-sans-condensed',
+        fontWeight: '500',
+        textTransform: 'uppercase',
+        fontSize: Typography.pxToRem(11) + 'rem',
+        top: '-1rem',
+        left: '1rem',
+        whiteSpace: 'nowrap',
+        color: Colors.grey500,
+      }}>G {event.group} </span>)
+    }
 
     let opacity = 1
 
@@ -214,8 +231,10 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
+        {eventGroupComponent}
         <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
+        {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {locationComponent}
       </div>
     )
@@ -249,7 +268,8 @@ Event.propTypes = {
     }),
     promoterUrl: PropTypes.string,
     flyerUrl: PropTypes.string,
-    status: PropTypes.string
+    status: PropTypes.string,
+    notes: PropTypes.string,
   }),
 }
 

@@ -47,7 +47,10 @@ const createEvent = rawEvent => {
     location: rawEvent.location || {},
     promoterUrl: preProcessUrl(rawEvent.promoterUrl),
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
-    status: rawEvent.status
+    status: rawEvent.status,
+    group: rawEvent.group, //group of event according to NCNCA planning document
+    notes: rawEvent.notes,
+    promoterName: rawEvent.promoterName
   }
 }
 
@@ -67,9 +70,9 @@ const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
 
 const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
 
-const fetchNcncaDraftEvents2017 = fetchRawNcncaDraftEvents2017()
+const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
   .then(eventsRaw => preProcessEvents(eventsRaw))
-  .then(events => events.map(x => console.log(x.name)))
+  // .then(events => events.map(x => console.log(x.name)))
 // const ncncaDraftEvents2017 = preProcessEvents(ncncaDraftEvents2017Raw)
 
 

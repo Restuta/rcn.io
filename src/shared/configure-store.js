@@ -1,7 +1,10 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from 'shared/reducers/reducer.js'
+import createSagaMiddleware from 'redux-saga'
+import rootSaga from 'shared/sagas/root'
 
-const middlewares = []
+const sagaMiddleware = createSagaMiddleware()
+const middlewares = [sagaMiddleware]
 
 //use logging middleware only in dev mode
 if (process.env.NODE_ENV === 'development') {
@@ -28,12 +31,14 @@ const configureStore = (initialState) => {
     rootReducer,
     initialState,
     compose(
-      applyMiddleware(...middlewares), //logger must be lasst middleware,
+      applyMiddleware(...middlewares), //logger must be last middleware,
       //server-side safe enabling of Redux Dev tools
       typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
     )
 
   )
+
+  sagaMiddleware.run(rootSaga)
 
   //according to https://github.com/reactjs/react-redux/releases/tag/v2.0.0
   if (module.hot) {

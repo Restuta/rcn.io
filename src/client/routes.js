@@ -5,7 +5,7 @@ import Home from 'Home'
 import Dev from 'Dev'
 import Cal from 'calendar/Cal'
 import Mtb from 'calendar/Mtb'
-import NcncaDraft from 'calendar/NcncaDraft'
+import NcncaDraftCalendar from 'calendar/NcncaDraft'
 import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
 
 
@@ -15,7 +15,7 @@ const routes  = (
     <Route path="/dev" component={Dev} />
     <Route path="/cal" component={Cal} />
     <Route path="/calendars/norcal-mtb" component={Mtb} />
-    <Route path="/calendars/ncnca-2017-draft" component={NcncaDraft} />
+    <Route path="/calendars/ncnca-2017-draft" component={NcncaDraftCalendar} />
     <Route path="/events/:eventId" component={EventDetails}/>
     <Redirect from="/mtb" to="/calendars/norcal-mtb" />
     <Route path="*" component={Home}/>

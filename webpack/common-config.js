@@ -57,6 +57,12 @@ const getConfig = env => {
         dev: 'regenerator-runtime/runtime.js'
       }),
       // noParse: true
+    },
+    'redux-saga': {
+      path: getPaths({
+        prod: 'redux-saga/dist/redux-saga.min.js',
+        dev: 'redux-saga/dist/redux-saga.js'
+      })
     }
   }
 

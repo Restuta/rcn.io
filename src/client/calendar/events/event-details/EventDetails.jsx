@@ -51,10 +51,9 @@ export default class EventDetails extends Component {
       location = {},
       discipline,
       type,
+      notes,
+      promoterName,
     } = this.props.event
-
-    console.info(location)
-
 
     const today = moment()
     const currentYearFormat = 'dddd, MMMM Do'
@@ -165,6 +164,12 @@ export default class EventDetails extends Component {
           <Row>
             <Col xs={14}>
               {flyerComp}
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={14}>
+              <h4 className="w-700"><span style={{color: Colors.grey500}}>Notes by</span> {promoterName}:</h4>
+              <p>{notes || "--"}</p>
             </Col>
           </Row>
         </div>

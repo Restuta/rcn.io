@@ -1,4 +1,5 @@
 import moment from 'moment'
+
 /*
 Sourc Event format:
 {
@@ -57,6 +58,7 @@ const transformEvents = googleSpreedsheetEvents =>
         city: event['Location'],
         state: 'CA',
       },
+      promoterName: event['Promoter'],
       promoter: event['Promoted By'],
       group: event['Group'],
       notes: event['Notes'],

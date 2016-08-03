@@ -13,7 +13,10 @@ const EventName = (props) => {
   //TODO bc: make this production ready, e.g. avoid iteration if one of the names is highlighted
   //TODO bc: only higlight true event types
   let wrappedNameComp = name
-  wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
+
+  if (type && type.trim()) {
+    wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
+  }
 
   // wrappedNameComp = createHighlightedStringComponent(name, 'Road Race', typeColor)
   // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Criterium', typeColor)

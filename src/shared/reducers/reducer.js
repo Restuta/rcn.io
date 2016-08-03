@@ -85,7 +85,7 @@ export const calendars = makeReducer({
     if (calendar) {
       return {
         ...state,
-        [calendarId] : {
+        [calendarId]: {
           ...calendar,
           showPastEvents: !calendar.showPastEvents
         }
@@ -93,6 +93,22 @@ export const calendars = makeReducer({
     } else {
       throw new Error(`No calendar corresponding to id: ${calendarId}`)
     }
+  },
+  ['Cal.CALENDAR_FETCH_SUCCEDED']: (state, action) => {
+    const calendarId = action.payload.calendarId
+    const calendar = state[calendarId]
+    const events = action.payload.events
+
+    if (calendar) {
+      return {
+        ...state,
+        [calendarId]: {
+          ...calendar,
+          eventsIds: toArrayOfIds(events)
+        }
+      }
+    }
+    return state
   }
 }, initialState.calendars)
 
@@ -103,7 +119,19 @@ export const debug = makeReducer({
   ['Dbg.TOGGLE_CONTAINER_EDGES']: (state, action) => ({...state, showContainerEdges: !state.showContainerEdges}),
 }, initialState.debug)
 
-export const events = (prevState = initialState.events, action) => prevState
+// export const events = (prevState = initialState.events, action) => prevState
+
+export const events = makeReducer({
+  ['Cal.CALENDAR_FETCH_SUCCEDED']: (state, action) => {
+    const events = action.payload.events
+    const eventsMap = toByIdMap(events)
+    console.info('Events after fetch: ' + events.length)
+    return {
+      ...state,
+      ...eventsMap
+    }
+  }
+}, initialState.events)
 
 const rootReducer = combineReducers({
   debug,
@@ -167,6 +195,7 @@ const eventsByDate = (events) => {
 }
 
 const getEvent = (state, id) => state.events[id]
+
 const getCalendar = (state, props) => state.calendars[props.calendarId]
 const getAllEvents = state => state.events
 const getEventIdsForCalendar = (state, props) => getCalendar(state, props).eventsIds

@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import './Calendar.scss'
 import Day from './Day.jsx'
@@ -7,7 +7,6 @@ import Event from './events/Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import Colors from 'styles/colors'
-import { Disciplines } from './events/types'
 import moment from  'moment-timezone'
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
@@ -66,7 +65,7 @@ class Calendar extends Component {
         : startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
       shouldShowHidePastLink = true
     }
-    
+
     let currentDate = startDate.clone()
     let weeksComponents = []
 
