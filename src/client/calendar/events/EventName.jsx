@@ -11,20 +11,11 @@ const EventName = (props) => {
     classNames)
 
   //TODO bc: make this production ready, e.g. avoid iteration if one of the names is highlighted
-  //TODO bc: only higlight true event types
   let wrappedNameComp = name
 
   if (type && type.trim()) {
     wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
   }
-
-  // wrappedNameComp = createHighlightedStringComponent(name, 'Road Race', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Criterium', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Crits', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Crit', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Circuit Race', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Time Trial', typeColor)
-  // wrappedNameComp = createHighlightedStringComponent(wrappedNameComp, 'Hill Climb', typeColor)
 
   if (eventStatus === Statuses.cancelled) {
     wrappedNameComp = <span>CANCELED: <span className="cancelled">{name}</span></span>
