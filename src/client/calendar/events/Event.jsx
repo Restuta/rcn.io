@@ -11,6 +11,7 @@ import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
+import classnames from 'classnames'
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -61,6 +62,7 @@ class Event extends Component {
         city: '',
         state: ''
       }},
+      draft = false,
     } = this.props
 
     //todo: typography should be passed as props
@@ -119,25 +121,21 @@ class Event extends Component {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'tomato'
-      // locationComponent = <Location location={event.location} size={Size.S} />
     } else if (cardSize === Size.M) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'mediumseagreen'
-      locationComponent = <Location location={event.location} size={Size.M} />
     } else if (cardSize === Size.L) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'darkorchid'
-      locationComponent = <Location location={event.location} size={Size.L}/>
     } else if (cardSize === Size.XL) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       eventColor = 'deepskyblue'
-      locationComponent = <Location location={event.location} size={Size.XL} showState/>
     }
 
     const grid  = Grid.init(containerWidth)
@@ -205,6 +203,21 @@ class Event extends Component {
       }}>G {event.group} </span>)
     }
 
+    let  promoterComp = null
+
+    //TODO bc: refactor this into component similar to location
+    if ((cardSize === Size.M || cardSize === Size.L || cardSize === Size.XL) && !draft) {
+      locationComponent = <Location location={event.location} size={cardSize} />
+    } else if (draft) {
+      const className = classnames(`Location size-${cardSize} fix-fout`)
+      promoterComp = (
+        <div className={className}>
+          <Icon name="face" className="icon"/>
+          <span className="address">{event.promoter}</span>
+        </div>
+      )
+    }
+
     let opacity = 1
 
     if (event.status === Statuses.cancelled || event.status === Statuses.moved) {
@@ -236,6 +249,7 @@ class Event extends Component {
           typeColor={eventColor} eventStatus={event.status}/>
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {locationComponent}
+        {promoterComp}
       </div>
     )
   }
@@ -271,6 +285,7 @@ Event.propTypes = {
     status: PropTypes.string,
     notes: PropTypes.string,
   }),
+  draft: PropTypes.bool,
 }
 
 Event.contextTypes = {

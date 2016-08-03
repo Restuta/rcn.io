@@ -2,13 +2,11 @@
 @import "variables";
 
 .Location {
-  $color: $blue-300;
   $color: $grey-600;
   color: $color;
   white-space: nowrap;
   height: 3rem;
   width: 100%;
-
 
   border-top: 1px solid $grey-200;
 

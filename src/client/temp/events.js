@@ -26,13 +26,6 @@ const createEvent = rawEvent => {
   const name = rawEvent.name.replace(/--/g, '—')
   const date = moment(rawEvent.date, 'MMMM DD YYYY')
   const datePlain = date.format('MMDDYYYY')
-  //TODO bc: handle multi-day events, currently some events have same id this screws our selectors since calendar has list of ids
-  /*
-    PROPOSED solution:
-      defenitely there must be one evnet for one id, but then it may have array of dates
-      if the event got moved it should have a link to event id that got created in place of it
-  */
-
 
   //TODO bc: revisit this, add ids?,
   const eventId = 'evt-' + hash(name) + '-' + datePlain
@@ -50,6 +43,7 @@ const createEvent = rawEvent => {
     status: rawEvent.status,
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
+    promoter: rawEvent.promoter,
     promoterName: rawEvent.promoterName
   }
 }

@@ -78,7 +78,9 @@ Today
 		 	---- (optimization) during event creation build index of occurence of "road race" incide event: and other words to speed up rendring
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
 				- alternative implementation: partOfStageRace: true, false and don't allow multiple types
-				- mutiday event?: 
+				- mutiday event?:
+			- add support for multiday events
+				- PROPOSED solution: defenitely there must be one event for one id, but then it may have array of dates if the event got moved it should have a link to event id that got created in place of it 
 			- add primary calendar id to every event
 			- get calendar into "even details" component so we can use timezone
 			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable

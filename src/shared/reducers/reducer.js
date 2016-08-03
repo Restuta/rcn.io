@@ -125,7 +125,6 @@ export const events = makeReducer({
   ['Cal.CALENDAR_FETCH_SUCCEDED']: (state, action) => {
     const events = action.payload.events
     const eventsMap = toByIdMap(events)
-    console.info('Events after fetch: ' + events.length)
     return {
       ...state,
       ...eventsMap

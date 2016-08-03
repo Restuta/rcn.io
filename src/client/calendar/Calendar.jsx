@@ -21,7 +21,7 @@ const findEventByDate = (eventsMap, date) => {
 
 class Calendar extends Component {
   render() {
-    console.info('Calendar render is called')
+    // console.info('Calendar render is called')
     const {
       name,
       highlight,
@@ -86,7 +86,7 @@ class Calendar extends Component {
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
             <Event id={event.id} key={i} width={daySize} containerWidth={containerWidth}
-              name={event.name} event={event}/>
+              name={event.name} event={event} draft={draft}/>
           )
         }
 

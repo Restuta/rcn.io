@@ -85,9 +85,6 @@ export default class EventDetails extends Component {
       raceTypeBadgesComp.push(<RaceTypeBadge key={10} name="PAST" color={Colors.event.status.past}/>)
     }
 
-    console.info(discipline)
-    console.info(type)
-
     if (discipline === Disciplines.mtb) {
       raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.event.mtb.default} />)
     }
@@ -113,6 +110,15 @@ export default class EventDetails extends Component {
           break
       }
     }
+
+    const notesComp = (notes && (
+      <Row>
+        <Col xs={14}>
+          <h4 className="w-700"><span style={{color: Colors.grey500}}>Notes by</span> {promoterName}:</h4>
+          <p>{notes || '--'}</p>
+        </Col>
+      </Row>
+    ))
 
     const eventDetailsComponent = (
       <div className="EventDetails">
@@ -166,12 +172,7 @@ export default class EventDetails extends Component {
               {flyerComp}
             </Col>
           </Row>
-          <Row>
-            <Col xs={14}>
-              <h4 className="w-700"><span style={{color: Colors.grey500}}>Notes by</span> {promoterName}:</h4>
-              <p>{notes || "--"}</p>
-            </Col>
-          </Row>
+          {notesComp}
         </div>
       </div>
     )
