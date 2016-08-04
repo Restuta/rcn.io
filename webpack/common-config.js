@@ -63,6 +63,13 @@ const getConfig = env => {
         prod: 'redux-saga/dist/redux-saga.min.js',
         dev: 'redux-saga/dist/redux-saga.js'
       })
+    },
+    //TODO: modify for node to pull node-fetch
+    'isomorphic-fetch': {
+      path: getPaths({
+        prod: 'whatwg-fetch/fetch.js',
+        dev: 'whatwg-fetch/fetch.js'
+      })
     }
   }
 
@@ -75,7 +82,8 @@ const getConfig = env => {
     'react-modal2',
     'redux-actions',
     'react-redux',
-    'reselect'
+    'reselect',
+    // 'core-js/library/es6/promise'
   ]
 
   const toArray = (obj) => {

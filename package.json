@@ -92,6 +92,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "exenv": "^1.2.1",
+    "isomorphic-fetch": "^2.2.1",
     "moment": "^2.11.2",
     "moment-timezone": "^0.5.4",
     "react": "~15.2.1",

@@ -1,6 +1,7 @@
 //to use generators
 import 'regenerator-runtime/runtime'
-import 'core-js/library/es6/promise' //required for IE11
+// import 'core-js/library/es6/promise' //required for IE11
+import 'isomorphic-fetch' //required for IE11 and Safary
 
 //favicons
 import 'public/img/favicon.ico'

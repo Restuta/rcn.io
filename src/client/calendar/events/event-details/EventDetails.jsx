@@ -19,7 +19,7 @@ const PresentedBy = ({by}) => (
     position: 'relative',
     top: pxToRem(4) + 'rem'
   }}>
-    <span style={{color: Colors.grey500}}>by</span> <a href="#">{by}</a>
+    <span style={{color: Colors.grey500}}>by</span> <a href="#">{(by || '--')}</a>
   </div>
 )
 
@@ -53,6 +53,8 @@ export default class EventDetails extends Component {
       type,
       notes,
       promoterName,
+      promoter,
+      group
     } = this.props.event
 
     const today = moment()
@@ -82,7 +84,11 @@ export default class EventDetails extends Component {
     let raceTypeBadgesComp = []
 
     if (date.isBefore(today)) {
-      raceTypeBadgesComp.push(<RaceTypeBadge key={10} name="PAST" color={Colors.event.status.past}/>)
+      raceTypeBadgesComp.unshift(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
+    }
+
+    if (group) {
+      raceTypeBadgesComp.push(<RaceTypeBadge key={80} inverted name={'GROUP ' + group} color={Colors.grey800} />)
     }
 
     if (discipline === Disciplines.mtb) {
@@ -137,7 +143,7 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              <PresentedBy by="——"/>
+              <PresentedBy by={promoter}/>
               <hr className="spacer" />
             </Col>
           </Row>
