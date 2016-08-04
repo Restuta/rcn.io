@@ -244,10 +244,11 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
-        {eventGroupComponent}
+
         <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {eventGroupComponent}
         {locationComponent}
         {promoterComp}
       </div>

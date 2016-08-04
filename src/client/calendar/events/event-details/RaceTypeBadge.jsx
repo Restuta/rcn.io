@@ -5,11 +5,22 @@ import './RaceTypeBadge.scss'
 
 export default class RaceTypeBadge extends Component {
   render() {
-    const { name, color, skew = 20 } = this.props
-    const style = {
+    const { name, color, skew = 20, inverted = false } = this.props
+
+    const normalStyle = {
       transform: `skew(-${skew}deg)`,
       backgroundColor: color,
     }
+
+    const invertedStyle = {
+      transform: `skew(-${skew}deg)`,
+      backgroundColor: 'transparent',
+      border: `1px solid ${color}`,
+      color: color
+    }
+
+    const  style = inverted ? invertedStyle : normalStyle
+
 
     return (
       <span style={style} className='RaceTypeBadge'>
@@ -23,4 +34,5 @@ RaceTypeBadge.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   skew: PropTypes.number,
+  inverted: PropTypes.bool,
 }

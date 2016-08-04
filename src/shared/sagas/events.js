@@ -15,7 +15,7 @@ function* eventsSaga(requestEventFetchAction) {
     yield put(calendarFetchSucceded({events: events, calendarId: calendarId}))
     console.warn('=> events saga is succeded') //eslint-disable-line
   } catch (error) {
-    console.error('=> events saga has failed') //eslint-disable-line
+    console.error('=> events saga has failed: ' + error) //eslint-disable-line
     yield put(calendarFetchFailed(error))
   }
 }
