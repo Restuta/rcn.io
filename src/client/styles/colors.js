@@ -9,6 +9,7 @@ const grey = {
   grey600: '#757575',
   grey700: '#616161',
   grey800: '#424242',
+  grey900: '#2F2F2F'
 }
 
 const blueGrey = {
@@ -51,13 +52,28 @@ const red = {
   red900: '#b71c1c',
 }
 
+const blue = {
+  blue50:  '#E3F2FD',
+  blue100: '#BBDEFB',
+  blue200: '#90CAF9',
+  blue300: '#64B5F6',
+  blue400: '#42A5F5',
+  blue500: '#2196F3',
+  blue600: '#1E88E5',
+  blue700: '#1976D2',
+  blue800: '#1565C0',
+  blue900: '#0D47A1',
+}
+
 const colors = {
   ...grey,
   ...blueGrey,
   ...purple,
   ...red,
+  ...blue,
 
   bodyBg: '#FCFCFC',
+  body: '#333333',
 
   brownMud: 'rgba(160,82,45,1)', //'SIENNA',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
@@ -74,7 +90,7 @@ const event = {
   },
   road: {
     criterium: '#00BF10',
-    roadRace: '#2196F3',
+    roadRace: colors.blue500,
     circuitRace: '#FFA726',
     timeTrial: colors.red500,
     hillClimb: colors.red700,

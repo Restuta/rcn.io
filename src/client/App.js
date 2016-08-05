@@ -1,7 +1,5 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
-import './styles/bootstrap.scss'
-import './app.scss'
 import classnames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'

@@ -1,3 +1,6 @@
+import 'styles/bootstrap.scss'
+import 'app.scss'
+
 //to use generators
 import 'regenerator-runtime/runtime'
 // import 'core-js/library/es6/promise' //required for IE11
@@ -14,6 +17,7 @@ import 'utils/polyfills'
 import { render } from 'react-dom'
 import Grid from 'client/styles/grid.js'
 import { getConfiguredWithStoreRouter } from 'client/get-router.js'
+
 
 let prevContainerWidth
 

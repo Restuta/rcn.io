@@ -1,7 +1,5 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
-import 'styles/bootstrap.scss'
-import 'app.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Button from 'atoms/Button.jsx'
@@ -14,6 +12,7 @@ import Colors from 'styles/colors'
 import WeekExample from 'temp/WeekExample.jsx'
 import Grid from 'styles/grid'
 import Typography from 'styles/typography'
+import Spinner from 'atoms/Spinner.jsx'
 
 import { Link } from 'react-router'
 
@@ -210,6 +209,25 @@ export default class Dev extends Component {
         {/* CARDS CARDS CARDS*/}
 
         {/* all cards per-breakdown in columns*/}
+        <h2>SPINNERS:</h2>
+        <Row>
+          <Col sm={3}>
+            <Spinner size={3} color={"gold"}/>
+            <Spinner size={2} color={Colors.red500}/>
+            <Spinner size={1} color={Colors.primary}/>
+            <Spinner size={2} color={Colors.blue500}/>
+            <Spinner size={3} color={'#00BF10'}/>
+            <Button size="md" type="primary">
+              <Spinner size={1} inline color={Colors.bodyBg}/>
+            </Button><S5 />
+            <Button size="md">
+              Loading <Spinner size={1} inline />
+            </Button>
+
+          </Col>
+        </Row>
+
+
         <h2>CARDS PER CONTAINER:</h2>
 
         <ContainerHeader label="XXL" width={Grid.ContainerWidth.XXL}/>

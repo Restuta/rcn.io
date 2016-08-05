@@ -3,7 +3,7 @@ import Component from 'react-pure-render/component'
 import Auth0Badge from 'home/Auth0Badge.jsx'
 import HeapAnalyticsBadge from 'home/HeapAnalyticsBadge.jsx'
 import JacoAnalyticsBadge from 'home/JacoAnalyticsBadge.jsx'
-import {Link} from 'react-router'
+import { Link } from 'react-router'
 import 'home/Home.scss'
 
 export default class Home extends Component {
