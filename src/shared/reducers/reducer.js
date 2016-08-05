@@ -64,7 +64,8 @@ const initialState = {
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,
       draft: true,
-      eventsIds: []
+      eventsIds: [],
+      loaded: false,
     },
     ['cal-test-1']: {
       showPastEvents: true,
@@ -104,7 +105,8 @@ export const calendars = makeReducer({
         ...state,
         [calendarId]: {
           ...calendar,
-          eventsIds: toArrayOfIds(events)
+          eventsIds: toArrayOfIds(events),
+          loaded: true,
         }
       }
     }

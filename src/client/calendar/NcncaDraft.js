@@ -4,6 +4,7 @@ import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
 import { connect } from 'react-redux'
 import { requestEventsFetch } from 'shared/actions/actions.js'
+import Spinner from 'atoms/Spinner.jsx'
 
 
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
@@ -17,7 +18,7 @@ class NcncaDraftCalendar extends Component {
   }
 
   render() {
-    const { containerWidth } = this.props
+    const { containerWidth, calendarIsLoading } = this.props
     let weekdaysSizes
 
     if (containerWidth <= Grid.ContainerWidth.SM) {
@@ -28,13 +29,34 @@ class NcncaDraftCalendar extends Component {
       weekdaysSizes = sizesEqual
     }
 
+    const LoadingComp = (
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignContent: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '20rem',
+        flexWrap: 'no-wrap',
+      }}>
+        <div>
+          <h2 className="text-xs-center">Loading Calendar from Google Spreedsheet</h2>
+          <Spinner />
+        </div>
+      </div>
+    )
+
     return (
       <div>
-        <Calendar
-          calendarId="cal-ncnca-2017-draft"
-          containerWidth={containerWidth}
-          weekdaysSizes={weekdaysSizes}
-          />
+        {calendarIsLoading
+          ? LoadingComp
+          : <Calendar
+            calendarId="cal-ncnca-2017-draft"
+            containerWidth={containerWidth}
+            weekdaysSizes={weekdaysSizes}
+            />
+        }
+
       </div>
     )
   }
@@ -42,15 +64,18 @@ class NcncaDraftCalendar extends Component {
 
 NcncaDraftCalendar.propTypes = {
   eventsAreLoaded: PropTypes.bool.isRequired,
-  requestEventsFetch: PropTypes.func.isRequired
+  requestEventsFetch: PropTypes.func.isRequired,
+  calendarIsLoading: PropTypes.bool.isRequired,
 }
 
 export default connect(
   (state, ownProps) => {
-    const eventsIds = state.calendars['cal-ncnca-2017-draft'].eventsIds
-    let eventsAreLoaded = (eventsIds && eventsIds.length > 0)
+    const calendar = state.calendars['cal-ncnca-2017-draft']
+    const eventsIds = calendar.eventsIds
+
     return {
-      eventsAreLoaded
+      calendarIsLoading: !calendar.loaded,
+      eventsAreLoaded: (eventsIds && eventsIds.length > 0)
     }
   },
   (dispatch, ownProps) => ({
