@@ -13,15 +13,17 @@ import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import { Disciplines } from 'client/calendar/events/types.js'
 
-const PresentedBy = ({by}) => (
-  <div style={{
-    fontStyle: 'italic',
-    position: 'relative',
-    top: pxToRem(4) + 'rem'
-  }}>
-    <span style={{color: Colors.grey500}}>by</span> <a href="#">{(by || '--')}</a>
-  </div>
-)
+const PresentedBy = ({by}) => {
+  return (
+    <div style={{
+      fontStyle: 'italic',
+      position: 'relative',
+      top: pxToRem(4) + 'rem'
+    }}>
+      <span style={{color: Colors.grey500}}>by {(by || '--')}</span>
+    </div>
+  )
+}
 
 const locationToAddressStr = ({streetAddress = '', city = '', state = '', zip = ''}) => {
   let addressArr = []

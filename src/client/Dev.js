@@ -9,7 +9,6 @@ import Badge from 'calendar/badges/Badge.jsx'
 import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 import SquareBadge from 'calendar/badges/SquareBadge.jsx'
 import Colors from 'styles/colors'
-import WeekExample from 'temp/WeekExample.jsx'
 import Grid from 'styles/grid'
 import Typography from 'styles/typography'
 import Spinner from 'atoms/Spinner.jsx'
@@ -96,7 +95,7 @@ export default class Dev extends Component {
         <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
         <Row className="margin-top">
           <Col>
-            <h2>BUTTONS:</h2>
+            <h2>BUTTONS</h2>
             <Button size="sm" type="primary">SM PRIMARY</Button><S5 />
             <Button size="sm" type="secondary">SM SECONDARY</Button>
             <br /><br />
@@ -209,7 +208,7 @@ export default class Dev extends Component {
         {/* CARDS CARDS CARDS*/}
 
         {/* all cards per-breakdown in columns*/}
-        <h2>SPINNERS:</h2>
+        <h2>SPINNERS</h2>
         <Row>
           <Col sm={3}>
             <Spinner size={3} color={"gold"}/>
@@ -427,20 +426,6 @@ export default class Dev extends Component {
         </Row>
 
         <h1 className="oswald">Road Races in CA, 100mi range</h1>
-
-        <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]}/>
-        <WeekExample days={[1, 1, 1, 1, 3, 3, 4]}/>
-        <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
-        <WeekExample days={[1, 1, 2, 2, 2, 2, 4]}/>
-
-        <WeekExample days={[1, 1, 1, 2, 3, 3, 3]}/>
-        <WeekExample days={[1, 1, 2, 2, 2, 3, 3]}/>
-        <WeekExample days={[1, 2, 2, 2, 2, 2, 3]}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]}/>
-
       </div>
     )
   }

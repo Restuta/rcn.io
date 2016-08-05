@@ -68,7 +68,7 @@ const initialState = {
     },
     ['cal-test-1']: {
       showPastEvents: true,
-      eventsIds: testRoadEventIds
+      eventsIds: testRoadEventIds,
     },
     ['cal-test-2']: { eventsIds: testRoadEventIds },
     ['cal-test-3']: { eventsIds: testRoadEventIds },

@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 import { requestEventsFetch } from 'shared/actions/actions.js'
 
 
-
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
 const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 

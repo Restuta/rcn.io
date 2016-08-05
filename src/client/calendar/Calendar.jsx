@@ -21,7 +21,7 @@ const findEventByDate = (eventsMap, date) => {
 
 class Calendar extends Component {
   render() {
-    // console.info('Calendar render is called')
+    console.info('Calendar render is called')
     const {
       name,
       highlight,
