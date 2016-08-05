@@ -122,8 +122,11 @@ export default class EventDetails extends Component {
     const notesComp = (notes && (
       <Row>
         <Col xs={14}>
-          <h4 className="w-700"><span style={{color: Colors.grey500}}>Notes by</span> {promoterName}:</h4>
-          <p>{notes || '--'}</p>
+          <h4 className="w-700 header-regular">
+            <span style={{color: Colors.grey500}}>Notes by </span>
+            {promoterName}:
+          </h4>
+          <p className="text-sm-14">{notes || '--'}</p>
         </Col>
       </Row>
     ))

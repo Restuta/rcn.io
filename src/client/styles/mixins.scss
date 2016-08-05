@@ -63,6 +63,13 @@
   font-weight: 500;
 }
 
+@mixin text-sm-14($offset: 3) {
+  @include offset-to-baseline($offset);
+  font-size: pxToRem(14);
+  line-height: 2rem;
+  font-weight: 500;
+}
+
 @mixin text-1($offset: 5) {
   @include offset-to-baseline($offset);
   font-size: $font-size-1;
