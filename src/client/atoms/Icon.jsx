@@ -5,7 +5,7 @@ import './Icon.scss'
 
 export default class Icon extends Component {
   render() {
-    const {name, color, size} = this.props
+    const { name, color, size } = this.props
     const iconNameClass = 'material-icons'
     const style = {
       color: color,
@@ -14,7 +14,7 @@ export default class Icon extends Component {
 
     const className = classNames('Icon', iconNameClass, this.props.className)
     return (
-      <i {...this.props} className={className} style={style}>
+      <i className={className} style={style}>
         {name}
         {/*{this.props.children }*/}
       </i>

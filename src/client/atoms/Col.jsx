@@ -22,6 +22,7 @@ function getColClassName(propName, propValue) {
 //usage <Col xs={12} md={8} />
 export default class Col extends Component {
   render() {
+        // debugger;
     //TODO: move this to it's own module and make it render faster
     const columnClassNames = Object.keys(this.props)
       .map(propName => getColClassName(propName, this.props[propName]))
@@ -45,7 +46,8 @@ Col.propTypes = {
   xsOffset: PropTypes.number,
   smOffset: PropTypes.number,
   mdOffset: PropTypes.number,
-  lgOffset: PropTypes.number
+  lgOffset: PropTypes.number,
+  style: PropTypes.object,
 }
 
 //TODO: use functional component when https://github.com/gaearon/babel-plugin-react-transform/pull/34 is mereged

@@ -29,7 +29,11 @@ class App extends Component {
     const returnUrl = this.props.location.state.returnUrl
 
     if (returnUrl) {
-      this.props.router.push(returnUrl)
+      this.props.router.push({
+        pathname: returnUrl,
+        state: { backFromModal: true }
+      })
+      // this.props.router.push(returnUrl)
     }
   }
 

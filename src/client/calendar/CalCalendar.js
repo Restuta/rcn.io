@@ -14,7 +14,7 @@ const highlight = {
   color: Colors.red800
 }
 
-export default class Cal extends Component {
+export default class CalCalendar extends Component {
   render() {
 
     const {containerWidth} = this.props

@@ -6,8 +6,9 @@ import Grid from 'styles/grid'
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
 const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
-export default class Mtb extends Component {
+export default class MtbCalendar extends Component {
   render() {
+    console.info('Mtb re-rendered')
     const { containerWidth } = this.props
     let weekdaysSizes
 

@@ -12,6 +12,12 @@ import 'public/img/apple-touch-icon-152x152.png'
 import 'public/img/apple-touch-icon-180x180.png'
 import 'public/img/safari-pinned-tab.svg'
 
+// import React from 'react'
+// if (process.env.NODE_ENV !== 'production') {
+//   const {whyDidYouUpdate} = require('why-did-you-update')
+//   whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|Week|Row|Col|/ })
+//
+// }
 
 import 'utils/polyfills'
 import { render } from 'react-dom'

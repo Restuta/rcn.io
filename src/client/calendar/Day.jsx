@@ -11,6 +11,7 @@ import Colors from 'styles/colors'
 
 export default class Day extends Component {
   render() {
+    // console.info('Day render')
     const {
       size,
       day,
@@ -42,7 +43,6 @@ export default class Day extends Component {
     })
 
     const formattedDate = zeroPad(day, 1)
-    const style = {}
 
     let specialDayOfMonthComponent = null
 
@@ -89,7 +89,7 @@ export default class Day extends Component {
     }
 
     return (
-      <Col xs={size} className={classNames} style={style}>
+      <Col xs={size} className={classNames}>
         <div className="Day-date fix-fout">
           {dayHeaderComponent}
         </div>

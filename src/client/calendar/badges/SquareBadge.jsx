@@ -12,7 +12,7 @@ export default class SquareBadge extends Component {
     }
 
     return (
-      <span {...this.props} style={style} className={className}>
+      <span style={style} className={className}>
         {this.props.children}
       </span>
     )

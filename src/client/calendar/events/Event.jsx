@@ -61,7 +61,7 @@ class Event extends Component {
   }
 
   render() {
-    // console.info('Event render is called')
+    // console.info('Event render')
 
     const {
       width,

@@ -20,7 +20,7 @@ export default class Week extends Component {
 
 Week.propTypes = {
   lastOne: PropTypes.bool,
-  children: function(props, propName, componentName) {
+  children: (props, propName, componentName) => {
 
     const children = props[propName]
 
