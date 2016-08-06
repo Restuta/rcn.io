@@ -1,11 +1,23 @@
 @import 'variables';
 @import 'mixins';
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
 .Modal.backdrop {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start; //required for proper scrolling of the modal
+
+  // transition: opacity .5s linear;
 
   width: 100%;
   top: 0;
@@ -16,6 +28,8 @@
   z-index: $modal-z-index;
   overflow-x: hidden;
   overflow-y: auto;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
 }
 
 .Modal.content {
