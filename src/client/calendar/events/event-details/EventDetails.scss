@@ -82,19 +82,19 @@
       outline: 1px solid silver;
     }
 
-    &:before {
-      content: '';
-      // background-image: url(event-details-mock.png);
-      background-size: 100% 100%;
-      opacity: 0.2;
-      width: 100%;
-      max-width: 90rem;
-      min-height: 96rem;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+    // &:before {
+    //   content: '';
+    //   // background-image: url(event-details-mock.png);
+    //   background-size: 100% 100%;
+    //   opacity: 0.2;
+    //   width: 100%;
+    //   max-width: 90rem;
+    //   min-height: 96rem;
+    //   display: block;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    // }
 
 
     .col {
