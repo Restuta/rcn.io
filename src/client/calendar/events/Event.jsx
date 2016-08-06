@@ -7,11 +7,11 @@ import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
 import { Disciplines, Statuses } from 'calendar/events/types'
-import Size from './card-sizes'
+import Size from 'atoms/card-sizes'
 import EventName from './EventName.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
-import classnames from 'classnames'
+import IconLabel from 'atoms/IconLabel.jsx'
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -29,6 +29,16 @@ const getBaseHeight = containerWidth => {
   }
 
   return baseHeightMap[containerWidth]
+}
+
+//nummeric card sizes for simple comparisons
+const numSize = {
+  [Size.XXS]: 0,
+  [Size.XS]: 10,
+  [Size.S]: 20,
+  [Size.M]: 30,
+  [Size.L]: 40,
+  [Size.XL]: 50
 }
 
 class Event extends Component {
@@ -203,18 +213,15 @@ class Event extends Component {
       }}>G {event.group} </span>)
     }
 
-    let  promoterComp = null
+    let promoterComp = null
 
-    //TODO bc: refactor this into component similar to location
-    if ((cardSize === Size.M || cardSize === Size.L || cardSize === Size.XL) && !draft) {
+    if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
       locationComponent = <Location location={event.location} size={cardSize} />
-    } else if (draft) {
-      const className = classnames(`Location size-${cardSize} fix-fout`)
+    } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
       promoterComp = (
-        <div className={className}>
-          <Icon name="face" className="icon"/>
-          <span className="address">{event.promoter}</span>
-        </div>
+        <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
+          {event.promoter}
+        </IconLabel>
       )
     }
 

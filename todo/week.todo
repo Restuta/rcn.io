@@ -74,7 +74,7 @@ Today
 	--- Event Details
 		!----- immediate todo
 			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
-			----- BUG: today is shown in black
+			+----- BUG: today is shown in black
 		 	---- (optimization) during event creation build index of occurence of "road race" incide event: and other words to speed up rendring
 		 	---- (optimization) isomorphic-fetch should point to node-specific dependency for node webpack bundles
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]

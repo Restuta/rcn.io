@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react'
-import Sizes from './card-sizes'
+import Sizes from 'atoms/card-sizes'
 import classnames from 'classnames'
 import './EventName.scss'
 import { Statuses } from 'calendar/events/types'
