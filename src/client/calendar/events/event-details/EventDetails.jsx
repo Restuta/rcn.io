@@ -20,7 +20,7 @@ const PresentedBy = ({by}) => {
       position: 'relative',
       top: pxToRem(4) + 'rem'
     }}>
-      <span style={{color: Colors.grey500}}>by {(by || '--')}</span>
+      <span className="secondary">by {(by || '--')}</span>
     </div>
   )
 }
@@ -53,8 +53,8 @@ export default class EventDetails extends Component {
       location = {},
       discipline,
       type,
-      notes,
-      promoterName,
+      notes = 'Hello from phoebe, but my concearn is that in 1987 I was not able to feed it',
+      promoterName = 'Anton Vynogradenko',
       promoter,
       group
     } = this.props.event
@@ -75,7 +75,7 @@ export default class EventDetails extends Component {
 
     const flyerComp = (flyerUrl
       ? <Flyer url={flyerUrl} />
-      : <div>No flyer (yet?)</div>
+      : <div className="text-2 secondary">No flyer (yet?)</div>
     )
 
     const from = encodeURIComponent('Current Location') //users current location
@@ -121,7 +121,7 @@ export default class EventDetails extends Component {
 
     const notesComp = (notes && (
       <Row>
-        <Col xs={14}>
+        <Col xs={9}>
           <h4 className="w-700 header-regular">
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterName}:
@@ -168,7 +168,7 @@ export default class EventDetails extends Component {
               </div>
             </Col>
             <Col xs={14} sm={5}>
-              <Button size="sm">REGISTER</Button>
+              <Button size="sm" primaryHover>REGISTER</Button>
             </Col>
           </Row>
           <hr className="spacer no-margin-top" />
@@ -178,12 +178,13 @@ export default class EventDetails extends Component {
             </Col>
             <Col xs={14} sm={5}>Links</Col>
           </Row>*/}
-          <Row>
+          {notesComp}
+          <Row className="margin top-4">
             <Col xs={14}>
               {flyerComp}
             </Col>
           </Row>
-          {notesComp}
+
         </div>
       </div>
     )

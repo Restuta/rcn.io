@@ -11,6 +11,13 @@
     outline: none;
   }
 
+  &.primary-hover:hover {
+    outline: none;
+    background-color: lighten($primary-color, 40%);
+    border-color: lighten($primary-color, 15%);
+    color: darken($primary-color, 5%);
+  }
+
   &-sm {
     padding-left: 2rem;
     padding-right: 2rem;

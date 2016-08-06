@@ -196,6 +196,9 @@ sub {
 .uppercase {
   text-transform: uppercase;
 }
+.secondary {
+  color: $grey-500;
+}
 .w-300 {
   font-weight: 300
 }

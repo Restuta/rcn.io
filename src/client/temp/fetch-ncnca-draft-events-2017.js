@@ -50,18 +50,18 @@ const transformEvents = googleSpreedsheetEvents =>
     //TODO bc: handle notable events as separate events? (it's a property now)
 
     return {
-      name: event['Race Name'],
+      name: event['Race Name'].trim(),
       date: moment(event['Date'], 'MM/DD/YYYY').format('MMMM DD YYYY'),
       discipline: 'Road',
-      type: event['Type'],
+      type: event['Type'].trim(),
       location: {
         city: event['Location'],
         state: 'CA',
       },
-      promoterName: event['Promoter'],
-      promoter: event['Promoted By'],
-      group: event['Group'],
-      notes: event['Notes'],
+      promoterName: event['Promoter'].trim() || undefined,
+      promoter: event['Promoted By'].trim() || undefined,
+      group: event['Group'].trim() || undefined,
+      notes: event['Notes'].trim() || undefined,
     }
   })
   .filter(x => !!x)

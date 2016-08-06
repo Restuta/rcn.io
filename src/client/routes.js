@@ -3,9 +3,9 @@ import { Route, IndexRoute, Redirect } from 'react-router'
 import App from 'App'
 import Home from 'Home'
 import Dev from 'Dev'
-import CalCalendar from 'calendar/Cal'
-import MtbCalendar from 'calendar/Mtb'
-import NcncaDraftCalendar from 'calendar/NcncaDraft'
+import CalCalendar from 'calendar/CalCalendar'
+import MtbCalendar from 'calendar/MtbCalendar'
+import NcncaDraftCalendar from 'calendar/NcncaDraftCalendar'
 import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
 
 
