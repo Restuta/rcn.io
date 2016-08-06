@@ -23,7 +23,7 @@ export default class Modal extends Component {
 
   render() {
     const modalClassNames = classnames('Modal content', this.props.contentClassName)
-    
+
     return (
       <ReactModal
         onClose={this.props.onClose}
@@ -32,7 +32,7 @@ export default class Modal extends Component {
         backdropClassName='Modal backdrop'
         modalClassName={modalClassNames}>
         <button type="button" className="btn-close" onClick={this.props.onClose}>
-          <span className="close-cross">×</span>
+          <span>×</span>
           <div className="lbl-esc">esc</div>
         </button>
         {this.props.children}
