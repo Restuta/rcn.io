@@ -31,6 +31,7 @@
 * [Flat UI Pro](http://designmodo.com/flat/) - 💰$39, Bootstrap3 theme
 
 ### Typography
+* [Comprehensive Guide on Font loading stragegies](https://www.zachleat.com/web/comprehensive-webfonts/)
 * [Nice Web Type](http://nicewebtype.com/) — solid tools for setting text, antialising etc
 * [Typography in 10 minutes] - http://practicaltypography.com/typography-in-ten-minutes.html (serious resource)
 * [FontCDN](http://fontcdn.org/) - a better way to search google fonts
