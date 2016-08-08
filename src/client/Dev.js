@@ -12,6 +12,7 @@ import Colors from 'styles/colors'
 import Grid from 'styles/grid'
 import Typography from 'styles/typography'
 import Spinner from 'atoms/Spinner.jsx'
+import UsacLogo from 'atoms/UsacLogo.jsx'
 
 import { Link } from 'react-router'
 
@@ -58,6 +59,12 @@ export default class Dev extends Component {
 
     return (
       <div>
+        <div>
+          <UsacLogo size={1}/>
+          <UsacLogo size={2}/>
+          <UsacLogo size={3}/>
+          <UsacLogo size={4}/>
+        </div>
         <div>
           <Link
             key={8}

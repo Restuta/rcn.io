@@ -90,11 +90,7 @@ module.exports = {
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
     }, {
-      test: /\.svg$/,
-      loader: 'svg-inline',
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico)$/,
+      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR

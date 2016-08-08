@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+
+.UsacLogo {
+
+  &.size-1 {
+    height: 3rem;
+  }
+
+  &.size-2 {
+    height: 4rem;
+  }
+
+  &.size-3 {
+    height: 5rem;
+  }
+
+  &.size-4 {
+    height: 6rem;  
+  }
+
+}
