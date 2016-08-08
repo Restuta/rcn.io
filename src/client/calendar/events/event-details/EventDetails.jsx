@@ -56,6 +56,7 @@ export default class EventDetails extends Component {
       notes = 'Hello from phoebe, but my concearn is that in 1987 I was not able to feed it',
       promoterName = 'Anton Vynogradenko',
       promoter,
+      promoterUrl,
       group
     } = this.props.event
 
@@ -121,7 +122,7 @@ export default class EventDetails extends Component {
 
     const notesComp = (notes && (
       <Row>
-        <Col xs={9}>
+        <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterName}:
@@ -178,6 +179,13 @@ export default class EventDetails extends Component {
             </Col>
             <Col xs={14} sm={5}>Links</Col>
           </Row>*/}
+          <Row>
+            <Col smOffset={9} xs={5}>
+              <a href={promoterUrl} target="_blank">
+                {promoterUrl}
+              </a>
+            </Col>
+          </Row>
           {notesComp}
           <Row className="margin top-4">
             <Col xs={14}>
