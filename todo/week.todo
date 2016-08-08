@@ -73,7 +73,9 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
-			---- (IMPROVEMENT): double tap on mobile should close modal for faster browsing + educate people, instead of "esc" show "double tap" lable under close
+			- refactor event color by type
+			- add not and other icons on event details
+			---- (IMPROVEMENT): double tap on mobile should close modal for faster browsing + educate people, instead of "esc" show "double tap" lable under close                                                                                                                                                                
 			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
 			+----- BUG: today is shown in black
 		 	---- (optimization) during event creation build index of occurence of "road race" incide event: and other words to speed up rendring

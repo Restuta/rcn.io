@@ -7,11 +7,12 @@ import './Event.scss'
 import Grid from 'styles/grid'
 //import {rnd} from 'utils/math'
 import { Disciplines, Statuses } from 'calendar/events/types'
-import Size from 'atoms/card-sizes'
+import Size from './card-sizes'
 import EventName from './EventName.jsx'
+import IconLabel from './IconLabel.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
-import IconLabel from 'atoms/IconLabel.jsx'
+
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {

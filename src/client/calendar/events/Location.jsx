@@ -1,8 +1,8 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './Location.scss'
-import Sizes from 'atoms/card-sizes'
-import IconLabel from 'atoms/IconLabel.jsx'
+import Sizes from './card-sizes'
+import IconLabel from './IconLabel.jsx'
 
 export default class Location extends Component {
   render() {

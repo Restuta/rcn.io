@@ -60,12 +60,6 @@ export default class Dev extends Component {
     return (
       <div>
         <div>
-          <UsacLogo size={1}/>
-          <UsacLogo size={2}/>
-          <UsacLogo size={3}/>
-          <UsacLogo size={4}/>
-        </div>
-        <div>
           <Link
             key={8}
             to={{
@@ -233,6 +227,20 @@ export default class Dev extends Component {
 
           </Col>
         </Row>
+
+        <h2>LOGOS</h2>
+        <div>
+          <UsacLogo size={1}/>
+          <UsacLogo size={2}/>
+          <UsacLogo size={3}/>
+          <UsacLogo size={4}/>
+        </div>
+
+        <h2>ICONS</h2>
+        <h5>Simple icon: <Icon name="speaker_notes" className="notes-icon" color={Colors.grey600}/></h5>
+        <Icon name="portrait" className="notes-icon" color={Colors.grey600}/>
+        <Icon name="portrait" size={3} className="notes-icon" color={Colors.grey600}/>
+        <Icon name="portrait" size={4} className="notes-icon" color={Colors.grey600}/>
 
 
         <h2>CARDS PER CONTAINER:</h2>

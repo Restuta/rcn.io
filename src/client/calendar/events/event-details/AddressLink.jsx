@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
+import Icon from 'atoms/Icon.jsx'
+import Colors from 'styles/colors'
 
 export default class AddressLInk extends Component {
   render() {
@@ -28,6 +30,7 @@ export default class AddressLInk extends Component {
 
     return (
       <a href={url} target="_blank" style={style} className={className}>
+        <Icon name="place" size={2.5} top={-1} color={Colors.grey600}/>
         {streetComp}{cityComp}{stateComp}{zipComp}
       </a>
     )

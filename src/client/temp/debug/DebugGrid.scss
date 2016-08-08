@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+
+.DebugGrid {
+  label:hover {
+    color: black;
+    text-shadow: 0 0 1rem $primary-color;
+    transition: text-shadow .2s ease;
+  }
+}

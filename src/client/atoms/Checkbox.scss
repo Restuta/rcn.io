@@ -22,3 +22,11 @@
     font-size: inherit;
   }
 }
+
+.c-input > input:checked ~ .c-indicator {
+  background-color: $primary-color;
+}
+
+.c-input > input:focus ~ .c-indicator {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $primary-color;
+}

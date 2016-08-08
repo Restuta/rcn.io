@@ -12,6 +12,7 @@ import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import { Disciplines } from 'client/calendar/events/types.js'
+import Icon from 'atoms/Icon.jsx'
 
 const PresentedBy = ({by}) => {
   return (
@@ -124,6 +125,7 @@ export default class EventDetails extends Component {
       <Row>
         <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
+            <Icon name="speaker_notes" size={2.5} top={-4} className="notes-icon" color={Colors.grey600}/>
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterName}:
           </h4>

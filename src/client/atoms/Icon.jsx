@@ -2,14 +2,23 @@ import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import classNames from 'classnames'
 import './Icon.scss'
+import { pxToRem } from 'styles/typography'
 
 export default class Icon extends Component {
   render() {
-    const { name, color, size } = this.props
+    const { name, color, size, top = 0 } = this.props
     const iconNameClass = 'material-icons'
     const style = {
       color: color,
-      fontSize: `${size}rem`
+      fontSize: `${size}rem`,
+      // lineHeight: `${size}rem`,
+      maxWidth: `${size}rem`,
+      maxHeight: `${size}rem`,
+    }
+
+    if (top !== 0) {
+      style.position = 'relative'
+      style.top = pxToRem(top) + 'rem'
     }
 
     const className = classNames('Icon', iconNameClass, this.props.className)
@@ -25,5 +34,6 @@ export default class Icon extends Component {
 Icon.propTypes = {
   name: PropTypes.string,
   color: PropTypes.string,
-  size: PropTypes.number //in rems
+  size: PropTypes.number, //in rems
+  top: PropTypes.number, //top offset in px
 }

@@ -3,6 +3,7 @@ import Checkbox from 'atoms/Checkbox.jsx'
 import BaselineGrid from './BaselineGrid.jsx'
 import { connect } from 'react-redux'
 import { toggleBaseline, toggle3x3Grid, toggleContainerEdges } from 'shared/actions/actions.js'
+import './DebugGrid.scss'
 
 
 class DebugGrid extends React.Component {

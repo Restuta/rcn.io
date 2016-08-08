@@ -5,6 +5,7 @@ import Icon from 'atoms/Icon.jsx'
 import Sizes from './card-sizes'
 import classnames from 'classnames'
 
+
 export default class IconLabel extends Component {
   render() {
     const { icon, size, className, style } = this.props
@@ -21,5 +22,5 @@ export default class IconLabel extends Component {
 
 IconLabel.propTypes = {
   size: PropTypes.oneOf(Object.keys(Sizes)).isRequired,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired,
 }

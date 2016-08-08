@@ -41,17 +41,17 @@
       @include text-sm-11($offset: 3);
     }
     .text {
-      @include text-sm-10($offset: 1);
+      @include text-sm-10($offset: 3);
     }
   }
 
   &.size-L {
     height: 3rem;
     .icon {
-      top: pxToRem(3);
+      top: pxToRem(2);
     }
     .text {
-      top: pxToRem(1);
+      top: pxToRem(3);
     }
   }
 
@@ -59,10 +59,13 @@
     height: 5rem;
 
     .icon {
-      @include text-3($offset: 6);
+      @include text-3($offset: 3);
+      line-height: 2rem;
     }
     .text {
-      @include text-2($offset: 3);
+      @include text-2();
+      display: inline-block;
+      margin-top: 1rem;
     }
   }
 }
