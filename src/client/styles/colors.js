@@ -75,7 +75,7 @@ const colors = {
   bodyBg: '#FCFCFC',
   body: '#333333',
 
-  brownMud: 'rgba(160,82,45,1)', //'SIENNA',
+  brownMud: 'rgba(160,82,45,0.9)', //'SIENNA',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
 
   primary: purple.deepPurple400,
@@ -83,10 +83,13 @@ const colors = {
 
 
 const event = {
+  other: {
+    unknownType: colors.body,
+  },
   status: {
     past: colors.grey500,
     cancelled: colors.grey400,
-    moved: colors.grey400
+    moved: colors.grey400,
   },
   road: {
     criterium: '#00BF10',
@@ -94,9 +97,12 @@ const event = {
     circuitRace: '#FFA726',
     timeTrial: colors.red500,
     hillClimb: colors.red700,
+    stageRace: colors.deepPurple400,
+    omnium: colors.deepPurple400,
   },
   mtb: {
     'default': colors.brownMud,
+    'defaultDimmed': colors.brownMudDimmed
   }
 }
 

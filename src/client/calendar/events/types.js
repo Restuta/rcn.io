@@ -18,6 +18,8 @@ const EventTypes = {
     circuitRace: 'Circuit Race',
     timeTrial: 'Time Trial',
     hillClimb: 'Hill Climb',
+    omnium: 'Omnium',
+    stageRace: 'Stage Race'
   },
   mtb: {
     enduro: 'Enduro',

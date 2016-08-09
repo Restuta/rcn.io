@@ -75,6 +75,7 @@ Today
 		!----- immediate todo
 			- refactor event color by type
 			- add not and other icons on event details
+			- experiment with map marker and location label  color to be of the same one with event type
 			---- (IMPROVEMENT): double tap on mobile should close modal for faster browsing + educate people, instead of "esc" show "double tap" lable under close                                                                                                                                                                
 			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
 			+----- BUG: today is shown in black

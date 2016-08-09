@@ -16,6 +16,7 @@ export default class RaceTypeBadge extends Component {
       transform: `skew(-${skew}deg)`,
       backgroundColor: 'transparent',
       border: `1px solid ${color}`,
+      borderTop: 'none',
       color: color
     }
 

@@ -14,6 +14,8 @@ import AddressLink from './AddressLink.jsx'
 import { Disciplines } from 'client/calendar/events/types.js'
 import Icon from 'atoms/Icon.jsx'
 
+import { getEventColor } from 'client/calendar/utils/event-colors.js'
+
 const PresentedBy = ({by}) => {
   return (
     <div style={{
@@ -87,39 +89,49 @@ export default class EventDetails extends Component {
 
     let raceTypeBadgesComp = []
 
+
+
+
     if (date.isBefore(today)) {
-      raceTypeBadgesComp.unshift(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
+      raceTypeBadgesComp.push(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
     }
 
     if (group) {
       raceTypeBadgesComp.push(<RaceTypeBadge key={80} inverted name={'GROUP ' + group} color={Colors.grey800} />)
     }
 
-    if (discipline === Disciplines.mtb) {
-      raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.event.mtb.default} />)
-    }
+    const eventColor = getEventColor(discipline, type, status)
+    const eventType = (type || discipline || '').toUpperCase()
+    console.info(eventColor)
 
-    if (discipline === Disciplines.road) {
-      switch (type) {
-        case 'Road Race':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color={Colors.event.road.roadRace} />)
-          break
-        case 'Criterium':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color={Colors.event.road.criterium} />)
-          break
-        case 'Hill Climb':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.event.road.hillClimb} />)
-          break
-        case 'Circuit Race':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color={Colors.event.road.circuitRace} />)
-          break
-        case 'Time Trial':
-          raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.event.road.timeTrial} />)
-          break
-        default:
-          break
-      }
-    }
+
+    raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
+
+    // if (discipline === Disciplines.mtb) {
+    //   raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.event.mtb.default} />)
+    // }
+    //
+    // if (discipline === Disciplines.road) {
+    //   switch (type) {
+    //     case 'Road Race':
+    //       raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color={Colors.event.road.roadRace} />)
+    //       break
+    //     case 'Criterium':
+    //       raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color={Colors.event.road.criterium} />)
+    //       break
+    //     case 'Hill Climb':
+    //       raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.event.road.hillClimb} />)
+    //       break
+    //     case 'Circuit Race':
+    //       raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color={Colors.event.road.circuitRace} />)
+    //       break
+    //     case 'Time Trial':
+    //       raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.event.road.timeTrial} />)
+    //       break
+    //     default:
+    //       break
+    //   }
+    // }
 
     const notesComp = (notes && (
       <Row>

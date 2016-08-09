@@ -5,8 +5,8 @@ import Typography from 'styles/typography'
 import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
-//import {rnd} from 'utils/math'
 import { Disciplines, Statuses } from 'calendar/events/types'
+import { getEventColor } from 'calendar/utils/event-colors.js'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
@@ -154,33 +154,7 @@ class Event extends Component {
     const cardWidthPx = Math.floor(grid.getColumnContentWidth(width)) - 2
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
-
-    if (event.discipline === Disciplines.mtb) {
-      eventColor = Colors.brownMudDimmed
-    }
-
-    if (event.discipline === Disciplines.road) {
-      switch (event.type) {
-        case 'Road Race':
-          eventColor = Colors.event.road.roadRace
-          break
-        case 'Criterium':
-          eventColor = Colors.event.road.criterium
-          break
-        case 'Hill Climb':
-          eventColor = Colors.event.road.hillClimb
-          break
-        case 'Circuit Race':
-          eventColor = Colors.event.road.circuitRace
-          break
-        case 'Time Trial':
-          eventColor = Colors.event.road.timeTrial
-          break
-        default:
-          eventColor = Colors.grey800
-          break
-      }
-    }
+    eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
 
     const { debug = false } = this.props
     let debugComponent = null
