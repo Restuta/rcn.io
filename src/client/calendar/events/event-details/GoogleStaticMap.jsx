@@ -4,20 +4,29 @@ import Colors from 'styles/colors'
 import { addUrlParams } from 'utils/url-utils'
 import { pxToRem } from 'styles/typography'
 
+const hexClrToGoogleClr = hexClr => `0x${hexClr.slice(1)}`
+
+
 export default class GoogleStaticMap extends Component {
   render() {
-    const { width, height, homeAddress, startAddress, zoom } = this.props
+    const {
+       width,
+       height,
+       homeAddress,
+       startAddress,
+       zoom,
+       startAddressMarkerColor = Colors.grey400,
+      } = this.props
     const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap'
-    // const homeMarkerColor = '0x4caf50'
-    const homeMarkerColor = `0x${Colors.primary.slice(1)}`
-    const eventMarkerColor = '0xF44336'
+    const homeMarkerColor = hexClrToGoogleClr('#000000')
+    const startMarkerColor = hexClrToGoogleClr(startAddressMarkerColor)
 
     const genericParams = {
       format: 'png8',
       maptype: 'roadmap',
       zoom: zoom,
       markers: [
-        `size:normal|color:${eventMarkerColor}|label:S|${startAddress}`
+        `size:normal|color:${startMarkerColor}|label:S|${startAddress}`
       ],
       // style: [
       //   'saturation:-50|lightness:0|gamma:1.5',
@@ -83,4 +92,5 @@ GoogleStaticMap.propTypes = {
   homeAddress: PropTypes.string,
   startAddress: PropTypes.string,
   zoom: PropTypes.number,
+  startAddressMarkerColor: PropTypes.string,
 }

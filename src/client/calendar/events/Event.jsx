@@ -202,10 +202,6 @@ class Event extends Component {
 
     let opacity = 1
 
-    if (event.status === Statuses.cancelled || event.status === Statuses.moved) {
-      eventColor = Colors.grey400
-    }
-
     let style = {
       opacity: opacity,
       //width: cardWidthRem + 'rem',

@@ -11,7 +11,6 @@ import Flyer from './Flyer.jsx'
 import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
-import { Disciplines } from 'client/calendar/events/types.js'
 import Icon from 'atoms/Icon.jsx'
 
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
@@ -48,22 +47,23 @@ export default class EventDetails extends Component {
     )
     //TODO: hardcoding timezone for now
     const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
+    const today = moment()
 
     const {
       name = '——',
-      date = moment(),
+      date = today,
       flyerUrl,
       location = {},
       discipline,
       type,
-      notes = 'Hello from phoebe, but my concearn is that in 1987 I was not able to feed it',
-      promoterName = 'Anton Vynogradenko',
+      notes,
+      promoterName,
       promoter,
       promoterUrl,
       group
     } = this.props.event
 
-    const today = moment()
+
     const currentYearFormat = 'dddd, MMMM Do'
     const otherYearFormat = 'dddd, MMMM Do, YYYY'
 
@@ -89,9 +89,6 @@ export default class EventDetails extends Component {
 
     let raceTypeBadgesComp = []
 
-
-
-
     if (date.isBefore(today)) {
       raceTypeBadgesComp.push(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
     }
@@ -102,36 +99,8 @@ export default class EventDetails extends Component {
 
     const eventColor = getEventColor(discipline, type, status)
     const eventType = (type || discipline || '').toUpperCase()
-    console.info(eventColor)
-
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
-
-    // if (discipline === Disciplines.mtb) {
-    //   raceTypeBadgesComp.push(<RaceTypeBadge key={20} name="MTB" color={Colors.event.mtb.default} />)
-    // }
-    //
-    // if (discipline === Disciplines.road) {
-    //   switch (type) {
-    //     case 'Road Race':
-    //       raceTypeBadgesComp.push(<RaceTypeBadge key={30} name="ROAD RACE" color={Colors.event.road.roadRace} />)
-    //       break
-    //     case 'Criterium':
-    //       raceTypeBadgesComp.push(<RaceTypeBadge key={40} name="CRITERIUM" color={Colors.event.road.criterium} />)
-    //       break
-    //     case 'Hill Climb':
-    //       raceTypeBadgesComp.push(<RaceTypeBadge key={50} name="HILL CLIMB" color={Colors.event.road.hillClimb} />)
-    //       break
-    //     case 'Circuit Race':
-    //       raceTypeBadgesComp.push(<RaceTypeBadge key={60} name="CIRCUIT RACE" color={Colors.event.road.circuitRace} />)
-    //       break
-    //     case 'Time Trial':
-    //       raceTypeBadgesComp.push(<RaceTypeBadge key={70} name="TIME TRIAL" color={Colors.event.road.timeTrial} />)
-    //       break
-    //     default:
-    //       break
-    //   }
-    // }
 
     const notesComp = (notes && (
       <Row>
@@ -169,7 +138,8 @@ export default class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              <AddressLink url={googleMapsDirectionsUrl} className="address-link" location={location}/>
+              <AddressLink url={googleMapsDirectionsUrl} className="address-link"
+              location={location}/>
             </Col>
           </Row>
           <Row>
@@ -178,6 +148,7 @@ export default class EventDetails extends Component {
                 marginBottom: '3rem',
               }}>
                 <GoogleStaticMap width={416} height={352}
+                  startAddressMarkerColor={eventColor}
                   startAddress={startAddress}
                   homeAddress='San Jose, CA' />
               </div>

@@ -20,6 +20,7 @@ const getEventColor = (discipline, type, status) => {
       break
   }
 
+  if (eventColor) return eventColor
 
   if (discipline === Disciplines.mtb) {
     eventColor = Colors.event.mtb.default
