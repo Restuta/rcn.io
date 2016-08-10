@@ -10,7 +10,9 @@ export default class Flyer extends Component {
 
   render() {
     const { url } = this.props
-    const googleViewerUrl = addUrlParams('https://docs.google.com/viewer', {
+    // 'https://drive.google.com/viewerng/viewer'
+    // 'https://docs.google.com/viewer'
+    const googleViewerUrl = addUrlParams('https://drive.google.com/viewerng/viewer', {
       embedded: true,
       url: url
     })
