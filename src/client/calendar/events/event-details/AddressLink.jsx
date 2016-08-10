@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
-import Icon from 'atoms/Icon.jsx'
-import Colors from 'styles/colors'
 
 export default class AddressLInk extends Component {
   render() {

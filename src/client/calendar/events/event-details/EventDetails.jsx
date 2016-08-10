@@ -35,7 +35,7 @@ export default class EventDetails extends Component {
       && this.props.location.state
       && this.props.location.state.modal)
     )
-    //TODO: hardcoding timezone for now
+    //TODO: hardcoding timezone for now, it should come from calendar later
     const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
     const today = moment()
 
@@ -72,10 +72,10 @@ export default class EventDetails extends Component {
       : <div className="text-2 secondary">No flyer (yet?)</div>
     )
 
-    const from = encodeURIComponent('Current Location') //users current location
-    const to = encodeURIComponent(locationToAddressStr(location))
-    const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
     const startAddress = locationToAddressStr(location)
+    const from = encodeURIComponent('Current Location') //users current location
+    const to = encodeURIComponent(startAddress)
+    const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
 
     let raceTypeBadgesComp = []
 
