@@ -4,7 +4,7 @@ import Colors from 'styles/colors'
 //TODO: refactor to use types from types.js
 
 const getEventColor = (discipline, type, status) => {
-  let eventColor
+  let eventColor = ''
 
   switch (status) {
     case 'Cancelled':

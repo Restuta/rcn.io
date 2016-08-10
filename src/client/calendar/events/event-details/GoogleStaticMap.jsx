@@ -6,7 +6,6 @@ import { pxToRem } from 'styles/typography'
 
 const hexClrToGoogleClr = hexClr => `0x${hexClr.slice(1)}`
 
-
 export default class GoogleStaticMap extends Component {
   render() {
     const {

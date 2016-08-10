@@ -207,10 +207,17 @@ const getEventsByDateForCalendar = createSelector(
   (eventIds, allEvents) => eventsByDate(eventIds.map(id => allEvents[id]))
 )
 
+const getEventsForCalendar = createSelector(
+  getEventIdsForCalendar,
+  getAllEvents,
+  (eventIds, allEvents) => eventIds.map(x => allEvents[x])
+)
+
 export {
   getEvent,
   getCalendar,
-  getEventsByDateForCalendar
+  getEventsByDateForCalendar,
+  getEventsForCalendar,
 }
 
 export default rootReducer

@@ -14,6 +14,7 @@ import AddressLink from './AddressLink.jsx'
 import Icon from 'atoms/Icon.jsx'
 
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
+import { locationToAddressStr } from 'client/calendar/utils/location.js'
 
 const PresentedBy = ({by}) => {
   return (
@@ -25,17 +26,6 @@ const PresentedBy = ({by}) => {
       <span className="secondary">by {(by || '--')}</span>
     </div>
   )
-}
-
-const locationToAddressStr = ({streetAddress = '', city = '', state = '', zip = ''}) => {
-  let addressArr = []
-  const pushIfNotEmpty = prop => (prop && addressArr.push(prop))
-
-  pushIfNotEmpty(streetAddress)
-  pushIfNotEmpty(city)
-  pushIfNotEmpty(state)
-
-  return (addressArr.join(', ') + ' ' + zip).trim()
 }
 
 export default class EventDetails extends Component {

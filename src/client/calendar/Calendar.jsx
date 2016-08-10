@@ -8,9 +8,6 @@ import WeekdaysHeader from './WeekdaysHeader.jsx'
 import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import Colors from 'styles/colors'
 import moment from  'moment-timezone'
-import { connect } from 'react-redux'
-import { toggleShowPastEvents } from 'shared/actions/actions.js'
-import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import { pxToRem } from 'styles/typography'
 
@@ -196,6 +193,10 @@ Calendar.propTypes = {
   draft: PropTypes.bool,
   onShowFullHidePastClick: PropTypes.func,
 }
+
+import { connect } from 'react-redux'
+import { toggleShowPastEvents } from 'shared/actions/actions.js'
+import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
 
 
 export default connect(

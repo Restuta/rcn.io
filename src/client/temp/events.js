@@ -6,6 +6,7 @@ import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
 import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
+import { hash } from 'client/utils/math'
 
 const preProcessUrl = (rawUrl) => {
   if (rawUrl) {
@@ -18,9 +19,6 @@ const preProcessUrl = (rawUrl) => {
     return ''
   }
 }
-
-const hash = (str) =>  str.split('').reduce((prevHash, currVal) =>
-    ((prevHash << 5) - prevHash) + currVal.charCodeAt(0), 0)
 
 const createEvent = rawEvent => {
   const name = rawEvent.name.replace(/--/g, '—')
