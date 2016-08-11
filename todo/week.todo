@@ -73,13 +73,14 @@ Today
 			- apollo-client
 	--- Event Details
 		!----- immediate todo
-			- refactor event color by type
-			- add not and other icons on event details
-			- experiment with map marker and location label  color to be of the same one with event type
-			---- (IMPROVEMENT): double tap on mobile should close modal for faster browsing + educate people, instead of "esc" show "double tap" lable under close                                                                                                                                                                
+			- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
+			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
 			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
+			+- refactor event color by type
+			+- add not and other icons on event details
+			+- experiment with map marker and location label  color to be of the same one with event type                                                                                   
 			+----- BUG: today is shown in black
-		 	---- (optimization) during event creation build index of occurence of "road race" incide event: and other words to speed up rendring
+		 	---- (optimization) during event creation build index of occurence of "road race" inside event: and other words to speed up rendring
 		 	---- (optimization) isomorphic-fetch should point to node-specific dependency for node webpack bundles
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
 				- alternative implementation: partOfStageRace: true, false and don't allow multiple types
@@ -89,21 +90,22 @@ Today
 			- add primary calendar id to every event
 			- get calendar into "even details" component so we can use timezone
 			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable
-			-- Put Events to Redux Store
+			+-- Put Events to Redux Store
 				+----- BUG: re-render after popup is now 100ms (slow)
-				- use "why did you update" for quick perf look
-				- use simple object vs js Map()
+				+- use "why did you update" for quick perf look
+				+- use simple object vs js Map()
 					- for now duplicate creation in events.js
-				- connect EventDetails
-				- connect Calendar
+				+- connect EventDetails
+				+- connect Calendar
 					- user reslect for querying getTotalFrom
-				- make sure they are loaded on the server
+				+- make sure they are loaded on the server
 			+----- BUG: 3 event badges does't work on mobile iPhone 6 and below
 			----- BUG: relative date for next day assumes that events starts at midnight, which usually is not true, it needs to be set to 8AM (since no evetns start earlier)
 			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
 			content
 			----- BUG: drift interferes with modal allowing to drag it on the left
 			----- BUG: background still scrolls on iOS
+				- woraround: do not open EventDetails on mobile as modal
 			----- BUG: certain MTB events have non-pdf in pdf link
 				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 			--- Flyier
@@ -210,6 +212,7 @@ Today
 
 Mobile support
  - responsive font scale read: http://typecast.com/blog/a-more-modern-scale-for-web-typography
+ ---- (IMPROVEMENT): double tap on mobile should close modal for faster browsing + educate people, instead of "esc" show "double tap" lable under close                                                     
 
 After Boilerplate setup
 	- setup Plop to generate files faster: https://github.com/amwmedia/plop
