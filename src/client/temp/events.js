@@ -36,13 +36,14 @@ const createEvent = rawEvent => {
     type: rawEvent.type,
     discipline: rawEvent.discipline,
     location: rawEvent.location || {},
-    promoterUrl: preProcessUrl(rawEvent.promoterUrl),
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
     status: rawEvent.status,
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
     promoter: rawEvent.promoter,
-    promoterName: rawEvent.promoterName
+    promoterName: rawEvent.promoterName,
+    promoterUrl: preProcessUrl(rawEvent.promoterUrl),
+    registrationUrl: preProcessUrl(rawEvent.registrationUrl)
   }
 }
 

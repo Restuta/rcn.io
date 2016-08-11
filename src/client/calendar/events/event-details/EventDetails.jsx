@@ -29,6 +29,16 @@ const PresentedBy = ({by}) => {
 }
 
 export default class EventDetails extends Component {
+  constructor(props) {
+    super(props);
+    this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)
+  }
+
+  onRegisterBtnClick() {
+    window.location.href = this.props.event.registrationUrl
+    // window.open(this.props.event.registrationUrl, '_blank')
+  }
+
   render() {
     const insideModal = (
       (this.props.location
@@ -50,6 +60,7 @@ export default class EventDetails extends Component {
       promoterName,
       promoter,
       promoterUrl,
+      registrationUrl,
       group
     } = this.props.event
 
@@ -67,19 +78,15 @@ export default class EventDetails extends Component {
 
     const relativeDate = date.fromNow()
 
-    const flyerComp = (flyerUrl
-      ? <Flyer url={flyerUrl} />
-      : <div className="text-2 secondary">No flyer (yet?)</div>
-    )
-
     const startAddress = locationToAddressStr(location)
     const from = encodeURIComponent('Current Location') //users current location
     const to = encodeURIComponent(startAddress)
     const googleMapsDirectionsUrl = `https://www.google.com/maps/dir/${from}/${to}`
 
+    const itIsPastEvent = date.isBefore(today)
     let raceTypeBadgesComp = []
 
-    if (date.isBefore(today)) {
+    if (itIsPastEvent) {
       raceTypeBadgesComp.push(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
     }
 
@@ -88,6 +95,7 @@ export default class EventDetails extends Component {
     }
 
     const eventColor = getEventColor(discipline, type, status)
+    console.info(eventColor)
     const eventType = (type || discipline || '').toUpperCase()
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
@@ -96,7 +104,7 @@ export default class EventDetails extends Component {
       <Row>
         <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
-            <Icon name="speaker_notes" size={2.5} top={-4} className="notes-icon" color={Colors.grey600}/>
+            <Icon name="speaker_notes" size={2.5} top={-4} color={Colors.grey600}/>
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterName}:
           </h4>
@@ -144,8 +152,18 @@ export default class EventDetails extends Component {
               </div>
             </Col>
             <Col xs={14} sm={5}>
-              <Button size="sm" primaryHover>REGISTER</Button>
+              {(!itIsPastEvent && registrationUrl)
+                && <Button size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>REGISTER</Button>}
+              <div className="events-website-link text-3">
+                <a href={promoterUrl} target="_blank">
+                  <Icon name="public" size={2.5} top={-5} color={Colors.primary}/>
+                  Event's Website
+                </a>
+              </div>
             </Col>
+            {/* <Col xs={14} sm={5}>
+
+            </Col> */}
           </Row>
           <hr className="spacer no-margin-top" />
           {/*<Row>
@@ -154,17 +172,17 @@ export default class EventDetails extends Component {
             </Col>
             <Col xs={14} sm={5}>Links</Col>
           </Row>*/}
-          <Row>
+          {/* <Row>
             <Col smOffset={9} xs={5}>
               <a href={promoterUrl} target="_blank">
                 {promoterUrl}
               </a>
             </Col>
-          </Row>
+          </Row> */}
           {notesComp}
           <Row className="margin top-4">
             <Col xs={14}>
-              {flyerComp}
+              <Flyer url={flyerUrl} />
             </Col>
           </Row>
 
@@ -185,7 +203,7 @@ export default class EventDetails extends Component {
 }
 
 EventDetails.propTypes = {
-  details: PropTypes.string
+  event: PropTypes.object.isRequired
 }
 
 import { connect } from 'react-redux'

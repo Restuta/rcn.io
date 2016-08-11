@@ -40,8 +40,8 @@ class NcncaDraftCalendar extends Component {
         flexWrap: 'no-wrap',
       }}>
         <div>
-          <h2 className="text-xs-center">Loading Calendar from Google Spreedsheet</h2>
-          <Spinner />
+          <h2 className="text-xs-center">Loading Calendar from Google Spreedsheet...</h2>
+          <Spinner/>
         </div>
       </div>
     )

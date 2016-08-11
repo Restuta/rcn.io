@@ -75,7 +75,8 @@ const colors = {
   bodyBg: '#FCFCFC',
   body: '#333333',
 
-  brownMud: 'rgba(160,82,45,0.9)', //'SIENNA',
+  // brownMud: 'rgba(160,82,45,0.8)', //'SIENNA',
+  brownMud: '#a36d53',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
 
   primary: purple.deepPurple400,

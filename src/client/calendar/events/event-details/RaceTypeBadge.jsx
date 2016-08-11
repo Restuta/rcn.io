@@ -23,7 +23,7 @@ export default class RaceTypeBadge extends Component {
     const  style = inverted ? invertedStyle : normalStyle
 
     return (
-      <span style={style} className='RaceTypeBadge'>
+      <span style={style} className='RaceTypeBadge fix-fout'>
         <span style={{transform: `skew(${skew}deg)`}}>{name}</span>
       </span>
     )

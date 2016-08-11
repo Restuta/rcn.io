@@ -261,6 +261,7 @@ Event.propTypes = {
       zip: PropTypes.string,
     }),
     promoterUrl: PropTypes.string,
+    registrationUrl: PropTypes.string,
     flyerUrl: PropTypes.string,
     status: PropTypes.string,
     notes: PropTypes.string,
