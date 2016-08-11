@@ -52,4 +52,18 @@
     font-size: pxToRem(16);
     height: 7rem;
   }
+
+  &.disabled {
+    opacity: 0.6;
+    border-color: transparent;
+  }
+
+  &.btn-secondary.disabled {
+    background-color: darken($body-bg-color, 15%);
+  }
+
+  &.btn-primary.disabled {
+    color: darken($body-bg-color, 15%);
+    background-color: darken($primary-color, 15%);
+  }
 }

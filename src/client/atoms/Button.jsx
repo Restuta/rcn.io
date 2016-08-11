@@ -9,6 +9,7 @@ export default class Button extends Component {
       type = 'secondary',
       size = 'md',
       primaryHover,
+      disabled = false,
       onClick,
       className,
     } = this.props
@@ -16,13 +17,16 @@ export default class Button extends Component {
       `btn-${type}`,
       `btn-${size} fix-fout`,
       {
-        'primary-hover': primaryHover
+        'primary-hover': primaryHover,
+        'disabled': disabled,
       },
       className
     )
 
     return (
-      <button className={classes} onClick={onClick}>{this.props.children}</button>
+      <button className={classes} onClick={onClick} disabled={disabled}>
+        {this.props.children}
+      </button>
     )
   }
 }
@@ -32,5 +36,6 @@ Button.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   outline: PropTypes.bool,
   primaryHover: PropTypes.bool,
+  disabled: PropTypes.bool,
   onClick: PropTypes.func,
 }

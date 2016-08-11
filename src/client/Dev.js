@@ -117,6 +117,9 @@ export default class Dev extends Component {
             <Button size="md" type="secondary">CANCEL</Button><S5 />
             <Button size="md" type="primary">OK</Button>
             <br /><br />
+            <Button size="md" type="secondary" disabled>CANCEL</Button><S5 />
+            <Button size="md" type="primary" disabled>OK</Button><S5 />
+            <br /><br />
             <Button size="md" type="secondary" primaryHover >PRIMARY HOVER</Button><S5 />
           </Col>
         </Row>
