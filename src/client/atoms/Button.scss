@@ -11,11 +11,23 @@
     outline: none;
   }
 
-  &.primary-hover:hover {
-    outline: none;
+  &.primary-hover:hover,
+  &.primary-hover:focus {
     background-color: lighten($primary-color, 40%);
     border-color: lighten($primary-color, 15%);
     color: darken($primary-color, 5%);
+  }
+
+  &.primary-hover:active {
+    background-color: lighten($primary-color, 35%);
+    border-color: lighten($primary-color, 15%);
+    color: darken($primary-color, 5%);
+  }
+
+  &.primary-hover:active:focus {
+    background-color: lighten($primary-color, 30%);
+    border-color: lighten($primary-color, 10%);
+    color: darken($primary-color, 10%);
   }
 
   &-sm {

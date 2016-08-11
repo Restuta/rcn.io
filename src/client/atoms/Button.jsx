@@ -5,17 +5,24 @@ import classnames from 'classnames'
 
 export default class Button extends Component {
   render() {
-    const { type = 'secondary', size = 'md', primaryHover } = this.props
+    const {
+      type = 'secondary',
+      size = 'md',
+      primaryHover,
+      onClick,
+      className,
+    } = this.props
     const classes = classnames(`Button Button-${size} btn`,
       `btn-${type}`,
-      `btn-${size}`,
+      `btn-${size} fix-fout`,
       {
         'primary-hover': primaryHover
-      }
+      },
+      className
     )
 
     return (
-      <button className={classes}>{this.props.children}</button>
+      <button className={classes} onClick={onClick}>{this.props.children}</button>
     )
   }
 }
@@ -25,4 +32,5 @@ Button.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   outline: PropTypes.bool,
   primaryHover: PropTypes.bool,
+  onClick: PropTypes.func,
 }
