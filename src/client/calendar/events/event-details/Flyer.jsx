@@ -21,14 +21,20 @@ export default class Flyer extends Component {
       height: '110rem'
     }
 
-    return (
+    const googleViewerIframe = (
       <iframe style={style} height='100%' className="Flyer" frameBorder="0"
         src={googleViewerUrl} onLoad={this.onLoad}>
       </iframe>
+    )
+
+    return (
+      url
+        ? googleViewerIframe
+        : <div className="text-2 secondary">No flyer (yet?)</div>
     )
   }
 }
 
 Flyer.propTypes = {
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
 }
