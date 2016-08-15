@@ -6,6 +6,11 @@
   border-radius: 3px;
   letter-spacing: 0.3px;
 
+  >.Icon {
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+  }
+
   &.raised-1 {
      @include box-shadow-lvl-1();
   }
@@ -81,10 +86,5 @@
     padding-right: 3rem;
     font-size: pxToRem(16);
     height: 7rem;
-  }
-
-  >.Icon {
-    margin-right: 0.5rem;
-    vertical-align: text-bottom;
   }
 }

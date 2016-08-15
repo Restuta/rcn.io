@@ -3,7 +3,6 @@ import Component from 'react-pure-render/component'
 import './Button.scss'
 import classnames from 'classnames'
 import Icon from 'atoms/Icon.jsx'
-import Colors from 'styles/colors'
 
 export default class Button extends Component {
   constructor(props) {

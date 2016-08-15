@@ -1,4 +1,4 @@
-import { Disciplines, Statuses } from 'calendar/events/types'
+import { Disciplines } from 'calendar/events/types'
 import Colors from 'styles/colors'
 
 //TODO: refactor to use types from types.js

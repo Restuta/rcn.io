@@ -8,7 +8,6 @@ const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
 export default class MtbCalendar extends Component {
   render() {
-    console.info('Mtb re-rendered')
     const { containerWidth } = this.props
     let weekdaysSizes
 

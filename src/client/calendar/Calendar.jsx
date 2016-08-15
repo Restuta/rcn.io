@@ -36,7 +36,7 @@ class Calendar extends Component {
 
 
   render() {
-    console.info('Calendar render is called')
+    console.info('Calendar render is called') //eslint-disable-line
     const {
       name,
       highlight,
