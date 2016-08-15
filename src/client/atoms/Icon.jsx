@@ -14,6 +14,7 @@ export default class Icon extends Component {
       // lineHeight: `${size}rem`,
       maxWidth: `${size}rem`,
       maxHeight: `${size}rem`,
+      lineHeight: `${size}rem`,
     }
 
     if (top !== 0) {
