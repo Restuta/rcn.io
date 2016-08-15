@@ -3,6 +3,7 @@ import Component from 'react-pure-render/component'
 import Auth0Badge from 'home/Auth0Badge.jsx'
 import HeapAnalyticsBadge from 'home/HeapAnalyticsBadge.jsx'
 import JacoAnalyticsBadge from 'home/JacoAnalyticsBadge.jsx'
+import SheetsuBadge from 'home/SheetsuBadge.jsx'
 import { Link } from 'react-router'
 import 'home/Home.scss'
 
@@ -26,9 +27,12 @@ export default class Home extends Component {
         </section>
 
 
-        <Auth0Badge className="badge auth0-badge" />
-        <HeapAnalyticsBadge className="badge heap-analytics-badge"/>
-        <JacoAnalyticsBadge className="badge jaco-analytics-badge"/>
+        <section className="section-badges">
+          <Auth0Badge className="badge" />
+          <HeapAnalyticsBadge className="badge"/>
+          <JacoAnalyticsBadge className="badge"/>
+          <SheetsuBadge className="badge" />
+        </section>
       </div>
     )
   }

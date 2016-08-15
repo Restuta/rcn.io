@@ -47,6 +47,7 @@
       font-weight: 300;
       padding-left: 1rem;
       border-left: 1px solid $grey-300;
+      transition: color 0.2s ease-out;
 
       &:hover {
         text-decoration: none;

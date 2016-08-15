@@ -76,13 +76,12 @@ Today
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
 			- concept of material-like primary button (saves space): http://screencast.com/t/vuepHQaAaT01
 		!----- immediate todo
-			- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
-			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
-			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
-			+- refactor event color by type
-			+- add not and other icons on event details
-			+- experiment with map marker and location label  color to be of the same one with event type                                                                                   
-			+----- BUG: today is shown in black
+			--- high priority
+				- add sheetsu logo (logo in email)
+				- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
+				- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
+				- add primary calendar id to every event
+				- get calendar into "even details" component so we can use timezone
 		 	---- (optimization) during event creation build index of occurence of "road race" inside event: and other words to speed up rendring
 		 	---- (optimization) isomorphic-fetch should point to node-specific dependency for node webpack bundles
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
@@ -90,19 +89,8 @@ Today
 				- mutiday event?:
 			- add support for multiday events
 				- PROPOSED solution: defenitely there must be one event for one id, but then it may have array of dates if the event got moved it should have a link to event id that got created in place of it 
-			- add primary calendar id to every event
-			- get calendar into "even details" component so we can use timezone
 			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable
-			+-- Put Events to Redux Store
-				+----- BUG: re-render after popup is now 100ms (slow)
-				+- use "why did you update" for quick perf look
-				+- use simple object vs js Map()
-					- for now duplicate creation in events.js
-				+- connect EventDetails
-				+- connect Calendar
-					- user reslect for querying getTotalFrom
-				+- make sure they are loaded on the server
-			+----- BUG: 3 event badges does't work on mobile iPhone 6 and below
+			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
 			----- BUG: relative date for next day assumes that events starts at midnight, which usually is not true, it needs to be set to 8AM (since no evetns start earlier)
 			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
 			content
@@ -139,11 +127,24 @@ Today
 				- under primary calendar: /calendars/cal-12312/events/evt-1233
 				- under root: /events/evt-234324
 				- under multiple links with canonical being from primary calendar
-
-	--- NCNCA 2017 Draft: https://github.com/Restuta/rcn.io/issues/135
-		- add sheetsu logo (logo in email)
-		- call sheetsu https://sheetsu.com/apis/v1.0/1c20d0db4562 to get events
-		- show different status for events that are in draft mode
+		 +- refactor event color by type
+		 +- add not and other icons on event details
+		 +- experiment with map marker and location label  color to be of the same one with event type                                                                                   
+		 +----- BUG: today is shown in black
+		 +-- Put Events to Redux Store
+			+----- BUG: re-render after popup is now 100ms (slow)
+			+- use "why did you update" for quick perf look
+			+- use simple object vs js Map()
+				- for now duplicate creation in events.js
+			+- connect EventDetails
+			+- connect Calendar
+				- user reslect for querying getTotalFrom
+			+- make sure they are loaded on the server
+		 +----- BUG: 3 event badges does't work on mobile iPhone 6 and below
+	+--- NCNCA 2017 Draft: https://github.com/Restuta/rcn.io/issues/135
+		+- add sheetsu logo (logo in email)
+		+- call sheetsu https://sheetsu.com/apis/v1.0/1c20d0db4562 to get events
+		+- show different status for events that are in draft mode
 			- group id
 			- notes
  	--- design a card UI
