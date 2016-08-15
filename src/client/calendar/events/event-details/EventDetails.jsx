@@ -12,30 +12,67 @@ import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import Icon from 'atoms/Icon.jsx'
-
+import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
+import UsacLogo from 'atoms/UsacLogo.jsx'
 
 const PresentedBy = ({by}) => {
   return (
-    <div style={{
+    <span style={{
       fontStyle: 'italic',
       position: 'relative',
       top: pxToRem(4) + 'rem'
     }}>
       <span className="secondary">by {(by || '--')}</span>
+    </span>
+  )
+}
+
+
+const EventsWebsite = ({url}) => {
+  let eventComp
+
+  if (url) {
+    eventComp = (
+      <a href={url} target="_blank">
+        <Icon name="public" size={2} top={-1} color={Colors.primary}/>
+        {getShorterUrl(url)}
+      </a>
+    )
+  } else {
+    eventComp = (<div>
+      <Icon name="public" size={2} top={-1} color={Colors.grey500}/>
+      {'--'}
+    </div>
+    )
+  }
+
+  return (
+    <div>
+      <h4 className="header-regular header">
+        Event's Website
+      </h4>
+      <div className="events-website-link text-3">
+        {eventComp}
+      </div>
     </div>
   )
 }
 
 export default class EventDetails extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)
+  }
+
+  onResultsBtnClick() {
+    window.location.href = this.props.event.resultsUrl
   }
 
   onRegisterBtnClick() {
     window.location.href = this.props.event.registrationUrl
+    // window.drift.api.sidebar.open()
     // window.open(this.props.event.registrationUrl, '_blank')
   }
 
@@ -61,6 +98,7 @@ export default class EventDetails extends Component {
       promoter,
       promoterUrl,
       registrationUrl,
+      resultsUrl,
       group
     } = this.props.event
 
@@ -95,16 +133,53 @@ export default class EventDetails extends Component {
     }
 
     const eventColor = getEventColor(discipline, type, status)
-    console.info(eventColor)
     const eventType = (type || discipline || '').toUpperCase()
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
+
+    let registerComp
+
+    if (!itIsPastEvent) {
+      if (registrationUrl) {
+        registerComp = (
+          <div className="register-button-container">
+            <Button size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>
+              REGISTER
+            </Button>
+          </div>
+        )
+      } else {
+        registerComp = (
+          <div className="register-button-container">
+            <Button icon="sentiment_dissatisfied" disabled size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>
+              NO REG LINK
+            </Button>
+          </div>
+        )
+      }
+    } else if (resultsUrl) {
+      registerComp = (
+        <div className="register-button-container">
+          <Button size="sm" primaryHover className="btn-register" onClick={this.onResultsBtnClick}>
+            RESULTS
+          </Button>
+        </div>
+      )
+    } else {
+      registerComp = (
+        <div className="register-button-container">
+          <Button icon="sentiment_dissatisfied" disabled size="sm" primaryHover className="btn-register" onClick={this.onResultsBtnClick}>
+            NO RESULTS LINK
+          </Button>
+        </div>
+      )
+    }
 
     const notesComp = (notes && (
       <Row>
         <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
-            <Icon name="speaker_notes" size={2.5} top={-4} color={Colors.grey600}/>
+            <Icon name="speaker_notes" size={2.5} top={-1} color={Colors.grey600}/>
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterName}:
           </h4>
@@ -151,27 +226,30 @@ export default class EventDetails extends Component {
                   homeAddress='San Jose, CA' />
               </div>
             </Col>
-            <Col xs={14} sm={5}>
-              {(!itIsPastEvent && registrationUrl)
-                && <Button size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>REGISTER</Button>}
-              <div className="events-website-link text-3">
-                <a href={promoterUrl} target="_blank">
-                  <Icon name="public" size={2.5} top={-5} color={Colors.primary}/>
-                  Event's Website
-                </a>
-              </div>
+            <Col xs={14} sm={5} className="register-section-container">
+              {registerComp}
+              <EventsWebsite url={promoterUrl} />
             </Col>
             {/* <Col xs={14} sm={5}>
 
             </Col> */}
           </Row>
           <hr className="spacer no-margin-top" />
-          {/*<Row>
+          <Row>
             <Col xs={14} sm={9}>
-            Part of:
+              <UsacLogo size={1} style={{
+                display: 'inline',
+                // marginLeft: '1rem',
+                marginBottom: '1rem',
+              }}/>
             </Col>
-            <Col xs={14} sm={5}>Links</Col>
-          </Row>*/}
+          </Row>
+          <Row>
+            <Col xs={14} sm={9} className="text-2">
+              Part of:
+            </Col>
+            <Col xs={14} sm={5} className="text-2">Links</Col>
+          </Row>
           {/* <Row>
             <Col smOffset={9} xs={5}>
               <a href={promoterUrl} target="_blank">

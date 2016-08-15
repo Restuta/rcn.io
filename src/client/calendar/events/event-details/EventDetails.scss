@@ -16,6 +16,8 @@
 }
 
 .EventDetails {
+  color: $grey-600;
+
   >.content {
     // min-width: 90rem;
     .date {
@@ -41,14 +43,41 @@
 
     .address-link {
       margin-bottom: 1rem;
-      display: inline-block;
+      display: block;
       position: relative;
       top: pxToRem(3);
       font-size: scaleUp(2.5);
     }
 
-    .btn-register {
+    .register-button-container {
       margin-bottom: 2rem;
+    }
+
+    .register-section-container {
+      overflow: hidden;
+
+      @include phone {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    .events-website-link {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include text-2();
+      margin-bottom: 2rem;
+    }
+
+    .header {
+      color: $grey-500;
+      text-transform: uppercase;
+      font-weight: 500;
+      @include text-2();
+      margin-top: 0;
     }
 
     .flyer {

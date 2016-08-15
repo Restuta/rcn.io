@@ -75,7 +75,8 @@
     line-height: 1rem;
     font-size: 4rem;
     height: 6rem;
-    z-index: 1000; //for better cursor: pointer;
+    z-index: 1000; //for better "cursor: pointer;""
+    transition: color 0.2s ease-out;
 
     &:hover {
       color: $grey-700;
