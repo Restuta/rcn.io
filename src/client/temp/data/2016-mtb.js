@@ -850,6 +850,7 @@ export default [
     "name": "Great Tahoe Flume Race",
     "date": "September 11 2016",
     "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "registrationUrl": "https://www.bikereg.com/flume-race",
     "location": {
       "streetAddress": "Spooner Lake",
       "city": "Carson City",
@@ -875,6 +876,7 @@ export default [
     "discipline": "MTB",
     "name": "4 & 8 Hours of Weaverville",
     "date": "September 25 2016",
+    "status": "Cancelled",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
@@ -885,6 +887,7 @@ export default [
     "id": "evt-06b76e45748288a750149a2bb036ec6b",
     "discipline": "MTB",
     "name": "World Solo 24hr MTB Champs.",
+    "status": "Cancelled",
     "date": "September 25 2016",
     "promoterUrl": "http://www.teambigfoot.net/Wembo15.htm",
     "location": {
@@ -896,6 +899,7 @@ export default [
     "id": "evt-04dd2905dd2d9047719760430335b19b",
     "discipline": "MTB",
     "name": "Lagrange Fall Classic",
+    "status": "Cancelled",
     "date": "September 25 2016",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {

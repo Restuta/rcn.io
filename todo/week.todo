@@ -72,6 +72,9 @@ Today
 			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
 	--- Event Details
+		---- ideas
+			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
+			- concept of material-like primary button (saves space): http://screencast.com/t/vuepHQaAaT01
 		!----- immediate todo
 			- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
 			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
