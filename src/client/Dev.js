@@ -97,6 +97,16 @@ export default class Dev extends Component {
         <Row className="margin-top">
           <Col>
             <h2>BUTTONS</h2>
+            <Button icon="check_circle" size="sm" type="primary">SM PRIMARY</Button><S5 />
+            <Button icon="cancel" size="sm" type="secondary">SM SECONDARY</Button>
+            <br /><br />
+            <Button icon="sentiment_neutral" size="md" type="primary">MD PRIMARY</Button><S5 />
+            <Button icon="more" size="md" type="secondary">MD SECONDARY</Button>
+            <br /><br />
+            <Button icon="directions_bike" size="lg" type="primary">LG PRIMARY</Button><S5 />
+            <Button icon="star" size="lg" type="secondary">LG SECONDARY</Button>
+            <br /><br />
+
             <Button size="sm" type="primary">SM PRIMARY</Button><S5 />
             <Button size="sm" type="secondary">SM SECONDARY</Button>
             <br /><br />
@@ -121,6 +131,12 @@ export default class Dev extends Component {
             <Button size="md" type="primary" disabled>OK</Button><S5 />
             <br /><br />
             <Button size="md" type="secondary" primaryHover >PRIMARY HOVER</Button><S5 />
+            <br /><br />
+            <Button size="md" icon="autorenew" type="secondary">CANCEL</Button><S5 />
+            <Button size="md" icon="event" type="primary">OK</Button><S5 />
+            <br /><br />
+            <Button size="md" icon="cancel" type="secondary" disabled>CANCEL</Button><S5 />
+            <Button size="md" icon="bug_report" type="primary" disabled>OK</Button><S5 />
           </Col>
         </Row>
         <Row className="margin-top">

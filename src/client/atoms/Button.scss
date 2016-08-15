@@ -6,6 +6,18 @@
   border-radius: 3px;
   letter-spacing: 0.3px;
 
+  &.raised-1 {
+     @include box-shadow-lvl-1();
+  }
+
+  &.raised-2 {
+     @include box-shadow-lvl-2();
+  }
+
+  &.raised-3 {
+     @include box-shadow-lvl-3();
+  }
+
   &:focus,
   &:active:focus {
     outline: none;
@@ -28,6 +40,24 @@
     background-color: lighten($primary-color, 30%);
     border-color: lighten($primary-color, 10%);
     color: darken($primary-color, 10%);
+  }
+
+  &.disabled,
+  &.disabled:hover {
+    opacity: 0.6;
+    border-color: transparent;
+  }
+
+  &.btn-secondary.disabled,
+  &.btn-secondary.disabled:hover {
+    color: $body-color;
+    background-color: darken($body-bg-color, 15%);
+  }
+
+  &.btn-primary.disabled
+  &.btn-primary.disabled:hover {
+    color: darken($body-bg-color, 15%);
+    background-color: darken($primary-color, 15%);
   }
 
   &-sm {
@@ -53,17 +83,8 @@
     height: 7rem;
   }
 
-  &.disabled {
-    opacity: 0.6;
-    border-color: transparent;
-  }
-
-  &.btn-secondary.disabled {
-    background-color: darken($body-bg-color, 15%);
-  }
-
-  &.btn-primary.disabled {
-    color: darken($body-bg-color, 15%);
-    background-color: darken($primary-color, 15%);
+  >.Icon {
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
   }
 }

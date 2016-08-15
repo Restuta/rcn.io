@@ -36,6 +36,7 @@ a:active {
 
 a {
   color: $primary-color;
+  transition: color 0.2s ease-out;
 }
 
 //so .fa iconst do not break vertical rythm
