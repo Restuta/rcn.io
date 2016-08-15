@@ -15,7 +15,7 @@ import Icon from 'atoms/Icon.jsx'
 import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
-import UsacLogo from 'atoms/UsacLogo.jsx'
+// import UsacLogo from 'atoms/UsacLogo.jsx'
 
 const PresentedBy = ({by}) => {
   return (
@@ -222,11 +222,11 @@ export default class EventDetails extends Component {
           <hr className="spacer no-margin-top" />
           <Row>
             <Col xs={14} sm={9}>
-              <UsacLogo size={1} style={{
-                display: 'inline',
+              {/* <UsacLogo size={1} style={{
+                // display: 'inline',
                 // marginLeft: '1rem',
                 marginBottom: '1rem',
-              }}/>
+              }}/> */}
             </Col>
           </Row>
           <Row>
