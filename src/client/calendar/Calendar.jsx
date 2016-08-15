@@ -11,12 +11,30 @@ import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import { pxToRem } from 'styles/typography'
 
-const findEventByDate = (eventsMap, date) => {
+const getEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
   return eventsMap.get(key) || []
 }
 
 class Calendar extends Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.handleScroll = this.handleScroll.bind(this)
+  // }
+
+  // handleScroll() {
+  //   console.info('scroll')
+  // }
+  //
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.handleScroll)
+  // }
+  //
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this.handleScroll)
+  // }
+
+
   render() {
     console.info('Calendar render is called')
     const {
@@ -69,6 +87,8 @@ class Calendar extends Component {
     for (let i = 1; i <= totalWeeks; i++) {
       let daysComponents = []
 
+      let weekContainsFirstDayOfMonth = false
+
       for (let k = 1; k <= 7; k++) {
         const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
         const month = currentDate.month() + 1
@@ -76,7 +96,7 @@ class Calendar extends Component {
         //using to alternate between months so we they become easier to spot in a caledar
         const currentDayBelongsToAlternateMonth = (currentDate.month() % 2 === 0)
 
-        const foundEvents = findEventByDate(events.map, currentDate)
+        const foundEvents = getEventByDate(events.map, currentDate)
 
         let eventComponents
 
@@ -87,11 +107,16 @@ class Calendar extends Component {
           )
         }
 
+        const itIsFirstDayOfMonth = firstDayOfMonth(currentDate)
+        if (itIsFirstDayOfMonth) {
+          weekContainsFirstDayOfMonth = true
+        }
+
         daysComponents.push(
           <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
             size={daySize}
             itIsToday={currentDayIsToday}
-            itIsFirstDayOfMonth={firstDayOfMonth(currentDate)}
+            itIsFirstDayOfMonth={itIsFirstDayOfMonth}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
             isItAlternateMonthsDay={currentDayBelongsToAlternateMonth}
             containerWidth={containerWidth}
@@ -103,7 +128,14 @@ class Calendar extends Component {
         currentDate.add(1, 'day')
       }
 
-      weeksComponents.push(<Week key={i} lastOne={i === totalWeeks}>{daysComponents}</Week>)
+      const currentMonth = currentDate.month() + 1
+
+      weeksComponents.push(
+        <Week key={i} month={currentMonth} lastOne={i === totalWeeks}
+          containsFirstDayOfMonth={weekContainsFirstDayOfMonth}>
+          {daysComponents}
+        </Week>
+      )
     }
 
     let subTitleComp

@@ -51,7 +51,7 @@ const EventsWebsite = ({url}) => {
   return (
     <div>
       <h4 className="header-regular header">
-        Event's Website
+        Event Website
       </h4>
       <div className="events-website-link text-3">
         {eventComp}
@@ -59,6 +59,24 @@ const EventsWebsite = ({url}) => {
     </div>
   )
 }
+
+const PrimaryButton = ({text, icon, disabled, onClick}) => (
+  <Button size="sm" icon={icon} disabled={disabled} primaryHover className="btn-register" onClick={onClick}>
+    {text}
+  </Button>
+)
+
+const RegButton = ({regUrl, onClick}) => (
+  regUrl
+    ? <PrimaryButton text="REGISTER" onClick={onClick}/>
+    : <PrimaryButton text="NO REG LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
+)
+
+const ResultsButton = ({resultsUrl, onClick}) => (
+  resultsUrl
+    ? <PrimaryButton text="RESULTS" onClick={onClick}/>
+    : <PrimaryButton text="NO RESULTS LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
+)
 
 export default class EventDetails extends Component {
   constructor(props) {
@@ -137,44 +155,6 @@ export default class EventDetails extends Component {
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
 
-    let registerComp
-
-    if (!itIsPastEvent) {
-      if (registrationUrl) {
-        registerComp = (
-          <div className="register-button-container">
-            <Button size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>
-              REGISTER
-            </Button>
-          </div>
-        )
-      } else {
-        registerComp = (
-          <div className="register-button-container">
-            <Button icon="sentiment_dissatisfied" disabled size="sm" primaryHover className="btn-register" onClick={this.onRegisterBtnClick}>
-              NO REG LINK
-            </Button>
-          </div>
-        )
-      }
-    } else if (resultsUrl) {
-      registerComp = (
-        <div className="register-button-container">
-          <Button size="sm" primaryHover className="btn-register" onClick={this.onResultsBtnClick}>
-            RESULTS
-          </Button>
-        </div>
-      )
-    } else {
-      registerComp = (
-        <div className="register-button-container">
-          <Button icon="sentiment_dissatisfied" disabled size="sm" primaryHover className="btn-register" onClick={this.onResultsBtnClick}>
-            NO RESULTS LINK
-          </Button>
-        </div>
-      )
-    }
-
     const notesComp = (notes && (
       <Row>
         <Col xs={14} sm={9}>
@@ -227,7 +207,12 @@ export default class EventDetails extends Component {
               </div>
             </Col>
             <Col xs={14} sm={5} className="register-section-container">
-              {registerComp}
+              <div className="reg-results-button-container">
+                {itIsPastEvent
+                  ? <ResultsButton resultsUrl={resultsUrl} onClick={this.onResultsBtnClick}/>
+                  : <RegButton regUrl={registrationUrl} onClick={this.onRegisterBtnClick}/>
+                }
+              </div>
               <EventsWebsite url={promoterUrl} />
             </Col>
             {/* <Col xs={14} sm={5}>
