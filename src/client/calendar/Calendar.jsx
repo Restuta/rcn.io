@@ -6,10 +6,8 @@ import Week from './Week.jsx'
 import Event from './events/Event.jsx'
 import WeekdaysHeader from './WeekdaysHeader.jsx'
 import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
-import Colors from 'styles/colors'
 import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
-import { pxToRem } from 'styles/typography'
 import Badge from 'calendar/badges/Badge.jsx'
 
 const getEventByDate = (eventsMap, date) => {
