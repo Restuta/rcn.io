@@ -16,6 +16,7 @@ export default class Badge extends Component {
       heightRem = 2,
       className,
       borderColor,
+      customFontSize
     } = this.props
 
 
@@ -23,7 +24,10 @@ export default class Badge extends Component {
       color: color,
       backgroundColor: bgColor,
       height: `${heightRem}rem`,
-      fontSize: scaleUp(heightRem - 1) + 'rem',
+    }
+
+    if (!customFontSize) {
+      style.fontSize = scaleUp(heightRem - 1) + 'rem'
     }
 
     if (borderColor) {
@@ -49,6 +53,7 @@ Badge.propTypes = {
   color: PropTypes.string,
   borderColor: PropTypes.string,
   bgColor: PropTypes.string,
-  heightRem: PropTypes.oneOf([2, 3, 4, 5, 6]),
+  heightRem: PropTypes.oneOf([2, 3, 4, 5, 6, 7, 8]),
   className: PropTypes.string,
+  customFontSize: PropTypes.boo,
 }

@@ -166,7 +166,7 @@ class Calendar extends Component {
 
     const nameComp = (
       <h1 className="title">
-        {nameCompChildren}{draft && <Badge square heightRem={8} className="margin lft-1">DRAFT</Badge>}
+        {nameCompChildren}{draft && <Badge square customFontSize heightRem={8} className="margin lft-1">DRAFT</Badge>}
       </h1>
     )
 

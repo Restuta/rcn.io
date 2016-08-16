@@ -243,12 +243,12 @@ export default class EventDetails extends Component {
               }}/> */}
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col xs={14} sm={9} className="text-2">
               Part of:
             </Col>
             <Col xs={14} sm={5} className="text-2">Links</Col>
-          </Row>
+          </Row> */}
           {/* <Row>
             <Col smOffset={9} xs={5}>
               <a href={promoterUrl} target="_blank">
@@ -257,7 +257,7 @@ export default class EventDetails extends Component {
             </Col>
           </Row> */}
           {notesComp}
-          <Row className="margin top-4">
+          <Row className="">
             <Col xs={14}>
               <Flyer url={flyerUrl} />
             </Col>
