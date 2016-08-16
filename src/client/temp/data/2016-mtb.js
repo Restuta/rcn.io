@@ -589,7 +589,7 @@ export default [
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
     "date": "June 27 2016",
-    "status": "Cancelled",
+    "status": "Canceled",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
       "streetAddress": "2201 Imola Avenue",
@@ -602,7 +602,7 @@ export default [
     "id": "evt-8c71d88afabf4e5541659c89fef27ead",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
-    "status": "Cancelled",
+    "status": "Canceled",
     "date": "June 28 2016",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
@@ -614,7 +614,7 @@ export default [
   },
   {
     "id": "evt-9389ef253c140cc9df32999732ed6827",
-    "status": "Cancelled",
+    "status": "Canceled",
     "discipline": "MTB",
     "name": "Mendocino 100",
     "date": "June 26 2016",
@@ -876,7 +876,7 @@ export default [
     "discipline": "MTB",
     "name": "4 & 8 Hours of Weaverville",
     "date": "September 25 2016",
-    "status": "Cancelled",
+    "status": "Canceled",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
@@ -887,7 +887,7 @@ export default [
     "id": "evt-06b76e45748288a750149a2bb036ec6b",
     "discipline": "MTB",
     "name": "World Solo 24hr MTB Champs.",
-    "status": "Cancelled",
+    "status": "Canceled",
     "date": "September 25 2016",
     "promoterUrl": "http://www.teambigfoot.net/Wembo15.htm",
     "location": {
@@ -899,7 +899,7 @@ export default [
     "id": "evt-04dd2905dd2d9047719760430335b19b",
     "discipline": "MTB",
     "name": "Lagrange Fall Classic",
-    "status": "Cancelled",
+    "status": "Canceled",
     "date": "September 25 2016",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {

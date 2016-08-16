@@ -89,7 +89,7 @@ const event = {
   },
   status: {
     past: colors.grey500,
-    cancelled: colors.grey400,
+    canceled: colors.grey400,
     moved: colors.grey400,
   },
   road: {

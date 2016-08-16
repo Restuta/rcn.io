@@ -10,6 +10,7 @@ import Colors from 'styles/colors'
 import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import { pxToRem } from 'styles/typography'
+import Badge from 'calendar/badges/Badge.jsx'
 
 const getEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
@@ -161,39 +162,21 @@ class Calendar extends Component {
       )
     }
 
-    const draftComp = draft
-      ? (
-      <span style={{
-        color: 'rgb(255, 255, 255)',
-        padding: '0.5rem 1rem',
-        marginLeft: '2rem',
-        fontStyle: 'normal',
-        background: Colors.blueGrey300,
-        borderRadius: pxToRem(2) + 'rem',
-      }}>DRAFT</span>
-      )
-      : null
-
-    const descComp = description
-      ? <h4 className="sub-title" style={{marginBottom: '1rem'}}>{description}</h4>
-      : null
-
     const nameCompChildren = highlight
       ? createHighlightedStringComponent(name, highlight.word, highlight.color)
       : name
+
     const nameComp = (
       <h1 className="title">
-        {nameCompChildren}{draftComp}
+        {nameCompChildren}{draft && <Badge square heightRem={8} className="margin lft-1">DRAFT</Badge>}
       </h1>
     )
-
-
 
     return (
       <div className="Calendar">
         {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
         {nameComp}
-        {descComp}
+        {description && <h4 className="sub-title" style={{marginBottom: '1rem'}}>{description}</h4>}
         {subTitleComp}
 
         <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>

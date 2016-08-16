@@ -17,12 +17,12 @@ const EventName = (props) => {
     wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
   }
 
-  if (eventStatus === Statuses.cancelled) {
-    wrappedNameComp = <span>CANCELED: <span className="cancelled">{name}</span></span>
+  if (eventStatus === Statuses.canceled) {
+    wrappedNameComp = <span>CANCELED: <span className="canceled">{name}</span></span>
   }
 
   if (eventStatus === Statuses.moved) {
-    wrappedNameComp = <span>MOVED: <span className="cancelled">{name}</span></span>
+    wrappedNameComp = <span>MOVED: <span className="canceled">{name}</span></span>
   }
 
   return (

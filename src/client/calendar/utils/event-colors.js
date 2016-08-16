@@ -3,12 +3,11 @@ import Colors from 'styles/colors'
 
 //TODO: refactor to use types from types.js
 
-const getEventColor = (discipline, type, status) => {
+const getEventColor = (discipline, type, status = '') => {
   let eventColor = ''
-
   switch (status) {
-    case 'Cancelled':
-      eventColor = Colors.event.status.cancelled
+    case 'Canceled':
+      eventColor = Colors.event.status.canceled
       break
     case 'Moved':
       eventColor = Colors.event.status.moved

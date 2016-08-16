@@ -15,6 +15,9 @@ import Icon from 'atoms/Icon.jsx'
 import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
+import { Statuses } from 'client/calendar/events/types.js'
+import classnames from 'classnames'
+import Badge from 'calendar/badges/Badge.jsx'
 // import UsacLogo from 'atoms/UsacLogo.jsx'
 
 const PresentedBy = ({by}) => {
@@ -112,6 +115,7 @@ export default class EventDetails extends Component {
       discipline,
       type,
       notes,
+      status,
       promoterName,
       promoter,
       promoterUrl,
@@ -120,7 +124,10 @@ export default class EventDetails extends Component {
       group
     } = this.props.event
 
-
+    const classNames = classnames('EventDetails', {
+      'canceled': status === Statuses.canceled,
+      'moved': status === Statuses.moved
+    })
     const currentYearFormat = 'dddd, MMMM Do'
     const otherYearFormat = 'dddd, MMMM Do, YYYY'
 
@@ -150,6 +157,7 @@ export default class EventDetails extends Component {
       raceTypeBadgesComp.push(<RaceTypeBadge key={80} inverted name={'GROUP ' + group} color={Colors.grey800} />)
     }
 
+
     const eventColor = getEventColor(discipline, type, status)
     const eventType = (type || discipline || '').toUpperCase()
 
@@ -169,17 +177,24 @@ export default class EventDetails extends Component {
     ))
 
     const eventDetailsComponent = (
-      <div className="EventDetails">
+      <div className={classNames}>
         <div className="content">
           <div className="badges">
             {raceTypeBadgesComp}
           </div>
           <Row>
             <Col xs={14} sm={9}>
+              {status && (
+                <Badge inverted className="status-badge" borderColor={Colors.red500}
+                  bgColor={Colors.bodyBg} color={Colors.red500} heightRem={4} square>
+                  {status.toUpperCase()}
+                </Badge>)
+              }
               <h4 className="header-regular w-500 date">
                 {formattedDate} <span className="relative">({relativeDate})</span>
               </h4>
               <h3 className="header-regular w-900 name">{name}</h3>
+              {/* {statusBadge} */}
             </Col>
             <Col xs={14} sm={5} />
           </Row>

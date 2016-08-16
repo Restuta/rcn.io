@@ -7,7 +7,7 @@ const Disciplines = {
 }
 
 const Statuses = {
-  cancelled: 'Cancelled',
+  canceled: 'Canceled',
   moved: 'Moved'
 }
 

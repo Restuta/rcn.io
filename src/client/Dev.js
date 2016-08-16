@@ -7,7 +7,6 @@ import Icon from 'atoms/Icon.jsx'
 import Event from 'calendar/events/Event.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
 import RoundBadge from 'calendar/badges/RoundBadge.jsx'
-import SquareBadge from 'calendar/badges/SquareBadge.jsx'
 import Colors from 'styles/colors'
 import Grid from 'styles/grid'
 import Typography from 'styles/typography'
@@ -171,28 +170,22 @@ export default class Dev extends Component {
         <Row>
           <Col sm={2}><h5>Square Badges: </h5></Col>
           <Col sm={12} className="display-flex">
-            <SquareBadge>120mi</SquareBadge><S5/>
-            <SquareBadge>8</SquareBadge><S5/>
-            {/*<SquareBadge><Icon name="trophy"/></SquareBadge><S5/>*/}
-            <SquareBadge><Icon name="wb_sunny"/></SquareBadge><S5/>
-            <SquareBadge><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={2}><h5>Square Badges (Inverted): </h5></Col>
-          <Col sm={12} className="display-flex">
-            <SquareBadge className="Inverted">120mi</SquareBadge><S5/>
-            <SquareBadge className="Inverted">8</SquareBadge><S5/>
-            {/*<SquareBadge className="Inverted"><Icon name="trophy"/></SquareBadge><S5/>*/}
-            <SquareBadge className="Inverted"><Icon name="wb_sunny"/></SquareBadge><S5/>
-            <SquareBadge className="Inverted"><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
+            <Badge square heightRem={2}>CANCELED</Badge><S5/>
+            <Badge square heightRem={3}>CANCELED</Badge><S5/>
+            <Badge square heightRem={4}>CANCELED</Badge><S5/>
+            <Badge square heightRem={5}>CANCELED</Badge><S5/>
+            <Badge square heightRem={6}>CANCELED</Badge><S5/>
+            <Badge square heightRem={3} borderColor="#ffccbb" bgColor="white" color="black">CANCELED</Badge><S5/>
+            <Badge square>120mi</Badge><S5/>
+            <Badge square>8</Badge><S5/>
+            <Badge square><Icon name="wb_sunny" size={1.5}/></Badge><S5/>
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Elevation:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
-            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
+            <Icon name="arrow_upward" size={2} color={Colors.grey500}/>1200ft<S10/>
+            <Icon name="arrow_upward" size={2} color={Colors.grey500}/>1200ft<S10/>
             {/*<Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>*/}
             {/*<Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>*/}
           </Col>

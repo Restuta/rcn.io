@@ -96,7 +96,7 @@
 
       @include phone {
         padding-right: 0;
-        margin-left: 4rem;
+        margin-left: pxToRem(37);
         justify-content: flex-start;
       }
     }
@@ -119,6 +119,15 @@
       margin-right: 0.5rem;
     }
 
+    .status-badge {
+      // margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      @include phone {
+        margin-top: 1rem;
+      }
+    }
+
     // &:before {
     //   content: '';
     //   // background-image: url(event-details-mock.png);
@@ -137,5 +146,21 @@
     .col {
       // outline:1px solid pink;
     }
+  }
+}
+
+.EventDetails.canceled {
+  > .content .date {
+    text-decoration: line-through;
+  }
+
+  > .content .name {
+    text-decoration: line-through;
+  }
+}
+
+.EventDetails.moved {
+  > .content .date {
+    text-decoration: line-through;
   }
 }

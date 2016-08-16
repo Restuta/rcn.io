@@ -1,17 +1,54 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
-import classNames from 'classnames'
+import classnames from 'classnames'
 import './Badge.scss'
+import Colors from 'styles/colors'
+import { scaleUp } from 'styles/typography'
 
 
 export default class Badge extends Component {
   render() {
-    const className = classNames('Badge', this.props.className)
+    let {
+      square,
+      inverted,
+      color = Colors.bodyBg,
+      bgColor = Colors.blueGrey300,
+      heightRem = 2,
+      className,
+      borderColor,
+    } = this.props
+
+
+    const style = {
+      color: color,
+      backgroundColor: bgColor,
+      height: `${heightRem}rem`,
+      fontSize: scaleUp(heightRem - 1) + 'rem',
+    }
+
+    if (borderColor) {
+      style.border = `1px solid ${borderColor}`
+    }
+
+    const classNames = classnames('Badge', className, this.props.className, {
+      'square': square,
+      'inverted': inverted,
+    })
 
     return (
-      <span className={className}>
+      <span className={classNames} style={style}>
         {this.props.children}
       </span>
     )
   }
+}
+
+
+Badge.propTypes = {
+  square: PropTypes.bool,
+  color: PropTypes.string,
+  borderColor: PropTypes.string,
+  bgColor: PropTypes.string,
+  heightRem: PropTypes.oneOf([2, 3, 4, 5, 6]),
+  className: PropTypes.string,
 }
