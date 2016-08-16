@@ -5,7 +5,7 @@
   //background-image: linear-gradient(-90deg, rgb(100, 65, 165), rgb(42, 8, 69));
 
   .section-main {
-    margin-top: 8rem;  
+    margin-top: 8rem;
   }
 
 
@@ -13,24 +13,19 @@
     color: $grey-500;
   }
 
-  .header-whats-next {
-    margin-top: 8rem;
+  .section-badges {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .badge {
-    position: absolute;
-    bottom: 1rem;
+    margin-right: 1rem;
   }
 
-  .badge.auth0-badge {
-    left: 1rem;
-  }
-
-  .badge.heap-analytics-badge {
-    left: 22rem;
-  }
-
-  .badge.jaco-analytics-badge {
-    left: 38rem;
+  .header-whats-next {
+    margin-top: 8rem;
   }
 }

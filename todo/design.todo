@@ -93,10 +93,12 @@ Tools
 		- Keep Dependencies Up To date: https://david-dm.org/ember-cli/ember-cli
 		- CodeClimate: automated code review https://codeclimate.com/
 	--- Hosting
-		-- Digital Ocean?
-		-- Heroku?
-		-- Amazon (AWS)?
-		-- Parse?
+		.--(in future) Digital Ocean?
+			- everything is manual including process management, and nginx setup
+		+-- Heroku?
+			- for now it's the fastest option
+		.-- Amazon (AWS)?
+		.-- Parse?
 
 
 Architecture Design
@@ -117,26 +119,26 @@ Architecture Design
 	- Build Tools
 		--- Webpack 
 			-- For production
-				- disable react-transform: see https://github.com/gaearon/react-transform-hmr (It is up to you to ensure that the transform is not enabled when you compile the app in production mode.)
-				- use minified versions of 3rd party libs
+				+- disable react-transform: see https://github.com/gaearon/react-transform-hmr (It is up to you to ensure that the transform is not enabled when you compile the app in production mode.)
+				+- use minified versions of 3rd party libs
 					- React and other stuff with "resolve"
 					- mb some external with "externals"
 				- use webpack --display-exclude --config webpack.config.prod.js --json | analyze-bundle-size:
 				allows to analize what contributes to bundle size
-				- add hashes to assets: http://survivejs.com/webpack_react/building_kanban/#adding-hashes-to-filenames
-				- setup CommonChunksPlugin: http://survivejs.com/webpack_react/building_kanban/#setting-up-commonschunkplugin-
-				- setup ExtractTextPlugin so css is loaded as separate file
-				- mb split app and vendor: https://christianalfoni.github.io/react-webpack-cookbook/Split-app-and-vendors.html
+				+- add hashes to assets: http://survivejs.com/webpack_react/building_kanban/#adding-hashes-to-filenames
+				+- setup CommonChunksPlugin: http://survivejs.com/webpack_react/building_kanban/#setting-up-commonschunkplugin-
+				+- setup ExtractTextPlugin so css is loaded as separate file
+				+- mb split app and vendor: https://christianalfoni.github.io/react-webpack-cookbook/Split-app-and-vendors.html
 					- splitting improve time for returning users in case of update
 					- non-splitting improves initial load time
 				- setup PostCSS Nano pack: http://cssnano.co/
-				- do not use babel-loader's react-transform plugin and cacheDirectory 
+				+- do not use babel-loader's react-transform plugin and cacheDirectory 
 			+.- (yes ES6 with babel-loader) - with ES6 modules or ES6 modules?: ES6 modules are coming in webpack2 https://github.com/webpack/webpack/pull/861, more on webpack + es6 http://www.jbrantly.com/es6-modules-with-typescript-and-webpack/ 
 				+- webpack 1 can be used with Babel to use ES6 modules
 					+-- does this mean that webpack understands transpiled code like it would understand commonJS one?
 				.- (webpack + ES6 = love with babel-loader) 
 			- inline styles for dev, normal for production: like https://github.com/este/este, inline in dev makes styles hot-reloadable
-			- style-loader for hot reloading
+			+- style-loader for hot reloading
 			- SVG optimization: https://github.com/imagemin/imagemin-svgo
 	- AI
 		- http://wit.ai

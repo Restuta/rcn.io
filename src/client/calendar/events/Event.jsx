@@ -5,10 +5,14 @@ import Typography from 'styles/typography'
 import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
-//import {rnd} from 'utils/math'
-import {Disciplines, Event as EventType, Statuses} from 'temp/events'
+import { Disciplines } from 'calendar/events/types'
+import { getEventColor } from 'calendar/utils/event-colors.js'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
+import IconLabel from './IconLabel.jsx'
+import { withRouter } from 'react-router'
+import Icon from 'atoms/Icon.jsx'
+
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -28,13 +32,20 @@ const getBaseHeight = containerWidth => {
   return baseHeightMap[containerWidth]
 }
 
+//nummeric card sizes for simple comparisons
+const numSize = {
+  [Size.XXS]: 0,
+  [Size.XS]: 10,
+  [Size.S]: 20,
+  [Size.M]: 30,
+  [Size.L]: 40,
+  [Size.XL]: 50
+}
+
 class Event extends Component {
   constructor(props) {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
-    this.state = {
-      visited: false
-    }
   }
 
   onEventClick() {
@@ -42,32 +53,27 @@ class Event extends Component {
       event: this.props.event,
     })
 
-    if (this.props.event.promoterUrl) {
-      trackClick()
-      window.open(this.props.event.promoterUrl)
-      this.setState({
-        visited: true
-      })
-    } else if (this.props.event.flyerUrl) {
-      trackClick()
-      window.open(this.props.event.flyerUrl)
-      this.setState({
-        visited: true
-      })
-    }
+    trackClick()
+
+    this.props.router.push({
+      pathname: `/events/${this.props.id}`,
+      state: { modal: true, returnUrl: this.context.locationPathname}
+    })
   }
 
   render() {
+    // console.info('Event render')
+
     const {
       width,
       containerWidth,
       baseHeight = getBaseHeight(containerWidth),
       name,
-      discipline,
       event = {location: {
         city: '',
         state: ''
-      }}
+      }},
+      draft = false,
     } = this.props
 
     //todo: typography should be passed as props
@@ -126,25 +132,21 @@ class Event extends Component {
       verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       eventColor = 'tomato'
-      // locationComponent = <Location location={event.location} size={Size.S} />
     } else if (cardSize === Size.M) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'mediumseagreen'
-      locationComponent = <Location location={event.location} size={Size.M} />
     } else if (cardSize === Size.L) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
       eventColor = 'darkorchid'
-      locationComponent = <Location location={event.location} size={Size.L}/>
     } else if (cardSize === Size.XL) {
       paddingTop = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
       eventColor = 'deepskyblue'
-      locationComponent = <Location location={event.location} size={Size.XL} showState/>
     }
 
     const grid  = Grid.init(containerWidth)
@@ -152,15 +154,9 @@ class Event extends Component {
     const cardWidthPx = Math.floor(grid.getColumnContentWidth(width)) - 2
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
+    eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
 
-    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][rnd(0, 4)]
-    // eventColor = ['orange', 'tomato', 'mediumseagreen', ' darkorchid', 'deepskyblue'][width]
-
-    if (discipline === Disciplines.MTB) {
-      eventColor = Colors.brownMudDimmed
-    }
-
-    const {debug = false} = this.props
+    const { debug = false } = this.props
     let debugComponent = null
 
     if (debug) {
@@ -176,11 +172,35 @@ class Event extends Component {
 
     const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
 
-    let opacity = 1
+    let eventGroupComponent = null
 
-    if (event.status === Statuses.Cancelled || event.status === Statuses.Moved) {
-      eventColor = Colors.grey400
+    if (event.group) {
+      eventGroupComponent = (<span style={{
+        position: 'absolute',
+        fontFamily: 'museo-sans-condensed',
+        fontWeight: '500',
+        textTransform: 'uppercase',
+        fontSize: Typography.pxToRem(11) + 'rem',
+        top: '-1rem',
+        left: '1rem',
+        whiteSpace: 'nowrap',
+        color: Colors.grey500,
+      }}>G {event.group} </span>)
     }
+
+    let promoterComp = null
+
+    if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
+      locationComponent = <Location location={event.location} size={cardSize} />
+    } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
+      promoterComp = (
+        <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
+          {event.promoter}
+        </IconLabel>
+      )
+    }
+
+    let opacity = 1
 
     let style = {
       opacity: opacity,
@@ -189,9 +209,10 @@ class Event extends Component {
       width: cardWidth,
       // width: cardWidthPx,
       height: cardHeightRem + 'rem',
+      // height: '100%',
       //minHeight: cardHeightRem + 'rem',
       //maxHeight: cardHeightRem * 2 + 'rem',
-      //height: '100%',
+
       paddingTop: paddingTop || verticalPadding,
       paddingBottom: paddingBottom || verticalPadding,
       paddingLeft: horizontalPadding,
@@ -202,25 +223,54 @@ class Event extends Component {
     return (
       <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
         {debugComponent}
-        <EventName size={cardSize} height={cardHeightRem} name={name}
+
+        <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
+        {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {eventGroupComponent}
         {locationComponent}
+        {promoterComp}
       </div>
     )
   }
 }
 
 Event.propTypes = {
-  name: PropTypes.string,
-  discipline: PropTypes.oneOf([Disciplines.MTB, Disciplines.Road]),
+  //TODO bc: id, name and discipline are covered under "event type"
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   //location: PropTypes.any,
   //width in coluns card is going to take
-  width:  PropTypes.oneOf([1, 2, 3, 4]),
+  width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
-  event: PropTypes.instanceOf(EventType)
+  // event: PropTypes.instanceOf(EventType),
+  //TODO bc: probably move props to upper level or move event-related props to down level
+  event: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    date: PropTypes.object.isRequired,
+    datePlain: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      state: PropTypes.string,
+      zip: PropTypes.string,
+    }),
+    promoterUrl: PropTypes.string,
+    registrationUrl: PropTypes.string,
+    flyerUrl: PropTypes.string,
+    status: PropTypes.string,
+    notes: PropTypes.string,
+  }),
+  draft: PropTypes.bool,
 }
 
-export default Event
+Event.contextTypes = {
+  locationPathname: React.PropTypes.string
+}
+
+export default withRouter(Event)

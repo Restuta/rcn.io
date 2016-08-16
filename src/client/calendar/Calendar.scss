@@ -31,8 +31,6 @@
   }
 
   .show-more-or-less {
-    display: none;
-
     @include text-3()
     margin-left: 1rem;
     padding-left: 1rem;

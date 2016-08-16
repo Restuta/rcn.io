@@ -129,7 +129,7 @@ export default [
     "date": "September 24 2016",
     "promoterUrl": "http://www.bidwellpromotions.com/",
     "registrationUrl": "http://www.bidwellpromotions.com/registration.html",
-    "flyerUrl": "http://www.bidwellpromotions.com/race-courses.html",
+    "flyerUrl": "",
     "location": {
       "name": "Five Mile Recreation Area, Bidwell Park",
       "streetAddress": "375 Centennial Ave",
@@ -279,7 +279,7 @@ export default [
     "name": "Santa Rosa Cup",
     "date": "November 11 2016",
     "promoterUrl": "http://www.bikemonkey.net/srcup",
-    "registrationUrl": "",
+    "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
     "flyerUrl": "",
     "location": {
       "streetAddress": "",
@@ -294,7 +294,7 @@ export default [
     "name": "Santa Rosa Cup",
     "date": "November 12 2016",
     "promoterUrl": "http://www.bikemonkey.net/srcup",
-    "registrationUrl": "",
+    "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
     "flyerUrl": "",
     "location": {
       "streetAddress": "",
@@ -309,7 +309,7 @@ export default [
     "name": "Santa Rosa Cup",
     "date": "November 13 2016",
     "promoterUrl": "http://www.bikemonkey.net/srcup",
-    "registrationUrl": "",
+    "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
     "flyerUrl": "",
     "location": {
       "streetAddress": "",

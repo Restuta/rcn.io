@@ -1,14 +1,13 @@
 import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import './Location.scss'
-import Icon from 'atoms/Icon.jsx'
 import Sizes from './card-sizes'
-import classnames from 'classnames'
+import IconLabel from './IconLabel.jsx'
 
 export default class Location extends Component {
   render() {
-    const {location, size, showState = false} = this.props
-    let {city, state} = location
+    const { location, size, showState = false } = this.props
+    const { city, state } = location
 
     let addressToShow = showState ? `${city}, ${state}` : city
 
@@ -18,13 +17,8 @@ export default class Location extends Component {
       addressToShow =  showState ? `${city}, ${(state || '?')}` : city
     }
 
-    const className = classnames(`Location size-${size} fix-fout`)
-
     return (
-      <div className={className}>
-        <Icon name="place" className="icon"/>
-        <span className="address">{addressToShow}</span>
-      </div>
+      <IconLabel className="Location" icon="place" size={size}>{addressToShow}</IconLabel>
     )
   }
 }

@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'mixins';
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.Modal.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; //required for proper scrolling of the modal
+
+  // transition: opacity .5s linear;
+
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: $modal-z-index;
+  overflow-x: hidden;
+  overflow-y: auto;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+}
+
+.Modal.content {
+  // overflow: initial;
+  display: block;
+  position: relative;
+  background-color: $body-bg-color;
+  border-radius: pxToRem(3);
+  padding: 4rem;
+  // margin: 5rem auto auto 4rem;
+  width: 100%;
+  // margin: 5rem auto auto 4rem;
+  // width: 100%; //required for IE 11 (at least)
+  max-width: 90rem;
+  // min-height: 85vh;
+  min-height: 96rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  z-index: $modal-z-index + 50;
+  outline: 0;
+
+  // position: absolute;
+  // left: 50%;
+  // margin-left: -40rem;
+  transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
+  flex: 1 0 auto;
+
+  & > .btn-close {
+    position: absolute;
+    right: 0;
+    top: 1rem - pxToRem(3);
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    padding-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    outline: 0;
+    // outline: 1px solid grey;
+    font-weight: 100;
+    cursor: pointer;
+    color: $grey-400;
+    line-height: 1rem;
+    font-size: 4rem;
+    height: 6rem;
+    z-index: 1000; //for better "cursor: pointer;""
+    transition: color 0.2s ease-out;
+
+    &:hover {
+      color: $grey-700;
+    }
+
+    .lbl-esc {
+      @include text-sm-10();
+    }
+  }
+
+  @include box-shadow-lvl-4();
+  @include phone {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -115,7 +115,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Championship",
     "date": "March 13 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -137,7 +137,7 @@ export default [
     "discipline": "MTB",
     "name": "Lake Sonoma XC",
     "date": "March 26 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -148,7 +148,7 @@ export default [
     "discipline": "MTB",
     "name": "SoNoMas",
     "date": "April 02 2016",
-    "promoterUrl": "www.bikemonkey.net",
+    "promoterUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -170,7 +170,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Celebration",
     "date": "April 03 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "promoterUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -589,7 +589,7 @@ export default [
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
     "date": "June 27 2016",
-    "status": "Cancelled",
+    "status": "Canceled",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
       "streetAddress": "2201 Imola Avenue",
@@ -602,7 +602,7 @@ export default [
     "id": "evt-8c71d88afabf4e5541659c89fef27ead",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
-    "status": "Cancelled",
+    "status": "Canceled",
     "date": "June 28 2016",
     "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
@@ -614,7 +614,7 @@ export default [
   },
   {
     "id": "evt-9389ef253c140cc9df32999732ed6827",
-    "status": "Cancelled",
+    "status": "Canceled",
     "discipline": "MTB",
     "name": "Mendocino 100",
     "date": "June 26 2016",
@@ -850,9 +850,11 @@ export default [
     "name": "Great Tahoe Flume Race",
     "date": "September 11 2016",
     "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "registrationUrl": "https://www.bikereg.com/flume-race",
     "location": {
-      "city": "Spooner Lake",
-      "state": "CA"
+      "streetAddress": "Spooner Lake",
+      "city": "Carson City",
+      "state": "NV"
     }
   },
   {
@@ -874,6 +876,7 @@ export default [
     "discipline": "MTB",
     "name": "4 & 8 Hours of Weaverville",
     "date": "September 25 2016",
+    "status": "Canceled",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
@@ -884,6 +887,7 @@ export default [
     "id": "evt-06b76e45748288a750149a2bb036ec6b",
     "discipline": "MTB",
     "name": "World Solo 24hr MTB Champs.",
+    "status": "Canceled",
     "date": "September 25 2016",
     "promoterUrl": "http://www.teambigfoot.net/Wembo15.htm",
     "location": {
@@ -895,6 +899,7 @@ export default [
     "id": "evt-04dd2905dd2d9047719760430335b19b",
     "discipline": "MTB",
     "name": "Lagrange Fall Classic",
+    "status": "Canceled",
     "date": "September 25 2016",
     "promoterUrl": "https://www.facebook.com/teambigfootracing",
     "location": {

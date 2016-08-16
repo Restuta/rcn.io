@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+
+.Button {
+  height: 4rem;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+
+  >.Icon {
+    margin-right: 0.5rem;
+    vertical-align: text-bottom;
+  }
+
+  &.raised-1 {
+     @include box-shadow-lvl-1();
+  }
+
+  &.raised-2 {
+     @include box-shadow-lvl-2();
+  }
+
+  &.raised-3 {
+     @include box-shadow-lvl-3();
+  }
+
+  &:focus,
+  &:active:focus {
+    outline: none;
+  }
+
+  &.primary-hover:hover,
+  &.primary-hover:focus {
+    background-color: lighten($primary-color, 40%);
+    border-color: lighten($primary-color, 15%);
+    color: darken($primary-color, 5%);
+  }
+
+  &.primary-hover:active {
+    background-color: lighten($primary-color, 35%);
+    border-color: lighten($primary-color, 15%);
+    color: darken($primary-color, 5%);
+  }
+
+  &.primary-hover:active:focus {
+    background-color: lighten($primary-color, 30%);
+    border-color: lighten($primary-color, 10%);
+    color: darken($primary-color, 10%);
+  }
+
+  &.disabled,
+  &.disabled:hover {
+    opacity: 0.6;
+    border-color: transparent;
+  }
+
+  &.btn-secondary.disabled,
+  &.btn-secondary.disabled:hover {
+    color: $body-color;
+    background-color: darken($body-bg-color, 15%);
+  }
+
+  &.btn-primary.disabled
+  &.btn-primary.disabled:hover {
+    color: darken($body-bg-color, 15%);
+    background-color: darken($primary-color, 15%);
+  }
+
+  &-sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: pxToRem(12);
+    height: 4rem;
+  }
+
+  &-md {
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: pxToRem(14);
+    height: 5rem;
+  }
+
+  &-lg {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: pxToRem(16);
+    height: 7rem;
+  }
+}

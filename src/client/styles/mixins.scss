@@ -1,5 +1,18 @@
 @import 'variables';
+@import 'bs4-fixes';
 
+
+@mixin phone {
+  @media (max-width: #{map-get($grid-breakpoints, "sm")}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{map-get($grid-breakpoints, "md")}) {
+    @content;
+  }
+}
 
 
 @mixin offset-to-baseline($offset) {
@@ -46,6 +59,13 @@
 @mixin text-sm-12($offset: 4) {
   @include offset-to-baseline($offset);
   font-size: pxToRem(12);
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+@mixin text-sm-14($offset: 3) {
+  @include offset-to-baseline($offset);
+  font-size: pxToRem(14);
   line-height: 2rem;
   font-weight: 500;
 }

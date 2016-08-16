@@ -1,21 +1,22 @@
 import React from 'react'
 import Component from 'react-pure-render/component'
-import 'styles/bootstrap.scss'
-import 'app.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
+import Button from 'atoms/Button.jsx'
 import Icon from 'atoms/Icon.jsx'
 import Event from 'calendar/events/Event.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
 import RoundBadge from 'calendar/badges/RoundBadge.jsx'
-import SquareBadge from 'calendar/badges/SquareBadge.jsx'
 import Colors from 'styles/colors'
-import WeekExample from 'temp/WeekExample.jsx'
 import Grid from 'styles/grid'
 import Typography from 'styles/typography'
+import Spinner from 'atoms/Spinner.jsx'
+import UsacLogo from 'atoms/UsacLogo.jsx'
+
+import { Link } from 'react-router'
 
 //TODO: remove these components
-const Spacer = width => <span style={{width: `${width}px`}}></span>
+const Spacer = ({ width }) => <span style={{width: `${width}px`}}>&nbsp;</span>
 const S5 = () => <Spacer width={5}/>
 const S10 = () => <Spacer width={10}/>
 
@@ -30,10 +31,6 @@ const ContainerHeader = ({label, width}) => {
 
 
 export default class Dev extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const sizeToPx = size => (Typography.BASE_FONT_SIZE_PX * Typography.scaleUp(size)) + 'px'
     const getFontSize = size => Typography.scaleUp(size) + 'rem'
@@ -48,7 +45,8 @@ export default class Dev extends Component {
     `
 
     const shortEventName = 'Land Park Criterium'
-    const longEventName = 'Chico Stage Race pb Sierra Nevada Brewing Co - Stage 4: Steve Harrison Memorial Criterium'
+    // const longEventName = 'Chico Stage Race pb Sierra Nevada Brewing Co - Stage 4: Steve Harrison Memorial Criterium'
+    const longEventName = 'NCNCA Masters Criterium Championships - Red Kite Omnium Event #15 - Red Kite Omnium Championship Weekend: Day 2'
 
     let containerWidth = null
 
@@ -60,6 +58,22 @@ export default class Dev extends Component {
 
     return (
       <div>
+        <div>
+          <Link
+            key={8}
+            to={{
+              pathname: '/events/evt-8',
+              state: { modal: true, returnUrl: this.context.locationPathname }
+            }}>Open Modal</Link>
+        </div>
+        <div>
+          <Link
+            key={9}
+            to={{
+              pathname: '/mtb',
+              state: { modal: true, returnUrl: this.context.locationPathname }
+            }}>Open Dev</Link>
+        </div>
         <h1>{this.props.foo}</h1>
         <h1>H1 {sizeToPx(7)} {eventName} <Icon name="directions_bike"/> </h1>
         <h2>H2 {sizeToPx(5)} {eventName}</h2>
@@ -79,6 +93,51 @@ export default class Dev extends Component {
         <p className={'text-' + 5} style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
         <p className={'text-' + 6} style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
         <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
+        <Row className="margin-top">
+          <Col>
+            <h2>BUTTONS</h2>
+            <Button icon="check_circle" size="sm" type="primary">SM PRIMARY</Button><S5 />
+            <Button icon="cancel" size="sm" type="secondary">SM SECONDARY</Button>
+            <br /><br />
+            <Button icon="sentiment_neutral" size="md" type="primary">MD PRIMARY</Button><S5 />
+            <Button icon="more" size="md" type="secondary">MD SECONDARY</Button>
+            <br /><br />
+            <Button icon="directions_bike" size="lg" type="primary">LG PRIMARY</Button><S5 />
+            <Button icon="star" size="lg" type="secondary">LG SECONDARY</Button>
+            <br /><br />
+
+            <Button size="sm" type="primary">SM PRIMARY</Button><S5 />
+            <Button size="sm" type="secondary">SM SECONDARY</Button>
+            <br /><br />
+            <Button size="md" type="primary">MD PRIMARY</Button><S5 />
+            <Button size="md" type="secondary">MD SECONDARY</Button>
+            <br /><br />
+            <Button size="lg" type="primary">LG PRIMARY</Button><S5 />
+            <Button size="lg" type="secondary">LG SECONDARY</Button>
+            <br /><br />
+
+            <br /><br />
+            <Button size="sm">REGISTER</Button>
+            <br /><br />
+            <Button size="md">REGISTER</Button>
+            <br /><br />
+            <Button size="lg">REGISTER</Button>
+            <br /><br />
+            <Button size="md" type="secondary">CANCEL</Button><S5 />
+            <Button size="md" type="primary">OK</Button>
+            <br /><br />
+            <Button size="md" type="secondary" disabled>CANCEL</Button><S5 />
+            <Button size="md" type="primary" disabled>OK</Button><S5 />
+            <br /><br />
+            <Button size="md" type="secondary" primaryHover >PRIMARY HOVER</Button><S5 />
+            <br /><br />
+            <Button size="md" icon="autorenew" type="secondary">CANCEL</Button><S5 />
+            <Button size="md" icon="event" type="primary">OK</Button><S5 />
+            <br /><br />
+            <Button size="md" icon="cancel" type="secondary" disabled>CANCEL</Button><S5 />
+            <Button size="md" icon="bug_report" type="primary" disabled>OK</Button><S5 />
+          </Col>
+        </Row>
         <Row className="margin-top">
           <Col sm={2}><h5>Round Badges: </h5></Col>
           <Col sm={12} className="display-flex">
@@ -111,28 +170,22 @@ export default class Dev extends Component {
         <Row>
           <Col sm={2}><h5>Square Badges: </h5></Col>
           <Col sm={12} className="display-flex">
-            <SquareBadge>120mi</SquareBadge><S5/>
-            <SquareBadge>8</SquareBadge><S5/>
-            {/*<SquareBadge><Icon name="trophy"/></SquareBadge><S5/>*/}
-            <SquareBadge><Icon name="wb_sunny"/></SquareBadge><S5/>
-            <SquareBadge><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={2}><h5>Square Badges (Inverted): </h5></Col>
-          <Col sm={12} className="display-flex">
-            <SquareBadge className="Inverted">120mi</SquareBadge><S5/>
-            <SquareBadge className="Inverted">8</SquareBadge><S5/>
-            {/*<SquareBadge className="Inverted"><Icon name="trophy"/></SquareBadge><S5/>*/}
-            <SquareBadge className="Inverted"><Icon name="wb_sunny"/></SquareBadge><S5/>
-            <SquareBadge className="Inverted"><Icon name="place"/><S5/>Monterey, CA</SquareBadge>
+            <Badge square heightRem={2}>CANCELED</Badge><S5/>
+            <Badge square heightRem={3}>CANCELED</Badge><S5/>
+            <Badge square heightRem={4}>CANCELED</Badge><S5/>
+            <Badge square heightRem={5}>CANCELED</Badge><S5/>
+            <Badge square heightRem={6}>CANCELED</Badge><S5/>
+            <Badge square heightRem={3} borderColor="#ffccbb" bgColor="white" color="black">CANCELED</Badge><S5/>
+            <Badge square>120mi</Badge><S5/>
+            <Badge square>8</Badge><S5/>
+            <Badge square><Icon name="wb_sunny" size={1.5}/></Badge><S5/>
           </Col>
         </Row>
         <Row>
           <Col sm={2}><h5>Elevation:</h5></Col>
           <Col sm={12} className="display-flex">
-            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
-            <Icon name="arrow_upward" color={Colors.grey500}/>1200ft<S10/>
+            <Icon name="arrow_upward" size={2} color={Colors.grey500}/>1200ft<S10/>
+            <Icon name="arrow_upward" size={2} color={Colors.grey500}/>1200ft<S10/>
             {/*<Badge><Icon name="arrow-up"/>1200ft<S10/></Badge><S5/>*/}
             {/*<Badge><Icon name="long-arrow-up" />1200ft<S10/></Badge>*/}
           </Col>
@@ -169,17 +222,51 @@ export default class Dev extends Component {
         {/* CARDS CARDS CARDS*/}
 
         {/* all cards per-breakdown in columns*/}
+        <h2>SPINNERS</h2>
+        <Row>
+          <Col sm={3}>
+            <Spinner size={3} color={"gold"}/>
+            <Spinner size={2} color={Colors.red500}/>
+            <Spinner size={1} color={Colors.primary}/>
+            <Spinner size={2} color={Colors.blue500}/>
+            <Spinner size={3} color={'#00BF10'}/>
+            <Button size="md" type="primary">
+              <Spinner size={1} inline color={Colors.bodyBg}/>
+            </Button><S5 />
+            <Button size="md">
+              Loading <Spinner size={1} inline />
+            </Button>
+
+          </Col>
+        </Row>
+
+        <h2>LOGOS</h2>
+        <div>
+          <UsacLogo size={1}/>
+          <UsacLogo size={2}/>
+          <UsacLogo size={3}/>
+          <UsacLogo size={4}/>
+        </div>
+
+        <h2>ICONS</h2>
+        <h5>Simple icon: <Icon name="speaker_notes" className="notes-icon" color={Colors.grey600}/></h5>
+        <Icon name="portrait" className="notes-icon" color={Colors.grey600}/>
+        <Icon name="portrait" size={3} className="notes-icon" color={Colors.grey600}/>
+        <Icon name="portrait" size={4} className="notes-icon" color={Colors.grey600}/>
+
+
         <h2>CARDS PER CONTAINER:</h2>
 
         <ContainerHeader label="XXL" width={Grid.ContainerWidth.XXL}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
-            <Event debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+            <Event id="test" id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+              name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+            <Event id="test" debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
+            <Event id="test" debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
           </Col>
         </Row>
@@ -187,12 +274,12 @@ export default class Dev extends Component {
         <ContainerHeader label="XL" width={Grid.ContainerWidth.XL}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
-            <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event id="test" debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event id="test" debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
+            <Event id="test" debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
           </Col>
         </Row>
@@ -200,13 +287,13 @@ export default class Dev extends Component {
         <ContainerHeader label="LG (iPad landscape, small laptops)" width={Grid.ContainerWidth.LG}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event id="test" debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event id="test" debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event id="test" debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
+            <Event id="test" debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
@@ -214,12 +301,12 @@ export default class Dev extends Component {
         <ContainerHeader label="MD (iPad portrait)" width={Grid.ContainerWidth.MD}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
-            <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event id="test" debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="RED KITE OMNIUM EVENT #1 - THE BUMP CIRCUIT RACE (WINTER)"/>
-            <Event debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            <Event id="test" debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
@@ -227,157 +314,151 @@ export default class Dev extends Component {
         <ContainerHeader label="SM (iPhone 6+ landscape)" width={Grid.ContainerWidth.SM}/>
         <Row className="margin-top">
           <Col sm={14} className="debug-flex-cards">
-            <Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
-            <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event id="test" debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
-            <Event debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            <Event id="test" debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
               name="John C. Schlesinger Memorial Circuit Race and Team Time Trial"/>
           </Col>
         </Row>
 
         {/* all cards per-breakdown in rows*/}
         <Row className="margin-top">
-          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            name="Dunnigan Hills"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/></Col>
         </Row>
         <Row className="margin-top">
           <Col sm={1}>
-            <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
+            <Event id="test" debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
           </Col>
           <Col sm={1}>
-            <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
+            <Event id="test" debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
           </Col>
           <Col sm={1}>
-            <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
+            <Event id="test" debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
+            <Event id="test" debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
           </Col>
           <Col sm={4}>
-            <Event debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/>
+            <Event id="test" debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={1}>
-            <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
+            <Event id="test" debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
+            <Event id="test" debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
+            <Event id="test" debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
+            <Event id="test" debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
           </Col>
           <Col sm={5}>
-            <Event debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/>
+            <Event id="test" debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={shortEventName}/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={2}>
-            <Event debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
+            <Event id="test" debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
+            <Event id="test" debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
+            <Event id="test" debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={shortEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
+            <Event id="test" debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={shortEventName}/>
           </Col>
           {/*<Col sm={2}>
-            <Event debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
           </Col>*/}
         </Row>
 
 
         {/* all cards per-breakdown in rows, long name*/}
         <Row className="margin-top">
-          <Col sm={1}><Event debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name="Land Park Criterium"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name="Dunnigan Hills Road Race"/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/></Col>
-          <Col sm={1}><Event debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={2} containerWidth={Grid.ContainerWidth.SM}
+            name="Land Park Criterium"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={3} containerWidth={Grid.ContainerWidth.MD}
+            name="Dunnigan Hills Road Race"/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/></Col>
+          <Col sm={1}><Event id="test" debug width={1} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/></Col>
         </Row>
         <Row className="margin-top">
           <Col sm={1}>
-            <Event debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
+            <Event id="test" debug width={2} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
           </Col>
           <Col sm={1}>
-            <Event debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
+            <Event id="test" debug width={2} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
           </Col>
           <Col sm={1}>
-            <Event debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
+            <Event id="test" debug width={2} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
+            <Event id="test" debug width={2} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
           </Col>
           <Col sm={4}>
-            <Event debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/>
+            <Event id="test" debug width={2} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={1}>
-            <Event debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
+            <Event id="test" debug width={3} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
+            <Event id="test" debug width={3} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
+            <Event id="test" debug width={3} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
+            <Event id="test" debug width={3} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
           </Col>
           <Col sm={5}>
-            <Event debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/>
+            <Event id="test" debug width={3} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name={longEventName}/>
           </Col>
         </Row>
 
         <Row className="margin-top">
           <Col sm={2}>
-            <Event debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
+            <Event id="test" debug width={4} baseHeight={2} containerWidth={Grid.ContainerWidth.SM} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
+            <Event id="test" debug width={4} baseHeight={3} containerWidth={Grid.ContainerWidth.MD} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
+            <Event id="test" debug width={4} baseHeight={4} containerWidth={Grid.ContainerWidth.LG} name={longEventName}/>
           </Col>
           <Col sm={2}>
-            <Event debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
+            <Event id="test" debug width={4} baseHeight={5} containerWidth={Grid.ContainerWidth.XL} name={longEventName}/>
           </Col>
           {/*<Col sm={2}>
-            <Event debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
+            <Event id="test" debug width={4} baseHeight={6} containerWidth={Grid.ContainerWidth.XXL} name="Dunnigan Hills Road Race"/>
           </Col>*/}
         </Row>
 
         <h1 className="oswald">Road Races in CA, 100mi range</h1>
-
-        <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
-
-        <WeekExample days={[1, 1, 1, 1, 2, 4, 4]}/>
-        <WeekExample days={[1, 1, 1, 1, 3, 3, 4]}/>
-        <WeekExample days={[1, 1, 1, 2, 2, 3, 4]}/>
-        <WeekExample days={[1, 1, 2, 2, 2, 2, 4]}/>
-
-        <WeekExample days={[1, 1, 1, 2, 3, 3, 3]}/>
-        <WeekExample days={[1, 1, 2, 2, 2, 3, 3]}/>
-        <WeekExample days={[1, 2, 2, 2, 2, 2, 3]}/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]} allSameSize/>
-        <WeekExample days={[2, 2, 2, 2, 2, 2, 2]}/>
-
       </div>
     )
   }
+}
+
+Dev.contextTypes = {
+  locationPathname: React.PropTypes.string
 }

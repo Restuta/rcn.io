@@ -3,18 +3,11 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 //const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
-const nodeModules = require('./webpack/utils').nodeModules
+// const nodeModules = require('./webpack/utils').nodeModules
 const nodeExternals = require('webpack-node-externals')
 
-//TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
-//between dev and prod configs without duplicaiton
-
-const pathToReact = nodeModules('react/dist/react.min.js')
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentJs = nodeModules('moment/min/moment.min.js')
-const pathToMomentTimeZone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
-
+const getConfig = require('./webpack/common-config').getConfig
+const commonConfig = getConfig('prod')
 
 module.exports = {
   //devtool: 'source-map',
@@ -26,7 +19,7 @@ module.exports = {
 
   externals: [nodeExternals()],
 
-  entry: { app: path.join(consts.SRC_DIR, 'client/getRoutes.js')},
+  entry: { app: path.join(consts.SRC_DIR, 'client/routes.js')},
   output: {
     path: path.join(__dirname, 'dist-server'),
     filename: '[name].server.bundle.js',
@@ -50,8 +43,15 @@ module.exports = {
     new ExtractTextPlugin('app.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
-        screw_ie8: true,  // eslint-disable-line camelcase
-        warnings: false,
+        screw_ie8: true, // eslint-disable-line camelcase
+        warnings: false
+      },
+      mangle: {
+        screw_ie8: true // eslint-disable-line camelcase
+      },
+      output: {
+        comments: false,
+        screw_ie8: true // eslint-disable-line camelcase
       }
     }),
     //used to ignore certain modules that we don't need on the server, so we don't waste time building them
@@ -60,37 +60,25 @@ module.exports = {
   resolve: {
     root: [
       //path.resolve(__dirname, 'src/'),
-      path.resolve(__dirname, 'src/client')
+      path.resolve(__dirname, 'src/client'),
+      path.resolve(__dirname, 'src/')
     ],
-    alias: {
-      'react': pathToReact,
-      'react-dom': pathToReactDOM,
-      'react-router': pathToReactRouter,
-      'moment': pathToMomentJs,
-      'moment-timezone': pathToMomentTimeZone
-    }
+    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: [
-      pathToReact,
-      pathToReactDOM,
-      pathToReactRouter,
-      pathToMomentJs,
-      //pathToMomentTimeZone //uses "require()", so can't be ignored
-    ],
+    noParse: commonConfig.module.noParse,
     loaders: [{
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
-      include: [
-        path.join(consts.SRC_DIR, 'client'),
-      ],
+      include: [path.join(consts.SRC_DIR)],
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,
+        compact: true,
         plugins: [
           'transform-react-constant-elements', //compile-time optimizations
           'transform-react-inline-elements' //compile-time optimizations
@@ -102,11 +90,7 @@ module.exports = {
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
     }, {
-      test: /\.svg$/,
-      loader: 'svg-inline',
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico)$/,
+      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR

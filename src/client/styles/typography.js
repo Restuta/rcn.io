@@ -3,7 +3,7 @@
 const BASE_FONT_SIZE_PX = 8 //TODO: get it in runtime from the browser
 //for 10px: 10, 13, 16, 20, 24, 31, 38
 //for 9px:   9, 11, 14, 18, 23, 29, 36
-//for 8px:   8, 10, 13, 16, 20, 24, 31 (1.25)
+//for 8px:   8, 10, 13, 16, 20, 24, 31, 38, 48, 57 (1.25)
 //for 8px:   8, 11, 14, 19, 25, 34, 45 (1.333)
 
 
@@ -40,9 +40,9 @@ const scale = (number, scaleOperation) => {
   return toRems(size)
 }
 
-export const pxToRem = function(pixels) {
-  return (pixels / BASE_FONT_SIZE_PX)
-}
+export const pxToRem = pixels => (pixels / BASE_FONT_SIZE_PX)
+export const scaleUp = number => scale(number, scaleUpOperation)
+
 
 export default Object.freeze({
   BASE_FONT_SIZE_PX: BASE_FONT_SIZE_PX,
@@ -59,8 +59,6 @@ export default Object.freeze({
   },
   /* gets next value of the font size on modular scale in rems
     "number" means order on modular scale, starts from 1 */
-  scaleUp(number) {
-    return scale(number, scaleUpOperation)
-  },
-  pxToRem: pxToRem
+  scaleUp,
+  pxToRem,
 })

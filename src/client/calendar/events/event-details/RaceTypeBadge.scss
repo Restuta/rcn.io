@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixins';
+
+.RaceTypeBadge {
+  display: flex;
+  justify-content:: center;
+  align-items: center;
+  text-align: center;
+  font-size: scaleUp(2);
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+  min-width: 16rem;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: -1px; //to cover weird bug in FireFox, there is a tiny gap between badges there
+
+  @include phone {
+    min-width: inherit;
+  }
+}

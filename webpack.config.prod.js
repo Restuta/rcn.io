@@ -5,18 +5,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
-//use when you need to debug react
-// const pathToReact = nodeModules('react/dist/react.js')
-// const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
+const getConfig = require('./webpack/common-config').getConfig
+const commonConfig = getConfig('prod')
 
-const pathToReact = nodeModules('react/dist/react.min.js')
+
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentJs = nodeModules('moment/min/moment.min.js')
-const pathToMomentTimeZone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
-
-//TODO: extract common pieces of config to /webpack/common-config.js so we can reuse them
-//between dev and prod configs without duplicaiton
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
 module.exports = {
   //devtool: 'source-map',
@@ -29,9 +24,7 @@ module.exports = {
     app: [
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'moment', 'moment-timezone',
-      'classnames', 'react-pure-render', 'svg-inline-react'
-    ]
+    vendor: commonConfig.entry.vendor
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -59,9 +52,15 @@ module.exports = {
     new ExtractTextPlugin('app.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
-        screw_ie8: true,  // eslint-disable-line camelcase
-        warnings: false,
-        //dead_code: true
+        screw_ie8: true, // eslint-disable-line camelcase
+        warnings: false
+      },
+      mangle: {
+        screw_ie8: true // eslint-disable-line camelcase
+      },
+      output: {
+        comments: false,
+        screw_ie8: true // eslint-disable-line camelcase
       }
     }),
     new HtmlWebpackPlugin({
@@ -92,28 +91,17 @@ module.exports = {
   resolve: {
     root: [
       //path.resolve(__dirname, 'src/'),
-      path.resolve(__dirname, 'src/client')
+      path.resolve(__dirname, 'src/client'),
+      path.resolve(__dirname, 'src/')
     ],
     //tells webpack to use static file when import React from 'react' is used
-    alias: {
-      'react': pathToReact,
-      'react-dom': pathToReactDOM,
-      'react-router': pathToReactRouter,
-      'moment': pathToMomentJs,
-      'moment-timezone': pathToMomentTimeZone
-    }
+    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: [
-      pathToReact,
-      pathToReactDOM,
-      pathToReactRouter,
-      pathToMomentJs,
-      //pathToMomentTimeZone //uses "require()", so can't be ignored
-    ],
+    noParse: commonConfig.module.noParse,
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'
@@ -121,13 +109,17 @@ module.exports = {
       test: pathToReactRouter,
       loader: 'imports'
     }, {
+      test: pathToMomentTimezone,
+      loader: 'imports'
+    }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
+      include: path.join(consts.SRC_DIR),
       query: {
         presets: ['react', 'es2015', 'stage-2'],
         cacheDirectory: false,
+        compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
         plugins: [
           'transform-react-constant-elements', //compile-time optimizations
           'transform-react-inline-elements' //compile-time optimizations
@@ -145,10 +137,7 @@ module.exports = {
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
     }, {
-      test: /\.svg$/,
-      loader: 'svg-inline'
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico)$/,
+      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR

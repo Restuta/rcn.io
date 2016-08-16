@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'mixins';
+
+
+.EventDetails-container {
+  position: relative;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+
+  @include phone {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.EventDetails {
+  color: $grey-600;
+
+  >.content {
+    // min-width: 90rem;
+    .date {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      top: pxToRem(-5);
+      line-height: 2rem;
+      color: $grey-600;
+      > .relative {
+        @include text-2(0);
+        line-height: 1;
+        font-style: italic;
+      }
+    }
+
+    .name {
+      margin-top: 0;
+      margin-bottom: 0;
+      top: pxToRem(-3);
+      line-height: 3rem;
+      letter-spacing: 0;
+    }
+
+    .address-link {
+      margin-bottom: 1rem;
+      display: block;
+      position: relative;
+      top: pxToRem(3);
+      font-size: scaleUp(2.5);
+    }
+
+    .reg-results-button-container {
+      margin-bottom: 2rem;
+    }
+
+    .register-section-container {
+      overflow: hidden;
+
+      @include phone {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    .events-website-link {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include text-2();
+      margin-bottom: 2rem;
+    }
+
+    .header {
+      color: $grey-500;
+      text-transform: uppercase;
+      font-weight: 500;
+      @include text-2();
+      margin-top: 0;
+    }
+
+    .flyer {
+      height: 100rem;
+      background: rgba($blue-100, 0.5);
+    }
+
+    .badges {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 9.5rem;
+
+      @include phone {
+        padding-right: 0;
+        margin-left: pxToRem(37);
+        justify-content: flex-start;
+      }
+    }
+    //DEBUG STYLES
+
+    .spacer {
+      margin-top: 3rem - pxToRem(1);
+      margin-bottom: 2rem;
+    }
+
+    .spacer.no-margin-top {
+      margin-top: - pxToRem(1);
+    }
+
+    >.content {
+      outline: 1px solid silver;
+    }
+
+    .Icon {
+      margin-right: 0.5rem;
+    }
+
+    .status-badge {
+      // margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      @include phone {
+        margin-top: 1rem;
+      }
+    }
+
+    // &:before {
+    //   content: '';
+    //   // background-image: url(event-details-mock.png);
+    //   background-size: 100% 100%;
+    //   opacity: 0.2;
+    //   width: 100%;
+    //   max-width: 90rem;
+    //   min-height: 96rem;
+    //   display: block;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    // }
+
+
+    .col {
+      // outline:1px solid pink;
+    }
+  }
+}
+
+.EventDetails.canceled {
+  > .content .date {
+    text-decoration: line-through;
+  }
+
+  > .content .name {
+    text-decoration: line-through;
+  }
+}
+
+.EventDetails.moved {
+  > .content .date {
+    text-decoration: line-through;
+  }
+}

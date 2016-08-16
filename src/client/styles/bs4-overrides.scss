@@ -1,4 +1,5 @@
 @import 'variables';
+
 $enable-flex: true;
 $grid-columns: 14;
 $grid-gutter-width: 2rem; //16px
@@ -7,3 +8,5 @@ $font-size-lg: $font-size-4;
 $font-size-sm: $font-size-2;
 $font-size-xs: $font-size-1;
 $line-height: 2;
+
+$brand-primary: $primary-color;

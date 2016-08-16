@@ -4,15 +4,37 @@ import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import './Week.scss'
 import classnames from 'classnames'
+// import { Months } from './utils/date-utils.js'
 
 export default class Week extends Component {
   render() {
-    const {lastOne} = this.props
-    const classNames = classnames('Week', (lastOne && 'last-one'))
+    const {
+      lastOne,
+      containsFirstDayOfMonth,
+      // month,
+    } = this.props
+
+    const classNames = classnames('Week', {
+      ['last-one']: lastOne,
+      ['contains-first-day-of-month'] : containsFirstDayOfMonth
+    })
+
+    // const monthLabelComp = (
+    //   <h3 style={{
+    //     margin: 0,
+    //     textTransform: 'uppercase',
+    //     position: 'absolute',
+    //     top: '0',
+    //     left: '2rem',
+    //   }}>
+    //     {Months[month - 1].full}
+    //   </h3>
+    // )
 
     return (
       <Row className={classNames}>
         {this.props.children}
+        {/* {containsFirstDayOfMonth && monthLabelComp} */}
       </Row>
     )
   }
@@ -20,7 +42,9 @@ export default class Week extends Component {
 
 Week.propTypes = {
   lastOne: PropTypes.bool,
-  children: function(props, propName, componentName) {
+  containsFirstDayOfMonth: PropTypes.bool,
+  month: PropTypes.number,
+  children: (props, propName, componentName) => {
 
     const children = props[propName]
 

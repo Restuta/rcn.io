@@ -46,6 +46,7 @@
       }}();
     </script>
 
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
@@ -82,7 +83,6 @@
     </div>
     <!-- <script src="vendor.bundle.js"></script>
     <script src="app.bundle.js"></script> -->
-
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>

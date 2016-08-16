@@ -3,14 +3,15 @@ import Component from 'react-pure-render/component'
 import './Day.scss'
 import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
-import {zeroPad} from 'utils/formatting'
-import {Months} from './utils/date-utils.js'
+import { zeroPad } from 'utils/formatting'
+import { Months } from './utils/date-utils.js'
 import Grid from 'styles/grid'
 import Colors from 'styles/colors'
 // import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 
 export default class Day extends Component {
   render() {
+    // console.info('Day render')
     const {
       size,
       day,
@@ -20,9 +21,9 @@ export default class Day extends Component {
       itIsToday,
       itIsFirstDayOfMonth,
       itIsLastDayOfMonth,
-      itIsCurrentMonthsDay,
+      isItAlternateMonthsDay,
       dayOfWeek,
-      weekNumber,
+      // weekNumber,
       containerWidth,
     } = this.props
 
@@ -30,33 +31,35 @@ export default class Day extends Component {
     const itIsSpecialDayOfMonth = (itIsLastDayOfMonth || itIsFirstDayOfMonth)
     const itsSuperNarrowView = (containerWidth <= Grid.ContainerWidth.SM && size === 1)
     const itIsSunday = dayOfWeek === 7
-    const itIsEvenWeek = (weekNumber % 2 === 0)
 
-    const classNames = classnames('Day',
-      (itIsToday && 'Day-today'),
-      ((itIsToday && itsSuperNarrowView) && 'today-narrow'),
-      (itIsCurrentMonthsDay && 'Day-current-month'),
-      (itIsEmpty && 'Day-empty'),
-      (itIsSpecialDayOfMonth && 'Day-special')
-    )
+    const classNames = classnames('Day', {
+      ['Day-today']: itIsToday,
+      ['today-narrow']: (itIsToday && itsSuperNarrowView),
+      ['Day-alternate-month']: isItAlternateMonthsDay,
+      ['Day-empty']: itIsEmpty,
+      ['Day-special']: itIsSpecialDayOfMonth,
+      ['Day-first-of-month']: itIsFirstDayOfMonth,
+      ['Day-last-of-month']: itIsLastDayOfMonth
+    })
 
     const formattedDate = zeroPad(day, 1)
-    const style = {}
 
     let specialDayOfMonthComponent = null
 
     //Sunday is not likely to get minimized ever and we showing every even week what is
     //currentm month.
-    if (itIsSpecialDayOfMonth || (itIsSunday && itIsEvenWeek)) {
-      const specialDayClassNames = classnames('day-of-month-label',
-        (itIsLastDayOfMonth && 'last'),
-        (itIsFirstDayOfMonth && 'first')
-      )
+    if (itIsSpecialDayOfMonth || itIsSunday) {
+      const specialDayClassNames = classnames('day-of-month-label')
+      let monthLblStyle = { color: ''}
 
-      let monthLblStyle = { color: 'black' }
-
-      if (itIsSunday) {
-        monthLblStyle.color = Colors.grey400
+      if (itIsFirstDayOfMonth) {
+        monthLblStyle.color = 'black'
+      } else if (itIsSunday || itIsLastDayOfMonth) {
+        if (isItAlternateMonthsDay) {
+          monthLblStyle.color = Colors.grey600
+        } else {
+          monthLblStyle.color = Colors.grey500
+        }
       }
 
       specialDayOfMonthComponent = (
@@ -86,7 +89,7 @@ export default class Day extends Component {
     }
 
     return (
-      <Col xs={size} className={classNames} style={style}>
+      <Col xs={size} className={classNames}>
         <div className="Day-date fix-fout">
           {dayHeaderComponent}
         </div>
@@ -105,7 +108,7 @@ Day.propTypes = {
   itIsToday: PropTypes.bool,
   itIsFirstDayOfMonth: PropTypes.bool,
   itIsLastDayOfMonth: PropTypes.bool,
-  itIsCurrentMonthsDay: PropTypes.bool,
+  isItAlternateMonthsDay: PropTypes.bool,
   dayOfWeek: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7]),
   weekNumber: PropTypes.number.isRequired,
   containerWidth: PropTypes.number,

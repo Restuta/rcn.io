@@ -1,31 +1,14 @@
 import React from 'react'
-import classNames from 'classnames'
 import Checkbox from 'atoms/Checkbox.jsx'
 import BaselineGrid from './BaselineGrid.jsx'
+import { connect } from 'react-redux'
+import { toggleBaseline, toggle3x3Grid, toggleContainerEdges } from 'shared/actions/actions.js'
+import './DebugGrid.scss'
 
-export default class DebugGrid extends React.Component {
+
+class DebugGrid extends React.Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-      shouldShow3x3Grid: (localStorage.getItem('shouldShow3x3Grid') === 'true'),
-      shouldShowBaseline: (localStorage.getItem('shouldShowBaseline') === 'true'),
-      shouldShowContainerEdges: (localStorage.getItem('shouldShowContainerEdges') === 'true'),
-    }
-  }
-
-  stateToClasses(state) {
-    let classes = ''
-
-    if (state.shouldShowContainerEdges) {
-      classes = classNames(classes, 'debug-container')
-    }
-
-    return classes
-  }
-
-  componentWillMount() {
-    this.props.setDebugClasses(this.stateToClasses(this.state))
   }
 
   render() {
@@ -49,46 +32,29 @@ export default class DebugGrid extends React.Component {
       fontSize: '1.25rem'
     }
 
-    const on3x3GridCheckboxChange = () => {
-      this.setState({ shouldShow3x3Grid: !this.state.shouldShow3x3Grid })
-      localStorage.setItem('shouldShow3x3Grid', !this.state.shouldShow3x3Grid)
-    }
-
-    const onBaselineCheckboxChange = () => {
-      this.setState({ shouldShowBaseline: !this.state.shouldShowBaseline })
-      localStorage.setItem('shouldShowBaseline', !this.state.shouldShowBaseline)
-    }
-
-    const onContainerCheckboxChange = () => {
-      this.setState({ shouldShowContainerEdges: !this.state.shouldShowContainerEdges }, () => {
-        this.props.setDebugClasses(this.stateToClasses(this.state))
-      })
-      localStorage.setItem('shouldShowContainerEdges', !this.state.shouldShowContainerEdges)
-    }
-
     return (
       <div className="DebugGrid">
         <div style={style}>
           <Checkbox
-            onChange={on3x3GridCheckboxChange}
-            checked={this.state.shouldShow3x3Grid}>
+            onChange={this.props.toggle3x3Grid}
+            checked={this.props.show3x3Grid}>
             3x3 Grid
           </Checkbox>
           <Checkbox
-            onChange={onBaselineCheckboxChange}
-            checked={this.state.shouldShowBaseline}>
+            onChange={this.props.toggleBaseline}
+            checked={this.props.showBaseline}>
             Baseline
           </Checkbox>
           <Checkbox
-            onChange={onContainerCheckboxChange}
-            checked={this.state.shouldShowContainerEdges}>
+            onChange={this.props.toggleContainerEdges}
+            checked={this.props.showContainerEdges}>
             Container Edges <span style={containerSizeStyle}>({containerWidth}px)</span>
           </Checkbox>
         </div>
 
 
-        {this.state.shouldShowBaseline ? <BaselineGrid /> : null}
-        {this.state.shouldShow3x3Grid ? <GridLines /> : null}
+        {this.props.showBaseline ? <BaselineGrid /> : null}
+        {this.props.show3x3Grid ? <GridLines /> : null}
       </div>
     )
   }
@@ -137,3 +103,10 @@ const GridLines = (props) => {
     </div>
   )
 }
+
+
+export default connect(state => state.debug, {
+  toggleBaseline,
+  toggle3x3Grid,
+  toggleContainerEdges
+})(DebugGrid)

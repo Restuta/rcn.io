@@ -1,70 +1,12 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
 //import rawEvents from 'temp/data/2015-road.js'
-import rawRoadEvents from 'temp/data/2016-NCNCA-road.js'
-import rawMtbEvents from 'temp/data/2016-mtb.js'
-import rawMtbEventsManual from 'temp/data/2016-mtb-manual.js'
+import rawRoadEvents from 'client/temp/data/2016-NCNCA-road'
+import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
+import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
+import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
-
-const Disciplines = {
-  MTB: 'MTB',
-  Road: 'Road'
-}
-
-const Statuses = {
-  Cancelled: 'Cancelled',
-  Moved: 'Moved'
-}
-
-class Event {
-  constructor({name, date, type, location, promoterUrl, flyerUrl, status}) {
-    this.name = name
-    this.date = date
-    this.type = type
-    this.location = location
-    this.promoterUrl = promoterUrl
-    this.flyerUrl = flyerUrl
-    this.status = status
-  }
-}
-
-class Events {
-  constructor({eventsMap}) {
-    this.eventsMap = eventsMap
-    this.total = this._getTotalEvents()
-  }
-
-  _getTotalEvents() {
-    let total = 0
-
-    this.eventsMap.forEach((value, key, map) => {
-      total += value.length
-    })
-
-    return total
-  }
-
-  //TODO: memoize calculated totals since collection is immutable
-  //TODO: get total before date
-
-  getTotalFrom(date) {
-    let total = 0
-
-    this.eventsMap.forEach((value, key, map) => {
-      const events = value
-      //taking date of first event since the rest is after it
-      const eventsDate = events[0].date
-      const eventsCount = events.length
-
-      if (date.diff(eventsDate, 'days') <= 0) {
-        total += eventsCount
-      }
-    })
-
-    return total
-  }
-
-}
+import { hash } from 'client/utils/math'
 
 const preProcessUrl = (rawUrl) => {
   if (rawUrl) {
@@ -78,45 +20,57 @@ const preProcessUrl = (rawUrl) => {
   }
 }
 
-const preProcessEvents = function(rawEvents) {
-  const events = new Map()
+const createEvent = rawEvent => {
+  const name = rawEvent.name.replace(/--/g, '—')
+  const date = moment(rawEvent.date, 'MMMM DD YYYY')
+  const datePlain = date.format('MMDDYYYY')
 
-  rawEvents.forEach(rawEvent => {
+  //TODO bc: revisit this, add ids?,
+  const eventId = 'evt-' + hash(name) + '-' + datePlain
 
-    const event = new Event({
-      name: rawEvent.name
-        .replace(/--/g, '—'),
-      date: moment(rawEvent.date, 'MMMM DD YYYY'),
-      type: rawEvent.type,
-      location: rawEvent.location || {},
-      promoterUrl: preProcessUrl(rawEvent.promoterUrl),
-      flyerUrl: preProcessUrl(rawEvent.flyerUrl),
-      status: rawEvent.status
-    })
-
-    const key = event.date.format('MMDDYYYY')
-
-    if (events.get(key)) {
-      events.get(key).push(event)
-    } else {
-      events.set(key, [event])
-    }
-  })
-
-  return events
+  return {
+    id: eventId,
+    name: name,
+    date: date,
+    datePlain: datePlain,
+    type: rawEvent.type,
+    discipline: rawEvent.discipline,
+    location: rawEvent.location || {},
+    flyerUrl: preProcessUrl(rawEvent.flyerUrl),
+    status: rawEvent.status,
+    group: rawEvent.group, //group of event according to NCNCA planning document
+    notes: rawEvent.notes,
+    promoter: rawEvent.promoter,
+    promoterName: rawEvent.promoterName,
+    promoterUrl: preProcessUrl(rawEvent.promoterUrl),
+    registrationUrl: preProcessUrl(rawEvent.registrationUrl)
+  }
 }
 
-const roadEventsMap = preProcessEvents(rawRoadEvents)
-const roadEvents = new Events({ eventsMap: roadEventsMap })
+//fetch NCNCA Draft
+// fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
+// .then(response => response.json())
+// .then(result => {
+//   console.info(result)
+// })
 
-const mtbEventsMap = preProcessEvents(rawMtbEvents.concat(rawMtbEventsManual))
-const mtbEvents = new Events({ eventsMap: mtbEventsMap })
+const preProcessEvents = rawEvents =>
+  rawEvents.map(rawEvent => createEvent(rawEvent))
+
+
+const rawMtbEvents = rawMtbEventsFromSpreadsheet.concat(rawMtbEventsManual)
+const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
+
+const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
+
+const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
+  .then(eventsRaw => preProcessEvents(eventsRaw))
+  // .then(events => events.map(x => console.log(x.name)))
+// const ncncaDraftEvents2017 = preProcessEvents(ncncaDraftEvents2017Raw)
+
 
 export {
-  Events, //just a type
-  Event, //type
-  Disciplines,
-  Statuses,
-  roadEvents,
-  mtbEvents,
+  testRoadEvents2016,
+  norcalMtb2016Events,
+  fetchNcncaDraftEvents2017,
 }

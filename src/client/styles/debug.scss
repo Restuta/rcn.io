@@ -67,10 +67,15 @@ $col-border: pxToRem($col-border-wdith) solid $col-brdr-color;
   border-bottom: $col-border;
 }
 
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+
 .debug-flex-cards {
   display: flex;
   align-items: flex-start;
-
-
   justify-content: space-between;
 }

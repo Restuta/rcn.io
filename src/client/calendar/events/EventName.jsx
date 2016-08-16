@@ -2,37 +2,27 @@ import React, {PropTypes} from 'react'
 import Sizes from './card-sizes'
 import classnames from 'classnames'
 import './EventName.scss'
-import {Statuses} from 'temp/events'
+import { Statuses } from 'calendar/events/types'
+import { createHighlightedStringComponent } from 'client/utils/component.js'
 
 const EventName = (props) => {
-  const {name, size, height, eventStatus, classNames} = props
+  const { name, size, height, eventStatus, classNames, typeColor, type } = props
   const className = classnames(`EventName size-${size} size-${size}-${height} fix-fout`,
     classNames)
 
-  // const {typeColor} = props
-  //
-  // const createWrappedNameComponent = (name, stringToWrap, color) => {
-  //   if (name && name.indexOf(stringToWrap) !== -1) {
-  //     const parts = name.split(stringToWrap)
-  //     return [parts[0], <span key={0} style={{color: color}}>{stringToWrap}</span>, parts[1]] //eslint-disable-line react/jsx-key
-  //   }
-  //   return name //TODO restuta: funtcion returns different types based on the flow, fix this
-  // }
-
-  //TODO: make this production ready
+  //TODO bc: make this production ready, e.g. avoid iteration if one of the names is highlighted
   let wrappedNameComp = name
-  // wrappedNameComp = createWrappedNameComponent(name, 'Road Race', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Criterium', typeColor)
-  // //wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Crit', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Circuit Race', typeColor)
-  // wrappedNameComp = createWrappedNameComponent(wrappedNameComp, 'Time Trial', typeColor)
 
-  if (eventStatus === Statuses.Cancelled) {
-    wrappedNameComp = <span>CANCELED: <span className="cancelled">{name}</span></span>
+  if (type && type.trim()) {
+    wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
   }
 
-  if (eventStatus === Statuses.Moved) {
-    wrappedNameComp = <span>MOVED: <span className="cancelled">{name}</span></span>
+  if (eventStatus === Statuses.canceled) {
+    wrappedNameComp = <span>CANCELED: <span className="canceled">{name}</span></span>
+  }
+
+  if (eventStatus === Statuses.moved) {
+    wrappedNameComp = <span>MOVED: <span className="canceled">{name}</span></span>
   }
 
   return (
@@ -44,10 +34,11 @@ const EventName = (props) => {
 
 
 EventName.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(Sizes)).isRequired,
   height: PropTypes.number,
-  eventStatus: PropTypes.oneOf(Object.keys(Statuses))
+  eventStatus: PropTypes.oneOf(Object.keys(Statuses).map(x => Statuses[x])),
 }
 
 export default EventName

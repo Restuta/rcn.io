@@ -17,7 +17,7 @@ const zeroPad = function(number, minLength) {
   let digitCount = 1 + Math.floor(Math.log(absNumber) / Math.LN10)
 
   if (digitCount >= minLength) {
-    return number
+    return number.toString()
   }
 
   let zeroString = Math.pow(10, minLength - digitCount).toString().substr(1)
@@ -29,4 +29,4 @@ const zeroPad = function(number, minLength) {
 }
 
 
-export {zeroPad}
+export { zeroPad }

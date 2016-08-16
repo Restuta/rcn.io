@@ -2,9 +2,10 @@
 @import '../styles/mixins';
 @import '../styles/bs4-fixes';
 
+
 .Day {
 
-  $today-circle-color: rgba(247, 118, 143, 1);
+  $today-circle-color: $primary-color;
 
   display: flex;
   flex-direction: row;
@@ -39,10 +40,6 @@
     // margin-bottom: 1.75rem;
   }
 
-  &-special {
-    .Day-date {
-    }
-  }
   &:hover {
     background-color: $grey-100;
   }
@@ -51,19 +48,18 @@
     border-right: pxToRem(1) solid $grey-300;
   }
 
-  &-current-month {
+  &-alternate-month {
     background-color: darken($grey-100, 1%);
 
     .Day-date {
-      color: $grey-700;
+      color: $grey-600;
     }
   }
 
-  &-today {
-    background-color: rgba(247, 118, 143, 0.1);
-
+  &-today,
+  &-today.Day-first-of-month {
+    background-color: transparentize($today-circle-color, 0.88);
     //TODO: this uses same styles as <RoundBadge> component, re-use it inside, but make sure we deal right with -3px offsets
-
     .Day-date-wrapper {
       width: 3rem;
       height: 3rem;
@@ -81,7 +77,6 @@
       background: $today-circle-color;
     }
   }
-
   &-today.today-narrow {
     .Day-date-wrapper {
       background: none;
@@ -98,10 +93,17 @@
     text-align: right;
     display: inline-block;
     top: pxToRem(-1);
-    font-size: pxToRem(15);
+    font-size: pxToRem(12);
+    text-transform: uppercase;
   }
 
-  @media (max-width: map-get($grid-breakpoints, "md")) {
+  &-first-of-month {
+    .Day-date-wrapper {
+      color: $body-color;
+    }
+  }
+
+  @include tablet {
     .Day-date {
       margin-top: .5rem;
       margin-bottom: .5rem;
@@ -116,18 +118,9 @@
     }
 
     .day-of-month-label {
-      font-size: pxToRem(11);
-      top: pxToRem(-1);
+      font-size: pxToRem(10);
+      top: pxToRem(0);
     }
   }
-
-  .day-of-month-label.first {
-
-  }
-
-  .day-of-month-label.last {
-    color: $grey-500;
-  }
-
 
 }
