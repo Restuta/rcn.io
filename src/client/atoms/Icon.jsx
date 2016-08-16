@@ -7,10 +7,11 @@ import { pxToRem } from 'styles/typography'
 export default class Icon extends Component {
   render() {
     const { name, color = '', size, top = 0 } = this.props
-    const iconNameClass = 'material-icons'
 
-    let style = {
-      color: color
+    let style = {}
+
+    if (color) {
+      style.color = color
     }
 
     if (size) {
@@ -29,7 +30,7 @@ export default class Icon extends Component {
       style.top = pxToRem(top) + 'rem'
     }
 
-    const className = classNames('Icon', iconNameClass, this.props.className)
+    const className = classNames('material-icons Icon', this.props.className)
     return (
       <i className={className} style={style}>
         {name}
