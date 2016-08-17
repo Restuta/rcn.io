@@ -77,7 +77,8 @@ Today
 			- concept of material-like primary button (saves space): http://screencast.com/t/vuepHQaAaT01
 		!----- immediate todo
 			--- high priority
-				- add sheetsu logo (logo in email)
+				- make events crawlable (add <a> tag to a card with proper href)
+				+- add sheetsu logo (logo in email)
 				- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
 				- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
 				- add primary calendar id to every event
