@@ -24,3 +24,16 @@
   }
 
 }
+
+//cleaning up default link styles + adding neat visited effect
+
+a.Event,
+a.Event:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.Event:focus,
+a.Event:active {
+  @include box-shadow-lvl-2();
+}

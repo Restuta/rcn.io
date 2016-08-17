@@ -12,6 +12,7 @@ import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
+import { Link } from 'react-router'
 
 
 //gets height of the smallest card (in rems) for the given containerWidth
@@ -54,11 +55,6 @@ class Event extends Component {
     })
 
     trackClick()
-
-    this.props.router.push({
-      pathname: `/events/${this.props.id}`,
-      state: { modal: true, returnUrl: this.context.locationPathname}
-    })
   }
 
   render() {
@@ -221,16 +217,20 @@ class Event extends Component {
     }
 
     return (
-      <div style={style} className="Event lvl-1" onClick={this.onEventClick}>
+      <Link style={style} className="Event lvl-1" onClick={this.onEventClick} to={{
+        pathname: `/events/${this.props.id}`,
+        state: { modal: true, returnUrl: this.context.locationPathname}
+      }}>
         {debugComponent}
 
         <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
+
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {eventGroupComponent}
         {locationComponent}
         {promoterComp}
-      </div>
+      </Link>
     )
   }
 }
