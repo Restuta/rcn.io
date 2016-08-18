@@ -142,7 +142,7 @@ class Calendar extends Component {
     if (!showPastEvents) {
       subTitleComp = (
         <h3 className="sub-title">
-          {eventsTotalFromToday} upcoming events from Today ({today.format('MMMM Do')})
+          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
           {shouldShowHidePastLink
             && <a className="show-more-or-less" onClick={onShowFullHidePastClick}>show all {eventsTotal} events</a>}
         </h3>
@@ -174,12 +174,14 @@ class Calendar extends Component {
       <div className="Calendar">
         {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
         {nameComp}
-        {description && <h4 className="sub-title" style={{marginBottom: '1rem'}}>{description}</h4>}
         {subTitleComp}
+        {description && <h4 className="sub-title">{description}</h4>}
 
-        <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
         <div className="body">
-          {weeksComponents}
+          <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
+          <div className="body">
+            {weeksComponents}
+          </div>
         </div>
       </div>
     )

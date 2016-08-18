@@ -83,6 +83,8 @@ Today
 				- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
+			- 
+			- center calendar name
 		 	---- (optimization) during event creation build index of occurence of "road race" inside event: and other words to speed up rendring
 		 	---- (optimization) isomorphic-fetch should point to node-specific dependency for node webpack bundles
 			- let event contain multiple types: like [Stage Race, Criterium] or [Criterium and Time Trial]
