@@ -3,6 +3,10 @@
 @import '../styles/bs4-fixes';
 
 .Calendar {
+  >.body {
+    margin-top: 4rem;
+  }
+
   //padding-top: 4rem;
   padding-bottom: 1rem;
 
@@ -15,19 +19,25 @@
     font-family: $body-font-family;
     font-weight: 900;
     margin-bottom: 0;
-    font-style: italic;
+    // font-style: italic;
+    text-align: center;
   }
 
   .sub-title {
     font-family: $body-font-family;
     //font-weight: 900;
     //margin-bottom: 0;
-    font-style: italic;
+    // font-style: italic;
     //text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     font-weight: 400;
     color: $grey-500;
+    text-align: center;
+  }
+
+  .today-date {
+    white-space: pre;
   }
 
   .show-more-or-less {
@@ -36,6 +46,7 @@
     padding-left: 1rem;
     border-left: pxToRem(1) solid $grey-300;
     font-style: normal;
+    white-space: pre;
   }
 
   @media (max-width: map-get($grid-breakpoints, "md")) {

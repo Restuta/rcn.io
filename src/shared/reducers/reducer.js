@@ -60,7 +60,7 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: 'Revision 2',
+      description: 'Draft v5',
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,
       draft: true,
