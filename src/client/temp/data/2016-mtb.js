@@ -266,7 +266,8 @@ export default [
     "name": "Lemurian Shasta Classic",
     "date": "April 30 2016",
     "promoterUrl": "http://shastalemurian.com/",
-    "flyerUrl": "http://shastalemurian.com/race-info/courses",
+    "registrationUrl": "http://www.active.com/redding-ca/cycling/mountain-biking-races/lemurian-shasta-classic-2016",
+    "flyerUrl": "",
     "location": {
       "city": "Redding",
       "state": "CA"
@@ -278,7 +279,7 @@ export default [
     "name": "Race Behind Bars #1",
     "date": "May 01 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
-    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
+    "flyerUrl": "",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -334,7 +335,7 @@ export default [
     "name": "Race Behind Bars #2",
     "date": "May 15 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
-    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
+    "flyerUrl": "",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -346,7 +347,7 @@ export default [
     "name": "Santa Cruz Old Cabin Classic",
     "date": "May 21 2016",
     "promoterUrl": "http://oldcabinclassic.com",
-    "flyerUrl": "http://oldcabinclassic.com/race-details/",
+    "flyerUrl": "",
     "location": {
       "city": "Santa Cruz",
       "state": "CA"
@@ -407,7 +408,7 @@ export default [
     "name": "Race Behind Bars #3",
     "date": "May 30 2016",
     "promoterUrl": "http://www.racebehindbars.com/",
-    "flyerUrl": "http://www.racebehindbars.com/CourseMap.htm",
+    "flyerUrl": "",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -632,7 +633,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 12 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-12",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -647,7 +648,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 13 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-13",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -662,7 +663,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 14 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-14",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -677,7 +678,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 15 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-15",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -692,7 +693,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 16 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-16",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -706,7 +707,7 @@ export default [
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 17 2016",
     "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
-    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?mode=view&permit=2016-27",
+    "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-17",
     "location": {
       "streetAddress": "10001 Minaret Road",
       "city": "Mammoth Lakes",
@@ -827,7 +828,7 @@ export default [
     "date": "August 21 2016",
     "promoterUrl": "http://www.bodiebowl.com/",
     "registrationUrl": "https://www.bikereg.com/httpwwwbodiebowlcomabouthtml",
-    "flyerUrl": "http://www.bodiebowl.com/about.html",
+    "flyerUrl": "",
     "location": {
       "city": "Bodie",
       "state": "CA"
