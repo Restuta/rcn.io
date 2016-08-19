@@ -96,7 +96,7 @@
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.11.2",
     "moment-timezone": "^0.5.4",
-    "react": "~15.2.1",
+    "react": "~15.3.1",
     "react-dom": "~15.2.1",
     "react-modal2": "^3.0.2",
     "react-pure-render": "^1.0.1",
