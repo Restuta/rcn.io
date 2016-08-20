@@ -22,6 +22,7 @@ Currently, you, as a racer have no good tools to:
   * history of that event and participation from past years
   * clean and reliable way to find start location _(SMS with Google Maps link to your phone in the morning would be neat, so you don't have to go to NCNCA, open pdf flyer, read where location is and explain to Google Maps how to navigate you there)_
 * **understand who other racers are**
+  * this is partially covered by https://www.road-results.com/ 
 
 Currently we are building a product to help with the above.
 
