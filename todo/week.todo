@@ -71,6 +71,15 @@ Today
 			- redux-observable
 			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
+
+	--- NCNCA.org beta release
+		- setup old NCNCA calendars (in particular 2015 one)
+			- support for ?year param: could be 
+			 -  : /caledars/ncnca/2015
+			 -  : /calendars/ncnca?year=2016
+			 -  : /calendars/ncnca-2015
+			- make sure it's same as todays covering all links and notes
+		- gather email and send out beta-testing message
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
