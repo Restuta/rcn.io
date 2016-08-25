@@ -81,7 +81,7 @@ const ResultsButton = ({resultsUrl, onClick}) => (
     : <PrimaryButton text="NO RESULTS LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
 )
 
-export default class EventDetails extends Component {
+class EventDetails extends Component {
   constructor(props) {
     super(props)
     this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)
