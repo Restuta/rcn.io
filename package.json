@@ -69,7 +69,7 @@
     "morgan": "^1.7.0",
     "ms": "^0.7.1",
     "node-noop": "^1.0.0",
-    "node-sass": "^3.7.0",
+    "node-sass": "^3.9.1",
     "noop-loader": "^1.0.0",
     "object-assign": "^4.1.0",
     "postcss-loader": "^0.9.1",
