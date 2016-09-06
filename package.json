@@ -100,7 +100,7 @@
     "react-dom": "~15.3.1",
     "react-modal2": "^3.0.2",
     "react-pure-render": "^1.0.1",
-    "react-redux": "^4.4.5",
+    "react-redux": "^5.0.0-beta.1",
     "react-router": "^2.7.0",
     "react-router-redux": "^4.0.5",
     "redux": "^3.5.2",
