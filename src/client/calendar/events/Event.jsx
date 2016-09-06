@@ -205,6 +205,7 @@ class Event extends Component {
       width: cardWidth,
       // width: cardWidthPx,
       height: cardHeightRem + 'rem',
+      // height: 4 + 'rem',
       // height: '100%',
       //minHeight: cardHeightRem + 'rem',
       //maxHeight: cardHeightRem * 2 + 'rem',

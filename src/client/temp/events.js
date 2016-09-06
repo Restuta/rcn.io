@@ -35,6 +35,7 @@ const createEvent = rawEvent => {
     datePlain: datePlain,
     type: rawEvent.type,
     discipline: rawEvent.discipline,
+    //TODO: add location name
     location: rawEvent.location || {},
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
     status: rawEvent.status,
@@ -47,27 +48,13 @@ const createEvent = rawEvent => {
   }
 }
 
-//fetch NCNCA Draft
-// fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
-// .then(response => response.json())
-// .then(result => {
-//   console.info(result)
-// })
-
 const preProcessEvents = rawEvents =>
   rawEvents.map(rawEvent => createEvent(rawEvent))
-
-
 const rawMtbEvents = rawMtbEventsFromSpreadsheet.concat(rawMtbEventsManual)
 const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
-
 const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
-
 const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
   .then(eventsRaw => preProcessEvents(eventsRaw))
-  // .then(events => events.map(x => console.log(x.name)))
-// const ncncaDraftEvents2017 = preProcessEvents(ncncaDraftEvents2017Raw)
-
 
 export {
   testRoadEvents2016,
