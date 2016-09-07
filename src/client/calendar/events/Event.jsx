@@ -163,6 +163,7 @@ class Event extends Component {
         left: '80%',
         whiteSpace: 'nowrap',
         color: Colors.grey400,
+        overflow: 'visible',
       }}>{cardSize} {cardHeightRem} </span>)
     }
 
@@ -196,10 +197,8 @@ class Event extends Component {
       )
     }
 
-    let opacity = 1
-
     let style = {
-      opacity: opacity,
+      opacity: 1,
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
       width: cardWidth,
@@ -215,6 +214,8 @@ class Event extends Component {
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
       borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
+      //we use outside of the edge elements for debug mode and for draft (event groups)
+      overflow: (event.group || event.debug) ? 'visible' : 'hidden',
     }
 
     return (
