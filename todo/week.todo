@@ -18,9 +18,6 @@ Today
 	
 	!----- immediate todo
 		+- rename index1.html to something meaningful
-		--- MTB release
-			-- make sure public path is correct so we can see source maps in prod
-			- setup 404
 		--- after MTB release
 			- hosted graphite logo
 			-- use React SideEffect for Document Title
@@ -86,6 +83,7 @@ Today
 			- concept of material-like primary button (saves space): http://screencast.com/t/vuepHQaAaT01
 		!----- immediate todo
 			--- high priority
+				----- BUG: icons slode down on buttons
 				- make events crawlable (add <a> tag to a card with proper href)
 				+- add sheetsu logo (logo in email)
 				- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
@@ -276,6 +274,9 @@ After Boilerplate setup
 
 
 Pre-production
+--- MTB release
+	-- make sure public path is correct so we can see source maps in prod
+	- setup 404
 -- SEO
 	- meta-tags
 		- look around in general e.g. hotelstonight and do alike
