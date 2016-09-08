@@ -1,7 +1,7 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
 //import rawEvents from 'temp/data/2015-road.js'
-import rawRoadEvents from 'client/temp/data/2016-NCNCA-road'
+import rawRoadEvents from 'client/temp/data/2016-NCNCA-road-test'
 import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
 import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'

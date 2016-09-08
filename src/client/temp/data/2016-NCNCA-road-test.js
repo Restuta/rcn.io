@@ -1,3 +1,5 @@
+// Contains test data, close to real, but with some generated fields
+
 /*eslint-disable */
 
 export default [
