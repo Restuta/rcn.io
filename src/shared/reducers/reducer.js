@@ -4,6 +4,7 @@ import { routerReducer } from 'react-router-redux'
 import {
   norcalMtb2016Events,
   testRoadEvents2016,
+  ncnca2016Events,
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
@@ -36,7 +37,10 @@ const initialState = {
     showContainerEdges: false,
   },
 
-  events: toByIdMap(norcalMtb2016Events.concat(testRoadEvents2016)),
+  events: toByIdMap(norcalMtb2016Events
+    .concat(testRoadEvents2016)
+    .concat(ncnca2016Events)
+  ),
 
   //calenars map by id
   calendars: {
@@ -79,7 +83,7 @@ const initialState = {
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,
       draft: false,
-      eventsIds: [],
+      eventsIds: toArrayOfIds(ncnca2016Events),
       loaded: false,
     },
 

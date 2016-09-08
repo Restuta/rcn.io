@@ -4,6 +4,9 @@
 import rawRoadEvents from 'client/temp/data/2016-NCNCA-road-test'
 import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
+
+import rawNcnca2016Events from 'client/temp/data/2016-ncnca-events'
+
 import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
 import { hash } from 'client/utils/math'
@@ -38,7 +41,7 @@ const createEvent = rawEvent => {
     //TODO: add location name
     location: rawEvent.location || {},
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
-    status: rawEvent.status,
+    status: rawEvent.status || undefined, //getting rid of empty strings
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
     promoter: rawEvent.promoter,
@@ -53,11 +56,13 @@ const preProcessEvents = rawEvents =>
 const rawMtbEvents = rawMtbEventsFromSpreadsheet.concat(rawMtbEventsManual)
 const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
 const testRoadEvents2016 = preProcessEvents(rawRoadEvents)
+const ncnca2016Events = preProcessEvents(rawNcnca2016Events)
 const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
   .then(eventsRaw => preProcessEvents(eventsRaw))
 
 export {
   testRoadEvents2016,
   norcalMtb2016Events,
+  ncnca2016Events,
   fetchNcncaDraftEvents2017,
 }

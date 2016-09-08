@@ -12,6 +12,9 @@ const Statuses = {
 }
 
 const EventTypes = {
+  other: {
+    meeting: 'Meeting'
+  },
   road: {
     criterium: 'Criterium',
     roadRace: 'Road Race',

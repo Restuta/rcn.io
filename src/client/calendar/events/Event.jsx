@@ -256,7 +256,11 @@ Event.propTypes = {
     date: PropTypes.object.isRequired,
     datePlain: PropTypes.string.isRequired,
     type: PropTypes.string,
-    discipline: PropTypes.oneOf(Object.keys(Disciplines).map(x => Disciplines[x])),
+    discipline: PropTypes.oneOf(Object
+      .keys(Disciplines)
+      .map(x => Disciplines[x])
+      //.concat([''])
+    ),
     location: PropTypes.shape({
       city: PropTypes.string,
       state: PropTypes.string,
