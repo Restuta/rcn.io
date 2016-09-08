@@ -53,7 +53,7 @@ const initialState = {
       eventsIds: toArrayOfIds(norcalMtb2016Events)
     },
     ['cal-ncnca-2017-draft']: {
-      id: 'cal-norcal-mtb-2016',
+      id: 'cal-ncnca-2017-draft',
       year: 2017,
       name: 'NCNCA Calendar 2017',
       // highlight: {
@@ -67,6 +67,22 @@ const initialState = {
       eventsIds: [],
       loaded: false,
     },
+    ['cal-ncnca-2016']: {
+      id: 'cal-ncnca-2016',
+      year: 2016,
+      name: 'NCNCA Calendar 2016',
+      highlight: {
+        word: 'NCNCA',
+        color: Colors.red800,
+      },
+      description: '',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: true,
+      draft: false,
+      eventsIds: [],
+      loaded: false,
+    },
+
     ['cal-test-1']: {
       showPastEvents: true,
       eventsIds: testRoadEventIds,
