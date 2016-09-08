@@ -1,7 +1,6 @@
 /*eslint-disable */
 
-export default [
-  {
+export default [{
     "_id": 23546,
     "id": "evt-2016-23546",
     "name": "CCCX Cyclocross Series #7",
@@ -4396,7 +4395,7 @@ export default [
     "name": "Ride2Recovery: Honor Ride Sacramento",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "May 21 2016",
     "location": {
       "name": "",
@@ -4959,8 +4958,8 @@ export default [
     "id": "evt-2016-23800",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "January 18 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -4989,8 +4988,8 @@ export default [
     "id": "evt-2016-23801",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "February 22 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -5019,8 +5018,8 @@ export default [
     "id": "evt-2016-23802",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "March 21 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -5049,8 +5048,8 @@ export default [
     "id": "evt-2016-23803",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "April 18 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -5079,8 +5078,8 @@ export default [
     "id": "evt-2016-23804",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "May 16 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -5245,7 +5244,7 @@ export default [
     "name": "Sonora Gran Fondo: Rim Fire Century",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "May 01 2016",
     "location": {
       "name": "",
@@ -5270,7 +5269,7 @@ export default [
     "name": "Tour de Ed",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "March 06 2016",
     "location": {
       "name": "Race Location",
@@ -6064,8 +6063,8 @@ export default [
     "id": "evt-2016-23873",
     "name": "NCVA Board of Directors Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "March 17 2016",
     "location": {
       "name": "Sports Basement",
@@ -7015,7 +7014,7 @@ export default [
     "name": "Fast Freddie Folsom Fondo",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "May 07 2016",
     "location": {
       "name": "Race Location",
@@ -7070,7 +7069,7 @@ export default [
     "name": "Ryan's Ride",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "June 26 2016",
     "location": {
       "name": "Race Location",
@@ -7124,8 +7123,8 @@ export default [
     "id": "evt-2016-23945",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "June 20 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7154,8 +7153,8 @@ export default [
     "id": "evt-2016-23946",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "August 01 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7184,8 +7183,8 @@ export default [
     "id": "evt-2016-23947",
     "name": "NCNCA Board Meeting",
     "status": "Canceled",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "August 15 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7214,8 +7213,8 @@ export default [
     "id": "evt-2016-23948",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "September 19 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7244,8 +7243,8 @@ export default [
     "id": "evt-2016-23949",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "October 17 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7274,8 +7273,8 @@ export default [
     "id": "evt-2016-23950",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "November 21 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7304,8 +7303,8 @@ export default [
     "id": "evt-2016-23951",
     "name": "NCNCA Board Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "December 19 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -7334,8 +7333,8 @@ export default [
     "id": "evt-2016-23952",
     "name": "NCNCA Promoters Meeting",
     "status": "",
-    "type": "NCNCA Meeting",
-    "discipline": "",
+    "type": "Meeting",
+    "discipline": "Other",
     "date": "August 03 2016",
     "location": {
       "name": "Courtyard Marriott",
@@ -9100,7 +9099,7 @@ export default [
     "name": "C510 Super Cat III",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "October 16 2016",
     "location": {
       "name": "Lake Merritt",
@@ -9125,7 +9124,7 @@ export default [
     "name": "Bikes for Kids Charity Ride & BBQ",
     "status": "",
     "type": "Non-competitive",
-    "discipline": "",
+    "discipline": "Non-Competitive",
     "date": "October 15 2016",
     "location": {
       "name": "Oakdale Bicycle Shop",
