@@ -215,7 +215,7 @@ class Event extends Component {
       paddingRight: horizontalPadding,
       borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
-      overflow: (event.group || event.debug) ? 'visible' : 'hidden',
+      overflow: (event.group || debug) ? 'visible' : 'hidden',
     }
 
     return (
