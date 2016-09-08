@@ -66,17 +66,17 @@ class Calendar extends Component {
     const firstDayOfYear = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
 
     let startDate = firstDayOfYear
-    let totalWeeks = startDate.isoWeeksInYear()
+    let totalWeeks = 53
 
     // if first day of year is before today only then we wan to show hide/show past link
-    if (firstDayOfYear.isBefore(today)) {
-      startDate = showPastEvents
-        ? firstDayOfYear
-        : momentTZ().isoWeekday(-6) //this set's a date to two weeks back monday
+    if (firstDayOfYear.isBefore(today) && year === today.year()) {
+      if (!showPastEvents) {
+        //set a date to two weeks back monday
+        startDate = momentTZ().isoWeekday(-6)
+        //reduce number of total weeks we are showing
+        totalWeeks =  totalWeeks - startDate.get('isoWeeks')
+      }
 
-      totalWeeks = showPastEvents
-        ? startDate.isoWeeksInYear()
-        : startDate.isoWeeksInYear() - startDate.get('isoWeeks') + 1
       shouldShowHidePastLink = true
     }
 
