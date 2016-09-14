@@ -87,7 +87,7 @@
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0",
-    "webpack-node-externals": "^1.0.0",
+    "webpack-node-externals": "^1.4.3",
     "why-did-you-update": "0.0.8"
   },
   "dependencies": {
