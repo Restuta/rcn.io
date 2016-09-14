@@ -86,6 +86,7 @@ const colors = {
 const event = {
   other: {
     unknownType: colors.body,
+    meeting: colors.body,
   },
   status: {
     past: colors.grey500,

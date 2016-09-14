@@ -25,6 +25,17 @@ const getEventColor = (discipline, type, status = '') => {
     eventColor = Colors.event.mtb.default
   }
 
+  if (discipline === Disciplines.other) {
+    switch (type) {
+      case 'Meeting':
+        eventColor = Colors.event.other.meeting
+        break
+      default:
+        eventColor = Colors.event.other.unknownType
+        break
+    }
+  }
+
   if (discipline === Disciplines.road) {
     switch (type) {
       case 'Road Race':

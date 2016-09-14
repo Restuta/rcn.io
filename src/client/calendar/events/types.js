@@ -3,7 +3,8 @@ const Disciplines = {
   road: 'Road',
   cyclocross: 'Cyclocross',
   track: 'Track',
-  bmx: 'BMX'
+  bmx: 'BMX',
+  other: 'Other'
 }
 
 const Statuses = {
@@ -22,11 +23,23 @@ const EventTypes = {
     timeTrial: 'Time Trial',
     hillClimb: 'Hill Climb',
     omnium: 'Omnium',
-    stageRace: 'Stage Race'
+    stageRace: 'Stage Race',
+    clicnics: 'Clinics',
+    nonCompetitive: 'Non-Competitive'
+  },
+  cyclocross: {
+    clicnics: 'Clinics',
+    nonCompetitive: 'Non-Competitive'
   },
   mtb: {
     enduro: 'Enduro',
+    clicnics: 'Clinics',
+    nonCompetitive: 'Non-Competitive',
     //...
+  },
+  track: {
+    clicnics: 'Clinics',
+    nonCompetitive: 'Non-Competitive',
   }
 }
 
