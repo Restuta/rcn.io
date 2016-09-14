@@ -29,7 +29,9 @@ const createEvent = rawEvent => {
   const datePlain = date.format('MMDDYYYY')
 
   //TODO bc: revisit this, add ids?,
-  const eventId = 'evt-' + hash(name) + '-' + datePlain
+  const eventId = (rawEvent.id && rawEvent.id.startsWith('evt-'))
+    ? rawEvent.id
+    : 'evt-' + hash(name) + '-' + datePlain
 
   return {
     id: eventId,
@@ -44,7 +46,8 @@ const createEvent = rawEvent => {
     status: rawEvent.status || undefined, //getting rid of empty strings
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
-    promoter: rawEvent.promoter,
+    promoter: rawEvent.promoter, //TODO bc: get rid of this, use promoters instead
+    promoters: rawEvent.promoters,
     promoterName: rawEvent.promoterName,
     promoterUrl: preProcessUrl(rawEvent.promoterUrl),
     registrationUrl: preProcessUrl(rawEvent.registrationUrl)
