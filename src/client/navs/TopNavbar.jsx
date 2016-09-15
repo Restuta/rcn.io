@@ -20,18 +20,13 @@ export default class TopNavbar extends Component {
           </div>
           <div className="content-right">
             <ul className="nav navbar-nav">
-              {__ENV.Dev && //eslint-disable-line
-                <li className="nav-item">
-                  <Link className="nav-link" activeClassName="nav-link-active" to={'/cal'}>Cal</Link>
-                </li>
-              }
+              <li className="nav-item">
+                <Link className="nav-link" activeClassName="nav-link-active" to={'/calendars/ncnca-2016'}>NCNCA 2016</Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" activeClassName="nav-link-active" to={'/calendars/norcal-mtb'}>MTB</Link>
               </li>
               {__ENV.Dev && ([ //eslint-disable-line
-                <li className="nav-item" key={1}>
-                  <Link className="nav-link" activeClassName="nav-link-active" to={'/events/8'}>Event 8</Link>
-                </li>,
                 <li className="nav-item" key={3}>
                   <Link className="nav-link faded" activeClassName="nav-link-active"
                     to={'/calendars/ncnca-2017-draft'}>NCNCA Draft</Link>
