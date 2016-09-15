@@ -5,7 +5,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Kickstart",
     "date": "January 17 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "websiteUrl": "totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -16,7 +16,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #1",
     "date": "January 31 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -27,7 +27,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Classic",
     "date": "January 31 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "websiteUrl": "totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -38,7 +38,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #2",
     "date": "February 06 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -49,7 +49,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Challenge",
     "date": "February 14 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "websiteUrl": "totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -60,7 +60,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #3",
     "date": "February 20 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -71,7 +71,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #4",
     "date": "February 27 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -82,7 +82,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Madness",
     "date": "February 28 2016",
-    "promoterUrl": "totalbodyfitness.com",
+    "websiteUrl": "totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -93,7 +93,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #5",
     "date": "March 12 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -104,7 +104,7 @@ export default [
     "discipline": "MTB",
     "name": "The Real COOL Cycling Festical",
     "date": "March 12 2016",
-    "promoterUrl": "https://www.facebook.com/events/433486130109485/",
+    "websiteUrl": "https://www.facebook.com/events/433486130109485/",
     "location": {
       "city": "Cool",
       "state": "CA"
@@ -115,7 +115,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Championship",
     "date": "March 13 2016",
-    "promoterUrl": "http://totalbodyfitness.com",
+    "websiteUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -126,7 +126,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #6",
     "date": "March 26 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -137,7 +137,7 @@ export default [
     "discipline": "MTB",
     "name": "Lake Sonoma XC",
     "date": "March 26 2016",
-    "promoterUrl": "http://www.bikemonkey.net",
+    "websiteUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -148,7 +148,7 @@ export default [
     "discipline": "MTB",
     "name": "SoNoMas",
     "date": "April 02 2016",
-    "promoterUrl": "http://www.bikemonkey.net",
+    "websiteUrl": "http://www.bikemonkey.net",
     "location": {
       "city": "Lake Sonoma",
       "state": "CA"
@@ -159,7 +159,7 @@ export default [
     "discipline": "MTB",
     "name": "Big Sandy Race",
     "date": "April 03 2016",
-    "promoterUrl": "http://bigsandyrace.com/",
+    "websiteUrl": "http://bigsandyrace.com/",
     "location": {
       "city": "Fresno",
       "state": "CA"
@@ -170,7 +170,7 @@ export default [
     "discipline": "MTB",
     "name": "MTB Celebration",
     "date": "April 03 2016",
-    "promoterUrl": "http://totalbodyfitness.com",
+    "websiteUrl": "http://totalbodyfitness.com",
     "location": {
       "city": "Folsom",
       "state": "CA"
@@ -182,7 +182,7 @@ export default [
     "permit": "2016-599",
     "name": "Napa Valley Dirt Classic",
     "date": "April 10 2016",
-    "promoterUrl": "http://web2.puc.edu/Pioneers/NVDC/",
+    "websiteUrl": "http://web2.puc.edu/Pioneers/NVDC/",
     "registrationUrl": "http://web2.puc.edu/Pioneers/NVDC",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-599",
     "location": {
@@ -196,7 +196,7 @@ export default [
     "permit": "2016-1049",
     "name": "Nevada City Dirt Classic #1",
     "date": "April 23 2016",
-    "promoterUrl": "http://ybonc.org/events/dirt-classic/",
+    "websiteUrl": "http://ybonc.org/events/dirt-classic/",
     "registrationUrl": "https://www.bikereg.com/nevada-city-dirt-classic-xc-series",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1049",
     "location": {
@@ -210,7 +210,7 @@ export default [
     "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 14 2016",
-    "promoterUrl": "http://www.seaotterclassic.com/",
+    "websiteUrl": "http://www.seaotterclassic.com/",
     "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
@@ -224,7 +224,7 @@ export default [
     "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 15 2016",
-    "promoterUrl": "http://www.seaotterclassic.com/",
+    "websiteUrl": "http://www.seaotterclassic.com/",
     "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
@@ -238,7 +238,7 @@ export default [
     "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 16 2016",
-    "promoterUrl": "http://www.seaotterclassic.com/",
+    "websiteUrl": "http://www.seaotterclassic.com/",
     "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
@@ -252,7 +252,7 @@ export default [
     "permit": "2016-231",
     "name": "Sea Otter Classic",
     "date": "April 17 2016",
-    "promoterUrl": "http://www.seaotterclassic.com/",
+    "websiteUrl": "http://www.seaotterclassic.com/",
     "registrationUrl": "http://www.seaotterclassic.com/index.cfm/athlete_registration.htm",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-155",
     "location": {
@@ -265,7 +265,7 @@ export default [
     "discipline": "MTB",
     "name": "Lemurian Shasta Classic",
     "date": "April 30 2016",
-    "promoterUrl": "http://shastalemurian.com/",
+    "websiteUrl": "http://shastalemurian.com/",
     "registrationUrl": "http://www.active.com/redding-ca/cycling/mountain-biking-races/lemurian-shasta-classic-2016",
     "flyerUrl": "",
     "location": {
@@ -278,7 +278,7 @@ export default [
     "discipline": "MTB",
     "name": "Race Behind Bars #1",
     "date": "May 01 2016",
-    "promoterUrl": "http://www.racebehindbars.com/",
+    "websiteUrl": "http://www.racebehindbars.com/",
     "flyerUrl": "",
     "location": {
       "city": "Folsom",
@@ -290,7 +290,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #7",
     "date": "May 07 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -301,7 +301,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 13 2016",
-    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
+    "websiteUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -312,7 +312,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 14 2016",
-    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
+    "websiteUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -323,7 +323,7 @@ export default [
     "discipline": "MTB",
     "name": "Free Beckwourth 8hr MTB Race",
     "date": "May 15 2016",
-    "promoterUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
+    "websiteUrl": "northlanderevents.com/free-beckwourth-8-hr/4588446024",
     "location": {
       "city": "Beckwourth",
       "state": "CA"
@@ -334,7 +334,7 @@ export default [
     "discipline": "MTB",
     "name": "Race Behind Bars #2",
     "date": "May 15 2016",
-    "promoterUrl": "http://www.racebehindbars.com/",
+    "websiteUrl": "http://www.racebehindbars.com/",
     "flyerUrl": "",
     "location": {
       "city": "Folsom",
@@ -346,7 +346,7 @@ export default [
     "discipline": "MTB",
     "name": "Santa Cruz Old Cabin Classic",
     "date": "May 21 2016",
-    "promoterUrl": "http://oldcabinclassic.com",
+    "websiteUrl": "http://oldcabinclassic.com",
     "flyerUrl": "",
     "location": {
       "city": "Santa Cruz",
@@ -358,7 +358,7 @@ export default [
     "discipline": "MTB",
     "name": "Pine Nut Cracker",
     "date": "May 21 2016",
-    "promoterUrl": "http://sierra-sports.com/sierra-cup-mtb-series/",
+    "websiteUrl": "http://sierra-sports.com/sierra-cup-mtb-series/",
     "location": {
       "city": "Gardnerville",
       "state": "CA"
@@ -369,7 +369,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #8",
     "date": "May 22 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -380,7 +380,7 @@ export default [
     "discipline": "MTB",
     "name": "6 & 12 Hours of Weaverville",
     "date": "May 22 2016",
-    "promoterUrl": "https://www.facebook.com/teambigfootracing",
+    "websiteUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -392,7 +392,7 @@ export default [
     "permit": "2016-1232",
     "name": "Ridin' High at the Ranch",
     "date": "May 28 2016",
-    "promoterUrl": "http://www.sabadirtriders.com/ridin--high.html",
+    "websiteUrl": "http://www.sabadirtriders.com/ridin--high.html",
     "registrationUrl": "https://www.bikereg.com/ridn-high-at-the-ranch",
     "flyerUrl": "https://www.usacycling.org/events/getflyer.php?permit=2016-1232",
     "location": {
@@ -407,7 +407,7 @@ export default [
     "discipline": "MTB",
     "name": "Race Behind Bars #3",
     "date": "May 30 2016",
-    "promoterUrl": "http://www.racebehindbars.com/",
+    "websiteUrl": "http://www.racebehindbars.com/",
     "flyerUrl": "",
     "location": {
       "city": "Folsom",
@@ -419,7 +419,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 03 2016",
-    "promoterUrl": "http://www.bikemonkey.net/wente/",
+    "websiteUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
@@ -430,7 +430,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 04 2016",
-    "promoterUrl": "http://www.bikemonkey.net/wente/",
+    "websiteUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
@@ -441,7 +441,7 @@ export default [
     "discipline": "MTB",
     "name": "Boggs Funduro",
     "date": "June 05 2016",
-    "promoterUrl": "http://www.bikemonkey.net/wente/",
+    "websiteUrl": "http://www.bikemonkey.net/wente/",
     "location": {
       "city": "Willits",
       "state": "CA"
@@ -453,7 +453,7 @@ export default [
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
     "date": "June 3 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -467,7 +467,7 @@ export default [
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
     "date": "June 4 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -481,7 +481,7 @@ export default [
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
     "date": "June 5 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -494,7 +494,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "July 22 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -507,7 +507,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "July 23 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -520,7 +520,7 @@ export default [
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "July 24 2016",
-    "promoterUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
+    "websiteUrl": "http://northlanderevents.com/the-coolest-8-and-24-hour-race/4587854881",
     "location": {
       "streetAddress": "2634 County Road A23",
       "city": "Beckwourth",
@@ -533,7 +533,7 @@ export default [
     "discipline": "MTB",
     "name": "Tamarancho Classic",
     "date": "July 30 2016",
-    "promoterUrl": "http://www.bikemonkey.net/tamarancho",
+    "websiteUrl": "http://www.bikemonkey.net/tamarancho",
     "flyerUrl": "",
     "location": {
       "city": "Tamarancho",
@@ -545,7 +545,7 @@ export default [
     "discipline": "MTB",
     "name": "Tamarancho Classic",
     "date": "July 31 2016",
-    "promoterUrl": "http://www.bikemonkey.net/tamarancho",
+    "websiteUrl": "http://www.bikemonkey.net/tamarancho",
     "flyerUrl": "",
     "location": {
       "city": "Tamarancho",
@@ -557,7 +557,7 @@ export default [
     "discipline": "MTB",
     "name": "Lake Tahoe MTB Race (XC, 4hr, 8hr)",
     "date": "June 18 2016",
-    "promoterUrl": "http://adventuresportsweektahoe.com/compete/lake-tahoe-mountain-bike-race/",
+    "websiteUrl": "http://adventuresportsweektahoe.com/compete/lake-tahoe-mountain-bike-race/",
     "location": {
       "city": "Tahoe City",
       "state": "CA"
@@ -568,7 +568,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #9",
     "date": "June 19 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -579,7 +579,7 @@ export default [
     "discipline": "MTB",
     "name": "Sagebrush Scramble",
     "date": "June 26 2016",
-    "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "websiteUrl": "https://www.facebook.com/SierraCupMTB",
     "location": {
       "city": "Reno",
       "state": "CA"
@@ -591,7 +591,7 @@ export default [
     "name": "Skyline Park MTB Race",
     "date": "June 27 2016",
     "status": "Canceled",
-    "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
+    "websiteUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
       "streetAddress": "2201 Imola Avenue",
       "city": "Napa",
@@ -605,7 +605,7 @@ export default [
     "name": "Skyline Park MTB Race",
     "status": "Canceled",
     "date": "June 28 2016",
-    "promoterUrl": "http://www.eaglecyclingclub.org/mtbike.html",
+    "websiteUrl": "http://www.eaglecyclingclub.org/mtbike.html",
     "location": {
       "streetAddress": "2201 Imola Avenue",
       "city": "Napa",
@@ -619,7 +619,7 @@ export default [
     "discipline": "MTB",
     "name": "Mendocino 100",
     "date": "June 26 2016",
-    "promoterUrl": "http://superproracing.com",
+    "websiteUrl": "http://superproracing.com",
     "registrationUrl": "https://www.eventbrite.com/e/2016-mendocino-100-registration-21397493479",
     "location": {
       "city": "Mendocino",
@@ -632,7 +632,7 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 12 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-12",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -647,7 +647,7 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 13 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-13",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -662,7 +662,7 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 14 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-14",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -677,7 +677,7 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 15 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-15",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -692,7 +692,7 @@ export default [
     "permit": "2016-27",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 16 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-16",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -706,7 +706,7 @@ export default [
     "discipline": "MTB",
     "name": "USA Cycling XC Nat'l Champs",
     "date": "July 17 2016",
-    "promoterUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
+    "websiteUrl": "http://www.usacycling.org/2016/mountain-bike-nationals",
     "flyerUrl": "https://www.usacycling.org/myusac/include/cms/schedule/index.php?s=94&mode=print&type=pdf&date=2016-07-17",
     "location": {
       "streetAddress": "10001 Minaret Road",
@@ -720,7 +720,7 @@ export default [
     "discipline": "MTB",
     "name": "Tahoe Trail MTB 50k & 100k",
     "date": "July 16 2016",
-    "promoterUrl": "http://www.tahoetrailmtb.com/",
+    "websiteUrl": "http://www.tahoetrailmtb.com/",
     "registrationUrl": "https://register.chronotrack.com/r/12656",
     "location": {
       "city": "Northstar at Tahoe",
@@ -732,7 +732,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #10",
     "date": "July 23 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Toro Park",
       "state": "CA"
@@ -743,7 +743,7 @@ export default [
     "discipline": "MTB",
     "name": "Kirkwood Mountain Classic",
     "date": "July 24 2016",
-    "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "websiteUrl": "https://www.facebook.com/SierraCupMTB",
     "location": {
       "city": "Kirkwood",
       "state": "CA"
@@ -754,7 +754,7 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 04 2016",
-    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "websiteUrl": "http://downievilleclassic.com/downieville-classic/about",
     "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
@@ -766,7 +766,7 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 05 2016",
-    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "websiteUrl": "http://downievilleclassic.com/downieville-classic/about",
     "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
@@ -778,7 +778,7 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 06 2016",
-    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "websiteUrl": "http://downievilleclassic.com/downieville-classic/about",
     "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
@@ -790,7 +790,7 @@ export default [
     "discipline": "MTB",
     "name": "Downieville Classic",
     "date": "August 07 2016",
-    "promoterUrl": "http://downievilleclassic.com/downieville-classic/about",
+    "websiteUrl": "http://downievilleclassic.com/downieville-classic/about",
     "registrationUrl": "http://downievilleclassic.com/downieville-classic/registration",
     "location": {
       "city": "Downieville",
@@ -802,7 +802,7 @@ export default [
     "discipline": "MTB",
     "name": "Annadel XC",
     "date": "August 13 2016",
-    "promoterUrl": "http://www.bikemonkey.net/annadel/",
+    "websiteUrl": "http://www.bikemonkey.net/annadel/",
     "location": {
       "city": "Santa Rosa",
       "state": "CA"
@@ -813,7 +813,7 @@ export default [
     "discipline": "MTB",
     "name": "Beckwourth 100 MTB Endurance (TS100)",
     "date": "August 20 2016",
-    "promoterUrl": "http://northlanderevents.com/beckwourth-100-mtb-enduro/4589520691",
+    "websiteUrl": "http://northlanderevents.com/beckwourth-100-mtb-enduro/4589520691",
     "registrationUrl": "https://www.bikereg.com/beckwourth100",
     "location": {
       "city": "Beckwourth",
@@ -826,7 +826,7 @@ export default [
     "permit": "2016-1654",
     "name": "Bodie Bowl",
     "date": "August 21 2016",
-    "promoterUrl": "http://www.bodiebowl.com/",
+    "websiteUrl": "http://www.bodiebowl.com/",
     "registrationUrl": "https://www.bikereg.com/httpwwwbodiebowlcomabouthtml",
     "flyerUrl": "",
     "location": {
@@ -839,7 +839,7 @@ export default [
     "discipline": "MTB",
     "name": "CCCX #11 Final",
     "date": "August 21 2016",
-    "promoterUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
+    "websiteUrl": "http://www.cccxcycling.com/2016--MTBpage.html",
     "location": {
       "city": "Fort Ord",
       "state": "CA"
@@ -850,7 +850,7 @@ export default [
     "discipline": "MTB",
     "name": "Great Tahoe Flume Race",
     "date": "September 11 2016",
-    "promoterUrl": "https://www.facebook.com/SierraCupMTB",
+    "websiteUrl": "https://www.facebook.com/SierraCupMTB",
     "registrationUrl": "https://www.bikereg.com/flume-race",
     "location": {
       "streetAddress": "Spooner Lake",
@@ -863,7 +863,7 @@ export default [
     "discipline": "MTB",
     "name": "Gold Rush MTB",
     "date": "September 25 2016",
-    "promoterUrl": "http://totalbodyfitness.com/site/race/gold-rush-mtb-2016/",
+    "websiteUrl": "http://totalbodyfitness.com/site/race/gold-rush-mtb-2016/",
     "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-gold-rush-mtb-2016",
     "location": {
       "streetAddress": "8000 Douglas Blvd",
@@ -878,7 +878,7 @@ export default [
     "name": "4 & 8 Hours of Weaverville",
     "date": "September 25 2016",
     "status": "Canceled",
-    "promoterUrl": "https://www.facebook.com/teambigfootracing",
+    "websiteUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -890,7 +890,7 @@ export default [
     "name": "World Solo 24hr MTB Champs.",
     "status": "Canceled",
     "date": "September 25 2016",
-    "promoterUrl": "http://www.teambigfoot.net/Wembo15.htm",
+    "websiteUrl": "http://www.teambigfoot.net/Wembo15.htm",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -902,7 +902,7 @@ export default [
     "name": "Lagrange Fall Classic",
     "status": "Canceled",
     "date": "September 25 2016",
-    "promoterUrl": "https://www.facebook.com/teambigfootracing",
+    "websiteUrl": "https://www.facebook.com/teambigfootracing",
     "location": {
       "city": "Weaverville",
       "state": "CA"
@@ -913,7 +913,7 @@ export default [
     "discipline": "MTB",
     "name": "The TBF MTB 50 Miler",
     "date": "October 16 2016",
-    "promoterUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
+    "websiteUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
     "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
     "location": {
       "streetAddress": "8000 Douglas Blvd",

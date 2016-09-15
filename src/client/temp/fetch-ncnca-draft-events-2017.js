@@ -58,8 +58,13 @@ const transformEvents = googleSpreedsheetEvents =>
         city: event['Location'],
         state: 'CA',
       },
-      promoterName: event['Promoter'].trim() || undefined,
-      promoter: event['Promoted By'].trim() || undefined,
+      promoters: [{
+        name: event['Promoter'].trim() || undefined,
+        contactName: event['Promoted By'].trim() || undefined,
+        contactInfo: event['Promoter contact info'].trim() || undefined,
+      }],
+      // promoterName: event['Promoter'].trim() || undefined,
+      // promoter: event['Promoted By'].trim() || undefined,
       group: event['Group'].trim() || undefined,
       notes: event['Notes'].trim() || undefined,
     }

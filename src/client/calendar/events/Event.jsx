@@ -190,9 +190,10 @@ class Event extends Component {
     if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
       locationComponent = <Location location={event.location} size={cardSize} />
     } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
+      const promoter = event.promoters[0].name
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
-          {event.promoter}
+          {promoter}
         </IconLabel>
       )
     }
