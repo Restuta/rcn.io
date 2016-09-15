@@ -15,7 +15,7 @@ import Icon from 'atoms/Icon.jsx'
 import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
-import { Statuses } from 'client/calendar/events/types.js'
+import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
 import Badge from 'calendar/badges/Badge.jsx'
 // import UsacLogo from 'atoms/UsacLogo.jsx'
@@ -160,8 +160,9 @@ class EventDetails extends Component {
 
     const eventColor = getEventColor(discipline, type, status)
     const eventType = (type || discipline || '').toUpperCase()
+    const showInvertedBadge = (type === EventTypes.other.meeting || type === EventTypes.nonCompetitive.default)
 
-    raceTypeBadgesComp.push(<RaceTypeBadge key={30} name={eventType} color={eventColor} />)
+    raceTypeBadgesComp.push(<RaceTypeBadge key={30} inverted={showInvertedBadge} name={eventType} color={eventColor} />)
 
     const notesComp = (notes && (
       <Row>

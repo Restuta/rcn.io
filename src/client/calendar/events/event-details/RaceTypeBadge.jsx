@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import './RaceTypeBadge.scss'
+import Colors from 'styles/colors'
 
 
 export default class RaceTypeBadge extends Component {
@@ -12,12 +13,14 @@ export default class RaceTypeBadge extends Component {
       backgroundColor: color,
     }
 
+    const invertedColor = (color === 'white' || color === '#FFFFFF') ? Colors.body : color
+
     const invertedStyle = {
       transform: `skew(-${skew}deg)`,
       backgroundColor: 'transparent',
-      border: `1px solid ${color}`,
+      border: `1px solid ${invertedColor}`,
       borderTop: 'none',
-      color: color
+      color: invertedColor
     }
 
     const  style = inverted ? invertedStyle : normalStyle

@@ -52,6 +52,24 @@ const red = {
   red900: '#b71c1c',
 }
 
+const orange = {
+  orange50: '#FFF3E0',
+  orange100: '#FFE0B2',
+  orange200: '#FFCC80',
+  orange300: '#FFB74D',
+  orange400: '#FFA726',
+  orange500: '#FF9800',
+  orange600: '#FB8C00',
+  orange700: '#F57C00',
+  orange800: '#EF6C00',
+  orange900: '#E65100',
+  orangeA100: '#FFD180',
+  orangeA200: '#FFAB40',
+  orangeA400: '#FF9100',
+  orangeA700: '#FF6D00',
+
+}
+
 const blue = {
   blue50:  '#E3F2FD',
   blue100: '#BBDEFB',
@@ -71,6 +89,7 @@ const colors = {
   ...purple,
   ...red,
   ...blue,
+  ...orange,
 
   bodyBg: '#FCFCFC',
   body: '#333333',
@@ -82,11 +101,13 @@ const colors = {
   primary: purple.deepPurple400,
 }
 
+const clinicsColor = '#F06292'
 
 const event = {
   other: {
     unknownType: colors.body,
-    meeting: colors.body,
+    meeting: 'white',
+    clinics: clinicsColor,
   },
   status: {
     past: colors.grey500,
@@ -94,17 +115,29 @@ const event = {
     moved: colors.grey400,
   },
   road: {
+    'default': colors.primary,
     criterium: '#00BF10',
     roadRace: colors.blue500,
-    circuitRace: '#FFA726',
+    circuitRace: colors.orange500,
     timeTrial: colors.red500,
     hillClimb: colors.red700,
     stageRace: colors.deepPurple400,
     omnium: colors.deepPurple400,
+    clinics: clinicsColor,
   },
   mtb: {
     'default': colors.brownMud,
-    'defaultDimmed': colors.brownMudDimmed
+    defaultDimmed: colors.brownMudDimmed,
+    clinics: clinicsColor,
+  },
+  cyclocross: {
+    // 'default': colors.grey700,
+    'default': '#10cec0',
+    clinics: clinicsColor,
+  },
+  track: {
+    'default': colors.grey800,
+    clinics: clinicsColor,
   }
 }
 

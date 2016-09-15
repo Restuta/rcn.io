@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 import Sizes from './card-sizes'
 import classnames from 'classnames'
 import './EventName.scss'
-import { Statuses } from 'calendar/events/types'
+import { Statuses, EventTypes } from 'calendar/events/types'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 
 const EventName = (props) => {
@@ -13,7 +13,7 @@ const EventName = (props) => {
   //TODO bc: make this production ready, e.g. avoid iteration if one of the names is highlighted
   let wrappedNameComp = name
 
-  if (type && type.trim()) {
+  if (type && type.trim() && type !== EventTypes.other.meeting) {
     wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
   }
 
