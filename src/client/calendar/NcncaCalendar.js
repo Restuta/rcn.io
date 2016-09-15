@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
