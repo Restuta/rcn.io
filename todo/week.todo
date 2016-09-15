@@ -89,15 +89,18 @@ Today
 				+----- BUG: icons slode down on buttons
 				----- BUG Boostrap: hide past events link doesn't appear as a link
 				----- BUG Boostrap: debug checkboxes are broken
+				----- BUG Flyer Types: certain MTB events have non-pdf in pdf link
+				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 				- make sure generic calendars return 404 when ID is incorrect
 				- make events crawlable (add <a> tag to a card with proper href)
 				- add external link indicator to all links (icon)
 				+- add sheetsu logo (logo in email)
 				- add UsacLogo to usac event: ones that have permitId are usac ones for sure, but it's more reliable to have "usacEvent: true" set maually so we know for sure
-				- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
+				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
-			- 
+				
+			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
 			- center calendar name
 		 	---- (optimization) during event creation build index of occurence of "road race" inside event: and other words to speed up rendring
 		 	---- (optimization) isomorphic-fetch should point to node-specific dependency for node webpack bundles
@@ -107,15 +110,13 @@ Today
 			- add support for multiday events
 				- PROPOSED solution: defenitely there must be one event for one id, but then it may have array of dates if the event got moved it should have a link to event id that got created in place of it 
 			- make Event.date to be non-moment object, since that is not how it's going to come from the server: also this is not serializable
-			----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
+			+----- BUG: isoWeeksInYear doesn't cover full range of weeks for 2017 it's -1 week :(
 			----- BUG: relative date for next day assumes that events starts at midnight, which usually is not true, it needs to be set to 8AM (since no evetns start earlier)
 			----- BUG: media query for TopNavbar to have lef-right padding of 2rems on mobile to be aligned with 
 			content
 			----- BUG: drift interferes with modal allowing to drag it on the left
 			----- BUG: background still scrolls on iOS
 				- woraround: do not open EventDetails on mobile as modal
-			----- BUG: certain MTB events have non-pdf in pdf link
-				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 			--- Flyier
 				+- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
 			--- MAP

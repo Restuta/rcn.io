@@ -4,6 +4,7 @@ const Disciplines = {
   cyclocross: 'Cyclocross',
   track: 'Track',
   bmx: 'BMX',
+  nonCompetitive: 'Non-Competitive',
   other: 'Other'
 }
 
@@ -14,7 +15,8 @@ const Statuses = {
 
 const EventTypes = {
   other: {
-    meeting: 'Meeting'
+    meeting: 'Meeting',
+    clicnics: 'Clinics',
   },
   road: {
     criterium: 'Criterium',
@@ -40,6 +42,10 @@ const EventTypes = {
   track: {
     clicnics: 'Clinics',
     nonCompetitive: 'Non-Competitive',
+  },
+  nonCompetitive: {
+    granFondo: 'Gran Fondo',
+    'default': 'Non-Competitive',
   }
 }
 

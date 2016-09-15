@@ -36,6 +36,14 @@ const getEventColor = (discipline, type, status = '') => {
     }
   }
 
+  if (discipline === Disciplines.cyclocross) {
+    eventColor = Colors.event.cyclocross.default
+  }
+
+  if (discipline === Disciplines.track) {
+    eventColor = Colors.event.track.default
+  }
+
   if (discipline === Disciplines.road) {
     switch (type) {
       case 'Road Race':
@@ -59,13 +67,16 @@ const getEventColor = (discipline, type, status = '') => {
       case 'Omnium':
         eventColor = Colors.event.road.omnium
         break
+      case 'Clinics':
+        eventColor = Colors.event.road.clinics
+        break
       default:
-        eventColor = Colors.event.other.unknownType
+        eventColor = Colors.event.road.default
         break
     }
   }
 
-  return eventColor
+  return eventColor || 'white'
 }
 
 export {
