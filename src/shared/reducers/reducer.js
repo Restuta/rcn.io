@@ -3,7 +3,6 @@ import { handleActions as makeReducer } from 'redux-actions'
 import { routerReducer } from 'react-router-redux'
 import {
   norcalMtb2016Events,
-  testRoadEvents2016,
   ncnca2016Events,
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
@@ -25,7 +24,6 @@ const toByIdMap = objects => objects.reduce((map, x) => {
 }, {})
 
 const toArrayOfIds = objects => objects.map(x => x.id)
-const testRoadEventIds = toArrayOfIds(testRoadEvents2016)
 
 const initialState = {
   app: {
@@ -38,7 +36,6 @@ const initialState = {
   },
 
   events: toByIdMap(norcalMtb2016Events
-    .concat(testRoadEvents2016)
     .concat(ncnca2016Events)
   ),
 
@@ -86,14 +83,6 @@ const initialState = {
       eventsIds: toArrayOfIds(ncnca2016Events),
       loaded: false,
     },
-
-    ['cal-test-1']: {
-      showPastEvents: true,
-      eventsIds: testRoadEventIds,
-    },
-    ['cal-test-2']: { eventsIds: testRoadEventIds },
-    ['cal-test-3']: { eventsIds: testRoadEventIds },
-    ['cal-test-4']: { eventsIds: testRoadEventIds },
   }
 }
 
