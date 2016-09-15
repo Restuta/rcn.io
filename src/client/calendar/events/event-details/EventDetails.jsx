@@ -116,13 +116,14 @@ class EventDetails extends Component {
       type,
       notes,
       status,
-      promoterName,
-      promoter,
-      promoterUrl,
+      promoters,
+      websiteUrl,
       registrationUrl,
       resultsUrl,
       group
     } = this.props.event
+
+    const promoterContactName = promoters.map(x => x.contactName)[0]
 
     const classNames = classnames('EventDetails', {
       'canceled': status === Statuses.canceled,
@@ -170,7 +171,7 @@ class EventDetails extends Component {
           <h4 className="w-700 header-regular">
             <Icon name="speaker_notes" size={2.5} top={-1} color={Colors.grey600}/>
             <span style={{color: Colors.grey500}}>Notes by </span>
-            {promoterName}:
+            {promoterContactName}:
           </h4>
           <p className="text-sm-14">{notes || '--'}</p>
         </Col>
@@ -200,7 +201,7 @@ class EventDetails extends Component {
           </Row>
           <Row>
             <Col xs={14}>
-              <PresentedBy by={promoter}/>
+              <PresentedBy by={promoters.map(x => x.name).join(' and ')}/>
               <hr className="spacer" />
             </Col>
           </Row>
@@ -228,7 +229,7 @@ class EventDetails extends Component {
                   : <RegButton regUrl={registrationUrl} onClick={this.onRegisterBtnClick}/>
                 }
               </div>
-              <EventsWebsite url={promoterUrl} />
+              <EventsWebsite url={websiteUrl} />
             </Col>
             {/* <Col xs={14} sm={5}>
 

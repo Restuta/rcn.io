@@ -72,10 +72,10 @@ const initialState = {
       id: 'cal-ncnca-2016',
       year: 2016,
       name: 'NCNCA Calendar 2016',
-      highlight: {
-        word: 'NCNCA',
-        color: Colors.red800,
-      },
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
       description: '',
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,

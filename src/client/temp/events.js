@@ -46,10 +46,9 @@ const createEvent = rawEvent => {
     status: rawEvent.status || undefined, //getting rid of empty strings
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
-    promoter: rawEvent.promoter, //TODO bc: get rid of this, use promoters instead
-    promoters: rawEvent.promoters,
+    promoters: rawEvent.promoters || [],
     promoterName: rawEvent.promoterName,
-    promoterUrl: preProcessUrl(rawEvent.promoterUrl),
+    websiteUrl: preProcessUrl(rawEvent.websiteUrl),
     registrationUrl: preProcessUrl(rawEvent.registrationUrl)
   }
 }
