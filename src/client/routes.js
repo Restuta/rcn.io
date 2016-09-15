@@ -3,7 +3,6 @@ import { Route, IndexRoute, Redirect } from 'react-router'
 import App from 'App'
 import Home from 'Home'
 import Dev from 'Dev'
-import CalCalendar from 'calendar/CalCalendar'
 import MtbCalendar from 'calendar/MtbCalendar'
 import NcncaCalendar from 'calendar/NcncaCalendar'
 import NcncaDraftCalendar from 'calendar/NcncaDraftCalendar'
@@ -14,7 +13,6 @@ const routes  = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/dev" component={Dev} />
-    <Route path="/cal" component={CalCalendar} />
     <Route path="/calendars/norcal-mtb" component={MtbCalendar} />
     <Route path="/calendars/ncnca-2017-draft" component={NcncaDraftCalendar} />
     <Route path="/calendars/:calendarId" component={NcncaCalendar} />
