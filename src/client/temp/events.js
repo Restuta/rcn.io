@@ -39,6 +39,7 @@ const createEvent = rawEvent => {
     datePlain: datePlain,
     type: rawEvent.type,
     discipline: rawEvent.discipline,
+    usacPermit: rawEvent.usacPermit || undefined,
     //TODO: add location name
     location: rawEvent.location || {},
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
@@ -48,6 +49,7 @@ const createEvent = rawEvent => {
     notes: rawEvent.notes,
     promoters: rawEvent.promoters || [],
     promoterName: rawEvent.promoterName,
+    series: rawEvent.series,
     websiteUrl: preProcessUrl(rawEvent.websiteUrl),
     registrationUrl: preProcessUrl(rawEvent.registrationUrl)
   }
