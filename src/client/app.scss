@@ -95,6 +95,13 @@ a {
   &.rgt-4 { margin-right: 4rem; }
 }
 
+.top {
+  &.top-0 {top: 0;}
+}
+
+.nowrap {
+  white-space: nowrap;
+}
 
 //making drift z-index lowe than modal z-index
 #drift-widget-container {

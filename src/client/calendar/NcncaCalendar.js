@@ -23,9 +23,7 @@ const getCalendarId = slugFromRouteParams =>
 export default class NcncaCalendar extends Component {
   render() {
     const { containerWidth } = this.props
-
     const calendarId = getCalendarId(this.props.params.calendarId)
-
     let weekdaysSizes
 
     if (containerWidth <= Grid.ContainerWidth.SM) {
@@ -39,10 +37,10 @@ export default class NcncaCalendar extends Component {
     return (
       <div>
         <Calendar
-            calendarId={calendarId}
-            containerWidth={containerWidth}
-            weekdaysSizes={weekdaysSizes}
-            />
+          calendarId={calendarId}
+          containerWidth={containerWidth}
+          weekdaysSizes={weekdaysSizes}
+          />
       </div>
     )
   }

@@ -4,6 +4,8 @@
 
 .UsacLogo {
 
+  vertical-align: middle;
+
   &.size-1 {
     height: 3rem;
   }
@@ -17,7 +19,7 @@
   }
 
   &.size-4 {
-    height: 6rem;  
+    height: 6rem;
   }
 
 }
