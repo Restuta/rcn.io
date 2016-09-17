@@ -86,7 +86,14 @@ Today
 			- concept of material-like primary button (saves space): http://screencast.com/t/vuepHQaAaT01
 		!----- immediate todo
 			--- high priority
+				+- rename "promoterUrl" in MTB to "websiteUrl"
 				+----- BUG: icons slode down on buttons
+				- replace "no flyer (yet?)" for past events to just no flyer
+				- there is not EVENT WEBSITE for NCNCA races, only promoter
+				- when permit number is present => calculate results url automatically
+				- when flyer number is present but flyer url is not calucate it automatically:https://www.usacycling.org/events/getflyer.php?permit=2016-1938 check how many cases like that do we have
+				- fix on results button click
+				- add "usacEvent" property true/false: so when  there is no permit number we would at least able to mark this event as USAC sanctioned
 				----- BUG Boostrap: hide past events link doesn't appear as a link
 				----- BUG Boostrap: debug checkboxes are broken
 				----- BUG Flyer Types: certain MTB events have non-pdf in pdf link
@@ -99,7 +106,8 @@ Today
 				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
-				
+			- trim urls for Event Details: for evnt website, do what Product Hunt does, fix lthe lengths of the url
+			- normalize series to it's own collection?
 			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling
 			- center calendar name
 		 	---- (optimization) during event creation build index of occurence of "road race" inside event: and other words to speed up rendring
