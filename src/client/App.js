@@ -26,14 +26,13 @@ class App extends Component {
   }
 
   onModalClose() {
-    const returnUrl = this.props.location.state.returnUrl
+    const returnLocation = this.props.location.state.returnLocation
 
-    if (returnUrl) {
-      this.props.router.push({
-        pathname: returnUrl,
+    if (returnLocation) {
+      this.props.router.replace({
+        pathname: returnLocation.pathname,
         state: { backFromModal: true }
       })
-      // this.props.router.push(returnUrl)
     }
   }
 
