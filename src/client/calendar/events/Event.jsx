@@ -49,12 +49,29 @@ class Event extends Component {
     this.onEventClick = this.onEventClick.bind(this)
   }
 
-  onEventClick() {
+  onEventClick(e) {
+    //so link doesn't redirect to whatever set in href, but is still indexable with google
+    e.preventDefault()
+
     const trackClick = () => analytics.track('Clicked on Event', {
-      event: this.props.event,
+      id: this.props.event.id,
+      name: this.props.event.name,
+      date: this.props.event.date.format('MMMM DD YYYY'),
+      type: this.props.event.type,
+      discipline: this.props.event.discipline,
     })
 
     trackClick()
+
+    this.props.router.replace({
+      pathname: `/events/${this.props.id}`,
+      state: {
+        modal: true,
+        returnLocation: {
+          pathname: this.context.locationPathname,
+        },
+      }
+    })
   }
 
   render() {
@@ -220,10 +237,8 @@ class Event extends Component {
     }
 
     return (
-      <Link style={style} className="Event lvl-1" onClick={this.onEventClick} to={{
-        pathname: `/events/${this.props.id}`,
-        state: { modal: true, returnUrl: this.context.locationPathname}
-      }}>
+      <a id={event.id} href={this.context.locationPathname} style={style} className="Event lvl-1"
+        onClick={this.onEventClick}>
         {debugComponent}
 
         <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
@@ -233,7 +248,7 @@ class Event extends Component {
         {eventGroupComponent}
         {locationComponent}
         {promoterComp}
-      </Link>
+      </a>
     )
   }
 }
