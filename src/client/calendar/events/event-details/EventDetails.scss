@@ -41,6 +41,16 @@
       letter-spacing: 0;
     }
 
+    .promoted-by-section {
+      margin-top: 1rem;
+
+      .promoted-by-section-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
     .address-link {
       margin-bottom: 1rem;
       display: inline-block;
@@ -48,6 +58,7 @@
       top: pxToRem(3);
       font-size: scaleUp(2.5);
     }
+
 
     .reg-results-button-container {
       margin-bottom: 2rem;
@@ -80,10 +91,15 @@
       margin-top: 0;
     }
 
-    .flyer {
-      height: 100rem;
-      background: rgba($blue-100, 0.5);
+    .flyer-section {
+      margin-top: 2em;
+
+      .flyer {
+        height: 100rem;
+        background: rgba($blue-100, 0.5);
+      }
     }
+
 
     .badges {
       position: absolute;

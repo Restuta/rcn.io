@@ -4,7 +4,7 @@ import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Button from 'atoms/Button.jsx'
-import { pxToRem } from 'styles/typography'
+// import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
@@ -18,20 +18,25 @@ import { locationToAddressStr } from 'client/calendar/utils/location.js'
 import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
 import Badge from 'calendar/badges/Badge.jsx'
-// import UsacLogo from 'atoms/UsacLogo.jsx'
+import UsacLogo from 'atoms/UsacLogo.jsx'
 
-const PresentedBy = ({by}) => {
-  return (
-    <span style={{
-      fontStyle: 'italic',
-      position: 'relative',
-      top: pxToRem(4) + 'rem'
-    }}>
-      <span className="secondary">by {(by || '--')}</span>
-    </span>
-  )
-}
+const PresentedBy = ({by}) => (
+  <span className="text-2 top top-0" style={{
+    fontStyle: 'italic',
+    position: 'relative',
+    lineHeight: '3rem',
+    marginRight: '2rem',
+  }}>
+    <span className="secondary">by {(by || '--')}</span>
+  </span>
+)
 
+const UsacPermit = ({number}) => (
+  <span className="nowrap secondary">
+    <UsacLogo size={1} style={{marginRight: '1rem'}}/>
+    <span className="text-sm-11 top top-0">PERMIT {number}</span>
+  </span>
+)
 
 const EventsWebsite = ({url}) => {
   let eventComp
@@ -81,14 +86,19 @@ const ResultsButton = ({resultsUrl, onClick}) => (
     : <PrimaryButton text="NO RESULTS LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
 )
 
+const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
+
 class EventDetails extends Component {
   constructor(props) {
     super(props)
     this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)
+    this.onResultsBtnClick = this.onResultsBtnClick.bind(this)
   }
 
+
   onResultsBtnClick() {
-    window.location.href = this.props.event.resultsUrl
+    // console.info(...arguments)
+    window.location.href = this.resultsUrl
   }
 
   onRegisterBtnClick() {
@@ -118,12 +128,26 @@ class EventDetails extends Component {
       status,
       promoters,
       websiteUrl,
+      usacPermit,
       registrationUrl,
-      resultsUrl,
+      resultsUrl: originalResultsUrl,
       group
     } = this.props.event
 
-    const promoterContactName = promoters.map(x => x.contactName)[0]
+    const promoterContactName = (promoters && promoters.length > 0)
+      ? promoters.map(x => x.contactName)[0]
+      : ''
+
+    const presentedBy = (promoters && promoters.length > 0)
+      ? promoters.map(x => x.name).join(' and ')
+      : '——'
+
+    const series = (this.props.event.series && this.props.event.series.length > 0)
+      ? this.props.event.series
+      : [{ name: '——' }]
+
+    let resultsUrl = originalResultsUrl || (usacPermit ? (getUsacResultsUrl(usacPermit)) : '')
+    this.resultsUrl = resultsUrl
 
     const classNames = classnames('EventDetails', {
       'canceled': status === Statuses.canceled,
@@ -199,12 +223,13 @@ class EventDetails extends Component {
             </Col>
             <Col xs={14} sm={5} />
           </Row>
-          <Row>
-            <Col xs={14}>
-              <PresentedBy by={promoters.map(x => x.name).join(' and ')}/>
-              <hr className="spacer" />
+          <Row className="promoted-by-section">
+            <Col xs={14} className="promoted-by-section-container">
+              <PresentedBy by={presentedBy}/>
+              <UsacPermit number={usacPermit || '——'}/>
             </Col>
           </Row>
+          <hr className="spacer" />
           <Row>
             <Col xs={14}>
               <AddressLink url={googleMapsDirectionsUrl} className="address-link"
@@ -231,35 +256,22 @@ class EventDetails extends Component {
               </div>
               <EventsWebsite url={websiteUrl} />
             </Col>
-            {/* <Col xs={14} sm={5}>
-
-            </Col> */}
           </Row>
           <hr className="spacer no-margin-top" />
-          <Row>
+          {/* <Row>
             <Col xs={14} sm={9}>
-              {/* <UsacLogo size={1} style={{
-                // display: 'inline',
-                // marginLeft: '1rem',
-                marginBottom: '1rem',
-              }}/> */}
+            </Col>
+          </Row> */}
+          <Row>
+            <Col xs={14} sm={9} className="text-2">
+              <h4 className="header-regular header">
+                PART OF
+              </h4>
+              {series.map((x, i) => <div key={i}>{x.name}</div>)}
             </Col>
           </Row>
-          {/* <Row>
-            <Col xs={14} sm={9} className="text-2">
-              Part of:
-            </Col>
-            <Col xs={14} sm={5} className="text-2">Links</Col>
-          </Row> */}
-          {/* <Row>
-            <Col smOffset={9} xs={5}>
-              <a href={promoterUrl} target="_blank">
-                {promoterUrl}
-              </a>
-            </Col>
-          </Row> */}
           {notesComp}
-          <Row className="">
+          <Row className="flyer-section">
             <Col xs={14}>
               <Flyer url={flyerUrl} />
             </Col>

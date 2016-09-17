@@ -11,6 +11,9 @@ export default class RaceTypeBadge extends Component {
     const normalStyle = {
       transform: `skew(-${skew}deg)`,
       backgroundColor: color,
+      //tiny hack to push text up on mobile view so it's aligned with possible inverted badges
+      //like PAST
+      borderBottom: `1px solid ${color}`,
     }
 
     const invertedColor = (color === 'white' || color === '#FFFFFF') ? Colors.body : color

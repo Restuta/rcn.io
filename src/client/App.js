@@ -11,6 +11,7 @@ import Modal from 'atoms/Modal.jsx'
 let whenRenderStarted
 
 class App extends Component {
+  //required for proper propagation of locationPathname down to the children
   getChildContext() {
     return { locationPathname: this.props.location.pathname }
   }
