@@ -83,7 +83,7 @@
       margin-bottom: 2rem;
     }
 
-    .header {
+    .header-4 {
       color: $grey-500;
       text-transform: uppercase;
       font-weight: 500;
@@ -91,13 +91,19 @@
       margin-top: 0;
     }
 
-    .flyer-section {
-      margin-top: 2em;
+    .header-flyer {
+      color: $grey-600;
+      text-transform: uppercase;
+      font-weight: 700;
+      @include text-3();
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-      .flyer {
-        height: 100rem;
-        background: rgba($blue-100, 0.5);
-      }
+    .flyer-section {
+      margin-top: 3rem;
+
+      
     }
 
 
@@ -129,10 +135,6 @@
 
     >.content {
       outline: 1px solid silver;
-    }
-
-    .Icon {
-      margin-right: 0.5rem;
     }
 
     .status-badge {

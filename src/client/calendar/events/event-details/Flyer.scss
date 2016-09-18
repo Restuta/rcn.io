@@ -1,11 +1,59 @@
 @import 'variables';
 @import 'mixins';
 
-.Flyer {
-  opacity: 0.1;
-  transition: opacity 0.2s ease-in;
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
 
-  &.loaded {
-    opacity: 1;
+  100% {
+    opacity: 1
+  }
+}
+
+
+.Flyer {
+  &-iframe {
+    &.loaded {
+      //tbd
+    }
+  }
+
+  .flyer {
+    height: 100rem;
+    background: rgba($blue-100, 0.5);
+  }
+
+  &-spinner {
+    position: absolute;
+    top: 16rem;
+    z-index: -1;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
+  }
+
+  .iframe-container {
+    iframe {
+      z-index: 20;
+    }
+    text-align: center;
+    // background-color: $grey-100;
+    // opacity: 0.1;
+  }
+
+  &-header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    >.button-group {
+      .btn:first-child {
+        margin-right: 2rem;
+      }
+      margin-bottom: 1rem;
+    }
   }
 }

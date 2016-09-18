@@ -12,7 +12,6 @@ import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
-import { Link } from 'react-router'
 
 
 //gets height of the smallest card (in rems) for the given containerWidth
