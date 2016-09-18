@@ -6,9 +6,17 @@ import Spinner from 'atoms/Spinner.jsx'
 import './Flyer.scss'
 
 export default class Flyer extends Component {
+  constructor(props) {
+    super(props)
+    this.onOpenInNewTabClick = this.onOpenInNewTabClick.bind(this)
+  }
+
+  onOpenInNewTabClick() {
+    window.open(this.props.url)
+  }
+
   onLoad(e) {
     e.target.className += ' loaded'
-    console.info(e)
   }
 
   render() {
@@ -29,8 +37,8 @@ export default class Flyer extends Component {
         <div className="Flyer-header-container">
           <h3 className="header-regular header-flyer">FLYER</h3>
           <div className="button-group">
-            <Button size="sm" icon="file_download" type="secondary" />
-            <Button size="sm" icon="open_in_new" type="secondary" />
+            {/* <Button size="sm" icon="file_download" type="secondary" /> */}
+            <Button size="sm" icon="open_in_new" type="secondary" onClick={this.onOpenInNewTabClick}/>
           </div>
         </div>
         <hr className="spacer no-margin-top" />
