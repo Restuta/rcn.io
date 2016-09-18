@@ -263,11 +263,11 @@ class EventDetails extends Component {
             </Col>
           </Row> */}
           <Row>
-            <Col xs={14} sm={9} className="text-2">
+            <Col xs={14} sm={9}>
               <h4 className="header-regular header">
                 PART OF
               </h4>
-              {series.map((x, i) => <div key={i}>{x.name}</div>)}
+              {series.map((x, i) => <div key={i} className="text-2">{x.name}</div>)}
             </Col>
           </Row>
           {notesComp}
