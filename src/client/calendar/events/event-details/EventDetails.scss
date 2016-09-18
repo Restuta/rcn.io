@@ -46,7 +46,7 @@
 
       .promoted-by-section-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
       }
     }
@@ -103,7 +103,7 @@
     .flyer-section {
       margin-top: 3rem;
 
-      
+
     }
 
 
@@ -125,7 +125,7 @@
     //DEBUG STYLES
 
     .spacer {
-      margin-top: 3rem - pxToRem(1);
+      margin-top: 2rem - pxToRem(1);
       margin-bottom: 2rem;
     }
 

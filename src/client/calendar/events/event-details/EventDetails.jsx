@@ -21,11 +21,11 @@ import Badge from 'calendar/badges/Badge.jsx'
 import UsacLogo from 'atoms/UsacLogo.jsx'
 
 const PresentedBy = ({by}) => (
-  <span className="text-2 top top-0" style={{
+  <span className="text-2" style={{
     fontStyle: 'italic',
     position: 'relative',
-    lineHeight: '3rem',
     marginRight: '2rem',
+    marginBottom: '1rem',
   }}>
     <span className="secondary">by {(by || '--')}</span>
   </span>
@@ -34,7 +34,7 @@ const PresentedBy = ({by}) => (
 const UsacPermit = ({number}) => (
   <span className="nowrap secondary">
     <UsacLogo size={1} style={{marginRight: '1rem'}}/>
-    <span className="text-sm-11 top top-0">PERMIT {number}</span>
+    <span className="text-sm-11 top-0">PERMIT {number}</span>
   </span>
 )
 
