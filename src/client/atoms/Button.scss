@@ -80,8 +80,8 @@
   }
 
   &-sm.btn-icon-only {
-    padding-left: $btn-base-padding - 1rem;
-    padding-right: $btn-base-padding - 1rem;
+    padding-left: $btn-base-padding - 1.25rem; //extra 0.25 to compensate for 2.25rem (ideal size of google material icon)
+    padding-right: $btn-base-padding - 1.25rem;
   }
 
   &-md {
