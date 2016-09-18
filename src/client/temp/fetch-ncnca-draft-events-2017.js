@@ -63,8 +63,6 @@ const transformEvents = googleSpreedsheetEvents =>
         contactName: event['Promoter'].trim() || undefined,
         contactInfo: event['Promoter contact info'].trim() || undefined,
       }],
-      // promoterName: event['Promoter'].trim() || undefined,
-      // promoter: event['Promoted By'].trim() || undefined,
       group: event['Group'].trim() || undefined,
       notes: event['Notes'].trim() || undefined,
     }

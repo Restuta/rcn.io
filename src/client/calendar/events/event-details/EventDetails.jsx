@@ -38,7 +38,7 @@ const UsacPermit = ({number}) => (
   </span>
 )
 
-const EventsWebsite = ({url}) => {
+const EventWebsite = ({url}) => {
   let eventComp
 
   if (url) {
@@ -67,7 +67,7 @@ const EventsWebsite = ({url}) => {
 }
 
 const PrimaryButton = ({text, icon, disabled, onClick}) => (
-  <Button size="sm" icon={icon} disabled={disabled} primaryHover className="btn-register" onClick={onClick}>
+  <Button size="sm" icon={icon} disabled={disabled} primaryHover className="primary-button" onClick={onClick}>
     {text}
   </Button>
 )
@@ -129,7 +129,8 @@ class EventDetails extends Component {
       usacPermit,
       registrationUrl,
       resultsUrl: originalResultsUrl,
-      group
+      group,
+      promoterInfo
     } = this.props.event
 
     const promoterContactName = (promoters && promoters.length > 0)
@@ -191,7 +192,7 @@ class EventDetails extends Component {
       <Row>
         <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
-            <Icon name="speaker_notes" size={2.5} top={-1} color={Colors.grey600}/>
+            <Icon className="margin rgt-05" name="speaker_notes" size={2.5} top={-1} color={Colors.grey600}/>
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterContactName}:
           </h4>
@@ -252,7 +253,9 @@ class EventDetails extends Component {
                   : <RegButton regUrl={registrationUrl} onClick={this.onRegisterBtnClick}/>
                 }
               </div>
-              <EventsWebsite url={websiteUrl} />
+              <EventWebsite url={websiteUrl} />
+              <hr className="spacer no-margin-top margin bot-1" />
+              <p className="text-2 notes-from-promoter">{promoterInfo}</p>
             </Col>
           </Row>
           <hr className="spacer no-margin-top" />
@@ -269,7 +272,6 @@ class EventDetails extends Component {
           {notesComp}
           <Row className="flyer-section">
             <Col xs={14}>
-
               <Flyer url={flyerUrl} />
             </Col>
           </Row>
