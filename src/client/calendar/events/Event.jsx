@@ -236,7 +236,7 @@ class Event extends Component {
     }
 
     return (
-      <a id={event.id} href={this.context.locationPathname} style={style} className="Event lvl-1"
+      <a id={event.id} href={`/events/${this.props.id}`} style={style} className="Event lvl-1"
         onClick={this.onEventClick}>
         {debugComponent}
 
