@@ -44,13 +44,13 @@ const EventsWebsite = ({url}) => {
   if (url) {
     eventComp = (
       <a href={url} target="_blank">
-        <Icon name="public" size={2} top={-1} color={Colors.primary}/>
+        <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.primary}/>
         {getShorterUrl(url)}
       </a>
     )
   } else {
     eventComp = (<div>
-      <Icon name="public" size={2} top={-1} color={Colors.grey500}/>
+      <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.grey500}/>
       {'--'}
     </div>
     )
@@ -58,9 +58,7 @@ const EventsWebsite = ({url}) => {
 
   return (
     <div>
-      <h4 className="header-regular header">
-        Event Website
-      </h4>
+      <h4 className="header-regular header-4">Event Website</h4>
       <div className="events-website-link text-3">
         {eventComp}
       </div>
@@ -264,15 +262,14 @@ class EventDetails extends Component {
           </Row> */}
           <Row>
             <Col xs={14} sm={9}>
-              <h4 className="header-regular header">
-                PART OF
-              </h4>
+              <h4 className="header-regular header-4">PART OF</h4>
               {series.map((x, i) => <div key={i} className="text-2">{x.name}</div>)}
             </Col>
           </Row>
           {notesComp}
           <Row className="flyer-section">
             <Col xs={14}>
+
               <Flyer url={flyerUrl} />
             </Col>
           </Row>

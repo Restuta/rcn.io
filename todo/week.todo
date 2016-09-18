@@ -97,6 +97,7 @@ Today
 				----- BUG Boostrap: hide past events link doesn't appear as a link
 				----- BUG Boostrap: debug checkboxes are broken
 				----- BUG Flyer Types: certain MTB events have non-pdf in pdf link
+					- for older calendars we shold honor MIME types
 				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 				- make sure generic calendars return 404 when ID is incorrect
 				- make events crawlable (add <a> tag to a card with proper href)
@@ -106,6 +107,7 @@ Today
 				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
+			- add (opened in new window) for EVENT WEBSITE link as per mock
 			- trim urls for Event Details: for evnt website, do what Product Hunt does, fix lthe lengths of the url
 			- normalize series to it's own collection?
 			- Change Registration button ICON based on website: BikeReg, Eventbirte, USA Cycling

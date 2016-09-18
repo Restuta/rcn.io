@@ -30,6 +30,7 @@
   overflow-y: auto;
   animation-name: fadeIn;
   animation-duration: 0.3s;
+  transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
 }
 
 .Modal.content {
@@ -91,5 +92,6 @@
   @include phone {
     width: 100%;
     max-width: 100%;
+    margin-top: 2rem;
   }
 }

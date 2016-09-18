@@ -12,7 +12,7 @@
 
    background-color: white;
   // padding: $line-height-rem;
-  transition: box-shadow ease-in-out .2s;
+  transition: box-shadow ease-out .2s;
 
   &.lvl-1 {
     @include box-shadow-custom-minimal();
