@@ -28,8 +28,8 @@
   z-index: $modal-z-index;
   overflow-x: hidden;
   // overflow-y: auto;
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; /* has to be scroll, not auto for momentum scroll to work on mobile */
+  -webkit-overflow-scrolling: touch; /* enables momentum scroll for modal content */
   animation-name: fadeIn;
   animation-duration: 0.3s;
   transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
