@@ -92,13 +92,13 @@ Today
 				- there is not EVENT WEBSITE for NCNCA races, only promoter
 				- when permit number is present => calculate results url automatically
 				- when flyer number is present but flyer url is not calucate it automatically:https://www.usacycling.org/events/getflyer.php?permit=2016-1938 check how many cases like that do we have
-				- fix on results button click
+				+- fix on results button click
 				- add "usacEvent" property true/false: so when  there is no permit number we would at least able to mark this event as USAC sanctioned
 				----- BUG Boostrap: hide past events link doesn't appear as a link
 				----- BUG Boostrap: debug checkboxes are broken
 				----- BUG Flyer Types: certain MTB events have non-pdf in pdf link
 					- for older calendars we shold honor MIME types
-				- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
+				-- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 				- make sure generic calendars return 404 when ID is incorrect
 				- make events crawlable (add <a> tag to a card with proper href)
 				- add external link indicator to all links (icon)
@@ -130,8 +130,8 @@ Today
 			--- Flyier
 				+- use google viewer in iFrame: https://docs.google.com/viewer?embedded=true&url=https://www.usacycling.org/events/getflyer.php?permit=2016-1578
 			--- MAP
-			    -- json event marker color should be of the event color type
-			    - make events composite and state/city bold as per mock
+			    +-- json event marker color should be of the event color type
+			    +- make events composite and state/city bold as per mock
 			    - on mobile show mobile-google maps URL
 			---- consider rendering event details on popup but wighout calendar behind it even for direct URLS
 			    - positive: this simplifies logic
