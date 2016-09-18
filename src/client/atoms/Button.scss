@@ -5,11 +5,15 @@
   height: 4rem;
   border-radius: 3px;
   letter-spacing: 0.3px;
-  transition: all 0.2s ease 0s;
+  // transition: all 0.2s ease 0s;
 
   >.Icon {
     margin-right: 0.5rem;
     vertical-align: text-bottom;
+  }
+
+  &.btn-icon-only > .Icon {
+    margin-right: 0;
   }
 
   &.raised-1 {
@@ -66,26 +70,34 @@
     background-color: darken($primary-color, 15%);
   }
 
+  $btn-base-padding: 2rem;
+
   &-sm {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: $btn-base-padding;
+    padding-right: $btn-base-padding;
     font-size: pxToRem(12);
     height: 4rem;
+  }
+
+  &-sm.btn-icon-only {
+    padding-left: $btn-base-padding - 1rem;
+    padding-right: $btn-base-padding - 1rem;
   }
 
   &-md {
     // padding-top: 0.5rem;
     // padding-bottom: 0.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: $btn-base-padding + 0.5rem;
+    padding-right: $btn-base-padding + 0.5rem;
     font-size: pxToRem(14);
     height: 5rem;
   }
 
   &-lg {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: $btn-base-padding + 1rem;
+    padding-right: $btn-base-padding + 1rem;
     font-size: pxToRem(16);
     height: 7rem;
   }
+
 }

@@ -28,13 +28,17 @@ export default class Button extends Component {
       icon
     } = this.props
 
+    const iconOnlyButton = (!this.props.children && icon)
+
     const classes = classnames(`Button Button-${size} btn`,
       `btn-${type}`,
       `btn-${size} fix-fout`,
       {
         'primary-hover': primaryHover,
         'disabled': disabled,
+        'btn-icon-only': iconOnlyButton
       },
+
       className
     )
     const iconSize = {
