@@ -18,6 +18,15 @@
 .EventDetails {
   color: $grey-600;
 
+  .spacer {
+    margin-top: 2rem - pxToRem(1);
+    margin-bottom: 2rem;
+  }
+
+  .spacer.no-margin-top {
+    margin-top: - pxToRem(1);
+  }
+
   >.content {
     // min-width: 90rem;
     .date {
@@ -62,7 +71,9 @@
 
     .reg-results-button-container {
       margin-bottom: 2rem;
+      margin-right: 2rem;
     }
+
 
     .register-section-container {
       overflow: hidden;
@@ -72,6 +83,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+      }
+
+      .notes-from-promoter {
+        word-wrap: break-word;
+        margin-bottom: 3rem;
       }
     }
 
@@ -102,10 +118,7 @@
 
     .flyer-section {
       margin-top: 3rem;
-
-
     }
-
 
     .badges {
       position: absolute;
@@ -123,15 +136,6 @@
       }
     }
     //DEBUG STYLES
-
-    .spacer {
-      margin-top: 2rem - pxToRem(1);
-      margin-bottom: 2rem;
-    }
-
-    .spacer.no-margin-top {
-      margin-top: - pxToRem(1);
-    }
 
     >.content {
       outline: 1px solid silver;

@@ -389,6 +389,7 @@ export default [{
     "long": -119.7132
   },
   "resultsUrl": null,
+  "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
       "id": "prm-23293",
@@ -435,6 +436,7 @@ export default [{
       "name": "Clovis Criterium Training Series"
     }
   ],
+  "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoterInfo": "For more information, visit http://www.facebook.com/clovis.training.crits or email clovistrainingcrits@gmail.com  **These events are for practice only and no results will be recorded.**",
   "registrationUrl": "",
   "flyer": {
@@ -477,6 +479,7 @@ export default [{
   ],
   "promoterInfo": "For more information, visit http://www.facebook.com/clovis.training.crits or email clovistrainingcrits@gmail.com  **These events are for practice only and no results will be recorded.**",
   "registrationUrl": "",
+  "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "flyer": {
     "name": "FL_2016-138 Beginning Racer Program - Clovis Training Crits OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/12/08/2015%20-%206:54pm/FL_2016-138%20Beginning%20Racer%20Program%20-%20Clovis%20Training%20Crits%20OKED_1.pdf",
@@ -509,6 +512,7 @@ export default [{
     "long": -119.7132
   },
   "resultsUrl": null,
+  "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
       "id": "prm-23293",
@@ -549,6 +553,7 @@ export default [{
     "long": -119.7132
   },
   "resultsUrl": null,
+  "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
       "id": "prm-23293",

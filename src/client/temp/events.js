@@ -48,7 +48,7 @@ const createEvent = rawEvent => {
     group: rawEvent.group, //group of event according to NCNCA planning document
     notes: rawEvent.notes,
     promoters: rawEvent.promoters || [],
-    promoterName: rawEvent.promoterName,
+    promoterInfo: rawEvent.promoterInfo,
     series: rawEvent.series,
     websiteUrl: preProcessUrl(rawEvent.websiteUrl),
     registrationUrl: preProcessUrl(rawEvent.registrationUrl)

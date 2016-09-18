@@ -19,7 +19,7 @@ Today
 	!----- immediate todo
 		+- rename index1.html to something meaningful
 		--- after MTB release
-			- hosted graphite logo
+			.- hosted graphite logo
 			-- use React SideEffect for Document Title
 				- client side
 				- server side
@@ -107,6 +107,9 @@ Today
 				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
+			- normalize "promoterInfo section"
+				- rename it to notesFromPromoter
+				- replace <a> tags with theirs href attribute value
 			- add (opened in new window) for EVENT WEBSITE link as per mock
 			- trim urls for Event Details: for evnt website, do what Product Hunt does, fix lthe lengths of the url
 			- normalize series to it's own collection?
