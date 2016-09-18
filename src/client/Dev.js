@@ -136,6 +136,10 @@ export default class Dev extends Component {
             <br /><br />
             <Button size="md" icon="cancel" type="secondary" disabled>CANCEL</Button><S5 />
             <Button size="md" icon="bug_report" type="primary" disabled>OK</Button><S5 />
+            <br /><br />
+            <Button size="sm" icon="autorenew" type="secondary" /><S5 />
+            <Button size="sm" icon="file_download" type="secondary" /><S5 />
+            <Button size="sm" icon="open_in_new" type="secondary" /><S5 />
           </Col>
         </Row>
         <Row className="margin-top">
