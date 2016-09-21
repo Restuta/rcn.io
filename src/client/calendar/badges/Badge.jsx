@@ -16,22 +16,25 @@ export default class Badge extends Component {
       heightRem = 2,
       className,
       borderColor,
-      customFontSize
+      customFontSize,
+      style,
+      topRem = 0,
     } = this.props
 
 
-    const style = {
+    const badgeStyle = Object.assign({
       color: color,
+      top: `${topRem}rem`,
       backgroundColor: bgColor,
       height: `${heightRem}rem`,
-    }
+    }, style)
 
     if (!customFontSize) {
-      style.fontSize = scaleUp(heightRem - 1) + 'rem'
+      badgeStyle.fontSize = scaleUp(heightRem - 1) + 'rem'
     }
 
     if (borderColor) {
-      style.border = `1px solid ${borderColor}`
+      badgeStyle.border = `1px solid ${borderColor}`
     }
 
     const classNames = classnames('Badge', className, this.props.className, {
@@ -40,7 +43,7 @@ export default class Badge extends Component {
     })
 
     return (
-      <span className={classNames} style={style}>
+      <span className={classNames} style={badgeStyle}>
         {this.props.children}
       </span>
     )
@@ -56,4 +59,6 @@ Badge.propTypes = {
   heightRem: PropTypes.oneOf([2, 3, 4, 5, 6, 7, 8]),
   className: PropTypes.string,
   customFontSize: PropTypes.bool,
+  style: PropTypes.object,
+  topRem: PropTypes.number,
 }
