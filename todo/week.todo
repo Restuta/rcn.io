@@ -80,6 +80,12 @@ Today
 	--- Filtering
 		- deal with stage races and omniums (shoeld we support multiple event types? e.g. ['Stage Race', 'Criterim'])?
 		- deal with clinics
+	--- Embed Events to NCNCA
+		-- how
+			- https://css-tricks.com/thinking-async/
+			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
+			- https://dev.twitter.com/web/javascript/loading
+			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
