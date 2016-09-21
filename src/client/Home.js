@@ -2,7 +2,6 @@ import React from 'react'
 import Component from 'react-pure-render/component'
 import Auth0Badge from 'home/Auth0Badge.jsx'
 import HeapAnalyticsBadge from 'home/HeapAnalyticsBadge.jsx'
-import JacoAnalyticsBadge from 'home/JacoAnalyticsBadge.jsx'
 import SheetsuBadge from 'home/SheetsuBadge.jsx'
 import { Link } from 'react-router'
 import 'home/Home.scss'
@@ -42,9 +41,8 @@ export default class Home extends Component {
           <h1 className="header-regular">RCN.io</h1>
           <p className="text-5 header-regular w-500">
             We build Calendars for Bike Racers. Check out official&nbsp;
-            <Link to={'/calendars/ncnca-2016'}>NCNCA Calendar</Link> and not so official &nbsp;
+            <Link to={'/calendars/ncnca-2016'}>NCNCA Calendar</Link> and not so official&nbsp;
             <Link to={'/calendars/norcal-mtb'}>MTB Calendar</Link> that includes both USAC and non-USAC sanctioned races.
-            {/* Home for all <Link to={'/calendars/norcal-mtb'}>MTB events</Link> */}
           </p>
         </section>
 
@@ -60,11 +58,9 @@ export default class Home extends Component {
           </WhatIsNextItem>
         </section>
 
-
         <section className="section-badges">
           <Auth0Badge className="badge" />
           <HeapAnalyticsBadge className="badge"/>
-          <JacoAnalyticsBadge className="badge"/>
           <SheetsuBadge className="badge" />
         </section>
       </div>

@@ -193,6 +193,9 @@ sub {
 .header-regular {
   font-family: $body-font-family;
 }
+.condensed {
+  font-family: $headings-font-family;
+}
 .uppercase {
   text-transform: uppercase;
 }

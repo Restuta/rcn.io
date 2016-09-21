@@ -4,8 +4,22 @@
 .Home {
   //background-image: linear-gradient(-90deg, rgb(100, 65, 165), rgb(42, 8, 69));
 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   .section-main {
     margin-top: 8rem;
+  }
+
+  .section-next {
+    flex: 1 0 auto; //for footer to stick to bottom
+    // margin-bottom: 40rem;
+  }
+
+  .section-badges {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
 
@@ -14,8 +28,9 @@
   }
 
   .section-badges {
-    position: absolute;
+    // position: absolute;
     bottom: 1rem;
+    flex:none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
