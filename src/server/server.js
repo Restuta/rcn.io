@@ -139,6 +139,7 @@ app.get('/*', function(req, res, next) {
       // const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
       // const fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
 
+      res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
       res.send(fullHtml)
     } else {
       res.status(404).send('Not found')
