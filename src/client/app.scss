@@ -39,6 +39,14 @@ a {
   transition: color 0.2s ease-out;
 }
 
+#root {
+  height: 100%;
+}
+
+.App {
+  height: calc(100% - 4rem); //4 rem to compensate for top navbar
+  // height: 100%;
+}
 //so .fa iconst do not break vertical rythm
 .fa {
   vertical-align: bottom;
