@@ -55,7 +55,7 @@
     "babel-preset-stage-2": "^6.3.13",
     "bower": "^1.7.9",
     "compression": "^1.6.2",
-    "concurrently": "^2.1.0",
+    "concurrently": "^3.0.0",
     "css-loader": "0.14.5",
     "eslint": "~2.11.1",
     "eslint-plugin-react": "^5.1.1",
