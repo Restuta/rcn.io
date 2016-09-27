@@ -5,18 +5,33 @@
   display: flex;
   justify-content:: center;
   align-items: center;
-  text-align: center;
-  font-size: scaleUp(2);
-  font-weight: 900;
-  font-style: italic;
-  color: white;
-  min-width: 16rem;
-  height: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: -1px; //to cover weird bug in FireFox, there is a tiny gap between badges there
+
+  >.badge-bg {
+    min-width: 16rem;
+    height: 3rem;
+    margin-left: -1px; //to cover weird bug in FireFox, there is a tiny gap between badges there
+  }
+
+  .badge-text {
+    font-size: scaleUp(2);
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .badge-text.visible {
+    position: absolute; //so it's not contained inside bg skewed element and not skewed with it
+
+  }
+
+  .badge-text.hidden {
+    visibility: hidden;
+  }
 
   @include phone {
-    min-width: inherit;
+    .badge-bg {
+      min-width: inherit;
+    }
   }
 }
