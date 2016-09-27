@@ -113,6 +113,9 @@ Today
 				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
+				
+			- add babel-plugin-transform-react-jsx-source: measure build times
+			- update to babel-preset-react-app
 			- normalize "promoterInfo section"
 				- rename it to notesFromPromoter
 				- replace <a> tags with theirs href attribute value
