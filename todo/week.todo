@@ -113,6 +113,8 @@ Today
 				- add permit number link as per mock
 				- add primary calendar id to every event
 				- get calendar into "even details" component so we can use timezone
+				- try splitting events into a separate chunk (vendor?) or dll so it doesn't slow our builds
+					- test build speed first without any events at all
 				
 			- add babel-plugin-transform-react-jsx-source: measure build times
 			- update to babel-preset-react-app
