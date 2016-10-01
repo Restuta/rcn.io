@@ -27,7 +27,14 @@ module.exports = {
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: commonConfig.entry.vendor
+    //adding other deps for dev build to vendor chunk to speed up build
+    vendor: commonConfig.entry.vendor.concat([
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      // path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
+      // path.join(consts.SRC_DIR, 'client/app.scss'),
+    ])
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -39,6 +46,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: 'vendor.bundle.js',
+      // chunks: ['vendor'],
       minChunks: Infinity
     }),
     new webpack.HotModuleReplacementPlugin(),
@@ -77,7 +85,12 @@ module.exports = {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse,
+    noParse: commonConfig.module.noParse
+      .concat([
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      ]),
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'

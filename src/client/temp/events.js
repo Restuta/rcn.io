@@ -1,6 +1,5 @@
 /* returns list of evnets, this is temporarely till we get a server setup */
 
-//import rawEvents from 'temp/data/2015-road.js'
 import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
 
