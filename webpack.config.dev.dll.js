@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('dev')
 
@@ -25,40 +25,24 @@ module.exports = {
   debug: true,
 
   entry: {
-    app: [
-      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-      path.join(consts.SRC_DIR, 'client/index.js'),
-    ],
     //adding other deps for dev build to vendor chunk to speed up build
+    // appAssets: [path.join(consts.SRC_DIR, 'client/index.js')],
     vendor: commonConfig.entry.vendor.concat([
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
-    ]),
-    widgets: [
-      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-      path.join(consts.SRC_DIR, 'client/widgets/index.js')
-    ]
+      // path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
+      // path.join(consts.SRC_DIR, 'client/app.scss'),
+    ])
   },
   output: {
+    filename: '[name].dll.js',
     path: outputPath,
-    filename: '[name].bundle.js',
+    library: '[name]',
     publicPath: '/dist'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'common'], //use this to enable extra common chunk
-      // names: ['vendor'],
-      filename: '[name].bundle.js',
-      // chunks: ['vendor'],
-      // (with more entries, this ensures that no other module
-      // goes into the vendor chunk)
-      minChunks: 2 //set to 2 when enabling 'common' chunk
-    }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
@@ -66,40 +50,12 @@ module.exports = {
       '__ENV' : {
         'Prod': false,
         'Dev': true
-      },
-    }),
-    new webpack.DllReferencePlugin({
-      constext: path.join(consts.SRC_DIR, 'client'),
-      manifest: require(path.join(outputPath, 'vendor-manifest.json'))
-    }),
-    new HtmlWebpackPlugin({
-      filename: consts.INDEX_HTML,
-      chunks: ['vendor', 'common', 'app'],
-      chunksSortMode: 'dependency',
-      title: 'rcn',
-      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
-      inject: false, // we use custom template to inject scripts,
-      hash: false,
-      env: {
-        Widget: false,
-        Prod: false,
-        Dev: true
       }
     }),
-    //separate html file for widgets
-    new HtmlWebpackPlugin({
-      filename: 'widgets/index.html',
-      chunks: ['vendor', 'common', 'widgets'],
-      chunksSortMode: 'dependency',
-      title: 'rcn/widgets',
-      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
-      inject: false, // we use custom template to inject scripts,
-      hash: false,
-      env: {
-        Widget: true,
-        Prod: false,
-        Dev: true
-      }
+    new webpack.DllPlugin({
+      name: '[name]',
+      path: path.join(outputPath, '[name]-manifest.json'),
+      constext: path.join(consts.SRC_DIR, 'client')
     })
   ],
   resolve: {
