@@ -11980,7 +11980,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "Official Event Website: http://www.saccyclocross.com/2016/Race1.html",
+  "promoterInfo": "", 
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race1.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
@@ -12015,7 +12016,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "Official Event Website: http://www.saccyclocross.com/2016/Race2.html",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race2.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
@@ -12050,7 +12052,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cccxcycling.com/2016CROSSPAGE2016.html",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.cccxcycling.com/2016CROSSPAGE2016.html",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
@@ -12139,18 +12142,19 @@ export default [{
   "discipline": "Cyclocross",
   "date": "October 15 2016",
   "location": {
-    "name": "Race Location",
-    "streetAddress": "",
+    "name": "Race location",
+    "streetAddress": "101 Glen Dr",
     "city": "Fairfax",
     "state": "CA",
-    "zip": "",
-    "lat": 37.985661,
-    "long": -122.588711
+    "zip": "94930",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://superproracing.com/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "http://superproracing.com/cross/superprocx/",
+  "registrationUrl": "http://www.eventbrite.com/e/superpro-cx-2-lion-of-fairfax-15th-october-2016-registration-26834805626",
   "flyer": {
     "name": null,
     "url": "",
@@ -12169,17 +12173,18 @@ export default [{
   "date": "October 29 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "2305 S White Rd",
     "city": "San Jose",
     "state": "CA",
-    "zip": "",
-    "lat": 37.333476,
-    "long": -121.812544
+    "zip": "95148",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://superproracing.com/",
-  "registrationUrl": "",
+  "websiteUrl": "http://superproracing.com/cross/superprocx/",
+  "promoterInfo": "",
+  "registrationUrl": "http://www.eventbrite.com/e/superpro-cx-3-san-jose-29th-october-2016-registration-26835238922",
   "flyer": {
     "name": null,
     "url": "",
