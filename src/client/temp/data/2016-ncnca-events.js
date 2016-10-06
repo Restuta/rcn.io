@@ -12142,7 +12142,7 @@ export default [{
   "discipline": "Cyclocross",
   "date": "October 15 2016",
   "location": {
-    "name": "Race location",
+    "name": "Race Location",
     "streetAddress": "101 Glen Dr",
     "city": "Fairfax",
     "state": "CA",
@@ -12921,13 +12921,13 @@ export default [{
   "discipline": "Cyclocross",
   "date": "October 15 2016",
   "location": {
-    "name": "Dorothy Macalinden Park",
-    "streetAddress": "",
-    "city": "Stead",
+    "name": "Race Location",
+    "streetAddress": "Mayors Park",
+    "city": "Reno",
     "state": "NV",
     "zip": "89506",
-    "lat": 39.646455,
-    "long": -119.875548
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [
@@ -12936,8 +12936,9 @@ export default [{
       "name": "Reno Wheelmen"
     }
   ],
-  "promoterInfo": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "https://www.sagebrush.cx/races/mayors-park-october-15th-2016/",
+  "registrationUrl": "https://www.usacycling.org/register/2016-2905",
   "flyer": {
     "name": "FL_2016-2905 Sagebrush Cyclocross Race 3 Dorothy McAllinden Park OKED.jpg",
     "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2905%20Sagebrush%20Cyclocross%20Race%203%20Dorothy%20McAllinden%20Park%20OKED.jpg",
