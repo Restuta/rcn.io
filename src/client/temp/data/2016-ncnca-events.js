@@ -11397,17 +11397,18 @@ export default [{
   "date": "October 16 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "Folsom",
+    "streetAddress": "Park Rd",
+    "city": "Granite Bay",
     "state": "CA",
-    "zip": "",
-    "lat": 38.636583,
-    "long": -121.149404
+    "zip": "95746",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "totalbodyfitness.com",
-  "registrationUrl": "",
+  "websiteUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/"
+  "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
   "flyer": {
     "name": null,
     "url": "",
