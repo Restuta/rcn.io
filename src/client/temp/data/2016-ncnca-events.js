@@ -11970,18 +11970,18 @@ export default [{
   "discipline": "Cyclocross",
   "date": "October 08 2016",
   "location": {
-    "name": "Rocklin",
-    "streetAddress": "",
+    "name": "Johnson-Springview Park",
+    "streetAddress": "5480 5th St",
     "city": "Rocklin",
     "state": "CA",
-    "zip": "",
-    "lat": 38.780183,
-    "long": -121.230011
+    "zip": "95677",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "promoterInfo": "Official Event Website: http://www.saccyclocross.com/2016/Race1.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED.pdf",
@@ -12005,18 +12005,18 @@ export default [{
   "discipline": "Cyclocross",
   "date": "October 09 2016",
   "location": {
-    "name": "Rocklin",
-    "streetAddress": "",
+    "name": "Rocklin Golf Club",
+    "streetAddress": "4201 Midas Ave",
     "city": "Rocklin",
-    "state": "",
-    "zip": "",
-    "lat": 38.777841,
-    "long": -121.232071
+    "state": "CA",
+    "zip": "95677",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "promoterInfo": "Official Event Website: http://www.saccyclocross.com/2016/Race2.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_0.pdf",
@@ -12041,16 +12041,16 @@ export default [{
   "date": "October 09 2016",
   "location": {
     "name": "Manzanita Park",
-    "streetAddress": "",
-    "city": "Prunedale",
+    "streetAddress": "17100 Castroville Blvd",
+    "city": "Salinas",
     "state": "CA",
-    "zip": "",
-    "lat": 36.80211,
-    "long": -121.678798
+    "zip": "93907",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cccxcycling.com/",
+  "promoterInfo": "http://www.cccxcycling.com/2016CROSSPAGE2016.html",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
