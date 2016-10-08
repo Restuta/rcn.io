@@ -12089,7 +12089,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12118,7 +12118,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": null,
