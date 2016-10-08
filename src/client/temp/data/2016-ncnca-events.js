@@ -13141,7 +13141,7 @@ export default [{
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "",
-  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873"
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
   "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
   "flyer": {
     "name": "Ride2Recovery: California Challenge",
