@@ -48,10 +48,10 @@ export default class Home extends Component {
 
         <section className="section-next">
           <h2 className="header-whats-next header-regular uppercase w-900">What is coming next?</h2>
-          <WhatIsNextItem date={moment('20 Sep 2016').fromNow()}>Filters! Allowing to filter by Discipline, Event Type
+          <WhatIsNextItem date={moment('20 Sep 2016', 'DD MMM YYYY').fromNow()}>Filters! Allowing to filter by Discipline, Event Type
             and more, all at the same time. Mix and match!
           </WhatIsNextItem>
-          <WhatIsNextItem done date={moment('1 Jul 2016').fromNow()}>
+          <WhatIsNextItem done date={moment('1 Jul 2016', 'DD MMM YYYY').fromNow()}>
             We are working on full NCNCA Calendar that would include official USAC events,
             not only MTB, but also Road, Track and CX. Next we will focus on event details page that would include Map,
             Flyer, Start Times and other useful info.
