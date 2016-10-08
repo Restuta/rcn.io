@@ -12072,11 +12072,11 @@ export default [{
   ]
 },
 {
-  "id": "evt-2016-oct-15-24016-cx",
+  "id": "evt-2016-oct-15-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
+  "type": "MTB",
+  "discipline": "MTB",
   "date": "October 15 2016",
   "location": {
     "name": "Race Location",
@@ -12101,11 +12101,11 @@ export default [{
   "series": []
 },
 {
-  "id": "evt-2016-oct-16-24016-cx",
+  "id": "evt-2016-oct-16-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
+  "type": "MTB",
+  "discipline": "MTB",
   "date": "October 16 2016",
   "location": {
     "name": "Race Location",
