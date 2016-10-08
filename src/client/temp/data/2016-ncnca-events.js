@@ -11407,7 +11407,7 @@ export default [{
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "totalbodyfitness.com",
-  "websiteUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/"
+  "websiteUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
   "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
   "flyer": {
     "name": null,
