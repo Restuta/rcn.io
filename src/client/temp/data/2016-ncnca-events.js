@@ -12072,20 +12072,20 @@ export default [{
   ]
 },
 {
-  "id": "evt-2016-oct-16-24016-cx",
-  "name": "Surf City Cyclocross Series #1",
+  "id": "evt-2016-oct-15-24016-cx",
+  "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
   "type": "Cyclocross",
   "discipline": "Cyclocross",
-  "date": "October 16 2016",
+  "date": "October 15 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "850 Branciforte Dr",
     "city": "Santa Cruz",
     "state": "CA",
-    "zip": "",
-    "lat": 36.9885,
-    "long": -122.01622
+    "zip": "95065",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
@@ -12093,11 +12093,40 @@ export default [{
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
+    "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
     "mimeType": null
   },
-  "flyerUrl": "",
-  "usacPermit": "",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+  "usacPermit": "2016-2901",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-16-24016-cx",
+  "name": "UC Santa Cruz Shreditation Retreat",
+  "status": "",
+  "type": "Cyclocross",
+  "discipline": "Cyclocross",
+  "date": "October 16 2016",
+  "location": {
+    "name": "Race Location",
+    "streetAddress": "850 Branciforte Dr",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "zip": "95065",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "http://www.cyclo-x.com/",
+  "registrationUrl": "",
+  "flyer": {
+    "name": null,
+    "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+    "mimeType": null
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+  "usacPermit": "2016-2901",
   "series": []
 },
 {
