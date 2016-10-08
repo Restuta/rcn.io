@@ -13151,4 +13151,184 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
   "usacPermit": "",
   "series": []
+},
+{
+  "id": "evt-2016-oct-17-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 17 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "1410 Ocean St",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "zip": "95060",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-18-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 18 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "3665 Rio Rd",
+    "city": "Carmel-By-The-Sea",
+    "state": "CA",
+    "zip": "93923",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-19-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 19 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "9355 Hearst Dr",
+    "city": "San Simeon",
+    "state": "CA",
+    "zip": "93452",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-20-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 20 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "Price St",
+    "city": "Pismo Beach",
+    "state": "CA",
+    "zip": "93449",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-21-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 21 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "1455 Mission Dr",
+    "city": "Solvang",
+    "state": "CA",
+    "zip": "93463",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-22-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 22 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "450 E Harbor Blvd",
+    "city": "Ventura",
+    "state": "CA",
+    "zip": "93001",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
 }]
