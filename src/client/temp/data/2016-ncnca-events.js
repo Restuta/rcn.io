@@ -13072,18 +13072,18 @@ export default [{
   "discipline": "Non-Competitive",
   "date": "October 16 2016",
   "location": {
-    "name": "Lake Merritt",
-    "streetAddress": "",
+    "name": "Race Location",
+    "streetAddress": "666 Bellevue Ave",
     "city": "Oakland",
     "state": "CA",
     "zip": "94610",
-    "lat": 37.808715,
-    "long": -122.249559
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+  "registrationUrl": "https://www.usacycling.org/register/2016-2715",
   "flyer": {
     "name": "FL_2016-2715 C510 Super Cat III OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/22/2016%20-%202:32pm/FL_2016-2715%20C510%20Super%20Cat%20III%20OKED.pdf",
@@ -13120,5 +13120,35 @@ export default [{
   },
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:10am/FL_2016-2890%20Bikes%20for%20Kids%20Charity%20Ride%20OKED.jpg",
   "usacPermit": "2016-2890",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-16-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 16 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "1085 E El Camino Real",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873"
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
   "series": []
 }]
