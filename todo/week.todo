@@ -15,7 +15,15 @@ Today
 	--- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 		- use https://github.com/taion/react-router-scroll: https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#using-scroll-behavior
-	
+	--- Embeddable Upcoming Events (2x320px one col)
+		- script for creating iFrame in a given DIV by id
+		- refactor get-router to use same code with different routes
+		- disable Drifft for widget
+		- setup Webpack
+			- separate chunks (same config)
+			- separate index.html
+			- no SSR for widgets? (probably no)
+
 	!----- immediate todo
 		+- rename index1.html to something meaningful
 		--- after MTB release
