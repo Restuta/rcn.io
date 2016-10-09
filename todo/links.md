@@ -106,6 +106,7 @@
 * [Material Design colors](https://www.google.com/design/spec/style/color.html#color-color-palette)
 
 ### CSS
+* [SVG Backgrounds](http://www.heropatterns.com)
 * [MVCSS](http://mvcss.io/)
 * [Codyhouse](http://codyhouse.co/) - A free library of HTML, CSS, JS nuggets
 * [Tachyons](http://tachyons.io) - CSS for designing faster than the speed of light
