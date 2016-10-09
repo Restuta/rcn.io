@@ -24,7 +24,14 @@ module.exports = {
     app: [
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: commonConfig.entry.vendor
+    widgets: [
+      path.join(consts.SRC_DIR, 'client/widgets/index.js')
+    ],
+    vendor: commonConfig.entry.vendor.concat([
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+    ])
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -66,11 +73,40 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
       title: 'RCN.io',
+      // chunks: ['app', 'vendor'],
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       css: ['app.css'],
       inject: false, // we use custom template to inject scripts,
       hash: true,
       env: {
+        Widget: false,
+        Prod: true,
+        Dev: false
+      },
+      minify: { // Minifying it while it is parsed
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
+    }),
+    //separate html file for widgets
+    new HtmlWebpackPlugin({
+      filename: 'widgets/index.html',
+      chunks: ['widgets', 'vendor'],
+      css: ['app.css'],
+      title: 'RCN.io Widgets',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Widget: true,
         Prod: true,
         Dev: false
       },
@@ -87,6 +123,7 @@ module.exports = {
         minifyURLs: true
       },
     })
+
   ],
   resolve: {
     root: [

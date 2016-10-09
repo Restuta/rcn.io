@@ -25,7 +25,7 @@ module.exports = {
   entry: {
     app: [
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-      path.join(consts.SRC_DIR, 'client/index.js')
+      path.join(consts.SRC_DIR, 'client/index.js'),
     ],
     //adding other deps for dev build to vendor chunk to speed up build
     vendor: commonConfig.entry.vendor.concat([
@@ -34,7 +34,11 @@ module.exports = {
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
       // path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
       // path.join(consts.SRC_DIR, 'client/app.scss'),
-    ])
+    ]),
+    widgets: [
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
+      path.join(consts.SRC_DIR, 'client/widgets/index.js')
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -62,11 +66,27 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
+      chunks: ['app', 'vendor'],
       title: 'rcn',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
       hash: false,
       env: {
+        Widget: false,
+        Prod: false,
+        Dev: true
+      }
+    }),
+    //separate html file for widgets
+    new HtmlWebpackPlugin({
+      filename: 'widgets/index.html',
+      chunks: ['widgets', 'vendor'],
+      title: 'rcn/widgets',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Widget: true,
         Prod: false,
         Dev: true
       }
