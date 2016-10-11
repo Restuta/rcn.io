@@ -13152,6 +13152,36 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-09-24059-ncmp",
+  "name": "Cycle with Champions",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 09 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "4400 Day School Place",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95403",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "Cycle With Champions OKED",
+    "url": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24059-ncmp",
   "name": "Ride2Recovery: California Challenge",
   "status": "",
