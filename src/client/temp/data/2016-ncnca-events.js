@@ -12130,6 +12130,35 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-02-24016-mtb",
+  "name": "Running of the Bulls: Stanford Cycling Annual MTB Race",
+  "status": "",
+  "type": "MTB",
+  "discipline": "MTB",
+  "date": "October 02 2016",
+  "location": {
+    "name": "Race Location",
+    "streetAddress": "Camp St",
+    "city": "Seaside",
+    "state": "CA",
+    "zip": "93955",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "Running of the Bulls",
+    "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+    "mimeType": null
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
