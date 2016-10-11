@@ -13182,6 +13182,36 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-07-24059-ncmp",
+  "name": "Mount Diablo State Park Historic Road Cyclists Safety Improvements Event",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 07 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "South Gate Road",
+    "city": "Danville",
+    "state": "CA",
+    "zip": "94506",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "MDSP Recognition Flyer",
+    "url": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24059-ncmp",
   "name": "Ride2Recovery: California Challenge",
   "status": "",
