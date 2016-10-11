@@ -12101,6 +12101,35 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-09-24016-mtb",
+  "name": "Cal Cycling MTB Race",
+  "status": "",
+  "type": "MTB",
+  "discipline": "MTB",
+  "date": "October 09 2016",
+  "location": {
+    "name": "Race Location",
+    "streetAddress": "260 Bernal Road",
+    "city": "San Jose",
+    "state": "CA",
+    "zip": "95119",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": null,
+    "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+    "mimeType": null
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
