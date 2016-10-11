@@ -13332,3 +13332,5 @@ export default [{
   "usacPermit": "",
   "series": []
 }]
+//to do - check past October events and add missing events
+//to do after - check events after Oct 16th
