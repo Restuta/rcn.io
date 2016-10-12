@@ -23,8 +23,8 @@
     "test": "NODE_PATH=./src tape -r './src/tests/index.js' 'src/**/tests/**/*.js' | tap-spec"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/Restuta/rcn.io.git"
+    "url": "https://github.com/Restuta/rcn.io.git",
+    "type": "git"
   },
   "private": true,
   "keywords": [
@@ -34,7 +34,7 @@
     "racing"
   ],
   "author": "Anton Vynogradenko <restuta8@gmail.com> (http://restuta.me)",
-  "license": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Restuta/rcn.io/issues"
   },
@@ -54,6 +54,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.17.0",
     "bower": "^1.7.9",
+    "chalk": "^1.1.3",
     "compression": "^1.6.2",
     "concurrently": "^2.1.0",
     "css-loader": "0.14.5",
@@ -63,7 +64,7 @@
     "express-device": "^0.4.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.17.0",
+    "html-webpack-plugin": "^2.22.0",
     "imports-loader": "^0.6.5",
     "mime-types": "^2.1.12",
     "morgan": "^1.7.0",
@@ -112,5 +113,6 @@
   },
   "engines": {
     "node": "6.2.1"
-  }
+  },
+  "main": "index.html"
 }
