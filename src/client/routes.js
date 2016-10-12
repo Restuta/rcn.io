@@ -8,7 +8,6 @@ import NcncaCalendar from 'calendar/NcncaCalendar'
 import NcncaDraftCalendar from 'calendar/NcncaDraftCalendar'
 import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
 
-
 const routes  = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />

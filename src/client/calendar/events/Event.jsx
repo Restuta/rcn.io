@@ -12,6 +12,8 @@ import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
+import classnames from 'classnames'
+import { Statuses } from 'client/calendar/events/types.js'
 
 
 //gets height of the smallest card (in rems) for the given containerWidth
@@ -87,6 +89,11 @@ class Event extends Component {
       }},
       draft = false,
     } = this.props
+
+    const classNames = classnames('Event lvl-1', {
+      'canceled': event.status === Statuses.canceled,
+      'moved': event.status === Statuses.moved
+    })
 
     //todo: typography should be passed as props
 
@@ -236,7 +243,7 @@ class Event extends Component {
     }
 
     return (
-      <a id={event.id} href={`/events/${this.props.id}`} style={style} className="Event lvl-1"
+      <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComponent}
 
