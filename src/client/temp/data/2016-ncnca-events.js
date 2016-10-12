@@ -12101,6 +12101,64 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-09-24016-mtb",
+  "name": "Cal Cycling MTB Race",
+  "status": "",
+  "type": "MTB",
+  "discipline": "MTB",
+  "date": "October 09 2016",
+  "location": {
+    "name": "Race Location",
+    "streetAddress": "260 Bernal Road",
+    "city": "San Jose",
+    "state": "CA",
+    "zip": "95119",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": null,
+    "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+    "mimeType": null
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-02-24016-mtb",
+  "name": "Running of the Bulls: Stanford Cycling Annual MTB Race",
+  "status": "",
+  "type": "MTB",
+  "discipline": "MTB",
+  "date": "October 02 2016",
+  "location": {
+    "name": "Race Location",
+    "streetAddress": "Camp St",
+    "city": "Seaside",
+    "state": "CA",
+    "zip": "93955",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "Running of the Bulls",
+    "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+    "mimeType": null
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
@@ -13123,6 +13181,66 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-09-24059-ncmp",
+  "name": "Cycle with Champions",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 09 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "4400 Day School Place",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95403",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "Cycle With Champions OKED",
+    "url": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-07-24059-ncmp",
+  "name": "Mount Diablo State Park Historic Road Cyclists Safety Improvements Event",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 07 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "South Gate Road",
+    "city": "Danville",
+    "state": "CA",
+    "zip": "94506",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "",
+  "registrationUrl": "",
+  "flyer": {
+    "name": "MDSP Recognition Flyer",
+    "url": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-16-24059-ncmp",
   "name": "Ride2Recovery: California Challenge",
   "status": "",
@@ -13151,4 +13269,186 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
   "usacPermit": "",
   "series": []
+},
+{
+  "id": "evt-2016-oct-17-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 17 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "1410 Ocean St",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "zip": "95060",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-18-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 18 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "3665 Rio Rd",
+    "city": "Carmel-By-The-Sea",
+    "state": "CA",
+    "zip": "93923",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-19-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 19 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "9355 Hearst Dr",
+    "city": "San Simeon",
+    "state": "CA",
+    "zip": "93452",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-20-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 20 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "Price St",
+    "city": "Pismo Beach",
+    "state": "CA",
+    "zip": "93449",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-21-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 21 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "1455 Mission Dr",
+    "city": "Solvang",
+    "state": "CA",
+    "zip": "93463",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-22-24059-ncmp",
+  "name": "Ride2Recovery: California Challenge",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 22 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "450 E Harbor Blvd",
+    "city": "Ventura",
+    "state": "CA",
+    "zip": "93001",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "https://www.ride2recovery.com/event.php?ID=873",
+  "registrationUrl": "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+  "flyer": {
+    "name": "Ride2Recovery: California Challenge",
+    "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
 }]
+//to do - check past October events and add missing events
+//to do after - check events after Oct 16th
