@@ -1,20 +1,15 @@
 import React from 'react'
-import { Route, IndexRoute} from 'react-router'
-import Widget from './Widget'
-// import Home from 'Home'
-// import Dev from 'Dev'
-// import MtbCalendar from 'calendar/MtbCalendar'
-// import NcncaCalendar from 'calendar/NcncaCalendar'
-// import NcncaDraftCalendar from 'calendar/NcncaDraftCalendar'
-import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
+import { Route } from 'react-router'
+import WidgetRoot from './WidgetRoot'
 
 
-console.info('WIDGETS Routes!')
+const Test = (props) => (<div>🦁 Ok, come here, bunny.</div>)
 
+//alternative way is to define route root as /widgets and remove root in get-routes.js
 const routes  = (
-  <Route path="/widgets" component={Widget}>
-    {/* <IndexRoute component={Widget} /> */}
-    <Route path="/bla" component={EventDetails}/>
+  <Route path="/" component={WidgetRoot}>
+    {/* <IndexRoute component={Index} /> */}
+    <Route path="bla" component={Test}/>
     {/* <Route path="*" component={Home}/> */}
   </Route>
 )

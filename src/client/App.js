@@ -4,11 +4,9 @@ import classnames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'
 import { connect } from 'react-redux'
-
 import { withRouter } from 'react-router'
 import Modal from 'atoms/Modal.jsx'
-
-let whenRenderStarted
+import { logRenderPerf } from 'utils/hocs'
 
 class App extends Component {
   //required for proper propagation of locationPathname down to the children
@@ -49,19 +47,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    let now = +new Date()
-    console.info('  App rendred in: ' + (now - whenRenderStarted) + 'ms') // eslint-disable-line  no-console
-  }
-
-  componentDidUpdate() {
-    let now = +new Date()
-    console.info('  App re-rendred in: ' + (now - whenRenderStarted) + 'ms') // eslint-disable-line  no-console
-  }
-
   render() {
-    whenRenderStarted = +new Date()
-
     const { location } = this.props
 
     let shouldRenderInModal = (
@@ -69,7 +55,6 @@ class App extends Component {
       && location.state.modal
       // && this.previousChildren
     )
-
 
     const appLevelClasses = classnames('App',
       (this.props.debug.showContainerEdges && 'debug-container')
@@ -106,7 +91,9 @@ App.childContextTypes = {
   locationPathname: React.PropTypes.string
 }
 
-
 export default withRouter(
-  connect(state => ({debug: state.debug}))(App)
+  connect(state => ({debug: state.debug}))(
+    //App
+    logRenderPerf(App, 'App')
+  )
 )

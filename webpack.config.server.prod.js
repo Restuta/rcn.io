@@ -40,7 +40,7 @@ module.exports = {
     }),
     new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
     new webpack.optimize.DedupePlugin(),
-    new ExtractTextPlugin('app.css'),
+    new ExtractTextPlugin('[name].css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         screw_ie8: true, // eslint-disable-line camelcase

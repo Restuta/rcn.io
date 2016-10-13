@@ -15,14 +15,6 @@ Today
 	--- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 		- use https://github.com/taion/react-router-scroll: https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#using-scroll-behavior
-	--- Embeddable Upcoming Events (2x320px one col)
-		- script for creating iFrame in a given DIV by id
-		- refactor get-router to use same code with different routes
-		- disable Drifft for widget
-		- setup Webpack
-			- separate chunks (same config)
-			- separate index.html
-			- no SSR for widgets? (probably no)
 
 	!----- immediate todo
 		+- rename index1.html to something meaningful
@@ -38,10 +30,11 @@ Today
 			.-(low) show USAC non USAC events
 			- test and set up Sentry as discribed here https://github.com/getsentry/demo-express/blob/master/index.js
 			- create Footer component
+				- add privacy and data policy links
 			- Events todo:
-				//TODO: memoize calculated totals since collection is immutable
-				//TODO: get total before date
-			- extract wendor to DLL: http://engineering.invisionapp.com/post/optimizing-webpack/ this can speed up incremental builds even more
+				- //TODO: memoize calculated totals since collection is immutable
+				- //TODO: get total before date
+			- extract vendor to DLL: http://engineering.invisionapp.com/post/optimizing-webpack/ this can speed up incremental builds even more
 		- change Promoter in event data from string to object: name, url, etc
 		+- re-use RoundBadge in calendar
 		+- set card size to be in Pixels, so it's doesn't shrink when base font-size shrings and stays in a grid: since grid does not use REMs and uses px
@@ -63,7 +56,7 @@ Today
 			- https://github.com/raisemarketplace/redux-loop
 			- https://github.com/jarvisaoieong/redux-architecture
 			- https://github.com/ahdinosaur/inu
-		- maybe set webpack's root to one level up so we can reference shared from both client and server
+		+- maybe set webpack's root to one level up so we can reference shared from both client and server
 		- server side setup
 			+- basic store and routing support
 			- window.__INITIAL_STATE
@@ -77,23 +70,31 @@ Today
 			- ? redux-thunk: http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
 			- apollo-client
 
-	--- NCNCA.org beta release
-		- setup old NCNCA calendars (in particular 2015 one)
+	+--- NCNCA.org beta release
+		+- setup old NCNCA calendars (in particular 2015 one)
 			- support for ?year param: could be 
 			 -  : /caledars/ncnca/2015
 			 -  : /calendars/ncnca?year=2016
 			 -  : /calendars/ncnca-2015
 			- make sure it's same as todays covering all links and notes
-		- gather email and send out beta-testing message
+		+- gather email and send out beta-testing message
 	--- Filtering
 		- deal with stage races and omniums (shoeld we support multiple event types? e.g. ['Stage Race', 'Criterim'])?
 		- deal with clinics
-	--- Embed Events to NCNCA
-		-- how
+	--- Embeddable Upcoming Events (2x320px one col)
+		-- how to setup async script
 			- https://css-tricks.com/thinking-async/
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
 			- https://dev.twitter.com/web/javascript/loading
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
+		- script for creating iFrame in a given DIV by id
+		- refactor get-router to use same code with different routes
+		- hoc for profiling rendering time
+		+- disable Drifft for widget
+		- setup Webpack
+			+- separate chunks (same config)
+			+- separate index.html
+			- no SSR for widgets? (probably no)
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
@@ -103,15 +104,16 @@ Today
 				+- rename "promoterUrl" in MTB to "websiteUrl"
 				+----- BUG: icons slode down on buttons
 				- replace "no flyer (yet?)" for past events to just no flyer
-				- there is not EVENT WEBSITE for NCNCA races, only promoter
+				- there is not EVENT WEBSITE for most of the NCNCA races, only promoter: there are websites for CCCX
 				- when permit number is present => calculate results url automatically
 				- when flyer number is present but flyer url is not calucate it automatically:https://www.usacycling.org/events/getflyer.php?permit=2016-1938 check how many cases like that do we have
 				+- fix on results button click
 				- add "usacEvent" property true/false: so when  there is no permit number we would at least able to mark this event as USAC sanctioned
 				----- BUG Boostrap: hide past events link doesn't appear as a link
-				----- BUG Boostrap: debug checkboxes are broken
+				----- BUG Boostrap: debug checkboxes are broken on beta 3-4
 				----- BUG Flyer Types: certain MTB events have non-pdf in pdf link
 					- for older calendars we shold honor MIME types
+				----- BUG few urls return 500: https://rcn.io/calendars/ncnca-2017
 				-- fix: don't use modals on touch devices, as of now card that opens in separate window doesn't work on mobile due to min size, but when min size is removed it becomes narrower since it won't fit container 
 				- make sure generic calendars return 404 when ID is incorrect
 				- make events crawlable (add <a> tag to a card with proper href)
@@ -123,12 +125,13 @@ Today
 				- get calendar into "even details" component so we can use timezone
 				- try splitting events into a separate chunk (vendor?) or dll so it doesn't slow our builds
 					- test build speed first without any events at all
-				
+
+			- move BS to npm: npm install bootstrap@4.0.0-alpha.4
 			- add babel-plugin-transform-react-jsx-source: measure build times
 			- update to babel-preset-react-app
 			- normalize "promoterInfo section"
 				- rename it to notesFromPromoter
-				- replace <a> tags with theirs href attribute value
+				-- replace <a> tags with theirs href attribute value
 			- add (opened in new window) for EVENT WEBSITE link as per mock
 			- trim urls for Event Details: for evnt website, do what Product Hunt does, fix lthe lengths of the url
 			- normalize series to it's own collection?

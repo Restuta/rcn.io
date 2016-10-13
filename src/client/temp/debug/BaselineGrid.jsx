@@ -15,14 +15,24 @@ export default class BaselineGrid extends React.Component {
   }
 
   updateGridHeight() {
-    //delaying overlay till everything is presumable rendered, so we calendar
+    const getContainerElement = () => {
+      let container = window.document.body.getElementsByClassName('container')
+
+      if (!container || container.length === 0) {
+        container = window.document.body.getElementsByClassName('container-fluid')
+      }
+
+      return container[0]
+    }
+
+    //delaying overlay till everything is presumably rendered, so we calendar
     //calculate browser scrollHeight
     setTimeout(() => {
-      const mainContainerHeight = window.document.body.getElementsByClassName('container')[0].scrollHeight
+      const mainContainerHeight = getContainerElement().scrollHeight
 
       if (!this.state || this.state.viewportHeight !== mainContainerHeight) {
         this.setState({ //eslint-disable-line react/no-did-mount-set-state
-          viewportHeight: window.document.body.getElementsByClassName('container')[0].scrollHeight
+          viewportHeight: getContainerElement().scrollHeight
         })
       }
 
@@ -40,6 +50,8 @@ export default class BaselineGrid extends React.Component {
 
     const baseStyle = {
       position: 'absolute',
+      left: 0,
+      top: 0,
       pointerEvents: 'none', //to allow click-through
       backgroundColor: 'transparent',
       width: '100%',

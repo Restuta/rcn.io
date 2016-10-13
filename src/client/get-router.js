@@ -6,6 +6,7 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import routes from 'routes'
 
 const store = configureStore()
+
 const history = syncHistoryWithStore(browserHistory, store)
 history.listen(location => analytics.page())
 

@@ -6,12 +6,6 @@ import 'regenerator-runtime/runtime'
 // import 'core-js/library/es6/promise' //required for IE11
 import 'isomorphic-fetch' //required for IE11 and Safary
 
-//favicons
-import 'public/img/favicon.ico'
-import 'public/img/apple-touch-icon-152x152.png'
-import 'public/img/apple-touch-icon-180x180.png'
-import 'public/img/safari-pinned-tab.svg'
-
 // import React from 'react'
 // if (process.env.NODE_ENV !== 'production') {
 //   const {whyDidYouUpdate} = require('why-did-you-update')

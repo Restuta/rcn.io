@@ -1,9 +1,17 @@
 import React from 'react'
-import { Router, browserHistory } from 'react-router'
+import { Router, useRouterHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import configureStore from 'shared/configure-store.js'
 import { syncHistoryWithStore } from 'react-router-redux'
 import routes from './routes'
+
+import { createHistory } from 'history'
+
+//set's /widgets as a history root so routes can be defined acoordingly
+const browserHistory = useRouterHistory(createHistory)({
+  basename: '/widgets'
+})
+
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)

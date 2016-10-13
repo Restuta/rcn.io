@@ -32,8 +32,7 @@ module.exports = {
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
       // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      // path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
-      // path.join(consts.SRC_DIR, 'client/app.scss'),
+      path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
     ]),
     widgets: [
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
@@ -48,10 +47,13 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.bundle.js',
+      names: ['vendor', 'common'], //use this to enable extra common chunk
+      // names: ['vendor'],
+      filename: '[name].bundle.js',
       // chunks: ['vendor'],
-      minChunks: Infinity
+      // (with more entries, this ensures that no other module
+      // goes into the vendor chunk)
+      minChunks: 2 //set to 2 when enabling 'common' chunk
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -66,7 +68,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
-      chunks: ['app', 'vendor'],
+      chunks: ['vendor', 'common', 'app'],
+      chunksSortMode: 'dependency',
       title: 'rcn',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
@@ -80,7 +83,8 @@ module.exports = {
     //separate html file for widgets
     new HtmlWebpackPlugin({
       filename: 'widgets/index.html',
-      chunks: ['widgets', 'vendor'],
+      chunks: ['vendor', 'common', 'widgets'],
+      chunksSortMode: 'dependency',
       title: 'rcn/widgets',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
