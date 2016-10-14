@@ -13421,6 +13421,36 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-oct-23-24059-ncmp",
+  "name": "Oakland Gran Fondo",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 23 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "Jack London Square",
+    "city": "Oakland",
+    "state": "CA",
+    "zip": "94607",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "http://www.oaklandgranfondo.com/race-info/",
+  "registrationUrl": "http://www.oaklandgranfondo.com/register/",
+  "flyer": {
+    "name": "Oakland Gran Fondo",
+    "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
   "id": "evt-2016-oct-22-24059-ncmp",
   "name": "Ride2Recovery: California Challenge",
   "status": "",
