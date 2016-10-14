@@ -7203,14 +7203,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7243,14 +7244,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7283,14 +7285,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
