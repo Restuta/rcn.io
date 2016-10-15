@@ -12199,17 +12199,18 @@ export default [{
   "date": "October 23 2016",
   "location": {
     "name": "",
-    "streetAddress": "",
+    "streetAddress": "1525 E Jahant Rd",
     "city": "Acampo",
     "state": "CA",
-    "zip": "",
+    "zip": "95220",
     "lat": 38.174133,
     "long": -121.276445
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race3.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_1.pdf",
