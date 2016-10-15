@@ -25,7 +25,7 @@ const PresentedBy = ({by}) => (
     fontStyle: 'italic',
     position: 'relative',
     marginRight: '2rem',
-    marginBottom: '1rem',
+    marginBottom: '2rem',
   }}>
     <span className="secondary">by {(by || '--')}</span>
   </span>
