@@ -31,7 +31,7 @@ const getBaseHeight = containerWidth => {
     [Grid.ContainerWidth.XXL]: 6
   }
 
-  return baseHeightMap[containerWidth]
+  return baseHeightMap[containerWidth] || 3
 }
 
 //nummeric card sizes for simple comparisons
@@ -76,10 +76,8 @@ class Event extends Component {
   }
 
   render() {
-    // console.info('Event render')
-
     const {
-      width,
+      widthColumns,
       containerWidth,
       baseHeight = getBaseHeight(containerWidth),
       name,
@@ -95,8 +93,7 @@ class Event extends Component {
       'moved': event.status === Statuses.moved
     })
 
-    //todo: typography should be passed as props
-
+    //TODO: typography should be passed as props
     /*
     following formula can be expressed as:
 
@@ -106,10 +103,10 @@ class Event extends Component {
       return  c*a + c - 1
     }
 
-    it calculates card height so it's twice taller than two previous sizes + margins
+    it calculates card height so it's twice as tall as two previous sizes + margins
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
-    const cardHeight = (width * baseHeight + width - 1)
+    const cardHeight = (widthColumns * baseHeight + widthColumns - 1)
 
     const getSize = cardHeight => {
       if (cardHeight >= 1 && cardHeight <= 3) {
@@ -169,13 +166,16 @@ class Event extends Component {
     }
 
     const grid  = Grid.init(containerWidth)
-    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's width
-    const cardWidthPx = Math.floor(grid.getColumnContentWidth(width)) - 2
+    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
+    const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
     const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
-    eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
-
     const { debug = false } = this.props
+
+    if (!debug) {
+      eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
+    }
+
     let debugComponent = null
 
     if (debug) {
@@ -183,7 +183,7 @@ class Event extends Component {
         position: 'absolute',
         fontSize: '1.25rem',
         top: '-8px',
-        left: '80%',
+        right: '5%',
         whiteSpace: 'nowrap',
         color: Colors.grey400,
         overflow: 'visible',
@@ -230,8 +230,8 @@ class Event extends Component {
       height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
       // height: '100%',
-      //minHeight: cardHeightRem + 'rem',
-      //maxHeight: cardHeightRem * 2 + 'rem',
+      // minHeight: 5 + 'rem',
+      // maxHeight: cardHeightRem * 2 + 'rem',
 
       paddingTop: paddingTop || verticalPadding,
       paddingBottom: paddingBottom || verticalPadding,
@@ -264,8 +264,8 @@ Event.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   //location: PropTypes.any,
-  //width in coluns card is going to take
-  width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
+  //width in columns card is going to take
+  widthColumns:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
