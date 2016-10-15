@@ -12295,17 +12295,18 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "3770 Richardson Dr",
     "city": "Auburn",
     "state": "CA",
-    "zip": "",
+    "zip": "95603",
     "lat": 38.889296,
     "long": -121.062469
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race4.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_2.pdf",
