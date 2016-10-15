@@ -6,7 +6,7 @@ import IconLabel from './IconLabel.jsx'
 
 export default class Location extends Component {
   render() {
-    const { location, size, showState = false } = this.props
+    const { location = {city: '', state: ''}, size, showState = false } = this.props
     const { city, state } = location
 
     let addressToShow = showState ? `${city}, ${state}` : city
