@@ -16,5 +16,5 @@
 # with "WIP" (work in progress).
 
 
-npm run eslint && npm run test
-exit 0
+npm run eslint:ci && npm run test
+exit
