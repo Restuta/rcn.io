@@ -12360,17 +12360,18 @@ export default [{
   "date": "November 06 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "1302 Riley St",
     "city": "Folsom",
     "state": "CA",
-    "zip": "",
-    "lat": 38.66018,
-    "long": -121.177826
+    "zip": "95630",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race5.html"
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_3.pdf",
