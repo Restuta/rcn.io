@@ -12457,16 +12457,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.434632,
-    "long": -122.724152
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95402",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.bikemonkey.net/srcup/",
+  "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
@@ -12486,16 +12487,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.434632,
-    "long": -122.724152
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95402",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.bikemonkey.net/srcup/",
+  "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
@@ -12515,16 +12517,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.437186,
-    "long": -122.714539
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95402",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.bikemonkey.net/srcup/",
+  "registrationUrl": "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
