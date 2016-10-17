@@ -7203,14 +7203,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7243,14 +7244,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7283,14 +7285,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+  "promoterInfo": "https://www.usacycling.org/national-championships",
+  "websiteUrl": "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+    "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -12196,17 +12199,18 @@ export default [{
   "date": "October 23 2016",
   "location": {
     "name": "",
-    "streetAddress": "",
+    "streetAddress": "1525 E Jahant Rd",
     "city": "Acampo",
     "state": "CA",
-    "zip": "",
+    "zip": "95220",
     "lat": 38.174133,
     "long": -121.276445
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race3.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_1.pdf",
@@ -12291,17 +12295,18 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "3770 Richardson Dr",
     "city": "Auburn",
     "state": "CA",
-    "zip": "",
+    "zip": "95603",
     "lat": 38.889296,
     "long": -121.062469
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race4.html",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_2.pdf",
@@ -12326,14 +12331,14 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "Santa Cruz",
+    "streetAddress": "100 Mariner Way",
+    "city": "Aptos",
     "state": "CA",
-    "zip": "",
+    "zip": "95003",
     "lat": 36.984112,
     "long": -122.02446
   },
-  "resultsUrl": null,
+  "resultsUrl": "https://www.bikereg.com/surf-city",
   "promoters": [],
   "promoterInfo": "http://www.cyclo-x.com/",
   "registrationUrl": "",
@@ -13417,6 +13422,36 @@ export default [{
     "mimeType": "application/pdf"
   },
   "flyerUrl": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+  "usacPermit": "",
+  "series": []
+},
+{
+  "id": "evt-2016-oct-23-24059-ncmp",
+  "name": "Oakland Gran Fondo",
+  "status": "",
+  "type": "Non-Competitive",
+  "discipline": "Non-Competitive",
+  "date": "October 23 2016",
+  "location": {
+    "name": "Ride Location",
+    "streetAddress": "Jack London Square",
+    "city": "Oakland",
+    "state": "CA",
+    "zip": "94607",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "http://www.oaklandgranfondo.com/race-info/",
+  "registrationUrl": "http://www.oaklandgranfondo.com/register/",
+  "flyer": {
+    "name": "Oakland Gran Fondo",
+    "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+    "mimeType": "application/pdf"
+  },
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
   "usacPermit": "",
   "series": []
 },
