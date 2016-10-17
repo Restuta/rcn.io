@@ -12425,17 +12425,18 @@ export default [{
   "date": "November 06 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.675246,
-    "long": -122.38593
+    "streetAddress": "2305 S White Rd",
+    "city": "San Jose",
+    "state": "CA",
+    "zip": "95148",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+  "websiteUrl": "http://superproracing.com/cross/basp/",
+  "registrationUrl": "https://www.eventbrite.com/e/bay-area-super-prestige-cx-race-4-san-jose-nov-6-registration-26971013026",
   "flyer": {
     "name": null,
     "url": "",
