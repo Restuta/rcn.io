@@ -12338,10 +12338,10 @@ export default [{
     "lat": 36.984112,
     "long": -122.02446
   },
-  "resultsUrl": "https://www.bikereg.com/surf-city",
+  "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.cyclo-x.com/",
-  "registrationUrl": "",
+  "registrationUrl": "https://www.bikereg.com/surf-city",
   "flyer": {
     "name": null,
     "url": "",
@@ -12395,17 +12395,18 @@ export default [{
   "date": "November 05 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.674622,
-    "long": -122.385957
+    "streetAddress": "2305 S White Rd",
+    "city": "San Jose",
+    "state": "CA",
+    "zip": "95148",
+    "lat": "",
+    "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+  "websiteUrl": "http://superproracing.com/cross/basp/",
+  "registrationUrl": "http://www.eventbrite.com/e/bay-area-super-prestige-cx-race-3-night-race-san-jose-nov-5-registration-26952884804",
   "flyer": {
     "name": null,
     "url": "",
