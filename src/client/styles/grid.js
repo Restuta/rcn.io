@@ -24,8 +24,15 @@ const ContainerWidth = {
   XXL: 1384
 }
 
+const COLUMNS = 14
+const GUTTER_PX = 16
+
 export default {
   ContainerWidth : ContainerWidth,
+
+  getFluidContainerWidth(browserWidth) {
+    return browserWidth - GUTTER_PX
+  },
 
   getContainerWidth(browserWidth) {
     //should match variables from bootstrap
@@ -55,11 +62,8 @@ export default {
   },
   init(containerWidth) {
     return {
-      //returns widh in px of Container's content area (width without paddings)
-      getColumnContentWidth(numberOfCols) {
-        const COLUMNS = 14
-        const GUTTER_PX = 16
-
+      //returns width in px of Container's content area (width without paddings)
+      getColumnContentWidth({numberOfCols}) {
         const oneColPercent = (100 / COLUMNS) / 100
         return containerWidth * (oneColPercent * numberOfCols) - GUTTER_PX
       }

@@ -15,6 +15,19 @@ import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
 import { Statuses } from 'client/calendar/events/types.js'
 
+/* event card adaptive behaviour:
+   >= 300 fit two
+   <= 299 fit one and stretch
+   Can control card with in manual mode, height set to auto
+*/
+
+/*
+Event sizing types:
+  - fixed width, calculates width itself based on container and colSize (for cases like Dev)
+  - fixed width, arbitrary, set from outside, assumes to colSize is set (for widgets)
+  - non-fixed with, takes 100% of it's container (for regular calendar)
+*/
+
 
 //gets height of the smallest card (in rems) for the given containerWidth
 const getBaseHeight = containerWidth => {
@@ -23,16 +36,31 @@ const getBaseHeight = containerWidth => {
     return 2
   }
 
-  const baseHeightMap = {
-    [Grid.ContainerWidth.SM]: 2,
-    [Grid.ContainerWidth.MD]: 3,
-    [Grid.ContainerWidth.LG]: 4,
-    [Grid.ContainerWidth.XL]: 5,
-    [Grid.ContainerWidth.XXL]: 6
+  let baseHeight
+
+  if (containerWidth <= Grid.ContainerWidth.SM) {
+    baseHeight = 2
+  } else if (containerWidth > Grid.ContainerWidth.SM && containerWidth <= Grid.ContainerWidth.MD) {
+    baseHeight = 3
+  } else if (containerWidth > Grid.ContainerWidth.MD && containerWidth <= Grid.ContainerWidth.LG) {
+    baseHeight = 4
+  } else if (containerWidth > Grid.ContainerWidth.LG && containerWidth <= Grid.ContainerWidth.XL) {
+    baseHeight = 5
+  } else if (containerWidth > Grid.ContainerWidth.XL) {
+    baseHeight = 6
   }
 
-  return baseHeightMap[containerWidth] || 3
+  return baseHeight
 }
+
+//get specific to container and column size cardWidth
+const getCardWithInRems = (containerWidth, widthColumns) => {
+  const grid  = Grid.init(containerWidth)
+  //"2" compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
+  const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
+  return Typography.pxToRem(cardWidthPx)
+}
+
 
 //nummeric card sizes for simple comparisons
 const numSize = {
@@ -79,8 +107,11 @@ class Event extends Component {
     const {
       widthColumns,
       containerWidth,
+      autoHeight = false,
       baseHeight = getBaseHeight(containerWidth),
       name,
+      fixedWidth = false,
+      width = '100%',
       event = {location: {
         city: '',
         state: ''
@@ -106,7 +137,10 @@ class Event extends Component {
     it calculates card height so it's twice as tall as two previous sizes + margins
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
-    const cardHeight = (widthColumns * baseHeight + widthColumns - 1)
+
+    const cardHeight = autoHeight
+      ? 12 //TODO: default size doesn't make sense here, but we need to calculate card size somehow
+      : (widthColumns * baseHeight + widthColumns - 1)
 
     const getSize = cardHeight => {
       if (cardHeight >= 1 && cardHeight <= 3) {
@@ -165,10 +199,6 @@ class Event extends Component {
       eventColor = 'deepskyblue'
     }
 
-    const grid  = Grid.init(containerWidth)
-    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
-    const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
-    const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
     const { debug = false } = this.props
 
@@ -190,7 +220,29 @@ class Event extends Component {
       }}>{cardSize} {cardHeightRem} </span>)
     }
 
-    const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
+    // const grid  = Grid.init(containerWidth)
+    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
+    // const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
+    // const cardWidthRem = Typography.pxToRem(cardWidthPx)
+
+    // const cardWidthRem = Math.round(cardHeightRem * 1.618)
+    let cardWidthRem
+
+    // const cardWidth = fixedWidth ? (cardWidthRem + 'rem') : ('100%')
+    // const cardWidth = '100%'
+    let cardWidth
+
+    if (fixedWidth && widthColumns) {
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardWidth = cardWidthRem + 'rem'
+    } else if (fixedWidth) {
+      //TODO: in fixedWith case this is used for left border calculation only
+      cardWidthRem = Math.round(cardHeightRem * 1.618)
+      cardWidth = width
+    } else {
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardWidth = cardWidthRem + 'rem'
+    }
 
     let eventGroupComponent = null
 
@@ -225,12 +277,13 @@ class Event extends Component {
       opacity: 1,
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
+      // width: fixedWidth ? cardWidth : (cardWidthRem + 'rem'),
       width: cardWidth,
-      // width: cardWidthPx,
-      height: cardHeightRem + 'rem',
+      height: autoHeight ? 'auto' : cardHeightRem + 'rem',
+      // height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
       // height: '100%',
-      // minHeight: 5 + 'rem',
+      // minHeight: 2 + 'rem',
       // maxHeight: cardHeightRem * 2 + 'rem',
 
       paddingTop: paddingTop || verticalPadding,
@@ -263,9 +316,18 @@ Event.propTypes = {
   //TODO bc: id, name and discipline are covered under "event type"
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  //location: PropTypes.any,
+  //debug mode for the card
+  debug: PropTypes.bool,
+  //if false, card wouuld take 100% of the container (default) and ignore widthProp
+    //if true uses provided with or 100% if none
+  fixedWidth: PropTypes.bool,
+  //allows external control of card with (px, %, rem or any css values), requires fixedWidth to  be true
+  width: PropTypes.string,
   //width in columns card is going to take
   widthColumns:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
+  //if true, card will adjust it's height based on it's content, if false it would calculate size according to columns
+    //layout formula, use it with combination of maxHeight
+  autoHeight: PropTypes.bool,
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px

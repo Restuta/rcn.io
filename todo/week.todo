@@ -81,7 +81,11 @@ Today
 	--- Filtering
 		- deal with stage races and omniums (shoeld we support multiple event types? e.g. ['Stage Race', 'Criterim'])?
 		- deal with clinics
-	--- Embeddable Upcoming Events (2x320px one col)
+	!--- Embeddable Upcoming Events (2x320px one col)
+		- calculate card size to be of container size:
+			- use entire space of the container and stay at 1.618 ratio
+			- two in a row, wrap if do not fit
+		- refactor Event.jsx to use event.name vs plain name
 		-- how to setup async script
 			- https://css-tricks.com/thinking-async/
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
@@ -91,7 +95,7 @@ Today
 		- refactor get-router to use same code with different routes
 		- hoc for profiling rendering time
 		+- disable Drifft for widget
-		- setup Webpack
+		+- setup Webpack
 			+- separate chunks (same config)
 			+- separate index.html
 			- no SSR for widgets? (probably no)

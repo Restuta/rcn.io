@@ -23,7 +23,7 @@ let prevContainerWidth
 
 let renderApp = function() {
   const browserWidth = window.document.body.offsetWidth
-  const containerWidth = Grid.getContainerWidth(browserWidth)
+  const containerWidth = Grid.getFluidContainerWidth(browserWidth)
 
   if (containerWidth === prevContainerWidth) {
     return
