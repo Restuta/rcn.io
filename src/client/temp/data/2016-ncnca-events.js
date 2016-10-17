@@ -12331,14 +12331,14 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "Santa Cruz",
+    "streetAddress": "100 Mariner Way",
+    "city": "Aptos",
     "state": "CA",
-    "zip": "",
+    "zip": "95003",
     "lat": 36.984112,
     "long": -122.02446
   },
-  "resultsUrl": null,
+  "resultsUrl": "https://www.bikereg.com/surf-city",
   "promoters": [],
   "promoterInfo": "http://www.cyclo-x.com/",
   "registrationUrl": "",
