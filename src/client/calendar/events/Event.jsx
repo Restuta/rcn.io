@@ -109,7 +109,6 @@ class Event extends Component {
       containerWidth,
       autoHeight = false,
       baseHeight = getBaseHeight(containerWidth),
-      name,
       fixedWidth = false,
       width = '100%',
       event = {location: {
@@ -138,9 +137,12 @@ class Event extends Component {
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
 
+    //TODO bc: refactor this for case when auto-height is false and no widthColumns is provided
     const cardHeight = autoHeight
       ? 12 //TODO: default size doesn't make sense here, but we need to calculate card size somehow
-      : (widthColumns * baseHeight + widthColumns - 1)
+      : widthColumns
+        ? (widthColumns * baseHeight + widthColumns - 1)
+        : 12
 
     const getSize = cardHeight => {
       if (cardHeight >= 1 && cardHeight <= 3) {
@@ -300,7 +302,7 @@ class Event extends Component {
         onClick={this.onEventClick}>
         {debugComponent}
 
-        <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
+        <EventName size={cardSize} height={cardHeightRem} name={event.name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
 
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
@@ -315,7 +317,6 @@ class Event extends Component {
 Event.propTypes = {
   //TODO bc: id, name and discipline are covered under "event type"
   id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
   //if false, card wouuld take 100% of the container (default) and ignore widthProp
@@ -324,7 +325,7 @@ Event.propTypes = {
   //allows external control of card with (px, %, rem or any css values), requires fixedWidth to  be true
   width: PropTypes.string,
   //width in columns card is going to take
-  widthColumns:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
+  widthColumns:  PropTypes.oneOf([1, 2, 3, 4]),
   //if true, card will adjust it's height based on it's content, if false it would calculate size according to columns
     //layout formula, use it with combination of maxHeight
   autoHeight: PropTypes.bool,
