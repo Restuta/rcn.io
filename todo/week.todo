@@ -82,10 +82,11 @@ Today
 		- deal with stage races and omniums (shoeld we support multiple event types? e.g. ['Stage Race', 'Criterim'])?
 		- deal with clinics
 	!--- Embeddable Upcoming Events (2x320px one col)
+		- iFrame auto-resize: https://github.com/davidjbradshaw/iframe-resizer
 		- calculate card size to be of container size:
 			- use entire space of the container and stay at 1.618 ratio
 			- two in a row, wrap if do not fit
-		- refactor Event.jsx to use event.name vs plain name
+		+- refactor Event.jsx to use event.name vs plain name
 		-- how to setup async script
 			- https://css-tricks.com/thinking-async/
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
@@ -107,6 +108,8 @@ Today
 			--- high priority
 				+- rename "promoterUrl" in MTB to "websiteUrl"
 				+----- BUG: icons slode down on buttons
+				- tru http://codepen.io/Restuta/pen/Xjxxoq?editors=1100#0 for important buttons
+					- make sure it's crossbrowser
 				- replace "no flyer (yet?)" for past events to just no flyer
 				- there is not EVENT WEBSITE for most of the NCNCA races, only promoter: there are websites for CCCX
 				- when permit number is present => calculate results url automatically
