@@ -24,27 +24,30 @@ const ContainerWidth = {
   XXL: 1384
 }
 
+const Breakpoints = {
+  XS: 0,    // Extra small screen / phone
+  SM: 544,  // Small screen / phone
+  MD: 768,  // Medium screen / tablet
+  LG: 992,  // Large screen / desktop
+  XL: 1200,  // Extra large screen / wide desktop
+  XXL: 1440,  // Extra large screen / wide desktop
+}
+
 const COLUMNS = 14
-const GUTTER_PX = 16
+
+//since media query defines smaller base font size in typography.scss we need to calculated gutters properly
+const getGutter = containerOrBrowserWidth => (containerOrBrowserWidth > Breakpoints.SM ? 16 : 14)
 
 export default {
   ContainerWidth : ContainerWidth,
 
   getFluidContainerWidth(browserWidth) {
-    return browserWidth - GUTTER_PX
+    return browserWidth - getGutter(browserWidth)
   },
 
   getContainerWidth(browserWidth) {
     //should match variables from bootstrap
 
-    const Breakpoints = {
-      XS: 0,    // Extra small screen / phone
-      SM: 544,  // Small screen / phone
-      MD: 768,  // Medium screen / tablet
-      LG: 992,  // Large screen / desktop
-      XL: 1200,  // Extra large screen / wide desktop
-      XXL: 1440,  // Extra large screen / wide desktop
-    }
 
     if (browserWidth <= ContainerWidth.SM) {
       return browserWidth //container becomes fluid for small size
@@ -65,7 +68,8 @@ export default {
       //returns width in px of Container's content area (width without paddings)
       getColumnContentWidth({numberOfCols}) {
         const oneColPercent = (100 / COLUMNS) / 100
-        return containerWidth * (oneColPercent * numberOfCols) - GUTTER_PX
+        const containerGutter = containerWidth >= Breakpoints.SM ? getGutter(containerWidth) : 0
+        return containerWidth * (oneColPercent * numberOfCols) - containerGutter
       }
     }
   },
