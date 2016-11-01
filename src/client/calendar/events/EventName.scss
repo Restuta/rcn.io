@@ -55,10 +55,13 @@ $base-line-rem: $line-height-rem / 2;
     //top: pxToRem(-1);
     // margin-bottom: 0;
     &.size-S-6 {
-      max-height: $base-line-rem * 4.5;
+      max-height: $base-line-rem * 4.2;
+      margin-bottom: pxToRem(2);
     }
     &.size-S-7 {
+      top: 0;
       max-height: $base-line-rem * 6;
+      margin-bottom: pxToRem(2);
     }
     &.size-S-8 {
       max-height: $base-line-rem * 6;
@@ -69,10 +72,10 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-M {
     @include text-sm-11($offset: 3);
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 700;
     // margin-bottom: 0rem;
-    max-height: $base-line-rem * 6;
+    max-height: $base-line-rem * 6.1;
     letter-spacing: -0.1px;
     &.size-M-9 {
       max-height: $base-line-rem * 4.5;;
