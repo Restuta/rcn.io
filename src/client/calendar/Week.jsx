@@ -1,12 +1,10 @@
-
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import './Week.scss'
 import classnames from 'classnames'
 // import { Months } from './utils/date-utils.js'
 
-export default class Week extends Component {
+export default class Week extends React.PureComponent {
   render() {
     const {
       lastOne,

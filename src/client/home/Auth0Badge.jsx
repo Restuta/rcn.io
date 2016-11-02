@@ -1,9 +1,8 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './Auth0Badge.scss'
 
-export default class Auth0Badge extends Component {
+export default class Auth0Badge extends React.PureComponent {
   render() {
     const classNames = classnames('Auth0Badge', this.props.className)
 

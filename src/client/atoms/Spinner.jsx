@@ -1,10 +1,9 @@
 import React, { PropTypes } from 'react'
-import Component from 'react-pure-render/component'
 import './Spinner.scss'
 import Colors from 'styles/colors'
 import classnames from 'classnames'
 
-export default class Spinner extends Component {
+export default class Spinner extends React.PureComponent {
   render() {
     const {
       size = 3,

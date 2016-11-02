@@ -1,12 +1,11 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './TopNavbar.scss'
 import {IndexLink, Link} from 'react-router'
 import Logo from './Logo.jsx'
 import HeadwayChangelog from './HeadwayChangelog.jsx'
 
-export default class TopNavbar extends Component {
+export default class TopNavbar extends React.PureComponent {
   render() {
     const classNames = classnames('TopNavbar', 'navbar bg-faded') //'navbar-fixed-top'
     return (

@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import Component from 'react-pure-render/component'
 import './Calendar.scss'
 import Day from './Day.jsx'
 import Week from './Week.jsx'
@@ -15,7 +14,7 @@ const getEventByDate = (eventsMap, date) => {
   return eventsMap.get(key) || []
 }
 
-class Calendar extends Component {
+class Calendar extends React.PureComponent {
   // constructor(props) {
   //   super(props)
   //   this.handleScroll = this.handleScroll.bind(this)

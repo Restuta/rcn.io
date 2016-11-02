@@ -1,12 +1,11 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
 
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
 const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
-export default class MtbCalendar extends Component {
+export default class MtbCalendar extends React.PureComponent {
   render() {
     const { containerWidth } = this.props
     let weekdaysSizes

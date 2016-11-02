@@ -1,10 +1,9 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classNames from 'classnames'
 import './RoundBadge.scss'
 
 
-export default class RoundBadge extends Component {
+export default class RoundBadge extends React.PureComponent {
   render() {
     const {size = 1} = this.props
     const className = size === 2

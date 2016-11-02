@@ -1,10 +1,9 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import classNames from 'classnames'
 import './Icon.scss'
 import { pxToRem } from 'styles/typography'
 
-export default class Icon extends Component {
+export default class Icon extends React.PureComponent {
   render() {
     const { name, color = '', size, top = 0 } = this.props
 

@@ -1,10 +1,8 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Button from 'atoms/Button.jsx'
-// import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
@@ -86,7 +84,7 @@ const ResultsButton = ({resultsUrl, onClick}) => (
 
 const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
 
-class EventDetails extends Component {
+class EventDetails extends React.PureComponent {
   constructor(props) {
     super(props)
     this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)

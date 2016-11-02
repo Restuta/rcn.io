@@ -1,10 +1,9 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import './Location.scss'
 import Sizes from './card-sizes'
 import IconLabel from './IconLabel.jsx'
 
-export default class Location extends Component {
+export default class Location extends React.PureComponent {
   render() {
     const { location = {city: '', state: ''}, size, showState = false } = this.props
     const { city, state } = location

@@ -1,9 +1,8 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import SheetsuLogoPath from 'public/img/sheetsu-logo.svg'
 
-export default class SheetsuBadge extends Component {
+export default class SheetsuBadge extends React.PureComponent {
   render() {
 
     const classNames = classnames('SheetsuBadge', this.props.className)

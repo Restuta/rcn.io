@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import './Day.scss'
 import Col from 'atoms/Col.jsx'
 import classnames from 'classnames'
@@ -9,7 +8,7 @@ import Grid from 'styles/grid'
 import Colors from 'styles/colors'
 // import RoundBadge from 'calendar/badges/RoundBadge.jsx'
 
-export default class Day extends Component {
+export default class Day extends React.PureComponent {
   render() {
     // console.info('Day render')
     const {

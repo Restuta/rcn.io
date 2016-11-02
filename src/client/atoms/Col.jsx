@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 
 function getColClassName(propName, propValue) {
@@ -20,7 +19,7 @@ function getColClassName(propName, propValue) {
 }
 
 //usage <Col xs={12} md={8} />
-export default class Col extends Component {
+export default class Col extends React.PureComponent {
   render() {
         // debugger;
     //TODO: move this to it's own module and make it render faster

@@ -1,5 +1,4 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'
@@ -8,7 +7,7 @@ import { withRouter } from 'react-router'
 import Modal from 'atoms/Modal.jsx'
 import { logRenderPerf } from 'utils/hocs'
 
-class App extends Component {
+class App extends React.PureComponent {
   //required for proper propagation of locationPathname down to the children
   getChildContext() {
     return { locationPathname: this.props.location.pathname }

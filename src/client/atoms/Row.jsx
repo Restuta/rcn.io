@@ -1,8 +1,7 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import classNames from 'classnames'
 
-export default class Row extends Component {
+export default class Row extends React.PureComponent {
   render() {
     const className = classNames('row', this.props.className)
 

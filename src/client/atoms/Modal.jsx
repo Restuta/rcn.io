@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react'
-import Component from 'react-pure-render/component'
 import ExecutionEnvironment from 'exenv'
 import { default as ReactModal } from 'react-modal2'
 import './Modal.scss'
@@ -8,7 +7,7 @@ import classnames from 'classnames'
 //for accesibility, to hide app from screen readers while modal is open
 ReactModal.getApplicationElement = () => document.getElementById('root')
 
-export default class Modal extends Component {
+export default class Modal extends React.PureComponent {
   componentWillMount() {
     if (ExecutionEnvironment.canUseDOM) {
       document.body.style.overflow = 'hidden'

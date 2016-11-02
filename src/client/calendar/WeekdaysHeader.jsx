@@ -1,5 +1,4 @@
 import React from 'react'
-import Component from 'react-pure-render/component'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
@@ -10,7 +9,7 @@ import Grid from 'styles/grid'
 const pxToRems = (px) => pxToRem(px) + 'rem'
 
 
-export default class WeekdaysHeader extends Component {
+export default class WeekdaysHeader extends React.PureComponent {
   render() {
     const {sizes, containerWidth} = this.props
 
@@ -75,7 +74,7 @@ export default class WeekdaysHeader extends Component {
   }
 }
 
-export class WeekdaysHeaderSticky extends Component {//eslint-disable-line
+export class WeekdaysHeaderSticky extends React.PureComponent {//eslint-disable-line
   render() {
     const { sizes, containerWidth } = this.props
 

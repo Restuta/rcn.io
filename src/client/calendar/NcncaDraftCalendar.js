@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
 import { connect } from 'react-redux'
@@ -10,7 +9,7 @@ import Spinner from 'atoms/Spinner.jsx'
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
 const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
-class NcncaDraftCalendar extends Component {
+class NcncaDraftCalendar extends React.PureComponent {
   componentWillMount() {
     if (!this.props.eventsAreLoaded) {
       this.props.requestEventsFetch('cal-ncnca-2017-draft')
