@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import './Button.scss'
 import classnames from 'classnames'
 import Icon from 'atoms/Icon.jsx'
 
-export default class Button extends React.PureComponent {
+export default class Button extends Component {
   constructor(props) {
     super(props)
     this.onClick = this.onClick.bind(this)

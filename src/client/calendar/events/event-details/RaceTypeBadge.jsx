@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import './RaceTypeBadge.scss'
 import Colors from 'styles/colors'
 
 
-export default class RaceTypeBadge extends React.PureComponent {
+export default class RaceTypeBadge extends Component {
   render() {
     const { name, color = 'transparent', skew = 20, inverted = false } = this.props
 

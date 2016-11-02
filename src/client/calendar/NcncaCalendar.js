@@ -1,4 +1,5 @@
 import React from 'react'
+import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
 
@@ -19,7 +20,7 @@ const getCalendarId = slugFromRouteParams =>
     ? slugFromRouteParams
     : 'cal-' + slugFromRouteParams)
 
-export default class NcncaCalendar extends React.PureComponent {
+export default class NcncaCalendar extends Component {
   render() {
     const { containerWidth } = this.props
     const calendarId = getCalendarId(this.props.params.calendarId)

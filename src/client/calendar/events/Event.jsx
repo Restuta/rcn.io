@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react'
+import Component from 'react-pure-render/component'
 import Location from './Location.jsx'
 import Typography from 'styles/typography'
 import Colors from 'styles/colors'
@@ -71,7 +72,7 @@ const numSize = {
   [Size.XL]: 50
 }
 
-class Event extends React.PureComponent {
+class Event extends Component {
   constructor(props) {
     super(props)
     this.onEventClick = this.onEventClick.bind(this)
@@ -109,7 +110,6 @@ class Event extends React.PureComponent {
       autoHeight = false,
       baseHeight = getBaseHeight(containerWidth),
       fixedWidth = false,
-      externallyControlledWidth = false,
       width = '100%',
       event = {location: {
         city: '',
@@ -229,22 +229,21 @@ class Event extends React.PureComponent {
 
     // const cardWidthRem = Math.round(cardHeightRem * 1.618)
     let cardWidthRem
-    let cardLeftBorderWidthRem = 0.7 //defai;t
 
     // const cardWidth = fixedWidth ? (cardWidthRem + 'rem') : ('100%')
     // const cardWidth = '100%'
     let cardWidth
 
-    if (fixedWidth && widthColumns) { //calculate card with to take exacly of provided column width
+    if (fixedWidth && widthColumns) {
       cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
       cardWidth = cardWidthRem + 'rem'
-      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
-    } else if (!fixedWidth && widthColumns) {
-      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
-      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
-      cardWidth = '100%'
-    } else {
+    } else if (fixedWidth) {
+      //TODO: in fixedWith case this is used for left border calculation only
+      cardWidthRem = Math.round(cardHeightRem * 1.618)
       cardWidth = width
+    } else {
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardWidth = cardWidthRem + 'rem'
     }
 
     let eventGroupComponent = null
@@ -281,8 +280,7 @@ class Event extends React.PureComponent {
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
       // width: fixedWidth ? cardWidth : (cardWidthRem + 'rem'),
-      width: (fixedWidth || widthColumns) ? cardWidth : undefined,
-      minHeight: autoHeight ? '9rem' : 'initial',
+      width: cardWidth,
       height: autoHeight ? 'auto' : cardHeightRem + 'rem',
       // height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
@@ -294,7 +292,7 @@ class Event extends React.PureComponent {
       paddingBottom: paddingBottom || verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
+      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
       overflow: (event.group || debug) ? 'visible' : 'hidden',
     }
@@ -321,7 +319,7 @@ Event.propTypes = {
   id: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
-  //if false, card would take 100% of the container (default) and ignore widthProp
+  //if false, card wouuld take 100% of the container (default) and ignore widthProp
     //if true uses provided with or 100% if none
   fixedWidth: PropTypes.bool,
   //allows external control of card with (px, %, rem or any css values), requires fixedWidth to  be true

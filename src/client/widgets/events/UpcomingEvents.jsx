@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import Event from 'calendar/events/Event.jsx'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
@@ -14,7 +15,7 @@ const getCardWidth = cardContainerWidth => (cardContainerWidth >= 300 ? '48.5%' 
 //calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
   //if less it's single column
 
-class UpcomingEvents extends React.PureComponent {
+export default class UpcomingEvents extends Component {
   render() {
 
     const { containerWidth } = this.props

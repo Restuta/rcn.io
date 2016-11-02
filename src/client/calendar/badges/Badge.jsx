@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './Badge.scss'
 import Colors from 'styles/colors'
 import { scaleUp } from 'styles/typography'
 
 
-export default class Badge extends React.PureComponent {
+export default class Badge extends Component {
   render() {
     let {
       square,

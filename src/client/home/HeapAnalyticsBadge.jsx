@@ -1,8 +1,9 @@
 import React from 'react'
+import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 //import './HeapAnalyticsBadge.scss'
 
-export default class HeapAnalyticsBadge extends React.PureComponent {
+export default class HeapAnalyticsBadge extends Component {
   render() {
     const classNames = classnames('HeapAnalyticsBadge', this.props.className)
 

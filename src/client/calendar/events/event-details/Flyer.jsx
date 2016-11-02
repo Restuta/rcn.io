@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import { addUrlParams } from 'utils/url-utils'
 import Button from 'atoms/Button.jsx'
 import Spinner from 'atoms/Spinner.jsx'
 import './Flyer.scss'
 
-export default class Flyer extends React.PureComponent {
+export default class Flyer extends Component {
   constructor(props) {
     super(props)
     this.onOpenInNewTabClick = this.onOpenInNewTabClick.bind(this)

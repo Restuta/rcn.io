@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 import Colors from 'styles/colors'
 import { addUrlParams } from 'utils/url-utils'
 import { pxToRem } from 'styles/typography'
 
 const hexClrToGoogleClr = hexClr => `0x${hexClr.slice(1)}`
 
-export default class GoogleStaticMap extends React.PureComponent {
+export default class GoogleStaticMap extends Component {
   render() {
     const {
        width,

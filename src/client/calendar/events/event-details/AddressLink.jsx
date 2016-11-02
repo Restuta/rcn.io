@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
+import Component from 'react-pure-render/component'
 
-export default class AddressLInk extends React.PureComponent {
+export default class AddressLInk extends Component {
   render() {
 
     const {
