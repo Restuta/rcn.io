@@ -83,9 +83,13 @@ Today
 		- deal with clinics
 	!--- Embeddable Upcoming Events (2x320px one col)
 		- try http://embed.ly/
-		- iFrame auto-resize: https://github.com/davidjbradshaw/iframe-resizer
+		- create Boostrapping script
+			- create iframe in a given element by id
+			- add iframe resizer to DOM
+		- setup iFrame auto-resize: https://github.com/davidjbradshaw/iframe-resizer
+			- bootstrapping script should inject iframeResizer.min.js from cdnjs
 		- calculate card size to be of container size:
-			- use entire space of the container and stay at 1.618 ratio
+			+- use entire space of the container and stay at 1.618 ratio
 			- two in a row, wrap if do not fit
 		+- refactor Event.jsx to use event.name vs plain name
 		-- how to setup async script
