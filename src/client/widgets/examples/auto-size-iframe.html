@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>iFrame message passing test</title>
+  <meta name="description" content="iFrame message passing test">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+  <h2>Automagically resizing iFrame</h2>
+  <p>Resize window to see it in action.</p>
+  <div style="margin:20px;">
+    <iframe src="http://localhost:8888/widgets/upcoming-events" width="100%" scrolling="no"></iframe>
+  </div>
+  <p id="callback">
+  </p>
+  <div style="margin: 8px 0;font-size:13px;">
+    For details on how this works, see
+    <a href="http://davidjbradshaw.github.io/iframe-resizer/">http://davidjbradshaw.github.io/iframe-resizer/</a>.
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js" integrity="sha256-lxxH8RROO8qq+9jKKBzDOnV7hYUkWY/97UhRBxBFdb4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    /*
+     * If you do not understand what the code below does, then please just use the
+     * following call in your own code.
+     *
+     *   iFrameResize({log:true});
+     *
+     * Once you have it working, set the log option to false.
+     */
+
+    iFrameResize({
+      log: true, // Enable console logging
+      inPageLinks: true,
+      heightCalculationMethod: 'bodyScroll', //to resize to actual iFrame's document scroll height
+      resizedCallback: function(messageData) { // Callback fn when resize is received
+        console.info('Received resize with the following message data:')
+        console.log(messageData)
+      },
+
+    });
+  </script>
+</body>
+
+</html>

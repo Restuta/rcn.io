@@ -79,6 +79,12 @@
       </script>
     <% } %>
 
+    <!-- adding iFrame resizer for widgets only -->
+    <% if (htmlWebpackPlugin.options.env.Widget) { %>
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.contentWindow.min.js"
+      integrity="sha256-Y7UIUBSmavjQ1Wr7mLsT9ppMTyHDwOLMY7MP6MdaSdk=" crossorigin="anonymous"></script>
+    <% } %>
+
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
     data-grid-gutterwidth="16px" data-grid-nbcols="14">
