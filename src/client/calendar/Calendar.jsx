@@ -117,7 +117,7 @@ class Calendar extends Component {
             itIsToday={currentDayIsToday}
             itIsFirstDayOfMonth={itIsFirstDayOfMonth}
             itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
-            isItAlternateMonthsDay={currentDayBelongsToAlternateMonth}
+            itIsAlternateMonthsDay={currentDayBelongsToAlternateMonth}
             containerWidth={containerWidth}
             dayOfWeek={currentDate.isoWeekday()}
             weekNumber={currentDate.isoWeek()}>

@@ -21,7 +21,7 @@ export default class Day extends Component {
       itIsToday,
       itIsFirstDayOfMonth,
       itIsLastDayOfMonth,
-      isItAlternateMonthsDay,
+      itIsAlternateMonthsDay,
       dayOfWeek,
       // weekNumber,
       containerWidth,
@@ -35,7 +35,7 @@ export default class Day extends Component {
     const classNames = classnames('Day', {
       ['Day-today']: itIsToday,
       ['today-narrow']: (itIsToday && itsSuperNarrowView),
-      ['Day-alternate-month']: isItAlternateMonthsDay,
+      ['Day-alternate-month']: itIsAlternateMonthsDay,
       ['Day-empty']: itIsEmpty,
       ['Day-special']: itIsSpecialDayOfMonth,
       ['Day-first-of-month']: itIsFirstDayOfMonth,
@@ -55,7 +55,7 @@ export default class Day extends Component {
       if (itIsFirstDayOfMonth) {
         monthLblStyle.color = 'black'
       } else if (itIsSunday || itIsLastDayOfMonth) {
-        if (isItAlternateMonthsDay) {
+        if (itIsAlternateMonthsDay) {
           monthLblStyle.color = Colors.grey600
         } else {
           monthLblStyle.color = Colors.grey500
@@ -108,7 +108,7 @@ Day.propTypes = {
   itIsToday: PropTypes.bool,
   itIsFirstDayOfMonth: PropTypes.bool,
   itIsLastDayOfMonth: PropTypes.bool,
-  isItAlternateMonthsDay: PropTypes.bool,
+  itIsAlternateMonthsDay: PropTypes.bool,
   dayOfWeek: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7]),
   weekNumber: PropTypes.number.isRequired,
   containerWidth: PropTypes.number,
