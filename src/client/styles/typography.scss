@@ -80,7 +80,7 @@ html {
 }
 
 //for mobile screens rem is 7px so things are naturally get smaller
-@media (max-width: map-get($grid-breakpoints, "sm")) {
+@include phone {
   html {
     font-size: (getBaseFontSize() - 1) + px;
   }
