@@ -3,109 +3,127 @@ import Component from 'react-pure-render/component'
 import Event from 'calendar/events/Event.jsx'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
+import moment from  'moment-timezone'
 // import Grid from 'styles/grid'
 import './UpcomingEvents.scss'
+import { Disciplines } from 'calendar/events/types'
 
-const GUTTER = 8 //TODO bc: Get from grid.js
-const MOBILE_BREAKPOINT = 544 - GUTTER * 2
-
-const getCardWidth = cardContainerWidth => (cardContainerWidth >= 300 ? '48.5%' : '100%')
+const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSameOrAfter(momentDate))
+  .sort((a, b) => a.date - b.date)
 
 //layout logic
 //calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
   //if less it's single column
 
-export default class UpcomingEvents extends Component {
+class UpcomingEvents extends Component {
   render() {
 
-    const { containerWidth } = this.props
-    const cardContainerWidth = containerWidth >= MOBILE_BREAKPOINT
-      ? containerWidth / 2 //two column layout
-      : containerWidth
+    const { calendar, events } = this.props
 
-    const commonContainerStyle = {
-      outline: '1px solid silver',
-      marginTop: '1rem',
-      marginBottom: '2rem'
+    //time-zone specific moment factory
+    const momentTZ = function() {
+      return moment.tz(...arguments, calendar.timeZone)
     }
 
-    console.info(containerWidth)
-    console.info(cardContainerWidth)
-    const cardWith = getCardWidth(cardContainerWidth)
-    console.info(cardWith)
+    const today = momentTZ().add(-2, 'month')
+
+    const upcomingEvents = getEventAferDate(events, today)
+
+    const upcomingMtb = upcomingEvents.filter(x => x.discipline === Disciplines.mtb)
+    const upcomingCx = upcomingEvents
+      .filter(x => x.discipline === Disciplines.cyclocross)
+      .slice(0, 6)
+
+
+    const commonContainerStyle = {
+      // outline: '1px solid silver',
+      // marginTop: '1rem',
+      // marginBottom: '2rem'
+    }
+
+    const debugOutlinePx = 0
+
+    // const cardWith = getCardWidth(cardContainerWidth)
+
+    const createEventComps = events => {
+      const cardWith = 'initial'
+      const createEventComp = (event, cardWith) =>
+        <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+
+      return events.map(event => createEventComp(event, cardWith))
+    }
+    // const cxEventsComps = upcomingCx.map(event => createEventComp(event, cardWith)).slice(0, 4)
 
     //ncnca container is 320px * 2 = 640px
     return (
       <div className="UpcomingEvents">
-        NCNCA container, 2x300px + 10px gutters, 2 columns
-        <div style={Object.assign({width: 'auto'}, commonContainerStyle)}>
+        {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
+        <div style={Object.assign({width: '100%'}, commonContainerStyle)}>
           <Row>
-            <Col xs={14} sm={7} style={{outline: '1px solid pink'}} >
-              <h3 className="header-regular">MTB</h3>
+            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid pink`}} >
+              <h3 className="header-regular">ROAD</h3>
               <div className="events-container">
-                <Event id="test" debug fixedWidth autoHeight width={cardWith}
-                  name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-                <Event id="test" debug fixedWidth autoHeight width={cardWith}
-                name="Lion Of Fairfax — SuperPro CX #2" event={{id: 'test', discipline: 'MTB', location: {city: 'Fairfax'}}}/>
+                {createEventComps(upcomingMtb)}
               </div>
             </Col>
-            <Col xs={14} sm={7} style={{outline: '1px solid skyblue'}}>
-              <h3 className="header-regular">CYCLOCROSS</h3>
+            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid skyblue`}}>
+              <h3 className="header-regular"><span>MTB</span> & <span>CYCLOCROSS</span></h3>
               <div className="events-container">
-                <Event id="test" debug fixedWidth autoHeight width={cardWith}
-                  name="Lion Of Fairfax — SuperPro CX #2" event={{id: 'test', discipline: 'CYCLOCROSS', location: {city: 'Fairfax'}}}/>
-                <Event id="test" debug fixedWidth autoHeight width={cardWith}
-                  name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'CYCLOCROSS', location: {city: 'Reno, NV'}}}/>
+                {createEventComps(upcomingCx)}
               </div>
             </Col>
           </Row>
         </div>
 
-        Small Desktop/iPad 230px, one out of two columns
-        <div className="events-container" style={Object.assign({width: '230px'}, commonContainerStyle)}>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(230)}
-            name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(230)}
-            name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-        </div>
-
-        Main Desktop 300px, one out of two columns
-        <div className="events-container" style={{width: '300px', outline: '1px solid silver', marginTop: '1rem', marginBottom: '2rem'}}>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(300)}
-            name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(300)}
-            name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
+        {/* Small Desktop/iPad, 2x250px - 20px gutters = 480px, 2 columns
+        <div style={Object.assign({width: '480px'}, commonContainerStyle)}>
+          <Row>
+            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid pink`}} >
+              <h3 className="header-regular">MTB</h3>
+              <div className="events-container">
+                {createEventComps(upcomingMtb, containerWidth)}
+              </div>
+            </Col>
+            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid skyblue`}}>
+              <h3 className="header-regular">CYCLOCROSS</h3>
+              <div className="events-container">
+                {createEventComps(upcomingCx, containerWidth)}
+              </div>
+            </Col>
+          </Row>
         </div>
 
         362px wide, iPhone 6s Plus
-        <div className="events-container" style={{width: '362px', outline: '1px solid silver', marginTop: '1rem', marginBottom: '2rem'}}>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(362)}
-            name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(362)}
-            name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
+        <div className="events-container" style={Object.assign({width: '362px'}, commonContainerStyle)}>
+          {createEventComps(upcomingCx, 362)}
         </div>
 
         323px wide, iPhone 6
-        <div className="events-container" style={{width: '323px', outline: '1px solid silver', marginTop: '1rem', marginBottom: '2rem'}}>
-
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(323)}
-            name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(323)}
-            name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
+        <div className="events-container" style={Object.assign({width: '323px'}, commonContainerStyle)}>
+          {createEventComps(upcomingCx, 323)}
         </div>
 
         268px wide, iPhone 5
-        <div className="events-container" style={{width: '268px', outline: '1px solid silver', marginTop: '1rem', marginBottom: '2rem'}}>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(268)}
-            name="UC Santa Cruz Shreditation Retreat" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-          <Event id="test" debug fixedWidth autoHeight width={getCardWidth(268)}
-            name="IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium" event={{id: 'test', discipline: 'MTB', location: {city: 'San Francisco'}}}/>
-        </div>
+        <div className="events-container" style={Object.assign({width: '268px'}, commonContainerStyle)}>
+          {createEventComps(upcomingCx, 268)}
+        </div> */}
       </div>
     )
   }
 }
 
 UpcomingEvents.propTypes = {
-  calendar: PropTypes.string,
+  calendar: PropTypes.object,
+  events: PropTypes.array,
 }
+
+import { connect } from 'react-redux'
+import { getCalendar, getEventsForCalendar } from 'shared/reducers/reducer.js'
+
+
+export default connect(
+  (state, ownProps) => ({
+    calendar: getCalendar(state, {calendarId: 'cal-ncnca-2016'}),
+    events: getEventsForCalendar(state, {calendarId: 'cal-ncnca-2016'})
+  })
+)(UpcomingEvents)

@@ -1,13 +1,44 @@
-.UpcomingEvents {
+@import 'variables';
+@import 'mixins';
+
+html, body {
   background-color: #f7f7f7;
+}
+
+.UpcomingEvents {
+  // padding: 2rem; //debug
+
+  .header-regular {
+    margin-top: 0;
+  }
 
   .events-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: stretch;
+    align-content: flex-start;
 
-    >.Event:first-child {
-      // margin-right: 1rem;
+    >.Event {
+      // min-width: 20rem;
+      width: 46% ;
+      margin-right: 1rem;
+      // width: 100%;
+    }
+
+    //300px is hardcoded value where cards become too narrow
+    @media (max-width: '300px') {
+      >.Event {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+      >.Event {
+        max-width: 19rem;
+        // width: 32%;
+      }
     }
   }
 }
