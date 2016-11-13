@@ -229,21 +229,22 @@ class Event extends Component {
 
     // const cardWidthRem = Math.round(cardHeightRem * 1.618)
     let cardWidthRem
+    let cardLeftBorderWidthRem = 0.7 //default
 
     // const cardWidth = fixedWidth ? (cardWidthRem + 'rem') : ('100%')
     // const cardWidth = '100%'
     let cardWidth
 
-    if (fixedWidth && widthColumns) {
+    if (fixedWidth && widthColumns) { //calculate card with to take exacly of provided column width
       cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
       cardWidth = cardWidthRem + 'rem'
-    } else if (fixedWidth) {
-      //TODO: in fixedWith case this is used for left border calculation only
-      cardWidthRem = Math.round(cardHeightRem * 1.618)
-      cardWidth = width
+      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
+    } else if (!fixedWidth && widthColumns) {
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
+      cardWidth = '100%'
     } else {
-      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
-      cardWidth = cardWidthRem + 'rem'
+      cardWidth = width
     }
 
     let eventGroupComponent = null
@@ -280,7 +281,8 @@ class Event extends Component {
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
       // width: fixedWidth ? cardWidth : (cardWidthRem + 'rem'),
-      width: cardWidth,
+      width: (fixedWidth || widthColumns) ? cardWidth : undefined,
+      minHeight: autoHeight ? '9rem' : 'initial',
       height: autoHeight ? 'auto' : cardHeightRem + 'rem',
       // height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
@@ -292,7 +294,7 @@ class Event extends Component {
       paddingBottom: paddingBottom || verticalPadding,
       paddingLeft: horizontalPadding,
       paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
+      borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
       overflow: (event.group || debug) ? 'visible' : 'hidden',
     }
@@ -301,7 +303,6 @@ class Event extends Component {
       <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComponent}
-
         <EventName size={cardSize} height={cardHeightRem} name={event.name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
 
@@ -319,7 +320,7 @@ Event.propTypes = {
   id: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
-  //if false, card wouuld take 100% of the container (default) and ignore widthProp
+  //if false, card would take 100% of the container (default) and ignore widthProp
     //if true uses provided with or 100% if none
   fixedWidth: PropTypes.bool,
   //allows external control of card with (px, %, rem or any css values), requires fixedWidth to  be true
