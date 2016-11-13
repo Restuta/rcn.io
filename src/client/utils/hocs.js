@@ -9,12 +9,12 @@ const logRenderPerf = function(WrappedComp, name) {
     }
 
     componentDidMount() {
-      let now = +new Date()
+      const now = +new Date()
       console.info(`  ${name} rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
     componentDidUpdate() {
-      let now = +new Date()
+      const now = +new Date()
       console.info(`  ${name} re-rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
