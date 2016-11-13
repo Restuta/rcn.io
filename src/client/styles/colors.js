@@ -92,6 +92,7 @@ const colors = {
   ...orange,
 
   bodyBg: '#FCFCFC',
+  bodyWidgetsBg: '#f7f7f7',
   body: '#333333',
 
   // brownMud: 'rgba(160,82,45,0.8)', //'SIENNA',
