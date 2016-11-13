@@ -25,13 +25,16 @@ class UpcomingEvents extends Component {
       return moment.tz(...arguments, calendar.timeZone)
     }
 
-    const today = momentTZ().add(-2, 'month')
+    const today = momentTZ().add(-5, 'month')
 
     const upcomingEvents = getEventAferDate(events, today)
 
-    const upcomingMtb = upcomingEvents.filter(x => x.discipline === Disciplines.mtb)
-    const upcomingCx = upcomingEvents
-      .filter(x => x.discipline === Disciplines.cyclocross)
+    const upcomingMtbAndCx = upcomingEvents.filter(x =>
+      x.discipline === Disciplines.mtb
+      || x.discipline === Disciplines.cyclocross)
+      .slice(0, 6)
+    const upcomingRoad = upcomingEvents
+      .filter(x => x.discipline === Disciplines.road)
       .slice(0, 6)
 
 
@@ -40,8 +43,6 @@ class UpcomingEvents extends Component {
       // marginTop: '1rem',
       // marginBottom: '2rem'
     }
-
-    const debugOutlinePx = 0
 
     // const cardWith = getCardWidth(cardContainerWidth)
 
@@ -54,22 +55,54 @@ class UpcomingEvents extends Component {
     }
     // const cxEventsComps = upcomingCx.map(event => createEventComp(event, cardWith)).slice(0, 4)
 
-    //ncnca container is 320px * 2 = 640px
+
+    const createNextStyle = (order, color) => {
+      const baseStyle = {
+        position: 'absolute',
+        top: 0,
+        height: '0.25rem',
+        width: '1.5rem',
+      }
+
+      return {
+        ...baseStyle,
+        left: `${order * 1.88}rem`,
+        backgroundColor: color
+      }
+    }
+
+    const createFullBorderStyle = color => ({
+      borderTop: `0.25rem solid ${color}`
+    })
+
     return (
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
         <div style={Object.assign({width: '100%'}, commonContainerStyle)}>
           <Row>
-            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid pink`}} >
-              <h3 className="header-regular">ROAD</h3>
+            <Col xs={14} sm={7}>
+              <h3 className="header-regular w-900 margin bot-2">
+                <span>
+                  ROAD
+                  <div style={createNextStyle(0, '#2196F3')}></div>
+                  <div style={createNextStyle(1, '#00BF10')}></div>
+                  <div style={createNextStyle(2, '#FF9800')}></div>
+                  <div style={createNextStyle(3, '#f44336')}></div>
+                </span>
+              </h3>
               <div className="events-container">
-                {createEventComps(upcomingMtb)}
+                {createEventComps(upcomingRoad)}
               </div>
             </Col>
-            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid skyblue`}}>
-              <h3 className="header-regular"><span>MTB</span> & <span>CYCLOCROSS</span></h3>
+            <Col xs={14} sm={7}>
+              <h3 className="header-regular w-900 margin bot-2">
+                <span style={createFullBorderStyle('#a36d53')}>MTB</span>
+                <span style={{color: 'silver'}}>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+                <span style={createFullBorderStyle('#10cec0')}>CX</span>
+                <span style={{color: 'silver'}}>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+                <span style={createFullBorderStyle('#424242')}>TRACK</span></h3>
               <div className="events-container">
-                {createEventComps(upcomingCx)}
+                {createEventComps(upcomingMtbAndCx)}
               </div>
             </Col>
           </Row>

@@ -61,10 +61,11 @@ export default class BaselineGrid extends React.Component {
       zIndex: 9999
     }
 
-    const primaryBaselineStyle = Object.assign({}, baseStyle, {
+    const primaryBaselineStyle = {
+      ...baseStyle,
       backgroundImage: 'linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)',
       backgroundSize: `${baselineHeight}rem ${baselineHeight}rem`,
-    })
+    }
 
     // const secondaryBaselineStyle = Object.assign({}, baseStyle, {
     //   backgroundImage: 'linear-gradient(to bottom, rgba(0, 170, 255, 0.4) 1px, transparent 1px)',
