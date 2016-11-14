@@ -15,7 +15,28 @@ const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSam
 //calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
   //if less it's single column
 
-class UpcomingEvents extends Component {
+const RightSlash = (props) => (
+  <span style={{color: 'silver', paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>/</span>
+)
+
+class UpcomingEvents extends React.Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     monthsBack: 0
+  //   }
+  // }
+
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     console.info('updated..' + this.state.monthsBack)
+  //     this.setState({
+  //       monthsBack: (++this.state.monthsBack)
+  //     })
+  //
+  //   }, 5000)
+  // }
+
   render() {
 
     const { calendar, events } = this.props
@@ -25,7 +46,7 @@ class UpcomingEvents extends Component {
       return moment.tz(...arguments, calendar.timeZone)
     }
 
-    const today = momentTZ().add(-5, 'month')
+    let today = momentTZ().add(-15, 'weeks')
 
     const upcomingEvents = getEventAferDate(events, today)
 
@@ -55,52 +76,29 @@ class UpcomingEvents extends Component {
     }
     // const cxEventsComps = upcomingCx.map(event => createEventComp(event, cardWith)).slice(0, 4)
 
-
-    const createNextStyle = (order, color) => {
-      const baseStyle = {
-        position: 'absolute',
-        top: 0,
-        height: '0.25rem',
-        width: '1.5rem',
-      }
-
-      return {
-        ...baseStyle,
-        left: `${order * 1.88}rem`,
-        backgroundColor: color
-      }
-    }
-
-    const createFullBorderStyle = color => ({
-      borderTop: `0.25rem solid ${color}`
-    })
-
     return (
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
         <div style={Object.assign({width: '100%'}, commonContainerStyle)}>
           <Row>
             <Col xs={14} sm={7}>
-              <h3 className="header-regular w-900 margin bot-2">
-                <span>
-                  ROAD
-                  <div style={createNextStyle(0, '#2196F3')}></div>
-                  <div style={createNextStyle(1, '#00BF10')}></div>
-                  <div style={createNextStyle(2, '#FF9800')}></div>
-                  <div style={createNextStyle(3, '#f44336')}></div>
-                </span>
+              <h3 className="header-regular w-900">
+                <span>ROAD</span>
               </h3>
               <div className="events-container">
                 {createEventComps(upcomingRoad)}
               </div>
             </Col>
             <Col xs={14} sm={7}>
-              <h3 className="header-regular w-900 margin bot-2">
-                <span style={createFullBorderStyle('#a36d53')}>MTB</span>
-                <span style={{color: 'silver'}}>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                <span style={createFullBorderStyle('#10cec0')}>CX</span>
-                <span style={{color: 'silver'}}>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                <span style={createFullBorderStyle('#424242')}>TRACK</span></h3>
+              <h3 className="header-regular w-900">
+                <span style={{color: '#a36d53'}}>MTB</span>
+                <RightSlash />
+                <span style={{color: '#10cec0'}}>CX</span>
+                <RightSlash />
+                <span style={{color: '#424242'}}>TRACK</span>
+                {/* <RightSlash />
+                <span style={{color: '#424242'}}>OTHER</span> */}
+              </h3>
               <div className="events-container">
                 {createEventComps(upcomingMtbAndCx)}
               </div>
