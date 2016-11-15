@@ -7,6 +7,7 @@ import moment from  'moment-timezone'
 // import Grid from 'styles/grid'
 import './UpcomingEvents.scss'
 import { Disciplines } from 'calendar/events/types'
+import Colors from 'styles/colors'
 
 const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSameOrAfter(momentDate))
   .sort((a, b) => a.date - b.date)
@@ -19,24 +20,7 @@ const RightSlash = (props) => (
   <span style={{color: 'silver', paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>/</span>
 )
 
-class UpcomingEvents extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     monthsBack: 0
-  //   }
-  // }
-
-  // componentDidMount() {
-  //   setInterval(() => {
-  //     console.info('updated..' + this.state.monthsBack)
-  //     this.setState({
-  //       monthsBack: (++this.state.monthsBack)
-  //     })
-  //
-  //   }, 5000)
-  // }
-
+class UpcomingEvents extends Component {
   render() {
 
     const { calendar, events } = this.props
@@ -46,98 +30,94 @@ class UpcomingEvents extends React.Component {
       return moment.tz(...arguments, calendar.timeZone)
     }
 
-    let today = momentTZ().add(-15, 'weeks')
+    let today = momentTZ().add(-150, 'weeks')
 
     const upcomingEvents = getEventAferDate(events, today)
 
-    const upcomingMtbAndCx = upcomingEvents.filter(x =>
+    const upcomingMtbAndCxTrack = upcomingEvents.filter(x =>
       x.discipline === Disciplines.mtb
       || x.discipline === Disciplines.cyclocross)
       .slice(0, 6)
+
     const upcomingRoad = upcomingEvents
       .filter(x => x.discipline === Disciplines.road)
       .slice(0, 6)
 
-
-    const commonContainerStyle = {
-      // outline: '1px solid silver',
-      // marginTop: '1rem',
-      // marginBottom: '2rem'
-    }
+    const upcomingOther = upcomingEvents
+      .filter(x => x.discipline !== Disciplines.road
+        && x.discipline !== Disciplines.mtb
+        && x.discipline !== Disciplines.cyclocross
+        && x.discipline !== Disciplines.track)
+      .slice(0, 6)
 
     // const cardWith = getCardWidth(cardContainerWidth)
 
     const createEventComps = events => {
       const cardWith = 'initial'
-      const createEventComp = (event, cardWith) =>
+      const createEventComp = (event, cardWith) => (
         <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+        // {/* <div className="event-container">
+        //   <div className="secondary" style={{
+        //     color: Colors.grey600,
+        //     marginTop: '0.5rem',
+        //     marginBottom: '0.5rem'
+        //   }}>Sun, Jan 12th</div>
+        //   <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+        // </div> */}
+      )
 
       return events.map(event => createEventComp(event, cardWith))
     }
-    // const cxEventsComps = upcomingCx.map(event => createEventComp(event, cardWith)).slice(0, 4)
+
+    const createNoUpcomingEventsComp = (disciplineName) => (
+      <div>No Upcoming {disciplineName} Events in {momentTZ().year()}.</div>
+    )
 
     return (
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
-        <div style={Object.assign({width: '100%'}, commonContainerStyle)}>
+        <div style={{width: '100%'}}>
           <Row>
             <Col xs={14} sm={7}>
               <h3 className="header-regular w-900">
                 <span>ROAD</span>
               </h3>
               <div className="events-container">
-                {createEventComps(upcomingRoad)}
+                {upcomingRoad.length
+                  ? createEventComps(upcomingRoad)
+                  : createNoUpcomingEventsComp('Road')}
               </div>
             </Col>
             <Col xs={14} sm={7}>
               <h3 className="header-regular w-900">
-                <span style={{color: '#a36d53'}}>MTB</span>
+                <span style={{color: Colors.event.mtb.default}}>MTB</span>
                 <RightSlash />
-                <span style={{color: '#10cec0'}}>CX</span>
+                <span style={{color: Colors.event.cyclocross.default}}>CX</span>
                 <RightSlash />
-                <span style={{color: '#424242'}}>TRACK</span>
+                <span style={{color: Colors.event.track.default}}>TRACK</span>
                 {/* <RightSlash />
                 <span style={{color: '#424242'}}>OTHER</span> */}
               </h3>
               <div className="events-container">
-                {createEventComps(upcomingMtbAndCx)}
+                {upcomingMtbAndCxTrack.length
+                  ? createEventComps(upcomingMtbAndCxTrack)
+                  : createNoUpcomingEventsComp('MTB, CX and TRACK')}
               </div>
             </Col>
           </Row>
-        </div>
-
-        {/* Small Desktop/iPad, 2x250px - 20px gutters = 480px, 2 columns
-        <div style={Object.assign({width: '480px'}, commonContainerStyle)}>
           <Row>
-            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid pink`}} >
-              <h3 className="header-regular">MTB</h3>
+            <Col xs={14} sm={7}>
+              <h3 className="header-regular w-900">
+                <span>OTHER</span>
+              </h3>
               <div className="events-container">
-                {createEventComps(upcomingMtb, containerWidth)}
-              </div>
-            </Col>
-            <Col xs={14} sm={7} style={{outline: `${debugOutlinePx}px solid skyblue`}}>
-              <h3 className="header-regular">CYCLOCROSS</h3>
-              <div className="events-container">
-                {createEventComps(upcomingCx, containerWidth)}
+                {upcomingOther.length
+                  ? createEventComps(upcomingOther)
+                  : createNoUpcomingEventsComp('Non-Competitive')}
               </div>
             </Col>
           </Row>
         </div>
-
-        362px wide, iPhone 6s Plus
-        <div className="events-container" style={Object.assign({width: '362px'}, commonContainerStyle)}>
-          {createEventComps(upcomingCx, 362)}
-        </div>
-
-        323px wide, iPhone 6
-        <div className="events-container" style={Object.assign({width: '323px'}, commonContainerStyle)}>
-          {createEventComps(upcomingCx, 323)}
-        </div>
-
-        268px wide, iPhone 5
-        <div className="events-container" style={Object.assign({width: '268px'}, commonContainerStyle)}>
-          {createEventComps(upcomingCx, 268)}
-        </div> */}
       </div>
     )
   }
