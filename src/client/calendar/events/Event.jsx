@@ -14,6 +14,7 @@ import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
 import { Statuses } from 'client/calendar/events/types.js'
+import analytics from 'utils/analytics'
 
 /* event card adaptive behaviour:
    >= 300 fit two

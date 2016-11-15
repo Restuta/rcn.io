@@ -4,14 +4,12 @@ import { Provider } from 'react-redux'
 import configureStore from 'shared/configure-store.js'
 import { syncHistoryWithStore } from 'react-router-redux'
 import routes from 'routes'
+import analytics from 'utils/analytics'
 
 const store = configureStore()
 
 const history = syncHistoryWithStore(browserHistory, store)
-
-if (typeof analytics !== 'undefined') {
-  history.listen(location => analytics.page())
-}
+history.listen(location => analytics.page())
 
 //overriding Router function to pass custom props to a child components, building a higer order function to
 //provide containerWidth to inner-clojure
