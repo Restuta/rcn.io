@@ -35,8 +35,8 @@ const initialState = {
     showContainerEdges: false,
   },
 
-  events: toByIdMap(norcalMtb2016Events
-    .concat(ncnca2016Events)
+  events: toByIdMap(
+    norcalMtb2016Events.concat(ncnca2016Events)
   ),
 
   //calenars map by id
@@ -76,7 +76,7 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Filters are coming.)',
+      description: '(Filters are coming...)',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,
