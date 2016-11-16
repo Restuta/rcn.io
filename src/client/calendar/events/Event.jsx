@@ -117,12 +117,13 @@ class Event extends Component {
         state: ''
       }},
       draft = false,
+      className,
     } = this.props
 
     const classNames = classnames('Event lvl-1', {
       'canceled': event.status === Statuses.canceled,
       'moved': event.status === Statuses.moved
-    })
+    }, className)
 
     //TODO: typography should be passed as props
     /*

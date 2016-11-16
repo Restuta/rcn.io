@@ -30,7 +30,8 @@ class UpcomingEvents extends Component {
       return moment.tz(...arguments, calendar.timeZone)
     }
 
-    let today = momentTZ().add(-150, 'weeks')
+    let today = momentTZ()
+      //.add(-150, 'weeks')
 
     const upcomingEvents = getEventAferDate(events, today)
 
@@ -55,15 +56,15 @@ class UpcomingEvents extends Component {
     const createEventComps = events => {
       const cardWith = 'initial'
       const createEventComp = (event, cardWith) => (
-        <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
-        // {/* <div className="event-container">
-        //   <div className="secondary" style={{
-        //     color: Colors.grey600,
-        //     marginTop: '0.5rem',
-        //     marginBottom: '0.5rem'
-        //   }}>Sun, Jan 12th</div>
-        //   <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
-        // </div> */}
+        // <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+        <div className="event-container">
+          <div className="secondary" style={{
+            color: Colors.grey600,
+            marginTop: '0.5rem',
+            marginBottom: '0.5rem'
+          }}>{event.date.format('ddd, MMM DD')}</div>
+          <Event className="widget-event" key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+        </div>
       )
 
       return events.map(event => createEventComp(event, cardWith))

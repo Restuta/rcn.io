@@ -20,22 +20,28 @@ html, body {
     align-items: stretch;
     align-content: flex-start;
 
-    >.Event {
+    >.event-container {
       // min-width: 20rem;
       width: 46% ;
       margin-right: 1rem;
+      margin-bottom: 1rem;
       // width: 100%;
+    }
+
+    //TODO: figure out how not to leak into internal CSS class here
+    .widget-event {
+      // height: 85% !important;
     }
 
     //300px is hardcoded value where cards become too narrow
     @media (max-width: '300px') {
-      >.Event {
+      >.event-container {
         width: 100%;
       }
     }
 
     @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
-      >.Event {
+      >.event-container {
         max-width: 19rem;
         // width: 32%;
       }
