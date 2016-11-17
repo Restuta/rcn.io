@@ -16,10 +16,6 @@ const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSam
 //calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
   //if less it's single column
 
-const RightSlash = (props) => (
-  <span style={{color: 'silver', paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>/</span>
-)
-
 class UpcomingEvents extends Component {
   render() {
 
@@ -31,58 +27,71 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      //.add(-150, 'weeks')
+      .add(-150, 'weeks')
 
     const upcomingEvents = getEventAferDate(events, today)
 
-    const upcomingMtbAndCxTrack = upcomingEvents.filter(x =>
-      x.discipline === Disciplines.mtb
-      || x.discipline === Disciplines.cyclocross)
-      .slice(0, 6)
 
-    const upcomingRoad = upcomingEvents
-      .filter(x => x.discipline === Disciplines.road)
-      .slice(0, 6)
+    let upcomingEventsByDay = {}
+    const NO_OF_UPCOMING_DAYS = 3
 
-    const upcomingOther = upcomingEvents
-      .filter(x => x.discipline !== Disciplines.road
-        && x.discipline !== Disciplines.mtb
-        && x.discipline !== Disciplines.cyclocross
-        && x.discipline !== Disciplines.track)
-      .slice(0, 6)
+    for (let i = 0; i < upcomingEvents.length; i++) {
+      const currEvent = upcomingEvents[i]
+
+      if (!upcomingEventsByDay[currEvent.datePlain] && Object.keys(upcomingEventsByDay).length === NO_OF_UPCOMING_DAYS) {
+        break
+      }
+
+      if (!upcomingEventsByDay[currEvent.datePlain]) {
+        upcomingEventsByDay[currEvent.datePlain] = [currEvent]
+      } else {
+        upcomingEventsByDay[currEvent.datePlain].push(currEvent)
+      }
+    }
+
+    console.info(upcomingEventsByDay)
+
+
 
     // const cardWith = getCardWidth(cardContainerWidth)
 
     const createEventComps = events => {
       const cardWith = 'initial'
       const createEventComp = (event, cardWith) => (
-        // <Event key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
-        <div className="event-container">
-          <div className="secondary" style={{
-            color: Colors.grey600,
-            marginTop: '0.5rem',
-            marginBottom: '0.5rem'
-          }}>{event.date.format('ddd, MMM DD')}</div>
-          <Event className="widget-event" key={event.id} id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
-        </div>
+        <Event key={event.id} className="widget-event" id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
       )
 
       return events.map(event => createEventComp(event, cardWith))
     }
-
-    const createNoUpcomingEventsComp = (disciplineName) => (
-      <div>No Upcoming {disciplineName} Events in {momentTZ().year()}.</div>
-    )
 
     return (
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
         <div style={{width: '100%'}}>
           <Row>
-            <Col xs={14} sm={7}>
+            {/* change column size dynamically depending on numbe of events on that day */}
+            <Col xs={14} sm={4}>
               <h3 className="header-regular w-900">
-                <span>ROAD</span>
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.format('ddd, MMM DD')}
               </h3>
+              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]])}
+            </Col>
+            <Col xs={14} sm={5}>
+              <h3 className="header-regular w-900">
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.format('ddd, MMM DD')}
+              </h3>
+              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]])}
+            </Col>
+            <Col xs={14} sm={5}>
+              <h3 className="header-regular w-900">
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.format('ddd, MMM DD')}
+              </h3>
+              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]])}
+            </Col>
+          </Row>
+          {/* <Row>
+            <Col xs={14} sm={7}>
+              <h3 className="header-regular w-900">ROAD</h3>
               <div className="events-container">
                 {upcomingRoad.length
                   ? createEventComps(upcomingRoad)
@@ -96,8 +105,6 @@ class UpcomingEvents extends Component {
                 <span style={{color: Colors.event.cyclocross.default}}>CX</span>
                 <RightSlash />
                 <span style={{color: Colors.event.track.default}}>TRACK</span>
-                {/* <RightSlash />
-                <span style={{color: '#424242'}}>OTHER</span> */}
               </h3>
               <div className="events-container">
                 {upcomingMtbAndCxTrack.length
@@ -117,7 +124,7 @@ class UpcomingEvents extends Component {
                   : createNoUpcomingEventsComp('Non-Competitive')}
               </div>
             </Col>
-          </Row>
+          </Row> */}
         </div>
       </div>
     )
