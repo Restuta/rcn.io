@@ -101,8 +101,13 @@ class Calendar extends Component {
 
         if (foundEvents.length > 0) {
           eventComponents = foundEvents.map((event, i) =>
-            <Event id={event.id} key={event.id} widthColumns={daySize} containerWidth={containerWidth} event={event}
-              draft={draft}/>
+            <Event id={event.id} key={event.id}
+              widthColumns={daySize}
+              containerWidth={containerWidth}
+              event={event}
+              draft={draft}
+              higlightEventTypeInName
+            />
           )
         }
 

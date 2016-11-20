@@ -10,6 +10,7 @@ import { getEventColor } from 'calendar/utils/event-colors.js'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
+import Badge from 'calendar/badges/Badge.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
@@ -118,6 +119,8 @@ class Event extends Component {
       }},
       draft = false,
       className,
+      showEventTypeBadge = false,
+      highlightEventTypeInName = false,
     } = this.props
 
     const classNames = classnames('Event lvl-1', {
@@ -165,41 +168,36 @@ class Event extends Component {
     const cardSize = getSize(cardHeight)
     const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
-    let verticalPadding
-    let horizontalPadding
-    let paddingBottom
-    let paddingTop
+    let verticalPaddingRem
+    let horizontalPaddingRem
+    let paddingTopRem
     let eventColor = 'white'
-    let locationComponent = null
 
     //differnt settings based on card size
     //TODO: move to CSS
     if (cardSize === Size.XXS) {
-      verticalPadding = `${Typography.pxToRem(1)}rem`
-      horizontalPadding = `${Typography.pxToRem(1)}rem`
+      verticalPaddingRem = Typography.pxToRem(1)
+      horizontalPaddingRem = Typography.pxToRem(1)
       eventColor = 'black'
     } else if (cardSize === Size.XS) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 4
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
       eventColor = 'orange'
     } else if (cardSize === Size.S) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
       eventColor = 'tomato'
     } else if (cardSize === Size.M) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM / 2
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM
       eventColor = 'mediumseagreen'
     } else if (cardSize === Size.L) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM
       eventColor = 'darkorchid'
     } else if (cardSize === Size.XL) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM + 1
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM + 1
       eventColor = 'deepskyblue'
     }
 
@@ -210,10 +208,10 @@ class Event extends Component {
       eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
     }
 
-    let debugComponent = null
+    let debugComp = null
 
     if (debug) {
-      debugComponent = (<span style={{
+      debugComp = (<span style={{
         position: 'absolute',
         fontSize: '1.25rem',
         top: '-8px',
@@ -249,10 +247,10 @@ class Event extends Component {
       cardWidth = width
     }
 
-    let eventGroupComponent = null
+    let eventGroupComp = null
 
     if (event.group) {
-      eventGroupComponent = (<span style={{
+      eventGroupComp = (<span style={{
         position: 'absolute',
         fontFamily: 'museo-sans-condensed',
         fontWeight: '500',
@@ -265,10 +263,11 @@ class Event extends Component {
       }}>G {event.group} </span>)
     }
 
+    let locationComp = null
     let promoterComp = null
 
     if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
-      locationComponent = <Location location={event.location} size={cardSize} />
+      locationComp = <Location location={event.location} size={cardSize} />
     } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
       const promoter = event.promoters[0].name
       promoterComp = (
@@ -292,10 +291,10 @@ class Event extends Component {
       // minHeight: 2 + 'rem',
       // maxHeight: cardHeightRem * 2 + 'rem',
 
-      paddingTop: paddingTop || verticalPadding,
-      paddingBottom: paddingBottom || verticalPadding,
-      paddingLeft: horizontalPadding,
-      paddingRight: horizontalPadding,
+      paddingTop: (paddingTopRem || verticalPaddingRem) + 'rem',
+      paddingBottom: (verticalPaddingRem) + 'rem',
+      paddingLeft: horizontalPaddingRem + 'rem',
+      paddingRight: horizontalPaddingRem + 'rem',
       borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
       overflow: (event.group || debug) ? 'visible' : 'hidden',
@@ -304,13 +303,27 @@ class Event extends Component {
     return (
       <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
-        {debugComponent}
-        <EventName size={cardSize} height={cardHeightRem} name={event.name} type={event.type}
-          typeColor={eventColor} eventStatus={event.status}/>
+        {debugComp}
+        {showEventTypeBadge &&
+          <div>
+            <Badge square bgColor={'transparent'} color={eventColor} borderColor={eventColor}>
+              {event.type && event.type.toUpperCase()}
+            </Badge>
+          </div>
+        }
+
+        {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
+        <EventName size={cardSize}
+          height={cardHeightRem}
+          name={event.name}
+          type={event.type}
+          typeColor={eventColor}
+          eventStatus={event.status}
+          higlightEventType={highlightEventTypeInName}/>
 
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
-        {eventGroupComponent}
-        {locationComponent}
+        {eventGroupComp}
+        {locationComp}
         {promoterComp}
       </a>
     )
@@ -336,6 +349,11 @@ Event.propTypes = {
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
+  //if true, higlihgts event type in it's name if it's part of it e.g. "Solar City Criterium" would have "Criterim"
+    //higlighted with the event type color
+  highlightEventTypeInName: PropTypes.bool,
+  //if true, shows event type badge inside event card
+  showEventTypeBadge: PropTypes.bool,
   // event: PropTypes.instanceOf(EventType),
   //TODO bc: probably move props to upper level or move event-related props to down level
   event: PropTypes.shape({

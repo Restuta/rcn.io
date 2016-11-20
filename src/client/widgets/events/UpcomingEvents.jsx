@@ -17,6 +17,18 @@ const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSam
   //if less it's single column
 
 class UpcomingEvents extends Component {
+
+  constructor(props) {
+    super(props)
+    this.daysBack = 228
+  }
+
+  componentDidMount() {
+    // setInterval(() => this.setState({
+    //   daysBack: --this.daysBack
+    // }), 3000)
+  }
+
   render() {
 
     const { calendar, events } = this.props
@@ -27,7 +39,8 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      .add(-150, 'weeks')
+      .add(-this.daysBack, 'days')
+    console.info('Today is ' + today.format('dddd, MMMM DD YYYY'))
 
     const upcomingEvents = getEventAferDate(events, today)
 
@@ -52,13 +65,16 @@ class UpcomingEvents extends Component {
     console.info(upcomingEventsByDay)
 
 
-
     // const cardWith = getCardWidth(cardContainerWidth)
 
     const createEventComps = events => {
       const cardWith = 'initial'
       const createEventComp = (event, cardWith) => (
-        <Event key={event.id} className="widget-event" id={event.id} externallyControlledWidth autoHeight width={cardWith} event={event}/>
+        <Event key={event.id} className="upcoming-event" id={event.id}
+          autoHeight
+          externallyControlledWidth
+          showEventTypeBadge
+          width={cardWith} event={event}/>
       )
 
       return events.map(event => createEventComp(event, cardWith))
@@ -70,61 +86,40 @@ class UpcomingEvents extends Component {
         <div style={{width: '100%'}}>
           <Row>
             {/* change column size dynamically depending on numbe of events on that day */}
-            <Col xs={14} sm={4}>
+            <Col xs={14} sm={14}>
               <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.format('ddd, MMM DD')}
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.format('dddd, MMMM Do')}
+                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500, whiteSpace: 'nowrap'}}>
+                  &nbsp;({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.from(today)})
+                </i> */}
               </h3>
-              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]])}
-            </Col>
-            <Col xs={14} sm={5}>
-              <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.format('ddd, MMM DD')}
-              </h3>
-              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]])}
-            </Col>
-            <Col xs={14} sm={5}>
-              <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.format('ddd, MMM DD')}
-              </h3>
-              {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]])}
-            </Col>
-          </Row>
-          {/* <Row>
-            <Col xs={14} sm={7}>
-              <h3 className="header-regular w-900">ROAD</h3>
               <div className="events-container">
-                {upcomingRoad.length
-                  ? createEventComps(upcomingRoad)
-                  : createNoUpcomingEventsComp('Road')}
+                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]])}
               </div>
             </Col>
-            <Col xs={14} sm={7}>
+            <Col xs={14} sm={14}>
               <h3 className="header-regular w-900">
-                <span style={{color: Colors.event.mtb.default}}>MTB</span>
-                <RightSlash />
-                <span style={{color: Colors.event.cyclocross.default}}>CX</span>
-                <RightSlash />
-                <span style={{color: Colors.event.track.default}}>TRACK</span>
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.format('dddd, MMMM Do')}
+                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500}}>
+                  &nbsp; ({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.from(today)})
+                </i> */}
               </h3>
               <div className="events-container">
-                {upcomingMtbAndCxTrack.length
-                  ? createEventComps(upcomingMtbAndCxTrack)
-                  : createNoUpcomingEventsComp('MTB, CX and TRACK')}
+                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]])}
+              </div>
+            </Col>
+            <Col xs={14} sm={14}>
+              <h3 className="header-regular w-900">
+                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.format('dddd, MMMM Do')}
+                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500}}>
+                  &nbsp; ({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.from(today)})
+                </i> */}
+              </h3>
+              <div className="events-container">
+                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]])}
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col xs={14} sm={7}>
-              <h3 className="header-regular w-900">
-                <span>OTHER</span>
-              </h3>
-              <div className="events-container">
-                {upcomingOther.length
-                  ? createEventComps(upcomingOther)
-                  : createNoUpcomingEventsComp('Non-Competitive')}
-              </div>
-            </Col>
-          </Row> */}
         </div>
       </div>
     )

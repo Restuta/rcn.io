@@ -6,15 +6,28 @@ import { Statuses, EventTypes } from 'calendar/events/types'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 
 const EventName = (props) => {
-  const { name, size, height, eventStatus, classNames, typeColor, type } = props
+  const {
+    name,
+    size,
+    height,
+    eventStatus,
+    classNames,
+    typeColor,
+    type,
+    highlightEventType = false,
+  } = props
   const className = classnames(`EventName size-${size} size-${size}-${height} fix-fout`,
     classNames)
 
   //TODO bc: make this production ready, e.g. avoid iteration if one of the names is highlighted
   let wrappedNameComp = name
 
-  if (type && type.trim() && type !== EventTypes.other.meeting) {
-    wrappedNameComp = createHighlightedStringComponent(name, type, typeColor)
+  if (highlightEventType && type && type.trim() && type !== EventTypes.other.meeting) {
+    wrappedNameComp = createHighlightedStringComponent({
+      text: name,
+      stringToHiglight: type,
+      higlightColor: typeColor
+    })
   }
 
   if (eventStatus === Statuses.canceled) {
@@ -39,6 +52,9 @@ EventName.propTypes = {
   size: PropTypes.oneOf(Object.keys(Sizes)).isRequired,
   height: PropTypes.number,
   eventStatus: PropTypes.oneOf(Object.keys(Statuses).map(x => Statuses[x])),
+  //if true, higlihgts event type in it's name if it's part of it e.g. "Solar City Criterium" would have "Criterim"
+    //higlighted with the event type color
+  highlightEventType: PropTypes.bool,
 }
 
 export default EventName

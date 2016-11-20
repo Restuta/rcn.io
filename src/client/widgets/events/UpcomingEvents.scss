@@ -16,28 +16,30 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
 
-    >.widget-event {
-      // min-width: 20rem;
-      width: 46% ;
+    >.upcoming-event {
+      max-width: 19rem;
+      width: 100%;
+      min-width: 15rem;
+      // width: 45% ;
       margin-right: 1rem;
       margin-bottom: 1rem;
-      // width: 100%;
     }
 
 
     //300px is hardcoded value where cards become too narrow
     @media (max-width: '300px') {
-      >.widget-event {
+      >.upcoming-event {
         width: 100%;
+        max-width: 100%;
       }
     }
 
     @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
-      >.widget-event {
+      >.upcoming-event {
         max-width: 19rem;
         // width: 32%;
       }

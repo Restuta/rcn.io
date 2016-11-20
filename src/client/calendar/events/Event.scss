@@ -8,10 +8,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: flex-start;
+
+  //small card sizes start having text that oveflows when this is set to something other than "stretch"
+  //align-items:  flex-start;
+
   overflow: hidden;
 
-   background-color: white;
+  background-color: white;
   // padding: $line-height-rem;
   transition: box-shadow ease-out .2s;
 
