@@ -27,6 +27,7 @@ export default class Badge extends Component {
       top: `${topRem}rem`,
       backgroundColor: bgColor,
       height: `${heightRem}rem`,
+      display: (heightRem <= 2) ? 'inline-block' : undefined
     }, style)
 
     if (!customFontSize) {

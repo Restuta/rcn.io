@@ -319,7 +319,7 @@ class Event extends Component {
           type={event.type}
           typeColor={eventColor}
           eventStatus={event.status}
-          higlightEventType={highlightEventTypeInName}/>
+          highlightEventType={highlightEventTypeInName}/>
 
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {eventGroupComp}
