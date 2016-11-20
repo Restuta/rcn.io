@@ -12370,7 +12370,7 @@ export default [{
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "",
-  "websiteUrl": "http://www.saccyclocross.com/2016/Race5.html"
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race5.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
