@@ -13063,7 +13063,7 @@ export default [{
   "date": "November 12 2016",
   "location": {
     "name": "Davis Creek Park",
-    "streetAddress": "",
+    "streetAddress": "Davis Creek Regional Park",
     "city": "New Washoe City",
     "state": "NV",
     "zip": "89704",
