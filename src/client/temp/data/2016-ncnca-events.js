@@ -13077,7 +13077,8 @@ export default [{
       "name": "Reno Wheelmen"
     }
   ],
-  "promoterInfo": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2906 Sagebrush Cyclocross Race 4 Davis Creek Park OKED.jpg",
