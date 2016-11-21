@@ -13464,6 +13464,36 @@ export default [{
   "series": []
 },
 {
+  "id": "evt-2016-nov-12-24052-cx",
+  "name": "Beach and Beer Cyclocross",
+  "status": "",
+  "type": "Cyclocross",
+  "discipline": "Cyclocross",
+  "date": "November 12 2016",
+  "location": {
+    "name": "Granite Beach",
+    "streetAddress": "Granite Beach",
+    "city": "Granite Bay",
+    "state": "CA",
+    "zip": "95746",
+    "lat": "",
+    "long": ""
+  },
+  "resultsUrl": null,
+  "promoters": [],
+  "promoterInfo": "",
+  "websiteUrl": "http://totalbodyfitness.com/site/race/b-b-cyclocross/",
+  "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/cyclo-cross-races/beach-and-beer-cyclocross-2016",
+  "flyer": {
+    "name": "",
+    "url": "",
+    "mimeType": ""
+  },
+  "flyerUrl": "",
+  "usacPermit": "",
+  "series": [  ]
+},
+{
   "id": "evt-2016-oct-22-24059-ncmp",
   "name": "Ride2Recovery: California Challenge",
   "status": "",
