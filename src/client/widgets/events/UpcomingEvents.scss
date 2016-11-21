@@ -22,26 +22,26 @@ html, body {
 
     >.upcoming-event {
       max-width: 19rem;
-      width: 100%;
+      min-height: 11rem;
       min-width: 15rem;
-      // width: 45% ;
+      width: 100%;
       margin-right: 1rem;
       margin-bottom: 1rem;
     }
 
+    // start adopting cards to screen to fit exactly two
+    @media (max-width: '544px') {
+      >.upcoming-event {
+        width: 47% ;
+        max-width: 19rem;
+      }
+    }
 
     //300px is hardcoded value where cards become too narrow
     @media (max-width: '300px') {
       >.upcoming-event {
         width: 100%;
         max-width: 100%;
-      }
-    }
-
-    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
-      >.upcoming-event {
-        max-width: 19rem;
-        // width: 32%;
       }
     }
   }

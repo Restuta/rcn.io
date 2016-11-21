@@ -31,11 +31,11 @@ const EventName = (props) => {
   }
 
   if (eventStatus === Statuses.canceled) {
-    wrappedNameComp = <span>CANCELED: <span className="canceled">{name}</span></span>
+    wrappedNameComp = <span className="canceled-word">CANCELED: <span className="canceled">{name}</span></span>
   }
 
   if (eventStatus === Statuses.moved) {
-    wrappedNameComp = <span>MOVED: <span className="canceled">{name}</span></span>
+    wrappedNameComp = <span className="moved-word">MOVED: <span className="canceled">{name}</span></span>
   }
 
   return (

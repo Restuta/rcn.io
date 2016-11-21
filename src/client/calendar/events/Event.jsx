@@ -283,7 +283,7 @@ class Event extends Component {
       //width: cardWidthPx + 'px',
       // width: fixedWidth ? cardWidth : (cardWidthRem + 'rem'),
       width: (fixedWidth || widthColumns) ? cardWidth : undefined,
-      minHeight: autoHeight ? '9rem' : 'initial',
+      minHeight: autoHeight ? '11rem' : 'initial',
       height: autoHeight ? 'auto' : cardHeightRem + 'rem',
       // height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
