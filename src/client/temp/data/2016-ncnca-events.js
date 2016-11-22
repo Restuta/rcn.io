@@ -12568,35 +12568,6 @@ export default [{
   "series": []
 },
 {
-  "id": "evt-2016-nov-20-24029-cx",
-  "name": "Surf City Cyclocross Series #3",
-  "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
-  "date": "November 20 2016",
-  "location": {
-    "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 36.991996,
-    "long": -121.993561
-  },
-  "resultsUrl": null,
-  "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
-  "registrationUrl": "",
-  "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
-  },
-  "flyerUrl": "",
-  "usacPermit": "",
-  "series": []
-},
-{
   "id": "evt-2016-nov-20-24030-cx",
   "name": "Sacramento Cyclocross #6",
   "status": "",
