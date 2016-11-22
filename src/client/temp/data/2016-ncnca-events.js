@@ -12576,16 +12576,17 @@ export default [{
   "date": "November 20 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "3000 Alexandrite Dr",
+    "city": "Rescue",
+    "state": "CA",
+    "zip": "95672",
     "lat": 38.711333,
     "long": -120.951576
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.saccyclocross.com/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series OKED.pdf",
