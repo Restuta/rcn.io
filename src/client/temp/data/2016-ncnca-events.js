@@ -12616,7 +12616,7 @@ export default [{
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "",
-  "websiteUrl": "http://www.saccyclocross.com/",
+  "websiteUrl": "http://www.saccyclocross.com/2016/Race7.html",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
