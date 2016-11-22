@@ -12605,16 +12605,17 @@ export default [{
   "date": "December 03 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "2710 Ramp Way",
+    "city": "Sacramento",
+    "state": "CA",
+    "zip": "95818",
     "lat": 38.623482,
     "long": -121.521599
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.saccyclocross.com/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
