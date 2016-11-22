@@ -12893,7 +12893,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+  "promoterInfo": "",
+  "websiteUrl": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12922,7 +12923,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+  "promoterInfo": "",
+  "websiteUrl": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
     "name": null,
