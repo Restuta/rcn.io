@@ -12679,7 +12679,7 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "8556 Gibson Ranch Park Road",
-    "city": "Elverta,",
+    "city": "Elverta",
     "state": "CA",
     "zip": "95626",
     "lat": 38.723069,
