@@ -12708,23 +12708,24 @@ export default [{
   "date": "December 17 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+    "streetAddress": "13375 Lake Ming Rd",
     "city": "Bakersfield",
     "state": "CA",
-    "zip": "",
+    "zip": "93306",
     "lat": 35.380933,
     "long": -118.995667
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+  "websiteUrl": "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
+    "name": "Showdown 2016.pdf",
+    "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
   "usacPermit": "",
   "series": []
 },
@@ -12737,23 +12738,24 @@ export default [{
   "date": "December 18 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "13375 Lake Ming Rd",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93306",
     "lat": 35.376034,
     "long": -119.008026
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+  "websiteUrl": "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
+    "name": "Showdown 2016.pdf",
+    "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+    "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
   "usacPermit": "",
   "series": []
 },
