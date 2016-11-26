@@ -13065,14 +13065,15 @@ export default [{
       "name": "Reno Wheelmen"
     }
   ],
-  "promoterInfo": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
-  "registrationUrl": "",
+  "promoterInfo": "", 
+  "websiteUrl": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+  "registrationUrl": "https://www.usacycling.org/register/2016-2907",
   "flyer": {
     "name": "FL_2016-2907 Sagebrush Cyclocross Race 5 Hidden Valley Park OKED.jpg",
-    "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+    "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
     "mimeType": "image/jpeg"
   },
-  "flyerUrl": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
   "usacPermit": "2016-2907",
   "series": [
     {
