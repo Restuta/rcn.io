@@ -49,9 +49,6 @@ const getUpcomingEvents = (upcomingEvents, noOfUpcomingDays) => {
 }
 
 const UpcomingEventsForDay = ({today, date, events}) => {
-  const weekday = moment.weekdays(date.day())
-
-
   // most of the races start not earlier then 8am and if time is not set it defautls to midnight, this would result
   // in confusing relative time calculation, e.g. at 10pm a person would see "in 2 hours"
   const dateIsSetToMidnight = date.hours() === 0
@@ -62,12 +59,6 @@ const UpcomingEventsForDay = ({today, date, events}) => {
   const relativeDateStr = adjustedDate.diff(today, 'days') === 1
     ? 'Tomorrow'
     : adjustedDate.from(today)
-
-  // const currDayIsWeekend = (weekday === 'Sunday' || weekday === 'Saturday')
-  // const weekdayClass = classnames({
-  //   ['non-weekend']: !currDayIsWeekend,
-  //   ['weekend']: currDayIsWeekend
-  // })
 
   return (
     <div className="upcoming-day">
