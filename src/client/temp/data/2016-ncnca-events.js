@@ -12642,16 +12642,17 @@ export default [{
   "date": "December 10 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "8554 Gibson Ranch Park Rd",
+    "city": "Elverta",
+    "state": "CA",
+    "zip": "95626",
     "lat": 38.722801,
     "long": -121.406994
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.saccyclocross.com/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
