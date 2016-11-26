@@ -5,7 +5,7 @@ import Typography from 'styles/typography'
 import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
-import { Disciplines } from 'calendar/events/types'
+import { Disciplines, EventTypes } from 'calendar/events/types'
 import { getEventColor } from 'calendar/utils/event-colors.js'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
@@ -171,7 +171,7 @@ class Event extends Component {
     let verticalPaddingRem
     let horizontalPaddingRem
     let paddingTopRem
-    let eventColor = 'white'
+    let eventColor
 
     //differnt settings based on card size
     //TODO: move to CSS
@@ -299,27 +299,36 @@ class Event extends Component {
       //we use outside of the edge elements for debug mode and for draft (event groups)
       overflow: (event.group || debug) ? 'visible' : 'hidden',
     }
+    //for event types with white color use plain black, since otherwise badge will be invisible
+    const typeBadgeColor = (eventColor === 'white' ? Colors.body : eventColor)
+    //if event type is "Clinics" (uses "other" to just compare with any clinics) add discipline as a prefix, since
+    // clinics can be for road, mtb, track and other disciplines
+    const typeBadgeText = (event.type === EventTypes.other.clinics && event.discipline !== Disciplines.other)
+      ? event.type && (event.discipline.toUpperCase() + ' / ' +  event.type.toUpperCase())
+      : event.type && event.type.toUpperCase()
 
     return (
       <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComp}
-        {showEventTypeBadge &&
-          <div>
-            <Badge square bgColor={'transparent'} color={eventColor} borderColor={eventColor}>
-              {event.type && event.type.toUpperCase()}
-            </Badge>
-          </div>
-        }
+        <div>
+          {showEventTypeBadge &&
+            <div>
+              <Badge square bgColor={'transparent'} color={typeBadgeColor} borderColor={typeBadgeColor}>
+                {typeBadgeText}
+              </Badge>
+            </div>
+          }
 
-        {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
-        <EventName size={cardSize}
-          height={cardHeightRem}
-          name={event.name}
-          type={event.type}
-          typeColor={eventColor}
-          eventStatus={event.status}
-          highlightEventType={highlightEventTypeInName}/>
+          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
+          <EventName size={cardSize}
+            height={cardHeightRem}
+            name={event.name}
+            type={event.type}
+            typeColor={eventColor}
+            eventStatus={event.status}
+            highlightEventType={highlightEventTypeInName}/>
+        </div>
 
         {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {eventGroupComp}

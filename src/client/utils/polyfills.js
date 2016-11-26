@@ -25,7 +25,6 @@ if (typeof Object.assign != 'function') {
   })();
 }
 
-
 //string.startsWith() for IE
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position){

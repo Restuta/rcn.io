@@ -125,7 +125,7 @@ const clinicsColor = '#F06292'
 const event = {
   other: {
     unknownType: colors.body,
-    meeting: colors.blueGrey500,
+    meeting: 'white',
     // meeting: colors.lightBlue800,
     clinics: clinicsColor,
   },

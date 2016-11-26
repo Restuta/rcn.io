@@ -9009,7 +9009,7 @@ export default [{
   "id": "evt-2016-mar-19-23880-trk",
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
-  "type": "Track",
+  "type": "Clinics",
   "discipline": "Track",
   "date": "March 19 2016",
   "location": {
@@ -9044,7 +9044,7 @@ export default [{
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
   "type": "Clinics",
-  "discipline": "Other",
+  "discipline": "Track",
   "date": "April 16 2016",
   "location": {
     "name": "Hellyer Velodrome",
@@ -9078,7 +9078,7 @@ export default [{
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
   "type": "Clinics",
-  "discipline": "Other",
+  "discipline": "Track",
   "date": "May 21 2016",
   "location": {
     "name": "Hellyer Velodrome",
@@ -9214,7 +9214,7 @@ export default [{
   "name": "Los Gatos Bicycle Racing Club's How to Kill Cat's Hill Clinic",
   "status": "",
   "type": "Clinics",
-  "discipline": "Other",
+  "discipline": "Road",
   "date": "April 09 2016",
   "location": {
     "name": "Race Location",

@@ -21,6 +21,11 @@ const getEventColor = (discipline, type, status = '') => {
 
   if (eventColor) return eventColor
 
+  if (type === 'Clinics') {
+    eventColor = Colors.event.road.clinics
+    return eventColor
+  }
+
   if (discipline === Disciplines.mtb) {
     eventColor = Colors.event.mtb.default
   }

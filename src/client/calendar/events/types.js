@@ -16,7 +16,7 @@ const Statuses = {
 const EventTypes = {
   other: {
     meeting: 'Meeting',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
   },
   road: {
     criterium: 'Criterium',
@@ -26,21 +26,21 @@ const EventTypes = {
     hillClimb: 'Hill Climb',
     omnium: 'Omnium',
     stageRace: 'Stage Race',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive'
   },
   cyclocross: {
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive'
   },
   mtb: {
     enduro: 'Enduro',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive',
     //...
   },
   track: {
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive',
   },
   nonCompetitive: {
