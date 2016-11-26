@@ -12587,7 +12587,7 @@ export default [{
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/02/2016%20-%2010:39pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20OKED_2.pdf",
@@ -12617,7 +12617,7 @@ export default [{
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/2016/Race7.html",
-  "registrationUrl": "",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_4.pdf",
@@ -12653,7 +12653,7 @@ export default [{
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+  "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_5.pdf",
