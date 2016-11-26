@@ -12768,16 +12768,17 @@ export default [{
   "date": "December 31 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "17100 Castroville Blvd",
+    "city": "Salinas",
+    "state": "CA",
+    "zip": "93907",
     "lat": 36.656878,
     "long": -121.750059
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cccxcycling.com/",
+  "promoterInfo": "",
+  "websiteUrl": "http://www.cccxcycling.com/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
