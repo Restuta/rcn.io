@@ -12,6 +12,13 @@ html, body {
     margin-top: 0;
   }
 
+  .header-secondary {
+    font-size: scaleUp(2);
+    color: $grey-500;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
   .events-container {
     display: flex;
     flex-direction: row;
@@ -21,7 +28,7 @@ html, body {
     align-content: flex-start;
 
     >.upcoming-event {
-      max-width: 19rem;
+      max-width: 24rem; //24 is a magic number that fits 3 events on desktop layout on NCNCA.org
       min-height: 11rem;
       min-width: 15rem;
       width: 100%;
@@ -33,7 +40,7 @@ html, body {
     @media (max-width: '544px') {
       >.upcoming-event {
         width: 47% ;
-        max-width: 19rem;
+        max-width: 100%;
       }
     }
 

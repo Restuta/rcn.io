@@ -1,37 +1,107 @@
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import Event from 'calendar/events/Event.jsx'
-import Row from 'atoms/Row.jsx'
-import Col from 'atoms/Col.jsx'
 import moment from  'moment-timezone'
-// import Grid from 'styles/grid'
 import './UpcomingEvents.scss'
-import { Disciplines } from 'calendar/events/types'
-import Colors from 'styles/colors'
+import classnames from 'classnames'
 
-const getEventAferDate = (events, momentDate) => events.filter(x => x.date.isSameOrAfter(momentDate))
+//sort by location function for events
+const byLocation = (eventA, eventB) => {
+  if (eventA.location.city > eventB.location.city) {
+    return 1
+  } else if (eventA.location.city < eventB.location.city) {
+    return -1
+  } else {
+    return 0
+  }
+}
+
+const getEventsAfterDate = (events, momentDate) => events.filter(x => x.date.isSameOrAfter(momentDate))
   .sort((a, b) => a.date - b.date)
+
+// gets upcoming events for specified number of upcoming days, iterates minimal munber of times
+const getUpcomingEvents = (upcomingEvents, noOfUpcomingDays) => {
+  let upcomingEventsForCurrentDay = []
+  let currDate
+
+  let upcomingEventsArr = []
+
+  for (let i = 0; i < upcomingEvents.length; i++) {
+    const currEvent = upcomingEvents[i]
+
+    //current event's date is not the same as current date
+    if (currEvent.datePlain !== currDate) {
+      //enough collecting events
+      if (upcomingEventsArr.length === noOfUpcomingDays) {
+        break
+      } else if (upcomingEventsForCurrentDay.length > 0) {
+        upcomingEventsArr.push(upcomingEventsForCurrentDay)
+        upcomingEventsForCurrentDay = []
+      }
+
+      currDate = currEvent.datePlain
+    }
+
+    upcomingEventsForCurrentDay.push(currEvent)
+  }
+
+  return upcomingEventsArr
+}
+
+const UpcomingEventsForDay = ({today, date, events}) => {
+  const weekday = moment.weekdays(date.day())
+
+
+  // most of the races start not earlier then 8am and if time is not set it defautls to midnight, this would result
+  // in confusing relative time calculation, e.g. at 10pm a person would see "in 2 hours"
+  const dateIsSetToMidnight = date.hours() === 0
+  const adjustedDate = dateIsSetToMidnight
+    ? date.add(8, 'hours')
+    : date
+
+  const relativeDateStr = adjustedDate.diff(today, 'days') === 1
+    ? 'Tomorrow'
+    : adjustedDate.from(today)
+
+  // const currDayIsWeekend = (weekday === 'Sunday' || weekday === 'Saturday')
+  // const weekdayClass = classnames({
+  //   ['non-weekend']: !currDayIsWeekend,
+  //   ['weekend']: currDayIsWeekend
+  // })
+
+  return (
+    <div className="upcoming-day">
+      <h3 className="header-regular w-900">
+        <span>{date.format('dddd, MMMM Do') + ' '}</span>
+        <i className="header-secondary">
+          &nbsp;({relativeDateStr})
+        </i>
+      </h3>
+      <div className="events-container">
+        {events.map(event => (
+          <Event key={event.id} className="upcoming-event"
+            id={event.id}
+            autoHeight
+            externallyControlledWidth
+            showEventTypeBadge
+            width={'initial'}
+            event={event}/>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 //layout logic
 //calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
   //if less it's single column
 
+
 class UpcomingEvents extends Component {
-
-  constructor(props) {
-    super(props)
-    this.daysBack = 330
-  }
-
-  // componentDidMount() {
-  //   setInterval(() => this.setState({
-  //     daysBack: --this.daysBack
-  //   }), 3000)
-  // }
-
   render() {
 
     const { calendar, events } = this.props
+    const NO_OF_UPCOMING_DAYS = 4
 
     //time-zone specific moment factory
     const momentTZ = function() {
@@ -39,89 +109,24 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      // .add(-this.daysBack, 'days')
-      .add(-314, 'days')
-    console.info('Today is ' + today.format('dddd, MMMM DD YYYY'))
-    console.info('Days back: ' + this.daysBack)
+      .add(-320, 'days')
 
-    const upcomingEvents = getEventAferDate(events, today)
+    console.info(today.toString())
 
-
-    let upcomingEventsByDay = {}
-    const NO_OF_UPCOMING_DAYS = 3
-
-    for (let i = 0; i < upcomingEvents.length; i++) {
-      const currEvent = upcomingEvents[i]
-
-      if (!upcomingEventsByDay[currEvent.datePlain] && Object.keys(upcomingEventsByDay).length === NO_OF_UPCOMING_DAYS) {
-        break
-      }
-
-      if (!upcomingEventsByDay[currEvent.datePlain]) {
-        upcomingEventsByDay[currEvent.datePlain] = [currEvent]
-      } else {
-        upcomingEventsByDay[currEvent.datePlain].push(currEvent)
-      }
-    }
-
-    console.info(upcomingEventsByDay)
-
-
-    // const cardWith = getCardWidth(cardContainerWidth)
-
-    const createEventComps = events => {
-      const cardWith = 'initial'
-      const createEventComp = (event, cardWith) => (
-        <Event key={event.id} className="upcoming-event" id={event.id}
-          autoHeight
-          externallyControlledWidth
-          showEventTypeBadge
-          width={cardWith} event={event}/>
-      )
-
-      return events.map(event => createEventComp(event, cardWith))
-    }
+    const upcomingEvents = getEventsAfterDate(events, today)
+    const upcomingEventsArr = getUpcomingEvents(upcomingEvents, NO_OF_UPCOMING_DAYS)
 
     return (
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
-        <div style={{width: '100%'}}>
-          <Row>
-            {/* change column size dynamically depending on numbe of events on that day */}
-            <Col xs={14} sm={14}>
-              <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.format('dddd, MMMM Do')}
-                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500, whiteSpace: 'nowrap'}}>
-                  &nbsp;({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]][0].date.from(today)})
-                </i> */}
-              </h3>
-              <div className="events-container">
-                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[0]])}
-              </div>
-            </Col>
-            <Col xs={14} sm={14}>
-              <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.format('dddd, MMMM Do')}
-                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500}}>
-                  &nbsp; ({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]][0].date.from(today)})
-                </i> */}
-              </h3>
-              <div className="events-container">
-                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[1]])}
-              </div>
-            </Col>
-            <Col xs={14} sm={14}>
-              <h3 className="header-regular w-900">
-                {upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.format('dddd, MMMM Do')}
-                {/* <i style={{fontSize: '1.625rem', color: Colors.grey500}}>
-                  &nbsp; ({upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]][0].date.from(today)})
-                </i> */}
-              </h3>
-              <div className="events-container">
-                {createEventComps(upcomingEventsByDay[Object.keys(upcomingEventsByDay)[2]])}
-              </div>
-            </Col>
-          </Row>
+        <div style={{width: '100%'}} >
+          {upcomingEventsArr.map((eventsForDay, i) =>
+            <UpcomingEventsForDay
+              key={i}
+              today={today}
+              date={eventsForDay[0].date}
+              events={eventsForDay.sort(byLocation)}/>
+          )}
         </div>
       </div>
     )
