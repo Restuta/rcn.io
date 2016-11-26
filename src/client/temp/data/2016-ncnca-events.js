@@ -12634,35 +12634,6 @@ export default [{
   ]
 },
 {
-  "id": "evt-2016-dec-04-24032-cx",
-  "name": "BASP #6",
-  "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
-  "date": "December 04 2016",
-  "location": {
-    "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.585449,
-    "long": -122.325726
-  },
-  "resultsUrl": null,
-  "promoters": [],
-  "promoterInfo": null,
-  "registrationUrl": "",
-  "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
-  },
-  "flyerUrl": "",
-  "usacPermit": "",
-  "series": []
-},
-{
   "id": "evt-2016-dec-10-24033-cx",
   "name": "Sacramento Cyclocross #8",
   "status": "",
