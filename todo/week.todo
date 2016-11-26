@@ -79,6 +79,12 @@ Today
 			- make sure it's same as todays covering all links and notes
 		+- gather email and send out beta-testing message
 	--- Filtering
+		- use gradients for stage races and ominums: to show tow event types 
+			```
+			border-left: 0.7rem solid transparent;
+			border-image: linear-gradient(to top, #f3f3f3 0%, #497ab5 100%);
+			border-image-slice: 1; //not supported in IE10
+			```
 		- deal with stage races and omniums (shoeld we support multiple event types? e.g. ['Stage Race', 'Criterim'])?
 		- deal with clinics
 		- UI elements examples
@@ -92,9 +98,9 @@ Today
 			- add iframe resizer to DOM
 		- setup iFrame auto-resize: https://github.com/davidjbradshaw/iframe-resizer
 			- bootstrapping script should inject iframeResizer.min.js from cdnjs
-		- calculate card size to be of container size:
+		+- calculate card size to be of container size:
 			+- use entire space of the container and stay at 1.618 ratio
-			- two in a row, wrap if do not fit
+			+- two in a row, wrap if do not fit
 		+- refactor Event.jsx to use event.name vs plain name
 		-- how to setup async script
 			- https://css-tricks.com/thinking-async/
@@ -103,7 +109,7 @@ Today
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
 		- script for creating iFrame in a given DIV by id
 		- refactor get-router to use same code with different routes
-		- hoc for profiling rendering time
+		+- hoc for profiling rendering time
 		+- disable Drifft for widget
 		+- setup Webpack
 			+- separate chunks (same config)

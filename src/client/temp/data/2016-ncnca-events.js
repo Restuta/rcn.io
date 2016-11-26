@@ -7743,7 +7743,7 @@ export default [{
   "id": "evt-2016-may-01-23837-ncmp",
   "name": "Sonora Gran Fondo: Rim Fire Century",
   "status": "",
-  "type": "Non-Competitive",
+  "type": "Gran Fondo",
   "discipline": "Non-Competitive",
   "date": "May 01 2016",
   "location": {
@@ -9921,7 +9921,7 @@ export default [{
   "id": "evt-2016-may-07-23924-ncmp",
   "name": "Fast Freddie Folsom Fondo",
   "status": "",
-  "type": "Non-Competitive",
+  "type": "Gran Fondo",
   "discipline": "Non-Competitive",
   "date": "May 07 2016",
   "location": {
@@ -11981,7 +11981,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "", 
+  "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/2016/Race1.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {

@@ -20,14 +20,14 @@ class UpcomingEvents extends Component {
 
   constructor(props) {
     super(props)
-    this.daysBack = 228
+    this.daysBack = 330
   }
 
-  componentDidMount() {
-    // setInterval(() => this.setState({
-    //   daysBack: --this.daysBack
-    // }), 3000)
-  }
+  // componentDidMount() {
+  //   setInterval(() => this.setState({
+  //     daysBack: --this.daysBack
+  //   }), 3000)
+  // }
 
   render() {
 
@@ -39,8 +39,10 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      .add(-this.daysBack, 'days')
+      // .add(-this.daysBack, 'days')
+      .add(-314, 'days')
     console.info('Today is ' + today.format('dddd, MMMM DD YYYY'))
+    console.info('Days back: ' + this.daysBack)
 
     const upcomingEvents = getEventAferDate(events, today)
 
