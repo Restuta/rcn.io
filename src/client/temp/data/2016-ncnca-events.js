@@ -12678,23 +12678,24 @@ export default [{
   "date": "December 11 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+    "streetAddress": "8556 Gibson Ranch Park Road",
+    "city": "Elverta,",
+    "state": "CA",
+    "zip": "95626",
     "lat": 38.723069,
     "long": -121.406994
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+  "websiteUrl": "http://www.saccyclocross.com/2016/NCNCAChamps.html",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2584 Northern CA  NV Cycling Association (NCNCA) District Championship v2 OKED.pdf",
-    "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+    "url": "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
     "mimeType": "application/pdf"
   },
-  "flyerUrl": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+  "flyerUrl": "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
   "usacPermit": "2016-2584",
   "series": []
 },
