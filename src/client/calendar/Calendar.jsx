@@ -106,7 +106,7 @@ class Calendar extends Component {
               containerWidth={containerWidth}
               event={event}
               draft={draft}
-              higlightEventTypeInName
+              highlightEventTypeInName
             />
           )
         }
