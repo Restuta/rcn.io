@@ -83,12 +83,18 @@ const UpcomingEventsForDay = ({today, date, events}) => {
   )
 }
 
-//layout logic
-//calculate container size based on breakpoints, if >=544 i'ts two column container, so devide by 2
-  //if less it's single column
-
-
 class UpcomingEvents extends Component {
+  constructor(props) {
+    super(props)
+    this.onFullCalendarLinkClick = this.onFullCalendarLinkClick.bind(this)
+  }
+
+  onFullCalendarLinkClick(e) {
+    e.preventDefault()
+    //top-level window navigation
+    window.top.location.href = `../calendars/${this.props.calendar.id}`
+  }
+
   render() {
 
     const { calendar, events } = this.props
@@ -100,9 +106,7 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      .add(-320, 'days')
-
-    console.info(today.toString())
+      .add(-224, 'days')
 
     const upcomingEvents = getEventsAfterDate(events, today)
     const upcomingEventsArr = getUpcomingEvents(upcomingEvents, NO_OF_UPCOMING_DAYS)
@@ -111,13 +115,27 @@ class UpcomingEvents extends Component {
       <div className="UpcomingEvents">
         {/* NCNCA container, 2x320px - 20px gutters = 620px, 2 columns */}
         <div style={{width: '100%'}} >
-          {upcomingEventsArr.map((eventsForDay, i) =>
-            <UpcomingEventsForDay
-              key={i}
-              today={today}
-              date={eventsForDay[0].date}
-              events={eventsForDay.sort(byLocation)}/>
-          )}
+          {upcomingEventsArr.length > 0
+            ? upcomingEventsArr.map(
+              (eventsForDay, i) =>
+                <UpcomingEventsForDay
+                  key={i}
+                  today={today}
+                  date={eventsForDay[0].date}
+                  events={eventsForDay.sort(byLocation)}/>
+                )
+            : (
+            <div>
+              <h3 className="header-regular w-500 text-center">No upcoming events in {calendar.year}</h3>
+              <div className="text-3 text-center">
+                See <a
+                  onClick={this.onFullCalendarLinkClick}
+                  href={`../calendars/${this.props.calendar.id}`}
+                  >Full {calendar.year} Calendar</a> instead
+              </div>
+            </div>
+            )
+          }
         </div>
       </div>
     )

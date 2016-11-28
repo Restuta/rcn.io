@@ -13,7 +13,9 @@
   <h2>Automagically resizing iFrame</h2>
   <p>Resize window to see it in action.</p>
   <div style="margin:20px;">
-    <iframe src="http://localhost:8888/widgets/upcoming-events" width="100%" scrolling="no"></iframe>
+    <iframe src="http://localhost:8888/widgets/upcoming-events"
+      sandbox="allow-top-navigation allow-scripts allow-forms allowfullscreen allow-same-origin allow-modals allow-popups allow-pointer-lock allow-popups-to-escape-sandbox"
+      width="100%" scrolling="no"></iframe>
   </div>
   <p id="callback">
   </p>
@@ -35,7 +37,7 @@
      */
 
     iFrameResize({
-      log: true, // Enable console logging
+      log: false, // Enable console logging
       inPageLinks: true,
       heightCalculationMethod: 'bodyScroll', //to resize to actual iFrame's document scroll height
       resizedCallback: function(messageData) { // Callback fn when resize is received
