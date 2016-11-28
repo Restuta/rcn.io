@@ -168,9 +168,9 @@ class Event extends Component {
     const cardSize = getSize(cardHeight)
     const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
-    let verticalPaddingRem
-    let horizontalPaddingRem
-    let paddingTopRem
+    let verticalPaddingRem = 0
+    let horizontalPaddingRem = 0
+    let paddingTopRem = 0
     let eventColor
 
     //differnt settings based on card size
@@ -200,7 +200,6 @@ class Event extends Component {
       horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM + 1
       eventColor = 'deepskyblue'
     }
-
 
     const { debug = false } = this.props
 
@@ -292,7 +291,7 @@ class Event extends Component {
       // maxHeight: cardHeightRem * 2 + 'rem',
 
       paddingTop: (paddingTopRem || verticalPaddingRem) + 'rem',
-      paddingBottom: (verticalPaddingRem) + 'rem',
+      paddingBottom: verticalPaddingRem + 'rem',
       paddingLeft: horizontalPaddingRem + 'rem',
       paddingRight: horizontalPaddingRem + 'rem',
       borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
