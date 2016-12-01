@@ -1,6 +1,7 @@
 /*eslint-disable */
 
-export default [{
+export default[
+  {
     "id" : "evt-2016-jan-03-23546-cx",
     "name" : "CCCX Cyclocross Series #7",
     "status" : "",
@@ -6950,14 +6951,15 @@ export default [{
         "name": "USA Cycling"
       }
     ],
-    "promoterInfo" : "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
-      "url": "",
-      "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
     "usacPermit" : "",
     "series" : [
       {
@@ -6989,14 +6991,15 @@ export default [{
         "name": "USA Cycling"
       }
     ],
-    "promoterInfo" : "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
-      "url": "",
-      "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
     "usacPermit" : "",
     "series" : [
       {
@@ -7028,14 +7031,15 @@ export default [{
         "name": "USA Cycling"
       }
     ],
-    "promoterInfo" : "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
-      "url": "",
-      "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
     "usacPermit" : "",
     "series" : [
       {
@@ -11016,17 +11020,18 @@ export default [{
     "date" : "October 16 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "Folsom",
+      "streetAddress": "Park Rd",
+      "city": "Granite Bay",
       "state": "CA",
-      "zip": "",
-      "lat": 38.636583,
-      "long": -121.149404
+      "zip": "95746",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : "totalbodyfitness.com",
-    "registrationUrl" : "",
+    "websiteUrl" : "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
+    "registrationUrl" : "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11571,18 +11576,19 @@ export default [{
     "discipline" : "Cyclocross",
     "date" : "October 08 2016",
     "location" : {
-      "name": "Rocklin",
-      "streetAddress": "",
+      "name": "Johnson-Springview Park",
+      "streetAddress": "5480 5th St",
       "city": "Rocklin",
       "state": "CA",
-      "zip": "",
-      "lat": 38.780183,
-      "long": -121.230011
+      "zip": "95677",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race1.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED.pdf",
@@ -11605,18 +11611,19 @@ export default [{
     "discipline" : "Cyclocross",
     "date" : "October 09 2016",
     "location" : {
-      "name": "Rocklin",
-      "streetAddress": "",
+      "name": "Rocklin Golf Club",
+      "streetAddress": "4201 Midas Ave",
       "city": "Rocklin",
-      "state": "",
-      "zip": "",
-      "lat": 38.777841,
-      "long": -121.232071
+      "state": "CA",
+      "zip": "95677",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race2.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_0.pdf",
@@ -11640,16 +11647,17 @@ export default [{
     "date" : "October 09 2016",
     "location" : {
       "name": "Manzanita Park",
-      "streetAddress": "",
-      "city": "Prunedale",
+      "streetAddress": "17100 Castroville Blvd",
+      "city": "Salinas",
       "state": "CA",
-      "zip": "",
-      "lat": 36.80211,
-      "long": -121.678798
+      "zip": "93907",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.cccxcycling.com/",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.cccxcycling.com/2016CROSSPAGE2016.html",
     "registrationUrl" : "",
     "flyer" : {
       "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
@@ -11666,32 +11674,116 @@ export default [{
       }
     ]
   }, {
-    "id" : "evt-2016-oct-16-24016-cx",
-    "name" : "Surf City Cyclocross Series #1",
+    "id" : "evt-2016-oct-15-24016-mtb",
+    "name" : "UC Santa Cruz Shreditation Retreat",
     "status" : "",
-    "type" : "Cyclocross",
-    "discipline" : "Cyclocross",
-    "date" : "October 16 2016",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 15 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "850 Branciforte Dr",
       "city": "Santa Cruz",
       "state": "CA",
-      "zip": "",
-      "lat": 36.9885,
-      "long": -122.01622
+      "zip": "95065",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.cyclo-x.com/",
+    "promoterInfo" : "",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
-      "url": "",
+      "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
       "mimeType": null
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+    "usacPermit" : "2016-2901",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-09-24016-mtb",
+    "name" : "Cal Cycling MTB Race",
+    "status" : "",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 09 2016",
+    "location" : {
+      "name": "Race Location",
+      "streetAddress": "260 Bernal Road",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95119",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": null,
+      "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+      "mimeType": null
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
     "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-02-24016-mtb",
+    "name" : "Running of the Bulls: Stanford Cycling Annual MTB Race",
+    "status" : "",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 02 2016",
+    "location" : {
+      "name": "Race Location",
+      "streetAddress": "Camp St",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "Running of the Bulls",
+      "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+      "mimeType": null
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-16-24016-mtb",
+    "name" : "UC Santa Cruz Shreditation Retreat",
+    "status" : "",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 16 2016",
+    "location" : {
+      "name": "Race Location",
+      "streetAddress": "850 Branciforte Dr",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95065",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": null,
+      "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+      "mimeType": null
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
+    "usacPermit" : "2016-2901",
     "series" : []
   }, {
     "id" : "evt-2016-oct-23-24017-cx",
@@ -11702,17 +11794,18 @@ export default [{
     "date" : "October 23 2016",
     "location" : {
       "name": "",
-      "streetAddress": "",
+      "streetAddress": "1525 E Jahant Rd",
       "city": "Acampo",
       "state": "CA",
-      "zip": "",
+      "zip": "95220",
       "lat": 38.174133,
       "long": -121.276445
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race3.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_1.pdf",
@@ -11736,17 +11829,18 @@ export default [{
     "date" : "October 15 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "101 Glen Dr",
       "city": "Fairfax",
       "state": "CA",
-      "zip": "",
-      "lat": 37.985661,
-      "long": -122.588711
+      "zip": "94930",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://superproracing.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://superproracing.com/cross/superprocx/",
+    "registrationUrl" : "http://www.eventbrite.com/e/superpro-cx-2-lion-of-fairfax-15th-october-2016-registration-26834805626",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11764,17 +11858,18 @@ export default [{
     "date" : "October 29 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "2305 S White Rd",
       "city": "San Jose",
       "state": "CA",
-      "zip": "",
-      "lat": 37.333476,
-      "long": -121.812544
+      "zip": "95148",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://superproracing.com/",
-    "registrationUrl" : "",
+    "websiteUrl" : "http://superproracing.com/cross/superprocx/",
+    "promoterInfo" : "",
+    "registrationUrl" : "http://www.eventbrite.com/e/superpro-cx-3-san-jose-29th-october-2016-registration-26835238922",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11792,17 +11887,18 @@ export default [{
     "date" : "October 30 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "3770 Richardson Dr",
       "city": "Auburn",
       "state": "CA",
-      "zip": "",
+      "zip": "95603",
       "lat": 38.889296,
       "long": -121.062469
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race4.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_2.pdf",
@@ -11826,17 +11922,17 @@ export default [{
     "date" : "October 30 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "Santa Cruz",
+      "streetAddress": "100 Mariner Way",
+      "city": "Aptos",
       "state": "CA",
-      "zip": "",
+      "zip": "95003",
       "lat": 36.984112,
       "long": -122.02446
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : "http://www.cyclo-x.com/",
-    "registrationUrl" : "",
+    "registrationUrl" : "https://www.bikereg.com/surf-city",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11854,17 +11950,18 @@ export default [{
     "date" : "November 06 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "1302 Riley St",
       "city": "Folsom",
       "state": "CA",
-      "zip": "",
-      "lat": 38.66018,
-      "long": -121.177826
+      "zip": "95630",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race5.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_3.pdf",
@@ -11888,17 +11985,18 @@ export default [{
     "date" : "November 05 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 37.674622,
-      "long": -122.385957
+      "streetAddress": "2305 S White Rd",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95148",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
-    "registrationUrl" : "",
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
+    "registrationUrl" : "http://www.eventbrite.com/e/bay-area-super-prestige-cx-race-3-night-race-san-jose-nov-5-registration-26952884804",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11916,17 +12014,18 @@ export default [{
     "date" : "November 06 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 37.675246,
-      "long": -122.38593
+      "streetAddress": "2305 S White Rd",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95148",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
-    "registrationUrl" : "",
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
+    "registrationUrl" : "https://www.eventbrite.com/e/bay-area-super-prestige-cx-race-4-san-jose-nov-6-registration-26971013026",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11945,16 +12044,17 @@ export default [{
     "location" : {
       "name": "Race Location",
       "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 38.434632,
-      "long": -122.724152
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.bikemonkey.net/srcup/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
     "flyer" : {
       "name": null,
       "url": "",
@@ -11973,16 +12073,17 @@ export default [{
     "location" : {
       "name": "Race Location",
       "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 38.434632,
-      "long": -122.724152
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.bikemonkey.net/srcup/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
     "flyer" : {
       "name": null,
       "url": "",
@@ -12001,16 +12102,17 @@ export default [{
     "location" : {
       "name": "Race Location",
       "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 38.437186,
-      "long": -122.714539
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.bikemonkey.net/srcup/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
     "flyer" : {
       "name": null,
       "url": "",
@@ -12028,45 +12130,18 @@ export default [{
     "date" : "November 19 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "1461 N Camino Alto",
+      "city": "Vallejo",
+      "state": "CA",
+      "zip": "94589",
       "lat": 37.912784,
       "long": -122.508545
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "https://docs.google.com/spreadsheets/d/1BQbSMGj_axlU8erXQ1C9gspTTHCqEypkYYE7JW_2Sus/view#gid=0",
     "promoters" : [],
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
     "promoterInfo" : null,
-    "registrationUrl" : "",
-    "flyer" : {
-      "name": null,
-      "url": "",
-      "mimeType": null
-    },
-    "flyerUrl" : "",
-    "usacPermit" : "",
-    "series" : []
-  }, {
-    "id" : "evt-2016-nov-20-24029-cx",
-    "name" : "Surf City Cyclocross Series #3",
-    "status" : "",
-    "type" : "Cyclocross",
-    "discipline" : "Cyclocross",
-    "date" : "November 20 2016",
-    "location" : {
-      "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 36.991996,
-      "long": -121.993561
-    },
-    "resultsUrl" : null,
-    "promoters" : [],
-    "promoterInfo" : "http://www.cyclo-x.com/",
-    "registrationUrl" : "",
+    "registrationUrl" : "http://baspcx-race5-vallejo-nov19.eventbrite.com",
     "flyer" : {
       "name": null,
       "url": "",
@@ -12084,17 +12159,18 @@ export default [{
     "date" : "November 20 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "3000 Alexandrite Dr",
+      "city": "Rescue",
+      "state": "CA",
+      "zip": "95672",
       "lat": 38.711333,
       "long": -120.951576
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/02/2016%20-%2010:39pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20OKED_2.pdf",
@@ -12112,17 +12188,18 @@ export default [{
     "date" : "December 03 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "2710 Ramp Way",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95818",
       "lat": 38.623482,
       "long": -121.521599
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race7.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_4.pdf",
@@ -12138,34 +12215,6 @@ export default [{
       }
     ]
   }, {
-    "id" : "evt-2016-dec-04-24032-cx",
-    "name" : "BASP #6",
-    "status" : "",
-    "type" : "Cyclocross",
-    "discipline" : "Cyclocross",
-    "date" : "December 04 2016",
-    "location" : {
-      "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "lat": 37.585449,
-      "long": -122.325726
-    },
-    "resultsUrl" : null,
-    "promoters" : [],
-    "promoterInfo" : null,
-    "registrationUrl" : "",
-    "flyer" : {
-      "name": null,
-      "url": "",
-      "mimeType": null
-    },
-    "flyerUrl" : "",
-    "usacPermit" : "",
-    "series" : []
-  }, {
     "id" : "evt-2016-dec-10-24033-cx",
     "name" : "Sacramento Cyclocross #8",
     "status" : "",
@@ -12174,17 +12223,18 @@ export default [{
     "date" : "December 10 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "8554 Gibson Ranch Park Rd",
+      "city": "Elverta",
+      "state": "CA",
+      "zip": "95626",
       "lat": 38.722801,
       "long": -121.406994
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.saccyclocross.com/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
     "flyer" : {
       "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_5.pdf",
@@ -12208,23 +12258,24 @@ export default [{
     "date" : "December 11 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "8556 Gibson Ranch Park Road",
+      "city": "Elverta",
+      "state": "CA",
+      "zip": "95626",
       "lat": 38.723069,
       "long": -121.406994
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
+    "websiteUrl" : "http://www.saccyclocross.com/2016/NCNCAChamps.html",
     "registrationUrl" : "",
     "flyer" : {
       "name": "FL_2016-2584 Northern CA  NV Cycling Association (NCNCA) District Championship v2 OKED.pdf",
-      "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
       "mimeType": "application/pdf"
     },
-    "flyerUrl" : "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
     "usacPermit" : "2016-2584",
     "series" : []
   }, {
@@ -12236,23 +12287,24 @@ export default [{
     "date" : "December 17 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
+      "streetAddress": "13375 Lake Ming Rd",
       "city": "Bakersfield",
       "state": "CA",
-      "zip": "",
+      "zip": "93306",
       "lat": 35.380933,
       "long": -118.995667
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
+    "websiteUrl" : "http://www.sambarn.com/?page_id=6",
     "registrationUrl" : "",
     "flyer" : {
-      "name": null,
-      "url": "",
-      "mimeType": null
+      "name": "Showdown 2016.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+      "mimeType": "application/pdf"
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
     "usacPermit" : "",
     "series" : []
   }, {
@@ -12264,23 +12316,24 @@ export default [{
     "date" : "December 18 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "13375 Lake Ming Rd",
+      "city": "Bakersfield",
+      "state": "CA",
+      "zip": "93306",
       "lat": 35.376034,
       "long": -119.008026
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
+    "websiteUrl" : "http://www.sambarn.com/?page_id=6",
     "registrationUrl" : "",
     "flyer" : {
-      "name": null,
-      "url": "",
-      "mimeType": null
+      "name": "Showdown 2016.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+      "mimeType": "application/pdf"
     },
-    "flyerUrl" : "",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
     "usacPermit" : "",
     "series" : []
   }, {
@@ -12292,16 +12345,17 @@ export default [{
     "date" : "December 31 2016",
     "location" : {
       "name": "Race Location",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
+      "streetAddress": "17100 Castroville Blvd",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93907",
       "lat": 36.656878,
       "long": -121.750059
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "http://www.cccxcycling.com/",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.cccxcycling.com/",
     "registrationUrl" : "",
     "flyer" : {
       "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
@@ -12335,7 +12389,8 @@ export default [{
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
@@ -12363,7 +12418,8 @@ export default [{
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
@@ -12391,7 +12447,8 @@ export default [{
     },
     "resultsUrl" : null,
     "promoters" : [],
-    "promoterInfo" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
     "registrationUrl" : "",
     "flyer" : {
       "name": null,
@@ -12487,13 +12544,13 @@ export default [{
     "discipline" : "Cyclocross",
     "date" : "October 15 2016",
     "location" : {
-      "name": "Dorothy Macalinden Park",
-      "streetAddress": "",
-      "city": "Stead",
+      "name": "Race Location",
+      "streetAddress": "Mayors Park",
+      "city": "Reno",
       "state": "NV",
       "zip": "89506",
-      "lat": 39.646455,
-      "long": -119.875548
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [
@@ -12502,8 +12559,9 @@ export default [{
         "name": "Reno Wheelmen"
       }
     ],
-    "promoterInfo" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.sagebrush.cx/races/mayors-park-october-15th-2016/",
+    "registrationUrl" : "https://www.usacycling.org/register/2016-2905",
     "flyer" : {
       "name": "FL_2016-2905 Sagebrush Cyclocross Race 3 Dorothy McAllinden Park OKED.jpg",
       "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2905%20Sagebrush%20Cyclocross%20Race%203%20Dorothy%20McAllinden%20Park%20OKED.jpg",
@@ -12527,7 +12585,7 @@ export default [{
     "date" : "November 12 2016",
     "location" : {
       "name": "Davis Creek Park",
-      "streetAddress": "",
+      "streetAddress": "Davis Creek Regional Park",
       "city": "New Washoe City",
       "state": "NV",
       "zip": "89704",
@@ -12541,7 +12599,8 @@ export default [{
         "name": "Reno Wheelmen"
       }
     ],
-    "promoterInfo" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
     "registrationUrl" : "",
     "flyer" : {
       "name": "FL_2016-2906 Sagebrush Cyclocross Race 4 Davis Creek Park OKED.jpg",
@@ -12580,14 +12639,15 @@ export default [{
         "name": "Reno Wheelmen"
       }
     ],
-    "promoterInfo" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
-    "registrationUrl" : "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+    "registrationUrl" : "https://www.usacycling.org/register/2016-2907",
     "flyer" : {
       "name": "FL_2016-2907 Sagebrush Cyclocross Race 5 Hidden Valley Park OKED.jpg",
-      "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+      "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
       "mimeType": "image/jpeg"
     },
-    "flyerUrl" : "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
     "usacPermit" : "2016-2907",
     "series" : [
       {
@@ -12604,18 +12664,18 @@ export default [{
     "discipline" : "Non-Competitive",
     "date" : "October 16 2016",
     "location" : {
-      "name": "Lake Merritt",
-      "streetAddress": "",
+      "name": "Race Location",
+      "streetAddress": "666 Bellevue Ave",
       "city": "Oakland",
       "state": "CA",
       "zip": "94610",
-      "lat": 37.808715,
-      "long": -122.249559
+      "lat": "",
+      "long": ""
     },
     "resultsUrl" : null,
     "promoters" : [],
     "promoterInfo" : null,
-    "registrationUrl" : "",
+    "registrationUrl" : "https://www.usacycling.org/register/2016-2715",
     "flyer" : {
       "name": "FL_2016-2715 C510 Super Cat III OKED.pdf",
       "url": "http://www.ncnca.org/sites/default/files/08/22/2016%20-%202:32pm/FL_2016-2715%20C510%20Super%20Cat%20III%20OKED.pdf",
@@ -12652,5 +12712,326 @@ export default [{
     "flyerUrl" : "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:10am/FL_2016-2890%20Bikes%20for%20Kids%20Charity%20Ride%20OKED.jpg",
     "usacPermit" : "2016-2890",
     "series" : []
+  }, {
+    "id" : "evt-2016-oct-09-24059-ncmp",
+    "name" : "Cycle with Champions",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 09 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "4400 Day School Place",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95403",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "Cycle With Champions OKED",
+      "url": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-07-24059-ncmp",
+    "name" : "Mount Diablo State Park Historic Road Cyclists Safety Improvements Event",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 07 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "South Gate Road",
+      "city": "Danville",
+      "state": "CA",
+      "zip": "94506",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "MDSP Recognition Flyer",
+      "url": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-16-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 16 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1085 E El Camino Real",
+      "city": "Sunnyvale",
+      "state": "CA",
+      "zip": "94087",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-17-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 17 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1410 Ocean St",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95060",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-18-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 18 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "3665 Rio Rd",
+      "city": "Carmel-By-The-Sea",
+      "state": "CA",
+      "zip": "93923",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-19-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 19 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "9355 Hearst Dr",
+      "city": "San Simeon",
+      "state": "CA",
+      "zip": "93452",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-20-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 20 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "Price St",
+      "city": "Pismo Beach",
+      "state": "CA",
+      "zip": "93449",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-21-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 21 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1455 Mission Dr",
+      "city": "Solvang",
+      "state": "CA",
+      "zip": "93463",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-23-24059-ncmp",
+    "name" : "Oakland Gran Fondo",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 23 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "Jack London Square",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94607",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.oaklandgranfondo.com/race-info/",
+    "registrationUrl" : "http://www.oaklandgranfondo.com/register/",
+    "flyer" : {
+      "name": "Oakland Gran Fondo",
+      "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-nov-12-24052-cx",
+    "name" : "Beach and Beer Cyclocross",
+    "status" : "",
+    "type" : "Cyclocross",
+    "discipline" : "Cyclocross",
+    "date" : "November 12 2016",
+    "location" : {
+      "name": "Granite Beach",
+      "streetAddress": "Granite Beach",
+      "city": "Granite Bay",
+      "state": "CA",
+      "zip": "95746",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "http://totalbodyfitness.com/site/race/b-b-cyclocross/",
+    "registrationUrl" : "http://www.active.com/granite-bay-ca/cycling/cyclo-cross-races/beach-and-beer-cyclocross-2016",
+    "flyer" : {
+      "name": "",
+      "url": "",
+      "mimeType": ""
+    },
+    "flyerUrl" : "",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-22-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 22 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "450 E Harbor Blvd",
+      "city": "Ventura",
+      "state": "CA",
+      "zip": "93001",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
   }
 ]
+//to do - check past October events and add missing events
+//to do after - check events after Oct 16th
