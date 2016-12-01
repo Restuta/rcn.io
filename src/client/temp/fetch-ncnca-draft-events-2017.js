@@ -1,7 +1,9 @@
 import moment from 'moment'
+import { generateShortId } from 'client/utils/math'
+import { getAbbreviatedType } from 'client/calendar/events/types'
 
 /*
-Sourc Event format:
+Source Event format:
 {
   Date: "1/1/2017",
   Race Name: "San Bruno Hill Climb",
@@ -40,6 +42,17 @@ Target:
   "registrationUrl": "https://www.usacycling.org/register/2014-183"
 }
 */
+//
+// const createEventIdPrefix = (eventDate, eventType) => (
+//   `evt-ncnca-${eventDate.year()}-${eventDate.format('MMM').toLowerCase()}-${eventDate.format('DD')}`
+//     + `-${getAbbreviatedType(eventType || 'Road')}`
+// )
+//
+// const createDraftEventId = (eventDate, eventType) => (
+//   createEventIdPrefix(eventDate, eventType) + `-${shortId}`
+// )
+
+// const createEventId = (eventDate, eventType) =>
 
 const transformEvents = googleSpreedsheetEvents =>
   googleSpreedsheetEvents.map(event => {
@@ -49,11 +62,18 @@ const transformEvents = googleSpreedsheetEvents =>
 
     //TODO bc: handle notable events as separate events? (it's a property now)
 
+    const date = moment(event['Date'], 'MM/DD/YYYY')
+    const name = event['Race Name'].trim()
+    const shortId = generateShortId({length: 3})
+    const type = event['Type'].trim()
+
     return {
-      name: event['Race Name'].trim(),
-      date: moment(event['Date'], 'MM/DD/YYYY').format('MMMM DD YYYY'),
+      id: `evt-ncnca-${date.year()}-${date.format('MMM').toLowerCase()}-${date.format('DD')}`
+        + `-${getAbbreviatedType(type || 'Road')}-${shortId}`,
+      name: name,
+      date: date.format('MMMM DD YYYY'),
       discipline: 'Road',
-      type: event['Type'].trim(),
+      type: type,
       location: {
         city: event['Location'],
         state: 'CA',
@@ -64,18 +84,35 @@ const transformEvents = googleSpreedsheetEvents =>
         contactInfo: event['Promoter contact info'].trim() || undefined,
       }],
       group: event['Group'].trim() || undefined,
-      notes: event['Notes'].trim() || undefined,
+      draftNotes: event['Notes'].trim() || undefined,
+      isDraft: true
     }
   })
-  .filter(x => !!x)
+  .filter(x => !!x) //filters out null and undefined
 
 
-// fetch NCNCA Draft events from google spreeadshet (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
+//use this funciton to convert draft events to non draft ones, should be donce once per year when draft
+//calendar is done and NCNCA is ready to release official one
+// const convertDraftEventsToRealOnes = transformedDraftEvents =>
+//   transformedDraftEvents.map(event => {
+//     return {
+//       ...event,
+//       isDraft: false
+//     }
+//   })
+
+
+// fetch NCNCA Draft events from google spreeadshet
+// (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
 // using sheetsu.com
 const fetchRawNcncaDraftEvents2017 = () =>
   fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
     .then(response => response.json())
     .then(events => transformEvents(events))
+    // .then(events => {
+    //   console.log(JSON.stringify(events))
+    //   return events
+    // })
     // .then(parsedEvents => parsedEvents.map(x => console.info(x.name)))
 
 export default fetchRawNcncaDraftEvents2017

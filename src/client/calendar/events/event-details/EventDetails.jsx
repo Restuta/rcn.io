@@ -122,7 +122,8 @@ class EventDetails extends Component {
       location = {},
       discipline,
       type,
-      notes,
+      isDraft: eventIsDraft,
+      draftNotes,
       status,
       promoters,
       websiteUrl,
@@ -177,10 +178,9 @@ class EventDetails extends Component {
       raceTypeBadgesComp.push(<RaceTypeBadge key={10} inverted name="PAST" color={Colors.event.status.past}/>)
     }
 
-    if (group) {
+    if (eventIsDraft && group) {
       raceTypeBadgesComp.push(<RaceTypeBadge key={80} inverted name={'GROUP ' + group} color={Colors.grey800} />)
     }
-
 
     const eventColor = getEventColor(discipline, type, status)
     const eventType = (type || discipline || '').toUpperCase()
@@ -188,7 +188,7 @@ class EventDetails extends Component {
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} inverted={showInvertedBadge} name={eventType} color={eventColor} />)
 
-    const notesComp = (notes && (
+    const notesComp = ((draftNotes && eventIsDraft) && (
       <Row>
         <Col xs={14} sm={9}>
           <h4 className="w-700 header-regular">
@@ -196,7 +196,7 @@ class EventDetails extends Component {
             <span style={{color: Colors.grey500}}>Notes by </span>
             {promoterContactName}:
           </h4>
-          <p className="text-sm-14">{notes || '--'}</p>
+          <p className="text-sm-14">{draftNotes || '--'}</p>
         </Col>
       </Row>
     ))

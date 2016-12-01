@@ -85,7 +85,6 @@ class Event extends Component {
         city: '',
         state: ''
       }},
-      draft = false,
     } = this.props
 
     //todo: typography should be passed as props
@@ -187,7 +186,7 @@ class Event extends Component {
 
     let eventGroupComponent = null
 
-    if (event.group) {
+    if (event.isDraft && event.group) {
       eventGroupComponent = (<span style={{
         position: 'absolute',
         fontFamily: 'museo-sans-condensed',
@@ -203,9 +202,9 @@ class Event extends Component {
 
     let promoterComp = null
 
-    if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
+    if ((numSize[cardSize] > numSize[Size.S]) && !event.isDraft) {
       locationComponent = <Location location={event.location} size={cardSize} />
-    } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
+    } else if ((numSize[cardSize] > numSize[Size.S]) && event.isDraft) {
       const promoter = event.promoters[0].name
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
@@ -243,7 +242,7 @@ class Event extends Component {
         <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
           typeColor={eventColor} eventStatus={event.status}/>
 
-        {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {eventGroupComponent}
         {locationComponent}
         {promoterComp}
@@ -285,9 +284,11 @@ Event.propTypes = {
     registrationUrl: PropTypes.string,
     flyerUrl: PropTypes.string,
     status: PropTypes.string,
-    notes: PropTypes.string,
+    draftNotes: PropTypes.string,
+    //represents if event is draft, usually for draft calendars
+    isDraft: PropTypes.bool,
   }),
-  draft: PropTypes.bool,
+
 }
 
 Event.contextTypes = {
