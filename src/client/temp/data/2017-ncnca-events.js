@@ -18,7 +18,128 @@ export default [{
       }
     ],
     "group": "1"
+  }, /*{
+    "id": "evt-ncnca-2017-jan-03-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 03 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
   }, {
+    "id": "evt-ncnca-2017-jan-04-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 04 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
+  }, {
+    "id": "evt-ncnca-2017-jan-05-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 05 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
+  }, {
+    "id": "evt-ncnca-2017-jan-06-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 06 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
+  }, {
+    "id": "evt-ncnca-2017-jan-07-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 07 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
+  }, {
+    "id": "evt-ncnca-2017-jan-08-cx-gkV",
+    "name": "USA Cycling Cyclo-cross National Championships",
+    "date": "January 08 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "city": "Hartford",
+      "state": "CT"
+    },
+    "promoters": [
+      {
+        "name": "",
+        "contactName": "",
+        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
+      }
+    ],
+    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+    "group": "1"
+  },
+  */ {
     "id": "evt-ncnca-2017-jan-08-ct-sVK",
     "name": "Early Bird Training Criterium",
     "date": "January 08 2017",
