@@ -86,6 +86,11 @@ Today
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
 			- https://dev.twitter.com/web/javascript/loading
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
+	--- NCNCA Calendar 2017
+		- generate events and ids
+		- assign correct promoter ids from 2016 (match by name?)
+		- create a second function that transforms draft events to respective non-draft calendar
+		- update WCCC races: to have promoter name as "Western Collegiate Cycling Conference"
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
