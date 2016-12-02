@@ -18,7 +18,7 @@ export default [{
       }
     ],
     "group": "1"
-  }, /*{
+  }, {
     "id": "evt-ncnca-2017-jan-03-cx-gkV",
     "name": "USA Cycling Cyclo-cross National Championships",
     "date": "January 03 2017",
@@ -138,8 +138,7 @@ export default [{
     "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
     "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
     "group": "1"
-  },
-  */ {
+  }, {
     "id": "evt-ncnca-2017-jan-08-ct-sVK",
     "name": "Early Bird Training Criterium",
     "date": "January 08 2017",
