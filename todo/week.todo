@@ -86,11 +86,17 @@ Today
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
 			- https://dev.twitter.com/web/javascript/loading
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
-	--- NCNCA Calendar 2017
+	!--- NCNCA Calendar 2017
+		- add new property to series of the event
+			- call it "short name" or "abbreviation" so we can show it on event card: currently it's embeded into the name like "Tempus Fugi Time Trial – RKO #5, notice "RKO #5" it signifies short name of the series and event's number in it
+		-- missing from our Calendar
+		  -  April 27 paracycling events
+		  -  May 15 Amgen Tour
 		- generate events and ids
 		- assign correct promoter ids from 2016 (match by name?)
 		- create a second function that transforms draft events to respective non-draft calendar
 		- update WCCC races: to have promoter name as "Western Collegiate Cycling Conference"
+		- use slugify url instead of custom code
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	

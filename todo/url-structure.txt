@@ -1,0 +1,12 @@
+by name (important ones)
+
+    rcn.io/calendars/norcal-mtb?year=2016
+    rcn.io/calendars/ncnca?year=2016
+
+    rcn.io/calendars/ncnca?from='01-02-2016'&to='01-03-2016'
+
+others (custom created or personal)
+    rcn.io/calendars/7882?showPast&filter='road+mtb'
+
+user-specific? (if needed)
+    rcn.io/users/{23sdf23}/calendars/{abdsf23}
