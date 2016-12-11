@@ -1,6 +1,6 @@
 /*eslint-disable */
 
-export default[
+export default [
   {
     "id" : "evt-2016-jan-03-23546-cx",
     "name" : "CCCX Cyclocross Series #7",
@@ -2309,10 +2309,9 @@ export default[
     },
     "resultsUrl" : "https://www.usacycling.org/results/index.php?year=2016&id=1194",
     "promoters" : [
-      {
-        "id": "prm-23754",
-        "name": "Red Kite Racing / Body Concepts Cycling Team / Winchester Cycling Club"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing" },
+      { "id": "prm-30002", "name": "Body Concepts Cycling Team" },
+      { "id": "prm-30003", "name": "Winchester Cycling Club" },
     ],
     "promoterInfo" : null,
     "registrationUrl" : "https://www.bikereg.com/2016-rko5",
@@ -3560,10 +3559,10 @@ export default[
     },
     "resultsUrl" : "https://www.usacycling.org/results/index.php?year=2016&id=2416",
     "promoters" : [
-      {
-        "id": "prm-23753",
-        "name": "Red Kite Racing / Berkeley Bicycle Club / East Bay Velo / Albany High School MTB Team"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing" },
+      { "id": "prm-2639", "name": "Berkeley Bicycle Club" },
+      { "id": "prm-30000", "name": "East Bay Velo" },
+      { "id": "prm-30001", "name": "Albany High School MTB Team" },
     ],
     "promoterInfo" : "For more information visit redkiteracing.com",
     "registrationUrl" : "https://www.bikereg.com/2016-rko12",
