@@ -1,7 +1,8 @@
 /*eslint-disable */
 
-export default [{
-    "id": "evt-ncnca-2017-jan-01-hc-gkV",
+export default [
+  {
+    "id" : "evt-ncnca-2017-san-bruno-hill-climb-rkJyeFqXl",
     "name": "San Bruno Hill Climb",
     "date": "January 01 2017",
     "discipline": "Road",
@@ -17,130 +18,12 @@ export default [{
         "contactInfo": "Pen Velo, evans792@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkJyeFqXl"
   }, {
-    "id": "evt-ncnca-2017-jan-03-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 03 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-04-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 04 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-05-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 05 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-06-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 06 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-07-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 07 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-08-cx-gkV",
-    "name": "USA Cycling Cyclo-cross National Championships",
-    "date": "January 08 2017",
-    "discipline": "Cyclocross",
-    "type": "Cyclocross",
-    "location": {
-      "city": "Hartford",
-      "state": "CT"
-    },
-    "promoters": [
-      {
-        "name": "",
-        "contactName": "",
-        "contactInfo": "http://www.ncnca.org/ncncapromoter/usa-cycling"
-      }
-    ],
-    "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-    "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
-    "group": "1"
-  }, {
-    "id": "evt-ncnca-2017-jan-08-ct-sVK",
-    "name": "Early Bird Training Criterium",
+    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-1-B1x1JgKcQx",
+    "name" : "Early Bird Criterium Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -155,10 +38,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B1x1JgKcQx"
   }, {
-    "id": "evt-ncnca-2017-jan-08-ct-EpO",
-    "name": "Clovis Training Criterium",
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-SJ-kyetcQg",
+    "name" : "Clovis Criterium Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -173,10 +58,12 @@ export default [{
         "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJ-kyetcQg"
   }, {
-    "id": "evt-ncnca-2017-jan-15-ct-4ni",
-    "name": "Early Bird Training Criterium",
+    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-2-ryzk1eYcmx",
+    "name" : "Early Bird Criterium Training Series #2",
     "date": "January 15 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -191,10 +78,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryzk1eYcmx"
   }, {
-    "id": "evt-ncnca-2017-jan-15-ct-zKl",
-    "name": "Clovis Training Criterium",
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-2-S1mJkxKqXx",
+    "name" : "Clovis Criterium Training Series #2",
     "date": "January 15 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -209,10 +98,12 @@ export default [{
         "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1mJkxKqXx"
   }, {
-    "id": "evt-ncnca-2017-jan-22-ct-mls",
-    "name": "Early Bird Training Criterium",
+    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-3-rJNkklFqme",
+    "name" : "Early Bird Criterium Training Series #3",
     "date": "January 22 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -227,10 +118,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJNkklFqme"
   }, {
-    "id": "evt-ncnca-2017-jan-22-ct-7h6",
-    "name": "Clovis Training Criterium",
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-3-SkryJgt5ml",
+    "name" : "Clovis Criterium Training Series #3",
     "date": "January 22 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -245,9 +138,11 @@ export default [{
         "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkryJgt5ml"
   }, {
-    "id": "evt-ncnca-2017-jan-28-ct-GbP",
+    "id" : "evt-ncnca-2017-cal-aggie-criterium-ryU11xK5Ql",
     "name": "Cal Aggie Criterium",
     "date": "January 28 2017",
     "discipline": "Road",
@@ -263,10 +158,12 @@ export default [{
         "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryU11xK5Ql"
   }, {
-    "id": "evt-ncnca-2017-jan-28-cr-SEJ",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-1-ByPJ1xYqml",
+    "name" : "Central Coast Road Series – CCCX #1",
     "date": "January 28 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -281,10 +178,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByPJ1xYqml"
   }, {
-    "id": "evt-ncnca-2017-jan-29-ct-BUh",
-    "name": "Early Bird Training Criterium",
+    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-4-S1_k1lY5Qx",
+    "name" : "Early Bird Criterium Training Series #4",
     "date": "January 29 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -299,10 +198,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1_k1lY5Qx"
   }, {
-    "id": "evt-ncnca-2017-jan-29-ct-KGJ",
-    "name": "Clovis Training Criterium",
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-4-BytkyxY97e",
+    "name" : "Clovis Criterium Training Series #4",
     "date": "January 29 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -317,9 +218,11 @@ export default [{
         "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BytkyxY97e"
   }, {
-    "id": "evt-ncnca-2017-feb-04-ct-fWG",
+    "id" : "evt-ncnca-2017-folsom-winter-criterium-S1qJ1gtqXl",
     "name": "Folsom Winter Criterium",
     "date": "February 04 2017",
     "discipline": "Road",
@@ -335,10 +238,12 @@ export default [{
         "contactInfo": "tan4an@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1qJ1gtqXl"
   }, {
-    "id": "evt-ncnca-2017-feb-05-cr-TMu",
-    "name": "RKO #1 - The Bump Circuit Race (Winter)",
+    "id" : "evt-ncnca-2017-the-bump-circuit-race-winter-rko-1-SJoyJgYcme",
+    "name" : "The Bump Circuit Race (Winter) – RKO #1",
     "date": "February 05 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -353,9 +258,11 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJoyJgYcme"
   }, {
-    "id": "evt-ncnca-2017-feb-11-om-HJ2",
+    "id" : "evt-ncnca-2017-masters-otf-omnium-BkhkyltqXl",
     "name": "Master's OTF Omnium",
     "date": "February 11 2017",
     "discipline": "Road",
@@ -371,10 +278,12 @@ export default [{
         "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
       }
     ],
-    "group": "2"
+    "group" : "2",
+    "isDraft" : false,
+    "_shortId" : "BkhkyltqXl"
   }, {
-    "id": "evt-ncnca-2017-feb-11-cr-RbQ",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-ryp1ket5Xx",
+    "name" : "Central Coast Road Series – CCCX #2",
     "date": "February 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -389,9 +298,11 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryp1ket5Xx"
   }, {
-    "id": "evt-ncnca-2017-feb-12-om-4KT",
+    "id" : "evt-ncnca-2017-masters-otf-omnium-HyRk1xKcmg",
     "name": "Master's OTF Omnium",
     "date": "February 12 2017",
     "discipline": "Road",
@@ -407,10 +318,12 @@ export default [{
         "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
       }
     ],
-    "group": "2"
+    "group" : "2",
+    "isDraft" : false,
+    "_shortId" : "HyRk1xKcmg"
   }, {
-    "id": "evt-ncnca-2017-feb-12-rr-wiM",
-    "name": "RKO #2 - Wine Country Road Race",
+    "id" : "evt-ncnca-2017-wine-country-road-race-rko-2-ryJgJketcXx",
+    "name" : "Wine Country Road Race – RKO #2",
     "date": "February 12 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -425,10 +338,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "3"
+    "group" : "3",
+    "isDraft" : false,
+    "_shortId" : "ryJgJketcXx"
   }, {
-    "id": "evt-ncnca-2017-feb-18-cr-WZy",
-    "name": "Coppertown Circuit Race (VP #)",
+    "id" : "evt-ncnca-2017-coppertown-circuit-race-vp-1-SJgek1eY5Xx",
+    "name" : "Coppertown Circuit Race – VP #1",
     "date": "February 18 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -443,10 +358,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJgek1eY5Xx"
   }, {
-    "id": "evt-ncnca-2017-feb-18-rr-3u7",
-    "name": "WCCC - UCSC",
+    "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-road-race-HJWeyylF97x",
+    "name" : "WCCC: Santa Cruz Slugapalooza Road Race",
     "date": "February 18 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -461,10 +378,12 @@ export default [{
         "contactInfo": "rmarcuson@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJWeyylF97x"
   }, {
-    "id": "evt-ncnca-2017-feb-19-rr-t5f",
-    "name": "Cantua Creek Road Race (VP #)",
+    "id" : "evt-ncnca-2017-cantua-creek-road-race-vp-2-BkfgJkgYqXl",
+    "name" : "Cantua Creek Road Race – VP #2",
     "date": "February 19 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -479,10 +398,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkfgJkgYqXl"
   }, {
-    "id": "evt-ncnca-2017-feb-19-ct-CIW",
-    "name": "WCCC - UCSC",
+    "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-criterium-rkQeyJgFqXg",
+    "name" : "WCCC: Santa Cruz Slugapalooza Criterium",
     "date": "February 19 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -497,10 +418,12 @@ export default [{
         "contactInfo": "rmarcuson@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkQeyJgFqXg"
   }, {
-    "id": "evt-ncnca-2017-feb-20-ct-xRO",
-    "name": "Dinuba Criterium (VP #)",
+    "id" : "evt-ncnca-2017-dinuba-criterium-vp-3-BJEgJ1xY57l",
+    "name" : "Dinuba Criterium – VP #3",
     "date": "February 20 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -515,10 +438,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJEgJ1xY57l"
   }, {
-    "id": "evt-ncnca-2017-feb-20-ct-2kQ",
-    "name": "Cherry Pie Crit",
+    "id" : "evt-ncnca-2017-cherry-pie-criterium-BkBgy1eY5Xl",
+    "name" : "Cherry Pie Criterium",
     "date": "February 20 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -533,10 +458,12 @@ export default [{
         "contactInfo": "Eagle Cyclinb Club, felix.riesenberg@sbcglobal.net"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkBgy1eY5Xl"
   }, {
-    "id": "evt-ncnca-2017-feb-24-sr-tAI",
-    "name": "Chico Stage Race",
+    "id" : "evt-ncnca-2017-chico-stage-race-stage-1-thunderhill-circuit-race-HJ8ekkgKqmx",
+    "name" : "Chico Stage Race – Stage 1: Thunderhill Circuit Race",
     "date": "February 24 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -551,10 +478,12 @@ export default [{
         "contactInfo": "director@chicostagerace.com, (916) 612-0811"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJ8ekkgKqmx"
   }, {
-    "id": "evt-ncnca-2017-feb-25-sr-nLl",
-    "name": "Chico Stage Race",
+    "id" : "evt-ncnca-2017-chico-stage-race-stage-2-paskenta-hills-road-race-BywekJlY9ml",
+    "name" : "Chico Stage Race – Stage 2: Paskenta Hills Road Race",
     "date": "February 25 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -569,10 +498,12 @@ export default [{
         "contactInfo": "director@chicostagerace.com, (916) 612-0811"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BywekJlY9ml"
   }, {
-    "id": "evt-ncnca-2017-feb-26-sr-xnM",
-    "name": "Chico Stage Race",
+    "id" : "evt-ncnca-2017-chico-stage-race-stage-3-river-road-time-trial-SkOxJkeKqXg",
+    "name" : "Chico Stage Race – Stage 3: River Road Time Trial",
     "date": "February 26 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -587,12 +518,34 @@ export default [{
         "contactInfo": "director@chicostagerace.com, (916) 612-0811"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkOxJkeKqXg"
   }, {
-    "id": "evt-ncnca-2017-feb-26-cr-JjS",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-chico-stage-race-stage-4-steve-harrison-memorial-criterium-SyKe1kgF9Xg",
+    "name" : "Chico Stage Race – Stage 4: Steve Harrison Memorial Criterium",
     "date": "February 26 2017",
     "discipline": "Road",
+    "type" : "Stage Race",
+    "location" : {
+      "city": "Chico",
+      "state": "CA"
+    },
+    "promoters" : [
+      {
+        "name": "Jeff Galland",
+        "contactName": "Jeff Galland",
+        "contactInfo": "director@chicostagerace.com, (916) 612-0811"
+      }
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyKe1kgF9Xg"
+  }, {
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-3-ry5ekygY5Xg",
+    "name" : "Central Coast Road Series – CCCX #3",
+    "date" : "February 26 2017",
+    "discipline" : "Road",
     "type": "Circuit Race",
     "location": {
       "city": "Seaside",
@@ -605,10 +558,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ry5ekygY5Xg"
   }, {
-    "id": "evt-ncnca-2017-mar-04-rr-gJs",
-    "name": "Snelling Road Race (VP #)",
+    "id" : "evt-ncnca-2017-snelling-road-race-vp-4-ByslykeKc7g",
+    "name" : "Snelling Road Race – VP #4",
     "date": "March 04 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -623,10 +578,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByslykeKc7g"
   }, {
-    "id": "evt-ncnca-2017-mar-05-ct-y1W",
-    "name": "Original Merced Criterium (VP #)",
+    "id" : "evt-ncnca-2017-original-merced-criterium-vp-5-SJ2xyyeF5mx",
+    "name" : "Original Merced Criterium – VP #5",
     "date": "March 05 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -641,10 +598,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJ2xyyeF5mx"
   }, {
-    "id": "evt-ncnca-2017-mar-11-rr-7yL",
-    "name": "Wards Ferry Road Race (VP #)",
+    "id" : "evt-ncnca-2017-wards-ferry-road-race-vp-6-S1ax11gKcXl",
+    "name" : "Ward's Ferry Road Race – VP #6",
     "date": "March 11 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -659,9 +618,11 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1ax11gKcXl"
   }, {
-    "id": "evt-ncnca-2017-mar-11-ct-O5b",
+    "id" : "evt-ncnca-2017-land-park-criterium-ry0gJ1etqXl",
     "name": "Land Park Criterium",
     "date": "March 11 2017",
     "discipline": "Road",
@@ -677,9 +638,11 @@ export default [{
         "contactInfo": "SGW, stuball52@sbcglobal.net, 916-205-0991"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ry0gJ1etqXl"
   }, {
-    "id": "evt-ncnca-2017-mar-12-rr-I1e",
+    "id" : "evt-ncnca-2017-bariani-road-race-SykZk1gtcXg",
     "name": "Bariani Road Race",
     "date": "March 12 2017",
     "discipline": "Road",
@@ -695,10 +658,12 @@ export default [{
         "contactInfo": "SGW, stuball52@sbcglobal.net, 916-205-0992"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SykZk1gtcXg"
   }, {
-    "id": "evt-ncnca-2017-mar-17-sr-YDi",
-    "name": "Madera Stage Race (VP #)",
+    "id" : "evt-ncnca-2017-madera-stage-race-hill-climb-vp-7-BJgb11xF9Qx",
+    "name" : "Madera Stage Race: Hill Climb – VP #7",
     "date": "March 17 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -713,10 +678,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJgb11xF9Qx"
   }, {
-    "id": "evt-ncnca-2017-mar-18-sr-Nvo",
-    "name": "Madera Stage Race (VP #)",
+    "id" : "evt-ncnca-2017-madera-stage-race-crit-vp-7-HkbbJ1xFcXg",
+    "name" : "Madera Stage Race: Crit – VP #7",
     "date": "March 18 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -731,12 +698,34 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HkbbJ1xFcXg"
   }, {
-    "id": "evt-ncnca-2017-mar-18-cr-U5V",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-madera-stage-race-time-trial-vp-7-SJM-kygFc7x",
+    "name" : "Madera Stage Race: Time Trial – VP #7",
     "date": "March 18 2017",
     "discipline": "Road",
+    "type" : "Stage Race",
+    "location" : {
+      "city": "Madera",
+      "state": "CA"
+    },
+    "promoters" : [
+      {
+        "name": "Velo Promo",
+        "contactName": "Robert Leibold",
+        "contactInfo": "Velo Promo, velopro1@sonnet.com"
+      }
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJM-kygFc7x"
+  }, {
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-4-HyQWJkxY5me",
+    "name" : "Central Coast Road Series – CCCX #4",
+    "date" : "March 18 2017",
+    "discipline" : "Road",
     "type": "Circuit Race",
     "location": {
       "city": "Seaside",
@@ -749,12 +738,34 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyQWJkxY5me"
   }, {
-    "id": "evt-ncnca-2017-mar-18-rr-XCc",
-    "name": "WCCC - Cal - Road Race",
+    "id" : "evt-ncnca-2017-wccc-cal-team-time-trial-collegiate-only-BkV-JJxFqXx",
+    "name" : "WCCC: Cal Team Time Trial (Collegiate Only)",
     "date": "March 18 2017",
     "discipline": "Road",
+    "type" : "Team Time Trial",
+    "location" : {
+      "city": "Berkeley",
+      "state": "CA"
+    },
+    "promoters" : [
+      {
+        "name": "Reese Levine",
+        "contactName": "Reese Levine",
+        "contactInfo": "reeselevine@berkeley.edu"
+      }
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkV-JJxFqXx"
+  }, {
+    "id" : "evt-ncnca-2017-wccc-cal-road-race-collegiate-and-junior-only-SJBbk1eFq7g",
+    "name" : "WCCC: Cal Road Race (Collegiate and Junior Only)",
+    "date" : "March 18 2017",
+    "discipline" : "Road",
     "type": "Road Race",
     "location": {
       "city": "Berkeley",
@@ -767,10 +778,12 @@ export default [{
         "contactInfo": "reeselevine@berkeley.edu"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJBbk1eFq7g"
   }, {
-    "id": "evt-ncnca-2017-mar-19-sr-893",
-    "name": "Madera Stage Race (VP #)",
+    "id" : "evt-ncnca-2017-madera-stage-race-road-race-vp-7-H1L-ykgYqQl",
+    "name" : "Madera Stage Race: Road Race – VP #7",
     "date": "March 19 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -785,10 +798,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1L-ykgYqQl"
   }, {
-    "id": "evt-ncnca-2017-mar-19-ct-Frh",
-    "name": "RKO #3 - Red Kite Criterium (March)",
+    "id" : "evt-ncnca-2017-red-kite-criterium-march-rko-3-S1PZ11eYqme",
+    "name" : "Red Kite Criterium (March) – RKO #3",
     "date": "March 19 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -803,10 +818,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1PZ11eYqme"
   }, {
-    "id": "evt-ncnca-2017-mar-19-ct-tLZ",
-    "name": "WCCC - Cal - Criterium",
+    "id" : "evt-ncnca-2017-wccc-cal-berkeley-streets-criterium-collegiate-usac-HyuZkJgF5Qx",
+    "name" : "WCCC: Cal Berkeley Streets Criterium (Collegiate & USAC)",
     "date": "March 19 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -821,10 +838,12 @@ export default [{
         "contactInfo": "reeselevine@berkeley.edu"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyuZkJgF5Qx"
   }, {
-    "id": "evt-ncnca-2017-mar-25-cr-O68",
-    "name": "RKO #4 - Winchester Circuit Race",
+    "id" : "evt-ncnca-2017-winchester-circuit-race-rko-4-BkFbJ1etqXl",
+    "name" : "Winchester Circuit Race – RKO #4",
     "date": "March 25 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -840,10 +859,12 @@ export default [{
       }
     ],
     "group": "3",
-    "draftNotes": "Also the Winchester race is a soft date pending other submissions.  SR"
+    "draftNotes" : "Also the Winchester race is a soft date pending other submissions.  SR",
+    "isDraft" : false,
+    "_shortId" : "BkFbJ1etqXl"
   }, {
-    "id": "evt-ncnca-2017-mar-26-ct-QH2",
-    "name": "Santa Cruz Classic Criterium (VP #)",
+    "id" : "evt-ncnca-2017-santa-cruz-classic-criterium-xlviii-vp-8-BJcbJklF5Xx",
+    "name" : "Santa Cruz Classic Criterium XLVIII – VP #8",
     "date": "March 26 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -858,10 +879,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJcbJklF5Xx"
   }, {
-    "id": "evt-ncnca-2017-mar-26-tt-eJw",
-    "name": "RKO #5 - Tempus Fugit Individual TT (Spring)",
+    "id" : "evt-ncnca-2017-tempus-fugit-time-trial-spring-rko-5-BkoWkyeF97l",
+    "name" : "Tempus Fugit Time Trial (Spring) – RKO #5",
     "date": "March 26 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -876,9 +899,11 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkoWkyeF97l"
   }, {
-    "id": "evt-ncnca-2017-apr-01-ct-GEU",
+    "id" : "evt-ncnca-2017-california-classic-downtown-criterium-BJ2WJklF9Xl",
     "name": "California Classic Downtown Criterium",
     "date": "April 01 2017",
     "discipline": "Road",
@@ -894,9 +919,11 @@ export default [{
         "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
       }
     ],
-    "group": "3"
+    "group" : "3",
+    "isDraft" : false,
+    "_shortId" : "BJ2WJklF9Xl"
   }, {
-    "id": "evt-ncnca-2017-apr-02-ct-KGL",
+    "id" : "evt-ncnca-2017-budweiser-sequoia-cycling-classic-SJaWJ1lK5Qe",
     "name": "Budweiser Sequoia Cycling Classic",
     "date": "April 02 2017",
     "discipline": "Road",
@@ -912,10 +939,12 @@ export default [{
         "contactInfo": "shaunb93291@yahoo.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJaWJ1lK5Qe"
   }, {
-    "id": "evt-ncnca-2017-apr-02-cr-3M2",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-5-S1AbJkltcQe",
+    "name" : "Central Coast Road Series – CCCX #5",
     "date": "April 02 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -930,9 +959,11 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1AbJkltcQe"
   }, {
-    "id": "evt-ncnca-2017-apr-08-rr-Wxl",
+    "id" : "evt-ncnca-2017-turlock-lake-road-race-SkyM1yxt5ml",
     "name": "Turlock Lake Road Race",
     "date": "April 08 2017",
     "discipline": "Road",
@@ -949,10 +980,12 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "Additionally, we would like to be considered to host the District Masters Championship as we did in 2015."
+    "draftNotes" : "Additionally, we would like to be considered to host the District Masters Championship as we did in 2015.",
+    "isDraft" : false,
+    "_shortId" : "SkyM1yxt5ml"
   }, {
-    "id": "evt-ncnca-2017-apr-08-cr-GaE",
-    "name": "WCCC - Stanford",
+    "id" : "evt-ncnca-2017-wccc-stanford-circuit-race-BJgz1JetcXx",
+    "name" : "WCCC: Stanford Circuit Race",
     "date": "April 08 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -967,9 +1000,31 @@ export default [{
         "contactInfo": "rmarcuson@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJgz1JetcXx"
   }, {
-    "id": "evt-ncnca-2017-apr-09-ct-ENr",
+    "id" : "evt-ncnca-2017-wccc-stanford-team-time-trial-SJbM1kltqmg",
+    "name" : "WCCC: Stanford Team Time Trial",
+    "date" : "April 08 2017",
+    "discipline" : "Road",
+    "type" : "Circuit Race",
+    "location" : {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters" : [
+      {
+        "name": "Rachel Marcuson",
+        "contactName": "Rachel Marcuson",
+        "contactInfo": "rmarcuson@gmail.com"
+      }
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJbM1kltqmg"
+  }, {
+    "id" : "evt-ncnca-2017-turlock-criterium-S1MfyJgY9Xe",
     "name": "Turlock Criterium",
     "date": "April 09 2017",
     "discipline": "Road",
@@ -985,10 +1040,12 @@ export default [{
         "contactInfo": "mitch@teasolar.com"
       }
     ],
-    "group": "3"
+    "group" : "3",
+    "isDraft" : false,
+    "_shortId" : "S1MfyJgY9Xe"
   }, {
-    "id": "evt-ncnca-2017-apr-09-rr-Vtn",
-    "name": "WCCC - Stanford",
+    "id" : "evt-ncnca-2017-wccc-stanford-road-race-H1Qzy1gYq7x",
+    "name" : "WCCC: Stanford Road Race",
     "date": "April 09 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1003,10 +1060,12 @@ export default [{
         "contactInfo": "rmarcuson@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1Qzy1gYq7x"
   }, {
-    "id": "evt-ncnca-2017-apr-15-rr-7Il",
-    "name": "Copperopolis Road Race (VP #)",
+    "id" : "evt-ncnca-2017-copperopolis-road-race-vp-9-BJEG1JxtcQx",
+    "name" : "Copperopolis Road Race – VP #9",
     "date": "April 15 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1021,10 +1080,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJEG1JxtcQx"
   }, {
-    "id": "evt-ncnca-2017-apr-15-ttt-uLh",
-    "name": "WCCC TTT Championship - UNR",
+    "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-team-time-trial-H1SfJJgFq7l",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – Team Time Trial",
     "date": "April 15 2017",
     "discipline": "Road",
     "type": "Team Time Trial",
@@ -1039,10 +1100,12 @@ export default [{
         "contactInfo": "sussmanlawrence@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1SfJJgFq7l"
   }, {
-    "id": "evt-ncnca-2017-apr-15-ct-TvH",
-    "name": "WCCC Crit Championship - UNR",
+    "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-criterium-B18zykgYc7e",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – Criterium",
     "date": "April 15 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1057,10 +1120,12 @@ export default [{
         "contactInfo": "sussmanlawrence@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B18zykgYc7e"
   }, {
-    "id": "evt-ncnca-2017-apr-16-rr-9xQ",
-    "name": "WCCC RR Championship - UNR",
+    "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-road-race-H1wf1JxF97l",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – Road Race",
     "date": "April 16 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1075,13 +1140,15 @@ export default [{
         "contactInfo": "sussmanlawrence@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1wf1JxF97l"
   }, {
-    "id": "evt-ncnca-2017-apr-20-rr-Ow7",
+    "id" : "evt-ncnca-2017-sea-otter-classic-H1uGkJxKcmx",
     "name": "Sea Otter Classic",
     "date": "April 20 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type" : "Non-Competitive",
     "location": {
       "city": "Seaside",
       "state": "CA"
@@ -1093,9 +1160,11 @@ export default [{
         "contactInfo": "frosty@seaotterclassic.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1uGkJxKcmx"
   }, {
-    "id": "evt-ncnca-2017-apr-21-cr-8mb",
+    "id" : "evt-ncnca-2017-sea-otter-classic-HytzyJeK9Ql",
     "name": "Sea Otter Classic",
     "date": "April 21 2017",
     "discipline": "Road",
@@ -1111,9 +1180,11 @@ export default [{
         "contactInfo": "frosty@seaotterclassic.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HytzyJeK9Ql"
   }, {
-    "id": "evt-ncnca-2017-apr-22-ct-VGW",
+    "id" : "evt-ncnca-2017-sea-otter-classic-SycfJkxK57l",
     "name": "Sea Otter Classic",
     "date": "April 22 2017",
     "discipline": "Road",
@@ -1129,13 +1200,15 @@ export default [{
         "contactInfo": "frosty@seaotterclassic.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SycfJkxK57l"
   }, {
-    "id": "evt-ncnca-2017-apr-23-rd-KeQ",
+    "id" : "evt-ncnca-2017-sea-otter-classic-SkjG1yeFcmg",
     "name": "Sea Otter Classic",
     "date": "April 23 2017",
     "discipline": "Road",
-    "type": "",
+    "type" : "Road Race",
     "location": {
       "city": "Seaside",
       "state": "CA"
@@ -1147,10 +1220,12 @@ export default [{
         "contactInfo": "frosty@seaotterclassic.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkjG1yeFcmg"
   }, {
-    "id": "evt-ncnca-2017-apr-23-ct-HZA",
-    "name": "RKO #6 - Red Kite Criterium (April)",
+    "id" : "evt-ncnca-2017-red-kite-criterium-april-rko-6-BJ3Gk1eY5mg",
+    "name" : "Red Kite Criterium (April) – RKO #6",
     "date": "April 23 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1165,9 +1240,11 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJ3Gk1eY5mg"
   }, {
-    "id": "evt-ncnca-2017-apr-29-cr-udt",
+    "id" : "evt-ncnca-2017-44th-mikes-bikes-cats-hill-classic-rk6zk1xY5Xg",
     "name": "44th Mike's Bikes Cat's Hill Classic",
     "date": "April 29 2017",
     "discipline": "Road",
@@ -1183,10 +1260,29 @@ export default [{
         "contactInfo": "LGBRC, ctwiggs@gmail.com, (650) 279-8472"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rk6zk1xY5Xg"
   }, {
-    "id": "evt-ncnca-2017-apr-30-rr-nlY",
-    "name": "Wente Vineyards Classic RR",
+    "id" : "evt-ncnca-2017-cyclenation-ride-SyAzkylFqQg",
+    "name" : "CycleNation Ride",
+    "date" : "April 29 2017",
+    "discipline" : "Road",
+    "type" : "Non-Competitive",
+    "location" : {
+      "city": "Livermore",
+      "state": "CA"
+    },
+    "promoters" : [
+      {
+        "name": "americanheart.org"
+      }
+    ],
+    "isDraft" : false,
+    "_shortId" : "SyAzkylFqQg"
+  }, {
+    "id" : "evt-ncnca-2017-wente-vineyards-classic-road-race-H1kQyJlKq7e",
+    "name" : "Wente Vineyards Classic Road Race",
     "date": "April 30 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1201,10 +1297,12 @@ export default [{
         "contactInfo": "VSRT, kenhernandez52@yahoo.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1kQyJlKq7e"
   }, {
-    "id": "evt-ncnca-2017-may-06-ct-yRh",
-    "name": "Golden State Race Series p/b Rio Strada Racing - Criterium",
+    "id" : "evt-ncnca-2017-golden-state-race-series-pb-rio-strada-racing-criterium-SkeXyJlFc7l",
+    "name" : "Golden State Race Series p/b Rio Strada Racing – Criterium",
     "date": "May 06 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1219,9 +1317,11 @@ export default [{
         "contactInfo": "Rio Strada Racing, ogeewiz682002@yahoo.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkeXyJlFc7l"
   }, {
-    "id": "evt-ncnca-2017-may-06-rr-Lwd",
+    "id" : "evt-ncnca-2017-king-city-road-race-rJ-X1kxK57e",
     "name": "King City Road Race",
     "date": "May 06 2017",
     "discipline": "Road",
@@ -1237,10 +1337,12 @@ export default [{
         "contactInfo": "eric939@redshift.com, 831-442-8356"
       }
     ],
-    "group": "3"
+    "group" : "3",
+    "isDraft" : false,
+    "_shortId" : "rJ-X1kxK57e"
   }, {
-    "id": "evt-ncnca-2017-may-07-cr-9GY",
-    "name": "Golden State Race Series p/b Rio Strada Racing - Circuit",
+    "id" : "evt-ncnca-2017-golden-state-race-series-pb-rio-strada-racing-circuit-HyMQ1yxF9Qe",
+    "name" : "Golden State Race Series p/b Rio Strada Racing – Circuit",
     "date": "May 07 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1255,9 +1357,11 @@ export default [{
         "contactInfo": "Rio Strada Racing, ogeewiz682002@yahoo.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyMQ1yxF9Qe"
   }, {
-    "id": "evt-ncnca-2017-may-07-ct-0rA",
+    "id" : "evt-ncnca-2017-salinas-criterium-HyXQJJgK5Xg",
     "name": "Salinas Criterium",
     "date": "May 07 2017",
     "discipline": "Road",
@@ -1274,9 +1378,11 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "Requesting if any other promoters are on this date we are notified and can work together arrange that agreement on splitting categories so that NO individual races are the same. Other promoters on this date must agree to this as we have been promoting this race 20+ years."
+    "draftNotes" : "Requesting if any other promoters are on this date we are notified and can work together arrange that agreement on splitting categories so that NO individual races are the same. Other promoters on this date must agree to this as we have been promoting this race 20+ years.",
+    "isDraft" : false,
+    "_shortId" : "HyXQJJgK5Xg"
   }, {
-    "id": "evt-ncnca-2017-may-13-rr-9PQ",
+    "id" : "evt-ncnca-2017-berkeley-hills-road-race-rJNQkkgF9Qx",
     "name": "Berkeley Hills Road Race",
     "date": "May 13 2017",
     "discipline": "Road",
@@ -1293,10 +1399,12 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship."
+    "draftNotes" : "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship.",
+    "isDraft" : false,
+    "_shortId" : "rJNQkkgF9Qx"
   }, {
-    "id": "evt-ncnca-2017-may-14-cr-tfQ",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-6-rJHX1JgtcQx",
+    "name" : "Central Coast Road Series – CCCX #6",
     "date": "May 14 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1311,10 +1419,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJHX1JgtcQx"
   }, {
-    "id": "evt-ncnca-2017-may-20-ct-iUB",
-    "name": "Modesto Criterium",
+    "id" : "evt-ncnca-2017-modesto-downtown-criterium-H1UXk1eK97l",
+    "name" : "Modesto Downtown Criterium",
     "date": "May 20 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1329,9 +1439,11 @@ export default [{
         "contactInfo": "ciccarelli@live.com, 209-605-7315"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1UXk1eK97l"
   }, {
-    "id": "evt-ncnca-2017-may-21-rr-Gg6",
+    "id" : "evt-ncnca-2017-modesto-road-race-HJPXkkxt5Ql",
     "name": "Modesto Road Race",
     "date": "May 21 2017",
     "discipline": "Road",
@@ -1347,9 +1459,11 @@ export default [{
         "contactInfo": "ciccarelli@live.com, 209-605-7315"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJPXkkxt5Ql"
   }, {
-    "id": "evt-ncnca-2017-may-27-ct-whT",
+    "id" : "evt-ncnca-2017-folsom-classic-criterium-BkOQyklF9mg",
     "name": "Folsom Classic Criterium",
     "date": "May 27 2017",
     "discipline": "Road",
@@ -1365,15 +1479,17 @@ export default [{
         "contactInfo": "tan4an@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkOQyklF9mg"
   }, {
-    "id": "evt-ncnca-2017-may-27-rd-rYf",
-    "name": "RKO #7 - Memorial Day Classic Stage Race and Omnium - SR Prologue",
+    "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-memorial-day-classic-stage-race-prologue-rko-7-H1Ym1ket9Qx",
+    "name" : "Memorial Day Classic Stage Race and Omnium – Memorial Day Classic Stage Race Prologue – RKO #7",
     "date": "May 27 2017",
     "discipline": "Road",
-    "type": "",
+    "type" : "Time Trial",
     "location": {
-      "city": "",
+      "city": "Livermore",
       "state": "CA"
     },
     "promoters": [
@@ -1382,9 +1498,11 @@ export default [{
         "contactName": "Steve Rosefield",
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
-    ]
+    ],
+    "isDraft" : false,
+    "_shortId" : "H1Ym1ket9Qx"
   }, {
-    "id": "evt-ncnca-2017-may-27-sr-oTL",
+    "id" : "evt-ncnca-2017-death-valley-road-stage-race-ryqQ11xYcmx",
     "name": "Death Valley Road Stage Race",
     "date": "May 27 2017",
     "discipline": "Road",
@@ -1400,10 +1518,12 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryqQ11xYcmx"
   }, {
-    "id": "evt-ncnca-2017-may-28-rr-hvW",
-    "name": "RKO #7 - Memorial Day Classic Stage Race and Omnium - 58th Annual Mt. Hamilton Classic RR p/b SJBC",
+    "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-mt-hamilton-classic-road-race-pb-san-jose-bicycle-club-rko-7-rysQ1JeY57e",
+    "name" : "Memorial Day Classic Stage Race and Omnium – Mt. Hamilton Classic Road Race p/b San Jose Bicycle Club – RKO #7",
     "date": "May 28 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1419,9 +1539,11 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "We ask that there are no other races on these two days. We also ask that there is only 1 other race that weekend (Saturday May 27th) and that it is remote (i.e Nevada, Fresno, San Luis Obispo, Chico, etc). Hill climbs and TT's excluded."
+    "draftNotes" : "We ask that there are no other races on these two days. We also ask that there is only 1 other race that weekend (Saturday May 27th) and that it is remote (i.e Nevada, Fresno, San Luis Obispo, Chico, etc). Hill climbs and TT's excluded.",
+    "isDraft" : false,
+    "_shortId" : "rysQ1JeY57e"
   }, {
-    "id": "evt-ncnca-2017-may-28-sr-406",
+    "id" : "evt-ncnca-2017-death-valley-road-stage-race-rkh71keK9Qe",
     "name": "Death Valley Road Stage Race",
     "date": "May 28 2017",
     "discipline": "Road",
@@ -1437,10 +1559,12 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkh71keK9Qe"
   }, {
-    "id": "evt-ncnca-2017-may-29-ct-NKd",
-    "name": "RKO #7 - Memorial Day Classic Stage Race and Omnium - Red Kite Mem Day Crit",
+    "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-red-kite-mem-day-crit-rko-7-Syam1ylK9Xe",
+    "name" : "Memorial Day Classic Stage Race and Omnium – Red Kite Mem Day Crit – RKO #7",
     "date": "May 29 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1455,10 +1579,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Syam1ylK9Xe"
   }, {
-    "id": "evt-ncnca-2017-may-29-tt-Y8D",
-    "name": "RKO #7 - Memorial Day Classic Stage Race and Omnium - Calaveras Road TT p/b TEAM Fremont/FFBC",
+    "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-calaveras-time-trial-pb-team-fremont-fremont-freewheelers-bicycle-club-rko-7-SyAQyygFqXe",
+    "name" : "Memorial Day Classic Stage Race and Omnium – Calaveras Time Trial p/b TEAM Fremont / Fremont Freewheelers Bicycle Club – RKO #7",
     "date": "May 29 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -1473,9 +1599,11 @@ export default [{
         "contactInfo": "FFBC, alcog1970@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyAQyygFqXe"
   }, {
-    "id": "evt-ncnca-2017-jun-03-rr-hRb",
+    "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
     "date": "June 03 2017",
     "discipline": "Road",
@@ -1491,9 +1619,11 @@ export default [{
         "contactInfo": "Alto Velo, Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1JEy1eFcQg"
   }, {
-    "id": "evt-ncnca-2017-jun-04-ct-hB3",
+    "id" : "evt-ncnca-2017-lodi-cyclefest-HJeNkyeF9Xl",
     "name": "Lodi Cyclefest",
     "date": "June 04 2017",
     "discipline": "Road",
@@ -1509,9 +1639,11 @@ export default [{
         "contactInfo": "sbutler@foxrunrentals.net, 209-662-0898"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJeNkyeF9Xl"
   }, {
-    "id": "evt-ncnca-2017-jun-10-ct-yLk",
+    "id" : "evt-ncnca-2017-the-mighty-tour-de-nez-rkbV1klKqmg",
     "name": "The Mighty Tour de Nez",
     "date": "June 10 2017",
     "discipline": "Road",
@@ -1528,9 +1660,11 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "..would still be a priority race and a premier race.  ..would like to be considered for district criterium championships"
+    "draftNotes" : "..would still be a priority race and a premier race.  ..would like to be considered for district criterium championships",
+    "isDraft" : false,
+    "_shortId" : "rkbV1klKqmg"
   }, {
-    "id": "evt-ncnca-2017-jun-10-ct-Dnc",
+    "id" : "evt-ncnca-2017-26th-annual-dash-for-cash-rkMNJJlYqXx",
     "name": "26th Annual Dash for Cash",
     "date": "June 10 2017",
     "discipline": "Road",
@@ -1546,10 +1680,12 @@ export default [{
         "contactInfo": "IC3, swimchew@sbcglobal.net, (925) 918-3501"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkMNJJlYqXx"
   }, {
-    "id": "evt-ncnca-2017-jun-11-tt-KGx",
-    "name": "Loyalton TT",
+    "id" : "evt-ncnca-2017-loyalton-time-trial-r17EkylYq7l",
+    "name" : "Loyalton Time Trial",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -1564,10 +1700,12 @@ export default [{
         "contactInfo": "Reno Wheelmen, coby@glaciercycling.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "r17EkylYq7l"
   }, {
-    "id": "evt-ncnca-2017-jun-11-cr-2vS",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-7-BJ4VJyet57g",
+    "name" : "Central Coast Road Series – CCCX #7",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1582,10 +1720,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJ4VJyet57g"
   }, {
-    "id": "evt-ncnca-2017-jun-17-ct-e2h",
-    "name": "RKO #8 - Tri-Valley Criterium Classic",
+    "id" : "evt-ncnca-2017-tri-valley-criterium-classic-rko-8-HyHVyJltcQe",
+    "name" : "Tri-Valley Criterium Classic – RKO #8",
     "date": "June 17 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1600,9 +1740,11 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyHVyJltcQe"
   }, {
-    "id": "evt-ncnca-2017-jun-18-ct-XMh",
+    "id" : "evt-ncnca-2017-nevada-city-cycling-classic-S18Ny1etc7g",
     "name": "Nevada City Cycling Classic",
     "date": "June 18 2017",
     "discipline": "Road",
@@ -1619,10 +1761,12 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "\"Penciled in\", have not yet heard from Duane."
+    "draftNotes" : "\"Penciled in\", have not yet heard from Duane.",
+    "isDraft" : false,
+    "_shortId" : "S18Ny1etc7g"
   }, {
-    "id": "evt-ncnca-2017-jun-24-ct-xma",
-    "name": "RKO #9 - Martinez Classic Downtown Criterium - Martinez Fitness Festival",
+    "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
+    "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
     "date": "June 24 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1637,9 +1781,11 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "3"
+    "group" : "3",
+    "isDraft" : false,
+    "_shortId" : "HkwE1klK57e"
   }, {
-    "id": "evt-ncnca-2017-jun-25-ct-8Le",
+    "id" : "evt-ncnca-2017-auburn-downtown-criterium-ryd41Jxtcme",
     "name": "Auburn Downtown Criterium",
     "date": "June 25 2017",
     "discipline": "Road",
@@ -1656,9 +1802,11 @@ export default [{
       }
     ],
     "group": "2",
-    "draftNotes": "Wants Premier series"
+    "draftNotes" : "Wants Premier series",
+    "isDraft" : false,
+    "_shortId" : "ryd41Jxtcme"
   }, {
-    "id": "evt-ncnca-2017-jun-25-ct-3um",
+    "id" : "evt-ncnca-2017-burlingame-criterium-HJKE11gF57l",
     "name": "Burlingame Criterium",
     "date": "June 25 2017",
     "discipline": "Road",
@@ -1674,10 +1822,12 @@ export default [{
         "contactInfo": "Pen Velo, travis.ma@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJKE11gF57l"
   }, {
-    "id": "evt-ncnca-2017-jul-01-cr-msE",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-8-rJcE11lY5Qe",
+    "name" : "Central Coast Road Series – CCCX #8",
     "date": "July 01 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1692,10 +1842,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJcE11lY5Qe"
   }, {
-    "id": "evt-ncnca-2017-jul-02-rr-kUq",
-    "name": "Lodoga Road Race (VP #)",
+    "id" : "evt-ncnca-2017-lodoga-road-race-vp-10-BkoE1JlK5mg",
+    "name" : "Lodoga Road Race – VP #10",
     "date": "July 02 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1710,10 +1862,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkoE1JlK5mg"
   }, {
-    "id": "evt-ncnca-2017-jul-04-ct-XqV",
-    "name": "July 4th Davis Criterium",
+    "id" : "evt-ncnca-2017-davis-bike-club-fourth-of-july-criterium-Sy2NJkeY9Xe",
+    "name" : "Davis Bike Club Fourth of July Criterium",
     "date": "July 04 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1728,10 +1882,12 @@ export default [{
         "contactInfo": "DBC, 4-july-director@dbcraceteam.org, 530-902-8955"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Sy2NJkeY9Xe"
   }, {
-    "id": "evt-ncnca-2017-jul-08-ct-c5U",
-    "name": "Watsonville Criterium (VP #)",
+    "id" : "evt-ncnca-2017-watsonville-criterium-vp-11-SyT41kxF5mg",
+    "name" : "Watsonville Criterium – VP #11",
     "date": "July 08 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1746,10 +1902,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyT41kxF5mg"
   }, {
-    "id": "evt-ncnca-2017-jul-09-ct-DNN",
-    "name": "RKO #10 - Red Kite Criterium (July)",
+    "id" : "evt-ncnca-2017-red-kite-criterium-july-rko-10-HkRVykxFqme",
+    "name" : "Red Kite Criterium (July) – RKO #10",
     "date": "July 09 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1764,10 +1922,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HkRVykxFqme"
   }, {
-    "id": "evt-ncnca-2017-jul-15-cr-Yxy",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-9-Hy1r1kgY5mg",
+    "name" : "Central Coast Road Series – CCCX #9",
     "date": "July 15 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1782,9 +1942,11 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Hy1r1kgY5mg"
   }, {
-    "id": "evt-ncnca-2017-jul-15-ct-rkU",
+    "id" : "evt-ncnca-2017-downtown-lakefront-criterium-B1lS1JgFq7l",
     "name": "Downtown Lakefront Criterium",
     "date": "July 15 2017",
     "discipline": "Road",
@@ -1801,9 +1963,11 @@ export default [{
       }
     ],
     "group": "3",
-    "draftNotes": "Pair with Colavita GP"
+    "draftNotes" : "Pair with Colavita GP",
+    "isDraft" : false,
+    "_shortId" : "B1lS1JgFq7l"
   }, {
-    "id": "evt-ncnca-2017-jul-16-ct-bNw",
+    "id" : "evt-ncnca-2017-colavita-norcal-grand-prix-SyWS1keYqml",
     "name": "Colavita-Norcal Grand Prix",
     "date": "July 16 2017",
     "discipline": "Road",
@@ -1819,10 +1983,12 @@ export default [{
         "contactInfo": "phill.heiman@gmail.com, 415-310-6104"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyWS1keYqml"
   }, {
-    "id": "evt-ncnca-2017-jul-22-hc-YWZ",
-    "name": "RKO #11 - Crossfire Hurricane HC Challenge",
+    "id" : "evt-ncnca-2017-crossfire-hurricane-hill-climb-challenge-rko-11-HJMry1lY97e",
+    "name" : "Crossfire Hurricane Hill Climb Challenge – RKO #11",
     "date": "July 22 2017",
     "discipline": "Road",
     "type": "Hill Climb",
@@ -1837,10 +2003,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJMry1lY97e"
   }, {
-    "id": "evt-ncnca-2017-jul-23-cr-EuN",
-    "name": "RKO #12 - The Bump Circuit Race (Summer)",
+    "id" : "evt-ncnca-2017-the-bump-circuit-race-summer-rko-12-SkXrJJeFq7l",
+    "name" : "The Bump Circuit Race (Summer) – RKO #12",
     "date": "July 23 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1856,10 +2024,12 @@ export default [{
       }
     ],
     "group": "1",
-    "draftNotes": "I'll move this one back into the spring if there is space.  SR"
+    "draftNotes" : "I'll move this one back into the spring if there is space.  SR",
+    "isDraft" : false,
+    "_shortId" : "SkXrJJeFq7l"
   }, {
-    "id": "evt-ncnca-2017-jul-29-ct-CBX",
-    "name": "San Rafael Twilight",
+    "id" : "evt-ncnca-2017-san-rafael-twilight-criterium-Sk4SkyeFc7l",
+    "name" : "San Rafael Twilight Criterium",
     "date": "July 29 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1874,10 +2044,12 @@ export default [{
         "contactInfo": "ravirajcoomar@me.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Sk4SkyeFc7l"
   }, {
-    "id": "evt-ncnca-2017-jul-30-ct-yvA",
-    "name": "RKO #13 - 33rd Annual Albany Criterium",
+    "id" : "evt-ncnca-2017-33rd-annual-albany-criterium-rko-13-BkBSkklFcQl",
+    "name" : "33rd Annual Albany Criterium – RKO #13",
     "date": "July 30 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1892,10 +2064,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkBSkklFcQl"
   }, {
-    "id": "evt-ncnca-2017-aug-05-rr-srE",
-    "name": "Patterson Pass Road Race (VP #, CC #)",
+    "id" : "evt-ncnca-2017-patterson-pass-road-race-vp-12-cc-1-ryUrkkeK9Xe",
+    "name" : "Patterson Pass Road Race – VP #12, CC #1",
     "date": "August 05 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1910,10 +2084,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryUrkkeK9Xe"
   }, {
-    "id": "evt-ncnca-2017-aug-06-ct-lo0",
-    "name": "RKO #14 - Red Kite Criterium (August)",
+    "id" : "evt-ncnca-2017-red-kite-criterium-august-rko-14-SyvHyklK9Qg",
+    "name" : "Red Kite Criterium (August) – RKO #14",
     "date": "August 06 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1928,10 +2104,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyvHyklK9Qg"
   }, {
-    "id": "evt-ncnca-2017-aug-12-rr-gim",
-    "name": "Dunnigan Hills Road Race (VP #, CC #)",
+    "id" : "evt-ncnca-2017-dunnigan-hills-road-race-vp-12-cc-2-HJdBkJeY9Xx",
+    "name" : "Dunnigan Hills Road Race – VP #12, CC #2",
     "date": "August 12 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1946,10 +2124,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJdBkJeY9Xx"
   }, {
-    "id": "evt-ncnca-2017-aug-13-ct-MPi",
-    "name": "Suisun Harbor Criterium (VP #, CC #)",
+    "id" : "evt-ncnca-2017-suisun-harbor-criterium-vp-14-cc-3-ryKrkJgFcmx",
+    "name" : "Suisun Harbor Criterium – VP #14, CC #3",
     "date": "August 13 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1964,10 +2144,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryKrkJgFcmx"
   }, {
-    "id": "evt-ncnca-2017-aug-19-rr-xE7",
-    "name": "San Ardo Road Race (VP #, CC #)",
+    "id" : "evt-ncnca-2017-san-ardo-road-race-vp-15-cc-4-HyqBkyxYqQg",
+    "name" : "San Ardo Road Race – VP #15, CC #4",
     "date": "August 19 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1982,10 +2164,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyqBkyxYqQg"
   }, {
-    "id": "evt-ncnca-2017-aug-20-rr-mqz",
-    "name": "University Road Race (VP #, CC #)",
+    "id" : "evt-ncnca-2017-university-road-race-vp-16-cc-5-BkoHJJeYcQe",
+    "name" : "University Road Race – VP #16, CC #5",
     "date": "August 20 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2000,10 +2184,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkoHJJeYcQe"
   }, {
-    "id": "evt-ncnca-2017-aug-20-tt-Vgf",
-    "name": "RKO #15 - Tempus Fugit Individual TT (Summer)",
+    "id" : "evt-ncnca-2017-tempus-fugit-individual-tt-summer-rko-15-S1nBy1gt9Xx",
+    "name" : "Tempus Fugit Individual TT (Summer) – RKO #15",
     "date": "August 20 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -2018,10 +2204,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1nBy1gt9Xx"
   }, {
-    "id": "evt-ncnca-2017-aug-26-rr-tey",
-    "name": "Winters Road Race (VP #, CC #)",
+    "id" : "evt-ncnca-2017-winters-road-race-vp-17-cc-6-BJpByJlK5Xg",
+    "name" : "Winters Road Race – VP #17, CC #6",
     "date": "August 26 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2036,10 +2224,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJpByJlK5Xg"
   }, {
-    "id": "evt-ncnca-2017-aug-26-sr-pxm",
-    "name": "Mt Whitney Stage Race",
+    "id" : "evt-ncnca-2017-mount-whitney-stage-race-Hy0B1JetcQg",
+    "name" : "Mount Whitney Stage Race",
     "date": "August 26 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -2054,10 +2244,12 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Hy0B1JetcQg"
   }, {
-    "id": "evt-ncnca-2017-aug-27-ct-uN7",
-    "name": "Vacaville Gran Prix (VP #, CC #)",
+    "id" : "evt-ncnca-2017-vacaville-gran-prix-vp-18-cc-7-SJk8J1lt5ml",
+    "name" : "Vacaville Gran Prix – VP #18, CC #7",
     "date": "August 27 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2072,9 +2264,11 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJk8J1lt5ml"
   }, {
-    "id": "evt-ncnca-2017-aug-27-sr-h1u",
+    "id" : "evt-ncnca-2017-mt-whitney-stage-race-rJxIJ1eK9Xg",
     "name": "Mt Whitney Stage Race",
     "date": "August 27 2017",
     "discipline": "Road",
@@ -2090,10 +2284,12 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJxIJ1eK9Xg"
   }, {
-    "id": "evt-ncnca-2017-sep-02-ct-MFO",
-    "name": "RKO Finale - Red Kite Omnium Championship Weekend",
+    "id" : "evt-ncnca-2017-rko-finale-red-kite-omnium-championship-weekend-day-1-r1bUykxt5Xl",
+    "name" : "RKO Finale – Red Kite Omnium Championship Weekend: Day 1",
     "date": "September 02 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2108,10 +2304,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "r1bUykxt5Xl"
   }, {
-    "id": "evt-ncnca-2017-sep-03-ct-54q",
-    "name": "RKO Finale - Red Kite Omnium Championship Weekend",
+    "id" : "evt-ncnca-2017-rko-finale-red-kite-omnium-championship-weekend-day-2-HyMUkJxF57e",
+    "name" : "RKO Finale – Red Kite Omnium Championship Weekend: Day 2",
     "date": "September 03 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2126,10 +2324,12 @@ export default [{
         "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyMUkJxF57e"
   }, {
-    "id": "evt-ncnca-2017-sep-04-ct-1DA",
-    "name": "Giro di San Francisco (VP #, CC #)",
+    "id" : "evt-ncnca-2017-giro-di-san-francisco-vp-19-cc-8-BJXUJklt97x",
+    "name" : "Giro di San Francisco – VP #19, CC #8",
     "date": "September 04 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2144,9 +2344,11 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJXUJklt97x"
   }, {
-    "id": "evt-ncnca-2017-sep-09-hc-did",
+    "id" : "evt-ncnca-2017-mt-diablo-hill-climb-tt-BJNIJ1xt97l",
     "name": "Mt Diablo Hill Climb TT",
     "date": "September 09 2017",
     "discipline": "Road",
@@ -2163,10 +2365,12 @@ export default [{
       }
     ],
     "group": "2",
-    "draftNotes": "..would like to host the NCNCA hill climb championship"
+    "draftNotes" : "..would like to host the NCNCA hill climb championship",
+    "isDraft" : false,
+    "_shortId" : "BJNIJ1xt97l"
   }, {
-    "id": "evt-ncnca-2017-sep-10-cr-38P",
-    "name": "Central Coast Road Series (CCCX #)",
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-10-HyBUJklK5ml",
+    "name" : "Central Coast Road Series – CCCX #10",
     "date": "September 10 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2181,10 +2385,12 @@ export default [{
         "contactInfo": "CCCX, kdefiebre@hotmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyBUJklK5ml"
   }, {
-    "id": "evt-ncnca-2017-sep-16-tt-fSB",
-    "name": "Esparto Time Trial (VP #, CC #)",
+    "id" : "evt-ncnca-2017-esparto-time-trial-vp-20-cc-9-r1LIyklY5me",
+    "name" : "Esparto Time Trial – VP #20, CC #9",
     "date": "September 16 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -2199,10 +2405,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "r1LIyklY5me"
   }, {
-    "id": "evt-ncnca-2017-sep-17-ct-JwL",
-    "name": "Oakland Grand Prix (VP #, CC #)",
+    "id" : "evt-ncnca-2017-13th-annual-oakland-grand-prix-vp-21-cc-10-Skw8k1gY9Xl",
+    "name" : "13th Annual Oakland Grand Prix – VP #21, CC #10",
     "date": "September 17 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2217,10 +2425,12 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Skw8k1gY9Xl"
   }, {
-    "id": "evt-ncnca-2017-sep-23-rr-D7Q",
-    "name": "Henleyville Road Race (VP #)",
+    "id" : "evt-ncnca-2017-henleyville-road-race-vp-22-SJdL1kxKcQl",
+    "name" : "Henleyville Road Race – VP #22",
     "date": "September 23 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2235,9 +2445,11 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJdL1kxKcQl"
   }, {
-    "id": "evt-ncnca-2017-sep-23-sr-dx5",
+    "id" : "evt-ncnca-2017-everest-challenge-stage-race-HJtIk1xFqQx",
     "name": "Everest Challenge Stage Race",
     "date": "September 23 2017",
     "discipline": "Road",
@@ -2253,10 +2465,12 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJtIk1xFqQx"
   }, {
-    "id": "evt-ncnca-2017-sep-24-cr-1iS",
-    "name": "Coppertown Circuit Race (VP #)",
+    "id" : "evt-ncnca-2017-coppertown-circuit-race-vp-23-Hyq8JyeKcme",
+    "name" : "Coppertown Circuit Race – VP #23",
     "date": "September 24 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2271,9 +2485,11 @@ export default [{
         "contactInfo": "Velo Promo, velopro1@sonnet.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Hyq8JyeKcme"
   }, {
-    "id": "evt-ncnca-2017-sep-24-sr-LxI",
+    "id" : "evt-ncnca-2017-everest-challenge-stage-race-ryo8J1eKqXe",
     "name": "Everest Challenge Stage Race",
     "date": "September 24 2017",
     "discipline": "Road",
@@ -2289,6 +2505,8 @@ export default [{
         "contactInfo": "everestchallenge2009@gmail.com"
       }
     ],
-    "group": "1"
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryo8J1eKqXe"
   }
 ]
