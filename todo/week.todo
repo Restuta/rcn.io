@@ -92,11 +92,16 @@ Today
 		-- missing from our Calendar
 		  -  April 27 paracycling events
 		  -  May 15 Amgen Tour
-		- generate events and ids
+		  -  nationals
+		  	- road 
+		  	- para cycling
+		  	- mtb
+		+- generate events and ids
 		- assign correct promoter ids from 2016 (match by name?)
-		- create a second function that transforms draft events to respective non-draft calendar
+		+- create a second function that transforms draft events to respective non-draft calendar
 		- update WCCC races: to have promoter name as "Western Collegiate Cycling Conference"
-		- use slugify url instead of custom code
+		+- use slugify url instead of custom code
+		----- fix: CycleNation to be Non-Competitive
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
