@@ -139,7 +139,7 @@ class EventDetails extends Component {
       : ''
 
     const presentedBy = (promoters && promoters.length > 0)
-      ? promoters.map(x => x.name).join(' and ')
+      ? promoters.map(x => x.name).join(' / ')
       : '——'
 
     const series = (this.props.event.series && this.props.event.series.length > 0)
