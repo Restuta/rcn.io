@@ -12,11 +12,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Pen Velo",
-        "contactName": "Tommy Evans",
-        "contactInfo": "Pen Velo, evans792@gmail.com"
-      }
+      { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -32,17 +28,13 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "B1x1JgKcQx"
   }, {
-    "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-SJ-kyetcQg",
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-BygycpTkEg",
     "name" : "Clovis Criterium Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
@@ -52,16 +44,110 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Justin Morgan",
-        "contactName": "Justin Morgan",
-        "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
-      }
+      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "SJ-kyetcQg"
+    "_shortId" : "BygycpTkEg"
   }, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-Hyl5QMp1Ee",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 03 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "Hyl5QMp1Ee"
+}, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-Byw5fT1El",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 04 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "Byw5fT1El"
+}, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-Skh3za1Eg",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 05 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "Skh3za1Eg"
+}, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-BJvTz6JEx",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 06 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "BJvTz6JEx"
+}, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-SyQRfaJNl",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 07 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "SyQRfaJNl"
+}, {
     "id" : "evt-ncnca-2017-early-bird-criterium-training-series-2-ryzk1eYcmx",
     "name" : "Early Bird Criterium Training Series #2",
     "date": "January 15 2017",
@@ -72,11 +158,8 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+      { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -92,11 +175,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Justin Morgan",
-        "contactName": "Justin Morgan",
-        "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
-      }
+      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -112,11 +191,8 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+      { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -132,11 +208,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Justin Morgan",
-        "contactName": "Justin Morgan",
-        "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
-      }
+      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -152,11 +224,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jamien Bergstrom",
-        "contactName": "Jamien Bergstrom",
-        "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"
-      }
+      { "id": "prm-5678", "name": "UC Davis Cycling", "contactName": "Jamien Bergstrom", "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -172,11 +240,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -192,11 +256,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -212,11 +272,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Justin Morgan",
-        "contactName": "Justin Morgan",
-        "contactInfo": "justin@backofnowhere.com, (559) 451-7527"
-      }
+      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -227,17 +283,23 @@ export default [
     "date": "February 04 2017",
     "discipline": "Road",
     "type": "Criterium",
+    "usacPermit" : "2017-203",
     "location": {
+      "streetAddress": "181 Blue Ravine Road",
       "city": "Folsom",
-      "state": "CA"
+      "state": "CA",
+      "zip": "95630"
     },
     "promoters": [
-      {
-        "name": "Jeff Tanforan",
-        "contactName": "Jeff Tanforan",
-        "contactInfo": "tan4an@gmail.com"
-      }
+      { "id": "prm-2672", "name": "Sierra Nevada / Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com"},
     ],
+    "flyer" : {
+      "name": "",
+      "url": "http://www.ncnca.org/sites/default/files/12/03/2016%20-%2012%3A27pm/Fl_2017-203%20Folsom%20Winter%20Criterium%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "registrationUrl": "https://www.bikereg.com/folsom-winter-criterium0",
+    "websiteUrl": "http://sierranevadaracing.com/Home.aspx",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1qJ1gtqXl"
@@ -252,11 +314,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -272,11 +330,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "OTF",
-        "contactName": "Steve Grusis",
-        "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
-      }
+      { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
     ],
     "group" : "2",
     "isDraft" : false,
@@ -292,11 +346,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -312,11 +362,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "OTF",
-        "contactName": "Steve Grusis",
-        "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
-      }
+      { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
     ],
     "group" : "2",
     "isDraft" : false,
@@ -332,11 +378,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "3",
     "isDraft" : false,
@@ -352,11 +394,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -372,11 +410,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rachel Marcuson",
-        "contactName": "Rachel Marcuson",
-        "contactInfo": "rmarcuson@gmail.com"
-      }
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -392,11 +426,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -412,11 +442,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rachel Marcuson",
-        "contactName": "Rachel Marcuson",
-        "contactInfo": "rmarcuson@gmail.com"
-      }
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -432,11 +458,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -452,11 +474,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Eagle Cycling Club",
-        "contactName": "Felix Riesenberg",
-        "contactInfo": "Eagle Cyclinb Club, felix.riesenberg@sbcglobal.net"
-      }
+      { "id": "prm-2634", "name": "Eagle Cycling Club", "contactName": "Felix Riesenberg", "contactInfo": "felix.riesenberg@sbcglobal.net" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -472,11 +490,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Galland",
-        "contactName": "Jeff Galland",
-        "contactInfo": "director@chicostagerace.com, (916) 612-0811"
-      }
+      { "id": "prm-2673", "name": "Chico Corsa Cycling Club", "contactName": "Jeff Galland", "contactInfo": "director@chicostagerace.com, (916) 612-0811"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -492,11 +506,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Galland",
-        "contactName": "Jeff Galland",
-        "contactInfo": "director@chicostagerace.com, (916) 612-0811"
-      }
+      { "id": "prm-2673", "name": "Chico Corsa Cycling Club", "contactName": "Jeff Galland", "contactInfo": "director@chicostagerace.com, (916) 612-0811"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -512,11 +522,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Galland",
-        "contactName": "Jeff Galland",
-        "contactInfo": "director@chicostagerace.com, (916) 612-0811"
-      }
+      { "id": "prm-2673", "name": "Chico Corsa Cycling Club", "contactName": "Jeff Galland", "contactInfo": "director@chicostagerace.com, (916) 612-0811"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -532,11 +538,7 @@ export default [
       "state": "CA"
     },
     "promoters" : [
-      {
-        "name": "Jeff Galland",
-        "contactName": "Jeff Galland",
-        "contactInfo": "director@chicostagerace.com, (916) 612-0811"
-      }
+      { "id": "prm-2673", "name": "Chico Corsa Cycling Club", "contactName": "Jeff Galland", "contactInfo": "director@chicostagerace.com, (916) 612-0811"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -552,11 +554,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -572,11 +570,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -592,11 +586,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -612,11 +602,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -632,11 +618,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "SGW",
-        "contactName": "Steve Stuart",
-        "contactInfo": "SGW, stuball52@sbcglobal.net, 916-205-0991"
-      }
+      { "id": "prm-2638", "name": "Sacramento Golden Wheelmen", "contactName": "Steve Stuart", "contactInfo": "stuball52@sbcglobal.net, 916-205-0991"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -652,11 +634,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "SGW",
-        "contactName": "Steve Stuart",
-        "contactInfo": "SGW, stuball52@sbcglobal.net, 916-205-0992"
-      }
+      { "id": "prm-2638", "name": "Sacramento Golden Wheelmen", "contactName": "Steve Stuart", "contactInfo": "stuball52@sbcglobal.net, 916-205-0991"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -672,11 +650,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -692,17 +666,13 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HkbbJ1xFcXg"
   }, {
-    "id" : "evt-ncnca-2017-madera-stage-race-time-trial-vp-7-SJM-kygFc7x",
+    "id" : "evt-ncnca-2017-madera-stage-race-time-trial-vp-7-rJB6a6JVg",
     "name" : "Madera Stage Race: Time Trial – VP #7",
     "date": "March 18 2017",
     "discipline": "Road",
@@ -712,15 +682,11 @@ export default [
       "state": "CA"
     },
     "promoters" : [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "SJM-kygFc7x"
+    "_shortId" : "rJB6a6JVg"
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-4-HyQWJkxY5me",
     "name" : "Central Coast Road Series – CCCX #4",
@@ -732,17 +698,13 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HyQWJkxY5me"
   }, {
-    "id" : "evt-ncnca-2017-wccc-cal-team-time-trial-collegiate-only-BkV-JJxFqXx",
+    "id" : "evt-ncnca-2017-wccc-cal-team-time-trial-collegiate-only-rJkyATyEl",
     "name" : "WCCC: Cal Team Time Trial (Collegiate Only)",
     "date": "March 18 2017",
     "discipline": "Road",
@@ -752,15 +714,11 @@ export default [
       "state": "CA"
     },
     "promoters" : [
-      {
-        "name": "Reese Levine",
-        "contactName": "Reese Levine",
-        "contactInfo": "reeselevine@berkeley.edu"
-      }
+      { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "BkV-JJxFqXx"
+    "_shortId" : "rJkyATyEl"
   }, {
     "id" : "evt-ncnca-2017-wccc-cal-road-race-collegiate-and-junior-only-SJBbk1eFq7g",
     "name" : "WCCC: Cal Road Race (Collegiate and Junior Only)",
@@ -772,17 +730,13 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Reese Levine",
-        "contactName": "Reese Levine",
-        "contactInfo": "reeselevine@berkeley.edu"
-      }
+      { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJBbk1eFq7g"
   }, {
-    "id" : "evt-ncnca-2017-madera-stage-race-road-race-vp-7-H1L-ykgYqQl",
+    "id" : "evt-ncnca-2017-madera-stage-race-road-race-vp-7-rkaUApyVg",
     "name" : "Madera Stage Race: Road Race – VP #7",
     "date": "March 19 2017",
     "discipline": "Road",
@@ -792,15 +746,11 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "H1L-ykgYqQl"
+    "_shortId" : "rkaUApyVg"
   }, {
     "id" : "evt-ncnca-2017-red-kite-criterium-march-rko-3-S1PZ11eYqme",
     "name" : "Red Kite Criterium (March) – RKO #3",
@@ -812,11 +762,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -832,11 +778,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Reese Levine",
-        "contactName": "Reese Levine",
-        "contactInfo": "reeselevine@berkeley.edu"
-      }
+      { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -852,11 +794,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group": "3",
     "draftNotes" : "Also the Winchester race is a soft date pending other submissions.  SR",
@@ -873,11 +811,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -893,11 +827,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -913,11 +843,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "OTF",
-        "contactName": "Steve Grusis",
-        "contactInfo": "OTF, steve.grusis@scccd.edu, (559) 360-1775"
-      }
+      { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
     ],
     "group" : "3",
     "isDraft" : false,
@@ -933,11 +859,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Shaun Bagley",
-        "contactName": "Shaun Bagley",
-        "contactInfo": "shaunb93291@yahoo.com"
-      }
+      { "id": "prm-30007", "name": "Shaun Bagley", "contactName": "Shaun Bagley", "contactInfo": "shaunb93291@yahoo.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -953,11 +875,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -973,11 +891,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "John Kekuewa",
-        "contactName": "John Kekuewa",
-        "contactInfo": "jkekuewa@hotmail.com, 209-406-5683"
-      }
+      { "id": "prm-2644", "name": "Ciclistas del Valle Cycling Club", "contactName": "John Kekuewa", "contactInfo": "jkekuewa@hotmail.com, 209-406-5683"},
     ],
     "group": "1",
     "draftNotes" : "Additionally, we would like to be considered to host the District Masters Championship as we did in 2015.",
@@ -994,11 +908,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rachel Marcuson",
-        "contactName": "Rachel Marcuson",
-        "contactInfo": "rmarcuson@gmail.com"
-      }
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1014,11 +924,7 @@ export default [
       "state": "CA"
     },
     "promoters" : [
-      {
-        "name": "Rachel Marcuson",
-        "contactName": "Rachel Marcuson",
-        "contactInfo": "rmarcuson@gmail.com"
-      }
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1034,11 +940,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Mitch Boehs",
-        "contactName": "Mitch Boehs",
-        "contactInfo": "mitch@teasolar.com"
-      }
+      { "id": "prm-30006", "name": "TEA Solar", "contactName": "Mitch Boehs", "contactInfo": "mitch@teasolar.com"},
     ],
     "group" : "3",
     "isDraft" : false,
@@ -1054,11 +956,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rachel Marcuson",
-        "contactName": "Rachel Marcuson",
-        "contactInfo": "rmarcuson@gmail.com"
-      }
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1074,11 +972,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1094,11 +988,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Larry Sussman",
-        "contactName": "Larry Sussman",
-        "contactInfo": "sussmanlawrence@gmail.com"
-      }
+      { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1114,11 +1004,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Larry Sussman",
-        "contactName": "Larry Sussman",
-        "contactInfo": "sussmanlawrence@gmail.com"
-      }
+      { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1134,95 +1020,130 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Larry Sussman",
-        "contactName": "Larry Sussman",
-        "contactInfo": "sussmanlawrence@gmail.com"
-      }
+      { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1wf1JxF97l"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-H1uGkJxKcmx",
-    "name": "Sea Otter Classic",
+    "name": "Sea Otter Classic – Criterium",
     "date": "April 20 2017",
     "discipline": "Road",
-    "type" : "Non-Competitive",
+    "type" : "Criterium",
     "location": {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Frost",
-        "contactName": "Jeff Frost",
-        "contactInfo": "frosty@seaotterclassic.com"
-      }
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
     ],
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1uGkJxKcmx"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-HytzyJeK9Ql",
-    "name": "Sea Otter Classic",
+    "name": "Sea Otter Classic – Circuit Race",
     "date": "April 21 2017",
     "discipline": "Road",
     "type": "Circuit Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
     "location": {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Frost",
-        "contactName": "Jeff Frost",
-        "contactInfo": "frosty@seaotterclassic.com"
-      }
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HytzyJeK9Ql"
   }, {
-    "id" : "evt-ncnca-2017-sea-otter-classic-SycfJkxK57l",
-    "name": "Sea Otter Classic",
-    "date": "April 22 2017",
+    "id" : "evt-ncnca-2017-sea-otter-classic-rJjVXCTmg",
+    "name": "Sea Otter Classic – Road Race",
+    "date": "April 21 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Road Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
     "location": {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Frost",
-        "contactName": "Jeff Frost",
-        "contactInfo": "frosty@seaotterclassic.com"
-      }
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJjVXCTmg"
+  }, {
+    "id" : "evt-ncnca-2017-sea-otter-classic-SycfJkxK57l",
+    "name": "Sea Otter Classic – Circuit Race",
+    "date": "April 22 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SycfJkxK57l"
   }, {
-    "id" : "evt-ncnca-2017-sea-otter-classic-SkjG1yeFcmg",
-    "name": "Sea Otter Classic",
-    "date": "April 23 2017",
+    "id" : "evt-ncnca-2017-sea-otter-classic-B1xL1Id0Xg",
+    "name": "Sea Otter Classic – Road Race (Juniors)",
+    "date": "April 22 2017",
     "discipline": "Road",
-    "type" : "Road Race",
+    "type": "Road Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
     "location": {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Frost",
-        "contactName": "Jeff Frost",
-        "contactInfo": "frosty@seaotterclassic.com"
-      }
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B1xL1Id0Xg"
+  }, {
+    "id" : "evt-ncnca-2017-sea-otter-classic-SkjG1yeFcmg",
+    "name": "Sea Otter Classic – Road Race",
+    "date": "April 23 2017",
+    "discipline": "Road",
+    "type" : "Road Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
     ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkjG1yeFcmg"
+  }, {
+    "id" : "evt-ncnca-2017-sea-otter-classic-ByXS8dRml",
+    "name": "Sea Otter Classic – Circuit Race (PRO)",
+    "date": "April 23 2017",
+    "discipline": "Road",
+    "type" : "Circuit Race",
+    "websiteUrl": "https://seaotterclassic2017.sched.com/overview/type/Road+Racing",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByXS8dRml"
   }, {
     "id" : "evt-ncnca-2017-red-kite-criterium-april-rko-6-BJ3Gk1eY5mg",
     "name" : "Red Kite Criterium (April) – RKO #6",
@@ -1234,11 +1155,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1321,7 +1238,7 @@ export default [
     "isDraft" : false,
     "_shortId" : "SkeXyJlFc7l"
   }, {
-    "id" : "evt-ncnca-2017-king-city-road-race-rJ-X1kxK57e",
+    "id" : "evt-ncnca-2017-king-city-road-race-ryiOCa14x",
     "name": "King City Road Race",
     "date": "May 06 2017",
     "discipline": "Road",
@@ -1339,7 +1256,7 @@ export default [
     ],
     "group" : "3",
     "isDraft" : false,
-    "_shortId" : "rJ-X1kxK57e"
+    "_shortId" : "ryiOCa14x"
   }, {
     "id" : "evt-ncnca-2017-golden-state-race-series-pb-rio-strada-racing-circuit-HyMQ1yxF9Qe",
     "name" : "Golden State Race Series p/b Rio Strada Racing – Circuit",
@@ -1413,11 +1330,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1493,11 +1406,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "isDraft" : false,
     "_shortId" : "H1Ym1ket9Qx"
@@ -1573,11 +1482,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1714,11 +1619,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1734,11 +1635,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1775,11 +1672,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "3",
     "isDraft" : false,
@@ -1836,11 +1729,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1856,11 +1745,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1896,11 +1781,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1916,11 +1797,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1936,11 +1813,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1997,11 +1870,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2017,11 +1886,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group": "1",
     "draftNotes" : "I'll move this one back into the spring if there is space.  SR",
@@ -2058,11 +1923,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2078,11 +1939,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2098,11 +1955,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2118,11 +1971,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2138,11 +1987,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2158,11 +2003,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2178,11 +2019,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2198,11 +2035,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2218,11 +2051,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2258,11 +2087,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2298,11 +2123,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2318,11 +2139,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Red Kite",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "Red Kite, sr@redkiteracing.com, 510-882-8235"
-      }
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2338,11 +2155,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2379,11 +2192,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "CCCX",
-        "contactName": "Keith DeFiebre",
-        "contactInfo": "CCCX, kdefiebre@hotmail.com"
-      }
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2399,11 +2208,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2419,11 +2224,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2439,11 +2240,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2479,11 +2276,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Velo Promo",
-        "contactName": "Robert Leibold",
-        "contactInfo": "Velo Promo, velopro1@sonnet.com"
-      }
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
     "group" : "1",
     "isDraft" : false,
