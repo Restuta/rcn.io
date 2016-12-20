@@ -1,5 +1,12 @@
+/*
+generate id manually by hitting
+https://runkit.io/restuta/rcn-shortid/branches/master
+*/
+
 import slugify from 'shared/utils/slugify'
-import shortid from 'shared/utils/shortid'
+import shortid from 'shortid'
+//custom alphabet, since by default it includes "-" which we are using as a separator as well
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_$');
 
 //genereates event ids
 
@@ -14,7 +21,7 @@ const createEventIdPrefix = (eventDate, eventName, shortSegmentName) => (
     : `evt-${eventDate.year()}-${slugify(eventName)}`
 )
 
-const createShortEventId = () => shortid()
+const createShortEventId = () => shortid.generate()
 
 const createPrettyEventId = (eventDate, eventName, shortSegmentName, id) => {
   return createEventIdPrefix(eventDate, eventName, shortSegmentName) + `-${id}`
