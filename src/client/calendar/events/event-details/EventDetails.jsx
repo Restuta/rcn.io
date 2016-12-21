@@ -218,7 +218,7 @@ class EventDetails extends Component {
               <h4 className="header-regular w-500 date">
                 {formattedDate} <span className="relative">({relativeDate})</span>
               </h4>
-              <h3 className="header-regular w-900 name">{name}</h3>
+              <h1 className="header-regular w-900 name">{name}</h1>
             </Col>
             <Col xs={14} sm={5} />
           </Row>
