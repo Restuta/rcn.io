@@ -199,6 +199,24 @@ export default [
     "isDraft" : false,
     "_shortId" : "S1mJkxKqXx"
   }, {
+    "id" : "cccx-cyclocross-series-final-H1XVrswNx",
+    "name" : "CCCX Cyclocross Series Final",
+    "date": "January 15 2017",
+    "discipline": "Road",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "17100 Castroville Blvd",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93907"
+    },
+    "promoters": [
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1XVrswNx"
+  }, {
     "id" : "evt-ncnca-2017-early-bird-criterium-training-series-3-rJNkklFqme",
     "name" : "Early Bird Criterium Training Series #3",
     "date": "January 22 2017",
