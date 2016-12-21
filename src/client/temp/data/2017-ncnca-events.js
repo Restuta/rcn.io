@@ -18,38 +18,6 @@ export default [
     "isDraft" : false,
     "_shortId" : "rkJyeFqXl"
   }, {
-    "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
-    "name" : "Early Bird Training Series #1",
-    "date": "January 08 2017",
-    "discipline": "Road",
-    "type": "Clinics",
-    "location": {
-      "city": "Fremont",
-      "state": "CA"
-    },
-    "promoters": [
-      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
-    ],
-    "group" : "1",
-    "isDraft" : false,
-    "_shortId" : "B1x1JgKcQx"
-  }, {
-    "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-BygycpTkEg",
-    "name" : "Clovis Criterium Training Series #1",
-    "date": "January 08 2017",
-    "discipline": "Road",
-    "type": "Clinics",
-    "location": {
-      "city": "Clovis",
-      "state": "CA"
-    },
-    "promoters": [
-      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
-    ],
-    "group" : "1",
-    "isDraft" : false,
-    "_shortId" : "BygycpTkEg"
-  }, {
   "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-Hyl5QMp1Ee",
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 03 2017",
@@ -150,6 +118,58 @@ export default [
   "isDraft" : false,
   "_shortId" : "SyQRfaJNl"
 }, {
+  "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-HJRQHivNg",
+  "name": "USA Cycling Cyclo-cross National Championships",
+  "date": "January 08 2017",
+  "discipline": "Cyclocross",
+  "type": "Cyclocross",
+  "location": {
+    "city": "Hartford",
+    "state": "CT"
+  },
+  "promoters": [
+    { "id": "prm-2666", "name": "USA Cycling" },
+  ],
+  "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
+  "group": "1",
+  "isDraft" : false,
+  "_shortId" : "HJRQHivNg"
+}, {
+    "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
+    "name" : "Early Bird Training Series #1",
+    "date": "January 08 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "Fremont",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B1x1JgKcQx"
+  }, {
+    "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-BygycpTkEg",
+    "name" : "Clovis Criterium Training Series #1",
+    "date": "January 08 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "Clovis",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BygycpTkEg"
+  }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-2-ryzk1eYcmx",
     "name" : "Early Bird Training Series #2",
     "date": "January 15 2017",
