@@ -11,7 +11,7 @@ const convertDraftEventsToRealOnes = transformedDraftEvents =>
   transformedDraftEvents.map(event => {
     const momentDate = moment(event.date, 'MMMM DD YYYY')
     const shortId = createShortEventId()
-    const prettyId = createPrettyEventId(momentDate, event.name, 'ncnca', shortId)
+    const prettyId = createPrettyEventId(momentDate.year(), event.name, 'ncnca', shortId)
 
     return {
       ...event,

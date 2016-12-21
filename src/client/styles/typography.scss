@@ -175,6 +175,9 @@ sup {
 sub {
   bottom: -0.25em;
 }
+mark {
+  background-color: $yellow-500;
+}
 
 .text-sm-9 {@include text-sm-9(); } //9
 .text-sm-11 {@include text-sm-11(); } //9

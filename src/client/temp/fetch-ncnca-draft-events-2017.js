@@ -46,7 +46,7 @@ Target:
 
 //uses hash of the name so id stays same unless name changes for more predictable draft identity
 const createDraftEventId = (eventDate, eventName) => (
-  createEventIdPrefix(eventDate, eventName, 'ncnca') + `-${hash(eventName + eventDate)}`
+  createEventIdPrefix(eventDate.year(), eventName, 'ncnca') + `-${hash(eventName + eventDate)}`
 )
 
 const transformEvents = googleSpreedsheetEvents =>

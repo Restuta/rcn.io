@@ -15,21 +15,29 @@ shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
   "shortSegmentName" is any short name to segment events further, usually it's a
   calendar short name or any other meaninful acronym
 */
-const createEventIdPrefix = (eventDate, eventName, shortSegmentName) => (
+
+//so we don't end-up with crazy long URLs, 100 is pessimistic for really long event names
+const MAX_SLUG_LENGTH = 100
+
+const createEventIdPrefix = (eventYear, eventName, shortSegmentName) => (
   shortSegmentName
-    ? `evt-${shortSegmentName}-${eventDate.year()}-${slugify(eventName)}`
-    : `evt-${eventDate.year()}-${slugify(eventName)}`
+    ? `evt-${shortSegmentName}-${eventYear}-${slugify(eventName, MAX_SLUG_LENGTH)}`
+    : `evt-${eventYear}-${slugify(eventName, MAX_SLUG_LENGTH)}`
 )
 
 const createShortEventId = () => shortid.generate()
 
-const createPrettyEventId = (eventDate, eventName, shortSegmentName, id) => {
-  return createEventIdPrefix(eventDate, eventName, shortSegmentName) + `-${id}`
+const createPrettyEventId = (eventYear, eventName, shortSegmentName, id) => {
+  return createEventIdPrefix(eventYear, eventName, shortSegmentName) + `-${id}`
 }
 
-
+//generates pretty id including random part
+const generatePrettyEventId = function() {
+  return createPrettyEventId(...arguments, createShortEventId())
+}
 
 export {
+  generatePrettyEventId,
   createEventIdPrefix,
   createPrettyEventId,
   createShortEventId
