@@ -89,6 +89,9 @@ Today
 	!--- NCNCA Calendar 2017
 		- figure out promoters and their ids
 			- regenerate events with those
+			+- reese levine promoter name?: it's Cal Cycling,
+			+- promoter? "name" "Budweiser Sequoia Cycling Classic"
+			- turlock criterim promoter name
 		- figure out series and their ids
 			- regenerate events with those
 		- add new property to series of the event
