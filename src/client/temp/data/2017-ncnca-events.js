@@ -1171,11 +1171,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "LGBRC",
-        "contactName": "Chris Twiggs",
-        "contactInfo": "LGBRC, ctwiggs@gmail.com, (650) 279-8472"
-      }
+      { "id": "prm-2643", "name": "Los Gatos Bicycle Racing Club", "contactName": "Chris Twiggs", "contactInfo": "ctwiggs@gmail.com, (650) 279-8472" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1191,12 +1187,16 @@ export default [
       "state": "CA"
     },
     "promoters" : [
-      {
-        "name": "americanheart.org"
-      }
+      { "id": "prm-30009", "name": "American Heart Association", "contactName": "Chris Aronhalt", "contactInfo": "chris.aronhalt@medalistsports.com  "},
     ],
     "isDraft" : false,
-    "_shortId" : "SyAzkylFqQg"
+    "_shortId" : "SyAzkylFqQg",
+    "flyer" : {
+      "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-166",
+      "mimeType": "application/pdf"
+    },
+    "websiteUrl": "http://honor.americanheart.org/site/PageServer?pagename=cnr_home",
+    "registrationUrl": "http://honor.americanheart.org/site/TR?fr_id=4991&pg=entry",
   }, {
     "id" : "evt-ncnca-2017-wente-vineyards-classic-road-race-H1kQyJlKq7e",
     "name" : "Wente Vineyards Classic Road Race",
@@ -1208,11 +1208,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "VSRT",
-        "contactName": "Ken Hernandez",
-        "contactInfo": "VSRT, kenhernandez52@yahoo.com"
-      }
+      { "id": "prm-2674", "name": "Valley Spokesmen Race Team", "contactName": "Ken Hernandez", "contactInfo": "kenhernandez52@yahoo.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1228,11 +1224,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rio Strada Racing",
-        "contactName": "Ron Rouse",
-        "contactInfo": "Rio Strada Racing, ogeewiz682002@yahoo.com"
-      }
+      { "id": "prm-2645", "name": "Rio Strada Racing", "contactName": "Ron Rouse",  "contactInfo": "ogeewiz682002@yahoo.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1248,11 +1240,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Eric Peterson",
-        "contactName": "Eric Peterson",
-        "contactInfo": "eric939@redshift.com, 831-442-8356"
-      }
+      { "id": "prm-2636", "name": "Pedali Alpini Inc.",  "contactName": "Eric Peterson", "contactInfo": "eric939@redshift.com, 831-442-8356"},
     ],
     "group" : "3",
     "isDraft" : false,
@@ -1268,11 +1256,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rio Strada Racing",
-        "contactName": "Ron Rouse",
-        "contactInfo": "Rio Strada Racing, ogeewiz682002@yahoo.com"
-      }
+      { "id": "prm-2645", "name": "Rio Strada Racing", "contactName": "Ron Rouse",  "contactInfo": "ogeewiz682002@yahoo.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1288,11 +1272,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Eric Peterson",
-        "contactName": "Eric Peterson",
-        "contactInfo": "eric939@redshift.com, 831-442-8356"
-      }
+      { "id": "prm-2636", "name": "Pedali Alpini Inc.",  "contactName": "Eric Peterson", "contactInfo": "eric939@redshift.com, 831-442-8356"},
     ],
     "group": "1",
     "draftNotes" : "Requesting if any other promoters are on this date we are notified and can work together arrange that agreement on splitting categories so that NO individual races are the same. Other promoters on this date must agree to this as we have been promoting this race 20+ years.",
@@ -1309,11 +1289,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "BBC",
-        "contactName": "Paul Hainsworth",
-        "contactInfo": "BBC, paulhainsworth@gmail.com"
-      }
+      { "id": "prm-2639", "name": "Berkeley Bicycle Club", "contactName": "Paul Hainsworth", "contactInfo": "paulhainsworth@gmail.com" },
     ],
     "group": "1",
     "draftNotes" : "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship.",
@@ -1346,12 +1322,9 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rick Ciccarelli",
-        "contactName": "Rick Ciccarelli",
-        "contactInfo": "ciccarelli@live.com, 209-605-7315"
-      }
+      { "id": "prm-2831", "name": "Ciccarelli Enterprises", "contactName": "Rick Ciccarelli", "contactInfo": "ciccarelli@live.com, 209-605-7315" },
     ],
+    "websiteUrl" : "https://www.facebook.com/pg/Ciccarelli-Enterprises-359956060682799",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1UXk1eK97l"
@@ -1366,12 +1339,9 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rick Ciccarelli",
-        "contactName": "Rick Ciccarelli",
-        "contactInfo": "ciccarelli@live.com, 209-605-7315"
-      }
+      { "id": "prm-2831", "name": "Ciccarelli Enterprises", "contactName": "Rick Ciccarelli", "contactInfo": "ciccarelli@live.com, 209-605-7315" },
     ],
+    "websiteUrl" : "https://www.facebook.com/pg/Ciccarelli-Enterprises-359956060682799",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJPXkkxt5Ql"
@@ -1386,11 +1356,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Jeff Tanforan",
-        "contactName": "Jeff Tanforan",
-        "contactInfo": "tan4an@gmail.com"
-      }
+      { "id": "prm-2672", "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1421,11 +1387,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1441,11 +1403,8 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "SJBC",
-        "contactName": "Todd Munk",
-        "contactInfo": "SJBC, todd.munk@gmail.com, (408) 375-3196"
-      }
+      { "id": "prm-2647", "name": "San Jose Bicycle Club", "contactName": "Todd Munk", "contactInfo": "todd.munk@gmail.com, (408) 375-3196"},
+      { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
     "group": "1",
     "draftNotes" : "We ask that there are no other races on these two days. We also ask that there is only 1 other race that weekend (Saturday May 27th) and that it is remote (i.e Nevada, Fresno, San Luis Obispo, Chico, etc). Hill climbs and TT's excluded.",
@@ -1462,11 +1421,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1498,11 +1453,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "FFBC",
-        "contactName": "Alex Cortez",
-        "contactInfo": "FFBC, alcog1970@hotmail.com"
-      }
+      { "id": "prm-2657", "name": "Team Fremont/FFBC", "contactName": "Alex Cortez", "contactInfo": "alcog1970@hotmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1518,11 +1469,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Alto Velo",
-        "contactName": "Mark Howard",
-        "contactInfo": "Alto Velo, Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com"
-      }
+      { "id": "prm-2655", "name": "Alto Velo", "contactName": "Mark Howard", "contactInfo": "Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1538,11 +1485,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Scott Butler",
-        "contactName": "Scott Butler",
-        "contactInfo": "sbutler@foxrunrentals.net, 209-662-0898"
-      }
+      { "id": "prm-2658", "name": "Delta Velo / Michael David Winery Cycling Team", "contactName": "Scott Butler", "contactInfo": "sbutler@foxrunrentals.net, 209-662-0898" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1558,11 +1501,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Bubba Melcher",
-        "contactName": "Bubba Melcher",
-        "contactInfo": "bubba@tourdenez.com, 775-772-3260"
-      }
+      { "id": "prm-5992", "name": "Tour de Nez Outreach", "contactName": "Bubba Melcher", "contactInfo": "bubba@tourdenez.com, 775-772-3260"},
     ],
     "group": "1",
     "draftNotes" : "..would still be a priority race and a premier race.  ..would like to be considered for district criterium championships",
@@ -1579,11 +1518,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "IC3",
-        "contactName": "Steve Chew",
-        "contactInfo": "IC3, swimchew@sbcglobal.net, (925) 918-3501"
-      }
+      { "id": "prm-2649", "name": "Christian Cycling Club", "contactName": "Steve Chew", "contactInfo": "swimchew@sbcglobal.net, (925) 918-3501" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1599,11 +1534,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Reno Wheelmen",
-        "contactName": "Coby Rowe",
-        "contactInfo": "Reno Wheelmen, coby@glaciercycling.com"
-      }
+      { "id": "prm-2642", "name": "Reno Wheelmen", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1654,7 +1585,7 @@ export default [
       {
         "name": "Duane Strawser",
         "contactName": "Duane Strawser",
-        "contactInfo": "oldproracer@gmail.com, (630) 263-3388"
+        "contactInfo": "oldproracer@gmail.com, (530) 263-3388"
       }
     ],
     "group": "1",
@@ -2067,11 +1998,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2103,11 +2030,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2256,11 +2179,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2292,11 +2211,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Anti-Gravity Racing",
-        "contactName": "Steve Barnes",
-        "contactInfo": "everestchallenge2009@gmail.com"
-      }
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
     ],
     "group" : "1",
     "isDraft" : false,

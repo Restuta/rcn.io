@@ -1,7 +1,8 @@
 /*eslint-disable */
-//last id 30007
+//last id 30010
 
 export default [
+  { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
   { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
   { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
   { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
@@ -17,11 +18,34 @@ export default [
   { "id": "prm-30007", "name": "Shaun Bagley", "contactName": "Shaun Bagley", "contactInfo": "shaunb93291@yahoo.com"},
   { "id": "prm-30008", "name": "Sea Otter Classic", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com"},
   { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
+  //LGBRC
+  { "id": "prm-2643", "name": "Los Gatos Bicycle Racing Club", "contactName": "Chris Twiggs", "contactInfo": "ctwiggs@gmail.com, (650) 279-8472" },
+  { "id": "prm-30009", "name": "American Heart Association", "contactName": "Chris Aronhalt", "contactInfo": "chris.aronhalt@medalistsports.com  "},
+  //VSRT
+  { "id": "prm-2674", "name": "Valley Spokesmen Race Team", "contactName": "Ken Hernandez", "contactInfo": "kenhernandez52@yahoo.com"},
+  { "id": "prm-2645", "name": "Rio Strada Racing", "contactName": "Ron Rouse",  "contactInfo": "ogeewiz682002@yahoo.com"},
+  { "id": "prm-2636", "name": "Pedali Alpini Inc.",  "contactName": "Eric Peterson", "contactInfo": "eric939@redshift.com, 831-442-8356"},
+  //BBC
+  { "id": "prm-2639", "name": "Berkeley Bicycle Club", "contactName": "Paul Hainsworth", "contactInfo": "paulhainsworth@gmail.com" },
+  { "id": "prm-2831", "name": "Ciccarelli Enterprises", "contactName": "Rick Ciccarelli", "contactInfo": "ciccarelli@live.com, 209-605-7315" },
+  { "id": "prm-2672", "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com"},
+  { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
+  //SJBC
+  { "id": "prm-2647", "name": "San Jose Bicycle Club", "contactName": "Todd Munk", "contactInfo": "todd.munk@gmail.com, (408) 375-3196"},
+  { "id": "prm-2657", "name": "Team Fremont/FFBC", "contactName": "Alex Cortez", "contactInfo": "alcog1970@hotmail.com" },
+  { "id": "prm-2655", "name": "Alto Velo", "contactName": "Mark Howard", "contactInfo": "Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com" },
+  { "id": "prm-2658", "name": "Delta Velo / Michael David Winery Cycling Team", "contactName": "Scott Butler", "contactInfo": "sbutler@foxrunrentals.net, 209-662-0898" },
+  { "id": "prm-5992", "name": "Tour de Nez Outreach", "contactName": "Bubba Melcher", "contactInfo": "bubba@tourdenez.com, 775-772-3260"},
+  { "id": "prm-2649", "name": "Christian Cycling Club", "contactName": "Steve Chew", "contactInfo": "swimchew@sbcglobal.net, (925) 918-3501" },
+  { "id": "prm-2642", "name": "Reno Wheelmen", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com" },
+  { "id": "prm-30010", "name": "OL’Republic / SHO-AIR Racing", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com" },
+
+
 
   { "id": "prm-2665", "name": "2 Wheel Racing" },
   { "id": "prm-2660", "name": "Alta Alpina Cycling Club" },
-  { "id": "prm-2655", "name": "Alto Velo" },
-  { "id": "prm-2746", "name": "AntiGravity Cycling" },
+
+
   { "id": "prm-5157", "name": "Back of Nowhere Enterprises" },
   { "id": "prm-2639", "name": "Berkeley Bicycle Club" },
   { "id": "prm-3210", "name": "Bicycle Planet" },
@@ -35,15 +59,15 @@ export default [
   { "id": "prm-3377", "name": "California Giant Cycling Team" },
 
   { "id": "prm-5219", "name": "China Peak Mountain Resort" },
-  { "id": "prm-2649", "name": "Christian Cycling-Hammer Nutrition" },
-  { "id": "prm-2831", "name": "Ciccarelli Enterprises" },
+  { "id": "prm-2649", "name": "Christian Cycling" },
+
 
   { "id": "prm-5351", "name": "City of Folsom" },
   { "id": "prm-23293", "name": "Clovis Criterium Training Series" },
   { "id": "prm-2641", "name": "Colavita-Norcal Racing/Open Road Sports, Inc." },
   { "id": "prm-2651", "name": "Contra Costa Cycling Club" },
   { "id": "prm-2650", "name": "Davis Bike Club" },
-  { "id": "prm-2658", "name": "Delta Velo / Michael David Winery Cycling Team" },
+
   { "id": "prm-5342", "name": "Downtown Vacaville Business District" },
   { "id": "prm-387", "name": "Duane Strawser" },
   { "id": "prm-2646", "name": "East Bay Cyclists" },
@@ -66,7 +90,7 @@ export default [
   { "id": "prm-2664", "name": "Katalyst Events" },
   { "id": "prm-379", "name": "Keith DeFiebre" },
   { "id": "prm-416", "name": "Kern Wheelmen Bicycle Club" },
-  { "id": "prm-2643", "name": "Los Gatos Bicycle Racing Club" },
+
   { "id": "prm-4525", "name": "Mark Altamirano" },
   { "id": "prm-5446", "name": "Michael Wesley" },
   { "id": "prm-418", "name": "Momentum Racing" },
@@ -81,8 +105,7 @@ export default [
 
   { "id": "prm-3608", "name": "PG&E" },
   { "id": "prm-3294", "name": "Pacers" },
-  { "id": "prm-2636", "name": "Pedali Alpini" },
-  { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
+
   { "id": "prm-2633", "name": "Pilarcitos Cyclesports" },
   { "id": "prm-185", "name": "Plantz / Echelon" },
   { "id": "prm-385", "name": "Project Sport" },
@@ -93,18 +116,16 @@ export default [
   { "id": "prm-30003", "name": "Winchester Cycling Club" },
   { "id": "prm-2661", "name": "Red Peloton" },
   { "id": "prm-3304", "name": "Rene Goncalves" },
-  { "id": "prm-2642", "name": "Reno Wheelmen" },
   { "id": "prm-5116", "name": "Ride2Recovery" },
-  { "id": "prm-2645", "name": "Rio Strada Racing" },
   { "id": "prm-3227", "name": "Rocket Sports Racing" },
   { "id": "prm-5349", "name": "SF Urban Riders" },
   { "id": "prm-2602", "name": "Sacramento Cyclocross" },
   { "id": "prm-7820", "name": "Sagebrush Cyclocross" },
   { "id": "prm-3215", "name": "Sam Ames" },
-  { "id": "prm-2647", "name": "San Jose Bicycle Club" },
+
   { "id": "prm-3133", "name": "Shawn Mehaffey" },
   { "id": "prm-3610", "name": "SideMark Corporate Furniture" },
-  { "id": "prm-2672", "name": "Sierra Nevada / Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com"},
+
   { "id": "prm-2637", "name": "Southern Sierra Cyclists" },
   { "id": "prm-4544", "name": "Sprinters Lane Racing Products" },
   { "id": "prm-3479", "name": "Stanford Cycling" },
@@ -114,7 +135,7 @@ export default [
   { "id": "prm-182", "name": "Syzygy Sports Group" },
   { "id": "prm-2653", "name": "Taleo Racing" },
   { "id": "prm-2656", "name": "Team Clover" },
-  { "id": "prm-2657", "name": "Team Fremont / FFBC p/b Chipotle" },
+  { "id": "prm-2657", "name": "Team Fremont / FFBC" },
   { "id": "prm-5341", "name": "Team Metromint" },
   { "id": "prm-3359", "name": "Team Specialized" },
   { "id": "prm-4675", "name": "Team Swift" },
@@ -123,12 +144,12 @@ export default [
   { "id": "prm-5211", "name": "Tim Zsoka" },
   { "id": "prm-6879", "name": "TimeYourRace" },
   { "id": "prm-2640", "name": "Topsport" },
-  { "id": "prm-5992", "name": "Tour de Nez Outreach" },
+
   { "id": "prm-2675", "name": "Tri Valley Velo" },
   { "id": "prm-3125", "name": "UC Berkeley Cycling Team" },
   { "id": "prm-5678", "name": "UC Davis Cycling", "contactName": "Jamien Bergstrom", "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"},
   { "id": "prm-2666", "name": "USA Cycling" },
-  { "id": "prm-2674", "name": "Valley Spokesmen Race Team" },
+
   { "id": "prm-2635", "name": "Velo Girls" },
   { "id": "prm-2794", "name": "Veronika Lenzi" },
   { "id": "prm-383", "name": "Victory Velo Bike Shop" },
