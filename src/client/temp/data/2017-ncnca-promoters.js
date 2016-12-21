@@ -1,5 +1,5 @@
 /*eslint-disable */
-//last id 30010
+//last id 30012
 
 export default [
   { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
@@ -38,9 +38,16 @@ export default [
   { "id": "prm-5992", "name": "Tour de Nez Outreach", "contactName": "Bubba Melcher", "contactInfo": "bubba@tourdenez.com, 775-772-3260"},
   { "id": "prm-2649", "name": "Christian Cycling Club", "contactName": "Steve Chew", "contactInfo": "swimchew@sbcglobal.net, (925) 918-3501" },
   { "id": "prm-2642", "name": "Reno Wheelmen", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com" },
-  { "id": "prm-30010", "name": "OL’Republic / SHO-AIR Racing", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com" },
+  { "id": "prm-30010", "name": "ol’Republic / Sho-Air Racing", "contactName": "Duane Strawser", "contactInfo": "oldproracer@gmail.com, (530) 263-3388" },
+  { "id": "prm-30011", "name": "Victory Velo Racing", "contactName": "Mark Perry", "contactInfo": "percorsomaestro@yahoo.com" },
+  //DBC
+  { "id": "prm-2650", "name": "Davis Bike Club", "contactName": "Jason Eisenrich", "contactInfo": "4-july-director@dbcraceteam.org, 530-902-8955" },
+  { "id": "prm-30012", "name": "David Garzoli", "contactName": "David Garzoli", "contactInfo": "david.garzoli@gmail.com" },
+  { "id": "prm-2641", "name": "Colavita Racing Inc.", "contactName": "Phil Heiman", "contactInfo": "phill.heiman@gmail.com, 415-310-6104" },
+  { "id": "prm-30013", "name": "Team Mikes Bikes", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com" },
+  { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
 
-
+  //put 2017 promoters above this line
 
   { "id": "prm-2665", "name": "2 Wheel Racing" },
   { "id": "prm-2660", "name": "Alta Alpina Cycling Club" },
@@ -66,7 +73,7 @@ export default [
   { "id": "prm-23293", "name": "Clovis Criterium Training Series" },
   { "id": "prm-2641", "name": "Colavita-Norcal Racing/Open Road Sports, Inc." },
   { "id": "prm-2651", "name": "Contra Costa Cycling Club" },
-  { "id": "prm-2650", "name": "Davis Bike Club" },
+
 
   { "id": "prm-5342", "name": "Downtown Vacaville Business District" },
   { "id": "prm-387", "name": "Duane Strawser" },

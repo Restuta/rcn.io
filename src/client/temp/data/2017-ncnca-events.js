@@ -1582,11 +1582,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Duane Strawser",
-        "contactName": "Duane Strawser",
-        "contactInfo": "oldproracer@gmail.com, (530) 263-3388"
-      }
+      { "id": "prm-30010", "name": "ol’Republic / Sho-Air Racing", "contactName": "Duane Strawser", "contactInfo": "oldproracer@gmail.com, (530) 263-3388" },
     ],
     "group": "1",
     "draftNotes" : "\"Penciled in\", have not yet heard from Duane.",
@@ -1619,11 +1615,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Victory Velo Racing",
-        "contactName": "Mark Perry",
-        "contactInfo": "Victory Velo Racing, percorsomaestro@yahoo.com"
-      }
+      { "id": "prm-30011", "name": "Victory Velo Racing", "contactName": "Mark Perry", "contactInfo": "percorsomaestro@yahoo.com" },
     ],
     "group": "2",
     "draftNotes" : "Wants Premier series",
@@ -1640,11 +1632,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Pen Velo",
-        "contactName": "Travis Ma",
-        "contactInfo": "Pen Velo, travis.ma@gmail.com"
-      }
+      { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1692,11 +1680,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "DBC",
-        "contactName": "Jason Eisenrich",
-        "contactInfo": "DBC, 4-july-director@dbcraceteam.org, 530-902-8955"
-      }
+      { "id": "prm-2650", "name": "Davis Bike Club", "contactName": "Jason Eisenrich", "contactInfo": "4-july-director@dbcraceteam.org, 530-902-8955" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1760,11 +1744,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "David Garzoli",
-        "contactName": "David Garzoli",
-        "contactInfo": "david.garzoli@gmail.com"
-      }
+      { "id": "prm-30012", "name": "David Garzoli", "contactName": "David Garzoli", "contactInfo": "david.garzoli@gmail.com" },
     ],
     "group": "3",
     "draftNotes" : "Pair with Colavita GP",
@@ -1781,11 +1761,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Phil Heiman",
-        "contactName": "Phil Heiman",
-        "contactInfo": "phill.heiman@gmail.com, 415-310-6104"
-      }
+      { "id": "prm-2641", "name": "Colavita Racing Inc.", "contactName": "Phil Heiman", "contactInfo": "phill.heiman@gmail.com, 415-310-6104" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1834,11 +1810,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Ravi Rajcoomar",
-        "contactName": "Ravi Rajcoomar",
-        "contactInfo": "ravirajcoomar@me.com"
-      }
+      { "id": "prm-30013", "name": "Team Mikes Bikes", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2094,11 +2066,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      {
-        "name": "Rick Lawton",
-        "contactName": "Rick Lawton",
-        "contactInfo": "tahiti7@ix.netcom.com"
-      }
+      { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
     ],
     "group": "2",
     "draftNotes" : "..would like to host the NCNCA hill climb championship",
