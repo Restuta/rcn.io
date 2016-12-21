@@ -1,5 +1,5 @@
 /*eslint-disable */
-//last id 30012
+
 
 export default [
   { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
@@ -46,7 +46,9 @@ export default [
   { "id": "prm-2641", "name": "Colavita Racing Inc.", "contactName": "Phil Heiman", "contactInfo": "phill.heiman@gmail.com, 415-310-6104" },
   { "id": "prm-30013", "name": "Team Mikes Bikes", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com" },
   { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
+  { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
 
+  //last id 30014
   //put 2017 promoters above this line
 
   { "id": "prm-2665", "name": "2 Wheel Racing" },
