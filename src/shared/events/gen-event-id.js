@@ -6,7 +6,7 @@ https://runkit.io/restuta/rcn-shortid/branches/master
 import slugify from 'shared/utils/slugify'
 import shortid from 'shortid'
 //custom alphabet, since by default it includes "-" which we are using as a separator as well
-shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_$');
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_$')
 
 //genereates event ids
 
