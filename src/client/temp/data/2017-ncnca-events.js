@@ -38,7 +38,7 @@ export default [
     "name" : "Clovis Criterium Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Clovis",
       "state": "CA"
@@ -169,7 +169,7 @@ export default [
     "name" : "Clovis Criterium Training Series #2",
     "date": "January 15 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Clovis",
       "state": "CA"
@@ -202,7 +202,7 @@ export default [
     "name" : "Clovis Criterium Training Series #3",
     "date": "January 22 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Clovis",
       "state": "CA"
@@ -266,7 +266,7 @@ export default [
     "name" : "Clovis Criterium Training Series #4",
     "date": "January 29 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Clovis",
       "state": "CA"
