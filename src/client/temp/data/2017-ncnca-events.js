@@ -170,6 +170,40 @@ export default [
     "isDraft" : false,
     "_shortId" : "BygycpTkEg"
   }, {
+    "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-HJ1JWpvVx",
+    "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "date": "January 14 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "St Helena",
+      "state": "CA",
+      "zip": "94574"
+    },
+    "promoters": [
+      { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJ1JWpvVx"
+  }, {
+    "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-SyIFfpDEe",
+    "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "date": "January 15 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "St Helena",
+      "state": "CA",
+      "zip": "94574"
+    },
+    "promoters": [
+      { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SyIFfpDEe"
+  }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-2-ryzk1eYcmx",
     "name" : "Early Bird Training Series #2",
     "date": "January 15 2017",
@@ -220,6 +254,23 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1XVrswNx"
+  }, {
+    "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-SkAazpD4e",
+    "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "date": "January 16 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "St Helena",
+      "state": "CA",
+      "zip": "94574"
+    },
+    "promoters": [
+      { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkAazpD4e"
   }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-3-rJNkklFqme",
     "name" : "Early Bird Training Series #3",
@@ -285,6 +336,22 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ByPJ1xYqml"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-fat-bike-national-championships-HkbeVTDVe",
+    "name": "USA Cycling Fat Bike National Championships",
+    "date": "January 28 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+      ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HkbeVTDVe"
   }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-4-S1_k1lY5Qx",
     "name" : "Early Bird Training Series #4",
