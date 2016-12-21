@@ -333,6 +333,22 @@ export default [
     "isDraft" : false,
     "_shortId" : "ByPJ1xYqml"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-fat-bike-national-championships-HkbeVTDVe",
+    "name": "USA Cycling Fat Bike National Championships",
+    "date": "January 28 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+      ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HkbeVTDVe"
+  }, {
     "id" : "evt-ncnca-2017-early-bird-criterium-training-series-4-S1_k1lY5Qx",
     "name" : "Early Bird Criterium Training Series #4",
     "date": "January 29 2017",
