@@ -32,7 +32,7 @@ export default class CreateEventId extends React.Component {
     this.state = {
       generatedName: '',
       year: 2017,
-      prefix: 'ncncna',
+      prefix: 'ncnca',
       name: '',
       textCopied: false,
     }

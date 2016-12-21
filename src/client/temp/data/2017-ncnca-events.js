@@ -445,7 +445,7 @@ export default [
     "isDraft" : false,
     "_shortId" : "BkhkyltqXl"
   }, {
-    "id" : "evt-ncncna-2017-otf-hensley-lake-road-race-BkZu0_uVx",
+    "id" : "evt-ncnca-2017-otf-hensley-lake-road-race-BkZu0_uVx",
     "name": "OTF Hensley Lake Road Race",
     "date": "February 11 2017",
     "discipline": "Road",
