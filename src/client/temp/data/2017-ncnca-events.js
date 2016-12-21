@@ -166,6 +166,23 @@ export default [
     "isDraft" : false,
     "_shortId" : "BygycpTkEg"
   }, {
+    "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-HJ1JWpvVx",
+    "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "date": "January 14 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "St Helena",
+      "state": "CA",
+      "zip": "94574"
+    },
+    "promoters": [
+      { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJ1JWpvVx"
+  }, {
     "id" : "evt-ncnca-2017-early-bird-criterium-training-series-2-ryzk1eYcmx",
     "name" : "Early Bird Criterium Training Series #2",
     "date": "January 15 2017",
