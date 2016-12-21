@@ -18,11 +18,11 @@ export default [
     "isDraft" : false,
     "_shortId" : "rkJyeFqXl"
   }, {
-    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-1-B1x1JgKcQx",
-    "name" : "Early Bird Criterium Training Series #1",
+    "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
+    "name" : "Early Bird Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Fremont",
       "state": "CA"
@@ -148,11 +148,11 @@ export default [
   "isDraft" : false,
   "_shortId" : "SyQRfaJNl"
 }, {
-    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-2-ryzk1eYcmx",
-    "name" : "Early Bird Criterium Training Series #2",
+    "id" : "evt-ncnca-2017-early-bird-training-series-2-ryzk1eYcmx",
+    "name" : "Early Bird Training Series #2",
     "date": "January 15 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Fremont",
       "state": "CA"
@@ -181,11 +181,11 @@ export default [
     "isDraft" : false,
     "_shortId" : "S1mJkxKqXx"
   }, {
-    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-3-rJNkklFqme",
-    "name" : "Early Bird Criterium Training Series #3",
+    "id" : "evt-ncnca-2017-early-bird-training-series-3-rJNkklFqme",
+    "name" : "Early Bird Training Series #3",
     "date": "January 22 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Fremont",
       "state": "CA"
@@ -246,11 +246,11 @@ export default [
     "isDraft" : false,
     "_shortId" : "ByPJ1xYqml"
   }, {
-    "id" : "evt-ncnca-2017-early-bird-criterium-training-series-4-S1_k1lY5Qx",
-    "name" : "Early Bird Criterium Training Series #4",
+    "id" : "evt-ncnca-2017-early-bird-training-series-4-S1_k1lY5Qx",
+    "name" : "Early Bird Training Series #4",
     "date": "January 29 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Clinics",
     "location": {
       "city": "Fremont",
       "state": "CA"
