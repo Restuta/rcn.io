@@ -199,10 +199,10 @@ export default [
     "isDraft" : false,
     "_shortId" : "S1mJkxKqXx"
   }, {
-    "id" : "cccx-cyclocross-series-final-H1XVrswNx",
+    "id" : "evt-ncnca-2017-cccx-cyclocross-series-final-H1XVrswNx",
     "name" : "CCCX Cyclocross Series Final",
     "date": "January 15 2017",
-    "discipline": "Road",
+    "discipline": "Cyclocross",
     "type": "Cyclocross",
     "location": {
       "streetAddress": "17100 Castroville Blvd",
