@@ -117,7 +117,7 @@ export default class CreateEventId extends React.Component {
 
         {this.state.generatedName && (
           <div>
-            <h3>Event Id (&#8984;+C)</h3>
+            <h3>New Event Id</h3>
             <mark id="generated-name" style={{
               padding: '1rem 1rem',
               marginRight: '1rem',
