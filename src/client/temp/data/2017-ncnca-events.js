@@ -143,7 +143,9 @@ export default [
     { "id": "prm-2666", "name": "USA Cycling" },
   ],
   "websiteUrl" : "http://www.usacycling.org/2017/cxnationals",
-  "series" : "http://www.ncnca.org/ncncaseries/2017-usac-national-championships",
+  "series" : [
+    { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" }
+  ],
   "group": "1",
   "isDraft" : false,
   "_shortId" : "SyQRfaJNl"
@@ -321,6 +323,7 @@ export default [
     "_shortId" : "SJoyJgYcme"
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-BkhkyltqXl",
+    "status" : "Canceled",
     "name": "Master's OTF Omnium",
     "date": "February 11 2017",
     "discipline": "Road",
@@ -335,6 +338,24 @@ export default [
     "group" : "2",
     "isDraft" : false,
     "_shortId" : "BkhkyltqXl"
+  }, {
+    "id" : "evt-ncncna-2017-otf-hensley-lake-road-race-BkZu0_uVx",
+    "name": "OTF Hensley Lake Road Race",
+    "date": "February 11 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "36133 Road 603",
+      "city": "Madera",
+      "state": "CA",
+      "zip": "93638"
+    },
+    "promoters": [
+      { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
+    ],
+    "group" : "2",
+    "isDraft" : false,
+    "_shortId" : "BkZu0_uVx"
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-ryp1ket5Xx",
     "name" : "Central Coast Road Series – CCCX #2",
@@ -353,6 +374,7 @@ export default [
     "_shortId" : "ryp1ket5Xx"
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-HyRk1xKcmg",
+    "status" : "Canceled",
     "name": "Master's OTF Omnium",
     "date": "February 12 2017",
     "discipline": "Road",
