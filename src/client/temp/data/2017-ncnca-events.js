@@ -183,7 +183,7 @@ export default [
     "promoters": [
       { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
     ],
-    "group" : "1",
+    "websiteUrl": "https://datadrivenathlete.com/napa-valley-camp/",
     "isDraft" : false,
     "_shortId" : "HJ1JWpvVx"
   }, {
@@ -200,7 +200,7 @@ export default [
     "promoters": [
       { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
     ],
-    "group" : "1",
+    "websiteUrl": "https://datadrivenathlete.com/napa-valley-camp/",
     "isDraft" : false,
     "_shortId" : "SyIFfpDEe"
   }, {
@@ -268,6 +268,7 @@ export default [
     "promoters": [
       { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
     ],
+    "websiteUrl": "https://datadrivenathlete.com/napa-valley-camp/",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkAazpD4e"
