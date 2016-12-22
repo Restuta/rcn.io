@@ -47,8 +47,9 @@ export default [
   { "id": "prm-30013", "name": "Team Mikes Bikes", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com" },
   { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
   { "id": "prm-30014", "name": "Data Driven Athlete", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com" },
+  { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
 
-  //last id 30014
+  //last id 30015
   //put 2017 promoters above this line
 
   { "id": "prm-2665", "name": "2 Wheel Racing" },
