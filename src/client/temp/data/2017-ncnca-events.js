@@ -1550,6 +1550,30 @@ export default [
     "isDraft" : false,
     "_shortId" : "rkyrJeYNx"
   }, {
+    "id" : "evt-ncnca-2017-ride2recovery-honor-ride-sacramento-H1h0lltNx",
+    "name" : "Ride2Recovery: Honor Ride - Sacramento",
+    "date": "May 13 2017",
+    "discipline": "Road",
+    "type": "Non-Competitive",
+    "location": {
+      "streetAddress": "270 Technology Way",
+      "city": "Rocklin",
+      "state": "CA"
+    },
+    "registrationUrl": "http://www.ride2recovery.com/honorRide.php",
+    "flyer" : {
+      "name": "FL_2017-340 Honor Ride Sacramento OKED",
+      "url": "http://www.ncnca.org/sites/default/files/12/11/2016%20-%2011%3A57pm/FL_2017-340%20Honor%20Ride%20Sacramento%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/12/11/2016%20-%2011%3A57pm/FL_2017-340%20Honor%20Ride%20Sacramento%20OKED.pdf",
+    "promoters": [
+      { "id": "prm-5116", "name": "Ride2Recovery" }, 
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1h0lltNx"
+  }, {
     "id" : "evt-ncnca-2017-berkeley-hills-road-race-rJNQkkgF9Qx",
     "name": "Berkeley Hills Road Race",
     "date": "May 13 2017",
