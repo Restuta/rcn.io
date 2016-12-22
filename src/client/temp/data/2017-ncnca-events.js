@@ -1466,6 +1466,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "HyMQ1yxF9Qe"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-marathon-mountain-bike-national-championships-ByDB5ktNx",
+    "name" : "USA Cycling Marathon Mountain Bike National Championships",
+    "date": "May 07 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "city": "Arkadelphia",
+      "state": "AR"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },      
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByDB5ktNx"
+  }, {
     "id" : "evt-ncnca-2017-salinas-criterium-HyXQJJgK5Xg",
     "name": "Salinas Criterium",
     "date": "May 07 2017",
