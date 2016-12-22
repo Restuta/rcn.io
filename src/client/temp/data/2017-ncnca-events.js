@@ -1289,6 +1289,63 @@ export default [
     "isDraft" : false,
     "_shortId" : "BJ3Gk1eY5mg"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-para-cycling-road-national-championships-Sk$UN1F4e",
+    "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
+    "date": "April 27 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Grand Junction",
+      "state": "CO"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Sk$UN1F4e"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-para-cycling-road-national-championships-Sk$CUJFEx",
+    "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
+    "date": "April 28 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Grand Junction",
+      "state": "CO"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Sk$CUJFEx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-para-cycling-road-national-championships-r1CZw1YEg",
+    "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
+    "date": "April 29 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Grand Junction",
+      "state": "CO"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "r1CZw1YEg"
+  }, {
     "id" : "evt-ncnca-2017-44th-mikes-bikes-cats-hill-classic-rk6zk1xY5Xg",
     "name": "44th Mike's Bikes Cat's Hill Classic",
     "date": "April 29 2017",
@@ -1325,6 +1382,25 @@ export default [
     },
     "websiteUrl": "http://honor.americanheart.org/site/PageServer?pagename=cnr_home",
     "registrationUrl": "http://honor.americanheart.org/site/TR?fr_id=4991&pg=entry",
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-para-cycling-road-national-championships-HyuPd1YVx",
+    "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
+    "date": "April 30 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Grand Junction",
+      "state": "CO"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HyuPd1YVx"
   }, {
     "id" : "evt-ncnca-2017-wente-vineyards-classic-road-race-H1kQyJlKq7e",
     "name" : "Wente Vineyards Classic Road Race",
