@@ -1623,6 +1623,118 @@ export default [
     "isDraft" : false,
     "_shortId" : "rJHX1JgtcQx"
   }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-r1e2mxYVl",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 14 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "r1e2mxYVl"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-HJf8EltEe",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 15 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "HJf8EltEe"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-SJdv4xYEg",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 16 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJdv4xYEg"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-ryEFExFVe",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 17 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ryEFExFVe"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-BJjq4lt4e",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 18 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJjq4lt4e"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-Sk53EgtEl",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 19 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Sk53EgtEl"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-rJX0EgKVe",
+    "name" : "Amgen Tour of California: Men's",
+    "date": "May 20 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rJX0EgKVe"
+  }, {
     "id" : "evt-ncnca-2017-modesto-downtown-criterium-H1UXk1eK97l",
     "name" : "Modesto Downtown Criterium",
     "date": "May 20 2017",
