@@ -1502,6 +1502,54 @@ export default [
     "isDraft" : false,
     "_shortId" : "HyXQJJgK5Xg"
   }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-ByVfhkY4g",
+    "name" : "Amgen Tour of California: Women's",
+    "date": "May 11 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByVfhkY4g"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-B1obyeY4e",
+    "name" : "Amgen Tour of California: Women's",
+    "date": "May 12 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B1obyeY4e"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-rkyrJeYNx",
+    "name" : "Amgen Tour of California: Women's",
+    "date": "May 13 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkyrJeYNx"
+  }, {
     "id" : "evt-ncnca-2017-berkeley-hills-road-race-rJNQkkgF9Qx",
     "name": "Berkeley Hills Road Race",
     "date": "May 13 2017",
@@ -1518,6 +1566,22 @@ export default [
     "draftNotes" : "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship.",
     "isDraft" : false,
     "_shortId" : "rJNQkkgF9Qx"
+  }, {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-H1VtkxFVe",
+    "name" : "Amgen Tour of California: Women's",
+    "date": "May 14 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sacramento",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1VtkxFVe"
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-6-rJHX1JgtcQx",
     "name" : "Central Coast Road Series – CCCX #6",
