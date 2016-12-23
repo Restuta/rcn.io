@@ -48,6 +48,8 @@
       top: pxToRem(-3);
       line-height: 3rem;
       letter-spacing: 0;
+      text-transform: none;
+      font-size: scaleUp(4);
     }
 
     .promoted-by-section {

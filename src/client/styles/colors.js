@@ -135,7 +135,7 @@ const event = {
     moved: colors.grey400,
   },
   road: {
-    'default': colors.primary,
+    'default': colors.white,
     criterium: '#00BF10',
     roadRace: colors.blue500,
     circuitRace: colors.orange500,

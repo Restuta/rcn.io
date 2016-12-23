@@ -4,6 +4,7 @@ import rawMtbEventsFromSpreadsheet from 'client/temp/data/2016-mtb'
 import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
 
 import rawNcnca2016Events from 'client/temp/data/2016-ncnca-events'
+import rawNcnca2017Events from 'client/temp/data/2017-ncnca-events'
 
 import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
@@ -45,7 +46,8 @@ const createEvent = rawEvent => {
     flyer: rawEvent.flyer,
     status: rawEvent.status || undefined, //getting rid of empty strings
     group: rawEvent.group, //group of event according to NCNCA planning document
-    notes: rawEvent.notes,
+    draftNotes: rawEvent.draftNotes,
+    isDraft: (rawEvent.isDraft || false),
     promoters: rawEvent.promoters || [],
     promoterInfo: rawEvent.promoterInfo,
     series: rawEvent.series,
@@ -62,8 +64,11 @@ const ncnca2016Events = preProcessEvents(rawNcnca2016Events)
 const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
   .then(eventsRaw => preProcessEvents(eventsRaw))
 
+const ncnca2017Events = preProcessEvents(rawNcnca2017Events)
+
 export {
   norcalMtb2016Events,
   ncnca2016Events,
   fetchNcncaDraftEvents2017,
+  ncnca2017Events
 }

@@ -1,6 +1,7 @@
 /*eslint-disable */
 
-export default [{
+export default [
+  {
   "id": "evt-2016-jan-03-23546-cx",
   "name": "CCCX Cyclocross Series #7",
   "status": "",
@@ -39,8 +40,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-17-23547-cx",
   "name": "CCCX Cyclocross Series — Series Final",
   "status": "",
@@ -79,8 +79,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-01-23614-hc",
   "name": "San Bruno Hill Climb",
   "status": "",
@@ -113,8 +112,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/11/24/2015%20-%207:58pm/FL_2016-115%20San%20Bruno%20Mountain%20Hill%20Climb%20OKED.pdf",
   "usacPermit": "2016-115",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-03-23615-clnx",
   "name": "Early Bird Criterium Training Series #1",
   "status": "",
@@ -135,8 +133,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -157,8 +154,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-10-23616-clnx",
   "name": "Early Bird Criterium Training Series #2",
   "status": "",
@@ -179,8 +175,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -201,8 +196,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-17-23617-clnx",
   "name": "Early Bird Criterium Training Series #3",
   "status": "",
@@ -223,8 +217,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -245,8 +238,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-24-23618-clnx",
   "name": "Early Bird Criterium Training Series #4",
   "status": "",
@@ -267,8 +259,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -289,8 +280,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-31-23619-clnx",
   "name": "Early Bird Criterium Training Series #5",
   "status": "",
@@ -311,8 +301,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -333,8 +322,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-16-23622-rr",
   "name": "Early Bird Road Race",
   "status": "Canceled",
@@ -355,8 +343,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -371,8 +358,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-03-23623-clnx",
   "name": "Clovis Criterium Training Series #1",
   "status": "",
@@ -412,8 +398,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-10-23624-clnx",
   "name": "Clovis Criterium Training Series #2",
   "status": "",
@@ -453,8 +438,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-17-23625-clnx",
   "name": "Clovis Criterium Training Series #3",
   "status": "",
@@ -494,8 +478,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-24-23626-clnx",
   "name": "Clovis Criterium Training Series #4",
   "status": "",
@@ -535,8 +518,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-31-23627-clnx",
   "name": "Clovis Criterium Training Series #5",
   "status": "",
@@ -576,8 +558,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-30-23628-ct",
   "name": "Cal Aggie Criterium",
   "status": "",
@@ -610,8 +591,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/29/2015%20-%2011:09pm/FL_2016-210%20Cal%20Aggie%20Criterium%20OKED.pdf",
   "usacPermit": "2016-210",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-30-23629-cr",
   "name": "Central Coast Road Series #1 — Seaside Bay View Circuit Race",
   "status": "",
@@ -650,8 +630,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-28-23631-cr",
   "name": "Central Coast Road Series #2 — Seaside Bay View Circuit Race",
   "status": "",
@@ -690,8 +669,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-19-23632-cr",
   "name": "Central Coast Road Series #3 — Seaside Bay View Circuit Race",
   "status": "",
@@ -730,8 +708,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-03-23633-cr",
   "name": "Central Coast Road Series — Seaside Bay View Circuit Race",
   "status": "",
@@ -770,8 +747,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-10-23634-cr",
   "name": "Central Coast Road Series — FT. ORD Circuit Race",
   "status": "",
@@ -810,8 +786,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-12-23635-cr",
   "name": "Central Coast Road Series — Ft Ord Circuit Race",
   "status": "",
@@ -850,8 +825,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-02-23636-cr",
   "name": "Central Coast Road Series — Seaside Bay View Circuit Race",
   "status": "",
@@ -890,8 +864,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-16-23637-cr",
   "name": "Central Coast Road Series — Ft Ord Circuit Race & The NCNCA Junior Road Race Championship",
   "status": "",
@@ -928,20 +901,17 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23630",
       "name": "2016 Central Coast Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-11-23638-cr",
   "name": "Central Coast Road Series #9",
   "status": "",
@@ -980,8 +950,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-20-23639-rr",
   "name": "UC Santa Cruz Slugapalooza (WCCC) — Road Race",
   "status": "",
@@ -1015,8 +984,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23641-cr",
   "name": "WCCC — Stanford: TTT & Circuit",
   "status": "",
@@ -1055,8 +1023,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23641-tt",
   "name": "WCCC — Stanford: TTT & Circuit",
   "status": "",
@@ -1095,8 +1062,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-07-23643-cr",
   "name": "Red Kite Omnium Event #1 — The Bump Circuit Race (Winter)",
   "status": "",
@@ -1135,8 +1101,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-07-23644-ct",
   "name": "Cherry Pie Criterium",
   "status": "",
@@ -1169,8 +1134,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/22/2015%20-%205:36pm/FL_2016-230%20Cherry%20Pie%20Criterium%20OKED.pdf",
   "usacPermit": "2016-230",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-feb-13-23646-rr",
   "name": "Cantua Creek Road Race — VP#1",
   "status": "",
@@ -1191,8 +1155,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -1213,8 +1176,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-13-23647-ct",
   "name": "Folsom Winter Criterium",
   "status": "",
@@ -1247,8 +1209,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/03/2016%20-%206:50pm/FL_2016-362%20Folsom%20Winter%20Criterium%20v2%20OKED.pdf",
   "usacPermit": "2016-362",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-feb-14-23648-cr",
   "name": "Copper Town Circuit Race",
   "status": "",
@@ -1281,8 +1242,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/10/2016%20-%2012:03am/FL_2016-300%20Copper%20Town%20Square%20Circuit%20Race%20OKED.pdf",
   "usacPermit": "2016-300",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-feb-14-23649-rr",
   "name": "Pine Flat Road Race — VP#2",
   "status": "",
@@ -1303,8 +1263,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -1325,8 +1284,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-15-23650-ct",
   "name": "Dinuba Criterium — VP#3",
   "status": "",
@@ -1347,8 +1305,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -1369,8 +1326,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-20-23651-rr",
   "name": "Snelling Road Race — VP#4",
   "status": "",
@@ -1391,8 +1347,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -1411,25 +1366,21 @@ export default [{
       "id": "ser-23303",
       "name": "2015 NCNCA Women's Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23301",
       "name": "2015 Junior Points Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-26-23652-cr",
   "name": "Chico Stage Race pb Sierra Nevada Brewing Co — Stage 1: Thunderhill Circuit Race",
   "status": "",
@@ -1466,15 +1417,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-21-23656-ct",
   "name": "Original Merced Criterium — VP#5",
   "status": "",
@@ -1495,8 +1444,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -1517,8 +1465,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-04-23658-hc",
   "name": "Madera Stage Race: HC — VP#6",
   "status": "",
@@ -1539,8 +1486,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -1559,15 +1505,13 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-06-23659-ct",
   "name": "Red Kite Omnium Event #2 — Red Kite Criterium (March)",
   "status": "",
@@ -1606,8 +1550,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-17-23660-ct",
   "name": "Red Kite Omnium Event #4 — Red Kite Criterium (April)",
   "status": "",
@@ -1646,8 +1589,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-15-23661-ct",
   "name": "Red Kite Omnium Event #6 — Red Kite Criterium (May)",
   "status": "",
@@ -1686,8 +1628,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-07-23662-ct",
   "name": "Red Kite Omnium Event #13 — Red Kite Criterium (August)",
   "status": "",
@@ -1726,8 +1667,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-10-23663-ct",
   "name": "Red Kite Omnium Event #9 — Red Kite Criterium (July)",
   "status": "",
@@ -1766,8 +1706,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23664-ct",
   "name": "Land Park Criterium",
   "status": "",
@@ -1800,8 +1739,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/01/21/2016%20-%206:11pm/FL_2016-487%20Land%20Park%20Criterium%20OKED.pdf",
   "usacPermit": "2016-487",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23665-rr",
   "name": "Ward's Ferry Road Race — VP#7",
   "status": "",
@@ -1822,8 +1760,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -1844,8 +1781,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-13-23666-rr",
   "name": "Bariani Road Race",
   "status": "",
@@ -1878,8 +1814,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/03/02/2016%20-%2010:43am/FL_2016-489%20Bariani%20Road%20Race%20v3%20OKED.pdf",
   "usacPermit": "2016-489",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-26-23668-rr",
   "name": "WCCC — Cal: TTT & Road Race (Collegiate & Junior Only)",
   "status": "",
@@ -1918,8 +1853,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-26-23668-tt",
   "name": "WCCC — Cal: TTT & Road Race (Collegiate & Junior Only)",
   "status": "",
@@ -1958,8 +1892,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-19-23669-rr",
   "name": "UC Merced Race Weekend — Road Race (WCCC)",
   "status": "",
@@ -1993,8 +1926,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-09-23672-rr",
   "name": "WCCC — UNR: Crit & TTT",
   "status": "",
@@ -2028,8 +1960,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-20-23673-tt",
   "name": "Red Kite Omnium Event #3 — Tempus Fugit Time Trial (Spring)",
   "status": "",
@@ -2068,8 +1999,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-20-23674-ct",
   "name": "Santa Cruz Classic Criterium XLVII — VP#8",
   "status": "",
@@ -2106,15 +2036,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-26-23675-rr",
   "name": "Copperopolis Road Race — VP#9",
   "status": "",
@@ -2151,15 +2079,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-02-23676-cr",
   "name": "Copper Town Circuit Race",
   "status": "",
@@ -2192,8 +2118,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/10/2016%20-%2012:07am/FL_2016-937%20Coppertown%20Circuit%20Race%20OKED.pdf",
   "usacPermit": "2016-937",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-09-23677-rr",
   "name": "Turlock Lake Road Race",
   "status": "",
@@ -2226,8 +2151,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/07/2016%20-%2010:42pm/FL_2016-846%20Turlock%20Lake%20Road%20Race%20v2%20OKED.pdf",
   "usacPermit": "2016-846",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-10-23678-ct",
   "name": "TEA Solar Cycling Classic",
   "status": "",
@@ -2255,8 +2179,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/03/02/2016%20-%206:30pm/FL_2016-957%20TEA%20Solar%20Cycling%20Classic%20PB%20CSU%20Stanislaus%20OKED.pdf",
   "usacPermit": "2016-957",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-14-23679-mtb",
   "name": "Sea Otter Classic (April 14-17)",
   "status": "",
@@ -2284,8 +2207,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/08/2015%20-%206:51pm/FL_2016-154%20SUBARU%20Sea%20Otter%20Classic%20Road%20OKED.jpg",
   "usacPermit": "2016-154",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-15-23679-cx",
   "name": "Sea Otter Classic (April 14-17)",
   "status": "",
@@ -2313,8 +2235,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/08/2015%20-%206:51pm/FL_2016-154%20SUBARU%20Sea%20Otter%20Classic%20Road%20OKED.jpg",
   "usacPermit": "2016-154",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-16-23679-rr",
   "name": "Sea Otter Classic (April 14-17)",
   "status": "",
@@ -2342,8 +2263,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/08/2015%20-%206:51pm/FL_2016-154%20SUBARU%20Sea%20Otter%20Classic%20Road%20OKED.jpg",
   "usacPermit": "2016-154",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-17-23679-ct",
   "name": "Sea Otter Classic (April 14-17)",
   "status": "",
@@ -2371,8 +2291,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/12/08/2015%20-%206:51pm/FL_2016-154%20SUBARU%20Sea%20Otter%20Classic%20Road%20OKED.jpg",
   "usacPermit": "2016-154",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-23-23680-cr",
   "name": "Red Kite Omnium Event #5 — Winchester Circuit Race",
   "status": "",
@@ -2390,10 +2309,9 @@ export default [{
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1194",
   "promoters": [
-    {
-      "id": "prm-23754",
-      "name": "Red Kite Racing / Body Concepts Cycling Team / Winchester Cycling Club"
-    }
+      { "id": "prm-4873", "name": "Red Kite Racing" },
+      { "id": "prm-30002", "name": "Body Concepts Cycling Team" },
+      { "id": "prm-30003", "name": "Winchester Cycling Club" },
   ],
   "promoterInfo": null,
   "registrationUrl": "https://www.bikereg.com/2016-rko5",
@@ -2411,8 +2329,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-23-23681-ct",
   "name": "Clovis Criterium",
   "status": "Canceled",
@@ -2440,8 +2357,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-24-23682-rr",
   "name": "Wente Vineyards Road Race",
   "status": "",
@@ -2480,8 +2396,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-01-23684-cr",
   "name": "Golden State Race Series p/b Rio Strada Racing: Circuit & TTT",
   "status": "",
@@ -2520,8 +2435,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-01-23685-ct",
   "name": "NCNCA Juniors Criterium Championships — Salinas Criterium",
   "status": "",
@@ -2560,8 +2474,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-07-23686-rr",
   "name": "Berkeley Hills Road Race",
   "status": "",
@@ -2600,8 +2513,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-14-23687-ct",
   "name": "Mike's Bikes Cat's Hill Classic",
   "status": "",
@@ -2640,8 +2552,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-08-23688-rr",
   "name": "Regalado Road Race — VP#10",
   "status": "",
@@ -2662,8 +2573,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -2684,8 +2594,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-28-23689-cr",
   "name": "OTF Omnium Featuring Budweiser Sequoia Cycling Classic: Circuit & TT",
   "status": "",
@@ -2713,8 +2622,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/05/12/2016%20-%203:05pm/FL_2016-1587%20OTF%20Omnium%20and%20FL_2016-1679%20Budweiser%20Sequoia%20Cycling%20Classic%20v3%20OKED_0.pdf",
   "usacPermit": "2016-1587",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-28-23689-tt",
   "name": "OTF Omnium Featuring Budweiser Sequoia Cycling Classic: Circuit & TT",
   "status": "",
@@ -2742,8 +2650,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/05/12/2016%20-%203:05pm/FL_2016-1587%20OTF%20Omnium%20and%20FL_2016-1679%20Budweiser%20Sequoia%20Cycling%20Classic%20v3%20OKED_0.pdf",
   "usacPermit": "2016-1587",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-20-23690-tt",
   "name": "Mariposa County Women's Stage Race: ITT — VP#11",
   "status": "Canceled",
@@ -2764,8 +2671,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -2784,15 +2690,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-21-23691-ct",
   "name": "Modesto Downtown Criterium",
   "status": "",
@@ -2825,8 +2729,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/03/02/2016%20-%2010:42am/FL_2016-1202%20Modesto%20Downtown%20Criterium%20OKED.pdf",
   "usacPermit": "2016-1202",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-22-23692-rr",
   "name": "Modesto Road Race",
   "status": "",
@@ -2859,8 +2762,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/03/18/2016%20-%203:47pm/FL_2016-1203%20Modesto%20Road%20Race%20v2%20OKED.pdf",
   "usacPermit": "2016-1203",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-28-23693-ct",
   "name": "Folsom Classic Criterium",
   "status": "",
@@ -2893,8 +2795,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/25/2016%20-%203:07pm/FL_2016-1750%20Folsom%20Classic%20Criterium%20v3%20OKED.pdf",
   "usacPermit": "2016-1750",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-29-23695-rr",
   "name": "Mount Hamilton Road Race",
   "status": "",
@@ -2933,8 +2834,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-30-23696-ct",
   "name": "Memorial Day Criterium",
   "status": "",
@@ -2967,8 +2867,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/03/17/2016%20-%206:42pm/FL_2016-251%20Memorial%20Day%20Criterium%20v3%20OKED.pdf",
   "usacPermit": "2016-251",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-30-23697-ct",
   "name": "Clovis Hills Criterium",
   "status": "Canceled",
@@ -2996,8 +2895,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-18-23698-ct",
   "name": "Red Kite Omnium Event #7 — Tri-Valley Criterium Classic",
   "status": "",
@@ -3031,8 +2929,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-04-23699-rr",
   "name": "Pescadero Coastal Classic Road Race",
   "status": "",
@@ -3071,8 +2968,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-04-23700-ct",
   "name": "ICCC Dash for Cash",
   "status": "",
@@ -3100,8 +2996,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/07/2016%20-%2010:38pm/FL_2016-1145%20Dash%20for%20Cash%20OKED.pdf",
   "usacPermit": "2016-1145",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-05-23701-ct",
   "name": "Lodi Cyclefest",
   "status": "",
@@ -3135,8 +3030,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-11-23702-ct",
   "name": "Mighty Tour de Nez",
   "status": "",
@@ -3175,8 +3069,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-12-23703-tt",
   "name": "NCNCA District TT Championships — Loyalton Time Trial",
   "status": "",
@@ -3213,15 +3106,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-19-23704-ct",
   "name": "Nevada City Cycling Classic",
   "status": "",
@@ -3255,8 +3146,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-19-23705-tt",
   "name": "Calaveras Time Trial",
   "status": "",
@@ -3289,8 +3179,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/14/2016%20-%2011:44pm/FL_2016-1780%20Calaveras%20Time%20Trial%20OKED.pdf",
   "usacPermit": "2016-1780",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-25-23706-ct",
   "name": "IRC Tire Presents Red Kite Omnium Event #8 — Martinez Classic Downtown Criterium",
   "status": "",
@@ -3329,8 +3218,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-25-23707-hc",
   "name": "NCNCA Hillclimb Championships — Mt. Diablo Hillclimb TT",
   "status": "",
@@ -3364,8 +3252,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-26-23708-ct",
   "name": "Parnassus Investments Burlingame Criterium",
   "status": "",
@@ -3398,8 +3285,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/06/20/2016%20-%202:24pm/FL_2016-1991%20The%20Parnassus%20Investments%20Burlingame%20Criterium%20v4%20(promov5)%20OKED.pdf",
   "usacPermit": "2016-1991",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-02-23709-ct",
   "name": "Roseville Criterium",
   "status": "Canceled",
@@ -3427,8 +3313,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-03-23710-rr",
   "name": "Leesville/Lodoga Road Race — VP#12",
   "status": "",
@@ -3467,8 +3352,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-04-23711-ct",
   "name": "Davis Bike Club Fourth of July Criterium",
   "status": "",
@@ -3507,8 +3391,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-09-23712-ct",
   "name": "Watsonville Criterium — VP#13",
   "status": "",
@@ -3547,8 +3430,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-24-23713-cr",
   "name": "Red Kite Omnium Event #11 — The Bump Circuit Race (Summer)",
   "status": "",
@@ -3587,8 +3469,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-17-23714-ct",
   "name": "Colavita Grand Prix",
   "status": "",
@@ -3621,8 +3502,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/06/11/2016%20-%201:34pm/FL_2016-2177%20Colavita%20Norcal%20Grand%20Prix%20OKED.pdf",
   "usacPermit": "2016-2177",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-23-23715-hc",
   "name": "Red Kite Omnium Event #10 — Crossfire Hurricane Hill Climb Challenge",
   "status": "",
@@ -3661,8 +3541,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-31-23716-ct",
   "name": "Red Kite Omnium Event #12 — The 32nd Annual Berkeley Bicycle Club Criterium",
   "status": "",
@@ -3680,10 +3559,10 @@ export default [{
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=2416",
   "promoters": [
-    {
-      "id": "prm-23753",
-      "name": "Red Kite Racing / Berkeley Bicycle Club / East Bay Velo / Albany High School MTB Team"
-    }
+      { "id": "prm-4873", "name": "Red Kite Racing" },
+      { "id": "prm-2639", "name": "Berkeley Bicycle Club" },
+      { "id": "prm-30000", "name": "East Bay Velo" },
+      { "id": "prm-30001", "name": "Albany High School MTB Team" },
   ],
   "promoterInfo": "For more information visit redkiteracing.com",
   "registrationUrl": "https://www.bikereg.com/2016-rko12",
@@ -3701,8 +3580,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-30-23717-ct",
   "name": "San Rafael Sunset Criterium",
   "status": "",
@@ -3736,8 +3614,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-06-23718-tt",
   "name": "Warnerville Time Trial — VP#14, CC#1",
   "status": "Canceled",
@@ -3774,15 +3651,13 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-06-23719-rr",
   "name": "Patterson Pass Road Race — VP#15, CC#2",
   "status": "",
@@ -3819,15 +3694,13 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-13-23720-rr",
   "name": "Dunnigan Hills Road Race — VP#16, CC#3",
   "status": "",
@@ -3864,20 +3737,17 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-14-23721-ct",
   "name": "Suisun Harbor Criterium — VP#17, CC#4",
   "status": "",
@@ -3914,15 +3784,13 @@ export default [{
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-21-23722-tt",
   "name": "Red Kite Omnium Event #14 — Tempus Fugit Time Trial (Summer)",
   "status": "",
@@ -3959,15 +3827,13 @@ export default [{
       "id": "ser-23645",
       "name": "2016 Red Kite Omnium",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-20-23723-rr",
   "name": "NCNCA Masters Road Championships — San Ardo Road Race - VP#18, CC#5",
   "status": "",
@@ -4004,20 +3870,17 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-21-23724-rr",
   "name": "University Road Race — VP#19, CC#6",
   "status": "",
@@ -4054,15 +3917,13 @@ export default [{
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-27-23725-rr",
   "name": "NCNCA Elite Road Championships — Winters Road Race - VP#20, CC#7",
   "status": "",
@@ -4083,12 +3944,10 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-2668",
       "name": "Monticello Cycling Club"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4107,25 +3966,21 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-28-23726-ct",
   "name": "Vacaville Gran Prix — VP#21, CC#8",
   "status": "Canceled",
@@ -4162,20 +4017,17 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-03-23727-ct",
   "name": "Red Kite Omnium Event #15 — Red Kite Omnium Championship Weekend: Day 1",
   "status": "",
@@ -4214,8 +4066,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-05-23728-ct",
   "name": "Giro di San Francisco — VP#22, CC#9",
   "status": "",
@@ -4236,12 +4087,10 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-5341",
       "name": "Team Metromint"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4260,20 +4109,17 @@ export default [{
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-10-23729-rr",
   "name": "Challenge Challenge Road Race — VP#23, CC#10",
   "status": "Canceled",
@@ -4294,8 +4140,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4314,15 +4159,13 @@ export default [{
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-10-23730-hc",
   "name": "54th Mt. Tamalpais Hill Climb",
   "status": "Canceled",
@@ -4355,8 +4198,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-17-23731-tt",
   "name": "Esparto Time Trial — VP#24, CC#11",
   "status": "",
@@ -4377,8 +4219,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -4397,15 +4238,13 @@ export default [{
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-18-23732-ct",
   "name": "NCNCA Elite Criterium Championships — 12th Annual Oakland Grand Prix - VP#25, CC#12",
   "status": "",
@@ -4426,8 +4265,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -4446,25 +4284,21 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23752",
       "name": "2016 Cal Cup",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-18-23733-hc",
   "name": "Fremont Peak Hill Climb",
   "status": "Canceled",
@@ -4497,8 +4331,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-24-23734-rr",
   "name": "Henleyville Road Race — VP#26",
   "status": "",
@@ -4519,8 +4352,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4541,8 +4373,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-13-23735-rr",
   "name": "WCCC — Stanford: Road Race",
   "status": "",
@@ -4581,8 +4412,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-21-23736-ct",
   "name": "UC Santa Cruz Slugapalooza (WCCC) — Criterium",
   "status": "",
@@ -4616,8 +4446,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-27-23737-ct",
   "name": "WCCC — Cal: Berkeley Streets Criterium (Collegiate & USAC)",
   "status": "",
@@ -4656,8 +4485,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-20-23738-ct",
   "name": "UC Merced Race Weekend — Criterium (WCCC)",
   "status": "",
@@ -4691,8 +4519,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-10-23739-ct",
   "name": "WCCC — UNR: Road Race",
   "status": "",
@@ -4726,8 +4553,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-27-23740-rr",
   "name": "Chico Stage Race pb Sierra Nevada Brewing Co — Stage 2: Paskenta Hills RR",
   "status": "",
@@ -4764,15 +4590,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-28-23741-ct",
   "name": "Chico Stage Race pb Sierra Nevada Brewing Co — Stage 4: Steve Harrison Memorial Criterium",
   "status": "",
@@ -4809,15 +4633,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-05-23743-tt",
   "name": "Madera Stage Race: Crit & TT — VP#6",
   "status": "",
@@ -4838,8 +4660,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4858,15 +4679,13 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-05-23743-ct",
   "name": "Madera Stage Race: Crit & TT — VP#6",
   "status": "",
@@ -4887,8 +4706,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4907,15 +4725,13 @@ export default [{
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-06-23744-tt",
   "name": "Madera Stage Race: RR — VP#6",
   "status": "",
@@ -4936,8 +4752,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -4956,15 +4771,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-21-23746-hc",
   "name": "Mariposa County Women's Stage Race: HC & RR — VP#11",
   "status": "Canceled",
@@ -4985,8 +4798,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -5005,15 +4817,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-21-23746-tt",
   "name": "Mariposa County Women's Stage Race: HC & RR — VP#11",
   "status": "Canceled",
@@ -5034,8 +4844,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -5054,15 +4863,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-21-23746-rr",
   "name": "Mariposa County Women's Stage Race: HC & RR — VP#11",
   "status": "Canceled",
@@ -5083,8 +4890,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -5103,15 +4909,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-22-23747-rr",
   "name": "Mariposa County Women's Stage Race: RR — VP#11",
   "status": "Canceled",
@@ -5132,8 +4936,7 @@ export default [{
     {
       "id": "prm-3226",
       "name": "Velo Promo"
-    },
-    {
+      }, {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
     }
@@ -5152,15 +4955,13 @@ export default [{
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23657",
       "name": "2016 Velo Promo Road Series",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-30-23748-ct",
   "name": "Golden State Race Series p/b Rio Strada Racing: Criterium",
   "status": "",
@@ -5199,8 +5000,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-29-23749-ct",
   "name": "OTF Omnium Featuring Budweiser Sequoia Cycling Classic: Criterium",
   "status": "",
@@ -5228,8 +5028,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/05/12/2016%20-%203:05pm/FL_2016-1587%20OTF%20Omnium%20and%20FL_2016-1679%20Budweiser%20Sequoia%20Cycling%20Classic%20v3%20OKED.pdf",
   "usacPermit": "2016-1679",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-04-23750-ct",
   "name": "NCNCA Masters Criterium Championships — Red Kite Omnium Event #15 - Red Kite Omnium Championship Weekend: Day 2",
   "status": "",
@@ -5266,15 +5065,13 @@ export default [{
       "id": "ser-23847",
       "name": "2016 NCNCA Championship Races",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23645",
       "name": "2016 Red Kite Omnium",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-15-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5302,8 +5099,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-16-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5331,8 +5127,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-17-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5360,8 +5155,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-18-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5389,8 +5183,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-19-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5418,8 +5211,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-20-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5447,8 +5239,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-21-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5476,8 +5267,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-22-23751-rr",
   "name": "Tour of California (May 15-22)",
   "status": "",
@@ -5505,8 +5295,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-21-23770-ncmp",
   "name": "Ride2Recovery: Honor Ride Sacramento",
   "status": "",
@@ -5539,8 +5328,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/11/24/2015%20-%207:42pm/FL_2016-173%20Honor%20Ride%20Sacramento%20OKED.pdf",
   "usacPermit": "2016-173",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-05-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5579,8 +5367,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-06-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5619,8 +5406,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-07-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5659,8 +5445,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-08-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5699,8 +5484,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-09-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5739,8 +5523,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-10-23771-cx",
   "name": "USA Cycling CX National Championship",
   "status": "",
@@ -5779,8 +5562,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-16-23772-tt",
   "name": "USA Cycling Professional Criterium & Team Time Trial National Championships",
   "status": "",
@@ -5819,8 +5601,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-17-23772-ct",
   "name": "USA Cycling Professional Criterium & Team Time Trial National Championships",
   "status": "",
@@ -5859,8 +5640,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-13-23773-rr",
   "name": "USA Cycling Collegiate Road National Championships",
   "status": "",
@@ -5899,8 +5679,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-14-23773-rr",
   "name": "USA Cycling Collegiate Road National Championships",
   "status": "",
@@ -5939,8 +5718,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-15-23773-rr",
   "name": "USA Cycling Collegiate Road National Championships",
   "status": "",
@@ -5979,8 +5757,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-24-23774-rr",
   "name": "USA Cycling Masters & Para-cycling Road National Championships",
   "status": "",
@@ -6019,8 +5796,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-25-23774-rr",
   "name": "USA Cycling Masters & Para-cycling Road National Championships",
   "status": "",
@@ -6059,8 +5835,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-26-23774-rr",
   "name": "USA Cycling Masters & Para-cycling Road National Championships",
   "status": "",
@@ -6099,8 +5874,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-27-23774-rr",
   "name": "USA Cycling Masters & Para-cycling Road National Championships",
   "status": "",
@@ -6139,8 +5913,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-28-23774-rr",
   "name": "USA Cycling Masters & Para-cycling Road National Championships",
   "status": "",
@@ -6179,8 +5952,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-27-23775-tt",
   "name": "USA Cycling Professional Road Race & Time Trial National Championships",
   "status": "",
@@ -6219,8 +5991,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-28-23775-rr",
   "name": "USA Cycling Professional Road Race & Time Trial National Championships",
   "status": "",
@@ -6259,8 +6030,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-29-23775-rr",
   "name": "USA Cycling Professional Road Race & Time Trial National Championships",
   "status": "",
@@ -6299,8 +6069,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-04-23776-mtb",
   "name": "USA Cycling Marathon Mountain Bike National Championship",
   "status": "",
@@ -6339,8 +6108,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-30-23777-rr",
   "name": "USA Cycling Amateur Road National Championships",
   "status": "",
@@ -6379,8 +6147,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-01-23777-rr",
   "name": "USA Cycling Amateur Road National Championships",
   "status": "",
@@ -6419,8 +6186,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-02-23777-rr",
   "name": "USA Cycling Amateur Road National Championships",
   "status": "",
@@ -6459,8 +6225,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-03-23777-rr",
   "name": "USA Cycling Amateur Road National Championships",
   "status": "",
@@ -6499,8 +6264,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-25-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6539,8 +6303,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-26-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6579,8 +6342,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-27-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6619,8 +6381,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-28-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6659,8 +6420,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-29-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6699,8 +6459,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-30-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6739,8 +6498,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-31-23779-trk",
   "name": "USA Cycling Elite & Junior Track National Championships",
   "status": "",
@@ -6779,8 +6537,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-09-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -6819,8 +6576,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-10-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -6859,8 +6615,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-11-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -6899,8 +6654,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-12-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -6939,8 +6693,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-13-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -6979,8 +6732,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-14-23780-trk",
   "name": "USA Cycling Masters Track National Championships",
   "status": "",
@@ -7019,8 +6771,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-13-23781-hc",
   "name": "USA Cycling Hill Climb National Championships",
   "status": "",
@@ -7059,8 +6810,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-15-23782-trk",
   "name": "USA Cycling Collegiate Track National Championships",
   "status": "",
@@ -7099,8 +6849,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-16-23782-trk",
   "name": "USA Cycling Collegiate Track National Championships",
   "status": "",
@@ -7139,8 +6888,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-17-23782-trk",
   "name": "USA Cycling Collegiate Track National Championships",
   "status": "",
@@ -7179,8 +6927,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-21-23783-mtb",
   "name": "USA Cycling Collegiate Mountain Bike National Championships",
   "status": "",
@@ -7203,14 +6950,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7219,8 +6967,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-22-23783-mtb",
   "name": "USA Cycling Collegiate Mountain Bike National Championships",
   "status": "",
@@ -7243,14 +6990,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7259,8 +7007,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-23-23783-mtb",
   "name": "USA Cycling Collegiate Mountain Bike National Championships",
   "status": "",
@@ -7283,14 +7030,15 @@ export default [{
       "name": "USA Cycling"
     }
   ],
-  "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
+    "promoterInfo" : "https://www.usacycling.org/national-championships",
+    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
-    "url": "",
-    "mimeType": null
+      "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
+      "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+    "flyerUrl" : "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
   "usacPermit": "",
   "series": [
     {
@@ -7299,8 +7047,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-25-23786-hc",
   "name": "Mt Diablo Challenge Hill Climb",
   "status": "",
@@ -7328,8 +7075,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/11/2016%20-%206:35pm/FL_2016-496%20Save%20Mount%20Diablo%20-%20Mt%20Diablo%20Challenge%20Hill%20Climb%20OKED.pdf",
   "usacPermit": "2016-496",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-05-23794-clnx",
   "name": "Early Bird Criterium Training Series (Indoor Clinic)",
   "status": "",
@@ -7350,8 +7096,7 @@ export default [{
     {
       "id": "prm-2631",
       "name": "Golden Chain Cyclists"
-    },
-    {
+      }, {
       "id": "prm-3226",
       "name": "Velo Promo"
     }
@@ -7372,8 +7117,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-18-23800-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -7412,8 +7156,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-22-23801-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -7452,8 +7195,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-21-23802-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -7492,8 +7234,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-18-23803-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -7532,8 +7273,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-16-23804-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -7572,8 +7312,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-feb-28-23810-tt",
   "name": "Chico Stage Race pb Sierra Nevada Brewing Co — Stage 3: River Road TT",
   "status": "",
@@ -7610,15 +7349,13 @@ export default [{
       "id": "ser-23764",
       "name": "2016 NCNCA Premier Series",
       "url": ""
-    },
-    {
+      }, {
       "id": "ser-23742",
       "name": "2016 NCNCA Stage Races",
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jan-17-23811-cx",
   "name": "Rockville Bike CX Series #3",
   "status": "",
@@ -7646,8 +7383,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-24-23812-cx",
   "name": "Rockville Bike CX Series #4",
   "status": "",
@@ -7675,8 +7411,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jan-31-23813-cx",
   "name": "Rockville Bike CX Series #5",
   "status": "",
@@ -7704,8 +7439,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-feb-06-23816-rr",
   "name": "Tuttle Creek Road Race",
   "status": "",
@@ -7738,8 +7472,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/01/29/2016%20-%203:51pm/FL_2016-578%20Tuttle%20Creek%20Road%20Race%20v2%20OKED.pdf",
   "usacPermit": "2016-578",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-01-23837-ncmp",
   "name": "Sonora Gran Fondo: Rim Fire Century",
   "status": "",
@@ -7767,8 +7500,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/10/2016%20-%203:57pm/FL_2016-942%20Sonora%20Gran%20Fondo%20OKED.pdf",
   "usacPermit": "2016-942",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-06-23843-ncmp",
   "name": "Tour de Ed",
   "status": "",
@@ -7796,8 +7528,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/24/2016%20-%203:49pm/FL_2016-1157%20Tour%20de%20Ed%20OKED.jpg",
   "usacPermit": "2016-1157",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-16-23844-cr",
   "name": "Cal Poly San Luis Obispo Road Race Weekend: Circuit Race",
   "status": "",
@@ -7825,8 +7556,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/25/2016%20-%2011:39pm/FL_2016-1063%20Wheelmen%20Road%20Race%20OKED.pdf",
   "usacPermit": "2016-1063",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-17-23845-rr",
   "name": "Clone of Cal Poly San Luis Obispo Road Race Weekend: Road Race",
   "status": "",
@@ -7854,8 +7584,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/02/25/2016%20-%2011:39pm/FL_2016-1063%20Wheelmen%20Road%20Race%20OKED.pdf",
   "usacPermit": "2016-1063",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-27-23849-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #1",
   "status": "",
@@ -7894,8 +7623,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-04-23850-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #2",
   "status": "",
@@ -7934,8 +7662,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-11-23851-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #3",
   "status": "",
@@ -7974,8 +7701,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-18-23852-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #4",
   "status": "",
@@ -8014,8 +7740,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-may-25-23853-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #5",
   "status": "",
@@ -8054,8 +7779,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-01-23854-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #6",
   "status": "",
@@ -8094,8 +7818,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-08-23855-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #7",
   "status": "",
@@ -8134,8 +7857,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-15-23856-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #8",
   "status": "",
@@ -8174,8 +7896,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jun-29-23857-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #9",
   "status": "",
@@ -8214,8 +7935,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-06-23858-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #10",
   "status": "",
@@ -8254,8 +7974,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-13-23859-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #11",
   "status": "",
@@ -8294,8 +8013,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-20-23860-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #12",
   "status": "",
@@ -8334,8 +8052,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-27-23861-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #13",
   "status": "",
@@ -8374,8 +8091,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-03-23862-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #14",
   "status": "",
@@ -8414,8 +8130,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-17-23863-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #15",
   "status": "",
@@ -8454,8 +8169,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-24-23864-trk",
   "name": "FFWD Wheels Wednesday Night Track League p/b Vie13 #16",
   "status": "",
@@ -8494,8 +8208,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-mar-08-23865-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -8528,8 +8241,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-08-23866-trk",
   "name": "Junior/Espoirs Training: Structured Session",
   "status": "",
@@ -8562,8 +8274,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-10-23867-trk",
   "name": "SportVelo Endurance Training",
   "status": "",
@@ -8596,8 +8307,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-11-23868-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -8630,8 +8340,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23869-trk",
   "name": "Saturday Morning Beginner Session",
   "status": "",
@@ -8664,8 +8373,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-13-23870-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -8698,8 +8406,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-12-23871-trk",
   "name": "Rain Date for PCC Sprint Clinic",
   "status": "",
@@ -8732,8 +8439,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-14-23872-trk",
   "name": "Monday Night Training",
   "status": "",
@@ -8766,8 +8472,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-17-23873-mtng",
   "name": "NCVA Board of Directors Meeting",
   "status": "",
@@ -8800,8 +8505,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-15-23874-clnx",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -8834,8 +8538,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-15-23875-trk",
   "name": "Junior/Espoirs Training: Structured Session",
   "status": "",
@@ -8868,8 +8571,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-17-23876-trk",
   "name": "SportVelo Endurance Training",
   "status": "",
@@ -8902,8 +8604,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-18-23877-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -8936,8 +8637,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-19-23878-trk",
   "name": "Saturday Morning Beginner Session",
   "status": "",
@@ -8970,8 +8670,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-20-23879-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -9004,8 +8703,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-19-23880-trk",
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
@@ -9038,8 +8736,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-16-23881-clnx",
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
@@ -9072,8 +8769,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-21-23882-clnx",
   "name": "8th Annual Women's Track — Race Training Series",
   "status": "",
@@ -9106,8 +8802,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-15-23883-trk",
   "name": "Advanced Unstructured Training",
   "status": "",
@@ -9140,8 +8835,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-21-23884-trk",
   "name": "Monday Night Training",
   "status": "",
@@ -9174,8 +8868,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-mar-28-23885-trk",
   "name": "Monday Night Training",
   "status": "",
@@ -9208,8 +8901,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-09-23894-clnx",
   "name": "Los Gatos Bicycle Racing Club's How to Kill Cat's Hill Clinic",
   "status": "",
@@ -9248,8 +8940,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-apr-02-23901-mtb",
   "name": "SoNoMas",
   "status": "",
@@ -9282,8 +8973,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-03-23902-mtb",
   "name": "Big Sandy Race",
   "status": "",
@@ -9311,8 +9001,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-11-23903-ct",
   "name": "Clovis Criterium",
   "status": "Canceled",
@@ -9340,8 +9029,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-03-23904-mtb",
   "name": "MTB Celebration",
   "status": "",
@@ -9369,8 +9057,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-10-23905-mtb",
   "name": "Napa Valley Dirt Classic",
   "status": "",
@@ -9398,8 +9085,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-10-23906-mtb",
   "name": "Nevada City Dirt Classic #1",
   "status": "",
@@ -9427,8 +9113,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-30-23907-mtb",
   "name": "Lemurian Shasta Classic",
   "status": "",
@@ -9456,8 +9141,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-01-23908-mtb",
   "name": "Race Behind Bars #1",
   "status": "",
@@ -9485,8 +9169,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-30-23909-mtb",
   "name": "Nevada City Dirt Classic #2",
   "status": "",
@@ -9514,8 +9197,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-07-23910-mtb",
   "name": "CCCX #7",
   "status": "",
@@ -9548,8 +9230,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-13-23911-mtb",
   "name": "Free Beckwourth 8-hour MTB Race",
   "status": "",
@@ -9577,8 +9258,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-14-23911-mtb",
   "name": "Free Beckwourth 8-hour MTB Race",
   "status": "",
@@ -9606,8 +9286,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-15-23911-mtb",
   "name": "Free Beckwourth 8-hour MTB Race",
   "status": "",
@@ -9635,8 +9314,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-15-23912-mtb",
   "name": "Race Behind Bars #2",
   "status": "",
@@ -9664,8 +9342,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-apr-30-23915-rr",
   "name": "Junior Road Race Championships",
   "status": "Canceled",
@@ -9693,8 +9370,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-21-23916-mtb",
   "name": "Santa Cruz Old Cabin Classic",
   "status": "",
@@ -9722,8 +9398,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-21-23917-mtb",
   "name": "Pine Nut Cracker",
   "status": "",
@@ -9751,8 +9426,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-22-23918-mtb",
   "name": "CCCX #8",
   "status": "",
@@ -9785,8 +9459,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-19-23919-mtb",
   "name": "CCCX #9",
   "status": "",
@@ -9819,8 +9492,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-23-23920-mtb",
   "name": "CCCX #10",
   "status": "",
@@ -9853,8 +9525,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-21-23921-mtb",
   "name": "CCCX Final",
   "status": "",
@@ -9887,8 +9558,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-22-23922-mtb",
   "name": "Nevada City Dirt Classic #3",
   "status": "",
@@ -9916,8 +9586,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-07-23924-ncmp",
   "name": "Fast Freddie Folsom Fondo",
   "status": "",
@@ -9945,8 +9614,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/14/2016%20-%2011:41pm/FL_2016-1758%20Fast%20Freddie%20Folsom%20Fondo%20OKED.pdf",
   "usacPermit": "2016-1758",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-28-23928-rr",
   "name": "Death Valley Road Omnium",
   "status": "",
@@ -9979,8 +9647,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/25/2016%20-%203:05pm/FL_2016-1849%20Death%20Valley%20Road%20Omnium%20OKED.pdf",
   "usacPermit": "2016-1849",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-may-29-23928-rr",
   "name": "Death Valley Road Omnium",
   "status": "",
@@ -10013,8 +9680,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/04/25/2016%20-%203:05pm/FL_2016-1849%20Death%20Valley%20Road%20Omnium%20OKED.pdf",
   "usacPermit": "2016-1849",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-26-23935-ncmp",
   "name": "Ryan's Ride",
   "status": "",
@@ -10042,8 +9708,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/05/27/2016%20-%2012:52pm/RR.pdf",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-06-23944-mtb",
   "name": "Rockhopper Classic",
   "status": "",
@@ -10076,8 +9741,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/06/01/2016%20-%209:40am/FL_2016-1593%20ROCKHOPPER%20CLASSIC.pdf",
   "usacPermit": "2016-1593",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-20-23945-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10116,8 +9780,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-01-23946-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10156,8 +9819,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-15-23947-mtng",
   "name": "NCNCA Board Meeting",
   "status": "Canceled",
@@ -10196,8 +9858,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-19-23948-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10236,8 +9897,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-17-23949-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10276,8 +9936,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-nov-21-23950-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10316,8 +9975,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-dec-19-23951-mtng",
   "name": "NCNCA Board Meeting",
   "status": "",
@@ -10356,8 +10014,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-03-23952-mtng",
   "name": "NCNCA Promoters Meeting",
   "status": "",
@@ -10390,8 +10047,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-03-23953-mtb",
   "name": "Boggs Funduro",
   "status": "",
@@ -10419,8 +10075,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-04-23953-mtb",
   "name": "Boggs Funduro",
   "status": "",
@@ -10448,8 +10103,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-05-23953-mtb",
   "name": "Boggs Funduro",
   "status": "",
@@ -10477,8 +10131,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-03-23954-mtb",
   "name": "Coolest 8 & 24hr",
   "status": "",
@@ -10506,8 +10159,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-04-23954-mtb",
   "name": "Coolest 8 & 24hr",
   "status": "",
@@ -10535,8 +10187,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-05-23954-mtb",
   "name": "Coolest 8 & 24hr",
   "status": "",
@@ -10564,8 +10215,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-18-23955-mtb",
   "name": "Lake Tahoe MTB Race (XC, 4hr, 8hr)",
   "status": "",
@@ -10593,8 +10243,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-26-23956-mtb",
   "name": "Sagebrush Scramble",
   "status": "",
@@ -10622,8 +10271,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-26-23957-mtb",
   "name": "Skyline Park MTB Race",
   "status": "",
@@ -10651,8 +10299,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jun-25-23963-trk",
   "name": "Elite District Track Championship",
   "status": "",
@@ -10691,8 +10338,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-30-23970-mtb",
   "name": "Stormy Saddle Enduro",
   "status": "",
@@ -10720,8 +10366,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-13-23971-mtb",
   "name": "Volkswagen USA Cycling Mountain Bike National Championships",
   "status": "",
@@ -10749,8 +10394,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-14-23971-mtb",
   "name": "Volkswagen USA Cycling Mountain Bike National Championships",
   "status": "",
@@ -10778,8 +10422,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-15-23971-mtb",
   "name": "Volkswagen USA Cycling Mountain Bike National Championships",
   "status": "",
@@ -10807,8 +10450,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-16-23971-mtb",
   "name": "Volkswagen USA Cycling Mountain Bike National Championships",
   "status": "",
@@ -10836,8 +10478,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-17-23971-mtb",
   "name": "Volkswagen USA Cycling Mountain Bike National Championships",
   "status": "",
@@ -10865,8 +10506,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-16-23972-mtb",
   "name": "Tahoe Trail MTB 50k & 100k",
   "status": "",
@@ -10894,8 +10534,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-22-23973-mtb",
   "name": "Coolest 8 & 24hr MTB Endurance Race",
   "status": "",
@@ -10923,8 +10562,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-23-23973-mtb",
   "name": "Coolest 8 & 24hr MTB Endurance Race",
   "status": "",
@@ -10952,8 +10590,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-24-23973-mtb",
   "name": "Coolest 8 & 24hr MTB Endurance Race",
   "status": "",
@@ -10981,8 +10618,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-24-23974-mtb",
   "name": "Kirkwood Mountain Classic",
   "status": "",
@@ -11010,8 +10646,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-04-23975-mtb",
   "name": "Downieville Classic",
   "status": "",
@@ -11039,8 +10674,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-05-23975-mtb",
   "name": "Downieville Classic",
   "status": "",
@@ -11068,8 +10702,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-06-23975-mtb",
   "name": "Downieville Classic",
   "status": "",
@@ -11097,8 +10730,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-07-23975-mtb",
   "name": "Downieville Classic",
   "status": "",
@@ -11126,8 +10758,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-13-23976-mtb",
   "name": "Annadel XC",
   "status": "",
@@ -11155,8 +10786,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-18-23977-mtb",
   "name": "Mendocino Mountain Bike Madness (M5)",
   "status": "",
@@ -11184,8 +10814,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-19-23977-mtb",
   "name": "Mendocino Mountain Bike Madness (M5)",
   "status": "",
@@ -11213,8 +10842,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-20-23977-mtb",
   "name": "Mendocino Mountain Bike Madness (M5)",
   "status": "",
@@ -11242,8 +10870,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-21-23977-mtb",
   "name": "Mendocino Mountain Bike Madness (M5)",
   "status": "",
@@ -11271,8 +10898,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-25-23978-mtb",
   "name": "Gold Rush MTB",
   "status": "",
@@ -11300,8 +10926,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-20-23979-mtb",
   "name": "Beckwourth 100 MTB Endurance (TS100)",
   "status": "",
@@ -11329,8 +10954,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-21-23980-mtb",
   "name": "Bodie Bowl",
   "status": "",
@@ -11358,8 +10982,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-11-23981-mtb",
   "name": "Great Tahoe Flume Race",
   "status": "",
@@ -11387,8 +11010,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-16-23982-mtb",
   "name": "TBF 50 Miler",
   "status": "",
@@ -11417,8 +11039,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-25-23983-mtb",
   "name": "4 & 8 Hours of Weaverville",
   "status": "",
@@ -11446,8 +11067,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-25-23984-mtb",
   "name": "World Solo 24hr MTB Championships",
   "status": "",
@@ -11475,8 +11095,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-25-23985-mtb",
   "name": "La Grange Fall Classic",
   "status": "",
@@ -11504,8 +11123,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-aug-27-23992-clnx",
   "name": "Pro Sprint School",
   "status": "",
@@ -11533,8 +11151,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/06/30/2016%20-%202:16pm/FL_2016-2381%20Pro%20Sprint%20School%20OKED.pdf",
   "usacPermit": "2016-2381",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-jul-16-23995-trk",
   "name": "Masters State Track District Championships",
   "status": "",
@@ -11573,8 +11190,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-jul-17-23995-trk",
   "name": "Masters State Track District Championships",
   "status": "",
@@ -11613,8 +11229,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-aug-27-24001-cx",
   "name": "Cross Kick Off — CCCX Cyclocross Series #1",
   "status": "",
@@ -11648,8 +11263,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-04-24002-cx",
   "name": "CCCX Cyclocross Series #2",
   "status": "",
@@ -11683,8 +11297,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-10-24003-cx",
   "name": "CCCX Cyclocross Series #3",
   "status": "",
@@ -11718,8 +11331,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-17-24004-cx",
   "name": "West Sacramento Cyclocross Grand Prix",
   "status": "",
@@ -11747,8 +11359,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/16/2016%20-%201:43pm/FL_2016-1466%20West%20Sacramento%20Cyclocross%20Grand%20Prix%20(WSCXGP)%20OKED.pdf",
   "usacPermit": "2016-1466",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-18-24005-cx",
   "name": "CCCX Cyclocross Series #4",
   "status": "",
@@ -11782,8 +11393,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-sep-24-24006-cx",
   "name": "Cliff Bar Cykle Scramble",
   "status": "",
@@ -11811,8 +11421,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-24-24007-cx",
   "name": "BASP #1",
   "status": "",
@@ -11840,8 +11449,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-25-24008-cx",
   "name": "BASP #2",
   "status": "",
@@ -11869,8 +11477,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-01-24009-cx",
   "name": "SuperPro CX #1",
   "status": "",
@@ -11898,8 +11505,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-01-24010-cx",
   "name": "Cross Reno",
   "status": "",
@@ -11927,8 +11533,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-02-24011-cx",
   "name": "CCCX Cyclocross Series #5",
   "status": "",
@@ -11962,8 +11567,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-08-24012-cx",
   "name": "Sacramento Cyclocross #1",
   "status": "",
@@ -11981,7 +11585,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "",
+  "promoterInfo": "", 
   "websiteUrl": "http://www.saccyclocross.com/2016/Race1.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
@@ -11998,8 +11602,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-09-24013-cx",
   "name": "Sacramento Cyclocross #2",
   "status": "",
@@ -12034,8 +11637,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-09-24014-cx",
   "name": "CCCX Cyclocross Series #6",
   "status": "",
@@ -12070,13 +11672,12 @@ export default [{
       "url": ""
     }
   ]
-},
-{
-  "id": "evt-2016-oct-15-24016-cx",
+  }, {
+    "id" : "evt-2016-oct-15-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
+    "type" : "MTB",
+    "discipline" : "MTB",
   "date": "October 15 2016",
   "location": {
     "name": "Race Location",
@@ -12089,7 +11690,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
+    "promoterInfo" : "",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12099,13 +11700,68 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
   "usacPermit": "2016-2901",
   "series": []
+  }, {
+    "id" : "evt-2016-oct-09-24016-mtb",
+    "name" : "Cal Cycling MTB Race",
+    "status" : "",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 09 2016",
+    "location" : {
+      "name": "Race Location",
+      "streetAddress": "260 Bernal Road",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95119",
+      "lat": "",
+      "long": ""
 },
-{
-  "id": "evt-2016-oct-16-24016-cx",
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": null,
+      "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+      "mimeType": null
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-02-24016-mtb",
+    "name" : "Running of the Bulls: Stanford Cycling Annual MTB Race",
+    "status" : "",
+    "type" : "MTB",
+    "discipline" : "MTB",
+    "date" : "October 02 2016",
+    "location" : {
+      "name": "Race Location",
+      "streetAddress": "Camp St",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "Running of the Bulls",
+      "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+      "mimeType": null
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-16-24016-mtb",
   "name": "UC Santa Cruz Shreditation Retreat",
   "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
+    "type" : "MTB",
+    "discipline" : "MTB",
   "date": "October 16 2016",
   "location": {
     "name": "Race Location",
@@ -12118,7 +11774,7 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
+    "promoterInfo" : "",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12128,8 +11784,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
   "usacPermit": "2016-2901",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-23-24017-cx",
   "name": "Sacramento Cyclocross #3",
   "status": "",
@@ -12138,17 +11793,18 @@ export default [{
   "date": "October 23 2016",
   "location": {
     "name": "",
-    "streetAddress": "",
+      "streetAddress": "1525 E Jahant Rd",
     "city": "Acampo",
     "state": "CA",
-    "zip": "",
+      "zip": "95220",
     "lat": 38.174133,
     "long": -121.276445
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race3.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_1.pdf",
@@ -12163,8 +11819,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-15-24018-cx",
   "name": "Lion Of Fairfax — SuperPro CX #2",
   "status": "",
@@ -12193,8 +11848,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-29-24019-cx",
   "name": "SuperPro CX #3",
   "status": "",
@@ -12223,8 +11877,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-30-24020-cx",
   "name": "Sacramento Cyclocross #4",
   "status": "",
@@ -12233,17 +11886,18 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+      "streetAddress": "3770 Richardson Dr",
     "city": "Auburn",
     "state": "CA",
-    "zip": "",
+      "zip": "95603",
     "lat": 38.889296,
     "long": -121.062469
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race4.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_2.pdf",
@@ -12258,8 +11912,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-30-24021-cx",
   "name": "Surf City Cyclocross Series #2",
   "status": "",
@@ -12268,17 +11921,17 @@ export default [{
   "date": "October 30 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "Santa Cruz",
+      "streetAddress": "100 Mariner Way",
+      "city": "Aptos",
     "state": "CA",
-    "zip": "",
+      "zip": "95003",
     "lat": 36.984112,
     "long": -122.02446
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": "http://www.cyclo-x.com/",
-  "registrationUrl": "",
+    "registrationUrl" : "https://www.bikereg.com/surf-city",
   "flyer": {
     "name": null,
     "url": "",
@@ -12287,8 +11940,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-06-24022-cx",
   "name": "Sacramento Cyclocross #5",
   "status": "",
@@ -12297,17 +11949,18 @@ export default [{
   "date": "November 06 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+      "streetAddress": "1302 Riley St",
     "city": "Folsom",
     "state": "CA",
-    "zip": "",
-    "lat": 38.66018,
-    "long": -121.177826
+      "zip": "95630",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race5.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_3.pdf",
@@ -12322,8 +11975,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-nov-05-24023-cx",
   "name": "BASP #3",
   "status": "",
@@ -12332,17 +11984,18 @@ export default [{
   "date": "November 05 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.674622,
-    "long": -122.385957
+      "streetAddress": "2305 S White Rd",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95148",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
+    "registrationUrl" : "http://www.eventbrite.com/e/bay-area-super-prestige-cx-race-3-night-race-san-jose-nov-5-registration-26952884804",
   "flyer": {
     "name": null,
     "url": "",
@@ -12351,8 +12004,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-06-24024-cx",
   "name": "BASP #4",
   "status": "",
@@ -12361,17 +12013,18 @@ export default [{
   "date": "November 06 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.675246,
-    "long": -122.38593
+      "streetAddress": "2305 S White Rd",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95148",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
+    "registrationUrl" : "https://www.eventbrite.com/e/bay-area-super-prestige-cx-race-4-san-jose-nov-6-registration-26971013026",
   "flyer": {
     "name": null,
     "url": "",
@@ -12380,8 +12033,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-11-24025-cx",
   "name": "Santa Rosa Cup Day #1",
   "status": "",
@@ -12391,16 +12043,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.434632,
-    "long": -122.724152
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
@@ -12409,8 +12062,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-12-24026-cx",
   "name": "Santa Rosa Cup Day #2",
   "status": "",
@@ -12420,16 +12072,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.434632,
-    "long": -122.724152
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
@@ -12438,8 +12091,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-13-24027-cx",
   "name": "Santa Rosa Cup Day #3",
   "status": "",
@@ -12449,16 +12101,17 @@ export default [{
   "location": {
     "name": "Race Location",
     "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 38.437186,
-    "long": -122.714539
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95402",
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.bikemonkey.net/srcup/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.bikemonkey.net/srcup/",
+    "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
     "name": null,
     "url": "",
@@ -12467,8 +12120,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-19-24028-cx",
   "name": "BASP #5",
   "status": "",
@@ -12477,17 +12129,18 @@ export default [{
   "date": "November 19 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "1461 N Camino Alto",
+      "city": "Vallejo",
+      "state": "CA",
+      "zip": "94589",
     "lat": 37.912784,
     "long": -122.508545
   },
-  "resultsUrl": null,
+    "resultsUrl" : "https://docs.google.com/spreadsheets/d/1BQbSMGj_axlU8erXQ1C9gspTTHCqEypkYYE7JW_2Sus/view#gid=0",
   "promoters": [],
+    "websiteUrl" : "http://superproracing.com/cross/basp/",
   "promoterInfo": null,
-  "registrationUrl": "",
+    "registrationUrl" : "http://baspcx-race5-vallejo-nov19.eventbrite.com",
   "flyer": {
     "name": null,
     "url": "",
@@ -12496,37 +12149,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
-  "id": "evt-2016-nov-20-24029-cx",
-  "name": "Surf City Cyclocross Series #3",
-  "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
-  "date": "November 20 2016",
-  "location": {
-    "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 36.991996,
-    "long": -121.993561
-  },
-  "resultsUrl": null,
-  "promoters": [],
-  "promoterInfo": "http://www.cyclo-x.com/",
-  "registrationUrl": "",
-  "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
-  },
-  "flyerUrl": "",
-  "usacPermit": "",
-  "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-20-24030-cx",
   "name": "Sacramento Cyclocross #6",
   "status": "",
@@ -12535,17 +12158,18 @@ export default [{
   "date": "November 20 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "3000 Alexandrite Dr",
+      "city": "Rescue",
+      "state": "CA",
+      "zip": "95672",
     "lat": 38.711333,
     "long": -120.951576
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/02/2016%20-%2010:39pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20OKED_2.pdf",
@@ -12554,8 +12178,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/02/2016%20-%2010:39pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20OKED_2.pdf",
   "usacPermit": "2016-2581",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-03-24031-cx",
   "name": "Sacramento Cyclocross #7",
   "status": "",
@@ -12564,17 +12187,18 @@ export default [{
   "date": "December 03 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "2710 Ramp Way",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95818",
     "lat": 38.623482,
     "long": -121.521599
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/2016/Race7.html",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_4.pdf",
@@ -12589,37 +12213,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
-  "id": "evt-2016-dec-04-24032-cx",
-  "name": "BASP #6",
-  "status": "",
-  "type": "Cyclocross",
-  "discipline": "Cyclocross",
-  "date": "December 04 2016",
-  "location": {
-    "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
-    "lat": 37.585449,
-    "long": -122.325726
-  },
-  "resultsUrl": null,
-  "promoters": [],
-  "promoterInfo": null,
-  "registrationUrl": "",
-  "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
-  },
-  "flyerUrl": "",
-  "usacPermit": "",
-  "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-10-24033-cx",
   "name": "Sacramento Cyclocross #8",
   "status": "",
@@ -12628,17 +12222,18 @@ export default [{
   "date": "December 10 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "8554 Gibson Ranch Park Rd",
+      "city": "Elverta",
+      "state": "CA",
+      "zip": "95626",
     "lat": 38.722801,
     "long": -121.406994
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.saccyclocross.com/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.saccyclocross.com/",
+    "registrationUrl" : "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {
     "name": "FL_2016-2581 Sacramento Cyclocross Series v2 OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:11pm/FL_2016-2581%20Sacramento%20Cyclocross%20Series%20v2%20OKED_5.pdf",
@@ -12653,8 +12248,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-dec-11-24034-cx",
   "name": "NCNCA District/USA Cycling State Cyclocross Championship",
   "status": "",
@@ -12663,27 +12257,27 @@ export default [{
   "date": "December 11 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "8556 Gibson Ranch Park Road",
+      "city": "Elverta",
+      "state": "CA",
+      "zip": "95626",
     "lat": 38.723069,
     "long": -121.406994
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+    "websiteUrl" : "http://www.saccyclocross.com/2016/NCNCAChamps.html",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2584 Northern CA  NV Cycling Association (NCNCA) District Championship v2 OKED.pdf",
-    "url": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
     "mimeType": "application/pdf"
   },
-  "flyerUrl": "http://www.ncnca.org/sites/default/files/08/29/2016%20-%202:13pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20(NCNCA)%20District%20Championship%20v2%20OKED.pdf",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/19/2016%20-%203%3A12pm/FL_2016-2584%20Northern%20CA%20%20NV%20Cycling%20Association%20%28NCNCA%29%20District%20Championship%20v3%20OKED.pdf",
   "usacPermit": "2016-2584",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-17-24035-cx",
   "name": "North Vs. South California State Showdown Day #1 — Bakersfield",
   "status": "",
@@ -12692,27 +12286,27 @@ export default [{
   "date": "December 17 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
+      "streetAddress": "13375 Lake Ming Rd",
     "city": "Bakersfield",
     "state": "CA",
-    "zip": "",
+      "zip": "93306",
     "lat": 35.380933,
     "long": -118.995667
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+    "websiteUrl" : "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
+      "name": "Showdown 2016.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+      "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-18-24036-cx",
   "name": "North Vs. South California State Showdown Day #2 — Bakersfield",
   "status": "",
@@ -12721,27 +12315,27 @@ export default [{
   "date": "December 18 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "13375 Lake Ming Rd",
+      "city": "Bakersfield",
+      "state": "CA",
+      "zip": "93306",
     "lat": 35.376034,
     "long": -119.008026
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
+    "websiteUrl" : "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
-    "url": "",
-    "mimeType": null
+      "name": "Showdown 2016.pdf",
+      "url": "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
+      "mimeType": "application/pdf"
   },
-  "flyerUrl": "",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/11/20/2016%20-%2011%3A34pm/Flyer%2C%20Showdown%202016.pdf",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-31-24037-cx",
   "name": "CCCX Cyclocross Series #7",
   "status": "",
@@ -12750,16 +12344,17 @@ export default [{
   "date": "December 31 2016",
   "location": {
     "name": "Race Location",
-    "streetAddress": "",
-    "city": "",
-    "state": "",
-    "zip": "",
+      "streetAddress": "17100 Castroville Blvd",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93907",
     "lat": 36.656878,
     "long": -121.750059
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "http://www.cccxcycling.com/",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.cccxcycling.com/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2893 Central Coast Cyclocross Series OKED.pdf",
@@ -12775,8 +12370,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-30-24039-cx",
   "name": "CCORC Hometown CX #1",
   "status": "",
@@ -12794,7 +12388,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12804,8 +12399,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-nov-13-24040-cx",
   "name": "CCORC Hometown CX #2",
   "status": "",
@@ -12823,7 +12417,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12833,8 +12428,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-dec-04-24041-cx",
   "name": "CCORC Hometown CX #3",
   "status": "",
@@ -12852,7 +12446,8 @@ export default [{
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
+    "promoterInfo" : "",
+    "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -12862,8 +12457,7 @@ export default [{
   "flyerUrl": "",
   "usacPermit": "",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-sep-24-24048-cx",
   "name": "Sagebrush Cyclocross #1",
   "status": "",
@@ -12902,8 +12496,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-02-24049-cx",
   "name": "Sagebrush Cyclocross #2",
   "status": "",
@@ -12942,8 +12535,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-15-24050-cx",
   "name": "Sagebrush Cyclocross #3",
   "status": "",
@@ -12983,8 +12575,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-nov-12-24051-cx",
   "name": "Sagebrush Cyclocross #4",
   "status": "",
@@ -12993,7 +12584,7 @@ export default [{
   "date": "November 12 2016",
   "location": {
     "name": "Davis Creek Park",
-    "streetAddress": "",
+      "streetAddress": "Davis Creek Regional Park",
     "city": "New Washoe City",
     "state": "NV",
     "zip": "89704",
@@ -13007,7 +12598,8 @@ export default [{
       "name": "Reno Wheelmen"
     }
   ],
-  "promoterInfo": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-2906 Sagebrush Cyclocross Race 4 Davis Creek Park OKED.jpg",
@@ -13023,8 +12615,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-dec-04-24052-cx",
   "name": "Sagebrush Cyclocross #5",
   "status": "",
@@ -13047,14 +12638,15 @@ export default [{
       "name": "Reno Wheelmen"
     }
   ],
-  "promoterInfo": "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
-  "registrationUrl": "",
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.renowheelmen.org/race-series/sagebrush-cyclocross-series/",
+    "registrationUrl" : "https://www.usacycling.org/register/2016-2907",
   "flyer": {
     "name": "FL_2016-2907 Sagebrush Cyclocross Race 5 Hidden Valley Park OKED.jpg",
-    "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+      "url": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
     "mimeType": "image/jpeg"
   },
-  "flyerUrl": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203%3A07am/FL_2016-2907%20Sagebrush%20Cyclocross%20Race%205%20Hidden%20Valley%20Park%20OKED.jpg",
   "usacPermit": "2016-2907",
   "series": [
     {
@@ -13063,8 +12655,7 @@ export default [{
       "url": ""
     }
   ]
-},
-{
+  }, {
   "id": "evt-2016-oct-16-24054-ncmp",
   "name": "C510 Super Cat III",
   "status": "",
@@ -13072,18 +12663,18 @@ export default [{
   "discipline": "Non-Competitive",
   "date": "October 16 2016",
   "location": {
-    "name": "Lake Merritt",
-    "streetAddress": "",
+      "name": "Race Location",
+      "streetAddress": "666 Bellevue Ave",
     "city": "Oakland",
     "state": "CA",
     "zip": "94610",
-    "lat": 37.808715,
-    "long": -122.249559
+      "lat": "",
+      "long": ""
   },
   "resultsUrl": null,
   "promoters": [],
   "promoterInfo": null,
-  "registrationUrl": "",
+    "registrationUrl" : "https://www.usacycling.org/register/2016-2715",
   "flyer": {
     "name": "FL_2016-2715 C510 Super Cat III OKED.pdf",
     "url": "http://www.ncnca.org/sites/default/files/08/22/2016%20-%202:32pm/FL_2016-2715%20C510%20Super%20Cat%20III%20OKED.pdf",
@@ -13092,8 +12683,7 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/22/2016%20-%202:32pm/FL_2016-2715%20C510%20Super%20Cat%20III%20OKED.pdf",
   "usacPermit": "2016-2715",
   "series": []
-},
-{
+  }, {
   "id": "evt-2016-oct-15-24058-ncmp",
   "name": "Bikes for Kids Charity Ride & BBQ",
   "status": "",
@@ -13121,4 +12711,326 @@ export default [{
   "flyerUrl": "http://www.ncnca.org/sites/default/files/08/24/2016%20-%203:10am/FL_2016-2890%20Bikes%20for%20Kids%20Charity%20Ride%20OKED.jpg",
   "usacPermit": "2016-2890",
   "series": []
-}]
+  }, {
+    "id" : "evt-2016-oct-09-24059-ncmp",
+    "name" : "Cycle with Champions",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 09 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "4400 Day School Place",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95403",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "Cycle With Champions OKED",
+      "url": "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/01/2016%20-%203%3A05pm/FL_2016-1734%20Cycle%20With%20Champions%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-07-24059-ncmp",
+    "name" : "Mount Diablo State Park Historic Road Cyclists Safety Improvements Event",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 07 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "South Gate Road",
+      "city": "Danville",
+      "state": "CA",
+      "zip": "94506",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "",
+    "registrationUrl" : "",
+    "flyer" : {
+      "name": "MDSP Recognition Flyer",
+      "url": "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/28/2016%20-%202%3A17pm/Draft%20MDSP%20Recognition%20Flyer%20.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-16-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 16 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1085 E El Camino Real",
+      "city": "Sunnyvale",
+      "state": "CA",
+      "zip": "94087",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-17-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 17 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1410 Ocean St",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95060",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-18-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 18 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "3665 Rio Rd",
+      "city": "Carmel-By-The-Sea",
+      "state": "CA",
+      "zip": "93923",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-19-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 19 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "9355 Hearst Dr",
+      "city": "San Simeon",
+      "state": "CA",
+      "zip": "93452",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-20-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 20 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "Price St",
+      "city": "Pismo Beach",
+      "state": "CA",
+      "zip": "93449",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-21-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 21 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "1455 Mission Dr",
+      "city": "Solvang",
+      "state": "CA",
+      "zip": "93463",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-23-24059-ncmp",
+    "name" : "Oakland Gran Fondo",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 23 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "Jack London Square",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94607",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "http://www.oaklandgranfondo.com/race-info/",
+    "registrationUrl" : "http://www.oaklandgranfondo.com/register/",
+    "flyer" : {
+      "name": "Oakland Gran Fondo",
+      "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A14am/FL_2016-3178%20Oakland%20Gran%20Fondo%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-nov-12-24052-cx",
+    "name" : "Beach and Beer Cyclocross",
+    "status" : "",
+    "type" : "Cyclocross",
+    "discipline" : "Cyclocross",
+    "date" : "November 12 2016",
+    "location" : {
+      "name": "Granite Beach",
+      "streetAddress": "Granite Beach",
+      "city": "Granite Bay",
+      "state": "CA",
+      "zip": "95746",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "http://totalbodyfitness.com/site/race/b-b-cyclocross/",
+    "registrationUrl" : "http://www.active.com/granite-bay-ca/cycling/cyclo-cross-races/beach-and-beer-cyclocross-2016",
+    "flyer" : {
+      "name": "",
+      "url": "",
+      "mimeType": ""
+    },
+    "flyerUrl" : "",
+    "usacPermit" : "",
+    "series" : []
+  }, {
+    "id" : "evt-2016-oct-22-24059-ncmp",
+    "name" : "Ride2Recovery: California Challenge",
+    "status" : "",
+    "type" : "Non-Competitive",
+    "discipline" : "Non-Competitive",
+    "date" : "October 22 2016",
+    "location" : {
+      "name": "Ride Location",
+      "streetAddress": "450 E Harbor Blvd",
+      "city": "Ventura",
+      "state": "CA",
+      "zip": "93001",
+      "lat": "",
+      "long": ""
+    },
+    "resultsUrl" : null,
+    "promoters" : [],
+    "promoterInfo" : "",
+    "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
+    "registrationUrl" : "https://secure3.convio.net/r2r/site/TRR/Challenge/General/237854239?pg=utype&fr_id=1220",
+    "flyer" : {
+      "name": "Ride2Recovery: California Challenge",
+      "url": "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+      "mimeType": "application/pdf"
+    },
+    "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/19/2016%20-%207%3A59am/FL_2016-2804%20California%20Challenge%20OKED.pdf",
+    "usacPermit" : "",
+    "series" : []
+  }
+]
+//to do - check past October events and add missing events
+//to do after - check events after Oct 16th

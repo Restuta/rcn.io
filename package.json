@@ -20,7 +20,9 @@
     "reinstall": "npm run clean:all && bower i && npm i",
     "postinstall": "bower install && npm run build",
     "ngrok": "ngrok http 8888",
-    "test": "NODE_PATH=./src tape -r './src/tests/index.js' 'src/**/tests/**/*.js' | tap-spec"
+    "tape-tests": "NODE_PATH=./src tape -r './src/tests/index.js' 'src/**/tests/**/*.js'",
+    "test": "npm run tape-tests | tap-spec",
+    "test:dot": "npm run tape-tests | tap-dot || true"
   },
   "repository": {
     "url": "https://github.com/Restuta/rcn.io.git",
@@ -79,8 +81,10 @@
     "redbox-react": "^1.3.1",
     "redux-logger": "^2.7.0",
     "rimraf": "^2.4.4",
+    "shortid": "^2.2.6",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.0",
+    "tap-dot": "^1.0.5",
     "svg-inline-loader": "^0.7.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.2",

@@ -117,7 +117,6 @@ class Event extends Component {
         city: '',
         state: ''
       }},
-      draft = false,
       className,
       showEventTypeBadge = false,
       highlightEventTypeInName = false,
@@ -248,7 +247,7 @@ class Event extends Component {
 
     let eventGroupComp = null
 
-    if (event.group) {
+    if (event.isDraft && event.group) {
       eventGroupComp = (<span style={{
         position: 'absolute',
         fontFamily: 'museo-sans-condensed',
@@ -265,9 +264,9 @@ class Event extends Component {
     let locationComp = null
     let promoterComp = null
 
-    if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
+    if ((numSize[cardSize] > numSize[Size.S]) && !event.isDraft) {
       locationComp = <Location location={event.location} size={cardSize} />
-    } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
+    } else if ((numSize[cardSize] > numSize[Size.S]) && event.isDraft) {
       const promoter = event.promoters[0].name
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
@@ -288,7 +287,7 @@ class Event extends Component {
       // height: 4 + 'rem',
       // height: '100%',
       // minHeight: 2 + 'rem',
-      // maxHeight: cardHeightRem * 2 + 'rem',
+      //maxHeight: cardHeightRem * 2 + 'rem',
 
       paddingTop: (paddingTopRem || verticalPaddingRem) + 'rem',
       paddingBottom: verticalPaddingRem + 'rem',
@@ -329,7 +328,7 @@ class Event extends Component {
             highlightEventType={highlightEventTypeInName}/>
         </div>
 
-        {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
         {eventGroupComp}
         {locationComp}
         {promoterComp}
@@ -384,9 +383,11 @@ Event.propTypes = {
     registrationUrl: PropTypes.string,
     flyerUrl: PropTypes.string,
     status: PropTypes.string,
-    notes: PropTypes.string,
+    draftNotes: PropTypes.string,
+    //represents if event is draft, usually for draft calendars
+    isDraft: PropTypes.bool,
   }),
-  draft: PropTypes.bool,
+
 }
 
 Event.contextTypes = {

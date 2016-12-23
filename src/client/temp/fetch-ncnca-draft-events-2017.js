@@ -1,7 +1,10 @@
 import moment from 'moment'
+import { hash } from 'client/utils/math'
+import { createEventIdPrefix } from 'shared/events/gen-event-id'
+
 
 /*
-Sourc Event format:
+Source Event format:
 {
   Date: "1/1/2017",
   Race Name: "San Bruno Hill Climb",
@@ -41,19 +44,31 @@ Target:
 }
 */
 
+//uses hash of the name so id stays same unless name changes for more predictable draft identity
+const createDraftEventId = (eventDate, eventName) => (
+  createEventIdPrefix(eventDate.year(), eventName, 'ncnca') + `-${hash(eventName + eventDate)}`
+)
+
 const transformEvents = googleSpreedsheetEvents =>
   googleSpreedsheetEvents.map(event => {
     if (!event['Race Name'] || !event['Race Name'].trim()) {
       return null
     }
 
-    //TODO bc: handle notable events as separate events? (it's a property now)
+    //TODO bc: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
+      //or "Nationals"
+
+    const date = moment(event['Date'], 'MM/DD/YYYY')
+    const name = event['Race Name'].trim()
+    const type = event['Type'].trim()
+    const draftId = createDraftEventId(date, name)
 
     return {
-      name: event['Race Name'].trim(),
-      date: moment(event['Date'], 'MM/DD/YYYY').format('MMMM DD YYYY'),
+      id: draftId,
+      name: name,
+      date: date.format('MMMM DD YYYY'),
       discipline: 'Road',
-      type: event['Type'].trim(),
+      type: type,
       location: {
         city: event['Location'],
         state: 'CA',
@@ -64,18 +79,26 @@ const transformEvents = googleSpreedsheetEvents =>
         contactInfo: event['Promoter contact info'].trim() || undefined,
       }],
       group: event['Group'].trim() || undefined,
-      notes: event['Notes'].trim() || undefined,
+      draftNotes: event['Notes'].trim() || undefined,
+      isDraft: true
     }
   })
-  .filter(x => !!x)
+  .filter(x => !!x) //filters out null and undefined
 
 
-// fetch NCNCA Draft events from google spreeadshet (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
+// import convertDraftEventsToRealOnes from './convert-drafts-to-real-events'
+
+// fetch NCNCA Draft events from google spreeadshet
+// (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
 // using sheetsu.com
 const fetchRawNcncaDraftEvents2017 = () =>
   fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
     .then(response => response.json())
     .then(events => transformEvents(events))
-    // .then(parsedEvents => parsedEvents.map(x => console.info(x.name)))
+    // .then(events => convertDraftEventsToRealOnes(events))
+    // .then(events => {
+    //   console.info(JSON.stringify(events))
+    //   return events
+    // })
 
 export default fetchRawNcncaDraftEvents2017

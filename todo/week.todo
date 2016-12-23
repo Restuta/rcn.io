@@ -15,7 +15,7 @@ Today
 	--- Scroll
 		- higlight current month when scrolled to it: like trello Calendar https://trello.com/b/LfWc01La/www-teamsanjose-org/calendar/2016/01
 		- use https://github.com/taion/react-router-scroll: https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md#using-scroll-behavior
-
+	
 	!----- immediate todo
 		+- rename index1.html to something meaningful
 		--- after MTB release
@@ -90,6 +90,14 @@ Today
 		- UI elements examples
 			- yellow button + search: https://www.bestofthemes.com/?ref=producthunt
 	!--- Embeddable Upcoming Events (2x320px one col)
+		- script for creating iFrame in a given DIV by id
+		- refactor get-router to use same code with different routes
+		+- hoc for profiling rendering time
+		+- disable Drifft for widget
+		+- setup Webpack
+			+- separate chunks (same config)
+			+- separate index.html
+			- no SSR for widgets? (probably no)
 		- change logic in Events to support navigation from iFrame
 		+- tweak breakpoints for widgets: since we change base font to 7px, cards wrap too soon
 		- try webpack bundle analizer: https://www.npmjs.com/package/webpack-bundle-analyzer
@@ -108,14 +116,29 @@ Today
 			- https://developer.zendesk.com/blog/the-zendesk-web-widget-stack
 			- https://dev.twitter.com/web/javascript/loading
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
-		- script for creating iFrame in a given DIV by id
-		- refactor get-router to use same code with different routes
-		+- hoc for profiling rendering time
-		+- disable Drifft for widget
-		+- setup Webpack
-			+- separate chunks (same config)
-			+- separate index.html
-			- no SSR for widgets? (probably no)
+	!--- NCNCA Calendar 2017
+		- figure out promoters and their ids
+			- regenerate events with those
+			+- reese levine promoter name?: it's Cal Cycling,
+			+- promoter? "name" "Budweiser Sequoia Cycling Classic"
+			- turlock criterim promoter name
+		- figure out series and their ids
+			- regenerate events with those
+		- add new property to series of the event
+			- call it "short name" or "abbreviation" so we can show it on event card: currently it's embeded into the name like "Tempus Fugi Time Trial – RKO #5, notice "RKO #5" it signifies short name of the series and event's number in it
+		-- missing from our Calendar
+		  -  April 27 paracycling events
+		  -  May 15 Amgen Tour
+		  -  nationals
+		  	- road 
+		  	- para cycling
+		  	- mtb
+		+- generate events and ids
+		- assign correct promoter ids from 2016 (match by name?)
+		+- create a second function that transforms draft events to respective non-draft calendar
+		- update WCCC races: to have promoter name as "Western Collegiate Cycling Conference"
+		+- use slugify url instead of custom code
+		+----- fix: CycleNation to be Non-Competitive
 	--- Event Details
 		---- ideas
 			- add "Reveal" like here http://screencast.com/t/sWzxWxykK7Fg: to show more event details and course description	
@@ -148,7 +171,7 @@ Today
 				- get calendar into "even details" component so we can use timezone
 				- try splitting events into a separate chunk (vendor?) or dll so it doesn't slow our builds
 					- test build speed first without any events at all
-
+				
 			- move BS to npm: npm install bootstrap@4.0.0-alpha.4
 			- add babel-plugin-transform-react-jsx-source: measure build times
 			- update to babel-preset-react-app
