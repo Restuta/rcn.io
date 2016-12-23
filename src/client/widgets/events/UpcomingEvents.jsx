@@ -105,7 +105,7 @@ class UpcomingEvents extends Component {
     }
 
     let today = momentTZ()
-      .add(-224, 'days')
+      // .add(30, 'days')
 
     const upcomingEvents = getEventsAfterDate(events, today)
     const upcomingEventsArr = getUpcomingEvents(upcomingEvents, NO_OF_UPCOMING_DAYS)
@@ -152,7 +152,7 @@ import { getCalendar, getEventsForCalendar } from 'shared/reducers/reducer.js'
 
 export default connect(
   (state, ownProps) => ({
-    calendar: getCalendar(state, {calendarId: 'cal-ncnca-2016'}),
-    events: getEventsForCalendar(state, {calendarId: 'cal-ncnca-2016'})
+    calendar: getCalendar(state, {calendarId: 'cal-ncnca-2017'}),
+    events: getEventsForCalendar(state, {calendarId: 'cal-ncnca-2017'})
   })
 )(UpcomingEvents)
