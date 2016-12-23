@@ -141,6 +141,7 @@ const event = {
     circuitRace: colors.orange500,
     timeTrial: colors.red500,
     hillClimb: colors.red700,
+    teamTimeTrial: colors.red900,
     stageRace: colors.deepPurple400,
     omnium: colors.deepPurple400,
     clinics: clinicsColor,

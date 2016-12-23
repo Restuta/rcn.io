@@ -66,6 +66,9 @@ const getEventColor = (discipline, type, status = '') => {
       case 'Time Trial':
         eventColor = Colors.event.road.timeTrial
         break
+      case 'Team Time Trial':
+        eventColor = Colors.event.road.teamTimeTrial
+        break
       case 'Stage Race':
         eventColor = Colors.event.road.stageRace
         break
