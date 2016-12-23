@@ -7,7 +7,6 @@ import device from 'express-device'
 import consts from '../../webpack/constants'
 import ms from 'ms'
 import mime from 'mime-types'
-import chalk from 'chalk'
 
 import React from 'react'
 import { renderToString } from 'react-dom/server'

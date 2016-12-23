@@ -3,7 +3,6 @@ import Component from 'react-pure-render/component'
 import Event from 'calendar/events/Event.jsx'
 import moment from  'moment-timezone'
 import './UpcomingEvents.scss'
-import classnames from 'classnames'
 
 //sort by location function for events
 const byLocation = (eventA, eventB) => {
