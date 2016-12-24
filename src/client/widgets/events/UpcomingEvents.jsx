@@ -72,6 +72,7 @@ const UpcomingEventsForDay = ({today, date, events}) => {
           <Event key={event.id} className="upcoming-event"
             id={event.id}
             autoHeight
+            iframeMode
             externallyControlledWidth
             showEventTypeBadge
             width={'initial'}

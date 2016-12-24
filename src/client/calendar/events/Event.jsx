@@ -94,15 +94,20 @@ class Event extends Component {
 
     trackClick()
 
-    this.props.router.replace({
-      pathname: `/events/${this.props.id}`,
-      state: {
-        modal: true,
-        returnLocation: {
-          pathname: this.context.locationPathname,
-        },
-      }
-    })
+    if (this.props.iframeMode) {
+      //top-level window navigation
+      window.top.location.href = `../events/${this.props.id}`
+    } else {
+      this.props.router.replace({
+        pathname: `/events/${this.props.id}`,
+        state: {
+          modal: true,
+          returnLocation: {
+            pathname: this.context.locationPathname,
+          },
+        }
+      })
+    }
   }
 
   render() {
@@ -113,6 +118,7 @@ class Event extends Component {
       baseHeight = getBaseHeight(containerWidth),
       fixedWidth = false,
       width = '100%',
+      iframeMode = false,
       event = {location: {
         city: '',
         state: ''
@@ -342,6 +348,8 @@ Event.propTypes = {
   id: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
+  //iframeMode
+  iframeMode: PropTypes.bool,
   //if false, card would take 100% of the container (default) and ignore widthProp
     //if true uses provided with or 100% if none
   fixedWidth: PropTypes.bool,
