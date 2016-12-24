@@ -1476,7 +1476,7 @@ export default [
       "state": "AR"
     },
     "promoters": [
-      { "id": "prm-2666", "name": "USA Cycling" },      
+      { "id": "prm-2666", "name": "USA Cycling" },
     ],
     "series": [
       { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
@@ -1512,7 +1512,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1528,7 +1528,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1544,7 +1544,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1568,7 +1568,7 @@ export default [
     },
     "flyerUrl" : "http://www.ncnca.org/sites/default/files/12/11/2016%20-%2011%3A57pm/FL_2017-340%20Honor%20Ride%20Sacramento%20OKED.pdf",
     "promoters": [
-      { "id": "prm-5116", "name": "Ride2Recovery" }, 
+      { "id": "prm-5116", "name": "Ride2Recovery" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1601,7 +1601,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1633,7 +1633,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1649,7 +1649,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1665,7 +1665,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1681,7 +1681,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1697,7 +1697,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1713,7 +1713,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1729,7 +1729,7 @@ export default [
       "state": "CA"
     },
     "promoters": [
-      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },      
+      { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith ", "contactInfo": "ericsmith9@me.com" },
     ],
     "group" : "1",
     "isDraft" : false,

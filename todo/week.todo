@@ -147,8 +147,6 @@ Today
 			--- high priority
 				+- rename "promoterUrl" in MTB to "websiteUrl"
 				+----- BUG: icons slode down on buttons
-				- tru http://codepen.io/Restuta/pen/Xjxxoq?editors=1100#0 for important buttons
-					- make sure it's crossbrowser
 				- replace "no flyer (yet?)" for past events to just no flyer
 				- there is not EVENT WEBSITE for most of the NCNCA races, only promoter: there are websites for CCCX
 				- when permit number is present => calculate results url automatically
@@ -172,6 +170,8 @@ Today
 				- try splitting events into a separate chunk (vendor?) or dll so it doesn't slow our builds
 					- test build speed first without any events at all
 				
+			- tru http://codepen.io/Restuta/pen/Xjxxoq?editors=1100#0 for important buttons
+				- make sure it's crossbrowser
 			- move BS to npm: npm install bootstrap@4.0.0-alpha.4
 			- add babel-plugin-transform-react-jsx-source: measure build times
 			- update to babel-preset-react-app
