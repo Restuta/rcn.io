@@ -1882,6 +1882,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "SyAQyygFqXe"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-H1_jYxJre",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 01 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1_jYxJre"
+  }, {
     "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
     "date": "June 03 2017",
