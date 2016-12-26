@@ -27,6 +27,7 @@ export default class CreateEventId extends React.Component {
     this.onYearChange = this.onYearChange.bind(this)
     this.onPrefixChange = this.onPrefixChange.bind(this)
     this.onCopyClick = this.onCopyClick.bind(this)
+    this.onRegenerateClick = this.onRegenerateClick.bind(this)
 
     this.updateState = this.updateState.bind(this)
     this.state = {
@@ -72,6 +73,10 @@ export default class CreateEventId extends React.Component {
       this.setState({ textCopied: false })
       alert('please press Ctrl/Cmd+C to copy')
     }
+  }
+
+  onRegenerateClick(event) {
+    this.updateState({})
   }
 
   render() {
@@ -125,9 +130,9 @@ export default class CreateEventId extends React.Component {
             }}>
               {this.state.generatedName}
             </mark>
-            <Button icon="assignment_return" size="sm" type="secondary" onClick={this.onCopyClick}>
+            <Button icon="assignment_return" size="sm" type="primary" onClick={this.onCopyClick}>
               {this.state.textCopied
-                ? <span style={{color: '#00BF10'}}>COPIED</span>
+                ? <span>COPIED</span>
                 : <span>COPY</span>
               }
             </Button>
@@ -135,6 +140,13 @@ export default class CreateEventId extends React.Component {
             <small id="name-help" className="form-text text-muted">Don't forget to set "_shortId" property to last part
               after "-" of this generated id
             </small>
+
+            <div style={{marginTop: '1rem'}}>
+              <Button icon="autorenew" size="sm" type="secondary" onClick={this.onRegenerateClick}>
+                REGENERATE
+              </Button>
+            </div>
+
           </div>
         )}
 
