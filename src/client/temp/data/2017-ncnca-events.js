@@ -2031,6 +2031,101 @@ export default [
     "isDraft" : false,
     "_shortId" : "S18Ny1etc7g"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-Sk5q3lySe",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 20 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sk5q3lySe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BklQCgJSx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 21 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BklQCgJSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-rkLECgyrx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 22 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkLECgyrx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BysSCxkHe",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 23 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BysSCxkHe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-SkRIRxyHg",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 24 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SkRIRxyHg"
+  }, {
     "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
     "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
     "date": "June 24 2017",
@@ -2046,6 +2141,25 @@ export default [
     "group" : "3",
     "isDraft" : false,
     "_shortId" : "HkwE1klK57e"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-ByF9RlkSx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 25 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "ByF9RlkSx"
   }, {
     "id" : "evt-ncnca-2017-auburn-downtown-criterium-ryd41Jxtcme",
     "name": "Auburn Downtown Criterium",
