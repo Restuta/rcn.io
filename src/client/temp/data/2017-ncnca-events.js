@@ -2107,6 +2107,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "BysSCxkHe"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-rkc9fbJBl",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 23 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkc9fbJBl"
+  }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-SkRIRxyHg",
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 24 2017",
@@ -2125,6 +2144,25 @@ export default [
     "group" : "",
     "isDraft" : false,
     "_shortId" : "SkRIRxyHg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-r18YNZyrx",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 24 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "r18YNZyrx"
   }, {
     "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
     "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
@@ -2160,6 +2198,25 @@ export default [
     "group" : "",
     "isDraft" : false,
     "_shortId" : "ByF9RlkSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-HkOkH$ySx",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 25 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HkOkH$ySx"
   }, {
     "id" : "evt-ncnca-2017-auburn-downtown-criterium-ryd41Jxtcme",
     "name": "Auburn Downtown Criterium",
