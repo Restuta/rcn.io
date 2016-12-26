@@ -1882,6 +1882,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "SyAQyygFqXe"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-H1_jYxJre",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 01 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1_jYxJre"
+  }, {
     "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
     "date": "June 03 2017",
@@ -2012,6 +2031,139 @@ export default [
     "isDraft" : false,
     "_shortId" : "S18Ny1etc7g"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-Sk5q3lySe",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 20 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sk5q3lySe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BklQCgJSx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 21 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BklQCgJSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-rkLECgyrx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 22 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkLECgyrx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BysSCxkHe",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 23 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BysSCxkHe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-rkc9fbJBl",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 23 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkc9fbJBl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-SkRIRxyHg",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 24 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SkRIRxyHg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-r18YNZyrx",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 24 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "r18YNZyrx"
+  }, {
     "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
     "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
     "date": "June 24 2017",
@@ -2027,6 +2179,44 @@ export default [
     "group" : "3",
     "isDraft" : false,
     "_shortId" : "HkwE1klK57e"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-ByF9RlkSx",
+    "name" : "USA Cycling Masters Track National Championships",
+    "date": "June 25 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "city": "Rock Hill",
+      "state": "SC"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "ByF9RlkSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-road-tt-national-championships-HkOkH$ySx",
+    "name" : "USA Cycling Pro Road & TT National Championships",
+    "date": "June 25 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Knoxville",
+      "state": "TN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HkOkH$ySx"
   }, {
     "id" : "evt-ncnca-2017-auburn-downtown-criterium-ryd41Jxtcme",
     "name": "Auburn Downtown Criterium",
@@ -2061,6 +2251,120 @@ export default [
     "isDraft" : false,
     "_shortId" : "HJKE11gF57l"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-criterium-team-time-trial-national-championships-HkcjS$yHx",
+    "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
+    "date": "June 29 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HkcjS$yHx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-amateur-road-national-championships-HJNjPWJHl",
+    "name" : "USA Cycling Amateur Road National Championships",
+    "date": "June 29 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HJNjPWJHl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-criterium-team-time-trial-national-championships-Hkod8Wkrg",
+    "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
+    "date": "June 30 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Hkod8Wkrg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-amateur-road-national-championships-rkK1d$yrg",
+    "name" : "USA Cycling Amateur Road National Championships",
+    "date": "June 30 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkK1d$yrg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-criterium-team-time-trial-national-championships-HkmGP$JSx",
+    "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
+    "date": "July 01 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HkmGP$JSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-amateur-road-national-championships-rku5cZkBx",
+    "name" : "USA Cycling Amateur Road National Championships",
+    "date": "July 01 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rku5cZkBx"
+  }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-8-rJcE11lY5Qe",
     "name" : "Central Coast Road Series – CCCX #8",
     "date": "July 01 2017",
@@ -2076,6 +2380,44 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJcE11lY5Qe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-pro-criterium-team-time-trial-national-championships-BkVNwbkHl",
+    "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
+    "date": "July 02 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BkVNwbkHl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-amateur-road-national-championships-Sy1Mo$JHl",
+    "name" : "USA Cycling Amateur Road National Championships",
+    "date": "July 02 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "city": "Louisville",
+      "state": "KY"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sy1Mo$JHl"
   }, {
     "id" : "evt-ncnca-2017-lodoga-road-race-vp-10-BkoE1JlK5mg",
     "name" : "Lodoga Road Race – VP #10",
