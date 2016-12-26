@@ -118,7 +118,6 @@ class Event extends Component {
       baseHeight = getBaseHeight(containerWidth),
       fixedWidth = false,
       width = '100%',
-      iframeMode = false,
       event = {location: {
         city: '',
         state: ''
