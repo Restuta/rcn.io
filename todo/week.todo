@@ -98,9 +98,8 @@ Today
 			+- separate chunks (same config)
 			+- separate index.html
 			- no SSR for widgets? (probably no)
-		- change logic in Events to support navigation from iFrame
+		+- change logic in Events to support navigation from iFrame
 		+- tweak breakpoints for widgets: since we change base font to 7px, cards wrap too soon
-		- try webpack bundle analizer: https://www.npmjs.com/package/webpack-bundle-analyzer
 		- try http://embed.ly/
 		- create Boostrapping script
 			- create iframe in a given element by id
@@ -117,6 +116,8 @@ Today
 			- https://dev.twitter.com/web/javascript/loading
 			- http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/
 	!--- NCNCA Calendar 2017
+		- create new type of event "nationals"
+			- update existing "road & tt nationals" events with this
 		- figure out promoters and their ids
 			- regenerate events with those
 			+- reese levine promoter name?: it's Cal Cycling,
@@ -292,6 +293,7 @@ Today
  		- play with adaptive sizes: https://projects.invisionapp.com/d/main#/console/1638951/114305230/preview
  		-- make it responsive in React
  			- http://wicky.nillia.ms/enquire.js/: and a wrapper https://github.com/akiran/react-responsive-mixin
+ 		- try webpack bundle analizer: https://www.npmjs.com/package/webpack-bundle-analyzer
  		- use this from material UI for multiday events: http://screencast.com/t/NrvJMSHEJX (http://material-ui.com/#/components/lists)
  		- make better implementation of faded text, when text is too long: current one is not ideal and has few bugs
  			-- idea 1: mb use string.length to approximate if text fits
