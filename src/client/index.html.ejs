@@ -6,13 +6,15 @@
     <meta name="description" content="Plan your racing season. Discover rides and races in your area.">
     <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <!-- favicons for different platforms -->
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=1">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=1">
-    <meta name="theme-color" content="#ffffff">
-    <!-- favicons for different platforms -->
+    <% if (!htmlWebpackPlugin.options.env.Widget) { %>
+      <!-- favicons for different platforms -->
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=1">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=1">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
+      <link rel="shortcut icon" href="/favicon.ico?v=1">
+      <meta name="theme-color" content="#ffffff">
+      <!-- favicons for different platforms -->
+    <% } %>
 
     <!-- have to be before main CSS styles, so they don't override our styles -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -20,7 +22,6 @@
     <% for (var css in htmlWebpackPlugin.files.css) { %>
       <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
-
 
     <!-- Loading Typekit fonts -->
     <script>
@@ -42,15 +43,17 @@
       })(document);
     </script>
 
-    <!-- segment.com loads HEAP, GA and Driffft -->
-    <script type="text/javascript">
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
-        analytics.load('FwzeWVaBbHtgwd5EMoih57IDk4nN7834');
-        analytics.page()
-      }}();
-    </script>
+    <% if (!htmlWebpackPlugin.options.env.Widget) { %>
+      <!-- segment.com loads HEAP, GA and Driffft -->
+      <script type="text/javascript">
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+          analytics.load('FwzeWVaBbHtgwd5EMoih57IDk4nN7834');
+          analytics.page()
+        }}();
+      </script>
+    <% } %>
 
-    <% if (htmlWebpackPlugin.options.env.Prod) { %>
+    <% if (htmlWebpackPlugin.options.env.Prod && !htmlWebpackPlugin.options.env.Widget) { %>
       <!-- getjaco.com recordings -->
       <script type="text/javascript">
       (function(e, t) {
@@ -76,6 +79,12 @@
       </script>
     <% } %>
 
+    <!-- adding iFrame resizer for widgets only -->
+    <% if (htmlWebpackPlugin.options.env.Widget) { %>
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.contentWindow.min.js"
+      integrity="sha256-Y7UIUBSmavjQ1Wr7mLsT9ppMTyHDwOLMY7MP6MdaSdk=" crossorigin="anonymous"></script>
+    <% } %>
+
   </head>
   <body data-grid-framework="b3" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10"
     data-grid-gutterwidth="16px" data-grid-nbcols="14">
@@ -86,13 +95,17 @@
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>
-    <!-- Headway changelog -->
-    <script>
-      var HW_config = {
-        selector: '.HeadwayChangelog', // CSS selector where to inject the badge
-        account: 'a7zwXJ' // your account ID
-      };
-    </script>
-    <script async src="//cdn.headwayapp.co/widget.js"></script>
+
+    <% if (!htmlWebpackPlugin.options.env.Widget) { %>
+      <!-- Headway changelog -->
+      <script>
+        var HW_config = {
+          selector: '.HeadwayChangelog', // CSS selector where to inject the badge
+          account: 'a7zwXJ' // your account ID
+        };
+      </script>
+
+      <script async src="//cdn.headwayapp.co/widget.js"></script>
+    <% } %>
   </body>
 </html>

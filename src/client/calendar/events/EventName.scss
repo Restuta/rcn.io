@@ -10,7 +10,8 @@ $base-line-rem: $line-height-rem / 2;
 
 .EventName {
   @include text-2();
-  //margin-bottom: 1rem;
+  margin-bottom: 1rem;
+
   max-height: $line-height-rem * 3;
   letter-spacing: -0.3px;
 
@@ -21,9 +22,14 @@ $base-line-rem: $line-height-rem / 2;
   // min-height: auto !important;
   overflow: hidden;
 
+  .canceled-word, .moved-word {
+    font-weight: 900;
+  }
+
   .canceled {
-    text-decoration: line-through;
-    color: $grey-500;
+    // text-decoration: line-through;
+    color: $grey-600;
+    font-weight: 500;
   }
 
   &.size-XXS {
@@ -33,7 +39,7 @@ $base-line-rem: $line-height-rem / 2;
     font-weight: 700;
     padding-left: 0;
     padding-top: pxToRem(2);
-    margin-bottom: 0;
+    // margin-bottom: 0;
     max-height: 100%;
     letter-spacing: 0;
   }
@@ -42,7 +48,7 @@ $base-line-rem: $line-height-rem / 2;
     @include text-sm-9();
     top: pxToRem(2);
     font-weight: 700;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     line-height: 1.25rem;
     max-height: 85%;
     letter-spacing: -0.2px;
@@ -52,12 +58,15 @@ $base-line-rem: $line-height-rem / 2;
     @include text-sm-10($offset: 3);
     line-height: 1.5rem;
     //top: pxToRem(-1);
-    margin-bottom: 0;
+    // margin-bottom: 0;
     &.size-S-6 {
-      max-height: $base-line-rem * 4.5;
+      max-height: $base-line-rem * 4.2;
+      margin-bottom: pxToRem(2);
     }
     &.size-S-7 {
+      top: 0;
       max-height: $base-line-rem * 6;
+      margin-bottom: pxToRem(2);
     }
     &.size-S-8 {
       max-height: $base-line-rem * 6;
@@ -68,10 +77,10 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-M {
     @include text-sm-11($offset: 3);
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 700;
-    margin-bottom: 0rem;
-    max-height: $base-line-rem * 6;
+    // margin-bottom: 0rem;
+    max-height: $base-line-rem * 6.1;
     letter-spacing: -0.1px;
     &.size-M-9 {
       max-height: $base-line-rem * 4.5;;
@@ -80,7 +89,7 @@ $base-line-rem: $line-height-rem / 2;
 
   &.size-L {
     @include text-2();
-    margin-bottom: 0;
+    // margin-bottom: 0;
     font-weight: 700;
     max-height: $base-line-rem * 8;
     letter-spacing: -0.1px;
@@ -91,7 +100,7 @@ $base-line-rem: $line-height-rem / 2;
     @include text-3($offset: 1);
     line-height: 2.5rem;
     letter-spacing: 0px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     font-weight: 700;
     max-height: $base-line-rem * 10;
     letter-spacing: -0.1px;

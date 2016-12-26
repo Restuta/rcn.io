@@ -16,41 +16,82 @@ const Statuses = {
 const EventTypes = {
   other: {
     meeting: 'Meeting',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
   },
   road: {
+    'default': 'Road',
     criterium: 'Criterium',
     roadRace: 'Road Race',
     circuitRace: 'Circuit Race',
     timeTrial: 'Time Trial',
+    teamTimeTrial: 'Team Time Trial',
     hillClimb: 'Hill Climb',
     omnium: 'Omnium',
     stageRace: 'Stage Race',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive'
   },
   cyclocross: {
-    clicnics: 'Clinics',
-    nonCompetitive: 'Non-Competitive'
+    'default': 'Cyclocross',
+    clinics: 'Clinics',
+    nonCompetitive: 'Non-Competitive',
   },
   mtb: {
+    'default': 'MTB',
     enduro: 'Enduro',
-    clicnics: 'Clinics',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive',
-    //...
   },
   track: {
-    clicnics: 'Clinics',
+    'default': 'Track',
+    clinics: 'Clinics',
     nonCompetitive: 'Non-Competitive',
   },
   nonCompetitive: {
-    granFondo: 'Gran Fondo',
     'default': 'Non-Competitive',
+    granFondo: 'Gran Fondo',
   }
 }
+
+//gets event type abbreviated to 2-4 characters
+// const getAbbreviatedType = eventType => {
+//   const EventsToAbbreviationTypeMap = {
+//     [EventTypes.road.default]: 'rd',
+//     [EventTypes.road.criterium]: 'ct',
+//     [EventTypes.road.roadRace]: 'rr',
+//     [EventTypes.road.circuitRace]: 'cr',
+//     [EventTypes.road.timeTrial]: 'tt',
+//     [EventTypes.road.teamTimeTrial]: 'ttt',
+//     [EventTypes.road.hillClimb]: 'hc',
+//     [EventTypes.road.omnium]: 'om',
+//     [EventTypes.road.stageRace]: 'sr',
+//     [EventTypes.road.clinics]: 'clnx',
+//     [EventTypes.road.nonCompetitive]: 'ncmp',
+//
+//     [EventTypes.cyclocross.default]: 'cx',
+//
+//     [EventTypes.mtb.default]: 'mtb',
+//     [EventTypes.mtb.enduro]: 'ndr',
+//
+//     [EventTypes.track.default]: 'trk',
+//
+//     [EventTypes.other.meeting]: 'mtng',
+//     [EventTypes.nonCompetitive.granFondo]: 'gf',
+//   }
+//
+//   const abbrType = EventsToAbbreviationTypeMap[eventType]
+//
+//   if (!abbrType) {
+//     throw new Error(`Can't find matching Event Type Abbreviation for: "${eventType}"`)
+//   }
+//
+//   return abbrType
+// }
+//
 
 export {
   Disciplines,
   Statuses,
   EventTypes,
+  // getAbbreviatedType
 }

@@ -4,8 +4,10 @@ import { Provider } from 'react-redux'
 import configureStore from 'shared/configure-store.js'
 import { syncHistoryWithStore } from 'react-router-redux'
 import routes from 'routes'
+import analytics from 'utils/analytics'
 
 const store = configureStore()
+
 const history = syncHistoryWithStore(browserHistory, store)
 history.listen(location => analytics.page())
 

@@ -25,9 +25,19 @@ module.exports = {
   entry: {
     app: [
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-      path.join(consts.SRC_DIR, 'client/index.js')
+      path.join(consts.SRC_DIR, 'client/index.js'),
     ],
-    vendor: commonConfig.entry.vendor
+    //adding other deps for dev build to vendor chunk to speed up build
+    vendor: commonConfig.entry.vendor.concat([
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
+    ]),
+    widgets: [
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
+      path.join(consts.SRC_DIR, 'client/widgets/index.js')
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -37,9 +47,13 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.bundle.js',
-      minChunks: Infinity
+      names: ['vendor', 'common'], //use this to enable extra common chunk
+      // names: ['vendor'],
+      filename: '[name].bundle.js',
+      // chunks: ['vendor'],
+      // (with more entries, this ensures that no other module
+      // goes into the vendor chunk)
+      minChunks: 2 //set to 2 when enabling 'common' chunk
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -54,11 +68,29 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
+      chunks: ['vendor', 'common', 'app'],
+      chunksSortMode: 'dependency',
       title: 'rcn',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
       hash: false,
       env: {
+        Widget: false,
+        Prod: false,
+        Dev: true
+      }
+    }),
+    //separate html file for widgets
+    new HtmlWebpackPlugin({
+      filename: 'widgets/index.html',
+      chunks: ['vendor', 'common', 'widgets'],
+      chunksSortMode: 'dependency',
+      title: 'rcn/widgets',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Widget: true,
         Prod: false,
         Dev: true
       }
@@ -77,7 +109,12 @@ module.exports = {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse,
+    noParse: commonConfig.module.noParse
+      .concat([
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+        path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      ]),
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'

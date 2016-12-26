@@ -13,6 +13,20 @@ const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
+const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
+const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
+  removeComments: true,
+  collapseWhitespace: true,
+  removeRedundantAttributes: true,
+  useShortDoctype: true,
+  removeEmptyAttributes: true,
+  removeStyleLinkTypeAttributes: true,
+  keepClosingSlash: true,
+  minifyJS: true,
+  minifyCSS: true,
+  minifyURLs: true
+}
+
 module.exports = {
   //devtool: 'source-map',
   devtool: 'cheap-module-source-map',
@@ -24,7 +38,12 @@ module.exports = {
     app: [
       path.join(consts.SRC_DIR, 'client/index.js')
     ],
-    vendor: commonConfig.entry.vendor
+    widgets: [
+      path.join(consts.SRC_DIR, 'client/widgets/index.js')
+    ],
+    vendor: commonConfig.entry.vendor.concat([
+      path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
+    ]),
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -43,14 +62,21 @@ module.exports = {
         'Dev': false
       }
     }),
+    //defines explicit vendor chunks with pre-picked vendor dependencies and automatic "common" chunk, where Webpack
+      //figures out common deps between all entry points.
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor.bundle.js',
-      minChunks: Infinity
+      names: ['vendor', 'common'], //use this to enable extra common chunk
+      // names: ['vendor'],
+      filename: '[name].bundle.js',
+      // chunks: ['vendor'],
+      // (with more entries, this ensures that no other module
+      // goes into the vendor chunk)
+      minChunks: 2 //set to 2 when enabling 'common' chunk
     }),
     new webpack.optimize.DedupePlugin(),
-    new ExtractTextPlugin('app.css'),
+    extractCss,
     new webpack.optimize.UglifyJsPlugin({
+      minimize: false,
       compressor: {
         screw_ie8: true, // eslint-disable-line camelcase
         warnings: false
@@ -66,27 +92,35 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
       title: 'RCN.io',
+      chunks: ['vendor', 'common', 'app'],
+      chunksSortMode: 'dependency',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
-      css: ['app.css'],
       inject: false, // we use custom template to inject scripts,
       hash: true,
       env: {
+        Widget: false,
         Prod: true,
         Dev: false
       },
-      minify: { // Minifying it while it is parsed
-        removeComments: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true
+      minify: htmlWebpackMinifyConfig,
+    }),
+    //separate html file for widgets
+    new HtmlWebpackPlugin({
+      filename: 'widgets/index.html',
+      chunks: ['vendor', 'common', 'widgets'],
+      chunksSortMode: 'dependency',
+      title: 'RCN.io Widgets',
+      template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Widget: true,
+        Prod: true,
+        Dev: false
       },
+      minify: htmlWebpackMinifyConfig,
     })
+
   ],
   resolve: {
     root: [
@@ -127,7 +161,7 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ['style', ExtractTextPlugin.extract('css!postcss!sass')],
+      loaders: ['style', extractCss.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')

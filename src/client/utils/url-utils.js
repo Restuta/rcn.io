@@ -67,5 +67,9 @@ const getShorterUrl = url => {
   return resultUrl
 }
 
-
-export { addUrlParams, getDomain, removeHttpAndWww, getShorterUrl }
+export {
+  addUrlParams,
+  getDomain,
+  removeHttpAndWww,
+  getShorterUrl
+}

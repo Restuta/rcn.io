@@ -83,15 +83,34 @@ const blue = {
   blue900: '#0D47A1',
 }
 
+const lightBlue = {
+  lightBlue50: '#E1F5FE',
+  lightBlue100: '#B3E5FC',
+  lightBlue200: '#81D4FA',
+  lightBlue300: '#4FC3F7',
+  lightBlue400: '#29B6F6',
+  lightBlue500: '#03A9F4',
+  lightBlue600: '#039BE5',
+  lightBlue700: '#0288D1',
+  lightBlue800: '#0277BD',
+  lightBlue900: '#01579B',
+  lightBlueA100: '#80D8FF',
+  lightBlueA200: '#40C4FF',
+  lightBlueA400: '#00B0FF',
+  lightBlueA700: '#0091EA',
+}
+
 const colors = {
   ...grey,
   ...blueGrey,
   ...purple,
   ...red,
   ...blue,
+  ...lightBlue,
   ...orange,
 
   bodyBg: '#FCFCFC',
+  bodyWidgetsBg: '#f7f7f7',
   body: '#333333',
 
   // brownMud: 'rgba(160,82,45,0.8)', //'SIENNA',
@@ -107,6 +126,7 @@ const event = {
   other: {
     unknownType: colors.body,
     meeting: 'white',
+    // meeting: colors.lightBlue800,
     clinics: clinicsColor,
   },
   status: {
@@ -115,12 +135,13 @@ const event = {
     moved: colors.grey400,
   },
   road: {
-    'default': colors.primary,
+    'default': colors.white,
     criterium: '#00BF10',
     roadRace: colors.blue500,
     circuitRace: colors.orange500,
     timeTrial: colors.red500,
     hillClimb: colors.red700,
+    teamTimeTrial: colors.red900,
     stageRace: colors.deepPurple400,
     omnium: colors.deepPurple400,
     clinics: clinicsColor,

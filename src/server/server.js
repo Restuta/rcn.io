@@ -102,9 +102,20 @@ setInterval(() => {
   }
 }, CACHE_DURATION)
 
-app.get('/*', function(req, res, next) {
-  const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
-  const indexHtmlContent = fs.readFileSync(indexHtml, 'utf8')
+const widgetsIndexHtml = path.join(RootDir, '/dist/widgets/index.html')
+const widgetsIndexHtmlContent = fs.readFileSync(widgetsIndexHtml, 'utf8')
+
+app.get('/widgets/*', function(req, res, next) {
+  res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
+  res.send(widgetsIndexHtmlContent)
+})
+
+const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
+const indexHtmlContent = fs.readFileSync(indexHtml, 'utf8')
+
+app.get('*', function(req, res, next) {
+  // const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)
+  // const indexHtmlContent = fs.readFileSync(indexHtml, 'utf8')
 
   const memoryHistory = createMemoryHistory(req.path)
   //TODO: setup data fetching https://github.com/StevenIseki/react-router-redux-example/blob/master/serverProd.js

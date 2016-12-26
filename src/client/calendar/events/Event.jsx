@@ -5,13 +5,30 @@ import Typography from 'styles/typography'
 import Colors from 'styles/colors'
 import './Event.scss'
 import Grid from 'styles/grid'
-import { Disciplines } from 'calendar/events/types'
+import { Disciplines, EventTypes } from 'calendar/events/types'
 import { getEventColor } from 'calendar/utils/event-colors.js'
 import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
+import Badge from 'calendar/badges/Badge.jsx'
 import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
+import classnames from 'classnames'
+import { Statuses } from 'client/calendar/events/types.js'
+import analytics from 'utils/analytics'
+
+/* event card adaptive behaviour:
+   >= 300 fit two
+   <= 299 fit one and stretch
+   Can control card with in manual mode, height set to auto
+*/
+
+/*
+Event sizing types:
+  - fixed width, calculates width itself based on container and colSize (for cases like Dev)
+  - fixed width, arbitrary, set from outside, assumes to colSize is set (for widgets)
+  - non-fixed with, takes 100% of it's container (for regular calendar)
+*/
 
 
 //gets height of the smallest card (in rems) for the given containerWidth
@@ -21,16 +38,31 @@ const getBaseHeight = containerWidth => {
     return 2
   }
 
-  const baseHeightMap = {
-    [Grid.ContainerWidth.SM]: 2,
-    [Grid.ContainerWidth.MD]: 3,
-    [Grid.ContainerWidth.LG]: 4,
-    [Grid.ContainerWidth.XL]: 5,
-    [Grid.ContainerWidth.XXL]: 6
+  let baseHeight
+
+  if (containerWidth <= Grid.ContainerWidth.SM) {
+    baseHeight = 2
+  } else if (containerWidth > Grid.ContainerWidth.SM && containerWidth <= Grid.ContainerWidth.MD) {
+    baseHeight = 3
+  } else if (containerWidth > Grid.ContainerWidth.MD && containerWidth <= Grid.ContainerWidth.LG) {
+    baseHeight = 4
+  } else if (containerWidth > Grid.ContainerWidth.LG && containerWidth <= Grid.ContainerWidth.XL) {
+    baseHeight = 5
+  } else if (containerWidth > Grid.ContainerWidth.XL) {
+    baseHeight = 6
   }
 
-  return baseHeightMap[containerWidth]
+  return baseHeight
 }
+
+//get specific to container and column size cardWidth
+const getCardWithInRems = (containerWidth, widthColumns) => {
+  const grid  = Grid.init(containerWidth)
+  //"2" compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
+  const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
+  return Typography.pxToRem(cardWidthPx)
+}
+
 
 //nummeric card sizes for simple comparisons
 const numSize = {
@@ -62,34 +94,45 @@ class Event extends Component {
 
     trackClick()
 
-    this.props.router.replace({
-      pathname: `/events/${this.props.id}`,
-      state: {
-        modal: true,
-        returnLocation: {
-          pathname: this.context.locationPathname,
-        },
-      }
-    })
+    if (this.props.iframeMode) {
+      //top-level window navigation
+      window.top.location.href = `../events/${this.props.id}`
+    } else {
+      this.props.router.replace({
+        pathname: `/events/${this.props.id}`,
+        state: {
+          modal: true,
+          returnLocation: {
+            pathname: this.context.locationPathname,
+          },
+        }
+      })
+    }
   }
 
   render() {
-    // console.info('Event render')
-
     const {
-      width,
+      widthColumns,
       containerWidth,
+      autoHeight = false,
       baseHeight = getBaseHeight(containerWidth),
-      name,
+      fixedWidth = false,
+      width = '100%',
       event = {location: {
         city: '',
         state: ''
       }},
-      draft = false,
+      className,
+      showEventTypeBadge = false,
+      highlightEventTypeInName = false,
     } = this.props
 
-    //todo: typography should be passed as props
+    const classNames = classnames('Event lvl-1', {
+      'canceled': event.status === Statuses.canceled,
+      'moved': event.status === Statuses.moved
+    }, className)
 
+    //TODO: typography should be passed as props
     /*
     following formula can be expressed as:
 
@@ -99,10 +142,16 @@ class Event extends Component {
       return  c*a + c - 1
     }
 
-    it calculates card height so it's twice taller than two previous sizes + margins
+    it calculates card height so it's twice as tall as two previous sizes + margins
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
-    const cardHeight = (width * baseHeight + width - 1)
+
+    //TODO bc: refactor this for case when auto-height is false and no widthColumns is provided
+    const cardHeight = autoHeight
+      ? 12 //TODO: default size doesn't make sense here, but we need to calculate card size somehow
+      : widthColumns
+        ? (widthColumns * baseHeight + widthColumns - 1)
+        : 12
 
     const getSize = cardHeight => {
       if (cardHeight >= 1 && cardHeight <= 3) {
@@ -123,72 +172,88 @@ class Event extends Component {
     const cardSize = getSize(cardHeight)
     const cardHeightRem = cardHeight * Typography.HALF_LINE_HEIGHT_REM
 
-    let verticalPadding
-    let horizontalPadding
-    let paddingBottom
-    let paddingTop
-    let eventColor = 'white'
-    let locationComponent = null
+    let verticalPaddingRem = 0
+    let horizontalPaddingRem = 0
+    let paddingTopRem = 0
+    let eventColor
 
     //differnt settings based on card size
     //TODO: move to CSS
     if (cardSize === Size.XXS) {
-      verticalPadding = `${Typography.pxToRem(1)}rem`
-      horizontalPadding = `${Typography.pxToRem(1)}rem`
+      verticalPaddingRem = Typography.pxToRem(1)
+      horizontalPaddingRem = Typography.pxToRem(1)
       eventColor = 'black'
     } else if (cardSize === Size.XS) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 4}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 4
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
       eventColor = 'orange'
     } else if (cardSize === Size.S) {
-      verticalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
+      verticalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM / 2
       eventColor = 'tomato'
     } else if (cardSize === Size.M) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM / 2}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM / 2
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM
       eventColor = 'mediumseagreen'
     } else if (cardSize === Size.L) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM
       eventColor = 'darkorchid'
     } else if (cardSize === Size.XL) {
-      paddingTop = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
-      //paddingBottom = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
-      horizontalPadding = `${Typography.HALF_LINE_HEIGHT_REM + 1}rem`
+      paddingTopRem = Typography.HALF_LINE_HEIGHT_REM + 1
+      horizontalPaddingRem = Typography.HALF_LINE_HEIGHT_REM + 1
       eventColor = 'deepskyblue'
     }
 
-    const grid  = Grid.init(containerWidth)
-    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's width
-    const cardWidthPx = Math.floor(grid.getColumnContentWidth(width)) - 2
-    const cardWidthRem = Typography.pxToRem(cardWidthPx)
-
-    eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
-
     const { debug = false } = this.props
-    let debugComponent = null
+
+    if (!debug) {
+      eventColor = getEventColor(event.discipline, event.type, event.status) || eventColor
+    }
+
+    let debugComp = null
 
     if (debug) {
-      debugComponent = (<span style={{
+      debugComp = (<span style={{
         position: 'absolute',
         fontSize: '1.25rem',
         top: '-8px',
-        left: '80%',
+        right: '5%',
         whiteSpace: 'nowrap',
         color: Colors.grey400,
         overflow: 'visible',
       }}>{cardSize} {cardHeightRem} </span>)
     }
 
-    const cardWidth = debug ? (cardWidthPx + 'px') : ('100%')
+    // const grid  = Grid.init(containerWidth)
+    //2 compensates for calculation and round error, so card has no chance to push columns beyound it's widthColumns
+    // const cardWidthPx = Math.floor(grid.getColumnContentWidth({numberOfCols: widthColumns})) - 2
+    // const cardWidthRem = Typography.pxToRem(cardWidthPx)
 
-    let eventGroupComponent = null
+    // const cardWidthRem = Math.round(cardHeightRem * 1.618)
+    let cardWidthRem
+    let cardLeftBorderWidthRem = 0.7 //default
 
-    if (event.group) {
-      eventGroupComponent = (<span style={{
+    // const cardWidth = fixedWidth ? (cardWidthRem + 'rem') : ('100%')
+    // const cardWidth = '100%'
+    let cardWidth
+
+    if (fixedWidth && widthColumns) { //calculate card with to take exacly of provided column width
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardWidth = cardWidthRem + 'rem'
+      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
+    } else if (!fixedWidth && widthColumns) {
+      cardWidthRem = getCardWithInRems(containerWidth, widthColumns)
+      cardLeftBorderWidthRem = cardWidthRem * 0.04 //constant picked via trial and error to look nice on all sizes
+      cardWidth = '100%'
+    } else {
+      cardWidth = width
+    }
+
+    let eventGroupComp = null
+
+    if (event.isDraft && event.group) {
+      eventGroupComp = (<span style={{
         position: 'absolute',
         fontFamily: 'museo-sans-condensed',
         fontWeight: '500',
@@ -201,11 +266,12 @@ class Event extends Component {
       }}>G {event.group} </span>)
     }
 
+    let locationComp = null
     let promoterComp = null
 
-    if ((numSize[cardSize] > numSize[Size.S]) && !draft) {
-      locationComponent = <Location location={event.location} size={cardSize} />
-    } else if ((numSize[cardSize] > numSize[Size.S]) && draft) {
+    if ((numSize[cardSize] > numSize[Size.S]) && !event.isDraft) {
+      locationComp = <Location location={event.location} size={cardSize} />
+    } else if ((numSize[cardSize] > numSize[Size.S]) && event.isDraft) {
       const promoter = event.promoters[0].name
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
@@ -218,34 +284,58 @@ class Event extends Component {
       opacity: 1,
       //width: cardWidthRem + 'rem',
       //width: cardWidthPx + 'px',
-      width: cardWidth,
-      // width: cardWidthPx,
-      height: cardHeightRem + 'rem',
+      // width: fixedWidth ? cardWidth : (cardWidthRem + 'rem'),
+      width: (fixedWidth || widthColumns) ? cardWidth : undefined,
+      minHeight: autoHeight ? '11rem' : 'initial',
+      height: autoHeight ? 'auto' : cardHeightRem + 'rem',
+      // height: cardHeightRem + 'rem',
       // height: 4 + 'rem',
       // height: '100%',
-      //minHeight: cardHeightRem + 'rem',
+      // minHeight: 2 + 'rem',
       //maxHeight: cardHeightRem * 2 + 'rem',
 
-      paddingTop: paddingTop || verticalPadding,
-      paddingBottom: paddingBottom || verticalPadding,
-      paddingLeft: horizontalPadding,
-      paddingRight: horizontalPadding,
-      borderLeft: `${cardWidthRem * 0.04}rem solid ${eventColor}`,
+      paddingTop: (paddingTopRem || verticalPaddingRem) + 'rem',
+      paddingBottom: verticalPaddingRem + 'rem',
+      paddingLeft: horizontalPaddingRem + 'rem',
+      paddingRight: horizontalPaddingRem + 'rem',
+      borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
       overflow: (event.group || debug) ? 'visible' : 'hidden',
     }
+    //for event types with white color use plain black, since otherwise badge will be invisible
+    const typeBadgeColor = (eventColor === 'white' ? Colors.body : eventColor)
+    //if event type is "Clinics" (uses "other" to just compare with any clinics) add discipline as a prefix, since
+    // clinics can be for road, mtb, track and other disciplines
+    const typeBadgeText = (event.type === EventTypes.other.clinics && event.discipline !== Disciplines.other)
+      ? event.type && (event.discipline.toUpperCase() + ' / ' +  event.type.toUpperCase())
+      : event.type && event.type.toUpperCase()
 
     return (
-      <a id={event.id} href={`/events/${this.props.id}`} style={style} className="Event lvl-1"
+      <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
-        {debugComponent}
+        {debugComp}
+        <div>
+          {showEventTypeBadge &&
+            <div>
+              <Badge square bgColor={'transparent'} color={typeBadgeColor} borderColor={typeBadgeColor}>
+                {typeBadgeText}
+              </Badge>
+            </div>
+          }
 
-        <EventName size={cardSize} height={cardHeightRem} name={name} type={event.type}
-          typeColor={eventColor} eventStatus={event.status}/>
+          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
+          <EventName size={cardSize}
+            height={cardHeightRem}
+            name={event.name}
+            type={event.type}
+            typeColor={eventColor}
+            eventStatus={event.status}
+            highlightEventType={highlightEventTypeInName}/>
+        </div>
 
-        {event.notes && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
-        {eventGroupComponent}
-        {locationComponent}
+        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {eventGroupComp}
+        {locationComp}
         {promoterComp}
       </a>
     )
@@ -255,14 +345,29 @@ class Event extends Component {
 Event.propTypes = {
   //TODO bc: id, name and discipline are covered under "event type"
   id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  //location: PropTypes.any,
-  //width in coluns card is going to take
-  width:  PropTypes.oneOf([1, 2, 3, 4]).isRequired,
+  //debug mode for the card
+  debug: PropTypes.bool,
+  //iframeMode
+  iframeMode: PropTypes.bool,
+  //if false, card would take 100% of the container (default) and ignore widthProp
+    //if true uses provided with or 100% if none
+  fixedWidth: PropTypes.bool,
+  //allows external control of card with (px, %, rem or any css values), requires fixedWidth to  be true
+  width: PropTypes.string,
+  //width in columns card is going to take
+  widthColumns:  PropTypes.oneOf([1, 2, 3, 4]),
+  //if true, card will adjust it's height based on it's content, if false it would calculate size according to columns
+    //layout formula, use it with combination of maxHeight
+  autoHeight: PropTypes.bool,
   //height of the smalles card in half-baselines
   baseHeight: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9]),
   //width of the container element to calculate card size in px
   containerWidth: PropTypes.number,
+  //if true, higlihgts event type in it's name if it's part of it e.g. "Solar City Criterium" would have "Criterim"
+    //higlighted with the event type color
+  highlightEventTypeInName: PropTypes.bool,
+  //if true, shows event type badge inside event card
+  showEventTypeBadge: PropTypes.bool,
   // event: PropTypes.instanceOf(EventType),
   //TODO bc: probably move props to upper level or move event-related props to down level
   event: PropTypes.shape({
@@ -285,9 +390,11 @@ Event.propTypes = {
     registrationUrl: PropTypes.string,
     flyerUrl: PropTypes.string,
     status: PropTypes.string,
-    notes: PropTypes.string,
+    draftNotes: PropTypes.string,
+    //represents if event is draft, usually for draft calendars
+    isDraft: PropTypes.bool,
   }),
-  draft: PropTypes.bool,
+
 }
 
 Event.contextTypes = {

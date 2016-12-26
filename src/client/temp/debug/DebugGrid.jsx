@@ -70,29 +70,33 @@ const GridLines = (props) => {
     zIndex: 99999,
   }
 
-  const firstVertical = Object.assign({}, baseStyle, {
+  const firstVertical = {
+    ...baseStyle,
     width: thiknessPx,
     height: '100%',
     left: '33.333333%',
-  })
+  }
 
-  const secondVertical = Object.assign({}, baseStyle, {
+  const secondVertical = {
+    ...baseStyle,
     width: thiknessPx,
     height: '100%',
     left: '66.666667%',
-  })
+  }
 
-  const firstHorizontal = Object.assign({}, baseStyle, {
+  const firstHorizontal = {
+    ...baseStyle,
     height: thiknessPx,
     width: '100%',
     top: '33.333333%',
-  })
+  }
 
-  const secondHorizontal = Object.assign({}, baseStyle, {
+  const secondHorizontal = {
+    ...baseStyle,
     height: thiknessPx,
     width: '100%',
     top: '66.6666667%',
-  })
+  }
 
   return (
     <div>

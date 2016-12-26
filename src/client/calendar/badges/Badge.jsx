@@ -27,6 +27,9 @@ export default class Badge extends Component {
       top: `${topRem}rem`,
       backgroundColor: bgColor,
       height: `${heightRem}rem`,
+      //for size <= 2 use non-flexbox alignment since there is a chance it would break a baseline, since there is not
+      //enough padding to "fit" font's x-height
+      display: (heightRem <= 2) ? 'inline-block' : undefined
     }, style)
 
     if (!customFontSize) {

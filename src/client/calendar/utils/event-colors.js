@@ -21,6 +21,11 @@ const getEventColor = (discipline, type, status = '') => {
 
   if (eventColor) return eventColor
 
+  if (type === 'Clinics') {
+    eventColor = Colors.event.road.clinics
+    return eventColor
+  }
+
   if (discipline === Disciplines.mtb) {
     eventColor = Colors.event.mtb.default
   }
@@ -60,6 +65,9 @@ const getEventColor = (discipline, type, status = '') => {
         break
       case 'Time Trial':
         eventColor = Colors.event.road.timeTrial
+        break
+      case 'Team Time Trial':
+        eventColor = Colors.event.road.teamTimeTrial
         break
       case 'Stage Race':
         eventColor = Colors.event.road.stageRace

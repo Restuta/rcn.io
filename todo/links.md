@@ -129,6 +129,8 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Beautiful website] (https://www.strv.com/)
+* [Animations, Card Desgin] (https://dribbble.com/joaopaulots)
 * [Great feature page from Webflow](https://webflow.com/feature/responsive-images)
 * [Great free typography and information architecture](http://www.designfacts.org)
 * [Great UI components](http://semantic-ui.com/elements/label.html#basic)

@@ -4,6 +4,7 @@ import { routerReducer } from 'react-router-redux'
 import {
   norcalMtb2016Events,
   ncnca2016Events,
+  ncnca2017Events
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
@@ -35,8 +36,10 @@ const initialState = {
     showContainerEdges: false,
   },
 
-  events: toByIdMap(norcalMtb2016Events
+  events: toByIdMap(
+    norcalMtb2016Events
     .concat(ncnca2016Events)
+    .concat(ncnca2017Events)
   ),
 
   //calenars map by id
@@ -76,12 +79,25 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Filters are coming.)',
+      description: '(Filters are coming...)',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,
       eventsIds: toArrayOfIds(ncnca2016Events),
-      loaded: false,
+    },
+    ['cal-ncnca-2017']: {
+      id: 'cal-ncnca-2017',
+      year: 2017,
+      name: 'NCNCA Calendar 2017',
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
+      description: '(Filters are coming.)',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: false,
+      draft: false,
+      eventsIds: toArrayOfIds(ncnca2017Events),
     },
   }
 }
@@ -210,23 +226,23 @@ const getCalendar = (state, props) => state.calendars[props.calendarId]
 const getAllEvents = state => state.events
 const getEventIdsForCalendar = (state, props) => getCalendar(state, props).eventsIds
 
-const getEventsByDateForCalendar = createSelector(
-  getEventIdsForCalendar,
-  getAllEvents,
-  (eventIds, allEvents) => eventsByDate(eventIds.map(id => allEvents[id]))
-)
 
 const getEventsForCalendar = createSelector(
   getEventIdsForCalendar,
   getAllEvents,
-  (eventIds, allEvents) => eventIds.map(x => allEvents[x])
+  (eventIds, allEvents) => eventIds.map(id => allEvents[id])
+)
+
+const getEventsByDateForCalendar = createSelector(
+  getEventsForCalendar,
+  eventsMap => eventsByDate(eventsMap)
 )
 
 export {
   getEvent,
   getCalendar,
-  getEventsByDateForCalendar,
   getEventsForCalendar,
+  getEventsByDateForCalendar,
 }
 
 export default rootReducer

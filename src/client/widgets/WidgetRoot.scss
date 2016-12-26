@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $body-widgets-bg-color;
+}
+
+@include phone {
+  html {
+    font-size: (getBaseFontSize()) + px;
+  }
+}
+
+
+.WidgetRoot {
+
+}

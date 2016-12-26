@@ -6,7 +6,8 @@
       "code/data/**",
       "todo/**",
       "data/**",
-      "wireframes/**"
+      "wireframes/**",
+      "src/client/tmp/**"
     ],
   "packageJsonLocation": "package.json",
   "critics": {

@@ -448,7 +448,7 @@ export default [
     }
   },
   {
-    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "id": "evt-5c2ca773142675029358fab4e891d57d-1",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
@@ -462,7 +462,7 @@ export default [
     }
   },
   {
-    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "id": "evt-5c2ca773142675029358fab4e891d57d-2",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
@@ -476,7 +476,7 @@ export default [
     }
   },
   {
-    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "id": "evt-5c2ca773142675029358fab4e891d57d-3",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "status": "Moved",
@@ -490,7 +490,7 @@ export default [
     }
   },
   {
-    "id": "evt-5c2ca773142675029358fab4e891d57d",
+    "id": "evt-5c2ca773142675029358fab4e891d57d-4",
     "discipline": "MTB",
     "name": "Coolest 8 and 24hr",
     "date": "July 22 2016",
@@ -586,7 +586,7 @@ export default [
     }
   },
   {
-    "id": "evt-8c71d88afabf4e5541659c89fef27ead",
+    "id": "evt-8c71d88afabf4e5541659c89fef27ead-1",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
     "date": "June 27 2016",
@@ -600,7 +600,7 @@ export default [
     }
   },
   {
-    "id": "evt-8c71d88afabf4e5541659c89fef27ead",
+    "id": "evt-8c71d88afabf4e5541659c89fef27ead-2",
     "discipline": "MTB",
     "name": "Skyline Park MTB Race",
     "status": "Canceled",

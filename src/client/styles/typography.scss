@@ -79,7 +79,8 @@ html {
   //font-size: 4px;
 }
 
-@media (max-width: map-get($grid-breakpoints, "sm")) {
+//for mobile screens rem is 7px so things are naturally get smaller
+@include phone {
   html {
     font-size: (getBaseFontSize() - 1) + px;
   }
@@ -175,6 +176,9 @@ sup {
 sub {
   bottom: -0.25em;
 }
+mark {
+  background-color: $yellow-500;
+}
 
 .text-sm-9 {@include text-sm-9(); } //9
 .text-sm-11 {@include text-sm-11(); } //9
@@ -219,4 +223,7 @@ sub {
 }
 .w-900 {
   font-weight: 900
+}
+.text-center {
+  text-align: center;
 }

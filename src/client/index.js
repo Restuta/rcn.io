@@ -15,8 +15,9 @@ import 'public/img/safari-pinned-tab.svg'
 // import React from 'react'
 // if (process.env.NODE_ENV !== 'production') {
 //   const {whyDidYouUpdate} = require('why-did-you-update')
-//   whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|/ })
-//   // whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|Week|Row|Col|/ })
+//   // whyDidYouUpdate(React, { exclude: /.+Connect/})
+//   // whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|/ })
+//   whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|Week|Row|Col|/ })
 // }
 
 import 'utils/polyfills'
