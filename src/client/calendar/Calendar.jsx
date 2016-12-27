@@ -166,7 +166,7 @@ class Calendar extends Component {
     }
 
     const nameCompChildren = highlight
-      ? createHighlightedStringComponent(name, highlight.word, highlight.color)
+      ? createHighlightedStringComponent({text: name, stringToHiglight: highlight.word, higlightColor: highlight.color})
       : name
 
     const nameComp = (
