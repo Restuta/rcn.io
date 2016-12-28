@@ -102,7 +102,7 @@ test('Each Event must have Type and Discipline set to one of the pre-defined one
   }
 
   events.forEach((event, i) => {
-    t.comment(`${event.name}`)
+    t.comment(`${event.id}`)
     t.ok(allDisciplines.includes(event.discipline),
       'should have discipline equal to one of the pre-defined ones')
 
