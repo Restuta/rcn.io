@@ -101,6 +101,7 @@ export default [
   "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-SyQRfaJNl",
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 07 2017",
+  "discipline": "Cyclocross",
   "type": "Nationals",
   "location": {
     "city": "Hartford",
