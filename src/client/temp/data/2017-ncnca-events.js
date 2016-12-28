@@ -22,7 +22,7 @@ export default [
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 03 2017",
   "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -42,7 +42,7 @@ export default [
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 04 2017",
   "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -62,7 +62,7 @@ export default [
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 05 2017",
   "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -82,7 +82,7 @@ export default [
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 06 2017",
   "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -101,8 +101,7 @@ export default [
   "id": "evt-ncnca-2017-usa-cycling-cyclo-cross-national-championships-SyQRfaJNl",
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 07 2017",
-  "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -122,7 +121,7 @@ export default [
   "name": "USA Cycling Cyclo-cross National Championships",
   "date": "January 08 2017",
   "discipline": "Cyclocross",
-  "type": "Cyclocross",
+  "type": "Nationals",
   "location": {
     "city": "Hartford",
     "state": "CT"
@@ -342,7 +341,7 @@ export default [
     "name": "USA Cycling Fat Bike National Championships",
     "date": "January 28 2017",
     "discipline": "MTB",
-    "type": "MTB",
+    "type": "Nationals",
     "location": {
       "city": "Grand Rapids",
       "state": "MI"
@@ -1293,7 +1292,7 @@ export default [
     "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
     "date": "April 27 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Nationals",
     "location": {
       "city": "Grand Junction",
       "state": "CO"
@@ -1312,7 +1311,7 @@ export default [
     "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
     "date": "April 28 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Nationals",
     "location": {
       "city": "Grand Junction",
       "state": "CO"
@@ -1331,7 +1330,7 @@ export default [
     "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
     "date": "April 29 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Nationals",
     "location": {
       "city": "Grand Junction",
       "state": "CO"
@@ -1387,7 +1386,7 @@ export default [
     "name" : "USA Cycling Collegiate & Para-Cycling Road National Championships",
     "date": "April 30 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Nationals",
     "location": {
       "city": "Grand Junction",
       "state": "CO"
@@ -1470,7 +1469,7 @@ export default [
     "name" : "USA Cycling Marathon Mountain Bike National Championships",
     "date": "May 07 2017",
     "discipline": "MTB",
-    "type": "MTB",
+    "type": "Nationals",
     "location": {
       "city": "Arkadelphia",
       "state": "AR"
@@ -1886,7 +1885,7 @@ export default [
     "name": "USA Cycling Masters Road National Championships",
     "date": "June 01 2017",
     "discipline": "Road",
-    "type": "Road Race",
+    "type": "Nationals",
     "location": {
       "city": "Columbia County",
       "state": "GA"
@@ -2035,7 +2034,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 20 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2054,7 +2053,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 21 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2073,7 +2072,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 22 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2092,7 +2091,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 23 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2111,7 +2110,7 @@ export default [
     "name" : "USA Cycling Pro Road & TT National Championships",
     "date": "June 23 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Knoxville",
       "state": "TN"
@@ -2130,7 +2129,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 24 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2149,7 +2148,7 @@ export default [
     "name" : "USA Cycling Pro Road & TT National Championships",
     "date": "June 24 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Knoxville",
       "state": "TN"
@@ -2184,7 +2183,7 @@ export default [
     "name" : "USA Cycling Masters Track National Championships",
     "date": "June 25 2017",
     "discipline": "Track",
-    "type": "Track",
+    "type": "Nationals",
     "location": {
       "city": "Rock Hill",
       "state": "SC"
@@ -2203,7 +2202,7 @@ export default [
     "name" : "USA Cycling Pro Road & TT National Championships",
     "date": "June 25 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Knoxville",
       "state": "TN"
@@ -2255,7 +2254,7 @@ export default [
     "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
     "date": "June 29 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2274,7 +2273,7 @@ export default [
     "name" : "USA Cycling Amateur Road National Championships",
     "date": "June 29 2017",
     "discipline": "Road",
-    "type": "Road",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2293,7 +2292,7 @@ export default [
     "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
     "date": "June 30 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2312,7 +2311,7 @@ export default [
     "name" : "USA Cycling Amateur Road National Championships",
     "date": "June 30 2017",
     "discipline": "Road",
-    "type": "Road",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2331,7 +2330,7 @@ export default [
     "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
     "date": "July 01 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2350,7 +2349,7 @@ export default [
     "name" : "USA Cycling Amateur Road National Championships",
     "date": "July 01 2017",
     "discipline": "Road",
-    "type": "Road",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2385,7 +2384,7 @@ export default [
     "name" : "USA Cycling Pro Criterium & Team Time Trial National Championships",
     "date": "July 02 2017",
     "discipline": "Road",
-    "type": "Time Trial",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2404,7 +2403,7 @@ export default [
     "name" : "USA Cycling Amateur Road National Championships",
     "date": "July 02 2017",
     "discipline": "Road",
-    "type": "Road",
+    "type": "Nationals",
     "location": {
       "city": "Louisville",
       "state": "KY"
@@ -2757,8 +2756,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "SJk8J1lt5ml"
   }, {
-    "id" : "evt-ncnca-2017-mt-whitney-stage-race-rJxIJ1eK9Xg",
-    "name": "Mt Whitney Stage Race",
+    "id" : "evt-ncnca-2017-mount-whitney-stage-race-rJxIJ1eK9Xg",
+    "name": "Mount Whitney Stage Race",
     "date": "August 27 2017",
     "discipline": "Road",
     "type": "Stage Race",
