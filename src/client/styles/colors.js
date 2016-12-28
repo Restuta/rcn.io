@@ -81,6 +81,7 @@ const blue = {
   blue700: '#1976D2',
   blue800: '#1565C0',
   blue900: '#0D47A1',
+  blueNational: '#3C3B6E',
 }
 
 const lightBlue = {
@@ -145,20 +146,24 @@ const event = {
     stageRace: colors.deepPurple400,
     omnium: colors.deepPurple400,
     clinics: clinicsColor,
+    nationals: colors.blueNational,
   },
   mtb: {
     'default': colors.brownMud,
     defaultDimmed: colors.brownMudDimmed,
     clinics: clinicsColor,
+    nationals: colors.blueNational,
   },
   cyclocross: {
     // 'default': colors.grey700,
     'default': '#10cec0',
     clinics: clinicsColor,
+    nationals: colors.blueNational,
   },
   track: {
     'default': colors.grey800,
     clinics: clinicsColor,
+    nationals: colors.blueNational,
   }
 }
 
