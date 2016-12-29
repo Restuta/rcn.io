@@ -102,6 +102,7 @@ class Event extends Component {
         pathname: `/events/${this.props.id}`,
         state: {
           modal: true,
+          modalProps: { hasPadding: false },
           returnLocation: {
             pathname: this.context.locationPathname,
           },

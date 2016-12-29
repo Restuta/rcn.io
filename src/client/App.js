@@ -51,8 +51,7 @@ class App extends Component {
     const { location } = this.props
 
     let shouldRenderInModal = (
-      location.state
-      && location.state.modal
+      location.state && location.state.modal
       // && this.previousChildren
     )
 
@@ -71,7 +70,7 @@ class App extends Component {
         <TopNavbar location={location}/>
 
         {shouldRenderInModal && (
-          <Modal onClose={this.onModalClose}>
+          <Modal onClose={this.onModalClose} {...location.state.modalProps}>
             {this.props.children}
           </Modal>
         )}

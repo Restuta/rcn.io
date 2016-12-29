@@ -41,7 +41,6 @@
   position: relative;
   background-color: $body-bg-color;
   border-radius: pxToRem(3);
-  padding: 4rem;
   // margin: 5rem auto auto 4rem;
   width: 100%;
   // margin: 5rem auto auto 4rem;
@@ -96,4 +95,8 @@
     max-width: 100%;
     margin-top: 2rem;
   }
+}
+
+.Modal.content.has-padding {
+  padding: 4rem;
 }
