@@ -2698,6 +2698,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "BkBSkklFcQl"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-BkpuhEMBx",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "July 31 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "BkpuhEMBx"
+  }, {
     "id" : "evt-ncnca-2017-patterson-pass-road-race-vp-12-cc-1-ryUrkkeK9Xe",
     "name" : "Patterson Pass Road Race – VP #12, CC #1",
     "date": "August 05 2017",
