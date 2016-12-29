@@ -430,6 +430,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-BkhkyltqXl",
     "status" : "Canceled",
+    "cancelationReason": "Promoter lost circuit race venue.",
     "name": "Master's OTF Omnium",
     "date": "February 11 2017",
     "discipline": "Road",
@@ -481,6 +482,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-HyRk1xKcmg",
     "status" : "Canceled",
+    "cancelationReason": "Promoter lost circuit race venue.",
     "name": "Master's OTF Omnium",
     "date": "February 12 2017",
     "discipline": "Road",
@@ -580,6 +582,8 @@ export default [
     "name" : "Dinuba Criterium – VP #3",
     "date": "February 20 2017",
     "discipline": "Road",
+    "status": "Canceled",
+    "cancelationReason": "",
     "type": "Criterium",
     "location": {
       "city": "Dinuba",
@@ -709,6 +713,8 @@ export default [
     "date": "March 05 2017",
     "discipline": "Road",
     "type": "Criterium",
+    "status": "Canceled",
+    "cancelationReason": "",
     "location": {
       "city": "Merced",
       "state": "CA"
