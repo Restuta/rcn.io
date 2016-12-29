@@ -2542,7 +2542,7 @@ export default [
     "name" : "USA Cycling Mountain Bike National Championships",
     "date": "July 19 2017",
     "discipline": "MTB",
-    "type": "",
+    "type": "Nationals",
     "location": {
       "city": "Snowshoe",
       "state": "WV"
@@ -2556,6 +2556,63 @@ export default [
     "group" : "",
     "isDraft" : false,
     "_shortId" : "SJRbdVzHg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-mountain-bike-national-championships-ryaMsVMrx",
+    "name" : "USA Cycling Mountain Bike National Championships",
+    "date": "July 20 2017",
+    "discipline": "MTB",
+    "type": "Nationals",
+    "location": {
+      "city": "Snowshoe",
+      "state": "WV"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "ryaMsVMrx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-mountain-bike-national-championships-S1IriVMSx",
+    "name" : "USA Cycling Mountain Bike National Championships",
+    "date": "July 21 2017",
+    "discipline": "MTB",
+    "type": "Nationals",
+    "location": {
+      "city": "Snowshoe",
+      "state": "WV"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "S1IriVMSx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-mountain-bike-national-championships-SJ3vs4zSg",
+    "name" : "USA Cycling Mountain Bike National Championships",
+    "date": "July 22 2017",
+    "discipline": "MTB",
+    "type": "Nationals",
+    "location": {
+      "city": "Snowshoe",
+      "state": "WV"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SJ3vs4zSg"
   }, {
     "id" : "evt-ncnca-2017-crossfire-hurricane-hill-climb-challenge-rko-11-HJMry1lY97e",
     "name" : "Crossfire Hurricane Hill Climb Challenge – RKO #11",
@@ -2572,6 +2629,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJMry1lY97e"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-mountain-bike-national-championships-Sk42sEGSg",
+    "name" : "USA Cycling Mountain Bike National Championships",
+    "date": "July 23 2017",
+    "discipline": "MTB",
+    "type": "Nationals",
+    "location": {
+      "city": "Snowshoe",
+      "state": "WV"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sk42sEGSg"
   }, {
     "id" : "evt-ncnca-2017-the-bump-circuit-race-summer-rko-12-SkXrJJeFq7l",
     "name" : "The Bump Circuit Race (Summer) – RKO #12",
