@@ -192,5 +192,10 @@
   background-size: cover;
 }
 
+@mixin background-image-usa-flag-stars {
+  //stars
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.1' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 3480 2127' preserveAspectRatio='xMinYMin'%3E %3Cg id='x'%3E %3Cpath id='fx' fill='%233c3b6e' d='M0 0h4964v4100H0z'/%3E %3Cg fill='%23fff'%3E %3Cg id='d'%3E %3Cg id='c'%3E %3Cg id='e'%3E %3Cg id='b'%3E %3Cpath id='a' d='M247 90l70.5342 217.082-184.661-134.164h228.2536l-184.661 134.164z'/%3E %3Cuse y='420' xlink:href='%23a'/%3E %3Cuse y='840' xlink:href='%23a'/%3E %3Cuse y='1260' xlink:href='%23a'/%3E %3C/g%3E %3Cuse y='1680' xlink:href='%23a'/%3E %3C/g%3E %3Cuse x='247' y='210' xlink:href='%23b'/%3E %3C/g%3E %3Cuse x='494' xlink:href='%23c'/%3E %3C/g%3E %3Cg id='strs'%3E %3Cuse x='988' xlink:href='%23d'/%3E %3Cuse x='1976' xlink:href='%23d'/%3E %3Cuse x='2970' xlink:href='%23d'/%3E %3Cuse x='3952' xlink:href='%23c'/%3E %3Cuse x='4446' xlink:href='%23e'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3Cuse x='0' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3Cuse x='247' y='1930' fill='%23fff' xlink:href='%23c'/%3E %3Cuse x='-247' y='1930' fill='%23fff' xlink:href='%23strs'/%3E %3Cuse x='4446' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3C/svg%3E ");
+}
+
 //polka dots pattern (for climbing races)
 // background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff2626' fill-opacity='0.41' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
