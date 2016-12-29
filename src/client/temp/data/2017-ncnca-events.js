@@ -2538,6 +2538,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "SyWS1keYqml"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-mountain-bike-national-championships-SJRbdVzHg",
+    "name" : "USA Cycling Mountain Bike National Championships",
+    "date": "July 19 2017",
+    "discipline": "MTB",
+    "type": "",
+    "location": {
+      "city": "Snowshoe",
+      "state": "WV"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SJRbdVzHg"
+  }, {
     "id" : "evt-ncnca-2017-crossfire-hurricane-hill-climb-challenge-rko-11-HJMry1lY97e",
     "name" : "Crossfire Hurricane Hill Climb Challenge – RKO #11",
     "date": "July 22 2017",
