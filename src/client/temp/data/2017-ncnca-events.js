@@ -2863,6 +2863,25 @@ export default [
     "isDraft" : false,
     "_shortId" : "SyvHyklK9Qg"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-hill-climb-national-championships-r1stRK7rl",
+    "name" : "USA Cycling Hill Climb National Championships",
+    "date": "August 12 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Colorado Springs",
+      "state": "CO"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "r1stRK7rl"
+  }, {
     "id" : "evt-ncnca-2017-dunnigan-hills-road-race-vp-12-cc-2-HJdBkJeY9Xx",
     "name" : "Dunnigan Hills Road Race – VP #12, CC #2",
     "date": "August 12 2017",
