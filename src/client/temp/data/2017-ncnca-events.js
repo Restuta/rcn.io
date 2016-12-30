@@ -2717,6 +2717,101 @@ export default [
     "isDraft" : false,
     "_shortId" : "BkpuhEMBx"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-SytB9tQBl",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 01 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SytB9tQBl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-B1Bs9F7Hx",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 02 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "B1Bs9F7Hx"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-SkF69KmSg",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 03 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "SkF69KmSg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-r1KkoYXHe",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 04 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "r1KkoYXHe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-HJ9xst7rg",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 05 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HJ9xst7rg"
+  }, {
     "id" : "evt-ncnca-2017-patterson-pass-road-race-vp-12-cc-1-ryUrkkeK9Xe",
     "name" : "Patterson Pass Road Race – VP #12, CC #1",
     "date": "August 05 2017",
@@ -2732,6 +2827,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryUrkkeK9Xe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-elite-junior-track-national-championships-HyV4otXHl",
+    "name" : "USA Cycling Elite & Junior Track National Championships",
+    "date": "August 06 2017",
+    "discipline": "Track",
+    "type": "Nationals",
+    "location": {
+      "city": "Carson",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "HyV4otXHl"
   }, {
     "id" : "evt-ncnca-2017-red-kite-criterium-august-rko-14-SyvHyklK9Qg",
     "name" : "Red Kite Criterium (August) – RKO #14",
