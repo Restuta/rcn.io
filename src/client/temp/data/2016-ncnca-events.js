@@ -1142,7 +1142,7 @@ export default [
   "discipline": "Road",
   "date": "February 13 2016",
   "location": {
-    "name": "Race Location",
+    "name": "",
     "streetAddress": "",
     "city": "Coalinga",
     "state": "CA",
@@ -6950,8 +6950,8 @@ export default [
       "name": "USA Cycling"
     }
   ],
-    "promoterInfo" : "https://www.usacycling.org/national-championships",
-    "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
+  "promoterInfo" : "https://www.usacycling.org/national-championships",
+  "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
     "name": null,
@@ -11585,7 +11585,7 @@ export default [
   },
   "resultsUrl": null,
   "promoters": [],
-  "promoterInfo": "", 
+  "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/2016/Race1.html",
   "registrationUrl": "http://timeyourrace.com/sacCX/RegMain.asp",
   "flyer": {

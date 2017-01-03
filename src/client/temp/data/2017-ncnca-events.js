@@ -547,17 +547,27 @@ export default [
     "_shortId" : "HJWeyylF97x"
   }, {
     "id" : "evt-ncnca-2017-cantua-creek-road-race-vp-2-BkfgJkgYqXl",
-    "name" : "Cantua Creek Road Race – VP #2",
+    "name" : "Cantua Creek Road Race – VP #22",
     "date": "February 19 2017",
     "discipline": "Road",
     "type": "Road Race",
     "location": {
+      "streetAddress": "Highway 33 and Coalinga Mendota Road",
       "city": "Coalinga",
       "state": "CA"
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+      { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "usacPermit": "2017-439",
+    "flyer": {
+      "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-439",
+      "mimeType": "application/pdf"
+
+    },
+    "registrationUrl": "https://www.bikereg.com/cantua-creek-road-race",
+    "websiteUrl": "http://www.velopromo.com/",
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BkfgJkgYqXl"
@@ -602,12 +612,21 @@ export default [
     "discipline": "Road",
     "type": "Criterium",
     "location": {
+      "name": "Napa Valley College",
+      "streetAddress": "2277 Napa Vallejo Hwy",
       "city": "Napa",
-      "state": "CA"
+      "state": "CA",
+      "zip": "94558",
     },
     "promoters": [
       { "id": "prm-2634", "name": "Eagle Cycling Club", "contactName": "Felix Riesenberg", "contactInfo": "felix.riesenberg@sbcglobal.net" },
     ],
+    "registrationUrl": "https://www.bikereg.com/2017-cherry-pie",
+    "usacPermit": "2017-428",
+    "flyer": {
+      "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-428",
+      "mimeType": "application/pdf"
+    },
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BkBgy1eY5Xl"

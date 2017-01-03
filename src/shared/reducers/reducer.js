@@ -9,6 +9,7 @@ import {
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
 
+
 /*  current event flow:
     => read from file
     => preProcessEvents() //creates events array in our format

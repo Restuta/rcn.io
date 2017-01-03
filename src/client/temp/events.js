@@ -34,6 +34,7 @@ const createEvent = rawEvent => {
 
   return {
     id: eventId,
+    _shortId: rawEvent._shortId,
     name: name,
     date: date,
     datePlain: datePlain,
