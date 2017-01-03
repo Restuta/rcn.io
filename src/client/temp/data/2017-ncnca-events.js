@@ -460,6 +460,11 @@ export default [
     "promoters": [
       { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
     ],
+    "flyer": {
+      "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-361",
+      "mimeType": "application/pdf"
+    },
+    "usacPermit": "2017-361",
     "group" : "2",
     "isDraft" : false,
     "_shortId" : "BkZu0_uVx"
