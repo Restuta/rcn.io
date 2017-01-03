@@ -60,6 +60,18 @@ test('Event must have date in a format "MMMM DD YYYY"', t => {
 })
 
 
+test('Event with USAC permit should start from "2017-"', t => {
+  events
+    .filter(x => x.usacPermit)
+    .forEach((event, i) => {
+      const date = moment(event.date, 'MMMM DD YYYY')
+      t.ok(event.usacPermit.startsWith(date.year() + '-'), `${event.name}`)
+    })
+
+  t.end()
+})
+
+
 test('Event with promoters', t => {
   events.forEach((event, i) => {
     t.comment(`${event.name}`)
