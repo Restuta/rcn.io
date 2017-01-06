@@ -3283,5 +3283,62 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryo8J1eKqXe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-H1twTF6Be",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 20 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "H1twTF6Be"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-Sk8i6FaBe",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 21 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sk8i6FaBe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-rkKn6tpSl",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 22 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkKn6tpSl"
   }
 ]
