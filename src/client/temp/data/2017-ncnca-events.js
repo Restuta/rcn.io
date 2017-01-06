@@ -3131,6 +3131,63 @@ export default [
     "isDraft" : false,
     "_shortId" : "HyBUJklK5ml"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-ryKU2jhBg",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 14 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "ryKU2jhBg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-Hkuu6s3Bl",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 15 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Hkuu6s3Bl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-rJU9pihHg",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 16 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rJU9pihHg"
+  }, {
     "id" : "evt-ncnca-2017-esparto-time-trial-vp-20-cc-9-r1LIyklY5me",
     "name" : "Esparto Time Trial – VP #20, CC #9",
     "date": "September 16 2017",
