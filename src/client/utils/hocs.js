@@ -1,7 +1,7 @@
 import React from 'react'
 
 //logs component's rendering time in MS
-const logRenderPerf = function(WrappedComp, name) {
+const logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
   return class RenderPerf extends React.Component {
     constructor(props) {
       super(props)
