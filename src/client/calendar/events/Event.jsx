@@ -129,7 +129,8 @@ class Event extends Component {
 
     const classNames = classnames('Event lvl-1', {
       'canceled': event.status === Statuses.canceled,
-      'moved': event.status === Statuses.moved
+      'moved': event.status === Statuses.moved,
+      'nationals': event.type === EventTypes.road.nationals //not really road specific
     }, className)
 
     //TODO: typography should be passed as props
@@ -300,7 +301,7 @@ class Event extends Component {
       paddingRight: horizontalPaddingRem + 'rem',
       borderLeft: `${cardLeftBorderWidthRem}rem solid ${eventColor}`,
       //we use outside of the edge elements for debug mode and for draft (event groups)
-      overflow: (event.group || debug) ? 'visible' : 'hidden',
+      overflow: (event.isDraft || debug) ? 'visible' : 'hidden',
     }
     //for event types with white color use plain black, since otherwise badge will be invisible
     const typeBadgeColor = (eventColor === 'white' ? Colors.body : eventColor)
@@ -314,7 +315,7 @@ class Event extends Component {
       <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComp}
-        <div>
+        <div className="name-container">
           {showEventTypeBadge &&
             <div>
               <Badge square bgColor={'transparent'} color={typeBadgeColor} borderColor={typeBadgeColor}>

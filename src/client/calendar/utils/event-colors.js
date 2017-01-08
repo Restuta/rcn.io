@@ -26,6 +26,11 @@ const getEventColor = (discipline, type, status = '') => {
     return eventColor
   }
 
+  if (type === 'Nationals') {
+    eventColor = Colors.event.road.nationals
+    return eventColor
+  }
+
   if (discipline === Disciplines.mtb) {
     eventColor = Colors.event.mtb.default
   }

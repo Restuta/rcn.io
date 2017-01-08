@@ -29,22 +29,26 @@ const EventTypes = {
     omnium: 'Omnium',
     stageRace: 'Stage Race',
     clinics: 'Clinics',
-    nonCompetitive: 'Non-Competitive'
+    nationals: 'Nationals',
+    nonCompetitive: 'Non-Competitive',
   },
   cyclocross: {
     'default': 'Cyclocross',
     clinics: 'Clinics',
+    nationals: 'Nationals',
     nonCompetitive: 'Non-Competitive',
   },
   mtb: {
     'default': 'MTB',
     enduro: 'Enduro',
     clinics: 'Clinics',
+    nationals: 'Nationals',
     nonCompetitive: 'Non-Competitive',
   },
   track: {
     'default': 'Track',
     clinics: 'Clinics',
+    nationals: 'Nationals',
     nonCompetitive: 'Non-Competitive',
   },
   nonCompetitive: {

@@ -118,7 +118,6 @@ class EventDetails extends Component {
     const {
       name = '——',
       date = today,
-      flyerUrl,
       location = {},
       discipline,
       type,
@@ -133,6 +132,9 @@ class EventDetails extends Component {
       group,
       promoterInfo
     } = this.props.event
+
+    //TODO bc: migrate old evnets to have flyer section and not just "flyerUrl" property
+    const flyerUrl = (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
 
     const promoterContactName = (promoters && promoters.length > 0)
       ? promoters.map(x => x.contactName)[0]
