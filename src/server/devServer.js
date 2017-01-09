@@ -37,10 +37,10 @@ const serveHtmlFromFileSystem = (compiler, fileName, response, next) => {
 //explicitly serving all .dll.js since  they are not handled by webpack dev server automatically since are not part
   //of the current webpack build (dlls are separate webpack build)
 app.get(/\.dll\.js$/, (req, res) => {
-  const filename = req.path.replace(/^\//, '');
+  const filename = req.path.replace(/^\//, '')
   const filePath = path.join(process.cwd(), filename)
-  res.sendFile(filePath);
-});
+  res.sendFile(filePath)
+})
 
 //serving different index.html for widgets
 app.get('/widgets/*', function(req, res, next) {
