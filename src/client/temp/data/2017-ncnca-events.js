@@ -139,6 +139,7 @@ export default [
   "_shortId" : "HJRQHivNg"
 }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
+    "status" : "Canceled",
     "name" : "Early Bird Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
