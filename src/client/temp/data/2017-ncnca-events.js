@@ -1691,6 +1691,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2069,6 +2070,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2251,6 +2253,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "3",
     "isDraft" : false,
@@ -3067,6 +3072,7 @@ export default [
     ],
     "series": [ 
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3150,6 +3156,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
