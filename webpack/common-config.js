@@ -1,18 +1,25 @@
 /* contains common configorations for webpack configs */
 const nodeModules = require('./utils').nodeModules
+const path = require('path')
+const consts = require('./constants')
 
-const getConfig = () => {
+const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
+const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data.min.js')
+
+
+const getConfig = (env) => {
   //define all vendor depnencies with pathes relative to node_modules/
   //that are pre-compiled, this allows to configure webpack to skip parsing of them
   //and we can use them for prod build instead of minifying libs ourself we would use pre-combiled ones
   const preBuiltVendorDeps = {
     'react': nodeModules('react/dist/react.min.js'),
-    'react-dom': nodeModules('react-dom/dist/react-dom.min.js'),
-    'react-router': nodeModules('react-router/umd/ReactRouter.min.js'),
+    'react-dom': pathToReactDOM,
+    'react-router': pathToReactRouter,
     'react-router-redux': nodeModules('react-router-redux/dist/ReactRouterRedux.min.js'),
     'redux': nodeModules('redux/dist/redux.min.js'),
     'moment': nodeModules('moment/min/moment.min.js'),
-    'moment-timezone': nodeModules('moment-timezone/builds/moment-timezone-with-data.min.js'),
+    'moment-timezone': pathToMomentTimezone,
     'redux-saga': nodeModules('redux-saga/dist/redux-saga.min.js'),
     //TODO: modify for node to pull node-fetch
     'isomorphic-fetch': nodeModules('whatwg-fetch/fetch.js')
@@ -44,12 +51,48 @@ const getConfig = () => {
       }))
       //reducing array of objects to one object with "name$":"path" structure as required by Webpack
       .reduce((a, b) => {
-        const key = Object.keys(b)[0] //we know that it has only key
+        const key = Object.keys(b)[0] //we know that it has only one key
         const value = b[key]
 
         a[key] = value
         return a
       })
+
+
+  const getLoaders = (env) => {
+    let loaders = []
+
+    if (env === 'prod') {
+      loaders = loaders.concat([{
+        test: pathToReactDOM,
+        loader: 'imports'
+      }, {
+        test: pathToReactRouter,
+        loader: 'imports'
+      }, {
+        test: pathToMomentTimezone,
+        loader: 'imports'
+      }])
+    }
+
+    loaders = loaders.concat([{
+        test: /\.json$/,
+        loader: 'json-loader',
+      },{
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        exclude: /(node_modules|bower_components)/,
+        loaders: ['url?limit=10000&mimetype=application/font-woff'],
+        include: path.join(consts.SRC_DIR, 'client')
+      }, {
+        test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
+        exclude: /(node_modules|bower_components)/,
+        include: path.join(consts.SRC_DIR, 'client'),
+        loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
+      }
+    ])
+
+    return loaders
+  }
 
   return {
     entry: {
@@ -59,10 +102,12 @@ const getConfig = () => {
       alias: buildResolveAliases(preBuiltVendorDeps)
     },
     module: {
-      noParse: toArray(preBuiltVendorDeps)
+      noParse: toArray(preBuiltVendorDeps),
+      loaders: getLoaders(env),
     }
   }
 }
+
 
 module.exports = {
   getConfig: getConfig

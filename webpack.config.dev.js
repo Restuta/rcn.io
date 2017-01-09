@@ -4,6 +4,10 @@ const consts = require('./webpack/constants')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const outputPath = path.join(__dirname, 'dist')
 
+const getConfig = require('./webpack/common-config').getConfig
+const commonConfig = getConfig('dev')
+
+
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
@@ -103,10 +107,7 @@ module.exports = {
       path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
       path.join(consts.SRC_DIR, 'client/temp/data/2017-ncnca-events'),
     ],
-    loaders: [{
-      test: /\.json$/,
-      loader: 'json-loader',
-    }, {
+    loaders: commonConfig.module.loaders.concat([{
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
@@ -136,17 +137,7 @@ module.exports = {
       loader: 'style!css!postcss!sass',
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    }])
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px

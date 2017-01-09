@@ -63,17 +63,14 @@ module.exports = {
       path.resolve(__dirname, 'src/client'),
       path.resolve(__dirname, 'src/')
     ],
-    // alias: commonConfig.resolve.alias
+    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    // noParse: commonConfig.module.noParse,
-    loaders: [{
-      test: /\.json$/,
-      loader: 'json-loader',
-    }, {
+    noParse: commonConfig.module.noParse,
+    loaders: commonConfig.module.loaders.concat([{
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
@@ -87,16 +84,6 @@ module.exports = {
           'transform-react-inline-elements' //compile-time optimizations
         ]
       }
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    }])
   },
 }

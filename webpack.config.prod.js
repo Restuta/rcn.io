@@ -6,12 +6,7 @@ const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
 const getConfig = require('./webpack/common-config').getConfig
-const commonConfig = getConfig()
-
-
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data.min.js')
+const commonConfig = getConfig('prod')
 
 const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
 const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
@@ -136,20 +131,7 @@ module.exports = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: commonConfig.module.noParse,
-    loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
-      test: pathToMomentTimezone,
-      loader: 'imports'
-    },
-     {
-      test: /\.json$/,
-      loader: 'json-loader',
-    }, {
+    loaders: commonConfig.module.loaders.concat([{
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,
@@ -169,17 +151,7 @@ module.exports = {
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    }])
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
