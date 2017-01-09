@@ -2848,6 +2848,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryUrkkeK9Xe"
@@ -2918,6 +2921,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJdBkJeY9Xx"
@@ -2933,6 +2939,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2950,6 +2959,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HyqBkyxYqQg"
@@ -2965,6 +2977,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2998,6 +3013,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [ 
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJpByJlK5Xg"
@@ -3029,6 +3047,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3093,6 +3114,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3200,6 +3224,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "r1LIyklY5me"
@@ -3215,6 +3242,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
