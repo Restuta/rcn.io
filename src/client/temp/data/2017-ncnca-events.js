@@ -166,6 +166,9 @@ export default [
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BygycpTkEg"
@@ -232,6 +235,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -302,6 +308,9 @@ export default [
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
+    ], 
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkryJgt5ml"
@@ -384,6 +393,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
     ],
     "group" : "1",
     "isDraft" : false,
