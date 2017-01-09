@@ -6,12 +6,12 @@ const consts = require('./webpack/constants')
 const nodeModules = require('./webpack/utils').nodeModules
 
 const getConfig = require('./webpack/common-config').getConfig
-const commonConfig = getConfig('prod')
+const commonConfig = getConfig()
 
 
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data.min.js')
 
 const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
 const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
@@ -71,7 +71,7 @@ module.exports = {
       // chunks: ['vendor'],
       // (with more entries, this ensures that no other module
       // goes into the vendor chunk)
-      minChunks: 2 //set to 2 when enabling 'common' chunk
+      minChunks: 2, //set to 2 when enabling 'common' chunk
     }),
     new webpack.optimize.DedupePlugin(),
     extractCss,
@@ -129,13 +129,13 @@ module.exports = {
       path.resolve(__dirname, 'src/')
     ],
     //tells webpack to use static file when import React from 'react' is used
-    // alias: commonConfig.resolve.alias
+    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    // noParse: commonConfig.module.noParse,
+    noParse: commonConfig.module.noParse,
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'
@@ -145,7 +145,8 @@ module.exports = {
     }, {
       test: pathToMomentTimezone,
       loader: 'imports'
-    }, {
+    },
+     {
       test: /\.json$/,
       loader: 'json-loader',
     }, {

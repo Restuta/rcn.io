@@ -1,77 +1,23 @@
 /* contains common configorations for webpack configs */
 const nodeModules = require('./utils').nodeModules
 
-const getConfig = env => {
-  const getPaths = ({prod, dev}) => ({prod: nodeModules(prod), dev: nodeModules(dev)})
-
+const getConfig = () => {
   //define all vendor depnencies with pathes relative to node_modules/
   //that are pre-compiled, this allows to configure webpack to skip parsing of them
-  //and this would speed up the build
+  //and we can use them for prod build instead of minifying libs ourself we would use pre-combiled ones
   const preBuiltVendorDeps = {
-    'react': {
-      path: getPaths({
-        prod: 'react/dist/react.min.js',
-        dev:  'react/dist/react.js'
-      })
-    },
-    'react-dom': {
-      path: getPaths({
-        prod: 'react-dom/dist/react-dom.min.js',
-        dev:  'react-dom/dist/react-dom.js'
-      })
-    },
-    'react-router': {
-      path: getPaths({
-        prod: 'react-router/umd/ReactRouter.min.js',
-        dev:  'react-router/umd/ReactRouter.min.js' //deosn't work in dev with non-min version
-      })
-    },
-    'react-router-redux': {
-      path: getPaths({
-        prod: 'react-router-redux/dist/ReactRouterRedux.min.js',
-        dev:  'react-router-redux/dist/ReactRouterRedux.min.js'
-      })
-    },
-    'redux': {
-      path: getPaths({
-        prod: 'redux/dist/redux.min.js',
-        dev:  'redux/dist/redux.js'
-      })
-    },
-    'moment': {
-      path: getPaths({
-        prod: 'moment/min/moment.min.js',
-        dev:  'moment/moment.js'
-      })
-    },
-    'moment-timezone': {
-      path: getPaths({
-        prod: 'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
-        dev:  'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
-      }),
-      // noParse: true //moment-timezone uses "require()", so can't be ignored
-    },
-    'regenerator-runtime/runtime' : {
-      path: getPaths({
-        prod: 'regenerator-runtime/runtime.js',
-        dev: 'regenerator-runtime/runtime.js'
-      }),
-      // noParse: true
-    },
-    'redux-saga': {
-      path: getPaths({
-        prod: 'redux-saga/dist/redux-saga.min.js',
-        dev: 'redux-saga/dist/redux-saga.js'
-      })
-    },
+    'react': nodeModules('react/dist/react.min.js'),
+    'react-dom': nodeModules('react-dom/dist/react-dom.min.js'),
+    'react-router': nodeModules('react-router/umd/ReactRouter.min.js'),
+    'react-router-redux': nodeModules('react-router-redux/dist/ReactRouterRedux.min.js'),
+    'redux': nodeModules('redux/dist/redux.min.js'),
+    'moment': nodeModules('moment/min/moment.min.js'),
+    'moment-timezone': nodeModules('moment-timezone/builds/moment-timezone-with-data.min.js'),
+    'redux-saga': nodeModules('redux-saga/dist/redux-saga.min.js'),
     //TODO: modify for node to pull node-fetch
-    'isomorphic-fetch': {
-      path: getPaths({
-        prod: 'whatwg-fetch/fetch.js',
-        dev: 'whatwg-fetch/fetch.js'
-      })
-    }
+    'isomorphic-fetch': nodeModules('whatwg-fetch/fetch.js')
   }
+
 
   //other non-prebuilt dependencies
   const otherVendorDeps = [
@@ -87,18 +33,14 @@ const getConfig = env => {
   ]
 
   const toArray = (obj) => {
-    return Object.keys(obj).map(key => {
-      return Object.assign({
-        name: key
-      }, obj[key])
-    })
+    return Object.keys(obj).map(key => obj[key])
   }
 
   const buildResolveAliases = vendorDeps =>
     Object.keys(vendorDeps)
       .map(depName => ({
         //$ is used to exactly match dependency
-        [depName + '$']: vendorDeps[depName].path[env]
+        [depName + '$']: vendorDeps[depName]
       }))
       //reducing array of objects to one object with "name$":"path" structure as required by Webpack
       .reduce((a, b) => {
@@ -118,8 +60,6 @@ const getConfig = env => {
     },
     module: {
       noParse: toArray(preBuiltVendorDeps)
-        .filter(dep => dep.noParse !== false)
-        .map(dep => dep.path[env])
     }
   }
 }
