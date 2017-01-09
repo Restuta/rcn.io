@@ -63,14 +63,17 @@ module.exports = {
       path.resolve(__dirname, 'src/client'),
       path.resolve(__dirname, 'src/')
     ],
-    alias: commonConfig.resolve.alias
+    // alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse,
+    // noParse: commonConfig.module.noParse,
     loaders: [{
+      test: /\.json$/,
+      loader: 'json-loader',
+    }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
       exclude: /(node_modules|bower_components)/,

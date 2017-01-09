@@ -1,15 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 const consts = require('./webpack/constants')
-const nodeModules = require('./webpack/utils').nodeModules
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
-const getConfig = require('./webpack/common-config').getConfig
-const commonConfig = getConfig('dev')
-
-//NOTE: use min versions for prod and to speed-up build times a little
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
 
 const outputPath = path.join(__dirname, 'dist')
 
@@ -19,6 +10,7 @@ module.exports = {
   // http://webpack.github.io/docs/configuration.html#devtool
 
   devtool: 'eval',
+  target: 'web', // Make web variables accessible to webpack, e.g. window
   // devtool: 'cheap-module-eval-source-map',
 
   cache: true,
@@ -26,14 +18,27 @@ module.exports = {
 
   entry: {
     //adding other deps for dev build to vendor chunk to speed up build
-    // appAssets: [path.join(consts.SRC_DIR, 'client/index.js')],
-    vendor: commonConfig.entry.vendor.concat([
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      // path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
-      // path.join(consts.SRC_DIR, 'client/app.scss'),
-    ])
+    vendor: [
+      'classnames',
+      'exenv',
+      'isomorphic-fetch',
+      'moment',
+      'moment-timezone',
+      'react',
+      'react-dom',
+      'react-modal2',
+      'react-pure-render',
+      'react-redux',
+      'react-router',
+      'react-router-redux',
+      'redux',
+      'redux-actions',
+      'redux-saga',
+      'redux-logger',
+      'regenerator-runtime',
+      'reselect',
+      'svg-inline-react',
+    ],
   },
   output: {
     filename: '[name].dll.js',
@@ -55,37 +60,22 @@ module.exports = {
     new webpack.DllPlugin({
       name: '[name]',
       path: path.join(outputPath, '[name]-manifest.json'),
-      constext: path.join(consts.SRC_DIR, 'client')
+      context: path.join(consts.SRC_DIR, 'client')
     })
   ],
   resolve: {
     root: [
-      //path.resolve(__dirname, 'src/'),
       path.resolve(__dirname, 'src/client'),
       path.resolve(__dirname, 'src/')
     ],
-    //tells webpack to use static file when import x from 'x' is used
-    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse
-      .concat([
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      ]),
     loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
-      test: pathToMomentTimezone,
-      loader: 'imports'
+      test: /\.json$/,
+      loader: 'json-loader',
     }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
@@ -134,12 +124,4 @@ module.exports = {
     precision: 15,
     includePaths: [path.join(consts.SRC_DIR, 'client/styles')]
   },
-  postcss: function() {
-    return [
-      // require('autoprefixer')({
-      //   remove: false, //disabling of removal of outdated prefixes to make autoprefixer 10% faster
-      //   browsers: ['last 2 versions']
-      // })
-    ]
-  }
 }

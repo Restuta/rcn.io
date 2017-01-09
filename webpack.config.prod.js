@@ -129,13 +129,13 @@ module.exports = {
       path.resolve(__dirname, 'src/')
     ],
     //tells webpack to use static file when import React from 'react' is used
-    alias: commonConfig.resolve.alias
+    // alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse,
+    // noParse: commonConfig.module.noParse,
     loaders: [{
       test: pathToReactDOM,
       loader: 'imports'
@@ -145,6 +145,9 @@ module.exports = {
     }, {
       test: pathToMomentTimezone,
       loader: 'imports'
+    }, {
+      test: /\.json$/,
+      loader: 'json-loader',
     }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',

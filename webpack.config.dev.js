@@ -1,16 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const consts = require('./webpack/constants')
-const nodeModules = require('./webpack/utils').nodeModules
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const getConfig = require('./webpack/common-config').getConfig
-const commonConfig = getConfig('dev')
-
-//NOTE: use min versions for prod and to speed-up build times a little
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
-
 const outputPath = path.join(__dirname, 'dist')
 
 module.exports = {
@@ -29,13 +20,6 @@ module.exports = {
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/index.js'),
     ],
-    //adding other deps for dev build to vendor chunk to speed up build
-    vendor: commonConfig.entry.vendor.concat([
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
-      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
-    ]),
     widgets: [
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/widgets/index.js')
@@ -49,7 +33,7 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'common'], //use this to enable extra common chunk
+      names: ['common'], //use this to enable extra common chunk
       // names: ['vendor'],
       filename: '[name].bundle.js',
       // chunks: ['vendor'],
@@ -69,12 +53,12 @@ module.exports = {
       },
     }),
     new webpack.DllReferencePlugin({
-      constext: path.join(consts.SRC_DIR, 'client'),
+      context: path.join(consts.SRC_DIR, 'client'),
       manifest: require(path.join(outputPath, 'vendor-manifest.json'))
     }),
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
-      chunks: ['vendor', 'common', 'app'],
+      chunks: ['common', 'app'],
       chunksSortMode: 'dependency',
       title: 'rcn',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
@@ -89,7 +73,7 @@ module.exports = {
     //separate html file for widgets
     new HtmlWebpackPlugin({
       filename: 'widgets/index.html',
-      chunks: ['vendor', 'common', 'widgets'],
+      chunks: ['common', 'widgets'],
       chunksSortMode: 'dependency',
       title: 'rcn/widgets',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
@@ -108,28 +92,20 @@ module.exports = {
       path.resolve(__dirname, 'src/client'),
       path.resolve(__dirname, 'src/')
     ],
-    //tells webpack to use static file when import x from 'x' is used
-    alias: commonConfig.resolve.alias
   },
   module: {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    noParse: commonConfig.module.noParse
-      .concat([
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
-        path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      ]),
+    noParse: [
+      path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+      path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+      path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      path.join(consts.SRC_DIR, 'client/temp/data/2017-ncnca-events'),
+    ],
     loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
-      test: pathToMomentTimezone,
-      loader: 'imports'
+      test: /\.json$/,
+      loader: 'json-loader',
     }, {
       test: /\.(js|jsx?)$/,
       loader: 'babel',
