@@ -64,18 +64,16 @@ class Calendar extends Component {
 
     let startDate = firstDayOfYear
     let totalWeeks = 53
+    //set a date to two weeks back monday, -6 means Monday
     const twoWeeksBackDay = today.clone().isoWeekday(-6)
+    const twoWeeksBackIsWithinCurrentYear = (twoWeeksBackDay.year() === today.year())
 
     // if first day of year is before today only then we wan to show hide/show past link
-    if (firstDayOfYear.isBefore(today) && year === today.year()) {
+    if (firstDayOfYear.isBefore(today) && twoWeeksBackIsWithinCurrentYear && !showPastEvents) {
       //if event from last week is in current year, then we change total weeks to hide past events
-      if (!showPastEvents && twoWeeksBackDay.year() === year) {
-        //set a date to two weeks back monday, -6 means Monday
-
-        startDate = twoWeeksBackDay
-        totalWeeks = totalWeeks - startDate.get('isoWeek')
-        shouldShowHidePastLink = true
-      }
+      startDate = twoWeeksBackDay
+      totalWeeks = totalWeeks - startDate.get('isoWeek')
+      shouldShowHidePastLink = true
     }
 
     let currentDate = startDate.clone()
@@ -142,18 +140,7 @@ class Calendar extends Component {
 
     let subTitleComp
 
-    if (!showPastEvents) {
-      subTitleComp = (
-        <h3 className="sub-title">
-          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
-          {shouldShowHidePastLink
-            && (<a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-              show all {eventsTotal} events
-            </a>)
-          }
-        </h3>
-      )
-    } else {
+    if (showPastEvents || eventsTotalFromToday === 0) {
       subTitleComp = (
         <h3 className="sub-title">
           {eventsTotal} events
@@ -161,6 +148,17 @@ class Calendar extends Component {
             <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
               hide past events
             </a>
+          }
+        </h3>
+      )
+    } else {
+      subTitleComp = (
+        <h3 className="sub-title">
+          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
+          {shouldShowHidePastLink
+            && (<a className="show-more-or-less" onClick={onShowFullHidePastClick}>
+              show all {eventsTotal} events
+            </a>)
           }
         </h3>
       )
