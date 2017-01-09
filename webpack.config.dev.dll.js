@@ -2,6 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 const consts = require('./webpack/constants')
 
+const getConfig = require('./webpack/common-config').getConfig
+const commonConfig = getConfig('dev')
+
+
 const outputPath = path.join(__dirname, 'dist')
 
 const pkg = require(path.resolve(process.cwd(), 'package.json'))
@@ -56,50 +60,7 @@ module.exports = {
     /* tells webpack to skip parsing following libraries
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
-    loaders: [{
-      test: /\.json$/,
-      loader: 'json-loader',
-    }, {
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: [
-        path.join(consts.SRC_DIR)
-      ],
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: true, //not needed for prod build
-        plugins: [
-          ['react-transform', {
-            'transforms': [{
-              'transform': 'react-transform-hmr',
-              'imports': ['react'],
-              'locals': ['module']
-            }, {
-              'transform': 'react-transform-catch-errors',
-              'imports': ['react', 'redbox-react']
-            }]
-          }]
-        ]
-      }
-    }, {
-      test: /\.scss$/,
-      //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
-      //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
-      loader: 'style!css!postcss!sass',
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    loaders: commonConfig.module.loaders
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px

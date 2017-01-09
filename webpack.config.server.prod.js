@@ -70,20 +70,6 @@ module.exports = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: commonConfig.module.noParse,
-    loaders: commonConfig.module.loaders.concat([{
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: [path.join(consts.SRC_DIR)],
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: false,
-        compact: true,
-        plugins: [
-          'transform-react-constant-elements', //compile-time optimizations
-          'transform-react-inline-elements' //compile-time optimizations
-        ]
-      }
-    }])
+    loaders: commonConfig.module.loaders
   },
 }

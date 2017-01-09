@@ -132,20 +132,6 @@ module.exports = {
     */
     noParse: commonConfig.module.noParse,
     loaders: commonConfig.module.loaders.concat([{
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR),
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: false,
-        compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
-        plugins: [
-          'transform-react-constant-elements', //compile-time optimizations
-          'transform-react-inline-elements' //compile-time optimizations
-        ]
-      }
-    }, {
       test: /\.scss$/,
       loaders: ['style', extractCss.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],

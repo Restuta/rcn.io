@@ -72,9 +72,56 @@ const getConfig = (env) => {
       }, {
         test: pathToMomentTimezone,
         loader: 'imports'
+      }, {
+        test: /\.(js|jsx?)$/,
+        loader: 'babel',
+        exclude: /(node_modules|bower_components)/,
+        include: path.join(consts.SRC_DIR),
+        query: {
+          presets: ['react', 'es2015', 'stage-2'],
+          cacheDirectory: false,
+          compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
+          plugins: [
+            'transform-react-constant-elements', //compile-time optimizations
+            'transform-react-inline-elements' //compile-time optimizations
+          ]
+        }
       }])
     }
 
+    if (env === 'dev') {
+      loaders = loaders.concat([{
+        test: /\.(js|jsx?)$/,
+        loader: 'babel',
+        exclude: /(node_modules|bower_components)/,
+        include: [path.join(consts.SRC_DIR)],
+        query: {
+          presets: ['react', 'es2015', 'stage-2'],
+          cacheDirectory: true, //not needed for prod build
+          plugins: [
+            ['react-transform', {
+              'transforms': [{
+                'transform': 'react-transform-hmr',
+                'imports': ['react'],
+                'locals': ['module']
+              }, {
+                'transform': 'react-transform-catch-errors',
+                'imports': ['react', 'redbox-react']
+              }]
+            }]
+          ]
+        }
+      }, {
+        test: /\.scss$/,
+        //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
+        //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
+        loader: 'style!css!postcss!sass',
+        exclude: /(node_modules|bower_components)/,
+        include: path.join(consts.SRC_DIR, 'client')
+      }])
+    }
+
+    //common loaders
     loaders = loaders.concat([{
         test: /\.json$/,
         loader: 'json-loader',

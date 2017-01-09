@@ -7,7 +7,6 @@ const outputPath = path.join(__dirname, 'dist')
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('dev')
 
-
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
@@ -107,37 +106,7 @@ module.exports = {
       path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
       path.join(consts.SRC_DIR, 'client/temp/data/2017-ncnca-events'),
     ],
-    loaders: commonConfig.module.loaders.concat([{
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: [
-        path.join(consts.SRC_DIR)
-      ],
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: true, //not needed for prod build
-        plugins: [
-          ['react-transform', {
-            'transforms': [{
-              'transform': 'react-transform-hmr',
-              'imports': ['react'],
-              'locals': ['module']
-            }, {
-              'transform': 'react-transform-catch-errors',
-              'imports': ['react', 'redbox-react']
-            }]
-          }]
-        ]
-      }
-    }, {
-      test: /\.scss$/,
-      //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
-      //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
-      loader: 'style!css!postcss!sass',
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client')
-    }])
+    loaders: commonConfig.module.loaders
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
