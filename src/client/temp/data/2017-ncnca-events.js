@@ -452,6 +452,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJoyJgYcme"
@@ -545,6 +548,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "3",
     "isDraft" : false,
@@ -959,6 +965,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1PZ11eYqme"
@@ -990,6 +999,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group": "3",
     "draftNotes" : "Also the Winchester race is a soft date pending other submissions.  SR",
@@ -1023,6 +1035,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1354,6 +1369,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1871,6 +1889,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "isDraft" : false,
     "_shortId" : "H1Ym1ket9Qx"
   }, {
@@ -1902,6 +1923,9 @@ export default [
     "promoters": [
       { "id": "prm-2647", "name": "San Jose Bicycle Club", "contactName": "Todd Munk", "contactInfo": "todd.munk@gmail.com, (408) 375-3196"},
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group": "1",
     "draftNotes" : "We ask that there are no other races on these two days. We also ask that there is only 1 other race that weekend (Saturday May 27th) and that it is remote (i.e Nevada, Fresno, San Luis Obispo, Chico, etc). Hill climbs and TT's excluded.",
@@ -1936,6 +1960,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "Syam1ylK9Xe"
@@ -1951,6 +1978,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2657", "name": "Team Fremont/FFBC", "contactName": "Alex Cortez", "contactInfo": "alcog1970@hotmail.com" },
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2087,6 +2117,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2256,6 +2289,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "3",
     "isDraft" : false,
@@ -2563,6 +2597,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HkRVykxFqme"
@@ -2707,6 +2744,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJMry1lY97e"
@@ -2742,6 +2782,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group": "1",
     "draftNotes" : "I'll move this one back into the spring if there is space.  SR",
     "isDraft" : false,
@@ -2774,6 +2817,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2943,6 +2989,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SyvHyklK9Qg"
@@ -3054,6 +3103,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1nBy1gt9Xx"
@@ -3141,6 +3193,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "r1bUykxt5Xl"
@@ -3159,6 +3214,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
