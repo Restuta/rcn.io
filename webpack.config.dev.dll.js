@@ -4,6 +4,9 @@ const consts = require('./webpack/constants')
 
 const outputPath = path.join(__dirname, 'dist')
 
+const pkg = require(path.resolve(process.cwd(), 'package.json'))
+const vendorDependencyNames = Object.keys(pkg.dependencies)
+
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
@@ -18,27 +21,7 @@ module.exports = {
 
   entry: {
     //adding other deps for dev build to vendor chunk to speed up build
-    vendor: [
-      'classnames',
-      'exenv',
-      'isomorphic-fetch',
-      'moment',
-      'moment-timezone',
-      'react',
-      'react-dom',
-      'react-modal2',
-      'react-pure-render',
-      'react-redux',
-      'react-router',
-      'react-router-redux',
-      'redux',
-      'redux-actions',
-      'redux-saga',
-      'redux-logger',
-      'regenerator-runtime',
-      'reselect',
-      'svg-inline-react',
-    ],
+    vendor: vendorDependencyNames,
   },
   output: {
     filename: '[name].dll.js',
