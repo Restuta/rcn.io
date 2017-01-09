@@ -90,8 +90,12 @@
     data-grid-gutterwidth="16px" data-grid-nbcols="14">
     <div id='root'>
     </div>
-    <!-- <script src="vendor.bundle.js"></script>
-    <script src="app.bundle.js"></script> -->
+
+    <!-- DLL plugins are used only in dev mode to speed up builds -->
+    <% if (htmlWebpackPlugin.options.env.Dev) { %>
+      <script src="/dist/vendor.dll.js"></script>
+    <% } %>
+
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
       <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>

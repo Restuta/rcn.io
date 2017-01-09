@@ -1,3 +1,4 @@
+// import './vendor'
 import 'styles/bootstrap.scss'
 import 'app.scss'
 

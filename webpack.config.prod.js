@@ -8,11 +8,6 @@ const nodeModules = require('./webpack/utils').nodeModules
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('prod')
 
-
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
-
 const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
 const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
   removeComments: true,
@@ -71,7 +66,7 @@ module.exports = {
       // chunks: ['vendor'],
       // (with more entries, this ensures that no other module
       // goes into the vendor chunk)
-      minChunks: 2 //set to 2 when enabling 'common' chunk
+      minChunks: 2, //set to 2 when enabling 'common' chunk
     }),
     new webpack.optimize.DedupePlugin(),
     extractCss,
@@ -136,46 +131,13 @@ module.exports = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: commonConfig.module.noParse,
-    loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
-      test: pathToMomentTimezone,
-      loader: 'imports'
-    }, {
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR),
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: false,
-        compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
-        plugins: [
-          'transform-react-constant-elements', //compile-time optimizations
-          'transform-react-inline-elements' //compile-time optimizations
-        ]
-      }
-    }, {
+    loaders: commonConfig.module.loaders.concat([{
       test: /\.scss$/,
       loaders: ['style', extractCss.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    }])
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px

@@ -58,26 +58,24 @@ class Calendar extends Component {
     }
 
     const today = momentTZ()
-
-    //TODO: refactor all the ternary expressions on simple conditional
-
     const eventsTotalFromToday = events.getTotalFrom(today)
     const eventsTotal = events.total
     const firstDayOfYear = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
 
     let startDate = firstDayOfYear
     let totalWeeks = 53
+    const twoWeeksBackDay = today.clone().isoWeekday(-6)
 
     // if first day of year is before today only then we wan to show hide/show past link
     if (firstDayOfYear.isBefore(today) && year === today.year()) {
-      if (!showPastEvents) {
-        //set a date to two weeks back monday
-        startDate = momentTZ().isoWeekday(-6)
-        //reduce number of total weeks we are showing
-        totalWeeks =  totalWeeks - startDate.get('isoWeeks')
-      }
+      //if event from last week is in current year, then we change total weeks to hide past events
+      if (!showPastEvents && twoWeeksBackDay.year() === year) {
+        //set a date to two weeks back monday, -6 means Monday
 
-      shouldShowHidePastLink = true
+        startDate = twoWeeksBackDay
+        totalWeeks = totalWeeks - startDate.get('isoWeek')
+        shouldShowHidePastLink = true
+      }
     }
 
     let currentDate = startDate.clone()
@@ -94,7 +92,6 @@ class Calendar extends Component {
         const currentDayIsToday = (today.isSame(currentDate, 'days'))
         //using to alternate between months so we they become easier to spot in a caledar
         const currentDayBelongsToAlternateMonth = (currentDate.month() % 2 === 0)
-
         const foundEvents = getEventByDate(events.map, currentDate)
 
         let eventComponents
@@ -112,6 +109,7 @@ class Calendar extends Component {
         }
 
         const itIsFirstDayOfMonth = firstDayOfMonth(currentDate)
+
         if (itIsFirstDayOfMonth) {
           weekContainsFirstDayOfMonth = true
         }
@@ -149,7 +147,10 @@ class Calendar extends Component {
         <h3 className="sub-title">
           {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
           {shouldShowHidePastLink
-            && <a className="show-more-or-less" onClick={onShowFullHidePastClick}>show all {eventsTotal} events</a>}
+            && (<a className="show-more-or-less" onClick={onShowFullHidePastClick}>
+              show all {eventsTotal} events
+            </a>)
+          }
         </h3>
       )
     } else {
@@ -158,7 +159,7 @@ class Calendar extends Component {
           {eventsTotal} events
           {shouldShowHidePastLink &&
             <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-              hide past {eventsTotal - eventsTotalFromToday} events
+              hide past events
             </a>
           }
         </h3>

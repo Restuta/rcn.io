@@ -139,6 +139,7 @@ export default [
   "_shortId" : "HJRQHivNg"
 }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
+    "status" : "Canceled",
     "name" : "Early Bird Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
@@ -165,6 +166,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -232,6 +236,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -302,6 +309,9 @@ export default [
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
     ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
+    ], 
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkryJgt5ml"
@@ -333,6 +343,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -381,6 +394,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
+    ],
+    "series": [
+      { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -480,6 +496,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -712,6 +731,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ry5ekygY5Xg"
@@ -857,6 +879,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1034,6 +1059,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1649,6 +1677,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJHX1JgtcQx"
@@ -2023,6 +2054,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2407,6 +2441,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJcE11lY5Qe"
@@ -2524,6 +2561,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2848,6 +2888,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryUrkkeK9Xe"
@@ -2918,6 +2961,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJdBkJeY9Xx"
@@ -2933,6 +2979,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2950,6 +2999,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HyqBkyxYqQg"
@@ -2965,6 +3017,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2998,6 +3053,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [ 
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJpByJlK5Xg"
@@ -3029,6 +3087,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3094,6 +3155,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJXUJklt97x"
@@ -3127,9 +3191,69 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HyBUJklK5ml"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-ryKU2jhBg",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 14 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "ryKU2jhBg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-Hkuu6s3Bl",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 15 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Hkuu6s3Bl"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-track-national-championships-rJU9pihHg",
+    "name" : "USA Cycling Collegiate Track National Championships",
+    "date": "September 16 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rJU9pihHg"
   }, {
     "id" : "evt-ncnca-2017-esparto-time-trial-vp-20-cc-9-r1LIyklY5me",
     "name" : "Esparto Time Trial – VP #20, CC #9",
@@ -3142,6 +3266,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3158,6 +3285,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3226,5 +3356,62 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryo8J1eKqXe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-H1twTF6Be",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 20 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "H1twTF6Be"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-Sk8i6FaBe",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 21 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "Sk8i6FaBe"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-collegiate-mountain-bike-national-championships-rkKn6tpSl",
+    "name" : "USA Cycling Collegiate Mountain Bike National Championships",
+    "date": "October 22 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "",
+    "isDraft" : false,
+    "_shortId" : "rkKn6tpSl"
   }
 ]
