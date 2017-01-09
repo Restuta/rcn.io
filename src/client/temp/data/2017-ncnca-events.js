@@ -151,6 +151,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "B1x1JgKcQx"
@@ -220,6 +223,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -292,6 +298,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -378,6 +387,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
     ],
     "group" : "1",
     "isDraft" : false,
