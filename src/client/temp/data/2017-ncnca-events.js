@@ -334,6 +334,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ByPJ1xYqml"
@@ -480,6 +483,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -712,6 +718,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ry5ekygY5Xg"
@@ -857,6 +866,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1034,6 +1046,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1649,6 +1664,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJHX1JgtcQx"
@@ -2023,6 +2041,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2407,6 +2428,9 @@ export default [
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJcE11lY5Qe"
@@ -2524,6 +2548,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3150,6 +3177,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
     ],
     "group" : "1",
     "isDraft" : false,
