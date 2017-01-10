@@ -538,6 +538,7 @@ export default [
     "_shortId" : "HyRk1xKcmg"
   }, {
     "id" : "evt-ncnca-2017-wine-country-road-race-rko-2-ryJgJketcXx",
+    "status": "Canceled",
     "name" : "Wine Country Road Race – RKO #2",
     "date": "February 12 2017",
     "discipline": "Road",
@@ -567,6 +568,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -601,6 +605,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "usacPermit": "2017-439",
     "flyer": {
@@ -643,6 +650,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -768,6 +778,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ByslykeKc7g"
@@ -786,6 +799,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJ2xyyeF5mx"
@@ -801,6 +817,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -850,6 +869,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJgb11xF9Qx"
@@ -866,6 +888,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HkbbJ1xFcXg"
@@ -881,6 +906,9 @@ export default [
     },
     "promoters" : [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -948,6 +976,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1019,6 +1050,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1186,6 +1220,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2549,6 +2586,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BkoE1JlK5mg"
@@ -2580,6 +2620,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2953,6 +2996,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3029,6 +3073,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3048,6 +3093,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3067,6 +3113,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3086,6 +3133,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3125,6 +3173,7 @@ export default [
     "series": [ 
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
       { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3160,6 +3209,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3234,6 +3284,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3346,6 +3397,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3365,6 +3417,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3381,6 +3434,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3413,6 +3469,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
