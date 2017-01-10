@@ -588,6 +588,9 @@ export default [
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJWeyylF97x"
@@ -632,6 +635,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -945,6 +951,9 @@ export default [
     "promoters" : [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJkyATyEl"
@@ -960,6 +969,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1014,6 +1026,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1157,6 +1172,9 @@ export default [
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJgz1JetcXx"
@@ -1165,13 +1183,16 @@ export default [
     "name" : "WCCC: Stanford Team Time Trial",
     "date" : "April 08 2017",
     "discipline" : "Road",
-    "type" : "Circuit Race",
+    "type" : "Time Trial",
     "location" : {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters" : [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1204,6 +1225,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1240,6 +1264,9 @@ export default [
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1SfJJgFq7l"
@@ -1256,6 +1283,9 @@ export default [
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "B18zykgYc7e"
@@ -1271,6 +1301,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
