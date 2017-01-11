@@ -501,6 +501,7 @@ export default [
     "_shortId" : "BkZu0_uVx"
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-ryp1ket5Xx",
+    "status": "Moved",
     "name" : "Central Coast Road Series – CCCX #2",
     "date": "February 11 2017",
     "discipline": "Road",
@@ -518,6 +519,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryp1ket5Xx"
+  }, {
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-H1Zc37mUx",
+    "name" : "Central Coast Road Series – CCCX #2",
+    "date": "February 12 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1Zc37mUx"
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-HyRk1xKcmg",
     "status" : "Canceled",
