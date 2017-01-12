@@ -1785,8 +1785,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "H1VtkxFVe"
   }, {
-    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-6-rJHX1JgtcQx",
-    "name" : "Central Coast Road Series – CCCX #6",
+    "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-road-race-championships-cccx-6-SkFBk_VUx",
+    "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX – #6",
     "date": "May 14 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1803,7 +1803,7 @@ export default [
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "rJHX1JgtcQx"
+    "_shortId" : "SkFBk_VUx"
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-r1e2mxYVl",
     "name" : "Amgen Tour of California: Men's",
@@ -2176,8 +2176,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "r17EkylYq7l"
   }, {
-    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-7-BJ4VJyet57g",
-    "name" : "Central Coast Road Series – CCCX #7",
+    "id" : "evt-ncnca-2017-ncnca-junior-boys-and-girls-road-race-cccx-7-S1bHxONLg",
+    "name" : "NCNCA Junior (Boys and Girls) Road Race – CCCX - #7",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2194,7 +2194,7 @@ export default [
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "BJ4VJyet57g"
+    "_shortId" : "S1bHxONLg"
   }, {
     "id" : "evt-ncnca-2017-tri-valley-criterium-classic-rko-8-HyHVyJltcQe",
     "name" : "Tri-Valley Criterium Classic – RKO #8",
@@ -2365,8 +2365,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "r18YNZyrx"
   }, {
-    "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
-    "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
+    "id" : "evt-ncnca-2017-ncnca-elite-criterium-men-and-women-at-the-martinez-classic-downtown-criterium-rko-9-ByFCxdVLx",
+    "name" : "NCNCA Elite Criterium (Men and Women) at the Martinez Classic Downtown Criterium - RKO - #9",
     "date": "June 24 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2383,7 +2383,7 @@ export default [
     ],
     "group" : "3",
     "isDraft" : false,
-    "_shortId" : "HkwE1klK57e"
+    "_shortId" : "ByFCxdVLx"
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-ByF9RlkSx",
     "name" : "USA Cycling Masters Track National Championships",
@@ -3211,8 +3211,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "S1nBy1gt9Xx"
   }, {
-    "id" : "evt-ncnca-2017-winters-road-race-vp-17-cc-6-BJpByJlK5Xg",
-    "name" : "Winters Road Race – VP #17, CC #6",
+    "id" : "evt-ncnca-2017-ncnca-elite-road-race-men-and-women-at-winters-road-race-vp-17-cc-6-Syr9WuVIg",
+    "name" : "NCNCA Elite Road Race (Men and Women) at Winters Road Race – VP #17, CC #6",
     "date": "August 26 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -3230,7 +3230,7 @@ export default [
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "BJpByJlK5Xg"
+    "_shortId" : "Syr9WuVIg"
   }, {
     "id" : "evt-ncnca-2017-mount-whitney-stage-race-Hy0B1JetcQg",
     "name" : "Mount Whitney Stage Race",
@@ -3303,8 +3303,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "r1bUykxt5Xl"
   }, {
-    "id" : "evt-ncnca-2017-rko-finale-red-kite-omnium-championship-weekend-day-2-HyMUkJxF57e",
-    "name" : "RKO Finale – Red Kite Omnium Championship Weekend: Day 2",
+    "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-juniors-criterium-championship-day-2-rko-finale-BJW_zOELg",
+    "name" : "NCNCA Masters (Men and Women) + Juniors Criterium Championship: Day 2 - RKO Finale",
     "date": "September 03 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -3321,7 +3321,7 @@ export default [
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "HyMUkJxF57e"
+    "_shortId" : "BJW_zOELg"
   }, {
     "id" : "evt-ncnca-2017-giro-di-san-francisco-vp-19-cc-8-BJXUJklt97x",
     "name" : "Giro di San Francisco – VP #19, CC #8",
