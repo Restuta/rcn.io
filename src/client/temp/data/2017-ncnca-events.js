@@ -2095,6 +2095,44 @@ export default [
     "isDraft" : false,
     "_shortId" : "H1_jYxJre"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-BJgOZaSLg",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 02 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJgOZaSLg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-SymKZTrUx",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 03 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SymKZTrUx"
+  }, {
     "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
     "date": "June 03 2017",
@@ -2110,6 +2148,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1JEy1eFcQg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-ByO2ZTrUe",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 04 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByO2ZTrUe"
   }, {
     "id" : "evt-ncnca-2017-lodi-cyclefest-HJeNkyeF9Xl",
     "name": "Lodi Cyclefest",
