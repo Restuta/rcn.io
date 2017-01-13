@@ -1786,7 +1786,7 @@ export default [
     "_shortId" : "H1VtkxFVe"
   }, {
     "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-road-race-championships-cccx-6-SkFBk_VUx",
-    "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX – #6",
+    "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX #6",
     "date": "May 14 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2234,7 +2234,7 @@ export default [
     "_shortId" : "r17EkylYq7l"
   }, {
     "id" : "evt-ncnca-2017-ncnca-junior-boys-and-girls-road-race-cccx-7-S1bHxONLg",
-    "name" : "NCNCA Junior (Boys and Girls) Road Race – CCCX - #7",
+    "name" : "NCNCA Junior (Boys and Girls) Road Race – CCCX #7",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
