@@ -80,7 +80,7 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Filters are coming...)',
+      description: '',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,
