@@ -73,6 +73,9 @@ class Calendar extends Component {
       //if event from last week is in current year, then we change total weeks to hide past events
       startDate = twoWeeksBackDay
       totalWeeks = totalWeeks - startDate.get('isoWeek')
+    }
+
+    if (year === today.year()) {
       shouldShowHidePastLink = true
     }
 

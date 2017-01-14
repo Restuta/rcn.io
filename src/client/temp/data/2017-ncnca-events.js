@@ -151,6 +151,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "B1x1JgKcQx"
@@ -220,6 +223,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -292,6 +298,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -379,6 +388,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1_k1lY5Qx"
@@ -440,6 +452,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJoyJgYcme"
@@ -486,6 +501,7 @@ export default [
     "_shortId" : "BkZu0_uVx"
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-ryp1ket5Xx",
+    "status": "Moved",
     "name" : "Central Coast Road Series – CCCX #2",
     "date": "February 11 2017",
     "discipline": "Road",
@@ -503,6 +519,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ryp1ket5Xx"
+  }, {
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-H1Zc37mUx",
+    "name" : "Central Coast Road Series – CCCX #2",
+    "date": "February 12 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "H1Zc37mUx"
   }, {
     "id" : "evt-ncnca-2017-masters-otf-omnium-HyRk1xKcmg",
     "status" : "Canceled",
@@ -523,6 +558,7 @@ export default [
     "_shortId" : "HyRk1xKcmg"
   }, {
     "id" : "evt-ncnca-2017-wine-country-road-race-rko-2-ryJgJketcXx",
+    "status": "Canceled",
     "name" : "Wine Country Road Race – RKO #2",
     "date": "February 12 2017",
     "discipline": "Road",
@@ -533,6 +569,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "3",
     "isDraft" : false,
@@ -550,6 +589,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJgek1eY5Xx"
@@ -565,6 +607,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -583,6 +628,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
       { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "usacPermit": "2017-439",
     "flyer": {
@@ -608,6 +656,9 @@ export default [
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rkQeyJgFqXg"
@@ -625,6 +676,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -750,6 +804,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "ByslykeKc7g"
@@ -768,6 +825,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SJ2xyyeF5mx"
@@ -783,6 +843,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -832,6 +895,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJgb11xF9Qx"
@@ -848,6 +914,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HkbbJ1xFcXg"
@@ -863,6 +932,9 @@ export default [
     },
     "promoters" : [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -899,6 +971,9 @@ export default [
     "promoters" : [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rJkyATyEl"
@@ -914,6 +989,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -931,6 +1009,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "rkaUApyVg"
@@ -946,6 +1027,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -963,6 +1047,9 @@ export default [
     "promoters": [
       { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HyuZkJgF5Qx"
@@ -978,6 +1065,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group": "3",
     "draftNotes" : "Also the Winchester race is a soft date pending other submissions.  SR",
@@ -996,6 +1086,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJcbJklF5Xx"
@@ -1011,6 +1104,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1096,6 +1192,9 @@ export default [
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BJgz1JetcXx"
@@ -1104,13 +1203,16 @@ export default [
     "name" : "WCCC: Stanford Team Time Trial",
     "date" : "April 08 2017",
     "discipline" : "Road",
-    "type" : "Circuit Race",
+    "type" : "Time Trial",
     "location" : {
       "city": "Seaside",
       "state": "CA"
     },
     "promoters" : [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1144,6 +1246,9 @@ export default [
     "promoters": [
       { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1Qzy1gYq7x"
@@ -1159,6 +1264,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1176,6 +1284,9 @@ export default [
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "H1SfJJgFq7l"
@@ -1192,6 +1303,9 @@ export default [
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
     ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "B18zykgYc7e"
@@ -1207,6 +1321,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1342,6 +1459,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1665,8 +1785,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "H1VtkxFVe"
   }, {
-    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-6-rJHX1JgtcQx",
-    "name" : "Central Coast Road Series – CCCX #6",
+    "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-road-race-championships-cccx-6-SkFBk_VUx",
+    "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX #6",
     "date": "May 14 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1679,10 +1799,11 @@ export default [
     ],
     "series": [
       { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "rJHX1JgtcQx"
+    "_shortId" : "SkFBk_VUx"
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-r1e2mxYVl",
     "name" : "Amgen Tour of California: Men's",
@@ -1858,6 +1979,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "isDraft" : false,
     "_shortId" : "H1Ym1ket9Qx"
   }, {
@@ -1889,6 +2013,9 @@ export default [
     "promoters": [
       { "id": "prm-2647", "name": "San Jose Bicycle Club", "contactName": "Todd Munk", "contactInfo": "todd.munk@gmail.com, (408) 375-3196"},
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group": "1",
     "draftNotes" : "We ask that there are no other races on these two days. We also ask that there is only 1 other race that weekend (Saturday May 27th) and that it is remote (i.e Nevada, Fresno, San Luis Obispo, Chico, etc). Hill climbs and TT's excluded.",
@@ -1923,6 +2050,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "Syam1ylK9Xe"
@@ -1938,6 +2068,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-2657", "name": "Team Fremont/FFBC", "contactName": "Alex Cortez", "contactInfo": "alcog1970@hotmail.com" },
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -1962,6 +2095,44 @@ export default [
     "isDraft" : false,
     "_shortId" : "H1_jYxJre"
   }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-BJgOZaSLg",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 02 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BJgOZaSLg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-SymKZTrUx",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 03 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SymKZTrUx"
+  }, {
     "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
     "date": "June 03 2017",
@@ -1977,6 +2148,25 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1JEy1eFcQg"
+  }, {
+    "id" : "evt-ncnca-2017-usa-cycling-masters-road-national-championships-ByO2ZTrUe",
+    "name": "USA Cycling Masters Road National Championships",
+    "date": "June 04 2017",
+    "discipline": "Road",
+    "type": "Nationals",
+    "location": {
+      "city": "Columbia County",
+      "state": "GA"
+    },
+    "promoters": [
+      { "id": "prm-2666", "name": "USA Cycling" },
+    ],
+    "series": [
+      { "id": "ser-40001", "name": "2017 USAC National Championships", "url": "http://www.ncnca.org/ncncaseries/2017-usac-national-championships" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "ByO2ZTrUe"
   }, {
     "id" : "evt-ncnca-2017-lodi-cyclefest-HJeNkyeF9Xl",
     "name": "Lodi Cyclefest",
@@ -2043,8 +2233,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "r17EkylYq7l"
   }, {
-    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-7-BJ4VJyet57g",
-    "name" : "Central Coast Road Series – CCCX #7",
+    "id" : "evt-ncnca-2017-ncnca-junior-boys-and-girls-road-race-cccx-7-S1bHxONLg",
+    "name" : "NCNCA Junior (Boys and Girls) Road Race – CCCX #7",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2057,10 +2247,11 @@ export default [
     ],
     "series": [
       { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "BJ4VJyet57g"
+    "_shortId" : "S1bHxONLg"
   }, {
     "id" : "evt-ncnca-2017-tri-valley-criterium-classic-rko-8-HyHVyJltcQe",
     "name" : "Tri-Valley Criterium Classic – RKO #8",
@@ -2073,6 +2264,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2228,8 +2422,8 @@ export default [
     "isDraft" : false,
     "_shortId" : "r18YNZyrx"
   }, {
-    "id" : "evt-ncnca-2017-martinez-classic-downtown-criterium-martinez-fitness-festival-rko-9-HkwE1klK57e",
-    "name" : "Martinez Classic Downtown Criterium – Martinez Fitness Festival – RKO #9",
+    "id" : "evt-ncnca-2017-ncnca-elite-criterium-men-and-women-at-the-martinez-classic-downtown-criterium-rko-9-ByFCxdVLx",
+    "name" : "NCNCA Elite Criterium (Men and Women) at the Martinez Classic Downtown Criterium - RKO - #9",
     "date": "June 24 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2240,9 +2434,13 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "3",
     "isDraft" : false,
-    "_shortId" : "HkwE1klK57e"
+    "_shortId" : "ByFCxdVLx"
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-ByF9RlkSx",
     "name" : "USA Cycling Masters Track National Championships",
@@ -2498,6 +2696,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "BkoE1JlK5mg"
@@ -2530,6 +2731,9 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SyT41kxF5mg"
@@ -2545,6 +2749,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2690,6 +2897,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "HJMry1lY97e"
@@ -2725,6 +2935,9 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group": "1",
     "draftNotes" : "I'll move this one back into the spring if there is space.  SR",
     "isDraft" : false,
@@ -2757,6 +2970,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2890,6 +3106,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2925,6 +3142,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
+    ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2963,6 +3183,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -2982,6 +3203,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3001,6 +3223,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3020,6 +3243,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3037,12 +3261,15 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "S1nBy1gt9Xx"
   }, {
-    "id" : "evt-ncnca-2017-winters-road-race-vp-17-cc-6-BJpByJlK5Xg",
-    "name" : "Winters Road Race – VP #17, CC #6",
+    "id" : "evt-ncnca-2017-ncnca-elite-road-race-men-and-women-at-winters-road-race-vp-17-cc-6-Syr9WuVIg",
+    "name" : "NCNCA Elite Road Race (Men and Women) at Winters Road Race – VP #17, CC #6",
     "date": "August 26 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -3055,10 +3282,12 @@ export default [
     ],
     "series": [ 
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "BJpByJlK5Xg"
+    "_shortId" : "Syr9WuVIg"
   }, {
     "id" : "evt-ncnca-2017-mount-whitney-stage-race-Hy0B1JetcQg",
     "name" : "Mount Whitney Stage Race",
@@ -3090,6 +3319,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3123,12 +3353,15 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "r1bUykxt5Xl"
   }, {
-    "id" : "evt-ncnca-2017-rko-finale-red-kite-omnium-championship-weekend-day-2-HyMUkJxF57e",
-    "name" : "RKO Finale – Red Kite Omnium Championship Weekend: Day 2",
+    "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-juniors-criterium-championship-day-2-rko-finale-BJW_zOELg",
+    "name" : "NCNCA Masters (Men and Women) + Juniors Criterium Championship: Day 2 - RKO Finale",
     "date": "September 03 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -3139,9 +3372,13 @@ export default [
     "promoters": [
       { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235"},
     ],
+    "series": [
+      { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
+      { "id": "ser-40007", "name": "2017 Red Kite Omnium", "url": "http://www.ncnca.org/ncncaseries/2017-red-kite-omnium", "shortName": "RKO" },
+    ],
     "group" : "1",
     "isDraft" : false,
-    "_shortId" : "HyMUkJxF57e"
+    "_shortId" : "BJW_zOELg"
   }, {
     "id" : "evt-ncnca-2017-giro-di-san-francisco-vp-19-cc-8-BJXUJklt97x",
     "name" : "Giro di San Francisco – VP #19, CC #8",
@@ -3157,6 +3394,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3269,6 +3507,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3288,6 +3527,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3304,6 +3544,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
@@ -3336,6 +3579,9 @@ export default [
     },
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
     "group" : "1",
     "isDraft" : false,
