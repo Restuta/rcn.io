@@ -3,7 +3,6 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
-const nodeModules = require('./webpack/utils').nodeModules
 
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('prod')
