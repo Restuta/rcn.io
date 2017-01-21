@@ -320,7 +320,7 @@ export default [
     ],
     "series": [
       { "id": "ser-40005", "name": "2017 Clovis Criterium Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-clovis-criterium-training-series", "shortName": "CCTS" },
-    ], 
+    ],
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkryJgt5ml"
@@ -344,6 +344,7 @@ export default [
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-1-ByPJ1xYqml",
     "name" : "Central Coast Road Series – CCCX #1",
     "date": "January 28 2017",
+    "status": "Moved",
     "discipline": "Road",
     "type": "Circuit Race",
     "location": {
@@ -577,10 +578,30 @@ export default [
     "isDraft" : false,
     "_shortId" : "ryJgJketcXx"
   }, {
+    "id" : "evt-ncnca-2017-central-coast-road-series-cccx-1-S1haKATIl",
+    "name" : "Central Coast Road Series – CCCX #1",
+    "date": "February 18 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "city": "Seaside",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40004", "name": "2017 Central Coast Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-central-coast-road-series", "shortName": "CCRS" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "S1haKATIl"
+  }, {
     "id" : "evt-ncnca-2017-coppertown-circuit-race-vp-1-SJgek1eY5Xx",
     "name" : "Coppertown Circuit Race – VP #1",
     "date": "February 18 2017",
     "discipline": "Road",
+    "status": "Canceled",
     "type": "Circuit Race",
     "location": {
       "city": "Copperopolis",
@@ -837,6 +858,7 @@ export default [
     "date": "March 11 2017",
     "discipline": "Road",
     "type": "Road Race",
+    "status": "Moved",
     "location": {
       "city": "Sonora",
       "state": "CA"
@@ -888,6 +910,7 @@ export default [
     "date": "March 17 2017",
     "discipline": "Road",
     "type": "Stage Race",
+    "status": "Canceled",
     "location": {
       "city": "Madera",
       "state": "CA"
@@ -907,6 +930,7 @@ export default [
     "date": "March 18 2017",
     "discipline": "Road",
     "type": "Stage Race",
+    "status": "Canceled",
     "location": {
       "city": "Madera",
       "state": "CA"
@@ -926,6 +950,7 @@ export default [
     "date": "March 18 2017",
     "discipline": "Road",
     "type" : "Stage Race",
+    "status": "Canceled",
     "location" : {
       "city": "Madera",
       "state": "CA"
@@ -940,11 +965,31 @@ export default [
     "isDraft" : false,
     "_shortId" : "rJB6a6JVg"
   }, {
+    "id" : "evt-ncnca-2017-wards-ferry-road-race-vp-6-SJiJoNkDx",
+    "name" : "Ward's Ferry Road Race – VP #6",
+    "date": "March 18 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "city": "Sonora",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SJiJoNkDx"
+  }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-4-HyQWJkxY5me",
     "name" : "Central Coast Road Series – CCCX #4",
     "date" : "March 18 2017",
     "discipline" : "Road",
     "type": "Circuit Race",
+    "status": "Canceled",
     "location": {
       "city": "Seaside",
       "state": "CA"
@@ -1002,6 +1047,7 @@ export default [
     "date": "March 19 2017",
     "discipline": "Road",
     "type": "Stage Race",
+    "status": "Canceled",
     "location": {
       "city": "Madera",
       "state": "CA"
@@ -1223,6 +1269,7 @@ export default [
     "date": "April 09 2017",
     "discipline": "Road",
     "type": "Criterium",
+    "status": "Canceled",
     "location": {
       "city": "Turlock",
       "state": "CA"
@@ -3280,7 +3327,7 @@ export default [
     "promoters": [
       { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
     ],
-    "series": [ 
+    "series": [
       { "id": "ser-40002", "name": "2017 Cal Cup", "url": "http://www.ncnca.org/ncncaseries/2017-cal-cup", "shortName": "CC" },
       { "id": "ser-40008", "name": "2017 NCNCA Championships", "url": "http://www.ncnca.org/ncncaseries/2017-ncnca-championships", "shortName": "NC" },
       { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },

@@ -46,6 +46,7 @@ const createEvent = rawEvent => {
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
     flyer: rawEvent.flyer,
     status: rawEvent.status || undefined, //getting rid of empty strings
+    cancelationReason: rawEvent || undefined,
     group: rawEvent.group, //group of event according to NCNCA planning document
     draftNotes: rawEvent.draftNotes,
     isDraft: (rawEvent.isDraft || false),
