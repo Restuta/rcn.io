@@ -24,7 +24,6 @@ const routes  = (
       <Route path="events/create-id" component={CreateEventId} />
     </Route>
 
-
     <Route path="*" component={Home}/>
   </Route>
 )

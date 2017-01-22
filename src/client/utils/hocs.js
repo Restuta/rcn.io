@@ -10,12 +10,12 @@ const logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
 
     componentDidMount() {
       const now = +new Date()
-      console.info(`  ${name} rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+      console.log(`  ${name} rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
     componentDidUpdate() {
       const now = +new Date()
-      console.info(`  ${name} re-rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+      console.log(`  ${name} re-rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
     render() {
