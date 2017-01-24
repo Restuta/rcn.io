@@ -60,7 +60,7 @@ const UpcomingEventsForDay = ({today, date, events}) => {
     : adjustedDate.from(today)
 
   return (
-    <div className="upcoming-day">
+    <div className="upcoming-events-for-day">
       <h3 className="header-regular w-900">
         <span>{date.format('dddd, MMMM Do') + ' '}</span>
         <i className="header-secondary">

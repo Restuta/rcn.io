@@ -19,6 +19,14 @@ html, body {
     line-height: 1;
   }
 
+  .upcoming-events-for-day {
+    margin-bottom: 2rem;
+
+    .header-regular {
+      line-height: 3rem;
+    }
+  }
+
   .events-container {
     display: flex;
     flex-direction: row;
