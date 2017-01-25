@@ -59,6 +59,14 @@ app.use(express.static(path.join(RootDir, '/dist'), {
 
 app.use(device.capture({parseUserAgent: true}))
 
+app.use('/s3', require('react-dropzone-s3-uploader/s3router')({
+  bucket: 'ncnca-2017-docs/flyers',
+  region: 'us-west-1', //optional
+  headers: {'Access-Control-Allow-Origin': '*'}, // optional
+  ACL: 'public-read' // this is default
+}))
+
+
 //gets container width by device type, we don't know for sure, so we use best guess and return
 //pessimistically smaller containers
 //TODO: this can be paired with "auto" height, so height would be calculated based on content size in
