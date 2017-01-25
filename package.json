@@ -106,6 +106,7 @@
     "moment-timezone": "^0.5.4",
     "react": "~15.4.0",
     "react-dom": "~15.4.0",
+    "react-dropzone-s3-uploader": "^0.10.0",
     "react-modal2": "^3.0.2",
     "react-pure-render": "^1.0.1",
     "react-redux": "^5.0.0-beta.3",
@@ -113,8 +114,8 @@
     "react-router-redux": "^4.0.6",
     "redux": "^3.5.2",
     "redux-actions": "^0.12.0",
-    "redux-saga": "^0.12.0",
     "redux-logger": "^2.7.0",
+    "redux-saga": "^0.12.0",
     "regenerator-runtime": "^0.9.5",
     "reselect": "^2.5.4",
     "svg-inline-react": "^1.0.2"

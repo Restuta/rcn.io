@@ -2,6 +2,8 @@ import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
 
+import DropzoneS3Uploader from 'react-dropzone-s3-uploader'
+
 function selectText(element) {
   const text = document.getElementById(element)
   let range
@@ -79,7 +81,27 @@ export default class CreateEventId extends React.Component {
     this.updateState({})
   }
 
+  handleFinishedUpload() {
+    console.info(arguments)
+  }
+
   render() {
+    const uploaderStyle = {
+      height: 200,
+      border: 'dashed 2px #999',
+      borderRadius: 5,
+      position: 'relative',
+      cursor: 'pointer',
+    }
+
+    const uploaderProps = {
+      style: uploaderStyle,
+      maxFileSize: 1024 * 1024 * 50,
+      server: 'http://localhost:3888',
+      s3Url: 'https://ncnca-2017-docs.s3.amazonaws.com/flyers',
+      signingUrlQueryParams: {uploadType: 'avatar'},
+    }
+
     return (
       <div className="CreateEventId">
 
@@ -149,6 +171,8 @@ export default class CreateEventId extends React.Component {
 
           </div>
         )}
+
+        <DropzoneS3Uploader onFinish={this.handleFinishedUpload} {...uploaderProps} />
 
       </div>
     )
