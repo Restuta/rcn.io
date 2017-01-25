@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
 
-import DropzoneS3Uploader from 'react-dropzone-s3-uploader'
+import DropzoneS3Uploader from 'restuta-react-dropzone-s3-uploader'
 
 function selectText(element) {
   const text = document.getElementById(element)
