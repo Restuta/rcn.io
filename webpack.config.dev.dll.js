@@ -5,7 +5,6 @@ const consts = require('./webpack/constants')
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('dev')
 
-
 const outputPath = path.join(__dirname, 'dist')
 
 const pkg = require(path.resolve(process.cwd(), 'package.json'))
@@ -25,7 +24,10 @@ module.exports = {
 
   entry: {
     //adding other deps for dev build to vendor chunk to speed up build
-    vendor: vendorDependencyNames,
+    vendor: vendorDependencyNames
+      .concat([
+        path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
+      ]),
   },
   output: {
     filename: '[name].dll.js',
