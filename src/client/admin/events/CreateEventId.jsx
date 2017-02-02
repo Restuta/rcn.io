@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
+import Colors from 'styles/colors'
+import Icon from 'atoms/Icon.jsx'
 
 import DropzoneS3Uploader from 'restuta-react-dropzone-s3-uploader'
 
@@ -81,25 +83,49 @@ export default class CreateEventId extends React.Component {
     this.updateState({})
   }
 
-  handleFinishedUpload() {
-    console.info(arguments)
+  handleFinishedUpload(object, file) {
+    console.info(object)
+  }
+
+  onPreProcess(file, next) {
+    return next(file)
   }
 
   render() {
     const uploaderStyle = {
       height: 200,
-      border: 'dashed 2px #999',
+      borderStyle: 'dashed',
+      borderWidth: 2,
+      borderColor: '#999',
       borderRadius: 5,
       position: 'relative',
       cursor: 'pointer',
     }
 
+    const activeStyle =  {
+      borderStyle: 'solid',
+      backgroundColor: '#eee',
+    }
+
     const uploaderProps = {
       style: uploaderStyle,
+      activeStyle: activeStyle,
       maxFileSize: 1024 * 1024 * 50,
       server: 'http://localhost:3888',
-      s3Url: 'https://ncnca-2017-docs.s3.amazonaws.com/flyers',
-      signingUrlQueryParams: {uploadType: 'avatar'},
+      contentDisposition: 'inline; filename="file.pdf"',
+      signingUrlQueryParams: {
+        fileName: 'flyer-2017-203.pdf',
+      },
+    }
+
+    const uploaderTextStyle = {
+      width: '100%',
+      height: '100%',
+      background: Colors.grey200,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center'
     }
 
     return (
@@ -172,8 +198,17 @@ export default class CreateEventId extends React.Component {
           </div>
         )}
 
-        <DropzoneS3Uploader onFinish={this.handleFinishedUpload} {...uploaderProps} />
-
+        <DropzoneS3Uploader
+          onFinish={this.handleFinishedUpload}
+          preprocess={this.onPreProcess}
+          {...uploaderProps}>
+          <div style={uploaderTextStyle}>
+            <span className="text-6 secondary">
+              <Icon name="cloud_upload" size={5}/> Drop Flyer Here
+            </span>
+            <div className="text-3 secondary">(or click to select)</div>
+          </div>
+        </DropzoneS3Uploader>
       </div>
     )
   }

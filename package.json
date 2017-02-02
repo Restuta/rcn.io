@@ -14,7 +14,8 @@
     "build": "concurrently \"npm run clean:client\" \"npm run clean:server\" && concurrently \"npm run build:client\" \"npm run build:server\"",
     "start": "NODE_ENV=production NODE_PATH=./src node src/server/index.js",
     "dev:server": "NODE_PATH=./src nodemon src/server/index.js",
-    "dev": "node src/server/devServer.js",
+    "dev:server-debug": "npm run dev:server --inspect --debug-brk",
+    "dev": "npm run build:dll && node src/server/devServer.js",
     "eslint:ci": "eslint src/ --ext .js,.jsx --max-warnings 10",
     "eslint": "eslint src/ --ext .js,.jsx || true",
     "eslint:fix": "eslint src/ --ext .js,.jsx --fix || true",
@@ -44,6 +45,7 @@
   "homepage": "http://rcn.io",
   "devDependencies": {
     "autoprefixer": "^6.5.0",
+    "aws-sdk": "^2.9.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.5",
@@ -106,10 +108,9 @@
     "moment-timezone": "^0.5.4",
     "react": "~15.4.0",
     "react-dom": "~15.4.0",
-    "restuta-react-dropzone-s3-uploader": "^0.20.2",
     "react-modal2": "^3.0.2",
     "react-pure-render": "^1.0.1",
-    "react-redux": "^5.0.0-beta.3",
+    "react-redux": "^5.0.2",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
     "redux": "^3.5.2",
@@ -118,6 +119,7 @@
     "redux-saga": "^0.12.0",
     "regenerator-runtime": "^0.9.5",
     "reselect": "^2.5.4",
+    "restuta-react-dropzone-s3-uploader": "^0.20.3",
     "svg-inline-react": "^1.0.2"
   },
   "engines": {
