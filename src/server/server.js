@@ -61,8 +61,8 @@ app.use(device.capture({parseUserAgent: true}))
 
 // app.use('/s3', require('restuta-react-dropzone-s3-uploader/s3router')({
 app.use('/s3', require('server/routers/s3-router')({
-  directory: '/ncnca/flyers', //optional to calculate full path
   bucket: 'rcn-io',
+  directory: '/ncnca/flyers', //optional to calculate full path
   region: 'us-west-1', //optional
   headers: {'Access-Control-Allow-Origin': '*'}, // optional
   ACL: 'public-read' // this is default

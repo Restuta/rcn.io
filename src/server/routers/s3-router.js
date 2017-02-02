@@ -2,15 +2,7 @@ import shortid from 'shortid'
 import aws from 'aws-sdk'
 import express from 'express'
 
-function ensureTrailingSlash(path) {
-  let processedPath = path
-
-  if (processedPath && path[path.length - 1] !== '/') {
-    processedPath += '/'
-  }
-
-  return processedPath
-}
+const ensureTrailingSlash = path => (path.endsWith('/') ? path : path + '/')
 const getUniqueFileName = origName => (shortid() + '-' + origName)
 
 function S3Router(options) {
@@ -34,47 +26,13 @@ function S3Router(options) {
   let router = express.Router()
 
   /**
-   * Redirects requests with a temporary signed URL, giving access
-   * to GET an upload.
-   */
-  function tempRedirect(req, res) {
-    const params = {
-      Bucket: S3_BUCKET,
-      Key: ensureTrailingSlash(getFileKeyDir(req)) + req.params[0]
-    }
-
-    let s3 = new aws.S3(s3Options)
-    s3.getSignedUrl('getObject', params, (err, url) => {
-      if (err) {
-        console.log(err) //eslint-disable-line
-        return res.send(500, 'Cannot create S3 signed URL. ' + err)
-      }
-
-      res.redirect(url)
-    })
-  }
-
-  /**
-   * Image specific route.
-   */
-  router.get(/\/img\/(.*)/, (req, res) => tempRedirect(req, res))
-
-  /**
-   * Other file type(s) route.
-   */
-  router.get(/\/uploads\/(.*)/, (req, res) => tempRedirect(req, res))
-
-  /**
    * Returns an object with `signedUrl` and `publicUrl` properties that
    * give temporary access to PUT an object in an S3 bucket.
    */
   router.get('/sign', function(req, res) {
-    console.info(req.query)
     const filename = req.query.fileName || (getUniqueFileName(req.query.objectName))
     const mimeType = req.query.contentType
-
     const fileKey = ensureTrailingSlash(getFileKeyDir(req)) + filename
-    console.info(fileKey)
 
     const params = {
       Bucket: S3_BUCKET,
