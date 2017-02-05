@@ -26,7 +26,7 @@ const blueGrey = {
 
 }
 
-const purple = {
+const deepPurple = {
   deepPurple50: '#EDE7F6',
   deepPurple100: '#D1C4E9',
   deepPurple200: '#B39DDB',
@@ -104,7 +104,7 @@ const lightBlue = {
 const colors = {
   ...grey,
   ...blueGrey,
-  ...purple,
+  ...deepPurple,
   ...red,
   ...blue,
   ...lightBlue,
@@ -118,7 +118,7 @@ const colors = {
   brownMud: '#a36d53',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
 
-  primary: purple.deepPurple400,
+  primary: deepPurple.deepPurple400,
 }
 
 const clinicsColor = '#F06292'

@@ -1,10 +1,9 @@
 import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
-import FlyerUploader from './FlyerUploader.jsx'
 
-function selectText(element) {
-  const text = document.getElementById(element)
+function selectText({elementId}) {
+  const text = document.getElementById(elementId)
   let range
   let selection
 
@@ -66,7 +65,7 @@ export default class CreateEventId extends React.Component {
 
   onCopyClick(event) {
     try {
-      selectText('generated-name')
+      selectText({elementId: 'generated-name'})
       // copy text
       document.execCommand('copy')
       this.setState({ textCopied: true })
@@ -86,7 +85,7 @@ export default class CreateEventId extends React.Component {
     return (
       <div className="CreateEventId">
 
-        <form>
+        <form autoComplete="off">
           <div className="form-group">
             <div className="form-group">
               <label htmlFor="input-year">Year</label>
@@ -151,8 +150,6 @@ export default class CreateEventId extends React.Component {
             </div>
           </div>
         )}
-
-        <FlyerUploader fileName="flyer-2017-3456.pdf"/>
       </div>
     )
   }

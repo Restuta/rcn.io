@@ -24,18 +24,24 @@ export default class FlyerUploader extends React.Component {
     return next(file)
   }
 
-  onError = () => {
-    console.info(...arguments)
+  onError = (error) => {
+    this.setState({
+      hasError: true,
+      errorMsg: error
+    })
+    console.info(error)
   }
 
   render() {
     const { fileName } = this.props
+    const { hasError, errorMsg } = this.state
 
     const uploaderStyle = {
       height: 200,
       borderStyle: 'dashed',
       borderWidth: 2,
-      borderColor: '#999',
+      borderColor: hasError ? Colors.red300 : Colors.grey500,
+      backgroundColor: hasError ? Colors.red50 : Colors.grey200,
       borderRadius: 5,
       position: 'relative',
       cursor: 'pointer',
@@ -43,28 +49,35 @@ export default class FlyerUploader extends React.Component {
 
     const activeStyle =  {
       borderStyle: 'solid',
-      backgroundColor: '#eee',
-    }
-
-    const uploaderProps = {
-      style: uploaderStyle,
-      activeStyle: activeStyle,
-      maxFileSize: 1024 * 1024 * 50,
-      server: (process.env.NODE_ENV === 'development') ? 'http://localhost:3889' : '',
-      contentDisposition: `inline; filename="${fileName}"`,
-      signingUrlQueryParams: {
-        fileName: fileName,
-      },
+      backgroundColor: hasError ? Colors.red100 : Colors.grey200,
     }
 
     const uploaderTextStyle = {
       width: '100%',
       height: '100%',
-      background: Colors.grey200,
+      // background: Colors.grey200,
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center'
+    }
+
+    const errorMsgStyle = {
+      color: Colors.red500
+    }
+
+    const uploaderProps = {
+      hideErrorMessage: true,
+      style: uploaderStyle,
+      activeStyle: activeStyle,
+      maxFileSize: 1024 * 1024 * 50,
+      server: (process.env.NODE_ENV === 'development')
+        ? 'http://localhost:3888'
+        : '', //same domain in production, so leaving empty
+      contentDisposition: `inline; filename="${fileName}"`,
+      signingUrlQueryParams: {
+        fileName: fileName,
+      },
     }
 
     return (
@@ -81,6 +94,9 @@ export default class FlyerUploader extends React.Component {
             <div className="text-3 secondary">(or click to select)</div>
           </div>
         </DropzoneS3Uploader>
+        {hasError && (
+          <div className="text-4" style={errorMsgStyle}>{errorMsg}</div>
+        )}
       </div>
     )
   }
