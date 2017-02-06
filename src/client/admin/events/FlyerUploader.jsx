@@ -15,6 +15,9 @@ export default class FlyerUploader extends React.Component {
     }
   }
 
+  onUploadProgress = () => {
+    console.info(arguments)
+  }
 
   handleFinishedUpload = (object, file) => {
     console.info(object.publicUrl)
@@ -85,6 +88,7 @@ export default class FlyerUploader extends React.Component {
         <DropzoneS3Uploader
           onFinish={this.handleFinishedUpload}
           onError={this.onError}
+          onProgress={this.onUploadProgress}
           preprocess={this.onPreProcess}
           {...uploaderProps}>
           <div style={uploaderTextStyle}>

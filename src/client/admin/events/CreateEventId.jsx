@@ -85,30 +85,28 @@ export default class CreateEventId extends React.Component {
     return (
       <div className="CreateEventId">
 
-        <form autoComplete="off">
+        <form>
           <div className="form-group">
-            <div className="form-group">
-              <label htmlFor="input-year">Year</label>
-              <input id="input-year"
-                type="number"
-                style={{width: '10rem'}}
-                onChange={this.onYearChange}
-                className="form-control"
-                placeholder="year"
-                value={this.state.year}/>
-              <small id="year-help" className="form-text text-muted">Year event is taking place in</small>
-            </div>
-            <div className="form-group">
-              <label htmlFor="input-year">Prefix</label>
-              <input id="input-prefix"
-                type="text"
-                style={{width: '16rem'}}
-                onChange={this.onPrefixChange}
-                className="form-control"
-                placeholder="Org prefix"
-                value={this.state.prefix}/>
-              <small id="prefix-help" className="form-text text-muted">Can be a shortened calendar or organization name</small>
-            </div>
+            <label htmlFor="input-year">Year</label>
+            <input id="input-year"
+              type="number"
+              style={{width: '10rem'}}
+              onChange={this.onYearChange}
+              className="form-control"
+              placeholder="year"
+              value={this.state.year}/>
+            <small id="year-help" className="form-text text-muted">Year event is taking place in</small>
+          </div>
+          <div className="form-group">
+            <label htmlFor="input-year">Prefix</label>
+            <input id="input-prefix"
+              type="text"
+              style={{width: '16rem'}}
+              onChange={this.onPrefixChange}
+              className="form-control"
+              placeholder="Org prefix"
+              value={this.state.prefix}/>
+            <small id="prefix-help" className="form-text text-muted">Can be a shortened calendar or organization name</small>
           </div>
           <div className="form-group">
             <label htmlFor="input-year">Name</label>

@@ -6,17 +6,17 @@ import { pxToRem } from 'styles/typography'
 
 export default class Icon extends Component {
   render() {
-    const { name, color = '', size, top = 0 } = this.props
+    const { name, color = '', size, top = 0, style } = this.props
 
-    let style = {}
+    let iconStyle = style
 
     if (color) {
-      style.color = color
+      iconStyle.color = color
     }
 
     if (size) {
-      style = {
-        ...style,
+      iconStyle = {
+        ...iconStyle,
         fontSize: `${size}rem`,
         // lineHeight: `${size}rem`,
         maxWidth: `${size}rem`,
@@ -26,13 +26,13 @@ export default class Icon extends Component {
     }
 
     if (top !== 0) {
-      style.position = 'relative'
-      style.top = pxToRem(top) + 'rem'
+      iconStyle.position = 'relative'
+      iconStyle.top = pxToRem(top) + 'rem'
     }
 
     const className = classNames('material-icons Icon', this.props.className)
     return (
-      <i className={className} style={style}>
+      <i className={className} style={iconStyle}>
         {name}
         {/*{this.props.children }*/}
       </i>
@@ -45,4 +45,5 @@ Icon.propTypes = {
   color: PropTypes.string,
   size: PropTypes.number, //in rems
   top: PropTypes.number, //top offset in px
+  style: PropTypes.object,
 }

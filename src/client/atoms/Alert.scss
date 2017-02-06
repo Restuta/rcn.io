@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+
+
+.Alert {}
+
+.Alert.alert-info {
+  background-color: $light-blue-50;
+  border-color: $light-blue-100;
+  color: $light-blue-800;
+}
+
+.Alert.alert-success {
+  background-color: $green-50;
+  border-color: $green-100;
+  color: $green-800;
+}
+
+.Alert.alert-warning {
+  background-color: $amber-50;
+  border-color: $amber-200;
+  color: darken($amber-800, 8%);
+}
+
+.Alert.alert-danger {
+  background-color: $red-50;
+  border-color: $red-100;
+  color: $red-800;
+}

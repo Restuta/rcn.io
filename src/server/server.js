@@ -59,7 +59,7 @@ app.use(express.static(path.join(RootDir, '/dist'), {
 
 app.use(device.capture({parseUserAgent: true}))
 
-// app.use('/s3', require('restuta-react-dropzone-s3-uploader/s3router')({
+//middleware to sign requests to upload files to AWS S3
 app.use('/s3', require('server/routers/s3-router')({
   bucket: 'rcn-io',
   directory: '/ncnca/flyers', //optional to calculate full path
