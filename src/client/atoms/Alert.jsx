@@ -5,7 +5,7 @@ import './Alert.scss'
 
 export default class Alert extends Component {
   render() {
-    const { showIcon = true, type = 'info' } = this.props
+    const { showIcon = true, type = 'info', style } = this.props
 
     const iconMap = {
       'success': 'check',
@@ -16,7 +16,7 @@ export default class Alert extends Component {
     const iconToShow = iconMap[type]
 
     return (
-      <div className={`alert alert-${type} Alert`} role="alert">
+      <div className={`alert alert-${type} Alert`} role="alert" style={style}>
         {showIcon && <Icon name={iconToShow} style={{marginRight: '0.5rem'}}/>}
         {this.props.children}
       </div>
@@ -26,5 +26,6 @@ export default class Alert extends Component {
 
 Alert.propTypes = {
   showIcon: PropTypes.bool,
-  type: PropTypes.oneOf(['success', 'info', 'warning', 'danger'])
+  type: PropTypes.oneOf(['success', 'info', 'warning', 'danger']),
+  style: PropTypes.object,
 }

@@ -23,13 +23,9 @@ export default class UploadFlyer extends Component {
           </small>
         </div>
 
-        <Alert type="info"><strong>Heads up! </strong>
+        <Alert type="info" style={{marginBottom: '4rem'}}><strong>Heads up! </strong>
         Once permit # is entered, uploading new flyer would replace the old one (if present), but nothig
         is removed. Flyers are versioned internally.</Alert>
-
-        <Alert type="success">Success</Alert>
-        <Alert type="warning">Warning</Alert>
-        <Alert type="danger">Danger</Alert>
 
         <FlyerUploader fileName="flyer-2017-3456.pdf"/>
       </div>
