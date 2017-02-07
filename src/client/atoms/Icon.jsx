@@ -8,7 +8,7 @@ export default class Icon extends Component {
   render() {
     const { name, color = '', size, top = 0, style } = this.props
 
-    let iconStyle = style
+    let iconStyle = style || {}
 
     if (color) {
       iconStyle.color = color
