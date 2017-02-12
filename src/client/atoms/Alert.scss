@@ -2,28 +2,43 @@
 @import 'mixins';
 
 
-.Alert {}
+.Alert {
+  position: relative;
+  margin-bottom: 1rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  background-color: transparent;
+  color: $body-color;
+  font-size: $font-size-3;
+  line-height: $line-height-rem * 1.5;
+  padding-left: 6rem;
+
+  >.Icon {
+    position: absolute;
+    left: 2rem;
+  }
+}
 
 .Alert.alert-info {
-  background-color: $light-blue-50;
   border-color: $light-blue-100;
   color: $light-blue-800;
+  border-left-color: $light-blue-600;
 }
 
 .Alert.alert-success {
-  background-color: $green-50;
   border-color: $green-100;
   color: $green-800;
+  border-left-color: $green-600;
 }
 
 .Alert.alert-warning {
-  background-color: $amber-50;
   border-color: $amber-200;
-  color: darken($amber-800, 8%);
+  color: darken($amber-800, 5%);
+  border-left-color: darken($amber-500, 5%);
 }
 
 .Alert.alert-danger {
-  background-color: $red-50;
   border-color: $red-100;
   color: $red-800;
+  border-left-color: $red-800;
 }

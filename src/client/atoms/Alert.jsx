@@ -17,7 +17,7 @@ export default class Alert extends Component {
 
     return (
       <div className={`alert alert-${type} Alert`} role="alert" style={style}>
-        {showIcon && <Icon name={iconToShow} style={{marginRight: '0.5rem'}}/>}
+        {showIcon && <Icon name={iconToShow} size={3} style={{marginRight: '0.5rem'}}/>}
         {this.props.children}
       </div>
     )
