@@ -1,35 +1,12 @@
 import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
-
-function selectText({elementId}) {
-  const text = document.getElementById(elementId)
-  let range
-  let selection
-
-  if (document.body.createTextRange) {
-    range = document.body.createTextRange()
-    range.moveToElementText(text)
-    range.select()
-  } else if (window.getSelection) {
-    selection = window.getSelection()
-    range = document.createRange()
-    range.selectNodeContents(text)
-    selection.removeAllRanges()
-    selection.addRange(range)
-  }
-}
+import { selectAllText } from 'utils/dom/text'
 
 export default class CreateEventId extends React.Component {
   constructor(props) {
     super(props)
-    this.onEventNameChange = this.onEventNameChange.bind(this)
-    this.onYearChange = this.onYearChange.bind(this)
-    this.onPrefixChange = this.onPrefixChange.bind(this)
-    this.onCopyClick = this.onCopyClick.bind(this)
-    this.onRegenerateClick = this.onRegenerateClick.bind(this)
 
-    this.updateState = this.updateState.bind(this)
     this.state = {
       generatedName: '',
       year: 2017,
@@ -39,7 +16,11 @@ export default class CreateEventId extends React.Component {
     }
   }
 
-  updateState({year = this.state.year, prefix = this.state.prefix, name = this.state.name}) {
+  updateState = ({
+    year = this.state.year,
+    prefix = this.state.prefix,
+    name = this.state.name
+  }) => {
     this.setState({
       year: year,
       prefix: prefix,
@@ -51,21 +32,21 @@ export default class CreateEventId extends React.Component {
     })
   }
 
-  onYearChange(event) {
+  onYearChange = (event) => {
     this.updateState({year: event.target.value})
   }
 
-  onPrefixChange(event) {
+  onPrefixChange = (event) => {
     this.updateState({prefix: event.target.value})
   }
 
-  onEventNameChange(event) {
+  onEventNameChange = (event) => {
     this.updateState({name: event.target.value})
   }
 
-  onCopyClick(event) {
+  onCopyClick = (event) => {
     try {
-      selectText({elementId: 'generated-name'})
+      selectAllText({elementId: 'generated-name'})
       // copy text
       document.execCommand('copy')
       this.setState({ textCopied: true })
@@ -75,7 +56,7 @@ export default class CreateEventId extends React.Component {
     }
   }
 
-  onRegenerateClick(event) {
+  onRegenerateClick = (event) => {
     this.updateState({})
   }
 
