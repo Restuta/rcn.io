@@ -1,14 +1,14 @@
 import shortid from 'shortid'
 import aws from 'aws-sdk'
 import express from 'express'
+import path from 'path'
 
-const ensureTrailingSlash = path => (path.endsWith('/') ? path : path + '/')
 const getUniqueFileName = origName => (shortid() + '-' + origName)
 
 function S3Router(options) {
-
   const S3_BUCKET = options.bucket + (options.directory || '')
-  const getFileKeyDir = options.getFileKeyDir || (() => '')
+  // only for returning to the client
+  const directory = options.directory || ''
 
   if (!S3_BUCKET) {
     throw new Error('S3_BUCKET is required.')
@@ -19,6 +19,7 @@ function S3Router(options) {
   if (options.region) {
     s3Options.region = options.region
   }
+
   if (options.signatureVersion) {
     s3Options.signatureVersion = options.signatureVersion
   }
@@ -30,9 +31,9 @@ function S3Router(options) {
    * give temporary access to PUT an object in an S3 bucket.
    */
   router.get('/sign', function(req, res) {
-    const filename = req.query.fileName || (getUniqueFileName(req.query.objectName))
+    const filename = req.query.fileName || getUniqueFileName(req.query.objectName)
     const mimeType = req.query.contentType
-    const fileKey = ensureTrailingSlash(getFileKeyDir(req)) + filename
+    const fileKey = filename
 
     const params = {
       Bucket: S3_BUCKET,
@@ -56,12 +57,11 @@ function S3Router(options) {
         return res.send(500, 'Cannot create S3 signed URL. ' + err)
       }
 
-      const directory = options.directory || ''
       const bucketName = options.bucket
 
       res.json({
         signedUrl: data,
-        publicUrl: `https://${bucketName}.s3.amazonaws.com` + ensureTrailingSlash(directory) + filename,
+        publicUrl: `https://${bucketName}.s3.amazonaws.com` + path.join(directory, filename),
         filename: filename
       })
     })
@@ -70,4 +70,4 @@ function S3Router(options) {
   return router
 }
 
-module.exports = S3Router
+export default S3Router
