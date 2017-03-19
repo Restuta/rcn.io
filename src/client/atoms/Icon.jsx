@@ -6,7 +6,13 @@ import { pxToRem } from 'styles/typography'
 
 export default class Icon extends Component {
   render() {
-    const { name, color = '', size, top = 0, style } = this.props
+    const {
+      name,
+      color = '',
+      size,
+      top = 0,
+      style,
+    } = this.props
 
     let iconStyle = style || {}
 

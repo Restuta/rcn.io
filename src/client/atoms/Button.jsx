@@ -25,7 +25,8 @@ export default class Button extends Component {
       disabled = false,
       onClick,
       className,
-      icon
+      icon,
+      style,
     } = this.props
 
     const iconOnlyButton = (!this.props.children && icon)
@@ -49,7 +50,7 @@ export default class Button extends Component {
     const iconComp = icon && <Icon name={icon} size={iconSize[size]} top={1}/>
 
     return (
-      <button className={classes} onClick={onClick} disabled={disabled}>
+      <button className={classes} onClick={onClick} disabled={disabled} style={style}>
         {iconComp}{this.props.children}
       </button>
     )
@@ -57,11 +58,12 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['primary', 'secondary']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   outline: PropTypes.bool,
   primaryHover: PropTypes.bool,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   icon: PropTypes.string,
+  style: PropTypes.object,
 }
