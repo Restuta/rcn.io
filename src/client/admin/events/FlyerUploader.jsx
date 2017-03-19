@@ -2,6 +2,35 @@ import React, { PropTypes } from 'react'
 import DropzoneS3Uploader from 'restuta-react-dropzone-s3-uploader'
 import Colors from 'styles/colors'
 import Icon from 'atoms/Icon.jsx'
+import moment from 'moment'
+import Badge from 'calendar/badges/Badge.jsx'
+import CopyToClipboardButton from 'atoms/CopyToClipboardButton.jsx'
+
+const bytesToMb = bytes => (Math.round(((bytes || 0) / 1024 / 1024) * 100) / 100)
+
+const createUploadedFileInfo = (size, url, date) => ({size, url, date})
+
+const saveFilesToLocalStorage = uploadedFiles =>
+  // window.localStorage.setItem('recentlyUploadedFiles', JSON.stringify(uploadedFiles))
+  window.localStorage.setItem('recentlyUploadedFiles', JSON.stringify(
+    uploadedFiles.map(file => ({
+      ...file,
+      date: file.date.toJSON(),
+    }))
+  ))
+
+const getFilesFromLocalStorage = () => {
+  const previouslyStoredFiles = window.localStorage.getItem('recentlyUploadedFiles')
+
+  return previouslyStoredFiles
+    ? JSON.parse(previouslyStoredFiles)
+        .map(x => ({
+          ...x,
+          date: moment(x.date)
+        }))
+    : []
+}
+
 
 //statefull component!, since Redux is overkill here
 //uploads flyers to Amazon S3, renders drag and drop area
@@ -11,21 +40,26 @@ export default class FlyerUploader extends React.Component {
     this.state = {
       hasError: false,
       errorMsg: '',
-      uploadedFilesUrls: []
+      uploadedFiles: getFilesFromLocalStorage() || []
     }
   }
 
-  onUploadProgress = () => {
-    console.info(arguments)
+  onUploadProgress = (percent, status, file) => {
+    // console.info(...arguments)
   }
 
   handleFinishedUpload = (object, file) => {
-    console.info(object.publicUrl)
+    this.setState({
+      uploadedFiles: [
+        createUploadedFileInfo(file.size, object.publicUrl, moment()),
+        ...this.state.uploadedFiles
+      ]
+    }, () => saveFilesToLocalStorage(this.state.uploadedFiles))
   }
 
-  onPreProcess = (file, next) => {
-    return next(file)
-  }
+  // onPreProcess = (file, next) => {
+  //   return next(file)
+  // }
 
   onError = (error) => {
     this.setState({
@@ -37,14 +71,14 @@ export default class FlyerUploader extends React.Component {
 
   render() {
     const { fileName } = this.props
-    const { hasError, errorMsg } = this.state
+    const { hasError, errorMsg, uploadedFiles } = this.state
 
     const uploaderStyle = {
       height: 200,
       borderStyle: 'dashed',
       borderWidth: 2,
       borderColor: hasError ? Colors.red300 : Colors.grey500,
-      backgroundColor: hasError ? Colors.red50 : Colors.grey200,
+      backgroundColor: hasError ? Colors.red50 : Colors.grey100,
       borderRadius: 5,
       position: 'relative',
       cursor: 'pointer',
@@ -63,6 +97,10 @@ export default class FlyerUploader extends React.Component {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center'
+    }
+
+    const recentlyUploadedStyle = {
+      transition: 'all 0.5s ease',
     }
 
     const errorMsgStyle = {
@@ -95,11 +133,27 @@ export default class FlyerUploader extends React.Component {
             <span className="text-6 secondary">
               <Icon name="cloud_upload" size={5}/> Drop Flyer Here
             </span>
-            <div className="text-3 secondary">(or click to select)</div>
+            <div className="text-3 secondary">or <a>browse</a></div>
           </div>
         </DropzoneS3Uploader>
         {hasError && (
           <div className="text-4" style={errorMsgStyle}>{errorMsg}</div>
+        )}
+
+        {(uploadedFiles.length > 0) && (
+          <div>
+            <h3 className="text-uppercase">Recently Uploaded</h3>
+            <ul className="list-group" style={recentlyUploadedStyle}>
+              {uploadedFiles.map((file, i) =>
+                <li key={i} className="list-group-item justify-content-between" style={recentlyUploadedStyle}>
+                  <Badge heightRem={3}>{bytesToMb(file.size)}Mb</Badge>&nbsp;&nbsp;&nbsp;
+                  <span>{file.date.fromNow()}&nbsp;&nbsp;&nbsp;</span>
+                  <a id={`uploaded-file-url-${i}`} href={file.url}>{file.url}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                  <CopyToClipboardButton textElementId={`uploaded-file-url-${i}`} />
+                </li>
+              )}
+            </ul>
+          </div>
         )}
       </div>
     )
