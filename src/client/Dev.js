@@ -132,6 +132,10 @@ export default class Dev extends Component {
             <Button size="lg" type="secondary">LG SECONDARY</Button>
             <br /><br />
 
+            <Button size="md" type="success">MD SUCCESS</Button><S5 />
+            <Button size="md" type="danger">MD DANGER</Button> <S5 />
+            <Button size="md" type="warning">MD WARNING</Button>
+
             <br /><br />
             <Button size="sm">REGISTER</Button>
             <br /><br />
