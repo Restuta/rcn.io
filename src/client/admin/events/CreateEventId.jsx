@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
-import { selectAllText } from 'utils/dom/text'
+import CopyToClipboardButton from 'atoms/CopyToClipboardButton.jsx'
 
 export default class CreateEventId extends React.Component {
   constructor(props) {
@@ -44,23 +44,9 @@ export default class CreateEventId extends React.Component {
     this.updateState({name: event.target.value})
   }
 
-  onCopyClick = (event) => {
-    try {
-      selectAllText({elementId: 'generated-name'})
-      // copy text
-      document.execCommand('copy')
-      this.setState({ textCopied: true })
-    } catch (err) {
-      this.setState({ textCopied: false })
-      alert('please press Ctrl/Cmd+C to copy')
-    }
-  }
-
   onRegenerateClick = (event) => {
     this.updateState({})
   }
-
-
 
   render() {
     return (
@@ -111,12 +97,7 @@ export default class CreateEventId extends React.Component {
             }}>
               {this.state.generatedName}
             </mark>
-            <Button icon="assignment_return" size="sm" type="primary" onClick={this.onCopyClick}>
-              {this.state.textCopied
-                ? <span>COPIED</span>
-                : <span>COPY</span>
-              }
-            </Button>
+            <CopyToClipboardButton textElementId="generated-name"/>
             <br />
             <small id="name-help" className="form-text text-muted">Don't forget to set "_shortId" property to last part
               after "-" of this generated id
