@@ -10,7 +10,7 @@ const middlewares = [sagaMiddleware]
 if (process.env.NODE_ENV === 'development') {
   const createLogger =  require('redux-logger')
   const logger = createLogger({
-    diff: true,
+    diff: false,
     timestamp: false,
     duration: true,
     collapsed: true,

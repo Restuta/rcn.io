@@ -145,11 +145,11 @@ export default class FlyerUploader extends React.Component {
             <h3 className="text-uppercase">Recently Uploaded</h3>
             <ul className="list-group" style={recentlyUploadedStyle}>
               {uploadedFiles.map((file, i) =>
-                <li key={i} className="list-group-item justify-content-between" style={recentlyUploadedStyle}>
+                <li key={i} className="list-group-item" style={recentlyUploadedStyle}>
                   <Badge heightRem={3}>{bytesToMb(file.size)}Mb</Badge>&nbsp;&nbsp;&nbsp;
                   <span>{file.date.fromNow()}&nbsp;&nbsp;&nbsp;</span>
                   <a id={`uploaded-file-url-${i}`} href={file.url}>{file.url}&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                  <CopyToClipboardButton textElementId={`uploaded-file-url-${i}`} />
+                  <CopyToClipboardButton type="link" textElementId={`uploaded-file-url-${i}`} />
                 </li>
               )}
             </ul>
