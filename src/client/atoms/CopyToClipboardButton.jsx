@@ -33,7 +33,7 @@ class CopyToClipboardButton extends React.Component {
 
   render() {
     const { copied } = this.state
-    const { type } = this.props
+    const { type = 'button' } = this.props
     const buttonType = copied ? 'success' : 'primary'
     const icon = copied ? 'check' : 'assignment_return'
     const transitionStyle = { transition: 'all 0.2s ease'}
