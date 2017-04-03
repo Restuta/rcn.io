@@ -15,10 +15,11 @@ const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
   - we COULD map names to ids and just do lookup (maintain lookup table)
   - names MUST be unique
 */
-const getCalendarId = slugFromRouteParams =>
-  ((slugFromRouteParams || '').startsWith('cal-')
+const getCalendarId = slugFromRouteParams => (
+  (slugFromRouteParams || '').startsWith('cal-')
     ? slugFromRouteParams
-    : 'cal-' + slugFromRouteParams)
+    : 'cal-' + slugFromRouteParams
+  )
 
 export default class NcncaCalendar extends Component {
   render() {

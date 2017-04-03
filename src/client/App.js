@@ -9,9 +9,12 @@ import Modal from 'atoms/Modal.jsx'
 import { logRenderPerf } from 'utils/hocs'
 
 class App extends Component {
-  //required for proper propagation of locationPathname down to the children
+  // required for proper propagation of locationPathname down to the children
   getChildContext() {
-    return { locationPathname: this.props.location.pathname }
+    return {
+      locationPathname: this.props.location.pathname,
+      locationSearch: this.props.location.search
+    }
   }
 
   constructor(props) {
@@ -26,22 +29,29 @@ class App extends Component {
 
   onModalClose() {
     const returnLocation = this.props.location.state.returnLocation
+    console.log(returnLocation)
 
     if (returnLocation) {
       this.props.router.replace({
         pathname: returnLocation.pathname,
-        state: { backFromModal: true }
+        search: returnLocation.search,
+        state: { navigatedBackFromModal: true }
       })
     }
   }
 
   componentWillReceiveProps(nextProps) {
+    // console.info('App: will receive props...')
     // if we changed routes...
     if ((
       nextProps.location.key !== this.props.location.key
       && nextProps.location.state
       && nextProps.location.state.modal
     )) {
+      // console.info('App: changed from: ')
+      // console.log(this.props.location)
+      // console.info('App: changed routes to: ')
+      // console.log(nextProps.location)
       // save the old children (just like animation)
       this.previousChildren = this.props.children
     }
@@ -87,7 +97,8 @@ class App extends Component {
 }
 
 App.childContextTypes = {
-  locationPathname: React.PropTypes.string
+  locationPathname: React.PropTypes.string,
+  locationSearch: React.PropTypes.string,
 }
 
 export default withRouter(

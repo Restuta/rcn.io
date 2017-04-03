@@ -9,11 +9,25 @@ import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import Badge from 'calendar/badges/Badge.jsx'
+import { withRouter } from 'react-router'
+import shallowEqual from 'client/utils/shallow-equal-except'
+import { logRenderPerf } from 'utils/hocs'
+
+import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
+
+// import Perf from 'react-addons-perf'
+
 
 const getEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
   return eventsMap.get(key) || []
 }
+
+const shouldShowPastEvents = (locationQuery, shouldShowPastFromProps) => (
+  locationQuery['past']
+    ? (locationQuery['past'] === 'visible')
+    : shouldShowPastFromProps
+)
 
 const createEventComponents = (events, draft, daySize, containerWidth) => {
   let eventComponents
@@ -56,9 +70,46 @@ const createDayComponent = (key, currentDate, today, daySize, eventComponents, c
 }
 
 class Calendar extends Component {
-  // constructor(props) {
-  //   super(props)
+  constructor(props) {
+    super(props)
   //   this.handleScroll = this.handleScroll.bind(this)
+    this.onShowFullHidePastClick = this.onShowFullHidePastClick.bind(this)
+    this.whenRenderStarted = 0
+  }
+
+  onShowFullHidePastClick(e) {
+    e.preventDefault()
+
+    const {
+      toggleShowPast,
+      router,
+      location
+    } = this.props
+
+    const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
+
+    // console.info(location.query.past || showPastEvents)
+    router.push({
+      pathname: location.pathname,
+      query: {
+        ['past']: showPastEvents ? 'hidden' : 'visible'
+      }
+    })
+
+    toggleShowPast()
+  }
+
+  // componentDidMount() {
+  //   Perf.stop()
+  //   console.warn('Exclusive')
+  //   Perf.printExclusive()
+  //   Perf.printWasted()
+  // }
+  //
+  // componentDidUpdate() {
+  //   Perf.stop()
+  //   console.warn('Wasted')
+  //   Perf.printWasted()
   // }
 
   // handleScroll() {
@@ -73,10 +124,12 @@ class Calendar extends Component {
   //   window.removeEventListener('scroll', this.handleScroll)
   // }
 
-
   render() {
+    // Perf.start()
+    this.whenRenderStarted = +new Date()
     console.info('Calendar render is called') //eslint-disable-line
     const {
+      calendarId,
       name,
       highlight,
       description,
@@ -85,10 +138,19 @@ class Calendar extends Component {
       weekdaysSizes,
       events,
       timeZone,
-      showPastEvents,
+      location,
       draft = false,
-      onShowFullHidePastClick
     } = this.props
+
+    //TODO bc: when directly hit via URL doesn't store state in REDUX
+
+    //trust query string first, props next
+    //TODO bc: this doesn't account for drafts calendar, when show past event
+    const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
+    // location.query['past']
+    //   ? (location.query['past'] === 'visible')
+    //   : this.props.showPastEvents
+
 
     let shouldShowHidePastLink = false
 
@@ -98,7 +160,6 @@ class Calendar extends Component {
     }
 
     const today = momentTZ()
-
     const firstDayOfTheYear = momentTZ({year: year, month: 0, day: 1})
     let calendarStartDate = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
     let totalWeeksToShow = 53
@@ -158,11 +219,12 @@ class Calendar extends Component {
       subTitleComp = (
         <h3 className="sub-title">
           {events.total} events
-          {shouldShowHidePastLink &&
-            <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-              hide past events
+          {shouldShowHidePastLink
+            && (
+            <a href="?past=hidden" className="show-more-or-less" onClick={this.onShowFullHidePastClick}>
+              hide past {events.total - eventsTotalFromToday} events
             </a>
-          }
+          )}
         </h3>
       )
     } else {
@@ -170,10 +232,11 @@ class Calendar extends Component {
         <h3 className="sub-title">
           {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
           {shouldShowHidePastLink
-            && (<a className="show-more-or-less" onClick={onShowFullHidePastClick}>
+            && (
+            <a href="?past=visible" className="show-more-or-less" onClick={this.onShowFullHidePastClick}>
               show all {events.total} events
-            </a>)
-          }
+            </a>
+          )}
         </h3>
       )
     }
@@ -189,8 +252,7 @@ class Calendar extends Component {
     )
 
     return (
-      <div className="Calendar">
-        {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
+      <div key={calendarId} className="Calendar">
         {nameComp}
         {subTitleComp}
         {description && <h4 className="sub-title">{description}</h4>}
@@ -202,11 +264,13 @@ class Calendar extends Component {
           </div>
         </div>
       </div>
+
     )
   }
 }
 
 Calendar.propTypes = {
+  calendarId: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   highlight: PropTypes.shape({
@@ -214,7 +278,6 @@ Calendar.propTypes = {
     color: PropTypes.string.isRequired,
   }),
   description: PropTypes.string,
-  calendarId: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.shape({
@@ -224,7 +287,7 @@ Calendar.propTypes = {
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   draft: PropTypes.bool,
-  onShowFullHidePastClick: PropTypes.func,
+  toggleShowPast: PropTypes.func,
 }
 
 import { connect } from 'react-redux'
@@ -232,12 +295,19 @@ import { toggleShowPastEvents } from 'shared/actions/actions.js'
 import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
 
 
-export default connect(
+export default (connect(
   (state, ownProps) => ({
     ...getCalendar(state, ownProps),
     events: getEventsByDateForCalendar(state, ownProps)
   }),
   (dispatch, ownProps) => ({
-    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+    toggleShowPast: () => {
+      return dispatch(toggleShowPastEvents(ownProps.calendarId))
+    }
   })
-)(Calendar)
+))(
+  pureComponentWithRoutedModal(withRouter(
+    // Calendar
+    logRenderPerf(Calendar, 'Calendar')
+  ))
+)

@@ -1,6 +1,6 @@
 import React from 'react'
 
-//logs component's rendering time in MS
+// logs component's rendering time in MS
 const logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
   return class RenderPerf extends React.Component {
     constructor(props) {
@@ -10,12 +10,12 @@ const logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
 
     componentDidMount() {
       const now = +new Date()
-      console.log(`  ${name} rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+      console.log(`  ${name} rendered in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
     componentDidUpdate() {
       const now = +new Date()
-      console.log(`  ${name} re-rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+      console.log(`  ${name} re-rendered in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
     }
 
     render() {
