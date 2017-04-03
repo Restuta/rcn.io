@@ -35,6 +35,12 @@ function is(x, y) {
   }
 }
 
+
+const stringify = obj => (typeof obj === 'function')
+  ? '<function>'
+  : JSON.stringify(obj)
+
+
 /**
  * This code is almost identical to React's built-in shallow equal function, which performs shallow equality by
  * iterating through keys on an object and returning false when any key has values which are not strictly equal
@@ -75,8 +81,8 @@ function shallowEqual(objA, objB, except = {exceptProps: []}) {
     ) {
       if (process.env.NODE_ENV === 'development') {
         console.warn(`shallowEqual: non-equal props – "${keysA[i]}"`)
-        console.warn(`shallowEqual: "objA.${keysA[i]}=${JSON.stringify(objA[keysA[i]])}"`)
-        console.warn(`shallowEqual: "objB.${keysA[i]}=${JSON.stringify(objB[keysA[i]])}"`)
+        console.warn(`shallowEqual: "objA.${keysA[i]}=${stringify(objA[keysA[i]])}"`)
+        console.warn(`shallowEqual: "objB.${keysA[i]}=${stringify(objB[keysA[i]])}"`)
       }
       return false
     }
