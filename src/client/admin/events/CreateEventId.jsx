@@ -3,6 +3,8 @@ import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
 import CopyToClipboardButton from 'atoms/CopyToClipboardButton.jsx'
 
+const last = arr => arr[arr.length - 1]
+
 export default class CreateEventId extends React.Component {
   constructor(props) {
     super(props)
@@ -49,6 +51,8 @@ export default class CreateEventId extends React.Component {
   }
 
   render() {
+    const eventShortId = last(this.state.generatedName.split('-'))
+
     return (
       <div className="CreateEventId">
 
@@ -99,9 +103,11 @@ export default class CreateEventId extends React.Component {
             </mark>
             <CopyToClipboardButton textElementId="generated-name"/>
             <br />
-            <small id="name-help" className="form-text text-muted">Don't forget to set "_shortId" property to last part
-              after "-" of this generated id
-            </small>
+            <div id="name-help" className="form-text text-muted">Don't forget to set <b>"_shortId"</b> property to last part
+              after "-" of this generated id, which is "{eventShortId}" in this case:
+              <pre className="margin bot-0">{`{ _shortId: "${eventShortId}"}`}</pre>
+              on your event.
+            </div>
 
             <div style={{marginTop: '1rem'}}>
               <Button icon="autorenew" size="sm" type="secondary" onClick={this.onRegenerateClick}>
