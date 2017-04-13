@@ -2,6 +2,9 @@ import React from 'react'
 import FlyerUploader from './FlyerUploader.jsx'
 import Alert from 'atoms/Alert.jsx'
 import PermitNumberInput from './PermitNumberInput.jsx'
+import Col from 'atoms/Col.jsx'
+import Row from 'atoms/Row.jsx'
+import Flyer from 'calendar/events/event-details/Flyer.jsx'
 
 const PERMIT_PREFIX = new Date().getFullYear() + '-'
 const DEFAULT_PERMIT_NAME = PERMIT_PREFIX + 'XXX'
@@ -41,7 +44,19 @@ export default class UploadFlyer extends React.Component {
 
         <PermitNumberInput onPermitNumberChange={this.onPermitNumberChange} permitNumber={permitNumber}
           permitPrefix={PERMIT_PREFIX}/>
-        <FlyerUploader fileName={fileName}/>
+
+        <Row>
+          <Col sm={8}><FlyerUploader fileName={fileName}/></Col>
+          <Col sm={3}>
+            <h4 className="margin top-0">Flyer for {permitNumber} on USAC</h4>
+            <Flyer showHeader={false} url={getUsacUrl(permitNumber)} heightRem={60}/>
+          </Col>
+          <Col sm={3}>
+            <h4 className="margin top-0">Previously uploaded flyer for {permitNumber}</h4>
+            <Flyer showHeader={false} url={getS3FlyerUrl(permitNumber)} heightRem={60}/>
+          </Col>
+        </Row>
+
       </div>
     )
   }

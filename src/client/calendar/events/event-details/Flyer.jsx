@@ -20,7 +20,12 @@ export default class Flyer extends Component {
   }
 
   render() {
-    const { url } = this.props
+    const {
+      url,
+      showHeader = true,
+      heightRem = 110
+    } = this.props
+
     // 'https://drive.google.com/viewerng/viewer'
     // 'https://docs.google.com/viewer'
     const googleViewerUrl = addUrlParams('https://drive.google.com/viewerng/viewer', {
@@ -29,19 +34,23 @@ export default class Flyer extends Component {
     })
     const style = {
       width: '100%',
-      height: '110rem'
+      height: `${heightRem}rem`
     }
 
     const googleViewerIframe = (
       <div className="Flyer">
-        <div className="Flyer-header-container">
-          <h3 className="header-regular header-flyer">FLYER</h3>
-          <div className="button-group">
-            {/* <Button size="sm" icon="file_download" type="secondary" /> */}
-            <Button size="sm" icon="open_in_new" type="secondary" onClick={this.onOpenInNewTabClick}/>
+        {showHeader && (
+          <div>
+            <div className="Flyer-header-container">
+              <h3 className="header-regular header-flyer">FLYER</h3>
+              <div className="button-group">
+                {/* <Button size="sm" icon="file_download" type="secondary" /> */}
+                <Button size="sm" icon="open_in_new" type="secondary" onClick={this.onOpenInNewTabClick}/>
+              </div>
+            </div>
+            <hr className="spacer no-margin-top" />
           </div>
-        </div>
-        <hr className="spacer no-margin-top" />
+        )}
         <div className="iframe-container">
           <iframe style={style} height='100%' className="Flyer-iframe" frameBorder="0"
             src={googleViewerUrl} onLoad={this.onLoad}>
@@ -60,5 +69,7 @@ export default class Flyer extends Component {
 }
 
 Flyer.propTypes = {
+  showHeader: PropTypes.bool,
   url: PropTypes.string,
+  heightRem: PropTypes.string,
 }
