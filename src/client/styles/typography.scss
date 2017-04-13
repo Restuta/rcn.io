@@ -13,13 +13,15 @@
 //$headings-font-family: 'museo-sans-condensed', sans-serif;
 .wf-loading {
   h1,h2,h3,h4,h5,p,a {
-    visibility: hidden;
+    // visibility: hidden;
+    opacity: 0.1;
   }
 }
 
 .wf-active {
   h1,h2,h3,h4,h5,p,a {
-    visibility: visible;
+    opacity: 1;
+    // visibility: visible;
     //transition: visibility 2s ease-in-out;
   }
 }
