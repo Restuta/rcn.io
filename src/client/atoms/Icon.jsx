@@ -30,9 +30,10 @@ export default class Icon extends Component {
       style.top = pxToRem(top) + 'rem'
     }
 
-    const className = classNames('material-icons Icon', this.props.className)
+    const className = classNames('material-icons Icon fix-fout', this.props.className)
     return (
       <i className={className} style={style}>
+        {/* ∞ */}
         {name}
         {/*{this.props.children }*/}
       </i>

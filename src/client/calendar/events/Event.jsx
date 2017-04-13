@@ -105,6 +105,7 @@ class Event extends Component {
           modalProps: { hasPadding: false },
           returnLocation: {
             pathname: this.context.locationPathname,
+            search: this.context.locationSearch
           },
         }
       })
@@ -400,7 +401,8 @@ Event.propTypes = {
 }
 
 Event.contextTypes = {
-  locationPathname: React.PropTypes.string
+  locationPathname: React.PropTypes.string,
+  locationSearch: React.PropTypes.string,
 }
 
 export default withRouter(Event)

@@ -23,6 +23,9 @@ if (process.env.NODE_ENV === 'development') {
   })
 
   middlewares.push(logger)
+
+  // const reactPerfMiddleware = require('shared/middlewares/react-perf-middleware').default
+  // middlewares.push(reactPerfMiddleware)
 }
 
 
