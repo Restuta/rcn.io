@@ -66,7 +66,6 @@ export default class FlyerUploader extends React.Component {
       hasError: true,
       errorMsg: error
     })
-    console.info(error)
   }
 
   render() {

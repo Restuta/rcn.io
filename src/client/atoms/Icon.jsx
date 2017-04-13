@@ -39,8 +39,7 @@ export default class Icon extends Component {
     const className = classNames('material-icons Icon', this.props.className)
     return (
       <i className={className} style={iconStyle}>
-        {/* {name} */}
-        ∞
+        {name}
         {/*{this.props.children }*/}
       </i>
     )
