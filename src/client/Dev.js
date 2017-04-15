@@ -15,6 +15,7 @@ import Spinner from 'atoms/Spinner.jsx'
 import UsacLogo from 'atoms/UsacLogo.jsx'
 
 import { Link } from 'react-router'
+import Alert from 'atoms/Alert.jsx'
 
 //TODO: remove these components
 const Spacer = ({ width }) => <span style={{width: `${width}px`}}>&nbsp;</span>
@@ -94,8 +95,22 @@ export default class Dev extends Component {
         <p className={'text-' + 5} style={{fontSize:getFontSize(5)}}>{sizeToPx(5)} {eventName}</p>
         <p className={'text-' + 6} style={{fontSize:getFontSize(6)}}>{sizeToPx(6)} {eventName}</p>
         <p className={'text-' + 7} style={{fontSize:getFontSize(7)}}>{sizeToPx(7)} {eventName}</p>
+
         <Row className="margin-top">
-          <Col>
+          <Col sm={14}><h2>ALERTS</h2></Col>
+          <Col sm={14}>
+            <Alert type="info"><strong>Heads up! </strong>
+              Info Alert. It can explain to you some more or less important things or maybe not. Also let this one
+              have a long text so it can wrap and we can see it.
+            </Alert>
+            <Alert type="warning">Warn Alert. Use it sparingly!</Alert>
+            <Alert type="success">Success Alert. You did great!</Alert>
+            <Alert type="danger">Danger Alert. Careful, make sure you are sure!</Alert>
+          </Col>
+        </Row>
+
+        <Row className="margin-top">
+          <Col sm={14}>
             <h2>BUTTONS</h2>
             <Button icon="check_circle" size="sm" type="primary">SM PRIMARY</Button><S5 />
             <Button icon="cancel" size="sm" type="secondary">SM SECONDARY</Button>
@@ -116,6 +131,10 @@ export default class Dev extends Component {
             <Button size="lg" type="primary">LG PRIMARY</Button><S5 />
             <Button size="lg" type="secondary">LG SECONDARY</Button>
             <br /><br />
+
+            <Button size="md" type="success">MD SUCCESS</Button><S5 />
+            <Button size="md" type="danger">MD DANGER</Button> <S5 />
+            <Button size="md" type="warning">MD WARNING</Button>
 
             <br /><br />
             <Button size="sm">REGISTER</Button>

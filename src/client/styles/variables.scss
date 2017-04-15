@@ -57,18 +57,18 @@ $half-line-height-rem: $line-height-rem / 2;
 // $headings-font-family: 'Oswald', sans-serif;
 
 
-$body-font-family: 'museo-sans', Helvetica, Arial, sans-serif;
+$body-font-family: 'museo-sans', 'Lato', Helvetica, Arial, sans-serif;
 $headings-font-family: 'museo-sans-condensed', sans-serif;
 
 
 //calculating small (one step down from base) font size
-$font-size-1: scaleUp(1);
-$font-size-2: scaleUp(2);
-$font-size-3: scaleUp(3);
-$font-size-4: scaleUp(4);
-$font-size-5: scaleUp(5);
-$font-size-6: scaleUp(6);
-$font-size-7: scaleUp(7);
+$font-size-1: scaleUp(1); //10
+$font-size-2: scaleUp(2); //13
+$font-size-3: scaleUp(3); //16
+$font-size-4: scaleUp(4); //20
+$font-size-5: scaleUp(5); //24
+$font-size-6: scaleUp(6); //31
+$font-size-7: scaleUp(7); //38
 
 
 $drift-z-index: 1000;

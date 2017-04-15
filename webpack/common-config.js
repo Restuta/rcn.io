@@ -2,6 +2,8 @@
 const nodeModules = require('./utils').nodeModules
 const path = require('path')
 const consts = require('./constants')
+const pkg = require(path.resolve(process.cwd(), 'package.json'))
+const _ = require('lodash')
 
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
@@ -22,22 +24,16 @@ const getConfig = (env) => {
     'moment-timezone': pathToMomentTimezone,
     'redux-saga': nodeModules('redux-saga/dist/redux-saga.min.js'),
     //TODO: modify for node to pull node-fetch
-    'isomorphic-fetch': nodeModules('whatwg-fetch/fetch.js')
+    'isomorphic-fetch': nodeModules('whatwg-fetch/fetch.js'),
   }
 
-
-  //other non-prebuilt dependencies
-  const otherVendorDeps = [
-    'react-pure-render',
-    'svg-inline-react',
-    'classnames',
-    'exenv',
-    'react-modal2',
-    'redux-actions',
-    'react-redux',
-    'reselect',
-    // 'core-js/library/es6/promise'
-  ]
+  //reading from package.json
+  const vendorDependencyNames = Object.keys(pkg.dependencies)
+    //excluding regenerator-runtime since it results in error "regeneratorRuntime is not defined" in runtime
+    //and manually specifying correct path
+    .filter(x => x !== 'regenerator-runtime')
+    .concat(['regenerator-runtime/runtime'])
+  const otherVendorDeps = _.difference(vendorDependencyNames, Object.keys(preBuiltVendorDeps))
 
   const toArray = (obj) => {
     return Object.keys(obj).map(key => obj[key])

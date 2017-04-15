@@ -140,6 +140,7 @@ export default [
 }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-1-B1x1JgKcQx",
     "status" : "Canceled",
+    "cancelationReason": "Bad weather conditions (rain).",
     "name" : "Early Bird Training Series #1",
     "date": "January 08 2017",
     "discipline": "Road",
@@ -291,6 +292,8 @@ export default [
     "date": "January 22 2017",
     "discipline": "Road",
     "type": "Clinics",
+    "status": "Canceled",
+    "cancelationReason": "Bad weather conditions (rain).",
     "location": {
       "city": "Fremont",
       "state": "CA"

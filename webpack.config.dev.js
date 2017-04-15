@@ -7,7 +7,7 @@ const outputPath = path.join(__dirname, 'dist')
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('dev')
 
-module.exports = {
+const config = {
   // cheap-module-eval-source-map, because we want original source, but we don't
   // care about columns, which makes this devtool faster than eval-source-map.
   // http://webpack.github.io/docs/configuration.html#devtool
@@ -123,3 +123,8 @@ module.exports = {
     ]
   }
 }
+
+module.exports = config
+
+// const addBundleAnalyzer = require('./webpack/utils').addBundleAnalyzer
+// module.exports = addBundleAnalyzer(config)

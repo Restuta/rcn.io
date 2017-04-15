@@ -13,9 +13,9 @@
   <h2>Automagically resizing iFrame</h2>
   <p>Resize window to see it in action.</p>
   <div style="margin:20px;">
-    <iframe src="http://localhost:8888/widgets/upcoming-events"
+    <iframe id="rcn-upcoming-events" src="http://localhost:8888/widgets/upcoming-events"
       sandbox="allow-top-navigation allow-scripts allow-forms allowfullscreen allow-same-origin allow-modals allow-popups allow-pointer-lock allow-popups-to-escape-sandbox"
-      width="100%" scrolling="no"></iframe>
+      width="100%" height="544px" frameBorder="0" scrolling="no"></iframe>
   </div>
   <p id="callback">
   </p>
@@ -25,7 +25,6 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js" integrity="sha256-lxxH8RROO8qq+9jKKBzDOnV7hYUkWY/97UhRBxBFdb4=" crossorigin="anonymous"></script>
-
   <script type="text/javascript">
     /*
      * If you do not understand what the code below does, then please just use the

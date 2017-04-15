@@ -26,7 +26,7 @@ const blueGrey = {
 
 }
 
-const purple = {
+const deepPurple = {
   deepPurple50: '#EDE7F6',
   deepPurple100: '#D1C4E9',
   deepPurple200: '#B39DDB',
@@ -101,14 +101,32 @@ const lightBlue = {
   lightBlueA700: '#0091EA',
 }
 
+const green = {
+  green50: '#E8F5E9',
+  green100: '#C8E6C9',
+  green200: '#A5D6A7',
+  green300: '#81C784',
+  green400: '#66BB6A',
+  green500: '#4CAF50',
+  green600: '#43A047',
+  green700: '#388E3C',
+  green800: '#2E7D32',
+  green900: '#1B5E20',
+  greenA100: '#B9F6CA',
+  greenA200: '#69F0AE',
+  greenA400: '#00E676',
+  greenA700: '#00C853',
+}
+
 const colors = {
   ...grey,
   ...blueGrey,
-  ...purple,
+  ...deepPurple,
   ...red,
   ...blue,
   ...lightBlue,
   ...orange,
+  ...green,
 
   bodyBg: '#FCFCFC',
   bodyWidgetsBg: '#f7f7f7',
@@ -118,7 +136,7 @@ const colors = {
   brownMud: '#a36d53',
   brownMudDimmed: 'rgba(160,82,45,0.60)',
 
-  primary: purple.deepPurple400,
+  primary: deepPurple.deepPurple400,
 }
 
 const clinicsColor = '#F06292'

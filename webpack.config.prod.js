@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const consts = require('./webpack/constants')
 
 const getConfig = require('./webpack/common-config').getConfig
@@ -21,9 +22,10 @@ const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
   minifyURLs: true
 }
 
-module.exports = {
+const config = {
   //devtool: 'source-map',
   devtool: 'cheap-module-source-map',
+  target: 'web',
 
   cache: false,
   debug: false,
@@ -45,6 +47,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
@@ -56,17 +59,28 @@ module.exports = {
         'Dev': false
       }
     }),
-    //defines explicit vendor chunks with pre-picked vendor dependencies and automatic "common" chunk, where Webpack
-      //figures out common deps between all entry points.
+    //order of chunks is important, first we define common chunks between app and widgets
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   names: ['common'], //use this to enable extra common chunk
+    //   // names: ['vendor'],
+    //   filename: '[name].bundle.js',
+    //   chunks: ['app', 'widgets'],
+    //   // (with more entries, this ensures that no other module
+    //   // goes into the vendor chunk)
+    //   minChunks: 2, //set to 2 when enabling 'common' chunk
+    // }),
+    //second we extract all vendor deps to a separate chunk from our common chunk
+    //defines explicit vendor chunks with pre-picked vendor dependencies
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'common'], //use this to enable extra common chunk
+      names: ['vendor'], //use this to enable extra common chunk
       // names: ['vendor'],
       filename: '[name].bundle.js',
-      // chunks: ['vendor'],
+      // chunks: ['common'], //if common chunk is defined above we can extract vendor deps from it
       // (with more entries, this ensures that no other module
       // goes into the vendor chunk)
-      minChunks: 2, //set to 2 when enabling 'common' chunk
+      minChunks: 2,
     }),
+
     new webpack.optimize.DedupePlugin(),
     extractCss,
     new webpack.optimize.UglifyJsPlugin({
@@ -86,7 +100,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
       title: 'RCN.io',
-      chunks: ['vendor', 'common', 'app'],
+      chunks: ['vendor', 'app'],
       chunksSortMode: 'dependency',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
@@ -101,7 +115,7 @@ module.exports = {
     //separate html file for widgets
     new HtmlWebpackPlugin({
       filename: 'widgets/index.html',
-      chunks: ['vendor', 'common', 'widgets'],
+      chunks: ['vendor', 'widgets'],
       chunksSortMode: 'dependency',
       title: 'RCN.io Widgets',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
@@ -153,3 +167,8 @@ module.exports = {
     ]
   }
 }
+
+module.exports = config
+
+// const addBundleAnalyzer = require('./webpack/utils').addBundleAnalyzer
+// module.exports = addBundleAnalyzer(config)
