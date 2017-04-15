@@ -23,6 +23,7 @@ export default class Flyer extends Component {
     const {
       url,
       showHeader = true,
+      showBorder = false,
       heightRem = 110
     } = this.props
 
@@ -34,7 +35,8 @@ export default class Flyer extends Component {
     })
     const style = {
       width: '100%',
-      height: `${heightRem}rem`
+      height: `${heightRem}rem`,
+      border: showBorder ? '1px solid silver' : 'none',
     }
 
     const googleViewerIframe = (
@@ -70,6 +72,7 @@ export default class Flyer extends Component {
 
 Flyer.propTypes = {
   showHeader: PropTypes.bool,
+  showBorder: PropTypes.bool,
   url: PropTypes.string,
   heightRem: PropTypes.string,
 }
