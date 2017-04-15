@@ -4,5 +4,7 @@
 // global "process.env" across the applicaiton
 
 export default {
-  AWS_S3_TOKEN: process.env.AWS_S3_TOKEN
+  //set the following with heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy
+  // AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
+  // AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY
 }

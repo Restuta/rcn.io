@@ -14,14 +14,9 @@ function S3Router(options) {
     throw new Error('S3_BUCKET is required.')
   }
 
-  let s3Options = {}
-
-  if (options.region) {
-    s3Options.region = options.region
-  }
-
-  if (options.signatureVersion) {
-    s3Options.signatureVersion = options.signatureVersion
+  let s3Options = {
+    region: options.region,
+    signatureVersion: options.signatureVersion
   }
 
   let router = express.Router()
