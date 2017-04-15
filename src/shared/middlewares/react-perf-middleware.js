@@ -8,11 +8,11 @@ export default store => next => action => {
   const result = next(action)
   Perf.stop()
 
-  console.group(key)
-  console.info('wasted')
+  console.group(key) //eslint-disable-line
+  console.info('wasted') //eslint-disable-line
   Perf.printWasted()
   // any other Perf measurements you are interested in
 
-  console.groupEnd(key)
+  console.groupEnd(key) //eslint-disable-line
   return result
 }

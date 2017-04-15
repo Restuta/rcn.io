@@ -29,7 +29,6 @@ class App extends Component {
 
   onModalClose() {
     const returnLocation = this.props.location.state.returnLocation
-    console.log(returnLocation)
 
     if (returnLocation) {
       this.props.router.replace({

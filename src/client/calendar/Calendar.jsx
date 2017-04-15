@@ -10,7 +10,6 @@ import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import Badge from 'calendar/badges/Badge.jsx'
 import { withRouter } from 'react-router'
-import shallowEqual from 'client/utils/shallow-equal-except'
 import { logRenderPerf } from 'utils/hocs'
 
 import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
@@ -141,23 +140,11 @@ class Calendar extends Component {
       location,
       draft = false,
     } = this.props
-
-    //TODO bc: when directly hit via URL doesn't store state in REDUX
-
     //trust query string first, props next
-    //TODO bc: this doesn't account for drafts calendar, when show past event
     const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
-    // location.query['past']
-    //   ? (location.query['past'] === 'visible')
-    //   : this.props.showPastEvents
-
-
     let shouldShowHidePastLink = false
-
     //time-zone specific moment factory
-    const momentTZ = function() {
-      return moment.tz(...arguments, timeZone)
-    }
+    const momentTZ = function() { return moment.tz(...arguments, timeZone) }
 
     const today = momentTZ()
     const firstDayOfTheYear = momentTZ({year: year, month: 0, day: 1})

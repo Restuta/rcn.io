@@ -27,7 +27,6 @@ const createEvent = rawEvent => {
   const date = moment(rawEvent.date, 'MMMM DD YYYY')
   const datePlain = date.format('MMDDYYYY')
 
-  //TODO bc: revisit this, add ids?,
   const eventId = (rawEvent.id && rawEvent.id.startsWith('evt-'))
     ? rawEvent.id
     : 'evt-' + hash(name) + '-' + datePlain

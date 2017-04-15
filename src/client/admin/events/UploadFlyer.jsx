@@ -25,8 +25,6 @@ export default class UploadFlyer extends React.Component {
     this.setState({permitNumber: event.target.value})
   }
 
-  //TODO bc: show alert only when flyer number is entered and flyer is present
-
   render() {
     const { permitNumber } = this.state
     const fileName = (permitNumber === DEFAULT_PERMIT_NAME) ? '' : `flyer-${permitNumber}.pdf`

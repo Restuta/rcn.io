@@ -149,7 +149,6 @@ class Event extends Component {
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
 
-    //TODO bc: refactor this for case when auto-height is false and no widthColumns is provided
     const cardHeight = autoHeight
       ? 12 //TODO: default size doesn't make sense here, but we need to calculate card size somehow
       : widthColumns
@@ -382,7 +381,6 @@ Event.propTypes = {
     discipline: PropTypes.oneOf(Object
       .keys(Disciplines)
       .map(x => Disciplines[x])
-      //.concat([''])
     ),
     location: PropTypes.shape({
       city: PropTypes.string,
