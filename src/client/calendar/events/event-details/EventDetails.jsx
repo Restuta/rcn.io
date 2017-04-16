@@ -20,6 +20,8 @@ import classnames from 'classnames'
 import Badge from 'calendar/badges/Badge.jsx'
 import UsacLogo from 'atoms/UsacLogo.jsx'
 
+const getUsacFlyerUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
+
 const PresentedBy = ({by}) => (
   <span className="text-2" style={{
     fontStyle: 'italic',
@@ -134,7 +136,9 @@ class EventDetails extends Component {
     } = this.props.event
 
     //TODO bc: migrate old events to have flyer section and not just "flyerUrl" property
-    const flyerUrl = (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
+    const flyerUrl = this.props.event.usacPermit
+      ? getUsacFlyerUrl(this.props.event.usacPermit)
+      : (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
 
     const promoterContactName = (promoters && promoters.length > 0)
       ? promoters.map(x => x.contactName)[0]
