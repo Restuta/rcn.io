@@ -1305,6 +1305,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-turlock-lake-road-race-SkyM1yxt5ml",
     "name": "Turlock Lake Road Race",
+    "usacPermit":"2017-671",
     "date": "April 08 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1322,6 +1323,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-stanford-circuit-race-BJgz1JetcXx",
     "name" : "WCCC: Stanford Circuit Race",
+    "usacPermit":"2017-908",
     "date": "April 08 2017",
     "discipline": "Collegiate",
     "type": "Circuit Race",
@@ -1341,6 +1343,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-stanford-team-time-trial-SJbM1kltqmg",
     "name" : "WCCC: Stanford Team Time Trial",
+    "usacPermit":"2017-908",
     "date" : "April 08 2017",
     "discipline" : "Collegiate",
     "type" : "Time Trial",
@@ -1377,6 +1380,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-stanford-road-race-H1Qzy1gYq7x",
     "name" : "WCCC: Stanford Road Race",
+    "usacPermit":"2017-908",
     "date": "April 09 2017",
     "discipline": "Collegiate",
     "type": "Road Race",
@@ -1396,6 +1400,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-copperopolis-road-race-vp-9-BJEG1JxtcQx",
     "name" : "Copperopolis Road Race – VP #9",
+    "usacPermit":"2017-937",
     "date": "April 15 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1472,6 +1477,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-H1uGkJxKcmx",
     "name": "Sea Otter Classic – Criterium",
+    "usacPermit":"2017-466",
     "date": "April 20 2017",
     "discipline": "Road",
     "type" : "Criterium",
@@ -1489,6 +1495,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-HytzyJeK9Ql",
     "name": "Sea Otter Classic – Circuit Race",
+    "usacPermit":"2017-466",
     "date": "April 21 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1506,6 +1513,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-rJjVXCTmg",
     "name": "Sea Otter Classic – Road Race",
+    "usacPermit":"2017-466",
     "date": "April 21 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1523,6 +1531,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-SycfJkxK57l",
     "name": "Sea Otter Classic – Circuit Race",
+    "usacPermit":"2017-466",
     "date": "April 22 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1540,6 +1549,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-B1xL1Id0Xg",
     "name": "Sea Otter Classic – Road Race (Juniors)",
+    "usacPermit":"2017-466",
     "date": "April 22 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1557,6 +1567,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-SkjG1yeFcmg",
     "name": "Sea Otter Classic – Road Race",
+    "usacPermit":"2017-466",
     "date": "April 23 2017",
     "discipline": "Road",
     "type" : "Road Race",
@@ -1574,6 +1585,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-ByXS8dRml",
     "name": "Sea Otter Classic – Circuit Race (PRO)",
+    "usacPermit":"2017-466",
     "date": "April 23 2017",
     "discipline": "Road",
     "type" : "Circuit Race",
@@ -1591,6 +1603,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-red-kite-criterium-april-rko-6-BJ3Gk1eY5mg",
     "name" : "Red Kite Criterium (April) – RKO #6",
+    "usacPermit":"2017-525",
     "date": "April 23 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1667,6 +1680,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-44th-mikes-bikes-cats-hill-classic-rk6zk1xY5Xg",
     "name": "44th Mike's Bikes Cat's Hill Classic",
+    "usacPermit":"2017-1060",
     "date": "April 29 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1683,6 +1697,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-cyclenation-ride-SyAzkylFqQg",
     "name" : "CycleNation Ride",
+    "usacPermit":"2017-166",
     "date" : "April 29 2017",
     "discipline" : "Road",
     "type" : "Non-Competitive",
@@ -1723,6 +1738,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wente-vineyards-classic-road-race-H1kQyJlKq7e",
     "name" : "Wente Vineyards Classic Road Race",
+    "usacPermit":"2017-496",
     "date": "April 30 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1739,6 +1755,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-golden-state-race-series-pb-rio-strada-racing-criterium-SkeXyJlFc7l",
     "name" : "Golden State Race Series p/b Rio Strada Racing – Criterium",
+    "usacPermit":"2017-785",
     "date": "May 06 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1771,6 +1788,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-golden-state-race-series-pb-rio-strada-racing-circuit-HyMQ1yxF9Qe",
     "name" : "Golden State Race Series p/b Rio Strada Racing – Circuit",
+    "usacPermit":"2017-785",
     "date": "May 07 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1806,6 +1824,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-salinas-criterium-HyXQJJgK5Xg",
     "name": "Salinas Criterium",
+    "usacPermit":"2017-1198",
     "date": "May 07 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1871,6 +1890,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-ride2recovery-honor-ride-sacramento-H1h0lltNx",
     "name" : "Ride2Recovery: Honor Ride - Sacramento",
+    "usacPermit":"2017-340",
     "date": "May 13 2017",
     "discipline": "Road",
     "type": "Non-Competitive",
@@ -1895,6 +1915,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-berkeley-hills-road-race-rJNQkkgF9Qx",
     "name": "Berkeley Hills Road Race",
+    "usacPermit":"2017-1465",
     "date": "May 13 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2060,6 +2081,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-modesto-downtown-criterium-H1UXk1eK97l",
     "name" : "Modesto Downtown Criterium",
+    "usacPermit":"2017-1215",
     "date": "May 20 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2077,6 +2099,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-modesto-road-race-HJPXkkxt5Ql",
     "name": "Modesto Road Race",
+    "usacPermit":"2017-1216",
     "date": "May 21 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2094,6 +2117,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-folsom-classic-criterium-BkOQyklF9mg",
     "name": "Folsom Classic Criterium",
+    "usacPermit":"2017-662",
     "date": "May 27 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2110,6 +2134,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-memorial-day-classic-stage-race-prologue-rko-7-H1Ym1ket9Qx",
     "name" : "Memorial Day Classic Stage Race and Omnium – Memorial Day Classic Stage Race Prologue – RKO #7",
+    "usacPermit":"2017-1142",
     "date": "May 27 2017",
     "discipline": "Road",
     "type" : "Time Trial",
@@ -2144,6 +2169,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-mt-hamilton-classic-road-race-pb-san-jose-bicycle-club-rko-7-rysQ1JeY57e",
     "name" : "Memorial Day Classic Stage Race and Omnium – Mt. Hamilton Classic Road Race p/b San Jose Bicycle Club – RKO #7",
+    "usacPermit":"2017-1142",
     "date": "May 28 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2181,6 +2207,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-red-kite-mem-day-crit-rko-7-Syam1ylK9Xe",
     "name" : "Memorial Day Classic Stage Race and Omnium – Red Kite Mem Day Crit – RKO #7",
+    "usacPermit":"2017-1142",
     "date": "May 29 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2200,6 +2227,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-memorial-day-classic-stage-race-and-omnium-calaveras-time-trial-pb-team-fremont-fremont-freewheelers-bicycle-club-rko-7-SyAQyygFqXe",
     "name" : "Memorial Day Classic Stage Race and Omnium – Calaveras Time Trial p/b TEAM Fremont / Fremont Freewheelers Bicycle Club – RKO #7",
+    "usacPermit":"2017-1142",
     "date": "May 29 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -2276,6 +2304,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-pescadero-road-race-S1JEy1eFcQg",
     "name": "Pescadero Road Race",
+    "usacPermit":"2017-280",
     "date": "June 03 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2415,6 +2444,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-nevada-city-cycling-classic-S18Ny1etc7g",
     "name": "Nevada City Cycling Classic",
+    "usacPermit":"2017-1620",
     "date": "June 18 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2432,6 +2462,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-Sk5q3lySe",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 20 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2451,6 +2482,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BklQCgJSx",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 21 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2470,6 +2502,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-rkLECgyrx",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 22 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2489,6 +2522,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-BysSCxkHe",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 23 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2527,6 +2561,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-SkRIRxyHg",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 24 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2585,6 +2620,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-usa-cycling-masters-track-national-championships-ByF9RlkSx",
     "name" : "USA Cycling Masters Track National Championships",
+    "usacPermit":"2017-1178",
     "date": "June 25 2017",
     "discipline": "Track",
     "type": "Nationals",
@@ -2623,6 +2659,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-auburn-downtown-criterium-ryd41Jxtcme",
     "name": "Auburn Downtown Criterium",
+    "usacPermit":"2017-1397",
     "date": "June 25 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2640,6 +2677,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-burlingame-criterium-HJKE11gF57l",
     "name": "Burlingame Criterium",
+    "usacPermit":"2017-1420",
     "date": "June 25 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2919,8 +2957,9 @@ export default [
     "isDraft" : false,
     "_shortId" : "Hy1r1kgY5mg"
   }, {
-    "id" : "evt-ncnca-2017-downtown-lakefront-criterium-B1lS1JgFq7l",
-    "name": "Downtown Lakefront Criterium",
+    "id" : "evt-ncnca-2017-rpp-hobby-lakeport-downtown-criterium-presented-by-conser-land-surveyi-rJ_DvvbRg",
+    "name": "RPP Hobby Lakeport Downtown Criterium presented by Conser Land Surveyi",
+    "usacPermit":"2017-1418",
     "date": "July 15 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -2934,7 +2973,7 @@ export default [
     "group": "3",
     "draftNotes" : "Pair with Colavita GP",
     "isDraft" : false,
-    "_shortId" : "B1lS1JgFq7l"
+    "_shortId" : "rJ_DvvbRg"
   }, {
     "id" : "evt-ncnca-2017-colavita-norcal-grand-prix-SyWS1keYqml",
     "name": "Colavita-Norcal Grand Prix",
