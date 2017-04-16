@@ -4,6 +4,7 @@ export default [
   {
     "id" : "evt-ncnca-2017-san-bruno-hill-climb-rkJyeFqXl",
     "name": "San Bruno Hill Climb",
+    "usacPermit":"2017-150",
     "date": "January 01 2017",
     "discipline": "Road",
     "type": "Hill Climb",
@@ -142,6 +143,7 @@ export default [
     "status" : "Canceled",
     "cancelationReason": "Bad weather conditions (rain).",
     "name" : "Early Bird Training Series #1",
+    "usacPermit":"2017-325",
     "date": "January 08 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -161,6 +163,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-clovis-criterium-training-series-1-BygycpTkEg",
     "name" : "Clovis Criterium Training Series #1",
+    "usacPermit":"2017-291",
     "date": "January 08 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -216,6 +219,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-2-ryzk1eYcmx",
     "name" : "Early Bird Training Series #2",
+    "usacPermit":"2017-325",
     "date": "January 15 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -236,6 +240,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-clovis-criterium-training-series-2-S1mJkxKqXx",
     "name" : "Clovis Criterium Training Series #2",
+    "usacPermit":"2017-291",
     "date": "January 15 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -292,6 +297,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-3-rJNkklFqme",
     "name" : "Early Bird Training Series #3",
+    "usacPermit":"2017-325",
     "date": "January 22 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -314,6 +320,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-clovis-criterium-training-series-3-SkryJgt5ml",
     "name" : "Clovis Criterium Training Series #3",
+    "usacPermit":"2017-291",
     "date": "January 22 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -387,6 +394,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-early-bird-training-series-4-S1_k1lY5Qx",
     "name" : "Early Bird Training Series #4",
+    "usacPermit":"2017-325",
     "date": "January 29 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -406,6 +414,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-clovis-criterium-training-series-4-BytkyxY97e",
     "name" : "Clovis Criterium Training Series #4",
+    "usacPermit":"2017-291",
     "date": "January 29 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -535,6 +544,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-H1Zc37mUx",
     "name" : "Central Coast Road Series – CCCX #2",
+    "usacPermit": "2017-778",
     "date": "February 12 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -632,6 +642,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-road-race-HJWeyylF97x",
     "name" : "WCCC: Santa Cruz Slugapalooza Road Race",
+    "usacPermit":"2017-1166",
     "date": "February 18 2017",
     "discipline": "Collegiate",
     "type": "Road Race",
@@ -698,6 +709,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-criterium-rkQeyJgFqXg",
     "name" : "WCCC: Santa Cruz Slugapalooza Criterium",
+    "usacPermit":"2017-1166",
     "date": "February 19 2017",
     "discipline": "Collegiate",
     "type": "Criterium",
@@ -1009,6 +1021,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wards-ferry-road-race-vp-6-SJiJoNkDx",
     "name" : "Ward's Ferry Road Race – VP #6",
+    "usacPermit":"2017-936",
     "date": "March 18 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -1630,6 +1643,7 @@ export default [
       "city": "Grand Junction",
       "state": "CO"
     },
+    "websiteUrl": "http://www.usacycling.org/2017/collegiate-road-nationals",
     "promoters": [
       { "id": "prm-2666", "name": "USA Cycling" },
     ],
@@ -1649,6 +1663,7 @@ export default [
       "city": "Grand Junction",
       "state": "CO"
     },
+    "websiteUrl": "http://www.usacycling.org/2017/collegiate-road-nationals",
     "promoters": [
       { "id": "prm-2666", "name": "USA Cycling" },
     ],
@@ -1668,6 +1683,7 @@ export default [
       "city": "Grand Junction",
       "state": "CO"
     },
+    "websiteUrl": "http://www.usacycling.org/2017/collegiate-road-nationals",
     "promoters": [
       { "id": "prm-2666", "name": "USA Cycling" },
     ],
@@ -1726,6 +1742,7 @@ export default [
       "city": "Grand Junction",
       "state": "CO"
     },
+    "websiteUrl": "http://www.usacycling.org/2017/collegiate-road-nationals",
     "promoters": [
       { "id": "prm-2666", "name": "USA Cycling" },
     ],
