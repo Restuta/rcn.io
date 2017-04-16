@@ -646,6 +646,7 @@ export default [
     "date": "February 18 2017",
     "discipline": "Collegiate",
     "type": "Road Race",
+    "status": "Moved",
     "location": {
       "city": "Santa Cruz",
       "state": "CA"
@@ -713,6 +714,7 @@ export default [
     "date": "February 19 2017",
     "discipline": "Collegiate",
     "type": "Criterium",
+    "status": "Moved",
     "location": {
       "city": "Santa Cruz",
       "state": "CA"
@@ -1180,6 +1182,46 @@ export default [
     "draftNotes" : "Also the Winchester race is a soft date pending other submissions.  SR",
     "isDraft" : false,
     "_shortId" : "BkFbJ1etqXl"
+  }, {
+    "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-road-race-Hy3YRvZ0g",
+    "name" : "WCCC: Santa Cruz Slugapalooza Road Race",
+    "usacPermit":"2017-1166",
+    "date": "March 25 2017",
+    "discipline": "Collegiate",
+    "type": "Road Race",
+    "location": {
+      "city": "Santa Cruz",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "Hy3YRvZ0g"
+  }, {
+    "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-criterium-rkMTCDWAx",
+    "name" : "WCCC: Santa Cruz Slugapalooza Criterium",
+    "usacPermit":"2017-1166",
+    "date": "March 26 2017",
+    "discipline": "Collegiate",
+    "type": "Criterium",
+    "location": {
+      "city": "Santa Cruz",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30005", "name": "UC Santa Cruz Cycling Team", "contactName": "Rachel Marcuson", "contactInfo": "rmarcuson@gmail.com"},
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "rkMTCDWAx"
   }, {
     "id" : "evt-ncnca-2017-santa-cruz-classic-criterium-xlviii-vp-8-BJcbJklF5Xx",
     "name" : "Santa Cruz Classic Criterium XLVIII – VP #8",
