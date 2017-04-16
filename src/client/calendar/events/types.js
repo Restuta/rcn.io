@@ -5,7 +5,8 @@ const Disciplines = {
   track: 'Track',
   bmx: 'BMX',
   nonCompetitive: 'Non-Competitive',
-  other: 'Other'
+  other: 'Other',
+  collegiate: 'Collegiate', // http://www.usacycling.org/Programs/collegiate/
 }
 
 const Statuses = {
@@ -54,6 +55,20 @@ const EventTypes = {
   nonCompetitive: {
     'default': 'Non-Competitive',
     granFondo: 'Gran Fondo',
+  },
+  collegiate: {
+    'default': 'Collegiate',
+    criterium: 'Criterium',
+    roadRace: 'Road Race',
+    circuitRace: 'Circuit Race',
+    timeTrial: 'Time Trial',
+    teamTimeTrial: 'Team Time Trial',
+    hillClimb: 'Hill Climb',
+    omnium: 'Omnium',
+    stageRace: 'Stage Race',
+    clinics: 'Clinics',
+    nationals: 'Nationals',
+    nonCompetitive: 'Non-Competitive',
   }
 }
 

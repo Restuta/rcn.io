@@ -182,7 +182,20 @@ const event = {
     'default': colors.grey800,
     clinics: clinicsColor,
     nationals: colors.blueNational,
-  }
+  },
+  collegiate: {
+    'default': colors.white,
+    criterium: '#00BF10',
+    roadRace: colors.blue500,
+    circuitRace: colors.orange500,
+    timeTrial: colors.red500,
+    hillClimb: colors.red700,
+    teamTimeTrial: colors.red900,
+    stageRace: colors.deepPurple400,
+    omnium: colors.deepPurple400,
+    clinics: clinicsColor,
+    nationals: colors.blueNational,
+  },
 }
 
 //update matching variables in variables.scss
