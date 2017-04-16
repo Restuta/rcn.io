@@ -905,6 +905,26 @@ export default [
     "isDraft" : false,
     "_shortId" : "SJ2xyyeF5mx"
   }, {
+    "id" : "evt-ncnca-2017-early-bird-training-series-5-BkxPJfObAe",
+    "name" : "Early Bird Training Series #5",
+    "usacPermit": "2017-931",
+    "date": "March 5 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "city": "Fremont",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
+    ],
+    "series": [
+      { "id": "ser-40006", "name": "2017 Early Bird Training Series", "url": "http://www.ncnca.org/ncncaseries/2017-early-bird-training-series", "shortName": "EBTS" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "BkxPJfObAe"
+  }, {
     "id" : "evt-ncnca-2017-wards-ferry-road-race-vp-6-S1ax11gKcXl",
     "name" : "Ward's Ferry Road Race – VP #6",
     "usacPermit":"2017-936",
@@ -1299,6 +1319,24 @@ export default [
     "group" : "1",
     "isDraft" : false,
     "_shortId" : "SkptVbW0x"
+  }, {
+    "id" : "evt-ncnca-2017-otf-ventana-circuit-race-rkigmubCg",
+    "name": "OTF Ventana Circuit Race",
+    "usacPermit": "2017-734",
+    "date": "April 01 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "19795 Ventana Hills Dr.",
+      "city": "Clovis",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-5124", "name": "Off The Front", "contactName": "Steve Grusis", "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775"},
+    ],
+    "group" : "2",
+    "isDraft" : false,
+    "_shortId" : "rkigmubCg"
   }, {
     "id": "evt-ncnca-2017-uc-davis-collegiate-cycling-race-weekend-B1zH$G$Re",
     "name": "UC Davis Collegiate Cycling Race Weekend",
