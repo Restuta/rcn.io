@@ -180,6 +180,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-HJ1JWpvVx",
     "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "usacPermit" : "2017-137",
     "date": "January 14 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -197,6 +198,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-SyIFfpDEe",
     "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "usacPermit" : "2017-137",
     "date": "January 15 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -271,6 +273,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-napa-valley-camp-pb-data-driven-athlete-SkAazpD4e",
     "name" : "Napa Valley Camp p/b Data Driven Athlete",
+    "usacPermit" : "2017-137",
     "date": "January 16 2017",
     "discipline": "Road",
     "type": "Clinics",
@@ -330,6 +333,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-cal-aggie-criterium-ryU11xK5Ql",
     "name": "Cal Aggie Criterium",
+    "usacPermit": "2017-211",
     "date": "January 28 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -346,6 +350,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-1-ByPJ1xYqml",
     "name" : "Central Coast Road Series – CCCX #1",
+    "usacPermit": "2017-778",
     "date": "January 28 2017",
     "status": "Moved",
     "discipline": "Road",
@@ -420,6 +425,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-folsom-winter-criterium-S1qJ1gtqXl",
     "name": "Folsom Winter Criterium",
+    "usacPermit": "2017-203",
     "date": "February 04 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -446,6 +452,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-the-bump-circuit-race-winter-rko-1-SJoyJgYcme",
     "name" : "The Bump Circuit Race (Winter) – RKO #1",
+    "usacPermit": "2017-399",
     "date": "February 05 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -483,6 +490,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-otf-hensley-lake-road-race-BkZu0_uVx",
     "name": "OTF Hensley Lake Road Race",
+    "usacPermit": "2017-361",
     "date": "February 11 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -507,6 +515,7 @@ export default [
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-2-ryp1ket5Xx",
     "status": "Moved",
     "name" : "Central Coast Road Series – CCCX #2",
+    "usacPermit": "2017-778",
     "date": "February 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -583,6 +592,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-1-S1haKATIl",
     "name" : "Central Coast Road Series – CCCX #1",
+    "usacPermit": "2017-778",
     "date": "February 18 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -623,7 +633,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-road-race-HJWeyylF97x",
     "name" : "WCCC: Santa Cruz Slugapalooza Road Race",
     "date": "February 18 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Road Race",
     "location": {
       "city": "Santa Cruz",
@@ -639,8 +649,27 @@ export default [
     "isDraft" : false,
     "_shortId" : "HJWeyylF97x"
   }, {
+    "id": "evt-ncnca-2017-tuttle-creek-road-race-HJ7cBOxRl",
+    "name": "Tuttle Creek Road Race",
+    "usacPermit": "2017-485",
+    "date": "February 19 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location" : {
+      "streetAddress": "",
+      "city": "Lone Pine",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com" },
+    ],
+    "isDraft" : false,
+    "_shortId": "HJ7cBOxRl"
+  },
+  {
     "id" : "evt-ncnca-2017-cantua-creek-road-race-vp-2-BkfgJkgYqXl",
     "name" : "Cantua Creek Road Race – VP #22",
+    "usacPermit": "2017-439",
     "date": "February 19 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -656,7 +685,6 @@ export default [
     "series": [
       { "id": "ser-40003", "name": "2017 Velo Promo Road Series", "url": "http://www.ncnca.org/ncncaseries/2017-velo-promo-road-series", "shortName": "VPRS" },
     ],
-    "usacPermit": "2017-439",
     "flyer": {
       "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-439",
       "mimeType": "application/pdf"
@@ -671,7 +699,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-santa-cruz-slugapalooza-criterium-rkQeyJgFqXg",
     "name" : "WCCC: Santa Cruz Slugapalooza Criterium",
     "date": "February 19 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Criterium",
     "location": {
       "city": "Santa Cruz",
@@ -710,6 +738,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-cherry-pie-criterium-BkBgy1eY5Xl",
     "name" : "Cherry Pie Criterium",
+    "usacPermit": "2017-428",
     "date": "February 20 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -735,6 +764,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-chico-stage-race-stage-1-thunderhill-circuit-race-HJ8ekkgKqmx",
     "name" : "Chico Stage Race – Stage 1: Thunderhill Circuit Race",
+    "usacPermit": "2017-430",
     "date": "February 24 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -751,6 +781,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-chico-stage-race-stage-2-paskenta-hills-road-race-BywekJlY9ml",
     "name" : "Chico Stage Race – Stage 2: Paskenta Hills Road Race",
+    "usacPermit": "2017-430",
     "date": "February 25 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -767,6 +798,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-chico-stage-race-stage-3-river-road-time-trial-SkOxJkeKqXg",
     "name" : "Chico Stage Race – Stage 3: River Road Time Trial",
+    "usacPermit": "2017-430",
     "date": "February 26 2017",
     "discipline": "Road",
     "type": "Stage Race",
@@ -783,6 +815,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-chico-stage-race-stage-4-steve-harrison-memorial-criterium-SyKe1kgF9Xg",
     "name" : "Chico Stage Race – Stage 4: Steve Harrison Memorial Criterium",
+    "usacPermit": "2017-430",
     "date": "February 26 2017",
     "discipline": "Road",
     "type" : "Stage Race",
@@ -799,6 +832,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-3-ry5ekygY5Xg",
     "name" : "Central Coast Road Series – CCCX #3",
+    "usacPermit": "2017-778",
     "date" : "February 26 2017",
     "discipline" : "Road",
     "type": "Circuit Race",
@@ -818,6 +852,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-snelling-road-race-vp-4-ByslykeKc7g",
     "name" : "Snelling Road Race – VP #4",
+    "usacPermit": "2017-436",
     "date": "March 04 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -858,11 +893,13 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wards-ferry-road-race-vp-6-S1ax11gKcXl",
     "name" : "Ward's Ferry Road Race – VP #6",
+    "usacPermit":"2017-936",
     "date": "March 11 2017",
     "discipline": "Road",
     "type": "Road Race",
     "status": "Moved",
     "location": {
+      "streetAddress": "18885 Nugget Blvd",
       "city": "Sonora",
       "state": "CA"
     },
@@ -878,6 +915,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-land-park-criterium-ry0gJ1etqXl",
     "name": "Land Park Criterium",
+    "usacPermit":"2017-592",
     "date": "March 11 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -894,6 +932,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-bariani-road-race-SykZk1gtcXg",
     "name": "Bariani Road Race",
+    "usacPermit":"2017-593",
     "date": "March 12 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -989,6 +1028,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-4-HyQWJkxY5me",
     "name" : "Central Coast Road Series – CCCX #4",
+    "usacPermit": "2017-778",
     "date" : "March 18 2017",
     "discipline" : "Road",
     "type": "Circuit Race",
@@ -1009,8 +1049,9 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-cal-team-time-trial-collegiate-only-rJkyATyEl",
     "name" : "WCCC: Cal Team Time Trial (Collegiate Only)",
+    "usacPermit":"2017-690",
     "date": "March 18 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type" : "Team Time Trial",
     "location" : {
       "city": "Berkeley",
@@ -1028,8 +1069,9 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-cal-road-race-collegiate-and-junior-only-SJBbk1eFq7g",
     "name" : "WCCC: Cal Road Race (Collegiate and Junior Only)",
+    "usacPermit":"2017-690",
     "date" : "March 18 2017",
-    "discipline" : "Road",
+    "discipline" : "Collegiate",
     "type": "Road Race",
     "location": {
       "city": "Berkeley",
@@ -1067,6 +1109,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-red-kite-criterium-march-rko-3-S1PZ11eYqme",
     "name" : "Red Kite Criterium (March) – RKO #3",
+    "usacPermit":"2017-522",
     "date": "March 19 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1086,8 +1129,9 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-wccc-cal-berkeley-streets-criterium-collegiate-usac-HyuZkJgF5Qx",
     "name" : "WCCC: Cal Berkeley Streets Criterium (Collegiate & USAC)",
+    "usacPermit":"2017-690",
     "date": "March 19 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Criterium",
     "location": {
       "city": "Berkeley",
@@ -1105,6 +1149,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-winchester-circuit-race-rko-4-BkFbJ1etqXl",
     "name" : "Winchester Circuit Race – RKO #4",
+    "usacPermit":"2017-523",
     "date": "March 25 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1125,6 +1170,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-santa-cruz-classic-criterium-xlviii-vp-8-BJcbJklF5Xx",
     "name" : "Santa Cruz Classic Criterium XLVIII – VP #8",
+    "usacPermit":"2017-932",
     "date": "March 26 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1144,6 +1190,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-tempus-fugit-time-trial-spring-rko-5-BkoWkyeF97l",
     "name" : "Tempus Fugit Time Trial (Spring) – RKO #5",
+    "usacPermit":"2017-524",
     "date": "March 26 2017",
     "discipline": "Road",
     "type": "Time Trial",
@@ -1177,8 +1224,51 @@ export default [
     "isDraft" : false,
     "_shortId" : "BJ2WJklF9Xl"
   }, {
-    "id" : "evt-ncnca-2017-budweiser-sequoia-cycling-classic-SJaWJ1lK5Qe",
-    "name": "Budweiser Sequoia Cycling Classic",
+    "id": "evt-ncnca-2017-uc-davis-collegiate-cycling-race-weekend-SkptVbW0x",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
+    "usacPermit": "2017-825",
+    "date": "April 01 2017",
+    "discipline" : "Collegiate",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "1 Shields Avenue",
+      "city": "Davis",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30016", "name": "University of California-Davis", "contactName": "Dustin Denton", "contactInfo": "" },
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "SkptVbW0x"
+  }, {
+    "id": "evt-ncnca-2017-uc-davis-collegiate-cycling-race-weekend-B1zH$G$Re",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
+    "usacPermit": "2017-825",
+    "date": "April 02 2017",
+    "discipline" : "Collegiate",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "1 Shields Avenue",
+      "city": "Davis",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-30016", "name": "University of California-Davis", "contactName": "Dustin Denton", "contactInfo": "" },
+    ],
+    "series": [
+      { "id": "ser-40009", "name": "2017 Western Collegiate Cycling Conference", "url": "http://www.ncnca.org/ncncaseries/2017-western-collegiate-cycling-conference-wccc", "shortName": "WCCC" },
+    ],
+    "group" : "1",
+    "isDraft" : false,
+    "_shortId" : "B1zH$G$Re"
+  }, {
+    "id" : "evt-ncnca-2017-michelob-ultra-sequoia-cycling-classic-SJaWJ1lK5Qe",
+    "name": "Michelob ULTRA Sequoia Cycling Classic",
+    "usacPermit": "2017-1017",
     "date": "April 02 2017",
     "discipline": "Road",
     "type": "Criterium",
@@ -1195,6 +1285,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-5-S1AbJkltcQe",
     "name" : "Central Coast Road Series – CCCX #5",
+    "usacPermit": "2017-778",
     "date": "April 02 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1232,7 +1323,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-stanford-circuit-race-BJgz1JetcXx",
     "name" : "WCCC: Stanford Circuit Race",
     "date": "April 08 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Circuit Race",
     "location": {
       "city": "Seaside",
@@ -1251,7 +1342,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-stanford-team-time-trial-SJbM1kltqmg",
     "name" : "WCCC: Stanford Team Time Trial",
     "date" : "April 08 2017",
-    "discipline" : "Road",
+    "discipline" : "Collegiate",
     "type" : "Time Trial",
     "location" : {
       "city": "Seaside",
@@ -1287,7 +1378,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-stanford-road-race-H1Qzy1gYq7x",
     "name" : "WCCC: Stanford Road Race",
     "date": "April 09 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Road Race",
     "location": {
       "city": "Seaside",
@@ -1325,7 +1416,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-team-time-trial-H1SfJJgFq7l",
     "name" : "WCCC: UNR presents 2017 WCCC Championships – Team Time Trial",
     "date": "April 15 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Team Time Trial",
     "location": {
       "city": "Reno",
@@ -1344,7 +1435,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-criterium-B18zykgYc7e",
     "name" : "WCCC: UNR presents 2017 WCCC Championships – Criterium",
     "date": "April 15 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Criterium",
     "location": {
       "city": "Reno",
@@ -1363,7 +1454,7 @@ export default [
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-road-race-H1wf1JxF97l",
     "name" : "WCCC: UNR presents 2017 WCCC Championships – Road Race",
     "date": "April 16 2017",
-    "discipline": "Road",
+    "discipline": "Collegiate",
     "type": "Road Race",
     "location": {
       "city": "Reno",
@@ -2679,6 +2770,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-8-rJcE11lY5Qe",
     "name" : "Central Coast Road Series – CCCX #8",
+    "usacPermit": "2017-778",
     "date": "July 01 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2809,6 +2901,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-9-Hy1r1kgY5mg",
     "name" : "Central Coast Road Series – CCCX #9",
+    "usacPermit": "2017-778",
     "date": "July 15 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -3469,6 +3562,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-central-coast-road-series-cccx-10-HyBUJklK5ml",
     "name" : "Central Coast Road Series – CCCX #10",
+    "usacPermit": "2017-778",
     "date": "September 10 2017",
     "discipline": "Road",
     "type": "Circuit Race",
