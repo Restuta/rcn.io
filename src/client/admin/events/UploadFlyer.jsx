@@ -10,7 +10,7 @@ const PERMIT_PREFIX = new Date().getFullYear() + '-'
 const DEFAULT_PERMIT_NAME = PERMIT_PREFIX + 'XXX'
 
 const getS3FlyerUrl = permit => (`https://rcn-io.s3.amazonaws.com/ncnca/flyers/flyer-${permit.trim()}.pdf`)
-const getUsacUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
+const getUsacFlyerUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
 const permitIsValid = permit => !!(permit.match(/^2\d{3}-\d+$/g))
 
 export default class UploadFlyer extends React.Component {
@@ -48,7 +48,7 @@ export default class UploadFlyer extends React.Component {
           <Col sm={8}><FlyerUploader fileName={fileName}/></Col>
           <Col sm={3}>
             <h4 className="margin top-0">Flyer for {permitNumber} on USAC</h4>
-            <Flyer showHeader={false} url={permitIsValid(permitNumber) && getUsacUrl(permitNumber)}
+            <Flyer showHeader={false} url={permitIsValid(permitNumber) && getUsacFlyerUrl(permitNumber)}
               heightRem={60} showBorder/>
           </Col>
           <Col sm={3}>
