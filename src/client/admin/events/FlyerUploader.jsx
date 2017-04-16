@@ -141,7 +141,7 @@ export default class FlyerUploader extends React.Component {
 
         {(uploadedFiles.length > 0) && (
           <div>
-            <h3 className="text-uppercase">Recently Uploaded</h3>
+            <h3 className="text-uppercase">Recently Uploaded <span style={{color: 'silver'}}>(from this browser)</span></h3>
             <ul className="list-group" style={recentlyUploadedStyle}>
               {uploadedFiles.map((file, i) =>
                 <li key={i} className="list-group-item" style={recentlyUploadedStyle}>
