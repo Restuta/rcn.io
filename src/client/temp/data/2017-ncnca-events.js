@@ -805,7 +805,7 @@ export default [
     "location": {
       "city": "Seaside",
       "state": "CA"
-    },
+    }, 
     "promoters": [
       { "id": "prm-2609", "name": "CCCX (Central Coast Cyclocross)", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com"},
     ],
