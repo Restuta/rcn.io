@@ -41,7 +41,7 @@ export default class Home extends Component {
           <h1 className="header-regular">RCN.io</h1>
           <p className="text-5 header-regular w-300">
             We build Calendars for Bike Racers. Check out official&nbsp;
-            <Link to={'/calendars/ncnca-2017'}>2017 NCNCA Calendar</Link>.
+            <Link to={'/calendars/ncnca-2017?past=visible'}>2017 NCNCA Calendar</Link>.
           </p>
           <p className="text-5 header-regular w-300 margin top-4">
             We need your help with finding unofficial <b>NorCal MTB Events</b>. Drop us a link (right bottom corner)
