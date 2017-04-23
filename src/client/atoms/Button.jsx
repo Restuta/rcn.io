@@ -27,6 +27,8 @@ export default class Button extends Component {
       className,
       icon,
       style,
+      link = false,
+      href = '',
     } = this.props
 
     const iconOnlyButton = (!this.props.children && icon)
@@ -37,7 +39,8 @@ export default class Button extends Component {
       {
         'primary-hover': primaryHover,
         'disabled': disabled,
-        'btn-icon-only': iconOnlyButton
+        'btn-icon-only': iconOnlyButton,
+        // 'button-link': link,
       },
 
       className
@@ -50,9 +53,17 @@ export default class Button extends Component {
     const iconComp = icon && <Icon name={icon} size={iconSize[size]} top={1}/>
 
     return (
-      <button className={classes} onClick={onClick} disabled={disabled} style={style}>
-        {iconComp}{this.props.children}
-      </button>
+      link ? (
+        <a href={href || 'javascript:;'} className={classes} onClick={onClick} disabled={disabled}
+          style={style} role="button" tabIndex={disabled ? "-1" : undefined}>
+          {iconComp}{this.props.children}
+        </a>
+      ) : (
+        <button className={classes} onClick={onClick} disabled={disabled} style={style}>
+          {iconComp}{this.props.children}
+        </button>
+      )
+
     )
   }
 }
@@ -60,6 +71,8 @@ export default class Button extends Component {
 Button.propTypes = {
   type: PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  link: PropTypes.bool,
+  href: PropTypes.string,
   outline: PropTypes.bool,
   primaryHover: PropTypes.bool,
   disabled: PropTypes.bool,
