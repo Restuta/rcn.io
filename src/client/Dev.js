@@ -115,6 +115,11 @@ export default class Dev extends Component {
             <Button icon="check_circle" size="sm" type="primary">SM PRIMARY</Button><S5 />
             <Button icon="cancel" size="sm" type="secondary">SM SECONDARY</Button>
             <br /><br />
+
+            <Button icon="check_circle" size="sm" type="primary">SM PRIMARY</Button><S5 />
+            <Button icon="cancel" size="sm" type="secondary">SM SECONDARY</Button>
+            <br /><br />
+
             <Button icon="sentiment_neutral" size="md" type="primary">MD PRIMARY</Button><S5 />
             <Button icon="more" size="md" type="secondary">MD SECONDARY</Button>
             <br /><br />
@@ -160,6 +165,17 @@ export default class Dev extends Component {
             <Button size="sm" icon="autorenew" type="secondary" /><S5 />
             <Button size="sm" icon="file_download" type="secondary" /><S5 />
             <Button size="sm" icon="open_in_new" type="secondary" /><S5 />
+
+            <h5>LINK BUTTONS</h5>
+
+            <Button size="md" icon="face" type="secondary">NON LINK</Button><S5 />
+            <Button link size="md" icon="face" type="secondary">LINK</Button><S5 />
+
+            <Button size="md" icon="face" type="secondary">NON LINK</Button><S5 />
+            <Button link size="md" icon="face" type="secondary">LINK</Button><S5 />
+
+            <Button disabled size="md" icon="face" type="secondary">NON LINK</Button><S5 />
+            <Button disabled link size="md" icon="face" type="secondary">LINK</Button><S5 />
           </Col>
         </Row>
         <Row className="margin-top">

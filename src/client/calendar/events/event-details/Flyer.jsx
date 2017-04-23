@@ -47,7 +47,10 @@ export default class Flyer extends Component {
               <h3 className="header-regular header-flyer">FLYER</h3>
               <div className="button-group">
                 {/* <Button size="sm" icon="file_download" type="secondary" /> */}
-                <Button size="sm" icon="open_in_new" type="secondary" onClick={this.onOpenInNewTabClick}/>
+                {/* //TODO: deffirintiate open in same window or different one for mobile and web, same for mobile */}
+                <Button link size="sm" icon="fullscreen" type="secondary" href={url}>
+                  FULL SIZE
+                </Button>
               </div>
             </div>
             <hr className="spacer no-margin-top" />
