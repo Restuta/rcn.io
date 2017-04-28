@@ -17,8 +17,8 @@ import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
 import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
-import Badge from 'calendar/badges/Badge.jsx'
 import UsacLogo from 'atoms/UsacLogo.jsx'
+import Alert from 'atoms/Alert.jsx'
 
 const getUsacFlyerUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
 
@@ -126,13 +126,14 @@ class EventDetails extends Component {
       isDraft: eventIsDraft,
       draftNotes,
       status,
+      cancelationReason,
       promoters,
       websiteUrl,
       usacPermit,
       registrationUrl,
       resultsUrl: originalResultsUrl,
       group,
-      promoterInfo
+      promoterInfo,
     } = this.props.event
 
     //TODO bc: migrate old events to have flyer section and not just "flyerUrl" property
@@ -213,14 +214,25 @@ class EventDetails extends Component {
           <div className="badges">
             {raceTypeBadgesComp}
           </div>
+          {status === Statuses.canceled && (
+            <Row className="margin top-2">
+              <Col xs={14}>
+                <Alert type="danger">Even has been <b>CANCELED</b>
+                  <br />
+                  <span>Reason: {cancelationReason || '<not specified>'}</span>
+                </Alert>
+              </Col>
+            </Row>
+          )}
+          {status === Statuses.moved && (
+            <Row className="margin top-2">
+              <Col xs={14}>
+                <Alert type="warning">Event has been <b>MOVED</b> to a different date.</Alert>
+              </Col>
+            </Row>
+          )}
           <Row>
             <Col xs={14} sm={9}>
-              {status && (
-                <Badge inverted className="status-badge" borderColor={Colors.red500}
-                  bgColor={Colors.bodyBg} color={Colors.red500} heightRem={4} square>
-                  {status.toUpperCase()}
-                </Badge>)
-              }
               <h4 className="header-regular w-500 date">
                 {formattedDate} <span className="relative">({relativeDate})</span>
               </h4>

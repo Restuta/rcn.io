@@ -7,11 +7,13 @@
   margin-bottom: 1rem;
   border-left-width: 0.5rem;
   border-left-style: solid;
-  background-color: transparent;
+  background-color: $body-bg-color;
   color: $body-color;
   font-size: $font-size-3;
   line-height: $line-height-rem * 1.5;
   padding-left: 6rem;
+  border-radius: pxToRem(2);
+  @include box-shadow-lvl-0();
 
   >.Icon {
     position: absolute;
