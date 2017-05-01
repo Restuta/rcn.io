@@ -606,6 +606,7 @@ export default [
     "date": "February 18 2017",
     "discipline": "Road",
     "type": "Circuit Race",
+    "status": "Canceled",
     "location": {
       "city": "Seaside",
       "state": "CA"
@@ -1512,13 +1513,16 @@ export default [
     "_shortId" : "BJEG1JxtcQx"
   }, {
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-team-time-trial-H1SfJJgFq7l",
-    "name" : "WCCC: UNR presents 2017 WCCC Championships – Team Time Trial",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – Red Rock Team Time Trial",
+    "usacPermit": "2017-889",
     "date": "April 15 2017",
     "discipline": "Collegiate",
     "type": "Team Time Trial",
     "location": {
+      "streetAddress": "1664 N Virginia St",
       "city": "Reno",
-      "state": "CA"
+      "state": "NV",
+      "zip": "89558",
     },
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
@@ -1531,13 +1535,16 @@ export default [
     "_shortId" : "H1SfJJgFq7l"
   }, {
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-criterium-B18zykgYc7e",
-    "name" : "WCCC: UNR presents 2017 WCCC Championships – Criterium",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – UNR Campus Criterium",
+    "usacPermit": "2017-889",
     "date": "April 15 2017",
     "discipline": "Collegiate",
     "type": "Criterium",
     "location": {
+      "streetAddress": "1664 N Virginia St",
       "city": "Reno",
-      "state": "CA"
+      "state": "NV",
+      "zip": "89558",
     },
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
@@ -1550,13 +1557,16 @@ export default [
     "_shortId" : "B18zykgYc7e"
   }, {
     "id" : "evt-ncnca-2017-wccc-unr-presents-2017-wccc-championships-road-race-H1wf1JxF97l",
-    "name" : "WCCC: UNR presents 2017 WCCC Championships – Road Race",
+    "name" : "WCCC: UNR presents 2017 WCCC Championships – Red Rock Road Race",
+    "usacPermit": "2017-889",
     "date": "April 16 2017",
     "discipline": "Collegiate",
     "type": "Road Race",
     "location": {
+      "streetAddress": "1664 N Virginia St",
       "city": "Reno",
-      "state": "CA"
+      "state": "NV",
+      "zip": "89558",
     },
     "promoters": [
       { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
@@ -1569,8 +1579,8 @@ export default [
     "_shortId" : "H1wf1JxF97l"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-H1uGkJxKcmx",
-    "name": "Sea Otter Classic – Criterium",
-    "usacPermit":"2017-466",
+    "name": "2017 SUBARU Sea Otter Classic – Criterium",
+    "usacPermit":"2017-237",
     "date": "April 20 2017",
     "discipline": "Road",
     "type" : "Criterium",
@@ -1587,8 +1597,8 @@ export default [
     "_shortId" : "H1uGkJxKcmx"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-HytzyJeK9Ql",
-    "name": "Sea Otter Classic – Circuit Race",
-    "usacPermit":"2017-466",
+    "name": "2017 SUBARU Sea Otter Classic – Circuit Race",
+    "usacPermit":"2017-237",
     "date": "April 21 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -1605,7 +1615,7 @@ export default [
     "_shortId" : "HytzyJeK9Ql"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-rJjVXCTmg",
-    "name": "Sea Otter Classic – Road Race",
+    "name": "2017 SUBARU Sea Otter Classic – Road Race",
     "usacPermit":"2017-466",
     "date": "April 21 2017",
     "discipline": "Road",
@@ -1623,7 +1633,7 @@ export default [
     "_shortId" : "rJjVXCTmg"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-SycfJkxK57l",
-    "name": "Sea Otter Classic – Circuit Race",
+    "name": "2017 SUBARU Sea Otter Classic – Circuit Race",
     "usacPermit":"2017-466",
     "date": "April 22 2017",
     "discipline": "Road",
@@ -1641,7 +1651,7 @@ export default [
     "_shortId" : "SycfJkxK57l"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-B1xL1Id0Xg",
-    "name": "Sea Otter Classic – Road Race (Juniors)",
+    "name": "2017 SUBARU Sea Otter Classic – Road Race (Juniors)",
     "usacPermit":"2017-466",
     "date": "April 22 2017",
     "discipline": "Road",
@@ -1659,7 +1669,7 @@ export default [
     "_shortId" : "B1xL1Id0Xg"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-SkjG1yeFcmg",
-    "name": "Sea Otter Classic – Road Race",
+    "name": "2017 SUBARU Sea Otter Classic – Road Race",
     "usacPermit":"2017-466",
     "date": "April 23 2017",
     "discipline": "Road",
@@ -1677,7 +1687,7 @@ export default [
     "_shortId" : "SkjG1yeFcmg"
   }, {
     "id" : "evt-ncnca-2017-sea-otter-classic-ByXS8dRml",
-    "name": "Sea Otter Classic – Circuit Race (PRO)",
+    "name": "2017 SUBARU Sea Otter Classic – Circuit Race (PRO)",
     "usacPermit":"2017-466",
     "date": "April 23 2017",
     "discipline": "Road",
@@ -1869,6 +1879,8 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-king-city-road-race-ryiOCa14x",
     "name": "King City Road Race",
+    "cancelationReason": "Town of King City requires 2M in insurance coverage and last year USAC couldn't get docs in time, so promoter lost money. This year promoter didn't want to risk it.",
+    "status": "Canceled",
     "date": "May 06 2017",
     "discipline": "Road",
     "type": "Road Race",
@@ -2046,6 +2058,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-road-race-championships-cccx-6-SkFBk_VUx",
     "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX #6",
+    "usacPermit": "2017-1681",
     "date": "May 14 2017",
     "discipline": "Road",
     "type": "Circuit Race",
@@ -2502,6 +2515,7 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-ncnca-junior-boys-and-girls-road-race-cccx-7-S1bHxONLg",
     "name" : "NCNCA Junior (Boys and Girls) Road Race – CCCX #7",
+    "usacPermit": "2017-1681",
     "date": "June 11 2017",
     "discipline": "Road",
     "type": "Circuit Race",
