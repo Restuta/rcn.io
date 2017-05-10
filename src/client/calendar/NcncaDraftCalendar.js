@@ -2,8 +2,6 @@ import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
-import { connect } from 'react-redux'
-import { requestEventsFetch } from 'shared/actions/actions.js'
 import Spinner from 'atoms/Spinner.jsx'
 
 
@@ -67,6 +65,9 @@ NcncaDraftCalendar.propTypes = {
   requestEventsFetch: PropTypes.func.isRequired,
   calendarIsLoading: PropTypes.bool.isRequired,
 }
+
+import { connect } from 'react-redux'
+import { requestEventsFetch } from 'shared/actions/actions.js'
 
 export default connect(
   (state, ownProps) => {
