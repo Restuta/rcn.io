@@ -45,8 +45,7 @@ export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
 
 // app level related
-export const openModal = makeActionCreator(
-  'App.OPEN_MODAL', ({pathname, search}) => ({returnLocation: {pathname, search}}))
+export const openModal = makeActionCreator('App.OPEN_MODAL', x => x)
 
 export const closeModal = makeActionCreator('App.CLOSE_MODAL')
 

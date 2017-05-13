@@ -32,6 +32,7 @@ const initialState = {
     containerWidth: undefined,
     modal: {
       isOpen: false,
+      hasPadding: false,
       returnLocation: {
         pathname: undefined, // url slug to redirect to when modal is closed
         search: undefined // query string params as it's called in React Router
@@ -116,7 +117,11 @@ export const app = makeReducer({
       ...state,
       modal: {
         ...state.modal,
-        returnLocation: action.payload.returnLocation,
+        hasPadding: action.payload.hasPadding,
+        returnLocation: {
+          pathname: action.payload.returnPathname,
+          search: action.payload.returnSearch,
+        },
         isOpen: true
       }
     }
