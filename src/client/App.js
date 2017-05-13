@@ -28,7 +28,8 @@ class App extends Component {
   }
 
   onModalClose() {
-    const returnLocation = this.props.location.state.returnLocation
+    const returnLocation = this.props.modal.returnLocation
+    this.props.closeModal()
 
     if (returnLocation) {
       this.props.router.replace({
@@ -57,12 +58,14 @@ class App extends Component {
   }
 
   render() {
-    const { location } = this.props
+    const { location, modal } = this.props
 
-    let shouldRenderInModal = (
-      location.state && location.state.modal
-      // && this.previousChildren
-    )
+    // let shouldRenderInModal = (
+    //   location.state && location.state.modal
+    //   // && this.previousChildren
+    // )
+
+    let shouldRenderInModal = modal.isOpen
 
     const appLevelClasses = classnames('App',
       (this.props.debug.showContainerEdges && 'debug-container')
@@ -100,9 +103,14 @@ App.childContextTypes = {
   locationSearch: React.PropTypes.string,
 }
 
+import { closeModal } from 'shared/actions/actions.js'
+
 export default withRouter(
-  connect(state => ({debug: state.debug}))(
-    //App
-    logRenderPerf(App, 'App')
-  )
+  connect(
+    state => ({
+      debug: state.debug,
+      modal: state.app.modal
+    }),
+    (dispatch, ownProps) => ({closeModal: () => dispatch(closeModal())})
+  )(logRenderPerf(App, 'App'))
 )

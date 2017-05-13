@@ -75,12 +75,7 @@ const numSize = {
 }
 
 class Event extends Component {
-  constructor(props) {
-    super(props)
-    this.onEventClick = this.onEventClick.bind(this)
-  }
-
-  onEventClick(e) {
+  onEventClick = (e) => {
     //so link doesn't redirect to whatever set in href, but is still indexable with google
     e.preventDefault()
 
@@ -93,6 +88,11 @@ class Event extends Component {
     })
 
     trackClick()
+    this.props.openModal({
+      returnPathname: this.context.locationPathname,
+      returnSearch: this.context.locationSearch,
+      hasPadding: false,
+    })
 
     if (this.props.iframeMode) {
       //top-level window navigation
@@ -403,4 +403,15 @@ Event.contextTypes = {
   locationSearch: React.PropTypes.string,
 }
 
-export default withRouter(Event)
+import { connect } from 'react-redux'
+import { openModal } from 'shared/actions/actions.js'
+
+export default connect(
+  undefined,
+  (dispatch, ownProps) => ({
+    openModal: (x) => dispatch(openModal(x))
+  })
+)(withRouter(Event))
+
+
+// export default withRouter(Event)
