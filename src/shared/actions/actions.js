@@ -32,16 +32,24 @@ const fluxStandardAction = {
 }
 */
 
-//action creators
+// action creators
+
+// debug related
 export const toggleBaseline = makeActionCreator('Dbg.TOGGLE_BASELINE')
 export const toggle3x3Grid = makeActionCreator('Dbg.TOGGLE_3X3_GRID')
 export const toggleContainerEdges = makeActionCreator('Dbg.TOGGLE_CONTAINER_EDGES')
 
-
+// calendar related
 export const requestEventsFetch = makeActionCreatorWithPayload('Cal.REQUEST_EVENTS_FETCH')
 export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_SUCCEDED')
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
 
+// app level related
+export const openModal = makeActionCreator(
+  'App.OPEN_MODAL', ({pathname, search}) => ({returnLocation: {pathname, search}}))
+
+export const closeModal = makeActionCreator('App.CLOSE_MODAL')
+
+
 export const toggleShowPastEvents = makeActionCreator(
-  'Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId})
-)
+  'Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))

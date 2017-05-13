@@ -29,7 +29,14 @@ const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
   app: {
-    containerWidth: null,
+    containerWidth: undefined,
+    modal: {
+      isOpen: false,
+      returnLocation: {
+        pathname: undefined, // url slug to redirect to when modal is closed
+        search: undefined // query string params as it's called in React Router
+      }
+    }
   },
   debug: {
     showBaseline: false,
@@ -103,6 +110,27 @@ const initialState = {
   }
 }
 
+export const app = makeReducer({
+  ['App.OPEN_MODAL']: (state, action) => {
+    return {
+      ...state,
+      modal: {
+        ...state.modal,
+        returnLocation: action.payload.returnLocation,
+        isOpen: true
+      }
+    }
+  },
+  ['App.CLOSE_MODAL']: (state, action) => {
+    return {
+      ...state,
+      modal: {
+        ...state.modal,
+        isOpen: false,
+      }
+    }
+  }
+}, initialState.app)
 
 export const calendars = makeReducer({
   ['Cal.TOGGLE_PAST_EVENTS']: (state, action) => {
@@ -161,6 +189,7 @@ export const events = makeReducer({
 }, initialState.events)
 
 const rootReducer = combineReducers({
+  app,
   debug,
   calendars,
   events,
