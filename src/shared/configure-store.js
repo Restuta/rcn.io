@@ -3,10 +3,19 @@ import rootReducer from 'shared/reducers/reducer.js'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from 'shared/sagas/root'
 
-const sagaMiddleware = createSagaMiddleware()
-const middlewares = [sagaMiddleware]
+import { browserHistory } from 'react-router'
+import { routerMiddleware as createRouterMiddleware } from 'react-router-redux'
+const routerMiddleware = createRouterMiddleware(browserHistory)
 
-//use logging middleware only in dev mode
+const sagaMiddleware = createSagaMiddleware()
+const middlewares = [
+  sagaMiddleware,
+  // used to process routing actions like push() and replace() (navigaiton with redux actions)
+  // it's not required for routing to work with redux if actions are not used
+  routerMiddleware
+]
+
+// use logging middleware only in dev mode
 if (process.env.NODE_ENV === 'development') {
   const createLogger =  require('redux-logger')
   const logger = createLogger({
@@ -35,7 +44,7 @@ const configureStore = (initialState) => {
     initialState,
     compose(
       applyMiddleware(...middlewares), //logger must be last middleware,
-      //server-side safe enabling of Redux Dev tools
+      // server-side safe enabling of Redux Dev tools
       typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
     )
 
