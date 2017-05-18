@@ -49,6 +49,9 @@ Stay small.
 
 Race safe. :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist: :bicyclist:
 
+### For Contributors
+* [Managing Events](docs/managing-events.md)
+
 ---
 ## [Roadmap](http://rcn.productmap.co)
 # [Changelog](http://changelog.rcn.io/)
