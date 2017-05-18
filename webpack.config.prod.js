@@ -11,7 +11,7 @@ const commonConfig = getConfig('prod')
 
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js')
 
 const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
 const htmlWebpackMinifyConfig = { // Minifying it while it is parsed

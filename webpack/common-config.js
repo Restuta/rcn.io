@@ -46,8 +46,8 @@ const getConfig = env => {
     },
     'moment-timezone': {
       path: getPaths({
-        prod: 'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
-        dev:  'moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js',
+        prod: 'moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js',
+        dev:  'moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js',
       }),
       // noParse: true //moment-timezone uses "require()", so can't be ignored
     },

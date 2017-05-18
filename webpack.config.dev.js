@@ -9,7 +9,7 @@ const commonConfig = getConfig('dev')
 //NOTE: use min versions for prod and to speed-up build times a little
 const pathToReactDOM = nodeModules('react-dom/dist/react-dom.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js')
+const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js')
 
 module.exports = {
   // cheap-module-eval-source-map, because we want original source, but we don't
