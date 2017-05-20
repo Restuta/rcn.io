@@ -19,23 +19,24 @@ class App extends Component {
 
   constructor(props) {
     super(props)
-
-    this.onModalClose = this.onModalClose.bind(this)
     this.state = {
       appLevelClasses: 'App',
       containerWidth: props.containerWidth
     }
   }
 
-  onModalClose() {
+  onModalClose = () => {
     const returnLocation = this.props.modal.returnLocation
-    this.props.closeModal()
+    // this.props.closeModal()
 
     if (returnLocation) {
       this.props.router.replace({
         pathname: returnLocation.pathname,
         search: returnLocation.search,
-        state: { navigatedBackFromModal: true }
+        state: {
+          modalIsOpen: false,
+          navigatedBackFromModal: true
+        }
       })
     }
   }
@@ -46,7 +47,7 @@ class App extends Component {
     if ((
       nextProps.location.key !== this.props.location.key
       && nextProps.location.state
-      && nextProps.location.state.modal
+      && nextProps.location.state.modalIsOpen
     )) {
       // console.info('App: changed from: ')
       // console.log(this.props.location)
@@ -82,7 +83,7 @@ class App extends Component {
         <TopNavbar location={location}/>
 
         {shouldRenderInModal && (
-          <Modal onClose={this.onModalClose} {...location.state.modalProps}>
+          <Modal onClose={this.onModalClose} hasPadding={modal.hasPadding}>
             {this.props.children}
           </Modal>
         )}

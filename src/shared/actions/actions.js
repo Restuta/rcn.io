@@ -43,12 +43,20 @@ export const toggleContainerEdges = makeActionCreator('Dbg.TOGGLE_CONTAINER_EDGE
 export const requestEventsFetch = makeActionCreatorWithPayload('Cal.REQUEST_EVENTS_FETCH')
 export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_SUCCEDED')
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
+export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))
 
 // app level related
 export const openModal = makeActionCreator('App.OPEN_MODAL', x => x)
-
 export const closeModal = makeActionCreator('App.CLOSE_MODAL')
 
+// routing related
+import { replace } from 'react-router-redux'
 
-export const toggleShowPastEvents = makeActionCreator(
-  'Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))
+// TODO bc: add "closeModal" action
+export const openRoutedModal = ({path, hasPadding, returnLocation}) => replace({
+  pathname: path,
+  state: {
+    modalIsOpen: true,
+    modalProps: { hasPadding: hasPadding },
+  }
+})

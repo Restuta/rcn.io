@@ -49,10 +49,11 @@ Modal.propTypes = {
   closeOnEsc: PropTypes.bool,
   closeOnBackdropClick: PropTypes.bool,
   contentClassName: PropTypes.string,
-  //for certain cases modal should not have padding so we can uply advnaced background styles
+  //for certain cases modal should not have padding so we can apply advnaced background styles
   hasPadding: PropTypes.bool,
 }
 
 Modal.defaultProps = {
-  hasPadding: true
+  hasPadding: true,
+  closeOnEsc: true,
 }

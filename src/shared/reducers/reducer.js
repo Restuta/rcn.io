@@ -29,10 +29,15 @@ const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
   app: {
+    lastKnownUrlLocation: {
+      pathname: undefined,
+      search: undefined
+    },
     containerWidth: undefined,
     modal: {
       isOpen: false,
       hasPadding: false,
+      // used for routed modals to replace URL with previous location
       returnLocation: {
         pathname: undefined, // url slug to redirect to when modal is closed
         search: undefined // query string params as it's called in React Router
@@ -112,20 +117,20 @@ const initialState = {
 }
 
 export const app = makeReducer({
-  ['App.OPEN_MODAL']: (state, action) => {
-    return {
-      ...state,
-      modal: {
-        ...state.modal,
-        hasPadding: action.payload.hasPadding,
-        returnLocation: {
-          pathname: action.payload.returnPathname,
-          search: action.payload.returnSearch,
-        },
-        isOpen: true
-      }
-    }
-  },
+  // ['App.OPEN_MODAL']: (state, action) => {
+  //   return {
+  //     ...state,
+  //     modal: {
+  //       ...state.modal,
+  //       ...action.payload.modalProps,
+  //       returnLocation: {
+  //         pathname: action.payload.returnPathname,
+  //         search: action.payload.returnSearch,
+  //       },
+  //       isOpen: true
+  //     }
+  //   }
+  // },
   ['App.CLOSE_MODAL']: (state, action) => {
     return {
       ...state,
@@ -134,7 +139,36 @@ export const app = makeReducer({
         isOpen: false,
       }
     }
-  }
+  },
+  ['@@router/LOCATION_CHANGE']: (state, action) => {
+    const itIsRoutedModal = (action.payload.state && typeof action.payload.state.modalOpen !== undefined)
+
+    // TODO bc: store location change in the app so we can manage it automatically when closing routed modal
+
+    // handles particular location change action used to open so called Routed Modals
+    // modals, that change route without leaving a trace in browser history
+    if (itIsRoutedModal) {
+      const routerState = action.payload.state
+      // TODO: navigatedBackFromModal
+      return {
+        ...state,
+        modal: {
+          ...state.modal,
+          ...routerState.modalProps,
+          returnLocation: state.lastKnownUrlLocation,
+          isOpen: routerState.modalIsOpen,
+        }
+      }
+    }
+
+    return {
+      ...state,
+      lastKnownUrlLocation: {
+        pathname: action.payload.pathname,
+        search: action.payload.search,
+      }
+    }
+  },
 }, initialState.app)
 
 export const calendars = makeReducer({

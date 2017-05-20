@@ -74,40 +74,27 @@ const numSize = {
   [Size.XL]: 50
 }
 
+const trackEventClick = event => analytics.track('Clicked on Event', {
+  id: event.id,
+  name: event.name,
+  date: event.date.format('MMMM DD YYYY'),
+  type: event.type,
+  discipline: event.discipline,
+})
+
 class Event extends Component {
   onEventClick = (e) => {
     //so link doesn't redirect to whatever set in href, but is still indexable with google
     e.preventDefault()
-
-    const trackClick = () => analytics.track('Clicked on Event', {
-      id: this.props.event.id,
-      name: this.props.event.name,
-      date: this.props.event.date.format('MMMM DD YYYY'),
-      type: this.props.event.type,
-      discipline: this.props.event.discipline,
-    })
-
-    trackClick()
-    this.props.openModal({
-      returnPathname: this.context.locationPathname,
-      returnSearch: this.context.locationSearch,
-      hasPadding: false,
-    })
+    trackEventClick(this.props.event)
 
     if (this.props.iframeMode) {
       //top-level window navigation
       window.top.location.href = `../events/${this.props.id}`
     } else {
-      this.props.router.replace({
-        pathname: `/events/${this.props.id}`,
-        state: {
-          modal: true,
-          modalProps: { hasPadding: false },
-          returnLocation: {
-            pathname: this.context.locationPathname,
-            search: this.context.locationSearch
-          },
-        }
+      this.props.openRoutedModal({
+        path: `/events/${this.props.id}`,
+        hasPadding: false,
       })
     }
   }
@@ -404,12 +391,14 @@ Event.contextTypes = {
 }
 
 import { connect } from 'react-redux'
-import { openModal } from 'shared/actions/actions.js'
+
+import { openRoutedModal } from 'shared/actions/actions.js'
 
 export default connect(
   undefined,
   (dispatch, ownProps) => ({
-    openModal: (x) => dispatch(openModal(x))
+    openRoutedModal: ({path, hasPadding}) =>
+      dispatch(openRoutedModal({path, hasPadding}))
   })
 )(withRouter(Event))
 
