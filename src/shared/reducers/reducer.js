@@ -37,6 +37,8 @@ const initialState = {
     modal: {
       isOpen: false,
       hasPadding: false,
+      // specifies if last navigation was back from routed modal
+      navigatedBackFromModal: false,
       // used for routed modals to replace URL with previous location
       returnLocation: {
         pathname: undefined, // url slug to redirect to when modal is closed
@@ -149,14 +151,26 @@ export const app = makeReducer({
     // modals, that change route without leaving a trace in browser history
     if (itIsRoutedModal) {
       const routerState = action.payload.state
-      // TODO: navigatedBackFromModal
+
       return {
         ...state,
         modal: {
           ...state.modal,
           ...routerState.modalProps,
-          returnLocation: state.lastKnownUrlLocation,
+          returnLocation: routerState.returnLocation,
           isOpen: routerState.modalIsOpen,
+        }
+      }
+    }
+
+    // if "going back" we should update modal state, so it's properly closed
+    if (action.payload.action === 'POP') {
+      return {
+        ...state,
+        modal: {
+          ...state.modal,
+          isOpen: false,
+          navigatedBackFromModal: true,
         }
       }
     }
