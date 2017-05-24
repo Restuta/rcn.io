@@ -49,14 +49,20 @@ export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS', 
 export const openModal = makeActionCreator('App.OPEN_MODAL', x => x)
 export const closeModal = makeActionCreator('App.CLOSE_MODAL')
 
+
 // routing related
 import { replace } from 'react-router-redux'
 
-// TODO bc: add "closeModal" action
-export const openRoutedModal = ({path, hasPadding, returnLocation}) => replace({
+const getCurrentLocation = () => ({
+  pathname: window.location.pathname,
+  search: window.location.search,
+})
+
+export const openRoutedModal = ({path, hasPadding}) => replace({
   pathname: path,
   state: {
     modalIsOpen: true,
     modalProps: { hasPadding: hasPadding },
+    returnLocation: getCurrentLocation()
   }
 })
