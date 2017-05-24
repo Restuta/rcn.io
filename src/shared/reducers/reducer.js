@@ -119,33 +119,8 @@ const initialState = {
 }
 
 export const app = makeReducer({
-  // ['App.OPEN_MODAL']: (state, action) => {
-  //   return {
-  //     ...state,
-  //     modal: {
-  //       ...state.modal,
-  //       ...action.payload.modalProps,
-  //       returnLocation: {
-  //         pathname: action.payload.returnPathname,
-  //         search: action.payload.returnSearch,
-  //       },
-  //       isOpen: true
-  //     }
-  //   }
-  // },
-  ['App.CLOSE_MODAL']: (state, action) => {
-    return {
-      ...state,
-      modal: {
-        ...state.modal,
-        isOpen: false,
-      }
-    }
-  },
   ['@@router/LOCATION_CHANGE']: (state, action) => {
-    const itIsRoutedModal = (action.payload.state && typeof action.payload.state.modalOpen !== undefined)
-
-    // TODO bc: store location change in the app so we can manage it automatically when closing routed modal
+    const itIsRoutedModal = (action.payload.state && typeof action.payload.state.modalIsOpen !== undefined)
 
     // handles particular location change action used to open so called Routed Modals
     // modals, that change route without leaving a trace in browser history

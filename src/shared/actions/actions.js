@@ -45,10 +45,6 @@ export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
 export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))
 
-// app level related
-export const openModal = makeActionCreator('App.OPEN_MODAL', x => x)
-export const closeModal = makeActionCreator('App.CLOSE_MODAL')
-
 
 // routing related
 import { replace } from 'react-router-redux'
@@ -64,5 +60,14 @@ export const openRoutedModal = ({path, hasPadding}) => replace({
     modalIsOpen: true,
     modalProps: { hasPadding: hasPadding },
     returnLocation: getCurrentLocation()
+  }
+})
+
+export const closeRoutedModal = (returnLocation) => replace({
+  pathname: returnLocation.pathname,
+  search: returnLocation.search,
+  state: {
+    modalIsOpen: false,
+    navigatedBackFromModal: true
   }
 })

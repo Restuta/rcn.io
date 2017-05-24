@@ -27,18 +27,7 @@ class App extends Component {
 
   onModalClose = () => {
     const returnLocation = this.props.modal.returnLocation
-    // this.props.closeModal()
-
-    if (returnLocation) {
-      this.props.router.replace({
-        pathname: returnLocation.pathname,
-        search: returnLocation.search,
-        state: {
-          modalIsOpen: false,
-          navigatedBackFromModal: true
-        }
-      })
-    }
+    this.props.closeRoutedModal(returnLocation)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -104,7 +93,7 @@ App.childContextTypes = {
   locationSearch: React.PropTypes.string,
 }
 
-import { closeModal } from 'shared/actions/actions.js'
+import { closeRoutedModal } from 'shared/actions/actions.js'
 
 export default withRouter(
   connect(
@@ -112,6 +101,7 @@ export default withRouter(
       debug: state.debug,
       modal: state.app.modal
     }),
-    (dispatch, ownProps) => ({closeModal: () => dispatch(closeModal())})
+    (dispatch, ownProps) =>
+      ({closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))})
   )(logRenderPerf(App, 'App'))
 )
