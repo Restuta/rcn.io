@@ -65,7 +65,7 @@ export default class Dev extends Component {
             key={8}
             to={{
               pathname: '/events/evt-8',
-              state: { modal: true, returnUrl: this.context.locationPathname }
+              state: { modal: true, returnUrl: window.location.pathname }
             }}>Open Modal</Link>
         </div>
         <div>
@@ -73,7 +73,7 @@ export default class Dev extends Component {
             key={9}
             to={{
               pathname: '/mtb',
-              state: { modal: true, returnUrl: this.context.locationPathname }
+              state: { modal: true, returnUrl: window.location.pathname }
             }}>Open Dev</Link>
         </div>
         <h1>{this.props.foo}</h1>
@@ -486,8 +486,4 @@ export default class Dev extends Component {
       </div>
     )
   }
-}
-
-Dev.contextTypes = {
-  locationPathname: React.PropTypes.string
 }

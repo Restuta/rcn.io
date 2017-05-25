@@ -382,12 +382,6 @@ Event.propTypes = {
     //represents if event is draft, usually for draft calendars
     isDraft: PropTypes.bool,
   }),
-
-}
-
-Event.contextTypes = {
-  locationPathname: React.PropTypes.string,
-  locationSearch: React.PropTypes.string,
 }
 
 import { connect } from 'react-redux'
