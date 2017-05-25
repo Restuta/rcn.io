@@ -142,6 +142,7 @@ export const app = makeReducer({
             ...state,
             modal: {
               ...state.modal,
+              navigatedBackFromModal: true,
               isOpen: false,
             }
           }
