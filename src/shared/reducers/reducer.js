@@ -120,23 +120,52 @@ const initialState = {
 
 export const app = makeReducer({
   ['@@router/LOCATION_CHANGE']: (state, action) => {
-    const itIsRoutedModal = (action.payload.state && typeof action.payload.state.modalIsOpen !== undefined)
+    const locationState = action.payload.state
+
+    // splitting on sub-actions
+    if (locationState && locationState.subActionName) {
+      const subActionName = action.payload.state.subActionName
+
+      switch (subActionName) {
+        case 'Modal.OPEN_ROUTED_MODAL':
+          return {
+            ...state,
+            modal: {
+              ...state.modal,
+              ...locationState.modalProps,
+              returnLocation: locationState.returnLocation,
+              isOpen: true,
+            }
+          }
+        case 'Modal.CLOSE_ROUTED_MODAL':
+          return {
+            ...state,
+            modal: {
+              ...state.modal,
+              isOpen: false,
+            }
+          }
+        case 'Modal.REPLACE_ROUTED_MODAL':
+          console.warn('REPLACE_ROUTED_MODAL')
+          break
+        default:
+          break
+      }
+    }
 
     // handles particular location change action used to open so called Routed Modals
     // modals, that change route without leaving a trace in browser history
-    if (itIsRoutedModal) {
-      const routerState = action.payload.state
-
-      return {
-        ...state,
-        modal: {
-          ...state.modal,
-          ...routerState.modalProps,
-          returnLocation: routerState.returnLocation,
-          isOpen: routerState.modalIsOpen,
-        }
-      }
-    }
+    // if (itIsRoutedModal) {
+    //   return {
+    //     ...state,
+    //     modal: {
+    //       ...state.modal,
+    //       ...locationState.modalProps,
+    //       returnLocation: locationState.returnLocation,
+    //       isOpen: locationState.modalIsOpen,
+    //     }
+    //   }
+    // }
 
     // if "going back" we should update modal state, so it's properly closed
     if (action.payload.action === 'POP') {

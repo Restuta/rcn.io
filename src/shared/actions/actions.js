@@ -57,7 +57,9 @@ const getCurrentLocation = () => ({
 export const openRoutedModal = ({path, hasPadding}) => replace({
   pathname: path,
   state: {
-    modalIsOpen: true,
+    // since react router would use it's own action it would be easier to just
+    // differentiate it using those custom stings aka sub-actions
+    subActionName: 'Modal.OPEN_ROUTED_MODAL',
     modalProps: { hasPadding: hasPadding },
     returnLocation: getCurrentLocation()
   }
@@ -67,7 +69,13 @@ export const closeRoutedModal = (returnLocation) => replace({
   pathname: returnLocation.pathname,
   search: returnLocation.search,
   state: {
-    modalIsOpen: false,
-    navigatedBackFromModal: true
+    subActionName: 'Modal.CLOSE_ROUTED_MODAL',
+  }
+})
+
+export const replaceRoutedModal = ({path}) => replace({
+  pathname: path,
+  state: {
+    subActionName: 'Modal.REPLACE_ROUTED_MODAL',
   }
 })
