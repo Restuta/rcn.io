@@ -8,7 +8,9 @@ const pureComponentWithRoutedModal = component => {
     if (nextProps.location && nextProps.location.state
       && (nextProps.location.state.modal || nextProps.location.state.navigatedBackFromModal)
     ) {
-      return !shallowEqual(this.props, nextProps, {exceptProps: ['location', 'params', 'routes']})
+      return !shallowEqual(this.props, nextProps, {
+        exceptProps: ['location', 'params', 'routes']
+      })
     }
 
     return !shallowEqual(this.props, nextProps)
