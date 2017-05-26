@@ -82,7 +82,9 @@ function shallowEqual(objA, objB, except = {exceptProps: []}) {
       if (process.env.NODE_ENV === 'development') {
         console.warn(`shallowEqual: non-equal props – "${keysA[i]}"`)
         console.warn(`shallowEqual: "objA.${keysA[i]}=${stringify(objA[keysA[i]])}"`)
+        console.log(objA[keysA[i]])
         console.warn(`shallowEqual: "objB.${keysA[i]}=${stringify(objB[keysA[i]])}"`)
+        console.log(objB[keysA[i]])
       }
       return false
     }
