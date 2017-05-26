@@ -288,10 +288,10 @@ export default (connect(
     events: getEventsByDateForCalendar(state, ownProps)
   }),
   (dispatch, ownProps) => ({
-    toggleShowPast: () => {
-      return dispatch(toggleShowPastEvents(ownProps.calendarId))
-    }
-  })
+    toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+  }),
+  null,
+  { pure: true }
 ))(
   pureComponentWithRoutedModal(withRouter(
     // Calendar
