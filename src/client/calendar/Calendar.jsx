@@ -9,10 +9,6 @@ import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import Badge from 'calendar/badges/Badge.jsx'
-import { withRouter } from 'react-router'
-import { logRenderPerf } from 'utils/hocs'
-
-import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
 
 // import Perf from 'react-addons-perf'
 
@@ -280,21 +276,44 @@ Calendar.propTypes = {
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
 import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
+import { flow, partialRight } from 'lodash'
+import { withRouter } from 'react-router'
+import { logRenderPerf} from 'utils/hocs'
+import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
 
 
-export default (connect(
-  (state, ownProps) => ({
-    ...getCalendar(state, ownProps),
-    events: getEventsByDateForCalendar(state, ownProps)
-  }),
-  (dispatch, ownProps) => ({
-    toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
-  }),
-  null,
-  { pure: true }
-))(
-  pureComponentWithRoutedModal(withRouter(
-    // Calendar
-    logRenderPerf(Calendar, 'Calendar')
-  ))
-)
+// export default (connect(
+//   (state, ownProps) => ({
+//     ...getCalendar(state, ownProps),
+//     events: getEventsByDateForCalendar(state, ownProps)
+//   }),
+//   (dispatch, ownProps) => ({
+//     toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+//   }),
+//   // null,
+//   { pure: true }
+// ))(
+//   pureComponentWithRoutedModal(withRouter(
+//     // Calendar
+//     logRenderPerf(Calendar, 'Calendar')
+//   ))
+// )
+
+const logRenderPerfForCalendar = partialRight(logRenderPerf, 'Calendar')
+
+export default flow(
+  connect(
+    (state, ownProps) => ({
+      ...getCalendar(state, ownProps),
+      events: getEventsByDateForCalendar(state, ownProps)
+    }),
+    (dispatch, ownProps) => ({
+      toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+    }),
+    null,
+    { pure: true }
+  ),
+  pureComponentWithRoutedModal,
+  withRouter,
+  logRenderPerfForCalendar,
+)(Calendar)
