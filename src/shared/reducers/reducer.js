@@ -224,9 +224,10 @@ const eventsByDate = (events) => {
 const getEvent = (state, id) => state.events[id]
 
 const getCalendar = (state, props) => state.calendars[props.calendarId]
+const getAllCalendars = (state) => state.calendars
+
 const getAllEvents = state => state.events
 const getEventIdsForCalendar = (state, props) => getCalendar(state, props).eventsIds
-
 
 const getEventsForCalendar = createSelector(
   getEventIdsForCalendar,
@@ -244,6 +245,7 @@ export {
   getCalendar,
   getEventsForCalendar,
   getEventsByDateForCalendar,
+  getAllCalendars
 }
 
 export default rootReducer
