@@ -74,14 +74,19 @@ class App extends Component {
 }
 
 import { closeRoutedModal } from 'shared/actions/actions.js'
+import pureComponentWithRoutedModal from 'utils/components/pure-component'
 
-export default withRouter(
+export default pureComponentWithRoutedModal(withRouter(
   connect(
     state => ({
       debug: state.debug,
       modal: state.app.modal
     }),
-    (dispatch, ownProps) =>
-      ({closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))})
+    (dispatch, ownProps) => ({
+      closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))
+    }),
+    // undefined,
+    // { pure: true }
   )(logRenderPerf(App, 'App'))
+)
 )

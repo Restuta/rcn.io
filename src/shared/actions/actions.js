@@ -70,6 +70,7 @@ export const closeRoutedModal = (returnLocation) => replace({
   search: returnLocation.search,
   state: {
     subActionName: 'Modal.CLOSE_ROUTED_MODAL',
+    navigatedBackFromModal: true,
   }
 })
 
