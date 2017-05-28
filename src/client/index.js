@@ -12,10 +12,10 @@ import 'public/img/apple-touch-icon-152x152.png'
 import 'public/img/apple-touch-icon-180x180.png'
 import 'public/img/safari-pinned-tab.svg'
 
-// import React from 'react'
+// // import React from 'react'
 // if (process.env.NODE_ENV !== 'production') {
 //   const {whyDidYouUpdate} = require('why-did-you-update')
-//   whyDidYouUpdate(React, { exclude: /.+Connect|Col|Week|Row|Day/})
+//   whyDidYouUpdate(require('react'), { exclude: /.+Connect|Col|Week|Row|Day/})
 //   // whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|/ })
 //   // whyDidYouUpdate(React, { exclude: /.+Connect|TopNavbar|Week|Row|Col|/ })
 // }
