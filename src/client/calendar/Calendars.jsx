@@ -10,7 +10,10 @@ class Calendars extends Component {
 
     const calendarsComponent = Object.keys(calendars)
       .map(k => <li key={k}>
-        <a href={`calendars/${k.replace('cal-', '')}`}>{calendars[k].name}</a>
+        <a href={`calendars/${k.replace('cal-', '')}`}>
+          {calendars[k].name}
+        </a>
+        {calendars[k].description && <p>Description: <b>{calendars[k].description}</b></p>}
       </li>)
 
     return (
@@ -27,6 +30,6 @@ import { getAllCalendars } from 'shared/reducers/reducer.js'
 
 export default connect(
   (state, ownProps) => ({
-    calendars: getAllCalendars(state, ownProps)
+    calendars: getAllCalendars(state)
   })
 )(Calendars)
