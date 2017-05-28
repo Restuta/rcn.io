@@ -8,7 +8,7 @@ export default [
     "discipline": "Road",
     "type": "Hill Climb",
     "location": {
-      "city": "Brisbane",
+      "city": "Brisbane-test",
       "state": "CA"
     },
     "promoters": [
