@@ -1,4 +1,5 @@
 import Component from 'react-pure-render/component'
+import './Calendars.scss'
 import React from 'react'
 
 class Calendars extends Component {
@@ -13,12 +14,10 @@ class Calendars extends Component {
       </li>)
 
     return (
-      <div>
-        <span>Calendars:</span>
-        <ul>
-          {calendarsComponent}
-        </ul>
-      </div>
+      <ul className='Calendars'>
+        <li>Calendars:</li>
+        {calendarsComponent}
+      </ul>
     )
   }
 }

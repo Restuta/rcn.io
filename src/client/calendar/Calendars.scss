@@ -1,0 +1,27 @@
+.Calendars {
+  list-style-type: none;
+
+  li {
+    height: 25px;
+    width: 240px;
+    float: left;
+    text-align: center;
+    margin-right: 0px;
+    border: 1px solid #aaa;
+    padding: 0 20px;
+  }
+
+  li:first-child {
+    border: none;
+    text-align: right;
+  }
+
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  li a:hover {
+    font-weight: bold;
+  }
+}
