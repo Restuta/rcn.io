@@ -9,7 +9,7 @@ export default [
     "type": "Hill Climb",
     "location": {
       "city": "Brisbane",
-      "state": "CA"
+      "state": "PA"
     },
     "promoters": [
       { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com"},
