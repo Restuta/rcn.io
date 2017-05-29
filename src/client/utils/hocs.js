@@ -1,12 +1,12 @@
 import React from 'react'
 
-let logRenderPerf
+let logRenderPerfFor
 
 
 if (process.env.NODE_ENV === 'development') {
   // logs component's rendering time in MS
-  logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
-    return class RenderPerf extends React.Component {
+  logRenderPerfFor = compName => function(WrappedComp) {
+    class RenderPerf extends React.Component {
       constructor(props) {
         super(props)
         this.whenRenderStarted = 0
@@ -14,12 +14,14 @@ if (process.env.NODE_ENV === 'development') {
 
       componentDidMount() {
         const now = +new Date()
-        console.log(`  ${name} rendered in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+        // eslint-disable-next-line  no-console
+        console.log(`  ${compName} rendered in: ` + (now - this.whenRenderStarted) + 'ms')
       }
 
       componentDidUpdate() {
         const now = +new Date()
-        console.log(`  ${name} re-rendered in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
+        // eslint-disable-next-line  no-console
+        console.log(`  ${compName} re-rendered in: ` + (now - this.whenRenderStarted) + 'ms')
       }
 
       render() {
@@ -27,13 +29,19 @@ if (process.env.NODE_ENV === 'development') {
         return <WrappedComp {...this.props}/>
       }
     }
+
+    // readable component name for wrapped component
+    RenderPerf.displayName = `RenderPerf(${compName})`
+
+    return RenderPerf
   }
 } else {
-  logRenderPerf = WrappedComp => WrappedComp
+  // noop function for prod
+  logRenderPerfFor = compName => WrappedComp => WrappedComp
 }
 
 
 
 export {
-  logRenderPerf
+  logRenderPerfFor
 }
