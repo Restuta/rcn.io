@@ -5,15 +5,21 @@ import shallowEqual from 'client/utils/shallow-equal-except'
 const pureComponentWithRoutedModal = component => {
   // can't be an arrow finction since need bounded thist to component's instance
   component.prototype.shouldComponentUpdate = function(nextProps, nextState) {
-    if (nextProps.location && nextProps.location.state
-      && (nextProps.location.state.modal || nextProps.location.state.navigatedBackFromModal)
+    // if navigated back from modal we should not re-render if only routing-related props changed
+    if (
+      nextProps.location &&
+      nextProps.location.state &&
+      (nextProps.location.state.modal || nextProps.location.state.navigatedBackFromModal)
     ) {
-      return !shallowEqual(this.props, nextProps, {
-        exceptProps: ['location', 'params', 'routes']
-      })
+      return !shallowEqual(
+        this.props,
+        nextProps,
+        { exceptProps: ['location', 'params', 'routes'], },
+        component.displayName
+      )
     }
 
-    return !shallowEqual(this.props, nextProps)
+    return !shallowEqual(this.props, nextProps, undefined, component.displayName)
   }
 
   return component

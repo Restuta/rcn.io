@@ -48,7 +48,7 @@ const stringify = obj => (typeof obj === 'function')
  * Returns true when the values of all keys are strictly equal.
  * exceptProps is an object of the form {exceptProps: []} listing names of the props to be ignored
  */
-function shallowEqual(objA, objB, except = {exceptProps: []}) {
+function shallowEqual(objA, objB, except = {exceptProps: []}, compName = '<unknown>') {
   if (is(objA, objB)) {
     return true
   }
@@ -80,10 +80,10 @@ function shallowEqual(objA, objB, except = {exceptProps: []}) {
       || !is(objA[keysA[i]], objB[keysA[i]])
     ) {
       if (process.env.NODE_ENV === 'development') {
-        console.warn(`shallowEqual: non-equal props – "${keysA[i]}"`)
-        console.warn(`shallowEqual: "objA.${keysA[i]}=${stringify(objA[keysA[i]])}"`)
+        console.warn(`${compName}.shallowEqual: non-equal props – "${keysA[i]}"`)
+        console.warn(`${compName}.shallowEqual: "propsA.${keysA[i]}=${stringify(objA[keysA[i]])}"`)
         console.log(objA[keysA[i]])
-        console.warn(`shallowEqual: "objB.${keysA[i]}=${stringify(objB[keysA[i]])}"`)
+        console.warn(`${compName}.shallowEqual: "propsB.${keysA[i]}=${stringify(objB[keysA[i]])}"`)
         console.log(objB[keysA[i]])
       }
       return false
