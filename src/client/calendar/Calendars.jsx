@@ -8,19 +8,21 @@ class Calendars extends Component {
       calendars
     } = this.props
 
-    const calendarsComponent = Object.keys(calendars)
-      .map(k => <li key={k}>
-        <a href={`calendars/${k.replace('cal-', '')}`}>
-          {calendars[k].name}
+    const calendarsComponents = Object.keys(calendars)
+      .map(key => <li key={key}>
+        <a href={`calendars/${key.replace('cal-', '')}`}>
+          {calendars[key].name}
         </a>
-        {calendars[k].description && <p>Description: <b>{calendars[k].description}</b></p>}
+        {calendars[key].description && <p>Description: <b>{calendars[key].description}</b></p>}
       </li>)
 
     return (
-      <ul className='Calendars'>
-        <li>Calendars:</li>
-        {calendarsComponent}
-      </ul>
+      <div style={{display: 'flex'}}>
+        <div>Calendars:</div>
+        <ul className='Calendars'>
+          {calendarsComponents}
+        </ul>
+      </div>
     )
   }
 }

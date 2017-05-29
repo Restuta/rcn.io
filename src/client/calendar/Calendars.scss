@@ -2,18 +2,13 @@
   list-style-type: none;
 
   li {
-    height: 100px;
-    width: 240px;
+    height: 8rem;
+    width: 20rem;
     float: left;
     text-align: center;
-    margin-right: 20px;
-    border: 1px solid #aaa;
-    padding: 0 20px;
-  }
-
-  li:first-child {
-    border: none;
-    text-align: right;
+    margin-right: 1rem;
+    border: 0.1rem solid #aaa;
+    padding: 0 1rem;
   }
 
   li a {
