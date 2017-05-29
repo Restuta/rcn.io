@@ -1,3 +1,20 @@
+import { isObject, isArray } from 'lodash'
+
+
+// monkey patching console.info() in dev mode to have distinct color
+if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line
+  console.info = function(msg) {
+    // eslint-disable-next-line
+    if (isObject(msg) || isArray(msg)) {
+      return console.log(msg)
+    } else {
+      return console.log('%c' + msg, 'color: #c594c5')
+    }
+  }
+}
+
+
 //object.assign for IE 11
 //source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 /* eslint-disable */ //since the polytills are copied from  the web
