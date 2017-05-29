@@ -70,6 +70,9 @@ export const closeRoutedModal = (returnLocation) => replace({
   search: returnLocation.search,
   state: {
     subActionName: 'Modal.CLOSE_ROUTED_MODAL',
+    // this is a required workaround for now, since pure-component-with-routed-modal expects this state
+    // to be passed as part of location state and it's cumbersome to connect every component to redux-actions
+    // store just to have this prop in props so that helper HOC could work
     navigatedBackFromModal: true,
   }
 })
