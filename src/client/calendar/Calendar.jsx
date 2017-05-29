@@ -276,32 +276,13 @@ Calendar.propTypes = {
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
 import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
-import { flow, partialRight } from 'lodash'
+import { flow } from 'lodash'
 import { withRouter } from 'react-router'
-import { logRenderPerf} from 'utils/hocs'
+import { logRenderPerfFor } from 'utils/hocs'
 import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
 
-
-// export default (connect(
-//   (state, ownProps) => ({
-//     ...getCalendar(state, ownProps),
-//     events: getEventsByDateForCalendar(state, ownProps)
-//   }),
-//   (dispatch, ownProps) => ({
-//     toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
-//   }),
-//   // null,
-//   { pure: true }
-// ))(
-//   pureComponentWithRoutedModal(withRouter(
-//     // Calendar
-//     logRenderPerf(Calendar, 'Calendar')
-//   ))
-// )
-
-const logRenderPerfForCalendar = partialRight(logRenderPerf, 'Calendar')
-
 export default flow(
+  logRenderPerfFor('Calendar'),
   connect(
     (state, ownProps) => ({
       ...getCalendar(state, ownProps),
@@ -313,7 +294,7 @@ export default flow(
     null,
     { pure: true }
   ),
-  pureComponentWithRoutedModal,
   withRouter,
-  logRenderPerfForCalendar,
+  //should come before "withRouter"
+  pureComponentWithRoutedModal,
 )(Calendar)
