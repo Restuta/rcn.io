@@ -3,10 +3,7 @@ import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import TopNavbar from './navs/TopNavbar.jsx'
 import DebugGrid from './temp/debug/DebugGrid.jsx'
-import { connect } from 'react-redux'
-import { withRouter } from 'react-router'
 import Modal from 'atoms/Modal.jsx'
-import { logRenderPerf } from 'utils/hocs'
 
 class App extends Component {
   constructor(props) {
@@ -24,8 +21,8 @@ class App extends Component {
     // if we changed routes...
     if ((
       nextProps.location.key !== this.props.location.key
-      && nextProps.location.state
-      && nextProps.location.state.modalIsOpen
+      && nextProps.modal
+      && nextProps.modal.isOpen
     )) {
       // save the old children (just like animation)
       this.previousChildren = this.props.children
@@ -73,10 +70,13 @@ class App extends Component {
   }
 }
 
+import { connect } from 'react-redux'
 import { closeRoutedModal } from 'shared/actions/actions.js'
-import pureComponentWithRoutedModal from 'utils/components/pure-component'
+import { flow } from 'lodash'
+import { logRenderPerfFor } from 'utils/hocs'
 
-export default pureComponentWithRoutedModal(withRouter(
+export default flow(
+  logRenderPerfFor('App'),
   connect(
     state => ({
       debug: state.debug,
@@ -85,8 +85,7 @@ export default pureComponentWithRoutedModal(withRouter(
     (dispatch, ownProps) => ({
       closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))
     }),
-    // undefined,
-    // { pure: true }
-  )(logRenderPerf(App, 'App'))
-)
-)
+    undefined,
+    { pure: true }
+  ),
+)(App)
