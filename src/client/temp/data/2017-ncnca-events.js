@@ -1951,9 +1951,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-ByVfhkY4g",
     "name" : "Amgen Tour of California: Women's",
+    "usacPermit":"2017-1266",
     "date": "May 11 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -1967,9 +1968,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-B1obyeY4e",
     "name" : "Amgen Tour of California: Women's",
+    "usacPermit":"2017-1266",
     "date": "May 12 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -1983,9 +1985,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-rkyrJeYNx",
     "name" : "Amgen Tour of California: Women's",
+    "usacPermit":"2017-1266",
     "date": "May 13 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2024,6 +2027,8 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-berkeley-hills-road-race-rJNQkkgF9Qx",
     "name": "Berkeley Hills Road Race",
+    "status": "Moved",
+    "movedToEventId": "evt-ncnca-2017-berkeley-hills-road-race-Syg5C2pNyW",
     "usacPermit":"2017-1465",
     "date": "May 13 2017",
     "discipline": "Road",
@@ -2039,12 +2044,35 @@ export default [
     "draftNotes" : "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship.",
     "isDraft" : false,
     "_shortId" : "rJNQkkgF9Qx"
-  }, {
-    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-H1VtkxFVe",
-    "name" : "Amgen Tour of California: Women's",
-    "date": "May 14 2017",
+  },
+
+  {
+    "id" : "evt-ncnca-2017-berkeley-hills-road-race-Syg5C2pNyW",
+    "name": "Berkeley Hills Road Race",
+    "usacPermit":"2017-1465",
+    "date": "June 11 2017",
     "discipline": "Road",
     "type": "Road Race",
+    "location": {
+      "city": "Berkeley Hills",
+      "state": "CA"
+    },
+    "promoters": [
+      { "id": "prm-2639", "name": "Berkeley Bicycle Club", "contactName": "Paul Hainsworth", "contactInfo": "paulhainsworth@gmail.com" },
+    ],
+    "group": "1",
+    "draftNotes" : "Tentative, possible date change.   I forgot to include that we wish to be considered for District Elite Championship.",
+    "isDraft" : false,
+    "_shortId" : "Syg5C2pNyW"
+  },
+
+   {
+    "id" : "evt-ncnca-2017-amgen-tour-of-california-womens-H1VtkxFVe",
+    "name" : "Amgen Tour of California: Women's",
+    "usacPermit":"2017-1266",
+    "date": "May 14 2017",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2059,7 +2087,7 @@ export default [
     "id" : "evt-ncnca-2017-ncnca-masters-men-and-women-road-race-championships-cccx-6-SkFBk_VUx",
     "name" : "NCNCA Masters (Men and Women) Road Race Championships – CCCX #6",
     "usacPermit": "2017-1681",
-    "date": "May 14 2017",
+    "date": "May 13 2017",
     "discipline": "Road",
     "type": "Circuit Race",
     "location": {
@@ -2079,9 +2107,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-r1e2mxYVl",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 14 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2095,9 +2124,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-HJf8EltEe",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 15 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2111,9 +2141,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-SJdv4xYEg",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 16 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2127,9 +2158,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-ryEFExFVe",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 17 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2143,9 +2175,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-BJjq4lt4e",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 18 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2159,9 +2192,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-Sk53EgtEl",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 19 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
@@ -2175,9 +2209,10 @@ export default [
   }, {
     "id" : "evt-ncnca-2017-amgen-tour-of-california-mens-rJX0EgKVe",
     "name" : "Amgen Tour of California: Men's",
+    "usacPermit":"2017-1266",
     "date": "May 20 2017",
-    "discipline": "Road",
-    "type": "Road Race",
+    "discipline": "Other",
+    "type": "Stage Race",
     "location": {
       "city": "Sacramento",
       "state": "CA"
