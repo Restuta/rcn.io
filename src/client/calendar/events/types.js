@@ -18,6 +18,7 @@ const EventTypes = {
   other: {
     meeting: 'Meeting',
     clinics: 'Clinics',
+    stageRace: 'Stage Race',
   },
   road: {
     'default': 'Road',
