@@ -288,7 +288,7 @@ class Event extends Component {
       overflow: (event.isDraft || debug) ? 'visible' : 'hidden',
     }
     //for event types with white color use plain black, since otherwise badge will be invisible
-    const typeBadgeColor = (eventColor === 'white' ? Colors.body : eventColor)
+    const contrastColor = (eventColor === 'white' ? Colors.body : eventColor)
     //if event type is "Clinics" (uses "other" to just compare with any clinics) add discipline as a prefix, since
     // clinics can be for road, mtb, track and other disciplines
     const typeBadgeText = (event.type === EventTypes.other.clinics && event.discipline !== Disciplines.other)
@@ -302,13 +302,13 @@ class Event extends Component {
         <div className="name-container">
           {showEventTypeBadge &&
             <div>
-              <Badge square bgColor={'transparent'} color={typeBadgeColor} borderColor={typeBadgeColor}>
+              <Badge square bgColor={'transparent'} color={contrastColor} borderColor={contrastColor}>
                 {typeBadgeText}
               </Badge>
             </div>
           }
 
-          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
+          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string? */}
           <EventName size={cardSize}
             height={cardHeightRem}
             name={event.name}
@@ -318,7 +318,11 @@ class Event extends Component {
             highlightEventType={highlightEventTypeInName}/>
         </div>
 
-        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={contrastColor}/>}
+
+        {/* indicates if event has permit, need more UI testing since it overlaps with name when name is long */}
+        {(event.usacPermit) && <Icon name="check_circle" className="icon" color={contrastColor}/>}
+
         {eventGroupComp}
         {locationComp}
         {promoterComp}
