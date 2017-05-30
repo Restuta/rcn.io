@@ -133,7 +133,7 @@ class EventDetails extends Component {
       promoterInfo
     } = this.props.event
 
-    //TODO bc: migrate old evnets to have flyer section and not just "flyerUrl" property
+    //TODO bc: migrate old events to have flyer section and not just "flyerUrl" property
     const flyerUrl = (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
 
     const promoterContactName = (promoters && promoters.length > 0)
@@ -300,11 +300,15 @@ EventDetails.propTypes = {
 
 import { connect } from 'react-redux'
 import { getEvent } from 'shared/reducers/reducer.js'
+import { replaceRoutedModal } from 'shared/actions/actions.js'
 
 export default connect(
-  (state, ownProps) => {
+  (state, ownProps) => ({
     //to have "back to calendar" button
     // calendar: getCalendar()
-    return { event: getEvent(state, ownProps.params.eventId) || {} }
-  }
+    event: getEvent(state, ownProps.params.eventId) || {},
+  }),
+  (dispatch, ownProps) => ({
+    replaceRoutedModal: (path) => dispatch(replaceRoutedModal({path, hasPadding: false}))
+  }),
 )(EventDetails)
