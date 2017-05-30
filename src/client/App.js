@@ -18,11 +18,12 @@ class App extends Component {
     this.props.closeRoutedModal(this.props.modal.returnLocation)
 
   componentWillReceiveProps(nextProps) {
-    // if we changed routes...
+    // save prev children to render in background when modal is open
     if ((
       nextProps.location.key !== this.props.location.key
       && nextProps.modal
       && nextProps.modal.isOpen
+      && !nextProps.modal.replacesPrevModal
     )) {
       // save the old children (just like animation)
       this.previousChildren = this.props.children
@@ -31,12 +32,6 @@ class App extends Component {
 
   render() {
     const { location, modal } = this.props
-
-    // let shouldRenderInModal = (
-    //   location.state && location.state.modal
-    //   // && this.previousChildren
-    // )
-
     let shouldRenderInModal = modal.isOpen
 
     const appLevelClasses = classnames('App',
@@ -84,8 +79,6 @@ export default flow(
     }),
     (dispatch, ownProps) => ({
       closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))
-    }),
-    undefined,
-    { pure: true }
+    })
   ),
 )(App)

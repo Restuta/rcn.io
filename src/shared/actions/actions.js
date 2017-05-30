@@ -61,7 +61,7 @@ export const openRoutedModal = ({path, hasPadding}) => replace({
     // differentiate it using those custom stings aka sub-actions
     subActionName: 'Modal.OPEN_ROUTED_MODAL',
     modalProps: { hasPadding: hasPadding },
-    returnLocation: getCurrentLocation()
+    modalReturnLocation: getCurrentLocation()
   }
 })
 
@@ -71,15 +71,19 @@ export const closeRoutedModal = (returnLocation) => replace({
   state: {
     subActionName: 'Modal.CLOSE_ROUTED_MODAL',
     // this is a required workaround for now, since pure-component-with-routed-modal expects this state
-    // to be passed as part of location state and it's cumbersome to connect every component to redux-actions
+    // to be passed as part of location state and it's cumbersome to connect every component to redux
     // store just to have this prop in props so that helper HOC could work
     navigatedBackFromModal: true,
   }
 })
 
-export const replaceRoutedModal = ({path}) => replace({
+
+
+export const replaceRoutedModal = ({path, hasPadding}) => replace({
   pathname: path,
   state: {
     subActionName: 'Modal.REPLACE_ROUTED_MODAL',
+    modalProps: { hasPadding: hasPadding },
+    replacesPrevModal: true,
   }
 })
