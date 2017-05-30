@@ -36,7 +36,10 @@ const initialState = {
     containerWidth: undefined,
     modal: {
       isOpen: false,
-      hasPadding: false,
+      // indicates that current modal replaces previous modal
+      replacesPrevModal: false,
+      // most modals need padding, but some don't
+      hasPadding: true,
       // specifies if last navigation was back from routed modal
       navigatedBackFromModal: false,
       // used for routed modals to replace URL with previous location
@@ -133,7 +136,7 @@ export const app = makeReducer({
             modal: {
               ...state.modal,
               ...locationState.modalProps,
-              returnLocation: locationState.returnLocation,
+              returnLocation: locationState.modalReturnLocation,
               isOpen: true,
             }
           }
@@ -147,26 +150,20 @@ export const app = makeReducer({
             }
           }
         case 'Modal.REPLACE_ROUTED_MODAL':
-          console.warn('REPLACE_ROUTED_MODAL')
-          break
+          return {
+            ...state,
+            modal: {
+              ...state.modal,
+              ...locationState.modalProps,
+              returnLocation: locationState.modalReturnLocation,
+              isOpen: true,
+              replacesPrevModal: locationState.replacesPrevModal,
+            }
+          }
         default:
           break
       }
     }
-
-    // handles particular location change action used to open so called Routed Modals
-    // modals, that change route without leaving a trace in browser history
-    // if (itIsRoutedModal) {
-    //   return {
-    //     ...state,
-    //     modal: {
-    //       ...state.modal,
-    //       ...locationState.modalProps,
-    //       returnLocation: locationState.returnLocation,
-    //       isOpen: locationState.modalIsOpen,
-    //     }
-    //   }
-    // }
 
     // if "going back" we should update modal state, so it's properly closed
     if (action.payload.action === 'POP') {
