@@ -11,7 +11,6 @@ import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
-import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
 import { Statuses } from 'client/calendar/events/types.js'
@@ -92,10 +91,7 @@ class Event extends Component {
       //top-level window navigation
       window.top.location.href = `../events/${this.props.id}`
     } else {
-      this.props.openRoutedModal({
-        path: `/events/${this.props.id}`,
-        hasPadding: false,
-      })
+      this.props.openRoutedModal(`/events/${this.props.id}`)
     }
   }
 
@@ -385,14 +381,14 @@ Event.propTypes = {
 }
 
 import { connect } from 'react-redux'
-
 import { openRoutedModal } from 'shared/actions/actions.js'
+import { withRouter } from 'react-router'
 
 export default connect(
   undefined,
   (dispatch, ownProps) => ({
-    openRoutedModal: ({path, hasPadding}) =>
-      dispatch(openRoutedModal({path, hasPadding}))
+    openRoutedModal: (path) =>
+      dispatch(openRoutedModal({path, hasPadding: false}))
   })
 )(withRouter(Event))
 
