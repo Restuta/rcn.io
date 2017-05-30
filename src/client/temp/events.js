@@ -46,6 +46,8 @@ const createEvent = rawEvent => {
     flyer: rawEvent.flyer,
     status: rawEvent.status || undefined, //getting rid of empty strings
     cancelationReason: rawEvent.cancelationReason || undefined,
+    // if event status is "Moved" containes event id of the event to which original event is moved to
+    movedToEventId: rawEvent.movedToEventId || undefined,
     group: rawEvent.group, //group of event according to NCNCA planning document
     draftNotes: rawEvent.draftNotes,
     isDraft: (rawEvent.isDraft || false),
