@@ -55,7 +55,7 @@ export default class Button extends Component {
     return (
       link ? (
         <a href={href || 'javascript:;'} className={classes} onClick={onClick} disabled={disabled}
-          style={style} role="button" tabIndex={disabled ? "-1" : undefined}>
+          style={style} role="button" tabIndex={disabled ? '-1' : undefined}>
           {iconComp}{this.props.children}
         </a>
       ) : (
