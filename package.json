@@ -11,7 +11,6 @@
     "build:webpack-server": "NODE_ENV=production webpack --config webpack.config.server.prod.js --progress --bail",
     "build:client": "npm run clean:client && npm run build:webpack-client",
     "build:server": "npm run clean:server && npm run build:webpack-server",
-
     "build": "concurrently \"npm run build:client\" \"npm run build:server\" \"npm run build:dll\"",
     "start": "NODE_ENV=production NODE_PATH=./src node src/server/index.js",
     "dev:server": "NODE_PATH=./src nodemon src/server/index.js",
@@ -128,5 +127,8 @@
     "node": "6.2.1"
   },
   "main": "index.html",
-  "moduleRoots": [ "src", "src/client" ]
+  "moduleRoots": [
+    "src",
+    "src/client"
+  ]
 }
