@@ -44,3 +44,10 @@
   color: $red-800;
   border-left-color: $red-800;
 }
+
+.Alert.no-border {
+  // transparent border so it doesn't break basseline
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
