@@ -3,7 +3,6 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-import Button from 'atoms/Button.jsx'
 // import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
@@ -12,16 +11,19 @@ import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import Icon from 'atoms/Icon.jsx'
-import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
 import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
-import UsacLogo from 'atoms/UsacLogo.jsx'
+import UsacPermit from './UsacPermit.jsx'
+import PresentedBy from './PresentedBy.jsx'
+import EventWebsite from './EventWebsite.jsx'
+import { RegButton, ResultsButton } from './Buttons.jsx'
 import Alert from 'atoms/Alert.jsx'
 import { Link } from 'react-router'
 
 const getUsacFlyerUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
+
 const crteateLetUsKnowLink = ({subject, body = ''}) => (
   'mailto:a@rcn.io?cc=webmaster@ncnca.org'
   + `&subject=${encodeURIComponent(subject)}`
@@ -47,71 +49,8 @@ const formatDate = (date, today) => {
   return formattedDate
 }
 
-const PresentedBy = ({by}) => (
-  <span className="text-2" style={{
-    fontStyle: 'italic',
-    position: 'relative',
-    marginRight: '2rem',
-    marginBottom: '2rem',
-  }}>
-    <span className="secondary">by {(by || '--')}</span>
-  </span>
-)
-
-const UsacPermit = ({number}) => (
-  <span className="nowrap secondary">
-    <UsacLogo size={1} style={{marginRight: '1rem'}}/>
-    <span className="text-sm-11 top-0">PERMIT {number}</span>
-  </span>
-)
-
-const EventWebsite = ({url}) => {
-  let eventComp
-
-  if (url) {
-    eventComp = (
-      <a href={url} target="_blank">
-        <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.primary}/>
-        {getShorterUrl(url)}
-      </a>
-    )
-  } else {
-    eventComp = (<div>
-      <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.grey500}/>
-      {'--'}
-    </div>
-    )
-  }
-
-  return (
-    <div>
-      <h4 className="header-regular header-4">Event Website</h4>
-      <div className="events-website-link text-3">
-        {eventComp}
-      </div>
-    </div>
-  )
-}
-
-const PrimaryButton = ({text, icon, disabled, onClick}) => (
-  <Button size="sm" icon={icon} disabled={disabled} primaryHover className="primary-button" onClick={onClick}>
-    {text}
-  </Button>
-)
-
-const RegButton = ({regUrl, onClick}) => (
-  regUrl
-    ? <PrimaryButton text="REGISTER" onClick={onClick}/>
-    : <PrimaryButton text="NO REG LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
-)
-
-const ResultsButton = ({resultsUrl, onClick}) => (
-  resultsUrl
-    ? <PrimaryButton text="RESULTS" onClick={onClick}/>
-    : <PrimaryButton text="NO RESULTS LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
-)
-
 const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
+
 const renderedInsideModal = props => (
   !!(props.location
   && props.location.state
