@@ -21,7 +21,6 @@ export default class Alert extends Component {
     }
     const iconToShow = iconMap[type]
 
-    console.info(border)
     const classNames = classnames(`alert alert-${type} Alert`, {
       'no-border': !border
     })

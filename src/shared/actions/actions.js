@@ -60,7 +60,10 @@ export const openRoutedModal = ({path, hasPadding}) => replace({
     // since react router would use it's own action it would be easier to just
     // differentiate it using those custom stings aka sub-actions
     subActionName: 'Modal.OPEN_ROUTED_MODAL',
-    modalProps: { hasPadding: hasPadding },
+    // isOpen has to remain here since routing actions are stored in browser session and during full browser refresh
+    // last action is replayed with the entire state, including modal state in this case, all other cases covered with
+    // reudux store
+    modalProps: { hasPadding: hasPadding, isOpen: true },
     modalReturnLocation: getCurrentLocation()
   }
 })
@@ -83,7 +86,10 @@ export const replaceRoutedModal = ({path, hasPadding}) => replace({
   pathname: path,
   state: {
     subActionName: 'Modal.REPLACE_ROUTED_MODAL',
-    modalProps: { hasPadding: hasPadding },
+    // isOpen has to remain here since routing actions are stored in browser session and during full browser refresh
+    // last action is replayed with the entire state, including modal state in this case, all other cases covered with
+    // reudux store
+    modalProps: { hasPadding: hasPadding, isOpen: true },
     replacesPrevModal: true,
   }
 })

@@ -112,8 +112,16 @@ const ResultsButton = ({resultsUrl, onClick}) => (
 )
 
 const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
+const renderedInsideModal = props => (
+  !!(props.location
+  && props.location.state
+  && props.location.state.modalProps
+  && props.location.state.modalProps.isOpen)
+)
 
 class EventDetails extends Component {
+  // check if component is rendered inside modal
+
   onResultsBtnClick = () => {
     // console.info(...arguments)
     window.location.href = this.resultsUrl
@@ -126,31 +134,12 @@ class EventDetails extends Component {
   }
 
   onMovedToLinkClick = (e) => {
-
     e.preventDefault()
-
-    this.props.router.push({
-      pathname: `/events/${this.props.movedToEvent.id}`,
-      state: {
-        modal: true,
-        modalProps: {
-          hasPadding: false
-        },
-        replaceOpenModal: true,
-        // returnLocation: {
-        //   pathname: this.context.locationPathname,
-        //   search: this.context.locationSearch
-        // },
-      }
-    })
+    this.props.replaceRoutedModal(`/events/${this.props.movedToEvent.id}`)
   }
 
   render() {
-    const insideModal = (
-      (this.props.location
-      && this.props.location.state
-      && this.props.location.state.modal)
-    )
+    const insideModal = renderedInsideModal(this.props)
     //TODO: hardcoding timezone for now, it should come from calendar later
     const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
     const today = moment()
@@ -180,10 +169,12 @@ class EventDetails extends Component {
 
     let movedToEventDate
     let formattedMovedToDate
+    let relativeMovedToDate
 
     if (status === Statuses.moved && movedToEvent) {
       movedToEventDate = movedToEvent.date
       formattedMovedToDate = formatDate(movedToEventDate, today)
+      relativeMovedToDate = movedToEventDate.fromNow()
     }
 
     const flyerUrl = this.props.event.usacPermit
@@ -271,11 +262,19 @@ class EventDetails extends Component {
                   <br />
                   <span style={{color: Colors.grey600}}>New Date:&nbsp;
                     {formattedMovedToDate
-                      ? <Link onClick={this.onMovedToLinkClick}>{formattedMovedToDate}</Link>
+                      ? (
+                      <span>
+                        {insideModal
+                          ? <Link onClick={this.onMovedToLinkClick}>{formattedMovedToDate}</Link>
+                          : <Link to={`/events/${this.props.movedToEvent.id}`}>{formattedMovedToDate}</Link>
+                        }
+                        &nbsp;({relativeMovedToDate})
+                      </span>
+                      )
                       : (
                       <span>not set yet <br />
                         <small style={{color: Colors.grey500}}>
-                          (know new date? &nbsp;
+                          (know new date? help community! &nbsp;
                           <a href={crteateLetUsKnowLink({
                             subject: `I know "moved to" date for event "${name}"`,
                             body: ` ...is the new date. \n\n event url: ${getAbsoluteEventUrl(id)}`,
@@ -377,10 +376,9 @@ import { connect } from 'react-redux'
 import { getEvent } from 'shared/reducers/reducer.js'
 import { replaceRoutedModal } from 'shared/actions/actions.js'
 
-
 export default connect(
   (state, ownProps) => {
-    //to have "back to calendar" button
+    // to have "back to calendar" button
     // calendar: getCalendar()
 
     const event = getEvent(state, ownProps.params.eventId)
