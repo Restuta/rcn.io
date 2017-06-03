@@ -187,9 +187,9 @@ class EventDetails extends Component {
           {status === Statuses.canceled && (
             <Row className="margin top-3">
               <Col xs={14}>
-                <Alert type="danger" border={false}>Event has been <b>CANCELED</b>
+                <Alert type="danger" flat showIcon={true}>Event has been <b>CANCELED</b>
                   <br />
-                  <span style={{color: Colors.grey500}}>Reason: {cancelationReason || '<not specified>'}</span>
+                  <span>Reason: {cancelationReason || '<not specified>'}</span>
                 </Alert>
               </Col>
             </Row>
@@ -197,9 +197,9 @@ class EventDetails extends Component {
           {status === Statuses.moved && (
             <Row className="margin top-3">
               <Col xs={14}>
-                <Alert type="warning" border={false}>Event has been <b>MOVED</b>
+                <Alert type="warning" flat showIcon={true}>Event has been <b>MOVED</b>
                   <br />
-                  <span style={{color: Colors.grey600}}>New Date:&nbsp;
+                  <span>New date:&nbsp;
                     {formattedMovedToDate
                       ? (
                       <span>
