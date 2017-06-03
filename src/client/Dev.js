@@ -106,6 +106,11 @@ export default class Dev extends Component {
             <Alert type="warning">Warn Alert. Use it sparingly!</Alert>
             <Alert type="success">Success Alert. You did great!</Alert>
             <Alert type="danger">Danger Alert. Careful, make sure you are sure!</Alert>
+            <h4>FLAT ALERTS</h4>
+            <Alert type="info" flat showIcon={false}>Info. No icon and flat alert!</Alert>
+            <Alert type="warning" flat showIcon={false}>Warning! No icon and flat alert!</Alert>
+            <Alert type="success" flat showIcon={false}>Success! No icon and flat alert!</Alert>
+            <Alert type="danger" flat showIcon={false}>Danger! No icon and flat alert!</Alert>
           </Col>
         </Row>
 

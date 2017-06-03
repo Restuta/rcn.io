@@ -11,6 +11,7 @@ export default class Alert extends Component {
       type = 'info',
       style,
       border = true,
+      flat = false,
     } = this.props
 
     const iconMap = {
@@ -22,7 +23,9 @@ export default class Alert extends Component {
     const iconToShow = iconMap[type]
 
     const classNames = classnames(`alert alert-${type} Alert`, {
-      'no-border': !border
+      'no-border': !border,
+      'with-icon': showIcon,
+      'flat': flat
     })
 
     return (
@@ -38,5 +41,6 @@ Alert.propTypes = {
   showIcon: PropTypes.bool,
   type: PropTypes.oneOf(['success', 'info', 'warning', 'danger']),
   style: PropTypes.object,
-  border: PropTypes.bool
+  border: PropTypes.bool,
+  flat: PropTypes.bool,
 }
