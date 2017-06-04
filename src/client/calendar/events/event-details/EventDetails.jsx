@@ -198,7 +198,6 @@ class EventDetails extends Component {
             <Row className="margin top-3">
               <Col xs={14}>
                 <Alert type="warning" flat showIcon={true}>This event has been <b>moved</b>
-                  {/* <br /> */}
                   <span> to a new date&nbsp;
                     {formattedMovedToDate
                       ? (
@@ -216,13 +215,13 @@ class EventDetails extends Component {
                       </span>
                       )
                       : (
-                      <span>not set yet <br />
-                        <small style={{color: Colors.grey500}}>
-                          (know new date? help community! &nbsp;
+                      <span>which is not yet known.<br />
+                        <small>
+                          (know new date? help community, &nbsp;
                           <a href={crteateLetUsKnowLink({
-                            subject: `I know "moved to" date for event "${name}"`,
+                            subject: `I know new date for event "${name}"`,
                             body: ` ...is the new date. \n\n event url: ${getAbsoluteEventUrl(id)}`,
-                          })} onClick={this.onLetUsKnowClick}>let us know</a>)
+                          })} onClick={this.onLetUsKnowClick}>let us know!</a>)
                         </small>
                       </span>)
                     }
