@@ -49,6 +49,8 @@ const formatDate = (date, today) => {
   return formattedDate
 }
 
+const dateIsInFuture = (date, today) => date > today
+
 const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
 
 const renderedInsideModal = props => (
@@ -113,7 +115,9 @@ class EventDetails extends Component {
     if (status === Statuses.moved && movedToEvent) {
       movedToEventDate = movedToEvent.date
       formattedMovedToDate = formatDate(movedToEventDate, today)
-      relativeMovedToDate = movedToEventDate.fromNow()
+      relativeMovedToDate = dateIsInFuture(movedToEventDate, today)
+        ? `(${movedToEventDate.fromNow()})`
+        : ''
     }
 
     const flyerUrl = this.props.event.usacPermit
@@ -205,11 +209,11 @@ class EventDetails extends Component {
                         {insideModal
                           ? (
                           <Link onClick={this.onMovedToLinkClick}>
-                            {formattedMovedToDate}&nbsp;({relativeMovedToDate})</Link>
+                            {formattedMovedToDate}&nbsp;{relativeMovedToDate}</Link>
                           )
                           : (
                           <Link to={`/events/${this.props.movedToEvent.id}`}>
-                            {formattedMovedToDate} &nbsp;({relativeMovedToDate})</Link>
+                            {formattedMovedToDate}&nbsp;{relativeMovedToDate}</Link>
                           )
                         }
                       </span>
