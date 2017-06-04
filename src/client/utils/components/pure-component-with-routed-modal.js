@@ -14,7 +14,7 @@ const pureComponentWithRoutedModal = component => {
       return !shallowEqual(
         this.props,
         nextProps,
-        { exceptProps: ['location', 'params', 'routes'], },
+        { exceptProps: ['location', 'params', 'routes', 'router'], },
         component.displayName
       )
     }
