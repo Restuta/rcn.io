@@ -66,7 +66,7 @@ const initialState = {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
       year: 2016,
-      name: 'NorCal MTB Calendar 2016',
+      name: '2016 NorCal MTB Calendar',
       highlight: {
         word: 'MTB',
         color: Colors.brownMud
@@ -78,7 +78,7 @@ const initialState = {
     ['cal-ncnca-2017-draft']: {
       id: 'cal-ncnca-2017-draft',
       year: 2017,
-      name: 'NCNCA Calendar 2017',
+      name: '2017 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
@@ -93,7 +93,7 @@ const initialState = {
     ['cal-ncnca-2016']: {
       id: 'cal-ncnca-2016',
       year: 2016,
-      name: 'NCNCA Calendar 2016',
+      name: '2016 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
@@ -107,7 +107,7 @@ const initialState = {
     ['cal-ncnca-2017']: {
       id: 'cal-ncnca-2017',
       year: 2017,
-      name: 'NCNCA Calendar 2017',
+      name: '2017 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
@@ -166,7 +166,7 @@ export const app = makeReducer({
     }
 
     // if "going back" we should update modal state, so it's properly closed
-    if (action.payload.action === 'POP') {
+    if (action.payload.action === 'POP' && state.modal.isOpen) {
       return {
         ...state,
         modal: {
