@@ -187,9 +187,9 @@ class EventDetails extends Component {
           {status === Statuses.canceled && (
             <Row className="margin top-3">
               <Col xs={14}>
-                <Alert type="danger" flat showIcon={true}>Event has been <b>CANCELED</b>
+                <Alert type="danger" flat showIcon={true}>Event has been <b>canceled.</b>
                   <br />
-                  <span>Reason: {cancelationReason || '<not specified>'}</span>
+                  <span>reason: {cancelationReason || '<not specified>'}</span>
                 </Alert>
               </Col>
             </Row>
@@ -197,17 +197,22 @@ class EventDetails extends Component {
           {status === Statuses.moved && (
             <Row className="margin top-3">
               <Col xs={14}>
-                <Alert type="warning" flat showIcon={true}>Event has been <b>MOVED</b>
-                  <br />
-                  <span>New date:&nbsp;
+                <Alert type="warning" flat showIcon={true}>This event has been <b>moved</b>
+                  {/* <br /> */}
+                  <span> to a new date&nbsp;
                     {formattedMovedToDate
                       ? (
                       <span>
                         {insideModal
-                          ? <Link onClick={this.onMovedToLinkClick}>{formattedMovedToDate}</Link>
-                          : <Link to={`/events/${this.props.movedToEvent.id}`}>{formattedMovedToDate}</Link>
+                          ? (
+                          <Link onClick={this.onMovedToLinkClick}>
+                            {formattedMovedToDate}&nbsp;({relativeMovedToDate})</Link>
+                          )
+                          : (
+                          <Link to={`/events/${this.props.movedToEvent.id}`}>
+                            {formattedMovedToDate} &nbsp;({relativeMovedToDate})</Link>
+                          )
                         }
-                        &nbsp;({relativeMovedToDate})
                       </span>
                       )
                       : (
