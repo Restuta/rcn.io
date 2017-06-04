@@ -101,10 +101,12 @@ const config = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: [
-      path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
-      path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
-      path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
-      path.join(consts.SRC_DIR, 'client/temp/data/2017-ncnca-events'),
+      // ignore all json files in data folder
+      'client\/temp\/data\/',
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-mtb-manual'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2016-ncnca-events'),
+      // path.join(consts.SRC_DIR, 'client/temp/data/2017-ncnca-events'),
     ],
     loaders: commonConfig.module.loaders
   },
