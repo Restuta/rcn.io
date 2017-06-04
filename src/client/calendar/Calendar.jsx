@@ -294,7 +294,7 @@ export default flow(
     null,
     { pure: true }
   ),
-  withRouter,
-  //should come before "withRouter"
+  //should come after "withRouter" since it needs it's injected routing-related props
   pureComponentWithRoutedModal,
+  withRouter,
 )(Calendar)
