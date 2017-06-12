@@ -2,10 +2,13 @@ import { createTest } from 'tests/test-utils'
 import events from '../2017-ncnca-events'
 import moment from 'moment'
 import { EventTypes, Disciplines } from 'client/calendar/events/types'
+import { keyBy } from 'lodash'
 
 //TODO: make this tests event centric or test-case centric?
 
 const test = createTest('2017 NCNCA Events')
+
+const parseDate = date => moment(date, 'MMMM DD YYYY')
 
 
 const getKeyByValue = (obj, value) => Object.keys(obj).filter(key => obj[key] === value)
@@ -64,7 +67,7 @@ test('Event with USAC permit should start from "2017-"', t => {
   events
     .filter(x => x.usacPermit)
     .forEach((event, i) => {
-      const date = moment(event.date, 'MMMM DD YYYY')
+      const date = parseDate(event.date)
       t.ok(event.usacPermit.startsWith(date.year() + '-'), `${event.name}`)
     })
 
@@ -122,6 +125,29 @@ test('Each Event must have Type and Discipline set to one of the pre-defined one
       'should have type set to one that corresponds to event\'s discipline'
       + `, current one is set to: "${event.type}" which is not part of "${event.discipline}" discipline`)
   })
+
+  t.end()
+})
+
+test('Event that is moved, when have "movedToEventId" should point to existing event', t => {
+  const eventsById = keyBy(events, 'id')
+
+  events
+    .filter(x => !!x.movedToEventId)
+    .forEach((event, i) => {
+      t.comment(`${event.name}`)
+
+      const movedToEvent = eventsById[event.movedToEventId]
+
+      t.ok(movedToEvent, 'moved to event id should point to existing event')
+      t.comment(`Provided evnet id: ${event.movedToEventId}`)
+
+      t.ok(event.movedToEventId !== event.id, 'moved to event id should point to a different event')
+      t.comment(`Provided evnet id: ${event.movedToEventId}`)
+
+      t.ok(parseDate(movedToEvent.date) > parseDate(event.date),
+        'moved to event should be later than the event it is moved from')
+    })
 
   t.end()
 })
