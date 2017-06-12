@@ -34,14 +34,14 @@ const initialState = {
       search: undefined
     },
     containerWidth: undefined,
+    // specifies if last navigation was back from routed modal
+    navigatedBackFromModal: false,
     modal: {
       isOpen: false,
       // indicates that current modal replaces previous modal
       replacesPrevModal: false,
       // most modals need padding, but some don't
       hasPadding: true,
-      // specifies if last navigation was back from routed modal
-      navigatedBackFromModal: false,
       // used for routed modals to replace URL with previous location
       returnLocation: {
         pathname: undefined, // url slug to redirect to when modal is closed
@@ -126,13 +126,16 @@ export const app = makeReducer({
     const locationState = action.payload.state
 
     // splitting on sub-actions
-    if (locationState && locationState.subActionName) {
+    if (locationState
+      && locationState.subActionName
+    ) {
       const subActionName = action.payload.state.subActionName
 
       switch (subActionName) {
-        case 'Modal.OPEN_ROUTED_MODAL':
+        case 'Modal.OPEN_ROUTED_MODAL': {
           return {
             ...state,
+            navigatedBackFromModal: false,
             modal: {
               ...state.modal,
               ...locationState.modalProps,
@@ -140,18 +143,26 @@ export const app = makeReducer({
               isOpen: true,
             }
           }
-        case 'Modal.CLOSE_ROUTED_MODAL':
+        }
+        case 'Modal.CLOSE_ROUTED_MODAL': {
+          // POP action is a result of browser back or appliation reload
+          // this is not same as manual modal close, so in that case we are not navigating
+          // back from modal
+          const navigatedBackFromModal = action.payload.action !== 'POP'
+
           return {
             ...state,
+            navigatedBackFromModal: navigatedBackFromModal,
             modal: {
               ...state.modal,
-              navigatedBackFromModal: true,
               isOpen: false,
             }
           }
-        case 'Modal.REPLACE_ROUTED_MODAL':
+        }
+        case 'Modal.REPLACE_ROUTED_MODAL': {
           return {
             ...state,
+            navigatedBackFromModal: false,
             modal: {
               ...state.modal,
               ...locationState.modalProps,
@@ -160,6 +171,7 @@ export const app = makeReducer({
               replacesPrevModal: locationState.replacesPrevModal,
             }
           }
+        }
         default:
           break
       }
@@ -169,21 +181,24 @@ export const app = makeReducer({
     if (action.payload.action === 'POP' && state.modal.isOpen) {
       return {
         ...state,
+        navigatedBackFromModal: true,
         modal: {
           ...state.modal,
           isOpen: false,
-          navigatedBackFromModal: true,
         }
       }
     }
 
-    return {
-      ...state,
-      lastKnownUrlLocation: {
-        pathname: action.payload.pathname,
-        search: action.payload.search,
+    // if none of the actions above then we just cleaning up since on next location changed
+    // it's no longer "navigated back from modal"
+    if (state.navigatedBackFromModal) {
+      return {
+        ...state,
+        navigatedBackFromModal: false,
       }
     }
+
+    return state
   },
 }, initialState.app)
 
