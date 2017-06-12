@@ -71,6 +71,7 @@ export const openRoutedModal = ({path, hasPadding}) => replace({
 export const closeRoutedModal = (returnLocation) => replace({
   pathname: returnLocation.pathname,
   search: returnLocation.search,
+  query: returnLocation.query,
   state: {
     subActionName: 'Modal.CLOSE_ROUTED_MODAL',
     // this is a required workaround for now, since pure-component-with-routed-modal expects this state
