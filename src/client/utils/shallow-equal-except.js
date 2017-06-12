@@ -42,11 +42,14 @@ const stringify = obj => (typeof obj === 'function')
 
 
 /**
- * This code is almost identical to React's built-in shallow equal function, which performs shallow equality by
- * iterating through keys on an object and returning false when any key has values which are not strictly equal
- * between the arguments, but with support of props to be ignored.
+ * This code is almost identical to React's built-in shallow equal function, which performs
+ * shallow equality by iterating through keys on an object and returning false when any key
+ * has values which are not strictly equal between the arguments, but with support of props
+ * to be ignored.
+ *
  * Returns true when the values of all keys are strictly equal.
- * exceptProps is an object of the form {exceptProps: []} listing names of the props to be ignored
+ * "exceptProps" is an object of the form {exceptProps: []} listing names of the props to
+ * be ignored
  */
 function shallowEqual(objA, objB, except = {exceptProps: []}, compName = '<unknown>') {
   if (is(objA, objB)) {
