@@ -1,9 +1,6 @@
 import shallowEqual from 'client/utils/shallow-equal-except'
 import { get } from 'lodash'
 
-// TODO BC: back / forward in calendar doesn't work after opening few modals
-// because navigated back from modal stays true
-
 // will ignore router-specific props that usually cause unwanted re-render when modal is opened
 // and custom route is used for modal aka "pinterest" or "product hunt" style modals
 const pureComponentWithRoutedModal = component => {

@@ -283,8 +283,7 @@ import pureComponentWithRoutedModal from 'utils/components/pure-component-with-r
 
 export default flow(
   logRenderPerfFor('Calendar'),
-  // TODO bc: fix re-render when "params" props are not equal when opening modal
-  //should come after "withRouter" since it needs it's injected routing-related props
+  // should come after "withRouter" since it needs it's injected routing-related props
   pureComponentWithRoutedModal,
   connect(
     (state, ownProps) => ({

@@ -3,7 +3,6 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-// import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
@@ -105,7 +104,7 @@ class EventDetails extends Component {
       promoterInfo,
     } = this.props.event
 
-    //TODO bc: migrate old events to have flyer section and not just "flyerUrl" property
+    // TODO: migrate old events to have flyer section and not just "flyerUrl" property
     const { movedToEvent } = this.props
 
     let movedToEventDate
