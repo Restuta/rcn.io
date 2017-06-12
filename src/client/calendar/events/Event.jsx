@@ -89,9 +89,9 @@ class Event extends Component {
 
     if (this.props.iframeMode) {
       //top-level window navigation
-      window.top.location.href = `../events/${this.props.id}`
+      window.top.location.href = `../events/${this.props.event.id}`
     } else {
-      this.props.openRoutedModal(`/events/${this.props.id}`)
+      this.props.openRoutedModal(`/events/${this.props.event.id}`)
     }
   }
 
@@ -296,7 +296,7 @@ class Event extends Component {
       : event.type && event.type.toUpperCase()
 
     return (
-      <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
+      <a id={event.id} href={`/events/${this.props.event.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComp}
         <div className="name-container">
@@ -332,8 +332,6 @@ class Event extends Component {
 }
 
 Event.propTypes = {
-  //TODO bc: id, name and discipline are covered under "event type"
-  id: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
   //iframeMode
@@ -358,7 +356,6 @@ Event.propTypes = {
   //if true, shows event type badge inside event card
   showEventTypeBadge: PropTypes.bool,
   // event: PropTypes.instanceOf(EventType),
-  //TODO bc: probably move props to upper level or move event-related props to down level
   event: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

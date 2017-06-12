@@ -70,7 +70,6 @@ const UpcomingEventsForDay = ({today, date, events}) => {
       <div className="events-container">
         {events.map(event => (
           <Event key={event.id} className="upcoming-event"
-            id={event.id}
             autoHeight
             iframeMode
             externallyControlledWidth

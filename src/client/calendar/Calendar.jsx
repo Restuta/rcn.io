@@ -29,7 +29,7 @@ const createEventComponents = (events, draft, daySize, containerWidth) => {
 
   if (events.length > 0) {
     eventComponents = events.map((event, i) =>
-      <Event id={event.id} key={event.id}
+      <Event key={event.id}
         widthColumns={daySize}
         containerWidth={containerWidth}
         event={event}
