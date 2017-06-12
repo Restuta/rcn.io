@@ -15,6 +15,7 @@ class App extends Component {
   }
 
   onModalClose = () =>
+    // using return location from Redux store
     this.props.closeRoutedModal(this.props.modal.returnLocation)
 
   componentWillReceiveProps(nextProps) {
