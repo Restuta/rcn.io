@@ -72,7 +72,6 @@
     "html-webpack-plugin": "^2.22.0",
     "imports-loader": "^0.6.5",
     "json-loader": "^0.5.4",
-    "lodash": "^4.17.4",
     "mime-types": "^2.1.12",
     "morgan": "^1.7.0",
     "ms": "^0.7.1",
@@ -102,6 +101,7 @@
     "why-did-you-update": "0.0.8"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "classnames": "^2.2.5",
     "exenv": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
