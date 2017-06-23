@@ -8,6 +8,8 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: pxToRem(3);
+  @include box-shadow-soft();
+  margin-top: 4rem;
 
   @include phone {
     width: 100%;

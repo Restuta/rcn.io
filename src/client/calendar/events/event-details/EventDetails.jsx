@@ -304,9 +304,10 @@ class EventDetails extends Component {
       insideModal
         ? eventDetailsComponent
         : (
-        <div className='EventDetails-container'>
-          {eventDetailsComponent}
-        </div>
+          // eslint-disable-next-line
+          <div className='EventDetails-container'>
+            {eventDetailsComponent}
+          </div>
         )
     )
   }
