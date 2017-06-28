@@ -5,11 +5,12 @@
 .EventDetails-container {
   position: relative;
   max-width: 90rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: pxToRem(3);
   @include box-shadow-soft();
-  margin-top: 4rem;
+  border-radius: pxToRem(3);
 
   @include phone {
     width: 100%;
