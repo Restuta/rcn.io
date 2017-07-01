@@ -188,7 +188,7 @@ class EventDetails extends Component {
             {raceTypeBadgesComp}
           </div>
           {status === Statuses.canceled && (
-            <Row className="margin top-3">
+            <Row className="margin top-3 bot-1">
               <Col xs={14}>
                 <Alert type="danger" flat showIcon={true}>Event has been <b>canceled.</b>
                   <br />
@@ -198,7 +198,7 @@ class EventDetails extends Component {
             </Row>
           )}
           {status === Statuses.moved && (
-            <Row className="margin top-3">
+            <Row className="margin top-3 bot-1">
               <Col xs={14}>
                 <Alert type="warning" flat showIcon={true}>This event has been <b>moved</b>
                   <span> to a new date&nbsp;
