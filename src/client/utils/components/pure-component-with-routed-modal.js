@@ -9,8 +9,6 @@ const pureComponentWithRoutedModal = component => {
     // if navigated back from modal we should not re-render if only routing-related props changed
     if (get(nextProps, 'location.state.modalProps.isOpen')
       || get(nextProps, 'navigatedBackFromModal')
-      // POP would mean it's browser back, in that case we may want to just do normal shallow compare
-      && get(nextProps, 'location.action') !== 'POP'
     ) {
       // when it's "back from modal" we shoul dignore all the props and should not re-render
       return false

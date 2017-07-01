@@ -8,6 +8,8 @@ import analytics from 'utils/analytics'
 
 const store = configureStore()
 
+const getStore = () => store
+
 const history = syncHistoryWithStore(browserHistory, store)
 history.listen(location => analytics.page())
 
@@ -31,5 +33,6 @@ const getConfiguredWithStoreRouter = containerWidth => {
 
 export {
   getRouter,
-  getConfiguredWithStoreRouter
+  getConfiguredWithStoreRouter,
+  getStore,
 }

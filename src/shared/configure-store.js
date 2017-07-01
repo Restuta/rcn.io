@@ -5,19 +5,15 @@ import rootSaga from 'shared/sagas/root'
 
 import { browserHistory } from 'react-router'
 import { routerMiddleware as createRouterMiddleware } from 'react-router-redux'
-import enhanceRouterMiddleware from 'shared/middlewares/enhance-routing-middleware'
 
-// adds "modalReturnLocation" to routing actions
-const enhancedRouterMiddleware = enhanceRouterMiddleware(
-  createRouterMiddleware(browserHistory)
-)
+const routingMiddlewhare = createRouterMiddleware(browserHistory)
 
 const sagaMiddleware = createSagaMiddleware()
 const middlewares = [
   sagaMiddleware,
   // used to process routing actions like push() and replace() (navigaiton with redux actions)
   // it's not required for routing to work with redux if actions are not used
-  enhancedRouterMiddleware
+  routingMiddlewhare
 ]
 
 // use logging middleware only in dev mode

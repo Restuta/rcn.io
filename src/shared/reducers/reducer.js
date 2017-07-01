@@ -49,6 +49,9 @@ const initialState = {
       }
     }
   },
+  browser: {
+    width: undefined,
+  },
   debug: {
     showBaseline: false,
     show3x3Grid: false,
@@ -126,9 +129,7 @@ export const app = makeReducer({
     const locationState = action.payload.state
 
     // splitting on sub-actions
-    if (locationState
-      && locationState.subActionName
-    ) {
+    if (locationState && locationState.subActionName) {
       const subActionName = action.payload.state.subActionName
 
       switch (subActionName) {
@@ -141,21 +142,6 @@ export const app = makeReducer({
               ...locationState.modalProps,
               returnLocation: locationState.modalReturnLocation,
               isOpen: true,
-            }
-          }
-        }
-        case 'Modal.CLOSE_ROUTED_MODAL': {
-          // POP action is a result of browser back or appliation reload
-          // this is not same as manual modal close, so in that case we are not navigating
-          // back from modal
-          const navigatedBackFromModal = action.payload.action !== 'POP'
-
-          return {
-            ...state,
-            navigatedBackFromModal: navigatedBackFromModal,
-            modal: {
-              ...state.modal,
-              isOpen: false,
             }
           }
         }
@@ -200,7 +186,26 @@ export const app = makeReducer({
 
     return state
   },
+  ['browser/SET_WIDTH']: (state, action) => {
+    console.info('in app reducer')
+    if (state.navigatedBackFromModal) {
+      return {
+        ...state,
+        navigatedBackFromModal: false,
+      }
+    }
+    return state
+  }
 }, initialState.app)
+
+export const browser = makeReducer({
+  ['browser/SET_WIDTH']: (state, action) => {
+    return {
+      ...state,
+      width: action.payload.browserWidth,
+    }
+  }
+}, initialState.browser)
 
 export const calendars = makeReducer({
   ['Cal.TOGGLE_PAST_EVENTS']: (state, action) => {
@@ -260,6 +265,7 @@ export const events = makeReducer({
 
 const rootReducer = combineReducers({
   app,
+  browser,
   debug,
   calendars,
   events,

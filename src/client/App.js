@@ -15,8 +15,7 @@ class App extends Component {
   }
 
   onModalClose = () =>
-    // using return location from Redux store
-    this.props.closeRoutedModal(this.props.modal.returnLocation)
+    this.props.closeRoutedModal()
 
   componentWillReceiveProps(nextProps) {
     // save prev children to render in background when modal is open
@@ -79,7 +78,7 @@ export default flow(
       modal: state.app.modal
     }),
     (dispatch, ownProps) => ({
-      closeRoutedModal: returnLocation => dispatch(closeRoutedModal(returnLocation))
+      closeRoutedModal: () => dispatch(closeRoutedModal())
     })
   ),
 )(App)

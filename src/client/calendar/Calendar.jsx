@@ -1,3 +1,14 @@
+/* TODO bc: BUG
+  open homepage
+  navigate to calendar
+  open event
+  browser back
+  browser forward
+
+  observed result: event opens on top of home page
+  expected result: calendar opens
+*/
+
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import './Calendar.scss'

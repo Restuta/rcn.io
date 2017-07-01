@@ -45,16 +45,14 @@ export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
 export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))
 
+export const setBrowserWidth = makeActionCreator('browser/SET_WIDTH',
+  width => ({browserWidth: width})
+)
 
 // routing related
-import { replace } from 'react-router-redux'
+import { replace, push, goBack } from 'react-router-redux'
 
-const getCurrentLocation = () => ({
-  pathname: window.location.pathname,
-  search: window.location.search,
-})
-
-export const openRoutedModal = ({path, hasPadding}) => replace({
+export const openRoutedModal = ({path, hasPadding}) => push({
   pathname: path,
   state: {
     // since react router would use it's own action it would be easier to just
@@ -64,24 +62,10 @@ export const openRoutedModal = ({path, hasPadding}) => replace({
     // last action is replayed with the entire state, including modal state in this case, all other cases covered with
     // reudux store
     modalProps: { hasPadding: hasPadding, isOpen: true },
-    modalReturnLocation: getCurrentLocation()
   }
 })
 
-export const closeRoutedModal = (returnLocation) => replace({
-  pathname: returnLocation.pathname,
-  search: returnLocation.search,
-  query: returnLocation.query,
-  state: {
-    subActionName: 'Modal.CLOSE_ROUTED_MODAL',
-    // this is a required workaround for now, since pure-component-with-routed-modal expects this state
-    // to be passed as part of location state and it's cumbersome to connect every component to redux
-    // store just to have this prop in props so that helper HOC could work
-    navigatedBackFromModal: true,
-  }
-})
-
-
+export const closeRoutedModal = () => goBack()
 
 export const replaceRoutedModal = ({path, hasPadding}) => replace({
   pathname: path,
@@ -92,5 +76,6 @@ export const replaceRoutedModal = ({path, hasPadding}) => replace({
     // reudux store
     modalProps: { hasPadding: hasPadding, isOpen: true },
     replacesPrevModal: true,
+
   }
 })
