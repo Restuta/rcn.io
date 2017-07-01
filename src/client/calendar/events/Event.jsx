@@ -297,7 +297,7 @@ class Event extends Component {
 
     return (
       <a id={event.id} href={`/events/${this.props.event.id}`} style={style} className={classNames}
-        onClick={this.onEventClick}>
+        onMouseDown={this.onEventClick}>
         {debugComp}
         <div className="name-container">
           {showEventTypeBadge &&
