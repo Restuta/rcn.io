@@ -1,16 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0
-  }
-
-  100% {
-    opacity: 1
-  }
-}
-
 .Modal.backdrop {
   position: fixed;
   display: flex;
@@ -30,8 +20,6 @@
   // overflow-y: auto;
   overflow-y: scroll; /* has to be scroll, not auto for momentum scroll to work on mobile */
   -webkit-overflow-scrolling: touch; /* enables momentum scroll for modal content */
-  animation-name: fadeIn;
-  animation-duration: 0.3s;
   transform: translate3d(0, 0, 0); //kicks in hardware acceleration while scrolling
 }
 
