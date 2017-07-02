@@ -99,7 +99,8 @@
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.13.1",
     "webpack-node-externals": "^1.5.4",
-    "why-did-you-update": "0.0.8"
+    "why-did-you-update": "0.0.8",
+    "bundlesize": "^0.6.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -131,5 +132,11 @@
   "moduleRoots": [
     "src",
     "src/client"
+  ],
+  "bundlesize": [
+    {
+      "path": "./dist/vendor.bundle.js",
+      "threshold": "1500 Kb"
+    }
   ]
 }
