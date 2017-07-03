@@ -14,10 +14,13 @@ const EventCode = ({id, code, eventName, eventId, eventShortId}) => (
     {`{
     "id": "${eventId}",
     "name": "${eventName}",
-    "status": "",
+    "status": "", // Canceled or Moved
+    // "cancelationReason" : "plain text reason given by promoter",
+    // "movedToEventId": "id of event it is moved to or leave empty",
     "type": "",
     "discipline": "",
     "date": "",
+    "usacPermit": "",
     "location": {
       // "name": "",
       "streetAddress": "",
@@ -27,6 +30,7 @@ const EventCode = ({id, code, eventName, eventId, eventShortId}) => (
       // "lat": null,
       // "long": null
     },
+    // "websiteUrl": null,
     // "resultsUrl": null,
     // "promoters": [],
     // "promoterInfo": null,
@@ -36,7 +40,6 @@ const EventCode = ({id, code, eventName, eventId, eventShortId}) => (
     //   "url": "",
     //   "mimeType": "application/pdf"
     // },
-    // "usacPermit": "",
     // "series": [],
     "isDraft" : false,
     "_shortId" : "${eventShortId}"
