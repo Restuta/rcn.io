@@ -33,7 +33,7 @@ class CopyToClipboardButton extends React.Component {
 
   render() {
     const { copied } = this.state
-    const { type = 'button' } = this.props
+    const { type = 'button', whatToCopyText = '' } = this.props
     const buttonType = copied ? 'success' : 'primary'
     const icon = copied ? 'check' : 'assignment_return'
     const transitionStyle = { transition: 'all 0.2s ease'}
@@ -49,8 +49,8 @@ class CopyToClipboardButton extends React.Component {
     }
 
     const childrenComp = copied
-      ? <span style={transitionStyle}>COPIED</span>
-      : <span style={transitionStyle}>COPY</span>
+      ? <span style={transitionStyle}>COPIED {whatToCopyText}</span>
+      : <span style={transitionStyle}>COPY {whatToCopyText}</span>
 
     return (
       type === 'button'
@@ -76,6 +76,8 @@ CopyToClipboardButton.propTypes = {
   // to copy text from
   textElementId: React.PropTypes.string,
   type: React.PropTypes.oneOf(['button', 'link']),
+  // will be applied after "COPY"
+  whatToCopyText: React.PropTypes.string,
 }
 
 
