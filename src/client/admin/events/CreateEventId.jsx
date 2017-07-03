@@ -2,50 +2,16 @@ import React from 'react'
 import Button from 'atoms/Button.jsx'
 import { generatePrettyEventId } from 'shared/events/gen-event-id'
 import CopyToClipboardButton from 'atoms/CopyToClipboardButton.jsx'
+import EventCode from './EventCode.jsx'
+import Grid from 'styles/grid'
+import Col from 'atoms/Col.jsx'
+import Row from 'atoms/Row.jsx'
+import Event from 'calendar/events/Event.jsx'
+import { EventDetails } from 'calendar/events/event-details/EventDetails.jsx'
+import { createEvent } from 'temp/events'
+import createEventCode from './event-template'
 
 const last = arr => arr[arr.length - 1]
-
-const EventCode = ({id, code, eventName, eventId, eventShortId}) => (
-  <pre id={id} style={{
-    boxShadow: '0 5px 31px 0 rgba(0, 0, 0, 0.13)',
-    borderRadius: '0.375rem',
-    padding: '2rem',
-  }}>
-    {`{
-    "id": "${eventId}",
-    "name": "${eventName}",
-    "status": "", // Canceled or Moved
-    // "cancelationReason" : "plain text reason given by promoter",
-    // "movedToEventId": "id of event it is moved to or leave empty",
-    "type": "",
-    "discipline": "",
-    "date": "",
-    "usacPermit": "",
-    "location": {
-      // "name": "",
-      "streetAddress": "",
-      "city": "",
-      "state": "",
-      // "zip": "",
-      // "lat": null,
-      // "long": null
-    },
-    // "websiteUrl": null,
-    // "resultsUrl": null,
-    // "promoters": [],
-    // "promoterInfo": null,
-    // "registrationUrl": "",
-    // "flyer": {
-    //   "name": "",
-    //   "url": "",
-    //   "mimeType": "application/pdf"
-    // },
-    // "series": [],
-    "isDraft" : false,
-    "_shortId" : "${eventShortId}"
-  }, `}
-  </pre>
-)
 
 export default class CreateEventId extends React.Component {
   constructor(props) {
@@ -95,6 +61,15 @@ export default class CreateEventId extends React.Component {
   render() {
     const { year, prefix, name, generatedId } = this.state
     const eventShortId = last(generatedId.split('-'))
+
+    const eventCode = createEventCode({
+      id: generatedId,
+      name,
+      shortId: eventShortId
+    })
+
+    // eslint-disable-next-line no-eval
+    const event = createEvent(eval(`(${eventCode})`))
 
     return (
       <div className="CreateEventId">
@@ -162,11 +137,30 @@ export default class CreateEventId extends React.Component {
             <div style={{marginBottom: '8rem'}}>
               <h3>EVENT JSON</h3>
               <div className="margin bot-2" />
-              <EventCode id="event-code"
-                eventName={name}
-                eventId={generatedId}
-                eventShortId={eventShortId}
-              />
+              <Row>
+                <Col xs={7}>
+                  <EventCode id="event-code"
+                    code={eventCode}
+                  />
+                </Col>
+                <Col xs={7}>
+                  <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <div className="margin rgt-4">
+                      <h4 className="margin top-0">DESKTOP VIEW</h4>
+                      <Event event={event} debug fixedWidth widthColumns={2} baseHeight={6}
+                        containerWidth={Grid.ContainerWidth.XXL}/>
+                    </div>
+                    <div>
+                      <h4 className="margin top-0">IPHONE VIEW</h4>
+                      <Event event={event} debug fixedWidth width={'91px'} widthColumns={4} autoHeight={false}
+                        baseHeight={2} containerWidth={Grid.ContainerWidth.XS}/>
+                    </div>
+                  </div>
+                  <h4>FULL VIEW</h4>
+                  <EventDetails event={event} eventId={event.id}/>
+                </Col>
+              </Row>
+
               <CopyToClipboardButton textElementId="event-code" whatToCopyText="JSON"/>
             </div>
           </div>
