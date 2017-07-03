@@ -8,15 +8,24 @@ import classnames from 'classnames'
 //for accesibility, to hide app from screen readers while modal is open
 ReactModal.getApplicationElement = () => document.getElementById('root')
 
+const documentHasVerticalScrollbar = (window, document) =>
+  window.innerWidth > document.documentElement.clientWidth
+
 export default class Modal extends Component {
   componentWillMount() {
     if (ExecutionEnvironment.canUseDOM) {
+      // this check has to be performed before overflow is set to hidden
+      if (documentHasVerticalScrollbar(window, document)) {
+        document.body.style.marginRight = '15px'
+      }
+
       document.body.style.overflow = 'hidden'
     }
   }
 
   componentWillUnmount() {
     if (ExecutionEnvironment.canUseDOM) {
+      document.body.style.marginRight = ''
       document.body.style.overflow = ''
     }
   }
