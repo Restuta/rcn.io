@@ -3,7 +3,6 @@ node_js:
   - "6.2.1"
 env:
   - CXX=g++-4.8
-  - github_token=18ed9649026661e85c5f7d1a580fdaa35ca63cc7
 before_install:
 script:
   - npm run build
