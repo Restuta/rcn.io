@@ -319,6 +319,8 @@ EventDetails.propTypes = {
   movedToEvent: PropTypes.object,
 }
 
+export { EventDetails }
+
 import { connect } from 'react-redux'
 import { getEvent } from 'shared/reducers/reducer.js'
 import { replaceRoutedModal } from 'shared/actions/actions.js'

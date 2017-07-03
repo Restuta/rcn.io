@@ -70,6 +70,7 @@ const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
 const ncnca2017Events = preProcessEvents(rawNcnca2017Events)
 
 export {
+  createEvent,
   norcalMtb2016Events,
   ncnca2016Events,
   fetchNcncaDraftEvents2017,
