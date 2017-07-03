@@ -96,7 +96,7 @@ test('Event with promoters', t => {
 })
 
 
-test('Each Event must have at least city and state sat in Location', t => {
+test('Each Event must have at least city and state set in Location', t => {
   events.forEach((event, i) => {
     t.comment(`${event.name}`)
     t.ok(event.location, 'has location set')
@@ -133,7 +133,7 @@ test('Event that is moved, when have "movedToEventId" should point to existing e
   const eventsById = keyBy(events, 'id')
 
   events
-    .filter(x => !!x.movedToEventId)
+    .filter(x => x.movedToEventId)
     .forEach((event, i) => {
       t.comment(`${event.name}`)
 
