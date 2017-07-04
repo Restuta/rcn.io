@@ -115,9 +115,17 @@ setInterval(() => {
 const widgetsIndexHtml = path.join(RootDir, '/dist/widgets/index.html')
 const widgetsIndexHtmlContent = fs.readFileSync(widgetsIndexHtml, 'utf8')
 
-app.get('/widgets/*', function(req, res, next) {
+app.get('/widgets*', function(req, res, next) {
   res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
   res.send(widgetsIndexHtmlContent)
+})
+
+const adminIndexHtml = path.join(RootDir, '/dist/admin/index.html')
+const adminIndexHtmlContent = fs.readFileSync(adminIndexHtml, 'utf8')
+
+app.get('/admin*', function(req, res, next) {
+  res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
+  res.send(adminIndexHtmlContent)
 })
 
 const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)

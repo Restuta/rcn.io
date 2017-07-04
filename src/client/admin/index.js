@@ -1,36 +1,44 @@
-import React from 'react'
-import Component from 'react-pure-render/component'
-import { Link } from 'react-router'
-import Colors from 'styles/colors'
+import 'styles/bootstrap.scss'
+import 'app.scss'
 
-export default class AdminIndex extends Component {
-  render() {
+//to use generators
+import 'regenerator-runtime/runtime'
+// import 'core-js/library/es6/promise' //required for IE11
+import 'isomorphic-fetch' //required for IE11 and Safary
 
-    const listStyle = {
-      color: Colors.deepPurple200,
-    }
+import 'utils/polyfills'
+import { render } from 'react-dom'
+import Grid from 'client/styles/grid.js'
+import { getConfiguredWithStoreRouter } from './get-router.js'
 
-    const inactiveStyle = {
-      color: Colors.deepPurple300,
-    }
 
-    const activeStyle = {
-      color: Colors.deepPurple600,
-      fontWeight: '700',
-    }
+let prevContainerWidth
 
-    return (
-      <div className="AdminIndex">
-        <h1>Admin Tools</h1>
-        <ul className="text-3" style={listStyle}>
-          <li><Link activeStyle={activeStyle} style={inactiveStyle} to={'/admin/events/create-id'}>Create Event Id</Link></li>
-          <li><Link activeStyle={activeStyle} style={inactiveStyle} to={'/admin/events/upload-flyer'}>Upload Flyer</Link></li>
-        </ul>
-        <hr/>
-        {this.props.children || 'select one of the above'}
-      </div>
-    )
+let renderApp = function() {
+  const browserWidth = window.document.body.offsetWidth
+  const containerWidth = Grid.getFluidContainerWidth(browserWidth)
+
+  if (containerWidth === prevContainerWidth) {
+    return
   }
+
+  prevContainerWidth = containerWidth
+
+  render(getConfiguredWithStoreRouter(containerWidth), document.getElementById('root'))
 }
 
-AdminIndex.propTypes = {}
+window.addEventListener('resize', renderApp)
+
+//first time render
+renderApp()
+
+// sending redux acdtion when browser size changes
+import { setBrowserWidth } from 'shared/actions/actions'
+import { getStore } from './get-router.js'
+import { debounce } from 'lodash'
+
+const store = getStore()
+
+window.addEventListener('resize', debounce(() => store.dispatch(
+  setBrowserWidth(window.document.body.offsetWidth)
+), 200))

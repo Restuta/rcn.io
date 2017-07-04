@@ -43,12 +43,16 @@ app.get(/\.dll\.js$/, (req, res) => {
 })
 
 //serving different index.html for widgets
-app.get('/widgets/*', function(req, res, next) {
+app.get('/widgets*', function(req, res, next) {
   const filename = path.join(compiler.outputPath, '/widgets/index.html')
   serveHtmlFromFileSystem(compiler, filename, res, next)
 })
 
-
+//serving different index.html for widgets
+app.get('/admin*', function(req, res, next) {
+  const filename = path.join(compiler.outputPath, '/admin/index.html')
+  serveHtmlFromFileSystem(compiler, filename, res, next)
+})
 
 app.get('*', function(req, res, next) {
   //this reads index.html from webpacks file system which is "in-memory" in case of dev server

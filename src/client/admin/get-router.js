@@ -8,9 +8,9 @@ import analytics from 'utils/analytics'
 
 import { createHistory } from 'history'
 
-//set's /widgets as a history root so routes can be defined acoordingly
+//set's /admin as a history root so routes can be defined acoordingly
 const browserHistory = useRouterHistory(createHistory)({
-  basename: '/widgets'
+  basename: '/admin'
 })
 
 const store = configureStore()
@@ -22,6 +22,7 @@ history.listen(location => analytics.page())
 //provide containerWidth to inner-clojure
 const buildCreateElement = containerW =>
   (Component, props) => <Component {...props} containerWidth={containerW}/>
+
 
 const getRouter = containerWidth => {
   return <Router history={history} routes={routes} createElement={buildCreateElement(containerWidth)} />
