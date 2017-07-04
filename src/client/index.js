@@ -23,7 +23,7 @@ import 'public/img/safari-pinned-tab.svg'
 import 'utils/polyfills'
 import { render } from 'react-dom'
 import Grid from 'client/styles/grid.js'
-import { getConfiguredWithStoreRouter } from 'client/get-router.js'
+import { getConfiguredWithStoreRouter } from './get-router.js'
 
 let prevContainerWidth
 
@@ -42,10 +42,13 @@ let renderApp = function() {
 
 window.addEventListener('resize', renderApp)
 
+//first time render
+renderApp()
+
 
 // sending redux acdtion when browser size changes
 import { setBrowserWidth } from 'shared/actions/actions'
-import { getStore } from 'client/get-router.js'
+import { getStore } from './get-router.js'
 import { debounce } from 'lodash'
 
 const store = getStore()
@@ -53,6 +56,3 @@ const store = getStore()
 window.addEventListener('resize', debounce(() => store.dispatch(
   setBrowserWidth(window.document.body.offsetWidth)
 ), 200))
-
-//first time render
-renderApp()

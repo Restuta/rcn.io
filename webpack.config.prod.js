@@ -37,6 +37,9 @@ const config = {
     widgets: [
       path.join(consts.SRC_DIR, 'client/widgets/index.js')
     ],
+    admin: [
+      path.join(consts.SRC_DIR, 'client/admin/index.js')
+    ],
     vendor: commonConfig.entry.vendor.concat([
       path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
     ]),
@@ -112,7 +115,7 @@ const config = {
       },
       minify: htmlWebpackMinifyConfig,
     }),
-    //separate html file for widgets
+    // separate html file for widgets
     new HtmlWebpackPlugin({
       filename: 'widgets/index.html',
       chunks: ['vendor', 'widgets'],
@@ -123,6 +126,22 @@ const config = {
       hash: false,
       env: {
         Widget: true,
+        Prod: true,
+        Dev: false
+      },
+      minify: htmlWebpackMinifyConfig,
+    }),
+    // separate html file for admin
+    new HtmlWebpackPlugin({
+      filename: 'admin/index.html',
+      chunks: ['vendor', 'admin'],
+      chunksSortMode: 'dependency',
+      title: 'rcn/admin',
+      template: path.resolve(consts.SRC_DIR, 'client/admin/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Admin: true,
         Prod: true,
         Dev: false
       },

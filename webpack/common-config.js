@@ -27,13 +27,15 @@ const getConfig = (env) => {
     'isomorphic-fetch': nodeModules('whatwg-fetch/fetch.js'),
   }
 
-  //reading from package.json
-  const vendorDependencyNames = Object.keys(pkg.dependencies)
+  // reading from package.json
+  // NOTE: that it should only contains main app (main entry chunk "app") vendor deps, all other deps
+  // should go to "devDependencies" and get automatically split between entry chunks
+  const allVendorDeps = Object.keys(pkg.dependencies)
     //excluding regenerator-runtime since it results in error "regeneratorRuntime is not defined" in runtime
     //and manually specifying correct path
     .filter(x => x !== 'regenerator-runtime')
     .concat(['regenerator-runtime/runtime'])
-  const otherVendorDeps = _.difference(vendorDependencyNames, Object.keys(preBuiltVendorDeps))
+  const nonPreBuiltVendorDeps = _.difference(allVendorDeps, Object.keys(preBuiltVendorDeps))
 
   const toArray = (obj) => {
     return Object.keys(obj).map(key => obj[key])
@@ -138,7 +140,7 @@ const getConfig = (env) => {
 
   return {
     entry: {
-      vendor: Object.keys(preBuiltVendorDeps).concat(otherVendorDeps)
+      vendor: Object.keys(preBuiltVendorDeps).concat(nonPreBuiltVendorDeps)
     },
     resolve: {
       alias: buildResolveAliases(preBuiltVendorDeps)

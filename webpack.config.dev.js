@@ -26,6 +26,10 @@ const config = {
     widgets: [
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       path.join(consts.SRC_DIR, 'client/widgets/index.js')
+    ],
+    admin: [
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
+      path.join(consts.SRC_DIR, 'client/admin/index.js')
     ]
   },
   output: {
@@ -84,6 +88,22 @@ const config = {
       hash: false,
       env: {
         Widget: true,
+        Prod: false,
+        Dev: true
+      }
+    }),
+    //separate html file for admin
+    new HtmlWebpackPlugin({
+      filename: 'admin/index.html',
+      chunks: ['common', 'admin'],
+      chunksSortMode: 'dependency',
+      title: 'rcn/admin',
+      template: path.resolve(consts.SRC_DIR, 'client/admin/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Widget: false,
+        Admin: true,
         Prod: false,
         Dev: true
       }

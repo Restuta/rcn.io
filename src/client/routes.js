@@ -7,9 +7,6 @@ import MtbCalendar from 'calendar/MtbCalendar'
 import NcncaCalendar from 'calendar/NcncaCalendar'
 import NcncaDraftCalendar from 'calendar/NcncaDraftCalendar'
 import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
-import AdminIndex from 'admin/index'
-import CreateEventId from 'admin/events/CreateEventId.jsx'
-import UploadFlyer from 'admin/events/UploadFlyer.jsx'
 
 const routes  = (
   <Route path="/" component={App}>
@@ -20,12 +17,6 @@ const routes  = (
     <Route path="/calendars/:calendarId" component={NcncaCalendar} />
     <Route path="/events/:eventId" component={EventDetails}/>
     <Redirect from="/mtb" to="/calendars/norcal-mtb" />
-
-    <Route path="admin" component={AdminIndex}>
-      <Route path="events/create-id" component={CreateEventId} />
-      <Route path="events/upload-flyer" component={UploadFlyer} />
-    </Route>
-
     <Route path="*" component={Home}/>
   </Route>
 )

@@ -31,14 +31,14 @@ class App extends Component {
   }
 
   render() {
-    const { location, modal } = this.props
+    const { location, modal, useStaticLinks } = this.props
     let shouldRenderInModal = modal.isOpen
 
     const appLevelClasses = classnames('App',
       (this.props.debug.showContainerEdges && 'debug-container')
     )
 
-    //adding props to children, passing browser-calculated container size to be exact */
+    // adding props to children, passing browser-calculated container size to be exact */
     this.children = React.cloneElement(this.props.children, {containerWidth: this.props.containerWidth})
 
     return (
@@ -46,7 +46,7 @@ class App extends Component {
         {__ENV.Dev
           && <DebugGrid containerWidth={this.props.containerWidth}/>}
 
-        <TopNavbar location={location}/>
+        <TopNavbar useStaticLinks={useStaticLinks} location={location}/>
 
         {shouldRenderInModal && (
           <Modal onClose={this.onModalClose} hasPadding={modal.hasPadding}>
