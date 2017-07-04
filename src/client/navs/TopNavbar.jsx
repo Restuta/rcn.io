@@ -2,12 +2,27 @@ import React, {PropTypes} from 'react'
 import Component from 'react-pure-render/component'
 import classnames from 'classnames'
 import './TopNavbar.scss'
-import {IndexLink, Link} from 'react-router'
+import { IndexLink, Link as ReactdRouterLink } from 'react-router'
 import Logo from './Logo.jsx'
 import HeadwayChangelog from './HeadwayChangelog.jsx'
 
+const StaticLink = ({to, children, className}) => (
+  <a href={to} className={className}>{children}</a>
+)
+
+const getLinkComponent = useStaticLinks => (
+  useStaticLinks
+    ? StaticLink
+    : ReactdRouterLink
+)
+
 export default class TopNavbar extends Component {
   render() {
+
+    const { useStaticLinks = false } = this.props
+
+    const Link = getLinkComponent(useStaticLinks)
+
     const classNames = classnames('TopNavbar', 'navbar bg-faded') //'navbar-fixed-top'
     return (
       <nav className={classNames}>
@@ -47,7 +62,10 @@ export default class TopNavbar extends Component {
 }
 
 TopNavbar.propTypes = {
-  //it may not be directly used but is required so pureRenderMixing re-renders component when
-  //location changes (passed from react-router)
-  location: PropTypes.object.isRequired
+  // it may not be directly used but is required so pureRenderMixing re-renders component when
+  // location changes (passed from react-router)
+  location: PropTypes.object.isRequired,
+  // turns links into static onese and not routed via react-router
+  // this is helpful when we use "sub-apps" that use their own react router like /admin
+  useStaticLinks: PropTypes.bool,
 }
