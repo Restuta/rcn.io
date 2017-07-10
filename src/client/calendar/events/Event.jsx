@@ -15,6 +15,7 @@ import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
 import { Statuses } from 'client/calendar/events/types.js'
 import analytics from 'utils/analytics'
+import { get } from 'lodash'
 
 /* event card adaptive behaviour:
    >= 300 fit two
@@ -257,7 +258,8 @@ class Event extends Component {
     if ((numSize[cardSize] > numSize[Size.S]) && !event.isDraft) {
       locationComp = <Location location={event.location} size={cardSize} />
     } else if ((numSize[cardSize] > numSize[Size.S]) && event.isDraft) {
-      const promoter = event.promoters[0].name
+      // getting first promoter name, our strongest assumption for draft calendar
+      const promoter = get(event, 'promoters.0.name')
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
           {promoter}
