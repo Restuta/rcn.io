@@ -131,6 +131,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Spotify.my](http://spotify.me/) modern (as of 2017 and beautiful design)
 * [Punkave, nice, clean design](https://punkave.com/)
 * [Beautiful website] (https://www.strv.com/)
 * [Animations, Card Desgin] (https://dribbble.com/joaopaulots)
