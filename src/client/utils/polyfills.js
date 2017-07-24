@@ -3,12 +3,12 @@ import { isObject, isArray } from 'lodash'
 
 // monkey patching console.info() in dev mode to have distinct color
 if (process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line
   console.info = function(msg) {
-    // eslint-disable-next-line
     if (isObject(msg) || isArray(msg)) {
+      // eslint-disable-next-line
       return console.log(msg)
     } else {
+      // eslint-disable-next-line
       return console.log('%c' + msg, 'color: #c594c5')
     }
   }

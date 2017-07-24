@@ -14,7 +14,7 @@ import 'codemirror/mode/javascript/javascript'
 import { first } from 'lodash'
 // import Alert from 'atoms/Alert.jsx'
 import EventPreview from './EventPreview.jsx'
-import EventCode from './EventCode.jsx'
+// import EventCode from './EventCode.jsx'
 
 /* TODO BC:
   - rename component
