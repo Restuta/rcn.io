@@ -701,7 +701,6 @@ export default [
     "flyer": {
       "url": "https://www.usacycling.org/events/getflyer.php?permit=2017-439",
       "mimeType": "application/pdf"
-
     },
     "registrationUrl": "https://www.bikereg.com/cantua-creek-road-race",
     "websiteUrl": "http://www.velopromo.com/",
