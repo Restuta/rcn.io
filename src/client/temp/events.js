@@ -42,6 +42,7 @@ const createEvent = rawEvent => {
     usacPermit: rawEvent.usacPermit || undefined,
     //TODO: add location name
     location: rawEvent.location || {},
+    resultsUrl: rawEvent.resultsUrl || undefined,
     flyerUrl: preProcessUrl(rawEvent.flyerUrl),
     flyer: rawEvent.flyer,
     status: rawEvent.status || undefined, //getting rid of empty strings

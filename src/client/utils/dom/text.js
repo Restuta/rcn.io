@@ -16,26 +16,30 @@ function selectTextSegment({elementId, start, end}) {
   element.focus()
 }
 
-function selectAllText({elementId, start, end}) {
-  const textField = document.getElementById(elementId)
-
+function selectAllTextInElement({element, start, end}) {
   if (document.body.createTextRange) {
     let range = document.body.createTextRange()
-    range.moveToElementText(textField)
+    range.moveToElementText(element)
     range.moveStart('character', start)
     range.moveEnd('character', end)
     range.select()
   } else if (window.getSelection) {
     let selection = window.getSelection()
     let range  = document.createRange()
-    range.selectNodeContents(textField)
+    range.selectNodeContents(element)
     selection.removeAllRanges()
     selection.addRange(range)
   }
 }
 
+function selectAllText({elementId, start, end}) {
+  const element = document.getElementById(elementId)
+  return selectAllTextInElement({element, start, end})
+}
+
 
 export {
   selectTextSegment,
-  selectAllText
+  selectAllText,
+  selectAllTextInElement
 }
