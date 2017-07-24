@@ -220,7 +220,7 @@ class EventDetails extends Component {
                       : (
                       <span>which is not yet known.<br />
                         <small><i>
-                          (know new date? help community, &nbsp;
+                          (know the new date?&nbsp;
                           <a href={crteateLetUsKnowLink({
                             subject: `I know new date for event "${name}"`,
                             body: ` ...is the new date. \n\n event url: ${getAbsoluteEventUrl(id)}`,

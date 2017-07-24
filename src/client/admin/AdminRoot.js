@@ -15,7 +15,11 @@ class Admin extends Component {
 
     return (
       // <App {...this.props} useStaticLinks>
-      <div className="AdminRoot">
+      <div className="AdminRoot" style={{
+        width: '80vw',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      }}>
         <h1>
           <Link activeStyle={activeStyle} to={"/"}>Admin Tools</Link>
         </h1>
@@ -40,7 +44,7 @@ class Admin extends Component {
 }
 
 export default (props) => (
-  <App {...props} useStaticLinks>
+  <App {...props} useStaticLinks fluidContainer>
     {/* pass all routing props down, treating it like routed component */}
     <Admin {...props}/>
   </App>
