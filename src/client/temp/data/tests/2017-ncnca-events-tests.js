@@ -10,12 +10,10 @@ const test = createTest('2017 NCNCA Events')
 
 const parseDate = date => moment(date, 'MMMM DD YYYY')
 
-
 const getKeyByValue = (obj, value) => Object.keys(obj).filter(key => obj[key] === value)
 const getFirstKeyByValue = (obj, value) => getKeyByValue(obj, value)[0]
 
 const getObjectValues = obj => Object.keys(obj).map(x => obj[x])
-
 
 test('Event must have short id as part of long id and separately as "_shortId" property', t => {
   events.forEach((event, i) => {
