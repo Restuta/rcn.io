@@ -5,7 +5,11 @@ const consts = require('./constants')
 const pkg = require(path.resolve(process.cwd(), 'package.json'))
 const _ = require('lodash')
 
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
+// const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
+// React DOM 16
+const pathToReactDOM = (env) => env === 'dev'
+  ? nodeModules('react-dom/cjs/react-dom.development.min.js')
+  : nodeModules('react-dom/cjs/react-dom.production.min.js')
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js')
 
@@ -15,8 +19,12 @@ const getConfig = (env) => {
   // that are pre-compiled, this allows to configure webpack to skip parsing of them
   // and we can use them for prod build instead of minifying libs ourself we would use pre-combiled ones
   const preBuiltVendorDeps = {
-    'react': nodeModules('react/dist/react.min.js'),
-    'react-dom': pathToReactDOM,
+    // 'react': nodeModules('react/dist/react.min.js'),
+    // react 16
+    'react': env === 'dev'
+      ? nodeModules('react/cjs/react.development.min.js')
+      : nodeModules('react/cjs/react.production.min.js'),
+    'react-dom': pathToReactDOM(env),
     'react-router': pathToReactRouter,
     'react-router-redux': nodeModules('react-router-redux/dist/ReactRouterRedux.min.js'),
     'redux': nodeModules('redux/dist/redux.min.js'),
@@ -59,7 +67,7 @@ const getConfig = (env) => {
 
     if (env === 'prod') {
       loaders = loaders.concat([{
-        test: pathToReactDOM,
+        test: pathToReactDOM(env),
         loader: 'imports'
       }, {
         test: pathToReactRouter,
