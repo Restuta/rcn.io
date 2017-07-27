@@ -121,7 +121,7 @@
     "prop-types": "^15.5.10",
     "react": "next",
     "react-dom": "next",
-    "react-modal2": "^3.0.2",
+    "react-modal2": "^4.0.0",
     "react-pure-render": "^1.0.1",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.0",

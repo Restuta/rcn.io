@@ -3703,9 +3703,9 @@ react-dropzone@^3.9.1:
     attr-accept "^1.0.3"
     prop-types "^15.5.7"
 
-react-modal2@^3.0.2:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-modal2/-/react-modal2-3.1.0.tgz#a1535529db2f168338a31725154ab5966e39e9ae"
+react-modal2@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-modal2/-/react-modal2-4.0.0.tgz#5ad3c6e5005cda643028a3ae8d957f468bec47f9"
   dependencies:
     a11y-focus-scope "^1.1.0"
     a11y-focus-store "^1.0.0"
