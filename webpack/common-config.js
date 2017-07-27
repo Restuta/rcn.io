@@ -7,9 +7,13 @@ const _ = require('lodash')
 
 // const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
 // React DOM 16
-const pathToReactDOM = (env) => env === 'dev'
-  ? nodeModules('react-dom/cjs/react-dom.development.min.js')
-  : nodeModules('react-dom/cjs/react-dom.production.min.js')
+const pathToReactDOM = (env) => {
+  return ({
+    'dev': nodeModules('react-dom/umd/react-dom.development.js'),
+    'prod': nodeModules('react-dom/umd/react-dom.production.min.js'),
+    'server:prod': nodeModules('react-dom/umd/react-dom.server.production.min.js')
+  })[env]
+}
 const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
 const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js')
 
@@ -21,9 +25,9 @@ const getConfig = (env) => {
   const preBuiltVendorDeps = {
     // 'react': nodeModules('react/dist/react.min.js'),
     // react 16
-    'react': env === 'dev'
-      ? nodeModules('react/cjs/react.development.min.js')
-      : nodeModules('react/cjs/react.production.min.js'),
+    'react': env === 'prod' || env === 'server:prod'
+      ? nodeModules('react/umd/react.production.min.js')
+      : nodeModules('react/umd/react.development.js'),
     'react-dom': pathToReactDOM(env),
     'react-router': pathToReactRouter,
     'react-router-redux': nodeModules('react-router-redux/dist/ReactRouterRedux.min.js'),
@@ -65,7 +69,7 @@ const getConfig = (env) => {
   const getLoaders = (env) => {
     let loaders = []
 
-    if (env === 'prod') {
+    if (env === 'prod' || env === 'server:prod') {
       loaders = loaders.concat([{
         test: pathToReactDOM(env),
         loader: 'imports'

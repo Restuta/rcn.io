@@ -7,7 +7,7 @@ const consts = require('./webpack/constants')
 const nodeExternals = require('webpack-node-externals')
 
 const getConfig = require('./webpack/common-config').getConfig
-const commonConfig = getConfig('prod')
+const commonConfig = getConfig('server:prod')
 
 module.exports = {
   devtool: 'source-map',
