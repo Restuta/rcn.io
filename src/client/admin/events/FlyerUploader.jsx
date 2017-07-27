@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import DropzoneS3Uploader from 'restuta-react-dropzone-s3-uploader'
 import Colors from 'styles/colors'
 import Icon from 'atoms/Icon.jsx'

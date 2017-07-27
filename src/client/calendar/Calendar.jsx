@@ -9,7 +9,8 @@
   expected result: calendar opens
 */
 
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Component from 'react-pure-render/component'
 import './Calendar.scss'
 import Day from './Day.jsx'
@@ -283,7 +284,7 @@ Calendar.propTypes = {
     color: PropTypes.string.isRequired,
   }),
   description: PropTypes.string,
-  weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
+  weekdaysSizes: PropTypes.arrayOf(PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.shape({
     map: PropTypes.object.isRequired,

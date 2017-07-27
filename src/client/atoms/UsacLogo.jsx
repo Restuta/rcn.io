@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Component from 'react-pure-render/component'
 import './UsacLogo.scss'
 import classnames from 'classnames'
