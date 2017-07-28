@@ -3,7 +3,6 @@ import ncnca2017Events from '../2016-ncnca-events'
 import schema from './event-schema'
 import Joi from 'joi'
 import util from 'util'
-import chalk from 'chalk'
 const inspect = msg => util.inspect(msg, { depth: 4, colors: true })
 // eslint-disable-next-line no-console
 const debug = msg => console.log(inspect(msg))
