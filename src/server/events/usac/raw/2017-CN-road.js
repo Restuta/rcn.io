@@ -1,5 +1,5 @@
 /*eslint-disable */
-export default [
+module.exports =  [
   {
     "permit": "2017-137",
     "name": "Data Driven Athlete Napa Valley Camp",
@@ -32,14 +32,14 @@ export default [
   },
   {
     "permit": "2017-211",
-    "name": "Cal Aggie Criterium ",
+    "name": "Cal Aggie Criterium",
     "dates": [
       "2017-01-28T08:00:00.000Z"
     ],
     "location": {
       "cityState": "Sacramento , CA",
       "detailed": [
-        "E Park Road ",
+        "E Park Road",
         "Sacramento , CA"
       ],
       "googleMapsUrl": "http://maps.google.com/maps/place/E+Park+Road++Sacramento+,+CA+95819,+USA"
@@ -121,7 +121,7 @@ export default [
     "location": {
       "cityState": "Madera , CA",
       "detailed": [
-        "36133 Road 603 ",
+        "36133 Road 603",
         "Madera , CA"
       ],
       "googleMapsUrl": "http://maps.google.com/maps/place/36133+Road+603++Madera+,+CA+93638,+USA"
@@ -309,7 +309,7 @@ export default [
   },
   {
     "permit": "2017-593",
-    "name": " Bariani Road Race",
+    "name": "Bariani Road Race",
     "dates": [
       "2017-03-12T08:00:00.000Z"
     ],
@@ -338,7 +338,7 @@ export default [
   },
   {
     "permit": "2017-690",
-    "name": "Cal Cycling Road Weekend ",
+    "name": "Cal Cycling Road Weekend",
     "dates": [
       "2017-03-18T07:00:00.000Z",
       "2017-03-19T07:00:00.000Z"
@@ -506,7 +506,7 @@ export default [
   },
   {
     "permit": "2017-825",
-    "name": "UC Davis Collegiate Cycling Race Weekend ",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
     "dates": [
       "2017-04-01T07:00:00.000Z",
       "2017-04-02T07:00:00.000Z"
@@ -762,7 +762,7 @@ export default [
       "cityState": "Rancho Cordova, CA",
       "detailed": [
         "11000 Cobblerock Drive",
-        " Rancho Cordova, CA"
+        "Rancho Cordova, CA"
       ],
       "googleMapsUrl": "http://maps.google.com/maps/place/11000+Cobblerock+Drive++Rancho+Cordova,+CA+95670,+USA"
     },
@@ -922,7 +922,7 @@ export default [
   },
   {
     "permit": "2017-1142",
-    "name": "Memorial Day Classic Stage Race/Omnium inc the Legendary Mt Hamilton ",
+    "name": "Memorial Day Classic Stage Race/Omnium inc the Legendary Mt Hamilton",
     "dates": [
       "2017-05-27T07:00:00.000Z",
       "2017-05-29T07:00:00.000Z"
@@ -966,7 +966,7 @@ export default [
     },
     "promoter": {
       "club": "Alto Velo Racing Club",
-      "raceDirector": "Mark  Howard ",
+      "raceDirector": "Mark  Howard",
       "url": "http://usacycling.org/clubs/index.php?club=3178"
     },
     "eventWebSite": "http://www.altovelo.org/pescadero",
@@ -1193,7 +1193,7 @@ export default [
       "url": "http://usacycling.org/clubs/index.php?club=11905"
     },
     "eventWebSite": "http://www.auburndowntowncrit.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1222,7 +1222,7 @@ export default [
       "url": "http://usacycling.org/clubs/index.php?club=327"
     },
     "eventWebSite": "http://www.burlingamecriterium.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1233,7 +1233,7 @@ export default [
   },
   {
     "permit": "2017-1919",
-    "name": " Lodoga Road Race (Formerly Leesville)",
+    "name": "Lodoga Road Race (Formerly Leesville)",
     "dates": [
       "2017-07-02T07:00:00.000Z"
     ],
@@ -1306,7 +1306,7 @@ export default [
       "url": "http://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - E",
     "year": 2017,
     "state": "CN",
@@ -1335,7 +1335,7 @@ export default [
       "url": "http://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - E",
     "year": 2017,
     "state": "CN",
@@ -1652,7 +1652,7 @@ export default [
   },
   {
     "permit": "2017-2280",
-    "name": "RED KITE CHAMPIONSHIP WEEKEND-2017 RED KITE AND NCNCA MASTERS/JUNIORS ",
+    "name": "RED KITE CHAMPIONSHIP WEEKEND-2017 RED KITE AND NCNCA MASTERS/JUNIORS",
     "dates": [
       "2017-09-02T07:00:00.000Z",
       "2017-09-03T07:00:00.000Z"
@@ -1689,7 +1689,7 @@ export default [
     "location": {
       "cityState": "San Francisco, CA",
       "detailed": [
-        "Levi Strauss Plaza 1155 Battery St  ",
+        "Levi Strauss Plaza 1155 Battery St",
         "San Francisco, CA"
       ],
       "googleMapsUrl": "http://maps.google.com/maps/place/Levi+Strauss+Plaza+1155+Battery+St+++San+Francisco,+CA+94111,+USA"
@@ -1702,6 +1702,34 @@ export default [
     "eventWebSite": "http://www.velopromo.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
+    "year": 2017,
+    "state": "CN",
+    "discipline": "Road",
+    "usacEventType": "Results & Ranking",
+    "competitive": "competitive",
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=60&"
+  },
+  {
+    "permit": "2017-2461",
+    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
+    "dates": [
+      "2017-09-09T07:00:00.000Z"
+    ],
+    "location": {
+      "cityState": "Jackson, CA",
+      "detailed": [
+        "175 Main Street",
+        "Jackson, CA"
+      ],
+      "googleMapsUrl": "http://maps.google.com/maps/place/175+Main+Street+Jackson,+CA+95642,+USA"
+    },
+    "promoter": {
+      "club": "Red Kite Racing",
+      "raceDirector": "Steve Rosefield",
+      "url": "http://usacycling.org/clubs/index.php?club=12690"
+    },
+    "status": "Permit in Process",
+    "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
     "discipline": "Road",
@@ -1777,7 +1805,7 @@ export default [
     "location": {
       "cityState": "San Jose, CA",
       "detailed": [
-        "995 Hellyer Ave. ",
+        "995 Hellyer Ave.",
         "San Jose, CA"
       ],
       "googleMapsUrl": "http://maps.google.com/maps/place/995+Hellyer+Ave.++San+Jose,+CA+95111,+USA"
@@ -1948,7 +1976,7 @@ export default [
   },
   {
     "permit": "2017-825",
-    "name": "UC Davis Collegiate Cycling Race Weekend ",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
     "dates": [
       "2017-04-01T07:00:00.000Z",
       "2017-04-02T07:00:00.000Z"

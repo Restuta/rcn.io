@@ -6,4 +6,4 @@ const slugify = (str, maxLen) => (
     .replace(/^-+|-+$/g, '') // remove leading, trailing -
 )
 
-export default slugify
+module.exports = slugify
