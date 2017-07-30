@@ -29,6 +29,15 @@ const schema = Joi.object().keys({
     lat: Joi.number().allow(''),
     'long': Joi.number().allow(''),
   }),
+  usac: Joi.object().keys({
+    status: Joi.string().required(),
+    category: Joi.string().required(),
+    type: Joi.any().valid([
+      'Results & Ranking',
+      'Fun',
+      'State/Regional Championships'
+    ]),
+  }),
   resultsUrl: Joi.string().uri().allow(''),
   websiteUrl: Joi.string().uri().allow(''),
   registrationUrl: Joi.string().uri().allow(''),
@@ -45,6 +54,7 @@ const schema = Joi.object().keys({
   cancelationReason: Joi.string().min(5).allow(''),
   // if event status is "Moved" containes event id of the event to which original event is moved to
   movedToEventId: Joi.string().min(5),
+  // represents NCNCA event group that is used for planning
   group: Joi.any().valid(['1', '2', '3', '4', '5', '']),
   draftNotes: Joi.string().min(5),
   isDraft: Joi.boolean(),
