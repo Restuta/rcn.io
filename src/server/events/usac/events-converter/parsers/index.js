@@ -1,4 +1,5 @@
 module.exports = {
   parseDate: require('./date'),
-  parseLocation: require('./location')
+  parseLocation: require('./location'),
+  parseDiscipline: require('./discipline')
 }
