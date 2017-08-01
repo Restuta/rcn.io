@@ -109,7 +109,7 @@ const EventTypes = {
 // }
 //
 
-export {
+module.exports = {
   Disciplines,
   Statuses,
   EventTypes,

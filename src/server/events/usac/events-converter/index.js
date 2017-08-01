@@ -2,7 +2,7 @@ const log = require('server/utils/log')
 const { flow, map } = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-CN-road')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id.js')
-const { parseDate, parseLocation } = require('./parsers')
+const { parseDate, parseLocation, parseDiscipline } = require('./parsers')
 
 log.debug(usac2017CnRoadEvensRaw.length)
 
@@ -15,7 +15,9 @@ const convertToInternalFormat = rawUsacEvent => {
       _shortId: shortId,
       name: rawUsacEvent.name,
       date: parseDate(rawUsacEvent.dates),
+      discipline: parseDiscipline(rawUsacEvent.discipline),
       location: parseLocation(rawUsacEvent.location),
+      usacPermit: rawUsacEvent.permit,
       usac: {
         status: rawUsacEvent.status,
         category: rawUsacEvent.usacCategory,
@@ -44,7 +46,7 @@ log.debug('done!')
 
 
 const { uniq } = require('lodash/fp')
-log.path(uniq, 'location', processedEvents)
+log.path(uniq, 'discipline', processedEvents)
 
 
 // 54.227.184.196
