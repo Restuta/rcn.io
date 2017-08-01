@@ -33,3 +33,4 @@ Version 3:
 Version 4:
  - test this on other state
   - fix few functions (in todo comments) to work with states list, not just CA
+ - ability to fix up event data per event on data level, when parsing fails we would be able to fix it
