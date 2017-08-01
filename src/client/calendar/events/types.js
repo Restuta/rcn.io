@@ -16,6 +16,7 @@ const Statuses = {
 
 const EventTypes = {
   other: {
+    'default': 'Other',
     meeting: 'Meeting',
     clinics: 'Clinics',
     stageRace: 'Stage Race',
@@ -70,6 +71,9 @@ const EventTypes = {
     clinics: 'Clinics',
     nationals: 'Nationals',
     nonCompetitive: 'Non-Competitive',
+  },
+  bmx: {
+    'default': 'BMX',
   }
 }
 
