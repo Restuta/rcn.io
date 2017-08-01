@@ -12,13 +12,10 @@ const preProcessUrl = (rawUrl) => {
   }
 }
 
-const toUpperCaseFirst = string => first(string).toUpperCase() + string.slice(1)
+const toUpperCaseFirst = string =>
+  first(string).toUpperCase() + string.slice(1).toLowerCase()
 
-const normalizeSpaces = string =>
-  string.trim()
-    .replace('    ', ' ')
-    .replace('   ', ' ')
-    .replace('  ', ' ')
+const normalizeSpaces = string => string.trim().replace(/\s+/g, ' ')
 
 
 module.exports = {
