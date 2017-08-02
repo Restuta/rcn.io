@@ -285,7 +285,7 @@ class EventDetails extends Component {
           </Row> */}
           <Row>
             <Col xs={14} sm={9}>
-              <h4 className="header-regular header-4">PART OF</h4>
+              <h4 className="header-regular header-4">SERIES</h4>
               {series.map((x, i) => <div key={i} className="text-2">{x.name}</div>)}
             </Col>
           </Row>
