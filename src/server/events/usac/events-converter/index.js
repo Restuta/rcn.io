@@ -29,7 +29,8 @@ const convertToInternalFormat = rawUsacEvent => {
         status: rawUsacEvent.status,
         category: rawUsacEvent.usacCategory,
         type: rawUsacEvent.usacEventType
-      }
+      },
+      websiteUrl: rawUsacEvent.eventWebSite
     }
 
     return rcnEvent
@@ -53,10 +54,10 @@ log.debug('done!')
 
 
 const { uniq } = require('lodash/fp')
-log.path(uniq, 'type', processedEvents)
+// log.path(uniq, 'usacPermit', processedEvents)
 // log.path(x => x, 'type', processedEvents)
 
-// log.path(uniq, 'name', usac2017CnRoadEvensRaw)
+log.path(uniq, 'promoter.club', usac2017CnRoadEvensRaw)
 
 
 // 54.227.184.196
