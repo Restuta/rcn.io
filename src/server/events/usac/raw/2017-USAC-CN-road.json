@@ -11,7 +11,7 @@
     "promoter": {
       "club": "USA Cycling Coaches",
       "raceDirector": "Nathanael Dunn",
-      "url": "http://usacycling.org/clubs/index.php?club=13940"
+      "url": "https://usacycling.org/clubs/index.php?club=13940"
     },
     "eventWebSite": "http://datadrivenathlete.com/napa-valley-camp/",
     "status": "Complete",
@@ -35,7 +35,7 @@
     "promoter": {
       "club": "University of California-Davis",
       "raceDirector": "Jamien Bergstrom",
-      "url": "http://usacycling.org/clubs/index.php?club=806"
+      "url": "https://usacycling.org/clubs/index.php?club=806"
     },
     "status": "Complete",
     "usacCategory": "Category - E",
@@ -58,7 +58,7 @@
     "promoter": {
       "club": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles",
       "raceDirector": "Chad Richards",
-      "url": "http://usacycling.org/clubs/index.php?club=9895"
+      "url": "https://usacycling.org/clubs/index.php?club=9895"
     },
     "status": "Complete",
     "usacCategory": "Category - D",
@@ -81,7 +81,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -105,7 +105,7 @@
     "promoter": {
       "club": "Off The Front",
       "raceDirector": "Steven Grusis",
-      "url": "http://usacycling.org/clubs/index.php?club=15110"
+      "url": "https://usacycling.org/clubs/index.php?club=15110"
     },
     "eventWebSite": "http://www.facebook.com/events/1755930444732284/",
     "status": "Complete",
@@ -129,7 +129,7 @@
     "promoter": {
       "club": "CCCX Cycling Club",
       "raceDirector": "Keith DeFiebre",
-      "url": "http://usacycling.org/clubs/index.php?club=14829"
+      "url": "https://usacycling.org/clubs/index.php?club=14829"
     },
     "eventWebSite": "http://www.cccxcycling.com",
     "status": "Permitted",
@@ -153,7 +153,7 @@
     "promoter": {
       "club": "AntiGravity Cycling",
       "raceDirector": "Steven Barnes",
-      "url": "http://usacycling.org/clubs/index.php?club=12627"
+      "url": "https://usacycling.org/clubs/index.php?club=12627"
     },
     "status": "Complete",
     "usacCategory": "Category - E",
@@ -176,7 +176,7 @@
     "promoter": {
       "club": "Eagle Cycling Club",
       "raceDirector": "Red Kite Racing",
-      "url": "http://usacycling.org/clubs/index.php?club=6211"
+      "url": "https://usacycling.org/clubs/index.php?club=6211"
     },
     "eventWebSite": "http://www.eaglecyclingclub.org",
     "status": "Complete",
@@ -200,7 +200,7 @@
     "promoter": {
       "club": "Chico Cycling Team",
       "raceDirector": "Jeffrey Galland",
-      "url": "http://usacycling.org/clubs/index.php?club=14237"
+      "url": "https://usacycling.org/clubs/index.php?club=14237"
     },
     "eventWebSite": "http://chicostagerace.com",
     "status": "Complete",
@@ -224,7 +224,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Complete",
@@ -242,13 +242,16 @@
     "dates": ["2017-03-11T08:00:00.000Z"],
     "location": {
       "cityState": "Sacramento, CA",
-      "detailed": ["Land Park, corner of Freeport Blvd. and Sutterville Road", "Sacramento, CA"],
+      "detailed": [
+        "Land Park, corner of Freeport Blvd. and Sutterville Road",
+        "Sacramento, CA"
+      ],
       "googleMapsUrl": "http://maps.google.com/maps/place/Land+Park,+corner+of+Freeport+Blvd.+and+Sutterville+Road+Sacramento,+CA+95819,+USA"
     },
     "promoter": {
       "club": "Sacramento Golden Wheelmen",
       "raceDirector": "Red Kite Racing",
-      "url": "http://usacycling.org/clubs/index.php?club=247"
+      "url": "https://usacycling.org/clubs/index.php?club=247"
     },
     "eventWebSite": "http://www.ncnca.org",
     "status": "Complete",
@@ -272,7 +275,7 @@
     "promoter": {
       "club": "Sacramento Golden Wheelmen",
       "raceDirector": "Red Kite Racing",
-      "url": "http://usacycling.org/clubs/index.php?club=247"
+      "url": "https://usacycling.org/clubs/index.php?club=247"
     },
     "eventWebSite": "http://www.sgwracing.com",
     "status": "Complete",
@@ -296,7 +299,7 @@
     "promoter": {
       "club": "University of California-Berkeley",
       "raceDirector": "Sebastian Gonzalez",
-      "url": "http://usacycling.org/clubs/index.php?club=3387"
+      "url": "https://usacycling.org/clubs/index.php?club=3387"
     },
     "status": "Complete",
     "usacCategory": "Category - E",
@@ -319,7 +322,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Complete",
@@ -343,7 +346,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "A Bloc Racing",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -367,7 +370,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Body Concepts",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -391,7 +394,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -415,7 +418,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Complete",
@@ -439,7 +442,7 @@
     "promoter": {
       "club": "University of California-Davis",
       "raceDirector": "Dustin Denton",
-      "url": "http://usacycling.org/clubs/index.php?club=806"
+      "url": "https://usacycling.org/clubs/index.php?club=806"
     },
     "status": "Complete",
     "usacCategory": "Category - E",
@@ -462,7 +465,7 @@
     "promoter": {
       "club": "Dayka-Hackett",
       "raceDirector": "Eric Henson",
-      "url": "http://usacycling.org/clubs/index.php?club=14822"
+      "url": "https://usacycling.org/clubs/index.php?club=14822"
     },
     "eventWebSite": "http://sequoiaclassic.com ",
     "status": "Complete",
@@ -486,7 +489,7 @@
     "promoter": {
       "club": "Ciclistas del Valle",
       "raceDirector": "John Kekuewa",
-      "url": "http://usacycling.org/clubs/index.php?club=12688"
+      "url": "https://usacycling.org/clubs/index.php?club=12688"
     },
     "eventWebSite": "http://www.ciclistasdelvalle.org/tlrr/",
     "status": "Complete",
@@ -510,7 +513,7 @@
     "promoter": {
       "club": "Stanford University",
       "raceDirector": "Bernardo Tapia",
-      "url": "http://usacycling.org/clubs/index.php?club=3400"
+      "url": "https://usacycling.org/clubs/index.php?club=3400"
     },
     "eventWebSite": "http://www.stanfordcycling.com",
     "status": "Complete",
@@ -534,7 +537,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Complete",
@@ -558,7 +561,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -582,7 +585,7 @@
     "promoter": {
       "club": "American Heart Association",
       "raceDirector": "Medalist Sports",
-      "url": "http://usacycling.org/clubs/index.php?club=16522"
+      "url": "https://usacycling.org/clubs/index.php?club=16522"
     },
     "eventWebSite": "http://www.americanheart.org",
     "status": "Complete",
@@ -606,7 +609,7 @@
     "promoter": {
       "club": "Los Gatos Bicycle Racing Club",
       "raceDirector": "Chris Twiggs",
-      "url": "http://usacycling.org/clubs/index.php?club=240"
+      "url": "https://usacycling.org/clubs/index.php?club=240"
     },
     "eventWebSite": "http://www.catshill.org",
     "status": "Complete",
@@ -630,7 +633,7 @@
     "promoter": {
       "club": "Valley Spokesmen",
       "raceDirector": "Selim Elhadj",
-      "url": "http://usacycling.org/clubs/index.php?club=651"
+      "url": "https://usacycling.org/clubs/index.php?club=651"
     },
     "eventWebSite": "http://www.facebook.com/vsracingteam",
     "status": "Complete",
@@ -654,7 +657,7 @@
     "promoter": {
       "club": "Rio Strada Racing",
       "raceDirector": "Ron Rouse",
-      "url": "http://usacycling.org/clubs/index.php?club=885"
+      "url": "https://usacycling.org/clubs/index.php?club=885"
     },
     "eventWebSite": "http://www.riostradaracing.org",
     "status": "Complete",
@@ -678,7 +681,7 @@
     "promoter": {
       "club": "Pedali Alpini, Inc.",
       "raceDirector": "Eric Petersen",
-      "url": "http://usacycling.org/clubs/index.php?club=1372"
+      "url": "https://usacycling.org/clubs/index.php?club=1372"
     },
     "eventWebSite": "http://www.PedaliAlpini.org",
     "status": "Complete",
@@ -702,7 +705,7 @@
     "promoter": {
       "club": "Project Hero",
       "raceDirector": "Jack Shepard",
-      "url": "http://usacycling.org/clubs/index.php?club=13438"
+      "url": "https://usacycling.org/clubs/index.php?club=13438"
     },
     "eventWebSite": "http://r2r.convio.net/site/TR/Cycling/General?fr_id=1250&pg=entry",
     "status": "Complete",
@@ -726,7 +729,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Rick Ciccarelli",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://Facebook/ciccarellient",
     "status": "Complete",
@@ -750,7 +753,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Rick Ciccarelli",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.facebook.com/pages/ciccarelli",
     "status": "Complete",
@@ -774,7 +777,7 @@
     "promoter": {
       "club": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles",
       "raceDirector": "Chad Richards",
-      "url": "http://usacycling.org/clubs/index.php?club=9895"
+      "url": "https://usacycling.org/clubs/index.php?club=9895"
     },
     "eventWebSite": "http://sierranevadaracing.org",
     "status": "Complete",
@@ -792,13 +795,16 @@
     "dates": ["2017-05-27T07:00:00.000Z", "2017-05-29T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": ["Refer to technical guide for start/finish locations", "Livermore, CA"],
+      "detailed": [
+        "Refer to technical guide for start/finish locations",
+        "Livermore, CA"
+      ],
       "googleMapsUrl": "http://maps.google.com/maps/place/Refer+to+technical+guide+for+start/finish+locations+Livermore,+CA+94551,+USA"
     },
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "San Jose Bicycle Club",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com/",
     "status": "Complete",
@@ -822,7 +828,7 @@
     "promoter": {
       "club": "Alto Velo Racing Club",
       "raceDirector": "Mark  Howard",
-      "url": "http://usacycling.org/clubs/index.php?club=3178"
+      "url": "https://usacycling.org/clubs/index.php?club=3178"
     },
     "eventWebSite": "http://www.altovelo.org/pescadero",
     "status": "Complete",
@@ -846,7 +852,7 @@
     "promoter": {
       "club": "ChristianCycling",
       "raceDirector": "Steve Chew",
-      "url": "http://usacycling.org/clubs/index.php?club=2226"
+      "url": "https://usacycling.org/clubs/index.php?club=2226"
     },
     "eventWebSite": "http://www.norcalchristiancycling.com",
     "status": "Complete",
@@ -870,7 +876,7 @@
     "promoter": {
       "club": "Reno Wheelmen",
       "raceDirector": "Coby Rowe",
-      "url": "http://usacycling.org/clubs/index.php?club=1019"
+      "url": "https://usacycling.org/clubs/index.php?club=1019"
     },
     "eventWebSite": "http://www.renowheelmen.org/event/ncncadistricttimetrial",
     "status": "Complete",
@@ -894,7 +900,7 @@
     "promoter": {
       "club": "Berkeley Bicycle Club (BBC)",
       "raceDirector": "Paul  Hainsworth",
-      "url": "http://usacycling.org/clubs/index.php?club=229"
+      "url": "https://usacycling.org/clubs/index.php?club=229"
     },
     "eventWebSite": "http://www.berkeleybike.org/",
     "status": "Complete",
@@ -918,7 +924,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -942,7 +948,7 @@
     "promoter": {
       "club": "ol'Republic/SERT",
       "raceDirector": "Duane Strawser",
-      "url": "http://usacycling.org/clubs/index.php?club=8943"
+      "url": "https://usacycling.org/clubs/index.php?club=8943"
     },
     "eventWebSite": "http://nevadacityclassic.com",
     "status": "Complete",
@@ -966,7 +972,7 @@
     "promoter": {
       "club": "ol'Republic/SERT",
       "raceDirector": "Duane Strawser",
-      "url": "http://usacycling.org/clubs/index.php?club=8943"
+      "url": "https://usacycling.org/clubs/index.php?club=8943"
     },
     "eventWebSite": "http://nevadacityclassic.com",
     "status": "Complete",
@@ -990,7 +996,7 @@
     "promoter": {
       "club": "ol'Republic/SERT",
       "raceDirector": "Duane Strawser",
-      "url": "http://usacycling.org/clubs/index.php?club=8943"
+      "url": "https://usacycling.org/clubs/index.php?club=8943"
     },
     "eventWebSite": "http://nevadacityclassic.com",
     "status": "Complete",
@@ -1014,7 +1020,7 @@
     "promoter": {
       "club": "Victory Velo Racing",
       "raceDirector": "Clinton Claassen",
-      "url": "http://usacycling.org/clubs/index.php?club=11905"
+      "url": "https://usacycling.org/clubs/index.php?club=11905"
     },
     "eventWebSite": "http://www.auburndowntowncrit.com",
     "status": "Complete",
@@ -1038,7 +1044,7 @@
     "promoter": {
       "club": "Peninsula Velo Cycling Club",
       "raceDirector": "Travis Ma",
-      "url": "http://usacycling.org/clubs/index.php?club=327"
+      "url": "https://usacycling.org/clubs/index.php?club=327"
     },
     "eventWebSite": "http://www.burlingamecriterium.com",
     "status": "Complete",
@@ -1062,7 +1068,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Permitted",
@@ -1086,7 +1092,7 @@
     "promoter": {
       "club": "Davis Bike Club",
       "raceDirector": "Jason Eiserich",
-      "url": "http://usacycling.org/clubs/index.php?club=507"
+      "url": "https://usacycling.org/clubs/index.php?club=507"
     },
     "eventWebSite": "http://dbcraceteam.org",
     "status": "Permitted",
@@ -1110,7 +1116,7 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
     "status": "Complete",
@@ -1134,7 +1140,7 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
     "status": "Complete",
@@ -1158,10 +1164,10 @@
     "promoter": {
       "club": "Main Street Elite p/b Main Street Bicycles",
       "raceDirector": "David Garzoli",
-      "url": "http://usacycling.org/clubs/index.php?club=16561"
+      "url": "https://usacycling.org/clubs/index.php?club=16561"
     },
     "eventWebSite": "http://www.lakeportcrit.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1182,9 +1188,9 @@
     "promoter": {
       "club": "Colavita Racing, Inc.",
       "raceDirector": "Phillip Heiman",
-      "url": "http://usacycling.org/clubs/index.php?club=10022"
+      "url": "https://usacycling.org/clubs/index.php?club=10022"
     },
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1205,10 +1211,10 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "ChristianCycling",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - E",
     "year": 2017,
     "state": "CN",
@@ -1229,9 +1235,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com ",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1253,9 +1260,10 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
+    "registrationLink": "http://www.bikereg.com/events/?pid=4870",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1277,9 +1285,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1301,9 +1310,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1325,9 +1335,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1349,9 +1360,10 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
+    "registrationLink": "http://www.bikereg.com/events/?pid=4870",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1373,9 +1385,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1397,8 +1410,9 @@
     "promoter": {
       "club": "AntiGravity Cycling",
       "raceDirector": "Steven Barnes",
-      "url": "http://usacycling.org/clubs/index.php?club=12627"
+      "url": "https://usacycling.org/clubs/index.php?club=12627"
     },
+    "registrationLink": "https://usacycling.org/register/2017-2299",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1420,9 +1434,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1431,6 +1446,30 @@
     "usacEventType": "Results & Ranking",
     "competitive": "competitive",
     "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=40&"
+  },
+  {
+    "permit": "2017-2576",
+    "name": "Esparto Time Trial",
+    "dates": ["2017-08-27T07:00:00.000Z"],
+    "location": {
+      "cityState": "Esparto, CA",
+      "detailed": ["86675 Plainsfield St.", "Esparto, CA"],
+      "googleMapsUrl": "http://maps.google.com/maps/place/86675+Plainsfield+St.+Esparto,+CA+95627,+USA"
+    },
+    "promoter": {
+      "club": "Golden Chain Cyclists",
+      "raceDirector": "Robert Leibold",
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
+    },
+    "eventWebSite": "http://www.velopromo.com",
+    "status": "Pending",
+    "usacCategory": "Category - E",
+    "year": 2017,
+    "state": "CN",
+    "discipline": "Road",
+    "usacEventType": "Results & Ranking",
+    "competitive": "competitive",
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=60&"
   },
   {
     "permit": "2017-2280",
@@ -1444,9 +1483,10 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
+    "registrationLink": "http://www.bikereg.com/events/?pid=4870",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1468,9 +1508,10 @@
     "promoter": {
       "club": "Golden Chain Cyclists",
       "raceDirector": "Robert Leibold",
-      "url": "http://usacycling.org/clubs/index.php?club=2568"
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
+    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1492,8 +1533,9 @@
     "promoter": {
       "club": "Red Kite Racing",
       "raceDirector": "Steve Rosefield",
-      "url": "http://usacycling.org/clubs/index.php?club=12690"
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
+    "eventWebSite": "http://www.redkiteracing.com",
     "status": "Permit in Process",
     "usacCategory": "Category - D",
     "year": 2017,
@@ -1515,7 +1557,7 @@
     "promoter": {
       "club": "Performance Cycle Coaching",
       "raceDirector": "Daryl Hemenway",
-      "url": "http://usacycling.org/clubs/index.php?club=15066"
+      "url": "https://usacycling.org/clubs/index.php?club=15066"
     },
     "status": "Permitted",
     "usacCategory": "Category - E",
@@ -1538,10 +1580,10 @@
     "promoter": {
       "club": "San Jose Bicycle Club",
       "raceDirector": "Andrew Lanier",
-      "url": "http://usacycling.org/clubs/index.php?club=249"
+      "url": "https://usacycling.org/clubs/index.php?club=249"
     },
     "eventWebSite": "http://ridethetrack.com",
-    "status": "Permitted",
+    "status": "Complete",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1562,9 +1604,10 @@
     "promoter": {
       "club": "USA Cycling Race Director",
       "raceDirector": "USA Cycling Race Director",
-      "url": "http://usacycling.org/clubs/index.php?club=14196"
+      "url": "https://usacycling.org/clubs/index.php?club=14196"
     },
     "eventWebSite": "http://ridethetrack.com",
+    "registrationLink": "http://bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1586,7 +1629,7 @@
     "promoter": {
       "club": "Sea Otter Classic, Inc.",
       "raceDirector": "Frank Yohannan",
-      "url": "http://usacycling.org/clubs/index.php?club=9870"
+      "url": "https://usacycling.org/clubs/index.php?club=9870"
     },
     "eventWebSite": "http://www.seaotterclassic.com",
     "status": "Complete",
@@ -1610,7 +1653,7 @@
     "promoter": {
       "club": "Sea Otter Classic, Inc.",
       "raceDirector": "Frank Yohannan",
-      "url": "http://usacycling.org/clubs/index.php?club=9870"
+      "url": "https://usacycling.org/clubs/index.php?club=9870"
     },
     "eventWebSite": "http://www.seaotterclassic.com",
     "status": "Complete",
@@ -1634,7 +1677,7 @@
     "promoter": {
       "club": "Reno Wheelmen",
       "raceDirector": "Coby Rowe",
-      "url": "http://usacycling.org/clubs/index.php?club=1019"
+      "url": "https://usacycling.org/clubs/index.php?club=1019"
     },
     "eventWebSite": "http://www.truckeebikepark.org",
     "status": "Complete",
@@ -1658,7 +1701,7 @@
     "promoter": {
       "club": "Shine Riders Co",
       "raceDirector": "Lindsay Currier",
-      "url": "http://usacycling.org/clubs/index.php?club=16676"
+      "url": "https://usacycling.org/clubs/index.php?club=16676"
     },
     "eventWebSite": "http://www.benduro.com/p/eldorado.html",
     "status": "Complete",
@@ -1682,9 +1725,10 @@
     "promoter": {
       "club": "USA Cycling Race Director",
       "raceDirector": "Matthew Hargrove",
-      "url": "http://usacycling.org/clubs/index.php?club=14196"
+      "url": "https://usacycling.org/clubs/index.php?club=14196"
     },
     "eventWebSite": "http://norcalcx.org",
+    "registrationLink": "http://timeyourrace.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1706,7 +1750,7 @@
     "promoter": {
       "club": "University of California-Davis",
       "raceDirector": "Dustin Denton",
-      "url": "http://usacycling.org/clubs/index.php?club=806"
+      "url": "https://usacycling.org/clubs/index.php?club=806"
     },
     "status": "Complete",
     "usacCategory": "Category - E",
