@@ -1,11 +1,14 @@
 const log = require('server/utils/log')
-const { flow, map, trim } = require('lodash/fp')
+const { flow, map, trim, partial } = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road.json')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
 const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
 
 const Joi = require('joi')
 const schema = require('client/temp/data/tests/event-schema')
+
+const { writeJsonToFile } = require('./file-utils')
+const path = require('path')
 
 const convertToInternalFormat = rawUsacEvent => {
   const shortId = createShortEventId()
@@ -56,15 +59,21 @@ const validateOverSchema = rcnEvent => {
   return rcnEvent
 }
 
+log.debug(__dirname)
+
 // main processing pipeline
 const processEvents = flow(
   map(convertToInternalFormat),
   // , map(log.debug)
-  map(validateOverSchema)
+  map(validateOverSchema),
+  partial(writeJsonToFile, [path.resolve(__dirname, '../../../../client/temp/data/2017-usac-events.json')])
 )
 
-const processedEvents = processEvents(usac2017CnRoadEvensRaw)
-log.green(`Converted ${processedEvents.length} events`)
+processEvents(usac2017CnRoadEvensRaw)
+  .then(() => {
+    log.green(`Converted ${usac2017CnRoadEvensRaw.length} events`)
+  })
+
 // log.debug(processEvents)
 
 // const { uniq } = require('lodash/fp')
