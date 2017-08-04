@@ -63,6 +63,8 @@ const schema = Joi.object().keys({
     name: Joi.string().min(5).required(),
     contactName: Joi.string().min(5),
     contactInfo: Joi.string().allow(''),
+    // more info about the club here https://www.usacycling.org/clubs/clubsearch.php?club={clubId}
+    usacClubId: Joi.number().allow(''),
   })),
   // information from promoter or extended promoter information
   promoterInfo: Joi.string().allow(''),

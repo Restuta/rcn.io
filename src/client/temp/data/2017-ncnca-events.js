@@ -2018,7 +2018,7 @@ export default [
     },
     "flyerUrl" : "http://www.ncnca.org/sites/default/files/12/11/2016%20-%2011%3A57pm/FL_2017-340%20Honor%20Ride%20Sacramento%20OKED.pdf",
     "promoters": [
-      { "id": "prm-5116", "name": "Ride2Recovery" },
+      { "id": "prm-5116", "name": "Project Hero", "contactName": "Jack Shepard", "usacClubId": 13438 },
     ],
     "group" : "1",
     "isDraft" : false,
