@@ -323,7 +323,7 @@ class Event extends Component {
         {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={contrastColor}/>}
 
         {/* indicates if event has permit, need more UI testing since it overlaps with name when name is long */}
-        {(event.usacPermit) && <Icon name="check_circle" className="icon" color={contrastColor}/>}
+        {/* {(event.usacPermit) && <Icon name="check_circle" className="icon" color={contrastColor}/>} */}
 
         {eventGroupComp}
         {locationComp}
