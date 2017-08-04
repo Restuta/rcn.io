@@ -1,18 +1,11 @@
-/*eslint-disable */
-module.exports =  [
+[
   {
     "permit": "2017-137",
     "name": "Data Driven Athlete Napa Valley Camp",
-    "dates": [
-      "2017-01-14T08:00:00.000Z",
-      "2017-01-16T08:00:00.000Z"
-    ],
+    "dates": ["2017-01-14T08:00:00.000Z", "2017-01-16T08:00:00.000Z"],
     "location": {
       "cityState": "Calistoga, CA",
-      "detailed": [
-        "Napa Valley",
-        "Calistoga, CA"
-      ],
+      "detailed": ["Napa Valley", "Calistoga, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Napa+Valley+Calistoga,+CA+94515,+USA"
     },
     "promoter": {
@@ -33,15 +26,10 @@ module.exports =  [
   {
     "permit": "2017-211",
     "name": "Cal Aggie Criterium",
-    "dates": [
-      "2017-01-28T08:00:00.000Z"
-    ],
+    "dates": ["2017-01-28T08:00:00.000Z"],
     "location": {
       "cityState": "Sacramento , CA",
-      "detailed": [
-        "E Park Road",
-        "Sacramento , CA"
-      ],
+      "detailed": ["E Park Road", "Sacramento , CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/E+Park+Road++Sacramento+,+CA+95819,+USA"
     },
     "promoter": {
@@ -61,9 +49,7 @@ module.exports =  [
   {
     "permit": "2017-203",
     "name": "Folsom Winter Criterium",
-    "dates": [
-      "2017-02-04T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-04T08:00:00.000Z"],
     "location": {
       "cityState": "Folsom, CA",
       "detailed": "Folsom, CA",
@@ -86,15 +72,10 @@ module.exports =  [
   {
     "permit": "2017-399",
     "name": "2017 RKO#1 - THE BUMP CIRCUIT RACE (WINTER)",
-    "dates": [
-      "2017-02-05T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-05T08:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "1575 Greenville Road",
-        "Livermore, CA"
-      ],
+      "detailed": ["1575 Greenville Road", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1575+Greenville+Road+Livermore,+CA+94550,+USA"
     },
     "promoter": {
@@ -115,15 +96,10 @@ module.exports =  [
   {
     "permit": "2017-361",
     "name": "OTF Hensley Lake Road Race",
-    "dates": [
-      "2017-02-11T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-11T08:00:00.000Z"],
     "location": {
       "cityState": "Madera , CA",
-      "detailed": [
-        "36133 Road 603",
-        "Madera , CA"
-      ],
+      "detailed": ["36133 Road 603", "Madera , CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/36133+Road+603++Madera+,+CA+93638,+USA"
     },
     "promoter": {
@@ -144,10 +120,7 @@ module.exports =  [
   {
     "permit": "2017-778",
     "name": "Central Coast Road Series- Seaside Bay View Circuit",
-    "dates": [
-      "2017-02-12T08:00:00.000Z",
-      "2017-09-10T07:00:00.000Z"
-    ],
+    "dates": ["2017-02-12T08:00:00.000Z", "2017-09-10T07:00:00.000Z"],
     "location": {
       "cityState": "Monterey, CA",
       "detailed": "Monterey, CA",
@@ -171,9 +144,7 @@ module.exports =  [
   {
     "permit": "2017-485",
     "name": "Tuttle Creek Road Race",
-    "dates": [
-      "2017-02-19T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-19T08:00:00.000Z"],
     "location": {
       "cityState": "Lone Pine, CA, CA",
       "detailed": "Lone Pine, CA, CA",
@@ -196,15 +167,10 @@ module.exports =  [
   {
     "permit": "2017-428",
     "name": "Cherry Pie Criterium",
-    "dates": [
-      "2017-02-20T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-20T08:00:00.000Z"],
     "location": {
       "cityState": "Napa, CA",
-      "detailed": [
-        "2277 Napa Vallejo Hwy",
-        "Napa, CA"
-      ],
+      "detailed": ["2277 Napa Vallejo Hwy", "Napa, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/2277+Napa+Vallejo+Hwy+Napa,+CA+94558,+USA"
     },
     "promoter": {
@@ -225,10 +191,7 @@ module.exports =  [
   {
     "permit": "2017-430",
     "name": "Chico Stage Race",
-    "dates": [
-      "2017-02-24T08:00:00.000Z",
-      "2017-02-26T08:00:00.000Z"
-    ],
+    "dates": ["2017-02-24T08:00:00.000Z", "2017-02-26T08:00:00.000Z"],
     "location": {
       "cityState": "Chico, CA",
       "detailed": "Chico, CA",
@@ -252,15 +215,10 @@ module.exports =  [
   {
     "permit": "2017-436",
     "name": "Snelling Road Race",
-    "dates": [
-      "2017-03-04T08:00:00.000Z"
-    ],
+    "dates": ["2017-03-04T08:00:00.000Z"],
     "location": {
       "cityState": "Snelling, CA",
-      "detailed": [
-        "Henderson County Park",
-        "Snelling, CA"
-      ],
+      "detailed": ["Henderson County Park", "Snelling, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Henderson+County+Park+Snelling,+CA+95369,+USA"
     },
     "promoter": {
@@ -281,15 +239,10 @@ module.exports =  [
   {
     "permit": "2017-592",
     "name": "Land Park Criterium",
-    "dates": [
-      "2017-03-11T08:00:00.000Z"
-    ],
+    "dates": ["2017-03-11T08:00:00.000Z"],
     "location": {
       "cityState": "Sacramento, CA",
-      "detailed": [
-        "Land Park, corner of Freeport Blvd. and Sutterville Road",
-        "Sacramento, CA"
-      ],
+      "detailed": ["Land Park, corner of Freeport Blvd. and Sutterville Road", "Sacramento, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Land+Park,+corner+of+Freeport+Blvd.+and+Sutterville+Road+Sacramento,+CA+95819,+USA"
     },
     "promoter": {
@@ -310,15 +263,10 @@ module.exports =  [
   {
     "permit": "2017-593",
     "name": "Bariani Road Race",
-    "dates": [
-      "2017-03-12T08:00:00.000Z"
-    ],
+    "dates": ["2017-03-12T08:00:00.000Z"],
     "location": {
       "cityState": "Zamora, CA, CA",
-      "detailed": [
-        "Bariani Olive Oil, Zamora, CA",
-        "Zamora, CA, CA"
-      ],
+      "detailed": ["Bariani Olive Oil, Zamora, CA", "Zamora, CA, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Bariani+Olive+Oil,+Zamora,+CA+Zamora,+CA,+CA+95698,+USA"
     },
     "promoter": {
@@ -339,10 +287,7 @@ module.exports =  [
   {
     "permit": "2017-690",
     "name": "Cal Cycling Road Weekend",
-    "dates": [
-      "2017-03-18T07:00:00.000Z",
-      "2017-03-19T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-18T07:00:00.000Z", "2017-03-19T07:00:00.000Z"],
     "location": {
       "cityState": "Berkeley, CA",
       "detailed": "Berkeley, CA",
@@ -365,15 +310,10 @@ module.exports =  [
   {
     "permit": "2017-936",
     "name": "Wards Ferry Road Race",
-    "dates": [
-      "2017-03-18T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-18T07:00:00.000Z"],
     "location": {
       "cityState": "Sonora, CA",
-      "detailed": [
-        "18885 Nugget Blvd",
-        "Sonora, CA"
-      ],
+      "detailed": ["18885 Nugget Blvd", "Sonora, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/18885+Nugget+Blvd+Sonora,+CA+95370,+USA"
     },
     "promoter": {
@@ -394,15 +334,10 @@ module.exports =  [
   {
     "permit": "2017-522",
     "name": "2017 RKO#2 - RED KITE CRITERIUM (MARCH)",
-    "dates": [
-      "2017-03-19T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-19T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "448 Comerce Way",
-        "Livermore, CA"
-      ],
+      "detailed": ["448 Comerce Way", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/448+Comerce+Way+Livermore,+CA+94551,+USA"
     },
     "promoter": {
@@ -423,15 +358,10 @@ module.exports =  [
   {
     "permit": "2017-523",
     "name": "2017 RKO#3 - WINCHESTER CIRCUIT RACE",
-    "dates": [
-      "2017-03-25T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-25T07:00:00.000Z"],
     "location": {
       "cityState": "Meadow Vista, CA",
-      "detailed": [
-        "1100 Sugar Pine Road",
-        "Meadow Vista, CA"
-      ],
+      "detailed": ["1100 Sugar Pine Road", "Meadow Vista, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1100+Sugar+Pine+Road+Meadow+Vista,+CA+95722,+USA"
     },
     "promoter": {
@@ -452,9 +382,7 @@ module.exports =  [
   {
     "permit": "2017-524",
     "name": "2017 RKO#4 - TEMPUS FUGIT INDIVIDUAL TIME TRIAL (SPRING)",
-    "dates": [
-      "2017-03-26T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-26T07:00:00.000Z"],
     "location": {
       "cityState": "Castro Valley, CA",
       "detailed": "Castro Valley, CA",
@@ -478,15 +406,10 @@ module.exports =  [
   {
     "permit": "2017-932",
     "name": "Santa Cruz Classic Criterium",
-    "dates": [
-      "2017-03-26T07:00:00.000Z"
-    ],
+    "dates": ["2017-03-26T07:00:00.000Z"],
     "location": {
       "cityState": "Santa Cruz, CA",
-      "detailed": [
-        "1000 3rd Street",
-        "Santa Cruz, CA"
-      ],
+      "detailed": ["1000 3rd Street", "Santa Cruz, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1000+3rd+Street+Santa+Cruz,+CA+95060,+USA"
     },
     "promoter": {
@@ -507,16 +430,10 @@ module.exports =  [
   {
     "permit": "2017-825",
     "name": "UC Davis Collegiate Cycling Race Weekend",
-    "dates": [
-      "2017-04-01T07:00:00.000Z",
-      "2017-04-02T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-01T07:00:00.000Z", "2017-04-02T07:00:00.000Z"],
     "location": {
       "cityState": "Davis, CA",
-      "detailed": [
-        "1 Shields Avenue",
-        "Davis, CA"
-      ],
+      "detailed": ["1 Shields Avenue", "Davis, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1+Shields+Avenue+Davis,+CA+95616,+USA"
     },
     "promoter": {
@@ -536,15 +453,10 @@ module.exports =  [
   {
     "permit": "2017-1017",
     "name": "Michelob ULTRA Sequoia Cycling Classic",
-    "dates": [
-      "2017-04-02T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-02T07:00:00.000Z"],
     "location": {
       "cityState": "Visalia, CA",
-      "detailed": [
-        "707 W Acequia Ave",
-        "Visalia, CA"
-      ],
+      "detailed": ["707 W Acequia Ave", "Visalia, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/707+W+Acequia+Ave+Visalia,+CA+93291,+USA"
     },
     "promoter": {
@@ -565,15 +477,10 @@ module.exports =  [
   {
     "permit": "2017-671",
     "name": "Turlock Lake Road Race",
-    "dates": [
-      "2017-04-08T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-08T07:00:00.000Z"],
     "location": {
       "cityState": "La Grange, CA",
-      "detailed": [
-        "22600 Lake Road",
-        "La Grange, CA"
-      ],
+      "detailed": ["22600 Lake Road", "La Grange, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/22600+Lake+Road+La+Grange,+CA+95329,+USA"
     },
     "promoter": {
@@ -594,10 +501,7 @@ module.exports =  [
   {
     "permit": "2017-908",
     "name": "Stanford Cycling Road Race Weekend",
-    "dates": [
-      "2017-04-08T07:00:00.000Z",
-      "2017-04-09T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-08T07:00:00.000Z", "2017-04-09T07:00:00.000Z"],
     "location": {
       "cityState": "Seaside, CA",
       "detailed": "Seaside, CA",
@@ -621,9 +525,7 @@ module.exports =  [
   {
     "permit": "2017-937",
     "name": "Copperopolis Road Race",
-    "dates": [
-      "2017-04-15T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-15T07:00:00.000Z"],
     "location": {
       "cityState": "Milton, CA",
       "detailed": "Milton, CA",
@@ -647,15 +549,10 @@ module.exports =  [
   {
     "permit": "2017-525",
     "name": "2017 RKO#5 - RED KITE CRITERIUM (APRIL)",
-    "dates": [
-      "2017-04-23T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-23T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "448 Comerce Way",
-        "Livermore, CA"
-      ],
+      "detailed": ["448 Comerce Way", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/448+Comerce+Way+Livermore,+CA+94551,+USA"
     },
     "promoter": {
@@ -676,9 +573,7 @@ module.exports =  [
   {
     "permit": "2017-166",
     "name": "CycleNation Ride",
-    "dates": [
-      "2017-04-29T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-29T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
       "detailed": "Livermore, CA",
@@ -702,9 +597,7 @@ module.exports =  [
   {
     "permit": "2017-1060",
     "name": "Mike's Bikes 44th Cat’s Hill Classic",
-    "dates": [
-      "2017-04-29T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-29T07:00:00.000Z"],
     "location": {
       "cityState": "Los Gatos, CA",
       "detailed": "Los Gatos, CA",
@@ -728,9 +621,7 @@ module.exports =  [
   {
     "permit": "2017-496",
     "name": "Wente Vineyards Classic Road Race",
-    "dates": [
-      "2017-04-30T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-30T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
       "detailed": "Livermore, CA",
@@ -754,16 +645,10 @@ module.exports =  [
   {
     "permit": "2017-785",
     "name": "Golden State Race Series",
-    "dates": [
-      "2017-05-06T07:00:00.000Z",
-      "2017-05-07T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-06T07:00:00.000Z", "2017-05-07T07:00:00.000Z"],
     "location": {
       "cityState": "Rancho Cordova, CA",
-      "detailed": [
-        "11000 Cobblerock Drive",
-        "Rancho Cordova, CA"
-      ],
+      "detailed": ["11000 Cobblerock Drive", "Rancho Cordova, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/11000+Cobblerock+Drive++Rancho+Cordova,+CA+95670,+USA"
     },
     "promoter": {
@@ -784,15 +669,10 @@ module.exports =  [
   {
     "permit": "2017-1198",
     "name": "Salinas Criterium",
-    "dates": [
-      "2017-05-07T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-07T07:00:00.000Z"],
     "location": {
       "cityState": "Salinas, California, CA",
-      "detailed": [
-        "Moffet Industrial Park",
-        "Salinas, California, CA"
-      ],
+      "detailed": ["Moffet Industrial Park", "Salinas, California, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Moffet+Industrial+Park+Salinas,+California,+CA+93901,+USA"
     },
     "promoter": {
@@ -813,15 +693,10 @@ module.exports =  [
   {
     "permit": "2017-340",
     "name": "Honor Ride Sacramento",
-    "dates": [
-      "2017-05-13T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-13T07:00:00.000Z"],
     "location": {
       "cityState": "Rocklin, CA",
-      "detailed": [
-        "270 Technology Way Ste 100",
-        "Rocklin, CA"
-      ],
+      "detailed": ["270 Technology Way Ste 100", "Rocklin, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/270+Technology+Way+Ste+100+Rocklin,+CA+95765,+USA"
     },
     "promoter": {
@@ -842,9 +717,7 @@ module.exports =  [
   {
     "permit": "2017-1215",
     "name": "Modesto Downtown Criterium",
-    "dates": [
-      "2017-05-20T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-20T07:00:00.000Z"],
     "location": {
       "cityState": "Modesto, CA",
       "detailed": "Modesto, CA",
@@ -868,9 +741,7 @@ module.exports =  [
   {
     "permit": "2017-1216",
     "name": "Modesto Road Race",
-    "dates": [
-      "2017-05-21T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-21T07:00:00.000Z"],
     "location": {
       "cityState": "Modesto, CA",
       "detailed": "Modesto, CA",
@@ -894,15 +765,10 @@ module.exports =  [
   {
     "permit": "2017-662",
     "name": "Folsom Classic Criterium",
-    "dates": [
-      "2017-05-27T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-27T07:00:00.000Z"],
     "location": {
       "cityState": "Folsom, CA",
-      "detailed": [
-        "181 Blue Ravine Rd.",
-        "Folsom, CA"
-      ],
+      "detailed": ["181 Blue Ravine Rd.", "Folsom, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/181+Blue+Ravine+Rd.+Folsom,+CA+95630,+USA"
     },
     "promoter": {
@@ -923,16 +789,10 @@ module.exports =  [
   {
     "permit": "2017-1142",
     "name": "Memorial Day Classic Stage Race/Omnium inc the Legendary Mt Hamilton",
-    "dates": [
-      "2017-05-27T07:00:00.000Z",
-      "2017-05-29T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-27T07:00:00.000Z", "2017-05-29T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "Refer to technical guide for start/finish locations",
-        "Livermore, CA"
-      ],
+      "detailed": ["Refer to technical guide for start/finish locations", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Refer+to+technical+guide+for+start/finish+locations+Livermore,+CA+94551,+USA"
     },
     "promoter": {
@@ -953,15 +813,10 @@ module.exports =  [
   {
     "permit": "2017-280",
     "name": "Pescadero Coastal Classic",
-    "dates": [
-      "2017-06-03T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-03T07:00:00.000Z"],
     "location": {
       "cityState": "Pescadero, CA",
-      "detailed": [
-        "350 Butano Cut-Off",
-        "Pescadero, CA"
-      ],
+      "detailed": ["350 Butano Cut-Off", "Pescadero, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/350+Butano+Cut-Off+Pescadero,+CA+94060,+USA"
     },
     "promoter": {
@@ -982,9 +837,7 @@ module.exports =  [
   {
     "permit": "2017-1722",
     "name": "Dash for Cash",
-    "dates": [
-      "2017-06-10T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-10T07:00:00.000Z"],
     "location": {
       "cityState": "PLEASANTON, CA",
       "detailed": "PLEASANTON, CA",
@@ -1008,9 +861,7 @@ module.exports =  [
   {
     "permit": "2017-1857",
     "name": "NCNCA District Time Trial",
-    "dates": [
-      "2017-06-11T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-11T07:00:00.000Z"],
     "location": {
       "cityState": "Loyalton , CA",
       "detailed": "Loyalton , CA",
@@ -1034,9 +885,7 @@ module.exports =  [
   {
     "permit": "2017-1465",
     "name": "60th Anniversary Berkeley Hills Road Race",
-    "dates": [
-      "2017-06-11T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-11T07:00:00.000Z"],
     "location": {
       "cityState": "Martinez, CA",
       "detailed": "Martinez, CA",
@@ -1060,15 +909,10 @@ module.exports =  [
   {
     "permit": "2017-1937",
     "name": "2017 RED KITE OMNIUM EVENT #7 - TRI-VALLEY CRITERIUM CLASSIC",
-    "dates": [
-      "2017-06-17T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-17T07:00:00.000Z"],
     "location": {
       "cityState": "Pleasanton, CA",
-      "detailed": [
-        "Tom Burnett Lane",
-        "Pleasanton, CA"
-      ],
+      "detailed": ["Tom Burnett Lane", "Pleasanton, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Tom+Burnett+Lane+Pleasanton,+CA+94568,+USA"
     },
     "promoter": {
@@ -1089,15 +933,10 @@ module.exports =  [
   {
     "permit": "2017-2031",
     "name": "Nevada City Gravel Grinder",
-    "dates": [
-      "2017-06-17T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-17T07:00:00.000Z"],
     "location": {
       "cityState": "Nevada City, CA",
-      "detailed": [
-        "503 Sacramento St.",
-        "Nevada City, CA"
-      ],
+      "detailed": ["503 Sacramento St.", "Nevada City, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/503+Sacramento+St.+Nevada+City,+CA+95959,+USA"
     },
     "promoter": {
@@ -1118,15 +957,10 @@ module.exports =  [
   {
     "permit": "2017-2032",
     "name": "Nevada City Saturday Broad Street Sprints",
-    "dates": [
-      "2017-06-17T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-17T07:00:00.000Z"],
     "location": {
       "cityState": "Nevada City, CA",
-      "detailed": [
-        "503 Sacramento St.",
-        "Nevada City, CA"
-      ],
+      "detailed": ["503 Sacramento St.", "Nevada City, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/503+Sacramento+St.+Nevada+City,+CA+95959,+USA"
     },
     "promoter": {
@@ -1147,15 +981,10 @@ module.exports =  [
   {
     "permit": "2017-1620",
     "name": "57th Annual Nevada City Bicycle Classic",
-    "dates": [
-      "2017-06-18T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-18T07:00:00.000Z"],
     "location": {
       "cityState": "Nevada City, CA",
-      "detailed": [
-        "503 Sacramento St.",
-        "Nevada City, CA"
-      ],
+      "detailed": ["503 Sacramento St.", "Nevada City, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/503+Sacramento+St.+Nevada+City,+CA+95959,+USA"
     },
     "promoter": {
@@ -1176,15 +1005,10 @@ module.exports =  [
   {
     "permit": "2017-1397",
     "name": "Auburn Downtown Criterium",
-    "dates": [
-      "2017-06-25T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-25T07:00:00.000Z"],
     "location": {
       "cityState": "Auburn, CA",
-      "detailed": [
-        "835 Lincoln Way",
-        "Auburn, CA"
-      ],
+      "detailed": ["835 Lincoln Way", "Auburn, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/835+Lincoln+Way+Auburn,+CA+95603,+USA"
     },
     "promoter": {
@@ -1205,15 +1029,10 @@ module.exports =  [
   {
     "permit": "2017-1420",
     "name": "The Parnassus Investments Burlingame Criterium",
-    "dates": [
-      "2017-06-25T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-25T07:00:00.000Z"],
     "location": {
       "cityState": "Burlingame , CA",
-      "detailed": [
-        "501 Primrose Road",
-        "Burlingame , CA"
-      ],
+      "detailed": ["501 Primrose Road", "Burlingame , CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/501+Primrose+Road+Burlingame+,+CA+94010,+USA"
     },
     "promoter": {
@@ -1234,15 +1053,10 @@ module.exports =  [
   {
     "permit": "2017-1919",
     "name": "Lodoga Road Race (Formerly Leesville)",
-    "dates": [
-      "2017-07-02T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-02T07:00:00.000Z"],
     "location": {
       "cityState": "Williams, CA",
-      "detailed": [
-        "11th St at B St",
-        "Williams, CA"
-      ],
+      "detailed": ["11th St at B St", "Williams, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/11th+St+at+B+St+Williams,+CA+95987,+USA"
     },
     "promoter": {
@@ -1263,9 +1077,7 @@ module.exports =  [
   {
     "permit": "2017-1935",
     "name": "Davis Bike Club 4th of July Criterium",
-    "dates": [
-      "2017-07-04T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-04T07:00:00.000Z"],
     "location": {
       "cityState": "Davis, CA",
       "detailed": "Davis, CA",
@@ -1289,15 +1101,10 @@ module.exports =  [
   {
     "permit": "2017-1921",
     "name": "Watsonville Criterium",
-    "dates": [
-      "2017-07-08T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-08T07:00:00.000Z"],
     "location": {
       "cityState": "Watsonville, CA",
-      "detailed": [
-        "201 Brewington Ave",
-        "Watsonville, CA"
-      ],
+      "detailed": ["201 Brewington Ave", "Watsonville, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/201+Brewington+Ave+Watsonville,+CA+95076,+USA"
     },
     "promoter": {
@@ -1318,15 +1125,10 @@ module.exports =  [
   {
     "permit": "2017-2095",
     "name": "2017 RKO#9 - RED KITE CRITERIUM (July)",
-    "dates": [
-      "2017-07-09T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-09T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "448 Comerce Way",
-        "Livermore, CA"
-      ],
+      "detailed": ["448 Comerce Way", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/448+Comerce+Way+Livermore,+CA+94551,+USA"
     },
     "promoter": {
@@ -1347,9 +1149,7 @@ module.exports =  [
   {
     "permit": "2017-1418",
     "name": "RPP Hobby Lakeport Downtown Criterium presented by Conser Land Surveyi",
-    "dates": [
-      "2017-07-15T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-15T07:00:00.000Z"],
     "location": {
       "cityState": "Lakeport, CA",
       "detailed": "Lakeport, CA",
@@ -1373,15 +1173,10 @@ module.exports =  [
   {
     "permit": "2017-1992",
     "name": "Colavita Norcal Grand Prix",
-    "dates": [
-      "2017-07-16T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-16T07:00:00.000Z"],
     "location": {
       "cityState": "Rohnert Park, CA",
-      "detailed": [
-        "1100 Valley House Dr",
-        "Rohnert Park, CA"
-      ],
+      "detailed": ["1100 Valley House Dr", "Rohnert Park, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1100+Valley+House+Dr+Rohnert+Park,+CA+94928,+USA"
     },
     "promoter": {
@@ -1401,15 +1196,10 @@ module.exports =  [
   {
     "permit": "2017-2181",
     "name": "2017 RKO#11 - THE BUMP CIRCUIT RACE (SUMMER)",
-    "dates": [
-      "2017-07-23T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-23T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "1575 Greenville Road",
-        "Livermore, CA"
-      ],
+      "detailed": ["1575 Greenville Road", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1575+Greenville+Road+Livermore,+CA+94550,+USA"
     },
     "promoter": {
@@ -1430,15 +1220,10 @@ module.exports =  [
   {
     "permit": "2017-2341",
     "name": "Patterson Pass Road Race",
-    "dates": [
-      "2017-08-05T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-05T07:00:00.000Z"],
     "location": {
       "cityState": "Tracy, CA",
-      "detailed": [
-        "16116 Patterson Pass Road at Midway Road",
-        "Tracy, CA"
-      ],
+      "detailed": ["16116 Patterson Pass Road at Midway Road", "Tracy, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/16116+Patterson+Pass+Road+at+Midway+Road+Tracy,+CA+95376,+USA"
     },
     "promoter": {
@@ -1459,15 +1244,10 @@ module.exports =  [
   {
     "permit": "2017-2278",
     "name": "2017 RKO#13 - RED KITE CRITERIUM (AUGUST)",
-    "dates": [
-      "2017-08-06T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-06T07:00:00.000Z"],
     "location": {
       "cityState": "Livermore, CA",
-      "detailed": [
-        "448 Comerce Way",
-        "Livermore, CA"
-      ],
+      "detailed": ["448 Comerce Way", "Livermore, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/448+Comerce+Way+Livermore,+CA+94551,+USA"
     },
     "promoter": {
@@ -1488,9 +1268,7 @@ module.exports =  [
   {
     "permit": "2017-2344",
     "name": "Dunnigan Hills Road Race",
-    "dates": [
-      "2017-08-12T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-12T07:00:00.000Z"],
     "location": {
       "cityState": "Dunnigan, CA",
       "detailed": "Dunnigan, CA",
@@ -1514,15 +1292,10 @@ module.exports =  [
   {
     "permit": "2017-2343",
     "name": "Suisun Harbor Criterium",
-    "dates": [
-      "2017-08-13T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-13T07:00:00.000Z"],
     "location": {
       "cityState": "Suisun City, CA",
-      "detailed": [
-        "Main Street at California Street",
-        "Suisun City, CA"
-      ],
+      "detailed": ["Main Street at California Street", "Suisun City, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Main+Street+at+California+Street+Suisun+City,+CA+94585,+USA"
     },
     "promoter": {
@@ -1543,15 +1316,10 @@ module.exports =  [
   {
     "permit": "2017-2354",
     "name": "San Ardo Road Race",
-    "dates": [
-      "2017-08-19T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-19T07:00:00.000Z"],
     "location": {
       "cityState": "San Ardo, CA",
-      "detailed": [
-        "San Ardo, CA  93450",
-        "San Ardo, CA"
-      ],
+      "detailed": ["San Ardo, CA  93450", "San Ardo, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/San+Ardo,+CA++93450+San+Ardo,+CA+93450,+USA"
     },
     "promoter": {
@@ -1572,9 +1340,7 @@ module.exports =  [
   {
     "permit": "2017-2279",
     "name": "2017 RKO#14 - TEMPUS FUGIT INDIVIDUAL TIME TRIAL (SUMMER)",
-    "dates": [
-      "2017-08-20T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-20T07:00:00.000Z"],
     "location": {
       "cityState": "Castro Valley, CA",
       "detailed": "Castro Valley, CA",
@@ -1598,15 +1364,10 @@ module.exports =  [
   {
     "permit": "2017-2355",
     "name": "University Road Race",
-    "dates": [
-      "2017-08-20T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-20T07:00:00.000Z"],
     "location": {
       "cityState": "Santa Cruz, CA",
-      "detailed": [
-        "1156 High Street",
-        "Santa Cruz, CA"
-      ],
+      "detailed": ["1156 High Street", "Santa Cruz, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1156+High+Street+Santa+Cruz,+CA+95064,+USA"
     },
     "promoter": {
@@ -1627,10 +1388,7 @@ module.exports =  [
   {
     "permit": "2017-2299",
     "name": "Mt Whitney Stage Race",
-    "dates": [
-      "2017-08-26T07:00:00.000Z",
-      "2017-08-27T07:00:00.000Z"
-    ],
+    "dates": ["2017-08-26T07:00:00.000Z", "2017-08-27T07:00:00.000Z"],
     "location": {
       "cityState": "Lone Pine, CA",
       "detailed": "Lone Pine, CA",
@@ -1651,18 +1409,36 @@ module.exports =  [
     "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=40&"
   },
   {
+    "permit": "2017-2555",
+    "name": "Henleyville Road Race",
+    "dates": ["2017-08-26T07:00:00.000Z"],
+    "location": {
+      "cityState": "Corning, CA",
+      "detailed": ["20351 Simpson Road", "Corning, CA"],
+      "googleMapsUrl": "http://maps.google.com/maps/place/20351+Simpson+Road+Corning,+CA+96021,+USA"
+    },
+    "promoter": {
+      "club": "Golden Chain Cyclists",
+      "raceDirector": "Robert Leibold",
+      "url": "http://usacycling.org/clubs/index.php?club=2568"
+    },
+    "eventWebSite": "http://www.velopromo.com",
+    "status": "Permitted",
+    "usacCategory": "Category - E",
+    "year": 2017,
+    "state": "CN",
+    "discipline": "Road",
+    "usacEventType": "Results & Ranking",
+    "competitive": "competitive",
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=40&"
+  },
+  {
     "permit": "2017-2280",
     "name": "RED KITE CHAMPIONSHIP WEEKEND-2017 RED KITE AND NCNCA MASTERS/JUNIORS",
-    "dates": [
-      "2017-09-02T07:00:00.000Z",
-      "2017-09-03T07:00:00.000Z"
-    ],
+    "dates": ["2017-09-02T07:00:00.000Z", "2017-09-03T07:00:00.000Z"],
     "location": {
       "cityState": "Pleasanton, CA",
-      "detailed": [
-        "5000 Hopyard Road",
-        "Pleasanton, CA"
-      ],
+      "detailed": ["5000 Hopyard Road", "Pleasanton, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/5000+Hopyard+Road+Pleasanton,+CA+94588,+USA"
     },
     "promoter": {
@@ -1678,20 +1454,15 @@ module.exports =  [
     "discipline": "Road",
     "usacEventType": "Results & Ranking",
     "competitive": "competitive",
-    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=40&"
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=60&"
   },
   {
     "permit": "2017-2356",
     "name": "Giro Di San Francisco",
-    "dates": [
-      "2017-09-04T07:00:00.000Z"
-    ],
+    "dates": ["2017-09-04T07:00:00.000Z"],
     "location": {
       "cityState": "San Francisco, CA",
-      "detailed": [
-        "Levi Strauss Plaza 1155 Battery St",
-        "San Francisco, CA"
-      ],
+      "detailed": ["Levi Strauss Plaza 1155 Battery St", "San Francisco, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Levi+Strauss+Plaza+1155+Battery+St+++San+Francisco,+CA+94111,+USA"
     },
     "promoter": {
@@ -1712,15 +1483,10 @@ module.exports =  [
   {
     "permit": "2017-2461",
     "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
-    "dates": [
-      "2017-09-09T07:00:00.000Z"
-    ],
+    "dates": ["2017-09-09T07:00:00.000Z"],
     "location": {
       "cityState": "Jackson, CA",
-      "detailed": [
-        "175 Main Street",
-        "Jackson, CA"
-      ],
+      "detailed": ["175 Main Street", "Jackson, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/175+Main+Street+Jackson,+CA+95642,+USA"
     },
     "promoter": {
@@ -1740,16 +1506,10 @@ module.exports =  [
   {
     "permit": "2017-1762",
     "name": "FFWD WNTL p/b Vie13 2017",
-    "dates": [
-      "2017-05-10T07:00:00.000Z",
-      "2017-08-23T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-10T07:00:00.000Z", "2017-08-23T07:00:00.000Z"],
     "location": {
       "cityState": "San Jose, CA",
-      "detailed": [
-        "Hellyer County Park Velodrome",
-        "San Jose, CA"
-      ],
+      "detailed": ["Hellyer County Park Velodrome", "San Jose, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Hellyer+County+Park+Velodrome+San+Jose,+CA+95111,+USA"
     },
     "promoter": {
@@ -1769,15 +1529,10 @@ module.exports =  [
   {
     "permit": "2017-2070",
     "name": "NCNCA Junior Track Championship",
-    "dates": [
-      "2017-07-22T07:00:00.000Z"
-    ],
+    "dates": ["2017-07-22T07:00:00.000Z"],
     "location": {
       "cityState": "San Jose, CA",
-      "detailed": [
-        "985 Hellyer Ave",
-        "San Jose, CA"
-      ],
+      "detailed": ["985 Hellyer Ave", "San Jose, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/985+Hellyer+Ave+San+Jose,+CA+95111,+USA"
     },
     "promoter": {
@@ -1798,16 +1553,10 @@ module.exports =  [
   {
     "permit": "2017-1178",
     "name": "NCNCA Master Track Championships",
-    "dates": [
-      "2017-09-09T07:00:00.000Z",
-      "2017-09-10T07:00:00.000Z"
-    ],
+    "dates": ["2017-09-09T07:00:00.000Z", "2017-09-10T07:00:00.000Z"],
     "location": {
       "cityState": "San Jose, CA",
-      "detailed": [
-        "995 Hellyer Ave.",
-        "San Jose, CA"
-      ],
+      "detailed": ["995 Hellyer Ave.", "San Jose, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/995+Hellyer+Ave.++San+Jose,+CA+95111,+USA"
     },
     "promoter": {
@@ -1828,16 +1577,10 @@ module.exports =  [
   {
     "permit": "2017-236",
     "name": "2017 SUBARU Sea Otter Classic - MOUNTAIN BIKE",
-    "dates": [
-      "2017-04-20T07:00:00.000Z",
-      "2017-04-23T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-20T07:00:00.000Z", "2017-04-23T07:00:00.000Z"],
     "location": {
       "cityState": "Monterey, CA",
-      "detailed": [
-        "Laguna Seca Recreation Area",
-        "Monterey, CA"
-      ],
+      "detailed": ["Laguna Seca Recreation Area", "Monterey, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Laguna+Seca+Recreation+Area+Monterey,+CA+93940,+USA"
     },
     "promoter": {
@@ -1858,16 +1601,10 @@ module.exports =  [
   {
     "permit": "2017-466",
     "name": "2017 SUBARU Sea Otter Classic - Pump Park",
-    "dates": [
-      "2017-04-20T07:00:00.000Z",
-      "2017-04-23T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-20T07:00:00.000Z", "2017-04-23T07:00:00.000Z"],
     "location": {
       "cityState": "Monterey, CA",
-      "detailed": [
-        "Laguna Seca Recreation Area",
-        "Monterey, CA"
-      ],
+      "detailed": ["Laguna Seca Recreation Area", "Monterey, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Laguna+Seca+Recreation+Area+Monterey,+CA+93940,+USA"
     },
     "promoter": {
@@ -1888,15 +1625,10 @@ module.exports =  [
   {
     "permit": "2017-1638",
     "name": "Little Big Festival MTB Short Track",
-    "dates": [
-      "2017-05-28T07:00:00.000Z"
-    ],
+    "dates": ["2017-05-28T07:00:00.000Z"],
     "location": {
       "cityState": "Truckee, CA",
-      "detailed": [
-        "12200 Joerger Dr",
-        "Truckee, CA"
-      ],
+      "detailed": ["12200 Joerger Dr", "Truckee, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/12200+Joerger+Dr+Truckee,+CA+96161,+USA"
     },
     "promoter": {
@@ -1917,16 +1649,10 @@ module.exports =  [
   {
     "permit": "2017-881",
     "name": "El Dorado Benduro",
-    "dates": [
-      "2017-06-10T07:00:00.000Z",
-      "2017-06-11T07:00:00.000Z"
-    ],
+    "dates": ["2017-06-10T07:00:00.000Z", "2017-06-11T07:00:00.000Z"],
     "location": {
       "cityState": "Georgetown, CA",
-      "detailed": [
-        "Mace Mill Staging Area",
-        "Georgetown, CA"
-      ],
+      "detailed": ["Mace Mill Staging Area", "Georgetown, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/Mace+Mill+Staging+Area+Georgetown,+CA+95633,+USA"
     },
     "promoter": {
@@ -1947,16 +1673,10 @@ module.exports =  [
   {
     "permit": "2017-1866",
     "name": "West Sacramento Cyclocross Grand Prix (WSCXGP) Presented by Toyota",
-    "dates": [
-      "2017-09-30T07:00:00.000Z",
-      "2017-10-01T07:00:00.000Z"
-    ],
+    "dates": ["2017-09-30T07:00:00.000Z", "2017-10-01T07:00:00.000Z"],
     "location": {
       "cityState": "West Sacramento, CA",
-      "detailed": [
-        "River Walk Park, 651 2nd Street",
-        "West Sacramento, CA"
-      ],
+      "detailed": ["River Walk Park, 651 2nd Street", "West Sacramento, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/River+Walk+Park,+651+2nd+Street+West+Sacramento,+CA+95605,+USA"
     },
     "promoter": {
@@ -1977,16 +1697,10 @@ module.exports =  [
   {
     "permit": "2017-825",
     "name": "UC Davis Collegiate Cycling Race Weekend",
-    "dates": [
-      "2017-04-01T07:00:00.000Z",
-      "2017-04-02T07:00:00.000Z"
-    ],
+    "dates": ["2017-04-01T07:00:00.000Z", "2017-04-02T07:00:00.000Z"],
     "location": {
       "cityState": "Davis, CA",
-      "detailed": [
-        "1 Shields Avenue",
-        "Davis, CA"
-      ],
+      "detailed": ["1 Shields Avenue", "Davis, CA"],
       "googleMapsUrl": "http://maps.google.com/maps/place/1+Shields+Avenue+Davis,+CA+95616,+USA"
     },
     "promoter": {
