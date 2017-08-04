@@ -87,7 +87,7 @@ const config = {
     new webpack.optimize.DedupePlugin(),
     extractCss,
     new webpack.optimize.UglifyJsPlugin({
-      minimize: false,
+      minimize: true,
       compressor: {
         screw_ie8: true, // eslint-disable-line camelcase
         warnings: false

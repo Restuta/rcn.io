@@ -4,7 +4,8 @@ import { routerReducer } from 'react-router-redux'
 import {
   norcalMtb2016Events,
   ncnca2016Events,
-  ncnca2017Events
+  ncnca2017Events,
+  usac2017Events
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
@@ -62,6 +63,7 @@ const initialState = {
     norcalMtb2016Events
     .concat(ncnca2016Events)
     .concat(ncnca2017Events)
+    .concat(usac2017Events)
   ),
 
   //calenars map by id
@@ -120,6 +122,20 @@ const initialState = {
       showPastEvents: false,
       draft: false,
       eventsIds: toArrayOfIds(ncnca2017Events),
+    },
+    ['cal-usac-2017']: {
+      id: 'cal-usac-2017',
+      year: 2017,
+      name: '2017 USAC Calendar',
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
+      description: '(Same events from https://www.usacycling.org/events/state_search.php?state=CN)',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: false,
+      draft: false,
+      eventsIds: toArrayOfIds(usac2017Events),
     },
   }
 }

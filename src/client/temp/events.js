@@ -6,6 +6,8 @@ import rawMtbEventsManual from 'client/temp/data/2016-mtb-manual'
 import rawNcnca2016Events from 'client/temp/data/2016-ncnca-events'
 import rawNcnca2017Events from 'client/temp/data/2017-ncnca-events'
 
+import rawUsac2017Events from 'client/temp/data/2017-usac-events.json'
+
 import fetchRawNcncaDraftEvents2017 from 'client/temp/fetch-ncnca-draft-events-2017'
 import moment from 'moment'
 import { hash } from 'client/utils/math'
@@ -68,6 +70,8 @@ const ncnca2016Events = preProcessEvents(rawNcnca2016Events)
 const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
   .then(eventsRaw => preProcessEvents(eventsRaw))
 
+const usac2017Events = preProcessEvents(rawUsac2017Events)
+
 const ncnca2017Events = preProcessEvents(rawNcnca2017Events)
 
 export {
@@ -75,5 +79,6 @@ export {
   norcalMtb2016Events,
   ncnca2016Events,
   fetchNcncaDraftEvents2017,
-  ncnca2017Events
+  ncnca2017Events,
+  usac2017Events
 }
