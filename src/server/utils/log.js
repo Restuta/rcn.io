@@ -17,6 +17,7 @@ const log = (msg, color) => {
 const error = msg => log(msg, 'red')
 const debug = msg => log(msg, 'blue')
 const cyan = msg => log(msg, 'cyan')
+const green = msg => log(msg, 'green')
 const magenta = msg => log(msg, 'magenta')
 const info = msg => console.info(inspect({msg, colors: false}))
 
@@ -37,6 +38,7 @@ const path = (extraProcessingFunc = identity, path, iterable) =>
 
 module.exports = {
   debug,
+  green,
   cyan,
   magenta,
   error,

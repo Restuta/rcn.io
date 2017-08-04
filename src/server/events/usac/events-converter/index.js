@@ -1,13 +1,11 @@
 const log = require('server/utils/log')
 const { flow, map, trim } = require('lodash/fp')
-const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road')
+const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road.json')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
 const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
 
 const Joi = require('joi')
 const schema = require('client/temp/data/tests/event-schema')
-
-log.debug(usac2017CnRoadEvensRaw.length)
 
 const convertToInternalFormat = rawUsacEvent => {
   const shortId = createShortEventId()
@@ -49,9 +47,10 @@ const validateOverSchema = rcnEvent => {
   const { value: event, error } = Joi.validate(rcnEvent, schema)
 
   if (error) {
-    log.error(`${event.usacPermit} failed schema validaiton: ${error}`)
+    // log.error(`${event.usacPermit} failed schema validaiton: ${error}`)
+    throw new Error(`${event.usacPermit} failed schema validaiton: ${error}`)
   } else {
-    log.cyan(`${event.id} passed Joi schema validation`)
+    // log.cyan(`${event.id} passed Joi schema validation`)
   }
 
   return rcnEvent
@@ -65,10 +64,10 @@ const processEvents = flow(
 )
 
 const processedEvents = processEvents(usac2017CnRoadEvensRaw)
-log.debug('done!')
+log.green(`Converted ${processedEvents.length} events`)
 // log.debug(processEvents)
 
-const { uniq } = require('lodash/fp')
+// const { uniq } = require('lodash/fp')
 // log.path(uniq, 'resultsUrl', processedEvents)
 // log.path(x => x, 'type', processedEvents)
 
