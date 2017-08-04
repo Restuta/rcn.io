@@ -1,6 +1,7 @@
-import Joi from 'joi'
-import { flow, values, map, flatten, uniq, partialRight } from 'lodash'
-import { EventTypes, Disciplines, Statuses } from 'client/calendar/events/types'
+
+const Joi = require('joi')
+const { flow, values, map, flatten, uniq, partialRight } = require('lodash')
+const { EventTypes, Disciplines, Statuses } = require('client/calendar/events/types')
 
 const getAllEventTypes = eventTypesMap =>
   flow(
@@ -78,4 +79,4 @@ const schema = Joi.object().keys({
 
 })
 
-export default schema
+module.exports = schema

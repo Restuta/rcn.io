@@ -1,8 +1,11 @@
 const log = require('server/utils/log')
-const { flow, map } = require('lodash/fp')
+const { flow, map, trim } = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road')
-const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id.js')
+const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
 const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
+
+const Joi = require('joi')
+const schema = require('client/temp/data/tests/event-schema')
 
 log.debug(usac2017CnRoadEvensRaw.length)
 
@@ -15,7 +18,7 @@ const convertToInternalFormat = rawUsacEvent => {
     const rcnEvent = {
       id: createPrettyEventId(rawUsacEvent.year, rawUsacEvent.name, 'usac', shortId),
       _shortId: shortId,
-      name: rawUsacEvent.name,
+      name: trim(rawUsacEvent.name),
       date: parseDate(rawUsacEvent.dates),
       discipline: discipline,
       type: parseType({
@@ -24,14 +27,14 @@ const convertToInternalFormat = rawUsacEvent => {
         competitive: rawUsacEvent.competitive
       }),
       location: parseLocation(rawUsacEvent.location),
-      usacPermit: rawUsacEvent.permit,
+      usacPermit: trim(rawUsacEvent.permit),
       usac: {
-        status: rawUsacEvent.status,
-        category: rawUsacEvent.usacCategory,
-        type: rawUsacEvent.usacEventType
+        status: trim(rawUsacEvent.status),
+        category: trim(rawUsacEvent.usacCategory),
+        type: trim(rawUsacEvent.usacEventType)
       },
-      websiteUrl: rawUsacEvent.eventWebSite,
-      promoters: parsePromoter(rawUsacEvent.promoter)
+      websiteUrl: trim(rawUsacEvent.eventWebSite),
+      promoters: parsePromoter(rawUsacEvent.promoter),
     }
 
     return rcnEvent
@@ -42,18 +45,31 @@ const convertToInternalFormat = rawUsacEvent => {
   }
 }
 
+const validateOverSchema = rcnEvent => {
+  const { value: event, error } = Joi.validate(rcnEvent, schema)
+
+  if (error) {
+    log.error(`${event.usacPermit} failed schema validaiton: ${error}`)
+  } else {
+    log.cyan(`${event.id} passed Joi schema validation`)
+  }
+
+  return rcnEvent
+}
+
 // main processing pipeline
 const processEvents = flow(
-  map(convertToInternalFormat)
+  map(convertToInternalFormat),
   // , map(log.debug)
-  // ,map(validateOverSchema)
+  map(validateOverSchema)
 )
 
 const processedEvents = processEvents(usac2017CnRoadEvensRaw)
 log.debug('done!')
+// log.debug(processEvents)
 
 const { uniq } = require('lodash/fp')
-log.path(uniq, 'promoters[0]', processedEvents)
+// log.path(uniq, 'resultsUrl', processedEvents)
 // log.path(x => x, 'type', processedEvents)
 
 // log.path(uniq, 'promoter.club', usac2017CnRoadEvensRaw)
