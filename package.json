@@ -26,7 +26,8 @@
     "test:one": "NODE_PATH=./src tape -r './src/tests/index.js'",
     "test": "npm run tape-tests | tap-spec",
     "test:dot": "npm run tape-tests | tap-dot || true",
-    "events-converter:dev": "NODE_PATH=./src nodemon src/server/events/usac/events-converter"
+    "events-converter:dev": "NODE_PATH=./src nodemon src/server/events/usac/events-converter",
+    "events-converter": "NODE_PATH=./src node src/server/events/usac/events-converter"
   },
   "repository": {
     "url": "https://github.com/Restuta/rcn.io.git",
