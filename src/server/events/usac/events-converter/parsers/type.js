@@ -1,4 +1,3 @@
-const log = require('server/utils/log')
 const { lowerCase, flow, contains, partialRight } = require('lodash/fp')
 const { Disciplines, EventTypes } = require('client/calendar/events/types')
 const { normalizeSpaces } = require('../utils')
