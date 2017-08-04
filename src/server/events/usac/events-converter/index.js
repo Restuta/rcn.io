@@ -1,8 +1,8 @@
 const log = require('server/utils/log')
 const { flow, map } = require('lodash/fp')
-const usac2017CnRoadEvensRaw = require('../raw/2017-CN-road')
+const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id.js')
-const { parseDate, parseLocation, parseDiscipline, parseType } = require('./parsers')
+const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
 
 log.debug(usac2017CnRoadEvensRaw.length)
 
@@ -30,7 +30,8 @@ const convertToInternalFormat = rawUsacEvent => {
         category: rawUsacEvent.usacCategory,
         type: rawUsacEvent.usacEventType
       },
-      websiteUrl: rawUsacEvent.eventWebSite
+      websiteUrl: rawUsacEvent.eventWebSite,
+      promoters: parsePromoter(rawUsacEvent.promoter)
     }
 
     return rcnEvent
@@ -40,7 +41,6 @@ const convertToInternalFormat = rawUsacEvent => {
     log.error(rawUsacEvent)
   }
 }
-
 
 // main processing pipeline
 const processEvents = flow(
@@ -52,13 +52,11 @@ const processEvents = flow(
 const processedEvents = processEvents(usac2017CnRoadEvensRaw)
 log.debug('done!')
 
-
 const { uniq } = require('lodash/fp')
-// log.path(uniq, 'usacPermit', processedEvents)
+log.path(uniq, 'promoters[0]', processedEvents)
 // log.path(x => x, 'type', processedEvents)
 
-log.path(uniq, 'promoter.club', usac2017CnRoadEvensRaw)
-
+// log.path(uniq, 'promoter.club', usac2017CnRoadEvensRaw)
 
 // 54.227.184.196
 // 34.224.64.25
