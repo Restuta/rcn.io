@@ -18,7 +18,7 @@ module.exports =  [
     "promoter": {
       "club": "USA Cycling Coaches",
       "raceDirector": "Nathanael Dunn",
-      "url": "http://usacycling.org/clubs/index.php?club=139401"
+      "url": "http://usacycling.org/clubs/index.php?club=13940"
     },
     "eventWebSite": "http://datadrivenathlete.com/napa-valley-camp/",
     "status": "Complete",

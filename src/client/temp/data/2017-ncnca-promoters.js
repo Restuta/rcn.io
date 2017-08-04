@@ -42,7 +42,7 @@ module.exports =  [
 
   // this is werid edge case, it's a placeholder club on USAC! a lot of different, seemingly unrelated people use it
   // https://www.usacycling.org/clubs/clubsearch.php?club=14196
-  { "id": "prm-30018", "name": "USA Cycling Race Director", "contactName": "", "usacClubId": 14196 },
+  { "id": "prm-30018", "name": "USA Cycling Race Director", "contactName": "<it depends, it's a generic club on USAC>", "usacClubId": 14196 },
   { "id": "prm-30019", "name": "Shine Riders Co", "contactName": "Lindsay Currier", "usacClubId": 16676 },
   { "id": "prm-2672", "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com", "usacClubId": 9895 },
   { "id": "prm-2609", "name": "CCCX Cycling Club", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com", "usacClubId": 14829 },
