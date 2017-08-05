@@ -34,12 +34,25 @@ const serveHtmlFromFileSystem = (compiler, fileName, response, next) => {
   })
 }
 
+//explicitly serving all .dll.js since  they are not handled by webpack dev server automatically since are not part
+  //of the current webpack build (dlls are separate webpack build)
+app.get(/\.dll\.js$/, (req, res) => {
+  const filename = req.path.replace(/^\//, '')
+  const filePath = path.join(process.cwd(), filename)
+  res.sendFile(filePath)
+})
+
 //serving different index.html for widgets
-app.get('/widgets/*', function(req, res, next) {
+app.get('/widgets*', function(req, res, next) {
   const filename = path.join(compiler.outputPath, '/widgets/index.html')
   serveHtmlFromFileSystem(compiler, filename, res, next)
 })
 
+//serving different index.html for widgets
+app.get('/admin*', function(req, res, next) {
+  const filename = path.join(compiler.outputPath, '/admin/index.html')
+  serveHtmlFromFileSystem(compiler, filename, res, next)
+})
 
 app.get('*', function(req, res, next) {
   //this reads index.html from webpacks file system which is "in-memory" in case of dev server

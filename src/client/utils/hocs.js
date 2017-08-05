@@ -1,31 +1,47 @@
 import React from 'react'
 
-//logs component's rendering time in MS
-const logRenderPerf = function(WrappedComp, name = '<Unknown Component Name>') {
-  return class RenderPerf extends React.Component {
-    constructor(props) {
-      super(props)
-      this.whenRenderStarted = 0
+let logRenderPerfFor
+
+
+if (process.env.NODE_ENV === 'development') {
+  // logs component's rendering time in MS
+  logRenderPerfFor = compName => function(WrappedComp) {
+    class RenderPerf extends React.Component {
+      constructor(props) {
+        super(props)
+        this.whenRenderStarted = 0
+      }
+
+      componentDidMount() {
+        const now = +new Date()
+        // eslint-disable-next-line  no-console
+        console.log(`  ${compName} rendered in: ` + (now - this.whenRenderStarted) + 'ms')
+      }
+
+      componentDidUpdate() {
+        const now = +new Date()
+        // eslint-disable-next-line  no-console
+        console.log(`  ${compName} re-rendered in: ` + (now - this.whenRenderStarted) + 'ms')
+      }
+
+      render() {
+        this.whenRenderStarted = +new Date()
+        return <WrappedComp {...this.props}/>
+      }
     }
 
-    componentDidMount() {
-      const now = +new Date()
-      console.info(`  ${name} rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
-    }
+    // readable component name for wrapped component
+    RenderPerf.displayName = `RenderPerf(${compName})`
 
-    componentDidUpdate() {
-      const now = +new Date()
-      console.info(`  ${name} re-rendred in: ` + (now - this.whenRenderStarted) + 'ms') // eslint-disable-line  no-console
-    }
-
-    render() {
-      this.whenRenderStarted = +new Date()
-      return <WrappedComp {...this.props}/>
-    }
+    return RenderPerf
   }
+} else {
+  // noop function for prod
+  logRenderPerfFor = compName => WrappedComp => WrappedComp
 }
 
 
+
 export {
-  logRenderPerf
+  logRenderPerfFor
 }

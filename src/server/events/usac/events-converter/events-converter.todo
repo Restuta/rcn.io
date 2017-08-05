@@ -1,0 +1,36 @@
+Version 1:
+ - converts raw USAC events to rcn.io format
+ - validates them with schema
+ - unit tests will be run as part of regular build enforsing additional constrains
+
+
+Version 2:
+- support multi-day events
+  - big question is how to do it
+    - create multiple events and interlink those
+      - pro: easier to show in the calendar
+      - cons: is additional query logic to put this all together
+      - cons: harder to cross-reference events
+    - or create one multi-day event with dates array
+      - pro: easier to convert events and cross-reference
+      - cons: harder to show in the calendar that has to be handled on UI level
+      - cons: is that we can't customize these types events per day
+- load previous events and do lookups
+  - by permit
+    - compare if date is shortSegmentName
+      - if not same, create a copy of the event and mark old one as moved
+  - consider https://www.npmjs.com/package/difflet when events are different
+  - if permit is not available do lookup by name + date
+- lookup promoters by name?
+- if we have some events that are no longer on USAC
+  - mark those as "Cancelled", store info when it disappreared
+
+Version 3:
+  - setup re-current AWS lambda execution (cheep)
+    - calculate request limit, make sure it's <2000 day
+    - figure out Lambda external API
+
+Version 4:
+ - test this on other state
+  - fix few functions (in todo comments) to work with states list, not just CA
+ - ability to fix up event data per event on data level, when parsing fails we would be able to fix it

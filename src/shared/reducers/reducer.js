@@ -4,7 +4,8 @@ import { routerReducer } from 'react-router-redux'
 import {
   norcalMtb2016Events,
   ncnca2016Events,
-  ncnca2017Events
+  ncnca2017Events,
+  usac2017Events
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
@@ -29,7 +30,28 @@ const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
   app: {
-    containerWidth: null,
+    lastKnownUrlLocation: {
+      pathname: undefined,
+      search: undefined
+    },
+    containerWidth: undefined,
+    // specifies if last navigation was back from routed modal
+    navigatedBackFromModal: false,
+    modal: {
+      isOpen: false,
+      // indicates that current modal replaces previous modal
+      replacesPrevModal: false,
+      // most modals need padding, but some don't
+      hasPadding: true,
+      // used for routed modals to replace URL with previous location
+      returnLocation: {
+        pathname: undefined, // url slug to redirect to when modal is closed
+        search: undefined // query string params as it's called in React Router
+      }
+    }
+  },
+  browser: {
+    width: undefined,
   },
   debug: {
     showBaseline: false,
@@ -41,6 +63,7 @@ const initialState = {
     norcalMtb2016Events
     .concat(ncnca2016Events)
     .concat(ncnca2017Events)
+    .concat(usac2017Events)
   ),
 
   //calenars map by id
@@ -48,7 +71,7 @@ const initialState = {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
       year: 2016,
-      name: 'NorCal MTB Calendar 2016',
+      name: '2016 NorCal MTB Calendar',
       highlight: {
         word: 'MTB',
         color: Colors.brownMud
@@ -60,7 +83,7 @@ const initialState = {
     ['cal-ncnca-2017-draft']: {
       id: 'cal-ncnca-2017-draft',
       year: 2017,
-      name: 'NCNCA Calendar 2017',
+      name: '2017 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
@@ -75,12 +98,12 @@ const initialState = {
     ['cal-ncnca-2016']: {
       id: 'cal-ncnca-2016',
       year: 2016,
-      name: 'NCNCA Calendar 2016',
+      name: '2016 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Filters are coming...)',
+      description: '',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,
@@ -89,7 +112,7 @@ const initialState = {
     ['cal-ncnca-2017']: {
       id: 'cal-ncnca-2017',
       year: 2017,
-      name: 'NCNCA Calendar 2017',
+      name: '2017 NCNCA Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
@@ -100,9 +123,105 @@ const initialState = {
       draft: false,
       eventsIds: toArrayOfIds(ncnca2017Events),
     },
+    ['cal-usac-2017']: {
+      id: 'cal-usac-2017',
+      year: 2017,
+      name: '2017 USAC Calendar',
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
+      description: '(Events pulled from usasycling.org as-is)',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: false,
+      draft: false,
+      eventsIds: toArrayOfIds(usac2017Events),
+    },
   }
 }
 
+export const app = makeReducer({
+  ['@@router/LOCATION_CHANGE']: (state, action) => {
+    const locationState = action.payload.state
+
+    // splitting on sub-actions
+    if (locationState && locationState.subActionName) {
+      const subActionName = action.payload.state.subActionName
+
+      switch (subActionName) {
+        case 'Modal.OPEN_ROUTED_MODAL': {
+          return {
+            ...state,
+            navigatedBackFromModal: false,
+            modal: {
+              ...state.modal,
+              ...locationState.modalProps,
+              returnLocation: locationState.modalReturnLocation,
+              isOpen: true,
+            }
+          }
+        }
+        case 'Modal.REPLACE_ROUTED_MODAL': {
+          return {
+            ...state,
+            navigatedBackFromModal: false,
+            modal: {
+              ...state.modal,
+              ...locationState.modalProps,
+              returnLocation: locationState.modalReturnLocation,
+              isOpen: true,
+              replacesPrevModal: locationState.replacesPrevModal,
+            }
+          }
+        }
+        default:
+          break
+      }
+    }
+
+    // if "going back" we should update modal state, so it's properly closed
+    if (action.payload.action === 'POP' && state.modal.isOpen) {
+      return {
+        ...state,
+        navigatedBackFromModal: true,
+        modal: {
+          ...state.modal,
+          isOpen: false,
+        }
+      }
+    }
+
+    // if none of the actions above then we just cleaning up since on next location changed
+    // it's no longer "navigated back from modal"
+    if (state.navigatedBackFromModal) {
+      return {
+        ...state,
+        navigatedBackFromModal: false,
+      }
+    }
+
+    return state
+  },
+  ['browser/SET_WIDTH']: (state, action) => {
+    console.info('in app reducer')
+    if (state.navigatedBackFromModal) {
+      return {
+        ...state,
+        navigatedBackFromModal: false,
+      }
+    }
+    return state
+  }
+}, initialState.app)
+
+export const browser = makeReducer({
+  ['browser/SET_WIDTH']: (state, action) => {
+    return {
+      ...state,
+      width: action.payload.browserWidth,
+    }
+  }
+}, initialState.browser)
 
 export const calendars = makeReducer({
   ['Cal.TOGGLE_PAST_EVENTS']: (state, action) => {
@@ -161,6 +280,8 @@ export const events = makeReducer({
 }, initialState.events)
 
 const rootReducer = combineReducers({
+  app,
+  browser,
   debug,
   calendars,
   events,

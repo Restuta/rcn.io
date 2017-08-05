@@ -70,30 +70,6 @@ module.exports = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: commonConfig.module.noParse,
-    loaders: [{
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: [path.join(consts.SRC_DIR)],
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: false,
-        compact: true,
-        plugins: [
-          'transform-react-constant-elements', //compile-time optimizations
-          'transform-react-inline-elements' //compile-time optimizations
-        ]
-      }
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    loaders: commonConfig.module.loaders
   },
 }

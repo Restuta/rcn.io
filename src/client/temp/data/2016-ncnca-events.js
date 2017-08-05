@@ -17,7 +17,7 @@ export default [
     "lat": 36.578956,
     "long": -121.66773
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -27,9 +27,9 @@ export default [
   "promoterInfo": "For more information, visit http://www.cccxcycling.com/2015CROSSPAGEfull.html",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -56,7 +56,7 @@ export default [
     "lat": 36.620874,
     "long": -121.770514
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -66,9 +66,9 @@ export default [
   "promoterInfo": "For more information, visit http://www.cccxcycling.com/2015CROSSPAGEfull.html",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -95,7 +95,7 @@ export default [
     "lat": 37.692939,
     "long": -122.40452
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2630",
@@ -128,7 +128,7 @@ export default [
     "lat": 37.545547,
     "long": -122.06649
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -170,7 +170,7 @@ export default [
     "lat": 37.545547,
     "long": -122.06649
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -212,7 +212,7 @@ export default [
     "lat": 37.545547,
     "long": -122.06649
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -254,7 +254,7 @@ export default [
     "lat": 37.545547,
     "long": -122.06649
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -296,7 +296,7 @@ export default [
     "lat": 37.545547,
     "long": -122.06649
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -338,7 +338,7 @@ export default [
     "lat": 37.467143,
     "long": -121.17461
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -351,9 +351,9 @@ export default [
   "promoterInfo": "Additional Information: Robert Leibold - velopro1[at]sonnet.com, (209) 533-4996 or <a href=\"http://www.velopromo.com\" target=\"_blank\">velopromo.com</a>  **Park only on street, not in Villa Del Lago Inn parking lot.**",
   "registrationUrl": "http://www.bikereg.com/",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -374,7 +374,7 @@ export default [
     "lat": 36.789875,
     "long": -119.7132
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
@@ -414,7 +414,7 @@ export default [
     "lat": 36.789875,
     "long": -119.7132
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-23293",
@@ -454,7 +454,7 @@ export default [
     "lat": 36.789875,
     "long": -119.7132
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-23293",
@@ -494,7 +494,7 @@ export default [
     "lat": 36.789875,
     "long": -119.7132
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
@@ -534,7 +534,7 @@ export default [
     "lat": 36.789875,
     "long": -119.7132
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "websiteUrl": "http://www.facebook.com/clovis.training.crits",
   "promoters": [
     {
@@ -581,7 +581,7 @@ export default [
       "name": "Cal Aggie Cycling"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "http://www.usacycling.org/",
   "flyer": {
     "name": "FL_2016-210 Cal Aggie Criterium OKED.pdf",
@@ -968,7 +968,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=992",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-992 UC Santa Cruz Slugapalooza OKED.pdf",
@@ -1124,7 +1124,7 @@ export default [
       "name": "Eagle Cycling Club"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/cherrypie",
   "flyer": {
     "name": "FL_2016-230 Cherry Pie Criterium OKED.pdf",
@@ -1199,7 +1199,7 @@ export default [
       "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/folsom-winter-crit",
   "flyer": {
     "name": "FL_2016-362 Folsom Winter Criterium v2 OKED.pdf",
@@ -1342,7 +1342,7 @@ export default [
     "lat": 37.522116,
     "long": -120.41404
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -1439,7 +1439,7 @@ export default [
     "lat": 37.303996,
     "long": -120.4836
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -1729,7 +1729,7 @@ export default [
       "name": "Sacramento Golden Wheelmen"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/2014-land-park-criterium",
   "flyer": {
     "name": "FL_2016-487 Land Park Criterium OKED.pdf",
@@ -1804,7 +1804,7 @@ export default [
       "name": "Sacramento Golden Wheelmen"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/2015-bariani-road-race",
   "flyer": {
     "name": "FL_2016-489 Bariani Road Race v3 OKED.pdf",
@@ -1837,7 +1837,7 @@ export default [
       "name": "Cal Cycling"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-654 Cal Cycling Road Weekend OKED.pdf",
@@ -1876,7 +1876,7 @@ export default [
       "name": "Cal Cycling"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-654 Cal Cycling Road Weekend OKED.pdf",
@@ -1908,9 +1908,9 @@ export default [
     "lat": 37.335666,
     "long": -120.47328
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.usacycling.org/register/2016-292",
   "flyer": {
     "name": "FL_2016-292 UC Merced Race Weekend v2 OKED.pdf",
@@ -1944,7 +1944,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1019",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-1019 Nevada Cycling Road Race v3 OKED.pdf",
@@ -2141,7 +2141,7 @@ export default [
       "name": "Ciclistas del Valle Cycling Club, Inc."
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/tlrr",
   "flyer": {
     "name": "FL_2016-846 Turlock Lake Road Race v2 OKED.pdf",
@@ -2169,7 +2169,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=957",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/tea-solar-cycling-classic",
   "flyer": {
     "name": "FL_2016-957 TEA Solar Cycling Classic PB CSU Stanislaus OKED.pdf",
@@ -2195,7 +2195,7 @@ export default [
     "lat": 36.57307,
     "long": -121.763367
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"http://www.seaotterclassic.com\" target=\"_blank\">seaotterclassic.com",
   "registrationUrl": "http://www.seaotterclassic.com/",
@@ -2223,7 +2223,7 @@ export default [
     "lat": 36.57307,
     "long": -121.763367
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"http://www.seaotterclassic.com\" target=\"_blank\">seaotterclassic.com",
   "registrationUrl": "http://www.seaotterclassic.com/",
@@ -2251,7 +2251,7 @@ export default [
     "lat": 36.57307,
     "long": -121.763367
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"http://www.seaotterclassic.com\" target=\"_blank\">seaotterclassic.com",
   "registrationUrl": "http://www.seaotterclassic.com/",
@@ -2279,7 +2279,7 @@ export default [
     "lat": 36.57307,
     "long": -121.763367
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"http://www.seaotterclassic.com\" target=\"_blank\">seaotterclassic.com",
   "registrationUrl": "http://www.seaotterclassic.com/",
@@ -2313,7 +2313,7 @@ export default [
       { "id": "prm-30002", "name": "Body Concepts Cycling Team" },
       { "id": "prm-30003", "name": "Winchester Cycling Club" },
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/2016-rko5",
   "flyer": {
     "name": "FL_2016-1194 RKO5 - Winchester Circuit Race v2 OKED.pdf",
@@ -2345,14 +2345,14 @@ export default [
     "lat": 36.890549,
     "long": -119.727366
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -2380,7 +2380,7 @@ export default [
       "name": "Valley Spokesmen Race Team"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/29th-annual-wente-vineyards-classic-road-race",
   "flyer": {
     "name": "FL_2016-448 Wente Vineyards Classic Road Race v5 OKED.pdf",
@@ -2497,7 +2497,7 @@ export default [
       "name": "Berkeley Bicycle Club"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/59bhrr",
   "flyer": {
     "name": "FL_2016-1228 Berkeley Hills Road Race v3 OKED.pdf",
@@ -2612,7 +2612,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1587",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/otf-omnium-registration",
   "flyer": {
     "name": "FL_2016-1587 OTF Omnium and FL_2016-1679 Budweiser Sequoia Cycling Classic v3 OKED.pdf",
@@ -2640,7 +2640,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1587",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/otf-omnium-registration",
   "flyer": {
     "name": "FL_2016-1587 OTF Omnium and FL_2016-1679 Budweiser Sequoia Cycling Classic v3 OKED.pdf",
@@ -2666,7 +2666,7 @@ export default [
     "lat": 37.644839,
     "long": -120.494401
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -2679,9 +2679,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com or (209) 533-4996",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -2883,14 +2883,14 @@ export default [
     "lat": 36.890549,
     "long": -119.727366
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -2913,7 +2913,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=2007",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/2016-rko7",
   "flyer": {
     "name": "FL_2016-2007 RKO7 TRI-VALLEY CRITERIUM CLASSIC v2 OKED.pdf",
@@ -2986,7 +2986,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1145",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/ic3-dash-for-cash",
   "flyer": {
     "name": "FL_2016-1145 Dash for Cash OKED.pdf",
@@ -3130,7 +3130,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=2139",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/nevada-city-bicycle-classic",
   "flyer": {
     "name": "FL_2016-2139 56th Annual Nevada City Bicycle Classic OKED.pdf",
@@ -3202,7 +3202,7 @@ export default [
       "name": "Red Kite Racing"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/events/?pid=4870",
   "flyer": {
     "name": "FL_2016-2146 IRC Tire RKO8 - Martinez Classic Downtown Crit OKED.pdf",
@@ -3229,7 +3229,7 @@ export default [
     "name": "Race Location",
     "streetAddress": "1145-1301 N Gate Rd",
     "city": "Walnut Creek",
-    "state": "",
+    "state": "CA",
     "zip": "94598",
     "lat": 37.901976,
     "long": -121.993377
@@ -3301,14 +3301,14 @@ export default [
     "lat": 38.7646,
     "long": -121.291419
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -3598,7 +3598,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1941",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "http://www.sanrafaelsunset.com/",
   "flyer": {
     "name": "FL_2016-1941 San Rafael Sunset Criterium v2 OKED.pdf",
@@ -3630,7 +3630,7 @@ export default [
     "lat": 37.814453,
     "long": -120.656402
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -3640,9 +3640,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4006,9 +4006,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "2016-2349",
@@ -4135,7 +4135,7 @@ export default [
     "lat": 39.482675,
     "long": -121.221611
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -4148,9 +4148,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4181,7 +4181,7 @@ export default [
     "lat": 37.900748,
     "long": -122.641448
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2667",
@@ -4191,9 +4191,9 @@ export default [
   "promoterInfo": "For more information, visit <a href=\"http://www.goldengatevelo.org/tam\" target=\"_blank\">goldengatevelo.org/tam</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4214,7 +4214,7 @@ export default [
     "lat": 38.69772,
     "long": -122.015548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -4260,7 +4260,7 @@ export default [
     "lat": 37.807956,
     "long": -122.26452
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -4314,7 +4314,7 @@ export default [
     "lat": 36.844332,
     "long": -121.537356
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3324",
@@ -4324,9 +4324,9 @@ export default [
   "promoterInfo": "If you have questions, contact Greg Bloom at greg[at]butanogeotech.com. You can also visit <a href=\"http://www.butanogeotech.com/fremont-peak\" target=\"_blank\">butanogeotech.com/fremont-peak</a> for more information.",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4347,7 +4347,7 @@ export default [
     "lat": 39.925815,
     "long": -122.180744
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -4430,7 +4430,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=992",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-992 UC Santa Cruz Slugapalooza OKED.pdf",
@@ -4469,7 +4469,7 @@ export default [
       "name": "Cal Cycling"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.usacycling.org/register/2016-654",
   "flyer": {
     "name": "FL_2016-654 Cal Cycling Road Weekend OKED.pdf",
@@ -4501,9 +4501,9 @@ export default [
     "lat": 37.335666,
     "long": -120.47328
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.usacycling.org/register/2016-292",
   "flyer": {
     "name": "FL_2016-292 UC Merced Race Weekend v2 OKED.pdf",
@@ -4537,7 +4537,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1019",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "FL_2016-1019 Nevada Cycling Road Race v3 OKED.pdf",
@@ -4793,7 +4793,7 @@ export default [
     "lat": 37.644839,
     "long": -120.494401
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -4806,9 +4806,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com or (209) 533-4996",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4839,7 +4839,7 @@ export default [
     "lat": 37.644839,
     "long": -120.494401
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -4852,9 +4852,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com or (209) 533-4996",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4885,7 +4885,7 @@ export default [
     "lat": 37.644839,
     "long": -120.494401
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -4898,9 +4898,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com or (209) 533-4996",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -4931,7 +4931,7 @@ export default [
     "lat": 37.644839,
     "long": -120.494401
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3226",
@@ -4944,9 +4944,9 @@ export default [
   "promoterInfo": "Promoter's Website: <a href=\"http://www.velopromo.com\" target=\"_blank\">http://www.velopromo.com</a>\r\nContact: Robert Leibold, velopro1 [at] sonnet.com or (209) 533-4996",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5018,7 +5018,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=1679",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.bikereg.com/otf-omnium-registration",
   "flyer": {
     "name": "FL_2016-1587 OTF Omnium and FL_2016-1679 Budweiser Sequoia Cycling Classic v3 OKED.pdf",
@@ -5087,14 +5087,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5115,14 +5115,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5143,14 +5143,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5171,14 +5171,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5199,14 +5199,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5227,14 +5227,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5255,14 +5255,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5283,14 +5283,14 @@ export default [
     "lat": 37.901983,
     "long": -121.9933
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5311,7 +5311,7 @@ export default [
     "lat": 38.577934,
     "long": -121.496923
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5116",
@@ -5344,7 +5344,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5354,9 +5354,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5383,7 +5383,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5393,9 +5393,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5422,7 +5422,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5432,9 +5432,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5461,7 +5461,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5471,9 +5471,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5500,7 +5500,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5510,9 +5510,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5539,7 +5539,7 @@ export default [
     "lat": 35.588563,
     "long": -82.542755
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5549,9 +5549,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5578,7 +5578,7 @@ export default [
     "lat": 34.77705,
     "long": -82.359399
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5588,9 +5588,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5617,7 +5617,7 @@ export default [
     "lat": 34.77705,
     "long": -82.359399
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5627,9 +5627,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5656,7 +5656,7 @@ export default [
     "lat": 35.797422,
     "long": -82.679467
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5666,9 +5666,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5695,7 +5695,7 @@ export default [
     "lat": 35.797422,
     "long": -82.679467
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5705,9 +5705,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5734,7 +5734,7 @@ export default [
     "lat": 35.797422,
     "long": -82.679467
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5744,9 +5744,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5773,7 +5773,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5783,9 +5783,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5812,7 +5812,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5822,9 +5822,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5851,7 +5851,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5861,9 +5861,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5890,7 +5890,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5900,9 +5900,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5929,7 +5929,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5939,9 +5939,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -5968,7 +5968,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -5978,9 +5978,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6007,7 +6007,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6017,9 +6017,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6046,7 +6046,7 @@ export default [
     "lat": 36.11958,
     "long": -80.200085
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6056,9 +6056,9 @@ export default [
   "promoterInfo": "Listing of National Championships on USA Cycling: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6085,7 +6085,7 @@ export default [
     "lat": 33.640245,
     "long": -82.283107
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6095,9 +6095,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6124,7 +6124,7 @@ export default [
     "lat": 38.211385,
     "long": -85.706991
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6134,9 +6134,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6163,7 +6163,7 @@ export default [
     "lat": 38.211385,
     "long": -85.706991
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6173,9 +6173,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6202,7 +6202,7 @@ export default [
     "lat": 38.211385,
     "long": -85.706991
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6212,9 +6212,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6241,7 +6241,7 @@ export default [
     "lat": 38.211385,
     "long": -85.706991
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6251,9 +6251,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6280,7 +6280,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6290,9 +6290,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6319,7 +6319,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6329,9 +6329,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6358,7 +6358,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6368,9 +6368,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6397,7 +6397,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6407,9 +6407,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6436,7 +6436,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6446,9 +6446,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6475,7 +6475,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6485,9 +6485,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6514,7 +6514,7 @@ export default [
     "lat": 40.547755,
     "long": -75.605377
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6524,9 +6524,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6553,7 +6553,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6563,9 +6563,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6592,7 +6592,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6602,9 +6602,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6631,7 +6631,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6641,9 +6641,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6670,7 +6670,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6680,9 +6680,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6709,7 +6709,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6719,9 +6719,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6748,7 +6748,7 @@ export default [
     "lat": 39.773895,
     "long": -86.152671
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6758,9 +6758,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6787,7 +6787,7 @@ export default [
     "lat": 38.860648,
     "long": -104.804864
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6797,9 +6797,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6826,7 +6826,7 @@ export default [
     "lat": 34.932391,
     "long": -81.031812
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6836,9 +6836,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6865,7 +6865,7 @@ export default [
     "lat": 34.932391,
     "long": -81.031812
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6875,9 +6875,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6904,7 +6904,7 @@ export default [
     "lat": 34.932391,
     "long": -81.031812
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6914,9 +6914,9 @@ export default [
   "promoterInfo": "List of USA Cycling National Championships: https://www.usacycling.org/national-championships",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -6943,7 +6943,7 @@ export default [
     "lat": 38.410535,
     "long": -79.994046
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6954,7 +6954,7 @@ export default [
   "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
       "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
       "mimeType": "application/pdf"
   },
@@ -6983,7 +6983,7 @@ export default [
     "lat": 38.410535,
     "long": -79.994046
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -6994,7 +6994,7 @@ export default [
     "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
       "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
       "mimeType": "application/pdf"
   },
@@ -7023,7 +7023,7 @@ export default [
     "lat": 38.410535,
     "long": -79.994046
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2666",
@@ -7034,7 +7034,7 @@ export default [
     "websiteUrl" : "https://www.usacycling.org/2016/collegiate-mtb-nationals",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
       "url": "https://s3.amazonaws.com/USACWeb/forms/natchamps/2016/2016-Collegiate-MTB-Schedule.pdf",
       "mimeType": "application/pdf"
   },
@@ -7065,7 +7065,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=496",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "http://www.savemountdiablo.org/activities_events_chal.html",
   "flyer": {
     "name": "FL_2016-496 Save Mount Diablo - Mt Diablo Challenge Hill Climb OKED.pdf",
@@ -7091,7 +7091,7 @@ export default [
     "lat": 37.386285,
     "long": -122.083366
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2631",
@@ -7133,14 +7133,14 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "BODAgenda_Jan2016.pdf",
@@ -7172,14 +7172,14 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "BODAgenda_Feb2016.pdf",
@@ -7211,14 +7211,14 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "BODAgenda_Mar2016.pdf",
@@ -7250,7 +7250,7 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
@@ -7289,14 +7289,14 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "BODAgenda_May2016.pdf",
@@ -7371,14 +7371,14 @@ export default [
     "lat": 38.235747,
     "long": -122.122681
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, contact Rockville Bike at 707-864-2453",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -7399,14 +7399,14 @@ export default [
     "lat": 38.235747,
     "long": -122.122681
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, contact Rockville Bike at 707-864-2453",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -7427,14 +7427,14 @@ export default [
     "lat": 38.235747,
     "long": -122.122681
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, contact Rockville Bike at 707-864-2453",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -7490,7 +7490,7 @@ export default [
   },
   "resultsUrl": "https://www.usacycling.org/results/index.php?year=2016&id=942",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.usacycling.org/",
   "flyer": {
     "name": "FL_2016-942 Sonora Gran Fondo OKED.pdf",
@@ -7516,7 +7516,7 @@ export default [
     "lat": 39.729122,
     "long": -121.837639
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information contact Sandy Fisher at (530) 894-1919 or email: sandyfisher@chico.com",
   "registrationUrl": "http://www.chicovelo.org/",
@@ -8224,7 +8224,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8234,9 +8234,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8257,7 +8257,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8267,9 +8267,9 @@ export default [
   "promoterInfo": "Juniors, 14-18 & Espoirs, 19-23 (Juniors need to be 14 years old unless prior approval) -- Rain or wet track cancels session -- Cost: Free; Rental Bicycle: Free -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8290,7 +8290,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8300,9 +8300,9 @@ export default [
   "promoterInfo": "Workout Focus: These sessions are structured workouts for the advanced endurance track racer, who are planning to race mass start races (Points, Scratch, Miss-n-Out, and Madison) as well as endurance timed events: Pursuit and Team Pursuit at Masters and Elite Districts, and/or Nationals -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8323,7 +8323,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8333,9 +8333,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8356,7 +8356,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8366,9 +8366,9 @@ export default [
   "promoterInfo": "Description: The purpose of the Saturday morning sessions is to teach the basics of track riding. It is not a racing session or a serious training session. A minimal amount of fitness is necessary to complete some of the drills -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8389,7 +8389,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8399,9 +8399,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8422,7 +8422,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8432,9 +8432,9 @@ export default [
   "promoterInfo": "Details if 3/5 date is rained out -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8455,7 +8455,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8465,9 +8465,9 @@ export default [
   "promoterInfo": "Workout Focus: These weekly training sessions are ideal for any rider looking to raise their fitness, endurance, speed and skill levels. The sessions are coach led structured high quality workouts with a variety of drills aimed at getting the maximum training effect from the time available -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8488,7 +8488,7 @@ export default [
     "lat": 37.289483,
     "long": -121.931344
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8498,9 +8498,9 @@ export default [
   "promoterInfo": "The NCVA BOD meets the third Thursday of every month. All interested parties are welcome to attend -- Location: Sports Basement, 1875 S. Bascom Ave. Suite 240, Campbell -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8521,7 +8521,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8531,9 +8531,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8554,7 +8554,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8564,9 +8564,9 @@ export default [
   "promoterInfo": "Juniors, 14-18 & Espoirs, 19-23 (Juniors need to be 14 years old unless prior approval) -- Rain or wet track cancels session -- Cost: Free; Rental Bicycle: Free -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8587,7 +8587,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8597,9 +8597,9 @@ export default [
   "promoterInfo": "Workout Focus: These sessions are structured workouts for the advanced endurance track racer, who are planning to race mass start races (Points, Scratch, Miss-n-Out, and Madison) as well as endurance timed events: Pursuit and Team Pursuit at Masters and Elite Districts, and/or Nationals -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8620,7 +8620,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8630,9 +8630,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8653,7 +8653,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8663,9 +8663,9 @@ export default [
   "promoterInfo": "Description: The purpose of the Saturday morning sessions is to teach the basics of track riding. It is not a racing session or a serious training session. A minimal amount of fitness is necessary to complete some of the drills -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8686,7 +8686,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8696,9 +8696,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8719,7 +8719,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8729,9 +8729,9 @@ export default [
   "promoterInfo": "Session 1: Saturday, 19 March 12p to 4p – Time Trials: Pursuit and Team Pursuit  -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8752,7 +8752,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8762,9 +8762,9 @@ export default [
   "promoterInfo": "Session 2: Saturday, 16 April 12p to 4p – Team Sprint and 500 Meter TT -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8785,7 +8785,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8795,9 +8795,9 @@ export default [
   "promoterInfo": "Session 3: Saturday, 21 May 12p to 4p – Sprint Techniques and Keirin -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8818,7 +8818,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8828,9 +8828,9 @@ export default [
   "promoterInfo": "Open to Cat 3 riders and above, or the approval of the supervisor -- No rental bikes available (some exceptions apply ie. experienced, out of town rider) -- Motor pacing per the current motor pacing rules -- Rain or wet track cancels session -- Cost: $5 Adults (Season Pass Applicable), $0 Juniors --\r\nMore info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8851,7 +8851,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8861,9 +8861,9 @@ export default [
   "promoterInfo": "Workout Focus: These weekly training sessions are ideal for any rider looking to raise their fitness, endurance, speed and skill levels. The sessions are coach led structured high quality workouts with a variety of drills aimed at getting the maximum training effect from the time available -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8884,7 +8884,7 @@ export default [
     "lat": 37.288018,
     "long": -121.813378
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-3351",
@@ -8894,9 +8894,9 @@ export default [
   "promoterInfo": "Workout Focus: These weekly training sessions are ideal for any rider looking to raise their fitness, endurance, speed and skill levels. The sessions are coach led structured high quality workouts with a variety of drills aimed at getting the maximum training effect from the time available -- More info: Visit the Hellyer Velodrome calendar: http://www.ridethetrack.com/schedule/calendar",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8956,7 +8956,7 @@ export default [
     "lat": 38.758707,
     "long": -123.088005
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2611",
@@ -8966,9 +8966,9 @@ export default [
   "promoterInfo": "http://www.bikemonkey.net/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -8989,14 +8989,14 @@ export default [
     "lat": 36.743095,
     "long": -119.762985
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://bigsandyrace.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9017,14 +9017,14 @@ export default [
     "lat": 36.82282,
     "long": -119.702579
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9045,14 +9045,14 @@ export default [
     "lat": 38.636583,
     "long": -121.149404
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "totalbodyfitness.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9073,14 +9073,14 @@ export default [
     "lat": 38.573144,
     "long": -122.446197
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://web2.puc.edu/Pioneers/NVDC/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9101,14 +9101,14 @@ export default [
     "lat": 39.259232,
     "long": -121.020468
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://ybonc.org/events/dirt-classic/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9129,14 +9129,14 @@ export default [
     "lat": 40.579339,
     "long": -122.382652
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://shastalemurian.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9157,14 +9157,14 @@ export default [
     "lat": 38.636583,
     "long": -121.149404
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.racebehindbars.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9185,14 +9185,14 @@ export default [
     "lat": 39.259232,
     "long": -121.020468
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://ybonc.org/events/dirt-classic/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9213,7 +9213,7 @@ export default [
     "lat": 36.63159,
     "long": -121.799095
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -9223,9 +9223,9 @@ export default [
   "promoterInfo": "www.cccxcycling.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9246,14 +9246,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9274,14 +9274,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9302,14 +9302,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9330,14 +9330,14 @@ export default [
     "lat": 38.636583,
     "long": -121.149404
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.racebehindbars.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9358,14 +9358,14 @@ export default [
     "lat": 36.221719,
     "long": -121.127658
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9386,14 +9386,14 @@ export default [
     "lat": 36.992627,
     "long": -121.997525
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "https://www.facebook.com/oldcabinclassic/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9414,14 +9414,14 @@ export default [
     "lat": 38.905428,
     "long": -119.677516
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "https://www.facebook.com/SierraCupMTB",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9442,7 +9442,7 @@ export default [
     "lat": 36.63159,
     "long": -121.799095
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -9452,9 +9452,9 @@ export default [
   "promoterInfo": "www.cccxcycling.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9475,7 +9475,7 @@ export default [
     "lat": 36.63159,
     "long": -121.799095
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -9485,9 +9485,9 @@ export default [
   "promoterInfo": "www.cccxcycling.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9508,7 +9508,7 @@ export default [
     "lat": 36.63159,
     "long": -121.799095
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -9518,9 +9518,9 @@ export default [
   "promoterInfo": "www.cccxcycling.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9541,7 +9541,7 @@ export default [
     "lat": 36.63159,
     "long": -121.799095
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2609",
@@ -9551,9 +9551,9 @@ export default [
   "promoterInfo": "www.cccxcycling.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9574,14 +9574,14 @@ export default [
     "lat": 39.259232,
     "long": -121.020468
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://ybonc.org/events/dirt-classic/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9602,9 +9602,9 @@ export default [
     "lat": 38.652752,
     "long": -121.184279
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "https://www.eventbrite.com/e/2016-fast-freddie-folsom-fondo-tickets-17145441477",
   "flyer": {
     "name": "FL_2016-1758 Fast Freddie Folsom Fondo OKED.pdf",
@@ -9696,7 +9696,7 @@ export default [
     "lat": 37.579416,
     "long": -122.346128
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit ryansride.org",
   "registrationUrl": "http://ryansride.org/register-1",
@@ -9757,7 +9757,7 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
@@ -9796,14 +9796,14 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
     "name": "BODAgenda_Aug2016.pdf",
@@ -9835,19 +9835,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9874,19 +9874,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9913,19 +9913,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9952,19 +9952,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -9991,19 +9991,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10030,19 +10030,19 @@ export default [
     "lat": 37.681918,
     "long": -121.767706
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-5250",
       "name": "NCNCA"
     }
   ],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10063,14 +10063,14 @@ export default [
     "lat": 39.419534,
     "long": -123.280431
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit http://www.bikemonkey.net/wente/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10091,14 +10091,14 @@ export default [
     "lat": 39.419534,
     "long": -123.280431
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit http://www.bikemonkey.net/wente/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10119,14 +10119,14 @@ export default [
     "lat": 39.419534,
     "long": -123.280431
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit http://www.bikemonkey.net/wente/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10147,14 +10147,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10175,14 +10175,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10203,14 +10203,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10231,14 +10231,14 @@ export default [
     "lat": 39.133238,
     "long": -120.165112
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit: http://www.adventuresportsweektahoe.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10259,14 +10259,14 @@ export default [
     "lat": 39.522459,
     "long": -119.823374
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10287,14 +10287,14 @@ export default [
     "lat": 38.278558,
     "long": -122.250388
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.eaglecyclingclub.org/mtbike.html",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10354,14 +10354,14 @@ export default [
     "lat": 40.995649,
     "long": -123.8027
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit humboldtenduro.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10382,14 +10382,14 @@ export default [
     "lat": 37.6307,
     "long": -119.032548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"usacycling.org/events/national.php\" target=\"_blank\">usacycling.org/events/national.php</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10410,14 +10410,14 @@ export default [
     "lat": 37.6307,
     "long": -119.032548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"usacycling.org/events/national.php\" target=\"_blank\">usacycling.org/events/national.php</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10438,14 +10438,14 @@ export default [
     "lat": 37.6307,
     "long": -119.032548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"usacycling.org/events/national.php\" target=\"_blank\">usacycling.org/events/national.php</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10466,14 +10466,14 @@ export default [
     "lat": 37.6307,
     "long": -119.032548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"usacycling.org/events/national.php\" target=\"_blank\">usacycling.org/events/national.php</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10494,14 +10494,14 @@ export default [
     "lat": 37.6307,
     "long": -119.032548
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit <a href=\"usacycling.org/events/national.php\" target=\"_blank\">usacycling.org/events/national.php</a>",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10522,14 +10522,14 @@ export default [
     "lat": 39.274823,
     "long": -120.120594
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit tahoetrailmtb.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10550,14 +10550,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10578,14 +10578,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10606,14 +10606,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10634,14 +10634,14 @@ export default [
     "lat": 38.684743,
     "long": -120.065156
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information visit https://www.facebook.com/SierraCupMTB",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10662,14 +10662,14 @@ export default [
     "lat": 39.559506,
     "long": -120.827622
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information visit www.downievilleclassic.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10690,14 +10690,14 @@ export default [
     "lat": 39.559506,
     "long": -120.827622
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information visit www.downievilleclassic.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10718,14 +10718,14 @@ export default [
     "lat": 39.559506,
     "long": -120.827622
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information visit www.downievilleclassic.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10746,14 +10746,14 @@ export default [
     "lat": 39.559506,
     "long": -120.827622
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information visit www.downievilleclassic.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10774,14 +10774,14 @@ export default [
     "lat": 38.454578,
     "long": -122.647749
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For info visit www.bikemonkey.net",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10802,14 +10802,14 @@ export default [
     "lat": 39.379295,
     "long": -123.651165
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For info visit http://superproracing.com/dirt/mendocino-mtb-madness/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10830,14 +10830,14 @@ export default [
     "lat": 39.379295,
     "long": -123.651165
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For info visit http://superproracing.com/dirt/mendocino-mtb-madness/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10858,14 +10858,14 @@ export default [
     "lat": 39.379295,
     "long": -123.651165
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For info visit http://superproracing.com/dirt/mendocino-mtb-madness/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10886,14 +10886,14 @@ export default [
     "lat": 39.379295,
     "long": -123.651165
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For info visit http://superproracing.com/dirt/mendocino-mtb-madness/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10914,14 +10914,14 @@ export default [
     "lat": 38.636583,
     "long": -121.149404
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "totalbodyfitness.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10942,14 +10942,14 @@ export default [
     "lat": 39.855323,
     "long": -120.425316
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "northlanderevents.com",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10970,14 +10970,14 @@ export default [
     "lat": 38.214072,
     "long": -119.004594
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.bodiebowl.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -10998,14 +10998,14 @@ export default [
     "lat": 39.107071,
     "long": -119.916441
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "https://www.facebook.com/SierraCupMTB",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11026,15 +11026,15 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "totalbodyfitness.com",
   "websiteUrl": "http://totalbodyfitness.com/site/race/the-tbf-mtb-50-miler/",
   "registrationUrl": "http://www.active.com/granite-bay-ca/cycling/mountain-biking-races/the-tbf-mtb-50-miler-2016",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11055,14 +11055,14 @@ export default [
     "lat": 40.746433,
     "long": -122.94246
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://teambigfoot.net/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11083,14 +11083,14 @@ export default [
     "lat": 40.746433,
     "long": -122.94246
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://teambigfoot.net/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11111,14 +11111,14 @@ export default [
     "lat": 40.746433,
     "long": -122.94246
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://teambigfoot.net/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11139,7 +11139,7 @@ export default [
     "lat": 37.332207,
     "long": -121.912267
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information contact Mary Moon: maroonathletic@gmail.com, (916) 436-7289, <a href=\"www.lgbrc.org/sponsors.html\" target=\"_blank\">www.lgbrc.org/sponsors.html</a>",
   "registrationUrl": "https://www.usacycling.org/register/2016-2381",
@@ -11245,7 +11245,7 @@ export default [
     "lat": 36.652273,
     "long": -121.784992
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cccxcycling.com/",
   "registrationUrl": "",
@@ -11274,12 +11274,12 @@ export default [
     "name": "Ft. Ord",
     "streetAddress": "",
     "city": "Seaside",
-    "state": "",
+    "state": "CA",
     "zip": "",
     "lat": 36.657153,
     "long": -121.752119
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cccxcycling.com/",
   "registrationUrl": "",
@@ -11308,12 +11308,12 @@ export default [
     "name": "Ft. Ord",
     "streetAddress": "",
     "city": "Seaside",
-    "state": "",
+    "state": "CA",
     "zip": "",
     "lat": 36.656327,
     "long": -121.747313
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cccxcycling.com/",
   "registrationUrl": "",
@@ -11375,7 +11375,7 @@ export default [
     "lat": 36.802563,
     "long": -121.67809
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cccxcycling.com/",
   "registrationUrl": "",
@@ -11409,14 +11409,14 @@ export default [
     "lat": 37.867045,
     "long": -122.507343
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cykelscramble.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11437,14 +11437,14 @@ export default [
     "lat": 37.713918,
     "long": -122.380185
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11465,14 +11465,14 @@ export default [
     "lat": 37.713776,
     "long": -122.380979
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11493,14 +11493,14 @@ export default [
     "lat": 38.102245,
     "long": -122.250023
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://superproracing.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11513,7 +11513,6 @@ export default [
   "discipline": "Cyclocross",
   "date": "October 01 2016",
   "location": {
-    "name": "Reno",
     "streetAddress": "",
     "city": "Reno",
     "state": "NV",
@@ -11521,14 +11520,14 @@ export default [
     "lat": 39.541117,
     "long": -119.761963
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://cxreno.com/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11549,7 +11548,7 @@ export default [
     "lat": 36.605688,
     "long": -121.691759
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cccxcycling.com/",
   "registrationUrl": "",
@@ -11583,7 +11582,7 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/2016/Race1.html",
@@ -11618,7 +11617,7 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.saccyclocross.com/2016/Race2.html",
@@ -11653,7 +11652,7 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://www.cccxcycling.com/2016CROSSPAGE2016.html",
@@ -11688,14 +11687,14 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
   "usacPermit": "2016-2901",
@@ -11716,14 +11715,14 @@ export default [
       "lat": "",
       "long": ""
 },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "registrationUrl" : "",
     "flyer" : {
-      "name": null,
+      "name": "",
       "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
-      "mimeType": null
+      "mimeType": ""
     },
     "flyerUrl" : "http://www.ncnca.org/sites/default/files/10/04/2016%20-%203%3A55pm/Santa%20Teresa%20Flyer1.pdf",
     "usacPermit" : "",
@@ -11744,14 +11743,14 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "registrationUrl" : "",
     "flyer" : {
       "name": "Running of the Bulls",
       "url": "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
-      "mimeType": null
+      "mimeType": ""
     },
     "flyerUrl" : "http://www.ncnca.org/sites/default/files/09/30/2016%20-%2012%3A18am/STANFORDCYCLING2016MTBv3.14.pdf",
     "usacPermit" : "",
@@ -11772,14 +11771,14 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "http://www.ncnca.org/sites/default/files/10/04/2016%20-%204%3A00pm/MTB%20Race%20Flyer%202016.pdf",
   "usacPermit": "2016-2901",
@@ -11800,7 +11799,7 @@ export default [
     "lat": 38.174133,
     "long": -121.276445
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
     "websiteUrl" : "http://www.saccyclocross.com/2016/Race3.html",
@@ -11835,15 +11834,15 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "",
   "websiteUrl": "http://superproracing.com/cross/superprocx/",
   "registrationUrl": "http://www.eventbrite.com/e/superpro-cx-2-lion-of-fairfax-15th-october-2016-registration-26834805626",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11864,15 +11863,15 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "websiteUrl": "http://superproracing.com/cross/superprocx/",
   "promoterInfo": "",
   "registrationUrl": "http://www.eventbrite.com/e/superpro-cx-3-san-jose-29th-october-2016-registration-26835238922",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11893,7 +11892,7 @@ export default [
     "lat": 38.889296,
     "long": -121.062469
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.saccyclocross.com/",
     "websiteUrl" : "http://www.saccyclocross.com/2016/Race4.html",
@@ -11928,14 +11927,14 @@ export default [
     "lat": 36.984112,
     "long": -122.02446
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "http://www.cyclo-x.com/",
     "registrationUrl" : "https://www.bikereg.com/surf-city",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -11956,7 +11955,7 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.saccyclocross.com/2016/Race5.html",
@@ -11991,15 +11990,15 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "websiteUrl" : "http://superproracing.com/cross/basp/",
     "registrationUrl" : "http://www.eventbrite.com/e/bay-area-super-prestige-cx-race-3-night-race-san-jose-nov-5-registration-26952884804",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12020,15 +12019,15 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "websiteUrl" : "http://superproracing.com/cross/basp/",
     "registrationUrl" : "https://www.eventbrite.com/e/bay-area-super-prestige-cx-race-4-san-jose-nov-6-registration-26971013026",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12049,15 +12048,15 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.bikemonkey.net/srcup/",
     "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12078,15 +12077,15 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.bikemonkey.net/srcup/",
     "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12107,15 +12106,15 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.bikemonkey.net/srcup/",
     "registrationUrl" : "http://www.bikemonkey.net/srcup/#registration",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12139,12 +12138,12 @@ export default [
     "resultsUrl" : "https://docs.google.com/spreadsheets/d/1BQbSMGj_axlU8erXQ1C9gspTTHCqEypkYYE7JW_2Sus/view#gid=0",
   "promoters": [],
     "websiteUrl" : "http://superproracing.com/cross/basp/",
-  "promoterInfo": null,
+  "promoterInfo": "",
     "registrationUrl" : "http://baspcx-race5-vallejo-nov19.eventbrite.com",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12165,7 +12164,7 @@ export default [
     "lat": 38.711333,
     "long": -120.951576
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.saccyclocross.com/",
@@ -12194,7 +12193,7 @@ export default [
     "lat": 38.623482,
     "long": -121.521599
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.saccyclocross.com/2016/Race7.html",
@@ -12229,7 +12228,7 @@ export default [
     "lat": 38.722801,
     "long": -121.406994
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.saccyclocross.com/",
@@ -12264,9 +12263,9 @@ export default [
     "lat": 38.723069,
     "long": -121.406994
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "websiteUrl" : "http://www.saccyclocross.com/2016/NCNCAChamps.html",
   "registrationUrl": "",
   "flyer": {
@@ -12293,9 +12292,9 @@ export default [
     "lat": 35.380933,
     "long": -118.995667
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "websiteUrl" : "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
@@ -12322,9 +12321,9 @@ export default [
     "lat": 35.376034,
     "long": -119.008026
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "websiteUrl" : "http://www.sambarn.com/?page_id=6",
   "registrationUrl": "",
   "flyer": {
@@ -12351,7 +12350,7 @@ export default [
     "lat": 36.656878,
     "long": -121.750059
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.cccxcycling.com/",
@@ -12386,15 +12385,15 @@ export default [
     "lat": 36.822446,
     "long": -119.748727
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12415,15 +12414,15 @@ export default [
     "lat": 36.822446,
     "long": -119.748727
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12444,15 +12443,15 @@ export default [
     "lat": 36.822446,
     "long": -119.748727
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
     "promoterInfo" : "",
     "websiteUrl" : "https://ccorchomegrowncx.wordpress.com/2016/01/05/homegrown-cx-2016/",
   "registrationUrl": "",
   "flyer": {
-    "name": null,
+    "name": "",
     "url": "",
-    "mimeType": null
+    "mimeType": ""
   },
   "flyerUrl": "",
   "usacPermit": "",
@@ -12473,7 +12472,7 @@ export default [
     "lat": 39.333332,
     "long": -120.3507
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2642",
@@ -12512,7 +12511,7 @@ export default [
     "lat": 39.363367,
     "long": -120.253442
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2642",
@@ -12551,7 +12550,7 @@ export default [
     "lat": "",
     "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2642",
@@ -12591,7 +12590,7 @@ export default [
     "lat": 39.303338,
     "long": -119.83164
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2642",
@@ -12631,7 +12630,7 @@ export default [
     "lat": 39.488938,
     "long": -119.714114
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [
     {
       "id": "prm-2642",
@@ -12671,9 +12670,9 @@ export default [
       "lat": "",
       "long": ""
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
-  "promoterInfo": null,
+  "promoterInfo": "",
     "registrationUrl" : "https://www.usacycling.org/register/2016-2715",
   "flyer": {
     "name": "FL_2016-2715 C510 Super Cat III OKED.pdf",
@@ -12699,7 +12698,7 @@ export default [
     "lat": 37.76704,
     "long": -120.845593
   },
-  "resultsUrl": null,
+  "resultsUrl" : "",
   "promoters": [],
   "promoterInfo": "For more information, visit http://www.bikesforkids.bike",
   "registrationUrl": "",
@@ -12727,7 +12726,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "",
@@ -12756,7 +12755,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "",
@@ -12785,7 +12784,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12814,7 +12813,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12843,7 +12842,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12872,7 +12871,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12901,7 +12900,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12930,7 +12929,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",
@@ -12959,7 +12958,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "http://www.oaklandgranfondo.com/race-info/",
@@ -12988,16 +12987,11 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "http://totalbodyfitness.com/site/race/b-b-cyclocross/",
     "registrationUrl" : "http://www.active.com/granite-bay-ca/cycling/cyclo-cross-races/beach-and-beer-cyclocross-2016",
-    "flyer" : {
-      "name": "",
-      "url": "",
-      "mimeType": ""
-    },
     "flyerUrl" : "",
     "usacPermit" : "",
     "series" : []
@@ -13017,7 +13011,7 @@ export default [
       "lat": "",
       "long": ""
     },
-    "resultsUrl" : null,
+    "resultsUrl" : "",
     "promoters" : [],
     "promoterInfo" : "",
     "websiteUrl" : "https://www.ride2recovery.com/event.php?ID=873",

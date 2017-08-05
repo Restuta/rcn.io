@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'mixins';
+
+
+.Alert {
+  position: relative;
+  margin-bottom: 1rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  background-color: $body-bg-color;
+  color: $body-color;
+  font-size: $font-size-3;
+  line-height: $line-height-rem * 1.5;
+  border-radius: pxToRem(2);
+  @include box-shadow-lvl-0();
+
+  >.Icon {
+    position: absolute;
+    left: 2rem;
+  }
+}
+
+.Alert.with-icon {
+  padding-left: 6rem;
+}
+
+.Alert.alert-info {
+  border-color: $light-blue-100;
+  color: $light-blue-800;
+  border-left-color: $light-blue-600;
+}
+
+.Alert.alert-info.flat {
+  background-color: $light-blue-200;
+  color: darken($light-blue-200, 50%);
+}
+
+.Alert.alert-success {
+  border-color: $green-100;
+  color: $green-800;
+  border-left-color: $green-600;
+}
+
+.Alert.alert-success.flat {
+  background-color: $green-200;
+  color: darken($green-200, 50%);
+}
+
+.Alert.alert-warning {
+  border-color: $amber-200;
+  color: darken($amber-800, 5%);
+  border-left-color: darken($amber-500, 5%);
+}
+
+.Alert.alert-warning.flat {
+  background-color: $amber-200;
+  color: darken($amber-200, 50%);
+}
+
+.Alert.alert-danger {
+  border-color: $red-100;
+  color: $red-800;
+  border-left-color: $red-800;
+}
+
+.Alert.alert-danger.flat {
+  background-color: lighten($red-200, 10%);
+  color: darken($red-200, 34%);
+}
+
+.Alert.no-border {
+  // transparent border so it doesn't break basseline
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.Alert.flat {
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: pxToRem(3);
+}

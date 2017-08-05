@@ -59,6 +59,16 @@ app.use(express.static(path.join(RootDir, '/dist'), {
 
 app.use(device.capture({parseUserAgent: true}))
 
+//middleware to sign requests to upload files to AWS S3
+app.use('/s3', require('server/routers/s3-router')({
+  bucket: 'rcn-io',
+  directory: '/ncnca/flyers', //optional to calculate full path
+  region: 'us-west-1', //optional
+  headers: {'Access-Control-Allow-Origin': '*'}, // optional
+  ACL: 'public-read' // this is default
+}))
+
+
 //gets container width by device type, we don't know for sure, so we use best guess and return
 //pessimistically smaller containers
 //TODO: this can be paired with "auto" height, so height would be calculated based on content size in
@@ -105,9 +115,17 @@ setInterval(() => {
 const widgetsIndexHtml = path.join(RootDir, '/dist/widgets/index.html')
 const widgetsIndexHtmlContent = fs.readFileSync(widgetsIndexHtml, 'utf8')
 
-app.get('/widgets/*', function(req, res, next) {
+app.get('/widgets*', function(req, res, next) {
   res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
   res.send(widgetsIndexHtmlContent)
+})
+
+const adminIndexHtml = path.join(RootDir, '/dist/admin/index.html')
+const adminIndexHtmlContent = fs.readFileSync(adminIndexHtml, 'utf8')
+
+app.get('/admin*', function(req, res, next) {
+  res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
+  res.send(adminIndexHtmlContent)
 })
 
 const indexHtml = path.join(RootDir, `/dist/${consts.INDEX_HTML}`)

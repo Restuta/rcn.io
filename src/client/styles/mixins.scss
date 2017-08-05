@@ -124,7 +124,7 @@
 }
 
 @mixin box-shadow-custom-minimal() {
-  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.15), 0 3px 1px -2px rgba(0, 0, 0, 0.0);
 }
 
 @mixin box-shadow-like-slack {
@@ -151,6 +151,10 @@
 
 @mixin box-shadow-lvl-4 {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+@mixin box-shadow-soft {
+  box-shadow: 0 5px 31px 0 rgba(0, 0, 0, 0.13);
 }
 
 
@@ -186,10 +190,15 @@
 @mixin background-image-usa-flag {
   // background-color: #fff;
   //flag
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.1' width='247' height='130' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 7410 3900'%3E%3Cpath fill='%23b22234' d='M0 0h7410v3900H0z'/%3E%3Cpath stroke='%23fff' stroke-width='300' d='M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0'/%3E%3Cpath fill='%233c3b6e' d='M0 0h2964v2100H0z'/%3E%3Cg fill='%23fff'%3E%3Cg id='d'%3E%3Cg id='c'%3E%3Cg id='e'%3E%3Cg id='b'%3E%3Cpath id='a' d='M247 90l70.5342 217.082-184.661-134.164h228.2536l-184.661 134.164z'/%3E%3Cuse y='420' xlink:href='%23a'/%3E%3Cuse y='840' xlink:href='%23a'/%3E%3Cuse y='1260' xlink:href='%23a'/%3E%3C/g%3E%3Cuse y='1680' xlink:href='%23a'/%3E%3C/g%3E%3Cuse x='247' y='210' xlink:href='%23b'/%3E%3C/g%3E%3Cuse x='494' xlink:href='%23c'/%3E%3C/g%3E%3Cuse x='988' xlink:href='%23d'/%3E%3Cuse x='1976' xlink:href='%23c'/%3E%3Cuse x='2470' xlink:href='%23e'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.07' width='247' height='130' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 7410 3900'%3E%3Cpath fill='%23b22234' d='M0 0h7410v3900H0z'/%3E%3Cpath stroke='%23fff' stroke-width='300' d='M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0'/%3E%3Cpath fill='%233c3b6e' d='M0 0h2964v2100H0z'/%3E%3Cg fill='%23fff'%3E%3Cg id='d'%3E%3Cg id='c'%3E%3Cg id='e'%3E%3Cg id='b'%3E%3Cpath id='a' d='M247 90l70.5342 217.082-184.661-134.164h228.2536l-184.661 134.164z'/%3E%3Cuse y='420' xlink:href='%23a'/%3E%3Cuse y='840' xlink:href='%23a'/%3E%3Cuse y='1260' xlink:href='%23a'/%3E%3C/g%3E%3Cuse y='1680' xlink:href='%23a'/%3E%3C/g%3E%3Cuse x='247' y='210' xlink:href='%23b'/%3E%3C/g%3E%3Cuse x='494' xlink:href='%23c'/%3E%3C/g%3E%3Cuse x='988' xlink:href='%23d'/%3E%3Cuse x='1976' xlink:href='%23c'/%3E%3Cuse x='2470' xlink:href='%23e'/%3E%3C/g%3E%3C/svg%3E");
   //stars
   // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.1' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 3480 2127' preserveAspectRatio='xMinYMin'%3E %3Cg id='x'%3E %3Cpath id='fx' fill='%233c3b6e' d='M0 0h4964v4100H0z'/%3E %3Cg fill='%23fff'%3E %3Cg id='d'%3E %3Cg id='c'%3E %3Cg id='e'%3E %3Cg id='b'%3E %3Cpath id='a' d='M247 90l70.5342 217.082-184.661-134.164h228.2536l-184.661 134.164z'/%3E %3Cuse y='420' xlink:href='%23a'/%3E %3Cuse y='840' xlink:href='%23a'/%3E %3Cuse y='1260' xlink:href='%23a'/%3E %3C/g%3E %3Cuse y='1680' xlink:href='%23a'/%3E %3C/g%3E %3Cuse x='247' y='210' xlink:href='%23b'/%3E %3C/g%3E %3Cuse x='494' xlink:href='%23c'/%3E %3C/g%3E %3Cg id='strs'%3E %3Cuse x='988' xlink:href='%23d'/%3E %3Cuse x='1976' xlink:href='%23d'/%3E %3Cuse x='2970' xlink:href='%23d'/%3E %3Cuse x='3952' xlink:href='%23c'/%3E %3Cuse x='4446' xlink:href='%23e'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3Cuse x='0' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3Cuse x='247' y='1930' fill='%23fff' xlink:href='%23c'/%3E %3Cuse x='-247' y='1930' fill='%23fff' xlink:href='%23strs'/%3E %3Cuse x='4446' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3C/svg%3E ");
   background-size: cover;
+}
+
+@mixin background-image-usa-flag-stars {
+  //stars
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.1' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 3480 2127' preserveAspectRatio='xMinYMin'%3E %3Cg id='x'%3E %3Cpath id='fx' fill='%233c3b6e' d='M0 0h4964v4100H0z'/%3E %3Cg fill='%23fff'%3E %3Cg id='d'%3E %3Cg id='c'%3E %3Cg id='e'%3E %3Cg id='b'%3E %3Cpath id='a' d='M247 90l70.5342 217.082-184.661-134.164h228.2536l-184.661 134.164z'/%3E %3Cuse y='420' xlink:href='%23a'/%3E %3Cuse y='840' xlink:href='%23a'/%3E %3Cuse y='1260' xlink:href='%23a'/%3E %3C/g%3E %3Cuse y='1680' xlink:href='%23a'/%3E %3C/g%3E %3Cuse x='247' y='210' xlink:href='%23b'/%3E %3C/g%3E %3Cuse x='494' xlink:href='%23c'/%3E %3C/g%3E %3Cg id='strs'%3E %3Cuse x='988' xlink:href='%23d'/%3E %3Cuse x='1976' xlink:href='%23d'/%3E %3Cuse x='2970' xlink:href='%23d'/%3E %3Cuse x='3952' xlink:href='%23c'/%3E %3Cuse x='4446' xlink:href='%23e'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3Cuse x='0' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3Cuse x='247' y='1930' fill='%23fff' xlink:href='%23c'/%3E %3Cuse x='-247' y='1930' fill='%23fff' xlink:href='%23strs'/%3E %3Cuse x='4446' y='2140' fill='%23fff' xlink:href='%23b'/%3E %3C/svg%3E ");
 }
 
 //polka dots pattern (for climbing races)

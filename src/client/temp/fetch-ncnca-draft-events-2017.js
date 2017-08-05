@@ -58,8 +58,13 @@ const transformEvents = googleSpreedsheetEvents =>
     //TODO bc: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
       //or "Nationals"
 
-    const date = moment(event['Date'], 'MM/DD/YYYY')
     const name = event['Race Name'].trim()
+    const date = moment(event['Date'], 'MM/DD/YYYY')
+
+    if (!date.isValid()) {
+      throw new Error(`Invalid date for Draft Event: ${name}, date: ${event['Date']}`)
+    }
+
     const type = event['Type'].trim()
     const draftId = createDraftEventId(date, name)
 

@@ -60,7 +60,7 @@ const UpcomingEventsForDay = ({today, date, events}) => {
     : adjustedDate.from(today)
 
   return (
-    <div className="upcoming-day">
+    <div className="upcoming-events-for-day">
       <h3 className="header-regular w-900">
         <span>{date.format('dddd, MMMM Do') + ' '}</span>
         <i className="header-secondary">
@@ -70,7 +70,6 @@ const UpcomingEventsForDay = ({today, date, events}) => {
       <div className="events-container">
         {events.map(event => (
           <Event key={event.id} className="upcoming-event"
-            id={event.id}
             autoHeight
             iframeMode
             externallyControlledWidth

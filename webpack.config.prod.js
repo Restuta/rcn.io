@@ -2,16 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const consts = require('./webpack/constants')
-const nodeModules = require('./webpack/utils').nodeModules
 
 const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('prod')
-
-
-const pathToReactDOM = nodeModules('react-dom/dist/react-dom.min.js')
-const pathToReactRouter = nodeModules('react-router/umd/ReactRouter.min.js')
-const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js')
 
 const extractCss = new ExtractTextPlugin('[name].css', {allChunks: true})
 const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
@@ -27,9 +22,10 @@ const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
   minifyURLs: true
 }
 
-module.exports = {
+const config = {
   //devtool: 'source-map',
   devtool: 'cheap-module-source-map',
+  target: 'web',
 
   cache: false,
   debug: false,
@@ -41,6 +37,9 @@ module.exports = {
     widgets: [
       path.join(consts.SRC_DIR, 'client/widgets/index.js')
     ],
+    admin: [
+      path.join(consts.SRC_DIR, 'client/admin/index.js')
+    ],
     vendor: commonConfig.entry.vendor.concat([
       path.join(consts.SRC_DIR, 'client/styles/bootstrap.scss'),
     ]),
@@ -51,6 +50,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
@@ -62,21 +62,32 @@ module.exports = {
         'Dev': false
       }
     }),
-    //defines explicit vendor chunks with pre-picked vendor dependencies and automatic "common" chunk, where Webpack
-      //figures out common deps between all entry points.
+    //order of chunks is important, first we define common chunks between app and widgets
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   names: ['common'], //use this to enable extra common chunk
+    //   // names: ['vendor'],
+    //   filename: '[name].bundle.js',
+    //   chunks: ['app', 'widgets'],
+    //   // (with more entries, this ensures that no other module
+    //   // goes into the vendor chunk)
+    //   minChunks: 2, //set to 2 when enabling 'common' chunk
+    // }),
+    //second we extract all vendor deps to a separate chunk from our common chunk
+    //defines explicit vendor chunks with pre-picked vendor dependencies
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'common'], //use this to enable extra common chunk
+      names: ['vendor'], //use this to enable extra common chunk
       // names: ['vendor'],
       filename: '[name].bundle.js',
-      // chunks: ['vendor'],
+      // chunks: ['common'], //if common chunk is defined above we can extract vendor deps from it
       // (with more entries, this ensures that no other module
       // goes into the vendor chunk)
-      minChunks: 2 //set to 2 when enabling 'common' chunk
+      minChunks: 2,
     }),
+
     new webpack.optimize.DedupePlugin(),
     extractCss,
     new webpack.optimize.UglifyJsPlugin({
-      minimize: false,
+      minimize: true,
       compressor: {
         screw_ie8: true, // eslint-disable-line camelcase
         warnings: false
@@ -92,7 +103,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: consts.INDEX_HTML,
       title: 'RCN.io',
-      chunks: ['vendor', 'common', 'app'],
+      chunks: ['vendor', 'app'],
       chunksSortMode: 'dependency',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
@@ -104,10 +115,10 @@ module.exports = {
       },
       minify: htmlWebpackMinifyConfig,
     }),
-    //separate html file for widgets
+    // separate html file for widgets
     new HtmlWebpackPlugin({
       filename: 'widgets/index.html',
-      chunks: ['vendor', 'common', 'widgets'],
+      chunks: ['vendor', 'widgets'],
       chunksSortMode: 'dependency',
       title: 'RCN.io Widgets',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
@@ -115,6 +126,22 @@ module.exports = {
       hash: false,
       env: {
         Widget: true,
+        Prod: true,
+        Dev: false
+      },
+      minify: htmlWebpackMinifyConfig,
+    }),
+    // separate html file for admin
+    new HtmlWebpackPlugin({
+      filename: 'admin/index.html',
+      chunks: ['vendor', 'admin'],
+      chunksSortMode: 'dependency',
+      title: 'rcn/admin',
+      template: path.resolve(consts.SRC_DIR, 'client/admin/index.html.ejs'), // Load a custom template
+      inject: false, // we use custom template to inject scripts,
+      hash: false,
+      env: {
+        Admin: true,
         Prod: true,
         Dev: false
       },
@@ -136,46 +163,13 @@ module.exports = {
      requires use of "import loader" for certain modules, based on https://github.com/christianalfoni/react-webpack-cookbook/issues/30
     */
     noParse: commonConfig.module.noParse,
-    loaders: [{
-      test: pathToReactDOM,
-      loader: 'imports'
-    }, {
-      test: pathToReactRouter,
-      loader: 'imports'
-    }, {
-      test: pathToMomentTimezone,
-      loader: 'imports'
-    }, {
-      test: /\.(js|jsx?)$/,
-      loader: 'babel',
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR),
-      query: {
-        presets: ['react', 'es2015', 'stage-2'],
-        cacheDirectory: false,
-        compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
-        plugins: [
-          'transform-react-constant-elements', //compile-time optimizations
-          'transform-react-inline-elements' //compile-time optimizations
-        ]
-      }
-    }, {
+    loaders: commonConfig.module.loaders.concat([{
       test: /\.scss$/,
       loaders: ['style', extractCss.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
       exclude: /(node_modules|bower_components)/,
       include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
-      loaders: ['url?limit=10000&mimetype=application/font-woff'],
-      include: path.join(consts.SRC_DIR, 'client')
-    }, {
-      test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
-      include: path.join(consts.SRC_DIR, 'client'),
-      loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
-    }]
+    }])
   },
   //required to have proper rem to px calcualtion, default floating point precision is not enough
   //since most browsers use 15, SASS only uses 5, this leads to calculated size in px like 38.0001px
@@ -192,3 +186,8 @@ module.exports = {
     ]
   }
 }
+
+module.exports = config
+
+// const addBundleAnalyzer = require('./webpack/utils').addBundleAnalyzer
+// module.exports = addBundleAnalyzer(config)

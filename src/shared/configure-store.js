@@ -3,14 +3,24 @@ import rootReducer from 'shared/reducers/reducer.js'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from 'shared/sagas/root'
 
-const sagaMiddleware = createSagaMiddleware()
-const middlewares = [sagaMiddleware]
+import { browserHistory } from 'react-router'
+import { routerMiddleware as createRouterMiddleware } from 'react-router-redux'
 
-//use logging middleware only in dev mode
+const routingMiddlewhare = createRouterMiddleware(browserHistory)
+
+const sagaMiddleware = createSagaMiddleware()
+const middlewares = [
+  sagaMiddleware,
+  // used to process routing actions like push() and replace() (navigaiton with redux actions)
+  // it's not required for routing to work with redux if actions are not used
+  routingMiddlewhare
+]
+
+// use logging middleware only in dev mode
 if (process.env.NODE_ENV === 'development') {
   const createLogger =  require('redux-logger')
   const logger = createLogger({
-    diff: true,
+    diff: false, //diff it adds like 1s overhead for 300-400 events
     timestamp: false,
     duration: true,
     collapsed: true,
@@ -23,6 +33,9 @@ if (process.env.NODE_ENV === 'development') {
   })
 
   middlewares.push(logger)
+
+  // const reactPerfMiddleware = require('shared/middlewares/react-perf-middleware').default
+  // middlewares.push(reactPerfMiddleware)
 }
 
 
@@ -32,7 +45,7 @@ const configureStore = (initialState) => {
     initialState,
     compose(
       applyMiddleware(...middlewares), //logger must be last middleware,
-      //server-side safe enabling of Redux Dev tools
+      // server-side safe enabling of Redux Dev tools
       typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
     )
 

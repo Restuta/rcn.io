@@ -1,3 +1,14 @@
+/* TODO bc: BUG
+  open homepage
+  navigate to calendar
+  open event
+  browser back
+  browser forward
+
+  observed result: event opens on top of home page
+  expected result: calendar opens
+*/
+
 import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import './Calendar.scss'
@@ -10,15 +21,101 @@ import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import Badge from 'calendar/badges/Badge.jsx'
 
+// import Perf from 'react-addons-perf'
+
+
 const getEventByDate = (eventsMap, date) => {
   const key = date.format('MMDDYYYY')
   return eventsMap.get(key) || []
 }
 
+const shouldShowPastEvents = (locationQuery, shouldShowPastFromProps) => (
+  locationQuery['past']
+    ? (locationQuery['past'] === 'visible')
+    : shouldShowPastFromProps
+)
+
+const createEventComponents = (events, draft, daySize, containerWidth) => {
+  let eventComponents
+
+  if (events.length > 0) {
+    eventComponents = events.map((event, i) =>
+      <Event key={event.id}
+        widthColumns={daySize}
+        containerWidth={containerWidth}
+        event={event}
+        draft={draft}
+        highlightEventTypeInName
+      />
+    )
+  }
+
+  return eventComponents
+}
+
+const createDayComponent = (key, currentDate, today, daySize, eventComponents, containerWidth) => {
+  const itIsFirstDayOfMonth = firstDayOfMonth(currentDate)
+  const currentDayIsToday = (today.isSame(currentDate, 'days'))
+  const month = currentDate.month() + 1
+  //using to alternate between months so we they become easier to spot in a caledar
+  const currentDayBelongsToAlternateMonth = (currentDate.month() % 2 === 0)
+
+  return (
+    <Day key={key} year={currentDate.year()} month={month} day={currentDate.date()}
+      size={daySize}
+      itIsToday={currentDayIsToday}
+      itIsFirstDayOfMonth={itIsFirstDayOfMonth}
+      itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
+      itIsAlternateMonthsDay={currentDayBelongsToAlternateMonth}
+      containerWidth={containerWidth}
+      dayOfWeek={currentDate.isoWeekday()}
+      weekNumber={currentDate.isoWeek()}>
+      {eventComponents}
+    </Day>
+  )
+}
+
 class Calendar extends Component {
-  // constructor(props) {
-  //   super(props)
+  constructor(props) {
+    super(props)
   //   this.handleScroll = this.handleScroll.bind(this)
+    this.onShowFullHidePastClick = this.onShowFullHidePastClick.bind(this)
+    this.whenRenderStarted = 0
+  }
+
+  onShowFullHidePastClick(e) {
+    e.preventDefault()
+
+    const {
+      toggleShowPast,
+      router,
+      location
+    } = this.props
+
+    const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
+
+    // console.info(location.query.past || showPastEvents)
+    router.push({
+      pathname: location.pathname,
+      query: {
+        ['past']: showPastEvents ? 'hidden' : 'visible'
+      }
+    })
+
+    toggleShowPast()
+  }
+
+  // componentDidMount() {
+  //   Perf.stop()
+  //   console.warn('Exclusive')
+  //   Perf.printExclusive()
+  //   Perf.printWasted()
+  // }
+  //
+  // componentDidUpdate() {
+  //   Perf.stop()
+  //   console.warn('Wasted')
+  //   Perf.printWasted()
   // }
 
   // handleScroll() {
@@ -33,10 +130,12 @@ class Calendar extends Component {
   //   window.removeEventListener('scroll', this.handleScroll)
   // }
 
-
   render() {
+    // Perf.start()
+    this.whenRenderStarted = +new Date()
     console.info('Calendar render is called') //eslint-disable-line
     const {
+      calendarId,
       name,
       highlight,
       description,
@@ -45,95 +144,62 @@ class Calendar extends Component {
       weekdaysSizes,
       events,
       timeZone,
-      showPastEvents,
+      location,
       draft = false,
-      onShowFullHidePastClick
     } = this.props
-
+    //trust query string first, props next
+    const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
     let shouldShowHidePastLink = false
-
     //time-zone specific moment factory
-    const momentTZ = function() {
-      return moment.tz(...arguments, timeZone)
-    }
+    const momentTZ = function() { return moment.tz(...arguments, timeZone) }
 
     const today = momentTZ()
-    const eventsTotalFromToday = events.getTotalFrom(today)
-    const eventsTotal = events.total
-    const firstDayOfYear = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
+    const firstDayOfTheYear = momentTZ({year: year, month: 0, day: 1})
+    let calendarStartDate = momentTZ({year: year, month: 0, day: 1}).startOf('isoWeek')
+    let totalWeeksToShow = 53
+    //set a date to two weeks back monday, -6 means Monday
+    const twoMondaysBackDay = today.clone().isoWeekday(-6)
+    const twoWeeksBackIsWithinCurrentYear = (twoMondaysBackDay.year() === today.year())
 
-    let startDate = firstDayOfYear
-    let totalWeeks = 53
-    const twoWeeksBackDay = today.clone().isoWeekday(-6)
-
-    // if first day of year is before today only then we wan to show hide/show past link
-    if (firstDayOfYear.isBefore(today) && year === today.year()) {
-      //if event from last week is in current year, then we change total weeks to hide past events
-      if (!showPastEvents && twoWeeksBackDay.year() === year) {
-        //set a date to two weeks back monday, -6 means Monday
-
-        startDate = twoWeeksBackDay
-        totalWeeks = totalWeeks - startDate.get('isoWeek')
-        shouldShowHidePastLink = true
-      }
+    // if first day of year is before today only then we want to show "hide/show past" link
+    if (firstDayOfTheYear.isBefore(today)
+      && twoWeeksBackIsWithinCurrentYear
+      && !showPastEvents
+      && year === today.year()) {
+      calendarStartDate = twoMondaysBackDay
+      //if two weeks back it's still current year, then we change total weeks to hide past events
+      totalWeeksToShow = totalWeeksToShow - calendarStartDate.get('isoWeek')
     }
 
-    let currentDate = startDate.clone()
+    if (year === today.year() && twoWeeksBackIsWithinCurrentYear) {
+      shouldShowHidePastLink = true
+    }
+
+    let currentDate = calendarStartDate.clone()
     let weeksComponents = []
 
-    for (let i = 1; i <= totalWeeks; i++) {
+    for (let i = 1; i <= totalWeeksToShow; i++) {
       let daysComponents = []
-
       let weekContainsFirstDayOfMonth = false
 
       for (let k = 1; k <= 7; k++) {
         const daySize = weekdaysSizes[currentDate.isoWeekday() - 1]
-        const month = currentDate.month() + 1
-        const currentDayIsToday = (today.isSame(currentDate, 'days'))
-        //using to alternate between months so we they become easier to spot in a caledar
-        const currentDayBelongsToAlternateMonth = (currentDate.month() % 2 === 0)
         const foundEvents = getEventByDate(events.map, currentDate)
 
-        let eventComponents
+        const eventComponents = createEventComponents(foundEvents, draft, daySize, containerWidth)
+        daysComponents.push(createDayComponent(k, currentDate, today, daySize, eventComponents, containerWidth))
 
-        if (foundEvents.length > 0) {
-          eventComponents = foundEvents.map((event, i) =>
-            <Event id={event.id} key={event.id}
-              widthColumns={daySize}
-              containerWidth={containerWidth}
-              event={event}
-              draft={draft}
-              highlightEventTypeInName
-            />
-          )
-        }
-
-        const itIsFirstDayOfMonth = firstDayOfMonth(currentDate)
-
-        if (itIsFirstDayOfMonth) {
+        if (firstDayOfMonth(currentDate)) {
           weekContainsFirstDayOfMonth = true
         }
 
-        daysComponents.push(
-          <Day key={k} year={currentDate.year()} month={month} day={currentDate.date()}
-            size={daySize}
-            itIsToday={currentDayIsToday}
-            itIsFirstDayOfMonth={itIsFirstDayOfMonth}
-            itIsLastDayOfMonth={lastDayOfMonth(currentDate)}
-            itIsAlternateMonthsDay={currentDayBelongsToAlternateMonth}
-            containerWidth={containerWidth}
-            dayOfWeek={currentDate.isoWeekday()}
-            weekNumber={currentDate.isoWeek()}>
-            {eventComponents}
-          </Day>
-        )
         currentDate.add(1, 'day')
       }
 
       const currentMonth = currentDate.month() + 1
 
       weeksComponents.push(
-        <Week key={i} month={currentMonth} lastOne={i === totalWeeks}
+        <Week key={i} month={currentMonth} lastOne={i === totalWeeksToShow}
           containsFirstDayOfMonth={weekContainsFirstDayOfMonth}>
           {daysComponents}
         </Week>
@@ -141,27 +207,30 @@ class Calendar extends Component {
     }
 
     let subTitleComp
+    const eventsTotalFromToday = events.getTotalFrom(today)
 
-    if (!showPastEvents) {
+    if (showPastEvents || eventsTotalFromToday === 0) {
       subTitleComp = (
         <h3 className="sub-title">
-          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
+          {events.total} events
           {shouldShowHidePastLink
-            && (<a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-              show all {eventsTotal} events
-            </a>)
-          }
+            && (
+            <a href="?past=hidden" className="show-more-or-less" onClick={this.onShowFullHidePastClick}>
+              hide past {events.total - eventsTotalFromToday} events
+            </a>
+          )}
         </h3>
       )
     } else {
       subTitleComp = (
         <h3 className="sub-title">
-          {eventsTotal} events
-          {shouldShowHidePastLink &&
-            <a className="show-more-or-less" onClick={onShowFullHidePastClick}>
-              hide past events
+          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
+          {shouldShowHidePastLink
+            && (
+            <a href="?past=visible" className="show-more-or-less" onClick={this.onShowFullHidePastClick}>
+              show all {events.total} events
             </a>
-          }
+          )}
         </h3>
       )
     }
@@ -177,8 +246,7 @@ class Calendar extends Component {
     )
 
     return (
-      <div className="Calendar">
-        {/*{eventDetailsModal.isOpen && <EventDetailsModal onClose={this.onEventDetailsModalClose}/>}*/}
+      <div key={calendarId} className="Calendar">
         {nameComp}
         {subTitleComp}
         {description && <h4 className="sub-title">{description}</h4>}
@@ -190,11 +258,13 @@ class Calendar extends Component {
           </div>
         </div>
       </div>
+
     )
   }
 }
 
 Calendar.propTypes = {
+  calendarId: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   highlight: PropTypes.shape({
@@ -202,7 +272,6 @@ Calendar.propTypes = {
     color: PropTypes.string.isRequired,
   }),
   description: PropTypes.string,
-  calendarId: PropTypes.string.isRequired,
   weekdaysSizes: PropTypes.arrayOf(React.PropTypes.number),
   timeZone: PropTypes.string.isRequired, //list of timezones https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
   events: PropTypes.shape({
@@ -212,20 +281,31 @@ Calendar.propTypes = {
   containerWidth: PropTypes.number.isRequired,
   showPastEvents: PropTypes.bool,
   draft: PropTypes.bool,
-  onShowFullHidePastClick: PropTypes.func,
+  toggleShowPast: PropTypes.func,
 }
 
 import { connect } from 'react-redux'
 import { toggleShowPastEvents } from 'shared/actions/actions.js'
 import { getCalendar, getEventsByDateForCalendar } from 'shared/reducers/reducer.js'
+import { flow } from 'lodash'
+import { withRouter } from 'react-router'
+import { logRenderPerfFor } from 'utils/hocs'
+import pureComponentWithRoutedModal from 'utils/components/pure-component-with-routed-modal'
 
-
-export default connect(
-  (state, ownProps) => ({
-    ...getCalendar(state, ownProps),
-    events: getEventsByDateForCalendar(state, ownProps)
-  }),
-  (dispatch, ownProps) => ({
-    onShowFullHidePastClick: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
-  })
+export default flow(
+  logRenderPerfFor('Calendar'),
+  // should come after "withRouter" since it needs it's injected routing-related props
+  pureComponentWithRoutedModal,
+  connect(
+    (state, ownProps) => ({
+      // required for pureComponentWithRoutedModal
+      navigatedBackFromModal: state.app.navigatedBackFromModal,
+      ...getCalendar(state, ownProps),
+      events: getEventsByDateForCalendar(state, ownProps)
+    }),
+    (dispatch, ownProps) => ({
+      toggleShowPast: () => dispatch(toggleShowPastEvents(ownProps.calendarId))
+    }),
+  ),
+  withRouter,
 )(Calendar)
