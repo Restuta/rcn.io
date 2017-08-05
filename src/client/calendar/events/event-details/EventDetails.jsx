@@ -167,7 +167,8 @@ class EventDetails extends Component {
     const showInvertedBadge = (
       type === EventTypes.other.meeting ||
       type === EventTypes.nonCompetitive.default ||
-      type === EventTypes.road.default
+      type === EventTypes.road.default ||
+      type === EventTypes.collegiate.default
     )
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} inverted={showInvertedBadge} name={eventType} color={eventColor} />)

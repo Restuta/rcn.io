@@ -40,8 +40,12 @@ export default class Home extends Component {
         <section className="section-main">
           <h1 className="header-regular">RCN.io</h1>
           <p className="text-5 header-regular w-300">
-            We build Calendars for Bike Racers. Check out official&nbsp;
-            <Link to={'/calendars/ncnca-2017?past=visible'}>2017 NCNCA Calendar</Link>.
+            We build Calendars for Bike Racers.
+          </p>
+          <p className="text-5 header-regular w-300">
+            Check out:&nbsp;
+            <div><Link to={'/calendars/usac-2017?past=visible'}>2017 USAC Calendar</Link></div>
+            <div><Link to={'/calendars/ncnca-2017?past=visible'}>2017 NCNCA Calendar</Link></div>
           </p>
           <p className="text-5 header-regular w-300 margin top-4">
             We need your help with finding unofficial <b>NorCal MTB Events</b>. Drop us a link (right bottom corner)
@@ -52,10 +56,10 @@ export default class Home extends Component {
 
         <section className="section-next">
           <h2 className="header-whats-next header-regular uppercase w-900">What is coming next?</h2>
-          <WhatIsNextItem date={moment('20 Sep 2016', 'DD MMM YYY').fromNow()}>Filters! Allowing to filter by Discipline, Event Type
+          <WhatIsNextItem date={moment('20 Sep 2016', 'DD MMM YYYY').fromNow()}>Filters! Allowing to filter by Discipline, Event Type
             and more, all at the same time. Mix and match!
           </WhatIsNextItem>
-          <WhatIsNextItem done date={moment('1 Jul 2016', 'DD MMM YYY').fromNow()}>
+          <WhatIsNextItem done date={moment('1 Jul 2016', 'DD MMM YYYY').fromNow()}>
             We are working on full NCNCA Calendar that would include official USAC events,
             not only MTB, but also Road, Track and CX. Next we will focus on event details page that would include Map,
             Flyer, Start Times and other useful info.

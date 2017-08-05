@@ -131,7 +131,7 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Same events from https://www.usacycling.org/events/state_search.php?state=CN)',
+      description: '(Events pulled from usasycling.org as-is)',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,
