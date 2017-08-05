@@ -118,6 +118,7 @@
 * [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
 * [Another Flexbox Cheatsheet](http://apps.workflower.fi/css-cheats/?name=flexbox)
 * [Use Flexbox Today](https://chriswrightdesign.com/experiments/using-flexbox-today/) - extensive article
+* [Things Learned from Flexbox Spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
 * CodePens
   * [Flipping icons](http://codepen.io/llull/pen/znkFs)
   * [Calendar with circles](http://codepen.io/m412c0/pen/rClpv)
@@ -130,6 +131,8 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [Spotify.my](http://spotify.me/) modern (as of 2017 and beautiful design)
+* [Punkave, nice, clean design](https://punkave.com/)
 * [Beautiful website] (https://www.strv.com/)
 * [Animations, Card Desgin] (https://dribbble.com/joaopaulots)
 * [Great feature page from Webflow](https://webflow.com/feature/responsive-images)
