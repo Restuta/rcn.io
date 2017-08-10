@@ -103,7 +103,7 @@ const Wrapper = (props) => {
 }
 
 let cache = {}
-const CACHE_DURATION = ms('10m')
+const CACHE_DURATION = ms('120m')
 
 setInterval(() => {
   if (Object.keys(cache).length > 0) {
