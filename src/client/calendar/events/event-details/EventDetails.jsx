@@ -168,7 +168,8 @@ class EventDetails extends Component {
       type === EventTypes.other.meeting ||
       type === EventTypes.nonCompetitive.default ||
       type === EventTypes.road.default ||
-      type === EventTypes.collegiate.default
+      type === EventTypes.collegiate.default ||
+      eventColor === 'white'
     )
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} inverted={showInvertedBadge} name={eventType} color={eventColor} />)
