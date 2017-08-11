@@ -147,6 +147,7 @@ class Calendar extends Component {
       location,
       draft = false,
     } = this.props
+
     //trust query string first, props next
     const showPastEvents = shouldShowPastEvents(location.query, this.props.showPastEvents)
     let shouldShowHidePastLink = false

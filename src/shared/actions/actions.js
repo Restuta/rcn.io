@@ -43,7 +43,9 @@ export const toggleContainerEdges = makeActionCreator('Dbg.TOGGLE_CONTAINER_EDGE
 export const requestEventsFetch = makeActionCreatorWithPayload('Cal.REQUEST_EVENTS_FETCH')
 export const calendarFetchSucceded = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_SUCCEDED')
 export const calendarFetchFailed = makeActionCreatorWithPayload('Cal.CALENDAR_FETCH_FAILED')
-export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS', (calendarId) => ({calendarId}))
+export const toggleShowPastEvents = makeActionCreator('Cal.TOGGLE_PAST_EVENTS',
+  (calendarId) => ({calendarId})
+)
 
 export const setBrowserWidth = makeActionCreator('browser/SET_WIDTH',
   width => ({browserWidth: width})

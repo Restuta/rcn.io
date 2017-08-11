@@ -62,16 +62,16 @@ const createEvent = rawEvent => {
   }
 }
 
-const preProcessEvents = rawEvents =>
-  rawEvents.map(rawEvent => createEvent(rawEvent))
+const preProcessEvents = rawEvents => rawEvents.map(createEvent)
 const rawMtbEvents = rawMtbEventsFromSpreadsheet.concat(rawMtbEventsManual)
 const norcalMtb2016Events = preProcessEvents(rawMtbEvents)
 const ncnca2016Events = preProcessEvents(rawNcnca2016Events)
-const fetchNcncaDraftEvents2017 = () => fetchRawNcncaDraftEvents2017()
+const fetchNcncaDraftEvents2017 = (calendarId) =>
+  fetchRawNcncaDraftEvents2017(calendarId)
   .then(eventsRaw => preProcessEvents(eventsRaw))
 
-const usac2017Events = preProcessEvents(rawUsac2017Events)
 
+const usac2017Events = preProcessEvents(rawUsac2017Events)
 const ncnca2017Events = preProcessEvents(rawNcnca2017Events)
 
 export {

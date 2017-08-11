@@ -88,6 +88,21 @@ const initialState = {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
+      description: 'Draft is locked.',
+      timeZone: 'America/Los_Angeles',
+      showPastEvents: true,
+      draft: true,
+      eventsIds: [],
+      loaded: false,
+    },
+    ['cal-ncnca-2018-draft']: {
+      id: 'cal-ncnca-2018-draft',
+      year: 2018,
+      name: '2018 NCNCA Calendar',
+      // highlight: {
+      //   word: 'NCNCA',
+      //   color: Colors.red800,
+      // },
       description: 'Most recent draft',
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,
@@ -203,7 +218,6 @@ export const app = makeReducer({
     return state
   },
   ['browser/SET_WIDTH']: (state, action) => {
-    console.info('in app reducer')
     if (state.navigatedBackFromModal) {
       return {
         ...state,
