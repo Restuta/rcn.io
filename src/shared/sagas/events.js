@@ -12,7 +12,7 @@ function* eventsSaga(requestEventFetchAction) {
   try {
     console.info('=> events saga is called') //eslint-disable-line
 
-    const events = yield call(fetchNcncaDraftEvents2017)
+    const events = yield call(fetchNcncaDraftEvents2017, calendarId)
     yield put(calendarFetchSucceded({events: events, calendarId: calendarId}))
 
     console.info('=> events saga is succeded') //eslint-disable-line
