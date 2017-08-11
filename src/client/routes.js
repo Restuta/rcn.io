@@ -11,7 +11,7 @@ import EventDetails from 'calendar/events/event-details/EventDetails.jsx'
 const productionRoutes = [
   <IndexRoute component={Home} />,
   <Route path="/calendars/norcal-mtb" component={MtbCalendar} />,
-  <Redirect from="/calendars/ncnca-2017-draft" to="/calendars/draft/ncnca-2017"/>,
+  <Redirect from="/calendars/ncnca-2017-draft" to="/calendars/drafts/ncnca-2017"/>,
   <Route path="/calendars/drafts/:calendarId" component={NcncaDraftCalendar} />,
   <Route path="/calendars/:calendarId" component={NcncaCalendar} />,
   <Route path="/events/:eventId" component={EventDetails}/>,
