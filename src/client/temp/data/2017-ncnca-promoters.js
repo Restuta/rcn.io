@@ -48,6 +48,8 @@ module.exports =  [
   { "id": "prm-2609", "name": "CCCX Cycling Club", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com", "usacClubId": 14829 },
   { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com", "usacClubId": 12627 },
 
+  { "id": "prm-usac-3391", "name": "California State University-Chico", "contactName": "Anthony Tran", "usacClubId": 3391 },
+
 
 
   { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
