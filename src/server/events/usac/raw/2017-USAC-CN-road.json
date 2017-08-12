@@ -1238,7 +1238,6 @@
       "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
-    "registrationLink": "http://www.bikereg.com ",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1263,7 +1262,6 @@
       "url": "https://usacycling.org/clubs/index.php?club=12690"
     },
     "eventWebSite": "http://www.redkiteracing.com",
-    "registrationLink": "http://www.bikereg.com/events/?pid=4870",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1462,7 +1460,8 @@
       "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
-    "status": "Pending",
+    "registrationLink": "http://www.bikereg.com",
+    "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
     "state": "CN",
@@ -1522,21 +1521,21 @@
     "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=60&"
   },
   {
-    "permit": "2017-2461",
-    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
-    "dates": ["2017-09-09T07:00:00.000Z"],
+    "permit": "2017-2643",
+    "name": "Oakland Grand Prix",
+    "dates": ["2017-09-17T07:00:00.000Z"],
     "location": {
-      "cityState": "Jackson, CA",
-      "detailed": ["175 Main Street", "Jackson, CA"],
-      "googleMapsUrl": "http://maps.google.com/maps/place/175+Main+Street+Jackson,+CA+95642,+USA"
+      "cityState": "Oakland, CA, CA",
+      "detailed": ["20th and Harrison", "Oakland, CA, CA"],
+      "googleMapsUrl": "http://maps.google.com/maps/place/20th+and+Harrison+Oakland,+CA,+CA+94607,+USA"
     },
     "promoter": {
-      "club": "Red Kite Racing",
-      "raceDirector": "Steve Rosefield",
-      "url": "https://usacycling.org/clubs/index.php?club=12690"
+      "club": "Golden Chain Cyclists",
+      "raceDirector": "Robert Leibold",
+      "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
-    "eventWebSite": "http://www.redkiteracing.com",
-    "status": "Permit in Process",
+    "eventWebSite": "http://www.velopromo.com",
+    "status": "Pending",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
@@ -1705,6 +1704,30 @@
     },
     "eventWebSite": "http://www.benduro.com/p/eldorado.html",
     "status": "Complete",
+    "usacCategory": "Category - D",
+    "year": 2017,
+    "state": "CN",
+    "discipline": "Mountain",
+    "usacEventType": "Results & Ranking",
+    "competitive": "competitive",
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Mountain&rrfilter=rr&noncomp=0&state=CN&cnt=0&"
+  },
+  {
+    "permit": "2017-2601",
+    "name": "Wildcat MTB Race",
+    "dates": ["2017-09-30T07:00:00.000Z", "2017-10-01T07:00:00.000Z"],
+    "location": {
+      "cityState": "Chico, CA",
+      "detailed": "Chico, CA",
+      "googleMapsUrl": "http://maps.google.com/maps/place/+Chico,+CA+95926,+USA"
+    },
+    "promoter": {
+      "club": "California State University-Chico",
+      "raceDirector": "Anthony Tran",
+      "url": "https://usacycling.org/clubs/index.php?club=3391"
+    },
+    "eventWebSite": "http://www.facebook.com/events/112409339400663/?context=create&previousaction=create&ref=5&page_id_source=1881225038826999&sid_create=2832345047&action_history=[%7B%22surface%22%3A%22create_dialog%22%2C%22mechanism%22%3A%22page_create_dialog%22%2C%22extra_data%2",
+    "status": "Permit in Process",
     "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",

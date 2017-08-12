@@ -1596,7 +1596,7 @@
       "type": "Results & Ranking"
     },
     "websiteUrl": "http://www.velopromo.com",
-    "registrationUrl": "http://www.bikereg.com",
+    "registrationUrl": "",
     "promoters": [
       {
         "id": "prm-2631",
@@ -1627,7 +1627,7 @@
       "type": "Results & Ranking"
     },
     "websiteUrl": "http://www.redkiteracing.com",
-    "registrationUrl": "http://www.bikereg.com/events/?pid=4870",
+    "registrationUrl": "",
     "promoters": [
       {
         "id": "prm-4873",
@@ -1870,12 +1870,12 @@
     },
     "usacPermit": "2017-2576",
     "usac": {
-      "status": "Pending",
+      "status": "Permitted",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
     "websiteUrl": "http://www.velopromo.com",
-    "registrationUrl": "",
+    "registrationUrl": "http://www.bikereg.com",
     "promoters": [
       {
         "id": "prm-2631",
@@ -1949,33 +1949,33 @@
     ]
   },
   {
-    "id": "evt-usac-2017-jackson-historic-downtown-criterium-rJaMvqT5Zw$",
-    "_shortId": "rJaMvqT5Zw$",
-    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
-    "date": "September 09 2017",
+    "id": "evt-usac-2017-oakland-grand-prix-Byj7tRsPW",
+    "_shortId": "Byj7tRsPW",
+    "name": "Oakland Grand Prix",
+    "date": "September 17 2017",
     "discipline": "Road",
-    "type": "Criterium",
+    "type": "Road",
     "location": {
-      "streetAddress": "175 Main Street",
-      "city": "Jackson",
+      "streetAddress": "20th and Harrison",
+      "city": "Oakland",
       "state": "CA",
-      "zip": "95642"
+      "zip": "94607"
     },
-    "usacPermit": "2017-2461",
+    "usacPermit": "2017-2643",
     "usac": {
-      "status": "Permit in Process",
+      "status": "Pending",
       "category": "Category - D",
       "type": "Results & Ranking"
     },
-    "websiteUrl": "http://www.redkiteracing.com",
+    "websiteUrl": "http://www.velopromo.com",
     "registrationUrl": "",
     "promoters": [
       {
-        "id": "prm-4873",
-        "name": "Red Kite Racing",
-        "contactName": "Steve Rosefield",
-        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
-        "usacClubId": 12690
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
       }
     ]
   },
@@ -2194,6 +2194,36 @@
     ]
   },
   {
+    "id": "evt-usac-2017-wildcat-mtb-race-rylj7KAswb",
+    "_shortId": "rylj7KAswb",
+    "name": "Wildcat MTB Race",
+    "date": "September 30 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95926"
+    },
+    "usacPermit": "2017-2601",
+    "usac": {
+      "status": "Permit in Process",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/events/112409339400663/?context=create&previousaction=create&ref=5&page_id_source=1881225038826999&sid_create=2832345047&action_history=%5B%257B%2522surface%2522%253A%2522create_dialog%2522%252C%2522mechanism%2522%253A%2522page_create_dialog%2522%252C%2522extra_data%252",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-3391",
+        "name": "California State University-Chico",
+        "contactName": "Anthony Tran",
+        "usacClubId": 3391
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-west-sacramento-cyclocross-grand-prix-wscxgp-presented-by-toyota-S1HXv965$wW",
     "_shortId": "S1HXv965$wW",
     "name": "West Sacramento Cyclocross Grand Prix (WSCXGP) Presented by Toyota",
@@ -2253,5 +2283,38 @@
         "usacClubId": 806
       }
     ]
+  },
+  {
+    "id": "evt-usac-2017-jackson-historic-downtown-criterium-rJaMvqT5Zw$",
+    "_shortId": "rJaMvqT5Zw$",
+    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
+    "date": "September 09 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "175 Main Street",
+      "city": "Jackson",
+      "state": "CA",
+      "zip": "95642"
+    },
+    "usacPermit": "2017-2461",
+    "usac": {
+      "status": "Permit in Process",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ],
+    "status": "Canceled",
+    "cancelationReason": "Unknown, event got removed from USAC website."
   }
 ]
