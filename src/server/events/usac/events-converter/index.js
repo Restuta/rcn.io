@@ -1,8 +1,9 @@
 const log = require('server/utils/log')
-const { flow, map, trim, partial, groupBy, find, first } = require('lodash/fp')
+const { flow, map, trim, partial, groupBy, find, first, filter, concat } = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road.json')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
 const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
+const { Statuses } = require('client/calendar/events/types')
 
 const Joi = require('joi')
 const schema = require('client/temp/data/tests/event-schema')
@@ -15,7 +16,7 @@ const relativePathToConvertedEvents = '../../../../client/temp/data/2017-usac-ev
 const absolutePathToConvertedEvents = path.resolve(__dirname, relativePathToConvertedEvents)
 const previousEvents = require(relativePathToConvertedEvents)
 
-const previousEventsByPermit = groupBy('usacPermit', previousEvents)
+
 
 const createRcnEventPropsFromUsac = rawUsacEvent => {
   const rawPermit = trim(rawUsacEvent.permit)
@@ -43,9 +44,37 @@ const createRcnEventPropsFromUsac = rawUsacEvent => {
   }
 }
 
-const convertToInternalFormat = rawUsacEvent => {
-  const existingRcnEvents = previousEventsByPermit[trim(rawUsacEvent.permit)]
+const createUpdatedEvent = (existingRcnEvent, rawUsacEvent) => {
+  // TODO: implement support for moved events ^, basically we need to do extra pass and compare
+  // if event with same permit got new date? if so, we would need to
+  // - create a new event
+  // - link old event to new one (movedToId)
+  // - mark old one as moved
+  return Object.assign(
+    {},
+    {
+      id: existingRcnEvent.id,
+      _shortId: existingRcnEvent._shortId,
+    },
+    createRcnEventPropsFromUsac(rawUsacEvent)
+  )
+}
 
+const createNewEvent = rawUsacEvent => {
+  const shortId = createShortEventId()
+
+  return Object.assign(
+    {},
+    {
+      id: createPrettyEventId(rawUsacEvent.year, rawUsacEvent.name, 'usac', shortId),
+      _shortId: shortId,
+    },
+    createRcnEventPropsFromUsac(rawUsacEvent)
+  )
+}
+
+const convertUsacEventToRcnEvent = previousEventsByPermit => rawUsacEvent => {
+  const existingRcnEvents = previousEventsByPermit[trim(rawUsacEvent.permit)]
 
   const existingRcnEvent = existingRcnEvents
     ? (existingRcnEvents.length === 1)
@@ -54,37 +83,18 @@ const convertToInternalFormat = rawUsacEvent => {
       : find(x => x.discipline === parseDiscipline(rawUsacEvent.discipline), existingRcnEvents)
   : undefined
 
-  // const existingRcnEvent = previousEventsByPermit[trim(rawUsacEvent.permit)]
-  let rcnEvent
-
   if (existingRcnEvent && existingRcnEvent.length > 1) {
-    log.error('array')
-    log.debug(existingRcnEvent.length)
-    // log.debug(previousEventsByPermit)
+    log.error('Found two existing events with same discipline and permit number, '
+    + 'which means we should go to USAC and double-check WTF is going on. '
+    + 'This could also mean that event has been moved to a different date '
+    + 'and we need to add support for this.')
+    log.debug(existingRcnEvent)
   }
 
   try {
-    if (existingRcnEvent) {
-      rcnEvent = Object.assign(
-        {},
-        {
-          id: existingRcnEvent.id,
-          _shortId: existingRcnEvent._shortId,
-        },
-        createRcnEventPropsFromUsac(rawUsacEvent)
-      )
-    } else {
-      const shortId = createShortEventId()
-
-      rcnEvent = Object.assign(
-        {},
-        {
-          id: createPrettyEventId(rawUsacEvent.year, rawUsacEvent.name, 'usac', shortId),
-          _shortId: shortId,
-        },
-        createRcnEventPropsFromUsac(rawUsacEvent)
-      )
-    }
+    const rcnEvent = existingRcnEvent
+      ? createUpdatedEvent(existingRcnEvent, rawUsacEvent)
+      : createNewEvent(rawUsacEvent)
 
     return rcnEvent
   } catch (e) {
@@ -107,11 +117,29 @@ const validateOverSchema = rcnEvent => {
   return rcnEvent
 }
 
+const updateEventsThatAreNoLongerOnUsac = previousEventsByPermit => justConvertedEvents => {
+  const justConvertedEventsByPermit = groupBy('usacPermit', justConvertedEvents)
+
+  const eventsThatAreNoLongerOnUsac = flow(
+    filter(event => !justConvertedEventsByPermit[event.usacPermit]),
+    map(event => Object.assign({}, event, {
+      status: Statuses.canceled,
+      cancelationReason: 'Unknown, event got removed from USAC website.'
+    }))
+  )(previousEventsByPermit)
+
+  return concat(justConvertedEvents, eventsThatAreNoLongerOnUsac)
+}
+
 // main processing pipeline
-const processEvents = flow(
-  map(convertToInternalFormat),
+const processEvents = (previousEvents) => flow(
+  map(convertUsacEventToRcnEvent(
+    groupBy('usacPermit', previousEvents)
+  )),
   // , map(log.debug)
+  updateEventsThatAreNoLongerOnUsac(previousEvents),
   map(validateOverSchema),
+  // TODO bc: order events by date so we write them to disk in somewhat consistent order
   // only write to file in prod mode
   (process.env.NODE_ENV === 'development'
     ? x => Promise.resolve(x)
@@ -119,12 +147,11 @@ const processEvents = flow(
   )
 )
 
-processEvents(usac2017CnRoadEvensRaw)
-  .then(() => {
+processEvents(previousEvents)(usac2017CnRoadEvensRaw)
+  .then((events) => {
     log.green(`Converted ${usac2017CnRoadEvensRaw.length} events`)
   })
 
-// log.debug(processEvents)
 
 // const { uniq } = require('lodash/fp')
 // log.path(uniq, 'resultsUrl', processedEvents)
