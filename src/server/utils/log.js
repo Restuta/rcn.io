@@ -19,6 +19,7 @@ const debug = msg => log(msg, 'blue')
 const cyan = msg => log(msg, 'cyan')
 const green = msg => log(msg, 'green')
 const magenta = msg => log(msg, 'magenta')
+const yellow = msg => log(msg, 'yellow')
 const info = msg => console.info(inspect({msg, colors: false}))
 
 /**
@@ -42,6 +43,7 @@ module.exports = {
   cyan,
   magenta,
   error,
+  yellow,
   info,
   inspect,
   path

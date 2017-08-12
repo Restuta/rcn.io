@@ -34,8 +34,6 @@ const parsePromoter = promoterRaw => {
       )
     }
   } else {
-    log.error(`NO MATCH, club: ${promoterRaw.club}, name: ${promoterRaw.raceDirector}, id: ${clubId}`)
-
     const normalizedPromoterName = normalizeSpaces(promoterRaw.club)
     const lowercasePromoterName = toLower(normalizedPromoterName)
 
@@ -51,19 +49,21 @@ const parsePromoter = promoterRaw => {
     // TODO: add slack notification
     log.error(
       `NO MATCH, club: ${promoterRaw.club}, name: ${promoterRaw.raceDirector}, id: ${clubId}` +
-        `, closest match that could be found: "${closestMatch.join(', ')}"`)
-
-    log.info(
-      'Despite the error, proceeding with creation of the promoter, but make sure' +
-        'it is stored in the list of promoters'
-    )
+        `, closest match that was found: "${closestMatch.join(', ')}"`)
 
     matchingPromoter = {
       id: `prm-usac-${clubId}`,
       name: normalizedPromoterName,
-      contactdName: normalizeSpaces(promoterRaw.raceDirector),
+      contactName: normalizeSpaces(promoterRaw.raceDirector),
       usacClubId: clubId
     }
+
+    log.info(
+      'Despite the error, proceeding with creation of the promoter, but make sure ' +
+        'it is stored in the list of promoters:'
+    )
+
+    log.info(matchingPromoter)
   }
 
   return [matchingPromoter]

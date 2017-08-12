@@ -38,8 +38,8 @@ const createRcnEventPropsFromUsac = rawUsacEvent => {
       category: trim(rawUsacEvent.usacCategory),
       type: trim(rawUsacEvent.usacEventType)
     },
-    websiteUrl: trim(rawUsacEvent.eventWebSite),
-    registrationUrl: trim(rawUsacEvent.registrationLink),
+    websiteUrl: encodeURI(trim(rawUsacEvent.eventWebSite)),
+    registrationUrl: encodeURI(trim(rawUsacEvent.registrationLink)),
     promoters: parsePromoter(rawUsacEvent.promoter),
   }
 }
@@ -62,6 +62,8 @@ const createUpdatedEvent = (existingRcnEvent, rawUsacEvent) => {
 
 const createNewEvent = rawUsacEvent => {
   const shortId = createShortEventId()
+
+  log.cyan(`New event found "${rawUsacEvent.permit}: ${rawUsacEvent.name}"`)
 
   return Object.assign(
     {},
@@ -127,6 +129,12 @@ const updateEventsThatAreNoLongerOnUsac = previousEventsByPermit => justConverte
       cancelationReason: 'Unknown, event got removed from USAC website.'
     }))
   )(previousEventsByPermit)
+
+  if (eventsThatAreNoLongerOnUsac.length > 0) {
+    eventsThatAreNoLongerOnUsac.forEach(x => {
+      log.yellow(`Removed event "${x.usacPermit}: ${x.name}" USAC, marking as Canceled`)
+    })
+  }
 
   return concat(justConvertedEvents, eventsThatAreNoLongerOnUsac)
 }
