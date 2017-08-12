@@ -106,6 +106,27 @@ const convertUsacEventToRcnEvent = previousEventsByPermit => rawUsacEvent => {
   }
 }
 
+const updateEventsThatAreNoLongerOnUsac = previousEventsByPermit => justConvertedEvents => {
+  const justConvertedEventsByPermit = groupBy('usacPermit', justConvertedEvents)
+
+  const eventsThatAreNoLongerOnUsac = flow(
+    filter(event => !justConvertedEventsByPermit[event.usacPermit]),
+    map(event => Object.assign({}, event, {
+      status: Statuses.canceled,
+      cancelationReason: 'Unknown, event is likely canceled, since it got removed from USAC website.'
+    }))
+  )(previousEventsByPermit)
+
+  if (eventsThatAreNoLongerOnUsac.length > 0) {
+    eventsThatAreNoLongerOnUsac.forEach(x => {
+      log.yellow(`Removed event "${x.usacPermit}: ${x.name}" USAC, marking as Canceled`)
+    })
+  }
+
+  return concat(justConvertedEvents, eventsThatAreNoLongerOnUsac)
+}
+
+
 const validateOverSchema = rcnEvent => {
   const { value: event, error } = Joi.validate(rcnEvent, schema)
 
@@ -117,26 +138,6 @@ const validateOverSchema = rcnEvent => {
   }
 
   return rcnEvent
-}
-
-const updateEventsThatAreNoLongerOnUsac = previousEventsByPermit => justConvertedEvents => {
-  const justConvertedEventsByPermit = groupBy('usacPermit', justConvertedEvents)
-
-  const eventsThatAreNoLongerOnUsac = flow(
-    filter(event => !justConvertedEventsByPermit[event.usacPermit]),
-    map(event => Object.assign({}, event, {
-      status: Statuses.canceled,
-      cancelationReason: 'Unknown, event got removed from USAC website.'
-    }))
-  )(previousEventsByPermit)
-
-  if (eventsThatAreNoLongerOnUsac.length > 0) {
-    eventsThatAreNoLongerOnUsac.forEach(x => {
-      log.yellow(`Removed event "${x.usacPermit}: ${x.name}" USAC, marking as Canceled`)
-    })
-  }
-
-  return concat(justConvertedEvents, eventsThatAreNoLongerOnUsac)
 }
 
 // main processing pipeline
