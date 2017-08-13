@@ -123,7 +123,7 @@ const config = {
       title: 'RCN.io Widgets',
       template: path.resolve(consts.SRC_DIR, 'client/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
-      hash: false,
+      hash: true,
       env: {
         Widget: true,
         Prod: true,
@@ -136,10 +136,10 @@ const config = {
       filename: 'admin/index.html',
       chunks: ['vendor', 'admin'],
       chunksSortMode: 'dependency',
-      title: 'rcn/admin',
+      title: 'RCN.io/admin',
       template: path.resolve(consts.SRC_DIR, 'client/admin/index.html.ejs'), // Load a custom template
       inject: false, // we use custom template to inject scripts,
-      hash: false,
+      hash: true,
       env: {
         Admin: true,
         Prod: true,
