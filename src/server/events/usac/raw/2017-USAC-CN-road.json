@@ -1286,7 +1286,6 @@
       "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
-    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1311,7 +1310,6 @@
       "url": "https://usacycling.org/clubs/index.php?club=2568"
     },
     "eventWebSite": "http://www.velopromo.com",
-    "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
     "year": 2017,
@@ -1513,6 +1511,30 @@
     "registrationLink": "http://www.bikereg.com",
     "status": "Permitted",
     "usacCategory": "Category - E",
+    "year": 2017,
+    "state": "CN",
+    "discipline": "Road",
+    "usacEventType": "Results & Ranking",
+    "competitive": "competitive",
+    "_urlUsedToPullThisEvent": "https://www.usacycling.org/events/state_search.php?ajax=2&fyear=2017&race=Road&rrfilter=rr&noncomp=0&state=CN&cnt=60&"
+  },
+  {
+    "permit": "2017-2461",
+    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
+    "dates": ["2017-09-09T07:00:00.000Z"],
+    "location": {
+      "cityState": "Jackson, CA",
+      "detailed": ["175 Main Street", "Jackson, CA"],
+      "googleMapsUrl": "http://maps.google.com/maps/place/175+Main+Street+Jackson,+CA+95642,+USA"
+    },
+    "promoter": {
+      "club": "Red Kite Racing",
+      "raceDirector": "Steve Rosefield",
+      "url": "https://usacycling.org/clubs/index.php?club=12690"
+    },
+    "eventWebSite": "http://www.bikereg.com/jackson-historic-downtown-criterium",
+    "status": "Permitted",
+    "usacCategory": "Category - D",
     "year": 2017,
     "state": "CN",
     "discipline": "Road",
