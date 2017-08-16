@@ -256,7 +256,7 @@ class Calendar extends Component {
         {warning && (
           <div className="margin top-2" style={{display: 'flex', justifyContent: 'center'}}>
             <Alert type="warning" flat showIcon>
-              This is just a DRAFT, events can change witouth notice.
+              {warning}
             </Alert>
           </div>
         )}
