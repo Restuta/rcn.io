@@ -20,6 +20,7 @@ import { firstDayOfMonth, lastDayOfMonth } from './utils/date-utils.js'
 import moment from  'moment-timezone'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 import Badge from 'calendar/badges/Badge.jsx'
+import Alert from 'atoms/Alert.jsx'
 
 // import Perf from 'react-addons-perf'
 
@@ -139,6 +140,7 @@ class Calendar extends Component {
       name,
       highlight,
       description,
+      warning,
       year,
       containerWidth,
       weekdaysSizes,
@@ -251,6 +253,14 @@ class Calendar extends Component {
         {nameComp}
         {subTitleComp}
         {description && <h4 className="sub-title">{description}</h4>}
+        {warning && (
+          <div className="margin top-2" style={{display: 'flex', justifyContent: 'center'}}>
+            <Alert type="warning" flat showIcon>
+              This is just a DRAFT, events can change witouth notice.
+            </Alert>
+          </div>
+        )}
+
 
         <div className="body">
           <WeekdaysHeader sizes={weekdaysSizes} containerWidth={containerWidth}/>
