@@ -104,7 +104,7 @@ const initialState = {
       //   color: Colors.red800,
       // },
       description: 'This calendar connected to google spredsheet',
-      warning: 'This is just a DRAFT, events can and will change witouth notice.',
+      warning: 'This is just a DRAFT, events can and will change without notice.',
       timeZone: 'America/Los_Angeles',
       showPastEvents: true,
       draft: true,
