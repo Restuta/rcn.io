@@ -28,9 +28,9 @@ const parsePromoter = promoterRaw => {
     const levenDistance = leven(toLower(promoterRaw.club), toLower(matchingPromoter.name))
 
     if (levenDistance >= 3) {
-      throw new Error(
+      log.warn(
         `Found matching prmoter for usac clubId: ${clubId}, but promoter names ` +
-          `do not match, USAC name: "${promoterRaw.club}", RCN name: "${matchingPromoter.name}"`
+        `do not match, USAC name: "${promoterRaw.club}", RCN name: "${matchingPromoter.name} \n"`
       )
     }
   } else {
@@ -63,7 +63,9 @@ const parsePromoter = promoterRaw => {
         'it is stored in the list of promoters:'
     )
 
-    log.info(matchingPromoter)
+    log.info(JSON.stringify(matchingPromoter))
+    //eslint-disable-next-line
+    console.log()
   }
 
   return [matchingPromoter]
