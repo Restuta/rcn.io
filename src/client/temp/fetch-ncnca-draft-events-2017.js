@@ -2,7 +2,6 @@ import moment from 'moment'
 import { hash } from 'client/utils/math'
 import { createEventIdPrefix } from 'shared/events/gen-event-id'
 
-
 /*
 Source Event format:
 {
@@ -45,58 +44,62 @@ Target:
 */
 
 //uses hash of the name so id stays same unless name changes for more predictable draft identity
-const createDraftEventId = (eventDate, eventName) => (
+const createDraftEventId = (eventDate, eventName) =>
   createEventIdPrefix(eventDate.year(), eventName, 'ncnca') + `-${hash(eventName + eventDate)}`
-)
 
 const transformEvents = googleSpreedsheetEvents =>
-  googleSpreedsheetEvents.map(event => {
-    if (!event['Race Name'] || !event['Race Name'].trim()) {
-      return null
-    }
+  googleSpreedsheetEvents
+    .map(event => {
+      if (!event['Race Name'] || !event['Race Name'].trim()) {
+        return null
+      }
 
-    // TODO: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
+      // TODO: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
       //or "Nationals"
 
-    const name = event['Race Name'].trim()
-    const date = moment(event['Date'], 'MM/DD/YYYY')
+      const name = event['Race Name'].trim()
+      const date = moment(event['Date'], 'MM/DD/YYYY')
 
-    if (!date.isValid()) {
-      throw new Error(`Invalid date for Draft Event: ${name}, date: ${event['Date']}`)
-    }
+      if (!date.isValid()) {
+        throw new Error(`Invalid date for Draft Event: ${name}, date: ${event['Date']}`)
+      }
 
-    const type = event['Type'].trim()
-    const draftId = createDraftEventId(date, name)
+      const type = event['Type'].trim()
+      const draftId = createDraftEventId(date, name)
 
-    return {
-      id: draftId,
-      name: name,
-      date: date.format('MMMM DD YYYY'),
-      discipline: 'Road',
-      type: type,
-      location: {
-        city: event['Location'],
-        state: 'CA',
-      },
-      promoters: [{
-        name: event['Promoted By'].trim() || undefined,
-        contactName: event['Promoter'].trim() || undefined,
-        contactInfo: event['Promoter contact info'].trim() || undefined,
-      }],
-      group: event['Group'].trim() || undefined,
-      draftNotes: event['Notes'].trim() || undefined,
-      isDraft: true
-    }
-  })
-  .filter(x => !!x) //filters out null and undefined
-
+      return {
+        id: draftId,
+        name: name,
+        date: date.format('MMMM DD YYYY'),
+        discipline: 'Road',
+        type: type,
+        location: {
+          city: event['Location'],
+          state: 'CA'
+        },
+        promoters: [
+          {
+            name: event['Promoted By'].trim() || undefined,
+            contactName: event['Promoter'].trim() || undefined,
+            contactInfo: event['Promoter contact info'].trim() || undefined
+          }
+        ],
+        group: event['Group'].trim() || undefined,
+        draftNotes: event['Notes'].trim() || undefined,
+        isDraft: true
+      }
+    })
+    .filter(x => !!x) //filters out null and undefined
 
 // import convertDraftEventsToRealOnes from './convert-drafts-to-real-events'
 
 // fetch NCNCA Draft events from google spreeadshet
+// 2017
 // (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
+// 2018
+// https://docs.google.com/spreadsheets/d/19BLcDedzXuEWvDQF4jIb14uHFPSAej7R_T7XhK-C3KA/edit#gid=0
 // using sheetsu.com
-const fetchRawNcncaDraftEvents2017 = (calendarId) => {
+const fetchRawNcncaDraftEvents2017 = calendarId => {
   const calendarIdToUrlMap = {
     'cal-ncnca-2017-draft': 'https://sheetsu.com/apis/v1.0/1c20d0db4562',
     'cal-ncnca-2018-draft': 'https://sheetsu.com/apis/v1.0/15e27f79162f'
@@ -104,13 +107,12 @@ const fetchRawNcncaDraftEvents2017 = (calendarId) => {
   return fetch(calendarIdToUrlMap[calendarId])
     .then(response => response.json())
     .then(events => transformEvents(events))
-    // uncomment to create a calendar from draft events
-    // .then(events => convertDraftEventsToRealOnes(events))
-    // .then(events => {
-    //   console.info(JSON.stringify(events))
-    //   return events
-    // })
+  // uncomment to create a calendar from draft events
+  // .then(events => convertDraftEventsToRealOnes(events))
+  // .then(events => {
+  //   console.info(JSON.stringify(events))
+  //   return events
+  // })
 }
-
 
 export default fetchRawNcncaDraftEvents2017
