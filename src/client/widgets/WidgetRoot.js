@@ -4,7 +4,6 @@ import React from 'react'
 import Component from 'react-pure-render/component'
 // import DebugGrid from 'client/temp/debug/DebugGrid.jsx'
 import './WidgetRoot.scss'
-import { logRenderPerf } from 'utils/hocs'
 
 class WidgetRoot extends Component {
   render() {
@@ -14,7 +13,7 @@ class WidgetRoot extends Component {
       : null
 
     return (
-      <div className="WidgetRoot container-fluid">
+      <div className="container-fluid WidgetRoot">
         {/* {__ENV.Dev && <DebugGrid containerWidth={this.props.containerWidth}/>} */}
         {children}
       </div>
@@ -22,4 +21,7 @@ class WidgetRoot extends Component {
   }
 }
 
-export default logRenderPerf(WidgetRoot, 'WidgetRoot')
+// import { logRenderPerf } from 'utils/hocs'
+// export default logRenderPerf(WidgetRoot, 'WidgetRoot')
+
+export default WidgetRoot

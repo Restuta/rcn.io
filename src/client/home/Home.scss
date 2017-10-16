@@ -10,6 +10,8 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   .section-main {
     margin-top: 8rem;
@@ -25,9 +27,18 @@
     margin-bottom: 1rem;
   }
 
+  ul.cal-list {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  ul.cal-list > li {
+    padding-bottom: 1rem;
+  }
 
   .header-whats-next {
-    color: $grey-600;
+    color: $grey-700;
+    margin-top: 4rem;
   }
 
   .section-badges {
@@ -41,9 +52,5 @@
 
   .badge {
     margin-right: 1rem;
-  }
-
-  .header-whats-next {
-    margin-top: 8rem;
   }
 }

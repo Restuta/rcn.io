@@ -55,11 +55,16 @@ const transformEvents = googleSpreedsheetEvents =>
       return null
     }
 
-    //TODO bc: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
+    // TODO: handle "notable events" as separate events? (it's a property now), meaning events like "Memorial Day"
       //or "Nationals"
 
-    const date = moment(event['Date'], 'MM/DD/YYYY')
     const name = event['Race Name'].trim()
+    const date = moment(event['Date'], 'MM/DD/YYYY')
+
+    if (!date.isValid()) {
+      throw new Error(`Invalid date for Draft Event: ${name}, date: ${event['Date']}`)
+    }
+
     const type = event['Type'].trim()
     const draftId = createDraftEventId(date, name)
 
@@ -91,14 +96,21 @@ const transformEvents = googleSpreedsheetEvents =>
 // fetch NCNCA Draft events from google spreeadshet
 // (https://docs.google.com/spreadsheets/d/1Dj5IHa-ym4IpaKyMrIz9veXzuW_yPGtfqxhtwxdMO8E/edit#gid=937034132)
 // using sheetsu.com
-const fetchRawNcncaDraftEvents2017 = () =>
-  fetch('https://sheetsu.com/apis/v1.0/1c20d0db4562')
+const fetchRawNcncaDraftEvents2017 = (calendarId) => {
+  const calendarIdToUrlMap = {
+    'cal-ncnca-2017-draft': 'https://sheetsu.com/apis/v1.0/1c20d0db4562',
+    'cal-ncnca-2018-draft': 'https://sheetsu.com/apis/v1.0/15e27f79162f'
+  }
+  return fetch(calendarIdToUrlMap[calendarId])
     .then(response => response.json())
     .then(events => transformEvents(events))
+    // uncomment to create a calendar from draft events
     // .then(events => convertDraftEventsToRealOnes(events))
     // .then(events => {
     //   console.info(JSON.stringify(events))
     //   return events
     // })
+}
+
 
 export default fetchRawNcncaDraftEvents2017

@@ -3,8 +3,6 @@ import Component from 'react-pure-render/component'
 import './EventDetails.scss'
 import Row from 'atoms/Row.jsx'
 import Col from 'atoms/Col.jsx'
-import Button from 'atoms/Button.jsx'
-// import { pxToRem } from 'styles/typography'
 import Colors from 'styles/colors'
 import RaceTypeBadge from './RaceTypeBadge.jsx'
 import Flyer from './Flyer.jsx'
@@ -12,110 +10,82 @@ import momentTZ from  'moment-timezone'
 import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import Icon from 'atoms/Icon.jsx'
-import { getShorterUrl } from 'utils/url-utils'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
 import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
-import Badge from 'calendar/badges/Badge.jsx'
-import UsacLogo from 'atoms/UsacLogo.jsx'
+import UsacPermit from './UsacPermit.jsx'
+import PresentedBy from './PresentedBy.jsx'
+import EventWebsite from './EventWebsite.jsx'
+import { RegButton, ResultsButton } from './Buttons.jsx'
+import Alert from 'atoms/Alert.jsx'
+import { Link } from 'react-router'
 
-const PresentedBy = ({by}) => (
-  <span className="text-2" style={{
-    fontStyle: 'italic',
-    position: 'relative',
-    marginRight: '2rem',
-    marginBottom: '2rem',
-  }}>
-    <span className="secondary">by {(by || '--')}</span>
-  </span>
+const getUsacFlyerUrl = permit => (`https://www.usacycling.org/events/getflyer.php?permit=${permit.trim()}`)
+
+const crteateLetUsKnowLink = ({subject, body = ''}) => (
+  'mailto:a@rcn.io?cc=webmaster@ncnca.org'
+  + `&subject=${encodeURIComponent(subject)}`
+  + `&body=${encodeURIComponent(body)}`
 )
 
-const UsacPermit = ({number}) => (
-  <span className="nowrap secondary">
-    <UsacLogo size={1} style={{marginRight: '1rem'}}/>
-    <span className="text-sm-11 top-0">PERMIT {number}</span>
-  </span>
-)
+const getAbsoluteEventUrl = id => (`https://rcn.io/events/${id}`)
 
-const EventWebsite = ({url}) => {
-  let eventComp
+const formatDate = (date, today) => {
+  if (!date) return ''
 
-  if (url) {
-    eventComp = (
-      <a href={url} target="_blank">
-        <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.primary}/>
-        {getShorterUrl(url)}
-      </a>
-    )
+  const currentYearFormat = 'dddd, MMMM Do'
+  const otherYearFormat = 'dddd, MMMM Do, YYYY'
+
+  let formattedDate
+
+  if (date.year() === today.year()) {
+    formattedDate = date.format(currentYearFormat)
   } else {
-    eventComp = (<div>
-      <Icon name="public" className="margin rgt-05" size={2} top={-1} color={Colors.grey500}/>
-      {'--'}
-    </div>
-    )
+    formattedDate = date.format(otherYearFormat)
   }
 
-  return (
-    <div>
-      <h4 className="header-regular header-4">Event Website</h4>
-      <div className="events-website-link text-3">
-        {eventComp}
-      </div>
-    </div>
-  )
+  return formattedDate
 }
 
-const PrimaryButton = ({text, icon, disabled, onClick}) => (
-  <Button size="sm" icon={icon} disabled={disabled} primaryHover className="primary-button" onClick={onClick}>
-    {text}
-  </Button>
-)
-
-const RegButton = ({regUrl, onClick}) => (
-  regUrl
-    ? <PrimaryButton text="REGISTER" onClick={onClick}/>
-    : <PrimaryButton text="NO REG LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
-)
-
-const ResultsButton = ({resultsUrl, onClick}) => (
-  resultsUrl
-    ? <PrimaryButton text="RESULTS" onClick={onClick}/>
-    : <PrimaryButton text="NO RESULTS LINK" icon="sentiment_dissatisfied" disabled Click={onClick}/>
-)
+const dateIsInFuture = (date, today) => date > today
 
 const getUsacResultsUrl  = permitNo => `https://www.usacycling.org/results/?permit=${permitNo}`
 
+const renderedInsideModal = props => (
+  !!(props.location
+  && props.location.state
+  && props.location.state.modalProps
+  && props.location.state.modalProps.isOpen)
+)
+
 class EventDetails extends Component {
-  constructor(props) {
-    super(props)
-    this.onRegisterBtnClick = this.onRegisterBtnClick.bind(this)
-    this.onResultsBtnClick = this.onResultsBtnClick.bind(this)
-  }
+  // check if component is rendered inside modal
 
-
-  onResultsBtnClick() {
+  onResultsBtnClick = () => {
     // console.info(...arguments)
     window.location.href = this.resultsUrl
   }
 
-  onRegisterBtnClick() {
+  onRegisterBtnClick = () =>  {
     window.location.href = this.props.event.registrationUrl
     // window.drift.api.sidebar.open()
     // window.open(this.props.event.registrationUrl, '_blank')
   }
 
+  onMovedToLinkClick = (e) => {
+    e.preventDefault()
+    this.props.replaceRoutedModal(`/events/${this.props.movedToEvent.id}`)
+  }
+
   render() {
-    const insideModal = (
-      (this.props.location
-      && this.props.location.state
-      && this.props.location.state.modal)
-    )
+    const insideModal = renderedInsideModal(this.props)
     //TODO: hardcoding timezone for now, it should come from calendar later
     const moment = () => momentTZ.tz(...arguments, 'America/Los_Angeles')
     const today = moment()
 
     const {
+      id,
       name = '——',
       date = today,
       location = {},
@@ -124,17 +94,34 @@ class EventDetails extends Component {
       isDraft: eventIsDraft,
       draftNotes,
       status,
+      cancelationReason,
       promoters,
       websiteUrl,
       usacPermit,
       registrationUrl,
       resultsUrl: originalResultsUrl,
       group,
-      promoterInfo
+      promoterInfo,
     } = this.props.event
 
-    //TODO bc: migrate old evnets to have flyer section and not just "flyerUrl" property
-    const flyerUrl = (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
+    // TODO: migrate old events to have flyer section and not just "flyerUrl" property
+    const { movedToEvent } = this.props
+
+    let movedToEventDate
+    let formattedMovedToDate
+    let relativeMovedToDate
+
+    if (status === Statuses.moved && movedToEvent) {
+      movedToEventDate = movedToEvent.date
+      formattedMovedToDate = formatDate(movedToEventDate, today)
+      relativeMovedToDate = dateIsInFuture(movedToEventDate, today)
+        ? `(${movedToEventDate.fromNow()})`
+        : ''
+    }
+
+    const flyerUrl = this.props.event.usacPermit
+      ? getUsacFlyerUrl(this.props.event.usacPermit)
+      : (this.props.event.flyer && this.props.event.flyer.url) || this.props.event.flyerUrl
 
     const promoterContactName = (promoters && promoters.length > 0)
       ? promoters.map(x => x.contactName)[0]
@@ -155,17 +142,8 @@ class EventDetails extends Component {
       'canceled': status === Statuses.canceled,
       'moved': status === Statuses.moved
     })
-    const currentYearFormat = 'dddd, MMMM Do'
-    const otherYearFormat = 'dddd, MMMM Do, YYYY'
 
-    let formattedDate
-
-    if (date.year() === today.year()) {
-      formattedDate = date.format(currentYearFormat)
-    } else {
-      formattedDate = date.format(otherYearFormat)
-    }
-
+    const formattedDate = formatDate(date, today)
     const relativeDate = date.fromNow()
 
     const startAddress = locationToAddressStr(location)
@@ -186,7 +164,13 @@ class EventDetails extends Component {
 
     const eventColor = getEventColor(discipline, type, status)
     const eventType = (type || discipline || '').toUpperCase()
-    const showInvertedBadge = (type === EventTypes.other.meeting || type === EventTypes.nonCompetitive.default)
+    const showInvertedBadge = (
+      type === EventTypes.other.meeting ||
+      type === EventTypes.nonCompetitive.default ||
+      type === EventTypes.road.default ||
+      type === EventTypes.collegiate.default ||
+      eventColor === 'white'
+    )
 
     raceTypeBadgesComp.push(<RaceTypeBadge key={30} inverted={showInvertedBadge} name={eventType} color={eventColor} />)
 
@@ -209,14 +193,54 @@ class EventDetails extends Component {
           <div className="badges">
             {raceTypeBadgesComp}
           </div>
+          {status === Statuses.canceled && (
+            <Row className="margin top-3 bot-1">
+              <Col xs={14}>
+                <Alert type="danger" flat showIcon={true}>Event has been <b>canceled.</b>
+                  <br />
+                  <span>reason: {cancelationReason || '<not specified>'}</span>
+                </Alert>
+              </Col>
+            </Row>
+          )}
+          {status === Statuses.moved && (
+            <Row className="margin top-3 bot-1">
+              <Col xs={14}>
+                <Alert type="warning" flat showIcon={true}>This event has been <b>moved</b>
+                  <span> to a new date&nbsp;
+                    {formattedMovedToDate
+                      ? (
+                      <span>
+                        {insideModal
+                          ? (
+                          <Link onClick={this.onMovedToLinkClick}>
+                            {formattedMovedToDate}&nbsp;{relativeMovedToDate}</Link>
+                          )
+                          : (
+                          <Link to={`/events/${this.props.movedToEvent.id}`}>
+                            {formattedMovedToDate}&nbsp;{relativeMovedToDate}</Link>
+                          )
+                        }
+                      </span>
+                      )
+                      : (
+                      <span>which is not yet known.<br />
+                        <small><i>
+                          (know the new date?&nbsp;
+                          <a href={crteateLetUsKnowLink({
+                            subject: `I know new date for event "${name}"`,
+                            body: ` ...is the new date. \n\n event url: ${getAbsoluteEventUrl(id)}`,
+                          })} onClick={this.onLetUsKnowClick}>let us know!</a>)
+                        </i></small>
+                      </span>)
+                    }
+                  </span>
+                </Alert>
+              </Col>
+            </Row>
+          )}
           <Row>
             <Col xs={14} sm={9}>
-              {status && (
-                <Badge inverted className="status-badge" borderColor={Colors.red500}
-                  bgColor={Colors.bodyBg} color={Colors.red500} heightRem={4} square>
-                  {status.toUpperCase()}
-                </Badge>)
-              }
               <h4 className="header-regular w-500 date">
                 {formattedDate} <span className="relative">({relativeDate})</span>
               </h4>
@@ -267,7 +291,7 @@ class EventDetails extends Component {
           </Row> */}
           <Row>
             <Col xs={14} sm={9}>
-              <h4 className="header-regular header-4">PART OF</h4>
+              <h4 className="header-regular header-4">SERIES</h4>
               {series.map((x, i) => <div key={i} className="text-2">{x.name}</div>)}
             </Col>
           </Row>
@@ -286,25 +310,42 @@ class EventDetails extends Component {
       insideModal
         ? eventDetailsComponent
         : (
-        <div className='EventDetails-container'>
-          {eventDetailsComponent}
-        </div>
+          // eslint-disable-next-line
+          <div className='EventDetails-container'>
+            {eventDetailsComponent}
+          </div>
         )
     )
   }
 }
 
 EventDetails.propTypes = {
-  event: PropTypes.object.isRequired
+  event: PropTypes.object.isRequired,
+  // if event status is "Moved" this would contain event it's moved to
+  movedToEvent: PropTypes.object,
 }
+
+export { EventDetails }
 
 import { connect } from 'react-redux'
 import { getEvent } from 'shared/reducers/reducer.js'
+import { replaceRoutedModal } from 'shared/actions/actions.js'
 
 export default connect(
   (state, ownProps) => {
-    //to have "back to calendar" button
+    // to have "back to calendar" button
     // calendar: getCalendar()
-    return { event: getEvent(state, ownProps.params.eventId) || {} }
-  }
+
+    const event = getEvent(state, ownProps.params.eventId)
+    let movedToEvent
+
+    if (event.status === Statuses.moved && event.movedToEventId) {
+      movedToEvent = getEvent(state, event.movedToEventId)
+    }
+
+    return { event, movedToEvent }
+  },
+  (dispatch, ownProps) => ({
+    replaceRoutedModal: (path) => dispatch(replaceRoutedModal({path, hasPadding: false}))
+  }),
 )(EventDetails)

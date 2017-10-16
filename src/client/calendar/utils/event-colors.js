@@ -54,7 +54,7 @@ const getEventColor = (discipline, type, status = '') => {
     eventColor = Colors.event.track.default
   }
 
-  if (discipline === Disciplines.road) {
+  if (discipline === Disciplines.road || discipline === Disciplines.collegiate) {
     switch (type) {
       case 'Road Race':
         eventColor = Colors.event.road.roadRace

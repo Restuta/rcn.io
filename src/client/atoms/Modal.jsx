@@ -8,21 +8,32 @@ import classnames from 'classnames'
 //for accesibility, to hide app from screen readers while modal is open
 ReactModal.getApplicationElement = () => document.getElementById('root')
 
+const documentHasVerticalScrollbar = (window, document) =>
+  window.innerWidth > document.documentElement.clientWidth
+
 export default class Modal extends Component {
   componentWillMount() {
     if (ExecutionEnvironment.canUseDOM) {
+      // this check has to be performed before overflow is set to hidden
+      if (documentHasVerticalScrollbar(window, document)) {
+        document.body.style.marginRight = '15px'
+      }
+
       document.body.style.overflow = 'hidden'
     }
   }
 
   componentWillUnmount() {
     if (ExecutionEnvironment.canUseDOM) {
+      document.body.style.marginRight = ''
       document.body.style.overflow = ''
     }
   }
 
   render() {
-    const modalClassNames = classnames('Modal content', this.props.contentClassName)
+    const modalClassNames = classnames('Modal content', this.props.contentClassName, {
+      'has-padding': this.props.hasPadding,
+    })
 
     return (
       <ReactModal
@@ -47,4 +58,11 @@ Modal.propTypes = {
   closeOnEsc: PropTypes.bool,
   closeOnBackdropClick: PropTypes.bool,
   contentClassName: PropTypes.string,
+  //for certain cases modal should not have padding so we can apply advnaced background styles
+  hasPadding: PropTypes.bool,
+}
+
+Modal.defaultProps = {
+  hasPadding: true,
+  closeOnEsc: true,
 }

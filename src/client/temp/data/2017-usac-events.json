@@ -1,0 +1,2318 @@
+[
+  {
+    "id": "evt-usac-2017-data-driven-athlete-napa-valley-camp-rkDqa5$DW",
+    "_shortId": "rkDqa5$DW",
+    "name": "Data Driven Athlete Napa Valley Camp",
+    "date": "January 14 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Napa Valley",
+      "city": "Calistoga",
+      "state": "CA",
+      "zip": "94515"
+    },
+    "usacPermit": "2017-137",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://datadrivenathlete.com/napa-valley-camp/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30014",
+        "name": "USA Cycling Coaches",
+        "contactName": "Nathanael Dunn",
+        "contactInfo": "nate@datadrivenathlete.com",
+        "usacClubId": 13940
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cal-aggie-criterium-HkxD5T9bPW",
+    "_shortId": "HkxD5T9bPW",
+    "name": "Cal Aggie Criterium",
+    "date": "January 28 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "E Park Road",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95819"
+    },
+    "usacPermit": "2017-211",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30016",
+        "name": "University of California-Davis",
+        "contactName": "Dustin Denton",
+        "contactInfo": "",
+        "usacClubId": 806
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-folsom-winter-criterium-r1$v5pq$vW",
+    "_shortId": "r1$v5pq$vW",
+    "name": "Folsom Winter Criterium",
+    "date": "February 04 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "",
+      "city": "Folsom",
+      "state": "CA",
+      "zip": "95630"
+    },
+    "usacPermit": "2017-203",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2672",
+        "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles",
+        "contactName": "Jeff Tanforan",
+        "contactInfo": "tan4an@gmail.com",
+        "usacClubId": 9895
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko1-the-bump-circuit-race-winter-ryzPcpq$Pb",
+    "_shortId": "ryzPcpq$Pb",
+    "name": "2017 RKO#1 - THE BUMP CIRCUIT RACE (WINTER)",
+    "date": "February 05 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "1575 Greenville Road",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    },
+    "usacPermit": "2017-399",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-otf-hensley-lake-road-race-S1XD5aqWPZ",
+    "_shortId": "S1XD5aqWPZ",
+    "name": "OTF Hensley Lake Road Race",
+    "date": "February 11 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "36133 Road 603",
+      "city": "Madera",
+      "state": "CA",
+      "zip": "93638"
+    },
+    "usacPermit": "2017-361",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/events/1755930444732284/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-5124",
+        "name": "Off The Front",
+        "contactName": "Steve Grusis",
+        "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775",
+        "usacClubId": 15110
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-central-coast-road-series-seaside-bay-view-circuit-S14D96cbw$",
+    "_shortId": "S14D96cbw$",
+    "name": "Central Coast Road Series- Seaside Bay View Circuit",
+    "date": "February 12 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93907"
+    },
+    "usacPermit": "2017-778",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.cccxcycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2609",
+        "name": "CCCX Cycling Club",
+        "contactName": "Keith DeFiebre",
+        "contactInfo": "kdefiebre@hotmail.com",
+        "usacClubId": 14829
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-tuttle-creek-road-race-B1SDcT5bvb",
+    "_shortId": "B1SDcT5bvb",
+    "name": "Tuttle Creek Road Race",
+    "date": "February 19 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Lone Pine",
+      "state": "CA",
+      "zip": "93545"
+    },
+    "usacPermit": "2017-485",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2746",
+        "name": "AntiGravity Cycling",
+        "contactName": "Steve Barnes",
+        "contactInfo": "everestchallenge2009@gmail.com",
+        "usacClubId": 12627
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cherry-pie-criterium-SkUwqT9bv$",
+    "_shortId": "SkUwqT9bv$",
+    "name": "Cherry Pie Criterium",
+    "date": "February 20 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "2277 Napa Vallejo Hwy",
+      "city": "Napa",
+      "state": "CA",
+      "zip": "94558"
+    },
+    "usacPermit": "2017-428",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.eaglecyclingclub.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2634",
+        "name": "Eagle Cycling Club",
+        "contactName": "Felix Riesenberg",
+        "contactInfo": "felix.riesenberg@sbcglobal.net",
+        "usacClubId": 6211
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-chico-stage-race-H1DPqaq$D$",
+    "_shortId": "H1DPqaq$D$",
+    "name": "Chico Stage Race",
+    "date": "February 24 2017",
+    "discipline": "Road",
+    "type": "Stage Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95973"
+    },
+    "usacPermit": "2017-430",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://chicostagerace.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2673",
+        "name": "Chico Cycling Team",
+        "contactName": "Jeff Galland",
+        "contactInfo": "director@chicostagerace.com, (916) 612-0811",
+        "usacClubId": 14237
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-snelling-road-race-BJdwqT5$vW",
+    "_shortId": "BJdwqT5$vW",
+    "name": "Snelling Road Race",
+    "date": "March 04 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "Henderson County Park",
+      "city": "Snelling",
+      "state": "CA",
+      "zip": "95369"
+    },
+    "usacPermit": "2017-436",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-land-park-criterium-HktDcTcWwb",
+    "_shortId": "HktDcTcWwb",
+    "name": "Land Park Criterium",
+    "date": "March 11 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Land Park, corner of Freeport Blvd. and Sutterville Road",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "95819"
+    },
+    "usacPermit": "2017-592",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.ncnca.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2638",
+        "name": "Sacramento Golden Wheelmen",
+        "contactName": "Steve Stuart",
+        "contactInfo": "stuball52@sbcglobal.net, 916-205-0991",
+        "usacClubId": 247
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-bariani-road-race-Sk9v5pqWwb",
+    "_shortId": "Sk9v5pqWwb",
+    "name": "Bariani Road Race",
+    "date": "March 12 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "Bariani Olive Oil",
+      "city": "Zamora",
+      "state": "CA",
+      "zip": "95698"
+    },
+    "usacPermit": "2017-593",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.sgwracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2638",
+        "name": "Sacramento Golden Wheelmen",
+        "contactName": "Steve Stuart",
+        "contactInfo": "stuball52@sbcglobal.net, 916-205-0991",
+        "usacClubId": 247
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cal-cycling-road-weekend-SJjP9TcWwZ",
+    "_shortId": "SJjP9TcWwZ",
+    "name": "Cal Cycling Road Weekend",
+    "date": "March 18 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Berkeley",
+      "state": "CA",
+      "zip": "94704"
+    },
+    "usacPermit": "2017-690",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3125",
+        "name": "University of California-Berkeley",
+        "contactName": "Sebastian Gonzalez",
+        "usacClubId": 3387
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-wards-ferry-road-race-Sy3DqT9$wZ",
+    "_shortId": "Sy3DqT9$wZ",
+    "name": "Wards Ferry Road Race",
+    "date": "March 18 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "18885 Nugget Blvd",
+      "city": "Sonora",
+      "state": "CA",
+      "zip": "95370"
+    },
+    "usacPermit": "2017-936",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko2-red-kite-criterium-march-Skpwc65ZPW",
+    "_shortId": "Skpwc65ZPW",
+    "name": "2017 RKO#2 - RED KITE CRITERIUM (MARCH)",
+    "date": "March 19 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "448 Comerce Way",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-522",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko3-winchester-circuit-race-ryRv5acZvZ",
+    "_shortId": "ryRv5acZvZ",
+    "name": "2017 RKO#3 - WINCHESTER CIRCUIT RACE",
+    "date": "March 25 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "1100 Sugar Pine Road",
+      "city": "Meadow Vista",
+      "state": "CA",
+      "zip": "95722"
+    },
+    "usacPermit": "2017-523",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko4-tempus-fugit-individual-time-trial-spring-SJkgP9a9WDb",
+    "_shortId": "SJkgP9a9WDb",
+    "name": "2017 RKO#4 - TEMPUS FUGIT INDIVIDUAL TIME TRIAL (SPRING)",
+    "date": "March 26 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "streetAddress": "",
+      "city": "Castro Valley",
+      "state": "CA",
+      "zip": "94546"
+    },
+    "usacPermit": "2017-524",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-santa-cruz-classic-criterium-HyllP9a5$wW",
+    "_shortId": "HyllP9a5$wW",
+    "name": "Santa Cruz Classic Criterium",
+    "date": "March 26 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "1000 3rd Street",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95060"
+    },
+    "usacPermit": "2017-932",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-uc-davis-collegiate-cycling-race-weekend-Bk$gvc6q$D$",
+    "_shortId": "Bk$gvc6q$D$",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
+    "date": "April 01 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "1 Shields Avenue",
+      "city": "Davis",
+      "state": "CA",
+      "zip": "95616"
+    },
+    "usacPermit": "2017-825",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30016",
+        "name": "University of California-Davis",
+        "contactName": "Dustin Denton",
+        "contactInfo": "",
+        "usacClubId": 806
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-michelob-ultra-sequoia-cycling-classic-SkMgPqp5Wvb",
+    "_shortId": "SkMgPqp5Wvb",
+    "name": "Michelob ULTRA Sequoia Cycling Classic",
+    "date": "April 02 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "707 W Acequia Ave",
+      "city": "Visalia",
+      "state": "CA",
+      "zip": "93291"
+    },
+    "usacPermit": "2017-1017",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - C",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://sequoiaclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30007",
+        "name": "Dayka-Hackett",
+        "contactName": "Eric Henson",
+        "contactInfo": "sequoiaclassic@gmail.com ",
+        "usacClubId": 14822
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-turlock-lake-road-race-Hymevq65$wb",
+    "_shortId": "Hymevq65$wb",
+    "name": "Turlock Lake Road Race",
+    "date": "April 08 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "22600 Lake Road",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    },
+    "usacPermit": "2017-671",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.ciclistasdelvalle.org/tlrr/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2644",
+        "name": "Ciclistas del Valle",
+        "contactName": "John Kekuewa",
+        "contactInfo": "jkekuewa@hotmail.com, 209-406-5683",
+        "usacClubId": 12688
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-stanford-cycling-road-race-weekend-Bk4evqT5WvZ",
+    "_shortId": "Bk4evqT5WvZ",
+    "name": "Stanford Cycling Road Race Weekend",
+    "date": "April 08 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Seaside",
+      "state": "CA",
+      "zip": "93955"
+    },
+    "usacPermit": "2017-908",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.stanfordcycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3479",
+        "name": "Stanford University",
+        "contactName": "Bernardo Tapia",
+        "contactInfo": "bernardojtapia@gmail.com",
+        "usacClubId": 3400
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-copperopolis-road-race-SyBxP5p5bwb",
+    "_shortId": "SyBxP5p5bwb",
+    "name": "Copperopolis Road Race",
+    "date": "April 15 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Milton",
+      "state": "CA",
+      "zip": "95228"
+    },
+    "usacPermit": "2017-937",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko5-red-kite-criterium-april-ByLlw5TcbwW",
+    "_shortId": "ByLlw5TcbwW",
+    "name": "2017 RKO#5 - RED KITE CRITERIUM (APRIL)",
+    "date": "April 23 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "448 Comerce Way",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-525",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cyclenation-ride-S1DlDcp9ZvZ",
+    "_shortId": "S1DlDcp9ZvZ",
+    "name": "CycleNation Ride",
+    "date": "April 29 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    },
+    "usacPermit": "2017-166",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.americanheart.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30009",
+        "name": "American Heart Association",
+        "contactName": "Chris Aronhalt",
+        "contactInfo": "chris.aronhalt@medalistsports.com",
+        "usacClubId": 16522
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-mikes-bikes-44th-cats-hill-classic-HJdgD565ZD$",
+    "_shortId": "HJdgD565ZD$",
+    "name": "Mike's Bikes 44th Cat’s Hill Classic",
+    "date": "April 29 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Los Gatos",
+      "state": "CA",
+      "zip": "95030"
+    },
+    "usacPermit": "2017-1060",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.catshill.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2643",
+        "name": "Los Gatos Bicycle Racing Club",
+        "contactName": "Chris Twiggs",
+        "contactInfo": "ctwiggs@gmail.com, (650) 279-8472",
+        "usacClubId": 240
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-wente-vineyards-classic-road-race-r1tev5a9Zv$",
+    "_shortId": "r1tev5a9Zv$",
+    "name": "Wente Vineyards Classic Road Race",
+    "date": "April 30 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-496",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/vsracingteam",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2674",
+        "name": "Valley Spokesmen",
+        "contactName": "Ken Hernandez",
+        "contactInfo": "kenhernandez52@yahoo.com",
+        "usacClubId": 651
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-golden-state-race-series-HJqgvc6q$wZ",
+    "_shortId": "HJqgvc6q$wZ",
+    "name": "Golden State Race Series",
+    "date": "May 06 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "11000 Cobblerock Drive",
+      "city": "Rancho Cordova",
+      "state": "CA",
+      "zip": "95670"
+    },
+    "usacPermit": "2017-785",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.riostradaracing.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2645",
+        "name": "Rio Strada Racing",
+        "contactName": "Ron Rouse",
+        "contactInfo": "ogeewiz682002@yahoo.com",
+        "usacClubId": 885
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-salinas-criterium-B1oevcTcWwZ",
+    "_shortId": "B1oevcTcWwZ",
+    "name": "Salinas Criterium",
+    "date": "May 07 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Moffet Industrial Park",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93901"
+    },
+    "usacPermit": "2017-1198",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.PedaliAlpini.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2636",
+        "name": "Pedali Alpini, Inc.",
+        "contactName": "Eric Peterson",
+        "contactInfo": "eric939@redshift.com, 831-442-8356",
+        "usacClubId": 1372
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-honor-ride-sacramento-r1hxw965WPW",
+    "_shortId": "r1hxw965WPW",
+    "name": "Honor Ride Sacramento",
+    "date": "May 13 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "270 Technology Way Ste 100",
+      "city": "Rocklin",
+      "state": "CA",
+      "zip": "95765"
+    },
+    "usacPermit": "2017-340",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://r2r.convio.net/site/TR/Cycling/General?fr_id=1250&pg=entry",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-5116",
+        "name": "Project Hero",
+        "contactName": "Jack Shepard",
+        "usacClubId": 13438
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-modesto-downtown-criterium-Bkalwqpq$vZ",
+    "_shortId": "Bkalwqpq$vZ",
+    "name": "Modesto Downtown Criterium",
+    "date": "May 20 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "",
+      "city": "Modesto",
+      "state": "CA",
+      "zip": "95357"
+    },
+    "usacPermit": "2017-1215",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://Facebook/ciccarellient",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-modesto-road-race-ryRlP9pqWvW",
+    "_shortId": "ryRlP9pqWvW",
+    "name": "Modesto Road Race",
+    "date": "May 21 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Modesto",
+      "state": "CA",
+      "zip": "95357"
+    },
+    "usacPermit": "2017-1216",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/pages/ciccarelli",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-folsom-classic-criterium-HJJWvqT9bP$",
+    "_shortId": "HJJWvqT9bP$",
+    "name": "Folsom Classic Criterium",
+    "date": "May 27 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "181 Blue Ravine Rd.",
+      "city": "Folsom",
+      "state": "CA",
+      "zip": "95630"
+    },
+    "usacPermit": "2017-662",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://sierranevadaracing.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2672",
+        "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles",
+        "contactName": "Jeff Tanforan",
+        "contactInfo": "tan4an@gmail.com",
+        "usacClubId": 9895
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-memorial-day-classic-stage-raceomnium-inc-the-legendary-mt-hamilton-HJxZP965Wvb",
+    "_shortId": "HJxZP965Wvb",
+    "name": "Memorial Day Classic Stage Race/Omnium inc the Legendary Mt Hamilton",
+    "date": "May 27 2017",
+    "discipline": "Road",
+    "type": "Stage Race",
+    "location": {
+      "streetAddress": "Refer to technical guide for start/finish locations",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-1142",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-pescadero-coastal-classic-Hk$ZDq6qWwW",
+    "_shortId": "Hk$ZDq6qWwW",
+    "name": "Pescadero Coastal Classic",
+    "date": "June 03 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "350 Butano Cut-Off",
+      "city": "Pescadero",
+      "state": "CA",
+      "zip": "94060"
+    },
+    "usacPermit": "2017-280",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.altovelo.org/pescadero",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2655",
+        "name": "Alto Velo Racing Club",
+        "contactName": "Mark Howard",
+        "contactInfo": "Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com",
+        "usacClubId": 3178
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-dash-for-cash-ryGWvcpqZwb",
+    "_shortId": "ryGWvcpqZwb",
+    "name": "Dash for Cash",
+    "date": "June 10 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94566-5932"
+    },
+    "usacPermit": "2017-1722",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.norcalchristiancycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2649",
+        "name": "ChristianCycling",
+        "contactName": "Steve Chew",
+        "contactInfo": "swimchew@sbcglobal.net, (925) 918-3501",
+        "usacClubId": 2226
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ncnca-district-time-trial-Sym$P9pqbDb",
+    "_shortId": "Sym$P9pqbDb",
+    "name": "NCNCA District Time Trial",
+    "date": "June 11 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "streetAddress": "",
+      "city": "Loyalton",
+      "state": "CA",
+      "zip": "96118"
+    },
+    "usacPermit": "2017-1857",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.renowheelmen.org/event/ncncadistricttimetrial",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2642",
+        "name": "Reno Wheelmen",
+        "contactName": "Coby Rowe",
+        "contactInfo": "coby@glaciercycling.com",
+        "usacClubId": 1019
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-60th-anniversary-berkeley-hills-road-race-r1NZvcp9bvW",
+    "_shortId": "r1NZvcp9bvW",
+    "name": "60th Anniversary Berkeley Hills Road Race",
+    "date": "June 11 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Martinez",
+      "state": "CA",
+      "zip": "94553"
+    },
+    "usacPermit": "2017-1465",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.berkeleybike.org/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2639",
+        "name": "Berkeley Bicycle Club (BBC)",
+        "usacClubId": 229
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-red-kite-omnium-event-7-tri-valley-criterium-classic-B1HWPcp9bDW",
+    "_shortId": "B1HWPcp9bDW",
+    "name": "2017 RED KITE OMNIUM EVENT #7 - TRI-VALLEY CRITERIUM CLASSIC",
+    "date": "June 17 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Tom Burnett Lane",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94568"
+    },
+    "usacPermit": "2017-1937",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-nevada-city-gravel-grinder-ryLbDca5bP$",
+    "_shortId": "ryLbDca5bP$",
+    "name": "Nevada City Gravel Grinder",
+    "date": "June 17 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "503 Sacramento St.",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-2031",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://nevadacityclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30010",
+        "name": "ol'Republic/SERT",
+        "contactName": "Duane Strawser",
+        "contactInfo": "oldproracer@gmail.com, (530) 263-3388",
+        "usacClubId": 8943
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-nevada-city-saturday-broad-street-sprints-H1DbD5p5bP$",
+    "_shortId": "H1DbD5p5bP$",
+    "name": "Nevada City Saturday Broad Street Sprints",
+    "date": "June 17 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "503 Sacramento St.",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-2032",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://nevadacityclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30010",
+        "name": "ol'Republic/SERT",
+        "contactName": "Duane Strawser",
+        "contactInfo": "oldproracer@gmail.com, (530) 263-3388",
+        "usacClubId": 8943
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-57th-annual-nevada-city-bicycle-classic-S1uWPqa5WwZ",
+    "_shortId": "S1uWPqa5WwZ",
+    "name": "57th Annual Nevada City Bicycle Classic",
+    "date": "June 18 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "503 Sacramento St.",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-1620",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - B",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://nevadacityclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30010",
+        "name": "ol'Republic/SERT",
+        "contactName": "Duane Strawser",
+        "contactInfo": "oldproracer@gmail.com, (530) 263-3388",
+        "usacClubId": 8943
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-auburn-downtown-criterium-SytZw9a9WD$",
+    "_shortId": "SytZw9a9WD$",
+    "name": "Auburn Downtown Criterium",
+    "date": "June 25 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "835 Lincoln Way",
+      "city": "Auburn",
+      "state": "CA",
+      "zip": "95603"
+    },
+    "usacPermit": "2017-1397",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.auburndowntowncrit.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30011",
+        "name": "Victory Velo Racing",
+        "contactName": "Mark Perry",
+        "contactInfo": "percorsomaestro@yahoo.com",
+        "usacClubId": 11905
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-the-parnassus-investments-burlingame-criterium-rJ9ZvqTqWv$",
+    "_shortId": "rJ9ZvqTqWv$",
+    "name": "The Parnassus Investments Burlingame Criterium",
+    "date": "June 25 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "501 Primrose Road",
+      "city": "Burlingame",
+      "state": "CA",
+      "zip": "94010"
+    },
+    "usacPermit": "2017-1420",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.burlingamecriterium.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2630",
+        "name": "Peninsula Velo Cycling Club",
+        "contactName": "Tommy Evans",
+        "contactInfo": "evans792@gmail.com",
+        "usacClubId": 327
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-lodoga-road-race-formerly-leesville-H1s$vqT5WDZ",
+    "_shortId": "H1s$vqT5WDZ",
+    "name": "Lodoga Road Race (Formerly Leesville)",
+    "date": "July 02 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "11th St at B St",
+      "city": "Williams",
+      "state": "CA",
+      "zip": "95987"
+    },
+    "usacPermit": "2017-1919",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-davis-bike-club-4th-of-july-criterium-By2WvqTq$PW",
+    "_shortId": "By2WvqTq$PW",
+    "name": "Davis Bike Club 4th of July Criterium",
+    "date": "July 04 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "",
+      "city": "Davis",
+      "state": "CA",
+      "zip": "95616"
+    },
+    "usacPermit": "2017-1935",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://dbcraceteam.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2650",
+        "name": "Davis Bike Club",
+        "contactName": "Jason Eisenrich",
+        "contactInfo": "4-july-director@dbcraceteam.org, 530-902-8955",
+        "usacClubId": 507
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-watsonville-criterium-HkpZwc6cbD$",
+    "_shortId": "HkpZwc6cbD$",
+    "name": "Watsonville Criterium",
+    "date": "July 08 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "201 Brewington Ave",
+      "city": "Watsonville",
+      "state": "CA",
+      "zip": "95076"
+    },
+    "usacPermit": "2017-1921",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko9-red-kite-criterium-july-ryRbw969WPZ",
+    "_shortId": "ryRbw969WPZ",
+    "name": "2017 RKO#9 - RED KITE CRITERIUM (July)",
+    "date": "July 09 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "448 Comerce Way",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-2095",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-rpp-hobby-lakeport-downtown-criterium-presented-by-conser-land-surveyi-HyJfwqaq$DZ",
+    "_shortId": "HyJfwqaq$DZ",
+    "name": "RPP Hobby Lakeport Downtown Criterium presented by Conser Land Surveyi",
+    "date": "July 15 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "",
+      "city": "Lakeport",
+      "state": "CA",
+      "zip": "95453"
+    },
+    "usacPermit": "2017-1418",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.lakeportcrit.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30012",
+        "name": "Main Street Elite p/b Main Street Bicycles",
+        "contactName": "David Garzoli",
+        "contactInfo": "david.garzoli@gmail.com",
+        "usacClubId": 16561
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-colavita-norcal-grand-prix-ByxzwqT9$Pb",
+    "_shortId": "ByxzwqT9$Pb",
+    "name": "Colavita Norcal Grand Prix",
+    "date": "July 16 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "1100 Valley House Dr",
+      "city": "Rohnert Park",
+      "state": "CA",
+      "zip": "94928"
+    },
+    "usacPermit": "2017-1992",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2641",
+        "name": "Colavita Racing, Inc.",
+        "contactName": "Phil Heiman",
+        "contactInfo": "phill.heiman@gmail.com, 415-310-6104",
+        "usacClubId": 10022
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko11-the-bump-circuit-race-summer-rkZGw96q$PZ",
+    "_shortId": "rkZGw96q$PZ",
+    "name": "2017 RKO#11 - THE BUMP CIRCUIT RACE (SUMMER)",
+    "date": "July 23 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "1575 Greenville Road",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94550"
+    },
+    "usacPermit": "2017-2181",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-patterson-pass-road-race-rJMGP5a9bPZ",
+    "_shortId": "rJMGP5a9bPZ",
+    "name": "Patterson Pass Road Race",
+    "date": "August 05 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "16116 Patterson Pass Road at Midway Road",
+      "city": "Tracy",
+      "state": "CA",
+      "zip": "95376"
+    },
+    "usacPermit": "2017-2341",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko13-red-kite-criterium-august-Bk7MPqT5ZvW",
+    "_shortId": "Bk7MPqT5ZvW",
+    "name": "2017 RKO#13 - RED KITE CRITERIUM (AUGUST)",
+    "date": "August 06 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "448 Comerce Way",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-2278",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-dunnigan-hills-road-race-Bk4GP9T5WDW",
+    "_shortId": "Bk4GP9T5WDW",
+    "name": "Dunnigan Hills Road Race",
+    "date": "August 12 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Dunnigan",
+      "state": "CA",
+      "zip": "95937"
+    },
+    "usacPermit": "2017-2344",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-suisun-harbor-criterium-B1Sfv56cZvb",
+    "_shortId": "B1Sfv56cZvb",
+    "name": "Suisun Harbor Criterium",
+    "date": "August 13 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Main Street at California Street",
+      "city": "Suisun City",
+      "state": "CA",
+      "zip": "94585"
+    },
+    "usacPermit": "2017-2343",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-san-ardo-road-race-B1Ifvc6qZwW",
+    "_shortId": "B1Ifvc6qZwW",
+    "name": "San Ardo Road Race",
+    "date": "August 19 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "San Ardo, CA 93450",
+      "city": "San Ardo",
+      "state": "CA",
+      "zip": "93450"
+    },
+    "usacPermit": "2017-2354",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "http://www.bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-rko14-tempus-fugit-individual-time-trial-summer-ryPfPqT5bPW",
+    "_shortId": "ryPfPqT5bPW",
+    "name": "2017 RKO#14 - TEMPUS FUGIT INDIVIDUAL TIME TRIAL (SUMMER)",
+    "date": "August 20 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "streetAddress": "",
+      "city": "Castro Valley",
+      "state": "CA",
+      "zip": "94546"
+    },
+    "usacPermit": "2017-2279",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "http://www.bikereg.com/events/?pid=4870",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-university-road-race-Sk_Gv96q$PZ",
+    "_shortId": "Sk_Gv96q$PZ",
+    "name": "University Road Race",
+    "date": "August 20 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "1156 High Street",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95064"
+    },
+    "usacPermit": "2017-2355",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "http://www.bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-mt-whitney-stage-race-r1Fzvcp9$Pb",
+    "_shortId": "r1Fzvcp9$Pb",
+    "name": "Mt Whitney Stage Race",
+    "date": "August 26 2017",
+    "discipline": "Road",
+    "type": "Stage Race",
+    "location": {
+      "streetAddress": "",
+      "city": "Lone Pine",
+      "state": "CA",
+      "zip": "93545"
+    },
+    "usacPermit": "2017-2299",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "https://usacycling.org/register/2017-2299",
+    "promoters": [
+      {
+        "id": "prm-2746",
+        "name": "AntiGravity Cycling",
+        "contactName": "Steve Barnes",
+        "contactInfo": "everestchallenge2009@gmail.com",
+        "usacClubId": 12627
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-henleyville-road-race-rJczD5pcbwW",
+    "_shortId": "rJczD5pcbwW",
+    "name": "Henleyville Road Race",
+    "date": "August 26 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "20351 Simpson Road",
+      "city": "Corning",
+      "state": "CA",
+      "zip": "96021"
+    },
+    "usacPermit": "2017-2555",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "http://www.bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-esparto-time-trial-H1Y$SqfP$",
+    "_shortId": "H1Y$SqfP$",
+    "name": "Esparto Time Trial",
+    "date": "August 27 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "streetAddress": "86675 Plainsfield St.",
+      "city": "Esparto",
+      "state": "CA",
+      "zip": "95627"
+    },
+    "usacPermit": "2017-2576",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "http://www.bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-red-kite-championship-weekend-2017-red-kite-and-ncnca-mastersjuniors-r1sfwqT5WvW",
+    "_shortId": "r1sfwqT5WvW",
+    "name": "RED KITE CHAMPIONSHIP WEEKEND-2017 RED KITE AND NCNCA MASTERS/JUNIORS",
+    "date": "September 02 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "5000 Hopyard Road",
+      "city": "Pleasanton",
+      "state": "CA",
+      "zip": "94588"
+    },
+    "usacPermit": "2017-2280",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "http://www.bikereg.com/events/?pid=4870",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-giro-di-san-francisco-Sy3fPc69$wb",
+    "_shortId": "Sy3fPc69$wb",
+    "name": "Giro Di San Francisco",
+    "date": "September 04 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Levi Strauss Plaza 1155 Battery St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94111"
+    },
+    "usacPermit": "2017-2356",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "http://www.bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-jackson-historic-downtown-criterium-rJaMvqT5Zw$",
+    "_shortId": "rJaMvqT5Zw$",
+    "name": "JACKSON HISTORIC DOWNTOWN CRITERIUM",
+    "date": "September 09 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "175 Main Street",
+      "city": "Jackson",
+      "state": "CA",
+      "zip": "95642"
+    },
+    "usacPermit": "2017-2461",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.bikereg.com/jackson-historic-downtown-criterium",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-oakland-grand-prix-Byj7tRsPW",
+    "_shortId": "Byj7tRsPW",
+    "name": "Oakland Grand Prix",
+    "date": "September 17 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "20th and Harrison",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94607"
+    },
+    "usacPermit": "2017-2643",
+    "usac": {
+      "status": "Pending",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ffwd-wntl-pb-vie13-2017-SkCzPq6cWv$",
+    "_shortId": "SkCzPq6cWv$",
+    "name": "FFWD WNTL p/b Vie13 2017",
+    "date": "May 10 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "streetAddress": "Hellyer County Park Velodrome",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95111"
+    },
+    "usacPermit": "2017-1762",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30017",
+        "name": "Performance Cycle Coaching",
+        "contactName": "Daryl Hemenway",
+        "usacClubId": 15066
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ncnca-junior-track-championship-SkJXPc69Zvb",
+    "_shortId": "SkJXPc69Zvb",
+    "name": "NCNCA Junior Track Championship",
+    "date": "July 22 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "streetAddress": "985 Hellyer Ave",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95111"
+    },
+    "usacPermit": "2017-2070",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://ridethetrack.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2647",
+        "name": "San Jose Bicycle Club",
+        "contactName": "Todd Munk",
+        "contactInfo": "todd.munk@gmail.com, (408) 375-3196",
+        "usacClubId": 249
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ncnca-master-track-championships-H1x7P569bwW",
+    "_shortId": "H1x7P569bwW",
+    "name": "NCNCA Master Track Championships",
+    "date": "September 09 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "streetAddress": "995 Hellyer Ave.",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95111"
+    },
+    "usacPermit": "2017-1178",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://ridethetrack.com",
+    "registrationUrl": "http://bikereg.com",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-subaru-sea-otter-classic-mountain-bike-ry$Qv9a5ZP$",
+    "_shortId": "ry$Qv9a5ZP$",
+    "name": "2017 SUBARU Sea Otter Classic - MOUNTAIN BIKE",
+    "date": "April 20 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-236",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - A",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-subaru-sea-otter-classic-pump-park-ByfXw9p9WP$",
+    "_shortId": "ByfXw9p9WP$",
+    "name": "2017 SUBARU Sea Otter Classic - Pump Park",
+    "date": "April 20 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-466",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-little-big-festival-mtb-short-track-rJmQDqa5$Pb",
+    "_shortId": "rJmQDqa5$Pb",
+    "name": "Little Big Festival MTB Short Track",
+    "date": "May 28 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "12200 Joerger Dr",
+      "city": "Truckee",
+      "state": "CA",
+      "zip": "96161"
+    },
+    "usacPermit": "2017-1638",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.truckeebikepark.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2642",
+        "name": "Reno Wheelmen",
+        "contactName": "Coby Rowe",
+        "contactInfo": "coby@glaciercycling.com",
+        "usacClubId": 1019
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-el-dorado-benduro-ryNXPq69$Db",
+    "_shortId": "ryNXPq69$Db",
+    "name": "El Dorado Benduro",
+    "date": "June 10 2017",
+    "discipline": "MTB",
+    "type": "Enduro",
+    "location": {
+      "streetAddress": "Mace Mill Staging Area",
+      "city": "Georgetown",
+      "state": "CA",
+      "zip": "95633"
+    },
+    "usacPermit": "2017-881",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.benduro.com/p/eldorado.html",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30019",
+        "name": "Shine Riders Co",
+        "contactName": "Lindsay Currier",
+        "usacClubId": 16676
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-wildcat-mtb-race-rylj7KAswb",
+    "_shortId": "rylj7KAswb",
+    "name": "Wildcat MTB Race",
+    "date": "September 30 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95926"
+    },
+    "usacPermit": "2017-2601",
+    "usac": {
+      "status": "Permit in Process",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/events/112409339400663/?context=create&previousaction=create&ref=5&page_id_source=1881225038826999&sid_create=2832345047&action_history=%5B%257B%2522surface%2522%253A%2522create_dialog%2522%252C%2522mechanism%2522%253A%2522page_create_dialog%2522%252C%2522extra_data%252",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-3391",
+        "name": "California State University-Chico",
+        "contactName": "Anthony Tran",
+        "usacClubId": 3391
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-west-sacramento-cyclocross-grand-prix-wscxgp-presented-by-toyota-S1HXv965$wW",
+    "_shortId": "S1HXv965$wW",
+    "name": "West Sacramento Cyclocross Grand Prix (WSCXGP) Presented by Toyota",
+    "date": "September 30 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "River Walk Park, 651 2nd Street",
+      "city": "West Sacramento",
+      "state": "CA",
+      "zip": "95605"
+    },
+    "usacPermit": "2017-1866",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://norcalcx.org",
+    "registrationUrl": "http://timeyourrace.com",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-uc-davis-collegiate-cycling-race-weekend-r1UXwcp5ZPb",
+    "_shortId": "r1UXwcp5ZPb",
+    "name": "UC Davis Collegiate Cycling Race Weekend",
+    "date": "April 01 2017",
+    "discipline": "Collegiate",
+    "type": "Collegiate",
+    "location": {
+      "streetAddress": "1 Shields Avenue",
+      "city": "Davis",
+      "state": "CA",
+      "zip": "95616"
+    },
+    "usacPermit": "2017-825",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30016",
+        "name": "University of California-Davis",
+        "contactName": "Dustin Denton",
+        "contactInfo": "",
+        "usacClubId": 806
+      }
+    ]
+  }
+]

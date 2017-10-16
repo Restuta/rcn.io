@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .Button {
-  height: 4rem;
+  // height: 4rem;
   border-radius: 3px;
   letter-spacing: 0.3px;
   // transition: all 0.2s ease 0s;
@@ -56,6 +56,7 @@
   &.disabled:hover {
     opacity: 0.6;
     border-color: transparent;
+    cursor: not-allowed;
   }
 
   &.btn-secondary.disabled,
@@ -71,12 +72,13 @@
   }
 
   $btn-base-padding: 2rem;
+  $border-width: 1; //px
 
   &-sm {
     padding-left: $btn-base-padding;
     padding-right: $btn-base-padding;
     font-size: pxToRem(12);
-    height: 4rem;
+    line-height: 3rem + pxToRem($border-width * 2);
   }
 
   &-sm.btn-icon-only {
@@ -90,14 +92,16 @@
     padding-left: $btn-base-padding + 0.5rem;
     padding-right: $btn-base-padding + 0.5rem;
     font-size: pxToRem(14);
-    height: 5rem;
+    line-height: 4rem;
+    // height: 5rem;
   }
 
   &-lg {
     padding-left: $btn-base-padding + 1rem;
     padding-right: $btn-base-padding + 1rem;
     font-size: pxToRem(16);
-    height: 7rem;
+    line-height: 5rem + pxToRem(2);
   }
+
 
 }

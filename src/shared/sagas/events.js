@@ -10,12 +10,15 @@ import {
 function* eventsSaga(requestEventFetchAction) {
   const { payload, calendarId = payload.calendarId } = requestEventFetchAction
   try {
-    console.warn('=> events saga is called') //eslint-disable-line
-    const events = yield call(fetchNcncaDraftEvents2017)
+    console.info('=> events saga is called') //eslint-disable-line
+
+    const events = yield call(fetchNcncaDraftEvents2017, calendarId)
     yield put(calendarFetchSucceded({events: events, calendarId: calendarId}))
-    console.warn('=> events saga is succeded') //eslint-disable-line
+
+    console.info('=> events saga is succeded') //eslint-disable-line
   } catch (error) {
     console.error('=> events saga has failed: ' + error) //eslint-disable-line
+
     yield put(calendarFetchFailed(error))
   }
 }

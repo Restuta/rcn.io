@@ -5,9 +5,12 @@
 .EventDetails-container {
   position: relative;
   max-width: 90rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 4rem;
+  border-radius: pxToRem(3);
+  @include box-shadow-soft();
+  border-radius: pxToRem(3);
 
   @include phone {
     width: 100%;
@@ -17,6 +20,9 @@
 
 .EventDetails {
   color: $grey-600;
+  padding: 4rem;
+  border-radius: pxToRem(3);
+
 
   .spacer {
     margin-top: 2rem - pxToRem(1);
@@ -174,7 +180,6 @@
 }
 
 .EventDetails.canceled {
-  background-color: #ffffff;
   @include background-image-canceled;
 
   > .content .date {

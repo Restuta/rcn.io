@@ -5,7 +5,8 @@ const Disciplines = {
   track: 'Track',
   bmx: 'BMX',
   nonCompetitive: 'Non-Competitive',
-  other: 'Other'
+  other: 'Other',
+  collegiate: 'Collegiate', // http://www.usacycling.org/Programs/collegiate/
 }
 
 const Statuses = {
@@ -15,8 +16,10 @@ const Statuses = {
 
 const EventTypes = {
   other: {
+    'default': 'Other',
     meeting: 'Meeting',
     clinics: 'Clinics',
+    stageRace: 'Stage Race',
   },
   road: {
     'default': 'Road',
@@ -54,6 +57,23 @@ const EventTypes = {
   nonCompetitive: {
     'default': 'Non-Competitive',
     granFondo: 'Gran Fondo',
+  },
+  collegiate: {
+    'default': 'Collegiate',
+    criterium: 'Criterium',
+    roadRace: 'Road Race',
+    circuitRace: 'Circuit Race',
+    timeTrial: 'Time Trial',
+    teamTimeTrial: 'Team Time Trial',
+    hillClimb: 'Hill Climb',
+    omnium: 'Omnium',
+    stageRace: 'Stage Race',
+    clinics: 'Clinics',
+    nationals: 'Nationals',
+    nonCompetitive: 'Non-Competitive',
+  },
+  bmx: {
+    'default': 'BMX',
   }
 }
 
@@ -93,7 +113,7 @@ const EventTypes = {
 // }
 //
 
-export {
+module.exports = {
   Disciplines,
   Statuses,
   EventTypes,

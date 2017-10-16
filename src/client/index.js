@@ -12,19 +12,18 @@ import 'public/img/apple-touch-icon-152x152.png'
 import 'public/img/apple-touch-icon-180x180.png'
 import 'public/img/safari-pinned-tab.svg'
 
-// import React from 'react'
+// // import React from 'react'
 // if (process.env.NODE_ENV !== 'production') {
 //   const {whyDidYouUpdate} = require('why-did-you-update')
-//   // whyDidYouUpdate(React, { exclude: /.+Connect/})
+//   whyDidYouUpdate(require('react'), { exclude: /.+Connect|Col|Week|Row|Day/})
 //   // whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|/ })
-//   whyDidYouUpdate(React, { exclude: /.+Calendar|Connect|TopNavbar|Week|Row|Col|/ })
+//   // whyDidYouUpdate(React, { exclude: /.+Connect|TopNavbar|Week|Row|Col|/ })
 // }
 
 import 'utils/polyfills'
 import { render } from 'react-dom'
 import Grid from 'client/styles/grid.js'
-import { getConfiguredWithStoreRouter } from 'client/get-router.js'
-
+import { getConfiguredWithStoreRouter } from './get-router.js'
 
 let prevContainerWidth
 
@@ -45,3 +44,15 @@ window.addEventListener('resize', renderApp)
 
 //first time render
 renderApp()
+
+
+// sending redux acdtion when browser size changes
+import { setBrowserWidth } from 'shared/actions/actions'
+import { getStore } from './get-router.js'
+import { debounce } from 'lodash'
+
+const store = getStore()
+
+window.addEventListener('resize', debounce(() => store.dispatch(
+  setBrowserWidth(window.document.body.offsetWidth)
+), 200))

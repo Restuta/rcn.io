@@ -79,6 +79,11 @@ Today
 			- make sure it's same as todays covering all links and notes
 		+- gather email and send out beta-testing message
 	--- Filtering
+		- http://www.material-ui.com/#/components/chip
+		- filter in drawer like here https://app.pipefy.com/pipes/139243?viewed_tour_item=e2_org_dashboard_first_pipe#
+			- it's mobile friendly
+			- simple to use
+			- consider MD chips and not checkboxes
 		- use gradients for stage races and ominums: to show tow event types 
 			```
 			border-left: 0.7rem solid transparent;

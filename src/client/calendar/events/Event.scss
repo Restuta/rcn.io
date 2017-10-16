@@ -22,6 +22,14 @@
     overflow: hidden;
   }
 
+
+  //for multi-type evets
+  // border-left: 0.7rem solid transparent;
+  // border-image: linear-gradient(to top, $blue-500 30%, $primary-color 70%);
+  // border-image-slice: 1; //not supported in IE10
+
+
+
   &.lvl-1 {
     @include box-shadow-custom-minimal();
   }

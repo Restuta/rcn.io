@@ -11,11 +11,11 @@ import Size from './card-sizes'
 import EventName from './EventName.jsx'
 import IconLabel from './IconLabel.jsx'
 import Badge from 'calendar/badges/Badge.jsx'
-import { withRouter } from 'react-router'
 import Icon from 'atoms/Icon.jsx'
 import classnames from 'classnames'
 import { Statuses } from 'client/calendar/events/types.js'
 import analytics from 'utils/analytics'
+import { get } from 'lodash'
 
 /* event card adaptive behaviour:
    >= 300 fit two
@@ -74,39 +74,25 @@ const numSize = {
   [Size.XL]: 50
 }
 
-class Event extends Component {
-  constructor(props) {
-    super(props)
-    this.onEventClick = this.onEventClick.bind(this)
-  }
+const trackEventClick = event => analytics.track('Clicked on Event', {
+  id: event.id,
+  name: event.name,
+  date: event.date.format('MMMM DD YYYY'),
+  type: event.type,
+  discipline: event.discipline,
+})
 
-  onEventClick(e) {
+class Event extends Component {
+  onEventClick = (e) => {
     //so link doesn't redirect to whatever set in href, but is still indexable with google
     e.preventDefault()
-
-    const trackClick = () => analytics.track('Clicked on Event', {
-      id: this.props.event.id,
-      name: this.props.event.name,
-      date: this.props.event.date.format('MMMM DD YYYY'),
-      type: this.props.event.type,
-      discipline: this.props.event.discipline,
-    })
-
-    trackClick()
+    trackEventClick(this.props.event)
 
     if (this.props.iframeMode) {
       //top-level window navigation
-      window.top.location.href = `../events/${this.props.id}`
+      window.top.location.href = `../events/${this.props.event.id}`
     } else {
-      this.props.router.replace({
-        pathname: `/events/${this.props.id}`,
-        state: {
-          modal: true,
-          returnLocation: {
-            pathname: this.context.locationPathname,
-          },
-        }
-      })
+      this.props.openRoutedModal(`/events/${this.props.event.id}`)
     }
   }
 
@@ -147,7 +133,6 @@ class Event extends Component {
     XS: 2-5, S: 5-9, M: 10-15, L: 16-23+
     */
 
-    //TODO bc: refactor this for case when auto-height is false and no widthColumns is provided
     const cardHeight = autoHeight
       ? 12 //TODO: default size doesn't make sense here, but we need to calculate card size somehow
       : widthColumns
@@ -273,7 +258,8 @@ class Event extends Component {
     if ((numSize[cardSize] > numSize[Size.S]) && !event.isDraft) {
       locationComp = <Location location={event.location} size={cardSize} />
     } else if ((numSize[cardSize] > numSize[Size.S]) && event.isDraft) {
-      const promoter = event.promoters[0].name
+      // getting first promoter name, our strongest assumption for draft calendar
+      const promoter = get(event, 'promoters.0.name')
       promoterComp = (
         <IconLabel style={{borderTop: `1px solid ${Colors.grey200}`}} icon="face" size={cardSize}>
           {promoter}
@@ -304,7 +290,7 @@ class Event extends Component {
       overflow: (event.isDraft || debug) ? 'visible' : 'hidden',
     }
     //for event types with white color use plain black, since otherwise badge will be invisible
-    const typeBadgeColor = (eventColor === 'white' ? Colors.body : eventColor)
+    const contrastColor = (eventColor === 'white' ? Colors.body : eventColor)
     //if event type is "Clinics" (uses "other" to just compare with any clinics) add discipline as a prefix, since
     // clinics can be for road, mtb, track and other disciplines
     const typeBadgeText = (event.type === EventTypes.other.clinics && event.discipline !== Disciplines.other)
@@ -312,19 +298,19 @@ class Event extends Component {
       : event.type && event.type.toUpperCase()
 
     return (
-      <a id={event.id} href={`/events/${this.props.id}`} style={style} className={classNames}
+      <a id={event.id} href={`/events/${this.props.event.id}`} style={style} className={classNames}
         onClick={this.onEventClick}>
         {debugComp}
         <div className="name-container">
           {showEventTypeBadge &&
             <div>
-              <Badge square bgColor={'transparent'} color={typeBadgeColor} borderColor={typeBadgeColor}>
+              <Badge square bgColor={'transparent'} color={contrastColor} borderColor={contrastColor}>
                 {typeBadgeText}
               </Badge>
             </div>
           }
 
-          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string?*/}
+          {/* //TODO restuta:  maybe make this generic so it just accepts color to higlight and string? */}
           <EventName size={cardSize}
             height={cardHeightRem}
             name={event.name}
@@ -334,7 +320,11 @@ class Event extends Component {
             highlightEventType={highlightEventTypeInName}/>
         </div>
 
-        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={eventColor}/>}
+        {(event.isDraft && event.draftNotes) && <Icon name="speaker_notes" className="icon" color={contrastColor}/>}
+
+        {/* indicates if event has permit, need more UI testing since it overlaps with name when name is long */}
+        {/* {(event.usacPermit) && <Icon name="check_circle" className="icon" color={contrastColor}/>} */}
+
         {eventGroupComp}
         {locationComp}
         {promoterComp}
@@ -344,8 +334,6 @@ class Event extends Component {
 }
 
 Event.propTypes = {
-  //TODO bc: id, name and discipline are covered under "event type"
-  id: PropTypes.string.isRequired,
   //debug mode for the card
   debug: PropTypes.bool,
   //iframeMode
@@ -370,7 +358,6 @@ Event.propTypes = {
   //if true, shows event type badge inside event card
   showEventTypeBadge: PropTypes.bool,
   // event: PropTypes.instanceOf(EventType),
-  //TODO bc: probably move props to upper level or move event-related props to down level
   event: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -380,7 +367,6 @@ Event.propTypes = {
     discipline: PropTypes.oneOf(Object
       .keys(Disciplines)
       .map(x => Disciplines[x])
-      //.concat([''])
     ),
     location: PropTypes.shape({
       city: PropTypes.string,
@@ -395,11 +381,19 @@ Event.propTypes = {
     //represents if event is draft, usually for draft calendars
     isDraft: PropTypes.bool,
   }),
-
 }
 
-Event.contextTypes = {
-  locationPathname: React.PropTypes.string
-}
+import { connect } from 'react-redux'
+import { openRoutedModal } from 'shared/actions/actions.js'
+import { withRouter } from 'react-router'
 
-export default withRouter(Event)
+export default connect(
+  undefined,
+  (dispatch, ownProps) => ({
+    openRoutedModal: (path) =>
+      dispatch(openRoutedModal({path, hasPadding: false}))
+  })
+)(withRouter(Event))
+
+
+// export default withRouter(Event)

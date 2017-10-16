@@ -13,8 +13,8 @@ const browserHistory = useRouterHistory(createHistory)({
   basename: '/widgets'
 })
 
-
 const store = configureStore()
+const getStore = () => store
 const history = syncHistoryWithStore(browserHistory, store)
 history.listen(location => analytics.page())
 
@@ -22,7 +22,6 @@ history.listen(location => analytics.page())
 //provide containerWidth to inner-clojure
 const buildCreateElement = containerW =>
   (Component, props) => <Component {...props} containerWidth={containerW}/>
-
 
 const getRouter = containerWidth => {
   return <Router history={history} routes={routes} createElement={buildCreateElement(containerWidth)} />
@@ -38,5 +37,6 @@ const getConfiguredWithStoreRouter = containerWidth => {
 
 export {
   getRouter,
-  getConfiguredWithStoreRouter
+  getConfiguredWithStoreRouter,
+  getStore,
 }

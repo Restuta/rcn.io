@@ -2,23 +2,24 @@ import React, { PropTypes } from 'react'
 import Component from 'react-pure-render/component'
 import Calendar from './Calendar.jsx'
 import Grid from 'styles/grid'
-import { connect } from 'react-redux'
-import { requestEventsFetch } from 'shared/actions/actions.js'
 import Spinner from 'atoms/Spinner.jsx'
-
+import getCalendarId from './utils/get-calendar-id'
 
 const sizesMaxWeekends = [1, 1, 1, 1, 2, 4, 4]
 const sizesEqual = [2, 2, 2, 2, 2, 2, 2]
 
+const getDraftCalendarId = (id) => (getCalendarId(id) + '-draft')
+
 class NcncaDraftCalendar extends Component {
   componentWillMount() {
     if (!this.props.eventsAreLoaded) {
-      this.props.requestEventsFetch('cal-ncnca-2017-draft')
+      this.props.requestEventsFetch()
     }
   }
 
   render() {
     const { containerWidth, calendarIsLoading } = this.props
+    const calendarId = getDraftCalendarId(this.props.params.calendarId)
     let weekdaysSizes
 
     if (containerWidth <= Grid.ContainerWidth.SM) {
@@ -51,7 +52,7 @@ class NcncaDraftCalendar extends Component {
         {calendarIsLoading
           ? LoadingComp
           : <Calendar
-            calendarId="cal-ncnca-2017-draft"
+            calendarId={calendarId}
             containerWidth={containerWidth}
             weekdaysSizes={weekdaysSizes}
             />
@@ -68,9 +69,13 @@ NcncaDraftCalendar.propTypes = {
   calendarIsLoading: PropTypes.bool.isRequired,
 }
 
+import { connect } from 'react-redux'
+import { requestEventsFetch } from 'shared/actions/actions.js'
+
 export default connect(
   (state, ownProps) => {
-    const calendar = state.calendars['cal-ncnca-2017-draft']
+    const calendarId = getDraftCalendarId(ownProps.params.calendarId)
+    const calendar = state.calendars[calendarId]
     const eventsIds = calendar.eventsIds
 
     return {
@@ -78,7 +83,10 @@ export default connect(
       eventsAreLoaded: (eventsIds && eventsIds.length > 0)
     }
   },
-  (dispatch, ownProps) => ({
-    requestEventsFetch: (calendarId) => dispatch(requestEventsFetch({calendarId}))
-  })
+  (dispatch, ownProps) => {
+    const calendarId = getDraftCalendarId(ownProps.params.calendarId)
+    return {
+      requestEventsFetch: () => dispatch(requestEventsFetch({ calendarId }))
+    }
+  }
 )(NcncaDraftCalendar)
