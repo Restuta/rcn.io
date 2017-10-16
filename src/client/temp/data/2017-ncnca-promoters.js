@@ -49,7 +49,20 @@ module.exports =  [
   { "id": "prm-2746", "name": "AntiGravity Cycling", "contactName": "Steve Barnes", "contactInfo": "everestchallenge2009@gmail.com", "usacClubId": 12627 },
 
   { "id": "prm-usac-3391", "name": "California State University-Chico", "contactName": "Anthony Tran", "usacClubId": 3391 },
-
+  { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527", "usacClubId": 12310},
+  { "id": "prm-usac-10480", "name": "Fusion Sport USA", "contactName": "Scott Witthoff", "usacClubId": 10480 },
+  { "id": "prm-usac-16357", "name": "Chico Cyclist Care Fund", "contactName": "Sandy Fisher", "usacClubId": 16357},
+  { "id": "prm-usac-3622", "name": "University of California-Santa Cruz", "contactName": "Walker Busby", "usacClubId": 3622},
+  { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith", "contactInfo": "ericsmith9@me.com", "usacClubId": 13076},
+  { "id": "prm-2658", "name": "Delta Velo", "contactName": "Damian Gonzalez", "contactInfo": "damian@deltavelo.com", "usacClubId":253 },
+  { "id": "prm-30013", "name": "Team Mikes Bikes p/b Equator Coffees", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com", "usacClubId": 13460 },
+  { "id": "prm-4675", "name": "Team Swift", "contactName":"Laura Charameda","usacClubId":10356 },
+  { "id": "prm-usac-14700", "name": "Bell Real Estate Cycling", "contactName": "Robert Bell", "usacClubId": 14700},
+  { "id": "prm-3061", "name": "Youth Bicyclists of Nev. Co. (YBONC) Foundation", "contactName": "Jeanette (Jet) Lowe", "usacClubId": 12615 },
+  { "id": "prm-usac-5816", "name": "Team Big Bear Mtn Bikes, Inc.", "contactName": "Team Big Bear Mtn Bikes, Inc.", "usacClubId": 5816},
+  { "id": "prm-usac-15312", "name": "Team Ninja", "contactName": "Richard La China", "usacClubId": 15312},
+  { "id": "prm-usac-15328", "name": "University of California-Merced", "contactName": "Trenton Berner", "usacClubId": 15328},
+  { "id": "prm-3531", "name": "Humboldt State University", "contactName": "Tyler Green", "usacClubId": 9955 },
 
 
   { "id": "prm-3226", "name": "Velo Promo", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com"},
@@ -63,11 +76,8 @@ module.exports =  [
   { "id": "prm-2831", "name": "Ciccarelli Enterprises", "contactName": "Rick Ciccarelli", "contactInfo": "ciccarelli@live.com, 209-605-7315" },
 
   { "id": "prm-2657", "name": "Team Fremont/FFBC", "contactName": "Alex Cortez", "contactInfo": "alcog1970@hotmail.com" },
-  { "id": "prm-2658", "name": "Delta Velo / Michael David Winery Cycling Team", "contactName": "Scott Butler", "contactInfo": "sbutler@foxrunrentals.net, 209-662-0898" },
   { "id": "prm-5992", "name": "Tour de Nez Outreach", "contactName": "Bubba Melcher", "contactInfo": "bubba@tourdenez.com, 775-772-3260"},
-  { "id": "prm-30013", "name": "Team Mikes Bikes", "contactName": "Ravi Rajcoomar", "contactInfo": "ravirajcoomar@me.com" },
   { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
-  { "id": "prm-30015", "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.", "contactName": "Eric Smith", "contactInfo": "ericsmith9@me.com" },
   { "id": "prm-5678", "name": "UC Davis Cycling", "contactName": "Jamien Bergstrom", "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"},
 
 
@@ -105,7 +115,6 @@ module.exports =  [
   { "id": "prm-3613", "name": "H.A.L.O" },
   { "id": "prm-23412", "name": "Hammer Nutrition" },
   { "id": "prm-3043", "name": "Heather Nielson" },
-  { "id": "prm-3531", "name": "Humboldt State University" },
   { "id": "prm-3334", "name": "ICCC" },
   { "id": "prm-3369", "name": "Jim Northey" },
   { "id": "prm-4655", "name": "John Novikoff" },
@@ -155,7 +164,6 @@ module.exports =  [
   { "id": "prm-2657", "name": "Team Fremont / FFBC" },
   { "id": "prm-5341", "name": "Team Metromint" },
   { "id": "prm-3359", "name": "Team Specialized" },
-  { "id": "prm-4675", "name": "Team Swift" },
   { "id": "prm-2648", "name": "Tieni Duro Junior Cycling Development Team" },
   { "id": "prm-388", "name": "Tim Healion" },
   { "id": "prm-5211", "name": "Tim Zsoka" },
@@ -170,8 +178,6 @@ module.exports =  [
   { "id": "prm-3000", "name": "Warren Geissert" },
   { "id": "prm-2676", "name": "Wells Fargo Racing Team / Contra Costa Cycling Club" },
   { "id": "prm-3007", "name": "Wenzel Coaching" },
-  { "id": "prm-3061", "name": "Youth Bicyclists of Nevada County (YBONC)" },
-  { "id": "prm-30004", "name": "Clovis Training Crits", "contactName": "Justin Morgan", "contactInfo": "justin@backofnowhere.com, (559) 451-7527"},
 
   //legacy partners used while importing data from NCNCA db
   { "id": "prm-23753", "name": "Red Kite Racing / Berkeley Bicycle Club / East Bay Velo / Albany High School MTB Team" },
