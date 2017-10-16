@@ -20,6 +20,7 @@ const cyan = msg => log(msg, 'cyan')
 const green = msg => log(msg, 'green')
 const magenta = msg => log(msg, 'magenta')
 const yellow = msg => log(msg, 'yellow')
+const warn = msg => log(msg, 'yellow')
 const info = msg => console.info(inspect({msg, colors: false}))
 
 /**
@@ -42,8 +43,9 @@ module.exports = {
   green,
   cyan,
   magenta,
-  error,
   yellow,
+  error,
+  warn,
   info,
   inspect,
   path
