@@ -36,7 +36,8 @@ const schema = Joi.object().keys({
     type: Joi.any().valid([
       'Results & Ranking',
       'Fun',
-      'State/Regional Championships'
+      'State/Regional Championships',
+      '' //for unknown types, we would try to deduce
     ]),
   }),
   resultsUrl: Joi.string().uri().allow(''),
