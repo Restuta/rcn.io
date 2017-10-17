@@ -1,5 +1,98 @@
 [
   {
+    "id": "evt-usac-2017-2017-san-bruno-mountain-hill-climb-S1roqAfpZ",
+    "_shortId": "S1roqAfpZ",
+    "name": "2017 San Bruno Mountain Hill Climb",
+    "date": "January 01 2017",
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "location": {
+      "streetAddress": "East Side of San Bruno Mtn",
+      "city": "Brisbane",
+      "state": "CA",
+      "zip": "94005"
+    },
+    "usacPermit": "2017-150",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://penvelo.org/san-bruno-mountain-hill-climb/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2630",
+        "name": "Peninsula Velo Cycling Club",
+        "contactName": "Tommy Evans",
+        "contactInfo": "evans792@gmail.com",
+        "usacClubId": 327
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-clovis-training-crits-beginning-racer-program-r1groqCfp$",
+    "_shortId": "r1groqCfp$",
+    "name": "Clovis Training Crits - Beginning Racer Program",
+    "date": "January 08 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "3200 Villa Ave",
+      "city": "Clovis",
+      "state": "CA",
+      "zip": "93612"
+    },
+    "usacPermit": "2017-291",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://www.facebook.com/clovis.training.crits/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30004",
+        "name": "Clovis Training Crits",
+        "contactName": "Justin Morgan",
+        "contactInfo": "justin@backofnowhere.com, (559) 451-7527",
+        "usacClubId": 12310
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-early-bird-criterium-training-series-BkZri50f6$",
+    "_shortId": "BkZri50f6$",
+    "name": "Early Bird Criterium Training Series",
+    "date": "January 08 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Campus Court",
+      "city": "Fremont",
+      "state": "CA",
+      "zip": "94536"
+    },
+    "usacPermit": "2017-325",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-data-driven-athlete-napa-valley-camp-rkDqa5$DW",
     "_shortId": "rkDqa5$DW",
     "name": "Data Driven Athlete Napa Valley Camp",
@@ -27,6 +120,66 @@
         "contactName": "Nathanael Dunn",
         "contactInfo": "nate@datadrivenathlete.com",
         "usacClubId": 13940
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-coast-ride-S1zHocAGTZ",
+    "_shortId": "S1zHocAGTZ",
+    "name": "2017 Coast Ride",
+    "date": "January 14 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94121"
+    },
+    "usacPermit": "2017-314",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-10480",
+        "name": "Fusion Sport USA",
+        "contactName": "Scott Witthoff",
+        "usacClubId": 10480
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-c-officials-class-ncnca-S1QBocRzTb",
+    "_shortId": "S1QBocRzTb",
+    "name": "C Officials Class, NCNCA",
+    "date": "January 21 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "2929 Constitution Dr",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-582",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://www.ncnca.org/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
       }
     ]
   },
@@ -124,6 +277,37 @@
     ]
   },
   {
+    "id": "evt-usac-2017-laurel-green-coaching-clinic-2017-Hy4Si9CG6$",
+    "_shortId": "Hy4Si9CG6$",
+    "name": "Laurel Green Coaching Clinic 2017",
+    "date": "February 11 2017",
+    "discipline": "Road",
+    "type": "Clinics",
+    "location": {
+      "streetAddress": "Rohnert Park",
+      "city": "Rohnert",
+      "state": "CA",
+      "zip": "95492"
+    },
+    "usacPermit": "2017-69",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://shespokeracing.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30014",
+        "name": "USA Cycling Coaches",
+        "contactName": "Nathanael Dunn",
+        "contactInfo": "nate@datadrivenathlete.com",
+        "usacClubId": 13940
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-otf-hensley-lake-road-race-S1XD5aqWPZ",
     "_shortId": "S1XD5aqWPZ",
     "name": "OTF Hensley Lake Road Race",
@@ -217,6 +401,37 @@
     ]
   },
   {
+    "id": "evt-usac-2017-cantua-creek-road-race-r1BSscCzTb",
+    "_shortId": "r1BSscCzTb",
+    "name": "Cantua Creek Road Race",
+    "date": "February 19 2017",
+    "discipline": "Road",
+    "type": "Road Race",
+    "location": {
+      "streetAddress": "Highway 33 and Coalinga Mendota Road",
+      "city": "Coalinga",
+      "state": "CA",
+      "zip": "93210"
+    },
+    "usacPermit": "2017-439",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-cherry-pie-criterium-SkUwqT9bv$",
     "_shortId": "SkUwqT9bv$",
     "name": "Cherry Pie Criterium",
@@ -296,6 +511,67 @@
       "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-tour-de-ed-ryUHjqRMTW",
+    "_shortId": "ryUHjqRMTW",
+    "name": "Tour De Ed",
+    "date": "March 05 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95926"
+    },
+    "usacPermit": "2017-831",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-16357",
+        "name": "Chico Cyclist Care Fund",
+        "contactName": "Sandy Fisher",
+        "usacClubId": 16357
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-early-bird-criterium-training-series-HkwBi5Afa$",
+    "_shortId": "HkwBi5Afa$",
+    "name": "Early Bird Criterium Training Series",
+    "date": "March 05 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "Campus Court",
+      "city": "Fremont",
+      "state": "CA",
+      "zip": "94536"
+    },
+    "usacPermit": "2017-931",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
     },
     "websiteUrl": "http://www.velopromo.com",
     "registrationUrl": "",
@@ -464,6 +740,36 @@
     ]
   },
   {
+    "id": "evt-usac-2017-uc-santa-cruz-slugapalooza-By_Bi5Cf6W",
+    "_shortId": "By_Bi5Cf6W",
+    "name": "UC Santa Cruz Slugapalooza",
+    "date": "March 25 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "1156 High Street, East Remote Lot",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95064"
+    },
+    "usacPermit": "2017-1166",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.ucsccycling.com/races-and-rides/slugapalooza-road-race/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-3622",
+        "name": "University of California-Santa Cruz",
+        "contactName": "Walker Busby",
+        "usacClubId": 3622
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-2017-rko3-winchester-circuit-race-ryRv5acZvZ",
     "_shortId": "ryRv5acZvZ",
     "name": "2017 RKO#3 - WINCHESTER CIRCUIT RACE",
@@ -584,6 +890,37 @@
         "contactName": "Dustin Denton",
         "contactInfo": "",
         "usacClubId": 806
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-otf-ventana-circuit-race-rJtSj90G6Z",
+    "_shortId": "rJtSj90G6Z",
+    "name": "OTF Ventana Circuit Race",
+    "date": "April 01 2017",
+    "discipline": "Road",
+    "type": "Circuit Race",
+    "location": {
+      "streetAddress": "19795 Ventana Hills Dr.",
+      "city": "Clovis",
+      "state": "CA",
+      "zip": "93619"
+    },
+    "usacPermit": "2017-734",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/Steve-Grusis-Race-Promotions-501684569917598/?ref=bookmarks",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-5124",
+        "name": "Off The Front",
+        "contactName": "Steve Grusis",
+        "contactInfo": "steve.grusis@scccd.edu, (559) 360-1775",
+        "usacClubId": 15110
       }
     ]
   },
@@ -712,6 +1049,99 @@
     ]
   },
   {
+    "id": "evt-usac-2017-2017-subaru-sea-otter-classic-road-H1cHic0fab",
+    "_shortId": "H1cHic0fab",
+    "name": "2017 SUBARU Sea Otter Classic - ROAD",
+    "date": "April 20 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-237",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-subaru-sea-otter-classic-gran-fondo-rJoHi9RMTZ",
+    "_shortId": "rJoHi9RMTZ",
+    "name": "2017 SUBARU Sea Otter Classic-Gran Fondo",
+    "date": "April 22 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-238",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-subaru-sea-otter-classic-clif-bar-clunker-ride-HJ3Hj5RG6Z",
+    "_shortId": "HJ3Hj5RG6Z",
+    "name": "SUBARU Sea Otter Classic Clif Bar Clunker Ride",
+    "date": "April 22 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-742",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-2017-rko5-red-kite-criterium-april-ByLlw5TcbwW",
     "_shortId": "ByLlw5TcbwW",
     "name": "2017 RKO#5 - RED KITE CRITERIUM (APRIL)",
@@ -759,7 +1189,7 @@
     "usac": {
       "status": "Complete",
       "category": "Category - F",
-      "type": "Results & Ranking"
+      "type": "Fun"
     },
     "websiteUrl": "http://www.americanheart.org",
     "registrationUrl": "",
@@ -836,6 +1266,37 @@
     ]
   },
   {
+    "id": "evt-usac-2017-glory-hole-road-time-trials-rJTBsqCfTZ",
+    "_shortId": "rJTBsqCfTZ",
+    "name": "Glory Hole Road Time Trials",
+    "date": "May 02 2017",
+    "discipline": "Road",
+    "type": "Time Trial",
+    "location": {
+      "streetAddress": "Glory Hole Road",
+      "city": "Angels Camp",
+      "state": "CA",
+      "zip": "95222"
+    },
+    "usacPermit": "2017-938",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://www.velopromo.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2631",
+        "name": "Golden Chain Cyclists",
+        "contactName": "Robert Leibold",
+        "contactInfo": "velopro1@sonnet.com",
+        "usacClubId": 2568
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-golden-state-race-series-HJqgvc6q$wZ",
     "_shortId": "HJqgvc6q$wZ",
     "name": "Golden State Race Series",
@@ -898,6 +1359,37 @@
     ]
   },
   {
+    "id": "evt-usac-2017-amgen-breakaway-from-heart-disease-womens-race-empowered-with-sram-S1Criq0zpb",
+    "_shortId": "S1Criq0zpb",
+    "name": "Amgen Breakaway from Heart Disease Women’s Race empowered with SRAM",
+    "date": "May 11 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "South Lake Tahoe",
+      "state": "CA",
+      "zip": "95811"
+    },
+    "usacPermit": "2017-1267",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - A",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30015",
+        "name": "AEG Cycling LLC, Anschutz Entertainment Group, Inc.",
+        "contactName": "Eric Smith",
+        "contactInfo": "ericsmith9@me.com",
+        "usacClubId": 13076
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-honor-ride-sacramento-r1hxw965WPW",
     "_shortId": "r1hxw965WPW",
     "name": "Honor Ride Sacramento",
@@ -914,7 +1406,7 @@
     "usac": {
       "status": "Complete",
       "category": "Category - F",
-      "type": "Results & Ranking"
+      "type": "Fun"
     },
     "websiteUrl": "http://r2r.convio.net/site/TR/Cycling/General?fr_id=1250&pg=entry",
     "registrationUrl": "",
@@ -924,6 +1416,37 @@
         "name": "Project Hero",
         "contactName": "Jack Shepard",
         "usacClubId": 13438
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-central-coast-road-series-ft-ord-S1JgricCGTW",
+    "_shortId": "S1JgricCGTW",
+    "name": "Central Coast Road Series- Ft. Ord",
+    "date": "May 13 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "17723 Northwood Place",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93907"
+    },
+    "usacPermit": "2017-1681",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.cccxcycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2609",
+        "name": "CCCX Cycling Club",
+        "contactName": "Keith DeFiebre",
+        "contactInfo": "kdefiebre@hotmail.com",
+        "usacClubId": 14829
       }
     ]
   },
@@ -1052,6 +1575,36 @@
     ]
   },
   {
+    "id": "evt-usac-2017-tour-de-donut-2017-rJxgrs9RMpZ",
+    "_shortId": "rJxgrs9RMpZ",
+    "name": "Tour de Donut 2017",
+    "date": "May 27 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "San Luis Obispo",
+      "state": "CA",
+      "zip": "94116"
+    },
+    "usacPermit": "2017-1964",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.eventbrite.com/e/tour-de-donut-2017-registration-33855006235?aff=es2",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-pescadero-coastal-classic-Hk$ZDq6qWwW",
     "_shortId": "Hk$ZDq6qWwW",
     "name": "Pescadero Coastal Classic",
@@ -1079,6 +1632,37 @@
         "contactName": "Mark Howard",
         "contactInfo": "Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com",
         "usacClubId": 3178
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-lodi-cycle-fest-BybxBs9Az6Z",
+    "_shortId": "BybxBs9Az6Z",
+    "name": "Lodi Cycle Fest",
+    "date": "June 04 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "203 S School St",
+      "city": "Lodi",
+      "state": "CA",
+      "zip": "95240"
+    },
+    "usacPermit": "2017-1788",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.deltavelo.com/lodi_cyclefest/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2658",
+        "name": "Delta Velo",
+        "contactName": "Damian Gonzalez",
+        "contactInfo": "damian@deltavelo.com",
+        "usacClubId": 253
       }
     ]
   },
@@ -1221,7 +1805,7 @@
     "usac": {
       "status": "Complete",
       "category": "Category - F",
-      "type": "Results & Ranking"
+      "type": "Fun"
     },
     "websiteUrl": "http://nevadacityclassic.com",
     "registrationUrl": "",
@@ -1252,7 +1836,7 @@
     "usac": {
       "status": "Complete",
       "category": "Category - F",
-      "type": "Results & Ranking"
+      "type": "Fun"
     },
     "websiteUrl": "http://nevadacityclassic.com",
     "registrationUrl": "",
@@ -1374,7 +1958,7 @@
     },
     "usacPermit": "2017-1919",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1405,7 +1989,7 @@
     },
     "usacPermit": "2017-1935",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - D",
       "type": "Results & Ranking"
     },
@@ -1546,6 +2130,37 @@
     ]
   },
   {
+    "id": "evt-usac-2017-2017-rko10-crossfire-hurricane-hill-climb-challenge-SJGgSo5Czp$",
+    "_shortId": "SJGgSo5Czp$",
+    "name": "2017-RKO#10 - CROSSFIRE HURRICANE HILL CLIMB CHALLENGE",
+    "date": "July 22 2017",
+    "discipline": "Road",
+    "type": "Hill Climb",
+    "location": {
+      "streetAddress": "",
+      "city": "Livermore",
+      "state": "CA",
+      "zip": "94551"
+    },
+    "usacPermit": "2017-2277",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-2017-rko11-the-bump-circuit-race-summer-rkZGw96q$PZ",
     "_shortId": "rkZGw96q$PZ",
     "name": "2017 RKO#11 - THE BUMP CIRCUIT RACE (SUMMER)",
@@ -1559,6 +2174,68 @@
       "zip": "94550"
     },
     "usacPermit": "2017-2181",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.redkiteracing.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4873",
+        "name": "Red Kite Racing",
+        "contactName": "Steve Rosefield",
+        "contactInfo": "sr@redkiteracing.com, 510-882-8235",
+        "usacClubId": 12690
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-san-rafael-sunset-criterium-rk7gBsqAfp$",
+    "_shortId": "rk7gBsqAfp$",
+    "name": "San Rafael Sunset Criterium",
+    "date": "July 29 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "4th &amp; C St, San Rafael",
+      "city": "San Rafael",
+      "state": "CA",
+      "zip": "94901"
+    },
+    "usacPermit": "2017-1995",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.sanrafaelsunset.com/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30013",
+        "name": "Team Mikes Bikes p/b Equator Coffees",
+        "contactName": "Ravi Rajcoomar",
+        "contactInfo": "ravirajcoomar@me.com",
+        "usacClubId": 13460
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-red-kite-omnium-event-12-33rd-annual-albany-criterium-BJ4lHsqCGa$",
+    "_shortId": "BJ4lHsqCGa$",
+    "name": "2017 RED KITE OMNIUM EVENT #12 - 33RD ANNUAL ALBANY CRITERIUM",
+    "date": "July 30 2017",
+    "discipline": "Road",
+    "type": "Criterium",
+    "location": {
+      "streetAddress": "1325 Portland Avenue",
+      "city": "Albany",
+      "state": "CA",
+      "zip": "94706"
+    },
+    "usacPermit": "2017-2242",
     "usac": {
       "status": "Complete",
       "category": "Category - E",
@@ -1591,7 +2268,7 @@
     },
     "usacPermit": "2017-2341",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1622,7 +2299,7 @@
     },
     "usacPermit": "2017-2278",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1653,7 +2330,7 @@
     },
     "usacPermit": "2017-2344",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1684,7 +2361,7 @@
     },
     "usacPermit": "2017-2343",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1715,7 +2392,7 @@
     },
     "usacPermit": "2017-2354",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1746,7 +2423,7 @@
     },
     "usacPermit": "2017-2279",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1777,7 +2454,7 @@
     },
     "usacPermit": "2017-2355",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1808,7 +2485,7 @@
     },
     "usacPermit": "2017-2299",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1839,7 +2516,7 @@
     },
     "usacPermit": "2017-2555",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1870,7 +2547,7 @@
     },
     "usacPermit": "2017-2576",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1901,7 +2578,7 @@
     },
     "usacPermit": "2017-2280",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1932,7 +2609,7 @@
     },
     "usacPermit": "2017-2356",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -1994,7 +2671,7 @@
     },
     "usacPermit": "2017-2643",
     "usac": {
-      "status": "Pending",
+      "status": "Complete",
       "category": "Category - D",
       "type": "Results & Ranking"
     },
@@ -2007,6 +2684,157 @@
         "contactName": "Robert Leibold",
         "contactInfo": "velopro1@sonnet.com",
         "usacClubId": 2568
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cycle-with-champions-SkSxBjqRzaW",
+    "_shortId": "SkSxBjqRzaW",
+    "name": "Cycle With Champions",
+    "date": "October 08 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "4400 Day School Place,",
+      "city": "Santa Rosa",
+      "state": "CA",
+      "zip": "95403"
+    },
+    "usacPermit": "2017-2735",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.teamswift.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-4675",
+        "name": "Team Swift",
+        "contactName": "Laura Charameda",
+        "usacClubId": 10356
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-bikes-for-kids-charity-ride-BkLxBo50f6$",
+    "_shortId": "BkLxBo50f6$",
+    "name": "Bikes for Kids Charity Ride",
+    "date": "October 14 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "445 E F st",
+      "city": "Oakdale",
+      "state": "CA",
+      "zip": "95361"
+    },
+    "usacPermit": "2017-2472",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.bikesforkids.bike",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-14700",
+        "name": "Bell Real Estate Cycling",
+        "contactName": "Robert Bell",
+        "usacClubId": 14700
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-california-challenge-HkDeHiqAG6Z",
+    "_shortId": "HkDeHiqAG6Z",
+    "name": "California Challenge",
+    "date": "October 14 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94087"
+    },
+    "usacPermit": "2017-2716",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "",
+    "registrationUrl": "http://ride2recovery.com",
+    "promoters": [
+      {
+        "id": "prm-5116",
+        "name": "Project Hero",
+        "contactName": "Jack Shepard",
+        "usacClubId": 13438
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-death-valley-road-omnium-HydeHi9AG6Z",
+    "_shortId": "HydeHi9AG6Z",
+    "name": "Death Valley Road Omnium",
+    "date": "October 21 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "",
+      "city": "Big Pine",
+      "state": "CA",
+      "zip": "93513"
+    },
+    "usacPermit": "2017-2880",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "https://usacycling.org/register/2017-2880",
+    "promoters": [
+      {
+        "id": "prm-2746",
+        "name": "AntiGravity Cycling",
+        "contactName": "Steve Barnes",
+        "contactInfo": "everestchallenge2009@gmail.com",
+        "usacClubId": 12627
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-death-valley-national-park-tour-BJYxBic0GTb",
+    "_shortId": "BJYxBic0GTb",
+    "name": "Death Valley National Park Tour",
+    "date": "November 12 2017",
+    "discipline": "Road",
+    "type": "Road",
+    "location": {
+      "streetAddress": "Highway 190",
+      "city": "Death Valley",
+      "state": "CA",
+      "zip": "92328"
+    },
+    "usacPermit": "2017-2988",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.cyclingescapes.com/bicycletours/california/deathvalley/biketour.html",
+    "registrationUrl": "http://www.cyclingescapes.com/onlineregistration.html",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
       }
     ]
   },
@@ -2037,6 +2865,36 @@
         "name": "Performance Cycle Coaching",
         "contactName": "Daryl Hemenway",
         "usacClubId": 15066
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ncnca-elite-track-tt-sprint-championships-S19lBi90fpW",
+    "_shortId": "S19lBi90fpW",
+    "name": "NCNCA Elite Track TT & Sprint Championships",
+    "date": "July 08 2017",
+    "discipline": "Track",
+    "type": "Track",
+    "location": {
+      "streetAddress": "985 Hellyer Ave",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95111"
+    },
+    "usacPermit": "2017-1176",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": ""
+    },
+    "websiteUrl": "http://ridethetrack.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
       }
     ]
   },
@@ -2091,13 +2949,104 @@
       "type": "Results & Ranking"
     },
     "websiteUrl": "http://ridethetrack.com",
-    "registrationUrl": "http://bikereg.com",
+    "registrationUrl": "",
     "promoters": [
       {
         "id": "prm-30018",
         "name": "USA Cycling Race Director",
         "contactName": "<it depends, it's a generic club on USAC>",
         "usacClubId": 14196
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-central-coast-mountain-bike-series-H1oxBj5Czp$",
+    "_shortId": "H1oxBj5Czp$",
+    "name": "Central Coast Mountain Bike Series",
+    "date": "January 29 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "17723 Northwood Place",
+      "city": "Salinas",
+      "state": "CA",
+      "zip": "93907"
+    },
+    "usacPermit": "2017-544",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.cccxcycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2609",
+        "name": "CCCX Cycling Club",
+        "contactName": "Keith DeFiebre",
+        "contactInfo": "kdefiebre@hotmail.com",
+        "usacClubId": 14829
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-nevada-county-women-mtb-skills-cliniccamp-HJ3gSocCz6$",
+    "_shortId": "HJ3gSocCz6$",
+    "name": "2017 Nevada County Women MTB Skills Clinic&Camp",
+    "date": "March 31 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "9 Kidder Ct.",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-668",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://ybonc.org/events/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3061",
+        "name": "Youth Bicyclists of Nev. Co. (YBONC) Foundation",
+        "contactName": "Jeanette (Jet) Lowe",
+        "usacClubId": 12615
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ca-mtb-xc-state-championships-By6xBi5RMTZ",
+    "_shortId": "By6xBi5RMTZ",
+    "name": "CA MTB XC State Championships",
+    "date": "April 15 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-521",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://ybonc.org/events/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3061",
+        "name": "Youth Bicyclists of Nev. Co. (YBONC) Foundation",
+        "contactName": "Jeanette (Jet) Lowe",
+        "usacClubId": 12615
       }
     ]
   },
@@ -2164,6 +3113,67 @@
     ]
   },
   {
+    "id": "evt-usac-2017-2017-subaru-sea-otter-classic-tours-rJRlro9AMTW",
+    "_shortId": "rJRlro9AMTW",
+    "name": "2017 SUBARU Sea Otter Classic - Tours",
+    "date": "April 22 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "Laguna Seca Recreation Area",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-235",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.seaotterclassic.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30008",
+        "name": "Sea Otter Classic, Inc.",
+        "contactName": "Jeff Frost",
+        "contactInfo": "frosty@seaotterclassic.com",
+        "usacClubId": 9870
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-tds-enduro-buddy-newman-invitational-r11bBs9Czpb",
+    "_shortId": "r11bBs9Czpb",
+    "name": "TDS Enduro Buddy Newman Invitational",
+    "date": "April 28 2017",
+    "discipline": "MTB",
+    "type": "Enduro",
+    "location": {
+      "streetAddress": "Osborne Hill Rd.",
+      "city": "Grass Valley",
+      "state": "CA",
+      "zip": "95945"
+    },
+    "usacPermit": "2017-724",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://timeyourrace.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3061",
+        "name": "Youth Bicyclists of Nev. Co. (YBONC) Foundation",
+        "contactName": "Jeanette (Jet) Lowe",
+        "usacClubId": 12615
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-little-big-festival-mtb-short-track-rJmQDqa5$Pb",
     "_shortId": "rJmQDqa5$Pb",
     "name": "Little Big Festival MTB Short Track",
@@ -2225,6 +3235,96 @@
     ]
   },
   {
+    "id": "evt-usac-2017-bodie-bowl-2017-BJg$HjcCG6b",
+    "_shortId": "BJg$HjcCG6b",
+    "name": "Bodie Bowl 2017",
+    "date": "August 20 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Bodie",
+      "state": "CA",
+      "zip": "93517"
+    },
+    "usacPermit": "2017-412",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://www.bodiebowl.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30018",
+        "name": "USA Cycling Race Director",
+        "contactName": "<it depends, it's a generic club on USAC>",
+        "usacClubId": 14196
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-kamikaze-bike-games-ry$WSi90GpZ",
+    "_shortId": "ry$WSi90GpZ",
+    "name": "Kamikaze Bike Games",
+    "date": "September 14 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "Canyon Lodge, Mammoth Mountain Ski Area, LLC",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "zip": "93546"
+    },
+    "usacPermit": "2017-2874",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - C",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.kamikazebikegames.com/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-5816",
+        "name": "Team Big Bear Mtn Bikes, Inc.",
+        "contactName": "Team Big Bear Mtn Bikes, Inc.",
+        "usacClubId": 5816
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-ninja-mountain-bike-performance-i-santa-cruz-sc0923-SkGbSjqCMTW",
+    "_shortId": "SkGbSjqCMTW",
+    "name": "Ninja Mountain Bike Performance I Santa Cruz (SC0923)",
+    "date": "September 23 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Aptos",
+      "state": "CA",
+      "zip": "95003"
+    },
+    "usacPermit": "2017-2498",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://sandiegomountainbikeskills.com/california/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-15312",
+        "name": "Team Ninja",
+        "contactName": "Richard La China",
+        "usacClubId": 15312
+      }
+    ]
+  },
+  {
     "id": "evt-usac-2017-wildcat-mtb-race-rylj7KAswb",
     "_shortId": "rylj7KAswb",
     "name": "Wildcat MTB Race",
@@ -2239,7 +3339,7 @@
     },
     "usacPermit": "2017-2601",
     "usac": {
-      "status": "Permit in Process",
+      "status": "Complete",
       "category": "Category - D",
       "type": "Results & Ranking"
     },
@@ -2251,6 +3351,218 @@
         "name": "California State University-Chico",
         "contactName": "Anthony Tran",
         "usacClubId": 3391
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-2017-take-a-kid-mtn-biking-bike-safety-rodeo-B1XZSicCMpW",
+    "_shortId": "B1XZSicCMpW",
+    "name": "2017 Take a Kid MTN Biking & Bike Safety Rodeo",
+    "date": "October 08 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "800 Hoover Lane",
+      "city": "Nevada City",
+      "state": "CA",
+      "zip": "95959"
+    },
+    "usacPermit": "2017-2739",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - F",
+      "type": "Fun"
+    },
+    "websiteUrl": "http://ybonc.org/events/bike-safety-rodeo/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3061",
+        "name": "Youth Bicyclists of Nev. Co. (YBONC) Foundation",
+        "contactName": "Jeanette (Jet) Lowe",
+        "usacClubId": 12615
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-exchequer-S1E$rsqCfpb",
+    "_shortId": "S1E$rsqCfpb",
+    "name": "Exchequer",
+    "date": "October 14 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "3100 Barrett Cove Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    },
+    "usacPermit": "2017-2798",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-15328",
+        "name": "University of California-Merced",
+        "contactName": "Trenton Berner",
+        "usacClubId": 15328
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-wccc-exchequer-downhill-SyBWrscAzTZ",
+    "_shortId": "SyBWrscAzTZ",
+    "name": "WCCC Exchequer Downhill",
+    "date": "October 15 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "3100 Barrett Cove Rd",
+      "city": "La Grange",
+      "state": "CA",
+      "zip": "95329"
+    },
+    "usacPermit": "2017-3088",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-30019",
+        "name": "Shine Riders Co",
+        "contactName": "Lindsay Currier",
+        "usacClubId": 16676
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-humboldt-state-mtb-race-rJ8Wrjq0MTb",
+    "_shortId": "rJ8Wrjq0MTb",
+    "name": "Humboldt State MTB Race",
+    "date": "November 04 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "",
+      "city": "Lacks Creek",
+      "state": "CA",
+      "zip": "95525"
+    },
+    "usacPermit": "2017-2746",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-3531",
+        "name": "Humboldt State University",
+        "contactName": "Tyler Green",
+        "usacClubId": 9955
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-the-shreditation-retreat-S1DbSjcAfT$",
+    "_shortId": "S1DbSjcAfT$",
+    "name": "The Shreditation Retreat",
+    "date": "November 11 2017",
+    "discipline": "MTB",
+    "type": "MTB",
+    "location": {
+      "streetAddress": "850 Branciforte Dr.",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95065"
+    },
+    "usacPermit": "2017-3029",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - C",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://ucsccycling.wixsite.com/slugcycling",
+    "registrationUrl": "https://usacycling.org/register/2017-3029",
+    "promoters": [
+      {
+        "id": "prm-usac-3622",
+        "name": "University of California-Santa Cruz",
+        "contactName": "Walker Busby",
+        "usacClubId": 3622
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-little-big-festival-cyclocross-race-H1_ZBiqRfpb",
+    "_shortId": "H1_ZBiqRfpb",
+    "name": "Little Big Festival Cyclocross Race",
+    "date": "May 28 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "12200 Joerger Dr",
+      "city": "Truckee",
+      "state": "CA",
+      "zip": "96161"
+    },
+    "usacPermit": "2017-1635",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.truckeebikepark.org",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2642",
+        "name": "Reno Wheelmen",
+        "contactName": "Coby Rowe",
+        "contactInfo": "coby@glaciercycling.com",
+        "usacClubId": 1019
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-central-coast-cyclocross-series-B1YWBo9AMaW",
+    "_shortId": "B1YWBo9AMaW",
+    "name": "Central Coast Cyclocross Series",
+    "date": "August 27 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "",
+      "city": "Monterey",
+      "state": "CA",
+      "zip": "93940"
+    },
+    "usacPermit": "2017-2652",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.cccxcycling.com",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2609",
+        "name": "CCCX Cycling Club",
+        "contactName": "Keith DeFiebre",
+        "contactInfo": "kdefiebre@hotmail.com",
+        "usacClubId": 14829
       }
     ]
   },
@@ -2269,7 +3581,7 @@
     },
     "usacPermit": "2017-1866",
     "usac": {
-      "status": "Permitted",
+      "status": "Complete",
       "category": "Category - E",
       "type": "Results & Ranking"
     },
@@ -2281,6 +3593,98 @@
         "name": "USA Cycling Race Director",
         "contactName": "<it depends, it's a generic club on USAC>",
         "usacClubId": 14196
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-sagebrush-race-2-truckee-bike-park-BkqZBi5RG6Z",
+    "_shortId": "BkqZBi5RG6Z",
+    "name": "Sagebrush Race #2 Truckee Bike Park",
+    "date": "October 08 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "12200 Joerger Dr.",
+      "city": "Truckee",
+      "state": "CA",
+      "zip": "96161"
+    },
+    "usacPermit": "2017-2691",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.sagebrush.cx",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-2642",
+        "name": "Reno Wheelmen",
+        "contactName": "Coby Rowe",
+        "contactInfo": "coby@glaciercycling.com",
+        "usacClubId": 1019
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-cx-nation-cup-rJoWBjcAza$",
+    "_shortId": "rJoWBjcAza$",
+    "name": "CX Nation Cup",
+    "date": "November 26 2017",
+    "discipline": "Cyclocross",
+    "type": "Cyclocross",
+    "location": {
+      "streetAddress": "Maxwell Park, 100 Verano Ave.",
+      "city": "Sonoma",
+      "state": "CA",
+      "zip": "95476"
+    },
+    "usacPermit": "2017-2425",
+    "usac": {
+      "status": "Permitted",
+      "category": "Category - G",
+      "type": ""
+    },
+    "websiteUrl": "http://www.cxnation.com/events/",
+    "registrationUrl": "http://%20www.bikereg.com/cx-nation-cup",
+    "promoters": [
+      {
+        "id": "prm-30014",
+        "name": "USA Cycling Coaches",
+        "contactName": "Nathanael Dunn",
+        "contactInfo": "nate@datadrivenathlete.com",
+        "usacClubId": 13940
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-uc-santa-cruz-slugapalooza-B13ZSs50zTZ",
+    "_shortId": "B13ZSs50zTZ",
+    "name": "UC Santa Cruz Slugapalooza",
+    "date": "March 25 2017",
+    "discipline": "Collegiate",
+    "type": "Collegiate",
+    "location": {
+      "streetAddress": "1156 High Street, East Remote Lot",
+      "city": "Santa Cruz",
+      "state": "CA",
+      "zip": "95064"
+    },
+    "usacPermit": "2017-1166",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - E",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.ucsccycling.com/races-and-rides/slugapalooza-road-race/",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-3622",
+        "name": "University of California-Santa Cruz",
+        "contactName": "Walker Busby",
+        "usacClubId": 3622
       }
     ]
   },
@@ -2312,6 +3716,36 @@
         "contactName": "Dustin Denton",
         "contactInfo": "",
         "usacClubId": 806
+      }
+    ]
+  },
+  {
+    "id": "evt-usac-2017-wildcat-mtb-race-rylj7KAswb",
+    "_shortId": "rylj7KAswb",
+    "name": "Wildcat MTB Race",
+    "date": "September 30 2017",
+    "discipline": "Collegiate",
+    "type": "Collegiate",
+    "location": {
+      "streetAddress": "",
+      "city": "Chico",
+      "state": "CA",
+      "zip": "95926"
+    },
+    "usacPermit": "2017-2601",
+    "usac": {
+      "status": "Complete",
+      "category": "Category - D",
+      "type": "Results & Ranking"
+    },
+    "websiteUrl": "http://www.facebook.com/events/112409339400663/?context=create&previousaction=create&ref=5&page_id_source=1881225038826999&sid_create=2832345047&action_history=%5B%257B%2522surface%2522%253A%2522create_dialog%2522%252C%2522mechanism%2522%253A%2522page_create_dialog%2522%252C%2522extra_data%252",
+    "registrationUrl": "",
+    "promoters": [
+      {
+        "id": "prm-usac-3391",
+        "name": "California State University-Chico",
+        "contactName": "Anthony Tran",
+        "usacClubId": 3391
       }
     ]
   }
