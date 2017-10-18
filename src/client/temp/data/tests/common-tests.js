@@ -1,19 +1,25 @@
 import { createTest } from 'tests/test-utils'
-import events from '../2017-ncnca-events'
 import moment from 'moment'
 import { EventTypes, Disciplines } from 'client/calendar/events/types'
-import { keyBy } from 'lodash'
+import _ from 'lodash'
+
+import ncnca2017 from '../2017-ncnca-events'
+import usac2017 from '../2017-usac-events'
+
+const events = _.concat(
+  // does not inlcude older events that do not comply with this requirements
+  ncnca2017,
+  usac2017
+)
 
 //TODO: make this tests event centric or test-case centric?
 
-const test = createTest('2017 NCNCA Events')
+const test = createTest('Common events tests')
 
 const parseDate = date => moment(date, 'MMMM DD YYYY')
 
 const getKeyByValue = (obj, value) => Object.keys(obj).filter(key => obj[key] === value)
 const getFirstKeyByValue = (obj, value) => getKeyByValue(obj, value)[0]
-
-const getObjectValues = obj => Object.keys(obj).map(x => obj[x])
 
 test('Event must have short id as part of long id and separately as "_shortId" property', t => {
   events.forEach((event, i) => {
@@ -22,6 +28,18 @@ test('Event must have short id as part of long id and separately as "_shortId" p
 
     t.equal(event._shortId, shortIdFromId,
       `#${event.name} "${event._shortId}" => "${shortIdFromId}"`)
+  })
+
+  t.end()
+})
+
+test('Event must have unique id across all events', t => {
+  const eventsById = _.groupBy(events, 'id')
+
+  _.map(eventsById, (value, key) => {
+    if (value.length !== 1) {
+      t.fail(`There are "${value.length}" events with id: "${key}", id must be unique.`)
+    }
   })
 
   t.end()
@@ -41,9 +59,9 @@ test('Event must have _shortId that only contains predefined characters', t => {
   t.end()
 })
 
-test('Event must have id starting from "evt-ncnca-2017"', t => {
+test('Event must have id starting from "evt-"', t => {
   events.forEach((event, i) => {
-    t.ok(event.id.startsWith(('evt-ncnca-2017')),
+    t.ok(event.id.startsWith(('evt-')),
       `${event.name}`)
   })
 
@@ -61,7 +79,7 @@ test('Event must have date in a format "MMMM DD YYYY"', t => {
 })
 
 
-test('Event with USAC permit should start from "2017-"', t => {
+test('Event with USAC permit should have permit starting from events year', t => {
   events
     .filter(x => x.usacPermit)
     .forEach((event, i) => {
@@ -107,11 +125,11 @@ test('Each Event must have at least city and state set in Location', t => {
 
 
 test('Each Event must have Type and Discipline set to one of the pre-defined ones', t => {
-  const allDisciplines = getObjectValues(Disciplines)
+  const allDisciplines = _.values(Disciplines)
 
   const getEventTypesForDiscipline = discipline => {
     const disciplineKey = getFirstKeyByValue(Disciplines, discipline)
-    return getObjectValues(EventTypes[disciplineKey])
+    return _.values(EventTypes[disciplineKey])
   }
 
   events.forEach((event, i) => {
@@ -128,7 +146,7 @@ test('Each Event must have Type and Discipline set to one of the pre-defined one
 })
 
 test('Event that is moved, when have "movedToEventId" should point to existing event', t => {
-  const eventsById = keyBy(events, 'id')
+  const eventsById = _.keyBy(events, 'id')
 
   events
     .filter(x => x.movedToEventId)
