@@ -1,10 +1,12 @@
 Version 1:
- - converts raw USAC events to rcn.io format
- - validates them with schema
- - unit tests will be run as part of regular build enforsing additional constrains
+ ✔ converts raw USAC events to rcn.io format @done(2017-10-18) @project(Version 1)
+ ✔ validates them with schema @done(2017-10-18) @project(Version 1)
+ ✔ unit tests will be run as part of regular build enforsing additional constrains @done(2017-10-18) @project(Version 1)
 
 
 Version 2:
+- support multi-type events
+  - validate that permit has same id
 - support multi-day events
   - big question is how to do it
     - create multiple events and interlink those
@@ -16,14 +18,14 @@ Version 2:
       - cons: harder to show in the calendar that has to be handled on UI level
       - cons: is that we can't customize these types events per day
 - load previous events and do lookups
-  - by permit
-    - compare if date is shortSegmentName
-      - if not same, create a copy of the event and mark old one as moved
+  ✔ by permit @done(2017-10-18)
+    ✔ compare if date is shortSegmentName @done(2017-10-18)
+      ✔ if not same, create a copy of the event and mark old one as moved @done(2017-10-18)
   - consider https://www.npmjs.com/package/difflet when events are different
   - if permit is not available do lookup by name + date
-- lookup promoters by name?
-- if we have some events that are no longer on USAC
-  - mark those as "Cancelled", store info when it disappreared
+✔ lookup promoters by name? @done(2017-10-18)
+✔ if we have some events that are no longer on USAC @done(2017-10-18)
+  ✔ mark those as "Cancelled", store info when it disappreared @done(2017-10-18)
 
 Version 3:
   - setup re-current AWS lambda execution (cheep)
