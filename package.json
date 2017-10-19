@@ -110,7 +110,7 @@
     "why-did-you-update": "0.0.8"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "4.0.0-alpha.2",
     "classnames": "^2.2.5",
     "exenv": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
