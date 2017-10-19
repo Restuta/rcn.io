@@ -60,6 +60,7 @@ const EventTypes = {
   },
   collegiate: {
     'default': 'Collegiate',
+    mtb: 'MTB',
     criterium: 'Criterium',
     roadRace: 'Road Race',
     circuitRace: 'Circuit Race',

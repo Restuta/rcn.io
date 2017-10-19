@@ -3325,36 +3325,6 @@
     ]
   },
   {
-    "id": "evt-usac-2017-wildcat-mtb-race-rylj7KAswb",
-    "_shortId": "rylj7KAswb",
-    "name": "Wildcat MTB Race",
-    "date": "September 30 2017",
-    "discipline": "MTB",
-    "type": "MTB",
-    "location": {
-      "streetAddress": "",
-      "city": "Chico",
-      "state": "CA",
-      "zip": "95926"
-    },
-    "usacPermit": "2017-2601",
-    "usac": {
-      "status": "Complete",
-      "category": "Category - D",
-      "type": "Results & Ranking"
-    },
-    "websiteUrl": "http://www.facebook.com/events/112409339400663/?context=create&previousaction=create&ref=5&page_id_source=1881225038826999&sid_create=2832345047&action_history=%5B%257B%2522surface%2522%253A%2522create_dialog%2522%252C%2522mechanism%2522%253A%2522page_create_dialog%2522%252C%2522extra_data%252",
-    "registrationUrl": "",
-    "promoters": [
-      {
-        "id": "prm-usac-3391",
-        "name": "California State University-Chico",
-        "contactName": "Anthony Tran",
-        "usacClubId": 3391
-      }
-    ]
-  },
-  {
     "id": "evt-usac-2017-2017-take-a-kid-mtn-biking-bike-safety-rodeo-B1XZSicCMpW",
     "_shortId": "B1XZSicCMpW",
     "name": "2017 Take a Kid MTN Biking & Bike Safety Rodeo",
@@ -3725,7 +3695,7 @@
     "name": "Wildcat MTB Race",
     "date": "September 30 2017",
     "discipline": "Collegiate",
-    "type": "Collegiate",
+    "type": "MTB",
     "location": {
       "streetAddress": "",
       "city": "Chico",

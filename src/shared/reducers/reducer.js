@@ -142,12 +142,12 @@ const initialState = {
     ['cal-usac-2017']: {
       id: 'cal-usac-2017',
       year: 2017,
-      name: '2017 USAC Calendar',
+      name: '2017 USA Cycling Calendar',
       // highlight: {
       //   word: 'NCNCA',
       //   color: Colors.red800,
       // },
-      description: '(Events pulled from usasycling.org as-is)',
+      description: 'Events pulled from usasycling.org. Does not include fun events.',
       timeZone: 'America/Los_Angeles',
       showPastEvents: false,
       draft: false,

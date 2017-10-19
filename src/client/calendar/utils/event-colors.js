@@ -54,7 +54,45 @@ const getEventColor = (discipline, type, status = '') => {
     eventColor = Colors.event.track.default
   }
 
-  if (discipline === Disciplines.road || discipline === Disciplines.collegiate) {
+  if (discipline === Disciplines.collegiate) {
+    switch (type) {
+      case 'MTB':
+        eventColor = Colors.event.collegiate.mtb
+        break
+      case 'Road Race':
+        eventColor = Colors.event.collegiate.roadRace
+        break
+      case 'Criterium':
+        eventColor = Colors.event.collegiate.criterium
+        break
+      case 'Hill Climb':
+        eventColor = Colors.event.collegiate.hillClimb
+        break
+      case 'Circuit Race':
+        eventColor = Colors.event.collegiate.circuitRace
+        break
+      case 'Time Trial':
+        eventColor = Colors.event.collegiate.timeTrial
+        break
+      case 'Team Time Trial':
+        eventColor = Colors.event.collegiate.teamTimeTrial
+        break
+      case 'Stage Race':
+        eventColor = Colors.event.collegiate.stageRace
+        break
+      case 'Omnium':
+        eventColor = Colors.event.collegiate.omnium
+        break
+      case 'Clinics':
+        eventColor = Colors.event.collegiate.clinics
+        break
+      default:
+        eventColor = Colors.event.collegiate.default
+        break
+    }
+  }
+
+  if (discipline === Disciplines.road) {
     switch (type) {
       case 'Road Race':
         eventColor = Colors.event.road.roadRace

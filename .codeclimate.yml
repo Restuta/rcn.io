@@ -47,7 +47,6 @@ ratings:
    - "**.jsx"
 exclude_paths:
 - "node_modules/**/*"
-- "bower_components/**/*"
 - "prototypes/**/*"
 - "code/data/node_modules/**/*"
 - "code/data/**/*"
