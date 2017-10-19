@@ -73,7 +73,7 @@ const getConfig = (env) => {
       }, {
         test: /\.(js|jsx?)$/,
         loader: 'babel',
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         include: path.join(consts.SRC_DIR),
         query: {
           presets: ['react', 'es2015', 'stage-2'],
@@ -91,7 +91,7 @@ const getConfig = (env) => {
       loaders = loaders.concat([{
         test: /\.(js|jsx?)$/,
         loader: 'babel',
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         include: [path.join(consts.SRC_DIR)],
         query: {
           presets: ['react', 'es2015', 'stage-2'],
@@ -114,7 +114,7 @@ const getConfig = (env) => {
         //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
         //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
         loader: 'style!css!postcss!sass',
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         include: path.join(consts.SRC_DIR, 'client')
       }])
     }
@@ -125,12 +125,12 @@ const getConfig = (env) => {
       loader: 'json-loader',
     }, {
       test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      exclude: /(node_modules|bower_components)/,
+      exclude: /node_modules/,
       loaders: ['url?limit=10000&mimetype=application/font-woff'],
       include: path.join(consts.SRC_DIR, 'client')
     }, {
       test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-      exclude: /(node_modules|bower_components)/,
+      exclude: /node_modules/,
       include: path.join(consts.SRC_DIR, 'client'),
       loader: 'file-loader?name=[path][name].[ext]&context=' + consts.IMG_DIR
     }])

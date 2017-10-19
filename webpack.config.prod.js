@@ -167,7 +167,7 @@ const config = {
       test: /\.scss$/,
       loaders: ['style', extractCss.extract('css!postcss!sass')],
       //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
-      exclude: /(node_modules|bower_components)/,
+      exclude: /node_modules/,
       include: path.join(consts.SRC_DIR, 'client')
     }])
   },
