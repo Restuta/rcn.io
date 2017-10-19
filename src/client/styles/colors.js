@@ -185,6 +185,7 @@ const event = {
   },
   collegiate: {
     'default': colors.white,
+    mtb: colors.brownMud,
     criterium: '#00BF10',
     roadRace: colors.blue500,
     circuitRace: colors.orange500,
