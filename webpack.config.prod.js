@@ -23,8 +23,8 @@ const htmlWebpackMinifyConfig = { // Minifying it while it is parsed
 }
 
 const config = {
-  //devtool: 'source-map',
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
+  // devtool: 'cheap-module-source-map',
   target: 'web',
 
   cache: false,

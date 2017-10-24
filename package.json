@@ -107,10 +107,11 @@
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.13.1",
     "webpack-node-externals": "^1.5.4",
-    "why-did-you-update": "0.0.8"
+    "why-did-you-update": "0.0.8",
+    "restuta-react-dropzone-s3-uploader": "^0.20.3",
+    "bootstrap": "4.0.0-alpha.2"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.2",
     "classnames": "^2.2.5",
     "exenv": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
@@ -130,7 +131,6 @@
     "redux-saga": "^0.12.0",
     "regenerator-runtime": "^0.9.5",
     "reselect": "^2.5.4",
-    "restuta-react-dropzone-s3-uploader": "^0.20.3",
     "svg-inline-react": "^1.0.2"
   },
   "engines": {
