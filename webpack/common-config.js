@@ -11,9 +11,9 @@ const pathToMomentTimezone = nodeModules('moment-timezone/builds/moment-timezone
 
 
 const getConfig = (env) => {
-  //define all vendor depnencies with pathes relative to node_modules/
-  //that are pre-compiled, this allows to configure webpack to skip parsing of them
-  //and we can use them for prod build instead of minifying libs ourself we would use pre-combiled ones
+  // define all vendor depnencies with pathes relative to node_modules/
+  // that are pre-compiled, this allows to configure webpack to skip parsing of them
+  // and we can use them for prod build instead of minifying libs ourself we would use pre-combiled ones
   const preBuiltVendorDeps = {
     'react': nodeModules('react/dist/react.min.js'),
     'react-dom': pathToReactDOM,
@@ -28,18 +28,15 @@ const getConfig = (env) => {
   }
 
   // reading from package.json
-  // NOTE: that it should only contains main app (main entry chunk "app") vendor deps, all other deps
+  // NOTE: that it should only contain main app (main entry chunk "app") vendor deps, all other deps
   // should go to "devDependencies" and get automatically split between entry chunks
   const allVendorDeps = Object.keys(pkg.dependencies)
-    //excluding regenerator-runtime since it results in error "regeneratorRuntime is not defined" in runtime
-    //and manually specifying correct path
+    // excluding regenerator-runtime since it results in error "regeneratorRuntime is not defined" in runtime
+    // and manually specifying correct path
     .filter(x => x !== 'regenerator-runtime')
     .concat(['regenerator-runtime/runtime'])
   const nonPreBuiltVendorDeps = _.difference(allVendorDeps, Object.keys(preBuiltVendorDeps))
 
-  const toArray = (obj) => {
-    return Object.keys(obj).map(key => obj[key])
-  }
 
   const buildResolveAliases = vendorDeps =>
     Object.keys(vendorDeps)
@@ -47,7 +44,7 @@ const getConfig = (env) => {
         //$ is used to exactly match dependency
         [depName + '$']: vendorDeps[depName]
       }))
-      //reducing array of objects to one object with "name$":"path" structure as required by Webpack
+      // reducing array of objects to one object with "name$":"path" structure as required by Webpack
       .reduce((a, b) => {
         const key = Object.keys(b)[0] //we know that it has only one key
         const value = b[key]
@@ -78,10 +75,10 @@ const getConfig = (env) => {
         query: {
           presets: ['react', 'es2015', 'stage-2'],
           cacheDirectory: false,
-          compact: true, //so babel wont output whitespaces and stuff, speeds up build a little
+          compact: true, // so babel wont output whitespaces and stuff, speeds up build a little
           plugins: [
-            'transform-react-constant-elements', //compile-time optimizations
-            'transform-react-inline-elements' //compile-time optimizations
+            'transform-react-constant-elements', // compile-time optimizations
+            'transform-react-inline-elements' //c ompile-time optimizations
           ]
         }
       }])
@@ -111,15 +108,15 @@ const getConfig = (env) => {
         }
       }, {
         test: /\.scss$/,
-        //loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
-        //loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
+        // loaders: ['style', ExtractTextPlugin.extract('css?localIdentName=[name]_[local]_[hash:base64:3]!sass')],
+        // loaders: ['style', 'css?localIdentName=[name]_[local]_[hash:base64:3]', 'sass'],
         loader: 'style!css!postcss!sass',
         exclude: /node_modules/,
         include: path.join(consts.SRC_DIR, 'client')
       }])
     }
 
-    //common loaders
+    // common loaders
     loaders = loaders.concat([{
       test: /\.json$/,
       loader: 'json-loader',
@@ -146,7 +143,7 @@ const getConfig = (env) => {
       alias: buildResolveAliases(preBuiltVendorDeps)
     },
     module: {
-      noParse: toArray(preBuiltVendorDeps),
+      noParse: _.values(preBuiltVendorDeps),
       loaders: getLoaders(env),
     }
   }

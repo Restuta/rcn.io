@@ -10,9 +10,9 @@ const getConfig = require('./webpack/common-config').getConfig
 const commonConfig = getConfig('prod')
 
 module.exports = {
-  //devtool: 'source-map',
+  devtool: 'source-map',
   // devtool: 'cheap-module-source-map',
-  devtool: 'cheap-module-source-map',
+  // devtool: 'cheap-module-source-map',
   target: 'node',
   cache: false,
   debug: false,
