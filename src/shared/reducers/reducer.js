@@ -26,6 +26,8 @@ const toByIdMap = objects => objects.reduce((map, x) => {
   return map
 }, {})
 
+const setEventsCalendarId = calendarId => event => Object.assign({}, event, {calendarId})
+
 const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
@@ -60,16 +62,17 @@ const initialState = {
   },
 
   events: toByIdMap(
-    norcalMtb2016Events
-    .concat(ncnca2016Events)
-    .concat(ncnca2017Events)
-    .concat(usac2017Events)
+    norcalMtb2016Events.map(setEventsCalendarId('cal-norcal-mtb-2016'))
+    .concat(ncnca2016Events.map(setEventsCalendarId('cal-ncnca-2016')))
+    .concat(ncnca2017Events.map(setEventsCalendarId('cal-ncnca-2017')))
+    .concat(usac2017Events.map(setEventsCalendarId('cal-usac-2017')))
   ),
 
   //calenars map by id
   calendars: {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
+      slug: 'norcal-mtb',
       year: 2016,
       name: '2016 NorCal MTB Calendar',
       highlight: {
@@ -82,6 +85,7 @@ const initialState = {
     },
     ['cal-ncnca-2017-draft']: {
       id: 'cal-ncnca-2017-draft',
+      slug: 'ncnca-2017',
       year: 2017,
       name: '2017 NCNCA Calendar',
       // highlight: {
@@ -97,6 +101,7 @@ const initialState = {
     },
     ['cal-ncnca-2018-draft']: {
       id: 'cal-ncnca-2018-draft',
+      slug: 'ncnca-2017',
       year: 2018,
       name: '2018 NCNCA Calendar',
       // highlight: {
@@ -113,6 +118,7 @@ const initialState = {
     },
     ['cal-ncnca-2016']: {
       id: 'cal-ncnca-2016',
+      slug: 'ncnca-2016',
       year: 2016,
       name: '2016 NCNCA Calendar',
       // highlight: {
@@ -127,6 +133,7 @@ const initialState = {
     },
     ['cal-ncnca-2017']: {
       id: 'cal-ncnca-2017',
+      slug: 'ncnca-2017',
       year: 2017,
       name: '2017 NCNCA Calendar',
       // highlight: {
@@ -141,6 +148,7 @@ const initialState = {
     },
     ['cal-usac-2017']: {
       id: 'cal-usac-2017',
+      slug: 'usac-2017',
       year: 2017,
       name: '2017 USA Cycling Calendar',
       // highlight: {

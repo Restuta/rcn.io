@@ -16,6 +16,13 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .back-to-calendar {
+    position: absolute;
+    z-index: 1;
+    left: 4rem;
+    top: 1rem;
+  }
 }
 
 .EventDetails {

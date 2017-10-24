@@ -104,6 +104,8 @@ class EventDetails extends Component {
       promoterInfo,
     } = this.props.event
 
+    const { calendar } = this.props
+
     // TODO: migrate old events to have flyer section and not just "flyerUrl" property
     const { movedToEvent } = this.props
 
@@ -312,6 +314,7 @@ class EventDetails extends Component {
         : (
           // eslint-disable-next-line
           <div className='EventDetails-container'>
+            <Link className="back-to-calendar" to={`/calendars/${calendar.slug}?past=visible`}>Back to {calendar.name}</Link>
             {eventDetailsComponent}
           </div>
         )
@@ -321,6 +324,7 @@ class EventDetails extends Component {
 
 EventDetails.propTypes = {
   event: PropTypes.object.isRequired,
+  calendar: PropTypes.object,
   // if event status is "Moved" this would contain event it's moved to
   movedToEvent: PropTypes.object,
 }
@@ -328,7 +332,7 @@ EventDetails.propTypes = {
 export { EventDetails }
 
 import { connect } from 'react-redux'
-import { getEvent } from 'shared/reducers/reducer.js'
+import { getEvent, getCalendar } from 'shared/reducers/reducer.js'
 import { replaceRoutedModal } from 'shared/actions/actions.js'
 
 export default connect(
@@ -337,13 +341,14 @@ export default connect(
     // calendar: getCalendar()
 
     const event = getEvent(state, ownProps.params.eventId)
+    const calendar = getCalendar(state, {calendarId: event.calendarId})
     let movedToEvent
 
     if (event.status === Statuses.moved && event.movedToEventId) {
       movedToEvent = getEvent(state, event.movedToEventId)
     }
 
-    return { event, movedToEvent }
+    return { event, movedToEvent, calendar }
   },
   (dispatch, ownProps) => ({
     replaceRoutedModal: (path) => dispatch(replaceRoutedModal({path, hasPadding: false}))
