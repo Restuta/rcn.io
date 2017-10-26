@@ -26,7 +26,7 @@ const toByIdMap = objects => objects.reduce((map, x) => {
   return map
 }, {})
 
-const setEventsCalendarId = calendarId => event => Object.assign({}, event, {calendarId})
+const setEventsCalendarId = calendarId => event => ({...event, calendarId})
 
 const toArrayOfIds = objects => objects.map(x => x.id)
 
