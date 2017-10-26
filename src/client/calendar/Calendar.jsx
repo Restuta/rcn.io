@@ -212,7 +212,7 @@ class Calendar extends Component {
     let subTitleComp
     const eventsTotalFromToday = events.getTotalFrom(today)
 
-    if (showPastEvents || eventsTotalFromToday === 0) {
+    if (showPastEvents) {
       subTitleComp = (
         <h3 className="sub-title">
           {events.total} events
@@ -227,7 +227,7 @@ class Calendar extends Component {
     } else {
       subTitleComp = (
         <h3 className="sub-title">
-          {eventsTotalFromToday} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
+          {eventsTotalFromToday || 'No'} upcoming events from <span className="today-date">Today ({today.format('MMMM Do')})</span>
           {shouldShowHidePastLink
             && (
             <a href="?past=visible" className="show-more-or-less" onClick={this.onShowFullHidePastClick}>
