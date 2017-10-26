@@ -9,7 +9,7 @@ import {
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
-
+import { partialRight, concat, keyBy } from 'lodash'
 
 /*  current event flow:
     => read from file
@@ -19,15 +19,8 @@ import Colors from 'client/styles/colors'
     => selector: create event's map by date
 */
 
-//TODO bc: set calendar ID to every event, but don't do it in this function
-// it should be done at the time of creation of imported events
-const toByIdMap = objects => objects.reduce((map, x) => {
-  map[x.id] = x
-  return map
-}, {})
-
-const setEventsCalendarId = calendarId => event => ({...event, calendarId})
-
+const toByIdMap = partialRight(keyBy, 'id')
+const setCalendarId = calendarId => event => ({...event, calendarId})
 const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
@@ -62,10 +55,12 @@ const initialState = {
   },
 
   events: toByIdMap(
-    norcalMtb2016Events.map(setEventsCalendarId('cal-norcal-mtb-2016'))
-    .concat(ncnca2016Events.map(setEventsCalendarId('cal-ncnca-2016')))
-    .concat(ncnca2017Events.map(setEventsCalendarId('cal-ncnca-2017')))
-    .concat(usac2017Events.map(setEventsCalendarId('cal-usac-2017')))
+    concat(
+      norcalMtb2016Events.map(setCalendarId('cal-norcal-mtb-2016')),
+      ncnca2016Events.map(setCalendarId('cal-ncnca-2016')),
+      ncnca2017Events.map(setCalendarId('cal-ncnca-2017')),
+      usac2017Events.map(setCalendarId('cal-usac-2017')),
+    )
   ),
 
   //calenars map by id
