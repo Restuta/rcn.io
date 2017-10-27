@@ -11,6 +11,7 @@ import GoogleStaticMap from './GoogleStaticMap.jsx'
 import AddressLink from './AddressLink.jsx'
 import Icon from 'atoms/Icon.jsx'
 import { getEventColor } from 'client/calendar/utils/event-colors.js'
+import getCalendarSlug from 'client/calendar/utils/get-calendar-slug.js'
 import { locationToAddressStr } from 'client/calendar/utils/location.js'
 import { Statuses, EventTypes } from 'client/calendar/events/types.js'
 import classnames from 'classnames'
@@ -314,7 +315,7 @@ class EventDetails extends Component {
         : (
           // eslint-disable-next-line
           <div className='EventDetails-container'>
-            <Link className="back-to-calendar" to={`/calendars/${calendar.slug}?past=visible`}>Back to {calendar.name}</Link>
+            <Link className="back-to-calendar" to={`/calendars/${getCalendarSlug(calendar)}?past=visible`}>Back to {calendar.name}</Link>
             {eventDetailsComponent}
           </div>
         )
