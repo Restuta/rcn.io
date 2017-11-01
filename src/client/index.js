@@ -21,7 +21,7 @@ import 'public/img/safari-pinned-tab.svg'
 // }
 
 import 'utils/polyfills'
-import { render } from 'react-dom'
+import { hydrate } from 'react-dom'
 import Grid from 'client/styles/grid.js'
 import { getConfiguredWithStoreRouter } from './get-router.js'
 
@@ -37,7 +37,7 @@ let renderApp = function() {
 
   prevContainerWidth = containerWidth
 
-  render(getConfiguredWithStoreRouter(containerWidth), document.getElementById('root'))
+  hydrate(getConfiguredWithStoreRouter(containerWidth), document.getElementById('root'))
 }
 
 window.addEventListener('resize', renderApp)

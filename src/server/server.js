@@ -9,7 +9,7 @@ import ms from 'ms'
 import mime from 'mime-types'
 
 import React from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToNodeStream } from 'react-dom/server'
 import { createMemoryHistory, match, RouterContext } from 'react-router'
 
 //getting compiled by webpack function, so we don't have to deal with JSX on the server and it's transpilation
@@ -24,56 +24,61 @@ import { syncHistoryWithStore } from 'react-router-redux'
 
 const RootDir = path.join(__dirname, '../..')
 const EnvIsProd = process.env.NODE_ENV === 'production'
-const morganProdFormatString = ':remote-addr :remote-user :user-agent (content-length: :res[content-length])'
-  + ' :status :method :url :res[content-length] - :response-time[0]ms'
+const morganProdFormatString =
+  ':remote-addr :remote-user :user-agent (content-length: :res[content-length])' +
+  ' :status :method :url :res[content-length] - :response-time[0]ms'
 const morganDevFormatString = ':status :method :url - :response-time[0]ms'
 const Config = {
   morganLogType: EnvIsProd ? morganProdFormatString : morganDevFormatString,
-  port: EnvIsProd ? process.env.PORT : 3888,
+  port: EnvIsProd ? process.env.PORT : 3888
 }
 
 const app = express()
 app.disable('x-powered-by') //hides that we use express
 app.use(compression()) // should be first middleware
 app.use(morgan(Config.morganLogType))
-app.use(express.static(path.join(RootDir, '/dist'), {
-  maxAge: '14 days',
-  //overriding cache control per-resourse
-  setHeaders: (res, path, stat) => {
-    const mimeType = mime.lookup(path)
-    const cssAndJsMaxAge = ms('14 days') / 1000 //max age should be in seconds
+app.use(
+  express.static(path.join(RootDir, '/dist'), {
+    maxAge: '14 days',
+    //overriding cache control per-resourse
+    setHeaders: (res, path, stat) => {
+      const mimeType = mime.lookup(path)
+      const cssAndJsMaxAge = ms('14 days') / 1000 //max age should be in seconds
 
-    if (mimeType === 'text/css') {
-      res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
-    } else if (mimeType === 'application/javascript') {
-      if (path.endsWith('vendor.bundle.js')) {
-        //vendor scripts can be "public" and cached by intermediate caches
+      if (mimeType === 'text/css') {
         res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
-      } else {
-        //non-vendor scripts can contain sensitive information and should not be cached by intermediate caches
-        res.setHeader('Cache-Control', `private, max-age=${cssAndJsMaxAge}`)
+      } else if (mimeType === 'application/javascript') {
+        if (path.endsWith('vendor.bundle.js')) {
+          //vendor scripts can be "public" and cached by intermediate caches
+          res.setHeader('Cache-Control', `public, max-age=${cssAndJsMaxAge}`)
+        } else {
+          //non-vendor scripts can contain sensitive information and should not be cached by intermediate caches
+          res.setHeader('Cache-Control', `private, max-age=${cssAndJsMaxAge}`)
+        }
       }
     }
-  }
-}))
+  })
+)
 
-app.use(device.capture({parseUserAgent: true}))
+app.use(device.capture({ parseUserAgent: true }))
 
 //middleware to sign requests to upload files to AWS S3
-app.use('/s3', require('server/routers/s3-router')({
-  bucket: 'rcn-io',
-  directory: '/ncnca/flyers', //optional to calculate full path
-  region: 'us-west-1', //optional
-  headers: {'Access-Control-Allow-Origin': '*'}, // optional
-  ACL: 'public-read' // this is default
-}))
-
+app.use(
+  '/s3',
+  require('server/routers/s3-router')({
+    bucket: 'rcn-io',
+    directory: '/ncnca/flyers', //optional to calculate full path
+    region: 'us-west-1', //optional
+    headers: { 'Access-Control-Allow-Origin': '*' }, // optional
+    ACL: 'public-read' // this is default
+  })
+)
 
 //gets container width by device type, we don't know for sure, so we use best guess and return
 //pessimistically smaller containers
 //TODO: this can be paired with "auto" height, so height would be calculated based on content size in
 //browser automatically
-const getContainerWidth = (deviceType) => {
+const getContainerWidth = deviceType => {
   const typeToWidthMap = {
     phone: ContainerWidth.XS,
     tablet: ContainerWidth.MD,
@@ -85,32 +90,20 @@ const getContainerWidth = (deviceType) => {
   }
 
   //for undetected using most common resolution that would fit most devices
-  return (typeToWidthMap[deviceType] || ContainerWidth.MD)
+  return typeToWidthMap[deviceType] || ContainerWidth.MD
 }
 
-
 //TODO: reconsile this with get-routes.js
-const Wrapper = (props) => {
-  const buildCreateElement = (containerW) =>
-    (Component, props) => <Component {...props} containerWidth={containerW}/>
+const Wrapper = props => {
+  const buildCreateElement = containerW => (Component, props) => <Component {...props} containerWidth={containerW} />
   const { containerWidth, store } = props
 
   return (
     <Provider store={store}>
-      <RouterContext {...props}  createElement={buildCreateElement(containerWidth)}/>
+      <RouterContext {...props} createElement={buildCreateElement(containerWidth)} />
     </Provider>
   )
 }
-
-let cache = {}
-const CACHE_DURATION = ms('120m')
-
-setInterval(() => {
-  if (Object.keys(cache).length > 0) {
-    cache = {}
-    console.log('cleared cache...') //eslint-disable-line
-  }
-}, CACHE_DURATION)
 
 const widgetsIndexHtml = path.join(RootDir, '/dist/widgets/index.html')
 const widgetsIndexHtmlContent = fs.readFileSync(widgetsIndexHtml, 'utf8')
@@ -137,11 +130,11 @@ app.get('*', function(req, res, next) {
 
   const memoryHistory = createMemoryHistory(req.path)
   //TODO: setup data fetching https://github.com/StevenIseki/react-router-redux-example/blob/master/serverProd.js
-    // it uses "fetchData" async actions in all wrapper components, not sure this is ideal approach for us
+  // it uses "fetchData" async actions in all wrapper components, not sure this is ideal approach for us
   const store = configureStore()
   const history = syncHistoryWithStore(memoryHistory, store)
 
-  match({history, routes, location: req.url}, (error, redirectLocation, renderProps) => {
+  match({ history, routes, location: req.url }, (error, redirectLocation, renderProps) => {
     if (error) {
       res.status(500).send(error.message)
     } else if (redirectLocation) {
@@ -149,33 +142,27 @@ app.get('*', function(req, res, next) {
     } else if (renderProps) {
       //TODO: clean this up, may not be neccessary
       // just look away, this is ugly & wrong https://github.com/callemall/material-ui/pull/2172
-      global.navigator = {userAgent: req.headers['user-agent']}
-
-      const containerWidth = getContainerWidth(req.device.type)
-      let fullHtml
-      const key = req.url + containerWidth
-
-      //since rendering is very simple so far we can cache it entirely in-memory
-      if (cache[key]) {
-        fullHtml = cache[key]
-      } else {
-        const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth} store={store}/>)
-        fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
-        cache[key] = fullHtml
-      }
-
-      // const containerWidth = getContainerWidth(req.device.type)
-      // const content = renderToString(<Wrapper {...renderProps} containerWidth={containerWidth}/>)
-      // const fullHtml = indexHtmlContent.replace('<div id="root"></div>', `<div id="root">${content}</div>`)
+      global.navigator = { userAgent: req.headers['user-agent'] }
 
       res.setHeader('Cache-Control', 'private, max-age=0, must-revalidate')
-      res.send(fullHtml)
+
+      const [htmlBeforeReact, htmlAfterReact] = indexHtmlContent.split('<div id="root"></div>')
+      res.write(htmlBeforeReact)
+      res.write('<div id="root">')
+
+      const containerWidth = getContainerWidth(req.device.type)
+      const reactStream = renderToNodeStream(<Wrapper {...renderProps} containerWidth={containerWidth} store={store} />)
+      reactStream.pipe(res, { end: false })
+      reactStream.on('end', () => {
+        res.write('</div>')
+        res.write(htmlAfterReact)
+        res.end()
+      })
     } else {
       res.status(404).send('Not found')
     }
   })
 })
-
 
 const server = app.listen(Config.port, function() {
   const host = server.address().address === '::' ? 'localhost' : server.address().address
