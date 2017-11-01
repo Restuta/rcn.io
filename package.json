@@ -7,7 +7,7 @@
     "clean:server": "rimraf dist-server",
     "clean:all": "npm run clean:client && npm run clean:server && rimraf node_modules",
     "build:webpack-client": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js --progress --bail",
-    "build:dll": "webpack --config webpack.config.dev.dll.js --progress --bail",
+    "build:dll": "webpack --config webpack.config.dev.dll.js --progress",
     "build:webpack-server": "cross-env NODE_ENV=production webpack --config webpack.config.server.prod.js --progress --bail",
     "build:client": "npm run clean:client && npm run build:webpack-client",
     "build:server": "npm run clean:server && npm run build:webpack-server",
@@ -118,9 +118,9 @@
     "lodash": "^4.17.4",
     "moment": "^2.15.1",
     "moment-timezone": "0.5.12",
-    "prop-types": "^15.5.10",
-    "react": "next",
-    "react-dom": "next",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-modal2": "^5.0.0",
     "react-pure-render": "^1.0.1",
     "react-redux": "^5.0.2",
@@ -132,7 +132,7 @@
     "redux-saga": "^0.12.0",
     "regenerator-runtime": "^0.9.5",
     "reselect": "^2.5.4",
-    "svg-inline-react": "^2.1.0"
+    "svg-inline-react": "^3.0.0"
   },
   "engines": {
     "node": "6.2.1"
