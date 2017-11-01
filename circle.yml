@@ -2,7 +2,7 @@ general:
 
 machine:
   node:
-    version: 6.10.3
+    version: 8.6.0
 
 test:
   override:
