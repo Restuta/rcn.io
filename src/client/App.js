@@ -17,6 +17,12 @@ class App extends Component {
   onModalClose = () =>
     this.props.closeRoutedModal()
 
+  componentDidMount() {
+    if (window && window.innerWidth) {
+      this.setState({containerWidth: window.innerWidth})
+	}
+  }
+
   componentWillReceiveProps(nextProps) {
     // save prev children to render in background when modal is open
     if ((
@@ -28,10 +34,18 @@ class App extends Component {
       // save the old children (just like animation)
       this.previousChildren = this.props.children
     }
+
+    if (nextProps.containerWidth !== this.state.containerWidth) {
+      this.setState({containerWidth: nextProps.containerWidth})
+	}
+
+    // console.log('NEXT PROPS', nextProps)
   }
 
   render() {
+    // console.log('APP RENDER')
     const { location, modal, useStaticLinks } = this.props
+    const { containerWidth } = this.state
     let shouldRenderInModal = modal.isOpen
 
     const appLevelClasses = classnames('App',
@@ -39,12 +53,12 @@ class App extends Component {
     )
 
     // adding props to children, passing browser-calculated container size to be exact */
-    this.children = React.cloneElement(this.props.children, {containerWidth: this.props.containerWidth})
+    this.children = React.cloneElement(this.props.children, {containerWidth})
 
     return (
       <div className={appLevelClasses}>
         {__ENV.Dev
-          && <DebugGrid containerWidth={this.props.containerWidth}/>}
+          && <DebugGrid containerWidth={containerWidth}/>}
 
         <TopNavbar useStaticLinks={useStaticLinks} location={location}/>
 
