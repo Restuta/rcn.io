@@ -52,7 +52,8 @@ const config = {
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('development')
+        'NODE_ENV': JSON.stringify('development'),
+        'SSR': JSON.stringify(process.env.SSR)
       },
       '__ENV' : {
         'Prod': false,

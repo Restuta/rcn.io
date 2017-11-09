@@ -20,7 +20,7 @@ class App extends Component {
   componentDidMount() {
     if (window && window.innerWidth) {
       this.setState({containerWidth: window.innerWidth})
-	}
+	  }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -57,7 +57,7 @@ class App extends Component {
 
     return (
       <div className={appLevelClasses}>
-        {__ENV.Dev
+        {(__ENV.Dev && !process.env.SSR)
           && <DebugGrid containerWidth={containerWidth}/>}
 
         <TopNavbar useStaticLinks={useStaticLinks} location={location}/>
