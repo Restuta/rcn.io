@@ -131,6 +131,7 @@
 * [pexels.com](https://www.pexels.com/?ref=producthunt) - free high quality photos
 
 ### Inspiration
+* [2017 in design from klart.co](https://klart.co/one-year-of-design)
 * [Spotify.my](http://spotify.me/) modern (as of 2017 and beautiful design)
 * [Punkave, nice, clean design](https://punkave.com/)
 * [Beautiful website] (https://www.strv.com/)
