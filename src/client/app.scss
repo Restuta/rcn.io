@@ -19,6 +19,19 @@ p {
   margin-bottom: 1rem;
 }
 
+// not needed after upgrade to boostrap 4
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
 a:focus {
   text-decoration: none;
 }
