@@ -5,14 +5,13 @@ import Col from 'atoms/Col.jsx'
 import Colors from 'styles/colors'
 import { Weekdays } from './utils/date-utils'
 import { pxToRem } from 'styles/typography'
-import Grid from 'styles/grid'
 
 const pxToRems = (px) => pxToRem(px) + 'rem'
 
 
 export default class WeekdaysHeader extends Component {
   render() {
-    const {sizes, containerWidth} = this.props
+    const {sizes} = this.props
 
     const rowStyle = {
       flexWrap: 'nowrap'
@@ -21,7 +20,7 @@ export default class WeekdaysHeader extends Component {
     const colStyle = {
       minHeight: '4rem',
       textAlign: 'right',
-      backgroundColor: Colors.bodyBg,
+      // backgroundColor: Colors.bodyBg,
       //borderRight: '1px solid #e0e0e0',
       //marginRight: '-1px'
       //position: 'relative',
@@ -34,27 +33,21 @@ export default class WeekdaysHeader extends Component {
       position: 'relative',
       top: pxToRems(2),
       textTransform: 'uppercase',
-      textAlign: ''
+      textAlign: 'right'
       //fontFamily: 'Oswald',
        //fontWeight: 700,
     }
 
 
     const columns = sizes.map((size, i) => {
-      const weekdaysNameStyle = Object.assign({}, weekdaysNameStyleBase)
+      const weekdaysNameStyle = { ...weekdaysNameStyleBase }
 
       if (Weekdays[i].short.toLowerCase() === 'sat' || Weekdays[i].short.toLowerCase() === 'sun') {
-        weekdaysNameStyle.color = Colors.red400
+        weekdaysNameStyle.color = Colors.primary
         weekdaysNameStyle.fontWeight = 900
       }
 
-      let weekdayLabel
-
-      if (containerWidth <= Grid.ContainerWidth.SM) {
-        weekdayLabel = Weekdays[i].short[0]
-      } else {
-        weekdayLabel = Weekdays[i].short
-      }
+      const weekdayLabel = Weekdays[i].short[0] // first letter
 
       return (
         <Col key={i} xs={size} style={colStyle} className="WeekDaysHeader-day">
@@ -63,10 +56,8 @@ export default class WeekdaysHeader extends Component {
       )
     })
 
-    const style = {}
-
     return (
-      <div className="WeekDaysHeader" style={style}>
+      <div className="WeekDaysHeader">
         <Row style={rowStyle}>
           {columns}
         </Row>
