@@ -13,13 +13,25 @@
   padding-left: 2rem;
   padding-right: 2rem;
 
+  .header-rcn {
+    margin-top: 4rem;
+    padding-left: 4rem;
+  }
+
   .section-main {
-    margin-top: 8rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(40, 60, 75, 0.05) 0px 10px 20px;
+    /* margin: 15px; */
+    // flex: 1 1 60%;
+    position: relative;
+    padding: 4rem;
   }
 
   .section-next {
     flex: 1 0 auto; //for footer to stick to bottom
-    // margin-bottom: 40rem;
+    padding: 4rem;
   }
 
   .section-badges {
