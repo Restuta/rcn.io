@@ -8,6 +8,7 @@
 
 .TopNavbar {
   animation: fade-down 2s 1;
+  border-bottom: 1px solid $blue-grey-50;
 
   //@include box-shadow-lvl-0();
   //@include box-shadow-like-slack();
