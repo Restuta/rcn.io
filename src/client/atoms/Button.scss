@@ -62,7 +62,8 @@
   &.btn-secondary.disabled,
   &.btn-secondary.disabled:hover {
     color: $body-color;
-    background-color: darken($body-bg-color, 15%);
+    background-color: $grey-350;
+    border: 1px solid $grey-400;
   }
 
   &.btn-primary.disabled
