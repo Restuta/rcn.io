@@ -13,7 +13,10 @@
   },
   "globals" : {
     "__ENV": true,
-    "analytics": true
+    "analytics": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
   },
   "plugins": [
     "react"
