@@ -23,3 +23,11 @@ module.exports = {
   normalizeSpaces,
   toUpperCaseFirst
 }
+
+
+/*
+
+scrape events => save json => push to github repo
+convert to RCN events => save json => push to different github repo
+
+ */
