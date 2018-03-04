@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "release:patch": "npm test && npm version patch && git push --all && git push --tags && npm publish",
-    "release:minor": "npm test && npm version minor && git push --all && git push --tags && npm publish",
-    "release:major": "npm test && npm version major && git push --all && git push --tags && npm publish"
+    "release": "npm test && npm publish"
   },
   "repository": {
     "type": "git",
