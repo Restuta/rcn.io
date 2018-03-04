@@ -37,14 +37,9 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
+        <h2 className="header-regular w-300 text-5 header-rcn">RCN.IO</h2>
         <section className="section-main">
-          <h1 className="header-regular">RCN.io</h1>
-          <p className="text-5 header-regular w-300">
-            Calendars for bike racers.
-          </p>
-          <p className="text-5 header-regular w-300 margin top-4">
-            Check out:&nbsp;
-          </p>
+          <h1 className="header-regular text-7 w-900 margin bot-4">Calendars for bike racers</h1>
           <ul className="text-4 cal-list">
             <li><Link to={'/calendars/usac-2017?past=visible'}>2017 USAC Calendar</Link></li>
             <li><Link to={'/calendars/ncnca-2017?past=visible'}>2017 NCNCA Calendar</Link></li>
