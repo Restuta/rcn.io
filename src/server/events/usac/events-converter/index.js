@@ -11,7 +11,7 @@ const {
   concat,
 } = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road.json')
-const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
+const { createShortEventId, createPrettyEventId } = require('@rcn/events-core/gen-event-id')
 const {
   parseDate,
   parseLocation,

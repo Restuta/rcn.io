@@ -1,6 +1,6 @@
 import moment from 'moment'
 import { hash } from 'client/utils/math'
-import { createEventIdPrefix } from 'shared/events/gen-event-id'
+import { createEventIdPrefix } from '@rcn/events-core/gen-event-id'
 
 /*
 Source Event format:
