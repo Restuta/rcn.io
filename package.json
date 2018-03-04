@@ -22,7 +22,7 @@
     "reinstall": "npm run clean:all && npm i",
     "postinstall": "npm run build",
     "ngrok": "ngrok http 8888",
-    "tape-tests": "cross-env NODE_PATH=./src tape -r './src/tests/index.js' 'src/**/tests/**/*.js'",
+    "tape-tests": "cross-env NODE_PATH=./src tape -r './src/tests/index.js' 'src/client/**/tests/**/*.js'",
     "test:one": "cross-env NODE_PATH=./src tape -r './src/tests/index.js'",
     "test": "npm run tape-tests | tap-spec",
     "test:dot": "npm run tape-tests | tap-dot || true",
@@ -109,7 +109,8 @@
     "webpack-node-externals": "^1.5.4",
     "why-did-you-update": "0.0.8",
     "restuta-react-dropzone-s3-uploader": "^0.20.3",
-    "bootstrap": "4.0.0-alpha.2"
+    "bootstrap": "4.0.0-alpha.2",
+    "@rcn/events-core": "*"
   },
   "dependencies": {
     "classnames": "^2.2.5",

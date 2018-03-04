@@ -1,4 +1,4 @@
- /* eslint-disable no-console */
+/* eslint-disable no-console */
 import ncnca2017Events from '../2016-ncnca-events'
 import schema from './event-schema'
 import Joi from 'joi'
@@ -37,8 +37,6 @@ test('', t => {
 
   t.end()
 })
-
-
 
 // prettier-ignore
 // const errors = eventsToValidate
