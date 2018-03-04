@@ -170,9 +170,7 @@ const validateOverSchema = rcnEvent => {
 
 // main processing pipeline
 const processEvents = (previousEvents) => flow(
-  map(convertUsacEventToRcnEvent(
-    groupBy('usacPermit', previousEvents)
-  )),
+  map(convertUsacEventToRcnEvent(groupBy('usacPermit', previousEvents))),
   // , map(log.debug)
   updateEventsThatAreNoLongerOnUsac(previousEvents),
   updateRegLinks(previousEvents),
