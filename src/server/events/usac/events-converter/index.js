@@ -1,19 +1,38 @@
 const log = require('server/utils/log')
-const { flow, map, trim, partial, groupBy, find, first, filter, concat } = require('lodash/fp')
+const {
+  flow,
+  map,
+  trim,
+  partial,
+  groupBy,
+  find,
+  first,
+  filter,
+  concat,
+} = require('lodash/fp')
 const usac2017CnRoadEvensRaw = require('../raw/2017-USAC-CN-road.json')
 const { createShortEventId, createPrettyEventId } = require('shared/events/gen-event-id')
-const { parseDate, parseLocation, parseDiscipline, parseType, parsePromoter } = require('./parsers')
-const { Statuses } = require('client/calendar/events/types')
+const {
+  parseDate,
+  parseLocation,
+  parseDiscipline,
+  parseType,
+  parsePromoter,
+} = require('./parsers')
+const { Statuses } = require('@rcn/events-core/event-types')
 
 const Joi = require('joi')
-const schema = require('client/temp/data/tests/event-schema')
+const schema = require('@rcn/events-core/event.schema')
 
 const { writeJsonToFile } = require('./file-utils')
 const path = require('path')
 
 // TODO: check if file exists, if it doesn't assume all events are new
 const relativePathToConvertedEvents = '../../../../client/temp/data/2017-usac-events.json'
-const absolutePathToConvertedEvents = path.resolve(__dirname, relativePathToConvertedEvents)
+const absolutePathToConvertedEvents = path.resolve(
+  __dirname,
+  relativePathToConvertedEvents
+)
 const previousEvents = require(relativePathToConvertedEvents)
 
 const createRcnEventPropsFromUsac = rawUsacEvent => {
@@ -27,14 +46,14 @@ const createRcnEventPropsFromUsac = rawUsacEvent => {
     type: parseType({
       nameRaw: rawUsacEvent.name,
       discipline: discipline,
-      competitive: rawUsacEvent.competitive
+      competitive: rawUsacEvent.competitive,
     }),
     location: parseLocation(rawUsacEvent.location),
     usacPermit: rawPermit,
     usac: {
       status: trim(rawUsacEvent.status),
       category: trim(rawUsacEvent.usacCategory),
-      type: trim(rawUsacEvent.usacEventType)
+      type: trim(rawUsacEvent.usacEventType),
     },
     websiteUrl: encodeURI(trim(rawUsacEvent.eventWebSite)),
     registrationUrl: encodeURI(trim(rawUsacEvent.registrationLink)),
@@ -77,17 +96,22 @@ const convertUsacEventToRcnEvent = previousEventsByPermit => rawUsacEvent => {
   const existingRcnEvents = previousEventsByPermit[trim(rawUsacEvent.permit)]
 
   const existingRcnEvent = existingRcnEvents
-    ? (existingRcnEvents.length === 1)
+    ? existingRcnEvents.length === 1
       ? first(existingRcnEvents)
-      // if multiple events, match by discipline, since ther ecould be same event for different disciplines
-      : find(x => x.discipline === parseDiscipline(rawUsacEvent.discipline), existingRcnEvents)
-  : undefined
+      : // if multiple events, match by discipline, since ther ecould be same event for different disciplines
+        find(
+          x => x.discipline === parseDiscipline(rawUsacEvent.discipline),
+          existingRcnEvents
+        )
+    : undefined
 
   if (existingRcnEvent && existingRcnEvent.length > 1) {
-    log.error('Found two existing events with same discipline and permit number, '
-    + 'which means we should go to USAC and double-check WTF is going on. '
-    + 'This could also mean that event has been moved to a different date '
-    + 'and we need to add support for this.')
+    log.error(
+      'Found two existing events with same discipline and permit number, ' +
+        'which means we should go to USAC and double-check WTF is going on. ' +
+        'This could also mean that event has been moved to a different date ' +
+        'and we need to add support for this.'
+    )
     log.debug(existingRcnEvent)
   }
 
@@ -109,10 +133,13 @@ const updateEventsThatAreNoLongerOnUsac = previousEvents => justConvertedEvents 
 
   const eventsThatAreNoLongerOnUsac = flow(
     filter(event => !justConvertedEventsByPermit[event.usacPermit]),
-    map(event => Object.assign({}, event, {
-      status: Statuses.canceled,
-      cancelationReason: 'Unknown, event is likely canceled, since it got removed from USAC website.'
-    })),
+    map(event =>
+      Object.assign({}, event, {
+        status: Statuses.canceled,
+        cancelationReason:
+          'Unknown, event is likely canceled, since it got removed from USAC website.',
+      })
+    )
   )(previousEvents)
 
   if (eventsThatAreNoLongerOnUsac.length > 0) {
@@ -141,19 +168,18 @@ const updateRegLinks = previousEvents => justConvertedEvents => {
 
     return prevEvent
       ? {
-        ...justConvertedEvent,
-        registrationUrl: getRegistrationUrl(
-          justConvertedEvent.usac.status,
-          justConvertedEvent.registrationUrl,
-          prevEvent.registrationUrl,
-        )
-      }
+          ...justConvertedEvent,
+          registrationUrl: getRegistrationUrl(
+            justConvertedEvent.usac.status,
+            justConvertedEvent.registrationUrl,
+            prevEvent.registrationUrl
+          ),
+        }
       : justConvertedEvent
   })
 
   return processedEvents
 }
-
 
 const validateOverSchema = rcnEvent => {
   const { value: event, error } = Joi.validate(rcnEvent, schema)
@@ -169,25 +195,23 @@ const validateOverSchema = rcnEvent => {
 }
 
 // main processing pipeline
-const processEvents = (previousEvents) => flow(
-  map(convertUsacEventToRcnEvent(groupBy('usacPermit', previousEvents))),
-  // , map(log.debug)
-  updateEventsThatAreNoLongerOnUsac(previousEvents),
-  updateRegLinks(previousEvents),
-  map(validateOverSchema),
-  // TODO bc: order events by date so we write them to disk in somewhat consistent order
-  // only write to file in prod mode
-  (process.env.NODE_ENV === 'development'
-    ? x => Promise.resolve(x)
-    : partial(writeJsonToFile, [absolutePathToConvertedEvents])
+const processEvents = previousEvents =>
+  flow(
+    map(convertUsacEventToRcnEvent(groupBy('usacPermit', previousEvents))),
+    // , map(log.debug)
+    updateEventsThatAreNoLongerOnUsac(previousEvents),
+    updateRegLinks(previousEvents),
+    map(validateOverSchema),
+    // TODO bc: order events by date so we write them to disk in somewhat consistent order
+    // only write to file in prod mode
+    process.env.NODE_ENV === 'development'
+      ? x => Promise.resolve(x)
+      : partial(writeJsonToFile, [absolutePathToConvertedEvents])
   )
-)
 
-processEvents(previousEvents)(usac2017CnRoadEvensRaw)
-  .then((events) => {
-    log.green(`Converted ${usac2017CnRoadEvensRaw.length} events`)
-  })
-
+processEvents(previousEvents)(usac2017CnRoadEvensRaw).then(events => {
+  log.green(`Converted ${usac2017CnRoadEvensRaw.length} events`)
+})
 
 // const { uniq } = require('lodash/fp')
 // log.path(uniq, 'resultsUrl', processedEvents)

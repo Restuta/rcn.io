@@ -1,13 +1,13 @@
-const { Disciplines } = require('client/calendar/events/types')
+const { Disciplines } = require('@rcn/events-core/event-types')
 
 const parseDiscipline = rawDiscipline => {
   const usacToRcnDisciplinesMap = {
-    'Road': Disciplines.road,
-    'Track': Disciplines.track,
-    'Mountain': Disciplines.mtb,
-    'Cyclocross': Disciplines.cyclocross,
-    'Collegiate': Disciplines.collegiate,
-    'BMX': Disciplines.bmx
+    Road: Disciplines.road,
+    Track: Disciplines.track,
+    Mountain: Disciplines.mtb,
+    Cyclocross: Disciplines.cyclocross,
+    Collegiate: Disciplines.collegiate,
+    BMX: Disciplines.bmx,
   }
 
   const rcnDiscipline = usacToRcnDisciplinesMap[rawDiscipline]

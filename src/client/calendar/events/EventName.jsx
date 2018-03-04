@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 import Sizes from './card-sizes'
 import classnames from 'classnames'
 import './EventName.scss'
-import { Statuses, EventTypes } from 'calendar/events/types'
+import { Statuses, EventTypes } from '@rcn/events-core/event-types'
 import { createHighlightedStringComponent } from 'client/utils/component.js'
 
 const EventName = (props) => {
