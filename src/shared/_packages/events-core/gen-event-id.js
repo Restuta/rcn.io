@@ -58,8 +58,8 @@ const generatePrettyEventId = function() {
 
 module.exports = {
   // generates new pretty id including random part
-  generatePrettyEventId,
-  createEventIdPrefix,
-  createPrettyEventId,
-  createShortEventId,
+  generatePrettyEventId: generatePrettyEventId,
+  createEventIdPrefix: createEventIdPrefix,
+  createPrettyEventId: createPrettyEventId,
+  createShortEventId: createShortEventId,
 }

@@ -1,6 +1,6 @@
 {
   "name": "@rcn/events-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Core modules for RCN events",
   "main": "index.js",
   "private": false,
