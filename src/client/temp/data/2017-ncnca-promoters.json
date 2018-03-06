@@ -1,9 +1,4 @@
-/*eslint-disable */
-//last id 30019
-
-module.exports =  [
-  // Assinged to USAC
-
+[
   { "id": "prm-2630", "name": "Peninsula Velo Cycling Club", "contactName": "Tommy Evans", "contactInfo": "evans792@gmail.com", "usacClubId": 327},
   { "id": "prm-2631", "name": "Golden Chain Cyclists", "contactName": "Robert Leibold", "contactInfo": "velopro1@sonnet.com", "usacClubId": 2568 },
   { "id": "prm-4873", "name": "Red Kite Racing", "contactName": "Steve Rosefield", "contactInfo": "sr@redkiteracing.com, 510-882-8235", "usacClubId": 12690 },
@@ -11,18 +6,18 @@ module.exports =  [
   { "id": "prm-2634", "name": "Eagle Cycling Club", "contactName": "Felix Riesenberg", "contactInfo": "felix.riesenberg@sbcglobal.net", "usacClubId": 6211 },
   { "id": "prm-2638", "name": "Sacramento Golden Wheelmen", "contactName": "Steve Stuart", "contactInfo": "stuball52@sbcglobal.net, 916-205-0991", "usacClubId": 247 },
   { "id": "prm-2644", "name": "Ciclistas del Valle", "contactName": "John Kekuewa", "contactInfo": "jkekuewa@hotmail.com, 209-406-5683", "usacClubId": 12688},
-  //LGBRC
+
   { "id": "prm-2643", "name": "Los Gatos Bicycle Racing Club", "contactName": "Chris Twiggs", "contactInfo": "ctwiggs@gmail.com, (650) 279-8472", "usacClubId": 240 },
   { "id": "prm-30009", "name": "American Heart Association", "contactName": "Chris Aronhalt", "contactInfo": "chris.aronhalt@medalistsports.com", "usacClubId": 16522},
   { "id": "prm-2645", "name": "Rio Strada Racing", "contactName": "Ron Rouse",  "contactInfo": "ogeewiz682002@yahoo.com", "usacClubId": 885},
-  //SJBC
+
   { "id": "prm-2647", "name": "San Jose Bicycle Club", "contactName": "Todd Munk", "contactInfo": "todd.munk@gmail.com, (408) 375-3196", "usacClubId": 249 },
   { "id": "prm-2655", "name": "Alto Velo Racing Club", "contactName": "Mark Howard", "contactInfo": "Mark Howard, funkyhoward@gmail.com & Greg Cullen, gmcstationary2@gmail.com", "usacClubId": 3178 },
   { "id": "prm-2649", "name": "ChristianCycling", "contactName": "Steve Chew", "contactInfo": "swimchew@sbcglobal.net, (925) 918-3501", "usacClubId": 2226 },
   { "id": "prm-2642", "name": "Reno Wheelmen", "contactName": "Coby Rowe", "contactInfo": "coby@glaciercycling.com", "usacClubId": 1019 },
   { "id": "prm-30010", "name": "ol'Republic/SERT", "contactName": "Duane Strawser", "contactInfo": "oldproracer@gmail.com, (530) 263-3388", "usacClubId": 8943 },
   { "id": "prm-30011", "name": "Victory Velo Racing", "contactName": "Mark Perry", "contactInfo": "percorsomaestro@yahoo.com", "usacClubId": 11905 },
-  //DBC
+
   { "id": "prm-2650", "name": "Davis Bike Club", "contactName": "Jason Eisenrich", "contactInfo": "4-july-director@dbcraceteam.org, 530-902-8955", "usacClubId": 507 },
   { "id": "prm-30012", "name": "Main Street Elite p/b Main Street Bicycles", "contactName": "David Garzoli", "contactInfo": "david.garzoli@gmail.com", "usacClubId": 16561 },
   { "id": "prm-30014", "name": "USA Cycling Coaches", "contactName": "Nathanael Dunn", "contactInfo": "nate@datadrivenathlete.com", "usacClubId": 13940 },
@@ -34,15 +29,13 @@ module.exports =  [
   { "id": "prm-3125", "name": "University of California-Berkeley", "contactName": "Sebastian Gonzalez", "usacClubId": 3387 },
   { "id": "prm-30007", "name": "Dayka-Hackett", "contactName": "Eric Henson", "contactInfo": "sequoiaclassic@gmail.com ", "usacClubId": 14822},
   { "id": "prm-3479", "name": "Stanford University", "contactName": "Bernardo Tapia", "contactInfo": "bernardojtapia@gmail.com", "usacClubId": 3400 },
-  //VSRT
+
   { "id": "prm-2674", "name": "Valley Spokesmen", "contactName": "Ken Hernandez", "contactInfo": "kenhernandez52@yahoo.com", "usacClubId": 651},
   { "id": "prm-5116", "name": "Project Hero", "contactName": "Jack Shepard", "usacClubId": 13438 },
   { "id": "prm-30017", "name": "Performance Cycle Coaching", "contactName": "Daryl Hemenway", "usacClubId": 15066 },
   { "id": "prm-30008", "name": "Sea Otter Classic, Inc.", "contactName": "Jeff Frost", "contactInfo": "frosty@seaotterclassic.com", "usacClubId": 9870},
 
-  // this is werid edge case, it's a placeholder club on USAC! a lot of different, seemingly unrelated people use it
-  // https://www.usacycling.org/clubs/clubsearch.php?club=14196
-  { "id": "prm-30018", "name": "USA Cycling Race Director", "contactName": "<it depends, it's a generic club on USAC>", "usacClubId": 14196 },
+  { "id": "prm-30018", "name": "USA Cycling Race Director", "contactName": "It depends. It's a generic club on USAC, a lot of seemingly unrelated people use it.", "usacClubId": 14196 },
   { "id": "prm-30019", "name": "Shine Riders Co", "contactName": "Lindsay Currier", "usacClubId": 16676 },
   { "id": "prm-2672", "name": "Sierra Nevada/Reliable Racing p/b Kinetic Cycles", "contactName": "Jeff Tanforan", "contactInfo": "tan4an@gmail.com", "usacClubId": 9895 },
   { "id": "prm-2609", "name": "CCCX Cycling Club", "contactName": "Keith DeFiebre", "contactInfo": "kdefiebre@hotmail.com", "usacClubId": 14829 },
@@ -71,7 +64,7 @@ module.exports =  [
   { "id": "prm-3074", "name": "University of Nevada Cycling Team", "contactName": "Larry Sussman", "contactInfo": "sussmanlawrence@gmail.com"},
 
   { "id": "prm-3536", "name": "Cal Cycling", "contactName": "Reese Levine", "contactInfo": "reeselevine@berkeley.edu"},
-  //BBC
+
   { "id": "prm-2639", "name": "Berkeley Bicycle Club", "contactName": "Paul Hainsworth", "contactInfo": "paulhainsworth@gmail.com" },
   { "id": "prm-2831", "name": "Ciccarelli Enterprises", "contactName": "Rick Ciccarelli", "contactInfo": "ciccarelli@live.com, 209-605-7315" },
 
@@ -80,8 +73,6 @@ module.exports =  [
   { "id": "prm-2651", "name": "Contra Costa Cycling Club", "contactName": "Rick Lawton", "contactInfo": "tahiti7@ix.netcom.com" },
   { "id": "prm-5678", "name": "UC Davis Cycling", "contactName": "Jamien Bergstrom", "contactInfo": "zitobergstrom@gmail.com, (530) 638-5328"},
 
-
-  //put 2017 promoters above this line
 
   { "id": "prm-2665", "name": "2 Wheel Racing" },
   { "id": "prm-2660", "name": "Alta Alpina Cycling Club" },
@@ -179,7 +170,6 @@ module.exports =  [
   { "id": "prm-2676", "name": "Wells Fargo Racing Team / Contra Costa Cycling Club" },
   { "id": "prm-3007", "name": "Wenzel Coaching" },
 
-  //legacy partners used while importing data from NCNCA db
   { "id": "prm-23753", "name": "Red Kite Racing / Berkeley Bicycle Club / East Bay Velo / Albany High School MTB Team" },
-  { "id": "prm-23754", "name": "Red Kite Racing / Body Concepts Cycling Team / Winchester Cycling Club" },
+  { "id": "prm-23754", "name": "Red Kite Racing / Body Concepts Cycling Team / Winchester Cycling Club" }
 ]

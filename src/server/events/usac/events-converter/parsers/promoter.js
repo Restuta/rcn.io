@@ -1,6 +1,6 @@
 const log = require('server/utils/log')
 const { keyBy, map, flow, orderBy, minBy, get, toLower, toNumber, isNaN: isNotANumber } = require('lodash/fp')
-const promoters = require('client/temp/data/2017-ncnca-promoters.js')
+const promoters = require('client/temp/data/2017-ncnca-promoters.json')
 const { normalizeSpaces } = require('../utils')
 const leven = require('leven')
 
