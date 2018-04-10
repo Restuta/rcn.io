@@ -79,6 +79,7 @@
 * [Dream Icons](http://dreamicons.net/#charitable) - 💰$10 for charity
 
 ### Colors
+* About particular color: https://www.colorhexa.com/f4c2c2
 * [Makes Cohesive Colors](http://javier.xyz/cohesive-colors/)
 * [Spectral](http://jxnblk.com/Spectral/#963add&hues=8&rows=4&shiftS=-0.1&shiftL=-0.1) – really good for creating color schemes
 * [Marevel Colors](https://marvelapp.com/styleguide/design/color-scheme)
