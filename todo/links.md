@@ -86,6 +86,7 @@
 * http://color.koya.io/
 
 --
+* https://www.colorbox.io/ - design your colors from Lyft
 * http://www.colorion.co/
 * [lolcolors.com](http://www.lolcolors.com/) - curated palettes
 * [colourco.de](http://colourco.de/)
