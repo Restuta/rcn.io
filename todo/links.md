@@ -7,7 +7,7 @@
   * [ ] [Good UI](http://www.goodui.org/)
   * [ ] [UX Checklist](http://uxchecklist.github.io/)
   * [ ] [Visual Designers Checklist](http://webdesignerschecklist.com/)
-  * [ ] [Nice Designers Checklist] http://adrien-heury.net/designers-checklists/
+  * [ ] [Nice Designers Checklist](http://adrien-heury.net/designers-checklists/)
   * [ ] [Usability Checklist](https://userium.com/)
   * [ ] [IDX Checklist](http://ixdchecklist.com/)
   * [ ] [Startup Lunch List](http://startuplaunchlist.com/-JsfUTzJqEOfv5fCYImO)
@@ -33,7 +33,7 @@
 ### Typography
 * [Comprehensive Guide on Font loading stragegies](https://www.zachleat.com/web/comprehensive-webfonts/)
 * [Nice Web Type](http://nicewebtype.com/) — solid tools for setting text, antialising etc
-* [Typography in 10 minutes] - http://practicaltypography.com/typography-in-ten-minutes.html (serious resource)
+* [Typography in 10 minutes](http://practicaltypography.com/typography-in-ten-minutes.html) - (serious resource)
 * [FontCDN](http://fontcdn.org/) - a better way to search google fonts
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/) - web book
 * [x] [Interactive Guide to Blog Typography](http://www.kaikkonendesign.fi/typography/#section/1) - simple and just great
@@ -143,9 +143,9 @@
 * [Great UI components](http://semantic-ui.com/elements/label.html#basic)
 * Landing Pages
   - [Lapa](http://lapa.ninja/?ref=producthunt) 1000+ on PH
-  - [Background Animations] (http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
+  - [Background Animations](http://tympanus.net/Development/AnimatedHeaderBackgrounds/index2.html)
   - [Booking.js](http://booking.timekit.io/) - I really like the logo outline and overal feel (screen shot just in case http://screencast.com/t/KXRVnupV)
-  - [Bedouin, From Dibble] (https://dribbble.com/shots/2359639-Bedouin-by-Circular/attachments/452216) - overal feel of navigatoin and simplicity
+  - [Bedouin, From Dibble](https://dribbble.com/shots/2359639-Bedouin-by-Circular/attachments/452216) - overal feel of navigatoin and simplicity
   - [Tribe](http://tribe.pm/) - minimal and clean
 * [ ] [A lot of Tools, animations, etc](http://tympanus.net/)
 * [Font Reach](http://www.fontreach.com/#top) nice gradients and font
@@ -299,11 +299,11 @@
     * [ ] [Redux Real World Example](https://github.com/rackt/redux/tree/master/examples/real-world) uses Dev Tools and Redux Router 
     * [ ] [Reflux to Redux](http://engineering.wework.com/process/2015/10/01/react-reflux-to-redux/)
   * [ ] Relay and GraphQL
-    * [ ] [Nice Visual Guide] (http://sgwilym.github.io/relay-visual-learners/)
-    * [ ] [Community Roundup 27] (https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
+    * [ ] [Nice Visual Guide](http://sgwilym.github.io/relay-visual-learners/)
+    * [ ] [Community Roundup 27](https://facebook.github.io/react/blog/2015/09/14/community-roundup-27.html)
 * [ ] Design
   * [ ] Usability
-    * [ ] [Usability 101] (http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
+    * [ ] [Usability 101](http://www.nngroup.com/articles/usability-101-introduction-to-usability/)
   * [ ] [An Introduction to Using Patterns in Web Design](http://37signals.com/papers/introtopatterns/) by 37signals
   * [ ] [Design for the web](http://www.designingfortheweb.co.uk/part4/part4_chapter20.php)
   * [ ] [Design For Non Designers (book)](http://www.amazon.com/The-Non-Designers-Design-Book-Edition/dp/0133966151)
