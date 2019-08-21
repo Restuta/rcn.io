@@ -1,5 +1,6 @@
 import { selectAllText, selectAllTextInElement } from 'utils/dom/text'
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from 'atoms/Button.jsx'
 import Icon from 'atoms/Icon.jsx'
 import Colors from 'styles/colors'
@@ -85,13 +86,13 @@ class CopyToClipboardButton extends React.Component {
 
 CopyToClipboardButton.propTypes = {
   // to copy text from
-  textElementId: React.PropTypes.string,
+  textElementId: PropTypes.string,
   // also possible to privide DOM element directly
-  domElement: React.PropTypes.object,
-  type: React.PropTypes.oneOf(['button', 'link']),
-  buttonType: React.PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
+  domElement: PropTypes.object,
+  type: PropTypes.oneOf(['button', 'link']),
+  buttonType: PropTypes.oneOf(['primary', 'secondary', 'danger', 'success', 'warning']),
   // will be applied after "COPY"
-  whatToCopyText: React.PropTypes.string,
+  whatToCopyText: PropTypes.string,
 }
 
 
