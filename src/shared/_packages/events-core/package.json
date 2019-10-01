@@ -1,0 +1,38 @@
+{
+  "name": "@rcn/events-core",
+  "version": "1.0.0",
+  "description": "Core modules for RCN events",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "release": "npm test && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restuta/rcn.io.git"
+  },
+  "keywords": [
+    "RCN",
+    "events",
+    "rcn.io"
+  ],
+  "author": "Restuta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restuta/rcn.io/issues"
+  },
+  "homepage": "https://github.com/restuta/rcn.io#readme",
+  "dependencies": {
+    "joi": "^13.1.2",
+    "joi-date-extensions": "^1.1.1",
+    "lodash": "^4.17.5",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}

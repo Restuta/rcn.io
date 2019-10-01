@@ -115,8 +115,8 @@ const EventTypes = {
 //
 
 module.exports = {
-  Disciplines,
-  Statuses,
-  EventTypes,
+  Disciplines: Disciplines,
+  Statuses: Statuses,
+  EventTypes: EventTypes,
   // getAbbreviatedType
 }

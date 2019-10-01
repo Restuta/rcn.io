@@ -1,4 +1,4 @@
-import { Disciplines } from 'calendar/events/types'
+import { Disciplines } from '@rcn/events-core/event-types'
 import Colors from 'styles/colors'
 
 //TODO: refactor to use types from types.js

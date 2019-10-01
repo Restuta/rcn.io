@@ -16,7 +16,11 @@ Version 2:
     - or create one multi-day event with dates array
       - pro: easier to convert events and cross-reference
       - cons: harder to show in the calendar that has to be handled on UI level
-      - cons: is that we can't customize these types events per day
+      - cons: we can't customize these types events per day
+      - cons: do we count this as one event or miltiple? simple "events.length" won't represent
+      number of events anymore
+    - support both multi-day and interlinked events since they are slightly different beast
+      - multi-day events are good for when no customization is needed
 - load previous events and do lookups
   ✔ by permit @done(2017-10-18)
     ✔ compare if date is shortSegmentName @done(2017-10-18)
@@ -28,9 +32,10 @@ Version 2:
   ✔ mark those as "Cancelled", store info when it disappreared @done(2017-10-18)
 
 Version 3:
-  - setup re-current AWS lambda execution (cheep)
-    - calculate request limit, make sure it's <2000 day
+  - setup recurrent AWS lambda execution (cheep)
+    - calculate request limit, make sure it's < 2000 day
     - figure out Lambda external API
+    - notify in slack that it runned successufly and about errors
 
 Version 4:
  - test this on other state

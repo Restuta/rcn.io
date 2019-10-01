@@ -5,7 +5,8 @@ https://rcn.io/admin/create-event-id
 
 const slugify = require('shared/utils/slugify')
 const shortid = require('shortid')
-//custom alphabet, since by default it includes "-" which we are using as a separator as well
+// custom alphabet, since by default it includes "-" which we are using as a separator as well
+// must include 64 distinct characters
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_$')
 
 //so we don't end-up with crazy long URLs, 100 is pessimistic for really long event names
@@ -19,11 +20,10 @@ const MAX_SLUG_LENGTH = 100
  * by just looking at it id, for example for NCNCA it would be "ncnca"
  * @returns {[type]} String
  */
-const createEventIdPrefix = (eventYear, eventName, shortSegmentName) => (
+const createEventIdPrefix = (eventYear, eventName, shortSegmentName) =>
   shortSegmentName
     ? `evt-${shortSegmentName}-${eventYear}-${slugify(eventName, MAX_SLUG_LENGTH)}`
     : `evt-${eventYear}-${slugify(eventName, MAX_SLUG_LENGTH)}`
-)
 
 /**
  * Creates shour id that is URL-friendly and unique. Can be used for indexing.
@@ -58,8 +58,8 @@ const generatePrettyEventId = function() {
 
 module.exports = {
   // generates new pretty id including random part
-  generatePrettyEventId,
-  createEventIdPrefix,
-  createPrettyEventId,
-  createShortEventId
+  generatePrettyEventId: generatePrettyEventId,
+  createEventIdPrefix: createEventIdPrefix,
+  createPrettyEventId: createPrettyEventId,
+  createShortEventId: createShortEventId,
 }

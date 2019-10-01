@@ -32,11 +32,11 @@ export default class UploadFlyer extends React.Component {
 
     return (
       <div className="UploadFlyer">
-        <Alert type="info" style={{marginBottom: '4rem'}}><strong>Heads up! </strong>
-          Once Permit Number is entered, uploading new flyer would replace the old one (if present)! At the same time
-          it won't get removed. Flyers are versioned internally.
+        <Alert type="info" style={{marginBottom: '4rem'}} flat={true}><strong>Heads up! </strong>
+          Once Permit Number is entered, uploading new flyer will replace the old one (if present)! At the same time
+          old flyer won't get removed. Flyers are versioned internally.
           (contact <a href={`mailto:a@rcn.io?subject=Please Help Restore Flyer Version – ${permitNumber}`}>a@rcn.io </a>
-             to restore or better, just upload another one)
+             to restore if you need a previous version and you don't have it)
           <br /> <br />
           <div>Also note, that if Event has a permit number set, flyer would be loaded directly from USAC.</div>
         </Alert>

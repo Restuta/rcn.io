@@ -1,5 +1,5 @@
 const { lowerCase, flow, contains, partialRight } = require('lodash/fp')
-const { Disciplines, EventTypes } = require('client/calendar/events/types')
+const { Disciplines, EventTypes } = require('@rcn/events-core/event-types')
 const { normalizeSpaces } = require('../utils')
 
 const parseMtbType = lowerCaseName => {
@@ -84,7 +84,6 @@ const parseCollegiate = lowerCaseName => {
   }
 }
 
-
 const typeParserByDiscipline = {
   [Disciplines.mtb]: parseMtbType,
   [Disciplines.road]: parseRoadType,
@@ -95,7 +94,7 @@ const typeParserByDiscipline = {
   [Disciplines.collegiate]: parseCollegiate,
 }
 
-const parseType = ({nameRaw, discipline, competitive}) => {
+const parseType = ({ nameRaw, discipline, competitive }) => {
   if (competitive === 'competitive') {
     const lowerCaseName = flow(lowerCase, normalizeSpaces)(nameRaw)
 

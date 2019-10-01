@@ -1,6 +1,6 @@
- /* eslint-disable no-console */
+/* eslint-disable no-console */
 import ncnca2017Events from '../2016-ncnca-events'
-import schema from './event-schema'
+import schema from '@rcn/events-core/event.schema'
 import Joi from 'joi'
 import util from 'util'
 const inspect = msg => util.inspect(msg, { depth: 4, colors: true })
@@ -37,8 +37,6 @@ test('', t => {
 
   t.end()
 })
-
-
 
 // prettier-ignore
 // const errors = eventsToValidate

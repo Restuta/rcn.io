@@ -1,6 +1,6 @@
 import { createTest } from 'tests/test-utils'
 import moment from 'moment'
-import { EventTypes, Disciplines } from 'client/calendar/events/types'
+import { EventTypes, Disciplines } from '@rcn/events-core/event-types'
 import _ from 'lodash'
 
 import ncnca2017 from '../2017-ncnca-events'

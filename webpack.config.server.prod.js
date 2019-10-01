@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 //const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./webpack/constants')
 // const nodeModules = require('./webpack/utils').nodeModules
@@ -41,18 +42,8 @@ module.exports = {
     new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
     new webpack.optimize.DedupePlugin(),
     new ExtractTextPlugin('[name].css'),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        screw_ie8: true, // eslint-disable-line camelcase
-        warnings: false
-      },
-      mangle: {
-        screw_ie8: true // eslint-disable-line camelcase
-      },
-      output: {
-        comments: false,
-        screw_ie8: true // eslint-disable-line camelcase
-      }
+    new UglifyJsPlugin({
+      parallel: true,
     }),
     //used to ignore certain modules that we don't need on the server, so we don't waste time building them
     new webpack.NormalModuleReplacementPlugin(/\.(css|scss)$/, 'node-noop')

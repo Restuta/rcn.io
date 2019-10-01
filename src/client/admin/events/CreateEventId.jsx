@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from 'atoms/Button.jsx'
-import { createPrettyEventId, createShortEventId } from 'shared/events/gen-event-id'
+import { createPrettyEventId, createShortEventId } from '@rcn/events-core/gen-event-id'
 import CopyToClipboardButton from 'atoms/CopyToClipboardButton.jsx'
 
 import Col from 'atoms/Col.jsx'

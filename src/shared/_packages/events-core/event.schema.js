@@ -1,8 +1,17 @@
+const BaseJoi = require('joi')
+const Extension = require('joi-date-extensions')
+const Joi = BaseJoi.extend(Extension)
 
-const Joi = require('joi')
-const { flow, values, map, flatten, uniq, partialRight } = require('lodash')
-const { EventTypes, Disciplines, Statuses } = require('client/calendar/events/types')
+const flow = require('lodash/flow')
+const values = require('lodash/values')
+const map = require('lodash/map')
+const flatten = require('lodash/flatten')
+const uniq = require('lodash/uniq')
+const partialRight = require('lodash/partialRight')
 
+const { EventTypes, Disciplines, Statuses } = require('./event-types')
+
+// prettier-ignore
 const getAllEventTypes = eventTypesMap =>
   flow(
     values,
@@ -11,13 +20,13 @@ const getAllEventTypes = eventTypesMap =>
     uniq
   )(eventTypesMap)
 
+// prettier-ignore
 const schema = Joi.object().keys({
   // TODO: define id regex
   id: Joi.string().trim().required(),
   _shortId: Joi.string().regex(/[a-zA-Z0-9_$]+$/gm).trim(),
   name: Joi.string().min(5).trim().required(),
-  // TODO: define custom validation
-  date: Joi.string().trim().required(),
+  date: Joi.date().format('MMMM DD YYYY').required(),
   type: Joi.any().valid(getAllEventTypes(EventTypes)),
   discipline: Joi.any().valid(values(Disciplines)),
   usacPermit: Joi.string().regex(/(19|20)\d\d-\d{1,5}/).allow(''),
