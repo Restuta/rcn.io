@@ -9,7 +9,7 @@ import {
 } from 'client/temp/events.js'
 import { createSelector } from 'reselect'
 import Colors from 'client/styles/colors'
-
+import { partialRight, concat, keyBy } from 'lodash'
 
 /*  current event flow:
     => read from file
@@ -19,13 +19,8 @@ import Colors from 'client/styles/colors'
     => selector: create event's map by date
 */
 
-//TODO bc: set calendar ID to every event, but don't do it in this function
-// it should be done at the time of creation of imported events
-const toByIdMap = objects => objects.reduce((map, x) => {
-  map[x.id] = x
-  return map
-}, {})
-
+const toByIdMap = partialRight(keyBy, 'id')
+const setCalendarId = calendarId => event => ({...event, calendarId})
 const toArrayOfIds = objects => objects.map(x => x.id)
 
 const initialState = {
@@ -60,16 +55,19 @@ const initialState = {
   },
 
   events: toByIdMap(
-    norcalMtb2016Events
-    .concat(ncnca2016Events)
-    .concat(ncnca2017Events)
-    .concat(usac2017Events)
+    concat(
+      norcalMtb2016Events.map(setCalendarId('cal-norcal-mtb-2016')),
+      ncnca2016Events.map(setCalendarId('cal-ncnca-2016')),
+      ncnca2017Events.map(setCalendarId('cal-ncnca-2017')),
+      usac2017Events.map(setCalendarId('cal-usac-2017')),
+    )
   ),
 
   //calenars map by id
   calendars: {
     ['cal-norcal-mtb-2016']: {
       id: 'cal-norcal-mtb-2016',
+      slug: 'norcal-mtb',
       year: 2016,
       name: '2016 NorCal MTB Calendar',
       highlight: {
@@ -82,6 +80,7 @@ const initialState = {
     },
     ['cal-ncnca-2017-draft']: {
       id: 'cal-ncnca-2017-draft',
+      slug: 'ncnca-2017',
       year: 2017,
       name: '2017 NCNCA Calendar',
       // highlight: {
@@ -97,6 +96,7 @@ const initialState = {
     },
     ['cal-ncnca-2018-draft']: {
       id: 'cal-ncnca-2018-draft',
+      slug: 'ncnca-2017',
       year: 2018,
       name: '2018 NCNCA Calendar',
       // highlight: {
@@ -113,6 +113,7 @@ const initialState = {
     },
     ['cal-ncnca-2016']: {
       id: 'cal-ncnca-2016',
+      slug: 'ncnca-2016',
       year: 2016,
       name: '2016 NCNCA Calendar',
       // highlight: {
@@ -127,6 +128,7 @@ const initialState = {
     },
     ['cal-ncnca-2017']: {
       id: 'cal-ncnca-2017',
+      slug: 'ncnca-2017',
       year: 2017,
       name: '2017 NCNCA Calendar',
       // highlight: {
@@ -141,6 +143,7 @@ const initialState = {
     },
     ['cal-usac-2017']: {
       id: 'cal-usac-2017',
+      slug: 'usac-2017',
       year: 2017,
       name: '2017 USA Cycling Calendar',
       // highlight: {

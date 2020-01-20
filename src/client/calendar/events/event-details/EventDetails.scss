@@ -10,11 +10,31 @@
   margin-right: auto;
   border-radius: pxToRem(3);
   @include box-shadow-soft();
-  border-radius: pxToRem(3);
 
   @include phone {
     width: 100%;
     max-width: 100%;
+  }
+
+  @media (max-width: #{map-get($grid-breakpoints, "lg")}) {
+    margin-top: 9rem;
+  }
+
+  .back-to-calendar {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: -8.5rem;
+    @include box-shadow-soft();
+    border-radius: pxToRem(3);
+    padding: 1.5rem 4rem;
+    color: #757575;
+
+    &:before {
+      content: '\2190';
+      position: absolute;
+      left: 1.5rem;
+    }
   }
 }
 
