@@ -115,7 +115,7 @@
     "classnames": "^2.2.5",
     "exenv": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "moment": "^2.15.1",
     "moment-timezone": "0.5.12",
     "react": "~15.4.0",
