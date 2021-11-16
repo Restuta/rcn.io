@@ -48,7 +48,7 @@
   "homepage": "http://rcn.io",
   "devDependencies": {
     "autoprefixer": "^6.5.0",
-    "aws-sdk": "^2.9.0",
+    "aws-sdk": "^2.814.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.5",
